@@ -1,0 +1,5 @@
+<map id="authority_cert_free" name="authority_cert_free">
+<area shape="rect" id="node2" href="$networkstatus_8h.html#a0b3529b215fcf74c3d7a14a97b4bb541" title="networkstatus_vote_free" alt="" coords="184,5,349,32"/>
+<area shape="rect" id="node4" href="$router_8h.html#a278cf107b4a9b636b105ec5581b2f427" title="router_free_all" alt="" coords="215,56,319,83"/>
+<area shape="rect" id="node3" href="$networkstatus_8h.html#a5903397efb4437a9f991843962369b72" title="networkstatus_free_all" alt="" coords="397,5,551,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="ed25519_checkable_t" name="ed25519_checkable_t">
+<area shape="rect" id="node2" href="$structed25519__signature__t.html" title="ed25519_signature_t" alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node3" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="172,5,323,32"/>
+</map>

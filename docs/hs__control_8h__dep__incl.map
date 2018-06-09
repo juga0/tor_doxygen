@@ -1,0 +1,8 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/hs_control.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/hs_control.h">
+<area shape="rect" id="node2" href="$control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="$hs__client_8c.html" title="Implement next generation hidden service client functionality. " alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="$hs__control_8c.html" title="Contains control port event related code. " alt="" coords="521,109,669,165"/>
+<area shape="rect" id="node6" href="$hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="693,109,841,165"/>
+<area shape="rect" id="node7" href="$test__hs__control_8c.html" title="Unit tests for hidden service control port event and command. " alt="" coords="865,109,1040,165"/>
+</map>

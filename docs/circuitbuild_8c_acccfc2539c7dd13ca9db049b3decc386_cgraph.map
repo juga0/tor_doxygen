@@ -1,0 +1,8 @@
+<map id="inform_testing_reachability" name="inform_testing_reachability">
+<area shape="rect" id="node2" href="$address_8c.html#a8f295ab5aa41d0ada9f87607c7632d9c" title="tor_dup_ip" alt="" coords="261,56,343,83"/>
+<area shape="rect" id="node5" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="712,56,799,83"/>
+<area shape="rect" id="node7" href="$control_8c.html#a744e1e120d455e1662fdbb4704a1be20" title="control_event_server\l_status" alt="" coords="231,158,373,199"/>
+<area shape="rect" id="node3" href="$compat_8c.html#aaf2add8a435d6a782f057562de228637" title="tor_inet_ntop" alt="" coords="421,56,519,83"/>
+<area shape="rect" id="node4" href="$address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="567,5,664,32"/>
+<area shape="rect" id="node6" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="847,56,941,83"/>
+</map>

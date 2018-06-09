@@ -1,0 +1,7 @@
+<map id="authenticate_data_s" name="authenticate_data_s">
+<area shape="rect" id="node2" href="$structor__connection__t.html" title="or_connection_t" alt="" coords="5,303,120,329"/>
+<area shape="rect" id="node3" href="$structor__handshake__state__t.html" title="or_handshake_state_t" alt="" coords="97,213,247,240"/>
+<area shape="rect" id="node4" href="$structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="106,95,217,121"/>
+<area shape="rect" id="node6" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="144,303,235,329"/>
+<area shape="rect" id="node7" href="$structvar__cell__t.html" title="var_cell_t" alt="" coords="259,303,338,329"/>
+</map>

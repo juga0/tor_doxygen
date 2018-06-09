@@ -1,0 +1,5 @@
+<map id="dup_onion_keys" name="dup_onion_keys">
+<area shape="rect" id="node2" href="$compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="174,5,303,32"/>
+<area shape="rect" id="node3" href="$crypto_8c.html#a7ef622a79ac33d4b2dcce1be0bd27e71" title="crypto_pk_copy_full" alt="" coords="169,56,308,83"/>
+<area shape="rect" id="node4" href="$compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="174,107,303,133"/>
+</map>

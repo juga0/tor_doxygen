@@ -1,0 +1,5 @@
+<map id="control_adjust_event_log_severity" name="control_adjust_event_log_severity">
+<area shape="rect" id="node2" href="$log_8c.html#a26c45902f415353a9ab42857c58f4580" title="change_callback_log\l_severity" alt="" coords="196,23,339,65"/>
+<area shape="rect" id="node3" href="$log_8c.html#a5e0951aa88718546b90e38018b66c9f7" title="set_log_severity_config" alt="" coords="387,5,545,32"/>
+<area shape="rect" id="node4" href="$log_8c.html#a62f4e494ccdddfdd631addbc64507976" title="get_min_log_level" alt="" coords="403,56,529,83"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="routerset_subtract_nodes" name="routerset_subtract_nodes">
+<area shape="rect" id="node2" href="$routerset_8c.html#a59dc48808ca97d25748411b8053b28a2" title="routerset_contains_node" alt="" coords="180,46,344,73"/>
+<area shape="rect" id="node3" href="$routerset_8c.html#a46e8468ce37722ff71b91efd9d2f7ff0" title="routerset_contains\l_routerstatus" alt="" coords="392,5,521,47"/>
+<area shape="rect" id="node6" href="$routerset_8c.html#aa8942cc067a62102c0d51b88bcd3709f" title="routerset_contains\l_router" alt="" coords="392,71,521,112"/>
+<area shape="rect" id="node4" href="$routerset_8c.html#a1eda4526d656d042e5143ec79ee66be2" title="routerset_contains" alt="" coords="569,46,699,73"/>
+<area shape="rect" id="node5" href="$container_8c.html#a1406b823cb6088df755f1b81153d137e" title="strmap_get_lc" alt="" coords="747,46,851,73"/>
+</map>

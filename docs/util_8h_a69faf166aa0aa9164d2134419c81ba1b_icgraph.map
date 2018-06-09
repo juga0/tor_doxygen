@@ -1,0 +1,9 @@
+<map id="eat_whitespace" name="eat_whitespace">
+<area shape="rect" id="node2" href="$address_8h.html#add80f7b71c7e02f033ca18bf13400d51" title="tor_addr_port_lookup" alt="" coords="185,5,327,32"/>
+<area shape="rect" id="node3" href="$torlog_8h.html#a92ebdd777d8d185679722e4e605442fd" title="parse_log_severity\l_config" alt="" coords="191,57,321,98"/>
+<area shape="rect" id="node4" href="$config_8h.html#a921479be2cc807b006e928356bc0ba51" title="port_cfg_line_extract\l_addrport" alt="" coords="185,122,327,163"/>
+<area shape="rect" id="node5" href="$routerparse_8h.html#a6e030201d6bc0307036313ed138a0b63" title="authority_cert_parse\l_from_string" alt="" coords="186,187,326,229"/>
+<area shape="rect" id="node6" href="$routerparse_8c.html#a65294e0f578a21d0e10431bf4ef1d038" title="MOCK_IMPL" alt="" coords="206,253,306,280"/>
+<area shape="rect" id="node7" href="$routerparse_8h.html#a47c9a3cf5868b2133b4e5a582ca69aa6" title="tor_version_parse_platform" alt="" coords="167,304,345,331"/>
+<area shape="rect" id="node8" href="$routerparse_8h.html#af9f19ced712ed538c086276fa472851d" title="rend_parse_client_keys" alt="" coords="177,355,335,381"/>
+</map>

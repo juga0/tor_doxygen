@@ -1,0 +1,6 @@
+<map id="format_rfc1123_time" name="format_rfc1123_time">
+<area shape="rect" id="node2" href="$compat_8c.html#a983d273987a338a60523f0bce4006af2" title="tor_gmtime_r" alt="" coords="195,56,293,83"/>
+<area shape="rect" id="node3" href="$compat__threads_8c.html#a0f3b168e06f8e4b99789af20771ee096" title="tor_mutex_new" alt="" coords="351,5,461,32"/>
+<area shape="rect" id="node4" href="$compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="341,56,471,83"/>
+<area shape="rect" id="node5" href="$compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="341,107,471,133"/>
+</map>

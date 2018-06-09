@@ -1,0 +1,10 @@
+<map id="addr_policy_free" name="addr_policy_free">
+<area shape="rect" id="node2" href="$policies_8h.html#a7857d41d12395679c6cf6f9ec98412cd" title="addr_policy_list_free" alt="" coords="171,56,312,83"/>
+<area shape="rect" id="node6" href="$routerset_8c.html#a33e9d1e799e9cac73343c73126b104c6" title="routerset_free" alt="" coords="190,107,293,133"/>
+<area shape="rect" id="node3" href="$policies_8h.html#abdb06fe24a53450a461e479a72b371a5" title="policies_free_all" alt="" coords="360,5,475,32"/>
+<area shape="rect" id="node4" href="$routerlist_8h.html#af2db10502386ef035c89377d2968c7e0" title="routerinfo_free" alt="" coords="365,56,470,83"/>
+<area shape="rect" id="node5" href="$router_8h.html#a278cf107b4a9b636b105ec5581b2f427" title="router_free_all" alt="" coords="539,56,643,83"/>
+<area shape="rect" id="node7" href="$config_8c.html#a9d66419dd103a30396f877c79c31f137" title="or_options_free" alt="" coords="362,107,473,133"/>
+<area shape="rect" id="node8" href="$config_8h.html#ad82f38255905a78c85baf3224551787d" title="config_free_all" alt="" coords="538,107,645,133"/>
+<area shape="rect" id="node9" href="$config_8h.html#aa7167b27553a3e3b6cb70346b05e1c6b" title="options_trial_assign" alt="" coords="523,157,660,184"/>
+</map>

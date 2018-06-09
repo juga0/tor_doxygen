@@ -1,0 +1,7 @@
+<map id="microdesc_t" name="microdesc_t">
+<area shape="rect" id="node3" href="$structshort__policy__t.html" title="short_policy_t" alt="" coords="185,80,288,107"/>
+<area shape="rect" id="node4" href="$structcurve25519__public__key__t.html" title="curve25519_public_key_t" alt="" coords="152,131,321,157"/>
+<area shape="rect" id="node5" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="191,181,282,208"/>
+<area shape="rect" id="node6" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="161,232,312,259"/>
+<area shape="rect" id="node7" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="195,283,278,309"/>
+</map>

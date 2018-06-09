@@ -1,0 +1,4 @@
+<map id="circuit_purpose_to_string" name="circuit_purpose_to_string">
+<area shape="rect" id="node2" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="181,13,268,39"/>
+<area shape="rect" id="node3" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="316,13,411,39"/>
+</map>

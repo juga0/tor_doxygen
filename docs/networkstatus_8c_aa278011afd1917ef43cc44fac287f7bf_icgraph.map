@@ -1,0 +1,11 @@
+<map id="should_delay_dir_fetches" name="should_delay_dir_fetches">
+<area shape="rect" id="node2" href="$microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="223,5,420,32"/>
+<area shape="rect" id="node5" href="$networkstatus_8h.html#a1283a3574ff7fb0ceb2f4b80af9bdbf6" title="update_networkstatus\l_downloads" alt="" coords="246,57,397,98"/>
+<area shape="rect" id="node6" href="$nodelist_8h.html#af33ffac546e0698e054eb3183e6579ae" title="router_have_minimum\l_dir_info" alt="" coords="246,187,397,229"/>
+<area shape="rect" id="node7" href="$routerlist_8h.html#ab576efc7049ed4eca6fa56e9f0544844" title="update_extrainfo_downloads" alt="" coords="468,243,655,269"/>
+<area shape="rect" id="node8" href="$routerlist_8h.html#a91f37bda7b9149b1da0f1abfff66ab23" title="authority_certs_fetch\l_missing" alt="" coords="249,305,393,346"/>
+<area shape="rect" id="node10" href="$routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="239,122,404,163"/>
+<area shape="rect" id="node3" href="$routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="489,122,634,163"/>
+<area shape="rect" id="node4" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="703,185,831,226"/>
+<area shape="rect" id="node9" href="$networkstatus_8h.html#aac5e0a37016a04c309a791ae15ecc86a" title="update_certificate\l_downloads" alt="" coords="499,305,624,346"/>
+</map>

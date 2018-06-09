@@ -1,0 +1,5 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/onion_tap.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/onion_tap.h">
+<area shape="rect" id="node2" href="$circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$onion_8c.html" title="Functions to queue create cells, wrap the various onionskin types, and parse and create the CREATE ce..." alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="$onion__tap_8c.html" title="Functions to implement the original Tor circuit extension handshake (a.k.a TAP). " alt="" coords="349,109,497,165"/>
+</map>

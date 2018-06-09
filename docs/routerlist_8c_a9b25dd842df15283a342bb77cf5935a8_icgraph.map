@@ -1,0 +1,5 @@
+<map id="routers_have_same_or_addrs" name="routers_have_same_or_addrs">
+<area shape="rect" id="node2" href="$dirserv_8h.html#a0c97fbc43a4398a45feb2fafa3d42fc1" title="dirserv_should_launch\l_reachability_test" alt="" coords="208,5,359,47"/>
+<area shape="rect" id="node3" href="$networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="407,5,621,47"/>
+<area shape="rect" id="node4" href="$routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="669,5,803,47"/>
+</map>

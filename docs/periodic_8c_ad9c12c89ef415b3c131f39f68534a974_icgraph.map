@@ -1,0 +1,7 @@
+<map id="periodic_event_reschedule" name="periodic_event_reschedule">
+<area shape="rect" id="node2" href="$main_8h.html#aa79d6ccbf076c44946971ac8dbbb5e1d" title="reset_all_main_loop\l_timers" alt="" coords="235,5,373,47"/>
+<area shape="rect" id="node4" href="$main_8h.html#a07295da993bf4aa46f05959eb5597633" title="reschedule_descriptor\l_update_check" alt="" coords="229,71,379,112"/>
+<area shape="rect" id="node5" href="$main_8h.html#a5e52e7505835cfedd05201509a19d301" title="reschedule_directory\l_downloads" alt="" coords="233,136,375,177"/>
+<area shape="rect" id="node6" href="$main_8h.html#a1725c3c7eee555118c2f19cebe1ca00d" title="dns_servers_relaunch\l_checks" alt="" coords="229,201,379,243"/>
+<area shape="rect" id="node3" href="$circuitbuild_8h.html#a9850a0ba60e6a62bc0a7267343418235" title="circuit_note_clock\l_jumped" alt="" coords="427,5,553,47"/>
+</map>

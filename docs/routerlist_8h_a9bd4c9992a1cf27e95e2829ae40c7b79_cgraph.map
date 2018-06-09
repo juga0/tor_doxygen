@@ -1,0 +1,5 @@
+<map id="dir_server_add" name="dir_server_add">
+<area shape="rect" id="node2" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="190,5,290,32"/>
+<area shape="rect" id="node3" href="$nodelist_8c.html#a32099caf417dbc0e15ea398b1bc2ea16" title="router_dir_info_changed" alt="" coords="160,56,320,83"/>
+<area shape="rect" id="node4" href="$rendservice_8c.html#ac44e79078bc122e1f77d770919baffa3" title="rend_hsdir_routers\l_changed" alt="" coords="368,49,497,90"/>
+</map>

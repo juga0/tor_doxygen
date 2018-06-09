@@ -1,0 +1,6 @@
+<map id="update_certificate_downloads" name="update_certificate_downloads">
+<area shape="rect" id="node2" href="$routerlist_8c.html#a91f37bda7b9149b1da0f1abfff66ab23" title="authority_certs_fetch\l_missing" alt="" coords="179,35,323,76"/>
+<area shape="rect" id="node3" href="$dirserv_8c.html#a5a9cf7f465217dbc8142aaf11384abbf" title="directory_caches_unknown\l_auth_certs" alt="" coords="371,5,551,47"/>
+<area shape="rect" id="node5" href="$networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf" title="should_delay_dir_fetches" alt="" coords="376,71,545,98"/>
+<area shape="rect" id="node4" href="$router_8c.html#ab23297b12b098da9eac98126a587aa3b" title="dir_server_mode" alt="" coords="599,13,717,39"/>
+</map>

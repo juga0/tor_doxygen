@@ -1,0 +1,6 @@
+<map id="connection_exit_begin_resolve" name="connection_exit_begin_resolve">
+<area shape="rect" id="node2" href="$circuitlist_8c.html#a96a06b5b1f559dcb3747b599451df921" title="assert_circuit_ok" alt="" coords="219,5,340,32"/>
+<area shape="rect" id="node3" href="$relay_8c.html#a9b06f0a66f2b1af9d4e0855225192e1d" title="relay_header_unpack" alt="" coords="207,56,352,83"/>
+<area shape="rect" id="node5" href="$connection_8c.html#a2ec50dd3f5bb871bf4a7058e4a57a754" title="edge_connection_new" alt="" coords="204,107,355,133"/>
+<area shape="rect" id="node4" href="$compat_8c.html#ae67679aa2827ab3a1378abb8a2b953cf" title="get_uint16" alt="" coords="403,56,485,83"/>
+</map>

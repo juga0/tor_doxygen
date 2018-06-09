@@ -1,0 +1,6 @@
+<map id="buf_set_to_copy" name="buf_set_to_copy">
+<area shape="rect" id="node2" href="$buffers_8c.html#a198f56649de692ac03c807c8406e4a00" title="buf_free" alt="" coords="175,5,244,32"/>
+<area shape="rect" id="node4" href="$buffers_8c.html#a698473a00b89755b994e4f9b83817e98" title="buf_copy" alt="" coords="172,56,247,83"/>
+<area shape="rect" id="node3" href="$buffers_8c.html#a1d5f6af679f4b6ead9ba2aca03941931" title="buf_clear" alt="" coords="295,5,369,32"/>
+<area shape="rect" id="node5" href="$buffers_8c.html#a2792d274b6e45707b54d36697b575cd5" title="buf_new" alt="" coords="297,56,367,83"/>
+</map>

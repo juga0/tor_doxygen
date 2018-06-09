@@ -1,0 +1,6 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/hs_stats.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/hs_stats.h">
+<area shape="rect" id="node2" href="$circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="$hs__stats_8c.html" title="Keeps stats about the activity of our hidden service. " alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="$status_8c.html" title="Collect status information and log heartbeat messages. " alt="" coords="521,109,669,165"/>
+</map>

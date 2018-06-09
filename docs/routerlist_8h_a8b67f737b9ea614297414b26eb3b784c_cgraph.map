@@ -1,0 +1,19 @@
+<map id="update_router_descriptor_downloads" name="update_router_descriptor_downloads">
+<area shape="rect" id="node2" href="$networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf" title="should_delay_dir_fetches" alt="" coords="233,18,403,45"/>
+<area shape="rect" id="node3" href="$microdesc_8c.html#a2667d23ef05f514b5bf916791b4a6bbd" title="we_fetch_router_descriptors" alt="" coords="225,69,411,95"/>
+<area shape="rect" id="node10" href="$routerlist_8c.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="233,120,403,161"/>
+<area shape="rect" id="node18" href="$networkstatus_8c.html#a44accdf47b7f9f40b25c45daf2c31475" title="networkstatus_get_reasonably\l_live_consensus" alt="" coords="219,185,417,227"/>
+<area shape="rect" id="node4" href="$dirserv_8c.html#a57e2ff1ad2ea65abe9b969ad3d76a418" title="directory_caches_dir_info" alt="" coords="684,71,855,98"/>
+<area shape="rect" id="node8" href="$microdesc_8c.html#adeff3a88aa40b67ab6407bda5c941910" title="we_use_microdescriptors\l_for_circuits" alt="" coords="465,5,636,47"/>
+<area shape="rect" id="node5" href="$router_8c.html#ab23297b12b098da9eac98126a587aa3b" title="dir_server_mode" alt="" coords="925,13,1043,39"/>
+<area shape="rect" id="node6" href="$router_8c.html#afa75de94186fffc8f373de610ae4cab3" title="should_refuse_unknown\l_exits" alt="" coords="903,64,1065,105"/>
+<area shape="rect" id="node7" href="$networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="1113,71,1285,98"/>
+<area shape="rect" id="node9" href="$entrynodes_8c.html#aec3f497d942ccb88742194e3fe973a49" title="any_bridge_supports\l_microdescriptors" alt="" coords="698,5,841,47"/>
+<area shape="rect" id="node11" href="$router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="501,126,601,153"/>
+<area shape="rect" id="node12" href="$dirserv_8c.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="477,177,624,219"/>
+<area shape="rect" id="node13" href="$rephist_8c.html#a890009e83c2e90292a435526b8111727" title="rep_hist_circbuilding\l_dormant" alt="" coords="699,195,839,236"/>
+<area shape="rect" id="node14" href="$rephist_8c.html#ae234f5b5dcf88ea65ef20ff5c3512327" title="any_predicted_circuits" alt="" coords="908,261,1060,287"/>
+<area shape="rect" id="node15" href="$router_8c.html#a8b917b11fb2945b314286a6a567e34c3" title="check_whether_orport\l_reachable" alt="" coords="909,312,1059,353"/>
+<area shape="rect" id="node16" href="$circuituse_8c.html#ac6c1a2c715351d85ef6747ca1a4db958" title="circuit_enough_testing\l_circs" alt="" coords="908,129,1060,171"/>
+<area shape="rect" id="node17" href="$router_8c.html#a98317a030cb30700f60c8444d676087b" title="check_whether_dirport\l_reachable" alt="" coords="907,195,1061,236"/>
+</map>

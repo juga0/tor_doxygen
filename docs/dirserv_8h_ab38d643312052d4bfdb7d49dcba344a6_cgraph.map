@@ -1,0 +1,6 @@
+<map id="directory_fetches_dir_info_early" name="directory_fetches_dir_info_early">
+<area shape="rect" id="node2" href="$dirserv_8c.html#a0b84786e17352524036694baf1955167" title="directory_fetches_from\l_authorities" alt="" coords="196,35,351,76"/>
+<area shape="rect" id="node3" href="$router_8c.html#afa75de94186fffc8f373de610ae4cab3" title="should_refuse_unknown\l_exits" alt="" coords="399,5,561,47"/>
+<area shape="rect" id="node5" href="$router_8c.html#ab23297b12b098da9eac98126a587aa3b" title="dir_server_mode" alt="" coords="421,71,539,98"/>
+<area shape="rect" id="node4" href="$networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="609,13,781,39"/>
+</map>

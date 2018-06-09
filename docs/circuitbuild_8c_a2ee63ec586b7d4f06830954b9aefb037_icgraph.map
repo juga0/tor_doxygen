@@ -1,0 +1,9 @@
+<map id="extend_info_free" name="extend_info_free">
+<area shape="rect" id="node2" href="$circuitbuild_8h.html#aa05d447828e5c9a73d52a507314de966" title="circuit_append_new_exit" alt="" coords="172,5,337,32"/>
+<area shape="rect" id="node3" href="$rendcommon_8h.html#a61dd29c390c943442cdd965fa9a31916" title="rend_intro_point_free" alt="" coords="183,56,326,83"/>
+<area shape="rect" id="node8" href="$rendservice_8h.html#ab1e1ab28c3798f2915cd7520110b37a1" title="rend_service_free_intro" alt="" coords="176,107,333,133"/>
+<area shape="rect" id="node4" href="$rendcommon_8h.html#a91927fc14b63a83089d9b0ee22184498" title="rend_service_descriptor_free" alt="" coords="385,31,575,57"/>
+<area shape="rect" id="node6" href="$rendservice_8c.html#a8cd5cb06a8e03c07ed7d120f90cee388" title="rend_service_free" alt="" coords="637,81,763,108"/>
+<area shape="rect" id="node5" href="$rendcache_8c.html#a2c5eb5e8ecaa713ec73cebc5ad4df905" title="rend_cache_entry_free" alt="" coords="623,31,777,57"/>
+<area shape="rect" id="node7" href="$rendservice_8h.html#ade90973329e24160017a04e0503397bd" title="rend_service_free_all" alt="" coords="825,81,971,108"/>
+</map>

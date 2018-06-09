@@ -1,0 +1,5 @@
+<map id="get_stored_bindaddr_for_server_transport" name="get_stored_bindaddr_for_server_transport">
+<area shape="rect" id="node2" href="$config_8c.html#ab290be54f444db352f9ce41c2886a4ac" title="get_transport_bindaddr\l_from_config" alt="" coords="199,5,353,47"/>
+<area shape="rect" id="node3" href="$statefile_8c.html#a50341569bca19a64550918d2d82942d3" title="get_transport_in_state\l_by_name" alt="" coords="201,71,351,112"/>
+<area shape="rect" id="node4" href="$container_8c.html#a1d75cac5583c66900c032ba972ffabc8" title="smartlist_split_string" alt="" coords="401,78,544,105"/>
+</map>

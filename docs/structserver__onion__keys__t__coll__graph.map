@@ -1,0 +1,5 @@
+<map id="server_onion_keys_t" name="server_onion_keys_t">
+<area shape="rect" id="node2" href="$structcurve25519__keypair__t.html" title="curve25519_keypair_t" alt="" coords="5,109,155,136"/>
+<area shape="rect" id="node4" href="$structdi__digest256__map__t.html" title="di_digest256_map_t" alt="" coords="179,109,317,136"/>
+<area shape="rect" id="node5" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="353,109,444,136"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="hs_service_keys_t" name="hs_service_keys_t">
+<area shape="rect" id="node2" href="$structed25519__secret__key__t.html" title="ed25519_secret_key_t" alt="" coords="5,5,159,32"/>
+<area shape="rect" id="node3" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="183,5,333,32"/>
+</map>

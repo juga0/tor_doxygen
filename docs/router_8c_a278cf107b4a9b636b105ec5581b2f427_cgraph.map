@@ -1,0 +1,13 @@
+<map id="router_free_all" name="router_free_all">
+<area shape="rect" id="node2" href="$crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="353,32,461,59"/>
+<area shape="rect" id="node3" href="$compat__threads_8c.html#a204271ab584393121f49bae2f6363ffa" title="tor_mutex_free" alt="" coords="168,260,277,287"/>
+<area shape="rect" id="node5" href="$routerlist_8c.html#af2db10502386ef035c89377d2968c7e0" title="routerinfo_free" alt="" coords="170,184,275,211"/>
+<area shape="rect" id="node7" href="$crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="545,108,623,135"/>
+<area shape="rect" id="node11" href="$routerlist_8c.html#a36bbf9bf41105f61c8f1f5b6ffc3b12b" title="extrainfo_free" alt="" coords="172,134,273,160"/>
+<area shape="rect" id="node12" href="$routerlist_8c.html#a2bb77cd705f2c621023fff9a114c01bf" title="authority_cert_free" alt="" coords="157,32,288,59"/>
+<area shape="rect" id="node4" href="$compat__pthreads_8c.html#affc9b93e04c69ebd4c63c25563b4a9b7" title="tor_mutex_uninit" alt="" coords="347,286,466,312"/>
+<area shape="rect" id="node6" href="$torcert_8c.html#a69b51896c94df3682f5b40fdffd5daba" title="tor_cert_free" alt="" coords="359,134,454,160"/>
+<area shape="rect" id="node8" href="$policies_8c.html#af4571826592c41142d57b3240016812e" title="addr_policy_list_free" alt="" coords="336,184,477,211"/>
+<area shape="rect" id="node10" href="$policies_8c.html#a3a0c68a8d1b8b63eaa6ee5fe12eeb108" title="short_policy_free" alt="" coords="346,235,467,262"/>
+<area shape="rect" id="node9" href="$policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="525,184,643,211"/>
+</map>

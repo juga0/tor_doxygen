@@ -1,0 +1,7 @@
+<map id="get_microdesc_cache" name="get_microdesc_cache">
+<area shape="rect" id="node2" href="$dirserv_8h.html#a89dcb27b45f04c12e789dee837b90fdc" title="dirserv_have_any_microdesc" alt="" coords="433,11,623,37"/>
+<area shape="rect" id="node3" href="$microdesc_8h.html#a7c169d48c50e48e8fe1306765f319b61" title="microdesc_cache_lookup\l_by_digest256" alt="" coords="203,33,372,74"/>
+<area shape="rect" id="node4" href="$microdesc_8h.html#a9ed7132c4abf5af5ba74ec1cd090878d" title="microdesc_average_size" alt="" coords="204,99,371,125"/>
+<area shape="rect" id="node6" href="$microdesc_8h.html#ad388d518c6750dce831b4d375e0efe5c" title="update_microdescs_from\l_networkstatus" alt="" coords="203,150,371,191"/>
+<area shape="rect" id="node5" href="$dirserv_8h.html#a48cee7ff92f2da41f67b8f2a332ffa5a" title="dirserv_estimate_microdesc_size" alt="" coords="420,99,636,125"/>
+</map>

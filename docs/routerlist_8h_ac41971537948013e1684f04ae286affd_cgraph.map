@@ -1,0 +1,6 @@
+<map id="router_differences_are_cosmetic" name="router_differences_are_cosmetic">
+<area shape="rect" id="node2" href="$crypto_8c.html#a4b5a83669b5e7cbbcdbc8f635d95f8cb" title="crypto_pk_eq_keys" alt="" coords="180,5,315,32"/>
+<area shape="rect" id="node5" href="$policies_8c.html#a0364d20db6a5e87f6c190a70bcf9e5f6" title="addr_policies_eq" alt="" coords="188,56,307,83"/>
+<area shape="rect" id="node3" href="$crypto_8c.html#a46a418431f50aacae8a7392edcbb1d2b" title="crypto_pk_cmp_keys" alt="" coords="363,5,509,32"/>
+<area shape="rect" id="node4" href="$di__ops_8c.html#a47393c6ace65b9b2173d60ac6ae119aa" title="tor_memcmp" alt="" coords="557,5,656,32"/>
+</map>

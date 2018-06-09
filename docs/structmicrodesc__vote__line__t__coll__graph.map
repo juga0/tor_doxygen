@@ -1,0 +1,8 @@
+<map id="microdesc_vote_line_t" name="microdesc_vote_line_t">
+<area shape="rect" id="node3" href="$structmicrodesc__t.html" title="microdesc_t" alt="" coords="277,199,371,225"/>
+<area shape="rect" id="node4" href="$structshort__policy__t.html" title="short_policy_t" alt="" coords="134,95,237,121"/>
+<area shape="rect" id="node5" href="$structcurve25519__public__key__t.html" title="curve25519_public_key_t" alt="" coords="261,95,430,121"/>
+<area shape="rect" id="node6" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="455,95,545,121"/>
+<area shape="rect" id="node7" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="570,95,721,121"/>
+<area shape="rect" id="node8" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="759,95,841,121"/>
+</map>

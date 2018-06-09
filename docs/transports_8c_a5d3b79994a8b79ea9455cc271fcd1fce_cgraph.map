@@ -1,0 +1,5 @@
+<map id="get_pt_proxy_uri" name="get_pt_proxy_uri">
+<area shape="rect" id="node2" href="$address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="172,5,281,32"/>
+<area shape="rect" id="node3" href="$compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="183,56,270,83"/>
+<area shape="rect" id="node4" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="329,56,424,83"/>
+</map>

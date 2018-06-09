@@ -1,0 +1,6 @@
+<map id="hs_desc_intro_point_t" name="hs_desc_intro_point_t">
+<area shape="rect" id="node2" href="$structtor__cert__st.html" title="tor_cert_st" alt="" coords="39,109,123,136"/>
+<area shape="rect" id="node3" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node5" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="249,109,339,136"/>
+<area shape="rect" id="node6" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="363,109,446,136"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="rep_hist_circbuilding_dormant" name="rep_hist_circbuilding_dormant">
+<area shape="rect" id="node2" href="$dirserv_8h.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="193,27,340,68"/>
+<area shape="rect" id="node3" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="1045,5,1173,47"/>
+<area shape="rect" id="node4" href="$microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="607,34,804,61"/>
+<area shape="rect" id="node6" href="$routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="388,85,559,127"/>
+<area shape="rect" id="node5" href="$routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="852,35,997,76"/>
+<area shape="rect" id="node7" href="$routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="623,85,788,127"/>
+</map>

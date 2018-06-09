@@ -1,0 +1,5 @@
+<map id="buf_new" name="buf_new">
+<area shape="rect" id="node2" href="$buffers_8h.html#a25596a2194d00f8015a2a454ad0deede" title="buf_new_with_capacity" alt="" coords="124,5,283,32"/>
+<area shape="rect" id="node3" href="$buffers_8h.html#a698473a00b89755b994e4f9b83817e98" title="buf_copy" alt="" coords="166,56,241,83"/>
+<area shape="rect" id="node4" href="$buffers_8h.html#ad27eb7c3c9dcc484cbd276fbfb2a0791" title="buf_set_to_copy" alt="" coords="331,56,449,83"/>
+</map>

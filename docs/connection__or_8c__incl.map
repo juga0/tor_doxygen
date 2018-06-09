@@ -1,0 +1,49 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/connection_or.c" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/connection_or.c">
+<area shape="rect" id="node2" href="$or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="769,333,813,360"/>
+<area shape="rect" id="node21" href="$buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1599,184,1673,211"/>
+<area shape="rect" id="node22" href="$channel_8h.html" title="Header file for channel.c. " alt="" coords="954,184,1033,211"/>
+<area shape="rect" id="node24" href="$channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="907,109,999,136"/>
+<area shape="rect" id="node25" href="$circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1885,109,1979,136"/>
+<area shape="rect" id="node26" href="$circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1673,259,1759,285"/>
+<area shape="rect" id="node27" href="$circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="2003,109,2101,136"/>
+<area shape="rect" id="node28" href="$command_8h.html" title="Header file for command.c. " alt="" coords="1075,109,1165,136"/>
+<area shape="rect" id="node29" href="$config_8h.html" title="Header file for config.c. " alt="" coords="1749,333,1817,360"/>
+<area shape="rect" id="node30" href="$connection_8h.html" title="Header file for connection.c. " alt="" coords="1561,109,1657,136"/>
+<area shape="rect" id="node31" href="$connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2125,109,2240,136"/>
+<area shape="rect" id="node32" href="$control_8h.html" title="Header file for control.c. " alt="" coords="2264,109,2336,136"/>
+<area shape="rect" id="node33" href="$dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="1833,259,1905,285"/>
+<area shape="rect" id="node34" href="$entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2361,109,2458,136"/>
+<area shape="rect" id="node35" href="$geoip_8h.html" title="Header file for geoip.c. " alt="" coords="1372,109,1436,136"/>
+<area shape="rect" id="node37" href="$main_8h.html" title="Header file for main.c. " alt="" coords="2483,109,2544,136"/>
+<area shape="rect" id="node38" href="$link__handshake_8h_source.html" title="link_handshake.h" alt="" coords="2568,109,2691,136"/>
+<area shape="rect" id="node41" href="$microdesc_8h.html" title="Header file for microdesc.c. " alt="" coords="2715,109,2808,136"/>
+<area shape="rect" id="node42" href="$networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="1276,333,1391,360"/>
+<area shape="rect" id="node43" href="$nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2833,109,2911,136"/>
+<area shape="rect" id="node44" href="$reasons_8h.html" title="Header file for reasons.c. " alt="" coords="2935,109,3014,136"/>
+<area shape="rect" id="node45" href="$relay_8h.html" title="Header file for relay.c. " alt="" coords="3039,109,3100,136"/>
+<area shape="rect" id="node46" href="$rephist_8h.html" title="Header file for rephist.c. " alt="" coords="3124,109,3196,136"/>
+<area shape="rect" id="node47" href="$router_8h.html" title="Header file for router.c. " alt="" coords="1445,259,1512,285"/>
+<area shape="rect" id="node48" href="$routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="1516,333,1599,360"/>
+<area shape="rect" id="node49" href="$ext__orport_8h_source.html" title="ext_orport.h" alt="" coords="3220,109,3311,136"/>
+<area shape="rect" id="node50" href="$scheduler_8h.html" title="Header file for scheduler.c. " alt="" coords="1190,109,1279,136"/>
+<area shape="rect" id="node3" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="326,707,405,733"/>
+<area shape="rect" id="node4" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="334,632,397,659"/>
+<area shape="rect" id="node5" href="$crypto_8h.html" title="Headers for crypto.c. " alt="" coords="689,557,759,584"/>
+<area shape="rect" id="node8" href="$crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="465,408,578,435"/>
+<area shape="rect" id="node9" href="$crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="408,483,533,509"/>
+<area shape="rect" id="node10" href="$crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="403,557,546,584"/>
+<area shape="rect" id="node11" href="$tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1086,483,1149,509"/>
+<area shape="rect" id="node12" href="$torlog_8h.html" title="Headers for log.c. " alt="" coords="1173,483,1238,509"/>
+<area shape="rect" id="node13" href="$container_8h_source.html" title="container.h" alt="" coords="195,483,282,509"/>
+<area shape="rect" id="node14" href="$torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="755,408,827,435"/>
+<area shape="rect" id="node15" href="$address_8h.html" title="Headers for address.h. " alt="" coords="139,408,218,435"/>
+<area shape="rect" id="node16" href="$compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="783,557,911,584"/>
+<area shape="rect" id="node17" href="$ht_8h_source.html" title="ht.h" alt="" coords="851,408,895,435"/>
+<area shape="rect" id="node18" href="$replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="919,408,1022,435"/>
+<area shape="rect" id="node19" href="$tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1047,408,1137,435"/>
+<area shape="rect" id="node20" href="$util__format_8h_source.html" title="util_format.h" alt="" coords="570,557,665,584"/>
+<area shape="rect" id="node7" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="1252,632,1351,659"/>
+<area shape="rect" id="node23" href="$circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1108,259,1201,285"/>
+<area shape="rect" id="node36" href="$dos_8h_source.html" title="dos.h" alt="" coords="1406,184,1461,211"/>
+<area shape="rect" id="node40" href="$trunnel_8h_source.html" title="trunnel.h" alt="" coords="2640,184,2712,211"/>
+</map>

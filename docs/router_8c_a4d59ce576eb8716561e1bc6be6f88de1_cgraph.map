@@ -1,0 +1,12 @@
+<map id="router_describe" name="router_describe">
+<area shape="rect" id="node2" href="$router_8c.html#ac97f03d757d76cc0e684e58d4dfea035" title="router_get_description" alt="" coords="164,124,315,151"/>
+<area shape="rect" id="node3" href="$router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="363,81,527,108"/>
+<area shape="rect" id="node9" href="$routerlist_8c.html#a8b764a3362e4c3245d5e430925e380f1" title="router_is_named" alt="" coords="385,165,504,192"/>
+<area shape="rect" id="node4" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="603,5,716,32"/>
+<area shape="rect" id="node5" href="$address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="605,56,714,83"/>
+<area shape="rect" id="node6" href="$address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="611,107,708,133"/>
+<area shape="rect" id="node7" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="792,107,879,133"/>
+<area shape="rect" id="node8" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="927,107,1021,133"/>
+<area shape="rect" id="node10" href="$networkstatus_8c.html#af663020b40e6b122a43b26aa62ca4ed4" title="networkstatus_get_router\l_digest_by_nickname" alt="" coords="575,158,744,199"/>
+<area shape="rect" id="node11" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="616,224,703,251"/>
+</map>

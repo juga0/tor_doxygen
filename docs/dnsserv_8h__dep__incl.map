@@ -1,0 +1,8 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/dnsserv.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/dnsserv.h">
+<area shape="rect" id="node2" href="$connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$connection__edge_8c.html" title="Handle edge streams. " alt="" coords="177,109,349,165"/>
+<area shape="rect" id="node4" href="$control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="373,109,521,165"/>
+<area shape="rect" id="node5" href="$dnsserv_8c.html" title="Implements client&#45;side DNS proxy server code. Note: this is the DNS Server code, not the Server DNS c..." alt="" coords="545,109,693,165"/>
+<area shape="rect" id="node6" href="$geoip_8c.html" title="Functions related to maintaining an IP&#45;to&#45;country database; to summarizing client connections by coun..." alt="" coords="717,109,865,165"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="889,109,1037,165"/>
+</map>

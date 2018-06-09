@@ -1,0 +1,4 @@
+<map id="curve25519_rand_seckey_bytes" name="curve25519_rand_seckey_bytes">
+<area shape="rect" id="node2" href="$crypto__curve25519_8c.html#a33569d6170349126f87307f7a0c8c90e" title="curve25519_secret_key\l_generate" alt="" coords="224,5,384,47"/>
+<area shape="rect" id="node3" href="$crypto__curve25519_8c.html#a84cef627f00064e72f8a29196673abaf" title="curve25519_keypair\l_generate" alt="" coords="432,5,571,47"/>
+</map>

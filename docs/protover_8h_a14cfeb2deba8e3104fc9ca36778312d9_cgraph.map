@@ -1,0 +1,5 @@
+<map id="protover_compute_for_old_tor" name="protover_compute_for_old_tor">
+<area shape="rect" id="node2" href="$routerparse_8c.html#a34e1f6d4f6429bcf1d565f54a1dfcd5c" title="tor_version_as_new_as" alt="" coords="201,13,360,39"/>
+<area shape="rect" id="node3" href="$routerparse_8c.html#ace4c11b51ca67a4f140ed41ae3d47b6d" title="tor_version_parse" alt="" coords="408,13,533,39"/>
+<area shape="rect" id="node4" href="$util_8c.html#a1d095be5cec365a93ac90501390f70fa" title="strcasecmpstart" alt="" coords="581,13,697,39"/>
+</map>

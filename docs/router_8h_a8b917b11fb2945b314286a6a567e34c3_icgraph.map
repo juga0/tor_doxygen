@@ -1,0 +1,10 @@
+<map id="check_whether_orport_reachable" name="check_whether_orport_reachable">
+<area shape="rect" id="node2" href="$rephist_8h.html#a890009e83c2e90292a435526b8111727" title="rep_hist_circbuilding\l_dormant" alt="" coords="204,34,344,76"/>
+<area shape="rect" id="node9" href="$router_8h.html#a93f4b5aab591c136663925a937575299" title="consider_testing_reachability" alt="" coords="392,144,583,171"/>
+<area shape="rect" id="node3" href="$dirserv_8h.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="414,28,561,69"/>
+<area shape="rect" id="node4" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="1288,57,1416,98"/>
+<area shape="rect" id="node5" href="$microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="849,31,1047,58"/>
+<area shape="rect" id="node7" href="$routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="631,82,801,124"/>
+<area shape="rect" id="node6" href="$routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="1095,57,1240,98"/>
+<area shape="rect" id="node8" href="$routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="865,82,1031,124"/>
+</map>

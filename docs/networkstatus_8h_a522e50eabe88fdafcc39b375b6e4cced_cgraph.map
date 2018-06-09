@@ -1,0 +1,6 @@
+<map id="networkstatus_getinfo_by_purpose" name="networkstatus_getinfo_by_purpose">
+<area shape="rect" id="node2" href="$routerlist_8c.html#a9181bbed0ee6ff8088a7c53fc8c446f1" title="router_get_routerlist" alt="" coords="207,5,344,32"/>
+<area shape="rect" id="node3" href="$router_8c.html#a5822c27ea2e28fd0ff19da0dbc612611" title="router_purpose_from\l_string" alt="" coords="205,57,346,98"/>
+<area shape="rect" id="node4" href="$router_8c.html#aabab68011cc297e16ad83af25c521bf6" title="authdir_mode_bridge" alt="" coords="204,123,347,149"/>
+<area shape="rect" id="node5" href="$router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="395,123,495,149"/>
+</map>

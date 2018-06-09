@@ -1,0 +1,14 @@
+<map id="origin_circuit_t" name="origin_circuit_t">
+<area shape="rect" id="node2" href="$structcrypt__path__t.html" title="crypt_path_t" alt="" coords="600,209,695,236"/>
+<area shape="rect" id="node13" href="$structcpath__build__state__t.html" title="cpath_build_state_t" alt="" coords="1149,295,1284,321"/>
+<area shape="rect" id="node14" href="$structcrypt__path__reference__t.html" title="crypt_path_reference_t" alt="" coords="817,216,972,243"/>
+<area shape="rect" id="node4" href="$structextend__info__t.html" title="extend_info_t" alt="" coords="313,332,413,359"/>
+<area shape="rect" id="node7" href="$structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="307,204,418,231"/>
+<area shape="rect" id="node9" href="$structonion__handshake__state__t.html" title="onion_handshake_state_t" alt="" coords="277,153,448,180"/>
+<area shape="rect" id="node10" href="$structedge__connection__t.html" title="edge_connection_t" alt="" coords="1151,373,1282,400"/>
+<area shape="rect" id="node5" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="5,507,96,533"/>
+<area shape="rect" id="node6" href="$structcrypto__dh__t.html" title="crypto_dh_t" alt="" coords="5,43,96,69"/>
+<area shape="rect" id="node8" href="$structaes__cnt__cipher.html" title="aes_cnt_cipher" alt="" coords="307,103,418,129"/>
+<area shape="rect" id="node11" href="$structrend__data__t.html" title="rend_data_t" alt="" coords="849,440,940,467"/>
+<area shape="rect" id="node12" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="606,489,689,516"/>
+</map>

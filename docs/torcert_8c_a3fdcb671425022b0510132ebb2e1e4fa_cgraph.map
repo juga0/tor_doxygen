@@ -1,0 +1,4 @@
+<map id="tor_cert_checksig" name="tor_cert_checksig">
+<area shape="rect" id="node2" href="$torcert_8c.html#a40a58d79eaff265358b26288eaf4cc9e" title="tor_cert_get_checkable_sig" alt="" coords="179,5,360,32"/>
+<area shape="rect" id="node3" href="$crypto__ed25519_8c.html#a3328c534892b47f310d62d5c3479d175" title="ed25519_checksig_batch" alt="" coords="185,56,354,83"/>
+</map>

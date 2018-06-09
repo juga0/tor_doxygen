@@ -1,0 +1,4 @@
+<map id="routers_update_all_from_networkstatus" name="routers_update_all_from_networkstatus">
+<area shape="rect" id="node2" href="$routerlist_8c.html#a9181bbed0ee6ff8088a7c53fc8c446f1" title="router_get_routerlist" alt="" coords="228,5,365,32"/>
+<area shape="rect" id="node3" href="$networkstatus_8c.html#a44accdf47b7f9f40b25c45daf2c31475" title="networkstatus_get_reasonably\l_live_consensus" alt="" coords="197,57,396,98"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="config_free_all" name="config_free_all">
+<area shape="rect" id="node2" href="$config_8c.html#a9d66419dd103a30396f877c79c31f137" title="or_options_free" alt="" coords="165,31,275,57"/>
+<area shape="rect" id="node6" href="$confparse_8c.html#af5dc1a4d3c8ec8c56b27ca6e40a8df21" title="config_free_lines" alt="" coords="160,81,280,108"/>
+<area shape="rect" id="node7" href="$config_8c.html#aa6691cf726086717907bc0b918b13d55" title="port_cfg_free" alt="" coords="171,132,269,159"/>
+<area shape="rect" id="node3" href="$routerset_8c.html#a33e9d1e799e9cac73343c73126b104c6" title="routerset_free" alt="" coords="328,5,431,32"/>
+<area shape="rect" id="node5" href="$confparse_8c.html#a166f2d294fb67cfc6af9501599dfe549" title="config_free" alt="" coords="336,56,423,83"/>
+<area shape="rect" id="node4" href="$policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="479,5,596,32"/>
+</map>

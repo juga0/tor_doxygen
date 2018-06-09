@@ -1,0 +1,5 @@
+<map id="crypto_read_tagged_contents_from_file" name="crypto_read_tagged_contents_from_file">
+<area shape="rect" id="node2" href="$crypto__curve25519_8c.html#a7fce12b8d0fef7bbe32c103aaab17412" title="curve25519_keypair\l_read_from_file" alt="" coords="196,5,335,47"/>
+<area shape="rect" id="node3" href="$crypto__ed25519_8c.html#a34a8bd7b192871bd1e5b778961ba2efb" title="ed25519_seckey_read\l_from_file" alt="" coords="189,71,341,112"/>
+<area shape="rect" id="node4" href="$crypto__ed25519_8c.html#aa33c6bb447b0042745d6d2938a12dda4" title="ed25519_pubkey_read\l_from_file" alt="" coords="189,136,341,177"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="tor_digest_is_zero" name="tor_digest_is_zero">
+<area shape="rect" id="node2" href="$channel_8c.html#ab56dc7ecc8a31e8bfa4dc5281b72c21e" title="MOCK_IMPL" alt="" coords="209,5,309,32"/>
+<area shape="rect" id="node3" href="$circuitlist_8h.html#aaef0c4aefe50f0432478e21e51814a34" title="circuit_get_all_pending\l_on_channel" alt="" coords="181,57,336,98"/>
+<area shape="rect" id="node5" href="$connection__or_8h.html#a641743095fae21749e9f4bdf36c8e9e6" title="connection_or_client\l_learned_peer_id" alt="" coords="188,122,329,163"/>
+<area shape="rect" id="node4" href="$circuitlist_8h.html#aa797a036ce04a0d14f669e656ec62408" title="circuit_count_pending\l_on_channel" alt="" coords="384,57,532,98"/>
+</map>

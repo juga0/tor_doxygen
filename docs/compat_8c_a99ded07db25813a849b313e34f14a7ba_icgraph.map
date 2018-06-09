@@ -1,0 +1,8 @@
+<map id="get_n_open_sockets" name="get_n_open_sockets">
+<area shape="rect" id="node2" href="$compat_8c.html#a8e7b99a17b82bcbc2055197c4635e52b" title="tor_open_socket_with\l_extensions" alt="" coords="201,42,351,83"/>
+<area shape="rect" id="node5" href="$compat_8c.html#a7165d92f355a437277606dc56b469830" title="tor_accept_socket_with\l_extensions" alt="" coords="196,107,356,149"/>
+<area shape="rect" id="node3" href="$compat_8c.html#a71e7546ce02736a0fa65c93d17027744" title="MOCK_IMPL" alt="" coords="457,5,557,32"/>
+<area shape="rect" id="node4" href="$compat_8c.html#afa34bb7c861c2c81555132982b60efc0" title="tor_open_socket_nonblocking" alt="" coords="409,56,604,83"/>
+<area shape="rect" id="node6" href="$compat_8c.html#a04ebfd9c92357671caa19adcd269e4a5" title="tor_accept_socket" alt="" coords="442,111,571,137"/>
+<area shape="rect" id="node7" href="$compat_8c.html#a267ccd8feb3a4e5028168a12b58fb679" title="tor_accept_socket_nonblocking" alt="" coords="404,161,609,188"/>
+</map>

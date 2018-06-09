@@ -1,0 +1,6 @@
+<map id="router_rebuild_descriptor" name="router_rebuild_descriptor">
+<area shape="rect" id="node2" href="$router_8c.html#a74a228ad9efff13643397a5c02d7bec7" title="router_get_advertised\l_or_port" alt="" coords="217,39,364,80"/>
+<area shape="rect" id="node3" href="$router_8c.html#a19b606096c7f385bb3db639b1a1c15fe" title="router_get_advertised\l_or_port_by_af" alt="" coords="412,39,559,80"/>
+<area shape="rect" id="node4" href="$config_8c.html#a8b79c094d201fd02944aa463dcc6433c" title="get_first_advertised\l_port_by_type_af" alt="" coords="624,5,760,47"/>
+<area shape="rect" id="node5" href="$router_8c.html#a8bfae58f61a3329fd20f43c378bff0bb" title="router_get_active_listener\l_port_by_type_af" alt="" coords="607,71,777,112"/>
+</map>

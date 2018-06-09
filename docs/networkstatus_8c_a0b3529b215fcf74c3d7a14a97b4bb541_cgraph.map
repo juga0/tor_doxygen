@@ -1,0 +1,5 @@
+<map id="networkstatus_vote_free" name="networkstatus_vote_free">
+<area shape="rect" id="node2" href="$networkstatus_8c.html#af6fa8990a971778c3d879c662c1579a9" title="document_signature_free" alt="" coords="219,5,387,32"/>
+<area shape="rect" id="node3" href="$routerlist_8c.html#a2bb77cd705f2c621023fff9a114c01bf" title="authority_cert_free" alt="" coords="237,56,368,83"/>
+<area shape="rect" id="node4" href="$crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="435,56,543,83"/>
+</map>

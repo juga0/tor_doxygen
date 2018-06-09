@@ -1,0 +1,9 @@
+<map id="MOCK_IMPL" name="MOCK_IMPL">
+<area shape="rect" id="node2" href="$log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="213,5,275,32"/>
+<area shape="rect" id="node3" href="$channel_8c.html#a185d59ac3e69ab26d2b71804cb882993" title="channel_describe_transport" alt="" coords="153,56,335,83"/>
+<area shape="rect" id="node4" href="$channel_8c.html#ac5368fc8c3c7f7b0ce1020927961c92a" title="channel_state_to_string" alt="" coords="164,107,324,133"/>
+<area shape="rect" id="node5" href="$util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="180,157,308,184"/>
+<area shape="rect" id="node7" href="$util_8c.html#a17effd59ed2f9bf4cfebb12e423ded7f" title="hex_str" alt="" coords="211,208,277,235"/>
+<area shape="rect" id="node6" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="396,157,483,184"/>
+<area shape="rect" id="node8" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="383,208,496,235"/>
+</map>

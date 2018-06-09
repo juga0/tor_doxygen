@@ -1,0 +1,15 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/ext" name="/home/user/_my/code/bwauth&#45;related/tor/src/ext">
+<area shape="rect" id="node2" href="dir_122e866ee8852061cc7e88bd954760d3.html" title="curve25519_donna" alt="" coords="536,63,667,111"/>
+<area shape="rect" id="node8" href="dir_fdedb0aba14d44ce9d99bc100e026e6a.html" title="common" alt="" coords="387,159,459,207"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000004_000001.html" title="2" alt="" coords="475,157,483,171"/>
+<area shape="rect" id="node3" href="dir_0c383492c166d25c3d0e1e3a3b11c407.html" title="ed25519" alt="" coords="440,63,512,111"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000005_000001.html" title="12" alt="" coords="445,140,459,154"/>
+<area shape="rect" id="node4" href="dir_dbc7aca96001f09cd657d1dc1c27044b.html" title="keccak&#45;tiny" alt="" coords="326,63,415,111"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000010_000001.html" title="2" alt="" coords="405,131,413,146"/>
+<area shape="rect" id="node5" href="dir_fc1b1bb85e7ccc8a8abc72391b0ca46a.html" title="mulodi" alt="" coords="229,63,301,111"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000011_000001.html" title="1" alt="" coords="369,146,377,160"/>
+<area shape="rect" id="node6" href="dir_ab5683e9bdec6d6d556d1110073c2a18.html" title="timeouts" alt="" coords="133,63,205,111"/>
+<area shape="rect" id="node7" href="dir_f59719ca273ff1c1b6e1352671b18c9f.html" title="trunnel" alt="" coords="37,63,109,111"/>
+<area shape="rect" id="clust2" href="dir_aff658140b5e7b3b627b7275c534a858.html" alt="" coords="27,52,773,121"/>
+<area shape="rect" id="clust1" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" title="src" alt="" coords="16,16,784,132"/>
+</map>

@@ -1,0 +1,30 @@
+<map id="networkstatus_get_param" name="networkstatus_get_param">
+<area shape="rect" id="node2" href="$circpathbias_8c.html#a4a34b780cfd22bf4b72e37aaf6e0e2c0" title="pathbias_get_extreme_rate" alt="" coords="226,5,405,32"/>
+<area shape="rect" id="node3" href="$circpathbias_8c.html#ac18b8c5463815ebbcb9aa440e59b2f83" title="pathbias_get_dropguards" alt="" coords="232,56,399,83"/>
+<area shape="rect" id="node4" href="$circpathbias_8c.html#a01c97964a06ef3c2ef14e6f45eb957c7" title="pathbias_get_extreme\l_use_rate" alt="" coords="240,107,391,149"/>
+<area shape="rect" id="node5" href="$circuitlist_8h.html#afe5c2bcd4138363a8e5ab5943cd19b79" title="circuit_initial_package\l_window" alt="" coords="240,173,391,214"/>
+<area shape="rect" id="node6" href="$circuitmux__ewma_8h.html#a34f42cc6605417f31fc9ba9576721751" title="cell_ewma_set_scale\l_factor" alt="" coords="242,238,389,279"/>
+<area shape="rect" id="node7" href="$or_8h.html#abacdfcf8553c8ea4d5a8f1d7a813b452" title="circuit_build_times\l_quantile_cutoff" alt="" coords="250,303,381,345"/>
+<area shape="rect" id="node8" href="$entrynodes_8c.html#aceef6f16e2ed25782da94e2e4f0f334d" title="decide_num_guards" alt="" coords="246,369,385,396"/>
+<area shape="rect" id="node11" href="$entrynodes_8h.html#abcf00389e72807f2534ffd3da3de31e6" title="should_apply_guardfraction" alt="" coords="225,420,405,447"/>
+<area shape="rect" id="node13" href="$networkstatus_8h.html#afda0b094982877af4c11b127167acb9e" title="networkstatus_get_weight\l_scale_param" alt="" coords="228,478,403,519"/>
+<area shape="rect" id="node16" href="$router_8h.html#afa75de94186fffc8f373de610ae4cab3" title="should_refuse_unknown\l_exits" alt="" coords="234,595,397,637"/>
+<area shape="rect" id="node9" href="$entrynodes_8c.html#aefcc8b3f1675f7480f0123af7def1879" title="entry_guards_set_from\l_config" alt="" coords="461,282,616,323"/>
+<area shape="rect" id="node10" href="$entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="471,347,606,389"/>
+<area shape="rect" id="node12" href="$routerparse_8c.html#aa5182e7b61c8640ef94186a19760d90c" title="routerstatus_parse\l_guardfraction" alt="" coords="473,413,604,454"/>
+<area shape="rect" id="node14" href="$networkstatus_8h.html#ad2a338c07af7ab37504729f7c1404b55" title="networkstatus_get_bw\l_weight" alt="" coords="462,478,615,519"/>
+<area shape="rect" id="node15" href="$routerparse_8h.html#aadb249c6c48887d46e7fc9d396f26c21" title="networkstatus_verify\l_bw_weights" alt="" coords="690,478,833,519"/>
+<area shape="rect" id="node17" href="$dirserv_8h.html#a0b84786e17352524036694baf1955167" title="directory_fetches_from\l_authorities" alt="" coords="461,595,616,637"/>
+<area shape="rect" id="node22" href="$dirserv_8h.html#a57e2ff1ad2ea65abe9b969ad3d76a418" title="directory_caches_dir_info" alt="" coords="453,792,624,819"/>
+<area shape="rect" id="node18" href="$directory_8c.html#a2dcb34e25124200a8694ef07275a50b2" title="MOCK_IMPL" alt="" coords="711,544,811,571"/>
+<area shape="rect" id="node19" href="$dirserv_8h.html#ab38d643312052d4bfdb7d49dcba344a6" title="directory_fetches_dir\l_info_early" alt="" coords="690,595,833,637"/>
+<area shape="rect" id="node21" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="1579,705,1707,746"/>
+<area shape="rect" id="node20" href="$routerlist_8h.html#a33e8618001c42bd50575051362aaffa2" title="launch_descriptor_downloads" alt="" coords="899,603,1092,629"/>
+<area shape="rect" id="node23" href="$dirserv_8h.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="688,755,835,797"/>
+<area shape="rect" id="node28" href="$microdesc_8h.html#ad9c983a76a2f31a6a843f4df9be7de1d" title="we_fetch_microdescriptors" alt="" coords="672,821,851,848"/>
+<area shape="rect" id="node29" href="$microdesc_8h.html#a2667d23ef05f514b5bf916791b4a6bbd" title="we_fetch_router_descriptors" alt="" coords="902,880,1089,907"/>
+<area shape="rect" id="node24" href="$microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="1140,763,1337,789"/>
+<area shape="rect" id="node26" href="$routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="910,814,1081,855"/>
+<area shape="rect" id="node25" href="$routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="1385,763,1531,805"/>
+<area shape="rect" id="node27" href="$routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="1156,814,1321,855"/>
+</map>

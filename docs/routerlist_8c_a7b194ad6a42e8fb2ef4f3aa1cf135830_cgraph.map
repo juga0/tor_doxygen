@@ -1,0 +1,7 @@
+<map id="router_load_single_router" name="router_load_single_router">
+<area shape="rect" id="node2" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="219,5,306,32"/>
+<area shape="rect" id="node4" href="$router_8c.html#a9ca20e44509fa800ecf49f25bef1cd52" title="router_purpose_to_string" alt="" coords="180,56,345,83"/>
+<area shape="rect" id="node5" href="$routerparse_8c.html#a6ed67129e89fe64d2f329a1e94063f48" title="router_parse_entry\l_from_string" alt="" coords="197,107,328,149"/>
+<area shape="rect" id="node3" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="399,5,494,32"/>
+<area shape="rect" id="node6" href="$memarea_8c.html#a9bc481c5060ff6280cfb1e5eaaa915f4" title="memarea_new" alt="" coords="393,115,500,141"/>
+</map>

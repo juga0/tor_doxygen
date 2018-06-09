@@ -1,0 +1,4 @@
+<map id="ed25519_public_from_base64" name="ed25519_public_from_base64">
+<area shape="rect" id="node2" href="$crypto__format_8c.html#ad36a0f87e412633df8fdf6e0ab3028d8" title="digest256_from_base64" alt="" coords="199,13,359,39"/>
+<area shape="rect" id="node3" href="$util__format_8c.html#a21c1486a0e17c055aed65a12ec364350" title="base64_decode" alt="" coords="407,13,520,39"/>
+</map>

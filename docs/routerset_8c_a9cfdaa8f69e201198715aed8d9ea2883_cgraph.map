@@ -1,0 +1,7 @@
+<map id="routerset_union" name="routerset_union">
+<area shape="rect" id="node2" href="$routerset_8c.html#a3f9f953643addf051db5f19f6c1b849e" title="routerset_to_string" alt="" coords="164,5,295,32"/>
+<area shape="rect" id="node3" href="$routerset_8c.html#a645fa8cb91eabbc3b84e42a65486caab" title="routerset_parse" alt="" coords="173,56,285,83"/>
+<area shape="rect" id="node4" href="$container_8c.html#a1d75cac5583c66900c032ba972ffabc8" title="smartlist_split_string" alt="" coords="343,31,485,57"/>
+<area shape="rect" id="node5" href="$router_8c.html#abc033c75201ad04ae8327fcce6edbb4c" title="is_legal_hexdigest" alt="" coords="349,81,479,108"/>
+<area shape="rect" id="node6" href="$router_8c.html#a7836bf949d53e2d964b72447c513d324" title="is_legal_nickname" alt="" coords="533,81,663,108"/>
+</map>

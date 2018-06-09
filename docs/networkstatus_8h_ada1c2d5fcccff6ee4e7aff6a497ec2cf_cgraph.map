@@ -1,0 +1,7 @@
+<map id="networkstatus_dump_bridge_status_to_file" name="networkstatus_dump_bridge_status_to_file">
+<area shape="rect" id="node2" href="$networkstatus_8c.html#a522e50eabe88fdafcc39b375b6e4cced" title="networkstatus_getinfo\l_by_purpose" alt="" coords="203,57,353,98"/>
+<area shape="rect" id="node3" href="$routerlist_8c.html#a9181bbed0ee6ff8088a7c53fc8c446f1" title="router_get_routerlist" alt="" coords="404,5,541,32"/>
+<area shape="rect" id="node4" href="$router_8c.html#a5822c27ea2e28fd0ff19da0dbc612611" title="router_purpose_from\l_string" alt="" coords="402,57,543,98"/>
+<area shape="rect" id="node5" href="$router_8c.html#aabab68011cc297e16ad83af25c521bf6" title="authdir_mode_bridge" alt="" coords="401,123,544,149"/>
+<area shape="rect" id="node6" href="$router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="592,123,692,149"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="add_connection_to_closeable_list" name="add_connection_to_closeable_list">
+<area shape="rect" id="node2" href="$container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="281,5,409,32"/>
+<area shape="rect" id="node3" href="$connection_8c.html#a738d9e7ef0c4a101c2adbd4cade35475" title="assert_connection_ok" alt="" coords="271,56,420,83"/>
+<area shape="rect" id="node4" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="295,107,395,133"/>
+</map>

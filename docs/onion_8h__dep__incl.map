@@ -1,0 +1,9 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/onion.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/onion.h">
+<area shape="rect" id="node2" href="$circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="$command_8c.html" title="Functions for processing incoming cells. " alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="$cpuworker_8c.html" title="Uses the workqueue/threadpool code to farm CPU&#45;intensive activities out to subprocesses. " alt="" coords="521,109,669,165"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="693,109,841,165"/>
+<area shape="rect" id="node7" href="$onion_8c.html" title="Functions to queue create cells, wrap the various onionskin types, and parse and create the CREATE ce..." alt="" coords="865,109,1013,165"/>
+<area shape="rect" id="node8" href="$relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="1037,109,1185,165"/>
+</map>

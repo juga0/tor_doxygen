@@ -1,0 +1,23 @@
+<map id="authdir_mode" name="authdir_mode">
+<area shape="rect" id="node2" href="$connection_8h.html#af717f75714620d7187bcdaae2df1434e" title="global_write_bucket_low" alt="" coords="157,139,321,165"/>
+<area shape="rect" id="node3" href="$rephist_8h.html#ab26034f0ea8dbd53bbe580f88de3adb6" title="rep_history_clean" alt="" coords="177,189,301,216"/>
+<area shape="rect" id="node5" href="$router_8h.html#a71fbf956eedbc38a293306c9bf1962e7" title="authdir_mode_v3" alt="" coords="178,240,299,267"/>
+<area shape="rect" id="node12" href="$router_8h.html#aabab68011cc297e16ad83af25c521bf6" title="authdir_mode_bridge" alt="" coords="167,357,310,384"/>
+<area shape="rect" id="node18" href="$routerlist_8h.html#a6c38eadb28cf4532a7623c5aa1885cec" title="router_digest_is_trusted\l_dir_type" alt="" coords="158,409,319,450"/>
+<area shape="rect" id="node19" href="$routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="153,506,324,547"/>
+<area shape="rect" id="node4" href="$rephist_8h.html#a86f2c4294a880006745284556ecbf7a6" title="rep_hist_dump_stats" alt="" coords="408,5,551,32"/>
+<area shape="rect" id="node6" href="$dirvote_8h.html#aab7ea3ac9bbece8dbdd6c3c167dc0ae9" title="dirvote_recalculate\l_timing" alt="" coords="414,57,545,98"/>
+<area shape="rect" id="node7" href="$dirvote_8h.html#a333f56fb4797757ca9e04bee1550cabe" title="dirvote_act" alt="" coords="436,123,523,149"/>
+<area shape="rect" id="node8" href="$networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="372,174,587,215"/>
+<area shape="rect" id="node10" href="$nodelist_8h.html#a88530130321dca1f862717bfb5a0834a" title="nodelist_set_consensus" alt="" coords="398,240,561,267"/>
+<area shape="rect" id="node11" href="$router_8h.html#a1ccf29e1bf3d8e43591f66d2a5118a6b" title="v3_authority_check\l_key_expiry" alt="" coords="412,291,547,333"/>
+<area shape="rect" id="node9" href="$routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="643,174,776,215"/>
+<area shape="rect" id="node13" href="$dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="398,357,561,384"/>
+<area shape="rect" id="node14" href="$networkstatus_8h.html#a522e50eabe88fdafcc39b375b6e4cced" title="networkstatus_getinfo\l_by_purpose" alt="" coords="404,409,555,450"/>
+<area shape="rect" id="node16" href="$router_8h.html#aea820da6141eaf03649558d4ec6d5872" title="authdir_mode_publishes\l_statuses" alt="" coords="398,474,561,515"/>
+<area shape="rect" id="node15" href="$networkstatus_8h.html#ada1c2d5fcccff6ee4e7aff6a497ec2cf" title="networkstatus_dump\l_bridge_status_to_file" alt="" coords="635,409,784,450"/>
+<area shape="rect" id="node17" href="$dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="636,481,783,508"/>
+<area shape="rect" id="node20" href="$routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="397,539,562,581"/>
+<area shape="rect" id="node21" href="$routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="637,539,782,581"/>
+<area shape="rect" id="node22" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="832,539,960,581"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="get_transport_proxy_ports" name="get_transport_proxy_ports">
+<area shape="rect" id="node2" href="$util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="191,31,341,57"/>
+<area shape="rect" id="node3" href="$util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="389,31,547,57"/>
+<area shape="rect" id="node4" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="597,5,692,32"/>
+<area shape="rect" id="node5" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="595,56,695,83"/>
+</map>

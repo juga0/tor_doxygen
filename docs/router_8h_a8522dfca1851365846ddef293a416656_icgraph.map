@@ -1,0 +1,7 @@
+<map id="authdir_mode_handles_descs" name="authdir_mode_handles_descs">
+<area shape="rect" id="node2" href="$dirserv_8h.html#a0c97fbc43a4398a45feb2fafa3d42fc1" title="dirserv_should_launch\l_reachability_test" alt="" coords="209,5,360,47"/>
+<area shape="rect" id="node5" href="$router_8h.html#a652eb5a350d7730a18c7de2605d435f4" title="authdir_mode_tests\l_reachability" alt="" coords="217,71,353,112"/>
+<area shape="rect" id="node6" href="$routerlist_8h.html#ab1878aef0f1dd92c783d5477248b985d" title="router_add_to_routerlist" alt="" coords="205,137,364,163"/>
+<area shape="rect" id="node3" href="$networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="412,5,627,47"/>
+<area shape="rect" id="node4" href="$routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="675,5,808,47"/>
+</map>

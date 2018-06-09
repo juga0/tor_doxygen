@@ -1,0 +1,51 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/common/crypto.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/common/crypto.h">
+<area shape="rect" id="node2" href="$address__set_8c.html" title="Implementation for a set of addresses. " alt="" coords="5,117,189,173"/>
+<area shape="rect" id="node3" href="$aes_8c.html" title="Implements a counter&#45;mode stream cipher on top of AES. " alt="" coords="214,117,362,173"/>
+<area shape="rect" id="node4" href="$compat__libevent_8c.html" title="Wrappers and utility functions for Libevent. " alt="" coords="387,117,595,173"/>
+<area shape="rect" id="node5" href="$container_8c.html" title="Implements a smartlist (a resizable array) along with helper functions to use smartlists. Also includes hash table implementations of a string&#45;to&#45;void* map, and of a digest&#45;to&#45;void* map. " alt="" coords="619,117,786,173"/>
+<area shape="rect" id="node6" href="$crypto_8c.html" title="Wrapper functions to present a consistent interface to public&#45;key and symmetric cryptography operatio..." alt="" coords="811,117,960,173"/>
+<area shape="rect" id="node7" href="$crypto__curve25519_8c.html" title="Wrapper code for a curve25519 implementation. " alt="" coords="985,117,1207,173"/>
+<area shape="rect" id="node8" href="$crypto__ed25519_8c.html" title="Wrapper code for an ed25519 implementation. " alt="" coords="1232,117,1437,173"/>
+<area shape="rect" id="node9" href="$crypto__format_8c.html" title="Formatting and parsing code for crypto&#45;related data structures. " alt="" coords="1462,117,1655,173"/>
+<area shape="rect" id="node10" href="$crypto__pwbox_8c.html" title="Code for encrypting secrets in a password&#45;protected form and saving them to disk. ..." alt="" coords="1680,117,1875,173"/>
+<area shape="rect" id="node11" href="$crypto__s2k_8c.html" title="Functions for deriving keys from human&#45;readable passphrases. " alt="" coords="1899,117,2077,173"/>
+<area shape="rect" id="node12" href="$tortls_8c.html" title="Wrapper functions to present a consistent interface to TLS, SSL, and X.509 functions from OpenSSL..." alt="" coords="1669,228,1817,284"/>
+<area shape="rect" id="node13" href="$tortls_8h.html" title="Headers for tortls.c. " alt="" coords="2153,117,2301,173"/>
+<area shape="rect" id="node14" href="$or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1841,228,1989,284"/>
+<area shape="rect" id="node27" href="$circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="3193,540,3341,596"/>
+<area shape="rect" id="node44" href="$util_8c.html" title="Common functions for strings, IO, network, data structures, process control. " alt="" coords="2427,117,2575,173"/>
+<area shape="rect" id="node45" href="$ed25519-randombytes-custom_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/donna\l/ed25519&#45;randombytes&#45;custom.h" alt="" coords="2599,109,2811,180"/>
+<area shape="rect" id="node46" href="$randombytes_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/randombytes.h" alt="" coords="2836,109,2988,180"/>
+<area shape="rect" id="node47" href="$keypin_8c.html" title="Functions and structures for associating routers&#39; RSA key fingerprints with their ED25519 keys..." alt="" coords="3013,117,3161,173"/>
+<area shape="rect" id="node48" href="$onion__ntor_8c.html" title="Implementation for the ntor handshake. " alt="" coords="3185,117,3333,173"/>
+<area shape="rect" id="node49" href="$torcert_8c.html" title="Implementation for ed25519&#45;signed certificates as used in the Tor protocol. " alt="" coords="3357,117,3505,173"/>
+<area shape="rect" id="node50" href="$trunnel-local_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/trunnel/trunnel\l&#45;local.h" alt="" coords="3529,109,3677,180"/>
+<area shape="rect" id="node15" href="$addressmap_8c.html" title="The addressmap module manages the processes by which we rewrite addresses in client requess..." alt="" coords="2013,332,2161,388"/>
+<area shape="rect" id="node16" href="$buffers_8c.html" title="Implements a generic buffer interface. " alt="" coords="2990,332,3138,388"/>
+<area shape="rect" id="node17" href="$channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="1001,644,1149,700"/>
+<area shape="rect" id="node18" href="$channel_8h.html" title="Header file for channel.c. " alt="" coords="1389,436,1537,492"/>
+<area shape="rect" id="node19" href="$channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="1214,540,1362,596"/>
+<area shape="rect" id="node20" href="$channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances..." alt="" coords="787,644,935,700"/>
+<area shape="rect" id="node21" href="$connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="1377,644,1525,700"/>
+<area shape="rect" id="node22" href="$connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="1185,644,1340,700"/>
+<area shape="rect" id="node23" href="$control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1982,644,2130,700"/>
+<area shape="rect" id="node24" href="$scheduler_8h.html" title="Header file for scheduler.c. " alt="" coords="838,540,986,596"/>
+<area shape="rect" id="node25" href="$config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="437,644,585,700"/>
+<area shape="rect" id="node26" href="$circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="1539,540,1687,596"/>
+<area shape="rect" id="node28" href="$circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. " alt="" coords="1711,540,1859,596"/>
+<area shape="rect" id="node29" href="$circuitmux_8c.html" title="Circuit mux/cell selection abstraction. " alt="" coords="411,540,559,596"/>
+<area shape="rect" id="node30" href="$circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. " alt="" coords="1935,540,2083,596"/>
+<area shape="rect" id="node31" href="$command_8c.html" title="Functions for processing incoming cells. " alt="" coords="2303,540,2451,596"/>
+<area shape="rect" id="node32" href="$connection__edge_8c.html" title="Handle edge streams. " alt="" coords="2107,540,2279,596"/>
+<area shape="rect" id="node33" href="$cpuworker_8c.html" title="Uses the workqueue/threadpool code to farm CPU&#45;intensive activities out to subprocesses. " alt="" coords="2774,540,2922,596"/>
+<area shape="rect" id="node34" href="$circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="523,332,671,388"/>
+<area shape="rect" id="node35" href="$circuitmux__ewma_8h.html" title="Header file for circuitmux_ewma.c. " alt="" coords="203,436,379,492"/>
+<area shape="rect" id="node36" href="$circuitmux__ewma_8c.html" title="EWMA circuit selection as a circuitmux_t policy. " alt="" coords="59,540,235,596"/>
+<area shape="rect" id="node37" href="$rendcache_8h.html" title="Header file for rendcache.c. " alt="" coords="2474,332,2622,388"/>
+<area shape="rect" id="node38" href="$circuitstats_8c.html" title="Maintains and analyzes statistics about circuit built times, so we can tell how long we may need to w..." alt="" coords="2067,436,2215,492"/>
+<area shape="rect" id="node39" href="$rendservice_8h.html" title="Header file for rendservice.c. " alt="" coords="1841,332,1989,388"/>
+<area shape="rect" id="node40" href="$directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="2294,436,2442,492"/>
+<area shape="rect" id="node41" href="$confparse_8c.html" title="Back&#45;end for parsing and generating key&#45;value files, used to implement the torrc file format and the ..." alt="" coords="2646,332,2794,388"/>
+<area shape="rect" id="node42" href="$dircollate_8h.html" title="Header file for dircollate.c. " alt="" coords="2818,332,2966,388"/>
+<area shape="rect" id="node43" href="$shared__random_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/or/shared_random.h" alt="" coords="2287,332,2449,388"/>
+</map>

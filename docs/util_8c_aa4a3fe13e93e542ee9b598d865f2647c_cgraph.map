@@ -1,0 +1,5 @@
+<map id="start_writing_to_stdio_file" name="start_writing_to_stdio_file">
+<area shape="rect" id="node2" href="$util_8c.html#a5f3fb0bdeb712732f51d0f9e3b0c849c" title="start_writing_to_file" alt="" coords="226,5,361,32"/>
+<area shape="rect" id="node3" href="$util_8c.html#ac0cbd74a7fe81a4aa5efab4d87628ea0" title="fdopen_file" alt="" coords="251,56,336,83"/>
+<area shape="rect" id="node4" href="$util_8c.html#ac55ed8b7b00f14493effd493a957ddf1" title="abort_writing_to_file" alt="" coords="224,107,363,133"/>
+</map>

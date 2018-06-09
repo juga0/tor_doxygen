@@ -1,0 +1,7 @@
+<map id="crypto_pk_private_sign_digest" name="crypto_pk_private_sign_digest">
+<area shape="rect" id="node2" href="$crypto_8c.html#adc1609ea0f9d65a1f60225cb001eeb15" title="crypto_digest" alt="" coords="237,5,337,32"/>
+<area shape="rect" id="node3" href="$crypto_8c.html#a5acc83e912de445c2e7f5655ec9fd031" title="crypto_pk_private_sign" alt="" coords="209,56,365,83"/>
+<area shape="rect" id="node6" href="$crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="248,107,327,133"/>
+<area shape="rect" id="node4" href="$crypto_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="433,31,564,57"/>
+<area shape="rect" id="node5" href="$crypto_8c.html#ac98516bae03ece6a3b42bab9a02b35bc" title="crypto_pk_key_is_private" alt="" coords="413,81,584,108"/>
+</map>

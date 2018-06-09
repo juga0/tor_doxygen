@@ -1,0 +1,6 @@
+<map id="dns_servers_relaunch_checks" name="dns_servers_relaunch_checks">
+<area shape="rect" id="node2" href="$dns_8c.html#a307a827eed6277f5125f6503da3ddbe2" title="dns_reset_correctness\l_checks" alt="" coords="213,23,368,65"/>
+<area shape="rect" id="node5" href="$periodic_8c.html#ad9c12c89ef415b3c131f39f68534a974" title="periodic_event_reschedule" alt="" coords="203,89,379,116"/>
+<area shape="rect" id="node3" href="$util_8c.html#a40d94cc20afc38582c65aa418919ebed" title="tor_free_" alt="" coords="443,5,517,32"/>
+<area shape="rect" id="node4" href="$container_8c.html#ad24500d61ff1dbb6c845a8a70f6d2f14" title="smartlist_clear" alt="" coords="427,56,533,83"/>
+</map>

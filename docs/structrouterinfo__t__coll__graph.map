@@ -1,0 +1,5 @@
+<map id="routerinfo_t" name="routerinfo_t">
+<area shape="rect" id="node3" href="$structcurve25519__public__key__t.html" title="curve25519_public_key_t" alt="" coords="84,5,253,32"/>
+<area shape="rect" id="node4" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="299,5,390,32"/>
+<area shape="rect" id="node5" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="414,5,497,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="origin_circuit_init" name="origin_circuit_init">
+<area shape="rect" id="node2" href="$circuitlist_8c.html#a543a0ac445cdd07bd65cd176092a48a8" title="origin_circuit_new" alt="" coords="172,5,299,32"/>
+<area shape="rect" id="node3" href="$circuitlist_8c.html#a59a56e94fe3ac816942314b7172c3b30" title="circuit_set_state" alt="" coords="176,56,295,83"/>
+<area shape="rect" id="node4" href="$container_8c.html#ad318adf5db2ec229a43c0c567e1f6fce" title="smartlist_remove" alt="" coords="347,31,469,57"/>
+<area shape="rect" id="node5" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="358,81,458,108"/>
+</map>

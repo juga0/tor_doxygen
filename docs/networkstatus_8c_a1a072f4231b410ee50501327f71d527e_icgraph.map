@@ -1,0 +1,5 @@
+<map id="networkstatus_parse_flavor_name" name="networkstatus_parse_flavor_name">
+<area shape="rect" id="node2" href="$networkstatus_8h.html#af85567c13446bbbae84ce4199b3b2134" title="networkstatus_consensus\l_download_failed" alt="" coords="197,5,371,47"/>
+<area shape="rect" id="node3" href="$networkstatus_8h.html#a2bc8e47c7dbfc9cb7dbabab161bd6764" title="networkstatus_set_current\l_consensus" alt="" coords="196,71,372,112"/>
+<area shape="rect" id="node4" href="$networkstatus_8h.html#a6d51fc24064bd6b1e7f3d148bddba693" title="networkstatus_note\l_certs_arrived" alt="" coords="420,71,556,112"/>
+</map>

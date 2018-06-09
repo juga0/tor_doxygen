@@ -1,0 +1,6 @@
+<map id="is_legal_nickname" name="is_legal_nickname">
+<area shape="rect" id="node2" href="$router_8h.html#a9256a0243b94ae50164d9d0df1df9042" title="is_legal_nickname_or\l_hexdigest" alt="" coords="360,5,507,47"/>
+<area shape="rect" id="node3" href="$router_8h.html#abc033c75201ad04ae8327fcce6edbb4c" title="is_legal_hexdigest" alt="" coords="183,63,312,90"/>
+<area shape="rect" id="node4" href="$routerset_8c.html#a645fa8cb91eabbc3b84e42a65486caab" title="routerset_parse" alt="" coords="377,71,489,98"/>
+<area shape="rect" id="node5" href="$routerset_8c.html#a9cfdaa8f69e201198715aed8d9ea2883" title="routerset_union" alt="" coords="555,71,665,98"/>
+</map>

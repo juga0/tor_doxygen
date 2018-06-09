@@ -1,0 +1,4 @@
+<map id="update_extrainfo_downloads" name="update_extrainfo_downloads">
+<area shape="rect" id="node2" href="$networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf" title="should_delay_dir_fetches" alt="" coords="439,5,608,32"/>
+<area shape="rect" id="node3" href="$nodelist_8c.html#af33ffac546e0698e054eb3183e6579ae" title="router_have_minimum\l_dir_info" alt="" coords="240,27,391,69"/>
+</map>

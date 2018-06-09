@@ -1,0 +1,5 @@
+<map id="ed25519_signature_to_base64" name="ed25519_signature_to_base64">
+<area shape="rect" id="node2" href="$util__format_8c.html#a3f919cffd152c1dc1383c93ea6aa2c91" title="base64_encode_nopad" alt="" coords="203,13,357,39"/>
+<area shape="rect" id="node3" href="$util__format_8c.html#a2394b082102cdbb3d443955e9b056e0e" title="base64_encode" alt="" coords="405,13,519,39"/>
+<area shape="rect" id="node4" href="$util__format_8c.html#a733f32f58c6056750ad6f64228af51b2" title="base64_encode_size" alt="" coords="567,13,711,39"/>
+</map>

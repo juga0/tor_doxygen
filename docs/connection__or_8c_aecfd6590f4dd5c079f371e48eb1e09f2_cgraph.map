@@ -1,0 +1,6 @@
+<map id="connection_or_block_renegotiation" name="connection_or_block_renegotiation">
+<area shape="rect" id="node2" href="$tortls_8c.html#a5823cfa710f0f7987d09dfececae28d0" title="tor_tls_set_renegotiate\l_callback" alt="" coords="206,35,361,76"/>
+<area shape="rect" id="node5" href="$tortls_8c.html#a08342968552b84d5dfbd6493338f6058" title="tor_tls_block_renegotiation" alt="" coords="195,101,372,127"/>
+<area shape="rect" id="node3" href="$tortls_8c.html#a3b0c0880a231328e1b5d7faa01fddcd9" title="tor_tls_server_info\l_callback" alt="" coords="420,5,549,47"/>
+<area shape="rect" id="node4" href="$tortls_8c.html#a6f66b1039c2f3e00e4d4602f19d5ab02" title="tor_tls_debug_state\l_callback" alt="" coords="597,35,733,76"/>
+</map>

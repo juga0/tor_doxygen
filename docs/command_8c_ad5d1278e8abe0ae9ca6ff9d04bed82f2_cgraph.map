@@ -1,0 +1,5 @@
+<map id="command_setup_channel" name="command_setup_channel">
+<area shape="rect" id="node2" href="$channel_8c.html#a5c26cbf4843fb4609f3f0c1eee87498c" title="channel_set_cell_handlers" alt="" coords="229,5,403,32"/>
+<area shape="rect" id="node3" href="$command_8c.html#a1e6109e2d1a1b76f296a7abd9afac9d4" title="command_process_cell" alt="" coords="237,56,395,83"/>
+<area shape="rect" id="node4" href="$command_8c.html#a6eeb7c052f4864ea43d75468abd897f5" title="command_process_var_cell" alt="" coords="224,107,408,133"/>
+</map>

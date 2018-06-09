@@ -1,0 +1,5 @@
+<map id="client_dns_set_reverse_addressmap" name="client_dns_set_reverse_addressmap">
+<area shape="rect" id="node2" href="$address_8c.html#a3cd537bd8104a89a5996793ee3f1d0dc" title="tor_addr_parse" alt="" coords="209,5,317,32"/>
+<area shape="rect" id="node3" href="$compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="220,56,307,83"/>
+<area shape="rect" id="node4" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="365,56,460,83"/>
+</map>

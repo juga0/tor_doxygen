@@ -1,0 +1,9 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/command.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/command.h">
+<area shape="rect" id="node2" href="$channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances..." alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="$command_8c.html" title="Functions for processing incoming cells. " alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="$connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="522,109,677,165"/>
+<area shape="rect" id="node6" href="$control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="701,109,849,165"/>
+<area shape="rect" id="node7" href="$dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="873,109,1021,165"/>
+<area shape="rect" id="node8" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="1045,109,1193,165"/>
+</map>

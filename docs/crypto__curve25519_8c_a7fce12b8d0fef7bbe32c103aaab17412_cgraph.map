@@ -1,0 +1,8 @@
+<map id="curve25519_keypair_read_from_file" name="curve25519_keypair_read_from_file">
+<area shape="rect" id="node2" href="$crypto__format_8c.html#a40e1ed638568c15cac66b16cf427b4e7" title="crypto_read_tagged\l_contents_from_file" alt="" coords="203,58,339,99"/>
+<area shape="rect" id="node6" href="$crypto__curve25519_8c.html#a68cbc7d4be1ea064154cbca18d51a53d" title="curve25519_public_key\l_generate" alt="" coords="192,133,351,174"/>
+<area shape="rect" id="node3" href="$util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="446,5,534,32"/>
+<area shape="rect" id="node4" href="$util_8c.html#a28445ce92bb84e6413d5437428dae850" title="strcmpend" alt="" coords="449,56,531,83"/>
+<area shape="rect" id="node5" href="$util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="429,107,551,133"/>
+<area shape="rect" id="node7" href="$crypto__curve25519_8c.html#af77c6aa2312f4e598306ffe516b8dfd1" title="curve25519_basepoint_impl" alt="" coords="399,157,581,184"/>
+</map>

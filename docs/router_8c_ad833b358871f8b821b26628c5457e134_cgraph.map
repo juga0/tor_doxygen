@@ -1,0 +1,5 @@
+<map id="set_server_identity_key" name="set_server_identity_key">
+<area shape="rect" id="node2" href="$crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="233,5,341,32"/>
+<area shape="rect" id="node3" href="$crypto_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="213,56,360,83"/>
+<area shape="rect" id="node4" href="$crypto_8c.html#adc1609ea0f9d65a1f60225cb001eeb15" title="crypto_digest" alt="" coords="408,56,508,83"/>
+</map>

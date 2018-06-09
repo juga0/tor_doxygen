@@ -1,0 +1,7 @@
+<map id="log_heartbeat" name="log_heartbeat">
+<area shape="rect" id="node2" href="$status_8c.html#a963a0d6030b8281fb99dd747d846f07b" title="secs_to_uptime" alt="" coords="153,5,268,32"/>
+<area shape="rect" id="node5" href="$status_8c.html#a01e4f8019372bf2266507c072a7f23f6" title="bytes_to_usage" alt="" coords="153,56,268,83"/>
+<area shape="rect" id="node6" href="$status_8c.html#a11263332e2e913fd4ce1a8ac794e799f" title="count_circuits" alt="" coords="159,107,262,133"/>
+<area shape="rect" id="node3" href="$compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="316,31,403,57"/>
+<area shape="rect" id="node4" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="451,31,545,57"/>
+</map>

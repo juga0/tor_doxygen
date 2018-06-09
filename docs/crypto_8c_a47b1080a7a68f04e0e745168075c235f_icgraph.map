@@ -1,0 +1,11 @@
+<map id="crypto_pk_keysize" name="crypto_pk_keysize">
+<area shape="rect" id="node2" href="$crypto_8h.html#a9b6359e576f3d22833ee2dc72ebda585" title="crypto_pk_public_encrypt" alt="" coords="188,5,359,32"/>
+<area shape="rect" id="node3" href="$crypto_8h.html#a73b93822d2a8fa4b21174f106defa772" title="crypto_pk_private_decrypt" alt="" coords="186,56,361,83"/>
+<area shape="rect" id="node4" href="$crypto_8h.html#a41eb7a34ded0b5ef839a2b753fa5a578" title="crypto_pk_private_hybrid\l_decrypt" alt="" coords="411,59,577,101"/>
+<area shape="rect" id="node5" href="$crypto_8h.html#ae7f05f925522f1e46127625512f16b25" title="crypto_pk_public_checksig" alt="" coords="184,157,363,184"/>
+<area shape="rect" id="node6" href="$crypto_8h.html#a5acc83e912de445c2e7f5655ec9fd031" title="crypto_pk_private_sign" alt="" coords="195,208,351,235"/>
+<area shape="rect" id="node9" href="$routerparse_8h.html#ada91c927ebf9cb2a3b92b285198f172a" title="router_get_dirobj_signature" alt="" coords="184,265,363,292"/>
+<area shape="rect" id="node7" href="$crypto_8h.html#ac6f0f5c0ab3d2230d7c2ec0ed1794450" title="crypto_pk_private_sign\l_digest" alt="" coords="416,135,572,177"/>
+<area shape="rect" id="node8" href="$routerkeys_8c.html#a501cbbf6be9a4449c5976ccacc8b2cc4" title="make_tap_onion_key\l_crosscert" alt="" coords="421,201,567,242"/>
+<area shape="rect" id="node10" href="$routerparse_8h.html#a594cb966cbb2893822d931ffe955b53d" title="router_append_dirobj\l_signature" alt="" coords="423,266,565,307"/>
+</map>

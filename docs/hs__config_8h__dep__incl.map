@@ -1,0 +1,9 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/hs_config.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/hs_config.h">
+<area shape="rect" id="node2" href="$config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$hs__config_8c.html" title="Implement hidden service configuration subsystem. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="$hs__descriptor_8c.html" title="Handle hidden service descriptor encoding/decoding. " alt="" coords="350,109,502,165"/>
+<area shape="rect" id="node5" href="$hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="527,109,675,165"/>
+<area shape="rect" id="node6" href="$rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="699,109,847,165"/>
+<area shape="rect" id="node7" href="$test__hs__config_8c.html" title="Test hidden service configuration functionality. " alt="" coords="871,109,1042,165"/>
+<area shape="rect" id="node8" href="$test__hs__service_8c.html" title="Test hidden service functionality. " alt="" coords="1067,109,1244,165"/>
+</map>

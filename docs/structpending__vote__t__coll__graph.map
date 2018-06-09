@@ -1,0 +1,6 @@
+<map id="pending_vote_t" name="pending_vote_t">
+<area shape="rect" id="node2" href="$structnetworkstatus__t.html" title="networkstatus_t" alt="" coords="143,183,258,209"/>
+<area shape="rect" id="node3" href="$structcommon__digests__t.html" title="common_digests_t" alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node6" href="$structcached__dir__t.html" title="cached_dir_t" alt="" coords="17,183,113,209"/>
+<area shape="rect" id="node5" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="259,5,342,32"/>
+</map>

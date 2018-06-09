@@ -1,0 +1,5 @@
+<map id="dirserv_set_routerstatus_testing" name="dirserv_set_routerstatus_testing">
+<area shape="rect" id="node2" href="$routerset_8c.html#a46e8468ce37722ff71b91efd9d2f7ff0" title="routerset_contains\l_routerstatus" alt="" coords="216,5,345,47"/>
+<area shape="rect" id="node3" href="$routerset_8c.html#a1eda4526d656d042e5143ec79ee66be2" title="routerset_contains" alt="" coords="393,13,523,39"/>
+<area shape="rect" id="node4" href="$container_8c.html#a1406b823cb6088df755f1b81153d137e" title="strmap_get_lc" alt="" coords="571,13,675,39"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="rend_valid_service_id" name="rend_valid_service_id">
+<area shape="rect" id="node2" href="$rendcache_8h.html#ad9955a4d0f958b0bd0222b5d2c278015" title="rend_cache_lookup_entry" alt="" coords="208,111,379,138"/>
+<area shape="rect" id="node8" href="$rendservice_8h.html#a9adfef842de9b8aec233a9046b9faeb2" title="rend_service_del_ephemeral" alt="" coords="200,162,387,189"/>
+<area shape="rect" id="node3" href="$rendclient_8h.html#a69147b3604e7988bbe30715c04fb1ee2" title="rend_client_refetch\l_v2_renddesc" alt="" coords="462,5,594,47"/>
+<area shape="rect" id="node4" href="$rendclient_8h.html#acb88060f4b84c006debe7de7e0eb7eaf" title="rend_client_report\l_intro_point_failure" alt="" coords="463,71,593,112"/>
+<area shape="rect" id="node5" href="$rendclient_8h.html#ab6a404500892962da09d28a99822d176" title="rend_client_note_connection\l_attempt_ended" alt="" coords="435,136,621,177"/>
+<area shape="rect" id="node7" href="$rendclient_8h.html#a57db1b6cc827d2f8376ad36191c422fe" title="rend_client_get_random\l_intro" alt="" coords="448,201,608,243"/>
+<area shape="rect" id="node6" href="$connection__edge_8c.html#a5922c995ab015f688168d02a6b954050" title="MOCK_IMPL" alt="" coords="669,143,769,170"/>
+</map>

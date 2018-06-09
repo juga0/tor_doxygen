@@ -1,0 +1,9 @@
+<map id="assert_connection_ok" name="assert_connection_ok">
+<area shape="rect" id="node2" href="$connection_8h.html#a408567fdce15abf5e16163547d8223c1" title="connection_close_immediate" alt="" coords="216,5,407,32"/>
+<area shape="rect" id="node3" href="$connection_8h.html#a2a15ddd62951cefd848ec070f1d9c912" title="connection_mark_for\l_close_" alt="" coords="240,57,383,98"/>
+<area shape="rect" id="node5" href="$connection_8c.html#a6e0262219d1afbc700eacae441599fb4" title="MOCK_IMPL" alt="" coords="261,123,361,149"/>
+<area shape="rect" id="node6" href="$connection__or_8h.html#a61f2d552138b0e015906710a045a6c55" title="connection_or_finished\l_flushing" alt="" coords="234,174,389,215"/>
+<area shape="rect" id="node7" href="$dns_8h.html#abab9ee4ae98eafd0454adef2477f1a76" title="assert_all_pending\l_dns_resolves_ok" alt="" coords="246,239,377,281"/>
+<area shape="rect" id="node8" href="$main_8h.html#a5a32ff7bb266432116efdc333987a0e4" title="add_connection_to_closeable_list" alt="" coords="203,305,420,332"/>
+<area shape="rect" id="node4" href="$connection__edge_8c.html#a5922c995ab015f688168d02a6b954050" title="MOCK_IMPL" alt="" coords="468,64,568,91"/>
+</map>

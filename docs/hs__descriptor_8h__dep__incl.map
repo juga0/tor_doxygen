@@ -1,0 +1,45 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/hs_descriptor.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/hs_descriptor.h">
+<area shape="rect" id="node2" href="$hs__service_8h.html" title="Header file containing service data for the HS subsytem. " alt="" coords="1675,109,1823,165"/>
+<area shape="rect" id="node15" href="$hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="185,332,333,388"/>
+<area shape="rect" id="node26" href="$hs__client_8c.html" title="Implement next generation hidden service client functionality. " alt="" coords="3361,332,3509,388"/>
+<area shape="rect" id="node31" href="$hs__control_8c.html" title="Contains control port event related code. " alt="" coords="3111,221,3259,277"/>
+<area shape="rect" id="node36" href="$hs__client_8h.html" title="Header file containing client data for the HS subsytem. " alt="" coords="3446,221,3594,277"/>
+<area shape="rect" id="node37" href="$hs__cache_8c.html" title="Handle hidden service descriptor caches. " alt="" coords="4411,332,4559,388"/>
+<area shape="rect" id="node38" href="$hs__cache_8h.html" title="Header file for hs_cache.c. " alt="" coords="3962,221,4110,277"/>
+<area shape="rect" id="node39" href="$hs__descriptor_8c.html" title="Handle hidden service descriptor encoding/decoding. " alt="" coords="5160,332,5312,388"/>
+<area shape="rect" id="node42" href="$hs__intropoint_8c.html" title="Implement next generation introductions point functionality. " alt="" coords="4287,109,4435,165"/>
+<area shape="rect" id="node43" href="$hs__test__helpers_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/test/hs_test_helpers.h" alt="" coords="4334,221,4511,277"/>
+<area shape="rect" id="node44" href="$test__hs__descriptor_8c.html" title="Test hidden service descriptor encoding and decoding. " alt="" coords="5336,332,5528,388"/>
+<area shape="rect" id="node3" href="$rendservice_8h.html" title="Header file for rendservice.c. " alt="" coords="1843,221,1991,277"/>
+<area shape="rect" id="node12" href="$hs__circuit_8c.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/or/hs_circuit.c" alt="" coords="529,332,677,388"/>
+<area shape="rect" id="node13" href="$hs__common_8c.html" title="Contains code shared between different HS protocol version as well as useful data structures and acce..." alt="" coords="3533,332,3681,388"/>
+<area shape="rect" id="node14" href="$hs__config_8c.html" title="Implement hidden service configuration subsystem. " alt="" coords="701,332,849,388"/>
+<area shape="rect" id="node22" href="$test__hs__config_8c.html" title="Test hidden service configuration functionality. " alt="" coords="873,332,1044,388"/>
+<area shape="rect" id="node23" href="$test__hs__service_8c.html" title="Test hidden service functionality. " alt="" coords="2987,332,3165,388"/>
+<area shape="rect" id="node24" href="$hs__circuit_8h.html" title="Header file containing circuit data for the whole HS subsytem. " alt="" coords="2578,221,2726,277"/>
+<area shape="rect" id="node29" href="$hs__cell_8h.html" title="Header file containing cell data for the whole HS subsytem. " alt="" coords="529,221,677,277"/>
+<area shape="rect" id="node30" href="$test__hs__cell_8c.html" title="Test hidden service cell functionality. " alt="" coords="5,332,160,388"/>
+<area shape="rect" id="node32" href="$hs__stats_8c.html" title="Keeps stats about the activity of our hidden service. " alt="" coords="1173,221,1321,277"/>
+<area shape="rect" id="node33" href="$status_8c.html" title="Collect status information and log heartbeat messages. " alt="" coords="1345,221,1493,277"/>
+<area shape="rect" id="node34" href="$test__hs__common_8c.html" title="Test hidden service common functionalities. " alt="" coords="4755,332,4941,388"/>
+<area shape="rect" id="node35" href="$test__periodic__event_8c.html" title="Test the periodic events that Tor uses for different roles. They are part of the libevent mainloop..." alt="" coords="1619,213,1767,284"/>
+<area shape="rect" id="node4" href="$channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="1757,332,1905,388"/>
+<area shape="rect" id="node5" href="$circuitstats_8c.html" title="Maintains and analyzes statistics about circuit built times, so we can tell how long we may need to w..." alt="" coords="1929,332,2077,388"/>
+<area shape="rect" id="node6" href="$circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="2273,332,2421,388"/>
+<area shape="rect" id="node7" href="$config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="1069,332,1217,388"/>
+<area shape="rect" id="node8" href="$connection__edge_8c.html" title="Handle edge streams. " alt="" coords="2791,332,2963,388"/>
+<area shape="rect" id="node9" href="$control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="3705,332,3853,388"/>
+<area shape="rect" id="node10" href="$directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="4049,332,4197,388"/>
+<area shape="rect" id="node11" href="$hs__cell_8c.html" title="Hidden service API for cell creation and handling. " alt="" coords="357,332,505,388"/>
+<area shape="rect" id="node16" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="3877,332,4025,388"/>
+<area shape="rect" id="node17" href="$nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="2101,332,2249,388"/>
+<area shape="rect" id="node18" href="$rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points..." alt="" coords="2617,332,2767,388"/>
+<area shape="rect" id="node19" href="$rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="1241,332,1389,388"/>
+<area shape="rect" id="node20" href="$routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="1413,332,1561,388"/>
+<area shape="rect" id="node21" href="$test__hs_8c.html" title="Unit tests for hidden service. " alt="" coords="1585,332,1733,388"/>
+<area shape="rect" id="node25" href="$circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="2445,332,2593,388"/>
+<area shape="rect" id="node27" href="$rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="3189,332,3337,388"/>
+<area shape="rect" id="node28" href="$test__hs__client_8c.html" title="Test prop224 HS client functionality. " alt="" coords="4221,332,4387,388"/>
+<area shape="rect" id="node40" href="$relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="4583,332,4731,388"/>
+<area shape="rect" id="node41" href="$test__hs__cache_8c.html" title="Test hidden service caches. " alt="" coords="4965,332,5136,388"/>
+</map>

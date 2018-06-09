@@ -1,0 +1,5 @@
+<map id="rend_service_descriptor_free" name="rend_service_descriptor_free">
+<area shape="rect" id="node2" href="$rendcache_8c.html#a2c5eb5e8ecaa713ec73cebc5ad4df905" title="rend_cache_entry_free" alt="" coords="243,5,397,32"/>
+<area shape="rect" id="node3" href="$rendservice_8c.html#a8cd5cb06a8e03c07ed7d120f90cee388" title="rend_service_free" alt="" coords="257,56,383,83"/>
+<area shape="rect" id="node4" href="$rendservice_8h.html#ade90973329e24160017a04e0503397bd" title="rend_service_free_all" alt="" coords="445,56,591,83"/>
+</map>

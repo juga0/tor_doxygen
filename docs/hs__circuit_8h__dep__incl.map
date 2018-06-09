@@ -1,0 +1,11 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/hs_circuit.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/hs_circuit.h">
+<area shape="rect" id="node2" href="$circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="$connection__edge_8c.html" title="Handle edge streams. " alt="" coords="349,109,521,165"/>
+<area shape="rect" id="node5" href="$hs__circuit_8c.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/or/hs_circuit.c" alt="" coords="545,109,693,165"/>
+<area shape="rect" id="node6" href="$hs__client_8c.html" title="Implement next generation hidden service client functionality. " alt="" coords="717,109,865,165"/>
+<area shape="rect" id="node7" href="$hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="889,109,1037,165"/>
+<area shape="rect" id="node8" href="$rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="1061,109,1209,165"/>
+<area shape="rect" id="node9" href="$test__hs__client_8c.html" title="Test prop224 HS client functionality. " alt="" coords="1233,109,1400,165"/>
+<area shape="rect" id="node10" href="$test__hs__service_8c.html" title="Test hidden service functionality. " alt="" coords="1424,109,1601,165"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="cache_failure_intro_add" name="cache_failure_intro_add">
+<area shape="rect" id="node2" href="$container_8c.html#a1406b823cb6088df755f1b81153d137e" title="strmap_get_lc" alt="" coords="225,5,329,32"/>
+<area shape="rect" id="node3" href="$rendcache_8c.html#a1129f843dc29e4d747bc378da1395d15" title="rend_cache_failure\l_entry_new" alt="" coords="212,57,343,98"/>
+<area shape="rect" id="node4" href="$container_8c.html#ab89b18ed07c18bdf4cb8d84bcc38f667" title="strmap_set_lc" alt="" coords="225,123,329,149"/>
+<area shape="rect" id="node5" href="$rendcache_8c.html#a4fcb974f5d0de00e8611297aa43a2979" title="rend_cache_failure\l_intro_entry_new" alt="" coords="212,174,343,215"/>
+<area shape="rect" id="node6" href="$rendcache_8c.html#ab207f629b9b48ea069f879ed27f26647" title="rend_cache_failure\l_intro_entry_free" alt="" coords="212,239,343,281"/>
+</map>

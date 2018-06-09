@@ -1,0 +1,7 @@
+<map id="curve25519_keypair_generate" name="curve25519_keypair_generate">
+<area shape="rect" id="node2" href="$crypto__curve25519_8c.html#a33569d6170349126f87307f7a0c8c90e" title="curve25519_secret_key\l_generate" alt="" coords="192,5,352,47"/>
+<area shape="rect" id="node5" href="$crypto__curve25519_8c.html#a68cbc7d4be1ea064154cbca18d51a53d" title="curve25519_public_key\l_generate" alt="" coords="193,71,351,112"/>
+<area shape="rect" id="node3" href="$crypto__curve25519_8c.html#a3a41ce8071bcfcc3aef74d4e995e83d9" title="curve25519_rand_seckey\l_bytes" alt="" coords="406,5,577,47"/>
+<area shape="rect" id="node4" href="$crypto_8c.html#ae5356daa13494dbcca77324c6a85b9da" title="crypto_strongest_rand" alt="" coords="631,13,781,39"/>
+<area shape="rect" id="node6" href="$crypto__curve25519_8c.html#af77c6aa2312f4e598306ffe516b8dfd1" title="curve25519_basepoint_impl" alt="" coords="400,78,583,105"/>
+</map>

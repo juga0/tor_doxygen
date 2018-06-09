@@ -1,0 +1,5 @@
+<map id="connection_edge_is_rendezvous_stream" name="connection_edge_is_rendezvous_stream">
+<area shape="rect" id="node2" href="$circuituse_8h.html#a8d5c81bf7d6238331123b1e8753597f1" title="connection_ap_handshake\l_attach_circuit" alt="" coords="196,5,372,47"/>
+<area shape="rect" id="node3" href="$connection__edge_8c.html#a5922c995ab015f688168d02a6b954050" title="MOCK_IMPL" alt="" coords="234,71,334,98"/>
+<area shape="rect" id="node4" href="$connection__edge_8h.html#af1726a6cec89474d98905c4dd047d1c3" title="connection_exit_connect" alt="" coords="201,122,367,149"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="routerset_contains_routerstatus" name="routerset_contains_routerstatus">
+<area shape="rect" id="node2" href="$directory_8h.html#aace63698f64d26bc7a14531381e2fa57" title="directory_post_to_dirservers" alt="" coords="183,5,369,32"/>
+<area shape="rect" id="node3" href="$dirserv_8c.html#a1808f4f273d59d32f2e29b968165e251" title="dirserv_set_routerstatus\l_testing" alt="" coords="195,57,357,98"/>
+<area shape="rect" id="node4" href="$routerset_8c.html#a59dc48808ca97d25748411b8053b28a2" title="routerset_contains_node" alt="" coords="194,123,358,149"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#afd4f8dd6f248abfc072ce641a568ddde" title="entry_is_live" alt="" coords="433,93,528,120"/>
+<area shape="rect" id="node8" href="$routerset_8c.html#a9be05b5c05c2be4f7ad45be6f705865d" title="routerset_subtract\l_nodes" alt="" coords="417,145,544,186"/>
+<area shape="rect" id="node6" href="$entrynodes_8h.html#accc850d23175b5132661a8c6e561e972" title="num_live_entry_guards" alt="" coords="592,64,748,91"/>
+<area shape="rect" id="node7" href="$entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="603,115,737,157"/>
+</map>

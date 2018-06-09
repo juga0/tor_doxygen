@@ -1,0 +1,22 @@
+<map id="testing_circuitset_t" name="testing_circuitset_t">
+<area shape="rect" id="node2" href="$structor__circuit__t.html" title="or_circuit_t" alt="" coords="1579,479,1666,505"/>
+<area shape="rect" id="node3" href="$structedge__connection__t.html" title="edge_connection_t" alt="" coords="1281,723,1411,749"/>
+<area shape="rect" id="node17" href="$structorigin__circuit__t.html" title="origin_circuit_t" alt="" coords="1569,800,1676,827"/>
+<area shape="rect" id="node7" href="$structcircuitmux__s.html" title="circuitmux_s" alt="" coords="393,260,489,287"/>
+<area shape="rect" id="node10" href="$structcircuit__t.html" title="circuit_t" alt="" coords="989,413,1057,440"/>
+<area shape="rect" id="node11" href="$structextend__info__t.html" title="extend_info_t" alt="" coords="391,929,491,956"/>
+<area shape="rect" id="node14" href="$structchannel__s.html" title="channel_s" alt="" coords="699,504,780,531"/>
+<area shape="rect" id="node15" href="$structtimeout.html" title="timeout" alt="" coords="409,544,474,571"/>
+<area shape="rect" id="node18" href="$structcrypt__path__t.html" title="crypt_path_t" alt="" coords="692,929,787,956"/>
+<area shape="rect" id="node20" href="$structonion__handshake__state__t.html" title="onion_handshake_state_t" alt="" coords="356,879,527,905"/>
+<area shape="rect" id="node5" href="$structrend__data__t.html" title="rend_data_t" alt="" coords="977,824,1068,851"/>
+<area shape="rect" id="node6" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="698,789,781,816"/>
+<area shape="rect" id="node8" href="$structcircuitmux__policy__data__s.html" title="circuitmux_policy_data_s" alt="" coords="5,193,175,220"/>
+<area shape="rect" id="node9" href="$structcircuitmux__policy__s.html" title="circuitmux_policy_s" alt="" coords="1277,273,1415,300"/>
+<area shape="rect" id="node21" href="$structcpath__build__state__t.html" title="cpath_build_state_t" alt="" coords="1279,961,1413,988"/>
+<area shape="rect" id="node12" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="45,1068,135,1095"/>
+<area shape="rect" id="node13" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="15,912,165,939"/>
+<area shape="rect" id="node16" href="$structcircuitmux__policy__circ__data__s.html" title="circuitmux_policy_circ\l_data_s" alt="" coords="947,295,1098,337"/>
+<area shape="rect" id="node22" href="$structcrypt__path__reference__t.html" title="crypt_path_reference_t" alt="" coords="945,992,1100,1019"/>
+<area shape="rect" id="node19" href="$structcrypto__dh__t.html" title="crypto_dh_t" alt="" coords="45,1004,135,1031"/>
+</map>

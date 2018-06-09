@@ -1,0 +1,10 @@
+<map id="add_an_entry_guard" name="add_an_entry_guard">
+<area shape="rect" id="node2" href="$entrynodes_8c.html#a059f7981078a896a9349a578b82bc645" title="entry_guard_get_by\l_id_digest" alt="" coords="213,5,349,47"/>
+<area shape="rect" id="node4" href="$nodelist_8c.html#a77b3951a642f54746fa04cb65a0a30c4" title="node_is_dir" alt="" coords="237,71,325,98"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#a823bac0acf5f6b68ab2074757215eac3" title="node_is_a_configured\l_bridge" alt="" coords="207,123,355,164"/>
+<area shape="rect" id="node7" href="$circuitbuild_8c.html#a550f632e8e414c563bd41e35dbd820db" title="choose_good_entry_server" alt="" coords="192,189,371,215"/>
+<area shape="rect" id="node8" href="$routerlist_8c.html#ace83aa582c6836e9a172a8cafa1d4047" title="router_pick_directory\l_server" alt="" coords="210,240,353,281"/>
+<area shape="rect" id="node3" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="447,13,533,39"/>
+<area shape="rect" id="node6" href="$nodelist_8c.html#a551827c8c00ee79f3d3663d11b2b60a0" title="node_get_all_orports" alt="" coords="419,130,561,157"/>
+<area shape="rect" id="node9" href="$routerlist_8c.html#ab3e64366c95e82de40cac88b7a39ae17" title="router_pick_directory\l_server_impl" alt="" coords="419,240,561,281"/>
+</map>

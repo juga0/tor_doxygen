@@ -1,0 +1,12 @@
+<map id="node_get_mutable_by_id" name="node_get_mutable_by_id">
+<area shape="rect" id="node2" href="$dirserv_8h.html#ad1772dc2a4a12cc0eb181d1f52c5a54a" title="dirserv_set_router\l_is_running" alt="" coords="259,5,385,47"/>
+<area shape="rect" id="node4" href="$dirserv_8h.html#a8dd4c13ef93596eaa704393dbc6828e0" title="dirserv_orconn_tls_done" alt="" coords="241,71,403,98"/>
+<area shape="rect" id="node5" href="$dirserv_8h.html#a87235a887afe2a5f796bd9a88b474909" title="dirserv_single_reachability_test" alt="" coords="220,122,424,149"/>
+<area shape="rect" id="node8" href="$nodelist_8c.html#a5c8dce344734590ce49774d7e9ddee91" title="MOCK_IMPL" alt="" coords="272,173,372,199"/>
+<area shape="rect" id="node9" href="$nodelist_8h.html#ac9a8eefc5429bb575b26374ef24bce88" title="nodelist_remove_microdesc" alt="" coords="230,223,414,250"/>
+<area shape="rect" id="node10" href="$nodelist_8h.html#aceea079915327ce0fede3a25bb254f00" title="nodelist_remove_routerinfo" alt="" coords="233,274,411,301"/>
+<area shape="rect" id="node3" href="$dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="480,13,627,39"/>
+<area shape="rect" id="node6" href="$dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="472,93,635,119"/>
+<area shape="rect" id="node7" href="$routerlist_8h.html#ad0e00a6f0df9aace49976da496902957" title="routerlist_descriptors\l_added" alt="" coords="482,144,625,185"/>
+<area shape="rect" id="node11" href="$routerlist_8h.html#a8c328828cd94c3bb84044c9003f8c78f" title="routerlist_remove" alt="" coords="492,274,615,301"/>
+</map>

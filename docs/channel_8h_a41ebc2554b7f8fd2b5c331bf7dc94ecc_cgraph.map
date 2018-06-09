@@ -1,0 +1,6 @@
+<map id="channel_get_for_extend" name="channel_get_for_extend">
+<area shape="rect" id="node2" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="253,5,346,32"/>
+<area shape="rect" id="node3" href="$channel_8c.html#a0542e2ca72fe8da87de8ea2f711dd7dc" title="channel_find_by_remote\l_digest" alt="" coords="218,57,381,98"/>
+<area shape="rect" id="node4" href="$channel_8c.html#a53ee6566b1661b9e37181d8f83efdfbd" title="channel_next_with_digest" alt="" coords="213,123,385,149"/>
+<area shape="rect" id="node5" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="256,173,343,200"/>
+</map>

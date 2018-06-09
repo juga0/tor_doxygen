@@ -1,0 +1,4 @@
+<map id="ed25519_keypair_from_curve25519_keypair" name="ed25519_keypair_from_curve25519_keypair">
+<area shape="rect" id="node2" href="$crypto__ed25519_8c.html#a250f7c3af49aabe2d1173325ae0841f5" title="ed25519_public_key\l_generate" alt="" coords="236,5,376,47"/>
+<area shape="rect" id="node3" href="$crypto__ed25519_8c.html#a8c15f72552477f36fca48340e53644e9" title="ed25519_public_key\l_from_curve25519_public_key" alt="" coords="207,71,405,112"/>
+</map>

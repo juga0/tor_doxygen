@@ -1,0 +1,6 @@
+<map id="worker_state_s" name="worker_state_s">
+<area shape="rect" id="node2" href="$structserver__onion__keys__t.html" title="server_onion_keys_t" alt="" coords="165,213,307,240"/>
+<area shape="rect" id="node3" href="$structcurve25519__keypair__t.html" title="curve25519_keypair_t" alt="" coords="5,109,155,136"/>
+<area shape="rect" id="node5" href="$structdi__digest256__map__t.html" title="di_digest256_map_t" alt="" coords="179,109,317,136"/>
+<area shape="rect" id="node6" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="353,109,444,136"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="router_extrainfo_digest_is_me" name="router_extrainfo_digest_is_me">
+<area shape="rect" id="node2" href="$router_8c.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="208,46,371,73"/>
+<area shape="rect" id="node8" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="246,97,333,123"/>
+<area shape="rect" id="node3" href="$router_8c.html#ac23927b27e54ab8752d8a379b5136b50" title="router_rebuild_descriptor" alt="" coords="419,46,583,73"/>
+<area shape="rect" id="node4" href="$router_8c.html#a74a228ad9efff13643397a5c02d7bec7" title="router_get_advertised\l_or_port" alt="" coords="631,39,777,80"/>
+<area shape="rect" id="node5" href="$router_8c.html#a19b606096c7f385bb3db639b1a1c15fe" title="router_get_advertised\l_or_port_by_af" alt="" coords="825,39,972,80"/>
+<area shape="rect" id="node6" href="$config_8c.html#a8b79c094d201fd02944aa463dcc6433c" title="get_first_advertised\l_port_by_type_af" alt="" coords="1037,5,1173,47"/>
+<area shape="rect" id="node7" href="$router_8c.html#a8bfae58f61a3329fd20f43c378bff0bb" title="router_get_active_listener\l_port_by_type_af" alt="" coords="1020,71,1191,112"/>
+</map>

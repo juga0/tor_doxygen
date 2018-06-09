@@ -1,0 +1,5 @@
+<map id="connection_ap_handshake_attach_circuit" name="connection_ap_handshake_attach_circuit">
+<area shape="rect" id="node2" href="$address_8c.html#a6ecc12236743caf7527376436791c75e" title="tor_addr_is_null" alt="" coords="244,5,357,32"/>
+<area shape="rect" id="node3" href="$config_8c.html#a7e31046631b0cc0f5d01c8d411b886e6" title="safe_str_client" alt="" coords="247,56,354,83"/>
+<area shape="rect" id="node4" href="$connection__edge_8c.html#accf4787c953075c4a9aeaab09bb2b3fe" title="connection_edge_is\l_rendezvous_stream" alt="" coords="229,107,372,149"/>
+</map>

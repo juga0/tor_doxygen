@@ -1,0 +1,5 @@
+<map id="get_n_authorities" name="get_n_authorities">
+<area shape="rect" id="node2" href="$entrynodes_8h.html#a958ebeeb4b45f01d919751bbcd6e79b2" title="fetch_bridge_descriptors" alt="" coords="175,5,339,32"/>
+<area shape="rect" id="node3" href="$networkstatus_8h.html#a7bead3d790b19f3f5894a521526a3531" title="networkstatus_check\l_consensus_signature" alt="" coords="181,57,333,98"/>
+<area shape="rect" id="node4" href="$networkstatus_8h.html#a6d51fc24064bd6b1e7f3d148bddba693" title="networkstatus_note\l_certs_arrived" alt="" coords="387,57,523,98"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="we_fetch_microdescriptors" name="we_fetch_microdescriptors">
+<area shape="rect" id="node2" href="$dirserv_8c.html#a57e2ff1ad2ea65abe9b969ad3d76a418" title="directory_caches_dir_info" alt="" coords="232,64,403,91"/>
+<area shape="rect" id="node6" href="$microdesc_8c.html#adeff3a88aa40b67ab6407bda5c941910" title="we_use_microdescriptors\l_for_circuits" alt="" coords="232,118,403,159"/>
+<area shape="rect" id="node3" href="$router_8c.html#ab23297b12b098da9eac98126a587aa3b" title="dir_server_mode" alt="" coords="473,5,591,32"/>
+<area shape="rect" id="node4" href="$router_8c.html#afa75de94186fffc8f373de610ae4cab3" title="should_refuse_unknown\l_exits" alt="" coords="451,57,613,98"/>
+<area shape="rect" id="node5" href="$networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="661,64,833,91"/>
+<area shape="rect" id="node7" href="$entrynodes_8c.html#aec3f497d942ccb88742194e3fe973a49" title="any_bridge_supports\l_microdescriptors" alt="" coords="461,122,603,163"/>
+</map>

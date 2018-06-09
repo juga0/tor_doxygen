@@ -1,0 +1,5 @@
+<map id="circuit_append_new_exit" name="circuit_append_new_exit">
+<area shape="rect" id="node2" href="$circuitbuild_8c.html#a2ee63ec586b7d4f06830954b9aefb037" title="extend_info_free" alt="" coords="219,5,337,32"/>
+<area shape="rect" id="node4" href="$circuitbuild_8c.html#ab87b30981d1baacf8452ccca39edc7ae" title="extend_info_dup" alt="" coords="219,56,337,83"/>
+<area shape="rect" id="node3" href="$crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="385,5,493,32"/>
+</map>

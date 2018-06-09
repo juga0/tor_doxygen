@@ -1,0 +1,13 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/voting_schedule.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/voting_schedule.h">
+<area shape="rect" id="node2" href="$config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="5,117,153,173"/>
+<area shape="rect" id="node3" href="$dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="177,117,333,173"/>
+<area shape="rect" id="node4" href="$shared__random_8c.html" title="Functions and data structure needed to accomplish the shared random protocol as defined in proposal #..." alt="" coords="357,109,505,180"/>
+<area shape="rect" id="node5" href="$shared__random__state_8c.html" title="Functions and data structures for the state of the random protocol as defined in proposal #250..." alt="" coords="529,109,677,180"/>
+<area shape="rect" id="node6" href="$dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="701,117,849,173"/>
+<area shape="rect" id="node7" href="$networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache..." alt="" coords="873,117,1029,173"/>
+<area shape="rect" id="node8" href="$routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="1053,117,1201,173"/>
+<area shape="rect" id="node9" href="$shared__random__client_8c.html" title="This file contains functions that are from the shared random subsystem but used by many part of tor..." alt="" coords="1226,109,1378,180"/>
+<area shape="rect" id="node10" href="$voting__schedule_8c.html" title="This file contains functions that are from the directory authority subsystem related to voting specif..." alt="" coords="1402,117,1570,173"/>
+<area shape="rect" id="node11" href="$test__hs__common_8c.html" title="Test hidden service common functionalities. " alt="" coords="1595,117,1780,173"/>
+<area shape="rect" id="node12" href="$test__hs__service_8c.html" title="Test hidden service functionality. " alt="" coords="1804,117,1981,173"/>
+</map>

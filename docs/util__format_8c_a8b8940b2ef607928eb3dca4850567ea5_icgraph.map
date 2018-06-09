@@ -1,0 +1,29 @@
+<map id="base16_encode" name="base16_encode">
+<area shape="rect" id="node2" href="$crypto_8h.html#a10149de1598ad3852fa49aa2c708371b" title="crypto_pk_get_fingerprint" alt="" coords="178,5,346,32"/>
+<area shape="rect" id="node4" href="$crypto_8h.html#a910d30d7ec03da2c3ef3ac1eb0a01310" title="crypto_pk_get_hashed\l_fingerprint" alt="" coords="185,57,339,98"/>
+<area shape="rect" id="node5" href="$util_8h.html#a343c89702d7d04adc7739b5d668a16cf" title="hex_str" alt="" coords="229,123,295,149"/>
+<area shape="rect" id="node8" href="$control_8h.html#a3215ddc475a10ee916377da0a97e62f2" title="control_event_guard" alt="" coords="431,199,570,225"/>
+<area shape="rect" id="node9" href="$entrynodes_8h.html#a2059c6a8b0ae5f6bd64087fe00a27d9d" title="remove_all_entry_guards" alt="" coords="179,224,345,251"/>
+<area shape="rect" id="node10" href="$entrynodes_8h.html#aca1100341edbe9b4ff26527595ab56e8" title="entry_guard_register\l_connect_status" alt="" coords="192,377,332,418"/>
+<area shape="rect" id="node12" href="$nodelist_8h.html#ae942465b949bf8cc1006ddd3e9c61221" title="node_get_verbose_nickname" alt="" coords="167,275,357,301"/>
+<area shape="rect" id="node13" href="$nodelist_8h.html#a111b3704de6d40d874d64dbced6bb9ae" title="node_get_verbose_nickname\l_by_id" alt="" coords="405,271,596,313"/>
+<area shape="rect" id="node15" href="$router_8h.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="180,443,344,469"/>
+<area shape="rect" id="node25" href="$router_8h.html#a2f3a022f2ddb8fb15047fb91522000eb" title="router_get_verbose\l_nickname" alt="" coords="195,494,329,535"/>
+<area shape="rect" id="node27" href="$routerlist_8h.html#a0642e00994970234101190ca32fbf091" title="authority_cert_dl_failed" alt="" coords="184,560,340,587"/>
+<area shape="rect" id="node28" href="$routerlist_8h.html#a1414b47a61105dd75d01ba4966c511fc" title="authority_cert_is_blacklisted" alt="" coords="169,611,355,637"/>
+<area shape="rect" id="node3" href="$dirserv_8h.html#a95deb3d9d5367525bb51127b82269c87" title="dirserv_add_own_fingerprint" alt="" coords="409,5,593,32"/>
+<area shape="rect" id="node6" href="$channel_8c.html#ab56dc7ecc8a31e8bfa4dc5281b72c21e" title="MOCK_IMPL" alt="" coords="451,148,551,175"/>
+<area shape="rect" id="node7" href="$geoip_8h.html#a2facbb330d6f7714db2fd5293ed00477" title="geoip_db_digest" alt="" coords="443,97,559,124"/>
+<area shape="rect" id="node11" href="$channel_8c.html#a4bb9524073333e156da271ca623a772d" title="channel_do_open_actions" alt="" coords="415,337,587,364"/>
+<area shape="rect" id="node14" href="$control_8c.html#a000c7faf94744c2b3a6f1753b513e5ae" title="MOCK_IMPL" alt="" coords="667,279,767,305"/>
+<area shape="rect" id="node16" href="$router_8h.html#ac97f03d757d76cc0e684e58d4dfea035" title="router_get_description" alt="" coords="425,540,576,567"/>
+<area shape="rect" id="node19" href="$router_8h.html#a0a54eda729e6f6f8e957a9d8b0f016f9" title="node_get_description" alt="" coords="428,388,573,415"/>
+<area shape="rect" id="node21" href="$router_8h.html#a38d97aa986a058d558934f0ce97416b0" title="routerstatus_get_description" alt="" coords="407,439,594,465"/>
+<area shape="rect" id="node23" href="$router_8h.html#a4305332e798b11a30372e7f0e63ed15e" title="extend_info_get_description" alt="" coords="409,489,593,516"/>
+<area shape="rect" id="node17" href="$router_8h.html#a4d59ce576eb8716561e1bc6be6f88de1" title="router_describe" alt="" coords="662,540,773,567"/>
+<area shape="rect" id="node18" href="$dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="839,533,999,574"/>
+<area shape="rect" id="node20" href="$router_8h.html#a9123f7ab38acbdf103fcb38433311d42" title="node_describe" alt="" coords="664,388,771,415"/>
+<area shape="rect" id="node22" href="$router_8h.html#ab375311f5454761bc6691091cdf50847" title="routerstatus_describe" alt="" coords="644,439,791,465"/>
+<area shape="rect" id="node24" href="$router_8h.html#a76d2b00d031ef80969722b77807f2f0c" title="extend_info_describe" alt="" coords="645,489,790,516"/>
+<area shape="rect" id="node26" href="$dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="427,591,574,617"/>
+</map>

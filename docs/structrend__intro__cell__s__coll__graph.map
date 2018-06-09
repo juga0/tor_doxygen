@@ -1,0 +1,5 @@
+<map id="rend_intro_cell_s" name="rend_intro_cell_s">
+<area shape="rect" id="node2" href="$structextend__info__t.html" title="extend_info_t" alt="" coords="123,118,223,145"/>
+<area shape="rect" id="node4" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="177,5,268,32"/>
+<area shape="rect" id="node5" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="293,5,443,32"/>
+</map>

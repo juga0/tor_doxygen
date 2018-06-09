@@ -1,0 +1,10 @@
+<map id="directory_caches_dir_info" name="directory_caches_dir_info">
+<area shape="rect" id="node2" href="$dirserv_8h.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="240,28,387,69"/>
+<area shape="rect" id="node8" href="$microdesc_8h.html#ad9c983a76a2f31a6a843f4df9be7de1d" title="we_fetch_microdescriptors" alt="" coords="224,95,403,122"/>
+<area shape="rect" id="node9" href="$microdesc_8h.html#a2667d23ef05f514b5bf916791b4a6bbd" title="we_fetch_router_descriptors" alt="" coords="451,151,637,178"/>
+<area shape="rect" id="node3" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="1124,5,1252,47"/>
+<area shape="rect" id="node4" href="$microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="685,34,883,61"/>
+<area shape="rect" id="node6" href="$routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="459,85,629,127"/>
+<area shape="rect" id="node5" href="$routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="931,35,1076,76"/>
+<area shape="rect" id="node7" href="$routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="701,85,867,127"/>
+</map>

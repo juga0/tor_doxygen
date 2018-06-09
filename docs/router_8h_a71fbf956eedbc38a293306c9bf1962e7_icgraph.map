@@ -1,0 +1,8 @@
+<map id="authdir_mode_v3" name="authdir_mode_v3">
+<area shape="rect" id="node2" href="$dirvote_8h.html#aab7ea3ac9bbece8dbdd6c3c167dc0ae9" title="dirvote_recalculate\l_timing" alt="" coords="217,5,347,47"/>
+<area shape="rect" id="node3" href="$dirvote_8h.html#a333f56fb4797757ca9e04bee1550cabe" title="dirvote_act" alt="" coords="239,71,325,98"/>
+<area shape="rect" id="node4" href="$networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="175,123,389,164"/>
+<area shape="rect" id="node6" href="$nodelist_8h.html#a88530130321dca1f862717bfb5a0834a" title="nodelist_set_consensus" alt="" coords="201,189,363,215"/>
+<area shape="rect" id="node7" href="$router_8h.html#a1ccf29e1bf3d8e43591f66d2a5118a6b" title="v3_authority_check\l_key_expiry" alt="" coords="215,240,349,281"/>
+<area shape="rect" id="node5" href="$routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="437,123,571,164"/>
+</map>

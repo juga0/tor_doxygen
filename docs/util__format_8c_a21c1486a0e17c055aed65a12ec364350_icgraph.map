@@ -1,0 +1,8 @@
+<map id="base64_decode" name="base64_decode">
+<area shape="rect" id="node2" href="$crypto__format_8c.html#a361bb33c8cdeccce50ba7af177ec3e79" title="curve25519_public_from\l_base64" alt="" coords="397,29,560,70"/>
+<area shape="rect" id="node3" href="$crypto__format_8c.html#a0bf9c46d37d128f8207ae24b08626a1a" title="ed25519_signature_from\l_base64" alt="" coords="176,35,340,77"/>
+<area shape="rect" id="node4" href="$crypto__format_8c.html#afd6a2507d4646696543c4d8dbd707eab" title="digest_from_base64" alt="" coords="189,101,327,128"/>
+<area shape="rect" id="node5" href="$crypto__format_8c.html#ad36a0f87e412633df8fdf6e0ab3028d8" title="digest256_from_base64" alt="" coords="178,152,338,179"/>
+<area shape="rect" id="node7" href="$control_8h.html#ab464eef1adbc6df3fcc09063dc6f9c3e" title="decode_hashed_passwords" alt="" coords="167,203,349,229"/>
+<area shape="rect" id="node6" href="$crypto__format_8c.html#a6448c96c317d8282c03d680cda1e9e6a" title="ed25519_public_from\l_base64" alt="" coords="406,145,551,186"/>
+</map>

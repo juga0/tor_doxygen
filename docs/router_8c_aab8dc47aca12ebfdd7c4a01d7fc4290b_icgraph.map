@@ -1,0 +1,11 @@
+<map id="authdir_mode_any_main" name="authdir_mode_any_main">
+<area shape="rect" id="node2" href="$router_8h.html#a9bcde98c72c7ec1b15a6c0837c6bec26" title="authdir_mode_any_nonhidserv" alt="" coords="216,141,415,167"/>
+<area shape="rect" id="node3" href="$router_8h.html#a8522dfca1851365846ddef293a416656" title="authdir_mode_handles\l_descs" alt="" coords="468,83,620,124"/>
+<area shape="rect" id="node9" href="$router_8h.html#aea820da6141eaf03649558d4ec6d5872" title="authdir_mode_publishes\l_statuses" alt="" coords="463,159,625,200"/>
+<area shape="rect" id="node4" href="$dirserv_8h.html#a0c97fbc43a4398a45feb2fafa3d42fc1" title="dirserv_should_launch\l_reachability_test" alt="" coords="677,5,828,47"/>
+<area shape="rect" id="node7" href="$router_8h.html#a652eb5a350d7730a18c7de2605d435f4" title="authdir_mode_tests\l_reachability" alt="" coords="685,71,821,112"/>
+<area shape="rect" id="node8" href="$routerlist_8h.html#ab1878aef0f1dd92c783d5477248b985d" title="router_add_to_routerlist" alt="" coords="673,137,832,163"/>
+<area shape="rect" id="node5" href="$networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="880,5,1095,47"/>
+<area shape="rect" id="node6" href="$routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="1143,5,1276,47"/>
+<area shape="rect" id="node10" href="$dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="679,187,826,214"/>
+</map>

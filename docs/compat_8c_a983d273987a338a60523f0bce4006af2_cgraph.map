@@ -1,0 +1,5 @@
+<map id="tor_gmtime_r" name="tor_gmtime_r">
+<area shape="rect" id="node2" href="$compat__threads_8c.html#a0f3b168e06f8e4b99789af20771ee096" title="tor_mutex_new" alt="" coords="161,5,272,32"/>
+<area shape="rect" id="node3" href="$compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="152,56,281,83"/>
+<area shape="rect" id="node4" href="$compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="152,107,281,133"/>
+</map>

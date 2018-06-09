@@ -1,0 +1,8 @@
+<map id="routerlist_remove" name="routerlist_remove">
+<area shape="rect" id="node2" href="$nodelist_8c.html#aceea079915327ce0fede3a25bb254f00" title="nodelist_remove_routerinfo" alt="" coords="176,5,355,32"/>
+<area shape="rect" id="node4" href="$rephist_8c.html#a8d82d65e82208716c6db808c3361b19e" title="rep_hist_note_router\l_unreachable" alt="" coords="195,57,335,98"/>
+<area shape="rect" id="node5" href="$container_8c.html#ae56cc8eb3ee68132c63168b2485037cb" title="smartlist_del" alt="" coords="217,123,313,149"/>
+<area shape="rect" id="node6" href="$nodelist_8c.html#a32099caf417dbc0e15ea398b1bc2ea16" title="router_dir_info_changed" alt="" coords="185,173,345,200"/>
+<area shape="rect" id="node3" href="$nodelist_8c.html#a114f706e8f9039f1dce0137619807581" title="node_get_mutable_by_id" alt="" coords="403,5,569,32"/>
+<area shape="rect" id="node7" href="$rendservice_8c.html#ac44e79078bc122e1f77d770919baffa3" title="rend_hsdir_routers\l_changed" alt="" coords="421,166,551,207"/>
+</map>

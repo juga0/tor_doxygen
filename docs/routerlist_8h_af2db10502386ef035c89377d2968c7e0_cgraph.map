@@ -1,0 +1,8 @@
+<map id="routerinfo_free" name="routerinfo_free">
+<area shape="rect" id="node2" href="$crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="175,5,283,32"/>
+<area shape="rect" id="node3" href="$torcert_8c.html#a69b51896c94df3682f5b40fdffd5daba" title="tor_cert_free" alt="" coords="182,56,277,83"/>
+<area shape="rect" id="node5" href="$policies_8c.html#af4571826592c41142d57b3240016812e" title="addr_policy_list_free" alt="" coords="159,107,300,133"/>
+<area shape="rect" id="node7" href="$policies_8c.html#a3a0c68a8d1b8b63eaa6ee5fe12eeb108" title="short_policy_free" alt="" coords="169,157,290,184"/>
+<area shape="rect" id="node4" href="$crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="367,56,446,83"/>
+<area shape="rect" id="node6" href="$policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="348,107,465,133"/>
+</map>

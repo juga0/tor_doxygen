@@ -1,0 +1,5 @@
+<map id="rend_client_get_random_intro" name="rend_client_get_random_intro">
+<area shape="rect" id="node2" href="$rendcache_8c.html#a367f96478b3d5bab8af7098b61fdafb4" title="rend_cache_lookup_entry" alt="" coords="213,5,384,32"/>
+<area shape="rect" id="node4" href="$rendclient_8c.html#a99d129951a8ae61a904202d19db50140" title="rend_client_any_intro\l_points_usable" alt="" coords="226,57,371,98"/>
+<area shape="rect" id="node3" href="$rendcommon_8c.html#a4c98beed11b35d28c3e8fe8249d027c5" title="rend_valid_service_id" alt="" coords="432,5,579,32"/>
+</map>

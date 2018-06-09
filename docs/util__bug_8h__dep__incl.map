@@ -1,0 +1,51 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/common/util_bug.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/common/util_bug.h">
+<area shape="rect" id="node2" href="$util_8h.html" title="Headers for util.c. " alt="" coords="3298,109,3446,165"/>
+<area shape="rect" id="node28" href="$util__bug_8c.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/util_bug.c" alt="" coords="88,332,246,388"/>
+<area shape="rect" id="node3" href="$address_8c.html" title="Functions to use and manipulate the tor_addr_t structure. " alt="" coords="2092,436,2250,492"/>
+<area shape="rect" id="node4" href="$container_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/container.h" alt="" coords="1356,221,1522,277"/>
+<area shape="rect" id="node6" href="$address__set_8c.html" title="Implementation for a set of addresses. " alt="" coords="2275,436,2459,492"/>
+<area shape="rect" id="node7" href="$compat_8c.html" title="Wrappers to make calls more portable. This code defines functions such as tor_snprintf, get/set various data types, renaming, setting socket options, switching user IDs. It is basically where the non&#45;portable items are conditionally included depending on the platform. " alt="" coords="1185,436,1341,492"/>
+<area shape="rect" id="node8" href="$util_8c.html" title="Common functions for strings, IO, network, data structures, process control. " alt="" coords="786,436,934,492"/>
+<area shape="rect" id="node11" href="$buffers_8c.html" title="Implements a generic buffer interface. " alt="" coords="2470,540,2618,596"/>
+<area shape="rect" id="node14" href="$config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="2144,644,2292,700"/>
+<area shape="rect" id="node15" href="$ext__orport_8c.html" title="Code implementing the Extended ORPort. " alt="" coords="4357,540,4505,596"/>
+<area shape="rect" id="node17" href="$shared__random_8c.html" title="Functions and data structure needed to accomplish the shared random protocol as defined in proposal #..." alt="" coords="5387,540,5550,596"/>
+<area shape="rect" id="node18" href="$transports_8c.html" title="Pluggable Transports related code. " alt="" coords="6004,540,6152,596"/>
+<area shape="rect" id="node19" href="$compat__time_8c.html" title="Portable wrappers for finding out the current time, running timers, etc. " alt="" coords="270,332,458,388"/>
+<area shape="rect" id="node20" href="$container_8c.html" title="Implements a smartlist (a resizable array) along with helper functions to use smartlists. Also includes hash table implementations of a string&#45;to&#45;void* map, and of a digest&#45;to&#45;void* map. " alt="" coords="482,332,649,388"/>
+<area shape="rect" id="node21" href="$crypto_8c.html" title="Wrapper functions to present a consistent interface to public&#45;key and symmetric cryptography operatio..." alt="" coords="674,332,823,388"/>
+<area shape="rect" id="node22" href="$crypto__curve25519_8c.html" title="Wrapper code for a curve25519 implementation. " alt="" coords="1636,332,1858,388"/>
+<area shape="rect" id="node23" href="$crypto__format_8c.html" title="Formatting and parsing code for crypto&#45;related data structures. " alt="" coords="1882,332,2076,388"/>
+<area shape="rect" id="node24" href="$log_8c.html" title="Functions to send messages to log files or the console. " alt="" coords="2100,332,2248,388"/>
+<area shape="rect" id="node26" href="$sandbox_8c.html" title="Code to enable sandboxing. " alt="" coords="2272,332,2435,388"/>
+<area shape="rect" id="node27" href="$tortls_8c.html" title="Wrapper functions to present a consistent interface to TLS, SSL, and X.509 functions from OpenSSL..." alt="" coords="2460,332,2608,388"/>
+<area shape="rect" id="node30" href="$aes_8c.html" title="Implements a counter&#45;mode stream cipher on top of AES. " alt="" coords="2089,221,2237,277"/>
+<area shape="rect" id="node31" href="$backtrace_8c.html" title="Functions to produce backtraces on bugs, crashes, or assertion failures. " alt="" coords="2262,221,2432,277"/>
+<area shape="rect" id="node32" href="$compat__libevent_8c.html" title="Wrappers and utility functions for Libevent. " alt="" coords="2456,221,2664,277"/>
+<area shape="rect" id="node33" href="$compat__pthreads_8c.html" title="Implementation for the pthreads&#45;based multithreading backend functions. " alt="" coords="2688,221,2902,277"/>
+<area shape="rect" id="node34" href="$compat__threads_8c.html" title="Cross&#45;platform threading and inter&#45;thread communication logic. (Platform&#45;specific parts are written i..." alt="" coords="2926,221,3133,277"/>
+<area shape="rect" id="node35" href="$crypto__ed25519_8c.html" title="Wrapper code for an ed25519 implementation. " alt="" coords="3158,221,3363,277"/>
+<area shape="rect" id="node36" href="$crypto__pwbox_8c.html" title="Code for encrypting secrets in a password&#45;protected form and saving them to disk. ..." alt="" coords="3387,221,3582,277"/>
+<area shape="rect" id="node37" href="$crypto__s2k_8c.html" title="Functions for deriving keys from human&#45;readable passphrases. " alt="" coords="3606,221,3784,277"/>
+<area shape="rect" id="node38" href="$di__ops_8c.html" title="Functions for data&#45;independent operations. " alt="" coords="3808,221,3958,277"/>
+<area shape="rect" id="node39" href="$handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="3982,221,4141,277"/>
+<area shape="rect" id="node40" href="$memarea_8c.html" title="Implementation for memarea_t, an allocator for allocating lots of small objects that will be freed al..." alt="" coords="4165,221,4332,277"/>
+<area shape="rect" id="node41" href="$procmon_8c.html" title="Process&#45;termination monitor functions. " alt="" coords="4356,221,4519,277"/>
+<area shape="rect" id="node42" href="$timers_8c.html" title="Wrapper around William Ahern&#39;s fast hierarchical timer wheel implementation, to tie it in with a libe..." alt="" coords="4543,221,4692,277"/>
+<area shape="rect" id="node43" href="$torgzip_8c.html" title="A simple in&#45;memory gzip implementation. " alt="" coords="4716,221,4868,277"/>
+<area shape="rect" id="node44" href="$util__format_8c.html" title="Miscellaneous functions for encoding and decoding various things in base{16,32,64}. " alt="" coords="4893,221,5068,277"/>
+<area shape="rect" id="node45" href="$util__process_8c.html" title="utility functions for launching processes and checking their status. These functions are kept separat..." alt="" coords="5092,221,5274,277"/>
+<area shape="rect" id="node46" href="$workqueue_8c.html" title="Implements worker threads, queues of work for them, and mechanisms for them to send answers back to t..." alt="" coords="5299,221,5475,277"/>
+<area shape="rect" id="node47" href="$keypin_8c.html" title="Functions and structures for associating routers&#39; RSA key fingerprints with their ED25519 keys..." alt="" coords="5500,221,5648,277"/>
+<area shape="rect" id="node48" href="$onion__ntor_8c.html" title="Implementation for the ntor handshake. " alt="" coords="5672,221,5820,277"/>
+<area shape="rect" id="node49" href="$torcert_8c.html" title="Implementation for ed25519&#45;signed certificates as used in the Tor protocol. " alt="" coords="5844,221,5992,277"/>
+<area shape="rect" id="node50" href="$trunnel-local_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/trunnel/trunnel\l&#45;local.h" alt="" coords="6016,213,6164,284"/>
+<area shape="rect" id="node5" href="$address_8h.html" title="Headers for address.h. " alt="" coords="1301,332,1460,388"/>
+<area shape="rect" id="node9" href="$or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1920,436,2068,492"/>
+<area shape="rect" id="node25" href="$pubsub_8c.html" title="DOCDOC. " alt="" coords="898,332,1052,388"/>
+<area shape="rect" id="node29" href="$protover_8h.html" title="Headers and type declarations for protover.c. " alt="" coords="1077,332,1225,388"/>
+<area shape="rect" id="node16" href="$nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="1553,540,1701,596"/>
+<area shape="rect" id="node10" href="$addressmap_8c.html" title="The addressmap module manages the processes by which we rewrite addresses in client requess..." alt="" coords="1808,540,1956,596"/>
+<area shape="rect" id="node12" href="$channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="1946,644,2094,700"/>
+<area shape="rect" id="node13" href="$channel_8h.html" title="Header file for channel.c. " alt="" coords="2032,540,2180,596"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="circuit_change_purpose" name="circuit_change_purpose">
+<area shape="rect" id="node2" href="$circuitlist_8c.html#a6c79060856f98208dbdbf81c4f5ed336" title="circuit_purpose_to\l_string" alt="" coords="212,5,340,47"/>
+<area shape="rect" id="node3" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="388,13,475,39"/>
+<area shape="rect" id="node4" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="523,13,617,39"/>
+</map>

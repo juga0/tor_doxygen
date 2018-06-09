@@ -1,0 +1,4 @@
+<map id="router_get_mutable_consensus_status_by_id" name="router_get_mutable_consensus_status_by_id">
+<area shape="rect" id="node2" href="$networkstatus_8h.html#a810a06fe9e7c7bd3a1c5c5ee8cc13b52" title="router_get_consensus\l_status_by_id" alt="" coords="227,5,377,47"/>
+<area shape="rect" id="node3" href="$connection__or_8h.html#a8573b49df7ffc3ad6df0faa6e7a12f10" title="connection_or_digest\l_is_known_relay" alt="" coords="425,5,571,47"/>
+</map>

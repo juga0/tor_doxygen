@@ -1,0 +1,5 @@
+<map id="router_get_verbose_nickname" name="router_get_verbose_nickname">
+<area shape="rect" id="node2" href="$networkstatus_8c.html#af663020b40e6b122a43b26aa62ca4ed4" title="networkstatus_get_router\l_digest_by_nickname" alt="" coords="187,5,356,47"/>
+<area shape="rect" id="node3" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="228,71,315,98"/>
+<area shape="rect" id="node4" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="215,122,328,149"/>
+</map>

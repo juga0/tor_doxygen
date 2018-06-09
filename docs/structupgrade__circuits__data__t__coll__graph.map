@@ -1,0 +1,14 @@
+<map id="upgrade_circuits_data_t" name="upgrade_circuits_data_t">
+<area shape="rect" id="node2" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="107,239,189,266"/>
+<area shape="rect" id="node3" href="$structorigin__circuit__t.html" title="origin_circuit_t" alt="" coords="381,589,488,616"/>
+<area shape="rect" id="node12" href="$structrend__data__t.html" title="rend_data_t" alt="" coords="224,396,315,423"/>
+<area shape="rect" id="node4" href="$structcrypt__path__t.html" title="crypt_path_t" alt="" coords="570,239,665,266"/>
+<area shape="rect" id="node13" href="$structcpath__build__state__t.html" title="cpath_build_state_t" alt="" coords="623,500,758,527"/>
+<area shape="rect" id="node14" href="$structcrypt__path__reference__t.html" title="crypt_path_reference_t" alt="" coords="761,396,916,423"/>
+<area shape="rect" id="node5" href="$structextend__info__t.html" title="extend_info_t" alt="" coords="933,118,1033,145"/>
+<area shape="rect" id="node10" href="$structonion__handshake__state__t.html" title="onion_handshake_state_t" alt="" coords="532,118,703,145"/>
+<area shape="rect" id="node11" href="$structedge__connection__t.html" title="edge_connection_t" alt="" coords="207,500,337,527"/>
+<area shape="rect" id="node7" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="1077,5,1168,32"/>
+<area shape="rect" id="node8" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="883,5,1034,32"/>
+<area shape="rect" id="node9" href="$structcrypto__dh__t.html" title="crypto_dh_t" alt="" coords="663,5,753,32"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="options_trial_assign" name="options_trial_assign">
+<area shape="rect" id="node2" href="$confparse_8c.html#a09ae038a28a4e774eeaca1b481f05f22" title="config_dup" alt="" coords="206,68,291,95"/>
+<area shape="rect" id="node7" href="$confparse_8c.html#a61e7d485802b42ca101ade85d2fd81ca" title="config_assign" alt="" coords="374,123,477,149"/>
+<area shape="rect" id="node8" href="$config_8c.html#a9d66419dd103a30396f877c79c31f137" title="or_options_free" alt="" coords="193,173,304,200"/>
+<area shape="rect" id="node12" href="$config_8c.html#a5c11ad3e523e5698240314b49f8538a3" title="options_validate" alt="" coords="191,224,307,251"/>
+<area shape="rect" id="node3" href="$confparse_8c.html#a469abeef7861fdda2539ca17496b166e" title="config_new" alt="" coords="381,5,469,32"/>
+<area shape="rect" id="node4" href="$confparse_8c.html#ab60b5e719a2972ab031e29f568db72fd" title="config_get_assigned\l_option" alt="" coords="355,57,496,98"/>
+<area shape="rect" id="node5" href="$confparse_8c.html#a322d9a327ae38a92bbde12b0014cabc3" title="config_find_option" alt="" coords="544,64,671,91"/>
+<area shape="rect" id="node6" href="$confparse_8c.html#a6cb95da8138860838ea3c47a4395f854" title="config_find_option\l_mutable" alt="" coords="719,57,845,98"/>
+<area shape="rect" id="node9" href="$routerset_8c.html#a33e9d1e799e9cac73343c73126b104c6" title="routerset_free" alt="" coords="374,173,477,200"/>
+<area shape="rect" id="node11" href="$confparse_8c.html#a166f2d294fb67cfc6af9501599dfe549" title="config_free" alt="" coords="382,224,469,251"/>
+<area shape="rect" id="node10" href="$policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="549,173,666,200"/>
+</map>

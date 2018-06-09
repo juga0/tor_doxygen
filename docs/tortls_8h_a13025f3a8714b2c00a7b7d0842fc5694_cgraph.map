@@ -1,0 +1,5 @@
+<map id="tor_tls_peer_has_cert" name="tor_tls_peer_has_cert">
+<area shape="rect" id="node2" href="$tortls_8c.html#adc2406721ee63472828ecc962767ebe2" title="tls_log_errors" alt="" coords="200,5,300,32"/>
+<area shape="rect" id="node3" href="$tortls_8c.html#ad9a5eb99512347313d8f3495168a1501" title="tor_tls_log_one_error" alt="" coords="348,5,491,32"/>
+<area shape="rect" id="node4" href="$log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="539,5,600,32"/>
+</map>

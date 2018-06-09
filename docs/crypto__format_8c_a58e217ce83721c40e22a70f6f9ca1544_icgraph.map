@@ -1,0 +1,5 @@
+<map id="crypto_write_tagged_contents_to_file" name="crypto_write_tagged_contents_to_file">
+<area shape="rect" id="node2" href="$crypto__curve25519_8c.html#a700be6ddcf2a5ddbbbf56c91f3cd7cc7" title="curve25519_keypair\l_write_to_file" alt="" coords="200,5,339,47"/>
+<area shape="rect" id="node3" href="$crypto__ed25519_8c.html#a91a3f7e13f15a365d83bcb418daaaf7d" title="ed25519_seckey_write\l_to_file" alt="" coords="192,71,347,112"/>
+<area shape="rect" id="node4" href="$crypto__ed25519_8c.html#a7619807bfd3a082c5bba11d43f9f63ee" title="ed25519_pubkey_write\l_to_file" alt="" coords="192,136,347,177"/>
+</map>

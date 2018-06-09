@@ -1,0 +1,9 @@
+<map id="base64_encode" name="base64_encode">
+<area shape="rect" id="node2" href="$crypto__format_8c.html#af5e410c14abfc060427f4ffdd868e301" title="curve25519_public_to\l_base64" alt="" coords="170,5,318,47"/>
+<area shape="rect" id="node3" href="$crypto__format_8c.html#aa31b9d5fd609a1c8c3c888c7d817284c" title="digest_to_base64" alt="" coords="397,71,521,98"/>
+<area shape="rect" id="node4" href="$dirvote_8h.html#a97feb95be6e8e94295fa6775355318ee" title="dirvote_create_microdescriptor" alt="" coords="596,122,796,149"/>
+<area shape="rect" id="node5" href="$crypto__format_8c.html#a357bf351fe9894c905f7e7029da38f9a" title="digest256_to_base64" alt="" coords="171,173,317,199"/>
+<area shape="rect" id="node7" href="$util__format_8c.html#a3f919cffd152c1dc1383c93ea6aa2c91" title="base64_encode_nopad" alt="" coords="167,227,321,254"/>
+<area shape="rect" id="node6" href="$crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364" title="ed25519_public_to_base64" alt="" coords="369,173,548,199"/>
+<area shape="rect" id="node8" href="$crypto__format_8c.html#a582634f36c7e9f69d74313fceddbc101" title="ed25519_signature_to\l_base64" alt="" coords="384,224,533,265"/>
+</map>

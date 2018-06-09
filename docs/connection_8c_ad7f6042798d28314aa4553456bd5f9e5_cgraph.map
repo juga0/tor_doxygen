@@ -1,0 +1,5 @@
+<map id="log_failed_proxy_connection" name="log_failed_proxy_connection">
+<area shape="rect" id="node2" href="$connection_8c.html#afe9e86e1e84ebe4b3a167c0c8f9314c3" title="get_proxy_addrport" alt="" coords="240,42,373,69"/>
+<area shape="rect" id="node3" href="$entrynodes_8c.html#ac470a19b5347828069e8678db5a87779" title="get_transport_by_bridge\l_addrport" alt="" coords="421,5,583,47"/>
+<area shape="rect" id="node4" href="$address_8c.html#a139ff425c957e4eed3a766cb48f55f93" title="tor_addr_copy" alt="" coords="450,71,554,98"/>
+</map>

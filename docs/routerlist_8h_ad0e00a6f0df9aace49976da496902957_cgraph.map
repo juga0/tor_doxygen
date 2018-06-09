@@ -1,0 +1,7 @@
+<map id="routerlist_descriptors_added" name="routerlist_descriptors_added">
+<area shape="rect" id="node2" href="$control_8c.html#ac1c562cb6f09c13a49ec73cc1b72c7f8" title="control_event_descriptors\l_changed" alt="" coords="213,5,383,47"/>
+<area shape="rect" id="node3" href="$entrynodes_8c.html#af8213fa6b22741a8c0b7d4834d7dccff" title="learned_bridge_descriptor" alt="" coords="213,71,383,98"/>
+<area shape="rect" id="node4" href="$dirserv_8c.html#a87235a887afe2a5f796bd9a88b474909" title="dirserv_single_reachability_test" alt="" coords="196,122,400,149"/>
+<area shape="rect" id="node6" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="251,173,345,199"/>
+<area shape="rect" id="node5" href="$nodelist_8c.html#a114f706e8f9039f1dce0137619807581" title="node_get_mutable_by_id" alt="" coords="448,122,615,149"/>
+</map>

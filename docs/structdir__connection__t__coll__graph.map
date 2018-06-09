@@ -1,0 +1,5 @@
+<map id="dir_connection_t" name="dir_connection_t">
+<area shape="rect" id="node3" href="$structtor__zlib__state__t.html" title="tor_zlib_state_t" alt="" coords="89,96,200,123"/>
+<area shape="rect" id="node4" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="261,5,343,32"/>
+<area shape="rect" id="node5" href="$structrend__data__t.html" title="rend_data_t" alt="" coords="374,96,465,123"/>
+</map>

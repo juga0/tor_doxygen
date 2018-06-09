@@ -1,0 +1,5 @@
+<map id="connection_outbuf_too_full" name="connection_outbuf_too_full">
+<area shape="rect" id="node2" href="$relay_8h.html#a4e70e8fbfc6c89fa97102836a87a99c4" title="connection_edge_consider\l_sending_sendme" alt="" coords="231,27,407,69"/>
+<area shape="rect" id="node3" href="$connection__edge_8h.html#a98855be3866a7e56063cefe658788fcd" title="connection_edge_flushed_some" alt="" coords="455,5,663,32"/>
+<area shape="rect" id="node4" href="$connection__edge_8h.html#a84d464ff322df919a496d6fdfba9dade" title="connection_edge_finished\l_flushing" alt="" coords="473,57,645,98"/>
+</map>

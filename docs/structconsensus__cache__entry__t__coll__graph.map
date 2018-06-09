@@ -1,0 +1,7 @@
+<map id="consensus_cache_entry_t" name="consensus_cache_entry_t">
+<area shape="rect" id="node2" href="$structconfig__line__t.html" title="config_line_t" alt="" coords="5,184,100,211"/>
+<area shape="rect" id="node4" href="$structconsensus__cache__t.html" title="consensus_cache_t" alt="" coords="125,184,263,211"/>
+<area shape="rect" id="node5" href="$structstorage__dir__t.html" title="storage_dir_t" alt="" coords="220,95,317,121"/>
+<area shape="rect" id="node6" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="150,5,233,32"/>
+<area shape="rect" id="node7" href="$structtor__mmap__t.html" title="tor_mmap_t" alt="" coords="287,184,378,211"/>
+</map>

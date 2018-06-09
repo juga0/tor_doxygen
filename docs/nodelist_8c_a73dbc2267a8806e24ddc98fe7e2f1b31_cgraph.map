@@ -1,0 +1,5 @@
+<map id="node_is_named" name="node_is_named">
+<area shape="rect" id="node2" href="$nodelist_8c.html#a6d458e5290092933bd5c1aae33b2654f" title="node_get_nickname" alt="" coords="182,5,321,32"/>
+<area shape="rect" id="node3" href="$networkstatus_8c.html#af663020b40e6b122a43b26aa62ca4ed4" title="networkstatus_get_router\l_digest_by_nickname" alt="" coords="167,57,336,98"/>
+<area shape="rect" id="node4" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="208,123,295,149"/>
+</map>

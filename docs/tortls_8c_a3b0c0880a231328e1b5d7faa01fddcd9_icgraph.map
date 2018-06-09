@@ -1,0 +1,4 @@
+<map id="tor_tls_server_info_callback" name="tor_tls_server_info_callback">
+<area shape="rect" id="node2" href="$tortls_8h.html#a5823cfa710f0f7987d09dfececae28d0" title="tor_tls_set_renegotiate\l_callback" alt="" coords="183,5,337,47"/>
+<area shape="rect" id="node3" href="$connection__or_8h.html#aecfd6590f4dd5c079f371e48eb1e09f2" title="connection_or_block\l_renegotiation" alt="" coords="385,5,527,47"/>
+</map>

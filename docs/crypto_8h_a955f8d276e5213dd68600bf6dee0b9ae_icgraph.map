@@ -1,0 +1,31 @@
+<map id="memwipe" name="memwipe">
+<area shape="rect" id="node2" href="$aes_8h.html#af2c9590cc53e7c37355be6a8acd1d34e" title="aes_cipher_free" alt="" coords="169,27,283,54"/>
+<area shape="rect" id="node4" href="$crypto_8h.html#a83e86c4d91db59b9716111008e32a503" title="crypto_cipher_encrypt\l_with_iv" alt="" coords="584,71,735,112"/>
+<area shape="rect" id="node6" href="$compat_8c.html#af08ae33957e62580c100238865cc4f66" title="tor_munmap_file" alt="" coords="167,129,285,155"/>
+<area shape="rect" id="node7" href="$crypto_8h.html#ac6f0f5c0ab3d2230d7c2ec0ed1794450" title="crypto_pk_private_sign\l_digest" alt="" coords="148,180,304,221"/>
+<area shape="rect" id="node8" href="$crypto_8h.html#a3f9fd403924ede54a1c2105adad97b60" title="crypto_xof_free" alt="" coords="170,246,282,273"/>
+<area shape="rect" id="node9" href="$crypto_8h.html#a87e23a84a1f658a3ce59ead1a261fa57" title="crypto_expand_key_material\l_rfc5869_sha256" alt="" coords="132,297,320,339"/>
+<area shape="rect" id="node10" href="$crypto_8c.html#a606d07375b84fe8e9a010aa2c55c9ca6" title="crypto_strongest_rand_raw" alt="" coords="137,363,315,390"/>
+<area shape="rect" id="node11" href="$crypto__curve25519_8c.html#a5e7a8ab2c4c662058cadf28615d69518" title="curve25519_impl" alt="" coords="166,414,286,441"/>
+<area shape="rect" id="node13" href="$crypto__curve25519_8c.html#a700be6ddcf2a5ddbbbf56c91f3cd7cc7" title="curve25519_keypair\l_write_to_file" alt="" coords="157,465,295,507"/>
+<area shape="rect" id="node14" href="$crypto__ed25519_8c.html#adb6d235525b50eceac6cd3dd5b5b2fc6" title="ed25519_keypair_free" alt="" coords="151,531,301,558"/>
+<area shape="rect" id="node15" href="$tortls_8h.html#a1bc75295b83d26baab00ad0cc44f46d4" title="tor_x509_cert_free" alt="" coords="161,582,291,609"/>
+<area shape="rect" id="node16" href="$connection__or_8h.html#afa4b4ee00896c43391106b72f6bd31ac" title="or_handshake_state_free" alt="" coords="368,607,536,634"/>
+<area shape="rect" id="node17" href="$buffers_8h.html#a9d88eae643ab99ae0fa364974dd43077" title="socks_request_free" alt="" coords="158,683,294,710"/>
+<area shape="rect" id="node18" href="$cpuworker_8h.html#a1b4530118cd6e50e83a95454a6f22036" title="cpuworker_cancel_circ\l_handshake" alt="" coords="149,735,303,776"/>
+<area shape="rect" id="node19" href="$onion_8h.html#aa6c71bd5a96f194744360e231cf351f5" title="server_onion_keys_free" alt="" coords="146,801,306,827"/>
+<area shape="rect" id="node20" href="$onion__fast_8h.html#a089b172dc0c92e8f369b07d6860ba3bf" title="fast_handshake_state_free" alt="" coords="137,851,315,878"/>
+<area shape="rect" id="node21" href="$onion__ntor_8c.html#a8fa2c57ed9d4853f66bba046754f7787" title="ntor_handshake_state_free" alt="" coords="137,902,315,929"/>
+<area shape="rect" id="node22" href="$rendservice_8h.html#a3a79f7a8c69ac9e5daf2dbac5e158fbf" title="rend_authorized_client_free" alt="" coords="135,953,317,979"/>
+<area shape="rect" id="node25" href="$rendservice_8h.html#ab1e1ab28c3798f2915cd7520110b37a1" title="rend_service_free_intro" alt="" coords="147,1003,305,1030"/>
+<area shape="rect" id="node26" href="$router_8h.html#a278cf107b4a9b636b105ec5581b2f427" title="router_free_all" alt="" coords="607,1121,711,1147"/>
+<area shape="rect" id="node27" href="$routerkeys_8c.html#ac1142499a3f0ac31e764484c1c6bd6c6" title="make_ntor_onion_key\l_crosscert" alt="" coords="151,1105,301,1147"/>
+<area shape="rect" id="node28" href="$torcert_8c.html#a69b51896c94df3682f5b40fdffd5daba" title="tor_cert_free" alt="" coords="179,1171,273,1198"/>
+<area shape="rect" id="node3" href="$crypto_8h.html#a03f018a78f86020d36a4b1d41a0cf4c4" title="crypto_cipher_free" alt="" coords="387,27,517,54"/>
+<area shape="rect" id="node5" href="$crypto_8h.html#a11d6507b680acf27240a1803fbddba65" title="crypto_cipher_decrypt\l_with_iv" alt="" coords="584,5,735,47"/>
+<area shape="rect" id="node12" href="$crypto__curve25519_8c.html#a000333c8503d33e0dd2d5c002a7dcd08" title="curve25519_handshake" alt="" coords="373,414,531,441"/>
+<area shape="rect" id="node23" href="$rendservice_8c.html#a8cd5cb06a8e03c07ed7d120f90cee388" title="rend_service_free" alt="" coords="389,953,515,979"/>
+<area shape="rect" id="node24" href="$rendservice_8h.html#ade90973329e24160017a04e0503397bd" title="rend_service_free_all" alt="" coords="587,953,732,979"/>
+<area shape="rect" id="node29" href="$routerlist_8h.html#af2db10502386ef035c89377d2968c7e0" title="routerinfo_free" alt="" coords="399,1121,505,1147"/>
+<area shape="rect" id="node30" href="$routerlist_8h.html#a36bbf9bf41105f61c8f1f5b6ffc3b12b" title="extrainfo_free" alt="" coords="401,1171,503,1198"/>
+</map>

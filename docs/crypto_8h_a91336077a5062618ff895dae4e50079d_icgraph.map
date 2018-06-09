@@ -1,0 +1,13 @@
+<map id="crypto_pk_get_digest" name="crypto_pk_get_digest">
+<area shape="rect" id="node2" href="$crypto_8h.html#a10149de1598ad3852fa49aa2c708371b" title="crypto_pk_get_fingerprint" alt="" coords="200,5,368,32"/>
+<area shape="rect" id="node4" href="$crypto_8h.html#a910d30d7ec03da2c3ef3ac1eb0a01310" title="crypto_pk_get_hashed\l_fingerprint" alt="" coords="207,57,361,98"/>
+<area shape="rect" id="node5" href="$dirserv_8h.html#a95906070553304c94a590affb671223e" title="dirserv_router_get\l_status" alt="" coords="221,122,347,163"/>
+<area shape="rect" id="node7" href="$rendcommon_8h.html#abb619b1758ff82d476170d83fce49e77" title="rend_get_service_id" alt="" coords="215,188,353,215"/>
+<area shape="rect" id="node10" href="$rephist_8h.html#ab7fc106c03b6628580434b5469dae815" title="rep_hist_stored_maybe\l_new_hs" alt="" coords="205,239,363,281"/>
+<area shape="rect" id="node11" href="$router_8h.html#ad833b358871f8b821b26628c5457e134" title="set_server_identity_key" alt="" coords="204,305,364,332"/>
+<area shape="rect" id="node12" href="$routerkeys_8c.html#a501cbbf6be9a4449c5976ccacc8b2cc4" title="make_tap_onion_key\l_crosscert" alt="" coords="211,357,357,398"/>
+<area shape="rect" id="node3" href="$dirserv_8h.html#a95deb3d9d5367525bb51127b82269c87" title="dirserv_add_own_fingerprint" alt="" coords="416,5,600,32"/>
+<area shape="rect" id="node6" href="$dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="428,119,588,161"/>
+<area shape="rect" id="node8" href="$rendcache_8c.html#a3b62337cd31ec86e2239ffbe6005adce" title="rend_cache_failure\l_remove" alt="" coords="443,185,573,226"/>
+<area shape="rect" id="node9" href="$rendcache_8c.html#a2c5eb5e8ecaa713ec73cebc5ad4df905" title="rend_cache_entry_free" alt="" coords="648,192,803,219"/>
+</map>

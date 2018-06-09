@@ -1,0 +1,17 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/common/compress.c" name="/home/user/_my/code/bwauth&#45;related/tor/src/common/compress.c">
+<area shape="rect" id="node2" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="305,483,383,509"/>
+<area shape="rect" id="node7" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="201,408,263,435"/>
+<area shape="rect" id="node9" href="$util_8h.html" title="Headers for util.c. " alt="" coords="652,109,703,136"/>
+<area shape="rect" id="node18" href="$torlog_8h.html" title="Headers for log.c. " alt="" coords="905,184,970,211"/>
+<area shape="rect" id="node19" href="$compress_8h.html" title="Headers for compress.c. " alt="" coords="1209,109,1300,136"/>
+<area shape="rect" id="node20" href="$compress__lzma_8h.html" title="Header for compress_lzma.c. " alt="" coords="1324,109,1449,136"/>
+<area shape="rect" id="node21" href="$compress__none_8h.html" title="Header for compress_none.c. " alt="" coords="1473,109,1599,136"/>
+<area shape="rect" id="node22" href="$compress__zlib_8h.html" title="Header for compress_zlib.c. " alt="" coords="1623,109,1740,136"/>
+<area shape="rect" id="node23" href="$compress__zstd_8h.html" title="Header for compress_zstd.c. " alt="" coords="1764,109,1887,136"/>
+<area shape="rect" id="node10" href="$compat_8h_source.html" title="compat.h" alt="" coords="639,259,715,285"/>
+<area shape="rect" id="node11" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="660,408,759,435"/>
+<area shape="rect" id="node16" href="$di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="195,333,266,360"/>
+<area shape="rect" id="node17" href="$util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="561,184,639,211"/>
+<area shape="rect" id="node13" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="443,408,551,435"/>
+<area shape="rect" id="node15" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="494,333,621,360"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/dirvote.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/dirvote.h">
+<area shape="rect" id="node2" href="$config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="5,117,153,173"/>
+<area shape="rect" id="node3" href="$dircollate_8c.html" title="Collation code for figuring out which identities to vote for in the directory voting process..." alt="" coords="177,117,325,173"/>
+<area shape="rect" id="node4" href="$directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="349,117,497,173"/>
+<area shape="rect" id="node5" href="$dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="521,117,669,173"/>
+<area shape="rect" id="node6" href="$dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="693,117,841,173"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="865,117,1013,173"/>
+<area shape="rect" id="node8" href="$networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. " alt="" coords="1037,117,1193,173"/>
+<area shape="rect" id="node9" href="$routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="1217,117,1365,173"/>
+<area shape="rect" id="node10" href="$routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="1389,117,1537,173"/>
+<area shape="rect" id="node11" href="$shared__random_8c.html" title="Functions and data structure needed to accomplish the shared random protocol as defined in proposal #..." alt="" coords="1562,117,1725,173"/>
+<area shape="rect" id="node12" href="$shared__random__state_8c.html" title="Functions and data structures for the state of the random protocol as defined in proposal #250..." alt="" coords="1749,109,1901,180"/>
+</map>

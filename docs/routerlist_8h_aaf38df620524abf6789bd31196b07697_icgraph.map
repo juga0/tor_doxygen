@@ -1,0 +1,4 @@
+<map id="routers_sort_by_identity" name="routers_sort_by_identity">
+<area shape="rect" id="node2" href="$networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="215,5,429,47"/>
+<area shape="rect" id="node3" href="$routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="477,5,611,47"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="entry_is_live" name="entry_is_live">
+<area shape="rect" id="node2" href="$entrynodes_8c.html#a34ef17d63d304b4c0f849cca5430844f" title="entry_is_time_to_retry" alt="" coords="167,5,317,32"/>
+<area shape="rect" id="node3" href="$nodelist_8c.html#a4f18b4f896106632fed68e339debbb63" title="node_has_descriptor" alt="" coords="171,56,313,83"/>
+<area shape="rect" id="node4" href="$nodelist_8c.html#ab43ea384ab6fafd3d360460011ec2a43" title="node_get_purpose" alt="" coords="178,107,306,133"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#a823bac0acf5f6b68ab2074757215eac3" title="node_is_a_configured\l_bridge" alt="" coords="168,158,316,199"/>
+<area shape="rect" id="node7" href="$routerset_8c.html#a59dc48808ca97d25748411b8053b28a2" title="routerset_contains_node" alt="" coords="160,224,324,251"/>
+<area shape="rect" id="node12" href="$nodelist_8c.html#a78e60dd983647dd0229d85517eba6921" title="node_is_unreliable" alt="" coords="177,275,307,301"/>
+<area shape="rect" id="node13" href="$policies_8c.html#abcacc2af3dccb862768358fb53eb4570" title="fascist_firewall_allows_node" alt="" coords="148,325,336,352"/>
+<area shape="rect" id="node6" href="$nodelist_8c.html#a551827c8c00ee79f3d3663d11b2b60a0" title="node_get_all_orports" alt="" coords="384,165,527,192"/>
+<area shape="rect" id="node8" href="$routerset_8c.html#a46e8468ce37722ff71b91efd9d2f7ff0" title="routerset_contains\l_routerstatus" alt="" coords="391,217,520,258"/>
+<area shape="rect" id="node11" href="$routerset_8c.html#aa8942cc067a62102c0d51b88bcd3709f" title="routerset_contains\l_router" alt="" coords="391,282,520,323"/>
+<area shape="rect" id="node9" href="$routerset_8c.html#a1eda4526d656d042e5143ec79ee66be2" title="routerset_contains" alt="" coords="575,257,704,284"/>
+<area shape="rect" id="node10" href="$container_8c.html#a1406b823cb6088df755f1b81153d137e" title="strmap_get_lc" alt="" coords="752,257,856,284"/>
+</map>

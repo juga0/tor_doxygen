@@ -1,0 +1,12 @@
+<map id="tor_vsscanf" name="tor_vsscanf">
+<area shape="rect" id="node2" href="$util_8c.html#a58eee4159dfe33194147f2146f0dbc2f" title="tor_sscanf" alt="" coords="144,148,227,175"/>
+<area shape="rect" id="node3" href="$compat_8c.html#a802226afdc80ad46ae394289b1e586ee" title="tor_inet_aton" alt="" coords="285,68,382,95"/>
+<area shape="rect" id="node5" href="$compat_8c.html#a8ba87984a3a5dd16e7b60621ff983a89" title="tor_inet_pton" alt="" coords="482,123,579,149"/>
+<area shape="rect" id="node9" href="$util_8h.html#a1b3dda16e5097d60dd0a43815cc84fa8" title="parse_iso_time_" alt="" coords="275,173,392,200"/>
+<area shape="rect" id="node11" href="$util_8h.html#a01ef63d549917f359c58e5b9261a1bcb" title="parse_http_time" alt="" coords="276,224,391,251"/>
+<area shape="rect" id="node4" href="$address_8h.html#a704407961c6ac0d2fddfd29b8a719d91" title="tor_addr_parse_PTR_name" alt="" coords="440,5,621,32"/>
+<area shape="rect" id="node8" href="$nodelist_8h.html#aa6437a3da576fc05f0b444878bbeb93e" title="router_find_exact_exit\l_enclave" alt="" coords="455,57,606,98"/>
+<area shape="rect" id="node6" href="$util_8h.html#a307d12f617bd1f5606b8f971733e4c48" title="string_is_valid_ipv4\l_address" alt="" coords="669,82,805,123"/>
+<area shape="rect" id="node7" href="$util_8h.html#a06c31f983cd56699cca308532a09a14c" title="string_is_valid_ipv6\l_address" alt="" coords="669,147,805,189"/>
+<area shape="rect" id="node10" href="$util_8h.html#a8d4de39a48bc02621960c1d162478c63" title="parse_iso_time" alt="" coords="475,173,586,200"/>
+</map>

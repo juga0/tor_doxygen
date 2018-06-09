@@ -1,0 +1,5 @@
+<map id="ed25519_public_to_base64" name="ed25519_public_to_base64">
+<area shape="rect" id="node2" href="$crypto__format_8c.html#a357bf351fe9894c905f7e7029da38f9a" title="digest256_to_base64" alt="" coords="232,5,377,32"/>
+<area shape="rect" id="node3" href="$util__format_8c.html#a2394b082102cdbb3d443955e9b056e0e" title="base64_encode" alt="" coords="425,5,539,32"/>
+<area shape="rect" id="node4" href="$util__format_8c.html#a733f32f58c6056750ad6f64228af51b2" title="base64_encode_size" alt="" coords="587,5,731,32"/>
+</map>

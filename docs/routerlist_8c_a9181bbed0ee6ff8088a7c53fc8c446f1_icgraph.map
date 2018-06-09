@@ -1,0 +1,12 @@
+<map id="router_get_routerlist" name="router_get_routerlist">
+<area shape="rect" id="node2" href="$dirvote_8h.html#ae288382ee634aeb5099f263fa9af8c25" title="dirserv_generate_networkstatus\l_vote_obj" alt="" coords="191,5,397,47"/>
+<area shape="rect" id="node3" href="$dirserv_8h.html#a285fc71bfe2b99bc2b09b949d95ac1b9" title="dirserv_get_routerdesc\l_fingerprints" alt="" coords="217,71,371,112"/>
+<area shape="rect" id="node4" href="$dirserv_8h.html#a8fca5a38cd000d8ccabe5bc73e296bb2" title="dirserv_get_routerdescs" alt="" coords="213,137,375,163"/>
+<area shape="rect" id="node5" href="$dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="213,187,375,214"/>
+<area shape="rect" id="node6" href="$networkstatus_8h.html#a17d10602167e09e05f4d5aefc744141b" title="routers_update_all\l_from_networkstatus" alt="" coords="222,239,366,280"/>
+<area shape="rect" id="node7" href="$networkstatus_8h.html#a522e50eabe88fdafcc39b375b6e4cced" title="networkstatus_getinfo\l_by_purpose" alt="" coords="219,304,369,345"/>
+<area shape="rect" id="node9" href="$nodelist_8h.html#af4c2088785ce22b0dcc6d15dea714da1" title="nodelist_assert_ok" alt="" coords="229,370,359,397"/>
+<area shape="rect" id="node10" href="$routerlist_8h.html#a86f14dd56cbe0cc04a9b096db95a4270" title="router_reload_router_list" alt="" coords="213,421,375,447"/>
+<area shape="rect" id="node11" href="$routerlist_8h.html#a91d657f054dd82fbaf519c02deb5ec51" title="router_add_extrainfo\l_to_routerlist" alt="" coords="224,472,364,513"/>
+<area shape="rect" id="node8" href="$networkstatus_8h.html#ada1c2d5fcccff6ee4e7aff6a497ec2cf" title="networkstatus_dump\l_bridge_status_to_file" alt="" coords="445,304,595,345"/>
+</map>

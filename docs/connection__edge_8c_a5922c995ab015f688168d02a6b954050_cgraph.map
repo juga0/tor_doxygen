@@ -1,0 +1,8 @@
+<map id="MOCK_IMPL" name="MOCK_IMPL">
+<area shape="rect" id="node2" href="$connection__edge_8c.html#accf4787c953075c4a9aeaab09bb2b3fe" title="connection_edge_is\l_rendezvous_stream" alt="" coords="175,5,318,47"/>
+<area shape="rect" id="node3" href="$rendclient_8c.html#ab6a404500892962da09d28a99822d176" title="rend_client_note_connection\l_attempt_ended" alt="" coords="153,71,340,112"/>
+<area shape="rect" id="node6" href="$connection_8c.html#a2a15ddd62951cefd848ec070f1d9c912" title="connection_mark_for\l_close_" alt="" coords="175,136,318,177"/>
+<area shape="rect" id="node4" href="$rendcache_8c.html#a367f96478b3d5bab8af7098b61fdafb4" title="rend_cache_lookup_entry" alt="" coords="388,78,559,105"/>
+<area shape="rect" id="node5" href="$rendcommon_8c.html#a4c98beed11b35d28c3e8fe8249d027c5" title="rend_valid_service_id" alt="" coords="607,78,753,105"/>
+<area shape="rect" id="node7" href="$connection_8c.html#a738d9e7ef0c4a101c2adbd4cade35475" title="assert_connection_ok" alt="" coords="399,143,548,170"/>
+</map>

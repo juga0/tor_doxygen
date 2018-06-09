@@ -1,0 +1,9 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/scheduler.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/scheduler.h">
+<area shape="rect" id="node2" href="$channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances..." alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="$config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="$connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="522,109,677,165"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="701,109,849,165"/>
+<area shape="rect" id="node7" href="$relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="873,109,1021,165"/>
+<area shape="rect" id="node8" href="$scheduler_8c.html" title="Relay scheduling system. " alt="" coords="1045,109,1193,165"/>
+</map>

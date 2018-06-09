@@ -1,0 +1,6 @@
+<map id="channel_listener_dump_statistics" name="channel_listener_dump_statistics">
+<area shape="rect" id="node2" href="$log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="263,5,325,32"/>
+<area shape="rect" id="node3" href="$channel_8c.html#a0104c379fab8d5cf7dc3eddf113dc44e" title="channel_listener_describe\l_transport" alt="" coords="208,57,380,98"/>
+<area shape="rect" id="node4" href="$channel_8c.html#aee0cac4ba2733cffddc9ff59be701687" title="channel_listener_state\l_to_string" alt="" coords="218,122,370,163"/>
+<area shape="rect" id="node5" href="$channel_8c.html#a8193e4c4351e724edc8ecaddd09f8e10" title="channel_listener_dump\l_transport_statistics" alt="" coords="217,187,371,229"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="update_microdescs_from_networkstatus" name="update_microdescs_from_networkstatus">
+<area shape="rect" id="node2" href="$microdesc_8c.html#aa39bb77fb19ca888eb8d2bedac93c75d" title="get_microdesc_cache" alt="" coords="246,5,395,32"/>
+<area shape="rect" id="node3" href="$networkstatus_8c.html#a44accdf47b7f9f40b25c45daf2c31475" title="networkstatus_get_reasonably\l_live_consensus" alt="" coords="221,57,420,98"/>
+</map>

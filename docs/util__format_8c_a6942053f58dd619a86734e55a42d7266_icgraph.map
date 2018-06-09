@@ -1,0 +1,14 @@
+<map id="base16_decode" name="base16_decode">
+<area shape="rect" id="node2" href="$config_8c.html#aa33011ecb969cfb88f0e8979654d1fed" title="parse_dir_fallback_line" alt="" coords="193,5,347,32"/>
+<area shape="rect" id="node4" href="$control_8h.html#ab464eef1adbc6df3fcc09063dc6f9c3e" title="decode_hashed_passwords" alt="" coords="179,56,361,83"/>
+<area shape="rect" id="node5" href="$control_8c.html#afb5aa2ca5fb7e5db504bf1d3ff1342c5" title="getinfo_helper_downloads_cert" alt="" coords="169,107,371,133"/>
+<area shape="rect" id="node7" href="$control_8c.html#a158cde22d2f4bffa9d62a032aa02308a" title="getinfo_helper_downloads_desc" alt="" coords="167,157,373,184"/>
+<area shape="rect" id="node8" href="$control_8c.html#ad3d55d1ae306e3c81057ead47dcafb0d" title="getinfo_helper_downloads\l_bridge" alt="" coords="184,209,356,250"/>
+<area shape="rect" id="node9" href="$routerlist_8h.html#a523b43a59ea9b1e6b9a1c1be52f6d077" title="hex_digest_nickname\l_decode" alt="" coords="196,274,344,315"/>
+<area shape="rect" id="node13" href="$routerlist_8h.html#a940b9f42b7b36f3fc3721aa2536d7cdf" title="hexdigest_to_digest" alt="" coords="201,340,339,367"/>
+<area shape="rect" id="node3" href="$config_8c.html#ada6cefd4da1cfdc3d1588721bafc0a3f" title="MOCK_IMPL" alt="" coords="457,5,557,32"/>
+<area shape="rect" id="node6" href="$control_8c.html#a8464eca5a44ec95b58f55316cd5a4ceb" title="getinfo_helper_downloads" alt="" coords="421,157,593,184"/>
+<area shape="rect" id="node10" href="$nodelist_8h.html#af8ce600bda89ce38020c61ccb3fdd6a6" title="node_get_by_hex_id" alt="" coords="437,252,578,279"/>
+<area shape="rect" id="node12" href="$routerlist_8h.html#afd0f7cc93c54df7858c6a6fd3f0eb443" title="hex_digest_nickname\l_matches" alt="" coords="433,303,581,345"/>
+<area shape="rect" id="node11" href="$nodelist_8c.html#a331f404eaf4e481d2826de3ae45bcaff" title="MOCK_IMPL" alt="" coords="641,252,741,279"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="hs_service_descriptor_t" name="hs_service_descriptor_t">
+<area shape="rect" id="node6" href="$strucths__descriptor__t.html" title="hs_descriptor_t" alt="" coords="98,109,209,136"/>
+<area shape="rect" id="node3" href="$structed25519__keypair__t.html" title="ed25519_keypair_t" alt="" coords="234,109,364,136"/>
+<area shape="rect" id="node4" href="$structed25519__secret__key__t.html" title="ed25519_secret_key_t" alt="" coords="146,5,300,32"/>
+<area shape="rect" id="node5" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="324,5,474,32"/>
+<area shape="rect" id="node7" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="388,109,471,136"/>
+</map>

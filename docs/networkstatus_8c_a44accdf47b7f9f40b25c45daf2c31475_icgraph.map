@@ -1,0 +1,11 @@
+<map id="networkstatus_get_reasonably_live_consensus" name="networkstatus_get_reasonably_live_consensus">
+<area shape="rect" id="node2" href="$microdesc_8h.html#af6dd60dcd4d473a6b0c9fce9f0f3c1c3" title="microdesc_cache_clean" alt="" coords="269,5,432,32"/>
+<area shape="rect" id="node3" href="$microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="252,56,449,83"/>
+<area shape="rect" id="node6" href="$microdesc_8h.html#ad388d518c6750dce831b4d375e0efe5c" title="update_microdescs_from\l_networkstatus" alt="" coords="267,107,435,149"/>
+<area shape="rect" id="node7" href="$networkstatus_8c.html#a5d89145cb4ce8b8ccd79da09bfc3ce8c" title="MOCK_IMPL" alt="" coords="301,173,401,200"/>
+<area shape="rect" id="node8" href="$networkstatus_8h.html#a17d10602167e09e05f4d5aefc744141b" title="routers_update_all\l_from_networkstatus" alt="" coords="279,225,423,266"/>
+<area shape="rect" id="node9" href="$nodelist_8h.html#ae883dd13e0b2365df6ce859e79de0bdf" title="count_loading_descriptors\l_progress" alt="" coords="264,290,437,331"/>
+<area shape="rect" id="node10" href="$routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="268,355,433,397"/>
+<area shape="rect" id="node4" href="$routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="497,202,643,243"/>
+<area shape="rect" id="node5" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="691,202,819,243"/>
+</map>

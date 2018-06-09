@@ -1,0 +1,10 @@
+<map id="channel_s" name="channel_s">
+<area shape="rect" id="node6" href="$structcircuit__t.html" title="circuit_t" alt="" coords="245,298,313,325"/>
+<area shape="rect" id="node3" href="$structcircuitmux__s.html" title="circuitmux_s" alt="" coords="181,485,277,512"/>
+<area shape="rect" id="node7" href="$structextend__info__t.html" title="extend_info_t" alt="" coords="573,169,673,196"/>
+<area shape="rect" id="node4" href="$structcircuitmux__policy__data__s.html" title="circuitmux_policy_data_s" alt="" coords="547,298,717,325"/>
+<area shape="rect" id="node5" href="$structcircuitmux__policy__s.html" title="circuitmux_policy_s" alt="" coords="323,396,461,423"/>
+<area shape="rect" id="node8" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="577,5,668,32"/>
+<area shape="rect" id="node9" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="280,169,363,196"/>
+<area shape="rect" id="node10" href="$structcircuitmux__policy__circ__data__s.html" title="circuitmux_policy_circ\l_data_s" alt="" coords="342,291,493,332"/>
+</map>

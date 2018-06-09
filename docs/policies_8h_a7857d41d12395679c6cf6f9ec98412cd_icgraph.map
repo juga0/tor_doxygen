@@ -1,0 +1,5 @@
+<map id="addr_policy_list_free" name="addr_policy_list_free">
+<area shape="rect" id="node2" href="$policies_8h.html#abdb06fe24a53450a461e479a72b371a5" title="policies_free_all" alt="" coords="195,5,309,32"/>
+<area shape="rect" id="node3" href="$routerlist_8h.html#af2db10502386ef035c89377d2968c7e0" title="routerinfo_free" alt="" coords="199,56,305,83"/>
+<area shape="rect" id="node4" href="$router_8h.html#a278cf107b4a9b636b105ec5581b2f427" title="router_free_all" alt="" coords="357,56,461,83"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="MOCK_IMPL" name="MOCK_IMPL">
+<area shape="rect" id="node2" href="$address_8c.html#ad420cb52f698056c5680b8fa80e44998" title="tor_addr_from_sockaddr" alt="" coords="153,31,316,57"/>
+<area shape="rect" id="node6" href="$address_8c.html#a4e041faab6a08abbfe38c29ec12b3445" title="tor_addr_is_loopback" alt="" coords="162,81,307,108"/>
+<area shape="rect" id="node7" href="$address_8c.html#a7a1b8a0e5423eb0fab991aeac3c05a79" title="tor_addr_is_multicast" alt="" coords="161,132,308,159"/>
+<area shape="rect" id="node3" href="$address_8c.html#a182078d5f88554dc801c8acdb2ba2145" title="tor_addr_from_ipv4n" alt="" coords="364,5,504,32"/>
+<area shape="rect" id="node4" href="$address_8c.html#abf67a34456e0c4de9ae7bb63a9c6dc16" title="tor_addr_from_in6" alt="" coords="371,56,497,83"/>
+<area shape="rect" id="node5" href="$address_8c.html#ad073fc5f97a49b9b382af983aa1ae3d5" title="tor_addr_from_ipv6\l_bytes" alt="" coords="552,49,685,90"/>
+</map>

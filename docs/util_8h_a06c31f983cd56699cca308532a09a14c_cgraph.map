@@ -1,0 +1,6 @@
+<map id="string_is_valid_ipv6_address" name="string_is_valid_ipv6_address">
+<area shape="rect" id="node2" href="$compat_8c.html#a8ba87984a3a5dd16e7b60621ff983a89" title="tor_inet_pton" alt="" coords="189,31,287,57"/>
+<area shape="rect" id="node3" href="$compat_8c.html#a802226afdc80ad46ae394289b1e586ee" title="tor_inet_aton" alt="" coords="335,5,432,32"/>
+<area shape="rect" id="node4" href="$util_8c.html#a58eee4159dfe33194147f2146f0dbc2f" title="tor_sscanf" alt="" coords="480,31,563,57"/>
+<area shape="rect" id="node5" href="$util_8c.html#a90e57e8764505012f016303eab3e4180" title="tor_vsscanf" alt="" coords="611,31,701,57"/>
+</map>

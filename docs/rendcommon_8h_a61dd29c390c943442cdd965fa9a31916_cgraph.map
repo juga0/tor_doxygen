@@ -1,0 +1,5 @@
+<map id="rend_intro_point_free" name="rend_intro_point_free">
+<area shape="rect" id="node2" href="$circuitbuild_8c.html#a2ee63ec586b7d4f06830954b9aefb037" title="extend_info_free" alt="" coords="197,5,316,32"/>
+<area shape="rect" id="node3" href="$crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="365,31,473,57"/>
+<area shape="rect" id="node4" href="$replaycache_8c.html#a3820bca2b83e616483e752d3e5adfd92" title="replaycache_free" alt="" coords="196,107,317,133"/>
+</map>

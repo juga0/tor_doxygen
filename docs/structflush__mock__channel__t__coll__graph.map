@@ -1,0 +1,11 @@
+<map id="flush_mock_channel_t" name="flush_mock_channel_t">
+<area shape="rect" id="node2" href="$structchannel__s.html" title="channel_s" alt="" coords="151,169,233,196"/>
+<area shape="rect" id="node7" href="$structcircuit__t.html" title="circuit_t" alt="" coords="377,298,445,325"/>
+<area shape="rect" id="node4" href="$structcircuitmux__s.html" title="circuitmux_s" alt="" coords="313,485,409,512"/>
+<area shape="rect" id="node8" href="$structextend__info__t.html" title="extend_info_t" alt="" coords="683,169,783,196"/>
+<area shape="rect" id="node5" href="$structcircuitmux__policy__data__s.html" title="circuitmux_policy_data_s" alt="" coords="679,298,849,325"/>
+<area shape="rect" id="node6" href="$structcircuitmux__policy__s.html" title="circuitmux_policy_s" alt="" coords="455,396,593,423"/>
+<area shape="rect" id="node9" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="688,5,779,32"/>
+<area shape="rect" id="node10" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="376,169,459,196"/>
+<area shape="rect" id="node11" href="$structcircuitmux__policy__circ__data__s.html" title="circuitmux_policy_circ\l_data_s" alt="" coords="474,291,625,332"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="tor_lround" name="tor_lround">
+<area shape="rect" id="node2" href="$circuitstats_8c.html#a341fbd9cebffb2dae555f32e719bc27b" title="circuit_build_times\l_calculate_timeout" alt="" coords="132,5,263,47"/>
+<area shape="rect" id="node3" href="$circuitstats_8h.html#a321ec5d0efe5196955be8140397bba91" title="circuit_build_times\l_set_timeout" alt="" coords="132,71,263,112"/>
+</map>

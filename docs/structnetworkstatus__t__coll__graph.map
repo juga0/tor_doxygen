@@ -1,0 +1,4 @@
+<map id="networkstatus_t" name="networkstatus_t">
+<area shape="rect" id="node2" href="$structcommon__digests__t.html" title="common_digests_t" alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node4" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="241,5,323,32"/>
+</map>

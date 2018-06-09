@@ -1,0 +1,5 @@
+<map id="ed25519_keypair_generate" name="ed25519_keypair_generate">
+<area shape="rect" id="node2" href="$crypto__ed25519_8c.html#a49e4d1af4428ee01de5a0d0b409d0459" title="ed25519_secret_key\l_generate" alt="" coords="231,5,373,47"/>
+<area shape="rect" id="node4" href="$crypto__ed25519_8c.html#a250f7c3af49aabe2d1173325ae0841f5" title="ed25519_public_key\l_generate" alt="" coords="232,71,372,112"/>
+<area shape="rect" id="node3" href="$crypto_8c.html#ae5356daa13494dbcca77324c6a85b9da" title="crypto_strongest_rand" alt="" coords="421,13,572,39"/>
+</map>

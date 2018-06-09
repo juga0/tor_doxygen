@@ -1,0 +1,5 @@
+<map id="assert_circuit_ok" name="assert_circuit_ok">
+<area shape="rect" id="node2" href="$circuitlist_8c.html#af5c002c85c1165ee85550bffe9f80f4b" title="MOCK_IMPL" alt="" coords="218,5,318,32"/>
+<area shape="rect" id="node3" href="$connection__edge_8h.html#ae2916d0db0fd6c1551e29a3436308464" title="connection_exit_begin_conn" alt="" coords="175,56,361,83"/>
+<area shape="rect" id="node4" href="$connection__edge_8h.html#a8805ef6708301581c9339e83f41e76e0" title="connection_exit_begin\l_resolve" alt="" coords="193,107,343,149"/>
+</map>

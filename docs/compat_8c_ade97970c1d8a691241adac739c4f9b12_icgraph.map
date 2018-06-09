@@ -1,0 +1,22 @@
+<map id="tor_asprintf" name="tor_asprintf">
+<area shape="rect" id="node2" href="$address_8h.html#aee1a3f2d72f43f9b0a7d7c5ae85e51e7" title="tor_sockaddr_to_str" alt="" coords="165,5,302,32"/>
+<area shape="rect" id="node3" href="$addressmap_8c.html#afb820c2da000dbdab619cb6c8f487169" title="addressmap_rewrite\l_reverse" alt="" coords="164,57,303,98"/>
+<area shape="rect" id="node4" href="$addressmap_8c.html#a1aec8b38f4126d096d6009696f9fc52b" title="client_dns_set_reverse\l_addressmap" alt="" coords="155,122,311,163"/>
+<area shape="rect" id="node5" href="$config_8h.html#a3113591cdd3555bd354860a3a0802222" title="get_version" alt="" coords="410,188,499,215"/>
+<area shape="rect" id="node10" href="$config_8h.html#a229118cbc4221ec841824b17f7c82b06" title="get_short_version" alt="" coords="171,239,296,265"/>
+<area shape="rect" id="node12" href="$connection_8h.html#a14be61f9dd31706f59ee48db802dbedc" title="clock_skew_warning" alt="" coords="162,289,305,316"/>
+<area shape="rect" id="node13" href="$geoip_8h.html#a8b5c99d168aba5cb0223650cd2989054" title="format_client_stats\l_heartbeat" alt="" coords="167,341,300,382"/>
+<area shape="rect" id="node14" href="$routerlist_8h.html#afd620fb5cbc29f6895ae016c0240d9a6" title="esc_router_info" alt="" coords="178,407,289,433"/>
+<area shape="rect" id="node16" href="$status_8c.html#a963a0d6030b8281fb99dd747d846f07b" title="secs_to_uptime" alt="" coords="176,457,291,484"/>
+<area shape="rect" id="node18" href="$status_8c.html#a01e4f8019372bf2266507c072a7f23f6" title="bytes_to_usage" alt="" coords="176,508,291,535"/>
+<area shape="rect" id="node19" href="$transports_8c.html#a5d3b79994a8b79ea9455cc271fcd1fce" title="get_pt_proxy_uri" alt="" coords="174,559,293,585"/>
+<area shape="rect" id="node20" href="$transports_8h.html#a7b99ca768a76f864050b04271a629044" title="pt_get_extra_info_descriptor\l_string" alt="" coords="140,610,327,651"/>
+<area shape="rect" id="node21" href="$test_8h.html#a334e47899bf2c19bf8a5ce0f226ab399" title="get_fname_rnd" alt="" coords="179,676,287,703"/>
+<area shape="rect" id="node6" href="$main_8c.html#a5c761b9de5289922e4f75826f766355f" title="tor_init" alt="" coords="583,163,644,189"/>
+<area shape="rect" id="node7" href="$tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="692,188,764,215"/>
+<area shape="rect" id="node8" href="$tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="812,188,863,215"/>
+<area shape="rect" id="node9" href="$test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="911,188,1004,215"/>
+<area shape="rect" id="node11" href="$router_8c.html#af8911501c12d293f7fe03a101f3563ba" title="get_platform_str" alt="" coords="397,239,513,265"/>
+<area shape="rect" id="node15" href="$dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="375,399,535,441"/>
+<area shape="rect" id="node17" href="$status_8c.html#aee9a46dd5052de4c866d7a8437df1d0b" title="log_heartbeat" alt="" coords="405,487,505,513"/>
+</map>

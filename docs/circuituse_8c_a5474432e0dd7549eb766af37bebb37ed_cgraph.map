@@ -1,0 +1,6 @@
+<map id="circuit_expire_old_circs_as_needed" name="circuit_expire_old_circs_as_needed">
+<area shape="rect" id="node2" href="$circuituse_8c.html#a8f03827edb583ab1e727def243a42be1" title="circuit_reset_failure\l_count" alt="" coords="180,5,315,47"/>
+<area shape="rect" id="node3" href="$router_8c.html#aaa263ba55448946fedc8475b3d9b34b8" title="proxy_mode" alt="" coords="201,71,294,98"/>
+<area shape="rect" id="node4" href="$addressmap_8c.html#a72c5cdc19a414853d92897aefdc95b66" title="addressmap_clean" alt="" coords="182,122,313,149"/>
+<area shape="rect" id="node5" href="$addressmap_8c.html#a578c622b1ec403e3029606d35a80b261" title="addressmap_get_mappings" alt="" coords="363,122,544,149"/>
+</map>

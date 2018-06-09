@@ -1,0 +1,9 @@
+<map id="compare_digest_to_routerstatus_entry" name="compare_digest_to_routerstatus_entry">
+<area shape="rect" id="node2" href="$networkstatus_8h.html#a041c69e1d5a274d07c162f9185605cd0" title="networkstatus_vote\l_find_mutable_entry" alt="" coords="279,5,417,47"/>
+<area shape="rect" id="node5" href="$networkstatus_8h.html#a4d3edab11be460ebb5dc5de0f07c7874" title="networkstatus_vote\l_find_entry_idx" alt="" coords="280,71,416,112"/>
+<area shape="rect" id="node6" href="$networkstatus_8h.html#abeb917388a503fd5c8e727d7a6bd675f" title="router_get_mutable\l_consensus_status_by_id" alt="" coords="261,136,435,177"/>
+<area shape="rect" id="node3" href="$networkstatus_8h.html#aae8d735fe9d889755f96e927f9e9c967" title="networkstatus_vote\l_find_entry" alt="" coords="490,5,626,47"/>
+<area shape="rect" id="node4" href="$router_8h.html#ad20dfba342b27eb97810f9141d5c14a1" title="mark_my_descriptor\l_dirty_if_too_old" alt="" coords="684,5,824,47"/>
+<area shape="rect" id="node7" href="$networkstatus_8h.html#a810a06fe9e7c7bd3a1c5c5ee8cc13b52" title="router_get_consensus\l_status_by_id" alt="" coords="483,136,633,177"/>
+<area shape="rect" id="node8" href="$connection__or_8h.html#a8573b49df7ffc3ad6df0faa6e7a12f10" title="connection_or_digest\l_is_known_relay" alt="" coords="681,136,827,177"/>
+</map>

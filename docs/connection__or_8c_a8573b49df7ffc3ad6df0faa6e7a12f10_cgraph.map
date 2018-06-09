@@ -1,0 +1,10 @@
+<map id="connection_or_digest_is_known_relay" name="connection_or_digest_is_known_relay">
+<area shape="rect" id="node2" href="$networkstatus_8c.html#a810a06fe9e7c7bd3a1c5c5ee8cc13b52" title="router_get_consensus\l_status_by_id" alt="" coords="203,30,354,71"/>
+<area shape="rect" id="node8" href="$routerlist_8c.html#a9eb1861cedcb477a2e455b6c02eb56d8" title="router_get_by_id_digest" alt="" coords="199,97,359,124"/>
+<area shape="rect" id="node3" href="$networkstatus_8c.html#abeb917388a503fd5c8e727d7a6bd675f" title="router_get_mutable\l_consensus_status_by_id" alt="" coords="407,27,580,69"/>
+<area shape="rect" id="node4" href="$container_8c.html#a6722b8c6ca501b524958b3cdac2bc70c" title="smartlist_bsearch" alt="" coords="669,5,795,32"/>
+<area shape="rect" id="node6" href="$networkstatus_8c.html#a998a1af9202b3a8eec2327819b84bcee" title="compare_digest_to_routerstatus\l_entry" alt="" coords="628,57,836,98"/>
+<area shape="rect" id="node5" href="$container_8c.html#af0f195f396d7f97e7f2f2367453da119" title="smartlist_bsearch_idx" alt="" coords="884,5,1033,32"/>
+<area shape="rect" id="node7" href="$di__ops_8c.html#a47393c6ace65b9b2173d60ac6ae119aa" title="tor_memcmp" alt="" coords="909,64,1008,91"/>
+<area shape="rect" id="node9" href="$routerlist_8c.html#a848eea1698b3361538f190f55f2cc0e6" title="router_get_mutable\l_by_digest" alt="" coords="427,93,560,134"/>
+</map>

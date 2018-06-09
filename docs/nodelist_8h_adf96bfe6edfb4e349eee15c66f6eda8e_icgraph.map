@@ -1,0 +1,7 @@
+<map id="node_get_prim_orport" name="node_get_prim_orport">
+<area shape="rect" id="node2" href="$nodelist_8h.html#ad81a144f3a7aae0ee6a4406c8bcf137b" title="node_get_addr" alt="" coords="219,35,325,61"/>
+<area shape="rect" id="node6" href="$nodelist_8h.html#a07d582a1a612673f07f31a2bd81ba3ac" title="node_get_pref_orport" alt="" coords="200,85,344,112"/>
+<area shape="rect" id="node3" href="$nodelist_8h.html#aec9e62be44bcfcb1017f1a1190fcba8f" title="nodes_in_same_family" alt="" coords="394,5,549,32"/>
+<area shape="rect" id="node4" href="$nodelist_8h.html#ac55db6c89a4853244b80165f92d8cba7" title="nodelist_add_node_and\l_family" alt="" coords="392,57,551,98"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="599,57,733,98"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="ed25519_seckey_write_to_file" name="ed25519_seckey_write_to_file">
+<area shape="rect" id="node2" href="$crypto__format_8c.html#a58e217ce83721c40e22a70f6f9ca1544" title="crypto_write_tagged\l_contents_to_file" alt="" coords="208,49,347,90"/>
+<area shape="rect" id="node3" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="422,5,509,32"/>
+<area shape="rect" id="node5" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="415,56,515,83"/>
+<area shape="rect" id="node6" href="$util_8c.html#ae01530967d53afcfefa8227c98072e83" title="write_chunks_to_file" alt="" coords="395,107,536,133"/>
+<area shape="rect" id="node4" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="584,5,679,32"/>
+</map>

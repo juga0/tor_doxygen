@@ -1,0 +1,5 @@
+<map id="tor_dup_ip" name="tor_dup_ip">
+<area shape="rect" id="node2" href="$circuitbuild_8h.html#acccfc2539c7dd13ca9db049b3decc386" title="inform_testing_reachability" alt="" coords="136,5,313,32"/>
+<area shape="rect" id="node3" href="$router_8h.html#a81d0eddf34d18d1da24a0f14e1c54c1f" title="router_orport_found\l_reachable" alt="" coords="157,57,292,98"/>
+<area shape="rect" id="node4" href="$router_8h.html#ab0152c6014466eaafa2e666bb38ba16b" title="router_dirport_found\l_reachable" alt="" coords="156,122,293,163"/>
+</map>

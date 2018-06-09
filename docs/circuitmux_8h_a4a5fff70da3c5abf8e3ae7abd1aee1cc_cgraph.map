@@ -1,0 +1,4 @@
+<map id="circuitmux_set_policy" name="circuitmux_set_policy">
+<area shape="rect" id="node2" href="$channel_8c.html#a03ce362c180c51c5018668bae7bb4f24" title="channel_find_by_global_id" alt="" coords="201,5,376,32"/>
+<area shape="rect" id="node3" href="$circuitlist_8c.html#a0b3f5de779a301bc93a2293e6f689b60" title="circuit_get_by_circid\l_channel_even_if_marked" alt="" coords="202,57,375,98"/>
+</map>

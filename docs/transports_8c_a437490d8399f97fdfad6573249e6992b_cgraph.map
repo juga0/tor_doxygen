@@ -1,0 +1,6 @@
+<map id="managed_proxy_destroy" name="managed_proxy_destroy">
+<area shape="rect" id="node2" href="$transports_8c.html#a53102af4a1be1a6f6912163291dbd0f2" title="transport_free" alt="" coords="229,5,331,32"/>
+<area shape="rect" id="node3" href="$container_8c.html#ad318adf5db2ec229a43c0c567e1f6fce" title="smartlist_remove" alt="" coords="219,56,341,83"/>
+<area shape="rect" id="node4" href="$transports_8c.html#af16658af2fffde5dcdbea489349b5524" title="free_execve_args" alt="" coords="217,107,343,133"/>
+<area shape="rect" id="node5" href="$util_8c.html#a40d94cc20afc38582c65aa418919ebed" title="tor_free_" alt="" coords="391,107,464,133"/>
+</map>

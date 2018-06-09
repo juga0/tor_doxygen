@@ -1,0 +1,5 @@
+<map id="circuit_build_times_needs_circuits_now" name="circuit_build_times_needs_circuits_now">
+<area shape="rect" id="node2" href="$circuitstats_8c.html#af926b84dc328f71fcccdaa4df5e418b5" title="circuit_build_times\l_needs_circuits" alt="" coords="197,5,328,47"/>
+<area shape="rect" id="node4" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="216,71,309,98"/>
+<area shape="rect" id="node3" href="$circuitstats_8c.html#aa3e86bd1570419757d3e1cdc577395a3" title="circuit_build_times\l_enough_to_compute" alt="" coords="376,5,523,47"/>
+</map>

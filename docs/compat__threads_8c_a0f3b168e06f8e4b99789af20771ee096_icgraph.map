@@ -1,0 +1,6 @@
+<map id="tor_mutex_new" name="tor_mutex_new">
+<area shape="rect" id="node2" href="$compat_8c.html#ae02136d1dde67b64beb4e87365ad6ccf" title="tor_localtime_r" alt="" coords="164,5,271,32"/>
+<area shape="rect" id="node3" href="$compat_8c.html#a983d273987a338a60523f0bce4006af2" title="tor_gmtime_r" alt="" coords="168,56,267,83"/>
+<area shape="rect" id="node4" href="$util_8h.html#a0e1e4c423a6ba1306a9c3b2565e99391" title="format_rfc1123_time" alt="" coords="319,27,460,53"/>
+<area shape="rect" id="node5" href="$dirvote_8h.html#ad12be9f1748f89ce9e33a895218912fb" title="dirvote_get_start_of\l_next_interval" alt="" coords="321,78,458,119"/>
+</map>

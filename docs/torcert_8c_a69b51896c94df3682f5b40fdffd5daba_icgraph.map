@@ -1,0 +1,5 @@
+<map id="tor_cert_free" name="tor_cert_free">
+<area shape="rect" id="node2" href="$routerlist_8h.html#af2db10502386ef035c89377d2968c7e0" title="routerinfo_free" alt="" coords="148,5,253,32"/>
+<area shape="rect" id="node4" href="$routerlist_8h.html#a36bbf9bf41105f61c8f1f5b6ffc3b12b" title="extrainfo_free" alt="" coords="150,56,251,83"/>
+<area shape="rect" id="node3" href="$router_8h.html#a278cf107b4a9b636b105ec5581b2f427" title="router_free_all" alt="" coords="301,31,405,57"/>
+</map>

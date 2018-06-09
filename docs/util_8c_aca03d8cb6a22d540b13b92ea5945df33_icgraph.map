@@ -1,0 +1,17 @@
+<map id="approx_time" name="approx_time">
+<area shape="rect" id="node2" href="$channel_8h.html#a41ebc2554b7f8fd2b5c331bf7dc94ecc" title="channel_get_for_extend" alt="" coords="163,5,323,32"/>
+<area shape="rect" id="node3" href="$circuitlist_8h.html#a931cd41e6b2c350f134e3f1e3b43edc9" title="circuit_set_p_circid_chan" alt="" coords="159,56,328,83"/>
+<area shape="rect" id="node4" href="$circuitlist_8h.html#a38413accb1cc33e6949c1083f30f86f4" title="circuit_set_n_circid_chan" alt="" coords="159,107,328,133"/>
+<area shape="rect" id="node5" href="$circuitmux__ewma_8h.html#a30844e1c06da11dfc70c8a0a1b24fbd3" title="cell_ewma_get_tick" alt="" coords="175,157,312,184"/>
+<area shape="rect" id="node6" href="$circuitstats_8h.html#a078e35bc3a938238e3eac4eb29a076ce" title="circuit_build_times\l_needs_circuits_now" alt="" coords="171,209,315,250"/>
+<area shape="rect" id="node7" href="$circuitstats_8h.html#a2b95a37e26723de09e38d46549c9fba0" title="circuit_build_times\l_network_is_live" alt="" coords="178,274,309,315"/>
+<area shape="rect" id="node9" href="$circuituse_8h.html#aa95a48009b429befccf14ebce9d13a97" title="connection_ap_handshake\l_attach_chosen_circuit" alt="" coords="155,339,331,381"/>
+<area shape="rect" id="node10" href="$circuituse_8h.html#adf36645f7a473ad622918668f2f5ba33" title="mark_circuit_unusable\l_for_new_conns" alt="" coords="167,405,319,446"/>
+<area shape="rect" id="node13" href="$routerlist_8c.html#a264fc4b4441c88e689a8428be321d318" title="MOCK_IMPL" alt="" coords="193,471,293,497"/>
+<area shape="rect" id="node14" href="$routerlist_8h.html#ad0e00a6f0df9aace49976da496902957" title="routerlist_descriptors\l_added" alt="" coords="172,522,315,563"/>
+<area shape="rect" id="node15" href="$scheduler_8h.html#a087fd81b86de21c70f9e3750f5b88792" title="scheduler_adjust_queue_size" alt="" coords="147,588,340,615"/>
+<area shape="rect" id="node16" href="$scheduler_8c.html#aede4632e18f27f3fe1362f6d19d8eea8" title="scheduler_get_queue\l_heuristic" alt="" coords="171,639,316,681"/>
+<area shape="rect" id="node8" href="$channel_8c.html#a4bb9524073333e156da271ca623a772d" title="channel_do_open_actions" alt="" coords="388,281,560,308"/>
+<area shape="rect" id="node11" href="$circuitlist_8h.html#a52c4991dce45efd8d927b6092e3c85be" title="circuit_mark_all_dirty\l_circs_as_unusable" alt="" coords="401,405,547,446"/>
+<area shape="rect" id="node12" href="$circuitbuild_8h.html#a9850a0ba60e6a62bc0a7267343418235" title="circuit_note_clock\l_jumped" alt="" coords="608,405,735,446"/>
+</map>

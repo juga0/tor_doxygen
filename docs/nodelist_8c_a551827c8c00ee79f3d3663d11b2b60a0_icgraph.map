@@ -1,0 +1,8 @@
+<map id="node_get_all_orports" name="node_get_all_orports">
+<area shape="rect" id="node2" href="$entrynodes_8h.html#a823bac0acf5f6b68ab2074757215eac3" title="node_is_a_configured\l_bridge" alt="" coords="196,53,344,94"/>
+<area shape="rect" id="node7" href="$router_8h.html#a7ca65441213fb44d6dde8432c943a6c3" title="router_get_all_orports" alt="" coords="197,119,343,145"/>
+<area shape="rect" id="node3" href="$entrynodes_8c.html#afd4f8dd6f248abfc072ce641a568ddde" title="entry_is_live" alt="" coords="414,35,509,61"/>
+<area shape="rect" id="node6" href="$entrynodes_8c.html#a12aaa196d99fc0a6a4416c17f8274e76" title="add_an_entry_guard" alt="" coords="392,85,531,112"/>
+<area shape="rect" id="node4" href="$entrynodes_8h.html#accc850d23175b5132661a8c6e561e972" title="num_live_entry_guards" alt="" coords="579,5,735,32"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="589,57,724,98"/>
+</map>

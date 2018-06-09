@@ -1,0 +1,5 @@
+<map id="routerstatus_parse_guardfraction" name="routerstatus_parse_guardfraction">
+<area shape="rect" id="node2" href="$entrynodes_8c.html#abcf00389e72807f2534ffd3da3de31e6" title="should_apply_guardfraction" alt="" coords="184,5,364,32"/>
+<area shape="rect" id="node4" href="$util_8c.html#a8c315755a2fb518d47d7397a14e506de" title="tor_parse_ulong" alt="" coords="217,56,331,83"/>
+<area shape="rect" id="node3" href="$networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="412,5,584,32"/>
+</map>

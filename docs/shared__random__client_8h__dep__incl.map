@@ -1,0 +1,9 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/shared_random_client.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/shared_random_client.h">
+<area shape="rect" id="node2" href="$control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="5,131,153,187"/>
+<area shape="rect" id="node3" href="$shared__random_8c.html" title="Functions and data structure needed to accomplish the shared random protocol as defined in proposal #..." alt="" coords="177,124,325,195"/>
+<area shape="rect" id="node4" href="$shared__random__state_8c.html" title="Functions and data structures for the state of the random protocol as defined in proposal #250..." alt="" coords="349,124,497,195"/>
+<area shape="rect" id="node5" href="$hs__common_8c.html" title="Contains code shared between different HS protocol version as well as useful data structures and acce..." alt="" coords="521,131,669,187"/>
+<area shape="rect" id="node6" href="$hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="693,131,841,187"/>
+<area shape="rect" id="node7" href="$routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="865,131,1013,187"/>
+<area shape="rect" id="node8" href="$shared__random__client_8c.html" title="This file contains functions that are from the shared random subsystem but used by many part of tor..." alt="" coords="1038,124,1190,195"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="authdir_mode_bridge" name="authdir_mode_bridge">
+<area shape="rect" id="node2" href="$dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="196,5,359,32"/>
+<area shape="rect" id="node3" href="$networkstatus_8h.html#a522e50eabe88fdafcc39b375b6e4cced" title="networkstatus_getinfo\l_by_purpose" alt="" coords="202,57,353,98"/>
+<area shape="rect" id="node5" href="$router_8h.html#aea820da6141eaf03649558d4ec6d5872" title="authdir_mode_publishes\l_statuses" alt="" coords="196,122,359,163"/>
+<area shape="rect" id="node4" href="$networkstatus_8h.html#ada1c2d5fcccff6ee4e7aff6a497ec2cf" title="networkstatus_dump\l_bridge_status_to_file" alt="" coords="407,57,556,98"/>
+<area shape="rect" id="node6" href="$dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="408,129,555,156"/>
+</map>

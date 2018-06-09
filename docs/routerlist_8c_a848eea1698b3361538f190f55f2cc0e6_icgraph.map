@@ -1,0 +1,6 @@
+<map id="router_get_mutable_by_digest" name="router_get_mutable_by_digest">
+<area shape="rect" id="node2" href="$networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="187,8,401,49"/>
+<area shape="rect" id="node4" href="$routerlist_8h.html#a9eb1861cedcb477a2e455b6c02eb56d8" title="router_get_by_id_digest" alt="" coords="214,75,374,102"/>
+<area shape="rect" id="node3" href="$routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="455,5,589,47"/>
+<area shape="rect" id="node5" href="$connection__or_8h.html#a8573b49df7ffc3ad6df0faa6e7a12f10" title="connection_or_digest\l_is_known_relay" alt="" coords="449,71,595,112"/>
+</map>

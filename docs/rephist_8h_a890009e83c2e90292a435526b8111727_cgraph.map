@@ -1,0 +1,6 @@
+<map id="rep_hist_circbuilding_dormant" name="rep_hist_circbuilding_dormant">
+<area shape="rect" id="node2" href="$rephist_8c.html#ae234f5b5dcf88ea65ef20ff5c3512327" title="any_predicted_circuits" alt="" coords="194,5,346,32"/>
+<area shape="rect" id="node3" href="$router_8c.html#a8b917b11fb2945b314286a6a567e34c3" title="check_whether_orport\l_reachable" alt="" coords="195,57,345,98"/>
+<area shape="rect" id="node4" href="$circuituse_8c.html#ac6c1a2c715351d85ef6747ca1a4db958" title="circuit_enough_testing\l_circs" alt="" coords="194,122,346,163"/>
+<area shape="rect" id="node5" href="$router_8c.html#a98317a030cb30700f60c8444d676087b" title="check_whether_dirport\l_reachable" alt="" coords="193,187,347,229"/>
+</map>

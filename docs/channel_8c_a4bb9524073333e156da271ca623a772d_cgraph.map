@@ -1,0 +1,10 @@
+<map id="channel_do_open_actions" name="channel_do_open_actions">
+<area shape="rect" id="node2" href="$channel_8c.html#a150180857a5c09e9ab16095b6011fd06" title="channel_is_outgoing" alt="" coords="233,5,373,32"/>
+<area shape="rect" id="node3" href="$circuitstats_8c.html#a2b95a37e26723de09e38d46549c9fba0" title="circuit_build_times\l_network_is_live" alt="" coords="237,57,368,98"/>
+<area shape="rect" id="node5" href="$circuitstats_8c.html#ab6607aa51a9503278d8f893f8092aabc" title="get_circuit_build_times\l_mutable" alt="" coords="225,122,380,163"/>
+<area shape="rect" id="node6" href="$rephist_8c.html#ab0585bb24fb7ba85dce36199cf9befe1" title="rep_hist_note_connect\l_succeeded" alt="" coords="226,187,379,229"/>
+<area shape="rect" id="node7" href="$entrynodes_8c.html#aca1100341edbe9b4ff26527595ab56e8" title="entry_guard_register\l_connect_status" alt="" coords="233,253,373,294"/>
+<area shape="rect" id="node4" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="438,64,531,91"/>
+<area shape="rect" id="node8" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="441,235,528,261"/>
+<area shape="rect" id="node9" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="428,285,541,312"/>
+</map>

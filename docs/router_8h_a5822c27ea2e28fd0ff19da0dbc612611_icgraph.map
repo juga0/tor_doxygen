@@ -1,0 +1,4 @@
+<map id="router_purpose_from_string" name="router_purpose_from_string">
+<area shape="rect" id="node2" href="$networkstatus_8h.html#a522e50eabe88fdafcc39b375b6e4cced" title="networkstatus_getinfo\l_by_purpose" alt="" coords="195,5,345,47"/>
+<area shape="rect" id="node3" href="$networkstatus_8h.html#ada1c2d5fcccff6ee4e7aff6a497ec2cf" title="networkstatus_dump\l_bridge_status_to_file" alt="" coords="393,5,543,47"/>
+</map>

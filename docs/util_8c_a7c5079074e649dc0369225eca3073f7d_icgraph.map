@@ -1,0 +1,8 @@
+<map id="tor_mem_is_zero" name="tor_mem_is_zero">
+<area shape="rect" id="node2" href="$crypto__format_8c.html#a40e1ed638568c15cac66b16cf427b4e7" title="crypto_read_tagged\l_contents_from_file" alt="" coords="186,71,322,112"/>
+<area shape="rect" id="node6" href="$util_8h.html#a714ca710c1b7d56d6633bf2d1f550cad" title="tor_digest256_is_zero" alt="" coords="179,137,329,163"/>
+<area shape="rect" id="node7" href="$routerlist_8h.html#a3ed4f55736541adee60a83e8442d4d4f" title="routerinfo_incompatible\l_with_extrainfo" alt="" coords="176,188,332,229"/>
+<area shape="rect" id="node3" href="$crypto__curve25519_8c.html#a7fce12b8d0fef7bbe32c103aaab17412" title="curve25519_keypair\l_read_from_file" alt="" coords="387,5,525,47"/>
+<area shape="rect" id="node4" href="$crypto__ed25519_8c.html#a34a8bd7b192871bd1e5b778961ba2efb" title="ed25519_seckey_read\l_from_file" alt="" coords="380,71,532,112"/>
+<area shape="rect" id="node5" href="$crypto__ed25519_8c.html#aa33c6bb447b0042745d6d2938a12dda4" title="ed25519_pubkey_read\l_from_file" alt="" coords="380,136,532,177"/>
+</map>

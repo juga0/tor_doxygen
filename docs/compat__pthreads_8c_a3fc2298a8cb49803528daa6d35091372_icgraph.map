@@ -1,0 +1,9 @@
+<map id="tor_mutex_release" name="tor_mutex_release">
+<area shape="rect" id="node2" href="$compat_8c.html#ae02136d1dde67b64beb4e87365ad6ccf" title="tor_localtime_r" alt="" coords="213,13,319,40"/>
+<area shape="rect" id="node3" href="$compat_8c.html#a983d273987a338a60523f0bce4006af2" title="tor_gmtime_r" alt="" coords="217,64,315,91"/>
+<area shape="rect" id="node6" href="$workqueue_8c.html#a19dc28519d407979f4a56f6c18a7f065" title="workqueue_entry_cancel" alt="" coords="183,115,349,141"/>
+<area shape="rect" id="node8" href="$router_8h.html#a71d8f6e0ed3558284e43371894abb504" title="dup_onion_keys" alt="" coords="208,165,324,192"/>
+<area shape="rect" id="node4" href="$util_8h.html#a0e1e4c423a6ba1306a9c3b2565e99391" title="format_rfc1123_time" alt="" coords="404,5,545,32"/>
+<area shape="rect" id="node5" href="$dirvote_8h.html#ad12be9f1748f89ce9e33a895218912fb" title="dirvote_get_start_of\l_next_interval" alt="" coords="406,57,543,98"/>
+<area shape="rect" id="node7" href="$cpuworker_8h.html#a1b4530118cd6e50e83a95454a6f22036" title="cpuworker_cancel_circ\l_handshake" alt="" coords="397,122,552,163"/>
+</map>

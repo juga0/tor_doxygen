@@ -1,0 +1,13 @@
+<map id="get_list_of_ports_to_forward" name="get_list_of_ports_to_forward">
+<area shape="rect" id="node2" href="$router_8c.html#a74a228ad9efff13643397a5c02d7bec7" title="router_get_advertised\l_or_port" alt="" coords="189,55,336,96"/>
+<area shape="rect" id="node6" href="$util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="384,153,535,179"/>
+<area shape="rect" id="node10" href="$router_8c.html#afc00fda5b227142768e650d169b3dd26" title="router_get_advertised\l_dir_port" alt="" coords="189,172,336,213"/>
+<area shape="rect" id="node11" href="$transports_8c.html#a57ab748ff34348f65f1c76974b4edb3f" title="get_transport_proxy\l_ports" alt="" coords="194,237,331,279"/>
+<area shape="rect" id="node12" href="$container_8c.html#a5e71fb7bc775f079d9f9d724f0203fc1" title="smartlist_add_all" alt="" coords="203,303,323,330"/>
+<area shape="rect" id="node3" href="$router_8c.html#a19b606096c7f385bb3db639b1a1c15fe" title="router_get_advertised\l_or_port_by_af" alt="" coords="386,55,533,96"/>
+<area shape="rect" id="node4" href="$config_8c.html#a8b79c094d201fd02944aa463dcc6433c" title="get_first_advertised\l_port_by_type_af" alt="" coords="600,5,736,47"/>
+<area shape="rect" id="node5" href="$router_8c.html#a8bfae58f61a3329fd20f43c378bff0bb" title="router_get_active_listener\l_port_by_type_af" alt="" coords="583,71,753,112"/>
+<area shape="rect" id="node7" href="$util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="589,153,747,179"/>
+<area shape="rect" id="node8" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="804,127,899,154"/>
+<area shape="rect" id="node9" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="801,178,901,205"/>
+</map>

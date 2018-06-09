@@ -1,0 +1,8 @@
+<map id="MOCK_IMPL" name="MOCK_IMPL">
+<area shape="rect" id="node2" href="$nodelist_8c.html#acc410f47e0b967fb3f8eb016d6975437" title="node_get_by_hex_id" alt="" coords="166,74,307,101"/>
+<area shape="rect" id="node6" href="$networkstatus_8c.html#af663020b40e6b122a43b26aa62ca4ed4" title="networkstatus_get_router\l_digest_by_nickname" alt="" coords="368,123,537,164"/>
+<area shape="rect" id="node7" href="$networkstatus_8c.html#a373d18a9265478c19fffe985c3384636" title="networkstatus_nickname\l_is_unnamed" alt="" coords="153,177,320,219"/>
+<area shape="rect" id="node3" href="$routerlist_8c.html#a589e19badbee6e0257d94d03dcc40ba7" title="hex_digest_nickname\l_decode" alt="" coords="379,5,527,47"/>
+<area shape="rect" id="node5" href="$nodelist_8c.html#a6d458e5290092933bd5c1aae33b2654f" title="node_get_nickname" alt="" coords="383,71,522,98"/>
+<area shape="rect" id="node4" href="$util__format_8c.html#a6942053f58dd619a86734e55a42d7266" title="base16_decode" alt="" coords="585,13,699,39"/>
+</map>

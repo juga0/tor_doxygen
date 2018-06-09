@@ -1,0 +1,10 @@
+<map id="tor_addr_copy" name="tor_addr_copy">
+<area shape="rect" id="node2" href="$address_8c.html#a90b8d0dbec2577ef6958d9c43481cce7" title="MOCK_IMPL" alt="" coords="189,5,289,32"/>
+<area shape="rect" id="node3" href="$connection_8h.html#afe9e86e1e84ebe4b3a167c0c8f9314c3" title="get_proxy_addrport" alt="" coords="172,56,305,83"/>
+<area shape="rect" id="node5" href="$dirserv_8h.html#a8dd4c13ef93596eaa704393dbc6828e0" title="dirserv_orconn_tls_done" alt="" coords="157,107,320,133"/>
+<area shape="rect" id="node6" href="$nodelist_8h.html#ad81a144f3a7aae0ee6a4406c8bcf137b" title="node_get_addr" alt="" coords="185,157,292,184"/>
+<area shape="rect" id="node4" href="$connection_8h.html#ad7f6042798d28314aa4553456bd5f9e5" title="log_failed_proxy_connection" alt="" coords="368,56,555,83"/>
+<area shape="rect" id="node7" href="$nodelist_8h.html#aec9e62be44bcfcb1017f1a1190fcba8f" title="nodes_in_same_family" alt="" coords="384,132,539,159"/>
+<area shape="rect" id="node8" href="$nodelist_8h.html#ac55db6c89a4853244b80165f92d8cba7" title="nodelist_add_node_and\l_family" alt="" coords="382,183,541,225"/>
+<area shape="rect" id="node9" href="$entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="603,183,737,225"/>
+</map>

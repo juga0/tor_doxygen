@@ -1,0 +1,7 @@
+<map id="router_get_consensus_status_by_id" name="router_get_consensus_status_by_id">
+<area shape="rect" id="node2" href="$networkstatus_8c.html#abeb917388a503fd5c8e727d7a6bd675f" title="router_get_mutable\l_consensus_status_by_id" alt="" coords="204,27,377,69"/>
+<area shape="rect" id="node3" href="$container_8c.html#a6722b8c6ca501b524958b3cdac2bc70c" title="smartlist_bsearch" alt="" coords="467,5,592,32"/>
+<area shape="rect" id="node5" href="$networkstatus_8c.html#a998a1af9202b3a8eec2327819b84bcee" title="compare_digest_to_routerstatus\l_entry" alt="" coords="425,57,633,98"/>
+<area shape="rect" id="node4" href="$container_8c.html#af0f195f396d7f97e7f2f2367453da119" title="smartlist_bsearch_idx" alt="" coords="681,5,831,32"/>
+<area shape="rect" id="node6" href="$di__ops_8c.html#a47393c6ace65b9b2173d60ac6ae119aa" title="tor_memcmp" alt="" coords="707,64,805,91"/>
+</map>

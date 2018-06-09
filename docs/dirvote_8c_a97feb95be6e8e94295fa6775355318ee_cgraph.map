@@ -1,0 +1,21 @@
+<map id="dirvote_create_microdescriptor" name="dirvote_create_microdescriptor">
+<area shape="rect" id="node2" href="$crypto_8c.html#a557593755a335c3edf74bb3ead7af209" title="crypto_pk_write_public\l_key_to_string" alt="" coords="265,5,420,47"/>
+<area shape="rect" id="node3" href="$policies_8c.html#af2e21a770e119c34b55360c703040bdc" title="policy_summarize" alt="" coords="279,71,406,98"/>
+<area shape="rect" id="node4" href="$container_8c.html#ab865391a8cac688c51809c33dad0bfe2" title="smartlist_join_strings" alt="" coords="270,122,415,149"/>
+<area shape="rect" id="node6" href="$util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="481,173,631,199"/>
+<area shape="rect" id="node10" href="$util__format_8c.html#a2394b082102cdbb3d443955e9b056e0e" title="base64_encode" alt="" coords="702,426,815,453"/>
+<area shape="rect" id="node12" href="$address_8c.html#a6ecc12236743caf7527376436791c75e" title="tor_addr_is_null" alt="" coords="286,274,399,301"/>
+<area shape="rect" id="node13" href="$address_8c.html#a1b6ba2d6f5a3bc607d7d761c849ec110" title="fmt_addrport" alt="" coords="295,325,390,351"/>
+<area shape="rect" id="node16" href="$policies_8c.html#a8dd804fdc250aed2c7270fe142400c56" title="write_short_policy" alt="" coords="279,223,406,250"/>
+<area shape="rect" id="node17" href="$crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364" title="ed25519_public_to_base64" alt="" coords="253,375,432,402"/>
+<area shape="rect" id="node19" href="$crypto__format_8c.html#aa31b9d5fd609a1c8c3c888c7d817284c" title="digest_to_base64" alt="" coords="494,477,618,503"/>
+<area shape="rect" id="node20" href="$routerparse_8c.html#abfc52ced95cf906593bbdab812e1cd8e" title="microdescs_parse_from\l_string" alt="" coords="262,528,423,569"/>
+<area shape="rect" id="node5" href="$container_8c.html#aac69a4c0d462859a1a13a6eb35ab3c0a" title="smartlist_join_strings2" alt="" coords="480,122,632,149"/>
+<area shape="rect" id="node7" href="$util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="680,173,837,199"/>
+<area shape="rect" id="node8" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="910,173,1005,199"/>
+<area shape="rect" id="node9" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="907,223,1007,250"/>
+<area shape="rect" id="node11" href="$util__format_8c.html#a733f32f58c6056750ad6f64228af51b2" title="base64_encode_size" alt="" coords="885,426,1029,453"/>
+<area shape="rect" id="node14" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="513,325,599,351"/>
+<area shape="rect" id="node15" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="711,325,806,351"/>
+<area shape="rect" id="node18" href="$crypto__format_8c.html#a357bf351fe9894c905f7e7029da38f9a" title="digest256_to_base64" alt="" coords="483,375,629,402"/>
+</map>

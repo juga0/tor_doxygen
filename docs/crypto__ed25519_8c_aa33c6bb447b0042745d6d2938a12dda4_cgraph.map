@@ -1,0 +1,6 @@
+<map id="ed25519_pubkey_read_from_file" name="ed25519_pubkey_read_from_file">
+<area shape="rect" id="node2" href="$crypto__format_8c.html#a40e1ed638568c15cac66b16cf427b4e7" title="crypto_read_tagged\l_contents_from_file" alt="" coords="205,49,341,90"/>
+<area shape="rect" id="node3" href="$util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="407,5,495,32"/>
+<area shape="rect" id="node4" href="$util_8c.html#a28445ce92bb84e6413d5437428dae850" title="strcmpend" alt="" coords="409,56,492,83"/>
+<area shape="rect" id="node5" href="$util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="389,107,512,133"/>
+</map>

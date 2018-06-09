@@ -1,0 +1,5 @@
+<map id="tor_inet_pton" name="tor_inet_pton">
+<area shape="rect" id="node2" href="$compat_8c.html#a802226afdc80ad46ae394289b1e586ee" title="tor_inet_aton" alt="" coords="151,5,248,32"/>
+<area shape="rect" id="node3" href="$util_8c.html#a58eee4159dfe33194147f2146f0dbc2f" title="tor_sscanf" alt="" coords="296,31,379,57"/>
+<area shape="rect" id="node4" href="$util_8c.html#a90e57e8764505012f016303eab3e4180" title="tor_vsscanf" alt="" coords="427,31,517,57"/>
+</map>

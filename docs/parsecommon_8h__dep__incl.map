@@ -1,0 +1,6 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/parsecommon.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/parsecommon.h">
+<area shape="rect" id="node2" href="$dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="5,109,161,165"/>
+<area shape="rect" id="node3" href="$hs__descriptor_8c.html" title="Handle hidden service descriptor encoding/decoding. " alt="" coords="186,109,338,165"/>
+<area shape="rect" id="node4" href="$parsecommon_8c.html" title="Common code to parse and validate various type of descriptors. " alt="" coords="363,109,519,165"/>
+<area shape="rect" id="node5" href="$routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="543,109,691,165"/>
+</map>

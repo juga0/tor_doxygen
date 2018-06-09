@@ -1,0 +1,18 @@
+<map id="tor_memcmp" name="tor_memcmp">
+<area shape="rect" id="node2" href="$crypto_8h.html#a46a418431f50aacae8a7392edcbb1d2b" title="crypto_pk_cmp_keys" alt="" coords="186,63,333,90"/>
+<area shape="rect" id="node6" href="$networkstatus_8h.html#a998a1af9202b3a8eec2327819b84bcee" title="compare_digest_to_routerstatus\l_entry" alt="" coords="155,205,363,247"/>
+<area shape="rect" id="node14" href="$networkstatus_8h.html#a208b46da9e333aa2712950089d0a2f54" title="compare_digest_to_vote\l_routerstatus_entry" alt="" coords="177,277,341,319"/>
+<area shape="rect" id="node16" href="$networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="152,356,367,397"/>
+<area shape="rect" id="node3" href="$crypto_8h.html#a4b5a83669b5e7cbbcdbc8f635d95f8cb" title="crypto_pk_eq_keys" alt="" coords="434,13,569,39"/>
+<area shape="rect" id="node5" href="$channel_8c.html#ae9d6f1fad148b483bdb8d2443dab0718" title="MOCK_IMPL" alt="" coords="451,63,551,90"/>
+<area shape="rect" id="node4" href="$routerlist_8h.html#ac41971537948013e1684f04ae286affd" title="router_differences\l_are_cosmetic" alt="" coords="648,5,775,47"/>
+<area shape="rect" id="node7" href="$networkstatus_8h.html#a041c69e1d5a274d07c162f9185605cd0" title="networkstatus_vote\l_find_mutable_entry" alt="" coords="432,115,571,156"/>
+<area shape="rect" id="node10" href="$networkstatus_8h.html#a4d3edab11be460ebb5dc5de0f07c7874" title="networkstatus_vote\l_find_entry_idx" alt="" coords="433,180,569,221"/>
+<area shape="rect" id="node11" href="$networkstatus_8h.html#abeb917388a503fd5c8e727d7a6bd675f" title="router_get_mutable\l_consensus_status_by_id" alt="" coords="415,245,588,287"/>
+<area shape="rect" id="node8" href="$networkstatus_8h.html#aae8d735fe9d889755f96e927f9e9c967" title="networkstatus_vote\l_find_entry" alt="" coords="643,115,779,156"/>
+<area shape="rect" id="node9" href="$router_8h.html#ad20dfba342b27eb97810f9141d5c14a1" title="mark_my_descriptor\l_dirty_if_too_old" alt="" coords="837,115,977,156"/>
+<area shape="rect" id="node12" href="$networkstatus_8h.html#a810a06fe9e7c7bd3a1c5c5ee8cc13b52" title="router_get_consensus\l_status_by_id" alt="" coords="636,245,787,287"/>
+<area shape="rect" id="node13" href="$connection__or_8h.html#a8573b49df7ffc3ad6df0faa6e7a12f10" title="connection_or_digest\l_is_known_relay" alt="" coords="835,245,980,287"/>
+<area shape="rect" id="node15" href="$dirserv_8c.html#a9afa21451734581b626a94cb615375af" title="measured_bw_line_apply" alt="" coords="417,311,585,338"/>
+<area shape="rect" id="node17" href="$routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="435,363,568,404"/>
+</map>
