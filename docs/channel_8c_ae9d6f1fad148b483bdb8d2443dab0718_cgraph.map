@@ -2,6 +2,6 @@
 <area shape="rect" id="node2" href="$channel_8c.html#a150180857a5c09e9ab16095b6011fd06" title="channel_is_outgoing" alt="" coords="168,5,308,32"/>
 <area shape="rect" id="node3" href="$router_8c.html#aef981f743b968779701f12f26922d523" title="get_tlsclient_identity_key" alt="" coords="153,56,323,83"/>
 <area shape="rect" id="node4" href="$router_8c.html#a8fb30f05264b37bff37fe8824b4d854b" title="get_server_identity_key" alt="" coords="158,107,318,133"/>
-<area shape="rect" id="node5" href="$crypto_8c.html#a46a418431f50aacae8a7392edcbb1d2b" title="crypto_pk_cmp_keys" alt="" coords="165,157,311,184"/>
+<area shape="rect" id="node5" href="$crypto__rsa_8c.html#a46a418431f50aacae8a7392edcbb1d2b" title="crypto_pk_cmp_keys" alt="" coords="165,157,311,184"/>
 <area shape="rect" id="node6" href="$di__ops_8c.html#a47393c6ace65b9b2173d60ac6ae119aa" title="tor_memcmp" alt="" coords="371,157,469,184"/>
 </map>

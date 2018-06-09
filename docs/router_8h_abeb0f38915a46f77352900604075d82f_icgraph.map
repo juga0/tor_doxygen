@@ -1,11 +1,10 @@
 <map id="router_digest_is_me" name="router_digest_is_me">
-<area shape="rect" id="node2" href="$connection__or_8c.html#a28eb841c609f9ecebcf27d0c31f4a6b8" title="MOCK_IMPL" alt="" coords="235,5,335,32"/>
-<area shape="rect" id="node3" href="$directory_8h.html#aace63698f64d26bc7a14531381e2fa57" title="directory_post_to_dirservers" alt="" coords="192,56,379,83"/>
-<area shape="rect" id="node4" href="$directory_8h.html#a13483821c102fb862ab0d27091d7ffc7" title="directory_get_from\l_all_authorities" alt="" coords="220,107,351,149"/>
-<area shape="rect" id="node5" href="$nodelist_8h.html#a6849fb3c0f5d471d3d13f1502fc2ba8b" title="node_is_me" alt="" coords="239,173,331,200"/>
-<area shape="rect" id="node6" href="$router_8h.html#adcfdecf66a4aa5e6d09a702784c8197f" title="router_is_me" alt="" coords="237,224,334,251"/>
-<area shape="rect" id="node10" href="$routerlist_8h.html#a6c38eadb28cf4532a7623c5aa1885cec" title="router_digest_is_trusted\l_dir_type" alt="" coords="205,275,366,317"/>
-<area shape="rect" id="node7" href="$dirserv_8h.html#ad1772dc2a4a12cc0eb181d1f52c5a54a" title="dirserv_set_router\l_is_running" alt="" coords="445,187,571,229"/>
-<area shape="rect" id="node9" href="$dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="427,253,589,280"/>
-<area shape="rect" id="node8" href="$dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="637,195,784,221"/>
+<area shape="rect" id="node2" href="$connection__or_8c.html#a9fdf1e7144b7f497802d60f0f6a076fc" title="MOCK_IMPL" alt="" coords="223,5,323,32"/>
+<area shape="rect" id="node3" href="$directory_8h.html#a13483821c102fb862ab0d27091d7ffc7" title="directory_get_from\l_all_authorities" alt="" coords="207,57,338,98"/>
+<area shape="rect" id="node4" href="$nodelist_8h.html#a6849fb3c0f5d471d3d13f1502fc2ba8b" title="node_is_me" alt="" coords="227,123,319,149"/>
+<area shape="rect" id="node5" href="$router_8h.html#adcfdecf66a4aa5e6d09a702784c8197f" title="router_is_me" alt="" coords="224,173,321,200"/>
+<area shape="rect" id="node9" href="$routerlist_8h.html#a6c38eadb28cf4532a7623c5aa1885cec" title="router_digest_is_trusted\l_dir_type" alt="" coords="192,225,353,266"/>
+<area shape="rect" id="node6" href="$dirserv_8h.html#ad1772dc2a4a12cc0eb181d1f52c5a54a" title="dirserv_set_router\l_is_running" alt="" coords="419,137,546,178"/>
+<area shape="rect" id="node8" href="$dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="401,203,564,229"/>
+<area shape="rect" id="node7" href="$dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="612,144,759,171"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="extend_info_t" name="extend_info_t">
 <area shape="rect" id="node3" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="151,5,242,32"/>
+<area shape="rect" id="node4" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="267,5,417,32"/>
 </map>

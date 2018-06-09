@@ -1,0 +1,6 @@
+<map id="rate_per_sec_to_rate_per_step" name="rate_per_sec_to_rate_per_step">
+<area shape="rect" id="node2" href="$token__bucket_8c.html#a50fe824eab38393da0fc4f96d745d42c" title="token_bucket_rw_adjust" alt="" coords="197,31,360,57"/>
+<area shape="rect" id="node3" href="$token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="422,5,567,32"/>
+<area shape="rect" id="node5" href="$connection_8h.html#a9c0760d1fc50f5bd96ab05890f121f11" title="connection_bucket_adjust" alt="" coords="408,56,581,83"/>
+<area shape="rect" id="node4" href="$connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="629,5,784,32"/>
+</map>

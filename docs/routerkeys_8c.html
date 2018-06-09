@@ -71,10 +71,11 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Functions and structures to handle generating and maintaining the set of keypairs necessary to be an OR. (Some of the code in <a class="el" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des...">router.c</a> belongs here.)  
+<p>Functions and structures to handle generating and maintaining the set of keypairs necessary to be an OR.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
 <code>#include &quot;crypto_pwbox.h&quot;</code><br />
 <code>#include &quot;routerkeys.h&quot;</code><br />
@@ -84,37 +85,44 @@ Include dependency graph for routerkeys.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="routerkeys_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2routerkeys_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2routerkeys_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2routerkeys_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1246,109,1290,136"/>
-<area shape="rect" id="node34" href="config_8h.html" title="Header file for config.c. " alt="" coords="1928,259,1996,285"/>
-<area shape="rect" id="node35" href="router_8h.html" title="Header file for router.c. " alt="" coords="1852,109,1919,136"/>
-<area shape="rect" id="node36" href="crypto__pwbox_8h_source.html" title="crypto_pwbox.h" alt="" coords="588,109,703,136"/>
-<area shape="rect" id="node37" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="1606,259,1701,285"/>
-<area shape="rect" id="node38" href="torcert_8h_source.html" title="torcert.h" alt="" coords="1777,259,1848,285"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="490,707,569,733"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="389,632,452,659"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="904,408,974,435"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1366,408,1480,435"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1547,483,1672,509"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1428,557,1570,584"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1246,333,1309,360"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1556,408,1621,435"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="584,259,670,285"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="830,184,902,211"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="464,184,542,211"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1950,557,2078,584"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="1028,184,1072,211"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1096,184,1198,211"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1223,184,1314,211"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1257,557,1352,584"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1584,632,1683,659"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="662,483,738,509"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="476,632,584,659"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="902,557,1029,584"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1214,408,1342,435"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="644,333,695,360"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="541,333,620,360"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="33,557,104,584"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="553,408,632,435"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1171,109,1215,136"/>
+<area shape="rect" id="node41" href="config_8h.html" title="Header file for config.c. " alt="" coords="2218,707,2286,733"/>
+<area shape="rect" id="node42" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="5,632,99,659"/>
+<area shape="rect" id="node43" href="router_8h.html" title="Header file for router.c. " alt="" coords="2319,557,2385,584"/>
+<area shape="rect" id="node44" href="crypto__pwbox_8h_source.html" title="crypto_pwbox.h" alt="" coords="75,707,189,733"/>
+<area shape="rect" id="node45" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="583,184,678,211"/>
+<area shape="rect" id="node46" href="torcert_8h_source.html" title="torcert.h" alt="" coords="517,109,587,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1414,931,1493,957"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="517,856,579,883"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1453,259,1523,285"/>
+<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="535,483,622,509"/>
+<area shape="rect" id="node22" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1963,483,2029,509"/>
+<area shape="rect" id="node23" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1185,184,1298,211"/>
+<area shape="rect" id="node24" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1084,259,1209,285"/>
+<area shape="rect" id="node25" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="741,333,883,360"/>
+<area shape="rect" id="node28" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1822,259,1885,285"/>
+<area shape="rect" id="node31" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="2033,184,2124,211"/>
+<area shape="rect" id="node32" href="address_8h.html" title="Headers for address.h. " alt="" coords="730,408,809,435"/>
+<area shape="rect" id="node33" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2369,781,2497,808"/>
+<area shape="rect" id="node34" href="ht_8h_source.html" title="ht.h" alt="" coords="2149,184,2193,211"/>
+<area shape="rect" id="node35" href="confline_8h_source.html" title="confline.h" alt="" coords="265,259,343,285"/>
+<area shape="rect" id="node36" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="702,184,805,211"/>
+<area shape="rect" id="node37" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="829,184,920,211"/>
+<area shape="rect" id="node38" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="1141,781,1251,808"/>
+<area shape="rect" id="node39" href="util__format_8h_source.html" title="util_format.h" alt="" coords="885,781,979,808"/>
+<area shape="rect" id="node40" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="944,184,1059,211"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1505,707,1581,733"/>
+<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="977,557,1028,584"/>
+<area shape="rect" id="node18" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1618,333,1713,360"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1928,856,2027,883"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1530,856,1638,883"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1327,781,1454,808"/>
+<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="687,781,758,808"/>
+<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="1422,632,1501,659"/>
+<area shape="rect" id="node19" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="595,408,706,435"/>
+<area shape="rect" id="node21" href="siphash_8h_source.html" title="siphash.h" alt="" coords="535,557,614,584"/>
+<area shape="rect" id="node26" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1041,408,1191,435"/>
+<area shape="rect" id="node29" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1789,333,1917,360"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -132,8 +140,11 @@ Macros</h2></td></tr>
 <tr class="separator:ab31232457fb1dae34427f8b313a09ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7571d0b2861beb3199fac9643a21f7ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SET_CERT</b>(cert,  newval)</td></tr>
 <tr class="separator:a7571d0b2861beb3199fac9643a21f7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180d204fd26028c3d7a342fec43fddf0"><td class="memItemLeft" align="right" valign="top"><a id="a180d204fd26028c3d7a342fec43fddf0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HAPPENS_SOON</b>(when,  interval)&#160;&#160;&#160;((when) &lt; now + (interval))</td></tr>
+<tr class="separator:a180d204fd26028c3d7a342fec43fddf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d64025a8db5b09755b810d85669e301"><td class="memItemLeft" align="right" valign="top"><a id="a2d64025a8db5b09755b810d85669e301"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>EXPIRES_SOON</b>(cert,  interval)&#160;&#160;&#160;(!(cert) || (cert)-&gt;valid_until &lt; now + (interval))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EXPIRES_SOON</b>(cert,  interval)&#160;&#160;&#160;(!(cert) || HAPPENS_SOON((cert)-&gt;valid_until, (interval)))</td></tr>
 <tr class="separator:a2d64025a8db5b09755b810d85669e301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -150,15 +161,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>write_encrypted_secret
 <tr class="separator:afd4f0130cd758d8e8382d7d6b775f69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299d4e4134b411432184526e2497267d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerkeys_8c.html#a299d4e4134b411432184526e2497267d">load_ed_keys</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, time_t now)</td></tr>
 <tr class="separator:a299d4e4134b411432184526e2497267d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2da8a335c26f0c3682f305260da10d53"><td class="memItemLeft" align="right" valign="top"><a id="a2da8a335c26f0c3682f305260da10d53"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>generate_ed_link_cert</b> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, time_t now)</td></tr>
-<tr class="separator:a2da8a335c26f0c3682f305260da10d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e95cfb2cfe890a618b7681b2f7f6c76"><td class="memItemLeft" align="right" valign="top"><a id="a2e95cfb2cfe890a618b7681b2f7f6c76"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>should_make_new_ed_keys</b> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, const time_t now)</td></tr>
+<tr class="memitem:abebfd6b56ecfb14c8ef132e50485907e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerkeys_8c.html#abebfd6b56ecfb14c8ef132e50485907e">generate_ed_link_cert</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, time_t now, int force)</td></tr>
+<tr class="separator:abebfd6b56ecfb14c8ef132e50485907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e95cfb2cfe890a618b7681b2f7f6c76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerkeys_8c.html#a2e95cfb2cfe890a618b7681b2f7f6c76">should_make_new_ed_keys</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, const time_t now)</td></tr>
 <tr class="separator:a2e95cfb2cfe890a618b7681b2f7f6c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab742cda8cfa5557e3e7828362699a143"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerkeys_8c.html#ab742cda8cfa5557e3e7828362699a143">log_cert_expiration</a> (void)</td></tr>
+<tr class="separator:ab742cda8cfa5557e3e7828362699a143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a421e38c5daf5ccdc84d019c2d05a9d88"><td class="memItemLeft" align="right" valign="top"><a id="a421e38c5daf5ccdc84d019c2d05a9d88"></a>
 const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_master_identity_key</b> (void)</td></tr>
 <tr class="separator:a421e38c5daf5ccdc84d019c2d05a9d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32baa1ac0f83ced1415a21b99e3ba47a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerkeys_8c.html#a32baa1ac0f83ced1415a21b99e3ba47a">router_ed25519_id_is_me</a> (const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *id)</td></tr>
+<tr class="separator:a32baa1ac0f83ced1415a21b99e3ba47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c925a3d169f7bee0a72cd82f1519417"><td class="memItemLeft" align="right" valign="top"><a id="a4c925a3d169f7bee0a72cd82f1519417"></a>
 const <a class="el" href="structed25519__keypair__t.html">ed25519_keypair_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_master_signing_keypair</b> (void)</td></tr>
 <tr class="separator:a4c925a3d169f7bee0a72cd82f1519417"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,14 +194,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_master_rsa_crossc
 <tr class="separator:ac1142499a3f0ac31e764484c1c6bd6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a501cbbf6be9a4449c5976ccacc8b2cc4"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerkeys_8c.html#a501cbbf6be9a4449c5976ccacc8b2cc4">make_tap_onion_key_crosscert</a> (const <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *onion_key, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *master_id_key, const <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *rsa_id_key, int *len_out)</td></tr>
 <tr class="separator:a501cbbf6be9a4449c5976ccacc8b2cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae4dcb13e36559789b44b9796c380d4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerkeys_8c.html#aae4dcb13e36559789b44b9796c380d4c">check_tap_onion_key_crosscert</a> (const uint8_t *crosscert, int crosscert_len, const <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *onion_pkey, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *master_id_pkey, const uint8_t *rsa_id_digest)</td></tr>
-<tr class="separator:aae4dcb13e36559789b44b9796c380d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bad2b67cd42f092d8fbb57968d88146"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerkeys_8c.html#a9bad2b67cd42f092d8fbb57968d88146">MOCK_IMPL</a> (int, check_tap_onion_key_crosscert,(const uint8_t *crosscert, int crosscert_len, const <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *onion_pkey, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *master_id_pkey, const uint8_t *rsa_id_digest))</td></tr>
+<tr class="separator:a9bad2b67cd42f092d8fbb57968d88146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea0837bf06d71ee730c9b543aac408be"><td class="memItemLeft" align="right" valign="top"><a id="aea0837bf06d71ee730c9b543aac408be"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>routerkeys_free_all</b> (void)</td></tr>
 <tr class="separator:aea0837bf06d71ee730c9b543aac408be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Functions and structures to handle generating and maintaining the set of keypairs necessary to be an OR. (Some of the code in <a class="el" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des...">router.c</a> belongs here.) </p>
+<div class="textblock"><p>Functions and structures to handle generating and maintaining the set of keypairs necessary to be an OR. </p>
+<p>The keys handled here now are the Ed25519 keys that Tor relays use to sign descriptors, authenticate themselves on links, and identify one another uniquely. Other keys are maintained in <a class="el" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des...">router.c</a> and <a class="el" href="rendservice_8c.html" title="The hidden-service side of rendezvous functionality. ">rendservice.c</a>.</p>
+<p>(TODO: The keys in <a class="el" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des...">router.c</a> should go here too.) </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a292ad803e75cf5ca00676b8595513ace"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a292ad803e75cf5ca00676b8595513ace">&#9670;&nbsp;</a></span>FAIL</h2>
@@ -266,53 +281,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>routerkeys_free_all</
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aae4dcb13e36559789b44b9796c380d4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae4dcb13e36559789b44b9796c380d4c">&#9670;&nbsp;</a></span>check_tap_onion_key_crosscert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int check_tap_onion_key_crosscert </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>crosscert</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>crosscert_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *&#160;</td>
-          <td class="paramname"><em>onion_pkey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>master_id_pkey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>rsa_id_digest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check whether an RSA-TAP cross-certification is correct. Return 0 if it is, -1 if it isn't. </p>
-
-</div>
-</div>
 <a id="aae1c5a5d448a1f0460373478e6304b36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae1c5a5d448a1f0460373478e6304b36">&#9670;&nbsp;</a></span>ed_key_init_from_file()</h2>
 
@@ -397,14 +365,6 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node3" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="333,5,428,32"/>
 </map>
 </div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="routerkeys_8c_aae1c5a5d448a1f0460373478e6304b36_icgraph.png" border="0" usemap="#routerkeys_8c_aae1c5a5d448a1f0460373478e6304b36_icgraph" alt=""/></div>
-<map name="routerkeys_8c_aae1c5a5d448a1f0460373478e6304b36_icgraph" id="routerkeys_8c_aae1c5a5d448a1f0460373478e6304b36_icgraph">
-<area shape="rect" id="node2" href="routerkeys_8c.html#a299d4e4134b411432184526e2497267d" title="load_ed_keys" alt="" coords="199,5,301,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -461,6 +421,51 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="abebfd6b56ecfb14c8ef132e50485907e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebfd6b56ecfb14c8ef132e50485907e">&#9670;&nbsp;</a></span>generate_ed_link_cert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int generate_ed_link_cert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>now</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>force</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieve our currently-in-use Ed25519 link certificate and id certificate, and, if they would expire soon (based on the time <b>now</b>, generate new certificates (without embedding the public part of the signing key inside). If <b>force</b> is true, always generate a new certificate.</p>
+<p>The signed_key from the current id-&gt;signing certificate will be used to sign the new key within newly generated X509 certificate.</p>
+<p>Returns -1 upon error. Otherwise, returns 0 upon success (either when the current certificate is still valid, or when a new certificate was successfully generated, or no certificate was needed). </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="routerkeys_8c_abebfd6b56ecfb14c8ef132e50485907e_cgraph.png" border="0" usemap="#routerkeys_8c_abebfd6b56ecfb14c8ef132e50485907e_cgraph" alt=""/></div>
+<map name="routerkeys_8c_abebfd6b56ecfb14c8ef132e50485907e_cgraph" id="routerkeys_8c_abebfd6b56ecfb14c8ef132e50485907e_cgraph">
+<area shape="rect" id="node2" href="tortls_8c.html#a7aa93459dd4e3641e885932d682db4a0" title="tor_tls_get_my_certs" alt="" coords="203,5,347,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a299d4e4134b411432184526e2497267d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a299d4e4134b411432184526e2497267d">&#9670;&nbsp;</a></span>load_ed_keys()</h2>
 
@@ -486,17 +491,29 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Running as a server: load, reload, or refresh our ed25519 keys and certificates, creating and saving new ones as needed. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="routerkeys_8c_a299d4e4134b411432184526e2497267d_cgraph.png" border="0" usemap="#routerkeys_8c_a299d4e4134b411432184526e2497267d_cgraph" alt=""/></div>
-<map name="routerkeys_8c_a299d4e4134b411432184526e2497267d_cgraph" id="routerkeys_8c_a299d4e4134b411432184526e2497267d_cgraph">
-<area shape="rect" id="node2" href="routerkeys_8c.html#aae1c5a5d448a1f0460373478e6304b36" title="ed_key_init_from_file" alt="" coords="156,5,301,32"/>
-<area shape="rect" id="node3" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="349,5,436,32"/>
-<area shape="rect" id="node4" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="484,5,579,32"/>
-</map>
+<p>Running as a server: load, reload, or refresh our ed25519 keys and certificates, creating and saving new ones as needed.</p>
+<p>Return -1 on failure; 0 on success if the signing key was not replaced; and 1 on success if the signing key was replaced. </p>
+
 </div>
+</div>
+<a id="ab742cda8cfa5557e3e7828362699a143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab742cda8cfa5557e3e7828362699a143">&#9670;&nbsp;</a></span>log_cert_expiration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int log_cert_expiration </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Log when a key certificate expires. Used when tor is given the &ndash;key-expiration command-line option.</p>
+<p>If an command argument is given, which should specify the type of key to get expiry information about (currently supported arguments are "sign"), get info about that type of certificate. Otherwise, print info about the supported arguments.</p>
+<p>Returns 0 on success and -1 on failure. </p>
 
 </div>
 </div>
@@ -549,11 +566,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="routerkeys_8c_ac1142499a3f0ac31e764484c1c6bd6c6_cgraph.png" border="0" usemap="#routerkeys_8c_ac1142499a3f0ac31e764484c1c6bd6c6_cgraph" alt=""/></div>
 <map name="routerkeys_8c_ac1142499a3f0ac31e764484c1c6bd6c6_cgraph" id="routerkeys_8c_ac1142499a3f0ac31e764484c1c6bd6c6_cgraph">
-<area shape="rect" id="node2" href="crypto__ed25519_8c.html#abb50b5bb9010dfe33e19a08f5cc362da" title="ed25519_keypair_from\l_curve25519_keypair" alt="" coords="203,37,356,79"/>
-<area shape="rect" id="node5" href="torcert_8c.html#afa728c2dfbf24182ade2227b5dca4fe9" title="tor_cert_create" alt="" coords="225,103,334,130"/>
-<area shape="rect" id="node6" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="240,154,319,181"/>
-<area shape="rect" id="node3" href="crypto__ed25519_8c.html#a250f7c3af49aabe2d1173325ae0841f5" title="ed25519_public_key\l_generate" alt="" coords="433,5,573,47"/>
-<area shape="rect" id="node4" href="crypto__ed25519_8c.html#a8c15f72552477f36fca48340e53644e9" title="ed25519_public_key\l_from_curve25519_public_key" alt="" coords="404,71,603,112"/>
+<area shape="rect" id="node2" href="crypto__ed25519_8c.html#abb50b5bb9010dfe33e19a08f5cc362da" title="ed25519_keypair_from\l_curve25519_keypair" alt="" coords="203,5,356,47"/>
+<area shape="rect" id="node4" href="torcert_8c.html#afa728c2dfbf24182ade2227b5dca4fe9" title="tor_cert_create" alt="" coords="225,71,334,98"/>
+<area shape="rect" id="node5" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="240,122,319,149"/>
+<area shape="rect" id="node3" href="crypto__digest_8c.html#aff99a8b3d871957cbefb2d9bfa116d1f" title="crypto_digest512_new" alt="" coords="404,13,556,39"/>
 </map>
 </div>
 
@@ -602,13 +618,110 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="routerkeys_8c_a501cbbf6be9a4449c5976ccacc8b2cc4_cgraph.png" border="0" usemap="#routerkeys_8c_a501cbbf6be9a4449c5976ccacc8b2cc4_cgraph" alt=""/></div>
 <map name="routerkeys_8c_a501cbbf6be9a4449c5976ccacc8b2cc4_cgraph" id="routerkeys_8c_a501cbbf6be9a4449c5976ccacc8b2cc4_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="203,5,350,32"/>
-<area shape="rect" id="node4" href="crypto_8c.html#a5acc83e912de445c2e7f5655ec9fd031" title="crypto_pk_private_sign" alt="" coords="199,56,355,83"/>
-<area shape="rect" id="node3" href="crypto_8c.html#adc1609ea0f9d65a1f60225cb001eeb15" title="crypto_digest" alt="" coords="438,5,538,32"/>
-<area shape="rect" id="node5" href="crypto_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="423,56,553,83"/>
-<area shape="rect" id="node6" href="crypto_8c.html#ac98516bae03ece6a3b42bab9a02b35bc" title="crypto_pk_key_is_private" alt="" coords="403,107,573,133"/>
+<area shape="rect" id="node2" href="crypto__rsa_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="203,5,350,32"/>
+<area shape="rect" id="node4" href="crypto__rsa_8c.html#a5acc83e912de445c2e7f5655ec9fd031" title="crypto_pk_private_sign" alt="" coords="199,56,355,83"/>
+<area shape="rect" id="node3" href="crypto__rsa_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="423,5,553,32"/>
+<area shape="rect" id="node5" href="crypto__rsa_8c.html#ac98516bae03ece6a3b42bab9a02b35bc" title="crypto_pk_key_is_private" alt="" coords="403,56,573,83"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a9bad2b67cd42f092d8fbb57968d88146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bad2b67cd42f092d8fbb57968d88146">&#9670;&nbsp;</a></span>MOCK_IMPL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">check_tap_onion_key_crosscert&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(const uint8_t *crosscert, int crosscert_len, const <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *onion_pkey, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *master_id_pkey, const uint8_t *rsa_id_digest)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether an RSA-TAP cross-certification is correct. Return 0 if it is, -1 if it isn't. </p>
+
+</div>
+</div>
+<a id="a32baa1ac0f83ced1415a21b99e3ba47a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32baa1ac0f83ced1415a21b99e3ba47a">&#9670;&nbsp;</a></span>router_ed25519_id_is_me()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int router_ed25519_id_is_me </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true iff <b>id</b> is our Ed25519 master identity key. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="routerkeys_8c_a32baa1ac0f83ced1415a21b99e3ba47a_cgraph.png" border="0" usemap="#routerkeys_8c_a32baa1ac0f83ced1415a21b99e3ba47a_cgraph" alt=""/></div>
+<map name="routerkeys_8c_a32baa1ac0f83ced1415a21b99e3ba47a_cgraph" id="routerkeys_8c_a32baa1ac0f83ced1415a21b99e3ba47a_cgraph">
+<area shape="rect" id="node2" href="crypto__ed25519_8c.html#af9396211603b40cf70b930b9ef726ed1" title="ed25519_pubkey_eq" alt="" coords="224,5,365,32"/>
+<area shape="rect" id="node3" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="413,5,500,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2e95cfb2cfe890a618b7681b2f7f6c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e95cfb2cfe890a618b7681b2f7f6c76">&#9670;&nbsp;</a></span>should_make_new_ed_keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int should_make_new_ed_keys </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const time_t&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return 1 if any of the following are true:</p>
+<ul>
+<li>if one of our Ed25519 signing, auth, or link certificates would expire soon w.r.t. the time <b>now</b>,</li>
+<li>if we do not currently have a link certificate, or</li>
+<li>if our cached Ed25519 link certificate is not same as the one we're currently using.</li>
+</ul>
+<p>Otherwise, returns 0. </p>
 
 </div>
 </div>

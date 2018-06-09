@@ -81,7 +81,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="onion_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2onion_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2onion_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2onion_8hdep">
 <area shape="rect" id="node2" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node3" href="circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="177,109,325,165"/>
 <area shape="rect" id="node4" href="command_8c.html" title="Functions for processing incoming cells. " alt="" coords="349,109,497,165"/>
 <area shape="rect" id="node5" href="cpuworker_8c.html" title="Uses the workqueue/threadpool code to farm CPU&#45;intensive activities out to subprocesses. " alt="" coords="521,109,669,165"/>
 <area shape="rect" id="node6" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="693,109,841,165"/>
@@ -113,6 +113,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a0b544621603f3d091eb9d38a7f819349"><td class="memItemLeft" align="right" valign="top"><a id="a0b544621603f3d091eb9d38a7f819349"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_ONIONSKIN_REPLY_LEN</b>&#160;&#160;&#160;255</td></tr>
 <tr class="separator:a0b544621603f3d091eb9d38a7f819349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ababa6a1bf106238c1c7b0cc0b8938823"><td class="memItemLeft" align="right" valign="top"><a id="ababa6a1bf106238c1c7b0cc0b8938823"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>server_onion_keys_free</b>(keys)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structserver__onion__keys__t.html">server_onion_keys_t</a>, <a class="el" href="onion_8h.html#aa6b4eb9074be2e715bf1a039708c46cb">server_onion_keys_free_</a>, (keys))</td></tr>
+<tr class="separator:ababa6a1bf106238c1c7b0cc0b8938823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -142,8 +145,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1dd0fbc362851a78ca1342160af9a82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63591a73a78fb762ef0c9f74556bf50c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structserver__onion__keys__t.html">server_onion_keys_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="onion_8h.html#a63591a73a78fb762ef0c9f74556bf50c">server_onion_keys_new</a> (void)</td></tr>
 <tr class="separator:a63591a73a78fb762ef0c9f74556bf50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c71bd5a96f194744360e231cf351f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="onion_8h.html#aa6c71bd5a96f194744360e231cf351f5">server_onion_keys_free</a> (<a class="el" href="structserver__onion__keys__t.html">server_onion_keys_t</a> *keys)</td></tr>
-<tr class="separator:aa6c71bd5a96f194744360e231cf351f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b4eb9074be2e715bf1a039708c46cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="onion_8h.html#aa6b4eb9074be2e715bf1a039708c46cb">server_onion_keys_free_</a> (<a class="el" href="structserver__onion__keys__t.html">server_onion_keys_t</a> *keys)</td></tr>
+<tr class="separator:aa6b4eb9074be2e715bf1a039708c46cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7f39634bdd8ec5738f0909551f8f04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="onion_8h.html#aac7f39634bdd8ec5738f0909551f8f04">onion_handshake_state_release</a> (<a class="el" href="structonion__handshake__state__t.html">onion_handshake_state_t</a> *state)</td></tr>
 <tr class="separator:aac7f39634bdd8ec5738f0909551f8f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab176f7b63720fbc81f6a9872ed5e302c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="onion_8h.html#ab176f7b63720fbc81f6a9872ed5e302c">onion_skin_create</a> (int type, const <a class="el" href="structextend__info__t.html">extend_info_t</a> *node, <a class="el" href="structonion__handshake__state__t.html">onion_handshake_state_t</a> *state_out, uint8_t *onion_skin_out)</td></tr>
@@ -360,14 +363,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>create_cell_format_rel
       </table>
 </div><div class="memdoc">
 <p>Fill <b>cell_out</b> with a correctly formatted version of the CREATED{,_FAST,2} cell in <b>cell_in</b>. Return 0 on success, -1 on failure. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="onion_8h_aba35efe0f395f7d1b20ad194a1488178_icgraph.png" border="0" usemap="#onion_8h_aba35efe0f395f7d1b20ad194a1488178_icgraph" alt=""/></div>
-<map name="onion_8h_aba35efe0f395f7d1b20ad194a1488178_icgraph" id="onion_8h_aba35efe0f395f7d1b20ad194a1488178_icgraph">
-<area shape="rect" id="node2" href="circuitbuild_8c.html#a0580c51628841ddaa2bf99d4475881bf" title="onionskin_answer" alt="" coords="189,5,316,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -840,14 +835,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aa6c71bd5a96f194744360e231cf351f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6c71bd5a96f194744360e231cf351f5">&#9670;&nbsp;</a></span>server_onion_keys_free()</h2>
+<a id="aa6b4eb9074be2e715bf1a039708c46cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b4eb9074be2e715bf1a039708c46cb">&#9670;&nbsp;</a></span>server_onion_keys_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void server_onion_keys_free </td>
+          <td class="memname">void server_onion_keys_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structserver__onion__keys__t.html">server_onion_keys_t</a> *&#160;</td>
           <td class="paramname"><em>keys</em></td><td>)</td>
@@ -856,17 +851,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all storage held in <b>keys</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="onion_8h_aa6c71bd5a96f194744360e231cf351f5_cgraph.png" border="0" usemap="#onion_8h_aa6c71bd5a96f194744360e231cf351f5_cgraph" alt=""/></div>
-<map name="onion_8h_aa6c71bd5a96f194744360e231cf351f5_cgraph" id="onion_8h_aa6c71bd5a96f194744360e231cf351f5_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="226,5,334,32"/>
-<area shape="rect" id="node3" href="router_8c.html#aa6d902dd7289b2388a4c4f33a43d75dd" title="ntor_key_map_free" alt="" coords="213,56,347,83"/>
-<area shape="rect" id="node5" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="241,107,319,133"/>
-<area shape="rect" id="node4" href="di__ops_8c.html#a7288cea0663552d036f0d8e3a17029f0" title="dimap_free" alt="" coords="395,56,481,83"/>
-</map>
-</div>
 
 </div>
 </div>

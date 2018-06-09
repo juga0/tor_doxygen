@@ -71,6 +71,8 @@ $(function() {
 Collaboration diagram for routerstatus_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structrouterstatus__t__coll__graph.png" border="0" usemap="#routerstatus__t_coll__map" alt="Collaboration graph"/></div>
+<map name="routerstatus__t_coll__map" id="routerstatus__t_coll__map">
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -79,9 +81,9 @@ Data Fields</h2></td></tr>
 <tr class="separator:ace0aa184e80dbbe8b45b12595335edab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85bb1ae50baf75c4ede224a5576fab0e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a85bb1ae50baf75c4ede224a5576fab0e">nickname</a> [<a class="el" href="or_8h.html#a0929ff1a585dc55520c5b872f79c3e43">MAX_NICKNAME_LEN</a>+1]</td></tr>
 <tr class="separator:a85bb1ae50baf75c4ede224a5576fab0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55d09977f6fcf3c3be8dcc9625c14e60"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a55d09977f6fcf3c3be8dcc9625c14e60">identity_digest</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
+<tr class="memitem:a55d09977f6fcf3c3be8dcc9625c14e60"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a55d09977f6fcf3c3be8dcc9625c14e60">identity_digest</a> [<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
 <tr class="separator:a55d09977f6fcf3c3be8dcc9625c14e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4706fe484501672883b1dabfd3e6973e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a4706fe484501672883b1dabfd3e6973e">descriptor_digest</a> [<a class="el" href="crypto_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a>]</td></tr>
+<tr class="memitem:a4706fe484501672883b1dabfd3e6973e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a4706fe484501672883b1dabfd3e6973e">descriptor_digest</a> [<a class="el" href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a>]</td></tr>
 <tr class="separator:a4706fe484501672883b1dabfd3e6973e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab439e3a90339e2e8ca8f82d4557a34e5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#ab439e3a90339e2e8ca8f82d4557a34e5">addr</a></td></tr>
 <tr class="separator:ab439e3a90339e2e8ca8f82d4557a34e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,16 +120,14 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a24b76da1ec2ec2d2dc269a23b61af933"><td class="memItemLeft" align="right" valign="top"><a id="a24b76da1ec2ec2d2dc269a23b61af933"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>is_v2_dir</b>:1</td></tr>
 <tr class="separator:a24b76da1ec2ec2d2dc269a23b61af933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3728b95a8def5a969b208d1ba45ba7e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#ac3728b95a8def5a969b208d1ba45ba7e">protocols_known</a>:1</td></tr>
-<tr class="separator:ac3728b95a8def5a969b208d1ba45ba7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b19ae3fc5524696316739c29a8aa8d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a06b19ae3fc5524696316739c29a8aa8d">supports_extend2_cells</a>:1</td></tr>
-<tr class="separator:a06b19ae3fc5524696316739c29a8aa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88e454692d75a0a4cdea77f4941f05f3"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a88e454692d75a0a4cdea77f4941f05f3">has_bandwidth</a>:1</td></tr>
 <tr class="separator:a88e454692d75a0a4cdea77f4941f05f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e3cb9953c89261a0adba58fc16f8e54"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a4e3cb9953c89261a0adba58fc16f8e54">has_exitsummary</a>:1</td></tr>
 <tr class="separator:a4e3cb9953c89261a0adba58fc16f8e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a433df319f31ee96a838ca7582a1ae6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a6a433df319f31ee96a838ca7582a1ae6">bw_is_unmeasured</a>:1</td></tr>
 <tr class="separator:a6a433df319f31ee96a838ca7582a1ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236520aa108becd0d0c15c41ac0f1f58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structprotover__summary__flags__t.html">protover_summary_flags_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a236520aa108becd0d0c15c41ac0f1f58">pv</a></td></tr>
+<tr class="separator:a236520aa108becd0d0c15c41ac0f1f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe65d2e98bf20e4de0687356ac3d2af"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#aebe65d2e98bf20e4de0687356ac3d2af">bandwidth_kb</a></td></tr>
 <tr class="separator:aebe65d2e98bf20e4de0687356ac3d2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e8fd64f378649f638f800efb37e42e9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterstatus__t.html#a5e8fd64f378649f638f800efb37e42e9">has_guardfraction</a>:1</td></tr>
@@ -197,7 +197,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>is_v2_dir</b>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char descriptor_digest[<a class="el" href="crypto_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a>]</td>
+          <td class="memname">char descriptor_digest[<a class="el" href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -261,7 +261,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>is_v2_dir</b>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The vote/consensus had bw info </p>
+<p>True iff this router publishes an open DirPort or it claims to accept tunnelled dir requests.The vote/consensus had bw info </p>
 
 </div>
 </div>
@@ -302,7 +302,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>is_v2_dir</b>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char identity_digest[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
+          <td class="memname">char identity_digest[<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -336,7 +336,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>is_v2_dir</b>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>IPV6 OR port for this router. </p>
+<p>IPv6 OR port for this router. </p>
 
 </div>
 </div>
@@ -546,22 +546,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>is_v2_dir</b>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>OR port for this router. </p>
-
-</div>
-</div>
-<a id="ac3728b95a8def5a969b208d1ba45ba7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3728b95a8def5a969b208d1ba45ba7e">&#9670;&nbsp;</a></span>protocols_known</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int protocols_known</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>True iff this router publishes an open DirPort or it claims to accept tunnelled dir requests. True iff we have a proto line for this router, or a versions line from which we could infer the protocols. </p>
+<p>IPv4 OR port for this router. </p>
 
 </div>
 </div>
@@ -580,18 +565,18 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>is_v2_dir</b>
 
 </div>
 </div>
-<a id="a06b19ae3fc5524696316739c29a8aa8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06b19ae3fc5524696316739c29a8aa8d">&#9670;&nbsp;</a></span>supports_extend2_cells</h2>
+<a id="a236520aa108becd0d0c15c41ac0f1f58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a236520aa108becd0d0c15c41ac0f1f58">&#9670;&nbsp;</a></span>pv</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int supports_extend2_cells</td>
+          <td class="memname"><a class="el" href="structprotover__summary__flags__t.html">protover_summary_flags_t</a> pv</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>True iff this router has a version or protocol list that allows it to accept EXTEND2 cells </p>
+<p>Flags to summarize the protocol versions for this <a class="el" href="structrouterstatus__t.html">routerstatus_t</a>. </p>
 
 </div>
 </div>

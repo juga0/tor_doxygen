@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_3561ce2c15d05b6f6680ac7508c26c41.html">test</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,6 +75,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;crypto_ed25519.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="crypto__digest_8h_source.html">crypto_digest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
 <code>#include &quot;ed25519_cert.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hs__descriptor_8h_source.html">hs_descriptor.h</a>&quot;</code><br />
@@ -89,48 +90,48 @@ Include dependency graph for test_hs_descriptor.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="test__hs__descriptor_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2test_2test__hs__descriptor_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2test_2test__hs__descriptor_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2test_2test__hs__descriptor_8c">
-<area shape="rect" id="node2" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1786,408,1911,435"/>
-<area shape="rect" id="node8" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="1718,565,1829,591"/>
-<area shape="rect" id="node21" href="ed25519__cert_8h_source.html" title="ed25519_cert.h" alt="" coords="1752,184,1862,211"/>
-<area shape="rect" id="node25" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1000,259,1044,285"/>
-<area shape="rect" id="node43" href="hs__descriptor_8h.html" title="Header file for hs_descriptor.c. " alt="" coords="1617,184,1728,211"/>
-<area shape="rect" id="node44" href="torcert_8h_source.html" title="torcert.h" alt="" coords="2041,259,2112,285"/>
-<area shape="rect" id="node45" href="test_8h.html" title="Macros and functions used by unit tests. " alt="" coords="2008,109,2062,136"/>
-<area shape="rect" id="node48" href="hs__test__helpers_8h_source.html" title="hs_test_helpers.h" alt="" coords="1687,109,1812,136"/>
-<area shape="rect" id="node49" href="test__helpers_8h_source.html" title="test_helpers.h" alt="" coords="1391,109,1495,136"/>
-<area shape="rect" id="node50" href="log__test__helpers_8h_source.html" title="log_test_helpers.h" alt="" coords="856,109,984,136"/>
-<area shape="rect" id="node3" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="596,945,695,972"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1844,945,1906,972"/>
-<area shape="rect" id="node7" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1666,483,1809,509"/>
-<area shape="rect" id="node11" href="util_8h.html" title="Headers for util.c. " alt="" coords="1444,721,1495,748"/>
-<area shape="rect" id="node5" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="901,1020,980,1047"/>
-<area shape="rect" id="node20" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1554,647,1705,673"/>
-<area shape="rect" id="node10" href="container_8h_source.html" title="container.h" alt="" coords="1290,647,1377,673"/>
-<area shape="rect" id="node19" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1290,721,1369,748"/>
-<area shape="rect" id="node12" href="compat_8h_source.html" title="compat.h" alt="" coords="902,871,978,897"/>
-<area shape="rect" id="node16" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1665,871,1736,897"/>
-<area shape="rect" id="node18" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="1089,796,1168,823"/>
-<area shape="rect" id="node14" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="886,945,994,972"/>
-<area shape="rect" id="node23" href="trunnel_8h_source.html" title="trunnel.h" alt="" coords="1894,259,1966,285"/>
-<area shape="rect" id="node26" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1442,408,1511,435"/>
-<area shape="rect" id="node28" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="440,647,505,673"/>
-<area shape="rect" id="node30" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1493,333,1606,360"/>
-<area shape="rect" id="node31" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="564,408,626,435"/>
-<area shape="rect" id="node33" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="726,333,816,360"/>
-<area shape="rect" id="node34" href="address_8h.html" title="Headers for address.h. " alt="" coords="797,565,876,591"/>
-<area shape="rect" id="node35" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="75,871,203,897"/>
-<area shape="rect" id="node36" href="ht_8h_source.html" title="ht.h" alt="" coords="841,333,885,360"/>
-<area shape="rect" id="node37" href="confline_8h_source.html" title="confline.h" alt="" coords="1225,408,1304,435"/>
-<area shape="rect" id="node38" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="909,333,1012,360"/>
-<area shape="rect" id="node39" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1036,333,1127,360"/>
-<area shape="rect" id="node40" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="1276,871,1386,897"/>
-<area shape="rect" id="node41" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1105,871,1200,897"/>
-<area shape="rect" id="node42" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1151,333,1266,360"/>
-<area shape="rect" id="node27" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="633,483,728,509"/>
-<area shape="rect" id="node29" href="keccak-tiny_8h_source.html" title="keccak&#45;tiny/keccak\l&#45;tiny.h" alt="" coords="1956,557,2090,599"/>
-<area shape="rect" id="node32" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="854,483,982,509"/>
-<area shape="rect" id="node46" href="tinytest_8h_source.html" title="tinytest.h" alt="" coords="2140,184,2216,211"/>
-<area shape="rect" id="node47" href="tinytest__macros_8h_source.html" title="tinytest_macros.h" alt="" coords="1989,184,2116,211"/>
+<area shape="rect" id="node2" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="676,408,801,435"/>
+<area shape="rect" id="node8" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="1489,557,1599,584"/>
+<area shape="rect" id="node21" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="296,632,397,659"/>
+<area shape="rect" id="node22" href="ed25519__cert_8h_source.html" title="ed25519_cert.h" alt="" coords="2203,259,2314,285"/>
+<area shape="rect" id="node26" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1523,259,1567,285"/>
+<area shape="rect" id="node43" href="hs__descriptor_8h.html" title="Header file for hs_descriptor.c. " alt="" coords="1939,184,2050,211"/>
+<area shape="rect" id="node44" href="torcert_8h_source.html" title="torcert.h" alt="" coords="777,259,847,285"/>
+<area shape="rect" id="node45" href="test_8h.html" title="Macros and functions used by unit tests. " alt="" coords="2398,109,2453,136"/>
+<area shape="rect" id="node48" href="hs__test__helpers_8h_source.html" title="hs_test_helpers.h" alt="" coords="1985,109,2111,136"/>
+<area shape="rect" id="node49" href="test__helpers_8h_source.html" title="test_helpers.h" alt="" coords="1493,184,1597,211"/>
+<area shape="rect" id="node50" href="log__test__helpers_8h_source.html" title="log_test_helpers.h" alt="" coords="1583,109,1711,136"/>
+<area shape="rect" id="node3" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="896,931,995,957"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="363,931,426,957"/>
+<area shape="rect" id="node7" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="739,483,882,509"/>
+<area shape="rect" id="node11" href="util_8h.html" title="Headers for util.c. " alt="" coords="1213,707,1264,733"/>
+<area shape="rect" id="node5" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1506,1005,1585,1032"/>
+<area shape="rect" id="node20" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1059,557,1210,584"/>
+<area shape="rect" id="node10" href="container_8h_source.html" title="container.h" alt="" coords="1843,632,1930,659"/>
+<area shape="rect" id="node19" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1843,707,1922,733"/>
+<area shape="rect" id="node12" href="compat_8h_source.html" title="compat.h" alt="" coords="1517,856,1593,883"/>
+<area shape="rect" id="node16" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1059,856,1130,883"/>
+<area shape="rect" id="node18" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="1286,781,1365,808"/>
+<area shape="rect" id="node14" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1491,931,1599,957"/>
+<area shape="rect" id="node24" href="trunnel_8h_source.html" title="trunnel.h" alt="" coords="2279,333,2351,360"/>
+<area shape="rect" id="node27" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1660,408,1729,435"/>
+<area shape="rect" id="node29" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1095,632,1161,659"/>
+<area shape="rect" id="node30" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="587,333,701,360"/>
+<area shape="rect" id="node31" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1515,408,1578,435"/>
+<area shape="rect" id="node33" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1016,333,1107,360"/>
+<area shape="rect" id="node34" href="address_8h.html" title="Headers for address.h. " alt="" coords="2039,557,2118,584"/>
+<area shape="rect" id="node35" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1997,856,2125,883"/>
+<area shape="rect" id="node36" href="ht_8h_source.html" title="ht.h" alt="" coords="1131,333,1175,360"/>
+<area shape="rect" id="node37" href="confline_8h_source.html" title="confline.h" alt="" coords="1834,483,1913,509"/>
+<area shape="rect" id="node38" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1199,333,1302,360"/>
+<area shape="rect" id="node39" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1327,333,1417,360"/>
+<area shape="rect" id="node40" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="619,856,730,883"/>
+<area shape="rect" id="node41" href="util__format_8h_source.html" title="util_format.h" alt="" coords="347,856,442,883"/>
+<area shape="rect" id="node42" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1441,333,1556,360"/>
+<area shape="rect" id="node28" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1450,483,1545,509"/>
+<area shape="rect" id="node32" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1128,483,1256,509"/>
+<area shape="rect" id="node46" href="tinytest_8h_source.html" title="tinytest.h" alt="" coords="2426,184,2502,211"/>
+<area shape="rect" id="node47" href="tinytest__macros_8h_source.html" title="tinytest_macros.h" alt="" coords="2526,184,2653,211"/>
 </map>
 </div>
 </div><table class="memberdecls">

@@ -1,0 +1,4 @@
+<map id="or_handshake_certs_check_both" name="or_handshake_certs_check_both">
+<area shape="rect" id="node2" href="$torcert_8c.html#a41a9b9e30bed6d35d967d381faeeb2d4" title="or_handshake_certs\l_ed25519_ok" alt="" coords="194,5,333,47"/>
+<area shape="rect" id="node3" href="$tortls_8c.html#aeb4713a168234b69a9d25312a3a15770" title="tor_x509_cert_get_id\l_digests" alt="" coords="192,71,335,112"/>
+</map>

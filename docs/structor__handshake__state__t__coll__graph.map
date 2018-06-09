@@ -1,3 +1,5 @@
 <map id="or_handshake_state_t" name="or_handshake_state_t">
-<area shape="rect" id="node2" href="$structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="25,95,136,121"/>
+<area shape="rect" id="node3" href="$structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="112,124,223,151"/>
+<area shape="rect" id="node4" href="$structor__handshake__certs__t.html" title="or_handshake_certs_t" alt="" coords="247,124,397,151"/>
+<area shape="rect" id="node5" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="421,124,572,151"/>
 </map>

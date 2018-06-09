@@ -73,12 +73,13 @@ $(function() {
 <p>Header file to define uint32_t and friends.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;orconfig.h&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for torint.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="torint_8h__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2torint_8h" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2torint_8h" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2torint_8h">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="40,109,119,136"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="5,109,84,136"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -86,55 +87,55 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="torint_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2torint_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2torint_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2torint_8hdep">
-<area shape="rect" id="node2" href="compat_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/compat.h" alt="" coords="2169,235,2325,291"/>
-<area shape="rect" id="node4" href="util_8h.html" title="Headers for util.c. " alt="" coords="2061,451,2209,507"/>
-<area shape="rect" id="node14" href="crypto_8c.html" title="Wrapper functions to present a consistent interface to public&#45;key and symmetric cryptography operatio..." alt="" coords="4053,555,4202,611"/>
-<area shape="rect" id="node18" href="sandbox_8c.html" title="Code to enable sandboxing. " alt="" coords="1973,555,2135,611"/>
-<area shape="rect" id="node20" href="torgzip_8c.html" title="A simple in&#45;memory gzip implementation. " alt="" coords="615,555,767,611"/>
-<area shape="rect" id="node22" href="util_8c.html" title="Common functions for strings, IO, network, data structures, process control. " alt="" coords="3708,555,3856,611"/>
-<area shape="rect" id="node23" href="util__format_8c.html" title="Miscellaneous functions for encoding and decoding various things in base{16,32,64}. " alt="" coords="3117,555,3292,611"/>
-<area shape="rect" id="node24" href="keypin_8c.html" title="Functions and structures for associating routers&#39; RSA key fingerprints with their ED25519 keys..." alt="" coords="3880,555,4028,611"/>
-<area shape="rect" id="node26" href="address_8h.html" title="Headers for address.h. " alt="" coords="3355,451,3513,507"/>
-<area shape="rect" id="node27" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="4268,555,4416,611"/>
-<area shape="rect" id="node30" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="2690,347,2839,403"/>
-<area shape="rect" id="node32" href="compat__threads_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/compat_threads.h" alt="" coords="2144,117,2351,173"/>
-<area shape="rect" id="node33" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="3032,235,3183,291"/>
-<area shape="rect" id="node34" href="onion__ntor_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/or/onion_ntor.h" alt="" coords="4021,347,4169,403"/>
-<area shape="rect" id="node35" href="util__format_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/util_format.h" alt="" coords="3741,451,3916,507"/>
-<area shape="rect" id="node36" href="sandbox_8h.html" title="Header file for sandbox.c. " alt="" coords="3167,451,3330,507"/>
-<area shape="rect" id="node37" href="address__set_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/address_set.h" alt="" coords="2914,347,3098,403"/>
-<area shape="rect" id="node38" href="crypto__curve25519_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/crypto_curve25519.h" alt="" coords="4113,235,4336,291"/>
-<area shape="rect" id="node39" href="crypto__ed25519_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/crypto_ed25519.h" alt="" coords="4386,347,4591,403"/>
-<area shape="rect" id="node40" href="crypto__format_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/crypto_format.h" alt="" coords="4245,451,4439,507"/>
-<area shape="rect" id="node41" href="crypto__s2k_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/crypto_s2k.h" alt="" coords="2601,235,2779,291"/>
-<area shape="rect" id="node42" href="crypto__pwbox_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/crypto_pwbox.h" alt="" coords="4317,117,4511,173"/>
-<area shape="rect" id="node43" href="pubsub_8h.html" title="Macros to implement publish/subscribe abstractions. " alt="" coords="4535,117,4690,173"/>
-<area shape="rect" id="node44" href="ed25519__donna__tor_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/donna\l/ed25519_donna_tor.h" alt="" coords="4715,109,4873,180"/>
-<area shape="rect" id="node45" href="crypto__int32_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/crypto_int32.h" alt="" coords="4898,109,5050,180"/>
-<area shape="rect" id="node46" href="ed25519__ref10_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/ed25519_ref10.h" alt="" coords="5074,109,5226,180"/>
-<area shape="rect" id="node47" href="crypto__int64_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/crypto_int64.h" alt="" coords="5250,109,5402,180"/>
-<area shape="rect" id="node48" href="crypto__uint32_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/crypto_uint32.h" alt="" coords="5426,109,5578,180"/>
-<area shape="rect" id="node49" href="crypto__uint64_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/crypto_uint64.h" alt="" coords="5602,109,5754,180"/>
-<area shape="rect" id="node50" href="keccak-tiny_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/keccak&#45;tiny\l/keccak&#45;tiny.h" alt="" coords="3891,228,4039,299"/>
-<area shape="rect" id="node3" href="address_8c.html" title="Functions to use and manipulate the tor_addr_t structure. " alt="" coords="3525,555,3684,611"/>
-<area shape="rect" id="node5" href="address__set_8c.html" title="Implementation for a set of addresses. " alt="" coords="3317,555,3501,611"/>
-<area shape="rect" id="node6" href="aes_8c.html" title="Implements a counter&#45;mode stream cipher on top of AES. " alt="" coords="2392,555,2540,611"/>
-<area shape="rect" id="node7" href="backtrace_8c.html" title="Functions to produce backtraces on bugs, crashes, or assertion failures. " alt="" coords="1541,555,1711,611"/>
-<area shape="rect" id="node8" href="compat_8c.html" title="Wrappers to make calls more portable. This code defines functions such as tor_snprintf, get/set various data types, renaming, setting socket options, switching user IDs. It is basically where the non&#45;portable items are conditionally included depending on the platform. " alt="" coords="2736,555,2892,611"/>
-<area shape="rect" id="node9" href="compat__libevent_8c.html" title="Wrappers and utility functions for Libevent. " alt="" coords="2159,555,2367,611"/>
-<area shape="rect" id="node10" href="compat__pthreads_8c.html" title="Implementation for the pthreads&#45;based multithreading backend functions. " alt="" coords="1735,555,1949,611"/>
-<area shape="rect" id="node11" href="compat__threads_8c.html" title="Cross&#45;platform threading and inter&#45;thread communication logic. (Platform&#45;specific parts are written i..." alt="" coords="5,555,212,611"/>
-<area shape="rect" id="node12" href="compat__time_8c.html" title="Portable wrappers for finding out the current time, running timers, etc. " alt="" coords="792,555,980,611"/>
-<area shape="rect" id="node13" href="container_8c.html" title="Implements a smartlist (a resizable array) along with helper functions to use smartlists. Also includes hash table implementations of a string&#45;to&#45;void* map, and of a digest&#45;to&#45;void* map. " alt="" coords="424,555,591,611"/>
-<area shape="rect" id="node15" href="crypto__s2k_8c.html" title="Functions for deriving keys from human&#45;readable passphrases. " alt="" coords="2916,555,3093,611"/>
-<area shape="rect" id="node16" href="log_8c.html" title="Functions to send messages to log files or the console. " alt="" coords="1004,555,1152,611"/>
-<area shape="rect" id="node17" href="memarea_8c.html" title="Implementation for memarea_t, an allocator for allocating lots of small objects that will be freed al..." alt="" coords="1176,555,1343,611"/>
-<area shape="rect" id="node19" href="timers_8c.html" title="Wrapper around William Ahern&#39;s fast hierarchical timer wheel implementation, to tie it in with a libe..." alt="" coords="1367,555,1517,611"/>
-<area shape="rect" id="node21" href="tortls_8c.html" title="Wrapper functions to present a consistent interface to TLS, SSL, and X.509 functions from OpenSSL..." alt="" coords="2564,555,2712,611"/>
-<area shape="rect" id="node25" href="util__bug_8h.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/util_bug.h" alt="" coords="2051,347,2209,403"/>
-<area shape="rect" id="node28" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1837,451,1985,507"/>
-<area shape="rect" id="node29" href="procmon_8h.html" title="Headers for procmon.c. " alt="" coords="237,555,399,611"/>
-<area shape="rect" id="node31" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="2843,451,2991,507"/>
+<area shape="rect" id="node2" href="compat_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/compat.h" alt="" coords="2001,235,2157,291"/>
+<area shape="rect" id="node4" href="util_8h.html" title="Headers for util.c. " alt="" coords="2302,451,2450,507"/>
+<area shape="rect" id="node5" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="571,555,752,611"/>
+<area shape="rect" id="node8" href="crypto_8c.html" title="Wrapper functions to present a consistent interface to public&#45;key and symmetric cryptography operatio..." alt="" coords="3309,763,3459,819"/>
+<area shape="rect" id="node9" href="circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="326,867,474,923"/>
+<area shape="rect" id="node12" href="buffers_8c.html" title="Implements a generic buffer interface. " alt="" coords="393,555,546,611"/>
+<area shape="rect" id="node13" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1406,555,1581,611"/>
+<area shape="rect" id="node15" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1433,763,1581,819"/>
+<area shape="rect" id="node16" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1432,659,1581,715"/>
+<area shape="rect" id="node20" href="compress_8c.html" title="Common compression API. " alt="" coords="1211,555,1381,611"/>
+<area shape="rect" id="node21" href="crypto__ed25519_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/crypto_ed25519.h" alt="" coords="3996,555,4201,611"/>
+<area shape="rect" id="node22" href="crypto__format_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/crypto_format.h" alt="" coords="4109,659,4302,715"/>
+<area shape="rect" id="node23" href="keypin_8c.html" title="Functions and structures for associating routers&#39; RSA key fingerprints with their ED25519 keys..." alt="" coords="4223,763,4371,819"/>
+<area shape="rect" id="node24" href="sandbox_8c.html" title="Code to enable sandboxing. " alt="" coords="2565,555,2728,611"/>
+<area shape="rect" id="node25" href="util_8c.html" title="Common functions for strings, IO, network, data structures, process control. " alt="" coords="3621,555,3769,611"/>
+<area shape="rect" id="node26" href="util__format_8c.html" title="Miscellaneous functions for encoding and decoding various things in base{16,32,64}. " alt="" coords="3422,555,3597,611"/>
+<area shape="rect" id="node28" href="address_8h.html" title="Headers for address.h. " alt="" coords="3425,451,3583,507"/>
+<area shape="rect" id="node30" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="790,347,943,403"/>
+<area shape="rect" id="node31" href="compat__threads_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/compat_threads.h" alt="" coords="1975,117,2182,173"/>
+<area shape="rect" id="node32" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="4631,347,4782,403"/>
+<area shape="rect" id="node33" href="onion__ntor_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/or/onion_ntor.h" alt="" coords="4631,555,4779,611"/>
+<area shape="rect" id="node34" href="util__format_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/util_format.h" alt="" coords="3827,451,4002,507"/>
+<area shape="rect" id="node35" href="sandbox_8h.html" title="Header file for sandbox.c. " alt="" coords="3237,451,3400,507"/>
+<area shape="rect" id="node36" href="address__set_8h.html" title="Types to handle sets of addresses. " alt="" coords="3709,235,3893,291"/>
+<area shape="rect" id="node37" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="4157,347,4347,403"/>
+<area shape="rect" id="node38" href="crypto__curve25519_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/crypto_curve25519.h" alt="" coords="4178,451,4401,507"/>
+<area shape="rect" id="node39" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="43,659,216,715"/>
+<area shape="rect" id="node40" href="crypto__pwbox_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/crypto_pwbox.h" alt="" coords="4323,117,4517,173"/>
+<area shape="rect" id="node41" href="crypto__s2k_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/crypto_s2k.h" alt="" coords="4542,117,4719,173"/>
+<area shape="rect" id="node42" href="pubsub_8h.html" title="Macros to implement publish/subscribe abstractions. " alt="" coords="4744,117,4899,173"/>
+<area shape="rect" id="node43" href="token__bucket_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/common/token_bucket.h" alt="" coords="158,235,349,291"/>
+<area shape="rect" id="node44" href="ed25519__donna__tor_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/donna\l/ed25519_donna_tor.h" alt="" coords="4974,109,5133,180"/>
+<area shape="rect" id="node45" href="crypto__int32_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/crypto_int32.h" alt="" coords="5157,109,5309,180"/>
+<area shape="rect" id="node46" href="ed25519__ref10_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/ed25519_ref10.h" alt="" coords="5333,109,5485,180"/>
+<area shape="rect" id="node47" href="crypto__int64_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/crypto_int64.h" alt="" coords="5509,109,5661,180"/>
+<area shape="rect" id="node48" href="crypto__uint32_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/crypto_uint32.h" alt="" coords="5685,109,5837,180"/>
+<area shape="rect" id="node49" href="crypto__uint64_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/ed25519/ref10\l/crypto_uint64.h" alt="" coords="5861,109,6013,180"/>
+<area shape="rect" id="node50" href="keccak-tiny_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/ext/keccak&#45;tiny\l/keccak&#45;tiny.h" alt="" coords="4222,228,4370,299"/>
+<area shape="rect" id="node3" href="address_8c.html" title="Functions to use and manipulate the tor_addr_t structure. " alt="" coords="3137,555,3295,611"/>
+<area shape="rect" id="node6" href="address__set_8c.html" title="Implementation for a set of addresses. " alt="" coords="2855,659,3039,715"/>
+<area shape="rect" id="node7" href="compat__libevent_8c.html" title="Wrappers and utility functions for Libevent. " alt="" coords="928,659,1136,715"/>
+<area shape="rect" id="node10" href="aes_8c.html" title="Implements a counter&#45;mode stream cipher on top of AES. " alt="" coords="2139,555,2287,611"/>
+<area shape="rect" id="node11" href="backtrace_8c.html" title="Functions to produce backtraces on bugs, crashes, or assertion failures. " alt="" coords="1944,555,2115,611"/>
+<area shape="rect" id="node14" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="705,659,853,715"/>
+<area shape="rect" id="node17" href="compat_8c.html" title="Wrappers to make calls more portable. This code defines functions such as tor_snprintf, get/set various data types, renaming, setting socket options, switching user IDs. It is basically where the non&#45;portable items are conditionally included depending on the platform. " alt="" coords="2753,555,2909,611"/>
+<area shape="rect" id="node18" href="compat__pthreads_8c.html" title="Implementation for the pthreads&#45;based multithreading backend functions. " alt="" coords="1707,555,1920,611"/>
+<area shape="rect" id="node19" href="compat__threads_8c.html" title="Cross&#45;platform threading and inter&#45;thread communication logic. (Platform&#45;specific parts are written i..." alt="" coords="878,555,1085,611"/>
+<area shape="rect" id="node27" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="2233,347,2391,403"/>
+<area shape="rect" id="node29" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1739,451,1887,507"/>
 </map>
 </div>
 </div>
@@ -151,6 +152,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ab287604687d62a91fdc2b510eb380ff1"><td class="memItemLeft" align="right" valign="top"><a id="ab287604687d62a91fdc2b510eb380ff1"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TIME_MIN</b>&#160;&#160;&#160;((time_t)INT_MIN)</td></tr>
 <tr class="separator:ab287604687d62a91fdc2b510eb380ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82064629122e2d480104e52add8bebf"><td class="memItemLeft" align="right" valign="top"><a id="ab82064629122e2d480104e52add8bebf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOR_PRIuSZ</b>&#160;&#160;&#160;&quot;zu&quot;</td></tr>
+<tr class="separator:ab82064629122e2d480104e52add8bebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abea1a23f5e4324fd4965e26e07cede3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torint_8h.html#abea1a23f5e4324fd4965e26e07cede3f">SSIZE_T_CEILING</a>&#160;&#160;&#160;((ssize_t)(SSIZE_MAX-16))</td></tr>
 <tr class="separator:abea1a23f5e4324fd4965e26e07cede3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f47542384d7df9af9dd2872ff400f3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torint_8h.html#a6f47542384d7df9af9dd2872ff400f3e">SIZE_T_CEILING</a>&#160;&#160;&#160;((size_t)(SSIZE_MAX-16))</td></tr>

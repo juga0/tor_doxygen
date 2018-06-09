@@ -1,0 +1,6 @@
+<map id="circuit_expire_waiting_for_better_guard" name="circuit_expire_waiting_for_better_guard">
+<area shape="rect" id="node2" href="$circuitlist_8c.html#ab526f33075e1edd4dd62437af9ef6c43" title="circuit_get_global\l_origin_circuit_list" alt="" coords="222,5,349,47"/>
+<area shape="rect" id="node3" href="$entrynodes_8c.html#aa42b6de85549bfc96f56f89cab179042" title="entry_guard_state_should\l_expire" alt="" coords="200,71,371,112"/>
+<area shape="rect" id="node4" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="447,49,541,75"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#a2c7ec361faf235b7a77e9b73314046c5" title="get_nonprimary_guard\l_idle_timeout" alt="" coords="419,100,569,141"/>
+</map>

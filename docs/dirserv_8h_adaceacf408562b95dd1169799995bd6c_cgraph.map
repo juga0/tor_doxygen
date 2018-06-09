@@ -1,20 +1,16 @@
 <map id="authdir_wants_to_reject_router" name="authdir_wants_to_reject_router">
-<area shape="rect" id="node2" href="$dirserv_8c.html#a95906070553304c94a590affb671223e" title="dirserv_router_get\l_status" alt="" coords="213,49,340,90"/>
-<area shape="rect" id="node5" href="$router_8c.html#a4d59ce576eb8716561e1bc6be6f88de1" title="router_describe" alt="" coords="221,115,332,141"/>
-<area shape="rect" id="node16" href="$routerlist_8c.html#afd620fb5cbc29f6895ae016c0240d9a6" title="esc_router_info" alt="" coords="221,165,332,192"/>
-<area shape="rect" id="node3" href="$crypto_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="390,56,537,83"/>
-<area shape="rect" id="node4" href="$crypto_8c.html#adc1609ea0f9d65a1f60225cb001eeb15" title="crypto_digest" alt="" coords="619,56,719,83"/>
-<area shape="rect" id="node6" href="$router_8c.html#ac97f03d757d76cc0e684e58d4dfea035" title="router_get_description" alt="" coords="388,115,539,141"/>
-<area shape="rect" id="node7" href="$router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="587,107,751,133"/>
-<area shape="rect" id="node13" href="$routerlist_8c.html#a8b764a3362e4c3245d5e430925e380f1" title="router_is_named" alt="" coords="609,165,728,192"/>
-<area shape="rect" id="node8" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="827,5,940,32"/>
-<area shape="rect" id="node9" href="$address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="829,56,938,83"/>
-<area shape="rect" id="node10" href="$address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="835,107,932,133"/>
-<area shape="rect" id="node11" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="1016,107,1103,133"/>
-<area shape="rect" id="node12" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="1151,107,1245,133"/>
-<area shape="rect" id="node14" href="$networkstatus_8c.html#af663020b40e6b122a43b26aa62ca4ed4" title="networkstatus_get_router\l_digest_by_nickname" alt="" coords="799,158,968,199"/>
-<area shape="rect" id="node15" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="840,224,927,251"/>
-<area shape="rect" id="node17" href="$util_8c.html#ac152e18c6deb4f05823053bb2980a8e4" title="esc_for_log" alt="" coords="419,165,508,192"/>
-<area shape="rect" id="node18" href="$compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="420,216,507,243"/>
-<area shape="rect" id="node19" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="621,216,716,243"/>
+<area shape="rect" id="node2" href="$dirserv_8c.html#a95906070553304c94a590affb671223e" title="dirserv_router_get\l_status" alt="" coords="213,30,340,71"/>
+<area shape="rect" id="node5" href="$router_8c.html#a4d59ce576eb8716561e1bc6be6f88de1" title="router_describe" alt="" coords="221,107,332,133"/>
+<area shape="rect" id="node12" href="$routerlist_8c.html#afd620fb5cbc29f6895ae016c0240d9a6" title="esc_router_info" alt="" coords="221,157,332,184"/>
+<area shape="rect" id="node3" href="$crypto__rsa_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="397,16,543,43"/>
+<area shape="rect" id="node4" href="$crypto__rsa_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="600,5,731,32"/>
+<area shape="rect" id="node6" href="$router_8c.html#a54ab47db660fac7decf06081ba29f8dd" title="format_node_description" alt="" coords="388,107,552,133"/>
+<area shape="rect" id="node7" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="609,56,722,83"/>
+<area shape="rect" id="node8" href="$address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="611,107,720,133"/>
+<area shape="rect" id="node9" href="$address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="617,157,714,184"/>
+<area shape="rect" id="node10" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="779,157,865,184"/>
+<area shape="rect" id="node11" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="913,157,1008,184"/>
+<area shape="rect" id="node13" href="$util_8c.html#ac152e18c6deb4f05823053bb2980a8e4" title="esc_for_log" alt="" coords="425,157,515,184"/>
+<area shape="rect" id="node14" href="$compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="427,208,513,235"/>
+<area shape="rect" id="node15" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="618,208,713,235"/>
 </map>

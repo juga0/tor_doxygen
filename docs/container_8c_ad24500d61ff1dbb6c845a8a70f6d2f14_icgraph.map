@@ -1,9 +1,13 @@
 <map id="smartlist_clear" name="smartlist_clear">
-<area shape="rect" id="node2" href="$dns_8h.html#a307a827eed6277f5125f6503da3ddbe2" title="dns_reset_correctness\l_checks" alt="" coords="166,5,321,47"/>
-<area shape="rect" id="node4" href="$rendclient_8h.html#a5722e4ac8db539e7bfab397c1a32971a" title="rend_parse_service\l_authorization" alt="" coords="176,71,311,112"/>
-<area shape="rect" id="node5" href="$rephist_8h.html#a89f927d97d217f29680458cec3a7d82e" title="rep_hist_reset_buffer\l_stats" alt="" coords="171,136,315,177"/>
-<area shape="rect" id="node7" href="$router_8h.html#a09c7520a0a933831876a6b41420540c1" title="router_reset_warnings" alt="" coords="168,202,319,229"/>
-<area shape="rect" id="node8" href="$routerlist_8h.html#ad5591c87fbad96a88fa4d0145431ef87" title="routerlist_reset_warnings" alt="" coords="160,253,327,279"/>
-<area shape="rect" id="node3" href="$main_8h.html#a1725c3c7eee555118c2f19cebe1ca00d" title="dns_servers_relaunch\l_checks" alt="" coords="389,5,538,47"/>
-<area shape="rect" id="node6" href="$rephist_8h.html#a0bbd8c271022f2de86846d5099ed7478" title="rep_hist_buffer_stats_term" alt="" coords="375,143,552,170"/>
+<area shape="rect" id="node2" href="$dns_8h.html#a307a827eed6277f5125f6503da3ddbe2" title="dns_reset_correctness\l_checks" alt="" coords="170,5,325,47"/>
+<area shape="rect" id="node4" href="$entrynodes_8c.html#a691aafe1ed64f00a693b7bd1b0675ef1" title="entry_guards_update\l_confirmed" alt="" coords="176,71,319,112"/>
+<area shape="rect" id="node6" href="$microdesc_8h.html#a125edbb9e5b5b99f75e9a18de5d0e477" title="microdesc_reset_outdated\l_dirservers_list" alt="" coords="160,136,335,177"/>
+<area shape="rect" id="node7" href="$rendclient_8h.html#a5722e4ac8db539e7bfab397c1a32971a" title="rend_parse_service\l_authorization" alt="" coords="180,201,315,243"/>
+<area shape="rect" id="node8" href="$rephist_8h.html#a89f927d97d217f29680458cec3a7d82e" title="rep_hist_reset_buffer\l_stats" alt="" coords="175,267,319,308"/>
+<area shape="rect" id="node10" href="$router_8h.html#a09c7520a0a933831876a6b41420540c1" title="router_reset_warnings" alt="" coords="172,333,323,359"/>
+<area shape="rect" id="node11" href="$routerlist_8h.html#ad5591c87fbad96a88fa4d0145431ef87" title="routerlist_reset_warnings" alt="" coords="164,383,331,410"/>
+<area shape="rect" id="node12" href="$routerparse_8h.html#af9f19ced712ed538c086276fa472851d" title="rend_parse_client_keys" alt="" coords="168,434,327,461"/>
+<area shape="rect" id="node3" href="$main_8h.html#a1725c3c7eee555118c2f19cebe1ca00d" title="dns_servers_relaunch\l_checks" alt="" coords="397,5,546,47"/>
+<area shape="rect" id="node5" href="$entrynodes_8h.html#a4360ef3264ab398b48b851e0d2d675b5" title="entry_guards_update_all" alt="" coords="390,78,553,105"/>
+<area shape="rect" id="node9" href="$rephist_8h.html#a0bbd8c271022f2de86846d5099ed7478" title="rep_hist_buffer_stats_term" alt="" coords="383,274,560,301"/>
 </map>

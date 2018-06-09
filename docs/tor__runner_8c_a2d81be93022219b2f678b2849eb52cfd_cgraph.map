@@ -1,0 +1,25 @@
+<map id="tor_run_main" name="tor_run_main">
+<area shape="rect" id="node2" href="$backtrace_8c.html#a6d08b912f24793f23f1ab1dfbc7c423e" title="configure_backtrace\l_handler" alt="" coords="153,41,292,82"/>
+<area shape="rect" id="node3" href="$config_8c.html#a3113591cdd3555bd354860a3a0802222" title="get_version" alt="" coords="384,5,473,32"/>
+<area shape="rect" id="node7" href="$config_8c.html#a9badc2e4e664120fd99bbd63cd4af3c6" title="init_protocol_warning\l_severity_level" alt="" coords="151,251,295,293"/>
+<area shape="rect" id="node10" href="$util_8c.html#a866d4c80bbdc37a0279c2bd02f4b2bde" title="update_approx_time" alt="" coords="153,368,292,395"/>
+<area shape="rect" id="node11" href="$compat__pthreads_8c.html#ad7af2665dcebaab14be9e040eef67de0" title="tor_threads_init" alt="" coords="167,419,278,445"/>
+<area shape="rect" id="node12" href="$compress_8c.html#aa70790c077be4c170f9a6ee17baf93e3" title="tor_compress_init" alt="" coords="160,317,285,344"/>
+<area shape="rect" id="node16" href="$log_8c.html#a0bc134e471615f694edc26aef8bf961f" title="init_logging" alt="" coords="179,469,266,496"/>
+<area shape="rect" id="node18" href="$compat__time_8c.html#ac3081103a772136f197e2eda085ff26d" title="monotime_init" alt="" coords="171,520,274,547"/>
+<area shape="rect" id="node19" href="$main_8c.html#a5c761b9de5289922e4f75826f766355f" title="tor_init" alt="" coords="192,157,253,184"/>
+<area shape="rect" id="node4" href="$compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="795,5,881,32"/>
+<area shape="rect" id="node6" href="$config_8c.html#a229118cbc4221ec841824b17f7c82b06" title="get_short_version" alt="" coords="567,31,693,57"/>
+<area shape="rect" id="node5" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="979,5,1073,32"/>
+<area shape="rect" id="node8" href="$compat__threads_8c.html#a28fc1a1e6d143b15ab62ddfa810a7ffd" title="atomic_counter_init" alt="" coords="563,360,697,387"/>
+<area shape="rect" id="node9" href="$compat__pthreads_8c.html#a900a1a27db8f1815a4db66e98e67bac0" title="tor_mutex_init_nonrecursive" alt="" coords="745,360,931,387"/>
+<area shape="rect" id="node13" href="$compress__zlib_8c.html#a256ccf247e5c5cc84f2063f3a23f1eb5" title="tor_zlib_init" alt="" coords="385,360,473,387"/>
+<area shape="rect" id="node14" href="$compress__lzma_8c.html#aa959a50329a95dc76efe6d112b52e21d" title="tor_lzma_init" alt="" coords="381,411,477,437"/>
+<area shape="rect" id="node15" href="$compress__zstd_8c.html#a70bc7321f0ab96e8ac23ede28063dc22" title="tor_zstd_init" alt="" coords="382,461,475,488"/>
+<area shape="rect" id="node17" href="$compat__pthreads_8c.html#accea24c75779968942013afa3ae1c051" title="tor_mutex_init" alt="" coords="377,512,481,539"/>
+<area shape="rect" id="node20" href="$main_8c.html#add1f47335c5e96d25eb95c6308b3ea1e" title="init_connection_lists" alt="" coords="359,56,499,83"/>
+<area shape="rect" id="node21" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="385,107,472,133"/>
+<area shape="rect" id="node23" href="$log_8c.html#a665d03a179fc9e07ac04fd65dccb6d47" title="log_set_application_name" alt="" coords="343,157,515,184"/>
+<area shape="rect" id="node24" href="$crypto_8c.html#a6bde73f49ce0082ba60bf6fa8abee655" title="crypto_early_init" alt="" coords="370,208,487,235"/>
+<area shape="rect" id="node22" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="583,107,677,133"/>
+</map>

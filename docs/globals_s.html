@@ -78,6 +78,12 @@ $(function() {
 : <a class="el" href="util_8h.html#a7a71fe4811768a82c3060e8946ee62b4">util.h</a>
 , <a class="el" href="util_8c.html#a7a71fe4811768a82c3060e8946ee62b4">util.c</a>
 </li>
+<li>sample_reachable_filtered_entry_guards()
+: <a class="el" href="entrynodes_8c.html#a440f5217f0a557c13b02a251f93db5d6">entrynodes.c</a>
+</li>
+<li>sampled_guards_update_from_consensus()
+: <a class="el" href="entrynodes_8c.html#af2a8cbdaeab1361a4527e0d1b6233f25">entrynodes.c</a>
+</li>
 <li>sandbox_cfg_allow_open_filename()
 : <a class="el" href="sandbox_8c.html#a01c8f148a1eb2eb18b837e8fc94f2aaa">sandbox.c</a>
 , <a class="el" href="sandbox_8h.html#a01c8f148a1eb2eb18b837e8fc94f2aaa">sandbox.h</a>
@@ -87,12 +93,12 @@ $(function() {
 , <a class="el" href="sandbox_8h.html#afdbcc73b9c36d2b9ba11372ff71d1a48">sandbox.h</a>
 </li>
 <li>sandbox_cfg_allow_stat_filename()
-: <a class="el" href="sandbox_8c.html#a177c1385aca4eafa77e6228e1d687f6d">sandbox.c</a>
-, <a class="el" href="sandbox_8h.html#a177c1385aca4eafa77e6228e1d687f6d">sandbox.h</a>
+: <a class="el" href="sandbox_8h.html#a177c1385aca4eafa77e6228e1d687f6d">sandbox.h</a>
+, <a class="el" href="sandbox_8c.html#a177c1385aca4eafa77e6228e1d687f6d">sandbox.c</a>
 </li>
 <li>sandbox_cfg_new()
-: <a class="el" href="sandbox_8h.html#adffcff432390e3961fd36659388585e3">sandbox.h</a>
-, <a class="el" href="sandbox_8c.html#adffcff432390e3961fd36659388585e3">sandbox.c</a>
+: <a class="el" href="sandbox_8c.html#adffcff432390e3961fd36659388585e3">sandbox.c</a>
+, <a class="el" href="sandbox_8h.html#adffcff432390e3961fd36659388585e3">sandbox.h</a>
 </li>
 <li>sandbox_cfg_t
 : <a class="el" href="sandbox_8h.html#a812e4f920c58bd27cbe074dd8a195305">sandbox.h</a>
@@ -126,10 +132,6 @@ $(function() {
 <li>scale_array_elements_to_u64()
 : <a class="el" href="routerlist_8c.html#aa17ec1d95171be8c87bb5dcc4ac341ba">routerlist.c</a>
 </li>
-<li>scheduler_adjust_queue_size()
-: <a class="el" href="scheduler_8c.html#a087fd81b86de21c70f9e3750f5b88792">scheduler.c</a>
-, <a class="el" href="scheduler_8h.html#a087fd81b86de21c70f9e3750f5b88792">scheduler.h</a>
-</li>
 <li>scheduler_channel_has_waiting_cells_mock()
 : <a class="el" href="fakechans_8h.html#acd035b320aa4d3473212835079a7fb58">fakechans.h</a>
 </li>
@@ -137,30 +139,35 @@ $(function() {
 : <a class="el" href="scheduler_8c.html#aa56372f6c2d55b0346acd5111365a447">scheduler.c</a>
 , <a class="el" href="scheduler_8h.html#aa56372f6c2d55b0346acd5111365a447">scheduler.h</a>
 </li>
+<li>scheduler_conf_changed()
+: <a class="el" href="scheduler_8c.html#a1164bd9d3c36dd53812829091c74e7fc">scheduler.c</a>
+, <a class="el" href="scheduler_8h.html#a1164bd9d3c36dd53812829091c74e7fc">scheduler.h</a>
+</li>
+<li>scheduler_ev_active()
+: <a class="el" href="scheduler_8c.html#a199c3d59509d475c2ed08776bcdc9a8a">scheduler.c</a>
+</li>
+<li>scheduler_ev_add()
+: <a class="el" href="scheduler_8c.html#a79d37fbaa3b4ae2fff6c7c534951e1de">scheduler.c</a>
+</li>
 <li>scheduler_free_all()
 : <a class="el" href="scheduler_8c.html#a2088a76473dcdac2a9d0c3dbde56c6c2">scheduler.c</a>
 , <a class="el" href="scheduler_8h.html#a2088a76473dcdac2a9d0c3dbde56c6c2">scheduler.h</a>
 </li>
-<li>scheduler_get_queue_heuristic()
-: <a class="el" href="scheduler_8c.html#aede4632e18f27f3fe1362f6d19d8eea8">scheduler.c</a>
-</li>
-<li>scheduler_init()
-: <a class="el" href="scheduler_8c.html#ab258cc2856e5f6bb125907cc23358fbd">scheduler.c</a>
-, <a class="el" href="scheduler_8h.html#ab258cc2856e5f6bb125907cc23358fbd">scheduler.h</a>
+<li>scheduler_notify_networkstatus_changed()
+: <a class="el" href="scheduler_8c.html#a097a293a64c453d09615cea4df39a0af">scheduler.c</a>
+, <a class="el" href="scheduler_8h.html#a097a293a64c453d09615cea4df39a0af">scheduler.h</a>
 </li>
 <li>scheduler_release_channel_mock()
 : <a class="el" href="fakechans_8h.html#a2cff55df4a9516484aba4c6302c9deda">fakechans.h</a>
 </li>
-<li>scheduler_set_watermarks()
-: <a class="el" href="scheduler_8c.html#af6dab39a35cd1099ade32ff6df7cd299">scheduler.c</a>
-, <a class="el" href="scheduler_8h.html#af6dab39a35cd1099ade32ff6df7cd299">scheduler.h</a>
+<li>scheduler_set_channel_state()
+: <a class="el" href="scheduler_8c.html#a60ba6397e720d3db09b5e4605dfd42c7">scheduler.c</a>
 </li>
-<li>scheduler_touch_channel()
-: <a class="el" href="scheduler_8c.html#af0e63e87180008b072813670a1d2419a">scheduler.c</a>
-, <a class="el" href="scheduler_8h.html#af0e63e87180008b072813670a1d2419a">scheduler.h</a>
+<li>scheduler_t
+: <a class="el" href="scheduler_8h.html#accbab322a2f3a548715826be997f83a4">scheduler.h</a>
 </li>
-<li>scheduler_update_queue_heuristic()
-: <a class="el" href="scheduler_8c.html#a6ebeeee0c516be8594b9cbc1f9462ff7">scheduler.c</a>
+<li>scheduler_types_t
+: <a class="el" href="scheduler_8h.html#adcee40ed16a1bd20938aaa845497fbad">scheduler.h</a>
 </li>
 <li>secret_to_key_check()
 : <a class="el" href="crypto__s2k_8c.html#a2fbc5b0f80f8b4a163b38e75ff9ddc75">crypto_s2k.c</a>
@@ -190,6 +197,9 @@ $(function() {
 : <a class="el" href="di__ops_8c.html#ab150d442a486218c80f7a0c25ae14c59">di_ops.c</a>
 , <a class="el" href="di__ops_8h.html#ab150d442a486218c80f7a0c25ae14c59">di_ops.h</a>
 </li>
+<li>select_entry_guard_for_circuit()
+: <a class="el" href="entrynodes_8c.html#a997305afc0db6f7e66d50f4273db1898">entrynodes.c</a>
+</li>
 <li>SENTINEL_LEN
 : <a class="el" href="memarea_8c.html#a69f1f8604b267fe6aab1ffbdd83a0702">memarea.c</a>
 </li>
@@ -200,16 +210,22 @@ $(function() {
 : <a class="el" href="router_8c.html#a9f63549a1af0b43512f4d65b8a02da85">router.c</a>
 , <a class="el" href="router_8h.html#a9f63549a1af0b43512f4d65b8a02da85">router.h</a>
 </li>
-<li>server_onion_keys_free()
-: <a class="el" href="onion_8c.html#aa6c71bd5a96f194744360e231cf351f5">onion.c</a>
-, <a class="el" href="onion_8h.html#aa6c71bd5a96f194744360e231cf351f5">onion.h</a>
+<li>server_onion_keys_free_()
+: <a class="el" href="onion_8c.html#aa6b4eb9074be2e715bf1a039708c46cb">onion.c</a>
+, <a class="el" href="onion_8h.html#aa6b4eb9074be2e715bf1a039708c46cb">onion.h</a>
 </li>
 <li>server_onion_keys_new()
-: <a class="el" href="onion_8c.html#a63591a73a78fb762ef0c9f74556bf50c">onion.c</a>
-, <a class="el" href="onion_8h.html#a63591a73a78fb762ef0c9f74556bf50c">onion.h</a>
+: <a class="el" href="onion_8h.html#a63591a73a78fb762ef0c9f74556bf50c">onion.h</a>
+, <a class="el" href="onion_8c.html#a63591a73a78fb762ef0c9f74556bf50c">onion.c</a>
 </li>
 <li>server_tls_context
 : <a class="el" href="tortls_8c.html#ace791365ee344ba5b611c0ff9883a47e">tortls.c</a>
+</li>
+<li>service_desc_hsdirs_changed()
+: <a class="el" href="hs__service_8c.html#af410848ff451f322060d9b5d35692540">hs_service.c</a>
+</li>
+<li>service_desc_schedule_upload()
+: <a class="el" href="hs__service_8c.html#a30fe940a197fedc44dd0aef70933211b">hs_service.c</a>
 </li>
 <li>SESSION_GROUP_CONTROL_RESOLVE
 : <a class="el" href="or_8h.html#aa7eeab8a72601f4f218a7f4711b890ca">or.h</a>
@@ -222,6 +238,9 @@ $(function() {
 </li>
 <li>SESSION_GROUP_UNSET
 : <a class="el" href="or_8h.html#a85541d9ca3a91ff3e14d4d4fa9e39cc5">or.h</a>
+</li>
+<li>set_changed()
+: <a class="el" href="consdiff_8c.html#a6293383be931683a9ccd524751c99cb1">consdiff.c</a>
 </li>
 <li>set_client_identity_key()
 : <a class="el" href="router_8c.html#a680d1900f3bcbc97dd4ddf6efa5fb35b">router.c</a>
@@ -250,8 +269,8 @@ $(function() {
 , <a class="el" href="config_8h.html#abf9c62508d18f7bc7f37a5897ae9a282">config.h</a>
 </li>
 <li>set_routerstatus_from_routerinfo()
-: <a class="el" href="dirserv_8c.html#a441a08d3eefcfb08ff0c8ee680183490">dirserv.c</a>
-, <a class="el" href="dirvote_8h.html#a441a08d3eefcfb08ff0c8ee680183490">dirvote.h</a>
+: <a class="el" href="dirvote_8h.html#a441a08d3eefcfb08ff0c8ee680183490">dirvote.h</a>
+, <a class="el" href="dirserv_8c.html#a441a08d3eefcfb08ff0c8ee680183490">dirserv.c</a>
 </li>
 <li>SET_SENTINEL
 : <a class="el" href="memarea_8c.html#a0ef78a9c6bb3beb86bc306c2d9bd2248">memarea.c</a>
@@ -287,9 +306,9 @@ $(function() {
 <li>short_policy_entry_t
 : <a class="el" href="or_8h.html#acd885aae663ca40640848b3cb7eb79de">or.h</a>
 </li>
-<li>short_policy_free()
-: <a class="el" href="policies_8c.html#a3a0c68a8d1b8b63eaa6ee5fe12eeb108">policies.c</a>
-, <a class="el" href="policies_8h.html#a3a0c68a8d1b8b63eaa6ee5fe12eeb108">policies.h</a>
+<li>short_policy_free_()
+: <a class="el" href="policies_8c.html#ac4dcea4a1e21f4ef7d573596a3d9d32c">policies.c</a>
+, <a class="el" href="policies_8h.html#ac4dcea4a1e21f4ef7d573596a3d9d32c">policies.h</a>
 </li>
 <li>short_policy_is_reject_star()
 : <a class="el" href="policies_8c.html#ae6cae87f58da339d8fba099922f97b05">policies.c</a>
@@ -306,6 +325,9 @@ $(function() {
 : <a class="el" href="networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf">networkstatus.c</a>
 , <a class="el" href="networkstatus_8h.html#aa278011afd1917ef43cc44fac287f7bf">networkstatus.h</a>
 </li>
+<li>should_make_new_ed_keys()
+: <a class="el" href="routerkeys_8c.html#a2e95cfb2cfe890a618b7681b2f7f6c76">routerkeys.c</a>
+</li>
 <li>should_record_bridge_info()
 : <a class="el" href="geoip_8c.html#aecc961d6ac7cd75ec8593321d51d909a">geoip.c</a>
 , <a class="el" href="geoip_8h.html#aecc961d6ac7cd75ec8593321d51d909a">geoip.h</a>
@@ -316,6 +338,12 @@ $(function() {
 </li>
 <li>should_use_directory_guards()
 : <a class="el" href="directory_8c.html#a4e70476c39b897c87ee7623617f43e78">directory.c</a>
+</li>
+<li>signal_event
+: <a class="el" href="main_8c.html#a3c28bd7ff656b4167284695f65381dca">main.c</a>
+</li>
+<li>signal_value
+: <a class="el" href="main_8c.html#aaddd9624b1405cf93ba323424899a52e">main.c</a>
 </li>
 <li>signed_descriptor_get_annotations()
 : <a class="el" href="routerlist_8c.html#aa7aee947ee003a2d2367678bdbbb0aa9">routerlist.c</a>
@@ -331,6 +359,10 @@ $(function() {
 <li>signed_descs_update_status_from_consensus_networkstatus()
 : <a class="el" href="networkstatus_8c.html#a28083077a140f44e651523c894509005">networkstatus.c</a>
 , <a class="el" href="networkstatus_8h.html#a28083077a140f44e651523c894509005">networkstatus.h</a>
+</li>
+<li>size_mul_check()
+: <a class="el" href="util_8c.html#a4b2e004bf33fdcf0750d523c3e21f053">util.c</a>
+, <a class="el" href="util_8h.html#a4b2e004bf33fdcf0750d523c3e21f053">util.h</a>
 </li>
 <li>SIZE_T_CEILING
 : <a class="el" href="torint_8h.html#a6f47542384d7df9af9dd2872ff400f3e">torint.h</a>
@@ -350,6 +382,13 @@ $(function() {
 <li>smartlist_add_asprintf()
 : <a class="el" href="util_8c.html#a68cb44a66a7446022122c93590b6d179">util.c</a>
 </li>
+<li>smartlist_add_linecpy()
+: <a class="el" href="consdiff_8c.html#a16cbdd8439ee2d3727e6ed1b670d31e5">consdiff.c</a>
+</li>
+<li>smartlist_add_strdup()
+: <a class="el" href="util_8c.html#a95ad8dd258dec01eebc504928e6df180">util.c</a>
+, <a class="el" href="util_8h.html#a6060097b94c818932e0ffa1c921a4ab9">util.h</a>
+</li>
 <li>smartlist_add_vasprintf()
 : <a class="el" href="util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b">util.c</a>
 </li>
@@ -360,7 +399,7 @@ $(function() {
 : <a class="el" href="container_8c.html#af0f195f396d7f97e7f2f2367453da119">container.c</a>
 </li>
 <li>smartlist_choose()
-: <a class="el" href="crypto_8c.html#ade8ce8fa149116f2afb764c3ad983873">crypto.c</a>
+: <a class="el" href="crypto__rand_8c.html#ade8ce8fa149116f2afb764c3ad983873">crypto_rand.c</a>
 </li>
 <li>smartlist_clear()
 : <a class="el" href="container_8c.html#ad24500d61ff1dbb6c845a8a70f6d2f14">container.c</a>
@@ -440,12 +479,21 @@ $(function() {
 <li>smartlist_remove()
 : <a class="el" href="container_8c.html#ad318adf5db2ec229a43c0c567e1f6fce">container.c</a>
 </li>
+<li>smartlist_remove_keeporder()
+: <a class="el" href="container_8c.html#a061de57f57347aefdc74adb3ccce7b91">container.c</a>
+</li>
 <li>smartlist_reverse()
 : <a class="el" href="container_8c.html#a74cbd0e25dd30e6ca35128f2561cf00c">container.c</a>
 </li>
 <li>smartlist_shuffle()
-: <a class="el" href="crypto_8c.html#aaf56d58530c4eeb1d3934a2b780bf946">crypto.c</a>
-, <a class="el" href="crypto_8h.html#a56bc6ef989ec27c2b561694e8a5e1807">crypto.h</a>
+: <a class="el" href="crypto__rand_8c.html#aaf56d58530c4eeb1d3934a2b780bf946">crypto_rand.c</a>
+, <a class="el" href="crypto__rand_8h.html#a56bc6ef989ec27c2b561694e8a5e1807">crypto_rand.h</a>
+</li>
+<li>smartlist_slice()
+: <a class="el" href="consdiff_8c.html#a9230afcb4352fead94a2e8341e971fdc">consdiff.c</a>
+</li>
+<li>smartlist_slice_string_pos()
+: <a class="el" href="consdiff_8c.html#af131136ce4b0bdead45911f3426d28d0">consdiff.c</a>
 </li>
 <li>smartlist_sort()
 : <a class="el" href="container_8c.html#adeb0528c65b62117acb2b8f6e2b0e910">container.c</a>
@@ -493,8 +541,8 @@ $(function() {
 : <a class="el" href="or_8h.html#ae6851983cae9360f69b35ad8244aea12">or.h</a>
 </li>
 <li>socks4_response_code_to_string()
-: <a class="el" href="reasons_8c.html#ad944c72492107252a737ac7015a9fe2b">reasons.c</a>
-, <a class="el" href="reasons_8h.html#ad944c72492107252a737ac7015a9fe2b">reasons.h</a>
+: <a class="el" href="reasons_8h.html#ad944c72492107252a737ac7015a9fe2b">reasons.h</a>
+, <a class="el" href="reasons_8c.html#ad944c72492107252a737ac7015a9fe2b">reasons.c</a>
 </li>
 <li>socks5_response_code_to_string()
 : <a class="el" href="reasons_8c.html#ae69b945d5eb23e79b93cc635d0dc7c99">reasons.c</a>
@@ -513,17 +561,6 @@ $(function() {
 : <a class="el" href="policies_8c.html#acbe4bf4601954f5f219fd8337076ff7e">policies.c</a>
 , <a class="el" href="policies_8h.html#acbe4bf4601954f5f219fd8337076ff7e">policies.h</a>
 </li>
-<li>socks_request_free()
-: <a class="el" href="buffers_8c.html#a9d88eae643ab99ae0fa364974dd43077">buffers.c</a>
-, <a class="el" href="buffers_8h.html#a9d88eae643ab99ae0fa364974dd43077">buffers.h</a>
-</li>
-<li>socks_request_new()
-: <a class="el" href="buffers_8c.html#aacf3c3ffa8cdb33c72236cdfbacafacc">buffers.c</a>
-, <a class="el" href="buffers_8h.html#aacf3c3ffa8cdb33c72236cdfbacafacc">buffers.h</a>
-</li>
-<li>SOCKS_WARN_INTERVAL
-: <a class="el" href="buffers_8c.html#adc3c3def749838b291a43bbaf726c7ce">buffers.c</a>
-</li>
 <li>sort_version_list()
 : <a class="el" href="routerparse_8c.html#a54739e9600d1d7d0941e77c8ddc53970">routerparse.c</a>
 , <a class="el" href="routerparse_8h.html#a8e5734db3a8dd85fb0d16c180d64a4cd">routerparse.h</a>
@@ -534,8 +571,31 @@ $(function() {
 <li>spawn_func()
 : <a class="el" href="compat__pthreads_8c.html#aa65e1439e672696123542094e9923d76">compat_pthreads.c</a>
 </li>
-<li>SPECTYPE_IPV4
-: <a class="el" href="onion_8c.html#a8bb244eefd5de1d00a1b68d8943d0c80">onion.c</a>
+<li>spooled_resource_flush_status_t
+: <a class="el" href="dirserv_8c.html#a49ce7f6c3755c9335d3f4be66dfb35ab">dirserv.c</a>
+</li>
+<li>spooled_resource_free_()
+: <a class="el" href="dirserv_8c.html#a63449de198177a1fbd1f1365bab914a2">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#a63449de198177a1fbd1f1365bab914a2">dirserv.h</a>
+</li>
+<li>spooled_resource_new_from_cache_entry()
+: <a class="el" href="dirserv_8c.html#a50588c66d7809df0683feab09159f927">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#a78f90a90dabba118a3beb3130c9c66c7">dirserv.h</a>
+</li>
+<li>spooled_resource_t
+: <a class="el" href="dirserv_8h.html#abf27c2014f1f1b30b7da7194945055f8">dirserv.h</a>
+</li>
+<li>sr_state_get_phase_duration()
+: <a class="el" href="shared__random__client_8c.html#af5f648c27b17b932935fcbe8eb2e6a70">shared_random_client.c</a>
+, <a class="el" href="shared__random__client_8h.html#af5f648c27b17b932935fcbe8eb2e6a70">shared_random_client.h</a>
+</li>
+<li>sr_state_get_protocol_run_duration()
+: <a class="el" href="shared__random__client_8h.html#a826be70231c0c78acf089f7b86594582">shared_random_client.h</a>
+, <a class="el" href="shared__random__client_8c.html#a826be70231c0c78acf089f7b86594582">shared_random_client.c</a>
+</li>
+<li>sr_state_get_start_time_of_current_protocol_run()
+: <a class="el" href="shared__random__client_8c.html#a586b1f84a25ee9d9ad6aaf12a8d48460">shared_random_client.c</a>
+, <a class="el" href="shared__random__client_8h.html#a586b1f84a25ee9d9ad6aaf12a8d48460">shared_random_client.h</a>
 </li>
 <li>SSIZE_T_CEILING
 : <a class="el" href="torint_8h.html#abea1a23f5e4324fd4965e26e07cede3f">torint.h</a>
@@ -550,16 +610,19 @@ $(function() {
 : <a class="el" href="rephist_8c.html#ae4c3e5eab8f153aa740be6bdd932106f">rephist.c</a>
 </li>
 <li>start_daemon()
-: <a class="el" href="util_8c.html#a9ce5e8df63b6d2ae9cb31a301fecb350">util.c</a>
-, <a class="el" href="util_8h.html#a9ce5e8df63b6d2ae9cb31a301fecb350">util.h</a>
+: <a class="el" href="util_8h.html#a9ce5e8df63b6d2ae9cb31a301fecb350">util.h</a>
+, <a class="el" href="util_8c.html#a9ce5e8df63b6d2ae9cb31a301fecb350">util.c</a>
+</li>
+<li>START_OF_SIGNATURES_SECTION
+: <a class="el" href="consdiff_8c.html#af1b7f0807b26eca755d5dd6fa263e1b5">consdiff.c</a>
 </li>
 <li>start_writing_to_file()
 : <a class="el" href="util_8h.html#a5f3fb0bdeb712732f51d0f9e3b0c849c">util.h</a>
 , <a class="el" href="util_8c.html#a5f3fb0bdeb712732f51d0f9e3b0c849c">util.c</a>
 </li>
 <li>start_writing_to_stdio_file()
-: <a class="el" href="util_8c.html#aa4a3fe13e93e542ee9b598d865f2647c">util.c</a>
-, <a class="el" href="util_8h.html#aa4a3fe13e93e542ee9b598d865f2647c">util.h</a>
+: <a class="el" href="util_8h.html#aa4a3fe13e93e542ee9b598d865f2647c">util.h</a>
+, <a class="el" href="util_8c.html#aa4a3fe13e93e542ee9b598d865f2647c">util.c</a>
 </li>
 <li>STATE_IS_OPEN
 : <a class="el" href="control_8c.html#a891794d9838a445210cb070c284656a5">control.c</a>
@@ -570,13 +633,17 @@ $(function() {
 <li>STATE_WRITE_RETRY_INTERVAL
 : <a class="el" href="statefile_8c.html#a0d7074f98e89e723b0ce1c6119424d99">statefile.c</a>
 </li>
+<li>stats_increment_bytes_read_and_written()
+: <a class="el" href="main_8h.html#a0d2048d2c6e4ab00cb49e0deed579e56">main.h</a>
+, <a class="el" href="main_8c.html#a0d2048d2c6e4ab00cb49e0deed579e56">main.c</a>
+</li>
 <li>stats_n_auth_challenge_cells_processed
 : <a class="el" href="channeltls_8c.html#a80ee86983d286b4e23837b3a06af5c97">channeltls.c</a>
 , <a class="el" href="channeltls_8h.html#a80ee86983d286b4e23837b3a06af5c97">channeltls.h</a>
 </li>
 <li>stats_n_authenticate_cells_processed
-: <a class="el" href="channeltls_8h.html#a92c5b23ac6778475f992a73cfbb9f189">channeltls.h</a>
-, <a class="el" href="channeltls_8c.html#a92c5b23ac6778475f992a73cfbb9f189">channeltls.c</a>
+: <a class="el" href="channeltls_8c.html#a92c5b23ac6778475f992a73cfbb9f189">channeltls.c</a>
+, <a class="el" href="channeltls_8h.html#a92c5b23ac6778475f992a73cfbb9f189">channeltls.h</a>
 </li>
 <li>stats_n_authorize_cells_processed
 : <a class="el" href="channeltls_8c.html#a8d307a4fc3db127f8d7753c2eae4ce40">channeltls.c</a>
@@ -586,29 +653,33 @@ $(function() {
 : <a class="el" href="channeltls_8c.html#a6e11d00906b173608220b880b8e8a08d">channeltls.c</a>
 , <a class="el" href="channeltls_8h.html#a6e11d00906b173608220b880b8e8a08d">channeltls.h</a>
 </li>
+<li>stats_n_circ_max_cell_reached
+: <a class="el" href="relay_8c.html#a56c3e73b76431214164a602f8577c8e8">relay.c</a>
+, <a class="el" href="relay_8h.html#a56c3e73b76431214164a602f8577c8e8">relay.h</a>
+</li>
 <li>stats_n_create_cells_processed
-: <a class="el" href="command_8c.html#af10448061cd2efb778a3dc7d9b070ac5">command.c</a>
-, <a class="el" href="command_8h.html#af10448061cd2efb778a3dc7d9b070ac5">command.h</a>
+: <a class="el" href="command_8h.html#af10448061cd2efb778a3dc7d9b070ac5">command.h</a>
+, <a class="el" href="command_8c.html#af10448061cd2efb778a3dc7d9b070ac5">command.c</a>
 </li>
 <li>stats_n_created_cells_processed
-: <a class="el" href="command_8h.html#a2ffcd58ef2dc2be5fe2b86a7ec9f04f4">command.h</a>
-, <a class="el" href="command_8c.html#a2ffcd58ef2dc2be5fe2b86a7ec9f04f4">command.c</a>
+: <a class="el" href="command_8c.html#a2ffcd58ef2dc2be5fe2b86a7ec9f04f4">command.c</a>
+, <a class="el" href="command_8h.html#a2ffcd58ef2dc2be5fe2b86a7ec9f04f4">command.h</a>
 </li>
 <li>stats_n_data_bytes_packaged
-: <a class="el" href="relay_8h.html#aecc32bdfb76b45ae9dd684e7094ff762">relay.h</a>
-, <a class="el" href="relay_8c.html#aecc32bdfb76b45ae9dd684e7094ff762">relay.c</a>
+: <a class="el" href="relay_8c.html#aecc32bdfb76b45ae9dd684e7094ff762">relay.c</a>
+, <a class="el" href="relay_8h.html#aecc32bdfb76b45ae9dd684e7094ff762">relay.h</a>
 </li>
 <li>stats_n_data_bytes_received
-: <a class="el" href="relay_8h.html#a7dfb5a3284a0d5d9c6e8d378672d1499">relay.h</a>
-, <a class="el" href="relay_8c.html#a7dfb5a3284a0d5d9c6e8d378672d1499">relay.c</a>
+: <a class="el" href="relay_8c.html#a7dfb5a3284a0d5d9c6e8d378672d1499">relay.c</a>
+, <a class="el" href="relay_8h.html#a7dfb5a3284a0d5d9c6e8d378672d1499">relay.h</a>
 </li>
 <li>stats_n_data_cells_packaged
-: <a class="el" href="relay_8h.html#a6981dfc6c45ebadd30232ed0eb39c227">relay.h</a>
-, <a class="el" href="relay_8c.html#a6981dfc6c45ebadd30232ed0eb39c227">relay.c</a>
+: <a class="el" href="relay_8c.html#a6981dfc6c45ebadd30232ed0eb39c227">relay.c</a>
+, <a class="el" href="relay_8h.html#a6981dfc6c45ebadd30232ed0eb39c227">relay.h</a>
 </li>
 <li>stats_n_data_cells_received
-: <a class="el" href="relay_8h.html#a199aed1d51f9c03f682f82fa12612a7f">relay.h</a>
-, <a class="el" href="relay_8c.html#a199aed1d51f9c03f682f82fa12612a7f">relay.c</a>
+: <a class="el" href="relay_8c.html#a199aed1d51f9c03f682f82fa12612a7f">relay.c</a>
+, <a class="el" href="relay_8h.html#a199aed1d51f9c03f682f82fa12612a7f">relay.h</a>
 </li>
 <li>stats_n_destroy_cells_processed
 : <a class="el" href="command_8c.html#a8ef1237fe73921a00b08dc6aff0c40a2">command.c</a>
@@ -619,8 +690,8 @@ $(function() {
 , <a class="el" href="channeltls_8h.html#af7481930669fadca09c2e4dba9c439cc">channeltls.h</a>
 </li>
 <li>stats_n_padding_cells_processed
-: <a class="el" href="command_8h.html#a54b6390a5d113185e8ac47886205e67f">command.h</a>
-, <a class="el" href="channeltls_8c.html#a54b6390a5d113185e8ac47886205e67f">channeltls.c</a>
+: <a class="el" href="channeltls_8c.html#a54b6390a5d113185e8ac47886205e67f">channeltls.c</a>
+, <a class="el" href="command_8h.html#a54b6390a5d113185e8ac47886205e67f">command.h</a>
 </li>
 <li>stats_n_relay_cells_delivered
 : <a class="el" href="relay_8h.html#aad29282dd866a9a0c841b55c12875d2f">relay.h</a>
@@ -631,12 +702,8 @@ $(function() {
 , <a class="el" href="command_8h.html#aa72b39b5ad090972cedfbd41ec37b6fe">command.h</a>
 </li>
 <li>stats_n_relay_cells_relayed
-: <a class="el" href="relay_8c.html#a50b56c80423bc21f710f3d3edc2b57bf">relay.c</a>
-, <a class="el" href="relay_8h.html#a50b56c80423bc21f710f3d3edc2b57bf">relay.h</a>
-</li>
-<li>stats_n_seconds_working
-: <a class="el" href="main_8c.html#a932543f7a0440bd2dae14c697d5daf88">main.c</a>
-, <a class="el" href="main_8h.html#a932543f7a0440bd2dae14c697d5daf88">main.h</a>
+: <a class="el" href="relay_8h.html#a50b56c80423bc21f710f3d3edc2b57bf">relay.h</a>
+, <a class="el" href="relay_8c.html#a50b56c80423bc21f710f3d3edc2b57bf">relay.c</a>
 </li>
 <li>stats_n_versions_cells_processed
 : <a class="el" href="channeltls_8h.html#a8d4ddb19bc933f6fce31ac27bc63d4c1">channeltls.h</a>
@@ -647,7 +714,7 @@ $(function() {
 , <a class="el" href="channeltls_8c.html#ac1252e193d9b8628528ea5df3e4be411">channeltls.c</a>
 </li>
 <li>store_type_t
-: <a class="el" href="or_8h.html#a5e7495b73cd870e26a87b0597af5693a">or.h</a>
+: <a class="el" href="or_8h.html#ab975efabb79bf2761321942472394b55">or.h</a>
 </li>
 <li>str_to_protocol_type()
 : <a class="el" href="protover_8c.html#af6111963bd062d616cf862762cdaf3a2">protover.c</a>
@@ -680,18 +747,18 @@ $(function() {
 , <a class="el" href="reasons_8c.html#a53d4b83ccf635050be0ac6123aa7d052">reasons.c</a>
 </li>
 <li>stream_end_reason_to_string()
-: <a class="el" href="reasons_8c.html#a436aa210db84d4e7566fac9ac62cdf1a">reasons.c</a>
-, <a class="el" href="reasons_8h.html#a436aa210db84d4e7566fac9ac62cdf1a">reasons.h</a>
+: <a class="el" href="reasons_8h.html#a436aa210db84d4e7566fac9ac62cdf1a">reasons.h</a>
+, <a class="el" href="reasons_8c.html#a436aa210db84d4e7566fac9ac62cdf1a">reasons.c</a>
 </li>
 <li>stream_status
 : <a class="el" href="util_8h.html#a5d31dda277e56fa17f61ee4d92881e34">util.h</a>
 </li>
 <li>stream_status_event_t
-: <a class="el" href="or_8h.html#aa7150559a6040b34eea265c84fa6ee37">or.h</a>
+: <a class="el" href="or_8h.html#a678356e73d49a4c5cf2dc3133de8b49a">or.h</a>
 </li>
 <li>stream_status_to_string()
-: <a class="el" href="util_8c.html#a50a277d6cece483ae49a0bf173a0529a">util.c</a>
-, <a class="el" href="util_8h.html#a50a277d6cece483ae49a0bf173a0529a">util.h</a>
+: <a class="el" href="util_8h.html#a50a277d6cece483ae49a0bf173a0529a">util.h</a>
+, <a class="el" href="util_8c.html#a50a277d6cece483ae49a0bf173a0529a">util.c</a>
 </li>
 <li>streamid_t
 : <a class="el" href="or_8h.html#a73c0506b3441b5715fa7affd5f8759fa">or.h</a>
@@ -707,12 +774,12 @@ $(function() {
 , <a class="el" href="util_8h.html#a936fd5dfa0ccd9b836df432640cbfe88">util.h</a>
 </li>
 <li>string_is_key_value()
-: <a class="el" href="util_8c.html#a4fb7293a905e61c3a9ba683a8ed9ad99">util.c</a>
-, <a class="el" href="util_8h.html#a4fb7293a905e61c3a9ba683a8ed9ad99">util.h</a>
+: <a class="el" href="util_8h.html#a4fb7293a905e61c3a9ba683a8ed9ad99">util.h</a>
+, <a class="el" href="util_8c.html#a4fb7293a905e61c3a9ba683a8ed9ad99">util.c</a>
 </li>
-<li>string_is_valid_hostname()
-: <a class="el" href="util_8h.html#a6e86f3506694e8592bb7f926af588b07">util.h</a>
-, <a class="el" href="util_8c.html#a6e86f3506694e8592bb7f926af588b07">util.c</a>
+<li>string_is_valid_dest()
+: <a class="el" href="util_8h.html#a4caf874443e2fa03e0b866977b376a98">util.h</a>
+, <a class="el" href="util_8c.html#a4caf874443e2fa03e0b866977b376a98">util.c</a>
 </li>
 <li>string_is_valid_ipv4_address()
 : <a class="el" href="util_8h.html#a307d12f617bd1f5606b8f971733e4c48">util.h</a>
@@ -722,6 +789,10 @@ $(function() {
 : <a class="el" href="util_8c.html#a06c31f983cd56699cca308532a09a14c">util.c</a>
 , <a class="el" href="util_8h.html#a06c31f983cd56699cca308532a09a14c">util.h</a>
 </li>
+<li>string_is_valid_nonrfc_hostname()
+: <a class="el" href="util_8h.html#a526379934c7164b1f7d675cf9b725846">util.h</a>
+, <a class="el" href="util_8c.html#a526379934c7164b1f7d675cf9b725846">util.c</a>
+</li>
 <li>strmap_get_lc()
 : <a class="el" href="container_8c.html#a1406b823cb6088df755f1b81153d137e">container.c</a>
 </li>
@@ -730,9 +801,6 @@ $(function() {
 </li>
 <li>strmap_set_lc()
 : <a class="el" href="container_8c.html#ab89b18ed07c18bdf4cb8d84bcc38f667">container.c</a>
-</li>
-<li>STRUCT_OFFSET
-: <a class="el" href="util_8h.html#a34bb1d41c655823d71f9ce54196bcfd9">util.h</a>
 </li>
 <li>STRUCT_VAR_P
 : <a class="el" href="util_8h.html#afd2585581bad93fbde937e13a4323951">util.h</a>
@@ -746,12 +814,15 @@ $(function() {
 <li>sum_up_cell_stats_by_command()
 : <a class="el" href="control_8c.html#a45b32d8cedf52b7ef8b0174d47a4cc37">control.c</a>
 </li>
+<li>summarize_protover_flags()
+: <a class="el" href="routerparse_8c.html#a3fe59c4a0303366c3de158b6e59006cf">routerparse.c</a>
+</li>
 <li>suppress_libevent_log_msg()
 : <a class="el" href="compat__libevent_8c.html#a151e308d2194cb78aac538904cfbd9b1">compat_libevent.c</a>
 </li>
 <li>sweep_bridge_list()
-: <a class="el" href="entrynodes_8c.html#a365f2e514e0575326c05fb6c36aa3ce9">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#a365f2e514e0575326c05fb6c36aa3ce9">entrynodes.h</a>
+: <a class="el" href="bridges_8c.html#a365f2e514e0575326c05fb6c36aa3ce9">bridges.c</a>
+, <a class="el" href="bridges_8h.html#a365f2e514e0575326c05fb6c36aa3ce9">bridges.h</a>
 </li>
 <li>sweep_proxy_list()
 : <a class="el" href="transports_8h.html#a4467d88f898fe643c8f986507f295637">transports.h</a>

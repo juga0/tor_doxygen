@@ -1,0 +1,5 @@
+<map id="tor_lzma_get_total_allocation" name="tor_lzma_get_total_allocation">
+<area shape="rect" id="node2" href="$compat__threads_8c.html#ac98398f0f86e87b7dbac66d29b2a8ae2" title="atomic_counter_get" alt="" coords="183,31,319,57"/>
+<area shape="rect" id="node3" href="$compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="367,5,496,32"/>
+<area shape="rect" id="node4" href="$compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="367,56,496,83"/>
+</map>

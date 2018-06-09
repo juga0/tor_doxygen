@@ -1,0 +1,7 @@
+<map id="tor_compress_init" name="tor_compress_init">
+<area shape="rect" id="node2" href="$compat__threads_8c.html#a28fc1a1e6d143b15ab62ddfa810a7ffd" title="atomic_counter_init" alt="" coords="323,49,457,76"/>
+<area shape="rect" id="node4" href="$compress__zlib_8c.html#a256ccf247e5c5cc84f2063f3a23f1eb5" title="tor_zlib_init" alt="" coords="183,24,271,51"/>
+<area shape="rect" id="node5" href="$compress__lzma_8c.html#aa959a50329a95dc76efe6d112b52e21d" title="tor_lzma_init" alt="" coords="179,75,275,101"/>
+<area shape="rect" id="node6" href="$compress__zstd_8c.html#a70bc7321f0ab96e8ac23ede28063dc22" title="tor_zstd_init" alt="" coords="180,125,273,152"/>
+<area shape="rect" id="node3" href="$compat__pthreads_8c.html#a900a1a27db8f1815a4db66e98e67bac0" title="tor_mutex_init_nonrecursive" alt="" coords="505,49,691,76"/>
+</map>

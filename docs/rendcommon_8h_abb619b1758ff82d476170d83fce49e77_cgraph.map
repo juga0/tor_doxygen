@@ -1,5 +1,5 @@
 <map id="rend_get_service_id" name="rend_get_service_id">
-<area shape="rect" id="node2" href="$crypto_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="192,5,339,32"/>
+<area shape="rect" id="node2" href="$crypto__rsa_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="192,5,339,32"/>
 <area shape="rect" id="node4" href="$util__format_8c.html#af100283587ab62e6645c900859f95c8e" title="base32_encode" alt="" coords="209,56,322,83"/>
-<area shape="rect" id="node3" href="$crypto_8c.html#adc1609ea0f9d65a1f60225cb001eeb15" title="crypto_digest" alt="" coords="387,5,487,32"/>
+<area shape="rect" id="node3" href="$crypto__rsa_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="387,5,517,32"/>
 </map>

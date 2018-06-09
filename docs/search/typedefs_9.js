@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['maskbits_5ft',['maskbits_t',['../address_8h.html#ad56ed7e57beca4761622096f544885bb',1,'address.h']]],
-  ['mbw_5fcache_5fentry_5ft',['mbw_cache_entry_t',['../dirserv_8c.html#a89967d9ad8bead3a3f0711f37947c458',1,'dirserv.c']]],
-  ['memarea_5fchunk_5ft',['memarea_chunk_t',['../memarea_8c.html#aa81b19371d17d03cba8eb22234d48300',1,'memarea.c']]],
-  ['microdesc_5ft',['microdesc_t',['../or_8h.html#ada075c7b1744fa4ecbe86ace767cfadf',1,'or.h']]],
-  ['microdesc_5fvote_5fline_5ft',['microdesc_vote_line_t',['../dirvote_8c.html#aa1b0279b6beb6ae83c3a894ca35132a7',1,'dirvote.c']]],
-  ['monotime_5ft',['monotime_t',['../compat__time_8h.html#ab8b7a4c9731360f589cca633b5302218',1,'compat_time.h']]]
+  ['networkstatus_5ft',['networkstatus_t',['../or_8h.html#a19591e8d8e0ec0c67d54a21d27a5f892',1,'or.h']]],
+  ['networkstatus_5fvoter_5finfo_5ft',['networkstatus_voter_info_t',['../or_8h.html#a75052e7d86ff12be712a5c4aa3c084d5',1,'or.h']]],
+  ['node_5ft',['node_t',['../or_8h.html#a7856550eaf3d2ba89448e2795b8a744e',1,'or.h']]],
+  ['nodelist_5ft',['nodelist_t',['../nodelist_8c.html#a6e8821b0aa6ae2ba9f5a97b2144c6db9',1,'nodelist.c']]],
+  ['ns_5fdetached_5fsignatures_5ft',['ns_detached_signatures_t',['../or_8h.html#a932d4eb32bac051c9edb4c7da3cd255f',1,'or.h']]]
 ];

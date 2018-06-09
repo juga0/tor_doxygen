@@ -1,0 +1,4 @@
+<map id="get_nonprimary_guard_idle_timeout" name="get_nonprimary_guard_idle_timeout">
+<area shape="rect" id="node2" href="$entrynodes_8h.html#aa42b6de85549bfc96f56f89cab179042" title="entry_guard_state_should\l_expire" alt="" coords="204,5,375,47"/>
+<area shape="rect" id="node3" href="$circuituse_8h.html#a4be6726f65e9f2c81ad77a9c70002ad1" title="circuit_expire_waiting\l_for_better_guard" alt="" coords="423,5,569,47"/>
+</map>

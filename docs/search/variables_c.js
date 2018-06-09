@@ -1,8 +1,8 @@
 var searchData=
 [
+  ['labels',['labels',['../structconsensus__cache__entry__t.html#ae5ee1e14a1248e757313d9ec70d5da29',1,'consensus_cache_entry_t']]],
   ['last_5faction_5ftime',['last_action_time',['../structperiodic__event__item__t.html#acf6e742622e9992bc0f3b6dab5f7968c',1,'periodic_event_item_t']]],
   ['last_5fadjusted_5ftick',['last_adjusted_tick',['../structcell__ewma__s.html#a4b789ebe8aeea465c14e543363d9a4a7',1,'cell_ewma_s']]],
-  ['last_5fattempted',['last_attempted',['../structentry__guard__t.html#adcffca8049b7cca016073a0f473053ee',1,'entry_guard_t']]],
   ['last_5fbackoff_5fposition',['last_backoff_position',['../structdownload__status__t.html#a62c2ebdc6685a0b09408a81f223c403f',1,'download_status_t']]],
   ['last_5fcell_5fwas_5fdestroy',['last_cell_was_destroy',['../structcircuitmux__s.html#a4a5367daf496cd1671ac76cd0d0167f6',1,'circuitmux_s']]],
   ['last_5fdelay_5fused',['last_delay_used',['../structdownload__status__t.html#a4bcbf8207ce4daae03b5f8326be36e98',1,'download_status_t']]],
@@ -23,7 +23,7 @@ var searchData=
   ['len',['len',['../structed25519__checkable__t.html#a7360b55975153b822efc5217b7734e6a',1,'ed25519_checkable_t::len()'],['../structext__or__cmd__t.html#a8aed22e2c7b283705ec82e0120515618',1,'ext_or_cmd_t::len()'],['../structrend__cache__entry__t.html#a7360b55975153b822efc5217b7734e6a',1,'rend_cache_entry_t::len()']]],
   ['len_5fdescs_5fdumped',['len_descs_dumped',['../routerparse_8c.html#aed5330a26e9738c12e49ecf033de49f3',1,'routerparse.c']]],
   ['length',['length',['../structrelay__header__t.html#a1892eba2086d12ac2b09005aeb09ea3b',1,'relay_header_t']]],
-  ['link_5fhistory_5fmap',['link_history_map',['../structor__history__t.html#adf64fc52f89381f16b80e9c530ea32b7',1,'or_history_t']]],
+  ['link_5fcert',['link_cert',['../structor__handshake__certs__t.html#a50a6836f8ba835991ddb1b309c7e65b2',1,'or_handshake_certs_t']]],
   ['link_5fproto',['link_proto',['../structor__connection__t.html#a2fa564ff665ba402214e9d2013fe5998',1,'or_connection_t']]],
   ['linked',['linked',['../structconnection__t.html#a71827b2666236e3af8a2a7601693da49',1,'connection_t']]],
   ['linked_5fconn',['linked_conn',['../structconnection__t.html#a24efec8621ce29fd500624d172c64a38',1,'connection_t']]],
@@ -32,12 +32,14 @@ var searchData=
   ['listed_5fin_5flast_5fdesc',['listed_in_last_desc',['../structrend__intro__point__t.html#a7060988729ce4ad28b5eec3785639853',1,'rend_intro_point_t']]],
   ['listener',['listener',['../structchannel__listener__s.html#adee2db5ce2e612c634bd4d23d62acf59',1,'channel_listener_s']]],
   ['listener_5ftype',['listener_type',['../structsocks__request__t.html#acb11d1e9da4009a7f0560a4440826553',1,'socks_request_t']]],
-  ['lock',['lock',['../structreplyqueue__s.html#aaf192176a8b410f09d589091ea5e2308',1,'replyqueue_s']]],
+  ['lock',['lock',['../structthreadpool__s.html#aaf192176a8b410f09d589091ea5e2308',1,'threadpool_s::lock()'],['../structreplyqueue__s.html#aaf192176a8b410f09d589091ea5e2308',1,'replyqueue_s::lock()']]],
   ['locked',['locked',['../structpubsub__topic__t.html#a16502e0b6f9486c0933a09b55b3a95f6',1,'pubsub_topic_t']]],
   ['log_5fdomain',['log_domain',['../structtor__process__monitor__t.html#af8edf413ab31454419f4276f42168c41',1,'tor_process_monitor_t']]],
   ['log_5fglobal_5fmin_5fseverity_5f',['log_global_min_severity_',['../log_8c.html#a8b33df36926c3d1cb3dedbde63fc4ff4',1,'log_global_min_severity_():&#160;log.c'],['../torlog_8h.html#a8b33df36926c3d1cb3dedbde63fc4ff4',1,'log_global_min_severity_():&#160;log.c']]],
+  ['log_5fwarn_5f',['LOG_WARN_',['../log_8c.html#a015dff46f539c633e9f7d1697ed92036',1,'LOG_WARN_():&#160;log.c'],['../torlog_8h.html#a015dff46f539c633e9f7d1697ed92036',1,'LOG_WARN_():&#160;log.c']]],
   ['logmessagedomains',['LogMessageDomains',['../structor__options__t.html#abc1c0f807db3922f668574abd3725820',1,'or_options_t']]],
   ['logs',['Logs',['../structor__options__t.html#afc7d7e4dcc0414f035c9242c39376b91',1,'or_options_t']]],
   ['logtimegranularity',['LogTimeGranularity',['../structor__options__t.html#ae2dd098232a680587cc74d226de5c8cd',1,'or_options_t']]],
-  ['longlivedports',['LongLivedPorts',['../structor__options__t.html#a122bde1e8734ab5322d7707b87d9c980',1,'or_options_t']]]
+  ['longlivedports',['LongLivedPorts',['../structor__options__t.html#a122bde1e8734ab5322d7707b87d9c980',1,'or_options_t']]],
+  ['lower_5fpriority_5fchance',['lower_priority_chance',['../structworkerthread__s.html#a2278b7b8602477c48fe0414351a6f9a5',1,'workerthread_s']]]
 ];

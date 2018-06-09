@@ -1,0 +1,8 @@
+<map id="MOCK_IMPL" name="MOCK_IMPL">
+<area shape="rect" id="node2" href="$hs__client_8c.html#a51945ab3de9cac90d964ea01c8605ce9" title="pick_hsdir_v3" alt="" coords="153,56,256,83"/>
+<area shape="rect" id="node3" href="$hs__common_8c.html#a265dd15b5d06861b811cc8b9ce8e5f9e" title="hs_get_time_period_num" alt="" coords="304,56,471,83"/>
+<area shape="rect" id="node4" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="550,5,643,32"/>
+<area shape="rect" id="node5" href="$hs__common_8c.html#ad86b31c9e6c875ceceee74cfab4fbf64" title="get_time_period_length" alt="" coords="519,56,675,83"/>
+<area shape="rect" id="node7" href="$shared__random__client_8c.html#af5f648c27b17b932935fcbe8eb2e6a70" title="sr_state_get_phase\l_duration" alt="" coords="529,107,665,149"/>
+<area shape="rect" id="node6" href="$shared__random__client_8c.html#a826be70231c0c78acf089f7b86594582" title="sr_state_get_protocol\l_run_duration" alt="" coords="723,49,869,90"/>
+</map>

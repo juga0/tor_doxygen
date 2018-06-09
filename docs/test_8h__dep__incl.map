@@ -1,7 +1,23 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/test/test.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/test/test.h">
-<area shape="rect" id="node2" href="$test__helpers_8c.html" title="Some helper functions to avoid code duplication in unit tests. " alt="" coords="5,109,161,165"/>
-<area shape="rect" id="node3" href="$test__hs_8c.html" title="Unit tests for hidden service. " alt="" coords="185,109,333,165"/>
-<area shape="rect" id="node4" href="$test__nodelist_8c.html" title="Unit tests for nodelist related functions. " alt="" coords="357,109,516,165"/>
-<area shape="rect" id="node5" href="$test__pubsub_8c.html" title="Unit tests for publish&#45;subscribe abstraction. " alt="" coords="540,109,696,165"/>
-<area shape="rect" id="node6" href="$test__slow_8c.html" title="Slower unit tests for many pieces of the lower level Tor modules. " alt="" coords="720,109,868,165"/>
+<area shape="rect" id="node2" href="$test__bridges_8c.html" title="Unittests for code in src/or/bridges.c. " alt="" coords="5,117,161,173"/>
+<area shape="rect" id="node3" href="$test__bwmgt_8c.html" title="tests for bandwidth management / token bucket functions " alt="" coords="185,117,339,173"/>
+<area shape="rect" id="node4" href="$test__helpers_8c.html" title="Some helper functions to avoid code duplication in unit tests. " alt="" coords="363,117,519,173"/>
+<area shape="rect" id="node5" href="$test__hs_8c.html" title="Unit tests for hidden service. " alt="" coords="543,117,691,173"/>
+<area shape="rect" id="node6" href="$test__hs__cache_8c.html" title="Test hidden service caches. " alt="" coords="715,117,886,173"/>
+<area shape="rect" id="node7" href="$test__hs__cell_8c.html" title="Test hidden service cell functionality. " alt="" coords="910,117,1065,173"/>
+<area shape="rect" id="node8" href="$test__hs__client_8c.html" title="Test prop224 HS client functionality. " alt="" coords="1089,117,1256,173"/>
+<area shape="rect" id="node9" href="$test__hs__common_8c.html" title="Test hidden service common functionalities. " alt="" coords="1280,117,1465,173"/>
+<area shape="rect" id="node10" href="$test__hs__config_8c.html" title="Test hidden service configuration functionality. " alt="" coords="1490,117,1661,173"/>
+<area shape="rect" id="node11" href="$test__hs__control_8c.html" title="Unit tests for hidden service control port event and command. " alt="" coords="1685,117,1860,173"/>
+<area shape="rect" id="node12" href="$test__hs__descriptor_8c.html" title="Test hidden service descriptor encoding and decoding. " alt="" coords="1885,117,2077,173"/>
+<area shape="rect" id="node13" href="$test__hs__ntor_8c.html" title="Test hidden service ntor functionality. " alt="" coords="2101,117,2258,173"/>
+<area shape="rect" id="node14" href="$test__hs__service_8c.html" title="Test hidden service functionality. " alt="" coords="2283,117,2460,173"/>
+<area shape="rect" id="node15" href="$test__mainloop_8c.html" title="Tests for functions closely related to the Tor main loop. " alt="" coords="2484,117,2651,173"/>
+<area shape="rect" id="node16" href="$test__nodelist_8c.html" title="Unit tests for nodelist related functions. " alt="" coords="2675,117,2833,173"/>
+<area shape="rect" id="node17" href="$test__periodic__event_8c.html" title="Test the periodic events that Tor uses for different roles. They are part of the libevent mainloop..." alt="" coords="2857,109,3005,180"/>
+<area shape="rect" id="node18" href="$test__proto__http_8c.html" title="Tests for our HTTP protocol parser code. " alt="" coords="3029,109,3177,180"/>
+<area shape="rect" id="node19" href="$test__proto__misc_8c.html" title="Test our smaller buffer&#45;based protocol functions. " alt="" coords="3201,109,3349,180"/>
+<area shape="rect" id="node20" href="$test__pubsub_8c.html" title="Unit tests for publish&#45;subscribe abstraction. " alt="" coords="3373,117,3529,173"/>
+<area shape="rect" id="node21" href="$test__router_8c.html" title="Unittests for code in src/or/router.c. " alt="" coords="3553,117,3701,173"/>
+<area shape="rect" id="node22" href="$test__slow_8c.html" title="Slower unit tests for many pieces of the lower level Tor modules. " alt="" coords="3725,117,3873,173"/>
 </map>

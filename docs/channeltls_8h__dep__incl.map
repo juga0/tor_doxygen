@@ -7,4 +7,6 @@
 <area shape="rect" id="node7" href="$dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="873,109,1021,165"/>
 <area shape="rect" id="node8" href="$hibernate_8c.html" title="Functions to close listeners, stop allowing new circuits, etc in preparation for closing down or goin..." alt="" coords="1045,109,1193,165"/>
 <area shape="rect" id="node9" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="1217,109,1365,165"/>
+<area shape="rect" id="node10" href="$scheduler_8c.html" title="Channel scheduling system: decides which channels should send and receive when. " alt="" coords="1389,109,1537,165"/>
+<area shape="rect" id="node11" href="$test__hs__client_8c.html" title="Test prop224 HS client functionality. " alt="" coords="1561,109,1728,165"/>
 </map>

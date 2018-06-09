@@ -1,10 +1,7 @@
 <map id="crypto_cipher_decrypt_with_iv" name="crypto_cipher_decrypt_with_iv">
-<area shape="rect" id="node2" href="$crypto_8c.html#af64e23dfbe5ff941ae5987bdb3afe966" title="crypto_cipher_new_with_iv" alt="" coords="204,17,383,43"/>
-<area shape="rect" id="node5" href="$crypto_8c.html#aad0da5b077f91bde2cdc8179a65b1e08" title="crypto_cipher_encrypt" alt="" coords="218,71,369,98"/>
-<area shape="rect" id="node7" href="$crypto_8c.html#a03f018a78f86020d36a4b1d41a0cf4c4" title="crypto_cipher_free" alt="" coords="229,122,358,149"/>
+<area shape="rect" id="node2" href="$crypto_8c.html#af64e23dfbe5ff941ae5987bdb3afe966" title="crypto_cipher_new_with_iv" alt="" coords="204,15,383,42"/>
+<area shape="rect" id="node5" href="$crypto_8c.html#aad0da5b077f91bde2cdc8179a65b1e08" title="crypto_cipher_encrypt" alt="" coords="218,67,369,94"/>
 <area shape="rect" id="node3" href="$crypto_8c.html#aacd663e7c452d602918a12bc666466a8" title="crypto_cipher_new_with\l_iv_and_bits" alt="" coords="431,5,593,47"/>
 <area shape="rect" id="node4" href="$aes_8c.html#a8e756990f15546ededa5afd6835eba06" title="aes_new_cipher" alt="" coords="641,13,757,39"/>
 <area shape="rect" id="node6" href="$aes_8c.html#ac1fa0b10bf5fa32c66fe9fab0d6bed02" title="aes_crypt_inplace" alt="" coords="449,71,575,98"/>
-<area shape="rect" id="node8" href="$aes_8c.html#af2c9590cc53e7c37355be6a8acd1d34e" title="aes_cipher_free" alt="" coords="455,122,569,149"/>
-<area shape="rect" id="node9" href="$crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="660,122,739,149"/>
 </map>

@@ -69,6 +69,9 @@ $(function() {
 : <a class="el" href="util_8c.html#a7b6ade9f7a0036f23e62eb950b4bd54f">util.c</a>
 , <a class="el" href="util_8h.html#a7b6ade9f7a0036f23e62eb950b4bd54f">util.h</a>
 </li>
+<li>rate_per_sec_to_rate_per_step()
+: <a class="el" href="token__bucket_8c.html#a22392cbca806a78cd2e87691a6065251">token_bucket.c</a>
+</li>
 <li>ratelim_t
 : <a class="el" href="util_8h.html#a9098e9a0fbd29020d63e79142f0fa486">util.h</a>
 </li>
@@ -98,24 +101,12 @@ $(function() {
 : <a class="el" href="util_8c.html#ae161e4c3bcf049fa0b2ba6136c3ddd56">util.c</a>
 , <a class="el" href="util_8h.html#a7b3cac27558cc7f26bd0794f5996e0ef">util.h</a>
 </li>
-<li>read_to_buf()
-: <a class="el" href="buffers_8h.html#a486bc6925bb8ae53ca546f716096333e">buffers.h</a>
-, <a class="el" href="buffers_8c.html#a486bc6925bb8ae53ca546f716096333e">buffers.c</a>
-</li>
-<li>read_to_buf_tls()
-: <a class="el" href="buffers_8c.html#ab8210656ac6aaa79c7216c0675508524">buffers.c</a>
-, <a class="el" href="buffers_8h.html#ab8210656ac6aaa79c7216c0675508524">buffers.h</a>
-</li>
 <li>RECOMMENDED_MIN_CIRCUIT_BUILD_TIMEOUT
 : <a class="el" href="config_8c.html#aabce10b3e73ca8bae930deae06483a87">config.c</a>
 </li>
 <li>refresh_all_country_info()
 : <a class="el" href="routerlist_8c.html#a8989395a52cfb9cb553c9eebf44395eb">routerlist.c</a>
 , <a class="el" href="routerlist_8h.html#a8989395a52cfb9cb553c9eebf44395eb">routerlist.h</a>
-</li>
-<li>relay_crypt()
-: <a class="el" href="relay_8c.html#a649cdf630194741484111faada5c2113">relay.c</a>
-, <a class="el" href="relay_8h.html#a649cdf630194741484111faada5c2113">relay.h</a>
 </li>
 <li>relay_header_pack()
 : <a class="el" href="relay_8c.html#a7f83d0d894f6754d7b1090d03f082e40">relay.c</a>
@@ -131,10 +122,6 @@ $(function() {
 <li>RELAY_PAYLOAD_SIZE
 : <a class="el" href="or_8h.html#a94833dd88149c1079e3b79f313907974">or.h</a>
 </li>
-<li>relay_send_command_from_edge_()
-: <a class="el" href="relay_8c.html#a8dccdf6e55fae4f927fcd32967666d22">relay.c</a>
-, <a class="el" href="relay_8h.html#a8dccdf6e55fae4f927fcd32967666d22">relay.h</a>
-</li>
 <li>release_lockfile()
 : <a class="el" href="main_8c.html#a47f354a197343260ba0e44498b9a495e">main.c</a>
 , <a class="el" href="main_8h.html#a47f354a197343260ba0e44498b9a495e">main.h</a>
@@ -149,9 +136,9 @@ $(function() {
 : <a class="el" href="entrynodes_8c.html#a2059c6a8b0ae5f6bd64087fe00a27d9d">entrynodes.c</a>
 , <a class="el" href="entrynodes_8h.html#a2059c6a8b0ae5f6bd64087fe00a27d9d">entrynodes.h</a>
 </li>
-<li>remove_file_if_very_old()
-: <a class="el" href="config_8c.html#aeb2f366b0c29db44baa2477bebbae15d">config.c</a>
-, <a class="el" href="connection_8h.html#aeb2f366b0c29db44baa2477bebbae15d">connection.h</a>
+<li>remove_all_entry_guards_for_guard_selection()
+: <a class="el" href="entrynodes_8h.html#a37261ae47f6bec9d6ade03c87b74f916">entrynodes.h</a>
+, <a class="el" href="entrynodes_8c.html#a37261ae47f6bec9d6ade03c87b74f916">entrynodes.c</a>
 </li>
 <li>rend_auth_decode_cookie()
 : <a class="el" href="rendcommon_8c.html#a14d7e2ad87fc827c229c0aad411bdc15">rendcommon.c</a>
@@ -168,9 +155,9 @@ $(function() {
 : <a class="el" href="control_8c.html#a9f5b8b8ca50d94db752f91e1d59034b8">control.c</a>
 , <a class="el" href="control_8h.html#a9f5b8b8ca50d94db752f91e1d59034b8">control.h</a>
 </li>
-<li>rend_authorized_client_free()
-: <a class="el" href="rendservice_8c.html#a3a79f7a8c69ac9e5daf2dbac5e158fbf">rendservice.c</a>
-, <a class="el" href="rendservice_8h.html#a3a79f7a8c69ac9e5daf2dbac5e158fbf">rendservice.h</a>
+<li>rend_authorized_client_free_()
+: <a class="el" href="rendservice_8c.html#a28b97923c2477096e6c63d6b2c3ff057">rendservice.c</a>
+, <a class="el" href="rendservice_8h.html#a28b97923c2477096e6c63d6b2c3ff057">rendservice.h</a>
 </li>
 <li>rend_authorized_client_t
 : <a class="el" href="or_8h.html#a8e8f4afe8c7e68a40ee8fecc59ef2490">or.h</a>
@@ -192,17 +179,18 @@ $(function() {
 , <a class="el" href="rendcache_8h.html#a62c6247e46d1998faf442813a557e0ad">rendcache.h</a>
 </li>
 <li>rend_cache_clean_v2_descs_as_dir()
-: <a class="el" href="rendcache_8c.html#a681afa814e6a1c734f75b6d21567a2a2">rendcache.c</a>
-, <a class="el" href="rendcache_8h.html#a64c47b1197f801f9016dd1932f8f45f9">rendcache.h</a>
+: <a class="el" href="rendcache_8c.html#aeb504774c39f386719c13cef6854f693">rendcache.c</a>
+, <a class="el" href="rendcache_8h.html#aeb504774c39f386719c13cef6854f693">rendcache.h</a>
 </li>
 <li>rend_cache_decrement_allocation()
-: <a class="el" href="rendcache_8c.html#a980b70a494460e9b7423ebb1eeb94fc4">rendcache.c</a>
+: <a class="el" href="rendcache_8c.html#a4539ad1623f8861e4efe051f13c9fcb9">rendcache.c</a>
+, <a class="el" href="rendcache_8h.html#a4539ad1623f8861e4efe051f13c9fcb9">rendcache.h</a>
 </li>
 <li>rend_cache_entry_allocation()
 : <a class="el" href="rendcache_8c.html#a98bc0e3e09bdcc28fe6f6a5dcf3648f2">rendcache.c</a>
 </li>
-<li>rend_cache_entry_free()
-: <a class="el" href="rendcache_8c.html#a2c5eb5e8ecaa713ec73cebc5ad4df905">rendcache.c</a>
+<li>rend_cache_entry_free_()
+: <a class="el" href="rendcache_8c.html#a9c71adefc4d624d1be3abf7d25dedd1d">rendcache.c</a>
 </li>
 <li>rend_cache_entry_t
 : <a class="el" href="rendcache_8h.html#afa23073d4131b01677f2c8ce6f3193fc">rendcache.h</a>
@@ -214,17 +202,17 @@ $(function() {
 : <a class="el" href="rendcache_8c.html#aab95357bc318649e8bbce982ecbae0d6">rendcache.c</a>
 , <a class="el" href="rendcache_8h.html#aab95357bc318649e8bbce982ecbae0d6">rendcache.h</a>
 </li>
-<li>rend_cache_failure_entry_free()
-: <a class="el" href="rendcache_8c.html#a2edde17ba06da335d77a2a51f4d26bb0">rendcache.c</a>
-</li>
 <li>rend_cache_failure_entry_free_()
-: <a class="el" href="rendcache_8c.html#a2f99b1b13ab0822b6fbd024620c4696e">rendcache.c</a>
+: <a class="el" href="rendcache_8c.html#aa28cd965e269eeb43f4cc7a5848fd36c">rendcache.c</a>
+</li>
+<li>rend_cache_failure_entry_free_void()
+: <a class="el" href="rendcache_8c.html#a4958d02ca958f5127aa83395d9146011">rendcache.c</a>
 </li>
 <li>rend_cache_failure_entry_new()
 : <a class="el" href="rendcache_8c.html#a1129f843dc29e4d747bc378da1395d15">rendcache.c</a>
 </li>
-<li>rend_cache_failure_intro_entry_free()
-: <a class="el" href="rendcache_8c.html#ab207f629b9b48ea069f879ed27f26647">rendcache.c</a>
+<li>rend_cache_failure_intro_entry_free_()
+: <a class="el" href="rendcache_8c.html#a6501f6116d6d34024f932a8ebecc5d47">rendcache.c</a>
 </li>
 <li>rend_cache_failure_intro_entry_new()
 : <a class="el" href="rendcache_8c.html#a4fcb974f5d0de00e8611297aa43a2979">rendcache.c</a>
@@ -247,7 +235,8 @@ $(function() {
 , <a class="el" href="rendcache_8h.html#a31148f91462749991e9b7d974104e419">rendcache.h</a>
 </li>
 <li>rend_cache_increment_allocation()
-: <a class="el" href="rendcache_8c.html#a7ed1ea2a0a3065dfd404b9e9cbf6592a">rendcache.c</a>
+: <a class="el" href="rendcache_8c.html#aa3f8d9164ca6c57d8844f2776aaed294">rendcache.c</a>
+, <a class="el" href="rendcache_8h.html#aa3f8d9164ca6c57d8844f2776aaed294">rendcache.h</a>
 </li>
 <li>rend_cache_init()
 : <a class="el" href="rendcache_8c.html#a236399736fb575ecb707c4eee2b50494">rendcache.c</a>
@@ -326,10 +315,6 @@ $(function() {
 : <a class="el" href="rendclient_8c.html#ab6a404500892962da09d28a99822d176">rendclient.c</a>
 , <a class="el" href="rendclient_8h.html#ab6a404500892962da09d28a99822d176">rendclient.h</a>
 </li>
-<li>rend_client_purge_last_hid_serv_requests()
-: <a class="el" href="rendclient_8c.html#a2142d10d9eae570ad787275b6fbfd79b">rendclient.c</a>
-, <a class="el" href="rendclient_8h.html#a2142d10d9eae570ad787275b6fbfd79b">rendclient.h</a>
-</li>
 <li>rend_client_purge_state()
 : <a class="el" href="rendclient_8c.html#af25d45137e5e3a3834edf201d47ea5ca">rendclient.c</a>
 , <a class="el" href="rendclient_8h.html#af25d45137e5e3a3834edf201d47ea5ca">rendclient.h</a>
@@ -346,13 +331,9 @@ $(function() {
 : <a class="el" href="rendclient_8c.html#a0213eb5b618a27bc58dfc60fd8da7c6f">rendclient.c</a>
 , <a class="el" href="rendclient_8h.html#a0213eb5b618a27bc58dfc60fd8da7c6f">rendclient.h</a>
 </li>
-<li>rend_client_rendezvous_acked()
-: <a class="el" href="rendclient_8c.html#a0d08d62475e3a8d7c580b286c21d28ec">rendclient.c</a>
-, <a class="el" href="rendclient_8h.html#a0d08d62475e3a8d7c580b286c21d28ec">rendclient.h</a>
-</li>
 <li>rend_client_report_intro_point_failure()
-: <a class="el" href="rendclient_8c.html#acb88060f4b84c006debe7de7e0eb7eaf">rendclient.c</a>
-, <a class="el" href="rendclient_8h.html#acb88060f4b84c006debe7de7e0eb7eaf">rendclient.h</a>
+: <a class="el" href="rendclient_8c.html#a7e157beefddc39b7353e25049eea09de">rendclient.c</a>
+, <a class="el" href="rendclient_8h.html#a7e157beefddc39b7353e25049eea09de">rendclient.h</a>
 </li>
 <li>rend_client_send_introduction()
 : <a class="el" href="rendclient_8c.html#a654f5fd84a1bbaeb1f43471166ad3273">rendclient.c</a>
@@ -369,17 +350,13 @@ $(function() {
 : <a class="el" href="rendcommon_8c.html#af7b00bb6a2b63bab1c0a8cf1f6ca0048">rendcommon.c</a>
 , <a class="el" href="rendcommon_8h.html#af7b00bb6a2b63bab1c0a8cf1f6ca0048">rendcommon.h</a>
 </li>
-<li>rend_config_services()
-: <a class="el" href="rendservice_8c.html#a7094d871cb7d82c4afce315145e68ee2">rendservice.c</a>
-, <a class="el" href="rendservice_8h.html#a7094d871cb7d82c4afce315145e68ee2">rendservice.h</a>
-</li>
 <li>rend_consider_descriptor_republication()
 : <a class="el" href="rendservice_8c.html#a5acc6e47c3276ba3b13c64a1506047d0">rendservice.c</a>
 , <a class="el" href="rendservice_8h.html#a5acc6e47c3276ba3b13c64a1506047d0">rendservice.h</a>
 </li>
 <li>rend_consider_services_intro_points()
-: <a class="el" href="rendservice_8c.html#a4eefb2085950d1a5c417d48058516ccb">rendservice.c</a>
-, <a class="el" href="rendservice_8h.html#a4eefb2085950d1a5c417d48058516ccb">rendservice.h</a>
+: <a class="el" href="rendservice_8c.html#ad76e8e3624e9242c15ee83597d00edf5">rendservice.c</a>
+, <a class="el" href="rendservice_8h.html#ad76e8e3624e9242c15ee83597d00edf5">rendservice.h</a>
 </li>
 <li>rend_consider_services_upload()
 : <a class="el" href="rendservice_8c.html#a2f0a362081b41cf5a76662dc51bfb919">rendservice.c</a>
@@ -388,17 +365,9 @@ $(function() {
 <li>REND_COOKIE_LEN
 : <a class="el" href="or_8h.html#a0f777b066f2bd36625966e34a07d9236">or.h</a>
 </li>
-<li>rend_data_client_create()
-: <a class="el" href="rendcommon_8c.html#aba983562d99c5c2f278cd4e1f616ff93">rendcommon.c</a>
-, <a class="el" href="rendcommon_8h.html#aba983562d99c5c2f278cd4e1f616ff93">rendcommon.h</a>
-</li>
-<li>rend_data_dup()
-: <a class="el" href="rendcommon_8c.html#a3e861907b5ed972758bdff02b1fff7f7">rendcommon.c</a>
-, <a class="el" href="rendcommon_8h.html#a3e861907b5ed972758bdff02b1fff7f7">rendcommon.h</a>
-</li>
-<li>rend_data_service_create()
-: <a class="el" href="rendcommon_8c.html#a32bf2108c6c803a11486e89dfa5b55ab">rendcommon.c</a>
-, <a class="el" href="rendcommon_8h.html#a32bf2108c6c803a11486e89dfa5b55ab">rendcommon.h</a>
+<li>rend_data_free_()
+: <a class="el" href="hs__common_8c.html#a2d509b0576e80d374aac611962efb3ef">hs_common.c</a>
+, <a class="el" href="hs__common_8h.html#a2d509b0576e80d374aac611962efb3ef">hs_common.h</a>
 </li>
 <li>rend_data_t
 : <a class="el" href="or_8h.html#a90b41cea62182d005a18e11ab15d8c95">or.h</a>
@@ -420,13 +389,16 @@ $(function() {
 <li>REND_DESC_MAX_SIZE
 : <a class="el" href="or_8h.html#a264c4fa2ccc3f5883e24a55bed781137">or.h</a>
 </li>
+<li>rend_desc_v2_is_parsable()
+: <a class="el" href="rendcommon_8c.html#a8fd972a1eacaa6e1208f2d02a51ba824">rendcommon.c</a>
+</li>
 <li>rend_encode_v2_descriptors()
 : <a class="el" href="rendcommon_8c.html#aabd63c8ba90edf8d2d8970be04bae97b">rendcommon.c</a>
 , <a class="el" href="rendcommon_8h.html#aabd63c8ba90edf8d2d8970be04bae97b">rendcommon.h</a>
 </li>
-<li>rend_encoded_v2_service_descriptor_free()
-: <a class="el" href="rendcommon_8c.html#af739253549fdf62a61e2b029a9892ea9">rendcommon.c</a>
-, <a class="el" href="rendcommon_8h.html#af739253549fdf62a61e2b029a9892ea9">rendcommon.h</a>
+<li>rend_encoded_v2_service_descriptor_free_()
+: <a class="el" href="rendcommon_8c.html#affec24bb3727b47b405639dfffc2fc0d">rendcommon.c</a>
+, <a class="el" href="rendcommon_8h.html#affec24bb3727b47b405639dfffc2fc0d">rendcommon.h</a>
 </li>
 <li>rend_encoded_v2_service_descriptor_t
 : <a class="el" href="or_8h.html#a22b65e5471760d49b423d2e2b3d76e2a">or.h</a>
@@ -439,19 +411,13 @@ $(function() {
 : <a class="el" href="rendcommon_8c.html#abb619b1758ff82d476170d83fce49e77">rendcommon.c</a>
 , <a class="el" href="rendcommon_8h.html#abb619b1758ff82d476170d83fce49e77">rendcommon.h</a>
 </li>
-<li>REND_HID_SERV_DIR_REQUERY_PERIOD
-: <a class="el" href="rendclient_8c.html#a6d62ee2a1a182eb1a9a0391c4c9ef79f">rendclient.c</a>
-</li>
-<li>REND_HID_SERV_DIR_REQUERY_PERIOD_TESTING
-: <a class="el" href="rendclient_8c.html#a053869da4c71f68ec0ce2b3e880bdd27">rendclient.c</a>
-</li>
 <li>rend_hsdir_routers_changed()
 : <a class="el" href="rendservice_8c.html#ac44e79078bc122e1f77d770919baffa3">rendservice.c</a>
 , <a class="el" href="rendservice_8h.html#ac44e79078bc122e1f77d770919baffa3">rendservice.h</a>
 </li>
-<li>rend_intro_point_free()
-: <a class="el" href="rendcommon_8c.html#a61dd29c390c943442cdd965fa9a31916">rendcommon.c</a>
-, <a class="el" href="rendcommon_8h.html#a61dd29c390c943442cdd965fa9a31916">rendcommon.h</a>
+<li>rend_intro_point_free_()
+: <a class="el" href="rendcommon_8c.html#a08badbe45eac2ee1af0da03d8ff971db">rendcommon.c</a>
+, <a class="el" href="rendcommon_8h.html#a08badbe45eac2ee1af0da03d8ff971db">rendcommon.h</a>
 </li>
 <li>REND_INTRO_POINT_ID_LEN_BASE32
 : <a class="el" href="or_8h.html#a0f10679833f3dcf1d4a3c389e4148e60">or.h</a>
@@ -462,21 +428,25 @@ $(function() {
 <li>REND_LEGAL_CLIENTNAME_CHARACTERS
 : <a class="el" href="or_8h.html#acbfc608b02dc234621cc611ea6ada523">or.h</a>
 </li>
-<li>rend_mid_establish_intro()
-: <a class="el" href="rendmid_8c.html#adeaed5b67bf2412fdfd58445caff4069">rendmid.c</a>
-, <a class="el" href="rendmid_8h.html#adeaed5b67bf2412fdfd58445caff4069">rendmid.h</a>
+<li>rend_mid_establish_intro_legacy()
+: <a class="el" href="rendmid_8c.html#ae69e90de1c93c48d6fd777c0540408fb">rendmid.c</a>
+, <a class="el" href="rendmid_8h.html#ae69e90de1c93c48d6fd777c0540408fb">rendmid.h</a>
 </li>
 <li>rend_mid_establish_rendezvous()
 : <a class="el" href="rendmid_8c.html#a771580de898b6ac0e038013c8ee4b721">rendmid.c</a>
 , <a class="el" href="rendmid_8h.html#a771580de898b6ac0e038013c8ee4b721">rendmid.h</a>
 </li>
-<li>rend_mid_introduce()
-: <a class="el" href="rendmid_8c.html#a34740d7e79f73464efe226332077a825">rendmid.c</a>
-, <a class="el" href="rendmid_8h.html#a34740d7e79f73464efe226332077a825">rendmid.h</a>
+<li>rend_mid_introduce_legacy()
+: <a class="el" href="rendmid_8c.html#ac4d79ea348c424575388229cdfbcc7a8">rendmid.c</a>
+, <a class="el" href="rendmid_8h.html#ac4d79ea348c424575388229cdfbcc7a8">rendmid.h</a>
 </li>
 <li>rend_mid_rendezvous()
 : <a class="el" href="rendmid_8c.html#a9f21d14e819a371b5d2e0cde9660acab">rendmid.c</a>
 , <a class="el" href="rendmid_8h.html#a9f21d14e819a371b5d2e0cde9660acab">rendmid.h</a>
+</li>
+<li>rend_num_services()
+: <a class="el" href="rendservice_8c.html#a7077632dbb2b5b387c664c6d7fdd4db0">rendservice.c</a>
+, <a class="el" href="rendservice_8h.html#a7077632dbb2b5b387c664c6d7fdd4db0">rendservice.h</a>
 </li>
 <li>REND_NUMBER_OF_CONSECUTIVE_REPLICAS
 : <a class="el" href="or_8h.html#ad9586212e09d7eae0f99392fd590e071">or.h</a>
@@ -514,11 +484,8 @@ $(function() {
 : <a class="el" href="or_8h.html#a5382b143dcf8f9bfc0ca7c1ab559b2c8">or.h</a>
 </li>
 <li>rend_service_add_ephemeral()
-: <a class="el" href="rendservice_8c.html#af8f00f019a925a0202d313aa9b19e918">rendservice.c</a>
-, <a class="el" href="rendservice_8h.html#af8f00f019a925a0202d313aa9b19e918">rendservice.h</a>
-</li>
-<li>rend_service_add_ephemeral_status_t
-: <a class="el" href="rendservice_8h.html#acb105e3bbdf6bdfbc2d58a0a66e942ef">rendservice.h</a>
+: <a class="el" href="rendservice_8c.html#abc5e6a4ecf624b494840048295651d03">rendservice.c</a>
+, <a class="el" href="rendservice_8h.html#abc5e6a4ecf624b494840048295651d03">rendservice.h</a>
 </li>
 <li>REND_SERVICE_ADDRESS_LEN
 : <a class="el" href="or_8h.html#a3ebfe004defdc37fe21e36030a03b930">or.h</a>
@@ -546,9 +513,9 @@ $(function() {
 : <a class="el" href="rendservice_8c.html#a997bb861be2c92a31dce6015dd5195fc">rendservice.c</a>
 , <a class="el" href="rendservice_8h.html#a997bb861be2c92a31dce6015dd5195fc">rendservice.h</a>
 </li>
-<li>rend_service_descriptor_free()
-: <a class="el" href="rendcommon_8c.html#a91927fc14b63a83089d9b0ee22184498">rendcommon.c</a>
-, <a class="el" href="rendcommon_8h.html#a91927fc14b63a83089d9b0ee22184498">rendcommon.h</a>
+<li>rend_service_descriptor_free_()
+: <a class="el" href="rendcommon_8c.html#ac54154ff9167c1c08a58b06e4e26ae7e">rendcommon.c</a>
+, <a class="el" href="rendcommon_8h.html#ac54154ff9167c1c08a58b06e4e26ae7e">rendcommon.h</a>
 </li>
 <li>rend_service_descriptor_t
 : <a class="el" href="or_8h.html#a5db65925cb60b9411002531a07d233c1">or.h</a>
@@ -557,16 +524,16 @@ $(function() {
 : <a class="el" href="rendservice_8c.html#aca6ff2c7eb35e708f23676059431fa27">rendservice.c</a>
 , <a class="el" href="rendservice_8h.html#aca6ff2c7eb35e708f23676059431fa27">rendservice.h</a>
 </li>
-<li>rend_service_free()
-: <a class="el" href="rendservice_8c.html#a8cd5cb06a8e03c07ed7d120f90cee388">rendservice.c</a>
+<li>rend_service_free_()
+: <a class="el" href="rendservice_8c.html#a7c38e8a5780c6512244f0c93a2f9f169">rendservice.c</a>
 </li>
 <li>rend_service_free_all()
 : <a class="el" href="rendservice_8c.html#ade90973329e24160017a04e0503397bd">rendservice.c</a>
 , <a class="el" href="rendservice_8h.html#ade90973329e24160017a04e0503397bd">rendservice.h</a>
 </li>
-<li>rend_service_free_intro()
-: <a class="el" href="rendservice_8c.html#ab1e1ab28c3798f2915cd7520110b37a1">rendservice.c</a>
-, <a class="el" href="rendservice_8h.html#ab1e1ab28c3798f2915cd7520110b37a1">rendservice.h</a>
+<li>rend_service_free_intro_()
+: <a class="el" href="rendservice_8c.html#aad1ab301edd163bf2d73b732b8482b63">rendservice.c</a>
+, <a class="el" href="rendservice_8h.html#aad1ab301edd163bf2d73b732b8482b63">rendservice.h</a>
 </li>
 <li>REND_SERVICE_ID_LEN
 : <a class="el" href="or_8h.html#af1754cdf93351952f865138b2a8be274">or.h</a>
@@ -597,9 +564,9 @@ $(function() {
 <li>rend_service_poison_new_single_onion_dir()
 : <a class="el" href="rendservice_8c.html#ac5402d8d70dfb781694cb76d390beec0">rendservice.c</a>
 </li>
-<li>rend_service_port_config_free()
-: <a class="el" href="rendservice_8c.html#a63aef3c4d372dc9252de8d1a082bc6b2">rendservice.c</a>
-, <a class="el" href="rendservice_8h.html#a63aef3c4d372dc9252de8d1a082bc6b2">rendservice.h</a>
+<li>rend_service_port_config_free_()
+: <a class="el" href="rendservice_8c.html#aa95b57d67357abc95a0d856c454d1d02">rendservice.c</a>
+, <a class="el" href="rendservice_8h.html#aa95b57d67357abc95a0d856c454d1d02">rendservice.h</a>
 </li>
 <li>rend_service_receive_introduction()
 : <a class="el" href="rendservice_8c.html#a6a060371417948bb0cc60be0840ed451">rendservice.c</a>
@@ -642,9 +609,9 @@ $(function() {
 : <a class="el" href="rendcommon_8c.html#af5ccbcbbd3b16b2dadbe09d4f286acba">rendcommon.c</a>
 , <a class="el" href="rendcommon_8h.html#af5ccbcbbd3b16b2dadbe09d4f286acba">rendcommon.h</a>
 </li>
-<li>rend_valid_service_id()
-: <a class="el" href="rendcommon_8c.html#a4c98beed11b35d28c3e8fe8249d027c5">rendcommon.c</a>
-, <a class="el" href="rendcommon_8h.html#a4c98beed11b35d28c3e8fe8249d027c5">rendcommon.h</a>
+<li>rend_valid_v2_service_id()
+: <a class="el" href="rendcommon_8c.html#a07d97b83844365f0949fd9998269a5a9">rendcommon.c</a>
+, <a class="el" href="rendcommon_8h.html#a07d97b83844365f0949fd9998269a5a9">rendcommon.h</a>
 </li>
 <li>rep_hist_add_buffer_stats()
 : <a class="el" href="rephist_8c.html#aa6922d0fa8a12f847528b60803ede013">rephist.c</a>
@@ -663,8 +630,8 @@ $(function() {
 , <a class="el" href="rephist_8h.html#a5ea0ebfd04c62c6d8a5e761723b476ca">rephist.h</a>
 </li>
 <li>rep_hist_buffer_stats_term()
-: <a class="el" href="rephist_8c.html#a0bbd8c271022f2de86846d5099ed7478">rephist.c</a>
-, <a class="el" href="rephist_8h.html#a0bbd8c271022f2de86846d5099ed7478">rephist.h</a>
+: <a class="el" href="rephist_8h.html#a0bbd8c271022f2de86846d5099ed7478">rephist.h</a>
+, <a class="el" href="rephist_8c.html#a0bbd8c271022f2de86846d5099ed7478">rephist.c</a>
 </li>
 <li>rep_hist_buffer_stats_write()
 : <a class="el" href="rephist_8c.html#adee1547a4ff701ad78b851ec2cbe37d5">rephist.c</a>
@@ -737,6 +704,10 @@ $(function() {
 <li>rep_hist_get_bandwidth_lines()
 : <a class="el" href="rephist_8c.html#aeec38cadc5f0d80c3e7b739c25b20fb1">rephist.c</a>
 , <a class="el" href="rephist_8h.html#aeec38cadc5f0d80c3e7b739c25b20fb1">rephist.h</a>
+</li>
+<li>rep_hist_get_padding_count_lines()
+: <a class="el" href="rephist_8c.html#a9f0b93391109cd9331d0b91cd1e56381">rephist.c</a>
+, <a class="el" href="rephist_8h.html#a9f0b93391109cd9331d0b91cd1e56381">rephist.h</a>
 </li>
 <li>rep_hist_get_predicted_internal()
 : <a class="el" href="rephist_8c.html#ad4717d346fa88f1ea706ed1105f7a605">rephist.c</a>
@@ -818,18 +789,6 @@ $(function() {
 : <a class="el" href="rephist_8c.html#aa9585f6fefb625dd07f86b14a4959ae2">rephist.c</a>
 , <a class="el" href="rephist_8h.html#aa9585f6fefb625dd07f86b14a4959ae2">rephist.h</a>
 </li>
-<li>rep_hist_note_connect_failed()
-: <a class="el" href="rephist_8c.html#a8b590a92794b7be6b88f55fbe0e9a77e">rephist.c</a>
-, <a class="el" href="rephist_8h.html#a5126f7536c1ba478c345b491592e2578">rephist.h</a>
-</li>
-<li>rep_hist_note_connect_succeeded()
-: <a class="el" href="rephist_8c.html#ab0585bb24fb7ba85dce36199cf9befe1">rephist.c</a>
-, <a class="el" href="rephist_8h.html#af70175bcee5870d9bb5865afe9546f15">rephist.h</a>
-</li>
-<li>rep_hist_note_connection_died()
-: <a class="el" href="rephist_8c.html#afa97561171f321a55037a75f2e288c2b">rephist.c</a>
-, <a class="el" href="rephist_8h.html#a6a79c6da91278f419931dcdc0b9e6e35">rephist.h</a>
-</li>
 <li>rep_hist_note_desc_served()
 : <a class="el" href="rephist_8c.html#a08c954626f09cc1aa42022d14d72dc9c">rephist.c</a>
 , <a class="el" href="rephist_8h.html#a08c954626f09cc1aa42022d14d72dc9c">rephist.h</a>
@@ -839,28 +798,16 @@ $(function() {
 , <a class="el" href="rephist_8h.html#a8618ae2b4abf50632e0d2c0d7afa4f82">rephist.h</a>
 </li>
 <li>rep_hist_note_dir_bytes_written()
-: <a class="el" href="rephist_8h.html#a339857e370cdbfcd003048f1529cc819">rephist.h</a>
-, <a class="el" href="rephist_8c.html#a339857e370cdbfcd003048f1529cc819">rephist.c</a>
-</li>
-<li>rep_hist_note_disconnect()
-: <a class="el" href="rephist_8c.html#a580c4857d1a07e959589e6e3703a0e4e">rephist.c</a>
-, <a class="el" href="rephist_8h.html#a91eda051c85a34fafa9c8b841cb38d8e">rephist.h</a>
+: <a class="el" href="rephist_8c.html#a339857e370cdbfcd003048f1529cc819">rephist.c</a>
+, <a class="el" href="rephist_8h.html#a339857e370cdbfcd003048f1529cc819">rephist.h</a>
 </li>
 <li>rep_hist_note_exit_bytes()
-: <a class="el" href="rephist_8h.html#a10562e9d8fedb7c21f604817f70aca10">rephist.h</a>
-, <a class="el" href="rephist_8c.html#a10562e9d8fedb7c21f604817f70aca10">rephist.c</a>
+: <a class="el" href="rephist_8c.html#a10562e9d8fedb7c21f604817f70aca10">rephist.c</a>
+, <a class="el" href="rephist_8h.html#a10562e9d8fedb7c21f604817f70aca10">rephist.h</a>
 </li>
 <li>rep_hist_note_exit_stream_opened()
 : <a class="el" href="rephist_8c.html#a6c937d06bcbf838afd2303798b5dd0a2">rephist.c</a>
 , <a class="el" href="rephist_8h.html#a6c937d06bcbf838afd2303798b5dd0a2">rephist.h</a>
-</li>
-<li>rep_hist_note_extend_failed()
-: <a class="el" href="rephist_8h.html#a7c3f89e405d792f8696046f55c95efa4">rephist.h</a>
-, <a class="el" href="rephist_8c.html#af9b28c42b1c82f87ca80ac3949abf8fd">rephist.c</a>
-</li>
-<li>rep_hist_note_extend_succeeded()
-: <a class="el" href="rephist_8c.html#a874205cc3523ea7f6cc277c741465c98">rephist.c</a>
-, <a class="el" href="rephist_8h.html#ae11b10f46a4eaaf252642cb792e84aad">rephist.h</a>
 </li>
 <li>rep_hist_note_negotiated_link_proto()
 : <a class="el" href="rephist_8c.html#a1289e7609b84a790ee03f06dd95ab023">rephist.c</a>
@@ -871,24 +818,36 @@ $(function() {
 , <a class="el" href="rephist_8h.html#ad26f4a759a9cfe2f7853c5982fb6e4ee">rephist.h</a>
 </li>
 <li>rep_hist_note_router_reachable()
-: <a class="el" href="rephist_8h.html#a1b5c4cccd072d6c29dae2dab3fd12294">rephist.h</a>
-, <a class="el" href="rephist_8c.html#a1b5c4cccd072d6c29dae2dab3fd12294">rephist.c</a>
+: <a class="el" href="rephist_8c.html#a1b5c4cccd072d6c29dae2dab3fd12294">rephist.c</a>
+, <a class="el" href="rephist_8h.html#a1b5c4cccd072d6c29dae2dab3fd12294">rephist.h</a>
 </li>
 <li>rep_hist_note_router_unreachable()
 : <a class="el" href="rephist_8c.html#a8d82d65e82208716c6db808c3361b19e">rephist.c</a>
 , <a class="el" href="rephist_8h.html#a8d82d65e82208716c6db808c3361b19e">rephist.h</a>
 </li>
 <li>rep_hist_note_used_internal()
-: <a class="el" href="rephist_8h.html#a925242d56f1b913429e29bb54e478574">rephist.h</a>
-, <a class="el" href="rephist_8c.html#a925242d56f1b913429e29bb54e478574">rephist.c</a>
+: <a class="el" href="rephist_8c.html#a925242d56f1b913429e29bb54e478574">rephist.c</a>
+, <a class="el" href="rephist_8h.html#a925242d56f1b913429e29bb54e478574">rephist.h</a>
 </li>
 <li>rep_hist_note_used_port()
 : <a class="el" href="rephist_8c.html#a19a1d0bbc69ce2253a076062b087337a">rephist.c</a>
 , <a class="el" href="rephist_8h.html#a19a1d0bbc69ce2253a076062b087337a">rephist.h</a>
 </li>
 <li>rep_hist_note_used_resolve()
-: <a class="el" href="rephist_8h.html#aa45d4e4767a0ba5eed365aa5fe53e7f9">rephist.h</a>
-, <a class="el" href="rephist_8c.html#aa45d4e4767a0ba5eed365aa5fe53e7f9">rephist.c</a>
+: <a class="el" href="rephist_8c.html#aa45d4e4767a0ba5eed365aa5fe53e7f9">rephist.c</a>
+, <a class="el" href="rephist_8h.html#aa45d4e4767a0ba5eed365aa5fe53e7f9">rephist.h</a>
+</li>
+<li>rep_hist_padding_count_read()
+: <a class="el" href="rephist_8c.html#af4bb58827c2b47c3e033a3c41929da97">rephist.c</a>
+, <a class="el" href="rephist_8h.html#af4bb58827c2b47c3e033a3c41929da97">rephist.h</a>
+</li>
+<li>rep_hist_padding_count_timers()
+: <a class="el" href="rephist_8c.html#add1d262c9b5365f8430330fa81369358">rephist.c</a>
+, <a class="el" href="rephist_8h.html#add1d262c9b5365f8430330fa81369358">rephist.h</a>
+</li>
+<li>rep_hist_padding_count_write()
+: <a class="el" href="rephist_8c.html#a767b51f5eb90c68dc8ade2517f08826e">rephist.c</a>
+, <a class="el" href="rephist_8h.html#a767b51f5eb90c68dc8ade2517f08826e">rephist.h</a>
 </li>
 <li>rep_hist_record_mtbf_data()
 : <a class="el" href="rephist_8c.html#acc9bf4bc8b3124f73c775e4d83cf0a13">rephist.c</a>
@@ -903,28 +862,35 @@ $(function() {
 , <a class="el" href="rephist_8h.html#a89f927d97d217f29680458cec3a7d82e">rephist.h</a>
 </li>
 <li>rep_hist_reset_conn_stats()
-: <a class="el" href="rephist_8h.html#a6701b2dd200113e2704f74cd617bcee9">rephist.h</a>
-, <a class="el" href="rephist_8c.html#a6701b2dd200113e2704f74cd617bcee9">rephist.c</a>
+: <a class="el" href="rephist_8c.html#a6701b2dd200113e2704f74cd617bcee9">rephist.c</a>
+, <a class="el" href="rephist_8h.html#a6701b2dd200113e2704f74cd617bcee9">rephist.h</a>
 </li>
 <li>rep_hist_reset_exit_stats()
 : <a class="el" href="rephist_8c.html#adc1d070a99f98c88d5156415065cbd68">rephist.c</a>
 , <a class="el" href="rephist_8h.html#adc1d070a99f98c88d5156415065cbd68">rephist.h</a>
 </li>
+<li>rep_hist_reset_padding_counts()
+: <a class="el" href="rephist_8c.html#a30c4d49efbee5a809d81f4ec2530283c">rephist.c</a>
+, <a class="el" href="rephist_8h.html#a30c4d49efbee5a809d81f4ec2530283c">rephist.h</a>
+</li>
 <li>rep_hist_seen_new_rp_cell()
-: <a class="el" href="rephist_8h.html#aa129953ef2ec16245171a6e0964018be">rephist.h</a>
-, <a class="el" href="rephist_8c.html#aa129953ef2ec16245171a6e0964018be">rephist.c</a>
+: <a class="el" href="rephist_8c.html#aa129953ef2ec16245171a6e0964018be">rephist.c</a>
+, <a class="el" href="rephist_8h.html#aa129953ef2ec16245171a6e0964018be">rephist.h</a>
 </li>
 <li>rep_hist_stored_maybe_new_hs()
 : <a class="el" href="rephist_8c.html#ab7fc106c03b6628580434b5469dae815">rephist.c</a>
 , <a class="el" href="rephist_8h.html#ab7fc106c03b6628580434b5469dae815">rephist.h</a>
 </li>
 <li>rep_hist_update_state()
-: <a class="el" href="rephist_8h.html#acb76ca6ea0d41d2b9f29975c25d11cf2">rephist.h</a>
-, <a class="el" href="rephist_8c.html#acb76ca6ea0d41d2b9f29975c25d11cf2">rephist.c</a>
+: <a class="el" href="rephist_8c.html#acb76ca6ea0d41d2b9f29975c25d11cf2">rephist.c</a>
+, <a class="el" href="rephist_8h.html#acb76ca6ea0d41d2b9f29975c25d11cf2">rephist.h</a>
 </li>
 <li>rep_history_clean()
 : <a class="el" href="rephist_8c.html#ab26034f0ea8dbd53bbe580f88de3adb6">rephist.c</a>
 , <a class="el" href="rephist_8h.html#ab26034f0ea8dbd53bbe580f88de3adb6">rephist.h</a>
+</li>
+<li>REPHIST_CELL_PADDING_COUNTS_INTERVAL
+: <a class="el" href="rephist_8h.html#ad567589185835bb6b8ae4c7f519c5840">rephist.h</a>
 </li>
 <li>rephist_total_alloc
 : <a class="el" href="rephist_8c.html#a1c529acab759963aafdadf6a09919a1c">rephist.c</a>
@@ -948,9 +914,9 @@ $(function() {
 : <a class="el" href="replaycache_8h.html#a71e7428f463863288ac71c60e085bca4">replaycache.h</a>
 , <a class="el" href="replaycache_8c.html#a71e7428f463863288ac71c60e085bca4">replaycache.c</a>
 </li>
-<li>replaycache_free()
-: <a class="el" href="replaycache_8c.html#a3820bca2b83e616483e752d3e5adfd92">replaycache.c</a>
-, <a class="el" href="replaycache_8h.html#a3820bca2b83e616483e752d3e5adfd92">replaycache.h</a>
+<li>replaycache_free_()
+: <a class="el" href="replaycache_8c.html#a31c09a3db35855de8b4376154fbd015b">replaycache.c</a>
+, <a class="el" href="replaycache_8h.html#a31c09a3db35855de8b4376154fbd015b">replaycache.h</a>
 </li>
 <li>replaycache_new()
 : <a class="el" href="replaycache_8h.html#a1b25262d0f6d23abbf08879d829051df">replaycache.h</a>
@@ -962,9 +928,6 @@ $(function() {
 </li>
 <li>replaycache_scrub_if_needed_internal()
 : <a class="el" href="replaycache_8c.html#adb2b0c39447d3b9bdb97cf6708060e99">replaycache.c</a>
-</li>
-<li>replyqueue_get_socket()
-: <a class="el" href="workqueue_8c.html#ab0497e4b7e2eb081ad85944f03f63142">workqueue.c</a>
 </li>
 <li>replyqueue_new()
 : <a class="el" href="workqueue_8c.html#a5bca099ce188de04027e4ef03fcbd97c">workqueue.c</a>
@@ -981,25 +944,45 @@ $(function() {
 <li>RES_STATUS_INFLIGHT
 : <a class="el" href="dns__structs_8h.html#aa5d9ae9adc1096ccbefe275bf3b6e49d">dns_structs.h</a>
 </li>
+<li>rescan_periodic_events()
+: <a class="el" href="main_8c.html#aecdbc14b2fa5dcece5ca26ba80dc2876">main.c</a>
+, <a class="el" href="main_8h.html#aecdbc14b2fa5dcece5ca26ba80dc2876">main.h</a>
+</li>
 <li>reschedule_descriptor_update_check()
-: <a class="el" href="main_8c.html#a07295da993bf4aa46f05959eb5597633">main.c</a>
-, <a class="el" href="main_8h.html#a07295da993bf4aa46f05959eb5597633">main.h</a>
+: <a class="el" href="main_8h.html#a07295da993bf4aa46f05959eb5597633">main.h</a>
+, <a class="el" href="main_8c.html#a07295da993bf4aa46f05959eb5597633">main.c</a>
 </li>
 <li>reschedule_directory_downloads()
 : <a class="el" href="main_8c.html#a5e52e7505835cfedd05201509a19d301">main.c</a>
 , <a class="el" href="main_8h.html#a5e52e7505835cfedd05201509a19d301">main.h</a>
+</li>
+<li>reschedule_dirvote()
+: <a class="el" href="main_8h.html#a5b11a4237598f0f5a4465578266d0d14">main.h</a>
+, <a class="el" href="main_8c.html#a5b11a4237598f0f5a4465578266d0d14">main.c</a>
+</li>
+<li>reschedule_or_state_save()
+: <a class="el" href="main_8c.html#a99e4caa4cd2573a6e23e9980ae79547b">main.c</a>
+, <a class="el" href="main_8h.html#a99e4caa4cd2573a6e23e9980ae79547b">main.h</a>
+</li>
+<li>reschedule_per_second_timer()
+: <a class="el" href="main_8c.html#aa282b01934a6c82ad6d2c27cf5140a85">main.c</a>
+, <a class="el" href="main_8h.html#aa282b01934a6c82ad6d2c27cf5140a85">main.h</a>
 </li>
 <li>reset_all_main_loop_timers()
 : <a class="el" href="main_8c.html#aa79d6ccbf076c44946971ac8dbbb5e1d">main.c</a>
 , <a class="el" href="main_8h.html#aa79d6ccbf076c44946971ac8dbbb5e1d">main.h</a>
 </li>
 <li>reset_bandwidth_test()
-: <a class="el" href="circuituse_8c.html#a62c92926e67f1674290aff0d08bac948">circuituse.c</a>
-, <a class="el" href="circuituse_8h.html#a62c92926e67f1674290aff0d08bac948">circuituse.h</a>
+: <a class="el" href="circuituse_8h.html#a62c92926e67f1674290aff0d08bac948">circuituse.h</a>
+, <a class="el" href="circuituse_8c.html#a62c92926e67f1674290aff0d08bac948">circuituse.c</a>
 </li>
 <li>reset_last_resolved_addr()
 : <a class="el" href="config_8c.html#a1a419ee8b9f60f666995c0bac5c70db6">config.c</a>
 , <a class="el" href="config_8h.html#a1a419ee8b9f60f666995c0bac5c70db6">config.h</a>
+</li>
+<li>reset_main_loop_counters()
+: <a class="el" href="main_8h.html#ad4cfbc2252dcc87b85061c590b4adb1c">main.h</a>
+, <a class="el" href="main_8c.html#ad4cfbc2252dcc87b85061c590b4adb1c">main.c</a>
 </li>
 <li>RESOLVE_MAX_TIMEOUT
 : <a class="el" href="dns_8c.html#a4f4fbaf3b9d88e32c2bd4bff9eaadbe7">dns.c</a>
@@ -1016,8 +999,8 @@ $(function() {
 , <a class="el" href="connection_8h.html#a70eb2da60775cc0bda58682470a752b6">connection.h</a>
 </li>
 <li>retry_bridge_descriptor_fetch_directly()
-: <a class="el" href="entrynodes_8c.html#af586c6437018de91c926dbabb4c802d6">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#af586c6437018de91c926dbabb4c802d6">entrynodes.h</a>
+: <a class="el" href="bridges_8c.html#af586c6437018de91c926dbabb4c802d6">bridges.c</a>
+, <a class="el" href="bridges_8h.html#af586c6437018de91c926dbabb4c802d6">bridges.h</a>
 </li>
 <li>REVERSE_LOOKUP_NAME_BUF_LEN
 : <a class="el" href="address_8h.html#a46ded1ac44aeab34c6916ed3d299ce22">address.h</a>
@@ -1029,8 +1012,8 @@ $(function() {
 : <a class="el" href="util_8h.html#a2b9d618f29aa45e447cac9fd943d50b3">util.h</a>
 </li>
 <li>rollback_log_changes()
-: <a class="el" href="torlog_8h.html#a45673365df28285fe5a918622e568669">torlog.h</a>
-, <a class="el" href="log_8c.html#a45673365df28285fe5a918622e568669">log.c</a>
+: <a class="el" href="log_8c.html#a45673365df28285fe5a918622e568669">log.c</a>
+, <a class="el" href="torlog_8h.html#a45673365df28285fe5a918622e568669">torlog.h</a>
 </li>
 <li>rotate_onion_key()
 : <a class="el" href="router_8c.html#adf9d6e2bf82d6ddfb3e47cd7d49b57ec">router.c</a>
@@ -1045,28 +1028,28 @@ $(function() {
 , <a class="el" href="util_8h.html#ae44cd05245deb753551a05b5b4ad271f">util.h</a>
 </li>
 <li>round_uint32_to_next_multiple_of()
-: <a class="el" href="util_8h.html#a8736099b0ade1d9bfdcca508257fc0f5">util.h</a>
-, <a class="el" href="util_8c.html#a8736099b0ade1d9bfdcca508257fc0f5">util.c</a>
+: <a class="el" href="util_8c.html#a8736099b0ade1d9bfdcca508257fc0f5">util.c</a>
+, <a class="el" href="util_8h.html#a8736099b0ade1d9bfdcca508257fc0f5">util.h</a>
 </li>
 <li>round_uint64_to_next_multiple_of()
 : <a class="el" href="util_8c.html#af988d4e0eccfc51ee92e983170091b37">util.c</a>
 , <a class="el" href="util_8h.html#af988d4e0eccfc51ee92e983170091b37">util.h</a>
+</li>
+<li>route_len_for_purpose()
+: <a class="el" href="circuitbuild_8c.html#a48d96af7c68a635f9734d0aa0271ac7c">circuitbuild.c</a>
+, <a class="el" href="circuitbuild_8h.html#a48d96af7c68a635f9734d0aa0271ac7c">circuitbuild.h</a>
 </li>
 <li>router_add_extrainfo_to_routerlist()
 : <a class="el" href="routerlist_8c.html#a91d657f054dd82fbaf519c02deb5ec51">routerlist.c</a>
 , <a class="el" href="routerlist_8h.html#a91d657f054dd82fbaf519c02deb5ec51">routerlist.h</a>
 </li>
 <li>router_add_running_nodes_to_smartlist()
-: <a class="el" href="routerlist_8c.html#aba23320c5a1abde91478e430c7bd42bd">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#aba23320c5a1abde91478e430c7bd42bd">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#a0408a1692d0cf2c506b6e2a2c5798969">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#a0408a1692d0cf2c506b6e2a2c5798969">routerlist.c</a>
 </li>
 <li>router_add_to_routerlist()
 : <a class="el" href="routerlist_8c.html#ab1878aef0f1dd92c783d5477248b985d">routerlist.c</a>
 , <a class="el" href="routerlist_8h.html#ab1878aef0f1dd92c783d5477248b985d">routerlist.h</a>
-</li>
-<li>router_addr_is_trusted_dir()
-: <a class="el" href="routerlist_8c.html#a0240e623457d6c4622dd3d9dad2a652f">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#a0240e623457d6c4622dd3d9dad2a652f">routerlist.h</a>
 </li>
 <li>ROUTER_ALLOW_SKEW
 : <a class="el" href="dirserv_8c.html#a40089a6368f815d5b0ce4c64d76c58bc">dirserv.c</a>
@@ -1082,8 +1065,8 @@ $(function() {
 , <a class="el" href="routerparse_8h.html#a594cb966cbb2893822d931ffe955b53d">routerparse.h</a>
 </li>
 <li>router_build_fresh_descriptor()
-: <a class="el" href="router_8h.html#acb94b47f3c4ba2113830968ba8c780bd">router.h</a>
-, <a class="el" href="router_8c.html#acb94b47f3c4ba2113830968ba8c780bd">router.c</a>
+: <a class="el" href="router_8c.html#acb94b47f3c4ba2113830968ba8c780bd">router.c</a>
+, <a class="el" href="router_8h.html#acb94b47f3c4ba2113830968ba8c780bd">router.h</a>
 </li>
 <li>router_choose_random_node()
 : <a class="el" href="routerlist_8c.html#a147ff0bee802b71e9c9e3bed69255f85">routerlist.c</a>
@@ -1097,52 +1080,59 @@ $(function() {
 : <a class="el" href="or_8h.html#a274fd236a2f0fc116815f9077f5ca82c">or.h</a>
 </li>
 <li>router_describe()
-: <a class="el" href="router_8c.html#a4d59ce576eb8716561e1bc6be6f88de1">router.c</a>
-, <a class="el" href="router_8h.html#a4d59ce576eb8716561e1bc6be6f88de1">router.h</a>
+: <a class="el" href="router_8h.html#a4d59ce576eb8716561e1bc6be6f88de1">router.h</a>
+, <a class="el" href="router_8c.html#a4d59ce576eb8716561e1bc6be6f88de1">router.c</a>
 </li>
 <li>router_differences_are_cosmetic()
-: <a class="el" href="routerlist_8c.html#ac41971537948013e1684f04ae286affd">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#ac41971537948013e1684f04ae286affd">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#ac41971537948013e1684f04ae286affd">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#ac41971537948013e1684f04ae286affd">routerlist.c</a>
 </li>
 <li>router_digest_is_fallback_dir()
-: <a class="el" href="routerlist_8c.html#aa0f6ecb349cc9b484a19c1a0397dc1ed">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#aa0f6ecb349cc9b484a19c1a0397dc1ed">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#aa0f6ecb349cc9b484a19c1a0397dc1ed">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#aa0f6ecb349cc9b484a19c1a0397dc1ed">routerlist.c</a>
 </li>
 <li>router_digest_is_me()
-: <a class="el" href="router_8h.html#abeb0f38915a46f77352900604075d82f">router.h</a>
-, <a class="el" href="router_8c.html#abeb0f38915a46f77352900604075d82f">router.c</a>
+: <a class="el" href="router_8c.html#abeb0f38915a46f77352900604075d82f">router.c</a>
+, <a class="el" href="router_8h.html#abeb0f38915a46f77352900604075d82f">router.h</a>
 </li>
 <li>router_digest_is_trusted_dir_type()
 : <a class="el" href="routerlist_8h.html#a6c38eadb28cf4532a7623c5aa1885cec">routerlist.h</a>
 , <a class="el" href="routerlist_8c.html#a6c38eadb28cf4532a7623c5aa1885cec">routerlist.c</a>
 </li>
 <li>router_dir_info_changed()
-: <a class="el" href="nodelist_8h.html#a32099caf417dbc0e15ea398b1bc2ea16">nodelist.h</a>
-, <a class="el" href="nodelist_8c.html#a32099caf417dbc0e15ea398b1bc2ea16">nodelist.c</a>
+: <a class="el" href="nodelist_8c.html#a32099caf417dbc0e15ea398b1bc2ea16">nodelist.c</a>
+, <a class="el" href="nodelist_8h.html#a32099caf417dbc0e15ea398b1bc2ea16">nodelist.h</a>
 </li>
 <li>router_dirport_found_reachable()
-: <a class="el" href="router_8h.html#ab0152c6014466eaafa2e666bb38ba16b">router.h</a>
-, <a class="el" href="router_8c.html#ab0152c6014466eaafa2e666bb38ba16b">router.c</a>
+: <a class="el" href="router_8c.html#ab0152c6014466eaafa2e666bb38ba16b">router.c</a>
+, <a class="el" href="router_8h.html#ab0152c6014466eaafa2e666bb38ba16b">router.h</a>
+</li>
+<li>router_do_reachability_checks()
+: <a class="el" href="router_8c.html#a242f0a76713d7b28d940880fc3dd03ed">router.c</a>
+, <a class="el" href="router_8h.html#a242f0a76713d7b28d940880fc3dd03ed">router.h</a>
 </li>
 <li>router_dump_exit_policy_to_string()
-: <a class="el" href="router_8h.html#ac77dbc2a8d2709504efedfa13b140964">router.h</a>
-, <a class="el" href="router_8c.html#ac77dbc2a8d2709504efedfa13b140964">router.c</a>
+: <a class="el" href="router_8c.html#ac77dbc2a8d2709504efedfa13b140964">router.c</a>
+, <a class="el" href="router_8h.html#ac77dbc2a8d2709504efedfa13b140964">router.h</a>
 </li>
 <li>router_dump_router_to_string()
-: <a class="el" href="router_8h.html#abe7a9d63b97fc7552ca356f93c9c6cc7">router.h</a>
-, <a class="el" href="router_8c.html#abe7a9d63b97fc7552ca356f93c9c6cc7">router.c</a>
+: <a class="el" href="router_8c.html#abe7a9d63b97fc7552ca356f93c9c6cc7">router.c</a>
+, <a class="el" href="router_8h.html#abe7a9d63b97fc7552ca356f93c9c6cc7">router.h</a>
+</li>
+<li>router_ed25519_id_is_me()
+: <a class="el" href="routerkeys_8c.html#a32baa1ac0f83ced1415a21b99e3ba47a">routerkeys.c</a>
 </li>
 <li>router_exit_policy_all_nodes_reject()
-: <a class="el" href="nodelist_8c.html#a86dbd7165aba1d9d8cdd6bb2c2b5d6c7">nodelist.c</a>
-, <a class="el" href="nodelist_8h.html#a86dbd7165aba1d9d8cdd6bb2c2b5d6c7">nodelist.h</a>
+: <a class="el" href="nodelist_8h.html#a86dbd7165aba1d9d8cdd6bb2c2b5d6c7">nodelist.h</a>
+, <a class="el" href="nodelist_8c.html#a86dbd7165aba1d9d8cdd6bb2c2b5d6c7">nodelist.c</a>
 </li>
 <li>router_exit_policy_rejects_all()
 : <a class="el" href="routerlist_8h.html#a1cb0d178232a933f8fea51a845f41265">routerlist.h</a>
 , <a class="el" href="routerlist_8c.html#a1cb0d178232a933f8fea51a845f41265">routerlist.c</a>
 </li>
 <li>router_extrainfo_digest_is_me()
-: <a class="el" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17">router.h</a>
-, <a class="el" href="router_8c.html#ab71a44765898910e5aaa50b3f9b50a17">router.c</a>
+: <a class="el" href="router_8c.html#ab71a44765898910e5aaa50b3f9b50a17">router.c</a>
+, <a class="el" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17">router.h</a>
 </li>
 <li>router_find_exact_exit_enclave()
 : <a class="el" href="nodelist_8h.html#aa6437a3da576fc05f0b444878bbeb93e">nodelist.h</a>
@@ -1165,60 +1155,52 @@ $(function() {
 , <a class="el" href="routerlist_8c.html#ad6fa9db0634a1b718251a999c4972b21">routerlist.c</a>
 </li>
 <li>router_get_advertised_dir_port()
-: <a class="el" href="router_8c.html#afc00fda5b227142768e650d169b3dd26">router.c</a>
-, <a class="el" href="router_8h.html#afc00fda5b227142768e650d169b3dd26">router.h</a>
+: <a class="el" href="router_8h.html#afc00fda5b227142768e650d169b3dd26">router.h</a>
+, <a class="el" href="router_8c.html#afc00fda5b227142768e650d169b3dd26">router.c</a>
 </li>
 <li>router_get_advertised_or_port()
-: <a class="el" href="router_8c.html#a74a228ad9efff13643397a5c02d7bec7">router.c</a>
-, <a class="el" href="router_8h.html#a74a228ad9efff13643397a5c02d7bec7">router.h</a>
+: <a class="el" href="router_8h.html#a74a228ad9efff13643397a5c02d7bec7">router.h</a>
+, <a class="el" href="router_8c.html#a74a228ad9efff13643397a5c02d7bec7">router.c</a>
 </li>
 <li>router_get_advertised_or_port_by_af()
 : <a class="el" href="router_8c.html#a19b606096c7f385bb3db639b1a1c15fe">router.c</a>
 , <a class="el" href="router_8h.html#a19b606096c7f385bb3db639b1a1c15fe">router.h</a>
 </li>
 <li>router_get_all_orports()
-: <a class="el" href="router_8h.html#a7ca65441213fb44d6dde8432c943a6c3">router.h</a>
-, <a class="el" href="router_8c.html#a7ca65441213fb44d6dde8432c943a6c3">router.c</a>
+: <a class="el" href="router_8c.html#a7ca65441213fb44d6dde8432c943a6c3">router.c</a>
+, <a class="el" href="router_8h.html#a7ca65441213fb44d6dde8432c943a6c3">router.h</a>
 </li>
 <li>router_get_by_descriptor_digest()
-: <a class="el" href="routerlist_8c.html#aab0f360909c4cc3732e5f9541cf595bb">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#aab0f360909c4cc3732e5f9541cf595bb">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#aab0f360909c4cc3732e5f9541cf595bb">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#aab0f360909c4cc3732e5f9541cf595bb">routerlist.c</a>
 </li>
 <li>router_get_by_id_digest()
-: <a class="el" href="routerlist_8c.html#a9eb1861cedcb477a2e455b6c02eb56d8">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#a9eb1861cedcb477a2e455b6c02eb56d8">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#a9eb1861cedcb477a2e455b6c02eb56d8">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#a9eb1861cedcb477a2e455b6c02eb56d8">routerlist.c</a>
 </li>
 <li>router_get_consensus_status_by_descriptor_digest()
 : <a class="el" href="networkstatus_8c.html#ae26b18ffeeda912deab35abe7bfe31da">networkstatus.c</a>
 , <a class="el" href="networkstatus_8h.html#ae26b18ffeeda912deab35abe7bfe31da">networkstatus.h</a>
 </li>
 <li>router_get_consensus_status_by_id()
-: <a class="el" href="networkstatus_8h.html#a810a06fe9e7c7bd3a1c5c5ee8cc13b52">networkstatus.h</a>
-, <a class="el" href="networkstatus_8c.html#a810a06fe9e7c7bd3a1c5c5ee8cc13b52">networkstatus.c</a>
-</li>
-<li>router_get_consensus_status_by_nickname()
-: <a class="el" href="networkstatus_8c.html#a28122f58af9ee7d89bc31efc2a2fb242">networkstatus.c</a>
-, <a class="el" href="networkstatus_8h.html#a28122f58af9ee7d89bc31efc2a2fb242">networkstatus.h</a>
-</li>
-<li>router_get_description()
-: <a class="el" href="router_8c.html#ac97f03d757d76cc0e684e58d4dfea035">router.c</a>
-, <a class="el" href="router_8h.html#ac97f03d757d76cc0e684e58d4dfea035">router.h</a>
+: <a class="el" href="networkstatus_8c.html#a810a06fe9e7c7bd3a1c5c5ee8cc13b52">networkstatus.c</a>
+, <a class="el" href="networkstatus_8h.html#a810a06fe9e7c7bd3a1c5c5ee8cc13b52">networkstatus.h</a>
 </li>
 <li>router_get_descriptor_gen_reason()
 : <a class="el" href="router_8c.html#a1ba670606f8b38ce1d818a56438cf28b">router.c</a>
 , <a class="el" href="router_8h.html#a1ba670606f8b38ce1d818a56438cf28b">router.h</a>
 </li>
 <li>router_get_dir_hash()
-: <a class="el" href="routerparse_8c.html#ae9c94e2b40578dbed4b4e38a5ebe2c65">routerparse.c</a>
-, <a class="el" href="routerparse_8h.html#ae9c94e2b40578dbed4b4e38a5ebe2c65">routerparse.h</a>
+: <a class="el" href="routerparse_8h.html#ae9c94e2b40578dbed4b4e38a5ebe2c65">routerparse.h</a>
+, <a class="el" href="routerparse_8c.html#ae9c94e2b40578dbed4b4e38a5ebe2c65">routerparse.c</a>
 </li>
 <li>router_get_dirobj_signature()
 : <a class="el" href="routerparse_8c.html#ada91c927ebf9cb2a3b92b285198f172a">routerparse.c</a>
 , <a class="el" href="routerparse_8h.html#ada91c927ebf9cb2a3b92b285198f172a">routerparse.h</a>
 </li>
 <li>router_get_extrainfo_hash()
-: <a class="el" href="routerparse_8c.html#a38ef1e01c3b561811bc4bd4f0777eb3e">routerparse.c</a>
-, <a class="el" href="routerparse_8h.html#a38ef1e01c3b561811bc4bd4f0777eb3e">routerparse.h</a>
+: <a class="el" href="routerparse_8h.html#a38ef1e01c3b561811bc4bd4f0777eb3e">routerparse.h</a>
+, <a class="el" href="routerparse_8c.html#a38ef1e01c3b561811bc4bd4f0777eb3e">routerparse.c</a>
 </li>
 <li>router_get_fallback_dirserver_by_digest()
 : <a class="el" href="routerlist_8c.html#aaa2e70d04e8e04e2958f64f243e76987">routerlist.c</a>
@@ -1233,24 +1215,32 @@ $(function() {
 , <a class="el" href="networkstatus_8h.html#abeb917388a503fd5c8e727d7a6bd675f">networkstatus.h</a>
 </li>
 <li>router_get_my_descriptor()
-: <a class="el" href="router_8h.html#a41c282d28d3993d673a0bedf91e5d776">router.h</a>
-, <a class="el" href="router_8c.html#a41c282d28d3993d673a0bedf91e5d776">router.c</a>
+: <a class="el" href="router_8c.html#a41c282d28d3993d673a0bedf91e5d776">router.c</a>
+, <a class="el" href="router_8h.html#a41c282d28d3993d673a0bedf91e5d776">router.h</a>
 </li>
 <li>router_get_my_extrainfo()
 : <a class="el" href="router_8c.html#a30c5482965fda685a86a170304d48532">router.c</a>
 , <a class="el" href="router_8h.html#a30c5482965fda685a86a170304d48532">router.h</a>
 </li>
 <li>router_get_my_id_digest()
-: <a class="el" href="router_8h.html#aae5d541e535def16f404e35382774642">router.h</a>
-, <a class="el" href="router_8c.html#aae5d541e535def16f404e35382774642">router.c</a>
+: <a class="el" href="router_8c.html#aae5d541e535def16f404e35382774642">router.c</a>
+, <a class="el" href="router_8h.html#aae5d541e535def16f404e35382774642">router.h</a>
 </li>
 <li>router_get_networkstatus_v3_hashes()
 : <a class="el" href="routerparse_8c.html#a6105fa03c7a751d474a380de5016360b">routerparse.c</a>
 , <a class="el" href="routerparse_8h.html#a6105fa03c7a751d474a380de5016360b">routerparse.h</a>
 </li>
+<li>router_get_networkstatus_v3_sha3_as_signed()
+: <a class="el" href="routerparse_8c.html#afd89ff48acdb8ef399f773e42a8398d8">routerparse.c</a>
+, <a class="el" href="routerparse_8h.html#afd89ff48acdb8ef399f773e42a8398d8">routerparse.h</a>
+</li>
+<li>router_get_networkstatus_v3_signed_boundaries()
+: <a class="el" href="routerparse_8c.html#aae7e91b9970f52f892b255d99a2358fd">routerparse.c</a>
+, <a class="el" href="routerparse_8h.html#aae7e91b9970f52f892b255d99a2358fd">routerparse.h</a>
+</li>
 <li>router_get_prim_orport()
-: <a class="el" href="router_8c.html#a255c16f30d82dd9c6644eceb57f70df6">router.c</a>
-, <a class="el" href="router_8h.html#a8cf61a5fc9cad4808cc5fc82ce7d0224">router.h</a>
+: <a class="el" href="router_8h.html#a8cf61a5fc9cad4808cc5fc82ce7d0224">router.h</a>
+, <a class="el" href="router_8c.html#a255c16f30d82dd9c6644eceb57f70df6">router.c</a>
 </li>
 <li>router_get_router_hash()
 : <a class="el" href="routerparse_8c.html#a88a39471f268a31b09e1677d5e57506a">routerparse.c</a>
@@ -1265,36 +1255,30 @@ $(function() {
 , <a class="el" href="routerlist_8h.html#aa9b36f7b87463dc114065ea058660ac4">routerlist.h</a>
 </li>
 <li>router_get_trusteddirserver_by_digest()
-: <a class="el" href="routerlist_8h.html#ae19d4c9a3cd78d4fbc5e926825704ba0">routerlist.h</a>
-, <a class="el" href="routerlist_8c.html#a5132d81b2730264e3a284d9d438ee420">routerlist.c</a>
+: <a class="el" href="routerlist_8c.html#a5132d81b2730264e3a284d9d438ee420">routerlist.c</a>
+, <a class="el" href="routerlist_8h.html#ae19d4c9a3cd78d4fbc5e926825704ba0">routerlist.h</a>
 </li>
 <li>router_get_verbose_nickname()
 : <a class="el" href="router_8c.html#a2f3a022f2ddb8fb15047fb91522000eb">router.c</a>
 , <a class="el" href="router_8h.html#a2f3a022f2ddb8fb15047fb91522000eb">router.h</a>
 </li>
 <li>router_has_addr()
-: <a class="el" href="router_8c.html#a8388a780f816e9d130244f604767d742">router.c</a>
-, <a class="el" href="router_8h.html#a8388a780f816e9d130244f604767d742">router.h</a>
+: <a class="el" href="router_8h.html#a8388a780f816e9d130244f604767d742">router.h</a>
+, <a class="el" href="router_8c.html#a8388a780f816e9d130244f604767d742">router.c</a>
 </li>
-<li>router_have_consensus_path()
-: <a class="el" href="nodelist_8c.html#a95765599d022a89bdb2a851e1ad2ec21">nodelist.c</a>
-, <a class="el" href="nodelist_8h.html#a95765599d022a89bdb2a851e1ad2ec21">nodelist.h</a>
+<li>ROUTER_ID_ITERATOR_INIT
+: <a class="el" href="consdiff_8c.html#a3b110bd12c27d415b4c686c119d9d781">consdiff.c</a>
 </li>
-<li>router_have_minimum_dir_info()
-: <a class="el" href="nodelist_8h.html#af33ffac546e0698e054eb3183e6579ae">nodelist.h</a>
-, <a class="el" href="nodelist_8c.html#af33ffac546e0698e054eb3183e6579ae">nodelist.c</a>
+<li>router_id_iterator_t
+: <a class="el" href="consdiff_8c.html#acb47b826381871e64738c0e0b4799406">consdiff.c</a>
 </li>
 <li>router_initialize_tls_context()
-: <a class="el" href="router_8c.html#a67d28ab5fe06baaec0c4e7575a9502cc">router.c</a>
-, <a class="el" href="router_8h.html#a67d28ab5fe06baaec0c4e7575a9502cc">router.h</a>
+: <a class="el" href="router_8h.html#a67d28ab5fe06baaec0c4e7575a9502cc">router.h</a>
+, <a class="el" href="router_8c.html#a67d28ab5fe06baaec0c4e7575a9502cc">router.c</a>
 </li>
 <li>router_is_me()
-: <a class="el" href="router_8h.html#adcfdecf66a4aa5e6d09a702784c8197f">router.h</a>
-, <a class="el" href="router_8c.html#adcfdecf66a4aa5e6d09a702784c8197f">router.c</a>
-</li>
-<li>router_is_named()
-: <a class="el" href="routerlist_8c.html#a8b764a3362e4c3245d5e430925e380f1">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#a8b764a3362e4c3245d5e430925e380f1">routerlist.h</a>
+: <a class="el" href="router_8c.html#adcfdecf66a4aa5e6d09a702784c8197f">router.c</a>
+, <a class="el" href="router_8h.html#adcfdecf66a4aa5e6d09a702784c8197f">router.h</a>
 </li>
 <li>router_load_extrainfo_from_string()
 : <a class="el" href="routerlist_8h.html#a373b610cd5f3f54650e6e7d47ae70263">routerlist.h</a>
@@ -1322,8 +1306,8 @@ $(function() {
 , <a class="el" href="router_8c.html#a2a099e515a8ff1bb99891a9e51c141bb">router.c</a>
 </li>
 <li>router_orport_found_reachable()
-: <a class="el" href="router_8h.html#a81d0eddf34d18d1da24a0f14e1c54c1f">router.h</a>
-, <a class="el" href="router_8c.html#a81d0eddf34d18d1da24a0f14e1c54c1f">router.c</a>
+: <a class="el" href="router_8c.html#a81d0eddf34d18d1da24a0f14e1c54c1f">router.c</a>
+, <a class="el" href="router_8h.html#a81d0eddf34d18d1da24a0f14e1c54c1f">router.h</a>
 </li>
 <li>router_parse_entry_from_string()
 : <a class="el" href="routerparse_8h.html#a6ed67129e89fe64d2f329a1e94063f48">routerparse.h</a>
@@ -1338,8 +1322,8 @@ $(function() {
 , <a class="el" href="router_8c.html#a95281001f99f50d14056c2b9fd51bc7b">router.c</a>
 </li>
 <li>router_pick_directory_server()
-: <a class="el" href="routerlist_8c.html#ace83aa582c6836e9a172a8cafa1d4047">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#ace83aa582c6836e9a172a8cafa1d4047">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#ace83aa582c6836e9a172a8cafa1d4047">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#ace83aa582c6836e9a172a8cafa1d4047">routerlist.c</a>
 </li>
 <li>router_pick_directory_server_impl()
 : <a class="el" href="routerlist_8c.html#ab3e64366c95e82de40cac88b7a39ae17">routerlist.c</a>
@@ -1349,8 +1333,8 @@ $(function() {
 , <a class="el" href="routerlist_8h.html#a58ed11d2f6808617760386221246b842">routerlist.h</a>
 </li>
 <li>router_pick_trusteddirserver()
-: <a class="el" href="routerlist_8c.html#ad96c8d565baf8a82010f5adfacb99060">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#ad96c8d565baf8a82010f5adfacb99060">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#ad96c8d565baf8a82010f5adfacb99060">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#ad96c8d565baf8a82010f5adfacb99060">routerlist.c</a>
 </li>
 <li>ROUTER_PURPOSE_BRIDGE
 : <a class="el" href="or_8h.html#a97999efba3604af4a750594cd7f1b928">or.h</a>
@@ -1366,8 +1350,8 @@ $(function() {
 : <a class="el" href="or_8h.html#a4f38abef8b7210a1cfc7fc2472fea5eb">or.h</a>
 </li>
 <li>router_purpose_to_string()
-: <a class="el" href="router_8c.html#a9ca20e44509fa800ecf49f25bef1cd52">router.c</a>
-, <a class="el" href="router_8h.html#a9ca20e44509fa800ecf49f25bef1cd52">router.h</a>
+: <a class="el" href="router_8h.html#a9ca20e44509fa800ecf49f25bef1cd52">router.h</a>
+, <a class="el" href="router_8c.html#a9ca20e44509fa800ecf49f25bef1cd52">router.c</a>
 </li>
 <li>ROUTER_PURPOSE_UNKNOWN
 : <a class="el" href="or_8h.html#a465c76c81ff2fa0de4f9be54bfeb0ba5">or.h</a>
@@ -1377,24 +1361,24 @@ $(function() {
 , <a class="el" href="router_8h.html#ac23927b27e54ab8752d8a379b5136b50">router.h</a>
 </li>
 <li>router_reload_consensus_networkstatus()
-: <a class="el" href="networkstatus_8h.html#aa6fd62492d7f4cfafd9ec042e995bfef">networkstatus.h</a>
-, <a class="el" href="networkstatus_8c.html#aa6fd62492d7f4cfafd9ec042e995bfef">networkstatus.c</a>
+: <a class="el" href="networkstatus_8c.html#aa6fd62492d7f4cfafd9ec042e995bfef">networkstatus.c</a>
+, <a class="el" href="networkstatus_8h.html#aa6fd62492d7f4cfafd9ec042e995bfef">networkstatus.h</a>
 </li>
 <li>router_reload_router_list()
 : <a class="el" href="routerlist_8c.html#a86f14dd56cbe0cc04a9b096db95a4270">routerlist.c</a>
 , <a class="el" href="routerlist_8h.html#a86f14dd56cbe0cc04a9b096db95a4270">routerlist.h</a>
 </li>
 <li>router_reset_descriptor_download_failures()
-: <a class="el" href="routerlist_8c.html#adc3015689729ebc1c085666a99b80a10">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#adc3015689729ebc1c085666a99b80a10">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#adc3015689729ebc1c085666a99b80a10">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#adc3015689729ebc1c085666a99b80a10">routerlist.c</a>
 </li>
 <li>router_reset_reachability()
 : <a class="el" href="router_8c.html#ac286979e97e7949ee0b887cde0f038a1">router.c</a>
 , <a class="el" href="router_8h.html#ac286979e97e7949ee0b887cde0f038a1">router.h</a>
 </li>
 <li>router_reset_status_download_failures()
-: <a class="el" href="routerlist_8c.html#a4fab5ecf53641fa3ee384520aaa22e41">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#a4fab5ecf53641fa3ee384520aaa22e41">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#a4fab5ecf53641fa3ee384520aaa22e41">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#a4fab5ecf53641fa3ee384520aaa22e41">routerlist.c</a>
 </li>
 <li>router_reset_warnings()
 : <a class="el" href="router_8h.html#a09c7520a0a933831876a6b41420540c1">router.h</a>
@@ -1412,47 +1396,55 @@ $(function() {
 , <a class="el" href="directory_8h.html#ae222b3f260cc42ea120a438c2d4efc4a">directory.h</a>
 </li>
 <li>router_upload_dir_desc_to_dirservers()
-: <a class="el" href="router_8h.html#a373fdf9e0631afcd0d4dfcde5dc4926b">router.h</a>
-, <a class="el" href="router_8c.html#a373fdf9e0631afcd0d4dfcde5dc4926b">router.c</a>
+: <a class="el" href="router_8c.html#a373fdf9e0631afcd0d4dfcde5dc4926b">router.c</a>
+, <a class="el" href="router_8h.html#a373fdf9e0631afcd0d4dfcde5dc4926b">router.h</a>
 </li>
 <li>router_write_fingerprint()
 : <a class="el" href="router_8c.html#af6be11a2e3d79f8639b03e0b96290102">router.c</a>
 </li>
-<li>routerinfo_free()
-: <a class="el" href="routerlist_8c.html#af2db10502386ef035c89377d2968c7e0">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#af2db10502386ef035c89377d2968c7e0">routerlist.h</a>
+<li>routerinfo_err_is_transient()
+: <a class="el" href="router_8h.html#aee06541f1d25bedac9166f4a08834c16">router.h</a>
+, <a class="el" href="router_8c.html#aee06541f1d25bedac9166f4a08834c16">router.c</a>
+</li>
+<li>routerinfo_err_to_string()
+: <a class="el" href="router_8h.html#a01343bdaa55370c9b0663208d4e1e67c">router.h</a>
+, <a class="el" href="router_8c.html#a01343bdaa55370c9b0663208d4e1e67c">router.c</a>
+</li>
+<li>routerinfo_free_()
+: <a class="el" href="routerlist_8h.html#a0429e9735199eed538c6573eff3aad20">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#a0429e9735199eed538c6573eff3aad20">routerlist.c</a>
 </li>
 <li>routerinfo_incompatible_with_extrainfo()
 : <a class="el" href="routerlist_8c.html#a8bcaa5e4b76efe015823a0e6e0e8f876">routerlist.c</a>
 , <a class="el" href="routerlist_8h.html#a3ed4f55736541adee60a83e8442d4d4f">routerlist.h</a>
 </li>
 <li>routerinfo_is_a_configured_bridge()
-: <a class="el" href="entrynodes_8h.html#a2027007177e63941e2adf763a34a1b99">entrynodes.h</a>
-, <a class="el" href="entrynodes_8c.html#a2027007177e63941e2adf763a34a1b99">entrynodes.c</a>
+: <a class="el" href="bridges_8c.html#a2027007177e63941e2adf763a34a1b99">bridges.c</a>
+, <a class="el" href="bridges_8h.html#a2027007177e63941e2adf763a34a1b99">bridges.h</a>
 </li>
 <li>routerlist_assert_ok()
 : <a class="el" href="routerlist_8h.html#a6bbb04e1dbdbbde5ad2089aac715d9cf">routerlist.h</a>
 , <a class="el" href="routerlist_8c.html#a6bbb04e1dbdbbde5ad2089aac715d9cf">routerlist.c</a>
 </li>
 <li>routerlist_descriptors_added()
-: <a class="el" href="routerlist_8h.html#ad0e00a6f0df9aace49976da496902957">routerlist.h</a>
-, <a class="el" href="routerlist_8c.html#ad0e00a6f0df9aace49976da496902957">routerlist.c</a>
+: <a class="el" href="routerlist_8c.html#ad0e00a6f0df9aace49976da496902957">routerlist.c</a>
+, <a class="el" href="routerlist_8h.html#ad0e00a6f0df9aace49976da496902957">routerlist.h</a>
 </li>
 <li>routerlist_find_my_routerinfo()
 : <a class="el" href="routerlist_8c.html#afc5cd667e54af0c810a0930e70e27348">routerlist.c</a>
 , <a class="el" href="routerlist_8h.html#afc5cd667e54af0c810a0930e70e27348">routerlist.h</a>
 </li>
-<li>routerlist_free()
-: <a class="el" href="routerlist_8c.html#ab9228e04209739ed11f23f364b74bfde">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#ab9228e04209739ed11f23f364b74bfde">routerlist.h</a>
+<li>routerlist_free_()
+: <a class="el" href="routerlist_8c.html#a1dcfdffce5f87c6829a4c082887d8f2b">routerlist.c</a>
+, <a class="el" href="routerlist_8h.html#a1dcfdffce5f87c6829a4c082887d8f2b">routerlist.h</a>
 </li>
 <li>routerlist_free_all()
 : <a class="el" href="routerlist_8c.html#a087a998f551e9fff456d9e4ce662668e">routerlist.c</a>
 , <a class="el" href="routerlist_8h.html#a087a998f551e9fff456d9e4ce662668e">routerlist.h</a>
 </li>
 <li>routerlist_remove()
-: <a class="el" href="routerlist_8c.html#a8c328828cd94c3bb84044c9003f8c78f">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#a8c328828cd94c3bb84044c9003f8c78f">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#a8c328828cd94c3bb84044c9003f8c78f">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#a8c328828cd94c3bb84044c9003f8c78f">routerlist.c</a>
 </li>
 <li>routerlist_remove_old_routers()
 : <a class="el" href="routerlist_8c.html#ad504742ed3340ecce532e798d3304c82">routerlist.c</a>
@@ -1471,30 +1463,33 @@ $(function() {
 , <a class="el" href="routerparse_8h.html#aa960633d43eaf0a653b3d45d9e7e5f92">routerparse.h</a>
 </li>
 <li>routerparse_init()
-: <a class="el" href="routerparse_8h.html#ab4ca055512bee2e709f53a889cd2dd84">routerparse.h</a>
-, <a class="el" href="routerparse_8c.html#ab4ca055512bee2e709f53a889cd2dd84">routerparse.c</a>
+: <a class="el" href="routerparse_8c.html#ab4ca055512bee2e709f53a889cd2dd84">routerparse.c</a>
+, <a class="el" href="routerparse_8h.html#ab4ca055512bee2e709f53a889cd2dd84">routerparse.h</a>
 </li>
 <li>routers_have_same_or_addrs()
-: <a class="el" href="routerlist_8c.html#a9b25dd842df15283a342bb77cf5935a8">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#a9b25dd842df15283a342bb77cf5935a8">routerlist.h</a>
+: <a class="el" href="routerlist_8h.html#a9b25dd842df15283a342bb77cf5935a8">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#a9b25dd842df15283a342bb77cf5935a8">routerlist.c</a>
 </li>
 <li>routers_sort_by_identity()
-: <a class="el" href="routerlist_8h.html#aaf38df620524abf6789bd31196b07697">routerlist.h</a>
-, <a class="el" href="routerlist_8c.html#aaf38df620524abf6789bd31196b07697">routerlist.c</a>
+: <a class="el" href="routerlist_8c.html#aaf38df620524abf6789bd31196b07697">routerlist.c</a>
+, <a class="el" href="routerlist_8h.html#aaf38df620524abf6789bd31196b07697">routerlist.h</a>
 </li>
 <li>routers_update_all_from_networkstatus()
 : <a class="el" href="networkstatus_8c.html#a17d10602167e09e05f4d5aefc744141b">networkstatus.c</a>
 , <a class="el" href="networkstatus_8h.html#a17d10602167e09e05f4d5aefc744141b">networkstatus.h</a>
 </li>
 <li>routers_update_status_from_consensus_networkstatus()
-: <a class="el" href="networkstatus_8c.html#afcfacad25b94db6f21e0df2f7897a3cf">networkstatus.c</a>
-, <a class="el" href="networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf">networkstatus.h</a>
+: <a class="el" href="networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf">networkstatus.h</a>
+, <a class="el" href="networkstatus_8c.html#afcfacad25b94db6f21e0df2f7897a3cf">networkstatus.c</a>
 </li>
 <li>routerset_add_unknown_ccs()
 : <a class="el" href="routerset_8c.html#a5f4149eb7a8b9082fc69e6fda85ebb59">routerset.c</a>
 </li>
 <li>routerset_contains()
 : <a class="el" href="routerset_8c.html#a1eda4526d656d042e5143ec79ee66be2">routerset.c</a>
+</li>
+<li>routerset_contains_bridge()
+: <a class="el" href="routerset_8c.html#ad8339cd37945cb76015ab95b289919ad">routerset.c</a>
 </li>
 <li>routerset_contains_extendinfo()
 : <a class="el" href="routerset_8c.html#a6148789eaee21b34f93f50a2751fc094">routerset.c</a>
@@ -1511,8 +1506,8 @@ $(function() {
 <li>routerset_equal()
 : <a class="el" href="routerset_8c.html#a3bb84679654a4a9a781edfb6e83154d0">routerset.c</a>
 </li>
-<li>routerset_free()
-: <a class="el" href="routerset_8c.html#a33e9d1e799e9cac73343c73126b104c6">routerset.c</a>
+<li>routerset_free_()
+: <a class="el" href="routerset_8c.html#a3a468188e48ff79e186d483d28956e5f">routerset.c</a>
 </li>
 <li>routerset_get_all_nodes()
 : <a class="el" href="routerset_8c.html#a5bd648d7d08c30821e85b9b5aa946589">routerset.c</a>
@@ -1555,19 +1550,15 @@ $(function() {
 , <a class="el" href="router_8h.html#ab375311f5454761bc6691091cdf50847">router.h</a>
 </li>
 <li>routerstatus_format_entry()
-: <a class="el" href="dirserv_8c.html#afeb9db63e957f2889d2c0b8bc3311107">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#afeb9db63e957f2889d2c0b8bc3311107">dirserv.h</a>
+: <a class="el" href="dirserv_8h.html#a462a8ae7270a4bea92c8d6269e7489db">dirserv.h</a>
+, <a class="el" href="dirserv_8c.html#a462a8ae7270a4bea92c8d6269e7489db">dirserv.c</a>
 </li>
 <li>routerstatus_format_type_t
 : <a class="el" href="or_8h.html#a46368555a0446803c7acfd3b8230adef">or.h</a>
 </li>
-<li>routerstatus_free()
-: <a class="el" href="networkstatus_8h.html#a092b9ad9a877f6cf042e8969d00fb5b6">networkstatus.h</a>
-, <a class="el" href="networkstatus_8c.html#a092b9ad9a877f6cf042e8969d00fb5b6">networkstatus.c</a>
-</li>
-<li>routerstatus_get_description()
-: <a class="el" href="router_8h.html#a38d97aa986a058d558934f0ce97416b0">router.h</a>
-, <a class="el" href="router_8c.html#a38d97aa986a058d558934f0ce97416b0">router.c</a>
+<li>routerstatus_free_()
+: <a class="el" href="networkstatus_8c.html#af7a88dc1dcc532507c069e007620677d">networkstatus.c</a>
+, <a class="el" href="networkstatus_8h.html#af7a88dc1dcc532507c069e007620677d">networkstatus.h</a>
 </li>
 <li>routerstatus_parse_entry_from_string()
 : <a class="el" href="routerparse_8c.html#a894e0e7f9cc445e418328701266572ca">routerparse.c</a>
@@ -1579,22 +1570,25 @@ $(function() {
 : <a class="el" href="or_8h.html#aca898677974c9590d19200ac289bd452">or.h</a>
 </li>
 <li>RSAE_ADDREXISTS
-: <a class="el" href="rendservice_8h.html#acb105e3bbdf6bdfbc2d58a0a66e942efa89a47916e39d4fb0d81421043bee2540">rendservice.h</a>
+: <a class="el" href="hs__common_8h.html#a375d3b5c44c65ad158e30b8f05d74b3ba89a47916e39d4fb0d81421043bee2540">hs_common.h</a>
 </li>
 <li>RSAE_BADAUTH
-: <a class="el" href="rendservice_8h.html#acb105e3bbdf6bdfbc2d58a0a66e942efac6814ab06a7aa0967764c603e67e9a9f">rendservice.h</a>
+: <a class="el" href="hs__common_8h.html#a375d3b5c44c65ad158e30b8f05d74b3bac6814ab06a7aa0967764c603e67e9a9f">hs_common.h</a>
 </li>
 <li>RSAE_BADPRIVKEY
-: <a class="el" href="rendservice_8h.html#acb105e3bbdf6bdfbc2d58a0a66e942efaae4074b65423184b23d558dcdac4545a">rendservice.h</a>
+: <a class="el" href="hs__common_8h.html#a375d3b5c44c65ad158e30b8f05d74b3baae4074b65423184b23d558dcdac4545a">hs_common.h</a>
 </li>
 <li>RSAE_BADVIRTPORT
-: <a class="el" href="rendservice_8h.html#acb105e3bbdf6bdfbc2d58a0a66e942efa38f3649a1db344e3d369c24efc3be95b">rendservice.h</a>
+: <a class="el" href="hs__common_8h.html#a375d3b5c44c65ad158e30b8f05d74b3ba38f3649a1db344e3d369c24efc3be95b">hs_common.h</a>
 </li>
 <li>RSAE_INTERNAL
-: <a class="el" href="rendservice_8h.html#acb105e3bbdf6bdfbc2d58a0a66e942efaad8d67bd2a9f2c0f546a648592b5fed1">rendservice.h</a>
+: <a class="el" href="hs__common_8h.html#a375d3b5c44c65ad158e30b8f05d74b3baad8d67bd2a9f2c0f546a648592b5fed1">hs_common.h</a>
 </li>
 <li>RSAE_OKAY
-: <a class="el" href="rendservice_8h.html#acb105e3bbdf6bdfbc2d58a0a66e942efa011a2fff2be1908734e8770ece8e8836">rendservice.h</a>
+: <a class="el" href="hs__common_8h.html#a375d3b5c44c65ad158e30b8f05d74b3ba011a2fff2be1908734e8770ece8e8836">hs_common.h</a>
+</li>
+<li>run_sched_ev
+: <a class="el" href="scheduler_8c.html#aa1ed263bd5ee7c407f98fdd2c2d38e72">scheduler.c</a>
 </li>
 </ul>
 </div><!-- contents -->

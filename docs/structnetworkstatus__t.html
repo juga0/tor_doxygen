@@ -131,6 +131,8 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>required_client_pro
 <tr class="separator:ad2f54a3fe43be76a58b2351b986a17c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13acbdeee23dabbdea1847bdc93ac03b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcommon__digests__t.html">common_digests_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnetworkstatus__t.html#a13acbdeee23dabbdea1847bdc93ac03b">digests</a></td></tr>
 <tr class="separator:a13acbdeee23dabbdea1847bdc93ac03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20a61328bb7a797cd9d7178eb481eb4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnetworkstatus__t.html#ad20a61328bb7a797cd9d7178eb481eb4">digest_sha3_as_signed</a> [<a class="el" href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a>]</td></tr>
+<tr class="separator:ad20a61328bb7a797cd9d7178eb481eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c5cce438640c5d308cae07489889c33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnetworkstatus__t.html#a8c5cce438640c5d308cae07489889c33">routerstatus_list</a></td></tr>
 <tr class="separator:a8c5cce438640c5d308cae07489889c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2042f2a5d62a043b42086cb6d574d4a1"><td class="memItemLeft" align="right" valign="top">digestmap_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnetworkstatus__t.html#a2042f2a5d62a043b42086cb6d574d4a1">desc_digest_map</a></td></tr>
@@ -198,6 +200,21 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>required_client_pro
       </table>
 </div><div class="memdoc">
 <p>If present, a map from descriptor digest to elements of routerstatus_list. </p>
+
+</div>
+</div>
+<a id="ad20a61328bb7a797cd9d7178eb481eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20a61328bb7a797cd9d7178eb481eb4">&#9670;&nbsp;</a></span>digest_sha3_as_signed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t digest_sha3_as_signed[<a class="el" href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A SHA3-256 digest of the document, not including signatures: used for consensus diffs </p>
 
 </div>
 </div>

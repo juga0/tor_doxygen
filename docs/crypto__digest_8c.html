@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fdedb0aba14d44ce9d99bc100e026e6a.html">common</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_b7e1585941a202f53e5249c42015d573.html">common</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,34 +74,35 @@ $(function() {
 
 <p>Block of functions related with digest and xof utilities and operations.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="crypto__digest_8h_source.html">crypto_digest.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="crypto_8h_source.html">crypto.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;container.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__digest_8h_source.html">crypto_digest.h</a>&quot;</code><br />
 <code>#include &quot;crypto_openssl_mgt.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="torlog_8h_source.html">torlog.h</a>&quot;</code><br />
+<code>#include &quot;keccak-tiny/keccak-tiny.h&quot;</code><br />
 <code>#include &lt;openssl/hmac.h&gt;</code><br />
 <code>#include &lt;openssl/sha.h&gt;</code><br />
-<code>#include &quot;container.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for crypto_digest.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="crypto__digest_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2crypto__digest_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2crypto__digest_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2crypto__digest_8c">
-<area shape="rect" id="node2" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="401,273,511,300"/>
-<area shape="rect" id="node4" href="container_8h_source.html" title="container.h" alt="" coords="331,348,418,375"/>
-<area shape="rect" id="node19" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="519,109,588,136"/>
-<area shape="rect" id="node24" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="151,348,302,375"/>
-<area shape="rect" id="node7" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="535,721,598,748"/>
-<area shape="rect" id="node5" href="util_8h.html" title="Headers for util.c. " alt="" coords="668,423,719,449"/>
-<area shape="rect" id="node18" href="siphash_8h_source.html" title="siphash.h" alt="" coords="339,423,418,449"/>
-<area shape="rect" id="node6" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1223,796,1302,823"/>
-<area shape="rect" id="node9" href="compat_8h_source.html" title="compat.h" alt="" coords="1225,572,1301,599"/>
-<area shape="rect" id="node10" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1061,721,1160,748"/>
-<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="698,647,769,673"/>
-<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="946,497,1025,524"/>
-<area shape="rect" id="node12" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1375,721,1483,748"/>
-<area shape="rect" id="node14" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1199,647,1326,673"/>
-<area shape="rect" id="node20" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="709,191,803,218"/>
-<area shape="rect" id="node22" href="keccak-tiny_8h_source.html" title="keccak&#45;tiny/keccak\l&#45;tiny.h" alt="" coords="261,184,395,225"/>
-<area shape="rect" id="node21" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1253,497,1318,524"/>
+<area shape="rect" id="node2" href="container_8h_source.html" title="container.h" alt="" coords="867,199,954,225"/>
+<area shape="rect" id="node18" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="949,117,1059,143"/>
+<area shape="rect" id="node19" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="693,199,843,225"/>
+<area shape="rect" id="node21" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="1080,423,1173,449"/>
+<area shape="rect" id="node22" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="259,348,325,375"/>
+<area shape="rect" id="node23" href="keccak-tiny_8h_source.html" title="keccak&#45;tiny/keccak\l&#45;tiny.h" alt="" coords="1135,109,1270,151"/>
+<area shape="rect" id="node3" href="util_8h.html" title="Headers for util.c. " alt="" coords="743,273,793,300"/>
+<area shape="rect" id="node17" href="siphash_8h_source.html" title="siphash.h" alt="" coords="875,273,954,300"/>
+<area shape="rect" id="node4" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="553,647,631,673"/>
+<area shape="rect" id="node5" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="851,572,914,599"/>
+<area shape="rect" id="node7" href="compat_8h_source.html" title="compat.h" alt="" coords="325,423,401,449"/>
+<area shape="rect" id="node8" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="391,572,489,599"/>
+<area shape="rect" id="node14" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="782,497,853,524"/>
+<area shape="rect" id="node16" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="401,348,479,375"/>
+<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="202,572,310,599"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="529,497,655,524"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -191,7 +192,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(offsetof(<a class="code" href="structcrypto__digest__t.html">crypto_digest_t</a>, f) + \</div><div class="line">                         STRUCT_FIELD_SIZE(<a class="code" href="structcrypto__digest__t.html">crypto_digest_t</a>, f))</div><div class="ttc" id="structcrypto__digest__t_html"><div class="ttname"><a href="structcrypto__digest__t.html">crypto_digest_t</a></div><div class="ttdef"><b>Definition:</b> crypto_digest.c:170</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(offsetof(<a class="code" href="structcrypto__digest__t.html">crypto_digest_t</a>, f) + \</div><div class="line">                         STRUCT_FIELD_SIZE(<a class="code" href="structcrypto__digest__t.html">crypto_digest_t</a>, f))</div><div class="ttc" id="structcrypto__digest__t_html"><div class="ttname"><a href="structcrypto__digest__t.html">crypto_digest_t</a></div><div class="ttdef"><b>Definition:</b> crypto_digest.c:171</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -228,6 +229,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set the <a class="el" href="structcommon__digests__t.html">common_digests_t</a> in <b>ds_out</b> to contain every digest on the <b>len</b> bytes in <b>m</b> that we know how to compute. Return 0 on success, -1 on failure. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_a7a78162c4cbe6e8e68a17322e0e79c07_cgraph.png" border="0" usemap="#crypto__digest_8c_a7a78162c4cbe6e8e68a17322e0e79c07_cgraph" alt=""/></div>
+<map name="crypto__digest_8c_a7a78162c4cbe6e8e68a17322e0e79c07_cgraph" id="crypto__digest_8c_a7a78162c4cbe6e8e68a17322e0e79c07_cgraph">
+<area shape="rect" id="node2" href="crypto__digest_8c.html#adc1609ea0f9d65a1f60225cb001eeb15" title="crypto_digest" alt="" coords="217,5,317,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -263,6 +272,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Compute the SHA1 digest of the <b>len</b> bytes on data stored in <b>m</b>. Write the DIGEST_LEN byte result into <b>digest</b>. Return 0 on success, -1 on failure. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_adc1609ea0f9d65a1f60225cb001eeb15_icgraph.png" border="0" usemap="#crypto__digest_8c_adc1609ea0f9d65a1f60225cb001eeb15_icgraph" alt=""/></div>
+<map name="crypto__digest_8c_adc1609ea0f9d65a1f60225cb001eeb15_icgraph" id="crypto__digest_8c_adc1609ea0f9d65a1f60225cb001eeb15_icgraph">
+<area shape="rect" id="node2" href="crypto__digest_8h.html#a7a78162c4cbe6e8e68a17322e0e79c07" title="crypto_common_digests" alt="" coords="153,5,317,32"/>
+<area shape="rect" id="node3" href="crypto__rsa_8h.html#a910d30d7ec03da2c3ef3ac1eb0a01310" title="crypto_pk_get_hashed\l_fingerprint" alt="" coords="159,57,312,98"/>
+<area shape="rect" id="node4" href="crypto__rsa_8c.html#a94e8de4c183974fc70f7d06c8dd81680" title="MOCK_IMPL" alt="" coords="185,123,285,149"/>
+<area shape="rect" id="node5" href="crypto__rsa_8h.html#ac6f0f5c0ab3d2230d7c2ec0ed1794450" title="crypto_pk_private_sign\l_digest" alt="" coords="157,174,313,215"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -304,6 +324,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Compute a 256-bit digest of <b>len</b> bytes in data stored in <b>m</b>, using the algorithm <b>algorithm</b>. Write the DIGEST_LEN256-byte result into <b>digest</b>. Return 0 on success, -1 on failure. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_a42ff4ac7df6e3158f3a1a32d75081c32_icgraph.png" border="0" usemap="#crypto__digest_8c_a42ff4ac7df6e3158f3a1a32d75081c32_icgraph" alt=""/></div>
+<map name="crypto__digest_8c_a42ff4ac7df6e3158f3a1a32d75081c32_icgraph" id="crypto__digest_8c_a42ff4ac7df6e3158f3a1a32d75081c32_icgraph">
+<area shape="rect" id="node2" href="consdiff_8c.html#acad1bd2854dbda99120910f106726c07" title="MOCK_IMPL" alt="" coords="209,5,309,32"/>
+<area shape="rect" id="node3" href="routerparse_8h.html#afd89ff48acdb8ef399f773e42a8398d8" title="router_get_networkstatus\l_v3_sha3_as_signed" alt="" coords="175,57,344,98"/>
+<area shape="rect" id="node4" href="consdiff_8c.html#af0b81e4502db10522c1051647963be2f" title="MOCK_IMPL" alt="" coords="392,64,492,91"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -322,7 +352,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Allocate and return a new digest object to compute 256-bit digests using <b>algorithm</b>. </p>
+<p>Allocate and return a new digest object to compute 256-bit digests using <b>algorithm</b>.</p>
+<p>C_RUST_COUPLED: <code>external::crypto_digest::crypto_digest256_new</code> C_RUST_COUPLED: <code>crypto::digest::Sha256::default</code> </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_ab13a3ab6f6ca1febd6a1f0e0c7f52966_icgraph.png" border="0" usemap="#crypto__digest_8c_ab13a3ab6f6ca1febd6a1f0e0c7f52966_icgraph" alt=""/></div>
+<map name="crypto__digest_8c_ab13a3ab6f6ca1febd6a1f0e0c7f52966_icgraph" id="crypto__digest_8c_ab13a3ab6f6ca1febd6a1f0e0c7f52966_icgraph">
+<area shape="rect" id="node2" href="crypto__digest_8h.html#a046c01e397aa2194d635318802b90d04" title="crypto_mac_sha3_256" alt="" coords="205,5,359,32"/>
+<area shape="rect" id="node3" href="connection__or_8h.html#a5eac340c62c1d3844d69235a6a53c15e" title="or_handshake_state\l_record_var_cell" alt="" coords="213,57,351,98"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -383,6 +423,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Allocate and return a new digest object to compute 512-bit digests using <b>algorithm</b>. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_aff99a8b3d871957cbefb2d9bfa116d1f_icgraph.png" border="0" usemap="#crypto__digest_8c_aff99a8b3d871957cbefb2d9bfa116d1f_icgraph" alt=""/></div>
+<map name="crypto__digest_8c_aff99a8b3d871957cbefb2d9bfa116d1f_icgraph" id="crypto__digest_8c_aff99a8b3d871957cbefb2d9bfa116d1f_icgraph">
+<area shape="rect" id="node2" href="crypto__ed25519_8c.html#abb50b5bb9010dfe33e19a08f5cc362da" title="ed25519_keypair_from\l_curve25519_keypair" alt="" coords="205,5,359,47"/>
+<area shape="rect" id="node3" href="routerkeys_8c.html#ac1142499a3f0ac31e764484c1c6bd6c6" title="make_ntor_onion_key\l_crosscert" alt="" coords="407,5,556,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -417,7 +466,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add <b>len</b> bytes from <b>data</b> to the digest object. </p>
+<p>Add <b>len</b> bytes from <b>data</b> to the digest object.</p>
+<p>C_RUST_COUPLED: <code>external::crypto_digest::crypto_digest_add_bytess</code> C_RUST_COUPLED: <code>crypto::digest::Sha256::process</code> </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_af702bc434eed2203f9dd1894ef5f5326_icgraph.png" border="0" usemap="#crypto__digest_8c_af702bc434eed2203f9dd1894ef5f5326_icgraph" alt=""/></div>
+<map name="crypto__digest_8c_af702bc434eed2203f9dd1894ef5f5326_icgraph" id="crypto__digest_8c_af702bc434eed2203f9dd1894ef5f5326_icgraph">
+<area shape="rect" id="node2" href="rendcommon_8h.html#a50e9a99ec6511e2cfdcfebcdc2213c2a" title="rend_get_descriptor\l_id_bytes" alt="" coords="220,5,356,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -437,6 +495,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Given an algorithm, return the digest length in bytes. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_a0ea6f0654f17288e6896a83a749354b5_icgraph.png" border="0" usemap="#crypto__digest_8c_a0ea6f0654f17288e6896a83a749354b5_icgraph" alt=""/></div>
+<map name="crypto__digest_8c_a0ea6f0654f17288e6896a83a749354b5_icgraph" id="crypto__digest_8c_a0ea6f0654f17288e6896a83a749354b5_icgraph">
+<area shape="rect" id="node2" href="crypto__digest_8h.html#a75e95996fd9dcf7f2e3800407bba12c9" title="crypto_digest_get_digest" alt="" coords="213,13,380,39"/>
+<area shape="rect" id="node3" href="rendcommon_8h.html#a50e9a99ec6511e2cfdcfebcdc2213c2a" title="rend_get_descriptor\l_id_bytes" alt="" coords="428,5,564,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -551,7 +618,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Allocate and return a new digest object with the same state as <b>digest</b> </p>
+<p>Allocate and return a new digest object with the same state as <b>digest</b></p>
+<p>C_RUST_COUPLED: <code>external::crypto_digest::crypto_digest_dup</code> C_RUST_COUPLED: <code>impl Clone for crypto::digest::Sha256</code> </p>
 
 </div>
 </div>
@@ -605,7 +673,24 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute the hash of the data that has been passed to the digest object; write the first out_len bytes of the result to <b>out</b>. <b>out_len</b> must be &lt;= DIGEST512_LEN. </p>
+<p>Compute the hash of the data that has been passed to the digest object; write the first out_len bytes of the result to <b>out</b>. <b>out_len</b> must be &lt;= DIGEST512_LEN.</p>
+<p>C_RUST_COUPLED: <code>external::crypto_digest::crypto_digest_get_digest</code> C_RUST_COUPLED: <code>impl digest::FixedOutput for Sha256</code> </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_a75e95996fd9dcf7f2e3800407bba12c9_cgraph.png" border="0" usemap="#crypto__digest_8c_a75e95996fd9dcf7f2e3800407bba12c9_cgraph" alt=""/></div>
+<map name="crypto__digest_8c_a75e95996fd9dcf7f2e3800407bba12c9_cgraph" id="crypto__digest_8c_a75e95996fd9dcf7f2e3800407bba12c9_cgraph">
+<area shape="rect" id="node2" href="crypto__digest_8c.html#a0ea6f0654f17288e6896a83a749354b5" title="crypto_digest_algorithm\l_get_length" alt="" coords="220,5,380,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_a75e95996fd9dcf7f2e3800407bba12c9_icgraph.png" border="0" usemap="#crypto__digest_8c_a75e95996fd9dcf7f2e3800407bba12c9_icgraph" alt=""/></div>
+<map name="crypto__digest_8c_a75e95996fd9dcf7f2e3800407bba12c9_icgraph" id="crypto__digest_8c_a75e95996fd9dcf7f2e3800407bba12c9_icgraph">
+<area shape="rect" id="node2" href="rendcommon_8h.html#a50e9a99ec6511e2cfdcfebcdc2213c2a" title="rend_get_descriptor\l_id_bytes" alt="" coords="220,5,356,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -625,6 +710,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Allocate and return a new digest object to compute SHA1 digests. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_ae92ffdfbeff07ba661ed65ca7791915d_icgraph.png" border="0" usemap="#crypto__digest_8c_ae92ffdfbeff07ba661ed65ca7791915d_icgraph" alt=""/></div>
+<map name="crypto__digest_8c_ae92ffdfbeff07ba661ed65ca7791915d_icgraph" id="crypto__digest_8c_ae92ffdfbeff07ba661ed65ca7791915d_icgraph">
+<area shape="rect" id="node2" href="rendcommon_8h.html#a50e9a99ec6511e2cfdcfebcdc2213c2a" title="rend_get_descriptor\l_id_bytes" alt="" coords="184,5,320,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -701,6 +794,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Given a list of strings in <b>lst</b>, set the <b>len_out</b>-byte digest at <b>digest_out</b> to the hash of the concatenation of those strings, plus the optional string <b>append</b>, computed with the algorithm <b>alg</b>. <b>out_len</b> must be &lt;= DIGEST512_LEN. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_a8294b9442f6b84fc80462ccb602d44bd_cgraph.png" border="0" usemap="#crypto__digest_8c_a8294b9442f6b84fc80462ccb602d44bd_cgraph" alt=""/></div>
+<map name="crypto__digest_8c_a8294b9442f6b84fc80462ccb602d44bd_cgraph" id="crypto__digest_8c_a8294b9442f6b84fc80462ccb602d44bd_cgraph">
+<area shape="rect" id="node2" href="crypto__digest_8c.html#afa268d4fb6f11a0295d69e434d39d34c" title="crypto_digest_smartlist\l_prefix" alt="" coords="211,5,368,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -754,6 +855,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Given a list of strings in <b>lst</b>, set the <b>len_out</b>-byte digest at <b>digest_out</b> to the hash of the concatenation of: the optional string <b>prepend</b>, those strings, and the optional string <b>append</b>, computed with the algorithm <b>alg</b>. <b>len_out</b> must be &lt;= DIGEST512_LEN. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_afa268d4fb6f11a0295d69e434d39d34c_icgraph.png" border="0" usemap="#crypto__digest_8c_afa268d4fb6f11a0295d69e434d39d34c_icgraph" alt=""/></div>
+<map name="crypto__digest_8c_afa268d4fb6f11a0295d69e434d39d34c_icgraph" id="crypto__digest_8c_afa268d4fb6f11a0295d69e434d39d34c_icgraph">
+<area shape="rect" id="node2" href="crypto__digest_8c.html#a8294b9442f6b84fc80462ccb602d44bd" title="crypto_digest_smartlist" alt="" coords="211,13,368,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -801,6 +910,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Compute the HMAC-SHA-256 of the <b>msg_len</b> bytes in <b>msg</b>, using the <b>key</b> of length <b>key_len</b>. Store the DIGEST256_LEN-byte result in <b>hmac_out</b>. Asserts on failure. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_a5ff5677d46393943eb3f852fba12c4e4_icgraph.png" border="0" usemap="#crypto__digest_8c_a5ff5677d46393943eb3f852fba12c4e4_icgraph" alt=""/></div>
+<map name="crypto__digest_8c_a5ff5677d46393943eb3f852fba12c4e4_icgraph" id="crypto__digest_8c_a5ff5677d46393943eb3f852fba12c4e4_icgraph">
+<area shape="rect" id="node2" href="crypto_8h.html#a87e23a84a1f658a3ce59ead1a261fa57" title="crypto_expand_key_material\l_rfc5869_sha256" alt="" coords="200,5,388,47"/>
+<area shape="rect" id="node3" href="crypto__pwbox_8c.html#ae85080204f73976583a2ab2aaaa958ff" title="crypto_unpwbox" alt="" coords="235,71,353,98"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -854,6 +972,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Compute a MAC using SHA3-256 of <b>msg_len</b> bytes in <b>msg</b> using a <b>key</b> of length <b>key_len</b> and a <b>salt</b> of length <b>salt_len</b>. Store the result of <b>len_out</b> bytes in in <b>mac_out</b>. This function can't fail. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_a046c01e397aa2194d635318802b90d04_cgraph.png" border="0" usemap="#crypto__digest_8c_a046c01e397aa2194d635318802b90d04_cgraph" alt=""/></div>
+<map name="crypto__digest_8c_a046c01e397aa2194d635318802b90d04_cgraph" id="crypto__digest_8c_a046c01e397aa2194d635318802b90d04_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#ae251b57349c0a4bf306bd47653d3ca16" title="tor_htonll" alt="" coords="245,5,320,32"/>
+<area shape="rect" id="node3" href="crypto__digest_8c.html#ab13a3ab6f6ca1febd6a1f0e0c7f52966" title="crypto_digest256_new" alt="" coords="207,56,359,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -908,6 +1035,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Cleanse and deallocate a XOF object. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__digest_8c_aeb5dbef1a0d5cc420ebc1a214be7ac22_cgraph.png" border="0" usemap="#crypto__digest_8c_aeb5dbef1a0d5cc420ebc1a214be7ac22_cgraph" alt=""/></div>
+<map name="crypto__digest_8c_aeb5dbef1a0d5cc420ebc1a214be7ac22_cgraph" id="crypto__digest_8c_aeb5dbef1a0d5cc420ebc1a214be7ac22_cgraph">
+<area shape="rect" id="node2" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="172,5,251,32"/>
+</map>
+</div>
 
 </div>
 </div>

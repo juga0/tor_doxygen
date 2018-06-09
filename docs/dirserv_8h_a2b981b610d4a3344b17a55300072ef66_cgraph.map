@@ -1,0 +1,8 @@
+<map id="dirserv_orconn_tls_done" name="dirserv_orconn_tls_done">
+<area shape="rect" id="node2" href="$nodelist_8c.html#a798e84107f21829549b67e28dca267ef" title="node_supports_ed25519\l_link_authentication" alt="" coords="216,5,379,47"/>
+<area shape="rect" id="node4" href="$crypto__ed25519_8c.html#a1d56281a358363aa105b7032aebc46e4" title="ed25519_public_key\l_is_zero" alt="" coords="227,71,367,112"/>
+<area shape="rect" id="node6" href="$crypto__ed25519_8c.html#af9396211603b40cf70b930b9ef726ed1" title="ed25519_pubkey_eq" alt="" coords="227,137,368,163"/>
+<area shape="rect" id="node3" href="$nodelist_8c.html#ad46ce292894cace0427366a53b765602" title="node_get_ed25519_id" alt="" coords="427,13,575,39"/>
+<area shape="rect" id="node5" href="$util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="439,78,562,105"/>
+<area shape="rect" id="node7" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="457,137,544,163"/>
+</map>

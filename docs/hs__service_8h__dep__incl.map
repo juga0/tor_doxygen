@@ -10,7 +10,7 @@
 <area shape="rect" id="node28" href="$hs__cell_8h.html" title="Header file containing cell data for the whole HS subsytem. " alt="" coords="357,117,505,173"/>
 <area shape="rect" id="node29" href="$test__hs__cell_8c.html" title="Test hidden service cell functionality. " alt="" coords="5,228,160,284"/>
 <area shape="rect" id="node30" href="$hs__control_8c.html" title="Contains control port event related code. " alt="" coords="2646,117,2794,173"/>
-<area shape="rect" id="node31" href="$hs__stats_8c.html" title="Keeps stats about the activity of our hidden service. " alt="" coords="2818,117,2966,173"/>
+<area shape="rect" id="node31" href="$hs__stats_8c.html" title="Keeps stats about the activity of our onion service(s). " alt="" coords="2818,117,2966,173"/>
 <area shape="rect" id="node32" href="$status_8c.html" title="Collect status information and log heartbeat messages. " alt="" coords="2990,117,3138,173"/>
 <area shape="rect" id="node33" href="$test__hs__common_8c.html" title="Test hidden service common functionalities. " alt="" coords="3162,117,3347,173"/>
 <area shape="rect" id="node34" href="$test__periodic__event_8c.html" title="Test the periodic events that Tor uses for different roles. They are part of the libevent mainloop..." alt="" coords="3371,109,3519,180"/>

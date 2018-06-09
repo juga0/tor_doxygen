@@ -1,5 +1,4 @@
 <map id="networkstatus_verify_bw_weights" name="networkstatus_verify_bw_weights">
 <area shape="rect" id="node2" href="$networkstatus_8c.html#afda0b094982877af4c11b127167acb9e" title="networkstatus_get_weight\l_scale_param" alt="" coords="397,5,572,47"/>
-<area shape="rect" id="node4" href="$networkstatus_8c.html#a77165f72d7e9e6e99fce27ee87a063a9" title="networkstatus_get_bw\l_weight" alt="" coords="196,35,349,76"/>
-<area shape="rect" id="node3" href="$networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="620,13,792,39"/>
+<area shape="rect" id="node3" href="$networkstatus_8c.html#a77165f72d7e9e6e99fce27ee87a063a9" title="networkstatus_get_bw\l_weight" alt="" coords="196,35,349,76"/>
 </map>

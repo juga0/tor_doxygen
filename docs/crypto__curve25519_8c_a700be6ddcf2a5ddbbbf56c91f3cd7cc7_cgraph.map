@@ -1,6 +1,6 @@
 <map id="curve25519_keypair_write_to_file" name="curve25519_keypair_write_to_file">
 <area shape="rect" id="node2" href="$crypto__format_8c.html#a58e217ce83721c40e22a70f6f9ca1544" title="crypto_write_tagged\l_contents_to_file" alt="" coords="192,49,331,90"/>
-<area shape="rect" id="node7" href="$crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="222,115,301,141"/>
+<area shape="rect" id="node7" href="$crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="222,115,301,141"/>
 <area shape="rect" id="node3" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="406,5,493,32"/>
 <area shape="rect" id="node5" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="399,56,499,83"/>
 <area shape="rect" id="node6" href="$util_8c.html#ae01530967d53afcfefa8227c98072e83" title="write_chunks_to_file" alt="" coords="379,107,520,133"/>

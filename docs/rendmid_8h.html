@@ -77,8 +77,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="rendmid_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2rendmid_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2rendmid_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2rendmid_8hdep">
-<area shape="rect" id="node2" href="rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points..." alt="" coords="5,109,155,165"/>
-<area shape="rect" id="node3" href="rendmid_8c.html" title="Implement introductions points and rendezvous points. " alt="" coords="179,109,327,165"/>
+<area shape="rect" id="node2" href="hs__intropoint_8c.html" title="Implement next generation introductions point functionality. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points..." alt="" coords="178,109,327,165"/>
+<area shape="rect" id="node4" href="rendmid_8c.html" title="Implement introductions points and rendezvous points. " alt="" coords="352,109,500,165"/>
 </map>
 </div>
 </div>
@@ -86,10 +87,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adeaed5b67bf2412fdfd58445caff4069"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendmid_8h.html#adeaed5b67bf2412fdfd58445caff4069">rend_mid_establish_intro</a> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ, const uint8_t *request, size_t request_len)</td></tr>
-<tr class="separator:adeaed5b67bf2412fdfd58445caff4069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34740d7e79f73464efe226332077a825"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendmid_8h.html#a34740d7e79f73464efe226332077a825">rend_mid_introduce</a> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ, const uint8_t *request, size_t request_len)</td></tr>
-<tr class="separator:a34740d7e79f73464efe226332077a825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69e90de1c93c48d6fd777c0540408fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendmid_8h.html#ae69e90de1c93c48d6fd777c0540408fb">rend_mid_establish_intro_legacy</a> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ, const uint8_t *request, size_t request_len)</td></tr>
+<tr class="separator:ae69e90de1c93c48d6fd777c0540408fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d79ea348c424575388229cdfbcc7a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendmid_8h.html#ac4d79ea348c424575388229cdfbcc7a8">rend_mid_introduce_legacy</a> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ, const uint8_t *request, size_t request_len)</td></tr>
+<tr class="separator:ac4d79ea348c424575388229cdfbcc7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a771580de898b6ac0e038013c8ee4b721"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendmid_8h.html#a771580de898b6ac0e038013c8ee4b721">rend_mid_establish_rendezvous</a> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ, const uint8_t *request, size_t request_len)</td></tr>
 <tr class="separator:a771580de898b6ac0e038013c8ee4b721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f21d14e819a371b5d2e0cde9660acab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendmid_8h.html#a9f21d14e819a371b5d2e0cde9660acab">rend_mid_rendezvous</a> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ, const uint8_t *request, size_t request_len)</td></tr>
@@ -98,14 +99,14 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for <a class="el" href="rendmid_8c.html" title="Implement introductions points and rendezvous points. ">rendmid.c</a>. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="adeaed5b67bf2412fdfd58445caff4069"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adeaed5b67bf2412fdfd58445caff4069">&#9670;&nbsp;</a></span>rend_mid_establish_intro()</h2>
+<a id="ae69e90de1c93c48d6fd777c0540408fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69e90de1c93c48d6fd777c0540408fb">&#9670;&nbsp;</a></span>rend_mid_establish_intro_legacy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int rend_mid_establish_intro </td>
+          <td class="memname">int rend_mid_establish_intro_legacy </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structor__circuit__t.html">or_circuit_t</a> *&#160;</td>
           <td class="paramname"><em>circ</em>, </td>
@@ -168,14 +169,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a34740d7e79f73464efe226332077a825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34740d7e79f73464efe226332077a825">&#9670;&nbsp;</a></span>rend_mid_introduce()</h2>
+<a id="ac4d79ea348c424575388229cdfbcc7a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d79ea348c424575388229cdfbcc7a8">&#9670;&nbsp;</a></span>rend_mid_introduce_legacy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int rend_mid_introduce </td>
+          <td class="memname">int rend_mid_introduce_legacy </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structor__circuit__t.html">or_circuit_t</a> *&#160;</td>
           <td class="paramname"><em>circ</em>, </td>

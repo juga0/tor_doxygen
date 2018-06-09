@@ -1,3 +1,4 @@
 <map id="circuit_get_all_pending_on_channel" name="circuit_get_all_pending_on_channel">
-<area shape="rect" id="node2" href="$circuitlist_8h.html#aa797a036ce04a0d14f669e656ec62408" title="circuit_count_pending\l_on_channel" alt="" coords="208,5,356,47"/>
+<area shape="rect" id="node2" href="$circuitlist_8h.html#aa797a036ce04a0d14f669e656ec62408" title="circuit_count_pending\l_on_channel" alt="" coords="215,5,363,47"/>
+<area shape="rect" id="node3" href="$entrynodes_8h.html#a0e486d12b1fae8b40a392567b676a083" title="entry_guard_chan_failed" alt="" coords="208,71,371,98"/>
 </map>

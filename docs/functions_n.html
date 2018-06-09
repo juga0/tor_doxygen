@@ -87,20 +87,14 @@ $(function() {
 <li>n_circ_id
 : <a class="el" href="structcircuit__t.html#af7c21bd5b1f223e0749d8065c8214ea2">circuit_t</a>
 </li>
-<li>n_conn_fail
-: <a class="el" href="structor__history__t.html#a8ef4d994b6d24a8c56a5ae0e856a6ce8">or_history_t</a>
-</li>
-<li>n_conn_ok
-: <a class="el" href="structor__history__t.html#af5bda56f8830d5e2e106c4bf4d79140a">or_history_t</a>
-</li>
-<li>n_crypto
-: <a class="el" href="structor__circuit__t.html#af37a59f1e9295245830079c54c105922">or_circuit_t</a>
-</li>
 <li>n_delete_pending
 : <a class="el" href="structcircuit__t.html#ab8faddecec386f5b6a8f506147f8b341">circuit_t</a>
 </li>
-<li>n_digest
-: <a class="el" href="structor__circuit__t.html#ab91e931cfb4320906981da9b3013c29d">or_circuit_t</a>
+<li>n_delivered_read_circ_bw
+: <a class="el" href="structorigin__circuit__t.html#aa078aa105aebc9cbf94d2bfa2d7db2aa">origin_circuit_t</a>
+</li>
+<li>n_delivered_written_circ_bw
+: <a class="el" href="structorigin__circuit__t.html#aa54bb255cb7bd6888f07126779ed8304">origin_circuit_t</a>
 </li>
 <li>n_download_attempts
 : <a class="el" href="structdownload__status__t.html#a781f7799b1e29e188823273a6cc464da">download_status_t</a>
@@ -114,12 +108,6 @@ $(function() {
 <li>n_events_fired
 : <a class="el" href="structpubsub__topic__t.html#a7e3f0ebe2711a83470376c7bbfb69f84">pubsub_topic_t</a>
 </li>
-<li>n_extend_fail
-: <a class="el" href="structlink__history__t.html#aca30ed858fff0aaf64c16d09dbf0e74a">link_history_t</a>
-</li>
-<li>n_extend_ok
-: <a class="el" href="structlink__history__t.html#a15804c363b1431079e5880750693360a">link_history_t</a>
-</li>
 <li>n_hop
 : <a class="el" href="structcircuit__t.html#aef696478b9cdc6eefe93444d21621e36">circuit_t</a>
 </li>
@@ -128,6 +116,12 @@ $(function() {
 </li>
 <li>n_mux
 : <a class="el" href="structcircuit__t.html#ab448803a0cf173d44cdfe043e6bec192">circuit_t</a>
+</li>
+<li>n_overhead_read_circ_bw
+: <a class="el" href="structorigin__circuit__t.html#aa57c4f9fa3fc7cfc3c0c844374a90465">origin_circuit_t</a>
+</li>
+<li>n_overhead_written_circ_bw
+: <a class="el" href="structorigin__circuit__t.html#a53a944711a852cfbb2c3c5d54febf9b7">origin_circuit_t</a>
 </li>
 <li>n_read
 : <a class="el" href="structedge__connection__t.html#a7d70b0e3a172fa2194cfd4c05d6c649c">edge_connection_t</a>
@@ -140,6 +134,9 @@ $(function() {
 </li>
 <li>n_streams
 : <a class="el" href="structor__circuit__t.html#acd9a3d703857964702aca060678e5630">or_circuit_t</a>
+</li>
+<li>n_threads
+: <a class="el" href="structthreadpool__s.html#a693054ded562b318ac08ed7262ead3ae">threadpool_s</a>
 </li>
 <li>n_usec
 : <a class="el" href="structcpuworker__reply__t.html#afc616b2958fb656fa3e6a2d959f9d7cc">cpuworker_reply_t</a>
@@ -162,9 +159,6 @@ $(function() {
 <li>name_lookup_warned
 : <a class="el" href="structnode__t.html#af1db41e2a6ac0b6f532b7c48254fd7bd">node_t</a>
 </li>
-<li>NATDListenAddress
-: <a class="el" href="structor__options__t.html#a826b530e595ec58f2bb30b26998c336b">or_options_t</a>
-</li>
 <li>NATDPort_lines
 : <a class="el" href="structor__options__t.html#afc83328fc019e345293dbfa89e5c42b4">or_options_t</a>
 </li>
@@ -186,6 +180,9 @@ $(function() {
 <li>network_last_live
 : <a class="el" href="structnetwork__liveness__t.html#a7a7c23e426986412bc3c635a754418f7">network_liveness_t</a>
 </li>
+<li>new_thread_state_fn
+: <a class="el" href="structthreadpool__s.html#a54a3b30eed62145ded40ff75e5edd40d">threadpool_s</a>
+</li>
 <li>NewCircuitPeriod
 : <a class="el" href="structor__options__t.html#a9c61c863d557f2cd6995726d6c42e8ba">or_options_t</a>
 </li>
@@ -193,12 +190,6 @@ $(function() {
 : <a class="el" href="structcrypt__path__t.html#a30373e72b30c4f39801743795cf28fa1">crypt_path_t</a>
 , <a class="el" href="structlogfile__t.html#a3ba9328bd65262e55ca8c96fc4ad0ee2">logfile_t</a>
 , <a class="el" href="structvote__microdesc__hash__t.html#a5dde97547881507eb0b4064687dabe57">vote_microdesc_hash_t</a>
-</li>
-<li>next_active_on_n_chan
-: <a class="el" href="structcircuit__t.html#af1e67966ec3c2b4e5079a53fe667d5e6">circuit_t</a>
-</li>
-<li>next_active_on_p_chan
-: <a class="el" href="structor__circuit__t.html#a5996e10ef32a165c74a37742a7d5a614">or_circuit_t</a>
 </li>
 <li>next_attempt_at
 : <a class="el" href="structdownload__status__t.html#aeaa35776ca8c216728b3b18f1873e152">download_status_t</a>
@@ -212,6 +203,9 @@ $(function() {
 <li>next_mem
 : <a class="el" href="structmemarea__chunk__t.html#a75721ea5f712ecdfac624c4bd1f41130">memarea_chunk_t</a>
 </li>
+<li>next_padding_time
+: <a class="el" href="structchannel__s.html#a247fbab3dc3db94c5da8088af6a2b274">channel_s</a>
+</li>
 <li>next_period
 : <a class="el" href="structbw__array__t.html#ac10af015b66551b431d5c65ecddf975d">bw_array_t</a>
 </li>
@@ -221,15 +215,11 @@ $(function() {
 <li>next_stream_id
 : <a class="el" href="structorigin__circuit__t.html#ac6c0700ae0063e2dab4b9aea762f4b38">origin_circuit_t</a>
 </li>
-<li>next_with_same_id
-: <a class="el" href="structor__connection__t.html#a799898b04fcc0cc700e21467f64f55ea">or_connection_t</a>
-</li>
 <li>next_write
 : <a class="el" href="structor__state__t.html#a0a26628a2c9ef0ce9f6816813a4a0b67">or_state_t</a>
 </li>
 <li>nickname
-: <a class="el" href="structchannel__s.html#aebf3fd229429c27d00bd36dea7157407">channel_s</a>
-, <a class="el" href="structextend__info__t.html#a9004c70b3d8a1a7ec902150025792c44">extend_info_t</a>
+: <a class="el" href="structextend__info__t.html#a9004c70b3d8a1a7ec902150025792c44">extend_info_t</a>
 , <a class="el" href="structextrainfo__t.html#a85bb1ae50baf75c4ede224a5576fab0e">extrainfo_t</a>
 , <a class="el" href="structnetworkstatus__voter__info__t.html#aebf3fd229429c27d00bd36dea7157407">networkstatus_voter_info_t</a>
 , <a class="el" href="structor__connection__t.html#aebf3fd229429c27d00bd36dea7157407">or_connection_t</a>
@@ -255,6 +245,9 @@ $(function() {
 </li>
 <li>nodelist_idx
 : <a class="el" href="structnode__t.html#a0e4bcf9575e01b40273e4f7508c6ea93">node_t</a>
+</li>
+<li>NoExec
+: <a class="el" href="structor__options__t.html#aa3b5714397c48928abe3d71fc7ba6c70">or_options_t</a>
 </li>
 <li>non_guard_bw
 : <a class="el" href="structguardfraction__bandwidth__t.html#a9bae2ca484a4539b9c37bf551af135a1">guardfraction_bandwidth_t</a>
@@ -291,6 +284,9 @@ $(function() {
 </li>
 <li>NumEntryGuards
 : <a class="el" href="structor__options__t.html#ace8b1a244598e7ee2e37c0b6c48147d4">or_options_t</a>
+</li>
+<li>NumPrimaryGuards
+: <a class="el" href="structor__options__t.html#a89ee442450c8d1909f944c7c7618d3c6">or_options_t</a>
 </li>
 <li>nym_epoch
 : <a class="el" href="structentry__connection__t.html#a3597cc330bea46560a05892740c2d536">entry_connection_t</a>

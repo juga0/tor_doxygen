@@ -1,0 +1,10 @@
+<map id="tor_mutex_init_nonrecursive" name="tor_mutex_init_nonrecursive">
+<area shape="rect" id="node2" href="$compat__threads_8c.html#a28fc1a1e6d143b15ab62ddfa810a7ffd" title="atomic_counter_init" alt="" coords="239,77,373,104"/>
+<area shape="rect" id="node3" href="$compress_8h.html#aa70790c077be4c170f9a6ee17baf93e3" title="tor_compress_init" alt="" coords="575,77,700,104"/>
+<area shape="rect" id="node6" href="$compress__lzma_8h.html#aa959a50329a95dc76efe6d112b52e21d" title="tor_lzma_init" alt="" coords="421,27,517,53"/>
+<area shape="rect" id="node7" href="$compress__zlib_8h.html#a256ccf247e5c5cc84f2063f3a23f1eb5" title="tor_zlib_init" alt="" coords="425,77,513,104"/>
+<area shape="rect" id="node8" href="$compress__zstd_8h.html#a70bc7321f0ab96e8ac23ede28063dc22" title="tor_zstd_init" alt="" coords="423,128,516,155"/>
+<area shape="rect" id="node9" href="$config_8h.html#a9badc2e4e664120fd99bbd63cd4af3c6" title="init_protocol_warning\l_severity_level" alt="" coords="565,150,709,191"/>
+<area shape="rect" id="node4" href="$tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="763,143,860,169"/>
+<area shape="rect" id="node5" href="$test_8h.html#a334e47899bf2c19bf8a5ce0f226ab399" title="get_fname_rnd" alt="" coords="757,77,865,104"/>
+</map>

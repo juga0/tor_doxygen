@@ -1,0 +1,12 @@
+<map id="learned_router_identity" name="learned_router_identity">
+<area shape="rect" id="node2" href="$bridges_8c.html#a6fb785f916f0d806e3bf33141f450600" title="get_configured_bridge\l_by_exact_addr_port_digest" alt="" coords="207,5,392,47"/>
+<area shape="rect" id="node5" href="$util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="235,71,363,98"/>
+<area shape="rect" id="node7" href="$crypto__ed25519_8c.html#a1d56281a358363aa105b7032aebc46e4" title="ed25519_public_key\l_is_zero" alt="" coords="229,123,369,164"/>
+<area shape="rect" id="node9" href="$bridges_8c.html#a06f10cf1c3269fd2a3a93fe696e6a662" title="find_transport_name\l_by_bridge_addrport" alt="" coords="229,188,369,229"/>
+<area shape="rect" id="node10" href="$compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="256,254,343,281"/>
+<area shape="rect" id="node3" href="$address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="440,13,567,39"/>
+<area shape="rect" id="node4" href="$address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="615,13,793,39"/>
+<area shape="rect" id="node6" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="460,71,547,98"/>
+<area shape="rect" id="node8" href="$util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="442,130,565,157"/>
+<area shape="rect" id="node11" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="456,254,551,281"/>
+</map>

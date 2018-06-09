@@ -68,8 +68,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ab26d537449e341d679c99e4d287d645b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structget__handler__args__t.html#ab26d537449e341d679c99e4d287d645b">compressed</a></td></tr>
-<tr class="separator:ab26d537449e341d679c99e4d287d645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef968c1fb5dbbcb061b5432d2f5cb19f"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structget__handler__args__t.html#aef968c1fb5dbbcb061b5432d2f5cb19f">compression_supported</a></td></tr>
+<tr class="separator:aef968c1fb5dbbcb061b5432d2f5cb19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3307131a11a48444d922bb69889ff239"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structget__handler__args__t.html#a3307131a11a48444d922bb69889ff239">if_modified_since</a></td></tr>
 <tr class="separator:a3307131a11a48444d922bb69889ff239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec657bef26e5ff27b9442563a591d9ec"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structget__handler__args__t.html#aec657bef26e5ff27b9442563a591d9ec">url</a></td></tr>
@@ -80,18 +80,18 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Information passed to handle a GET request. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="ab26d537449e341d679c99e4d287d645b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab26d537449e341d679c99e4d287d645b">&#9670;&nbsp;</a></span>compressed</h2>
+<a id="aef968c1fb5dbbcb061b5432d2f5cb19f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef968c1fb5dbbcb061b5432d2f5cb19f">&#9670;&nbsp;</a></span>compression_supported</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int compressed</td>
+          <td class="memname">unsigned compression_supported</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>True if the client asked for compressed data. </p>
+<p>Bitmask of compression methods that the client said (or implied) it supported. </p>
 
 </div>
 </div>

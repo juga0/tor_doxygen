@@ -1,9 +1,8 @@
 <map id="extend_info_describe" name="extend_info_describe">
-<area shape="rect" id="node2" href="$router_8c.html#a4305332e798b11a30372e7f0e63ed15e" title="extend_info_get_description" alt="" coords="199,56,383,83"/>
-<area shape="rect" id="node3" href="$router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="431,56,595,83"/>
-<area shape="rect" id="node4" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="643,5,756,32"/>
-<area shape="rect" id="node5" href="$address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="645,56,754,83"/>
-<area shape="rect" id="node6" href="$address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="651,107,748,133"/>
-<area shape="rect" id="node7" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="804,107,891,133"/>
-<area shape="rect" id="node8" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="939,107,1033,133"/>
+<area shape="rect" id="node2" href="$router_8c.html#a54ab47db660fac7decf06081ba29f8dd" title="format_node_description" alt="" coords="199,56,363,83"/>
+<area shape="rect" id="node3" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="411,5,524,32"/>
+<area shape="rect" id="node4" href="$address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="413,56,522,83"/>
+<area shape="rect" id="node5" href="$address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="419,107,516,133"/>
+<area shape="rect" id="node6" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="572,107,659,133"/>
+<area shape="rect" id="node7" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="707,107,801,133"/>
 </map>

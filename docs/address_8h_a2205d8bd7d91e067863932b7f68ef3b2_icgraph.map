@@ -1,3 +1,4 @@
 <map id="tor_addr_make_unspec" name="tor_addr_make_unspec">
-<area shape="rect" id="node2" href="$relay_8c.html#a6dede264de96c7c9a8916ed1127bbbc5" title="connected_cell_parse" alt="" coords="211,5,359,32"/>
+<area shape="rect" id="node2" href="$config_8c.html#a2f94cacd47e7b9730a2255c0a7c618ca" title="parse_port_config" alt="" coords="222,5,347,32"/>
+<area shape="rect" id="node3" href="$relay_8c.html#a6dede264de96c7c9a8916ed1127bbbc5" title="connected_cell_parse" alt="" coords="211,56,359,83"/>
 </map>

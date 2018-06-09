@@ -90,22 +90,24 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="connection__edge_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2connection__edge_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2connection__edge_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2connection__edge_8hdep">
 <area shape="rect" id="node2" href="addressmap_8c.html" title="The addressmap module manages the processes by which we rewrite addresses in client requess..." alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="buffers_8c.html" title="Implements a generic buffer interface. " alt="" coords="177,109,325,165"/>
-<area shape="rect" id="node4" href="circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="349,109,497,165"/>
-<area shape="rect" id="node5" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="521,109,669,165"/>
-<area shape="rect" id="node6" href="circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. " alt="" coords="693,109,841,165"/>
-<area shape="rect" id="node7" href="circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. " alt="" coords="865,109,1013,165"/>
-<area shape="rect" id="node8" href="config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="1037,109,1185,165"/>
-<area shape="rect" id="node9" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="1209,109,1357,165"/>
-<area shape="rect" id="node10" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="1381,109,1553,165"/>
-<area shape="rect" id="node11" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1577,109,1725,165"/>
-<area shape="rect" id="node12" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="1749,109,1897,165"/>
-<area shape="rect" id="node13" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada..." alt="" coords="1921,109,2069,165"/>
-<area shape="rect" id="node14" href="dnsserv_8c.html" title="Implements client&#45;side DNS proxy server code. Note: this is the DNS Server code, not the Server DNS c..." alt="" coords="2093,109,2241,165"/>
-<area shape="rect" id="node15" href="hibernate_8c.html" title="Functions to close listeners, stop allowing new circuits, etc in preparation for closing down or goin..." alt="" coords="2265,109,2413,165"/>
+<area shape="rect" id="node3" href="circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="521,109,669,165"/>
+<area shape="rect" id="node6" href="circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="693,109,841,165"/>
+<area shape="rect" id="node7" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="865,109,1013,165"/>
+<area shape="rect" id="node8" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="1037,109,1185,165"/>
+<area shape="rect" id="node9" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="1209,109,1381,165"/>
+<area shape="rect" id="node10" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1405,109,1553,165"/>
+<area shape="rect" id="node11" href="directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="1577,109,1725,165"/>
+<area shape="rect" id="node12" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada..." alt="" coords="1749,109,1897,165"/>
+<area shape="rect" id="node13" href="dnsserv_8c.html" title="Implements client&#45;side DNS proxy server code. " alt="" coords="1921,109,2069,165"/>
+<area shape="rect" id="node14" href="hibernate_8c.html" title="Functions to close listeners, stop allowing new circuits, etc in preparation for closing down or goin..." alt="" coords="2093,109,2241,165"/>
+<area shape="rect" id="node15" href="hs__client_8c.html" title="Implement next generation hidden service client functionality. " alt="" coords="2265,109,2413,165"/>
 <area shape="rect" id="node16" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="2437,109,2585,165"/>
 <area shape="rect" id="node17" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="2609,109,2757,165"/>
 <area shape="rect" id="node18" href="rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="2781,109,2929,165"/>
+<area shape="rect" id="node19" href="test__hs__client_8c.html" title="Test prop224 HS client functionality. " alt="" coords="2953,109,3120,165"/>
+<area shape="rect" id="node20" href="test__hs__common_8c.html" title="Test hidden service common functionalities. " alt="" coords="3144,109,3329,165"/>
 </map>
 </div>
 </div>
@@ -138,10 +140,14 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a6672882527624d0bebbc4e24b56cf105"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a6672882527624d0bebbc4e24b56cf105">hostname_type_t</a> { <b>NORMAL_HOSTNAME</b>, 
-<b>ONION_HOSTNAME</b>, 
+<tr class="memitem:a6672882527624d0bebbc4e24b56cf105"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a6672882527624d0bebbc4e24b56cf105">hostname_type_t</a> { <br />
+&#160;&#160;<b>NORMAL_HOSTNAME</b>, 
+<b>ONION_V2_HOSTNAME</b>, 
+<b>ONION_V3_HOSTNAME</b>, 
 <b>EXIT_HOSTNAME</b>, 
-<b>BAD_HOSTNAME</b>
+<br />
+&#160;&#160;<b>BAD_HOSTNAME</b>
+<br />
  }</td></tr>
 <tr class="separator:a6672882527624d0bebbc4e24b56cf105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -170,8 +176,9 @@ Functions</h2></td></tr>
 <tr class="separator:a1a85853fbc21482180df2c420192a84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a6c052c5ede7819e5bf1b225fbfc6b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a8a6c052c5ede7819e5bf1b225fbfc6b2">connection_exit_about_to_close</a> (<a class="el" href="structedge__connection__t.html">edge_connection_t</a> *edge_conn)</td></tr>
 <tr class="separator:a8a6c052c5ede7819e5bf1b225fbfc6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bf52cba1e9b416e96cf47ea07f8f5ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a4bf52cba1e9b416e96cf47ea07f8f5ac">connection_ap_handshake_send_begin</a> (<a class="el" href="structentry__connection__t.html">entry_connection_t</a> *ap_conn)</td></tr>
-<tr class="separator:a4bf52cba1e9b416e96cf47ea07f8f5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3793bf03917eb5839c423ec3a2122443"><td class="memItemLeft" align="right" valign="top"><a id="a3793bf03917eb5839c423ec3a2122443"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (int, connection_ap_handshake_send_begin,(<a class="el" href="structentry__connection__t.html">entry_connection_t</a> *ap_conn))</td></tr>
+<tr class="separator:a3793bf03917eb5839c423ec3a2122443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc7f537dbc24a03116f0d6eb873a86d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a9bc7f537dbc24a03116f0d6eb873a86d">connection_ap_handshake_send_resolve</a> (<a class="el" href="structentry__connection__t.html">entry_connection_t</a> *ap_conn)</td></tr>
 <tr class="separator:a9bc7f537dbc24a03116f0d6eb873a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a0a22a402cbdeaa42a91ffc901db842"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentry__connection__t.html">entry_connection_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a3a0a22a402cbdeaa42a91ffc901db842">connection_ap_make_link</a> (<a class="el" href="structconnection__t.html">connection_t</a> *partner, char *address, uint16_t port, const char *digest, int session_group, int isolation_flags, int use_begindir, int want_onehop)</td></tr>
@@ -189,8 +196,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8805ef6708301581c9339e83f41e76e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1726a6cec89474d98905c4dd047d1c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#af1726a6cec89474d98905c4dd047d1c3">connection_exit_connect</a> (<a class="el" href="structedge__connection__t.html">edge_connection_t</a> *conn)</td></tr>
 <tr class="separator:af1726a6cec89474d98905c4dd047d1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accf4787c953075c4a9aeaab09bb2b3fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#accf4787c953075c4a9aeaab09bb2b3fe">connection_edge_is_rendezvous_stream</a> (<a class="el" href="structedge__connection__t.html">edge_connection_t</a> *conn)</td></tr>
-<tr class="separator:accf4787c953075c4a9aeaab09bb2b3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c45f4cb77108e9d095daecb6ab1700"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#ab9c45f4cb77108e9d095daecb6ab1700">connection_edge_is_rendezvous_stream</a> (const <a class="el" href="structedge__connection__t.html">edge_connection_t</a> *conn)</td></tr>
+<tr class="separator:ab9c45f4cb77108e9d095daecb6ab1700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5473073c5eda464b105cc32bf941f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a4b5473073c5eda464b105cc32bf941f3">connection_ap_can_use_exit</a> (const <a class="el" href="structentry__connection__t.html">entry_connection_t</a> *conn, const <a class="el" href="structnode__t.html">node_t</a> *exit)</td></tr>
 <tr class="separator:a4b5473073c5eda464b105cc32bf941f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bbef9941b20534da8fb058a85de8fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a3bbef9941b20534da8fb058a85de8fcf">connection_ap_expire_beginning</a> (void)</td></tr>
@@ -213,8 +220,9 @@ Functions</h2></td></tr>
 <tr class="separator:a742177da6145106592c773a1a53691c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dcc44ad1e8bee4747d1f5b1e34c9f88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a4dcc44ad1e8bee4747d1f5b1e34c9f88">address_is_invalid_destination</a> (const char *address, int client)</td></tr>
 <tr class="separator:a4dcc44ad1e8bee4747d1f5b1e34c9f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32b60847e224a01e865bb57afbbfedff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a32b60847e224a01e865bb57afbbfedff">connection_ap_rewrite_and_attach_if_allowed</a> (<a class="el" href="structentry__connection__t.html">entry_connection_t</a> *conn, <a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *cpath)</td></tr>
-<tr class="separator:a32b60847e224a01e865bb57afbbfedff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148b3c3bc9c28955f745e0e196eb1711"><td class="memItemLeft" align="right" valign="top"><a id="a148b3c3bc9c28955f745e0e196eb1711"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (int, connection_ap_rewrite_and_attach_if_allowed,(<a class="el" href="structentry__connection__t.html">entry_connection_t</a> *conn, <a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *cpath))</td></tr>
+<tr class="separator:a148b3c3bc9c28955f745e0e196eb1711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a089e626ea05b78585432718686a835e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a089e626ea05b78585432718686a835e2">connection_ap_handshake_rewrite_and_attach</a> (<a class="el" href="structentry__connection__t.html">entry_connection_t</a> *conn, <a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *cpath)</td></tr>
 <tr class="separator:a089e626ea05b78585432718686a835e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f609919f0f88177960f67f162cbe2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="connection__edge_8h.html#a6672882527624d0bebbc4e24b56cf105">hostname_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__edge_8h.html#a24f609919f0f88177960f67f162cbe2c">parse_extended_hostname</a> (char *address)</td></tr>
@@ -296,8 +304,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>connection_ap_warn_an
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                         \</div><div class="line">    if (<a class="code" href="or_8h.html#ae8e32e3ce198792c45ac72340f089bc4">ENTRY_TO_CONN</a>(c)-&gt;state == <a class="code" href="or_8h.html#a8e5dd7328fc7a8edc1449f4623a503f7">AP_CONN_STATE_CIRCUIT_WAIT</a>) {        \</div><div class="line">      log_warn(<a class="code" href="torlog_8h.html#aaed5930f414b821f3533f34f839707c8">LD_BUG</a>, <span class="stringliteral">&quot;At %s:%d: %p was unexpectedly in circuit_wait.&quot;</span>, \</div><div class="line">               __FILE__, __LINE__, (c));                                \</div><div class="line">      connection_ap_mark_as_non_pending_circuit(c);                     \</div><div class="line">    }                                                                   \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="or_8h_html_ae8e32e3ce198792c45ac72340f089bc4"><div class="ttname"><a href="or_8h.html#ae8e32e3ce198792c45ac72340f089bc4">ENTRY_TO_CONN</a></div><div class="ttdeci">#define ENTRY_TO_CONN(c)</div><div class="ttdef"><b>Definition:</b> or.h:1777</div></div>
-<div class="ttc" id="or_8h_html_a8e5dd7328fc7a8edc1449f4623a503f7"><div class="ttname"><a href="or_8h.html#a8e5dd7328fc7a8edc1449f4623a503f7">AP_CONN_STATE_CIRCUIT_WAIT</a></div><div class="ttdeci">#define AP_CONN_STATE_CIRCUIT_WAIT</div><div class="ttdef"><b>Definition:</b> or.h:317</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                         \</div><div class="line">    if (<a class="code" href="or_8h.html#ae8e32e3ce198792c45ac72340f089bc4">ENTRY_TO_CONN</a>(c)-&gt;state == <a class="code" href="or_8h.html#a8e5dd7328fc7a8edc1449f4623a503f7">AP_CONN_STATE_CIRCUIT_WAIT</a>) {        \</div><div class="line">      log_warn(<a class="code" href="torlog_8h.html#aaed5930f414b821f3533f34f839707c8">LD_BUG</a>, <span class="stringliteral">&quot;At %s:%d: %p was unexpectedly in circuit_wait.&quot;</span>, \</div><div class="line">               __FILE__, __LINE__, (c));                                \</div><div class="line">      connection_ap_mark_as_non_pending_circuit(c);                     \</div><div class="line">    }                                                                   \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="or_8h_html_ae8e32e3ce198792c45ac72340f089bc4"><div class="ttname"><a href="or_8h.html#ae8e32e3ce198792c45ac72340f089bc4">ENTRY_TO_CONN</a></div><div class="ttdeci">#define ENTRY_TO_CONN(c)</div><div class="ttdef"><b>Definition:</b> or.h:1922</div></div>
+<div class="ttc" id="or_8h_html_a8e5dd7328fc7a8edc1449f4623a503f7"><div class="ttname"><a href="or_8h.html#a8e5dd7328fc7a8edc1449f4623a503f7">AP_CONN_STATE_CIRCUIT_WAIT</a></div><div class="ttdeci">#define AP_CONN_STATE_CIRCUIT_WAIT</div><div class="ttdef"><b>Definition:</b> or.h:344</div></div>
 <div class="ttc" id="torlog_8h_html_aaed5930f414b821f3533f34f839707c8"><div class="ttname"><a href="torlog_8h.html#aaed5930f414b821f3533f34f839707c8">LD_BUG</a></div><div class="ttdeci">#define LD_BUG</div><div class="ttdef"><b>Definition:</b> torlog.h:80</div></div>
 </div><!-- fragment -->
 </div>
@@ -453,7 +461,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Tell any AP streams that are listed as waiting for a new circuit to try again, either attaching to an available circ or launching a new one.</p>
+<p>Tell any AP streams that are listed as waiting for a new circuit to try again. If there is an available circuit for a stream, attach it. Otherwise, launch a new circuit.</p>
 <p>If <b>retry</b> is false, only check the list if it contains at least one streams that we have not yet tried to attach to a circuit. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -622,26 +630,6 @@ Here is the call graph for this function:</div>
 <p>Connection <b>conn</b> just finished its socks handshake, or the controller asked us to take care of it. If <b>circ</b> is defined, then that's where we'll want to attach it. Otherwise we have to figure it out ourselves.</p>
 <p>First, parse whether it's a .exit address, remap it, and so on. Then if it's for a general circuit, try to attach it to a circuit (or launch one as needed), else if it's for a rendezvous circuit, fetch a rendezvous descriptor first (or attach/launch a circuit if the rendezvous descriptor is already here and fresh enough).</p>
 <p>The stream will exit from the hop indicated by <b>cpath</b>, or from the last hop in circ's cpath if <b>cpath</b> is NULL. </p>
-
-</div>
-</div>
-<a id="a4bf52cba1e9b416e96cf47ea07f8f5ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bf52cba1e9b416e96cf47ea07f8f5ac">&#9670;&nbsp;</a></span>connection_ap_handshake_send_begin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int connection_ap_handshake_send_begin </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structentry__connection__t.html">entry_connection_t</a> *&#160;</td>
-          <td class="paramname"><em>ap_conn</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Write a relay begin cell, using destaddr and destport from ap_conn's socks_request field, and send it down circ.</p>
-<p>If ap_conn is broken, mark it for close and return -1. Else return 0. </p>
 
 </div>
 </div>
@@ -892,7 +880,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>connection_init_accepted_conn() found a new trans AP conn. Get the original destination and send it to <a class="el" href="connection__edge_8c.html#a089e626ea05b78585432718686a835e2">connection_ap_handshake_rewrite_and_attach()</a>.</p>
+<p><a class="el" href="connection_8c.html#acb0804d5890924a2d6e3c4e3638ccfe4">connection_init_accepted_conn()</a> found a new trans AP conn. Get the original destination and send it to <a class="el" href="connection__edge_8c.html#a089e626ea05b78585432718686a835e2">connection_ap_handshake_rewrite_and_attach()</a>.</p>
 <p>Return -1 if an unexpected error with conn (and it should be marked for close), else return 0. </p>
 
 </div>
@@ -913,42 +901,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>As connection_ap_attach_pending, but first scans the entire connection array to see if any elements are missing. </p>
-
-</div>
-</div>
-<a id="a32b60847e224a01e865bb57afbbfedff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32b60847e224a01e865bb57afbbfedff">&#9670;&nbsp;</a></span>connection_ap_rewrite_and_attach_if_allowed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int connection_ap_rewrite_and_attach_if_allowed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structentry__connection__t.html">entry_connection_t</a> *&#160;</td>
-          <td class="paramname"><em>conn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td>
-          <td class="paramname"><em>circ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *&#160;</td>
-          <td class="paramname"><em>cpath</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Call <a class="el" href="connection__edge_8c.html#a089e626ea05b78585432718686a835e2">connection_ap_handshake_rewrite_and_attach()</a> unless a controller asked us to leave streams unattached. Return 0 in that case.</p>
-<p>See <a class="el" href="connection__edge_8c.html#a089e626ea05b78585432718686a835e2">connection_ap_handshake_rewrite_and_attach()</a>'s documentation for arguments and return value. </p>
 
 </div>
 </div>
@@ -1175,8 +1127,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="accf4787c953075c4a9aeaab09bb2b3fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accf4787c953075c4a9aeaab09bb2b3fe">&#9670;&nbsp;</a></span>connection_edge_is_rendezvous_stream()</h2>
+<a id="ab9c45f4cb77108e9d095daecb6ab1700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c45f4cb77108e9d095daecb6ab1700">&#9670;&nbsp;</a></span>connection_edge_is_rendezvous_stream()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1184,7 +1136,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int connection_edge_is_rendezvous_stream </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structedge__connection__t.html">edge_connection_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structedge__connection__t.html">edge_connection_t</a> *&#160;</td>
           <td class="paramname"><em>conn</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1194,11 +1146,12 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="connection__edge_8h_accf4787c953075c4a9aeaab09bb2b3fe_icgraph.png" border="0" usemap="#connection__edge_8h_accf4787c953075c4a9aeaab09bb2b3fe_icgraph" alt=""/></div>
-<map name="connection__edge_8h_accf4787c953075c4a9aeaab09bb2b3fe_icgraph" id="connection__edge_8h_accf4787c953075c4a9aeaab09bb2b3fe_icgraph">
+<div class="center"><img src="connection__edge_8h_ab9c45f4cb77108e9d095daecb6ab1700_icgraph.png" border="0" usemap="#connection__edge_8h_ab9c45f4cb77108e9d095daecb6ab1700_icgraph" alt=""/></div>
+<map name="connection__edge_8h_ab9c45f4cb77108e9d095daecb6ab1700_icgraph" id="connection__edge_8h_ab9c45f4cb77108e9d095daecb6ab1700_icgraph">
 <area shape="rect" id="node2" href="circuituse_8h.html#a8d5c81bf7d6238331123b1e8753597f1" title="connection_ap_handshake\l_attach_circuit" alt="" coords="196,5,372,47"/>
 <area shape="rect" id="node3" href="connection__edge_8c.html#a5922c995ab015f688168d02a6b954050" title="MOCK_IMPL" alt="" coords="234,71,334,98"/>
 <area shape="rect" id="node4" href="connection__edge_8h.html#af1726a6cec89474d98905c4dd047d1c3" title="connection_exit_connect" alt="" coords="201,122,367,149"/>
+<area shape="rect" id="node5" href="hs__client_8h.html#a26ab718354326bb5c151102e3d5da6fd" title="hs_client_note_connection\l_attempt_succeeded" alt="" coords="196,173,372,215"/>
 </map>
 </div>
 
@@ -1343,14 +1296,6 @@ Here is the caller graph for this function:</div>
 <p>For general streams, call <a class="el" href="dns_8c.html#aa1ffeb643093b409c75573a27574afbc">dns_resolve()</a> on it first, and only call <a class="el" href="connection__edge_8c.html#a64bdbd8f1352e1101d8a9a409049a057">connection_exit_connect()</a> if the dns answer is already known.</p>
 <p>Note that we don't call connection_add() on the new stream! We wait for <a class="el" href="connection__edge_8c.html#a64bdbd8f1352e1101d8a9a409049a057">connection_exit_connect()</a> to do that.</p>
 <p>Return -(some circuit end reason) if we want to tear down <b>circ</b>. Else return 0. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="connection__edge_8h_ae2916d0db0fd6c1551e29a3436308464_cgraph.png" border="0" usemap="#connection__edge_8h_ae2916d0db0fd6c1551e29a3436308464_cgraph" alt=""/></div>
-<map name="connection__edge_8h_ae2916d0db0fd6c1551e29a3436308464_cgraph" id="connection__edge_8h_ae2916d0db0fd6c1551e29a3436308464_cgraph">
-<area shape="rect" id="node2" href="circuitlist_8c.html#a96a06b5b1f559dcb3747b599451df921" title="assert_circuit_ok" alt="" coords="240,5,361,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1385,10 +1330,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="connection__edge_8h_a8805ef6708301581c9339e83f41e76e0_cgraph.png" border="0" usemap="#connection__edge_8h_a8805ef6708301581c9339e83f41e76e0_cgraph" alt=""/></div>
 <map name="connection__edge_8h_a8805ef6708301581c9339e83f41e76e0_cgraph" id="connection__edge_8h_a8805ef6708301581c9339e83f41e76e0_cgraph">
-<area shape="rect" id="node2" href="circuitlist_8c.html#a96a06b5b1f559dcb3747b599451df921" title="assert_circuit_ok" alt="" coords="219,5,340,32"/>
-<area shape="rect" id="node3" href="relay_8c.html#a9b06f0a66f2b1af9d4e0855225192e1d" title="relay_header_unpack" alt="" coords="207,56,352,83"/>
-<area shape="rect" id="node5" href="connection_8c.html#a2ec50dd3f5bb871bf4a7058e4a57a754" title="edge_connection_new" alt="" coords="204,107,355,133"/>
-<area shape="rect" id="node4" href="compat_8c.html#ae67679aa2827ab3a1378abb8a2b953cf" title="get_uint16" alt="" coords="403,56,485,83"/>
+<area shape="rect" id="node2" href="relay_8c.html#a9b06f0a66f2b1af9d4e0855225192e1d" title="relay_header_unpack" alt="" coords="207,5,352,32"/>
+<area shape="rect" id="node4" href="connection_8c.html#a2ec50dd3f5bb871bf4a7058e4a57a754" title="edge_connection_new" alt="" coords="204,56,355,83"/>
+<area shape="rect" id="node3" href="compat_8c.html#ae67679aa2827ab3a1378abb8a2b953cf" title="get_uint16" alt="" coords="403,5,485,32"/>
 </map>
 </div>
 
@@ -1416,7 +1360,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="connection__edge_8h_af1726a6cec89474d98905c4dd047d1c3_cgraph.png" border="0" usemap="#connection__edge_8h_af1726a6cec89474d98905c4dd047d1c3_cgraph" alt=""/></div>
 <map name="connection__edge_8h_af1726a6cec89474d98905c4dd047d1c3_cgraph" id="connection__edge_8h_af1726a6cec89474d98905c4dd047d1c3_cgraph">
-<area shape="rect" id="node2" href="connection__edge_8c.html#accf4787c953075c4a9aeaab09bb2b3fe" title="connection_edge_is\l_rendezvous_stream" alt="" coords="220,5,363,47"/>
+<area shape="rect" id="node2" href="connection__edge_8c.html#ab9c45f4cb77108e9d095daecb6ab1700" title="connection_edge_is\l_rendezvous_stream" alt="" coords="220,5,363,47"/>
 </map>
 </div>
 
@@ -1456,8 +1400,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If address is of the form "y.onion" with a well-formed handle y: Put a NUL after y, lower-case it, and return ONION_HOSTNAME.</p>
-<p>If address is of the form "x.y.onion" with a well-formed handle x: Drop "x.", put a NUL after y, lower-case it, and return ONION_HOSTNAME.</p>
+<p>If address is of the form "y.onion" with a well-formed handle y: Put a NUL after y, lower-case it, and return ONION_V2_HOSTNAME or ONION_V3_HOSTNAME depending on the HS version.</p>
+<p>If address is of the form "x.y.onion" with a well-formed handle x: Drop "x.", put a NUL after y, lower-case it, and return ONION_V2_HOSTNAME or ONION_V3_HOSTNAME depending on the HS version.</p>
 <p>If address is of the form "y.onion" with a badly-formed handle y: Return BAD_HOSTNAME and log a message.</p>
 <p>If address is of the form "y.exit": Put a NUL after y and return EXIT_HOSTNAME.</p>
 <p>Otherwise: Return NORMAL_HOSTNAME and change nothing. </p>

@@ -1,3 +1,5 @@
 <map id="net_is_disabled" name="net_is_disabled">
-<area shape="rect" id="node2" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="165,5,293,47"/>
+<area shape="rect" id="node2" href="$dns_8c.html#a54580f3c6a1aa8cb61ba34ea2d4086b2" title="MOCK_IMPL" alt="" coords="195,5,295,32"/>
+<area shape="rect" id="node3" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="181,57,309,98"/>
+<area shape="rect" id="node4" href="$main_8h.html#aecdbc14b2fa5dcece5ca26ba80dc2876" title="rescan_periodic_events" alt="" coords="165,123,324,149"/>
 </map>

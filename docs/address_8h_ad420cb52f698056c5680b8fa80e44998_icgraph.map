@@ -1,3 +1,4 @@
 <map id="tor_addr_from_sockaddr" name="tor_addr_from_sockaddr">
-<area shape="rect" id="node2" href="$address_8c.html#af2b3d99f38741ff959e402198f02f963" title="MOCK_IMPL" alt="" coords="216,5,316,32"/>
+<area shape="rect" id="node2" href="$compat_8c.html#a43c2b4a2e5f57a92dd11e2034839f785" title="tor_addr_from_getsockname" alt="" coords="216,5,403,32"/>
+<area shape="rect" id="node3" href="$address_8c.html#af2b3d99f38741ff959e402198f02f963" title="MOCK_IMPL" alt="" coords="451,5,551,32"/>
 </map>

@@ -1,5 +1,4 @@
 <map id="update_approx_time" name="update_approx_time">
-<area shape="rect" id="node2" href="$tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="192,5,264,32"/>
-<area shape="rect" id="node4" href="$test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="411,31,504,57"/>
-<area shape="rect" id="node3" href="$tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="312,5,363,32"/>
+<area shape="rect" id="node2" href="$tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="197,5,295,32"/>
+<area shape="rect" id="node3" href="$test_8h.html#a334e47899bf2c19bf8a5ce0f226ab399" title="get_fname_rnd" alt="" coords="192,56,300,83"/>
 </map>

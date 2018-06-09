@@ -1,14 +1,13 @@
 <map id="origin_circuit_t" name="origin_circuit_t">
-<area shape="rect" id="node2" href="$structcrypt__path__t.html" title="crypt_path_t" alt="" coords="600,209,695,236"/>
-<area shape="rect" id="node13" href="$structcpath__build__state__t.html" title="cpath_build_state_t" alt="" coords="1149,295,1284,321"/>
-<area shape="rect" id="node14" href="$structcrypt__path__reference__t.html" title="crypt_path_reference_t" alt="" coords="817,216,972,243"/>
-<area shape="rect" id="node4" href="$structextend__info__t.html" title="extend_info_t" alt="" coords="313,332,413,359"/>
-<area shape="rect" id="node7" href="$structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="307,204,418,231"/>
-<area shape="rect" id="node9" href="$structonion__handshake__state__t.html" title="onion_handshake_state_t" alt="" coords="277,153,448,180"/>
-<area shape="rect" id="node10" href="$structedge__connection__t.html" title="edge_connection_t" alt="" coords="1151,373,1282,400"/>
-<area shape="rect" id="node5" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="5,507,96,533"/>
-<area shape="rect" id="node6" href="$structcrypto__dh__t.html" title="crypto_dh_t" alt="" coords="5,43,96,69"/>
-<area shape="rect" id="node8" href="$structaes__cnt__cipher.html" title="aes_cnt_cipher" alt="" coords="307,103,418,129"/>
-<area shape="rect" id="node11" href="$structrend__data__t.html" title="rend_data_t" alt="" coords="849,440,940,467"/>
-<area shape="rect" id="node12" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="606,489,689,516"/>
+<area shape="rect" id="node2" href="$structcrypt__path__t.html" title="crypt_path_t" alt="" coords="660,171,755,197"/>
+<area shape="rect" id="node12" href="$structcpath__build__state__t.html" title="cpath_build_state_t" alt="" coords="1209,137,1344,164"/>
+<area shape="rect" id="node13" href="$structcrypt__path__reference__t.html" title="crypt_path_reference_t" alt="" coords="877,171,1032,197"/>
+<area shape="rect" id="node3" href="$structextend__info__t.html" title="extend_info_t" alt="" coords="373,88,473,115"/>
+<area shape="rect" id="node8" href="$structonion__handshake__state__t.html" title="onion_handshake_state_t" alt="" coords="337,235,508,261"/>
+<area shape="rect" id="node9" href="$structedge__connection__t.html" title="edge_connection_t" alt="" coords="1211,385,1342,412"/>
+<area shape="rect" id="node5" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="35,23,126,49"/>
+<area shape="rect" id="node6" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="5,88,156,115"/>
+<area shape="rect" id="node7" href="$structcrypto__dh__t.html" title="crypto_dh_t" alt="" coords="35,188,126,215"/>
+<area shape="rect" id="node10" href="$structrend__data__t.html" title="rend_data_t" alt="" coords="909,323,1000,349"/>
+<area shape="rect" id="node11" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="666,281,749,308"/>
 </map>

@@ -4,9 +4,8 @@
 <area shape="rect" id="node4" href="$router_8h.html#a74a228ad9efff13643397a5c02d7bec7" title="router_get_advertised\l_or_port" alt="" coords="419,57,565,98"/>
 <area shape="rect" id="node5" href="$config_8h.html#a371199c6500ed7bbdf40789df8310c92" title="get_list_of_ports_to\l_forward" alt="" coords="627,57,763,98"/>
 <area shape="rect" id="node6" href="$router_8h.html#ac23927b27e54ab8752d8a379b5136b50" title="router_rebuild_descriptor" alt="" coords="613,123,777,149"/>
-<area shape="rect" id="node7" href="$router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="835,57,978,98"/>
-<area shape="rect" id="node8" href="$router_8c.html#ad474de0d17eaff8d2d6ac9f83621d4fc" title="MOCK_IMPL" alt="" coords="857,123,957,149"/>
-<area shape="rect" id="node9" href="$router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="825,173,988,200"/>
-<area shape="rect" id="node10" href="$router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="1036,137,1191,178"/>
-<area shape="rect" id="node11" href="$routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="1063,203,1163,229"/>
+<area shape="rect" id="node7" href="$router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="835,86,978,127"/>
+<area shape="rect" id="node8" href="$router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="825,152,988,179"/>
+<area shape="rect" id="node9" href="$router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="1036,115,1191,157"/>
+<area shape="rect" id="node10" href="$routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="1063,181,1163,208"/>
 </map>

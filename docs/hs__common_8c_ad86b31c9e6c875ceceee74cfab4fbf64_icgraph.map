@@ -1,0 +1,6 @@
+<map id="get_time_period_length" name="get_time_period_length">
+<area shape="rect" id="node2" href="$hs__common_8h.html#a265dd15b5d06861b811cc8b9ce8e5f9e" title="hs_get_time_period_num" alt="" coords="209,31,376,57"/>
+<area shape="rect" id="node3" href="$hs__client_8c.html#a51945ab3de9cac90d964ea01c8605ce9" title="pick_hsdir_v3" alt="" coords="472,5,575,32"/>
+<area shape="rect" id="node5" href="$hs__common_8h.html#a5debb4cfbd37ae0175658c432a902ee3" title="hs_get_next_time_period_num" alt="" coords="424,56,623,83"/>
+<area shape="rect" id="node4" href="$hs__client_8c.html#a98b90911c4b037c438096a41ac80a27d" title="MOCK_IMPL" alt="" coords="671,5,771,32"/>
+</map>

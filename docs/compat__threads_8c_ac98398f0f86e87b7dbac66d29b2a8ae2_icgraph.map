@@ -1,0 +1,7 @@
+<map id="atomic_counter_get" name="atomic_counter_get">
+<area shape="rect" id="node2" href="$compress_8h.html#ae27709c11b43d9fe1edf11742f1fca98" title="tor_compress_get_total\l_allocation" alt="" coords="383,66,541,107"/>
+<area shape="rect" id="node3" href="$compress__lzma_8h.html#adff782cddfac5049aa29d2767f37c9ae" title="tor_lzma_get_total\l_allocation" alt="" coords="197,33,327,74"/>
+<area shape="rect" id="node4" href="$compress__zlib_8h.html#ad48d2bb2d2de94a06c76dc59af54d420" title="tor_zlib_get_total\l_allocation" alt="" coords="201,98,323,139"/>
+<area shape="rect" id="node5" href="$compress__zstd_8h.html#aa08d17d2e15a5f836b544354cf3f6d59" title="tor_zstd_get_total\l_allocation" alt="" coords="199,163,325,205"/>
+<area shape="rect" id="node6" href="$config_8h.html#a9f6af15414001bad5f7179396d0bcb08" title="get_protocol_warning\l_severity_level" alt="" coords="189,229,335,270"/>
+</map>

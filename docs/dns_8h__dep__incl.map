@@ -1,6 +1,6 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/dns.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/dns.h">
 <area shape="rect" id="node2" href="$addressmap_8c.html" title="The addressmap module manages the processes by which we rewrite addresses in client requess..." alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="$config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node3" href="$config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="177,109,325,165"/>
 <area shape="rect" id="node4" href="$connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="349,109,497,165"/>
 <area shape="rect" id="node5" href="$connection__edge_8c.html" title="Handle edge streams. " alt="" coords="521,109,693,165"/>
 <area shape="rect" id="node6" href="$dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada..." alt="" coords="717,109,865,165"/>

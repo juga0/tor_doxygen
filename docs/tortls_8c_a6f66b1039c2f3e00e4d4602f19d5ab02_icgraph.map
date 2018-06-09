@@ -1,5 +1,4 @@
 <map id="tor_tls_debug_state_callback" name="tor_tls_debug_state_callback">
-<area shape="rect" id="node2" href="$tortls_8c.html#a3b0c0880a231328e1b5d7faa01fddcd9" title="tor_tls_server_info\l_callback" alt="" coords="189,5,319,47"/>
-<area shape="rect" id="node3" href="$tortls_8h.html#a5823cfa710f0f7987d09dfececae28d0" title="tor_tls_set_renegotiate\l_callback" alt="" coords="367,35,521,76"/>
-<area shape="rect" id="node4" href="$connection__or_8h.html#aecfd6590f4dd5c079f371e48eb1e09f2" title="connection_or_block\l_renegotiation" alt="" coords="569,35,711,76"/>
+<area shape="rect" id="node2" href="$tortls_8h.html#a5823cfa710f0f7987d09dfececae28d0" title="tor_tls_set_renegotiate\l_callback" alt="" coords="189,5,344,47"/>
+<area shape="rect" id="node3" href="$connection__or_8h.html#aecfd6590f4dd5c079f371e48eb1e09f2" title="connection_or_block\l_renegotiation" alt="" coords="392,5,533,47"/>
 </map>

@@ -1,5 +1,6 @@
 <map id="tor_addr_from_in6" name="tor_addr_from_in6">
 <area shape="rect" id="node2" href="$address_8h.html#ad420cb52f698056c5680b8fa80e44998" title="tor_addr_from_sockaddr" alt="" coords="189,5,352,32"/>
-<area shape="rect" id="node4" href="$address_8h.html#a704407961c6ac0d2fddfd29b8a719d91" title="tor_addr_parse_PTR_name" alt="" coords="180,56,361,83"/>
-<area shape="rect" id="node3" href="$address_8c.html#af2b3d99f38741ff959e402198f02f963" title="MOCK_IMPL" alt="" coords="409,5,509,32"/>
+<area shape="rect" id="node5" href="$address_8h.html#a704407961c6ac0d2fddfd29b8a719d91" title="tor_addr_parse_PTR_name" alt="" coords="180,56,361,83"/>
+<area shape="rect" id="node3" href="$compat_8c.html#a43c2b4a2e5f57a92dd11e2034839f785" title="tor_addr_from_getsockname" alt="" coords="409,5,596,32"/>
+<area shape="rect" id="node4" href="$address_8c.html#af2b3d99f38741ff959e402198f02f963" title="MOCK_IMPL" alt="" coords="644,5,744,32"/>
 </map>

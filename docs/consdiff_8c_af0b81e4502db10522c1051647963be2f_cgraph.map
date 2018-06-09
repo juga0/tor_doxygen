@@ -1,0 +1,5 @@
+<map id="MOCK_IMPL" name="MOCK_IMPL">
+<area shape="rect" id="node2" href="$routerparse_8c.html#afd89ff48acdb8ef399f773e42a8398d8" title="router_get_networkstatus\l_v3_sha3_as_signed" alt="" coords="153,35,323,76"/>
+<area shape="rect" id="node3" href="$routerparse_8c.html#aae7e91b9970f52f892b255d99a2358fd" title="router_get_networkstatus\l_v3_signed_boundaries" alt="" coords="371,5,540,47"/>
+<area shape="rect" id="node4" href="$crypto__digest_8c.html#a42ff4ac7df6e3158f3a1a32d75081c32" title="crypto_digest256" alt="" coords="395,71,516,98"/>
+</map>

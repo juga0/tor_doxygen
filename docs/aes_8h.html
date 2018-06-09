@@ -64,6 +64,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -85,6 +86,12 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="aes_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a1c7c765f0565f95764eca553e77f7ad6"><td class="memItemLeft" align="right" valign="top"><a id="a1c7c765f0565f95764eca553e77f7ad6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>aes_cipher_free</b>(cipher)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a>, <a class="el" href="aes_8h.html#aed811be78171c2b905c60658e185be12">aes_cipher_free_</a>, (cipher))</td></tr>
+<tr class="separator:a1c7c765f0565f95764eca553e77f7ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aaef121a5df1d7d92551b08f4d3e0fc43"><td class="memItemLeft" align="right" valign="top"><a id="aaef121a5df1d7d92551b08f4d3e0fc43"></a>
@@ -95,8 +102,8 @@ typedef struct <a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher</
 Functions</h2></td></tr>
 <tr class="memitem:a65f4b7235f885c9cb7316d0f5bfff46b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#a65f4b7235f885c9cb7316d0f5bfff46b">aes_new_cipher</a> (const uint8_t *key, const uint8_t *iv, int key_bits)</td></tr>
 <tr class="separator:a65f4b7235f885c9cb7316d0f5bfff46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c9590cc53e7c37355be6a8acd1d34e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#af2c9590cc53e7c37355be6a8acd1d34e">aes_cipher_free</a> (<a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a> *cipher)</td></tr>
-<tr class="separator:af2c9590cc53e7c37355be6a8acd1d34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed811be78171c2b905c60658e185be12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#aed811be78171c2b905c60658e185be12">aes_cipher_free_</a> (<a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a> *cipher)</td></tr>
+<tr class="separator:aed811be78171c2b905c60658e185be12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1fa0b10bf5fa32c66fe9fab0d6bed02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#ac1fa0b10bf5fa32c66fe9fab0d6bed02">aes_crypt_inplace</a> (<a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a> *cipher, char *data, size_t len)</td></tr>
 <tr class="separator:ac1fa0b10bf5fa32c66fe9fab0d6bed02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a322fa882ec2acd57ba3313161f569169"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8h.html#a322fa882ec2acd57ba3313161f569169">evaluate_evp_for_aes</a> (int force_value)</td></tr>
@@ -107,14 +114,14 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Headers for <a class="el" href="aes_8c.html" title="Implements a counter-mode stream cipher on top of AES. ">aes.c</a>. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="af2c9590cc53e7c37355be6a8acd1d34e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2c9590cc53e7c37355be6a8acd1d34e">&#9670;&nbsp;</a></span>aes_cipher_free()</h2>
+<a id="aed811be78171c2b905c60658e185be12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed811be78171c2b905c60658e185be12">&#9670;&nbsp;</a></span>aes_cipher_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void aes_cipher_free </td>
+          <td class="memname">void aes_cipher_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a> *&#160;</td>
           <td class="paramname"><em>cipher</em></td><td>)</td>
@@ -126,19 +133,9 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="aes_8h_af2c9590cc53e7c37355be6a8acd1d34e_cgraph.png" border="0" usemap="#aes_8h_af2c9590cc53e7c37355be6a8acd1d34e_cgraph" alt=""/></div>
-<map name="aes_8h_af2c9590cc53e7c37355be6a8acd1d34e_cgraph" id="aes_8h_af2c9590cc53e7c37355be6a8acd1d34e_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="168,5,247,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="aes_8h_af2c9590cc53e7c37355be6a8acd1d34e_icgraph.png" border="0" usemap="#aes_8h_af2c9590cc53e7c37355be6a8acd1d34e_icgraph" alt=""/></div>
-<map name="aes_8h_af2c9590cc53e7c37355be6a8acd1d34e_icgraph" id="aes_8h_af2c9590cc53e7c37355be6a8acd1d34e_icgraph">
-<area shape="rect" id="node2" href="crypto_8h.html#a03f018a78f86020d36a4b1d41a0cf4c4" title="crypto_cipher_free" alt="" coords="168,46,297,73"/>
-<area shape="rect" id="node3" href="crypto_8h.html#a83e86c4d91db59b9716111008e32a503" title="crypto_cipher_encrypt\l_with_iv" alt="" coords="345,5,496,47"/>
-<area shape="rect" id="node4" href="crypto_8h.html#a11d6507b680acf27240a1803fbddba65" title="crypto_cipher_decrypt\l_with_iv" alt="" coords="345,71,496,112"/>
+<div class="center"><img src="aes_8h_aed811be78171c2b905c60658e185be12_cgraph.png" border="0" usemap="#aes_8h_aed811be78171c2b905c60658e185be12_cgraph" alt=""/></div>
+<map name="aes_8h_aed811be78171c2b905c60658e185be12_cgraph" id="aes_8h_aed811be78171c2b905c60658e185be12_cgraph">
+<area shape="rect" id="node2" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="175,5,253,32"/>
 </map>
 </div>
 
@@ -234,7 +231,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node4" href="crypto_8h.html#a83e86c4d91db59b9716111008e32a503" title="crypto_cipher_encrypt\l_with_iv" alt="" coords="619,5,769,47"/>
 <area shape="rect" id="node5" href="crypto_8h.html#a11d6507b680acf27240a1803fbddba65" title="crypto_cipher_decrypt\l_with_iv" alt="" coords="619,71,769,112"/>
 <area shape="rect" id="node7" href="crypto_8h.html#a1a44157cdf50927218728fde6e863b1e" title="crypto_cipher_new" alt="" coords="629,137,759,163"/>
-<area shape="rect" id="node8" href="circuitbuild_8h.html#ad6e1de1a8a6bb7f32b780321e1d7745d" title="circuit_init_cpath\l_crypto" alt="" coords="817,129,937,171"/>
+<area shape="rect" id="node8" href="crypto__rsa_8h.html#a30d6a44940fe781bb5961ace32c0cbb1" title="crypto_pk_obsolete\l_public_hybrid_encrypt" alt="" coords="817,129,972,171"/>
 </map>
 </div>
 

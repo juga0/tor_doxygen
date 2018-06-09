@@ -1,4 +1,4 @@
 <map id="rep_hist_stored_maybe_new_hs" name="rep_hist_stored_maybe_new_hs">
-<area shape="rect" id="node2" href="$crypto_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="211,13,357,39"/>
-<area shape="rect" id="node3" href="$crypto_8c.html#adc1609ea0f9d65a1f60225cb001eeb15" title="crypto_digest" alt="" coords="405,13,505,39"/>
+<area shape="rect" id="node2" href="$crypto__rsa_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="211,13,357,39"/>
+<area shape="rect" id="node3" href="$crypto__rsa_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="405,13,536,39"/>
 </map>

@@ -1,5 +1,4 @@
 <map id="control_event_is_interesting" name="control_event_is_interesting">
-<area shape="rect" id="node2" href="$control_8h.html#ac2cce566f007535370cda5c829181ede" title="control_event_newconsensus" alt="" coords="241,5,436,32"/>
-<area shape="rect" id="node3" href="$control_8h.html#a3a2b503ef04599f6c944ecb4a71aefc5" title="control_event_buildtimeout_set" alt="" coords="237,56,440,83"/>
-<area shape="rect" id="node4" href="$control_8h.html#ad6e3451a891012be7336b7b5a24a8465" title="control_event_signal" alt="" coords="268,107,409,133"/>
+<area shape="rect" id="node2" href="$control_8h.html#ac2cce566f007535370cda5c829181ede" title="control_event_newconsensus" alt="" coords="237,5,432,32"/>
+<area shape="rect" id="node3" href="$control_8h.html#ad6e3451a891012be7336b7b5a24a8465" title="control_event_signal" alt="" coords="264,56,405,83"/>
 </map>

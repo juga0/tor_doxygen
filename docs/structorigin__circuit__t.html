@@ -72,18 +72,17 @@ Collaboration diagram for origin_circuit_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structorigin__circuit__t__coll__graph.png" border="0" usemap="#origin__circuit__t_coll__map" alt="Collaboration graph"/></div>
 <map name="origin__circuit__t_coll__map" id="origin__circuit__t_coll__map">
-<area shape="rect" id="node2" href="structcrypt__path__t.html" title="crypt_path_t" alt="" coords="600,209,695,236"/>
-<area shape="rect" id="node13" href="structcpath__build__state__t.html" title="cpath_build_state_t" alt="" coords="1149,295,1284,321"/>
-<area shape="rect" id="node14" href="structcrypt__path__reference__t.html" title="crypt_path_reference_t" alt="" coords="817,216,972,243"/>
-<area shape="rect" id="node4" href="structextend__info__t.html" title="extend_info_t" alt="" coords="313,332,413,359"/>
-<area shape="rect" id="node7" href="structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="307,204,418,231"/>
-<area shape="rect" id="node9" href="structonion__handshake__state__t.html" title="onion_handshake_state_t" alt="" coords="277,153,448,180"/>
-<area shape="rect" id="node10" href="structedge__connection__t.html" title="edge_connection_t" alt="" coords="1151,373,1282,400"/>
-<area shape="rect" id="node5" href="structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="5,507,96,533"/>
-<area shape="rect" id="node6" href="structcrypto__dh__t.html" title="crypto_dh_t" alt="" coords="5,43,96,69"/>
-<area shape="rect" id="node8" href="structaes__cnt__cipher.html" title="aes_cnt_cipher" alt="" coords="307,103,418,129"/>
-<area shape="rect" id="node11" href="structrend__data__t.html" title="rend_data_t" alt="" coords="849,440,940,467"/>
-<area shape="rect" id="node12" href="structsmartlist__t.html" title="smartlist_t" alt="" coords="606,489,689,516"/>
+<area shape="rect" id="node2" href="structcrypt__path__t.html" title="crypt_path_t" alt="" coords="660,171,755,197"/>
+<area shape="rect" id="node12" href="structcpath__build__state__t.html" title="cpath_build_state_t" alt="" coords="1209,137,1344,164"/>
+<area shape="rect" id="node13" href="structcrypt__path__reference__t.html" title="crypt_path_reference_t" alt="" coords="877,171,1032,197"/>
+<area shape="rect" id="node3" href="structextend__info__t.html" title="extend_info_t" alt="" coords="373,88,473,115"/>
+<area shape="rect" id="node8" href="structonion__handshake__state__t.html" title="onion_handshake_state_t" alt="" coords="337,235,508,261"/>
+<area shape="rect" id="node9" href="structedge__connection__t.html" title="edge_connection_t" alt="" coords="1211,385,1342,412"/>
+<area shape="rect" id="node5" href="structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="35,23,126,49"/>
+<area shape="rect" id="node6" href="structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="5,88,156,115"/>
+<area shape="rect" id="node7" href="structcrypto__dh__t.html" title="crypto_dh_t" alt="" coords="35,188,126,215"/>
+<area shape="rect" id="node10" href="structrend__data__t.html" title="rend_data_t" alt="" coords="909,323,1000,349"/>
+<area shape="rect" id="node11" href="structsmartlist__t.html" title="smartlist_t" alt="" coords="666,281,749,308"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -98,12 +97,26 @@ Data Fields</h2></td></tr>
 <tr class="separator:a7540e484476cb2e5c2eaae0565c6368e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba13ac324f78b6682eb7844de5320c3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#a0ba13ac324f78b6682eb7844de5320c3">n_written_circ_bw</a></td></tr>
 <tr class="separator:a0ba13ac324f78b6682eb7844de5320c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa078aa105aebc9cbf94d2bfa2d7db2aa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#aa078aa105aebc9cbf94d2bfa2d7db2aa">n_delivered_read_circ_bw</a></td></tr>
+<tr class="separator:aa078aa105aebc9cbf94d2bfa2d7db2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54bb255cb7bd6888f07126779ed8304"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#aa54bb255cb7bd6888f07126779ed8304">n_delivered_written_circ_bw</a></td></tr>
+<tr class="separator:aa54bb255cb7bd6888f07126779ed8304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57c4f9fa3fc7cfc3c0c844374a90465"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#aa57c4f9fa3fc7cfc3c0c844374a90465">n_overhead_read_circ_bw</a></td></tr>
+<tr class="separator:aa57c4f9fa3fc7cfc3c0c844374a90465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a944711a852cfbb2c3c5d54febf9b7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#a53a944711a852cfbb2c3c5d54febf9b7">n_overhead_written_circ_bw</a></td></tr>
+<tr class="separator:a53a944711a852cfbb2c3c5d54febf9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad3f44e0ac7e26dd010388061eb86666"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#aad3f44e0ac7e26dd010388061eb86666">build_state</a></td></tr>
 <tr class="separator:aad3f44e0ac7e26dd010388061eb86666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c2d88ce6a056dcd32991f79c180ebf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#aa7c2d88ce6a056dcd32991f79c180ebf">cpath</a></td></tr>
 <tr class="separator:aa7c2d88ce6a056dcd32991f79c180ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9fbce0b6310cca5a240e2872a8185a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#a2e9fbce0b6310cca5a240e2872a8185a">rend_data</a></td></tr>
 <tr class="separator:a2e9fbce0b6310cca5a240e2872a8185a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29175fe0b44d53028076f964e834fd1d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="strucths__ident__circuit__t.html">hs_ident_circuit_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#a29175fe0b44d53028076f964e834fd1d">hs_ident</a></td></tr>
+<tr class="separator:a29175fe0b44d53028076f964e834fd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc35fd9a62f06abf5d823d61597de76"><td class="memItemLeft" align="right" valign="top">struct circuit_guard_state_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#abcc35fd9a62f06abf5d823d61597de76">guard_state</a></td></tr>
+<tr class="separator:abcc35fd9a62f06abf5d823d61597de76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e995dfc2927698525921461b97cdc23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#a8e995dfc2927698525921461b97cdc23">global_origin_circuit_list_idx</a></td></tr>
+<tr class="separator:a8e995dfc2927698525921461b97cdc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e13a24defa32b6cb2ef83eaf6d0fef1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#a4e13a24defa32b6cb2ef83eaf6d0fef1">remaining_relay_early_cells</a>: 4</td></tr>
 <tr class="separator:a4e13a24defa32b6cb2ef83eaf6d0fef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ee79a56f106bdea1b33854eb066ef70"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#a7ee79a56f106bdea1b33854eb066ef70">is_ancient</a>: 1</td></tr>
@@ -146,6 +159,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>unusable_for_
 <tr class="separator:ab2ec29be6e9521f474c0bc0049e4d19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6472ac0ffc62c0d6a0321dfdf8e0f0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#aa6472ac0ffc62c0d6a0321dfdf8e0f0f">prepend_policy</a></td></tr>
 <tr class="separator:aa6472ac0ffc62c0d6a0321dfdf8e0f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769323da3e4163e60b6fb847cef3e02d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structorigin__circuit__t.html#a769323da3e4163e60b6fb847cef3e02d">circuit_idle_timeout</a></td></tr>
+<tr class="separator:a769323da3e4163e60b6fb847cef3e02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Isolation parameters</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>If any streams have been associated with this circ (isolation_values_set == 1), and all streams associated with the circuit have had the same value for some field ((isolation_flags_mixed &amp; ISO_FOO) == 0), then these elements hold the value for that field.</p>
 <p>Note again that "associated" is not the same as "attached": we preliminarily associate streams with a circuit while the circuit is being launched, so that we can tell whether we need to launch more circuits. </p>
@@ -219,6 +234,21 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>socks_password</b><
 
 </div>
 </div>
+<a id="a769323da3e4163e60b6fb847cef3e02d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769323da3e4163e60b6fb847cef3e02d">&#9670;&nbsp;</a></span>circuit_idle_timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int circuit_idle_timeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>How long do we wait before closing this circuit if it remains completely idle after it was built, in seconds? This value is randomized on a per-circuit basis from CircuitsAvailableTimoeut to 2*CircuitsAvailableTimoeut. </p>
+
+</div>
+</div>
 <a id="aa7c2d88ce6a056dcd32991f79c180ebf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7c2d88ce6a056dcd32991f79c180ebf">&#9670;&nbsp;</a></span>cpath</h2>
 
@@ -246,6 +276,36 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>socks_password</b><
       </table>
 </div><div class="memdoc">
 <p>Quasi-global identifier for this circuit; used for <a class="el" href="control_8c.html" title="Implementation for Tor&#39;s control-socket interface. ">control.c</a> </p>
+
+</div>
+</div>
+<a id="a8e995dfc2927698525921461b97cdc23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e995dfc2927698525921461b97cdc23">&#9670;&nbsp;</a></span>global_origin_circuit_list_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int global_origin_circuit_list_idx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Index into global_origin_circuit_list for this circuit. -1 if not present. </p>
+
+</div>
+</div>
+<a id="abcc35fd9a62f06abf5d823d61597de76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc35fd9a62f06abf5d823d61597de76">&#9670;&nbsp;</a></span>guard_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct circuit_guard_state_t* guard_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Holds the data that the entry guard system uses to track the status of the guard this circuit is using, and thereby to determine whether this circuit can be used. </p>
 
 </div>
 </div>
@@ -277,6 +337,21 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>socks_password</b><
 </div><div class="memdoc">
 <p>Set iff this is a hidden-service circuit which has timed out according to our current circuit-build timeout, but which has been kept around because it might still succeed in connecting to its destination, and which is not a fully-connected rendezvous circuit.</p>
 <p>(We clear this flag for client-side rendezvous circuits when they are 'joined' to the other side's rendezvous circuit, so that connection_ap_handshake_attach_circuit can put client streams on the circuit. We also clear this flag for service-side rendezvous circuits when they are 'joined' to a client's rend circ, but only for symmetry with the client case. Client-side introduction circuits are closed when we get a joined rend circ, and service-side introduction circuits never have this flag set.) </p>
+
+</div>
+</div>
+<a id="a29175fe0b44d53028076f964e834fd1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29175fe0b44d53028076f964e834fd1d">&#9670;&nbsp;</a></span>hs_ident</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="strucths__ident__circuit__t.html">hs_ident_circuit_t</a>* hs_ident</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Holds hidden service identifier on either client or service side. This is for both introduction and rendezvous circuit. </p>
 
 </div>
 </div>
@@ -352,7 +427,67 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>socks_password</b><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>True if we have associated one stream to this circuit, thereby setting the isolation paramaters for this circuit. Note that this doesn't necessarily mean that we've <em>attached</em> any streams to the circuit: we may only have marked up this circuit during the launch process. </p>
+<p>True if we have associated one stream to this circuit, thereby setting the isolation parameters for this circuit. Note that this doesn't necessarily mean that we've <em>attached</em> any streams to the circuit: we may only have marked up this circuit during the launch process. </p>
+
+</div>
+</div>
+<a id="aa078aa105aebc9cbf94d2bfa2d7db2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa078aa105aebc9cbf94d2bfa2d7db2aa">&#9670;&nbsp;</a></span>n_delivered_read_circ_bw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t n_delivered_read_circ_bw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Total known-valid relay cell bytes since last call to <a class="el" href="control_8c.html#a82c809b65a1d31d745dfb608d872e82a">control_event_circ_bandwidth_used()</a>. Only used if we're configured to emit CIRC_BW events. </p>
+
+</div>
+</div>
+<a id="aa54bb255cb7bd6888f07126779ed8304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54bb255cb7bd6888f07126779ed8304">&#9670;&nbsp;</a></span>n_delivered_written_circ_bw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t n_delivered_written_circ_bw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Total written relay cell bytes since last call to <a class="el" href="control_8c.html#a82c809b65a1d31d745dfb608d872e82a">control_event_circ_bandwidth_used()</a>. Only used if we're configured to emit CIRC_BW events. </p>
+
+</div>
+</div>
+<a id="aa57c4f9fa3fc7cfc3c0c844374a90465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa57c4f9fa3fc7cfc3c0c844374a90465">&#9670;&nbsp;</a></span>n_overhead_read_circ_bw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t n_overhead_read_circ_bw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Total overhead data in all known-valid relay data cells since last call to <a class="el" href="control_8c.html#a82c809b65a1d31d745dfb608d872e82a">control_event_circ_bandwidth_used()</a>. Only used if we're configured to emit CIRC_BW events. </p>
+
+</div>
+</div>
+<a id="a53a944711a852cfbb2c3c5d54febf9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a944711a852cfbb2c3c5d54febf9b7">&#9670;&nbsp;</a></span>n_overhead_written_circ_bw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t n_overhead_written_circ_bw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Total written overhead data in all relay data cells since last call to <a class="el" href="control_8c.html#a82c809b65a1d31d745dfb608d872e82a">control_event_circ_bandwidth_used()</a>. Only used if we're configured to emit CIRC_BW events. </p>
 
 </div>
 </div>
@@ -367,7 +502,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>socks_password</b><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bytes read from any attached stream since last call to <a class="el" href="control_8c.html#a82c809b65a1d31d745dfb608d872e82a">control_event_circ_bandwidth_used()</a>. Only used if we're configured to emit CIRC_BW events. </p>
+<p>Bytes read on this circuit since last call to <a class="el" href="control_8c.html#a82c809b65a1d31d745dfb608d872e82a">control_event_circ_bandwidth_used()</a>. Only used if we're configured to emit CIRC_BW events. </p>
 
 </div>
 </div>
@@ -382,7 +517,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>socks_password</b><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bytes written to any attached stream since last call to <a class="el" href="control_8c.html#a82c809b65a1d31d745dfb608d872e82a">control_event_circ_bandwidth_used()</a>. Only used if we're configured to emit CIRC_BW events. </p>
+<p>Bytes written to on this circuit since last call to <a class="el" href="control_8c.html#a82c809b65a1d31d745dfb608d872e82a">control_event_circ_bandwidth_used()</a>. Only used if we're configured to emit CIRC_BW events. </p>
 
 </div>
 </div>

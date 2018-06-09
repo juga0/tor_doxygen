@@ -1,0 +1,7 @@
+<map id="getinfo_helper_dir" name="getinfo_helper_dir">
+<area shape="rect" id="node2" href="$util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="225,5,313,32"/>
+<area shape="rect" id="node3" href="$nodelist_8c.html#ab876cec61e163d3246f27357c98d0687" title="node_get_by_hex_id" alt="" coords="199,56,340,83"/>
+<area shape="rect" id="node6" href="$routerlist_8c.html#af4d8bdd829c8eab4c9060c014fb59af8" title="signed_descriptor_get_body" alt="" coords="177,107,361,133"/>
+<area shape="rect" id="node4" href="$routerlist_8c.html#a589e19badbee6e0257d94d03dcc40ba7" title="hex_digest_nickname\l_decode" alt="" coords="409,49,557,90"/>
+<area shape="rect" id="node5" href="$util__format_8c.html#a6942053f58dd619a86734e55a42d7266" title="base16_decode" alt="" coords="605,56,719,83"/>
+</map>

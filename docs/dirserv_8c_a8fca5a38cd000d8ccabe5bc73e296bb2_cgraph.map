@@ -1,6 +1,4 @@
 <map id="dirserv_get_routerdescs" name="dirserv_get_routerdescs">
 <area shape="rect" id="node2" href="$routerlist_8c.html#a9181bbed0ee6ff8088a7c53fc8c446f1" title="router_get_routerlist" alt="" coords="215,5,352,32"/>
 <area shape="rect" id="node3" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="233,56,333,83"/>
-<area shape="rect" id="node4" href="$util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="239,107,327,133"/>
-<area shape="rect" id="node5" href="$directory_8c.html#ab3cd3a5081cf507805b4b01c907dd168" title="dir_split_resource\l_into_fingerprints" alt="" coords="221,158,345,199"/>
 </map>

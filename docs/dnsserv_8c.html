@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Implements client-side DNS proxy server code. Note: this is the DNS Server code, not the Server DNS code. Confused? This code runs on client-side, and acts as a DNS server. The code in <a class="el" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada...">dns.c</a>, on the other hand, runs on Tor servers, and acts as a DNS client.  
+<p>Implements client-side DNS proxy server code.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dnsserv_8h_source.html">dnsserv.h</a>&quot;</code><br />
@@ -88,40 +88,46 @@ Include dependency graph for dnsserv.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="dnsserv_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dnsserv_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dnsserv_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dnsserv_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1329,109,1373,136"/>
-<area shape="rect" id="node34" href="dnsserv_8h.html" title="Header file for dnsserv.c. " alt="" coords="2197,109,2275,136"/>
-<area shape="rect" id="node35" href="config_8h.html" title="Header file for config.c. " alt="" coords="1947,259,2015,285"/>
-<area shape="rect" id="node36" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="2025,184,2121,211"/>
-<area shape="rect" id="node38" href="connection__edge_8h.html" title="Header file for connection_edge.c. " alt="" coords="2137,259,2268,285"/>
-<area shape="rect" id="node39" href="control_8h.html" title="Header file for control.c. " alt="" coords="2300,109,2372,136"/>
-<area shape="rect" id="node40" href="main_8h.html" title="Header file for main.c. " alt="" coords="2396,109,2457,136"/>
-<area shape="rect" id="node41" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="2481,109,2559,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="493,707,571,733"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="843,632,906,659"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="992,408,1061,435"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1429,408,1542,435"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1427,483,1552,509"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1437,557,1579,584"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1098,333,1161,360"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1705,408,1770,435"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="509,259,595,285"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="1388,184,1460,211"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="513,184,591,211"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2111,557,2239,584"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="1485,184,1529,211"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1553,184,1655,211"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1680,184,1771,211"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1318,557,1413,584"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1619,632,1717,659"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="618,483,694,509"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="478,632,586,659"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="761,557,887,584"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1101,408,1229,435"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="411,333,461,360"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="513,333,591,360"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="195,557,266,584"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="543,408,622,435"/>
-<area shape="rect" id="node37" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="2039,259,2113,285"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1169,109,1213,136"/>
+<area shape="rect" id="node40" href="dnsserv_8h.html" title="Header file for dnsserv.c. " alt="" coords="2298,109,2377,136"/>
+<area shape="rect" id="node41" href="config_8h.html" title="Header file for config.c. " alt="" coords="2081,707,2149,733"/>
+<area shape="rect" id="node42" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1872,333,1968,360"/>
+<area shape="rect" id="node44" href="connection__edge_8h.html" title="Header file for connection_edge.c. " alt="" coords="2145,557,2276,584"/>
+<area shape="rect" id="node45" href="control_8h.html" title="Header file for control.c. " alt="" coords="2401,109,2473,136"/>
+<area shape="rect" id="node46" href="main_8h.html" title="Header file for main.c. " alt="" coords="2497,109,2559,136"/>
+<area shape="rect" id="node47" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="2583,109,2660,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1199,931,1278,957"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="354,856,417,883"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1107,259,1176,285"/>
+<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="297,483,383,509"/>
+<area shape="rect" id="node22" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1694,483,1759,509"/>
+<area shape="rect" id="node23" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="950,184,1063,211"/>
+<area shape="rect" id="node24" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="835,259,960,285"/>
+<area shape="rect" id="node25" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="707,333,850,360"/>
+<area shape="rect" id="node27" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1321,259,1383,285"/>
+<area shape="rect" id="node30" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1253,184,1344,211"/>
+<area shape="rect" id="node31" href="address_8h.html" title="Headers for address.h. " alt="" coords="534,408,613,435"/>
+<area shape="rect" id="node32" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2325,781,2453,808"/>
+<area shape="rect" id="node33" href="ht_8h_source.html" title="ht.h" alt="" coords="1369,184,1413,211"/>
+<area shape="rect" id="node34" href="confline_8h_source.html" title="confline.h" alt="" coords="181,259,259,285"/>
+<area shape="rect" id="node35" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1437,184,1539,211"/>
+<area shape="rect" id="node36" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1564,184,1655,211"/>
+<area shape="rect" id="node37" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="953,781,1063,808"/>
+<area shape="rect" id="node38" href="util__format_8h_source.html" title="util_format.h" alt="" coords="595,781,690,808"/>
+<area shape="rect" id="node39" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1679,184,1793,211"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1437,707,1513,733"/>
+<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="804,557,855,584"/>
+<area shape="rect" id="node18" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1305,333,1399,360"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1765,856,1864,883"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1139,856,1247,883"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1190,781,1317,808"/>
+<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="449,781,519,808"/>
+<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="1289,632,1367,659"/>
+<area shape="rect" id="node19" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="347,408,458,435"/>
+<area shape="rect" id="node21" href="siphash_8h_source.html" title="siphash.h" alt="" coords="301,557,379,584"/>
+<area shape="rect" id="node26" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="866,483,1017,509"/>
+<area shape="rect" id="node28" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="976,333,1104,360"/>
+<area shape="rect" id="node43" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1139,632,1213,659"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -139,7 +145,10 @@ Functions</h2></td></tr>
 <tr class="separator:af28e0da29fe3a31f27f505a82e4321c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implements client-side DNS proxy server code. Note: this is the DNS Server code, not the Server DNS code. Confused? This code runs on client-side, and acts as a DNS server. The code in <a class="el" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada...">dns.c</a>, on the other hand, runs on Tor servers, and acts as a DNS client. </p>
+<div class="textblock"><p>Implements client-side DNS proxy server code. </p>
+<p>When a user enables the DNSPort configuration option to have their local Tor client handle DNS requests, this module handles it. It functions as a "DNS Server" on the client side, which client applications use.</p>
+<p>Inbound DNS requests are represented as <a class="el" href="structentry__connection__t.html">entry_connection_t</a> here (since that's how Tor represents client-side streams), which are kept associated with an evdns_server_request structure as exposed by Libevent's evdns code.</p>
+<p>Upon receiving a DNS request, libevent calls our evdns_server_callback() function here, which causes this module to create an <a class="el" href="structentry__connection__t.html">entry_connection_t</a> request as appropriate. Later, when that request is answered, <a class="el" href="connection__edge_8c.html" title="Handle edge streams. ">connection_edge.c</a> calls <a class="el" href="dnsserv_8c.html#a6ba3ae36da13920d1f56555c60f2993e">dnsserv_resolved()</a> so we can finish up and tell the DNS client. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="af28e0da29fe3a31f27f505a82e4321c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af28e0da29fe3a31f27f505a82e4321c8">&#9670;&nbsp;</a></span>dnsserv_close_listener()</h2>

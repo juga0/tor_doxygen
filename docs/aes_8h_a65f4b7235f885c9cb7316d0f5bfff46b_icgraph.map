@@ -5,5 +5,5 @@
 <area shape="rect" id="node4" href="$crypto_8h.html#a83e86c4d91db59b9716111008e32a503" title="crypto_cipher_encrypt\l_with_iv" alt="" coords="619,5,769,47"/>
 <area shape="rect" id="node5" href="$crypto_8h.html#a11d6507b680acf27240a1803fbddba65" title="crypto_cipher_decrypt\l_with_iv" alt="" coords="619,71,769,112"/>
 <area shape="rect" id="node7" href="$crypto_8h.html#a1a44157cdf50927218728fde6e863b1e" title="crypto_cipher_new" alt="" coords="629,137,759,163"/>
-<area shape="rect" id="node8" href="$circuitbuild_8h.html#ad6e1de1a8a6bb7f32b780321e1d7745d" title="circuit_init_cpath\l_crypto" alt="" coords="817,129,937,171"/>
+<area shape="rect" id="node8" href="$crypto__rsa_8h.html#a30d6a44940fe781bb5961ace32c0cbb1" title="crypto_pk_obsolete\l_public_hybrid_encrypt" alt="" coords="817,129,972,171"/>
 </map>

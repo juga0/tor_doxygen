@@ -1,4 +1,4 @@
 <map id="crypto_unpwbox" name="crypto_unpwbox">
 <area shape="rect" id="node2" href="$crypto__s2k_8c.html#a5573a6ba63d76fd5d7db370fd06427ae" title="secret_to_key_derivekey" alt="" coords="171,5,337,32"/>
-<area shape="rect" id="node3" href="$crypto_8c.html#a5ff5677d46393943eb3f852fba12c4e4" title="crypto_hmac_sha256" alt="" coords="181,56,327,83"/>
+<area shape="rect" id="node3" href="$crypto__digest_8c.html#a5ff5677d46393943eb3f852fba12c4e4" title="crypto_hmac_sha256" alt="" coords="181,56,327,83"/>
 </map>

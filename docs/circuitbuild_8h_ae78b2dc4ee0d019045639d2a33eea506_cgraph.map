@@ -1,3 +1,13 @@
 <map id="extend_info_from_node" name="extend_info_from_node">
-<area shape="rect" id="node2" href="$policies_8c.html#a1f36bc146b27988b048c665c1d969ed8" title="fascist_firewall_choose\l_address_node" alt="" coords="211,5,369,47"/>
+<area shape="rect" id="node2" href="$nodelist_8c.html#a5c994699835c0d610e072920f397d6e8" title="node_has_preferred\l_descriptor" alt="" coords="222,89,358,130"/>
+<area shape="rect" id="node11" href="$policies_8c.html#aba629c408829f02c4f32eaaad0a63809" title="fascist_firewall_choose\l_address_node" alt="" coords="211,154,369,195"/>
+<area shape="rect" id="node3" href="$bridges_8c.html#a823bac0acf5f6b68ab2074757215eac3" title="node_is_a_configured\l_bridge" alt="" coords="429,27,577,69"/>
+<area shape="rect" id="node10" href="$microdesc_8c.html#adeff3a88aa40b67ab6407bda5c941910" title="we_use_microdescriptors\l_for_circuits" alt="" coords="417,93,588,134"/>
+<area shape="rect" id="node4" href="$nodelist_8c.html#a551827c8c00ee79f3d3663d11b2b60a0" title="node_get_all_orports" alt="" coords="639,5,782,32"/>
+<area shape="rect" id="node5" href="$bridges_8c.html#a6eaa7d5502639e1e5a484dcfddbba7d0" title="get_configured_bridge\l_by_orports_digest" alt="" coords="636,57,785,98"/>
+<area shape="rect" id="node6" href="$util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="833,39,961,65"/>
+<area shape="rect" id="node8" href="$address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="834,89,961,116"/>
+<area shape="rect" id="node7" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="1055,39,1142,65"/>
+<area shape="rect" id="node9" href="$address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="1009,89,1188,116"/>
+<area shape="rect" id="node12" href="$address_8c.html#a41958bdb031cb11907e9973e32f8baa9" title="tor_addr_make_null" alt="" coords="435,161,570,188"/>
 </map>

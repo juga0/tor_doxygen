@@ -1,0 +1,7 @@
+<map id="connection_or_client_learned_peer_id" name="connection_or_client_learned_peer_id">
+<area shape="rect" id="node2" href="$channeltls_8c.html#a103e1b5acee3f7892a537d0c6f143752" title="channel_tls_to_base" alt="" coords="195,5,336,32"/>
+<area shape="rect" id="node3" href="$util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="201,56,329,83"/>
+<area shape="rect" id="node5" href="$crypto__ed25519_8c.html#a1d56281a358363aa105b7032aebc46e4" title="ed25519_public_key\l_is_zero" alt="" coords="195,107,335,149"/>
+<area shape="rect" id="node4" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="402,56,489,83"/>
+<area shape="rect" id="node6" href="$util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="384,115,507,141"/>
+</map>

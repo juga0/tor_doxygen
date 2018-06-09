@@ -72,12 +72,11 @@ Collaboration diagram for crypt_path_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structcrypt__path__t__coll__graph.png" border="0" usemap="#crypt__path__t_coll__map" alt="Collaboration graph"/></div>
 <map name="crypt__path__t_coll__map" id="crypt__path__t_coll__map">
-<area shape="rect" id="node3" href="structextend__info__t.html" title="extend_info_t" alt="" coords="313,43,413,69"/>
-<area shape="rect" id="node6" href="structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="307,171,418,197"/>
-<area shape="rect" id="node8" href="structonion__handshake__state__t.html" title="onion_handshake_state_t" alt="" coords="277,221,448,248"/>
+<area shape="rect" id="node2" href="structextend__info__t.html" title="extend_info_t" alt="" coords="195,118,295,145"/>
+<area shape="rect" id="node7" href="structonion__handshake__state__t.html" title="onion_handshake_state_t" alt="" coords="513,118,684,145"/>
 <area shape="rect" id="node4" href="structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="5,5,96,32"/>
-<area shape="rect" id="node5" href="structcrypto__dh__t.html" title="crypto_dh_t" alt="" coords="5,296,96,323"/>
-<area shape="rect" id="node7" href="structaes__cnt__cipher.html" title="aes_cnt_cipher" alt="" coords="307,272,418,299"/>
+<area shape="rect" id="node5" href="structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="121,5,271,32"/>
+<area shape="rect" id="node6" href="structcrypto__dh__t.html" title="crypto_dh_t" alt="" coords="640,5,731,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -86,19 +85,13 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a57f54349f4fd1cbbb52058812e146af2"><td class="memItemLeft" align="right" valign="top"><a id="a57f54349f4fd1cbbb52058812e146af2"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>magic</b></td></tr>
 <tr class="separator:a57f54349f4fd1cbbb52058812e146af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4ff7957a706f16efe99f7018dd48209"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaes__cnt__cipher.html">crypto_cipher_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypt__path__t.html#aa4ff7957a706f16efe99f7018dd48209">f_crypto</a></td></tr>
-<tr class="separator:aa4ff7957a706f16efe99f7018dd48209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad30e4178232c9715bd3a85edba435587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaes__cnt__cipher.html">crypto_cipher_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypt__path__t.html#ad30e4178232c9715bd3a85edba435587">b_crypto</a></td></tr>
-<tr class="separator:ad30e4178232c9715bd3a85edba435587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41bda9d43f0bb5f02cbfdc1b51510476"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrypto__digest__t.html">crypto_digest_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypt__path__t.html#a41bda9d43f0bb5f02cbfdc1b51510476">f_digest</a></td></tr>
-<tr class="separator:a41bda9d43f0bb5f02cbfdc1b51510476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dacac1818027f980d8c43ee2a1da04d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrypto__digest__t.html">crypto_digest_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypt__path__t.html#a4dacac1818027f980d8c43ee2a1da04d">b_digest</a></td></tr>
-<tr class="separator:a4dacac1818027f980d8c43ee2a1da04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5bc1604f864fd87187deaa74d88a16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrelay__crypto__t.html">relay_crypto_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypt__path__t.html#aec5bc1604f864fd87187deaa74d88a16">crypto</a></td></tr>
+<tr class="separator:aec5bc1604f864fd87187deaa74d88a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af63530ca36ca742935f4abaf3b49207c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structonion__handshake__state__t.html">onion_handshake_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypt__path__t.html#af63530ca36ca742935f4abaf3b49207c">handshake_state</a></td></tr>
 <tr class="separator:af63530ca36ca742935f4abaf3b49207c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af441d3035671fcc9750e73d9e2b0437c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrypto__dh__t.html">crypto_dh_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypt__path__t.html#af441d3035671fcc9750e73d9e2b0437c">rend_dh_handshake_state</a></td></tr>
 <tr class="separator:af441d3035671fcc9750e73d9e2b0437c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b771740e5cc3b0d9ca43d704549b97"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypt__path__t.html#ae2b771740e5cc3b0d9ca43d704549b97">rend_circ_nonce</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
+<tr class="memitem:ae2b771740e5cc3b0d9ca43d704549b97"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypt__path__t.html#ae2b771740e5cc3b0d9ca43d704549b97">rend_circ_nonce</a> [<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
 <tr class="separator:ae2b771740e5cc3b0d9ca43d704549b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac6227db2123a8a221f2c98ca2732c28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structextend__info__t.html">extend_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypt__path__t.html#aac6227db2123a8a221f2c98ca2732c28">extend_info</a></td></tr>
 <tr class="separator:aac6227db2123a8a221f2c98ca2732c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,33 +109,18 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>magic</b></td></t
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds accounting information for a single step in the layered encryption performed by a circuit. Used only at the client edge of a circuit. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="ad30e4178232c9715bd3a85edba435587"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad30e4178232c9715bd3a85edba435587">&#9670;&nbsp;</a></span>b_crypto</h2>
+<a id="aec5bc1604f864fd87187deaa74d88a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5bc1604f864fd87187deaa74d88a16">&#9670;&nbsp;</a></span>crypto</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structaes__cnt__cipher.html">crypto_cipher_t</a>* b_crypto</td>
+          <td class="memname"><a class="el" href="structrelay__crypto__t.html">relay_crypto_t</a> crypto</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Encryption key and counter for cells heading back from the OR at this step. </p>
-
-</div>
-</div>
-<a id="a4dacac1818027f980d8c43ee2a1da04d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dacac1818027f980d8c43ee2a1da04d">&#9670;&nbsp;</a></span>b_digest</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structcrypto__digest__t.html">crypto_digest_t</a>* b_digest</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Digest state for cells heading away from the OR at this step. </p>
+<p>Cryptographic state used for encrypting and authenticating relay cells to and from this hop. </p>
 
 </div>
 </div>
@@ -173,36 +151,6 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>magic</b></td></t
       </table>
 </div><div class="memdoc">
 <p>Information to extend to the OR at this step. </p>
-
-</div>
-</div>
-<a id="aa4ff7957a706f16efe99f7018dd48209"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4ff7957a706f16efe99f7018dd48209">&#9670;&nbsp;</a></span>f_crypto</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structaes__cnt__cipher.html">crypto_cipher_t</a>* f_crypto</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Encryption key and counter for cells heading towards the OR at this step. </p>
-
-</div>
-</div>
-<a id="a41bda9d43f0bb5f02cbfdc1b51510476"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41bda9d43f0bb5f02cbfdc1b51510476">&#9670;&nbsp;</a></span>f_digest</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structcrypto__digest__t.html">crypto_digest_t</a>* f_digest</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Digest state for cells heading towards the OR at this step. </p>
 
 </div>
 </div>
@@ -273,7 +221,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>magic</b></td></t
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char rend_circ_nonce[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
+          <td class="memname">char rend_circ_nonce[<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">

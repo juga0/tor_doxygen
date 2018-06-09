@@ -1,0 +1,7 @@
+<map id="connection_bucket_adjust" name="connection_bucket_adjust">
+<area shape="rect" id="node2" href="$token__bucket_8c.html#a50fe824eab38393da0fc4f96d745d42c" title="token_bucket_rw_adjust" alt="" coords="227,64,389,91"/>
+<area shape="rect" id="node3" href="$token__bucket_8c.html#a7e7591bea5c400ec818196fc5435cb15" title="token_bucket_cfg_init" alt="" coords="448,5,597,32"/>
+<area shape="rect" id="node4" href="$token__bucket_8c.html#a22392cbca806a78cd2e87691a6065251" title="rate_per_sec_to_rate\l_per_step" alt="" coords="451,57,595,98"/>
+<area shape="rect" id="node6" href="$token__bucket_8c.html#a43ef8eed8a63421520fce9b002013f46" title="token_bucket_raw_adjust" alt="" coords="437,123,608,149"/>
+<area shape="rect" id="node5" href="$compat__time_8c.html#a663ad7bf6571707eee93acdc3dc51384" title="monotime_coarse_stamp\l_units_to_approx_msec" alt="" coords="656,57,824,98"/>
+</map>

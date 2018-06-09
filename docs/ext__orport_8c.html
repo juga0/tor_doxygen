@@ -77,49 +77,61 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__or_8h_source.html">connection_or.h</a>&quot;</code><br />
-<code>#include &quot;ext_orport.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
+<code>#include &quot;ext_orport.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+<code>#include &quot;proto_ext_or.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ext_orport.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="ext__orport_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2ext__orport_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2ext__orport_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2ext__orport_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1410,109,1454,136"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="405,333,456,360"/>
-<area shape="rect" id="node34" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1977,184,2073,211"/>
-<area shape="rect" id="node36" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2148,109,2263,136"/>
-<area shape="rect" id="node37" href="ext__orport_8h_source.html" title="ext_orport.h" alt="" coords="2287,109,2377,136"/>
-<area shape="rect" id="node38" href="control_8h.html" title="Header file for control.c. " alt="" coords="2401,109,2473,136"/>
-<area shape="rect" id="node39" href="config_8h.html" title="Header file for config.c. " alt="" coords="1906,259,1974,285"/>
-<area shape="rect" id="node40" href="main_8h.html" title="Header file for main.c. " alt="" coords="2497,109,2559,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="306,707,385,733"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="735,632,798,659"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1055,408,1124,435"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1527,408,1641,435"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1437,483,1563,509"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1318,557,1461,584"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1058,333,1121,360"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1369,408,1434,435"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="683,259,770,285"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="1469,184,1541,211"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="606,184,685,211"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1960,557,2088,584"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="1566,184,1610,211"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1634,184,1737,211"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1761,184,1852,211"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1689,557,1783,584"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1475,632,1573,659"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="570,483,646,509"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="291,632,399,659"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="443,557,570,584"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="887,408,1015,435"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="687,333,766,360"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="145,557,215,584"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="494,408,573,435"/>
-<area shape="rect" id="node35" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1809,259,1882,285"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1607,109,1651,136"/>
+<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="1027,557,1078,584"/>
+<area shape="rect" id="node41" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="2191,333,2287,360"/>
+<area shape="rect" id="node43" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2077,109,2191,136"/>
+<area shape="rect" id="node44" href="control_8h.html" title="Header file for control.c. " alt="" coords="2215,109,2287,136"/>
+<area shape="rect" id="node45" href="config_8h.html" title="Header file for config.c. " alt="" coords="5,707,73,733"/>
+<area shape="rect" id="node46" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="2381,483,2482,509"/>
+<area shape="rect" id="node47" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="2439,557,2533,584"/>
+<area shape="rect" id="node48" href="ext__orport_8h_source.html" title="ext_orport.h" alt="" coords="2539,109,2630,136"/>
+<area shape="rect" id="node49" href="main_8h.html" title="Header file for main.c. " alt="" coords="2654,109,2715,136"/>
+<area shape="rect" id="node50" href="proto__ext__or_8h_source.html" title="proto_ext_or.h" alt="" coords="2740,109,2845,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1237,931,1316,957"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1888,856,1951,883"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1789,259,1858,285"/>
+<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="1491,483,1577,509"/>
+<area shape="rect" id="node22" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="352,483,417,509"/>
+<area shape="rect" id="node23" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1039,184,1152,211"/>
+<area shape="rect" id="node24" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1079,259,1205,285"/>
+<area shape="rect" id="node25" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1256,333,1399,360"/>
+<area shape="rect" id="node28" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="533,259,596,285"/>
+<area shape="rect" id="node31" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="923,184,1014,211"/>
+<area shape="rect" id="node32" href="address_8h.html" title="Headers for address.h. " alt="" coords="1627,408,1705,435"/>
+<area shape="rect" id="node33" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1141,781,1269,808"/>
+<area shape="rect" id="node34" href="ht_8h_source.html" title="ht.h" alt="" coords="1228,184,1272,211"/>
+<area shape="rect" id="node35" href="confline_8h_source.html" title="confline.h" alt="" coords="1635,259,1713,285"/>
+<area shape="rect" id="node36" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1348,184,1451,211"/>
+<area shape="rect" id="node37" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1475,184,1566,211"/>
+<area shape="rect" id="node38" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="2000,781,2111,808"/>
+<area shape="rect" id="node39" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1829,781,1924,808"/>
+<area shape="rect" id="node40" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1691,184,1806,211"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="880,707,956,733"/>
+<area shape="rect" id="node18" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1137,333,1232,360"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="417,856,515,883"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="712,856,820,883"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="757,781,884,808"/>
+<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1344,781,1415,808"/>
+<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="555,632,633,659"/>
+<area shape="rect" id="node19" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="1389,408,1500,435"/>
+<area shape="rect" id="node21" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1491,557,1569,584"/>
+<area shape="rect" id="node26" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="909,408,1060,435"/>
+<area shape="rect" id="node29" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="501,333,629,360"/>
+<area shape="rect" id="node42" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1293,632,1367,659"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -134,7 +146,7 @@ Macros</h2></td></tr>
 <tr class="separator:aecf1388da8736dbc805e7a11492c50e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a713a2218c9d781f5d57acfda47cc5404"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext__orport_8c.html#a713a2218c9d781f5d57acfda47cc5404">EXT_OR_PORT_AUTH_COOKIE_HEADER</a>&#160;&#160;&#160;&quot;! Extended ORPort Auth Cookie !\x0a&quot;</td></tr>
 <tr class="separator:a713a2218c9d781f5d57acfda47cc5404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56d381fb2dc26bb2c25459b991aed4d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext__orport_8c.html#a56d381fb2dc26bb2c25459b991aed4d7">EXT_OR_PORT_AUTH_HASH_LEN</a>&#160;&#160;&#160;<a class="el" href="crypto_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a></td></tr>
+<tr class="memitem:a56d381fb2dc26bb2c25459b991aed4d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext__orport_8c.html#a56d381fb2dc26bb2c25459b991aed4d7">EXT_OR_PORT_AUTH_HASH_LEN</a>&#160;&#160;&#160;<a class="el" href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a></td></tr>
 <tr class="separator:a56d381fb2dc26bb2c25459b991aed4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7058a4ede0992830d959e55eb726cfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext__orport_8c.html#aa7058a4ede0992830d959e55eb726cfb">EXT_OR_PORT_AUTH_NONCE_LEN</a>&#160;&#160;&#160;32</td></tr>
 <tr class="separator:aa7058a4ede0992830d959e55eb726cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,8 +188,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a9b98903c71b52bfe9d1463aff934f7a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structext__or__cmd__t.html">ext_or_cmd_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext__orport_8c.html#a9b98903c71b52bfe9d1463aff934f7a3">ext_or_cmd_new</a> (uint16_t len)</td></tr>
 <tr class="separator:a9b98903c71b52bfe9d1463aff934f7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90e47149804842f4ab232b90e6c76a13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext__orport_8c.html#a90e47149804842f4ab232b90e6c76a13">ext_or_cmd_free</a> (<a class="el" href="structext__or__cmd__t.html">ext_or_cmd_t</a> *cmd)</td></tr>
-<tr class="separator:a90e47149804842f4ab232b90e6c76a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824f899f80f1f6519c78183deb55963c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext__orport_8c.html#a824f899f80f1f6519c78183deb55963c">ext_or_cmd_free_</a> (<a class="el" href="structext__or__cmd__t.html">ext_or_cmd_t</a> *cmd)</td></tr>
+<tr class="separator:a824f899f80f1f6519c78183deb55963c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb4c42bca0be106a592a42e87c7c3765"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext__orport_8c.html#aeb4c42bca0be106a592a42e87c7c3765">connection_write_ext_or_command</a> (<a class="el" href="structconnection__t.html">connection_t</a> *conn, uint16_t command, const char *body, size_t bodylen)</td></tr>
 <tr class="separator:aeb4c42bca0be106a592a42e87c7c3765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62142eb5d3bc38acbfc09824d56d1352"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ext__orport_8c.html#a62142eb5d3bc38acbfc09824d56d1352">get_ext_or_auth_cookie_file_name</a> (void)</td></tr>
@@ -291,7 +303,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EXT_OR_PORT_AUTH_HASH_LEN&#160;&#160;&#160;<a class="el" href="crypto_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a></td>
+          <td class="memname">#define EXT_OR_PORT_AUTH_HASH_LEN&#160;&#160;&#160;<a class="el" href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -384,6 +396,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Initiate Extended ORPort authentication, by sending the list of supported authentication types to the client. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="ext__orport_8c_ab9d4a08079b59b67b52a4a9278604b9f_icgraph.png" border="0" usemap="#ext__orport_8c_ab9d4a08079b59b67b52a4a9278604b9f_icgraph" alt=""/></div>
+<map name="ext__orport_8c_ab9d4a08079b59b67b52a4a9278604b9f_icgraph" id="ext__orport_8c_ab9d4a08079b59b67b52a4a9278604b9f_icgraph">
+<area shape="rect" id="node2" href="connection_8h.html#acb0804d5890924a2d6e3c4e3638ccfe4" title="connection_init_accepted_conn" alt="" coords="247,5,451,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -436,14 +456,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a90e47149804842f4ab232b90e6c76a13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90e47149804842f4ab232b90e6c76a13">&#9670;&nbsp;</a></span>ext_or_cmd_free()</h2>
+<a id="a824f899f80f1f6519c78183deb55963c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a824f899f80f1f6519c78183deb55963c">&#9670;&nbsp;</a></span>ext_or_cmd_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ext_or_cmd_free </td>
+          <td class="memname">void ext_or_cmd_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structext__or__cmd__t.html">ext_or_cmd_t</a> *&#160;</td>
           <td class="paramname"><em>cmd</em></td><td>)</td>
@@ -509,6 +529,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Helper: Return a newly allocated string containing a path to the file where we store our authentication cookie. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="ext__orport_8c_a62142eb5d3bc38acbfc09824d56d1352_icgraph.png" border="0" usemap="#ext__orport_8c_a62142eb5d3bc38acbfc09824d56d1352_icgraph" alt=""/></div>
+<map name="ext__orport_8c_a62142eb5d3bc38acbfc09824d56d1352_icgraph" id="ext__orport_8c_a62142eb5d3bc38acbfc09824d56d1352_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#a4d28e76dd898a85ba3459928e3659954" title="tor_cleanup" alt="" coords="213,13,303,39"/>
+</map>
+</div>
 
 </div>
 </div>

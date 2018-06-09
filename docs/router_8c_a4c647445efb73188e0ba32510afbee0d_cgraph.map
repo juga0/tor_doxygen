@@ -1,5 +1,6 @@
 <map id="construct_ntor_key_map" name="construct_ntor_key_map">
-<area shape="rect" id="node2" href="$di__ops_8c.html#a0aaf282503417e5cc43bd18eb9cdd667" title="dimap_add_entry" alt="" coords="219,5,340,32"/>
-<area shape="rect" id="node3" href="$di__ops_8c.html#a032d26f93f592b1cf781c8f147b2e38e" title="dimap_search" alt="" coords="388,5,491,32"/>
-<area shape="rect" id="node4" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="539,5,625,32"/>
+<area shape="rect" id="node2" href="$util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="219,5,341,32"/>
+<area shape="rect" id="node3" href="$di__ops_8c.html#a0aaf282503417e5cc43bd18eb9cdd667" title="dimap_add_entry" alt="" coords="219,56,341,83"/>
+<area shape="rect" id="node4" href="$di__ops_8c.html#a032d26f93f592b1cf781c8f147b2e38e" title="dimap_search" alt="" coords="389,56,492,83"/>
+<area shape="rect" id="node5" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="540,56,627,83"/>
 </map>

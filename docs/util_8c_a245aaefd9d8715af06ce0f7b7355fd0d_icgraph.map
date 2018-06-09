@@ -1,20 +1,21 @@
 <map id="strcmpstart" name="strcmpstart">
-<area shape="rect" id="node2" href="$crypto__format_8c.html#a40e1ed638568c15cac66b16cf427b4e7" title="crypto_read_tagged\l_contents_from_file" alt="" coords="174,87,310,128"/>
-<area shape="rect" id="node6" href="$config_8c.html#aa33011ecb969cfb88f0e8979654d1fed" title="parse_dir_fallback_line" alt="" coords="165,185,319,211"/>
-<area shape="rect" id="node8" href="$config_8h.html#a921479be2cc807b006e928356bc0ba51" title="port_cfg_line_extract\l_addrport" alt="" coords="171,236,313,277"/>
-<area shape="rect" id="node9" href="$control_8h.html#ab464eef1adbc6df3fcc09063dc6f9c3e" title="decode_hashed_passwords" alt="" coords="151,302,333,329"/>
-<area shape="rect" id="node10" href="$control_8c.html#afb5aa2ca5fb7e5db504bf1d3ff1342c5" title="getinfo_helper_downloads_cert" alt="" coords="141,353,343,379"/>
-<area shape="rect" id="node11" href="$control_8c.html#a8464eca5a44ec95b58f55316cd5a4ceb" title="getinfo_helper_downloads" alt="" coords="391,378,563,405"/>
-<area shape="rect" id="node12" href="$directory_8c.html#a2ab1c7dcfde852c520eb496643fdc865" title="parse_http_url" alt="" coords="190,454,294,481"/>
-<area shape="rect" id="node13" href="$dirserv_8h.html#a8fca5a38cd000d8ccabe5bc73e296bb2" title="dirserv_get_routerdescs" alt="" coords="161,505,323,531"/>
-<area shape="rect" id="node14" href="$dirvote_8c.html#a53c84b14cb4293be3481901a2bf7d344" title="dirvote_get_intermediate\l_param_value" alt="" coords="160,556,324,597"/>
-<area shape="rect" id="node15" href="$geoip_8h.html#a921840886e0a3d9ba57b014e6629cf1b" title="getinfo_helper_geoip" alt="" coords="171,622,313,649"/>
-<area shape="rect" id="node16" href="$policies_8h.html#a3bfef99ddcecfbae711ce90c0c02bdff" title="parse_short_policy" alt="" coords="177,673,307,699"/>
-<area shape="rect" id="node17" href="$rephist_8h.html#a3b22d94b9f6a32b2213e011bb278258d" title="rep_hist_load_mtbf_data" alt="" coords="160,723,324,750"/>
-<area shape="rect" id="node18" href="$routerparse_8h.html#a47c9a3cf5868b2133b4e5a582ca69aa6" title="tor_version_parse_platform" alt="" coords="153,774,331,801"/>
-<area shape="rect" id="node19" href="$routerparse_8h.html#af9f19ced712ed538c086276fa472851d" title="rend_parse_client_keys" alt="" coords="163,825,321,851"/>
+<area shape="rect" id="node2" href="$crypto__format_8c.html#a40e1ed638568c15cac66b16cf427b4e7" title="crypto_read_tagged\l_contents_from_file" alt="" coords="174,101,310,143"/>
+<area shape="rect" id="node6" href="$config_8c.html#aa33011ecb969cfb88f0e8979654d1fed" title="parse_dir_fallback_line" alt="" coords="165,198,319,225"/>
+<area shape="rect" id="node8" href="$config_8h.html#a921479be2cc807b006e928356bc0ba51" title="port_cfg_line_extract\l_addrport" alt="" coords="171,249,313,291"/>
+<area shape="rect" id="node10" href="$control_8h.html#ab464eef1adbc6df3fcc09063dc6f9c3e" title="decode_hashed_passwords" alt="" coords="151,315,333,342"/>
+<area shape="rect" id="node11" href="$control_8c.html#aafbf616bddc3f380f8c682ed7550e3c4" title="getinfo_helper_dir" alt="" coords="180,366,304,393"/>
+<area shape="rect" id="node12" href="$control_8c.html#afb5aa2ca5fb7e5db504bf1d3ff1342c5" title="getinfo_helper_downloads_cert" alt="" coords="141,417,343,443"/>
+<area shape="rect" id="node13" href="$control_8c.html#a8464eca5a44ec95b58f55316cd5a4ceb" title="getinfo_helper_downloads" alt="" coords="391,442,563,469"/>
+<area shape="rect" id="node14" href="$dirvote_8c.html#a53c84b14cb4293be3481901a2bf7d344" title="dirvote_get_intermediate\l_param_value" alt="" coords="160,519,324,560"/>
+<area shape="rect" id="node15" href="$directory_8c.html#a2ab1c7dcfde852c520eb496643fdc865" title="parse_http_url" alt="" coords="425,610,529,637"/>
+<area shape="rect" id="node16" href="$directory_8h.html#adeaaed095405cd4aad17cf7a1197de3c" title="parse_http_command" alt="" coords="169,635,315,662"/>
+<area shape="rect" id="node17" href="$geoip_8h.html#a921840886e0a3d9ba57b014e6629cf1b" title="getinfo_helper_geoip" alt="" coords="171,686,313,713"/>
+<area shape="rect" id="node18" href="$policies_8h.html#a3bfef99ddcecfbae711ce90c0c02bdff" title="parse_short_policy" alt="" coords="177,737,307,763"/>
+<area shape="rect" id="node19" href="$routerparse_8h.html#a47c9a3cf5868b2133b4e5a582ca69aa6" title="tor_version_parse_platform" alt="" coords="153,787,331,814"/>
+<area shape="rect" id="node20" href="$routerparse_8h.html#af9f19ced712ed538c086276fa472851d" title="rend_parse_client_keys" alt="" coords="163,838,321,865"/>
 <area shape="rect" id="node3" href="$crypto__curve25519_8c.html#a7fce12b8d0fef7bbe32c103aaab17412" title="curve25519_keypair\l_read_from_file" alt="" coords="407,5,546,47"/>
 <area shape="rect" id="node4" href="$crypto__ed25519_8c.html#a34a8bd7b192871bd1e5b778961ba2efb" title="ed25519_seckey_read\l_from_file" alt="" coords="401,71,553,112"/>
 <area shape="rect" id="node5" href="$crypto__ed25519_8c.html#aa33c6bb447b0042745d6d2938a12dda4" title="ed25519_pubkey_read\l_from_file" alt="" coords="401,136,553,177"/>
 <area shape="rect" id="node7" href="$config_8c.html#ada6cefd4da1cfdc3d1588721bafc0a3f" title="MOCK_IMPL" alt="" coords="427,202,527,229"/>
+<area shape="rect" id="node9" href="$config_8c.html#a2f94cacd47e7b9730a2255c0a7c618ca" title="parse_port_config" alt="" coords="414,257,539,283"/>
 </map>

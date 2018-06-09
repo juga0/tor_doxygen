@@ -74,10 +74,11 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;orconfig.h&quot;</code><br />
 <code>#include &quot;container.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="crypto_8h_source.html">crypto.h</a>&quot;</code><br />
 <code>#include &quot;crypto_curve25519.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__digest_8h_source.html">crypto_digest.h</a>&quot;</code><br />
 <code>#include &quot;crypto_ed25519.h&quot;</code><br />
 <code>#include &quot;crypto_format.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
 <code>#include &quot;util_format.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="torlog_8h_source.html">torlog.h</a>&quot;</code><br />
@@ -86,23 +87,25 @@ Include dependency graph for crypto_format.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="crypto__format_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2crypto__format_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2crypto__format_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2crypto__format_8c">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="306,557,385,584"/>
-<area shape="rect" id="node3" href="container_8h_source.html" title="container.h" alt="" coords="839,109,926,136"/>
-<area shape="rect" id="node4" href="util_8h.html" title="Headers for util.c. " alt="" coords="664,184,715,211"/>
-<area shape="rect" id="node17" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="916,259,985,285"/>
-<area shape="rect" id="node18" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1387,408,1530,435"/>
-<area shape="rect" id="node19" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1443,333,1568,360"/>
-<area shape="rect" id="node20" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1443,259,1557,285"/>
-<area shape="rect" id="node21" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1115,408,1210,435"/>
-<area shape="rect" id="node22" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1223,259,1289,285"/>
-<area shape="rect" id="node16" href="siphash_8h_source.html" title="siphash.h" alt="" coords="843,184,922,211"/>
-<area shape="rect" id="node5" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="791,483,854,509"/>
-<area shape="rect" id="node6" href="compat_8h_source.html" title="compat.h" alt="" coords="631,333,707,360"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1181,483,1280,509"/>
-<area shape="rect" id="node13" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="43,408,114,435"/>
-<area shape="rect" id="node15" href="util__bug_8h.html" title="util_bug.h" alt="" coords="517,259,595,285"/>
-<area shape="rect" id="node9" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="291,483,399,509"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="342,408,469,435"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="702,856,781,883"/>
+<area shape="rect" id="node3" href="container_8h_source.html" title="container.h" alt="" coords="927,408,1014,435"/>
+<area shape="rect" id="node4" href="util_8h.html" title="Headers for util.c. " alt="" coords="819,483,869,509"/>
+<area shape="rect" id="node18" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1141,259,1283,285"/>
+<area shape="rect" id="node19" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="1266,333,1377,360"/>
+<area shape="rect" id="node22" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="869,184,995,211"/>
+<area shape="rect" id="node23" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="826,109,939,136"/>
+<area shape="rect" id="node24" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="1537,184,1631,211"/>
+<area shape="rect" id="node25" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1079,707,1174,733"/>
+<area shape="rect" id="node26" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="94,557,159,584"/>
+<area shape="rect" id="node17" href="siphash_8h_source.html" title="siphash.h" alt="" coords="931,483,1010,509"/>
+<area shape="rect" id="node5" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1181,781,1243,808"/>
+<area shape="rect" id="node7" href="compat_8h_source.html" title="compat.h" alt="" coords="671,632,747,659"/>
+<area shape="rect" id="node8" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="209,781,308,808"/>
+<area shape="rect" id="node14" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="499,707,570,733"/>
+<area shape="rect" id="node16" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="670,557,749,584"/>
+<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="474,781,582,808"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="775,707,902,733"/>
+<area shape="rect" id="node20" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1141,408,1291,435"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -116,6 +119,8 @@ Functions</h2></td></tr>
 <tr class="separator:af5e410c14abfc060427f4ffdd868e301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a361bb33c8cdeccce50ba7af177ec3e79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto__format_8c.html#a361bb33c8cdeccce50ba7af177ec3e79">curve25519_public_from_base64</a> (<a class="el" href="structcurve25519__public__key__t.html">curve25519_public_key_t</a> *pkey, const char *input)</td></tr>
 <tr class="separator:a361bb33c8cdeccce50ba7af177ec3e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410a5ce7823282053a68132d17e82fe5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto__format_8c.html#a410a5ce7823282053a68132d17e82fe5">ed25519_fmt</a> (const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *pkey)</td></tr>
+<tr class="separator:a410a5ce7823282053a68132d17e82fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6448c96c317d8282c03d680cda1e9e6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto__format_8c.html#a6448c96c317d8282c03d680cda1e9e6a">ed25519_public_from_base64</a> (<a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *pkey, const char *input)</td></tr>
 <tr class="separator:a6448c96c317d8282c03d680cda1e9e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe3914879d93c7eb2f06d9628979364"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364">ed25519_public_to_base64</a> (char *output, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *pkey)</td></tr>
@@ -433,8 +438,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="crypto__format_8c_a357bf351fe9894c905f7e7029da38f9a_icgraph.png" border="0" usemap="#crypto__format_8c_a357bf351fe9894c905f7e7029da38f9a_icgraph" alt=""/></div>
 <map name="crypto__format_8c_a357bf351fe9894c905f7e7029da38f9a_icgraph" id="crypto__format_8c_a357bf351fe9894c905f7e7029da38f9a_icgraph">
-<area shape="rect" id="node2" href="crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364" title="ed25519_public_to_base64" alt="" coords="199,5,377,32"/>
-<area shape="rect" id="node3" href="dirvote_8h.html#a97feb95be6e8e94295fa6775355318ee" title="dirvote_create_microdescriptor" alt="" coords="425,5,625,32"/>
+<area shape="rect" id="node2" href="crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364" title="ed25519_public_to_base64" alt="" coords="199,56,377,83"/>
+<area shape="rect" id="node3" href="crypto__format_8c.html#a410a5ce7823282053a68132d17e82fe5" title="ed25519_fmt" alt="" coords="477,5,574,32"/>
+<area shape="rect" id="node4" href="dirvote_8c.html#a059168318a87de5f77438cbcefdb73ed" title="dirvote_create_microdescriptor" alt="" coords="425,56,625,83"/>
+<area shape="rect" id="node5" href="hs__service_8c.html#a0db0ef0b23d20f33bc2d933e9580303a" title="encode_desc_rev_counter\l_for_state" alt="" coords="438,107,613,149"/>
 </map>
 </div>
 
@@ -517,7 +524,39 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="crypto__format_8c_aa31b9d5fd609a1c8c3c888c7d817284c_icgraph.png" border="0" usemap="#crypto__format_8c_aa31b9d5fd609a1c8c3c888c7d817284c_icgraph" alt=""/></div>
 <map name="crypto__format_8c_aa31b9d5fd609a1c8c3c888c7d817284c_icgraph" id="crypto__format_8c_aa31b9d5fd609a1c8c3c888c7d817284c_icgraph">
-<area shape="rect" id="node2" href="dirvote_8h.html#a97feb95be6e8e94295fa6775355318ee" title="dirvote_create_microdescriptor" alt="" coords="177,5,377,32"/>
+<area shape="rect" id="node2" href="dirvote_8c.html#a059168318a87de5f77438cbcefdb73ed" title="dirvote_create_microdescriptor" alt="" coords="177,5,377,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a410a5ce7823282053a68132d17e82fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a410a5ce7823282053a68132d17e82fe5">&#9670;&nbsp;</a></span>ed25519_fmt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ed25519_fmt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
+          <td class="paramname"><em>pkey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For logging convenience: Convert <b>pkey</b> to a statically allocated base64 string and return it. Not threadsafe. Format not meant to be computer-readable; it may change in the future. Subsequent calls invalidate previous returns. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="crypto__format_8c_a410a5ce7823282053a68132d17e82fe5_cgraph.png" border="0" usemap="#crypto__format_8c_a410a5ce7823282053a68132d17e82fe5_cgraph" alt=""/></div>
+<map name="crypto__format_8c_a410a5ce7823282053a68132d17e82fe5_cgraph" id="crypto__format_8c_a410a5ce7823282053a68132d17e82fe5_cgraph">
+<area shape="rect" id="node2" href="crypto__ed25519_8c.html#a1d56281a358363aa105b7032aebc46e4" title="ed25519_public_key\l_is_zero" alt="" coords="170,5,310,47"/>
+<area shape="rect" id="node4" href="crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364" title="ed25519_public_to_base64" alt="" coords="151,71,329,98"/>
+<area shape="rect" id="node3" href="util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="389,13,511,39"/>
+<area shape="rect" id="node5" href="crypto__format_8c.html#a357bf351fe9894c905f7e7029da38f9a" title="digest256_to_base64" alt="" coords="377,71,523,98"/>
+<area shape="rect" id="node6" href="util__format_8c.html#a2394b082102cdbb3d443955e9b056e0e" title="base64_encode" alt="" coords="571,71,684,98"/>
+<area shape="rect" id="node7" href="util__format_8c.html#a733f32f58c6056750ad6f64228af51b2" title="base64_encode_size" alt="" coords="732,71,876,98"/>
 </map>
 </div>
 
@@ -602,7 +641,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="crypto__format_8c_abfe3914879d93c7eb2f06d9628979364_icgraph.png" border="0" usemap="#crypto__format_8c_abfe3914879d93c7eb2f06d9628979364_icgraph" alt=""/></div>
 <map name="crypto__format_8c_abfe3914879d93c7eb2f06d9628979364_icgraph" id="crypto__format_8c_abfe3914879d93c7eb2f06d9628979364_icgraph">
-<area shape="rect" id="node2" href="dirvote_8h.html#a97feb95be6e8e94295fa6775355318ee" title="dirvote_create_microdescriptor" alt="" coords="232,5,432,32"/>
+<area shape="rect" id="node2" href="crypto__format_8c.html#a410a5ce7823282053a68132d17e82fe5" title="ed25519_fmt" alt="" coords="283,5,381,32"/>
+<area shape="rect" id="node3" href="dirvote_8c.html#a059168318a87de5f77438cbcefdb73ed" title="dirvote_create_microdescriptor" alt="" coords="232,56,432,83"/>
+<area shape="rect" id="node4" href="hs__service_8c.html#a0db0ef0b23d20f33bc2d933e9580303a" title="encode_desc_rev_counter\l_for_state" alt="" coords="245,107,419,149"/>
 </map>
 </div>
 

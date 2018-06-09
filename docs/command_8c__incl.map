@@ -1,46 +1,49 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/command.c" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/command.c">
-<area shape="rect" id="node2" href="$or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1237,333,1281,360"/>
-<area shape="rect" id="node32" href="$channel_8h.html" title="Header file for channel.c. " alt="" coords="1347,184,1426,211"/>
-<area shape="rect" id="node34" href="$circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1422,109,1517,136"/>
-<area shape="rect" id="node35" href="$circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1793,259,1879,285"/>
-<area shape="rect" id="node36" href="$command_8h.html" title="Header file for command.c. " alt="" coords="1541,109,1632,136"/>
-<area shape="rect" id="node37" href="$connection_8h.html" title="Header file for connection.c. " alt="" coords="1785,184,1881,211"/>
-<area shape="rect" id="node39" href="$connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="1757,109,1872,136"/>
-<area shape="rect" id="node40" href="$config_8h.html" title="Header file for config.c. " alt="" coords="2061,184,2129,211"/>
-<area shape="rect" id="node41" href="$control_8h.html" title="Header file for control.c. " alt="" coords="1947,109,2019,136"/>
-<area shape="rect" id="node42" href="$cpuworker_8h.html" title="Header file for cpuworker.c. " alt="" coords="2043,109,2136,136"/>
-<area shape="rect" id="node43" href="$dos_8h_source.html" title="dos.h" alt="" coords="2161,109,2215,136"/>
-<area shape="rect" id="node44" href="$hibernate_8h.html" title="Header file for hibernate.c. " alt="" coords="2210,259,2297,285"/>
-<area shape="rect" id="node45" href="$nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2291,109,2370,136"/>
-<area shape="rect" id="node46" href="$onion_8h.html" title="Header file for onion.c. " alt="" coords="2395,109,2459,136"/>
-<area shape="rect" id="node47" href="$rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2483,109,2555,136"/>
-<area shape="rect" id="node48" href="$relay_8h.html" title="Header file for relay.c. " alt="" coords="2579,109,2640,136"/>
-<area shape="rect" id="node49" href="$router_8h.html" title="Header file for router.c. " alt="" coords="2535,333,2601,360"/>
-<area shape="rect" id="node50" href="$routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2593,483,2676,509"/>
-<area shape="rect" id="node3" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="425,856,503,883"/>
-<area shape="rect" id="node4" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="594,781,657,808"/>
-<area shape="rect" id="node5" href="$crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1185,557,1255,584"/>
-<area shape="rect" id="node13" href="$crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1279,557,1393,584"/>
-<area shape="rect" id="node14" href="$crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1345,632,1471,659"/>
-<area shape="rect" id="node15" href="$crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1419,707,1562,733"/>
-<area shape="rect" id="node16" href="$tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1565,483,1627,509"/>
-<area shape="rect" id="node19" href="$torlog_8h.html" title="Headers for log.c. " alt="" coords="1869,557,1934,584"/>
-<area shape="rect" id="node20" href="$container_8h_source.html" title="container.h" alt="" coords="579,483,666,509"/>
-<area shape="rect" id="node24" href="$torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="245,408,317,435"/>
-<area shape="rect" id="node25" href="$address_8h.html" title="Headers for address.h. " alt="" coords="583,408,662,435"/>
-<area shape="rect" id="node26" href="$compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="240,707,368,733"/>
-<area shape="rect" id="node28" href="$ht_8h_source.html" title="ht.h" alt="" coords="911,408,955,435"/>
-<area shape="rect" id="node29" href="$replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="979,408,1082,435"/>
-<area shape="rect" id="node30" href="$tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1107,408,1197,435"/>
-<area shape="rect" id="node31" href="$util__format_8h_source.html" title="util_format.h" alt="" coords="1586,707,1681,733"/>
-<area shape="rect" id="node7" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="1796,781,1895,808"/>
-<area shape="rect" id="node8" href="$compat_8h_source.html" title="compat.h" alt="" coords="877,632,953,659"/>
-<area shape="rect" id="node10" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="833,781,941,808"/>
-<area shape="rect" id="node12" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1115,707,1242,733"/>
-<area shape="rect" id="node17" href="$compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1615,557,1743,584"/>
-<area shape="rect" id="node21" href="$util_8h.html" title="Headers for util.c. " alt="" coords="597,557,648,584"/>
-<area shape="rect" id="node23" href="$siphash_8h_source.html" title="siphash.h" alt="" coords="494,557,573,584"/>
-<area shape="rect" id="node22" href="$di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="145,707,215,733"/>
-<area shape="rect" id="node33" href="$circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1347,259,1440,285"/>
-<area shape="rect" id="node38" href="$buffers_8h.html" title="Header file for buffers.c. " alt="" coords="2061,333,2134,360"/>
+<area shape="rect" id="node2" href="$or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1059,333,1103,360"/>
+<area shape="rect" id="node28" href="$channel_8h.html" title="Header file for channel.c. " alt="" coords="1207,184,1286,211"/>
+<area shape="rect" id="node32" href="$circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="949,109,1043,136"/>
+<area shape="rect" id="node33" href="$circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1908,333,1993,360"/>
+<area shape="rect" id="node35" href="$command_8h.html" title="Header file for command.c. " alt="" coords="1119,109,1209,136"/>
+<area shape="rect" id="node36" href="$connection_8h.html" title="Header file for connection.c. " alt="" coords="349,184,445,211"/>
+<area shape="rect" id="node38" href="$connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="1284,109,1399,136"/>
+<area shape="rect" id="node39" href="$config_8h.html" title="Header file for config.c. " alt="" coords="1821,259,1889,285"/>
+<area shape="rect" id="node40" href="$control_8h.html" title="Header file for control.c. " alt="" coords="1473,109,1545,136"/>
+<area shape="rect" id="node41" href="$cpuworker_8h.html" title="Header file for cpuworker.c. " alt="" coords="1569,109,1663,136"/>
+<area shape="rect" id="node42" href="$crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="85,259,179,285"/>
+<area shape="rect" id="node43" href="$dos_8h_source.html" title="dos.h" alt="" coords="1738,109,1793,136"/>
+<area shape="rect" id="node44" href="$hibernate_8h.html" title="Header file for hibernate.c. " alt="" coords="1913,184,1999,211"/>
+<area shape="rect" id="node45" href="$nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="1869,109,1947,136"/>
+<area shape="rect" id="node46" href="$onion_8h.html" title="Header file for onion.c. " alt="" coords="1972,109,2036,136"/>
+<area shape="rect" id="node47" href="$rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2060,109,2132,136"/>
+<area shape="rect" id="node48" href="$relay_8h.html" title="Header file for relay.c. " alt="" coords="2156,109,2217,136"/>
+<area shape="rect" id="node49" href="$router_8h.html" title="Header file for router.c. " alt="" coords="2129,259,2196,285"/>
+<area shape="rect" id="node50" href="$routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2292,184,2375,211"/>
+<area shape="rect" id="node3" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="1191,781,1270,808"/>
+<area shape="rect" id="node4" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="489,707,551,733"/>
+<area shape="rect" id="node6" href="$crypto_8h.html" title="Headers for crypto.c. " alt="" coords="535,408,604,435"/>
+<area shape="rect" id="node12" href="$torlog_8h.html" title="Headers for log.c. " alt="" coords="1354,557,1419,584"/>
+<area shape="rect" id="node13" href="$crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1189,408,1302,435"/>
+<area shape="rect" id="node14" href="$crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1499,483,1624,509"/>
+<area shape="rect" id="node15" href="$crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1597,557,1739,584"/>
+<area shape="rect" id="node16" href="$tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1050,408,1113,435"/>
+<area shape="rect" id="node17" href="$container_8h_source.html" title="container.h" alt="" coords="803,483,890,509"/>
+<area shape="rect" id="node18" href="$compress_8h.html" title="Headers for compress.c. " alt="" coords="1327,408,1417,435"/>
+<area shape="rect" id="node19" href="$address_8h.html" title="Headers for address.h. " alt="" coords="262,408,341,435"/>
+<area shape="rect" id="node20" href="$compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2017,632,2145,659"/>
+<area shape="rect" id="node21" href="$ht_8h_source.html" title="ht.h" alt="" coords="365,408,409,435"/>
+<area shape="rect" id="node22" href="$confline_8h_source.html" title="confline.h" alt="" coords="629,408,707,435"/>
+<area shape="rect" id="node23" href="$replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="783,408,886,435"/>
+<area shape="rect" id="node24" href="$tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1644,408,1735,435"/>
+<area shape="rect" id="node25" href="$token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="702,632,813,659"/>
+<area shape="rect" id="node26" href="$util__format_8h_source.html" title="util_format.h" alt="" coords="583,632,678,659"/>
+<area shape="rect" id="node27" href="$hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="911,408,1025,435"/>
+<area shape="rect" id="node8" href="$compat_8h_source.html" title="compat.h" alt="" coords="939,632,1015,659"/>
+<area shape="rect" id="node10" href="$util_8h.html" title="Headers for util.c. " alt="" coords="1067,557,1117,584"/>
+<area shape="rect" id="node11" href="$crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1026,483,1121,509"/>
+<area shape="rect" id="node9" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="1511,707,1609,733"/>
+<area shape="rect" id="node29" href="$circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1284,259,1377,285"/>
+<area shape="rect" id="node30" href="$timers_8h_source.html" title="timers.h" alt="" coords="2271,632,2340,659"/>
+<area shape="rect" id="node31" href="$handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="1691,333,1770,360"/>
+<area shape="rect" id="node34" href="$hs__ident_8h.html" title="Header file containing circuit and connection identifier data for the whole HS subsytem. " alt="" coords="1809,408,1892,435"/>
+<area shape="rect" id="node37" href="$buffers_8h.html" title="Header file for buffers.c. " alt="" coords="550,557,623,584"/>
 </map>

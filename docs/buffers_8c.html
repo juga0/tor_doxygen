@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tor: /home/user/_my/code/bwauth-related/tor/src/or/buffers.c File Reference</title>
+<title>tor: /home/user/_my/code/bwauth-related/tor/src/common/buffers.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_386635fabd7f6c74e9d9c7a8604514a0.html">or</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_b7e1585941a202f53e5249c42015d573.html">common</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,56 +75,31 @@ $(function() {
 
 <p>Implements a generic buffer interface.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
-<code>#include &quot;addressmap.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;orconfig.h&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="buffers_8h_source.html">buffers.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="connection__edge_8h_source.html">connection_edge.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="connection__or_8h_source.html">connection_or.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="reasons_8h_source.html">reasons.h</a>&quot;</code><br />
-<code>#include &quot;ext_orport.h&quot;</code><br />
+<code>#include &quot;compat.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="compress_8h_source.html">compress.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="torint_8h_source.html">torint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="torlog_8h_source.html">torlog.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for buffers.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="buffers_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2buffers_8c" alt=""/></div>
-<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2buffers_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2buffers_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="923,109,967,136"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1622,259,1687,285"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="547,333,597,360"/>
-<area shape="rect" id="node34" href="addressmap_8h_source.html" title="addressmap.h" alt="" coords="1787,259,1891,285"/>
-<area shape="rect" id="node35" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1915,259,1989,285"/>
-<area shape="rect" id="node36" href="config_8h.html" title="Header file for config.c. " alt="" coords="1981,333,2049,360"/>
-<area shape="rect" id="node37" href="connection__edge_8h.html" title="Header file for connection_edge.c. " alt="" coords="2175,483,2305,509"/>
-<area shape="rect" id="node38" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2115,109,2229,136"/>
-<area shape="rect" id="node39" href="control_8h.html" title="Header file for control.c. " alt="" coords="2253,109,2325,136"/>
-<area shape="rect" id="node40" href="reasons_8h.html" title="Header file for reasons.c. " alt="" coords="2350,109,2429,136"/>
-<area shape="rect" id="node41" href="ext__orport_8h_source.html" title="ext_orport.h" alt="" coords="2453,109,2544,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="907,707,986,733"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="429,632,491,659"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1465,408,1535,435"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="358,408,471,435"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="447,483,572,509"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="443,557,586,584"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1469,333,1531,360"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="614,259,701,285"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="827,184,899,211"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="618,184,697,211"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2151,557,2279,584"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="923,184,967,211"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="991,184,1094,211"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1119,184,1209,211"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="662,557,757,584"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1595,632,1693,659"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1225,483,1301,509"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1238,632,1346,659"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="883,557,1010,584"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1671,408,1799,435"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="622,333,701,360"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="145,557,215,584"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="731,408,810,435"/>
+<div class="center"><img src="buffers_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2buffers_8c" alt=""/></div>
+<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2buffers_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2buffers_8c">
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="615,483,694,509"/>
+<area shape="rect" id="node4" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="418,184,491,211"/>
+<area shape="rect" id="node5" href="compat_8h_source.html" title="compat.h" alt="" coords="590,259,666,285"/>
+<area shape="rect" id="node6" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="126,408,189,435"/>
+<area shape="rect" id="node14" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1313,109,1404,136"/>
+<area shape="rect" id="node15" href="util_8h.html" title="Headers for util.c. " alt="" coords="845,109,896,136"/>
+<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1029,184,1094,211"/>
+<area shape="rect" id="node8" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="619,408,717,435"/>
+<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="469,408,577,435"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="290,333,417,360"/>
+<area shape="rect" id="node16" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="195,333,266,360"/>
+<area shape="rect" id="node18" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="735,184,814,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -142,7 +117,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>check</b>()&#160;&#160;&#160;STMT_NIL</td></tr>
 <tr class="separator:a843c6d01876104de0eddc716b170d7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7683300c2f4d661913d14ab9c74de3d"><td class="memItemLeft" align="right" valign="top"><a id="ae7683300c2f4d661913d14ab9c74de3d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CHUNK_HEADER_LEN</b>&#160;&#160;&#160;<a class="el" href="util_8h.html#a34bb1d41c655823d71f9ce54196bcfd9">STRUCT_OFFSET</a>(chunk_t, mem[0])</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CHUNK_HEADER_LEN</b>&#160;&#160;&#160;offsetof(chunk_t, mem[0])</td></tr>
 <tr class="separator:ae7683300c2f4d661913d14ab9c74de3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69f1f8604b267fe6aab1ffbdd83a0702"><td class="memItemLeft" align="right" valign="top"><a id="a69f1f8604b267fe6aab1ffbdd83a0702"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SENTINEL_LEN</b>&#160;&#160;&#160;4</td></tr>
@@ -162,21 +137,10 @@ Macros</h2></td></tr>
 <tr class="separator:a35d9fe523c814f5dba1a12977b5b2477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a591943bc2883c8c5f262f783a2e2d603"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>CHUNK_SET_SENTINEL</b>(chunk,  alloclen)</td></tr>
 <tr class="separator:a591943bc2883c8c5f262f783a2e2d603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c8ede8d5869b36d9483d30853c14f8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a0c8ede8d5869b36d9483d30853c14f8b">MIN_READ_LEN</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:a0c8ede8d5869b36d9483d30853c14f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8882109943832bbad0b700ea3525ec83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a8882109943832bbad0b700ea3525ec83">MIN_CHUNK_ALLOC</a>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:a8882109943832bbad0b700ea3525ec83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2d0d3919fb2827da9d55b400d8f9015"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ac2d0d3919fb2827da9d55b400d8f9015">MAX_CHUNK_ALLOC</a>&#160;&#160;&#160;65536</td></tr>
 <tr class="separator:ac2d0d3919fb2827da9d55b400d8f9015"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750427eb640fda48be359218c08748e9"><td class="memItemLeft" align="right" valign="top"><a id="a750427eb640fda48be359218c08748e9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONTENT_LENGTH</b>&#160;&#160;&#160;&quot;\r\nContent-Length: &quot;</td></tr>
-<tr class="separator:a750427eb640fda48be359218c08748e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc3c3def749838b291a43bbaf726c7ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#adc3c3def749838b291a43bbaf726c7ce">SOCKS_WARN_INTERVAL</a>&#160;&#160;&#160;5</td></tr>
-<tr class="separator:adc3c3def749838b291a43bbaf726c7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e20eab6d83b49bedc99497327ff7e24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a3e20eab6d83b49bedc99497327ff7e24">MAX_SOCKS_MESSAGE_LEN</a>&#160;&#160;&#160;512</td></tr>
-<tr class="separator:a3e20eab6d83b49bedc99497327ff7e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65a74c486407a67a9f900e42438aaf6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a65a74c486407a67a9f900e42438aaf6d">EXT_OR_CMD_HEADER_SIZE</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:a65a74c486407a67a9f900e42438aaf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -185,10 +149,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1ab1849b985a5ac9f2bf4e56d40d19f3"><td class="memItemLeft" align="right" valign="top">STATIC size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a1ab1849b985a5ac9f2bf4e56d40d19f3">preferred_chunk_size</a> (size_t target)</td></tr>
-<tr class="separator:a1ab1849b985a5ac9f2bf4e56d40d19f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7edd798450e4be4093e3e0f581037334"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a7edd798450e4be4093e3e0f581037334">buf_pullup</a> (buf_t *buf, size_t bytes)</td></tr>
-<tr class="separator:a7edd798450e4be4093e3e0f581037334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f6eb1228245bca00d9a3fbbe0fe755"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ac9f6eb1228245bca00d9a3fbbe0fe755">buf_preferred_chunk_size</a> (size_t target)</td></tr>
+<tr class="separator:ac9f6eb1228245bca00d9a3fbbe0fe755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9b19740e96a976653effe8f2db21ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#afc9b19740e96a976653effe8f2db21ff">buf_pullup</a> (buf_t *buf, size_t bytes, const char **head_out, size_t *len_out)</td></tr>
+<tr class="separator:afc9b19740e96a976653effe8f2db21ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f5b3ecde022dbe0d090d05a124c161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a35f5b3ecde022dbe0d090d05a124c161">buf_drain</a> (buf_t *buf, size_t n)</td></tr>
+<tr class="separator:a35f5b3ecde022dbe0d090d05a124c161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25596a2194d00f8015a2a454ad0deede"><td class="memItemLeft" align="right" valign="top">buf_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a25596a2194d00f8015a2a454ad0deede">buf_new_with_capacity</a> (size_t size)</td></tr>
 <tr class="separator:a25596a2194d00f8015a2a454ad0deede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2792d274b6e45707b54d36697b575cd5"><td class="memItemLeft" align="right" valign="top">buf_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a2792d274b6e45707b54d36697b575cd5">buf_new</a> (void)</td></tr>
@@ -204,61 +170,56 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>buf_get_default_chu
 <tr class="separator:a364f8af28dc3b92ec93bf5c433a44209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8042b5333db20f4e1198817d96ba0be"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#aa8042b5333db20f4e1198817d96ba0be">buf_slack</a> (const buf_t *buf)</td></tr>
 <tr class="separator:aa8042b5333db20f4e1198817d96ba0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a198f56649de692ac03c807c8406e4a00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a198f56649de692ac03c807c8406e4a00">buf_free</a> (buf_t *buf)</td></tr>
-<tr class="separator:a198f56649de692ac03c807c8406e4a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a84ddb637f879c6e24ef77a229b731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ac4a84ddb637f879c6e24ef77a229b731">buf_free_</a> (buf_t *buf)</td></tr>
+<tr class="separator:ac4a84ddb637f879c6e24ef77a229b731"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a698473a00b89755b994e4f9b83817e98"><td class="memItemLeft" align="right" valign="top">buf_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a698473a00b89755b994e4f9b83817e98">buf_copy</a> (const buf_t *buf)</td></tr>
 <tr class="separator:a698473a00b89755b994e4f9b83817e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200c41fd4c9428ee25c7426d2341cfa4"><td class="memItemLeft" align="right" valign="top">chunk_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a200c41fd4c9428ee25c7426d2341cfa4">buf_add_chunk_with_capacity</a> (buf_t *buf, size_t capacity, int capped)</td></tr>
+<tr class="separator:a200c41fd4c9428ee25c7426d2341cfa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69be7777203d7b3f1626f62dea75cc61"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a69be7777203d7b3f1626f62dea75cc61">buf_get_oldest_chunk_timestamp</a> (const buf_t *buf, uint32_t now)</td></tr>
 <tr class="separator:a69be7777203d7b3f1626f62dea75cc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeed3d5a6dbe1161f151d342e4f32f29c"><td class="memItemLeft" align="right" valign="top"><a id="aeed3d5a6dbe1161f151d342e4f32f29c"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>buf_get_total_allocation</b> (void)</td></tr>
 <tr class="separator:aeed3d5a6dbe1161f151d342e4f32f29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a486bc6925bb8ae53ca546f716096333e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a486bc6925bb8ae53ca546f716096333e">read_to_buf</a> (tor_socket_t s, size_t at_most, buf_t *buf, int *reached_eof, int *socket_error)</td></tr>
-<tr class="separator:a486bc6925bb8ae53ca546f716096333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8210656ac6aaa79c7216c0675508524"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ab8210656ac6aaa79c7216c0675508524">read_to_buf_tls</a> (tor_tls_t *tls, size_t at_most, buf_t *buf)</td></tr>
-<tr class="separator:ab8210656ac6aaa79c7216c0675508524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af267b3ef237ecb964046aed3b1d2afa2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#af267b3ef237ecb964046aed3b1d2afa2">flush_buf</a> (tor_socket_t s, buf_t *buf, size_t sz, size_t *buf_flushlen)</td></tr>
-<tr class="separator:af267b3ef237ecb964046aed3b1d2afa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a701e8abaef46d891c7e7848f364a7194"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a701e8abaef46d891c7e7848f364a7194">flush_buf_tls</a> (tor_tls_t *tls, buf_t *buf, size_t flushlen, size_t *buf_flushlen)</td></tr>
-<tr class="separator:a701e8abaef46d891c7e7848f364a7194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c2ec6a70255dc260a166de964a56874"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a7c2ec6a70255dc260a166de964a56874">write_to_buf</a> (const char *string, size_t string_len, buf_t *buf)</td></tr>
-<tr class="separator:a7c2ec6a70255dc260a166de964a56874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0eaa6d554d8f3806529be908761c0b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ac0eaa6d554d8f3806529be908761c0b6">fetch_from_buf</a> (char *string, size_t string_len, buf_t *buf)</td></tr>
-<tr class="separator:ac0eaa6d554d8f3806529be908761c0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a485df8a6961e83b9102bc3eb9ddb149f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a485df8a6961e83b9102bc3eb9ddb149f">fetch_var_cell_from_buf</a> (buf_t *buf, <a class="el" href="structvar__cell__t.html">var_cell_t</a> **out, int linkproto)</td></tr>
-<tr class="separator:a485df8a6961e83b9102bc3eb9ddb149f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7be89c5c69293eab984961565d23288d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a7be89c5c69293eab984961565d23288d">move_buf_to_buf</a> (buf_t *buf_out, buf_t *buf_in, size_t *buf_flushlen)</td></tr>
-<tr class="separator:a7be89c5c69293eab984961565d23288d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a23ebe20c4bb735961e7ca3f290c6a8"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a7a23ebe20c4bb735961e7ca3f290c6a8">buf_find_string_offset</a> (const buf_t *buf, const char *s, size_t n)</td></tr>
-<tr class="separator:a7a23ebe20c4bb735961e7ca3f290c6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c180fbc5977d558988ab676dd87c1de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a1c180fbc5977d558988ab676dd87c1de">fetch_from_buf_http</a> (buf_t *buf, char **headers_out, size_t max_headerlen, char **body_out, size_t *body_used, size_t max_bodylen, int force_complete)</td></tr>
-<tr class="separator:a1c180fbc5977d558988ab676dd87c1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf3c3ffa8cdb33c72236cdfbacafacc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsocks__request__t.html">socks_request_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#aacf3c3ffa8cdb33c72236cdfbacafacc">socks_request_new</a> (void)</td></tr>
-<tr class="separator:aacf3c3ffa8cdb33c72236cdfbacafacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d88eae643ab99ae0fa364974dd43077"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a9d88eae643ab99ae0fa364974dd43077">socks_request_free</a> (<a class="el" href="structsocks__request__t.html">socks_request_t</a> *req)</td></tr>
-<tr class="separator:a9d88eae643ab99ae0fa364974dd43077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6953fec5d68167570512aa9f2876b052"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a6953fec5d68167570512aa9f2876b052">fetch_from_buf_socks</a> (buf_t *buf, <a class="el" href="structsocks__request__t.html">socks_request_t</a> *req, int log_sockstype, int safe_socks)</td></tr>
-<tr class="separator:a6953fec5d68167570512aa9f2876b052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae49ccbac869f3d8d8fb0263ab009232b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ae49ccbac869f3d8d8fb0263ab009232b">fetch_ext_or_command_from_buf</a> (buf_t *buf, <a class="el" href="structext__or__cmd__t.html">ext_or_cmd_t</a> **out)</td></tr>
-<tr class="separator:ae49ccbac869f3d8d8fb0263ab009232b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9068d877362a26c2e920b0a0e43c3d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ad9068d877362a26c2e920b0a0e43c3d1">fetch_from_buf_socks_client</a> (buf_t *buf, int state, char **reason)</td></tr>
-<tr class="separator:ad9068d877362a26c2e920b0a0e43c3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf8c9bd7065eb165b5d7f64ab5094a6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#adf8c9bd7065eb165b5d7f64ab5094a6d">peek_buf_has_control0_command</a> (buf_t *buf)</td></tr>
-<tr class="separator:adf8c9bd7065eb165b5d7f64ab5094a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc6d40f0e53e9bf0b10107d58c168072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#adc6d40f0e53e9bf0b10107d58c168072">fetch_from_buf_line</a> (buf_t *buf, char *data_out, size_t *data_len)</td></tr>
-<tr class="separator:adc6d40f0e53e9bf0b10107d58c168072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab13ed2ec4453c0a1d8a46aa2566b0530"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ab13ed2ec4453c0a1d8a46aa2566b0530">write_to_buf_zlib</a> (buf_t *buf, <a class="el" href="structtor__zlib__state__t.html">tor_zlib_state_t</a> *state, const char *data, size_t data_len, int done)</td></tr>
-<tr class="separator:ab13ed2ec4453c0a1d8a46aa2566b0530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af302612b5c872f922c101cbeef706969"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#af302612b5c872f922c101cbeef706969">buf_read_from_socket</a> (buf_t *buf, tor_socket_t s, size_t at_most, int *reached_eof, int *socket_error)</td></tr>
+<tr class="separator:af302612b5c872f922c101cbeef706969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f32546eb41f11cddf6ce32335c2705a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a0f32546eb41f11cddf6ce32335c2705a">buf_flush_to_socket</a> (buf_t *buf, tor_socket_t s, size_t sz, size_t *buf_flushlen)</td></tr>
+<tr class="separator:a0f32546eb41f11cddf6ce32335c2705a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2771e1c14c464b10533a079f40a59a8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a2771e1c14c464b10533a079f40a59a8d">buf_add</a> (buf_t *buf, const char *string, size_t string_len)</td></tr>
+<tr class="separator:a2771e1c14c464b10533a079f40a59a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac81f33eaee90f281dd2e983edb5d8a76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ac81f33eaee90f281dd2e983edb5d8a76">buf_add_string</a> (buf_t *buf, const char *string)</td></tr>
+<tr class="separator:ac81f33eaee90f281dd2e983edb5d8a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f864bf1a0d082230f7869e4f5b51c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a05f864bf1a0d082230f7869e4f5b51c7">buf_add_printf</a> (buf_t *buf, const char *format,...)</td></tr>
+<tr class="separator:a05f864bf1a0d082230f7869e4f5b51c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa957514fdc2f68cccc3ec62ecb9448ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#aa957514fdc2f68cccc3ec62ecb9448ef">buf_add_vprintf</a> (buf_t *buf, const char *format, va_list args)</td></tr>
+<tr class="separator:aa957514fdc2f68cccc3ec62ecb9448ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b7a576cef119053df2184f76e4000f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#af5b7a576cef119053df2184f76e4000f">buf_extract</a> (buf_t *buf, size_t *sz_out)</td></tr>
+<tr class="separator:af5b7a576cef119053df2184f76e4000f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57eb196436a751b01d16d36800d024f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ab57eb196436a751b01d16d36800d024f">buf_peek</a> (const buf_t *buf, char *string, size_t string_len)</td></tr>
+<tr class="separator:ab57eb196436a751b01d16d36800d024f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee885c0513a4508ae43799128f2ef740"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#aee885c0513a4508ae43799128f2ef740">buf_get_bytes</a> (buf_t *buf, char *string, size_t string_len)</td></tr>
+<tr class="separator:aee885c0513a4508ae43799128f2ef740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37c46ae32a03e102b2d96ead9720b78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ac37c46ae32a03e102b2d96ead9720b78">buf_move_to_buf</a> (buf_t *buf_out, buf_t *buf_in, size_t *buf_flushlen)</td></tr>
+<tr class="separator:ac37c46ae32a03e102b2d96ead9720b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad564d96c1341295bc78e91a63487b380"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ad564d96c1341295bc78e91a63487b380">buf_move_all</a> (buf_t *buf_out, buf_t *buf_in)</td></tr>
+<tr class="separator:ad564d96c1341295bc78e91a63487b380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521faf31db632ada50138286eeb8aef3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a521faf31db632ada50138286eeb8aef3">buf_find_string_offset</a> (const buf_t *buf, const char *s, size_t n)</td></tr>
+<tr class="separator:a521faf31db632ada50138286eeb8aef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71277fd087ceacf0a3895d986cffd8c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a71277fd087ceacf0a3895d986cffd8c9">buf_peek_startswith</a> (const buf_t *buf, const char *cmd)</td></tr>
+<tr class="separator:a71277fd087ceacf0a3895d986cffd8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eae1b7d95fe3452ed0a7015c8928d06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a8eae1b7d95fe3452ed0a7015c8928d06">buf_get_line</a> (buf_t *buf, char *data_out, size_t *data_len)</td></tr>
+<tr class="separator:a8eae1b7d95fe3452ed0a7015c8928d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41000b80bd29121f9b8197a2190cf601"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a41000b80bd29121f9b8197a2190cf601">buf_add_compress</a> (buf_t *buf, <a class="el" href="structtor__compress__state__t.html">tor_compress_state_t</a> *state, const char *data, size_t data_len, const int done)</td></tr>
+<tr class="separator:a41000b80bd29121f9b8197a2190cf601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad27eb7c3c9dcc484cbd276fbfb2a0791"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#ad27eb7c3c9dcc484cbd276fbfb2a0791">buf_set_to_copy</a> (buf_t **output, const buf_t *input)</td></tr>
 <tr class="separator:ad27eb7c3c9dcc484cbd276fbfb2a0791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46a28c1010eb8964040d016f403f9b68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a46a28c1010eb8964040d016f403f9b68">assert_buf_ok</a> (buf_t *buf)</td></tr>
-<tr class="separator:a46a28c1010eb8964040d016f403f9b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c287855239cd653ece9a64f5e37628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html#a73c287855239cd653ece9a64f5e37628">buf_assert_ok</a> (buf_t *buf)</td></tr>
+<tr class="separator:a73c287855239cd653ece9a64f5e37628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements a generic buffer interface. </p>
 <p>A buf_t is a (fairly) opaque byte-oriented FIFO that can read to or flush from memory, sockets, file descriptors, TLS connections, or another buf_t. Buffers are implemented as linked lists of memory chunks.</p>
-<p>All socket-backed and TLS-based <a class="el" href="structconnection__t.html">connection_t</a> objects have a pair of buffers: one for incoming data, and one for outcoming data. These are fed and drained from functions in <a class="el" href="connection_8c.html" title="General high-level functions to handle reading and writing on connections. ">connection.c</a>, trigged by events that are monitored in <a class="el" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop...">main.c</a>.</p>
-<p>This module has basic support for reading and writing on buf_t objects. It also contains specialized functions for handling particular protocols on a buf_t backend, including SOCKS (used in <a class="el" href="connection__edge_8c.html" title="Handle edge streams. ">connection_edge.c</a>), Tor cells (used in <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a> and <a class="el" href="channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances...">channeltls.c</a>), HTTP (used in <a class="el" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv...">directory.c</a>), and line-oriented communication (used in <a class="el" href="control_8c.html" title="Implementation for Tor&#39;s control-socket interface. ">control.c</a>). </p>
+<p>All socket-backed and TLS-based <a class="el" href="structconnection__t.html">connection_t</a> objects have a pair of buffers: one for incoming data, and one for outcoming data. These are fed and drained from functions in <a class="el" href="connection_8c.html" title="General high-level functions to handle reading and writing on connections. ">connection.c</a>, trigged by events that are monitored in <a class="el" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop...">main.c</a>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a8b454a3f1df1ab904d07627f4718240b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b454a3f1df1ab904d07627f4718240b">&#9670;&nbsp;</a></span>CHUNK_ALLOC_SIZE</h2>
@@ -304,8 +265,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>buf_get_total_alloc
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                        \</div><div class="line">    uint8_t *a = (uint8_t*) &amp;(chunk)-&gt;mem[(chunk)-&gt;memlen];             \</div><div class="line">    DBG_S(uint8_t *b = &amp;((uint8_t*)(chunk))[(alloclen)-<a class="code" href="memarea_8c.html#a69f1f8604b267fe6aab1ffbdd83a0702">SENTINEL_LEN</a>]);  \</div><div class="line">    DBG_S(<a class="code" href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">tor_assert</a>(a == b));                                          \</div><div class="line">    memset(a,0,<a class="code" href="memarea_8c.html#a69f1f8604b267fe6aab1ffbdd83a0702">SENTINEL_LEN</a>);                                           \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="util__bug_8h_html_ac74618cc20e13497e7c9128b29b02192"><div class="ttname"><a href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">tor_assert</a></div><div class="ttdeci">#define tor_assert(expr)</div><div class="ttdef"><b>Definition:</b> util_bug.h:42</div></div>
-<div class="ttc" id="memarea_8c_html_a69f1f8604b267fe6aab1ffbdd83a0702"><div class="ttname"><a href="memarea_8c.html#a69f1f8604b267fe6aab1ffbdd83a0702">SENTINEL_LEN</a></div><div class="ttdeci">#define SENTINEL_LEN</div><div class="ttdef"><b>Definition:</b> memarea.c:47</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                        \</div><div class="line">    uint8_t *a = (uint8_t*) &amp;(chunk)-&gt;mem[(chunk)-&gt;memlen];             \</div><div class="line">    DBG_S(uint8_t *b = &amp;((uint8_t*)(chunk))[(alloclen)-<a class="code" href="memarea_8c.html#a69f1f8604b267fe6aab1ffbdd83a0702">SENTINEL_LEN</a>]);  \</div><div class="line">    DBG_S(<a class="code" href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">tor_assert</a>(a == b));                                          \</div><div class="line">    memset(a,0,<a class="code" href="memarea_8c.html#a69f1f8604b267fe6aab1ffbdd83a0702">SENTINEL_LEN</a>);                                           \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="util__bug_8h_html_ac74618cc20e13497e7c9128b29b02192"><div class="ttname"><a href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">tor_assert</a></div><div class="ttdeci">#define tor_assert(expr)</div><div class="ttdef"><b>Definition:</b> util_bug.h:68</div></div>
+<div class="ttc" id="memarea_8c_html_a69f1f8604b267fe6aab1ffbdd83a0702"><div class="ttname"><a href="memarea_8c.html#a69f1f8604b267fe6aab1ffbdd83a0702">SENTINEL_LEN</a></div><div class="ttdeci">#define SENTINEL_LEN</div><div class="ttdef"><b>Definition:</b> memarea.c:51</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -328,21 +289,6 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>buf_get_total_alloc
 
 </div>
 </div>
-<a id="a65a74c486407a67a9f900e42438aaf6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65a74c486407a67a9f900e42438aaf6d">&#9670;&nbsp;</a></span>EXT_OR_CMD_HEADER_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXT_OR_CMD_HEADER_SIZE&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The size of the header of an Extended ORPort message: 2 bytes for COMMAND, 2 bytes for BODYLEN </p>
-
-</div>
-</div>
 <a id="ac2d0d3919fb2827da9d55b400d8f9015"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2d0d3919fb2827da9d55b400d8f9015">&#9670;&nbsp;</a></span>MAX_CHUNK_ALLOC</h2>
 
@@ -358,21 +304,6 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>buf_get_total_alloc
 
 </div>
 </div>
-<a id="a3e20eab6d83b49bedc99497327ff7e24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e20eab6d83b49bedc99497327ff7e24">&#9670;&nbsp;</a></span>MAX_SOCKS_MESSAGE_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_SOCKS_MESSAGE_LEN&#160;&#160;&#160;512</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Do not attempt to parse socks messages longer than this. This value is actually significantly higher than the longest possible socks message. </p>
-
-</div>
-</div>
 <a id="a8882109943832bbad0b700ea3525ec83"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8882109943832bbad0b700ea3525ec83">&#9670;&nbsp;</a></span>MIN_CHUNK_ALLOC</h2>
 
@@ -385,36 +316,6 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>buf_get_total_alloc
       </table>
 </div><div class="memdoc">
 <p>Every chunk should take up at least this many bytes. </p>
-
-</div>
-</div>
-<a id="a0c8ede8d5869b36d9483d30853c14f8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c8ede8d5869b36d9483d30853c14f8b">&#9670;&nbsp;</a></span>MIN_READ_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MIN_READ_LEN&#160;&#160;&#160;8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If a read onto the end of a chunk would be smaller than this number, then just start a new chunk. </p>
-
-</div>
-</div>
-<a id="adc3c3def749838b291a43bbaf726c7ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc3c3def749838b291a43bbaf726c7ce">&#9670;&nbsp;</a></span>SOCKS_WARN_INTERVAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SOCKS_WARN_INTERVAL&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Wait this many seconds before warning the user about using SOCKS unsafely again (requires that WarnUnsafeSocks is turned on). </p>
 
 </div>
 </div>
@@ -435,22 +336,282 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>buf_get_total_alloc
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a46a28c1010eb8964040d016f403f9b68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46a28c1010eb8964040d016f403f9b68">&#9670;&nbsp;</a></span>assert_buf_ok()</h2>
+<a id="a2771e1c14c464b10533a079f40a59a8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2771e1c14c464b10533a079f40a59a8d">&#9670;&nbsp;</a></span>buf_add()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void assert_buf_ok </td>
+          <td class="memname">int buf_add </td>
           <td>(</td>
           <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>string_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Log an error and exit if <b>buf</b> is corrupted. </p>
+<p>Append <b>string_len</b> bytes from <b>string</b> to the end of <b>buf</b>.</p>
+<p>Return the new length of the buffer on success, -1 on failure. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="buffers_8c_a2771e1c14c464b10533a079f40a59a8d_icgraph.png" border="0" usemap="#buffers_8c_a2771e1c14c464b10533a079f40a59a8d_icgraph" alt=""/></div>
+<map name="buffers_8c_a2771e1c14c464b10533a079f40a59a8d_icgraph" id="buffers_8c_a2771e1c14c464b10533a079f40a59a8d_icgraph">
+<area shape="rect" id="node2" href="buffers_8h.html#ac81f33eaee90f281dd2e983edb5d8a76" title="buf_add_string" alt="" coords="123,5,230,32"/>
+<area shape="rect" id="node3" href="buffers_8c.html#aa957514fdc2f68cccc3ec62ecb9448ef" title="buf_add_vprintf" alt="" coords="121,56,232,83"/>
+<area shape="rect" id="node4" href="buffers_8c.html#a05f864bf1a0d082230f7869e4f5b51c7" title="buf_add_printf" alt="" coords="280,56,384,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a200c41fd4c9428ee25c7426d2341cfa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a200c41fd4c9428ee25c7426d2341cfa4">&#9670;&nbsp;</a></span>buf_add_chunk_with_capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">chunk_t* buf_add_chunk_with_capacity </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>capacity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>capped</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Append a new chunk with enough capacity to hold <b>capacity</b> bytes to the tail of <b>buf</b>. If <b>capped</b>, don't allocate a chunk bigger than MAX_CHUNK_ALLOC. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="buffers_8c_a200c41fd4c9428ee25c7426d2341cfa4_icgraph.png" border="0" usemap="#buffers_8c_a200c41fd4c9428ee25c7426d2341cfa4_icgraph" alt=""/></div>
+<map name="buffers_8c_a200c41fd4c9428ee25c7426d2341cfa4_icgraph" id="buffers_8c_a200c41fd4c9428ee25c7426d2341cfa4_icgraph">
+<area shape="rect" id="node2" href="buffers_8h.html#aa7f2c6985fb46e56498bb3d79a0982af" title="buf_add_compress" alt="" coords="195,13,327,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41000b80bd29121f9b8197a2190cf601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41000b80bd29121f9b8197a2190cf601">&#9670;&nbsp;</a></span>buf_add_compress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int buf_add_compress </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtor__compress__state__t.html">tor_compress_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>data_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>done</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compress or uncompress the <b>data_len</b> bytes in <b>data</b> using the compression state <b>state</b>, appending the result to <b>buf</b>. If <b>done</b> is true, flush the data in the state and finish the compression/uncompression. Return -1 on failure, 0 on success. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="buffers_8c_a41000b80bd29121f9b8197a2190cf601_cgraph.png" border="0" usemap="#buffers_8c_a41000b80bd29121f9b8197a2190cf601_cgraph" alt=""/></div>
+<map name="buffers_8c_a41000b80bd29121f9b8197a2190cf601_cgraph" id="buffers_8c_a41000b80bd29121f9b8197a2190cf601_cgraph">
+<area shape="rect" id="node2" href="buffers_8c.html#a200c41fd4c9428ee25c7426d2341cfa4" title="buf_add_chunk_with\l_capacity" alt="" coords="192,5,333,47"/>
+<area shape="rect" id="node3" href="compress_8c.html#a17aeea51b529bfd80931a7fc554adb25" title="tor_compress_process" alt="" coords="185,71,340,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a05f864bf1a0d082230f7869e4f5b51c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f864bf1a0d082230f7869e4f5b51c7">&#9670;&nbsp;</a></span>buf_add_printf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void buf_add_printf </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As tor_snprintf, but write the results into a buf_t </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="buffers_8c_a05f864bf1a0d082230f7869e4f5b51c7_cgraph.png" border="0" usemap="#buffers_8c_a05f864bf1a0d082230f7869e4f5b51c7_cgraph" alt=""/></div>
+<map name="buffers_8c_a05f864bf1a0d082230f7869e4f5b51c7_cgraph" id="buffers_8c_a05f864bf1a0d082230f7869e4f5b51c7_cgraph">
+<area shape="rect" id="node2" href="buffers_8c.html#aa957514fdc2f68cccc3ec62ecb9448ef" title="buf_add_vprintf" alt="" coords="157,31,268,57"/>
+<area shape="rect" id="node3" href="compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="316,5,411,32"/>
+<area shape="rect" id="node4" href="buffers_8c.html#a2771e1c14c464b10533a079f40a59a8d" title="buf_add" alt="" coords="329,56,397,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac81f33eaee90f281dd2e983edb5d8a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac81f33eaee90f281dd2e983edb5d8a76">&#9670;&nbsp;</a></span>buf_add_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void buf_add_string </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a nul-terminated <b>string</b> to <b>buf</b>, not including the terminating NUL. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="buffers_8c_ac81f33eaee90f281dd2e983edb5d8a76_cgraph.png" border="0" usemap="#buffers_8c_ac81f33eaee90f281dd2e983edb5d8a76_cgraph" alt=""/></div>
+<map name="buffers_8c_ac81f33eaee90f281dd2e983edb5d8a76_cgraph" id="buffers_8c_ac81f33eaee90f281dd2e983edb5d8a76_cgraph">
+<area shape="rect" id="node2" href="buffers_8c.html#a2771e1c14c464b10533a079f40a59a8d" title="buf_add" alt="" coords="160,5,228,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa957514fdc2f68cccc3ec62ecb9448ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa957514fdc2f68cccc3ec62ecb9448ef">&#9670;&nbsp;</a></span>buf_add_vprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void buf_add_vprintf </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As tor_vsnprintf, but write the results into a buf_t. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="buffers_8c_aa957514fdc2f68cccc3ec62ecb9448ef_cgraph.png" border="0" usemap="#buffers_8c_aa957514fdc2f68cccc3ec62ecb9448ef_cgraph" alt=""/></div>
+<map name="buffers_8c_aa957514fdc2f68cccc3ec62ecb9448ef_cgraph" id="buffers_8c_aa957514fdc2f68cccc3ec62ecb9448ef_cgraph">
+<area shape="rect" id="node2" href="compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="164,5,259,32"/>
+<area shape="rect" id="node3" href="buffers_8c.html#a2771e1c14c464b10533a079f40a59a8d" title="buf_add" alt="" coords="177,56,245,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="buffers_8c_aa957514fdc2f68cccc3ec62ecb9448ef_icgraph.png" border="0" usemap="#buffers_8c_aa957514fdc2f68cccc3ec62ecb9448ef_icgraph" alt=""/></div>
+<map name="buffers_8c_aa957514fdc2f68cccc3ec62ecb9448ef_icgraph" id="buffers_8c_aa957514fdc2f68cccc3ec62ecb9448ef_icgraph">
+<area shape="rect" id="node2" href="buffers_8c.html#a05f864bf1a0d082230f7869e4f5b51c7" title="buf_add_printf" alt="" coords="164,5,268,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -470,6 +631,25 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>buf_get_total_alloc
       </table>
 </div><div class="memdoc">
 <p>Return the total length of all chunks used in <b>buf</b>. </p>
+
+</div>
+</div>
+<a id="a73c287855239cd653ece9a64f5e37628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c287855239cd653ece9a64f5e37628">&#9670;&nbsp;</a></span>buf_assert_ok()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void buf_assert_ok </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Log an error and exit if <b>buf</b> is corrupted. </p>
 
 </div>
 </div>
@@ -494,8 +674,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="buffers_8c_a1d5f6af679f4b6ead9ba2aca03941931_icgraph.png" border="0" usemap="#buffers_8c_a1d5f6af679f4b6ead9ba2aca03941931_icgraph" alt=""/></div>
 <map name="buffers_8c_a1d5f6af679f4b6ead9ba2aca03941931_icgraph" id="buffers_8c_a1d5f6af679f4b6ead9ba2aca03941931_icgraph">
-<area shape="rect" id="node2" href="buffers_8h.html#a198f56649de692ac03c807c8406e4a00" title="buf_free" alt="" coords="128,5,197,32"/>
-<area shape="rect" id="node3" href="buffers_8h.html#ad27eb7c3c9dcc484cbd276fbfb2a0791" title="buf_set_to_copy" alt="" coords="245,5,364,32"/>
+<area shape="rect" id="node2" href="buffers_8h.html#ac4a84ddb637f879c6e24ef77a229b731" title="buf_free_" alt="" coords="128,5,204,32"/>
 </map>
 </div>
 
@@ -525,25 +704,75 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="buffers_8c.html#a2792d274b6e45707b54d36697b575cd5" title="buf_new" alt="" coords="128,5,199,32"/>
 </map>
 </div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_a698473a00b89755b994e4f9b83817e98_icgraph.png" border="0" usemap="#buffers_8c_a698473a00b89755b994e4f9b83817e98_icgraph" alt=""/></div>
-<map name="buffers_8c_a698473a00b89755b994e4f9b83817e98_icgraph" id="buffers_8c_a698473a00b89755b994e4f9b83817e98_icgraph">
-<area shape="rect" id="node2" href="buffers_8h.html#ad27eb7c3c9dcc484cbd276fbfb2a0791" title="buf_set_to_copy" alt="" coords="128,5,247,32"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a7a23ebe20c4bb735961e7ca3f290c6a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a23ebe20c4bb735961e7ca3f290c6a8">&#9670;&nbsp;</a></span>buf_find_string_offset()</h2>
+<a id="a35f5b3ecde022dbe0d090d05a124c161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f5b3ecde022dbe0d090d05a124c161">&#9670;&nbsp;</a></span>buf_drain()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">STATIC int buf_find_string_offset </td>
+          <td class="memname">void buf_drain </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove the first <b>n</b> bytes from buf. </p>
+
+</div>
+</div>
+<a id="af5b7a576cef119053df2184f76e4000f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b7a576cef119053df2184f76e4000f">&#9670;&nbsp;</a></span>buf_extract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* buf_extract </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>sz_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a heap-allocated string containing the contents of <b>buf</b>, plus a NUL byte. If <b>sz_out</b> is provided, set *<b>sz_out</b> to the length of the returned string, not including the terminating NUL. </p>
+
+</div>
+</div>
+<a id="a521faf31db632ada50138286eeb8aef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a521faf31db632ada50138286eeb8aef3">&#9670;&nbsp;</a></span>buf_find_string_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int buf_find_string_offset </td>
           <td>(</td>
           <td class="paramtype">const buf_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -571,14 +800,55 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a198f56649de692ac03c807c8406e4a00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a198f56649de692ac03c807c8406e4a00">&#9670;&nbsp;</a></span>buf_free()</h2>
+<a id="a0f32546eb41f11cddf6ce32335c2705a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f32546eb41f11cddf6ce32335c2705a">&#9670;&nbsp;</a></span>buf_flush_to_socket()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void buf_free </td>
+          <td class="memname">int buf_flush_to_socket </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tor_socket_t&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>buf_flushlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write data from <b>buf</b> to the socket <b>s</b>. Write at most <b>sz</b> bytes, decrement *<b>buf_flushlen</b> by the number of bytes actually written, and remove the written bytes from the buffer. Return the number of bytes written on success, -1 on failure. Return 0 if write() would block. </p>
+
+</div>
+</div>
+<a id="ac4a84ddb637f879c6e24ef77a229b731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a84ddb637f879c6e24ef77a229b731">&#9670;&nbsp;</a></span>buf_free_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void buf_free_ </td>
           <td>(</td>
           <td class="paramtype">buf_t *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
@@ -590,17 +860,95 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="buffers_8c_a198f56649de692ac03c807c8406e4a00_cgraph.png" border="0" usemap="#buffers_8c_a198f56649de692ac03c807c8406e4a00_cgraph" alt=""/></div>
-<map name="buffers_8c_a198f56649de692ac03c807c8406e4a00_cgraph" id="buffers_8c_a198f56649de692ac03c807c8406e4a00_cgraph">
-<area shape="rect" id="node2" href="buffers_8c.html#a1d5f6af679f4b6ead9ba2aca03941931" title="buf_clear" alt="" coords="123,5,197,32"/>
+<div class="center"><img src="buffers_8c_ac4a84ddb637f879c6e24ef77a229b731_cgraph.png" border="0" usemap="#buffers_8c_ac4a84ddb637f879c6e24ef77a229b731_cgraph" alt=""/></div>
+<map name="buffers_8c_ac4a84ddb637f879c6e24ef77a229b731_cgraph" id="buffers_8c_ac4a84ddb637f879c6e24ef77a229b731_cgraph">
+<area shape="rect" id="node2" href="buffers_8c.html#a1d5f6af679f4b6ead9ba2aca03941931" title="buf_clear" alt="" coords="129,5,204,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aee885c0513a4508ae43799128f2ef740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee885c0513a4508ae43799128f2ef740">&#9670;&nbsp;</a></span>buf_get_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int buf_get_bytes </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>string_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove <b>string_len</b> bytes from the front of <b>buf</b>, and store them into <b>string</b>. Return the new buffer size. <b>string_len</b> must be &lt;= the number of bytes on the buffer. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="buffers_8c_a198f56649de692ac03c807c8406e4a00_icgraph.png" border="0" usemap="#buffers_8c_a198f56649de692ac03c807c8406e4a00_icgraph" alt=""/></div>
-<map name="buffers_8c_a198f56649de692ac03c807c8406e4a00_icgraph" id="buffers_8c_a198f56649de692ac03c807c8406e4a00_icgraph">
-<area shape="rect" id="node2" href="buffers_8h.html#ad27eb7c3c9dcc484cbd276fbfb2a0791" title="buf_set_to_copy" alt="" coords="123,5,241,32"/>
+<div class="center"><img src="buffers_8c_aee885c0513a4508ae43799128f2ef740_icgraph.png" border="0" usemap="#buffers_8c_aee885c0513a4508ae43799128f2ef740_icgraph" alt=""/></div>
+<map name="buffers_8c_aee885c0513a4508ae43799128f2ef740_icgraph" id="buffers_8c_aee885c0513a4508ae43799128f2ef740_icgraph">
+<area shape="rect" id="node2" href="connection_8h.html#a09e89d0a59c7f3a016ce0835ee5bbbbe" title="connection_buf_get\l_bytes" alt="" coords="157,5,292,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8eae1b7d95fe3452ed0a7015c8928d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eae1b7d95fe3452ed0a7015c8928d06">&#9670;&nbsp;</a></span>buf_get_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int buf_get_line </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Try to read a single LF-terminated line from <b>buf</b>, and write it (including the LF), NUL-terminated, into the *<b>data_len</b> byte buffer at <b>data_out</b>. Set *<b>data_len</b> to the number of bytes in the line, not counting the terminating NUL. Return 1 if we read a whole line, return 0 if we don't have a whole line yet, and return -1 if the line length exceeds *<b>data_len</b>. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="buffers_8c_a8eae1b7d95fe3452ed0a7015c8928d06_icgraph.png" border="0" usemap="#buffers_8c_a8eae1b7d95fe3452ed0a7015c8928d06_icgraph" alt=""/></div>
+<map name="buffers_8c_a8eae1b7d95fe3452ed0a7015c8928d06_icgraph" id="buffers_8c_a8eae1b7d95fe3452ed0a7015c8928d06_icgraph">
+<area shape="rect" id="node2" href="connection_8h.html#a214ac732b498552723a03c07aad66ffc" title="connection_buf_get_line" alt="" coords="145,5,308,32"/>
 </map>
 </div>
 
@@ -631,7 +979,71 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the age of the oldest chunk in the buffer <b>buf</b>, in milliseconds. Requires the current monotonic time, in truncated msec, as its input <b>now</b>. </p>
+<p>Return the age of the oldest chunk in the buffer <b>buf</b>, in timestamp units. Requires the current monotonic timestamp as its input <b>now</b>. </p>
+
+</div>
+</div>
+<a id="ad564d96c1341295bc78e91a63487b380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad564d96c1341295bc78e91a63487b380">&#9670;&nbsp;</a></span>buf_move_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void buf_move_all </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Moves all data from <b>buf_in</b> to <b>buf_out</b>, without copying. </p>
+
+</div>
+</div>
+<a id="ac37c46ae32a03e102b2d96ead9720b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac37c46ae32a03e102b2d96ead9720b78">&#9670;&nbsp;</a></span>buf_move_to_buf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int buf_move_to_buf </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>buf_flushlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Move up to *<b>buf_flushlen</b> bytes from <b>buf_in</b> to <b>buf_out</b>, and modify *<b>buf_flushlen</b> appropriately. Return the number of bytes actually copied. </p>
 
 </div>
 </div>
@@ -658,7 +1070,6 @@ Here is the caller graph for this function:</div>
 <map name="buffers_8c_a2792d274b6e45707b54d36697b575cd5_icgraph" id="buffers_8c_a2792d274b6e45707b54d36697b575cd5_icgraph">
 <area shape="rect" id="node2" href="buffers_8h.html#a25596a2194d00f8015a2a454ad0deede" title="buf_new_with_capacity" alt="" coords="124,5,283,32"/>
 <area shape="rect" id="node3" href="buffers_8h.html#a698473a00b89755b994e4f9b83817e98" title="buf_copy" alt="" coords="166,56,241,83"/>
-<area shape="rect" id="node4" href="buffers_8h.html#ad27eb7c3c9dcc484cbd276fbfb2a0791" title="buf_set_to_copy" alt="" coords="331,56,449,83"/>
 </map>
 </div>
 
@@ -685,30 +1096,36 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="buffers_8c_a25596a2194d00f8015a2a454ad0deede_cgraph.png" border="0" usemap="#buffers_8c_a25596a2194d00f8015a2a454ad0deede_cgraph" alt=""/></div>
 <map name="buffers_8c_a25596a2194d00f8015a2a454ad0deede_cgraph" id="buffers_8c_a25596a2194d00f8015a2a454ad0deede_cgraph">
-<area shape="rect" id="node2" href="buffers_8c.html#a2792d274b6e45707b54d36697b575cd5" title="buf_new" alt="" coords="250,5,321,32"/>
-<area shape="rect" id="node3" href="buffers_8c.html#a1ab1849b985a5ac9f2bf4e56d40d19f3" title="preferred_chunk_size" alt="" coords="212,56,359,83"/>
+<area shape="rect" id="node2" href="buffers_8c.html#a2792d274b6e45707b54d36697b575cd5" title="buf_new" alt="" coords="262,5,333,32"/>
+<area shape="rect" id="node3" href="buffers_8c.html#ac9f6eb1228245bca00d9a3fbbe0fe755" title="buf_preferred_chunk_size" alt="" coords="212,56,383,83"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a7edd798450e4be4093e3e0f581037334"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7edd798450e4be4093e3e0f581037334">&#9670;&nbsp;</a></span>buf_pullup()</h2>
+<a id="ab57eb196436a751b01d16d36800d024f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab57eb196436a751b01d16d36800d024f">&#9670;&nbsp;</a></span>buf_peek()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">STATIC void buf_pullup </td>
+          <td class="memname">void buf_peek </td>
           <td>(</td>
-          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramtype">const buf_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bytes</em>&#160;</td>
+          <td class="paramname"><em>string_len</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -717,16 +1134,152 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Collapse data from the first N chunks from <b>buf</b> into buf-&gt;head, growing it as necessary, until buf-&gt;head has the first <b>bytes</b> bytes of data from the buffer, or until buf-&gt;head has all the data in <b>buf</b>. </p>
+<p>Helper: copy the first <b>string_len</b> bytes from <b>buf</b> onto <b>string</b>. </p>
+
+</div>
+</div>
+<a id="a71277fd087ceacf0a3895d986cffd8c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71277fd087ceacf0a3895d986cffd8c9">&#9670;&nbsp;</a></span>buf_peek_startswith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int buf_peek_startswith </td>
+          <td>(</td>
+          <td class="paramtype">const buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return 1 iff <b>buf</b> starts with <b>cmd</b>. <b>cmd</b> must be a null terminated string, of no more than PEEK_BUF_STARTSWITH_MAX bytes. </p>
+
+</div>
+</div>
+<a id="ac9f6eb1228245bca00d9a3fbbe0fe755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f6eb1228245bca00d9a3fbbe0fe755">&#9670;&nbsp;</a></span>buf_preferred_chunk_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t buf_preferred_chunk_size </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the allocation size we'd like to use to hold <b>target</b> bytes. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="buffers_8c_a7edd798450e4be4093e3e0f581037334_icgraph.png" border="0" usemap="#buffers_8c_a7edd798450e4be4093e3e0f581037334_icgraph" alt=""/></div>
-<map name="buffers_8c_a7edd798450e4be4093e3e0f581037334_icgraph" id="buffers_8c_a7edd798450e4be4093e3e0f581037334_icgraph">
-<area shape="rect" id="node2" href="buffers_8h.html#a6953fec5d68167570512aa9f2876b052" title="fetch_from_buf_socks" alt="" coords="135,5,285,32"/>
-<area shape="rect" id="node3" href="buffers_8h.html#ad9068d877362a26c2e920b0a0e43c3d1" title="fetch_from_buf_socks\l_client" alt="" coords="135,57,285,98"/>
+<div class="center"><img src="buffers_8c_ac9f6eb1228245bca00d9a3fbbe0fe755_icgraph.png" border="0" usemap="#buffers_8c_ac9f6eb1228245bca00d9a3fbbe0fe755_icgraph" alt=""/></div>
+<map name="buffers_8c_ac9f6eb1228245bca00d9a3fbbe0fe755_icgraph" id="buffers_8c_ac9f6eb1228245bca00d9a3fbbe0fe755_icgraph">
+<area shape="rect" id="node2" href="buffers_8h.html#a25596a2194d00f8015a2a454ad0deede" title="buf_new_with_capacity" alt="" coords="224,5,383,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="afc9b19740e96a976653effe8f2db21ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc9b19740e96a976653effe8f2db21ff">&#9670;&nbsp;</a></span>buf_pullup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void buf_pullup </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>head_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>len_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Collapse data from the first N chunks from <b>buf</b> into buf-&gt;head, growing it as necessary, until buf-&gt;head has the first <b>bytes</b> bytes of data from the buffer, or until buf-&gt;head has all the data in <b>buf</b>.</p>
+<p>Set *<b>head_out</b> to point to the first byte of available data, and *<b>len_out</b> to the number of bytes of data available at *<b>head_out</b>. Note that *<b>len_out</b> may be more or less than <b>bytes</b>, depending on the number of bytes available. </p>
+
+</div>
+</div>
+<a id="af302612b5c872f922c101cbeef706969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af302612b5c872f922c101cbeef706969">&#9670;&nbsp;</a></span>buf_read_from_socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int buf_read_from_socket </td>
+          <td>(</td>
+          <td class="paramtype">buf_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tor_socket_t&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>at_most</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>reached_eof</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>socket_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read from socket <b>s</b>, writing onto end of <b>buf</b>. Read at most <b>at_most</b> bytes, growing the buffer as necessary. If recv() returns 0 (because of EOF), set *<b>reached_eof</b> to 1 and return 0. Return -1 on error; else return the number of bytes read. </p>
 
 </div>
 </div>
@@ -756,17 +1309,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set *<b>output</b> to contain a copy of the data in *<b>input</b> </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_ad27eb7c3c9dcc484cbd276fbfb2a0791_cgraph.png" border="0" usemap="#buffers_8c_ad27eb7c3c9dcc484cbd276fbfb2a0791_cgraph" alt=""/></div>
-<map name="buffers_8c_ad27eb7c3c9dcc484cbd276fbfb2a0791_cgraph" id="buffers_8c_ad27eb7c3c9dcc484cbd276fbfb2a0791_cgraph">
-<area shape="rect" id="node2" href="buffers_8c.html#a198f56649de692ac03c807c8406e4a00" title="buf_free" alt="" coords="175,5,244,32"/>
-<area shape="rect" id="node4" href="buffers_8c.html#a698473a00b89755b994e4f9b83817e98" title="buf_copy" alt="" coords="172,56,247,83"/>
-<area shape="rect" id="node3" href="buffers_8c.html#a1d5f6af679f4b6ead9ba2aca03941931" title="buf_clear" alt="" coords="295,5,369,32"/>
-<area shape="rect" id="node5" href="buffers_8c.html#a2792d274b6e45707b54d36697b575cd5" title="buf_new" alt="" coords="297,56,367,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -786,419 +1328,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return the number of bytes that can be added to <b>buf</b> without performing any additional allocation. </p>
-
-</div>
-</div>
-<a id="ae49ccbac869f3d8d8fb0263ab009232b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae49ccbac869f3d8d8fb0263ab009232b">&#9670;&nbsp;</a></span>fetch_ext_or_command_from_buf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fetch_ext_or_command_from_buf </td>
-          <td>(</td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structext__or__cmd__t.html">ext_or_cmd_t</a> **&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Read <b>buf</b>, which should contain an Extended ORPort message from a transport proxy. If well-formed, create and populate <b>out</b> with the Extended ORport message. Return 0 if the buffer was incomplete, 1 if it was well-formed and -1 if we encountered an error while parsing it. </p>
-
-</div>
-</div>
-<a id="ac0eaa6d554d8f3806529be908761c0b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0eaa6d554d8f3806529be908761c0b6">&#9670;&nbsp;</a></span>fetch_from_buf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fetch_from_buf </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>string</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>string_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove <b>string_len</b> bytes from the front of <b>buf</b>, and store them into <b>string</b>. Return the new buffer size. <b>string_len</b> must be &lt;= the number of bytes on the buffer. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_ac0eaa6d554d8f3806529be908761c0b6_icgraph.png" border="0" usemap="#buffers_8c_ac0eaa6d554d8f3806529be908761c0b6_icgraph" alt=""/></div>
-<map name="buffers_8c_ac0eaa6d554d8f3806529be908761c0b6_icgraph" id="buffers_8c_ac0eaa6d554d8f3806529be908761c0b6_icgraph">
-<area shape="rect" id="node2" href="buffers_8h.html#a7be89c5c69293eab984961565d23288d" title="move_buf_to_buf" alt="" coords="191,5,313,32"/>
-<area shape="rect" id="node3" href="connection_8h.html#ae60601e7b7dcca8ff9b8afbf86437f18" title="connection_fetch_from_buf" alt="" coords="163,56,341,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a1c180fbc5977d558988ab676dd87c1de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c180fbc5977d558988ab676dd87c1de">&#9670;&nbsp;</a></span>fetch_from_buf_http()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fetch_from_buf_http </td>
-          <td>(</td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>headers_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>max_headerlen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>body_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>body_used</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>max_bodylen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>force_complete</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>There is a (possibly incomplete) http statement on <b>buf</b>, of the form "\%s\\r\\n\\r\\n\%s", headers, body. (body may contain NULs.) If a) the headers include a Content-Length field and all bytes in the body are present, or b) there's no Content-Length field and all headers are present, then:</p>
-<ul>
-<li>strdup headers into <b>*headers_out</b>, and NUL-terminate it.</li>
-<li>memdup body into <b>*body_out</b>, and NUL-terminate it.</li>
-<li>Then remove them from <b>buf</b>, and return 1.</li>
-<li>If headers or body is NULL, discard that part of the buf.</li>
-<li>If a headers or body doesn't fit in the arg, return -1. (We ensure that the headers or body don't exceed max len, <em>even if</em> we're planning to discard them.)</li>
-<li>If force_complete is true, then succeed even if not all of the content has arrived.</li>
-</ul>
-<p>Else, change nothing and return 0. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_a1c180fbc5977d558988ab676dd87c1de_icgraph.png" border="0" usemap="#buffers_8c_a1c180fbc5977d558988ab676dd87c1de_icgraph" alt=""/></div>
-<map name="buffers_8c_a1c180fbc5977d558988ab676dd87c1de_icgraph" id="buffers_8c_a1c180fbc5977d558988ab676dd87c1de_icgraph">
-<area shape="rect" id="node2" href="connection_8h.html#a173a993b4f9bcc7522f35c56e65b615f" title="connection_fetch_from\l_buf_http" alt="" coords="192,5,347,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="adc6d40f0e53e9bf0b10107d58c168072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc6d40f0e53e9bf0b10107d58c168072">&#9670;&nbsp;</a></span>fetch_from_buf_line()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fetch_from_buf_line </td>
-          <td>(</td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>data_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>data_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Try to read a single LF-terminated line from <b>buf</b>, and write it (including the LF), NUL-terminated, into the *<b>data_len</b> byte buffer at <b>data_out</b>. Set *<b>data_len</b> to the number of bytes in the line, not counting the terminating NUL. Return 1 if we read a whole line, return 0 if we don't have a whole line yet, and return -1 if the line length exceeds *<b>data_len</b>. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_adc6d40f0e53e9bf0b10107d58c168072_icgraph.png" border="0" usemap="#buffers_8c_adc6d40f0e53e9bf0b10107d58c168072_icgraph" alt=""/></div>
-<map name="buffers_8c_adc6d40f0e53e9bf0b10107d58c168072_icgraph" id="buffers_8c_adc6d40f0e53e9bf0b10107d58c168072_icgraph">
-<area shape="rect" id="node2" href="connection_8h.html#aabfe46bcf87eebc470a965412b5fca8e" title="connection_fetch_from\l_buf_line" alt="" coords="189,5,344,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a6953fec5d68167570512aa9f2876b052"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6953fec5d68167570512aa9f2876b052">&#9670;&nbsp;</a></span>fetch_from_buf_socks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fetch_from_buf_socks </td>
-          <td>(</td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structsocks__request__t.html">socks_request_t</a> *&#160;</td>
-          <td class="paramname"><em>req</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>log_sockstype</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>safe_socks</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>There is a (possibly incomplete) socks handshake on <b>buf</b>, of one of the forms</p><ul>
-<li>socks4: "socksheader username\\0"</li>
-<li>socks4a: "socksheader username\\0 destaddr\\0"</li>
-<li>socks5 phase one: "version #methods methods"</li>
-<li>socks5 phase two: "version command 0 addresstype..." If it's a complete and valid handshake, and destaddr fits in MAX_SOCKS_ADDR_LEN bytes, then pull the handshake off the buf, assign to <b>req</b>, and return 1.</li>
-</ul>
-<p>If it's invalid or too big, return -1.</p>
-<p>Else it's not all there yet, leave buf alone and return 0.</p>
-<p>If you want to specify the socks reply, write it into <b>req-&gt;reply</b> and set <b>req-&gt;replylen</b>, else leave <b>req-&gt;replylen</b> alone.</p>
-<p>If <b>log_sockstype</b> is non-zero, then do a notice-level log of whether the connection is possibly leaking DNS requests locally or not.</p>
-<p>If <b>safe_socks</b> is true, then reject unsafe socks protocols.</p>
-<p>If returning 0 or -1, <b>req-&gt;address</b> and <b>req-&gt;port</b> are undefined. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_a6953fec5d68167570512aa9f2876b052_cgraph.png" border="0" usemap="#buffers_8c_a6953fec5d68167570512aa9f2876b052_cgraph" alt=""/></div>
-<map name="buffers_8c_a6953fec5d68167570512aa9f2876b052_cgraph" id="buffers_8c_a6953fec5d68167570512aa9f2876b052_cgraph">
-<area shape="rect" id="node2" href="buffers_8c.html#a7edd798450e4be4093e3e0f581037334" title="buf_pullup" alt="" coords="204,5,285,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad9068d877362a26c2e920b0a0e43c3d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9068d877362a26c2e920b0a0e43c3d1">&#9670;&nbsp;</a></span>fetch_from_buf_socks_client()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fetch_from_buf_socks_client </td>
-          <td>(</td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>reason</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Inspect a reply from SOCKS server stored in <b>buf</b> according to <b>state</b>, removing the protocol data upon success. Return 0 on incomplete response, 1 on success and -1 on error, in which case <b>reason</b> is set to a descriptive message (free() when finished with it).</p>
-<p>As a special case, 2 is returned when user/pass is required during SOCKS5 handshake and user/pass is configured. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_ad9068d877362a26c2e920b0a0e43c3d1_cgraph.png" border="0" usemap="#buffers_8c_ad9068d877362a26c2e920b0a0e43c3d1_cgraph" alt=""/></div>
-<map name="buffers_8c_ad9068d877362a26c2e920b0a0e43c3d1_cgraph" id="buffers_8c_ad9068d877362a26c2e920b0a0e43c3d1_cgraph">
-<area shape="rect" id="node2" href="buffers_8c.html#a7edd798450e4be4093e3e0f581037334" title="buf_pullup" alt="" coords="204,13,285,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a485df8a6961e83b9102bc3eb9ddb149f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a485df8a6961e83b9102bc3eb9ddb149f">&#9670;&nbsp;</a></span>fetch_var_cell_from_buf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fetch_var_cell_from_buf </td>
-          <td>(</td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvar__cell__t.html">var_cell_t</a> **&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>linkproto</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check <b>buf</b> for a variable-length cell according to the rules of link protocol version <b>linkproto</b>. If one is found, pull it off the buffer and assign a newly allocated <a class="el" href="structvar__cell__t.html">var_cell_t</a> to *<b>out</b>, and return 1. Return 0 if whatever is on the start of buf_t is not a variable-length cell. Return 1 and set *<b>out</b> to NULL if there seems to be the start of a variable-length cell on <b>buf</b>, but the whole thing isn't there yet. </p>
-
-</div>
-</div>
-<a id="af267b3ef237ecb964046aed3b1d2afa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af267b3ef237ecb964046aed3b1d2afa2">&#9670;&nbsp;</a></span>flush_buf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int flush_buf </td>
-          <td>(</td>
-          <td class="paramtype">tor_socket_t&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>buf_flushlen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Write data from <b>buf</b> to the socket <b>s</b>. Write at most <b>sz</b> bytes, decrement *<b>buf_flushlen</b> by the number of bytes actually written, and remove the written bytes from the buffer. Return the number of bytes written on success, -1 on failure. Return 0 if write() would block. </p>
-
-</div>
-</div>
-<a id="a701e8abaef46d891c7e7848f364a7194"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a701e8abaef46d891c7e7848f364a7194">&#9670;&nbsp;</a></span>flush_buf_tls()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int flush_buf_tls </td>
-          <td>(</td>
-          <td class="paramtype">tor_tls_t *&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>flushlen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>buf_flushlen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>As <a class="el" href="buffers_8c.html#af267b3ef237ecb964046aed3b1d2afa2">flush_buf()</a>, but writes data to a TLS connection. Can write more than <b>flushlen</b> bytes. </p>
 
 </div>
 </div>
@@ -1234,318 +1363,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return the number of bytes stored in <b>buf</b> </p>
-
-</div>
-</div>
-<a id="a7be89c5c69293eab984961565d23288d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7be89c5c69293eab984961565d23288d">&#9670;&nbsp;</a></span>move_buf_to_buf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int move_buf_to_buf </td>
-          <td>(</td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf_in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>buf_flushlen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Move up to *<b>buf_flushlen</b> bytes from <b>buf_in</b> to <b>buf_out</b>, and modify *<b>buf_flushlen</b> appropriately. Return the number of bytes actually copied. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_a7be89c5c69293eab984961565d23288d_cgraph.png" border="0" usemap="#buffers_8c_a7be89c5c69293eab984961565d23288d_cgraph" alt=""/></div>
-<map name="buffers_8c_a7be89c5c69293eab984961565d23288d_cgraph" id="buffers_8c_a7be89c5c69293eab984961565d23288d_cgraph">
-<area shape="rect" id="node2" href="buffers_8c.html#ac0eaa6d554d8f3806529be908761c0b6" title="fetch_from_buf" alt="" coords="176,5,285,32"/>
-<area shape="rect" id="node3" href="buffers_8c.html#a7c2ec6a70255dc260a166de964a56874" title="write_to_buf" alt="" coords="184,56,277,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="adf8c9bd7065eb165b5d7f64ab5094a6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf8c9bd7065eb165b5d7f64ab5094a6d">&#9670;&nbsp;</a></span>peek_buf_has_control0_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int peek_buf_has_control0_command </td>
-          <td>(</td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return 1 iff buf looks more like it has an (obsolete) v0 controller command on it than any valid v1 controller command. </p>
-
-</div>
-</div>
-<a id="a1ab1849b985a5ac9f2bf4e56d40d19f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ab1849b985a5ac9f2bf4e56d40d19f3">&#9670;&nbsp;</a></span>preferred_chunk_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">STATIC size_t preferred_chunk_size </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>target</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the allocation size we'd like to use to hold <b>target</b> bytes. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_a1ab1849b985a5ac9f2bf4e56d40d19f3_icgraph.png" border="0" usemap="#buffers_8c_a1ab1849b985a5ac9f2bf4e56d40d19f3_icgraph" alt=""/></div>
-<map name="buffers_8c_a1ab1849b985a5ac9f2bf4e56d40d19f3_icgraph" id="buffers_8c_a1ab1849b985a5ac9f2bf4e56d40d19f3_icgraph">
-<area shape="rect" id="node2" href="buffers_8h.html#a25596a2194d00f8015a2a454ad0deede" title="buf_new_with_capacity" alt="" coords="200,5,359,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a486bc6925bb8ae53ca546f716096333e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a486bc6925bb8ae53ca546f716096333e">&#9670;&nbsp;</a></span>read_to_buf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int read_to_buf </td>
-          <td>(</td>
-          <td class="paramtype">tor_socket_t&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>at_most</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>reached_eof</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>socket_error</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Read from socket <b>s</b>, writing onto end of <b>buf</b>. Read at most <b>at_most</b> bytes, growing the buffer as necessary. If recv() returns 0 (because of EOF), set *<b>reached_eof</b> to 1 and return 0. Return -1 on error; else return the number of bytes read. </p>
-
-</div>
-</div>
-<a id="ab8210656ac6aaa79c7216c0675508524"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8210656ac6aaa79c7216c0675508524">&#9670;&nbsp;</a></span>read_to_buf_tls()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int read_to_buf_tls </td>
-          <td>(</td>
-          <td class="paramtype">tor_tls_t *&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>at_most</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>As read_to_buf, but reads from a TLS connection, and returns a TLS status value rather than the number of bytes read.</p>
-<p>Using TLS on OR connections complicates matters in two ways.</p>
-<p>First, a TLS stream has its own read buffer independent of the connection's read buffer. (TLS needs to read an entire frame from the network before it can decrypt any data. Thus, trying to read 1 byte from TLS can require that several KB be read from the network and decrypted. The extra data is stored in TLS's decrypt buffer.) Because the data hasn't been read by Tor (it's still inside the TLS), this means that sometimes a connection "has stuff to read" even when poll() didn't return POLLIN. The tor_tls_get_pending_bytes function is used in <a class="el" href="connection_8c.html" title="General high-level functions to handle reading and writing on connections. ">connection.c</a> to detect TLS objects with non-empty internal buffers and read from them again.</p>
-<p>Second, the TLS stream's events do not correspond directly to network events: sometimes, before a TLS stream can read, the network must be ready to write &ndash; or vice versa. </p>
-
-</div>
-</div>
-<a id="a9d88eae643ab99ae0fa364974dd43077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d88eae643ab99ae0fa364974dd43077">&#9670;&nbsp;</a></span>socks_request_free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void socks_request_free </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structsocks__request__t.html">socks_request_t</a> *&#160;</td>
-          <td class="paramname"><em>req</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Free all storage held in the <a class="el" href="structsocks__request__t.html">socks_request_t</a> <b>req</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_a9d88eae643ab99ae0fa364974dd43077_cgraph.png" border="0" usemap="#buffers_8c_a9d88eae643ab99ae0fa364974dd43077_cgraph" alt=""/></div>
-<map name="buffers_8c_a9d88eae643ab99ae0fa364974dd43077_cgraph" id="buffers_8c_a9d88eae643ab99ae0fa364974dd43077_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="189,5,268,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aacf3c3ffa8cdb33c72236cdfbacafacc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacf3c3ffa8cdb33c72236cdfbacafacc">&#9670;&nbsp;</a></span>socks_request_new()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structsocks__request__t.html">socks_request_t</a>* socks_request_new </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return a new <a class="el" href="structsocks__request__t.html">socks_request_t</a>. </p>
-
-</div>
-</div>
-<a id="a7c2ec6a70255dc260a166de964a56874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c2ec6a70255dc260a166de964a56874">&#9670;&nbsp;</a></span>write_to_buf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int write_to_buf </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>string</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>string_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Append <b>string_len</b> bytes from <b>string</b> to the end of <b>buf</b>.</p>
-<p>Return the new length of the buffer on success, -1 on failure. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="buffers_8c_a7c2ec6a70255dc260a166de964a56874_icgraph.png" border="0" usemap="#buffers_8c_a7c2ec6a70255dc260a166de964a56874_icgraph" alt=""/></div>
-<map name="buffers_8c_a7c2ec6a70255dc260a166de964a56874_icgraph" id="buffers_8c_a7c2ec6a70255dc260a166de964a56874_icgraph">
-<area shape="rect" id="node2" href="buffers_8h.html#a7be89c5c69293eab984961565d23288d" title="move_buf_to_buf" alt="" coords="147,5,269,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ab13ed2ec4453c0a1d8a46aa2566b0530"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab13ed2ec4453c0a1d8a46aa2566b0530">&#9670;&nbsp;</a></span>write_to_buf_zlib()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int write_to_buf_zlib </td>
-          <td>(</td>
-          <td class="paramtype">buf_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structtor__zlib__state__t.html">tor_zlib_state_t</a> *&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>data_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>done</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Compress on uncompress the <b>data_len</b> bytes in <b>data</b> using the zlib state <b>state</b>, appending the result to <b>buf</b>. If <b>done</b> is true, flush the data in the state and finish the compression/uncompression. Return -1 on failure, 0 on success. </p>
 
 </div>
 </div>

@@ -1,0 +1,12 @@
+<map id="guard_selection_get_err_str_if_dir_info_missing" name="guard_selection_get_err_str_if_dir_info_missing">
+<area shape="rect" id="node2" href="$entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="196,99,339,141"/>
+<area shape="rect" id="node11" href="$entrynodes_8c.html#acca85058789d4eb247b7e560bfeb7767" title="get_n_primary_guards\l_to_use" alt="" coords="192,165,343,206"/>
+<area shape="rect" id="node3" href="$entrynodes_8c.html#a045186178310a765b1193b31c9c98be8" title="get_n_primary_guards" alt="" coords="402,5,553,32"/>
+<area shape="rect" id="node4" href="$container_8c.html#a5e71fb7bc775f079d9f9d724f0203fc1" title="smartlist_add_all" alt="" coords="417,56,537,83"/>
+<area shape="rect" id="node5" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="427,107,527,133"/>
+<area shape="rect" id="node6" href="$container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="413,157,541,184"/>
+<area shape="rect" id="node7" href="$entrynodes_8c.html#a440f5217f0a557c13b02a251f93db5d6" title="sample_reachable_filtered\l_entry_guards" alt="" coords="391,209,564,250"/>
+<area shape="rect" id="node8" href="$entrynodes_8c.html#ab335f71d2749aa457ffd8a82065649c6" title="entry_guard_consider\l_retry" alt="" coords="816,209,963,250"/>
+<area shape="rect" id="node10" href="$entrynodes_8c.html#ac771815070c48fdafceda321e3b56739" title="num_reachable_filtered\l_guards" alt="" coords="612,238,768,279"/>
+<area shape="rect" id="node9" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="1011,216,1104,243"/>
+</map>

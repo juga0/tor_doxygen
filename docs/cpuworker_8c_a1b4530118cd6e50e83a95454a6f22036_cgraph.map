@@ -1,6 +1,6 @@
 <map id="cpuworker_cancel_circ_handshake" name="cpuworker_cancel_circ_handshake">
 <area shape="rect" id="node2" href="$workqueue_8c.html#a19dc28519d407979f4a56f6c18a7f065" title="workqueue_entry_cancel" alt="" coords="208,31,375,57"/>
-<area shape="rect" id="node5" href="$crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="252,81,331,108"/>
+<area shape="rect" id="node5" href="$crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="252,81,331,108"/>
 <area shape="rect" id="node3" href="$compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="423,5,552,32"/>
 <area shape="rect" id="node4" href="$compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="423,56,552,83"/>
 </map>

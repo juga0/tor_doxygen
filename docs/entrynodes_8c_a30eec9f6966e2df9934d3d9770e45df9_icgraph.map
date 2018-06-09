@@ -1,0 +1,4 @@
+<map id="entry_guards_upgrade_waiting_circuits" name="entry_guards_upgrade_waiting_circuits">
+<area shape="rect" id="node2" href="$circuitlist_8h.html#a8d569b96b07da7c91549695cc1ce8ccf" title="circuit_find_circuits\l_to_upgrade_from_guard_wait" alt="" coords="204,5,400,47"/>
+<area shape="rect" id="node3" href="$circuitbuild_8h.html#afbeee8004f6e86e019ed4c4a9556d7de" title="circuit_upgrade_circuits\l_from_guard_wait" alt="" coords="448,5,607,47"/>
+</map>

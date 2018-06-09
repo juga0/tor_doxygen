@@ -71,6 +71,8 @@ $(function() {
 Collaboration diagram for connection_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structconnection__t__coll__graph.png" border="0" usemap="#connection__t_coll__map" alt="Collaboration graph"/></div>
+<map name="connection__t_coll__map" id="connection__t_coll__map">
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -115,16 +117,16 @@ Data Fields</h2></td></tr>
 <tr class="separator:ae32ce607f88eaf4f8837a21c613dcaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fde2a5107ec06065698434af89fb81d"><td class="memItemLeft" align="right" valign="top">struct event *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#a1fde2a5107ec06065698434af89fb81d">write_event</a></td></tr>
 <tr class="separator:a1fde2a5107ec06065698434af89fb81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab467c13fb1a69585f59ac2977c5f9bb3"><td class="memItemLeft" align="right" valign="top">buf_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#ab467c13fb1a69585f59ac2977c5f9bb3">inbuf</a></td></tr>
-<tr class="separator:ab467c13fb1a69585f59ac2977c5f9bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bb5d889c36ac9173cf635c2eeeb3202"><td class="memItemLeft" align="right" valign="top">buf_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#a7bb5d889c36ac9173cf635c2eeeb3202">outbuf</a></td></tr>
-<tr class="separator:a7bb5d889c36ac9173cf635c2eeeb3202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192752bac8c205950c80ee2d4ef8ee77"><td class="memItemLeft" align="right" valign="top">struct buf_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#a192752bac8c205950c80ee2d4ef8ee77">inbuf</a></td></tr>
+<tr class="separator:a192752bac8c205950c80ee2d4ef8ee77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52974461cca6db8866664e4c19c2b000"><td class="memItemLeft" align="right" valign="top">struct buf_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#a52974461cca6db8866664e4c19c2b000">outbuf</a></td></tr>
+<tr class="separator:a52974461cca6db8866664e4c19c2b000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d1e0d222646d023365b1651c7441103"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#a4d1e0d222646d023365b1651c7441103">outbuf_flushlen</a></td></tr>
 <tr class="separator:a4d1e0d222646d023365b1651c7441103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef67f82dfb748192d66b5e4dff380ecf"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#aef67f82dfb748192d66b5e4dff380ecf">timestamp_lastread</a></td></tr>
-<tr class="separator:aef67f82dfb748192d66b5e4dff380ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4d296e48e51c92d122fbea85f48439"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#a6b4d296e48e51c92d122fbea85f48439">timestamp_lastwritten</a></td></tr>
-<tr class="separator:a6b4d296e48e51c92d122fbea85f48439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0549f125512bed03c00e95172cc737d2"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#a0549f125512bed03c00e95172cc737d2">timestamp_last_read_allowed</a></td></tr>
+<tr class="separator:a0549f125512bed03c00e95172cc737d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea35b0b0b02c498f375f1745fcf5cabe"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#aea35b0b0b02c498f375f1745fcf5cabe">timestamp_last_write_allowed</a></td></tr>
+<tr class="separator:aea35b0b0b02c498f375f1745fcf5cabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3010adaf03e1a400cc074f5ce9e20a4"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#ac3010adaf03e1a400cc074f5ce9e20a4">timestamp_created</a></td></tr>
 <tr class="separator:ac3010adaf03e1a400cc074f5ce9e20a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c8257e3a68ecc69f222e67f1bcfeac3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconnection__t.html#a9c8257e3a68ecc69f222e67f1bcfeac3">socket_family</a></td></tr>
@@ -276,14 +278,14 @@ connection" has a website or other server on the other end, and an "AP connectio
 
 </div>
 </div>
-<a id="ab467c13fb1a69585f59ac2977c5f9bb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab467c13fb1a69585f59ac2977c5f9bb3">&#9670;&nbsp;</a></span>inbuf</h2>
+<a id="a192752bac8c205950c80ee2d4ef8ee77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192752bac8c205950c80ee2d4ef8ee77">&#9670;&nbsp;</a></span>inbuf</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">buf_t* inbuf</td>
+          <td class="memname">struct buf_t* inbuf</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -426,14 +428,14 @@ connection" has a website or other server on the other end, and an "AP connectio
 
 </div>
 </div>
-<a id="a7bb5d889c36ac9173cf635c2eeeb3202"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bb5d889c36ac9173cf635c2eeeb3202">&#9670;&nbsp;</a></span>outbuf</h2>
+<a id="a52974461cca6db8866664e4c19c2b000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52974461cca6db8866664e4c19c2b000">&#9670;&nbsp;</a></span>outbuf</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">buf_t* outbuf</td>
+          <td class="memname">struct buf_t* outbuf</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -606,14 +608,14 @@ connection" has a website or other server on the other end, and an "AP connectio
 
 </div>
 </div>
-<a id="aef67f82dfb748192d66b5e4dff380ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef67f82dfb748192d66b5e4dff380ecf">&#9670;&nbsp;</a></span>timestamp_lastread</h2>
+<a id="a0549f125512bed03c00e95172cc737d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0549f125512bed03c00e95172cc737d2">&#9670;&nbsp;</a></span>timestamp_last_read_allowed</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">time_t timestamp_lastread</td>
+          <td class="memname">time_t timestamp_last_read_allowed</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -621,14 +623,14 @@ connection" has a website or other server on the other end, and an "AP connectio
 
 </div>
 </div>
-<a id="a6b4d296e48e51c92d122fbea85f48439"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4d296e48e51c92d122fbea85f48439">&#9670;&nbsp;</a></span>timestamp_lastwritten</h2>
+<a id="aea35b0b0b02c498f375f1745fcf5cabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea35b0b0b02c498f375f1745fcf5cabe">&#9670;&nbsp;</a></span>timestamp_last_write_allowed</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">time_t timestamp_lastwritten</td>
+          <td class="memname">time_t timestamp_last_write_allowed</td>
         </tr>
       </table>
 </div><div class="memdoc">

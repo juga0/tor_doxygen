@@ -69,6 +69,9 @@ $(function() {
 Collaboration diagram for threadpool_s:</div>
 <div class="dyncontent">
 <div class="center"><img src="structthreadpool__s__coll__graph.png" border="0" usemap="#threadpool__s_coll__map" alt="Collaboration graph"/></div>
+<map name="threadpool__s_coll__map" id="threadpool__s_coll__map">
+<area shape="rect" id="node3" href="structreplyqueue__s.html" title="replyqueue_s" alt="" coords="124,125,223,152"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -77,6 +80,37 @@ Data Fields</h2></td></tr>
 <tr class="separator:a2aa148b8224926afec435626d24529f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac07b335cc7c41e5f23ec4dcd90555e53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__cond__t.html">tor_cond_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#ac07b335cc7c41e5f23ec4dcd90555e53">condition</a></td></tr>
 <tr class="separator:ac07b335cc7c41e5f23ec4dcd90555e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbc1ed6a6afd9f288702720ea865b7a"><td class="memItemLeft" align="right" valign="top">work_tailq_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#a7bbc1ed6a6afd9f288702720ea865b7a">work</a> [WORKQUEUE_N_PRIORITIES]</td></tr>
+<tr class="separator:a7bbc1ed6a6afd9f288702720ea865b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa152be8c9d02bf2cb1d407605ea1a2c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__weak__rng__t.html">tor_weak_rng_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#aa152be8c9d02bf2cb1d407605ea1a2c7">weak_rng</a></td></tr>
+<tr class="separator:aa152be8c9d02bf2cb1d407605ea1a2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db7eb9a8410fd508ad6dc871cdc8a47"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#a9db7eb9a8410fd508ad6dc871cdc8a47">generation</a></td></tr>
+<tr class="separator:a9db7eb9a8410fd508ad6dc871cdc8a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b16b74179b8cb26abaf9cec65eec7e"><td class="memItemLeft" align="right" valign="top">workqueue_reply_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#ae0b16b74179b8cb26abaf9cec65eec7e">update_fn</a> )(void *, void *)</td></tr>
+<tr class="separator:ae0b16b74179b8cb26abaf9cec65eec7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab47aae5e623d2b620f492b964357f69"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#aab47aae5e623d2b620f492b964357f69">free_update_arg_fn</a> )(void *)</td></tr>
+<tr class="separator:aab47aae5e623d2b620f492b964357f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af962a913589ea93be7c0bb847b138f29"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#af962a913589ea93be7c0bb847b138f29">update_args</a></td></tr>
+<tr class="separator:af962a913589ea93be7c0bb847b138f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab619dae25e010ce7d11dd32af235d07f"><td class="memItemLeft" align="right" valign="top">struct event *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#ab619dae25e010ce7d11dd32af235d07f">reply_event</a></td></tr>
+<tr class="separator:ab619dae25e010ce7d11dd32af235d07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9548aaa210c1699fca22fbe2d82b150"><td class="memItemLeft" align="right" valign="top"><a id="ae9548aaa210c1699fca22fbe2d82b150"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>reply_cb</b> )(<a class="el" href="structthreadpool__s.html">threadpool_t</a> *)</td></tr>
+<tr class="separator:ae9548aaa210c1699fca22fbe2d82b150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693054ded562b318ac08ed7262ead3ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#a693054ded562b318ac08ed7262ead3ae">n_threads</a></td></tr>
+<tr class="separator:a693054ded562b318ac08ed7262ead3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf192176a8b410f09d589091ea5e2308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__mutex__t.html">tor_mutex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#aaf192176a8b410f09d589091ea5e2308">lock</a></td></tr>
+<tr class="separator:aaf192176a8b410f09d589091ea5e2308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b5efe10498b3edf959db6109f203f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structreplyqueue__s.html">replyqueue_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#af7b5efe10498b3edf959db6109f203f0">reply_queue</a></td></tr>
+<tr class="separator:af7b5efe10498b3edf959db6109f203f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a3b30eed62145ded40ff75e5edd40d"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthreadpool__s.html#a54a3b30eed62145ded40ff75e5edd40d">new_thread_state_fn</a> )(void *)</td></tr>
+<tr class="separator:a54a3b30eed62145ded40ff75e5edd40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c4d317dfd9765e3f9c6dd1c6459a46"><td class="memItemLeft" align="right" valign="top"><a id="a83c4d317dfd9765e3f9c6dd1c6459a46"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>free_thread_state_fn</b> )(void *)</td></tr>
+<tr class="separator:a83c4d317dfd9765e3f9c6dd1c6459a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eae800a2a793dc1b46bde76411c15dd"><td class="memItemLeft" align="right" valign="top"><a id="a0eae800a2a793dc1b46bde76411c15dd"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>new_thread_state_arg</b></td></tr>
+<tr class="separator:a0eae800a2a793dc1b46bde76411c15dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="ac07b335cc7c41e5f23ec4dcd90555e53"></a>
@@ -94,6 +128,111 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="aab47aae5e623d2b620f492b964357f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab47aae5e623d2b620f492b964357f69">&#9670;&nbsp;</a></span>free_update_arg_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* free_update_arg_fn) (void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to free update arguments if they can't be run. </p>
+
+</div>
+</div>
+<a id="a9db7eb9a8410fd508ad6dc871cdc8a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db7eb9a8410fd508ad6dc871cdc8a47">&#9670;&nbsp;</a></span>generation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned generation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The current 'update generation' of the threadpool. Any thread that is at an earlier generation needs to run the update function. </p>
+
+</div>
+</div>
+<a id="aaf192176a8b410f09d589091ea5e2308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf192176a8b410f09d589091ea5e2308">&#9670;&nbsp;</a></span>lock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtor__mutex__t.html">tor_mutex_t</a> lock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mutex to protect all the above fields. </p>
+
+</div>
+</div>
+<a id="a693054ded562b318ac08ed7262ead3ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693054ded562b318ac08ed7262ead3ae">&#9670;&nbsp;</a></span>n_threads</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int n_threads</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of elements in threads. </p>
+
+</div>
+</div>
+<a id="a54a3b30eed62145ded40ff75e5edd40d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a3b30eed62145ded40ff75e5edd40d">&#9670;&nbsp;</a></span>new_thread_state_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void*(* new_thread_state_fn) (void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Functions used to allocate and free thread state. </p>
+
+</div>
+</div>
+<a id="ab619dae25e010ce7d11dd32af235d07f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab619dae25e010ce7d11dd32af235d07f">&#9670;&nbsp;</a></span>reply_event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct event* reply_event</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Event to notice when another thread has sent a reply. </p>
+
+</div>
+</div>
+<a id="af7b5efe10498b3edf959db6109f203f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b5efe10498b3edf959db6109f203f0">&#9670;&nbsp;</a></span>reply_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structreplyqueue__s.html">replyqueue_t</a>* reply_queue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A reply queue to use when constructing new threads. </p>
+
+</div>
+</div>
 <a id="a2aa148b8224926afec435626d24529f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2aa148b8224926afec435626d24529f5">&#9670;&nbsp;</a></span>threads</h2>
 
@@ -106,6 +245,66 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>An array of pointers to workerthread_t: one for each running worker thread. </p>
+
+</div>
+</div>
+<a id="af962a913589ea93be7c0bb847b138f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af962a913589ea93be7c0bb847b138f29">&#9670;&nbsp;</a></span>update_args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void** update_args</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Array of n_threads update arguments. </p>
+
+</div>
+</div>
+<a id="ae0b16b74179b8cb26abaf9cec65eec7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b16b74179b8cb26abaf9cec65eec7e">&#9670;&nbsp;</a></span>update_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">workqueue_reply_t(* update_fn) (void *, void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function that should be run for updates on each thread. </p>
+
+</div>
+</div>
+<a id="aa152be8c9d02bf2cb1d407605ea1a2c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa152be8c9d02bf2cb1d407605ea1a2c7">&#9670;&nbsp;</a></span>weak_rng</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtor__weak__rng__t.html">tor_weak_rng_t</a> weak_rng</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Weak RNG, used to decide when to ignore priority. </p>
+
+</div>
+</div>
+<a id="a7bbc1ed6a6afd9f288702720ea865b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbc1ed6a6afd9f288702720ea865b7a">&#9670;&nbsp;</a></span>work</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">work_tailq_t work[WORKQUEUE_N_PRIORITIES]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Queues of pending work that we have to do. The queue with priority <b>p</b> is work[p]. </p>
 
 </div>
 </div>

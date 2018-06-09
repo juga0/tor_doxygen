@@ -75,48 +75,70 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;orconfig.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="buffers_8h_source.html">buffers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &quot;confparse.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nodelist_8h_source.html">nodelist.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="relay_8h_source.html">relay.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="test_8h_source.html">test.h</a>&quot;</code><br />
 <code>#include &quot;test_helpers.h&quot;</code><br />
+<code>#include &quot;test_connection.h&quot;</code><br />
 <code>#include &quot;test_descriptors.inc&quot;</code><br />
+<code>#include &quot;<a class="el" href="circuitlist_8h_source.html">circuitlist.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for test_helpers.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="test__helpers_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2test_2test__helpers_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2test_2test__helpers_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2test_2test__helpers_8c">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1371,707,1450,733"/>
-<area shape="rect" id="node3" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="826,109,870,136"/>
-<area shape="rect" id="node34" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="5,259,88,285"/>
-<area shape="rect" id="node35" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2309,109,2387,136"/>
-<area shape="rect" id="node36" href="test_8h.html" title="Macros and functions used by unit tests. " alt="" coords="2230,109,2285,136"/>
-<area shape="rect" id="node39" href="test__helpers_8h_source.html" title="test_helpers.h" alt="" coords="2412,109,2516,136"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1345,632,1407,659"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1731,408,1800,435"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="769,408,882,435"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="679,483,804,509"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="670,557,813,584"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1446,333,1509,360"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="335,408,401,435"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="1102,259,1189,285"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="327,184,399,211"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="1718,184,1797,211"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="112,557,240,584"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="423,184,467,211"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="491,184,594,211"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="619,184,709,211"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="990,557,1085,584"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="532,632,631,659"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1579,483,1655,509"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1790,632,1898,659"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1109,557,1235,584"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1413,408,1541,435"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="1164,333,1215,360"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1061,333,1139,360"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1413,557,1483,584"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="1019,408,1098,435"/>
-<area shape="rect" id="node37" href="tinytest_8h_source.html" title="tinytest.h" alt="" coords="2230,184,2306,211"/>
-<area shape="rect" id="node38" href="tinytest__macros_8h_source.html" title="tinytest_macros.h" alt="" coords="2330,184,2457,211"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="637,856,715,883"/>
+<area shape="rect" id="node3" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1141,184,1185,211"/>
+<area shape="rect" id="node35" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1921,632,1994,659"/>
+<area shape="rect" id="node36" href="config_8h.html" title="Header file for config.c. " alt="" coords="2374,483,2442,509"/>
+<area shape="rect" id="node37" href="confparse_8h_source.html" title="confparse.h" alt="" coords="2517,109,2608,136"/>
+<area shape="rect" id="node38" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1993,408,2089,435"/>
+<area shape="rect" id="node39" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="939,557,1040,584"/>
+<area shape="rect" id="node40" href="main_8h.html" title="Header file for main.c. " alt="" coords="2632,109,2693,136"/>
+<area shape="rect" id="node41" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2718,109,2797,136"/>
+<area shape="rect" id="node42" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="2821,109,2883,136"/>
+<area shape="rect" id="node43" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2435,557,2517,584"/>
+<area shape="rect" id="node44" href="test_8h.html" title="Macros and functions used by unit tests. " alt="" coords="2175,109,2230,136"/>
+<area shape="rect" id="node47" href="test__helpers_8h_source.html" title="test_helpers.h" alt="" coords="1251,109,1355,136"/>
+<area shape="rect" id="node48" href="test__connection_8h_source.html" title="test_connection.h" alt="" coords="2907,109,3032,136"/>
+<area shape="rect" id="node49" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1849,184,1935,211"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1391,781,1454,808"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="715,333,784,360"/>
+<area shape="rect" id="node16" href="container_8h_source.html" title="container.h" alt="" coords="574,557,661,584"/>
+<area shape="rect" id="node18" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1481,483,1546,509"/>
+<area shape="rect" id="node19" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1719,259,1833,285"/>
+<area shape="rect" id="node20" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1612,333,1737,360"/>
+<area shape="rect" id="node21" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="990,408,1133,435"/>
+<area shape="rect" id="node23" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1225,333,1287,360"/>
+<area shape="rect" id="node25" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1251,259,1341,285"/>
+<area shape="rect" id="node26" href="address_8h.html" title="Headers for address.h. " alt="" coords="481,483,559,509"/>
+<area shape="rect" id="node27" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="725,707,853,733"/>
+<area shape="rect" id="node28" href="ht_8h_source.html" title="ht.h" alt="" coords="1366,259,1410,285"/>
+<area shape="rect" id="node29" href="confline_8h_source.html" title="confline.h" alt="" coords="559,333,638,360"/>
+<area shape="rect" id="node30" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1434,259,1537,285"/>
+<area shape="rect" id="node31" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="693,259,784,285"/>
+<area shape="rect" id="node32" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="1833,707,1943,733"/>
+<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1714,707,1809,733"/>
+<area shape="rect" id="node34" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="808,259,923,285"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="931,707,1007,733"/>
+<area shape="rect" id="node13" href="util_8h.html" title="Headers for util.c. " alt="" coords="825,632,876,659"/>
+<area shape="rect" id="node14" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1209,408,1303,435"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="2033,781,2132,808"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="790,781,898,808"/>
+<area shape="rect" id="node15" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="889,483,999,509"/>
+<area shape="rect" id="node17" href="siphash_8h_source.html" title="siphash.h" alt="" coords="574,632,653,659"/>
+<area shape="rect" id="node22" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="246,557,397,584"/>
+<area shape="rect" id="node24" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="787,408,915,435"/>
+<area shape="rect" id="node45" href="tinytest_8h_source.html" title="tinytest.h" alt="" coords="2165,184,2241,211"/>
+<area shape="rect" id="node46" href="tinytest__macros_8h_source.html" title="tinytest_macros.h" alt="" coords="2265,184,2391,211"/>
+<area shape="rect" id="node50" href="hs__ident_8h.html" title="Header file containing circuit and connection identifier data for the whole HS subsytem. " alt="" coords="1612,259,1695,285"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -127,6 +149,19 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>get_yesterday
 <tr class="separator:a933385418f27f375b999a0e63962c9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae422faf97896686279ededd6a8c0b029"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__helpers_8c.html#ae422faf97896686279ededd6a8c0b029">helper_setup_fake_routerlist</a> (void)</td></tr>
 <tr class="separator:ae422faf97896686279ededd6a8c0b029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c12840e6eeeac299a7454b05acd9b2"><td class="memItemLeft" align="right" valign="top"><a id="a31c12840e6eeeac299a7454b05acd9b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>connection_write_to_buf_mock</b> (const char *string, size_t len, <a class="el" href="structconnection__t.html">connection_t</a> *conn, int compressed)</td></tr>
+<tr class="separator:a31c12840e6eeeac299a7454b05acd9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b53fa69eace3c90a33c13ea8fa45b7f"><td class="memItemLeft" align="right" valign="top"><a id="a4b53fa69eace3c90a33c13ea8fa45b7f"></a>
+<a class="el" href="structcircuit__t.html">circuit_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>dummy_origin_circuit_new</b> (int n_cells)</td></tr>
+<tr class="separator:a4b53fa69eace3c90a33c13ea8fa45b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3083d47fbda44d34de34b43683c31c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__helpers_8c.html#ad3083d47fbda44d34de34b43683c31c5">mock_tor_addr_lookup__fail_on_bad_addrs</a> (const char *name, uint16_t family, <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *out)</td></tr>
+<tr class="separator:ad3083d47fbda44d34de34b43683c31c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06de17077e11b23beb70e247bf562e30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconnection__t.html">connection_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__helpers_8c.html#a06de17077e11b23beb70e247bf562e30">test_conn_get_connection</a> (uint8_t state, uint8_t type, uint8_t purpose)</td></tr>
+<tr class="separator:a06de17077e11b23beb70e247bf562e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad885033265de13b5e68cca86cff82dc"><td class="memItemLeft" align="right" valign="top"><a id="aad885033265de13b5e68cca86cff82dc"></a>
+<a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>helper_parse_options</b> (const char *conf)</td></tr>
+<tr class="separator:aad885033265de13b5e68cca86cff82dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Some helper functions to avoid code duplication in unit tests. </p>
@@ -147,6 +182,76 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>get_yesterday
       </table>
 </div><div class="memdoc">
 <p>Parse a file containing router descriptors and load them to our routerlist. This function is used to setup an artificial network so that we can conduct tests on it. </p>
+
+</div>
+</div>
+<a id="ad3083d47fbda44d34de34b43683c31c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3083d47fbda44d34de34b43683c31c5">&#9670;&nbsp;</a></span>mock_tor_addr_lookup__fail_on_bad_addrs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mock_tor_addr_lookup__fail_on_bad_addrs </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>family</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtor__addr__t.html">tor_addr_t</a> *&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mock-replacement. As tor_addr_lookup, but always fails on any address containing a !. This is necessary for running the unit tests on networks where DNS hijackers think it's helpful to give answers for things like 1.2.3.4.5 or "invalidstuff!!" </p>
+
+</div>
+</div>
+<a id="a06de17077e11b23beb70e247bf562e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06de17077e11b23beb70e247bf562e30">&#9670;&nbsp;</a></span>test_conn_get_connection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structconnection__t.html">connection_t</a>* test_conn_get_connection </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>purpose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create and return a new connection/stream </p>
 
 </div>
 </div>

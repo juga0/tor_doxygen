@@ -1,0 +1,11 @@
+<map id="handle_response_fetch_consensus" name="handle_response_fetch_consensus">
+<area shape="rect" id="node2" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="257,5,351,32"/>
+<area shape="rect" id="node3" href="$log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="273,56,335,83"/>
+<area shape="rect" id="node4" href="$util_8c.html#a354eb90598823d4fd6111b94c9c0ce97" title="escaped" alt="" coords="269,107,339,133"/>
+<area shape="rect" id="node6" href="$networkstatus_8c.html#af85567c13446bbbae84ce4199b3b2134" title="networkstatus_consensus\l_download_failed" alt="" coords="217,158,391,199"/>
+<area shape="rect" id="node8" href="$consdiff_8c.html#aee547e5b36f9a6e0d89d5f95980bdb55" title="looks_like_a_consensus_diff" alt="" coords="209,224,399,251"/>
+<area shape="rect" id="node9" href="$dirserv_8c.html#a0f07c36cfc3121034f466d7cb6d27630" title="dirserv_get_consensus" alt="" coords="226,275,382,301"/>
+<area shape="rect" id="node10" href="$networkstatus_8c.html#abf1e7e6cb46e4a70d63a54a42ba7d2ff" title="networkstatus_read\l_cached_consensus" alt="" coords="233,326,375,367"/>
+<area shape="rect" id="node5" href="$util_8c.html#ac152e18c6deb4f05823053bb2980a8e4" title="esc_for_log" alt="" coords="473,107,563,133"/>
+<area shape="rect" id="node7" href="$networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="447,242,589,283"/>
+</map>

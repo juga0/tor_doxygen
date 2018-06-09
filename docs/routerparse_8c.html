@@ -64,10 +64,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -78,120 +75,93 @@ $(function() {
 <p>Code to parse and validate router descriptors, consenus directories, and similar objects.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitstats_8h_source.html">circuitstats.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
+<code>#include &quot;dirauth/shared_random.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="dirserv_8h_source.html">dirserv.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirvote.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="policies_8h_source.html">policies.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="protover_8h_source.html">protover.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="rendcommon_8h_source.html">rendcommon.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
 <code>#include &quot;memarea.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="microdesc_8h_source.html">microdesc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parsecommon_8h_source.html">parsecommon.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="policies_8h_source.html">policies.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="protover_8h_source.html">protover.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rendcommon_8h_source.html">rendcommon.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rephist_8h_source.html">rephist.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
 <code>#include &quot;routerkeys.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerparse_8h_source.html">routerparse.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
-<code>#include &quot;torcert.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sandbox_8h_source.html">sandbox.h</a>&quot;</code><br />
-<code>#include &quot;shared_random.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="shared__random__client_8h_source.html">shared_random_client.h</a>&quot;</code><br />
+<code>#include &quot;torcert.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="voting__schedule_8h_source.html">voting_schedule.h</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirauth/dirvote.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for routerparse.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="routerparse_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2routerparse_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2routerparse_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2routerparse_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1249,184,1293,211"/>
-<area shape="rect" id="node31" href="config_8h.html" title="Header file for config.c. " alt="" coords="2495,333,2563,360"/>
-<area shape="rect" id="node32" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="1087,109,1185,136"/>
-<area shape="rect" id="node33" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="2588,333,2660,360"/>
-<area shape="rect" id="node34" href="dirvote_8h.html" title="Header file for dirvote.c. " alt="" coords="1965,483,2037,509"/>
-<area shape="rect" id="node35" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="1407,109,1484,136"/>
-<area shape="rect" id="node36" href="protover_8h.html" title="Headers and type declarations for protover.c. " alt="" coords="816,184,896,211"/>
-<area shape="rect" id="node37" href="rendcommon_8h.html" title="Header file for rendcommon.c. " alt="" coords="1559,109,1667,136"/>
-<area shape="rect" id="node38" href="router_8h.html" title="Header file for router.c. " alt="" coords="2029,184,2096,211"/>
-<area shape="rect" id="node39" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2128,333,2211,360"/>
-<area shape="rect" id="node40" href="memarea_8h_source.html" title="memarea.h" alt="" coords="1794,109,1881,136"/>
-<area shape="rect" id="node41" href="microdesc_8h.html" title="Header file for microdesc.c. " alt="" coords="1905,109,1999,136"/>
-<area shape="rect" id="node42" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2287,483,2401,509"/>
-<area shape="rect" id="node43" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2073,109,2145,136"/>
-<area shape="rect" id="node44" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="1770,184,1865,211"/>
-<area shape="rect" id="node45" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="2220,109,2319,136"/>
-<area shape="rect" id="node46" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2343,109,2441,136"/>
-<area shape="rect" id="node47" href="torcert_8h_source.html" title="torcert.h" alt="" coords="1550,184,1621,211"/>
-<area shape="rect" id="node48" href="sandbox_8h.html" title="Header file for sandbox.c. " alt="" coords="5,557,88,584"/>
-<area shape="rect" id="node49" href="shared__random_8h_source.html" title="shared_random.h" alt="" coords="1209,109,1332,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="611,707,690,733"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="654,632,717,659"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="843,408,912,435"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1531,408,1645,435"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1765,483,1891,509"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1817,557,1959,584"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1018,333,1081,360"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1442,408,1507,435"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="737,333,823,360"/>
-<area shape="rect" id="node23" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="1720,259,1792,285"/>
-<area shape="rect" id="node24" href="address_8h.html" title="Headers for address.h. " alt="" coords="659,259,738,285"/>
-<area shape="rect" id="node25" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1360,557,1488,584"/>
-<area shape="rect" id="node27" href="ht_8h_source.html" title="ht.h" alt="" coords="1309,259,1353,285"/>
-<area shape="rect" id="node28" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1377,259,1479,285"/>
-<area shape="rect" id="node29" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1504,259,1595,285"/>
-<area shape="rect" id="node30" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1241,557,1335,584"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1679,632,1777,659"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="730,483,806,509"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="470,632,578,659"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="705,557,831,584"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="987,408,1115,435"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="429,408,480,435"/>
-<area shape="rect" id="node22" href="siphash_8h_source.html" title="siphash.h" alt="" coords="739,408,818,435"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1118,259,1162,285"/>
+<area shape="rect" id="node26" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="2047,109,2145,136"/>
+<area shape="rect" id="node27" href="config_8h.html" title="Header file for config.c. " alt="" coords="1975,259,2043,285"/>
+<area shape="rect" id="node28" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="5,408,99,435"/>
+<area shape="rect" id="node29" href="shared__random_8h_source.html" title="dirauth/shared_random.h" alt="" coords="1236,184,1401,211"/>
+<area shape="rect" id="node30" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="2139,184,2211,211"/>
+<area shape="rect" id="node31" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1999,184,2097,211"/>
+<area shape="rect" id="node33" href="memarea_8h_source.html" title="memarea.h" alt="" coords="1527,184,1614,211"/>
+<area shape="rect" id="node34" href="microdesc_8h.html" title="Header file for microdesc.c. " alt="" coords="2169,109,2263,136"/>
+<area shape="rect" id="node35" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="1656,259,1771,285"/>
+<area shape="rect" id="node36" href="parsecommon_8h.html" title="Header file for parsecommon.c. " alt="" coords="1491,109,1605,136"/>
+<area shape="rect" id="node37" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="2287,109,2364,136"/>
+<area shape="rect" id="node38" href="protover_8h.html" title="Headers and type declarations for protover.c. " alt="" coords="1639,184,1719,211"/>
+<area shape="rect" id="node39" href="rendcommon_8h.html" title="Header file for rendcommon.c. " alt="" coords="2389,109,2497,136"/>
+<area shape="rect" id="node40" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2521,109,2593,136"/>
+<area shape="rect" id="node41" href="router_8h.html" title="Header file for router.c. " alt="" coords="1793,184,1860,211"/>
+<area shape="rect" id="node42" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="225,259,319,285"/>
+<area shape="rect" id="node43" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="1868,259,1951,285"/>
+<area shape="rect" id="node44" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="2617,109,2716,136"/>
+<area shape="rect" id="node45" href="sandbox_8h.html" title="Header file for sandbox.c. " alt="" coords="89,483,172,509"/>
+<area shape="rect" id="node46" href="shared__random__client_8h.html" title="Header file for shared_random_client.c. " alt="" coords="1240,109,1400,136"/>
+<area shape="rect" id="node47" href="torcert_8h_source.html" title="torcert.h" alt="" coords="501,184,571,211"/>
+<area shape="rect" id="node48" href="voting__schedule_8h.html" title="Header file for voting_schedule.c. " alt="" coords="1034,184,1161,211"/>
+<area shape="rect" id="node50" href="dirvote_8h.html" title="Header file for dirvote.c. " alt="" coords="2828,109,2943,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1233,632,1311,659"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="477,557,539,584"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1196,408,1265,435"/>
+<area shape="rect" id="node10" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="377,333,490,360"/>
+<area shape="rect" id="node11" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="416,408,541,435"/>
+<area shape="rect" id="node12" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="491,483,634,509"/>
+<area shape="rect" id="node13" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1591,408,1654,435"/>
+<area shape="rect" id="node14" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1502,408,1567,435"/>
+<area shape="rect" id="node15" href="container_8h_source.html" title="container.h" alt="" coords="1391,408,1478,435"/>
+<area shape="rect" id="node16" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="720,333,811,360"/>
+<area shape="rect" id="node17" href="address_8h.html" title="Headers for address.h. " alt="" coords="617,333,695,360"/>
+<area shape="rect" id="node18" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1679,483,1807,509"/>
+<area shape="rect" id="node19" href="ht_8h_source.html" title="ht.h" alt="" coords="835,333,879,360"/>
+<area shape="rect" id="node20" href="confline_8h_source.html" title="confline.h" alt="" coords="1271,333,1350,360"/>
+<area shape="rect" id="node21" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="903,333,1006,360"/>
+<area shape="rect" id="node22" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1881,333,1972,360"/>
+<area shape="rect" id="node23" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="1055,483,1166,509"/>
+<area shape="rect" id="node24" href="util__format_8h_source.html" title="util_format.h" alt="" coords="247,483,342,509"/>
+<area shape="rect" id="node25" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1031,333,1145,360"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1293,483,1369,509"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1513,557,1612,584"/>
+<area shape="rect" id="node32" href="handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="2067,259,2146,285"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdirectory__token__t.html">directory_token_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtoken__rule__t.html">token_rule_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ad015afdcb853499520783e64379d9f90"><td class="memItemLeft" align="right" valign="top"><a id="ad015afdcb853499520783e64379d9f90"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ROUTERPARSE_PRIVATE</b></td></tr>
 <tr class="separator:ad015afdcb853499520783e64379d9f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d0dbf11b4f93725d625c4a3cc877cc3"><td class="memItemLeft" align="right" valign="top"><a id="a0d0dbf11b4f93725d625c4a3cc877cc3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_ANNOTATION</b>&#160;&#160;&#160;A_PURPOSE</td></tr>
-<tr class="separator:a0d0dbf11b4f93725d625c4a3cc877cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a423e4f191da40472015547fc8557b9ab"><td class="memItemLeft" align="right" valign="top"><a id="a423e4f191da40472015547fc8557b9ab"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_ANNOTATION</b>&#160;&#160;&#160;A_UNKNOWN_</td></tr>
-<tr class="separator:a423e4f191da40472015547fc8557b9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16060fc9621d986d5e8881d54261cbd2"><td class="memItemLeft" align="right" valign="top"><a id="a16060fc9621d986d5e8881d54261cbd2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AT_START</b>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a16060fc9621d986d5e8881d54261cbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3b3608a04a603264c8ffa5719a1dfe9"><td class="memItemLeft" align="right" valign="top"><a id="aa3b3608a04a603264c8ffa5719a1dfe9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AT_END</b>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:aa3b3608a04a603264c8ffa5719a1dfe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2876ecfd8a6f0d2f899d55b86c534462"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a2876ecfd8a6f0d2f899d55b86c534462">CERTIFICATE_MEMBERS</a></td></tr>
 <tr class="separator:a2876ecfd8a6f0d2f899d55b86c534462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a712eb63d31a6b4a7ddabe557f9d1538a"><td class="memItemLeft" align="right" valign="top"><a id="a712eb63d31a6b4a7ddabe557f9d1538a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>find_by_keyword</b>(s,  keyword)&#160;&#160;&#160;find_by_keyword_((s), (keyword), #keyword)</td></tr>
-<tr class="separator:a712eb63d31a6b4a7ddabe557f9d1538a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d834ddc4587061d0d739fc8ae532e5c"><td class="memItemLeft" align="right" valign="top"><a id="a3d834ddc4587061d0d739fc8ae532e5c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TS_ANNOTATIONS_OK</b>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a3d834ddc4587061d0d739fc8ae532e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4b24961e60440e9d3e551918ce65579"><td class="memItemLeft" align="right" valign="top"><a id="aa4b24961e60440e9d3e551918ce65579"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TS_NOCHECK</b>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:aa4b24961e60440e9d3e551918ce65579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a3e371ed2edc30669e23360861d8439"><td class="memItemLeft" align="right" valign="top"><a id="a4a3e371ed2edc30669e23360861d8439"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TS_NO_NEW_ANNOTATIONS</b>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:a4a3e371ed2edc30669e23360861d8439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e93ef56b03297965bebfe0977b5e550"><td class="memItemLeft" align="right" valign="top"><a id="a4e93ef56b03297965bebfe0977b5e550"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CST_CHECK_AUTHORITY</b>&#160;&#160;&#160;(1&lt;&lt;0)</td></tr>
-<tr class="separator:a4e93ef56b03297965bebfe0977b5e550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45a8477ae8e8059bc208fe7beb782362"><td class="memItemLeft" align="right" valign="top"><a id="a45a8477ae8e8059bc208fe7beb782362"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CST_NO_CHECK_OBJTYPE</b>&#160;&#160;&#160;(1&lt;&lt;1)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CST_NO_CHECK_OBJTYPE</b>&#160;&#160;&#160;(1&lt;&lt;0)</td></tr>
 <tr class="separator:a45a8477ae8e8059bc208fe7beb782362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a576b5f03212c2df81e9390bdbd43c074"><td class="memItemLeft" align="right" valign="top"><a id="a576b5f03212c2df81e9390bdbd43c074"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DUMP_AREA</b>(a,  name)&#160;&#160;&#160;STMT_NIL</td></tr>
@@ -208,29 +178,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ac36e99659724054400dd39f398c297bf"><td class="memItemLeft" align="right" valign="top"><a id="ac36e99659724054400dd39f398c297bf"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CERT_SIZE</b>&#160;&#160;&#160;(128*1024)</td></tr>
 <tr class="separator:ac36e99659724054400dd39f398c297bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac6e2e555b7978ff9d0d5a07a28c341c"><td class="memItemLeft" align="right" valign="top"><a id="aac6e2e555b7978ff9d0d5a07a28c341c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ALLOC_ZERO</b>(sz)&#160;&#160;&#160;<a class="el" href="memarea_8c.html#afe8736114c98d9206a3705919a9e231b">memarea_alloc_zero</a>(area,sz)</td></tr>
-<tr class="separator:aac6e2e555b7978ff9d0d5a07a28c341c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc6e551002d63211969c3eb71cd6cea7"><td class="memItemLeft" align="right" valign="top"><a id="acc6e551002d63211969c3eb71cd6cea7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ALLOC</b>(sz)&#160;&#160;&#160;<a class="el" href="memarea_8c.html#ab03a77a8bbd935b4b33bb1016079c3a3">memarea_alloc</a>(area,sz)</td></tr>
-<tr class="separator:acc6e551002d63211969c3eb71cd6cea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5adf545e22ba035dbd9410d968d3585e"><td class="memItemLeft" align="right" valign="top"><a id="a5adf545e22ba035dbd9410d968d3585e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>STRDUP</b>(str)&#160;&#160;&#160;<a class="el" href="memarea_8c.html#ae6aeabfc89cb75df17df4e799fd34bf2">memarea_strdup</a>(area,str)</td></tr>
-<tr class="separator:a5adf545e22ba035dbd9410d968d3585e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c703af509e56ebcc586700e2bfb275a"><td class="memItemLeft" align="right" valign="top"><a id="a1c703af509e56ebcc586700e2bfb275a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>STRNDUP</b>(str,  n)&#160;&#160;&#160;<a class="el" href="memarea_8c.html#ae2324c51c63afbce99ef1e56ee0bff87">memarea_strndup</a>(area,(str),(n))</td></tr>
-<tr class="separator:a1c703af509e56ebcc586700e2bfb275a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03aec34c81d48472c37bfa009b8ba804"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RET_ERR</b>(msg)</td></tr>
-<tr class="separator:a03aec34c81d48472c37bfa009b8ba804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29b7451465deac204c5f7cb1f9c6e1fc"><td class="memItemLeft" align="right" valign="top"><a id="a29b7451465deac204c5f7cb1f9c6e1fc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_ARGS</b>&#160;&#160;&#160;512</td></tr>
-<tr class="separator:a29b7451465deac204c5f7cb1f9c6e1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e2db9afefdfa95ab18fa54a8031385a"><td class="memItemLeft" align="right" valign="top"><a id="a3e2db9afefdfa95ab18fa54a8031385a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_UNPARSED_OBJECT_SIZE</b>&#160;&#160;&#160;(128*1024)</td></tr>
-<tr class="separator:a3e2db9afefdfa95ab18fa54a8031385a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0f2173e3b202ddf5756531b4471dcb2"><td class="memItemLeft" align="right" valign="top"><a id="af0f2173e3b202ddf5756531b4471dcb2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_LINE_LENGTH</b>&#160;&#160;&#160;(128*1024)</td></tr>
-<tr class="separator:af0f2173e3b202ddf5756531b4471dcb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f2aa73b748fc53ad4ed33105addab3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>CHECK_LENGTH</b>()</td></tr>
 <tr class="separator:a0f2aa73b748fc53ad4ed33105addab3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4667583c6e310db5d8f20c601607f2de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>NEXT_LINE</b>()</td></tr>
@@ -241,229 +188,6 @@ Macros</h2></td></tr>
 <tr class="separator:a58094c9d9e60820923633a753f7a9b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed703b01b922c16fc2e6653b18b96a03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>CMP</b>(field)</td></tr>
 <tr class="separator:aed703b01b922c16fc2e6653b18b96a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">macros for defining token rules</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Helper macros to define token tables. 's' is a string, 't' is a directory_keyword, 'a' is a trio of argument multiplicities, and 'o' is an object syntax. </p>
-</div></td></tr>
-<tr class="memitem:af8968fb550fc29e699e69eee215fa8c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#af8968fb550fc29e699e69eee215fa8c5">END_OF_TABLE</a>&#160;&#160;&#160;{ NULL, NIL_, 0,0,0, <a class="el" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a>, 0, INT_MAX, 0, 0 }</td></tr>
-<tr class="separator:af8968fb550fc29e699e69eee215fa8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab691bd2eed9864879c6f851bda3168a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#ab691bd2eed9864879c6f851bda3168a8">T</a>(s,  t,  a,  o)&#160;&#160;&#160;{ s, t, a, o, 0, INT_MAX, 0, 0 }</td></tr>
-<tr class="separator:ab691bd2eed9864879c6f851bda3168a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00a2dd52132434068cae97fae79051c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a00a2dd52132434068cae97fae79051c1">T0N</a>(s,  t,  a,  o)&#160;&#160;&#160;{ s, t, a, o, 0, INT_MAX, 0, 0 }</td></tr>
-<tr class="separator:a00a2dd52132434068cae97fae79051c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6aad5272b3293c0c2da05040c987f82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#ae6aad5272b3293c0c2da05040c987f82">T1</a>(s,  t,  a,  o)&#160;&#160;&#160;{ s, t, a, o, 1, 1, 0, 0 }</td></tr>
-<tr class="separator:ae6aad5272b3293c0c2da05040c987f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdd7cf17519f7b27cb4a09e3490f87cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#abdd7cf17519f7b27cb4a09e3490f87cc">T1_START</a>(s,  t,  a,  o)&#160;&#160;&#160;{ s, t, a, o, 1, 1, AT_START, 0 }</td></tr>
-<tr class="separator:abdd7cf17519f7b27cb4a09e3490f87cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ccf1009187481033960804159f74c22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a3ccf1009187481033960804159f74c22">T1_END</a>(s,  t,  a,  o)&#160;&#160;&#160;{ s, t, a, o, 1, 1, AT_END, 0 }</td></tr>
-<tr class="separator:a3ccf1009187481033960804159f74c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac663434e84c1e6f83ac2bc6405c0dce6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#ac663434e84c1e6f83ac2bc6405c0dce6">T1N</a>(s,  t,  a,  o)&#160;&#160;&#160;{ s, t, a, o, 1, INT_MAX, 0, 0 }</td></tr>
-<tr class="separator:ac663434e84c1e6f83ac2bc6405c0dce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06e4c394dcac68b8298bb91a25a300fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a06e4c394dcac68b8298bb91a25a300fa">T01</a>(s,  t,  a,  o)&#160;&#160;&#160;{ s, t, a, o, 0, 1, 0, 0 }</td></tr>
-<tr class="separator:a06e4c394dcac68b8298bb91a25a300fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e792cb84995596a3ac229a4eeee6808"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a2e792cb84995596a3ac229a4eeee6808">A01</a>(s,  t,  a,  o)&#160;&#160;&#160;{ s, t, a, o, 0, 1, 0, 1 }</td></tr>
-<tr class="separator:a2e792cb84995596a3ac229a4eeee6808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff1b09d6630c6c0942f78171e74c1b9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#aff1b09d6630c6c0942f78171e74c1b9d">ARGS</a>&#160;&#160;&#160;0,INT_MAX,0</td></tr>
-<tr class="separator:aff1b09d6630c6c0942f78171e74c1b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a110201fc08b08c73366dbaf433bb8e89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a>&#160;&#160;&#160;0,0,0</td></tr>
-<tr class="separator:a110201fc08b08c73366dbaf433bb8e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9b24fa99a331d88ec53d9a421bfa49b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#ac9b24fa99a331d88ec53d9a421bfa49b">CONCAT_ARGS</a>&#160;&#160;&#160;1,1,1</td></tr>
-<tr class="separator:ac9b24fa99a331d88ec53d9a421bfa49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac99d0223594938476212e184082954fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#ac99d0223594938476212e184082954fc">GE</a>(n)&#160;&#160;&#160;n,INT_MAX,0</td></tr>
-<tr class="separator:ac99d0223594938476212e184082954fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb5fffc954e58891b5408914f7560611"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#aeb5fffc954e58891b5408914f7560611">EQ</a>(n)&#160;&#160;&#160;n,n,0</td></tr>
-<tr class="separator:aeb5fffc954e58891b5408914f7560611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:aeb0504130fd2814d23600fbc91e2f6e9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdirectory__token__t.html">directory_token_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#aeb0504130fd2814d23600fbc91e2f6e9">directory_token_t</a></td></tr>
-<tr class="separator:aeb0504130fd2814d23600fbc91e2f6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af400135e5b32b3935b819247e4b65d30"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structtoken__rule__t.html">token_rule_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#af400135e5b32b3935b819247e4b65d30">token_rule_t</a></td></tr>
-<tr class="separator:af400135e5b32b3935b819247e4b65d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ab1bde6077f822b75a2b4d3916aa53014"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#ab1bde6077f822b75a2b4d3916aa53014">directory_keyword</a> { <br />
-&#160;&#160;<b>K_ACCEPT</b> = 0, 
-<b>K_ACCEPT6</b>, 
-<b>K_DIRECTORY_SIGNATURE</b>, 
-<b>K_RECOMMENDED_SOFTWARE</b>, 
-<br />
-&#160;&#160;<b>K_REJECT</b>, 
-<b>K_REJECT6</b>, 
-<b>K_ROUTER</b>, 
-<b>K_SIGNED_DIRECTORY</b>, 
-<br />
-&#160;&#160;<b>K_SIGNING_KEY</b>, 
-<b>K_ONION_KEY</b>, 
-<b>K_ONION_KEY_NTOR</b>, 
-<b>K_ROUTER_SIGNATURE</b>, 
-<br />
-&#160;&#160;<b>K_PUBLISHED</b>, 
-<b>K_RUNNING_ROUTERS</b>, 
-<b>K_ROUTER_STATUS</b>, 
-<b>K_PLATFORM</b>, 
-<br />
-&#160;&#160;<b>K_PROTO</b>, 
-<b>K_OPT</b>, 
-<b>K_BANDWIDTH</b>, 
-<b>K_CONTACT</b>, 
-<br />
-&#160;&#160;<b>K_NETWORK_STATUS</b>, 
-<b>K_UPTIME</b>, 
-<b>K_DIR_SIGNING_KEY</b>, 
-<b>K_FAMILY</b>, 
-<br />
-&#160;&#160;<b>K_FINGERPRINT</b>, 
-<b>K_HIBERNATING</b>, 
-<b>K_READ_HISTORY</b>, 
-<b>K_WRITE_HISTORY</b>, 
-<br />
-&#160;&#160;<b>K_NETWORK_STATUS_VERSION</b>, 
-<b>K_DIR_SOURCE</b>, 
-<b>K_DIR_OPTIONS</b>, 
-<b>K_CLIENT_VERSIONS</b>, 
-<br />
-&#160;&#160;<b>K_SERVER_VERSIONS</b>, 
-<b>K_RECOMMENDED_CLIENT_PROTOCOLS</b>, 
-<b>K_RECOMMENDED_RELAY_PROTOCOLS</b>, 
-<b>K_REQUIRED_CLIENT_PROTOCOLS</b>, 
-<br />
-&#160;&#160;<b>K_REQUIRED_RELAY_PROTOCOLS</b>, 
-<b>K_OR_ADDRESS</b>, 
-<b>K_ID</b>, 
-<b>K_P</b>, 
-<br />
-&#160;&#160;<b>K_P6</b>, 
-<b>K_R</b>, 
-<b>K_A</b>, 
-<b>K_S</b>, 
-<br />
-&#160;&#160;<b>K_V</b>, 
-<b>K_W</b>, 
-<b>K_M</b>, 
-<b>K_EXTRA_INFO</b>, 
-<br />
-&#160;&#160;<b>K_EXTRA_INFO_DIGEST</b>, 
-<b>K_CACHES_EXTRA_INFO</b>, 
-<b>K_HIDDEN_SERVICE_DIR</b>, 
-<b>K_ALLOW_SINGLE_HOP_EXITS</b>, 
-<br />
-&#160;&#160;<b>K_IPV6_POLICY</b>, 
-<b>K_ROUTER_SIG_ED25519</b>, 
-<b>K_IDENTITY_ED25519</b>, 
-<b>K_MASTER_KEY_ED25519</b>, 
-<br />
-&#160;&#160;<b>K_ONION_KEY_CROSSCERT</b>, 
-<b>K_NTOR_ONION_KEY_CROSSCERT</b>, 
-<b>K_DIRREQ_END</b>, 
-<b>K_DIRREQ_V2_IPS</b>, 
-<br />
-&#160;&#160;<b>K_DIRREQ_V3_IPS</b>, 
-<b>K_DIRREQ_V2_REQS</b>, 
-<b>K_DIRREQ_V3_REQS</b>, 
-<b>K_DIRREQ_V2_SHARE</b>, 
-<br />
-&#160;&#160;<b>K_DIRREQ_V3_SHARE</b>, 
-<b>K_DIRREQ_V2_RESP</b>, 
-<b>K_DIRREQ_V3_RESP</b>, 
-<b>K_DIRREQ_V2_DIR</b>, 
-<br />
-&#160;&#160;<b>K_DIRREQ_V3_DIR</b>, 
-<b>K_DIRREQ_V2_TUN</b>, 
-<b>K_DIRREQ_V3_TUN</b>, 
-<b>K_ENTRY_END</b>, 
-<br />
-&#160;&#160;<b>K_ENTRY_IPS</b>, 
-<b>K_CELL_END</b>, 
-<b>K_CELL_PROCESSED</b>, 
-<b>K_CELL_QUEUED</b>, 
-<br />
-&#160;&#160;<b>K_CELL_TIME</b>, 
-<b>K_CELL_CIRCS</b>, 
-<b>K_EXIT_END</b>, 
-<b>K_EXIT_WRITTEN</b>, 
-<br />
-&#160;&#160;<b>K_EXIT_READ</b>, 
-<b>K_EXIT_OPENED</b>, 
-<b>K_DIR_KEY_CERTIFICATE_VERSION</b>, 
-<b>K_DIR_IDENTITY_KEY</b>, 
-<br />
-&#160;&#160;<b>K_DIR_KEY_PUBLISHED</b>, 
-<b>K_DIR_KEY_EXPIRES</b>, 
-<b>K_DIR_KEY_CERTIFICATION</b>, 
-<b>K_DIR_KEY_CROSSCERT</b>, 
-<br />
-&#160;&#160;<b>K_DIR_ADDRESS</b>, 
-<b>K_DIR_TUNNELLED</b>, 
-<b>K_VOTE_STATUS</b>, 
-<b>K_VALID_AFTER</b>, 
-<br />
-&#160;&#160;<b>K_FRESH_UNTIL</b>, 
-<b>K_VALID_UNTIL</b>, 
-<b>K_VOTING_DELAY</b>, 
-<b>K_KNOWN_FLAGS</b>, 
-<br />
-&#160;&#160;<b>K_PARAMS</b>, 
-<b>K_BW_WEIGHTS</b>, 
-<b>K_VOTE_DIGEST</b>, 
-<b>K_CONSENSUS_DIGEST</b>, 
-<br />
-&#160;&#160;<b>K_ADDITIONAL_DIGEST</b>, 
-<b>K_ADDITIONAL_SIGNATURE</b>, 
-<b>K_CONSENSUS_METHODS</b>, 
-<b>K_CONSENSUS_METHOD</b>, 
-<br />
-&#160;&#160;<b>K_LEGACY_DIR_KEY</b>, 
-<b>K_DIRECTORY_FOOTER</b>, 
-<b>K_SIGNING_CERT_ED</b>, 
-<b>K_SR_FLAG</b>, 
-<br />
-&#160;&#160;<b>K_COMMIT</b>, 
-<b>K_PREVIOUS_SRV</b>, 
-<b>K_CURRENT_SRV</b>, 
-<b>K_PACKAGE</b>, 
-<br />
-&#160;&#160;<b>A_PURPOSE</b>, 
-<b>A_LAST_LISTED</b>, 
-<b>A_UNKNOWN_</b>, 
-<b>R_RENDEZVOUS_SERVICE_DESCRIPTOR</b>, 
-<br />
-&#160;&#160;<b>R_VERSION</b>, 
-<b>R_PERMANENT_KEY</b>, 
-<b>R_SECRET_ID_PART</b>, 
-<b>R_PUBLICATION_TIME</b>, 
-<br />
-&#160;&#160;<b>R_PROTOCOL_VERSIONS</b>, 
-<b>R_INTRODUCTION_POINTS</b>, 
-<b>R_SIGNATURE</b>, 
-<b>R_IPO_IDENTIFIER</b>, 
-<br />
-&#160;&#160;<b>R_IPO_IP_ADDRESS</b>, 
-<b>R_IPO_ONION_PORT</b>, 
-<b>R_IPO_ONION_KEY</b>, 
-<b>R_IPO_SERVICE_KEY</b>, 
-<br />
-&#160;&#160;<b>C_CLIENT_NAME</b>, 
-<b>C_DESCRIPTOR_COOKIE</b>, 
-<b>C_CLIENT_KEY</b>, 
-<b>ERR_</b>, 
-<br />
-&#160;&#160;<b>EOF_</b>, 
-<b>NIL_</b>
-<br />
- }</td></tr>
-<tr class="separator:ab1bde6077f822b75a2b4d3916aa53014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf3587e2ef140d0c28a664dce0d701ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701ca">obj_syntax</a> { <br />
-&#160;&#160;<a class="el" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a>, 
-<a class="el" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caacdb0e1cfa06c47be275e0473804a1f75">NEED_OBJ</a>, 
-<a class="el" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa020c823722acaad64c7b47c03dedcfb0">NEED_SKEY_1024</a>, 
-<a class="el" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caaf9e55fe241c5b953d9c74bb51aa9344c">NEED_KEY_1024</a>, 
-<br />
-&#160;&#160;<a class="el" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa02e17140fecda61f5c4cb30c053dbc40">NEED_KEY</a>, 
-<a class="el" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa632e902e7d2c9955c96b1876eca68589">OBJ_OK</a>
-<br />
- }</td></tr>
-<tr class="separator:aaf3587e2ef140d0c28a664dce0d701ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -473,12 +197,16 @@ Functions</h2></td></tr>
 <tr class="separator:a2a8bb1810ff691f0bf5f99301b975242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00034876736f1a369464efde04b892ea"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a00034876736f1a369464efde04b892ea">dump_desc_populate_fifo_from_directory</a> (const char *dirname)</td></tr>
 <tr class="separator:a00034876736f1a369464efde04b892ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed319ab6887b0eb56eff46fd83684017"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#aed319ab6887b0eb56eff46fd83684017">dump_desc</a> (const char *desc, const char *type)</td></tr>
-<tr class="separator:aed319ab6887b0eb56eff46fd83684017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea46983256e0a698ae2594641d9f0f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a3ea46983256e0a698ae2594641d9f0f3">MOCK_IMPL</a> (STATIC void, dump_desc,(const char *desc, const char *type))</td></tr>
+<tr class="separator:a3ea46983256e0a698ae2594641d9f0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c94e2b40578dbed4b4e38a5ebe2c65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#ae9c94e2b40578dbed4b4e38a5ebe2c65">router_get_dir_hash</a> (const char *s, char *digest)</td></tr>
 <tr class="separator:ae9c94e2b40578dbed4b4e38a5ebe2c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88a39471f268a31b09e1677d5e57506a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a88a39471f268a31b09e1677d5e57506a">router_get_router_hash</a> (const char *s, size_t s_len, char *digest)</td></tr>
 <tr class="separator:a88a39471f268a31b09e1677d5e57506a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7e91b9970f52f892b255d99a2358fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#aae7e91b9970f52f892b255d99a2358fd">router_get_networkstatus_v3_signed_boundaries</a> (const char *s, const char **start_out, const char **end_out)</td></tr>
+<tr class="separator:aae7e91b9970f52f892b255d99a2358fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd89ff48acdb8ef399f773e42a8398d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#afd89ff48acdb8ef399f773e42a8398d8">router_get_networkstatus_v3_sha3_as_signed</a> (uint8_t *digest_out, const char *s)</td></tr>
+<tr class="separator:afd89ff48acdb8ef399f773e42a8398d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6105fa03c7a751d474a380de5016360b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a6105fa03c7a751d474a380de5016360b">router_get_networkstatus_v3_hashes</a> (const char *s, <a class="el" href="structcommon__digests__t.html">common_digests_t</a> *digests)</td></tr>
 <tr class="separator:a6105fa03c7a751d474a380de5016360b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38ef1e01c3b561811bc4bd4f0777eb3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a38ef1e01c3b561811bc4bd4f0777eb3e">router_get_extrainfo_hash</a> (const char *s, size_t s_len, char *digest)</td></tr>
@@ -489,6 +217,9 @@ Functions</h2></td></tr>
 <tr class="separator:a594cb966cbb2893822d931ffe955b53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef22cc5550ef14cb0cf8fd3bca4dbd69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="or_8h.html#a00fd54618330b1d6b76e7571d84d90ce">version_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#aef22cc5550ef14cb0cf8fd3bca4dbd69">tor_version_is_obsolete</a> (const char *myversion, const char *versionlist)</td></tr>
 <tr class="separator:aef22cc5550ef14cb0cf8fd3bca4dbd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0e29b0466b6a25201e2fa4d526ab86"><td class="memItemLeft" align="right" valign="top"><a id="a3c0e29b0466b6a25201e2fa4d526ab86"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_IMPL</b> (STATIC int, signed_digest_equals,(const uint8_t *d1, const uint8_t *d2, size_t len))</td></tr>
+<tr class="separator:a3c0e29b0466b6a25201e2fa4d526ab86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a258ef1ce82ccf0fe39682829018a749e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a258ef1ce82ccf0fe39682829018a749e">router_parse_list_from_string</a> (const char **s, const char *eos, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *dest, <a class="el" href="or_8h.html#a010ba601a8385178d2aa25beb04b4d9c">saved_location_t</a> saved_location, int want_extrainfo, int allow_annotations, const char *prepend_annotations, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *invalid_digests_out)</td></tr>
 <tr class="separator:a258ef1ce82ccf0fe39682829018a749e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae652ccb5411f5cb5eae101cd26ac4d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#ae652ccb5411f5cb5eae101cd26ac4d6b">dump_distinct_digest_count</a> (int severity)</td></tr>
@@ -501,6 +232,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6e030201d6bc0307036313ed138a0b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5182e7b61c8640ef94186a19760d90c"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#aa5182e7b61c8640ef94186a19760d90c">routerstatus_parse_guardfraction</a> (const char *guardfraction_str, <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *vote, <a class="el" href="structvote__routerstatus__t.html">vote_routerstatus_t</a> *vote_rs, <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *rs)</td></tr>
 <tr class="separator:aa5182e7b61c8640ef94186a19760d90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe59c4a0303366c3de158b6e59006cf"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a3fe59c4a0303366c3de158b6e59006cf">summarize_protover_flags</a> (<a class="el" href="structprotover__summary__flags__t.html">protover_summary_flags_t</a> *out, const char *protocols, const char *version)</td></tr>
+<tr class="separator:a3fe59c4a0303366c3de158b6e59006cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a894e0e7f9cc445e418328701266572ca"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a894e0e7f9cc445e418328701266572ca">routerstatus_parse_entry_from_string</a> (<a class="el" href="structmemarea__t.html">memarea_t</a> *area, const char **s, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *tokens, <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *vote, <a class="el" href="structvote__routerstatus__t.html">vote_routerstatus_t</a> *vote_rs, int consensus_method, <a class="el" href="or_8h.html#ada0879620550843533b891a49543b109">consensus_flavor_t</a> flav)</td></tr>
 <tr class="separator:a894e0e7f9cc445e418328701266572ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9d5e58f345dc2f0f63a9ca03d025d1f"><td class="memItemLeft" align="right" valign="top"><a id="ab9d5e58f345dc2f0f63a9ca03d025d1f"></a>
@@ -516,6 +249,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>compare_vote_routersta
 <tr class="separator:a65294e0f578a21d0e10431bf4ef1d038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63f57b5cfc965a1ff91680f19b5d833e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a63f57b5cfc965a1ff91680f19b5d833e">assert_addr_policy_ok</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *lst)</td></tr>
 <tr class="separator:a63f57b5cfc965a1ff91680f19b5d833e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd5abe246bd7e473b999fee99fdaecf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#aedd5abe246bd7e473b999fee99fdaecf">MOCK_IMPL</a> (STATIC int, router_compute_hash_final,(char *digest, const char *start, size_t len, digest_algorithm_t alg))</td></tr>
+<tr class="separator:aedd5abe246bd7e473b999fee99fdaecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfc52ced95cf906593bbdab812e1cd8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#abfc52ced95cf906593bbdab812e1cd8e">microdescs_parse_from_string</a> (const char *s, const char *eos, int allow_annotations, <a class="el" href="or_8h.html#a010ba601a8385178d2aa25beb04b4d9c">saved_location_t</a> where, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *invalid_digests_out)</td></tr>
 <tr class="separator:abfc52ced95cf906593bbdab812e1cd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dfff3debca0046c946d947c8c0a922f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerparse_8c.html#a7dfff3debca0046c946d947c8c0a922f">tor_version_parse_platform</a> (const char *platform, <a class="el" href="structtor__version__t.html">tor_version_t</a> *router_version, int strict)</td></tr>
@@ -554,7 +289,7 @@ Variables</h2></td></tr>
 <div class="textblock"><p>Code to parse and validate router descriptors, consenus directories, and similar objects. </p>
 <p>The objects parsed by this module use a common text-based metaformat, documented in dir-spec.txt in torspec.git. This module is itself divided into two major kinds of function: code to handle the metaformat, and code to convert from particular instances of the metaformat into the objects that Tor uses.</p>
 <p>The generic parsing code works by calling a table-based tokenizer on the input string. Each token corresponds to a single line with a token, plus optional arguments on that line, plus an optional base-64 encoded object after that line. Each token has a definition in a table of <a class="el" href="structtoken__rule__t.html">token_rule_t</a> entries that describes how many arguments it can take, whether it takes an object, how many times it may appear, whether it must appear first, and so on.</p>
-<p>The tokenizer function tokenize_string() converts its string input into a smartlist full of instances of <a class="el" href="structdirectory__token__t.html">directory_token_t</a>, according to a provided table of <a class="el" href="structtoken__rule__t.html">token_rule_t</a>.</p>
+<p>The tokenizer function <a class="el" href="parsecommon_8c.html#af5a0f0fc39c7237d4d86a4288f31e19b">tokenize_string()</a> converts its string input into a smartlist full of instances of <a class="el" href="structdirectory__token__t.html">directory_token_t</a>, according to a provided table of <a class="el" href="structtoken__rule__t.html">token_rule_t</a>.</p>
 <p>The generic parts of this module additionally include functions for finding the start and end of signed information inside a signed object, and computing the digest that will be signed.</p>
 <p>There are also functions for saving objects to disk that have caused parsing to fail.</p>
 <p>The specific parts of this module describe conversions between particular lists of <a class="el" href="structdirectory__token__t.html">directory_token_t</a> and particular objects. The kinds of objects that can be parsed here are: </p><ul>
@@ -565,7 +300,7 @@ extra-info documents (managed from <a class="el" href="routerlist_8c.html" title
 <li>
 microdescriptors (managed from <a class="el" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less-frequently-changing router informat...">microdesc.c</a>) </li>
 <li>
-vote and consensus networkstatus documents, and the <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> objects that they comprise (managed from <a class="el" href="networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. ">networkstatus.c</a>) </li>
+vote and consensus networkstatus documents, and the <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> objects that they comprise (managed from <a class="el" href="networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache...">networkstatus.c</a>) </li>
 <li>
 detached-signature objects used by authorities for gathering signatures on the networkstatus consensus (managed from <a class="el" href="dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. ">dirvote.c</a>) </li>
 <li>
@@ -575,62 +310,6 @@ hidden service descriptors (managed from <a class="el" href="rendcommon_8c.html"
 </ul>
 <p>For no terribly good reason, the functions to <em>generate</em> signatures on the above directory objects are also in this module. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a2e792cb84995596a3ac229a4eeee6808"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e792cb84995596a3ac229a4eeee6808">&#9670;&nbsp;</a></span>A01</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define A01</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">o&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ s, t, a, o, 0, 1, 0, 1 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An annotation that must appear no more than once </p>
-
-</div>
-</div>
-<a id="aff1b09d6630c6c0942f78171e74c1b9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff1b09d6630c6c0942f78171e74c1b9d">&#9670;&nbsp;</a></span>ARGS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ARGS&#160;&#160;&#160;0,INT_MAX,0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Argument multiplicity: any number of arguments. </p>
-
-</div>
-</div>
 <a id="a2876ecfd8a6f0d2f899d55b86c534462"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2876ecfd8a6f0d2f899d55b86c534462">&#9670;&nbsp;</a></span>CERTIFICATE_MEMBERS</h2>
 
@@ -642,13 +321,13 @@ hidden service descriptors (managed from <a class="el" href="rendcommon_8c.html"
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="routerparse_8c.html#ae6aad5272b3293c0c2da05040c987f82">T1</a>(<span class="stringliteral">&quot;dir-key-certificate-version&quot;</span>, K_DIR_KEY_CERTIFICATE_VERSION,           \</div><div class="line">                                                     <a class="code" href="routerparse_8c.html#ac99d0223594938476212e184082954fc">GE</a>(1),       <a class="code" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a> ),  \</div><div class="line">  T1(<span class="stringliteral">&quot;dir-identity-key&quot;</span>, K_DIR_IDENTITY_KEY,         <a class="code" href="routerparse_8c.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a>,     <a class="code" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa02e17140fecda61f5c4cb30c053dbc40">NEED_KEY</a> ),\</div><div class="line">  T1(<span class="stringliteral">&quot;dir-key-published&quot;</span>,K_DIR_KEY_PUBLISHED,        <a class="code" href="routerparse_8c.html#ac9b24fa99a331d88ec53d9a421bfa49b">CONCAT_ARGS</a>, <a class="code" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a>),   \</div><div class="line">  T1(<span class="stringliteral">&quot;dir-key-expires&quot;</span>,  K_DIR_KEY_EXPIRES,          <a class="code" href="routerparse_8c.html#ac9b24fa99a331d88ec53d9a421bfa49b">CONCAT_ARGS</a>, <a class="code" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a>),   \</div><div class="line">  T1(<span class="stringliteral">&quot;dir-signing-key&quot;</span>,  K_DIR_SIGNING_KEY,          <a class="code" href="routerparse_8c.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a>,     <a class="code" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa02e17140fecda61f5c4cb30c053dbc40">NEED_KEY</a> ),\</div><div class="line">  T1(<span class="stringliteral">&quot;dir-key-crosscert&quot;</span>, K_DIR_KEY_CROSSCERT,       <a class="code" href="routerparse_8c.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a>,     <a class="code" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caacdb0e1cfa06c47be275e0473804a1f75">NEED_OBJ</a> ),\</div><div class="line">  T1(<span class="stringliteral">&quot;dir-key-certification&quot;</span>, K_DIR_KEY_CERTIFICATION,                       \</div><div class="line">                                                     <a class="code" href="routerparse_8c.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a>,     <a class="code" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caacdb0e1cfa06c47be275e0473804a1f75">NEED_OBJ</a>), \</div><div class="line">  T01(<span class="stringliteral">&quot;dir-address&quot;</span>,     K_DIR_ADDRESS,              <a class="code" href="routerparse_8c.html#ac99d0223594938476212e184082954fc">GE</a>(1),       <a class="code" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a>),</div><div class="ttc" id="routerparse_8c_html_aaf3587e2ef140d0c28a664dce0d701caa02e17140fecda61f5c4cb30c053dbc40"><div class="ttname"><a href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa02e17140fecda61f5c4cb30c053dbc40">NEED_KEY</a></div><div class="ttdef"><b>Definition:</b> routerparse.c:272</div></div>
-<div class="ttc" id="routerparse_8c_html_a110201fc08b08c73366dbaf433bb8e89"><div class="ttname"><a href="routerparse_8c.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a></div><div class="ttdeci">#define NO_ARGS</div><div class="ttdef"><b>Definition:</b> routerparse.c:336</div></div>
-<div class="ttc" id="routerparse_8c_html_ac9b24fa99a331d88ec53d9a421bfa49b"><div class="ttname"><a href="routerparse_8c.html#ac9b24fa99a331d88ec53d9a421bfa49b">CONCAT_ARGS</a></div><div class="ttdeci">#define CONCAT_ARGS</div><div class="ttdef"><b>Definition:</b> routerparse.c:338</div></div>
-<div class="ttc" id="routerparse_8c_html_ac99d0223594938476212e184082954fc"><div class="ttname"><a href="routerparse_8c.html#ac99d0223594938476212e184082954fc">GE</a></div><div class="ttdeci">#define GE(n)</div><div class="ttdef"><b>Definition:</b> routerparse.c:340</div></div>
-<div class="ttc" id="routerparse_8c_html_aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de"><div class="ttname"><a href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a></div><div class="ttdef"><b>Definition:</b> routerparse.c:268</div></div>
-<div class="ttc" id="routerparse_8c_html_ae6aad5272b3293c0c2da05040c987f82"><div class="ttname"><a href="routerparse_8c.html#ae6aad5272b3293c0c2da05040c987f82">T1</a></div><div class="ttdeci">#define T1(s, t, a, o)</div><div class="ttdef"><b>Definition:</b> routerparse.c:321</div></div>
-<div class="ttc" id="routerparse_8c_html_aaf3587e2ef140d0c28a664dce0d701caacdb0e1cfa06c47be275e0473804a1f75"><div class="ttname"><a href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caacdb0e1cfa06c47be275e0473804a1f75">NEED_OBJ</a></div><div class="ttdef"><b>Definition:</b> routerparse.c:269</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="parsecommon_8h.html#ae6aad5272b3293c0c2da05040c987f82">T1</a>(<span class="stringliteral">&quot;dir-key-certificate-version&quot;</span>, K_DIR_KEY_CERTIFICATE_VERSION,           \</div><div class="line">                                                     <a class="code" href="parsecommon_8h.html#ac99d0223594938476212e184082954fc">GE</a>(1),       <a class="code" href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a> ),  \</div><div class="line">  T1(<span class="stringliteral">&quot;dir-identity-key&quot;</span>, K_DIR_IDENTITY_KEY,         <a class="code" href="parsecommon_8h.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a>,     <a class="code" href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caa02e17140fecda61f5c4cb30c053dbc40">NEED_KEY</a> ),\</div><div class="line">  T1(<span class="stringliteral">&quot;dir-key-published&quot;</span>,K_DIR_KEY_PUBLISHED,        <a class="code" href="parsecommon_8h.html#ac9b24fa99a331d88ec53d9a421bfa49b">CONCAT_ARGS</a>, <a class="code" href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a>),   \</div><div class="line">  T1(<span class="stringliteral">&quot;dir-key-expires&quot;</span>,  K_DIR_KEY_EXPIRES,          <a class="code" href="parsecommon_8h.html#ac9b24fa99a331d88ec53d9a421bfa49b">CONCAT_ARGS</a>, <a class="code" href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a>),   \</div><div class="line">  T1(<span class="stringliteral">&quot;dir-signing-key&quot;</span>,  K_DIR_SIGNING_KEY,          <a class="code" href="parsecommon_8h.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a>,     <a class="code" href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caa02e17140fecda61f5c4cb30c053dbc40">NEED_KEY</a> ),\</div><div class="line">  T1(<span class="stringliteral">&quot;dir-key-crosscert&quot;</span>, K_DIR_KEY_CROSSCERT,       <a class="code" href="parsecommon_8h.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a>,     <a class="code" href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caacdb0e1cfa06c47be275e0473804a1f75">NEED_OBJ</a> ),\</div><div class="line">  T1(<span class="stringliteral">&quot;dir-key-certification&quot;</span>, K_DIR_KEY_CERTIFICATION,                       \</div><div class="line">                                                     <a class="code" href="parsecommon_8h.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a>,     <a class="code" href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caacdb0e1cfa06c47be275e0473804a1f75">NEED_OBJ</a>), \</div><div class="line">  T01(<span class="stringliteral">&quot;dir-address&quot;</span>,     K_DIR_ADDRESS,              <a class="code" href="parsecommon_8h.html#ac99d0223594938476212e184082954fc">GE</a>(1),       <a class="code" href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a>),</div><div class="ttc" id="parsecommon_8h_html_aaf3587e2ef140d0c28a664dce0d701caacdb0e1cfa06c47be275e0473804a1f75"><div class="ttname"><a href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caacdb0e1cfa06c47be275e0473804a1f75">NEED_OBJ</a></div><div class="ttdef"><b>Definition:</b> parsecommon.h:218</div></div>
+<div class="ttc" id="parsecommon_8h_html_a110201fc08b08c73366dbaf433bb8e89"><div class="ttname"><a href="parsecommon_8h.html#a110201fc08b08c73366dbaf433bb8e89">NO_ARGS</a></div><div class="ttdeci">#define NO_ARGS</div><div class="ttdef"><b>Definition:</b> parsecommon.h:263</div></div>
+<div class="ttc" id="parsecommon_8h_html_aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de"><div class="ttname"><a href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a></div><div class="ttdef"><b>Definition:</b> parsecommon.h:217</div></div>
+<div class="ttc" id="parsecommon_8h_html_ac99d0223594938476212e184082954fc"><div class="ttname"><a href="parsecommon_8h.html#ac99d0223594938476212e184082954fc">GE</a></div><div class="ttdeci">#define GE(n)</div><div class="ttdef"><b>Definition:</b> parsecommon.h:267</div></div>
+<div class="ttc" id="parsecommon_8h_html_ac9b24fa99a331d88ec53d9a421bfa49b"><div class="ttname"><a href="parsecommon_8h.html#ac9b24fa99a331d88ec53d9a421bfa49b">CONCAT_ARGS</a></div><div class="ttdeci">#define CONCAT_ARGS</div><div class="ttdef"><b>Definition:</b> parsecommon.h:265</div></div>
+<div class="ttc" id="parsecommon_8h_html_aaf3587e2ef140d0c28a664dce0d701caa02e17140fecda61f5c4cb30c053dbc40"><div class="ttname"><a href="parsecommon_8h.html#aaf3587e2ef140d0c28a664dce0d701caa02e17140fecda61f5c4cb30c053dbc40">NEED_KEY</a></div><div class="ttdef"><b>Definition:</b> parsecommon.h:221</div></div>
+<div class="ttc" id="parsecommon_8h_html_ae6aad5272b3293c0c2da05040c987f82"><div class="ttname"><a href="parsecommon_8h.html#ae6aad5272b3293c0c2da05040c987f82">T1</a></div><div class="ttdeci">#define T1(s, t, a, o)</div><div class="ttdef"><b>Definition:</b> parsecommon.h:248</div></div>
 </div><!-- fragment --><p>List of tokens common to V3 authority certificates and V3 consensuses. </p>
 
 </div>
@@ -688,21 +367,6 @@ hidden service descriptors (managed from <a class="el" href="rendcommon_8c.html"
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                               \</div><div class="line">    unsigned aval = (unsigned) a-&gt;field;              \</div><div class="line">    <span class="keywordtype">unsigned</span> bval = (<span class="keywordtype">unsigned</span>) b-&gt;field;              \</div><div class="line">    int result = (int) (aval - bval);                 \</div><div class="line">    if (result &lt; 0)                                   \</div><div class="line">      return -1;                                      \</div><div class="line">    else <span class="keywordflow">if</span> (result &gt; 0)                              \</div><div class="line">      return 1;                                       \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 </div>
 </div>
-<a id="ac9b24fa99a331d88ec53d9a421bfa49b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9b24fa99a331d88ec53d9a421bfa49b">&#9670;&nbsp;</a></span>CONCAT_ARGS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONCAT_ARGS&#160;&#160;&#160;1,1,1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Argument multiplicity: concatenate all arguments. </p>
-
-</div>
-</div>
 <a id="a58094c9d9e60820923633a753f7a9b3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58094c9d9e60820923633a753f7a9b3f">&#9670;&nbsp;</a></span>DOT</h2>
 
@@ -718,59 +382,6 @@ hidden service descriptors (managed from <a class="el" href="rendcommon_8c.html"
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                          \</div><div class="line">    if (*cp != <span class="charliteral">&#39;.&#39;</span>)                             \</div><div class="line">      return -1;                                \</div><div class="line">    ++cp;                                       \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
-</div>
-</div>
-<a id="af8968fb550fc29e699e69eee215fa8c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8968fb550fc29e699e69eee215fa8c5">&#9670;&nbsp;</a></span>END_OF_TABLE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define END_OF_TABLE&#160;&#160;&#160;{ NULL, NIL_, 0,0,0, <a class="el" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de">NO_OBJ</a>, 0, INT_MAX, 0, 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Appears to indicate the end of a table. </p>
-
-</div>
-</div>
-<a id="aeb5fffc954e58891b5408914f7560611"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb5fffc954e58891b5408914f7560611">&#9670;&nbsp;</a></span>EQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EQ</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">n</td><td>)</td>
-          <td>&#160;&#160;&#160;n,n,0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Argument multiplicity: exactly <b>n</b> arguments. </p>
-
-</div>
-</div>
-<a id="ac99d0223594938476212e184082954fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac99d0223594938476212e184082954fc">&#9670;&nbsp;</a></span>GE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">n</td><td>)</td>
-          <td>&#160;&#160;&#160;n,INT_MAX,0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Argument multiplicity: at least <b>n</b> arguments. </p>
-
 </div>
 </div>
 <a id="a4667583c6e310db5d8f20c601607f2de"></a>
@@ -790,21 +401,6 @@ hidden service descriptors (managed from <a class="el" href="rendcommon_8c.html"
 <b>Value:</b><div class="fragment"><div class="line">STMT_BEGIN            \</div><div class="line">    s = memchr(s, <span class="charliteral">&#39;\n&#39;</span>, eos-s);           \</div><div class="line">    if (!s || s+1 &gt;= eos)                 \</div><div class="line">      return NULL;                        \</div><div class="line">    s++;                                  \</div><div class="line">  STMT_END</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a110201fc08b08c73366dbaf433bb8e89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a110201fc08b08c73366dbaf433bb8e89">&#9670;&nbsp;</a></span>NO_ARGS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NO_ARGS&#160;&#160;&#160;0,0,0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Argument multiplicity: no arguments. </p>
-
-</div>
-</div>
 <a id="acee98c0946da0a18c3164f1df9328e7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acee98c0946da0a18c3164f1df9328e7b">&#9670;&nbsp;</a></span>NUMBER</h2>
 
@@ -820,392 +416,8 @@ hidden service descriptors (managed from <a class="el" href="rendcommon_8c.html"
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                          \</div><div class="line">    if (!cp || *cp &lt; &#39;0&#39; || *cp &gt; <span class="charliteral">&#39;9&#39;</span>)          \</div><div class="line">      return -1;                                \</div><div class="line">    out-&gt;m = (int)<a class="code" href="util_8c.html#a0fa6261bbc231af861f420e8411e0f03">tor_parse_uint64</a>(cp, 10, 0, INT32_MAX, &amp;ok, &amp;eos);    \</div><div class="line">    if (!ok)                                    \</div><div class="line">      return -1;                                \</div><div class="line">    if (!eos || eos == cp)                      \</div><div class="line">      return -1;                                \</div><div class="line">    cp = eos;                                   \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="util_8c_html_a0fa6261bbc231af861f420e8411e0f03"><div class="ttname"><a href="util_8c.html#a0fa6261bbc231af861f420e8411e0f03">tor_parse_uint64</a></div><div class="ttdeci">uint64_t tor_parse_uint64(const char *s, int base, uint64_t min, uint64_t max, int *ok, char **next)</div><div class="ttdef"><b>Definition:</b> util.c:1215</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                          \</div><div class="line">    if (!cp || *cp &lt; &#39;0&#39; || *cp &gt; <span class="charliteral">&#39;9&#39;</span>)          \</div><div class="line">      return -1;                                \</div><div class="line">    out-&gt;m = (int)<a class="code" href="util_8c.html#a0fa6261bbc231af861f420e8411e0f03">tor_parse_uint64</a>(cp, 10, 0, INT32_MAX, &amp;ok, &amp;eos);    \</div><div class="line">    if (!ok)                                    \</div><div class="line">      return -1;                                \</div><div class="line">    if (!eos || eos == cp)                      \</div><div class="line">      return -1;                                \</div><div class="line">    cp = eos;                                   \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="util_8c_html_a0fa6261bbc231af861f420e8411e0f03"><div class="ttname"><a href="util_8c.html#a0fa6261bbc231af861f420e8411e0f03">tor_parse_uint64</a></div><div class="ttdeci">uint64_t tor_parse_uint64(const char *s, int base, uint64_t min, uint64_t max, int *ok, char **next)</div><div class="ttdef"><b>Definition:</b> util.c:1277</div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a03aec34c81d48472c37bfa009b8ba804"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03aec34c81d48472c37bfa009b8ba804">&#9670;&nbsp;</a></span>RET_ERR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RET_ERR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">msg</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">STMT_BEGIN                                                       \</div><div class="line">    if (tok) token_clear(tok);                                      \</div><div class="line">    tok = ALLOC_ZERO(<span class="keyword">sizeof</span>(<a class="code" href="structdirectory__token__t.html">directory_token_t</a>));                   \</div><div class="line">    tok-&gt;tp = ERR_;                                                \</div><div class="line">    tok-&gt;error = STRDUP(msg);                                      \</div><div class="line">    goto done_tokenizing;                                          \</div><div class="line">  STMT_END</div><div class="ttc" id="structdirectory__token__t_html"><div class="ttname"><a href="structdirectory__token__t.html">directory_token_t</a></div><div class="ttdef"><b>Definition:</b> routerparse.c:248</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab691bd2eed9864879c6f851bda3168a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab691bd2eed9864879c6f851bda3168a8">&#9670;&nbsp;</a></span>T</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">o&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ s, t, a, o, 0, INT_MAX, 0, 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An item with no restrictions: used for obsolete document types </p>
-
-</div>
-</div>
-<a id="a06e4c394dcac68b8298bb91a25a300fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06e4c394dcac68b8298bb91a25a300fa">&#9670;&nbsp;</a></span>T01</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T01</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">o&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ s, t, a, o, 0, 1, 0, 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An item that must appear no more than once </p>
-
-</div>
-</div>
-<a id="a00a2dd52132434068cae97fae79051c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00a2dd52132434068cae97fae79051c1">&#9670;&nbsp;</a></span>T0N</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T0N</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">o&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ s, t, a, o, 0, INT_MAX, 0, 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An item with no restrictions on multiplicity or location. </p>
-
-</div>
-</div>
-<a id="ae6aad5272b3293c0c2da05040c987f82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6aad5272b3293c0c2da05040c987f82">&#9670;&nbsp;</a></span>T1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T1</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">o&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ s, t, a, o, 1, 1, 0, 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An item that must appear exactly once </p>
-
-</div>
-</div>
-<a id="a3ccf1009187481033960804159f74c22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ccf1009187481033960804159f74c22">&#9670;&nbsp;</a></span>T1_END</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T1_END</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">o&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ s, t, a, o, 1, 1, AT_END, 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An item that must appear exactly once, at the end of the document </p>
-
-</div>
-</div>
-<a id="abdd7cf17519f7b27cb4a09e3490f87cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdd7cf17519f7b27cb4a09e3490f87cc">&#9670;&nbsp;</a></span>T1_START</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T1_START</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">o&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ s, t, a, o, 1, 1, AT_START, 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An item that must appear exactly once, at the start of the document </p>
-
-</div>
-</div>
-<a id="ac663434e84c1e6f83ac2bc6405c0dce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac663434e84c1e6f83ac2bc6405c0dce6">&#9670;&nbsp;</a></span>T1N</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define T1N</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">o&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ s, t, a, o, 1, INT_MAX, 0, 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An item that must appear one or more times </p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="aeb0504130fd2814d23600fbc91e2f6e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb0504130fd2814d23600fbc91e2f6e9">&#9670;&nbsp;</a></span>directory_token_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structdirectory__token__t.html">directory_token_t</a>  <a class="el" href="structdirectory__token__t.html">directory_token_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Structure to hold a single directory token.</p>
-<p>We parse a directory by breaking it into "tokens", each consisting of a keyword, a line full of arguments, and a binary object. The arguments and object are both optional, depending on the keyword type.</p>
-<p>This structure is only allocated in memareas; do not allocate it on the heap, or token_clear() won't work. </p>
-
-</div>
-</div>
-<a id="af400135e5b32b3935b819247e4b65d30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af400135e5b32b3935b819247e4b65d30">&#9670;&nbsp;</a></span>token_rule_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structtoken__rule__t.html">token_rule_t</a>  <a class="el" href="structtoken__rule__t.html">token_rule_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Determines the parsing rules for a single token type. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ab1bde6077f822b75a2b4d3916aa53014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1bde6077f822b75a2b4d3916aa53014">&#9670;&nbsp;</a></span>directory_keyword</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="routerparse_8c.html#ab1bde6077f822b75a2b4d3916aa53014">directory_keyword</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Enumeration of possible token types. The ones starting with K_ correspond to directory 'keywords'. A_ is for an annotation, R or C is related to hidden services, ERR_ is an error in the tokenizing process, EOF_ is an end-of-file marker, and NIL_ is used to encode not-a-token. </p>
-
-</div>
-</div>
-<a id="aaf3587e2ef140d0c28a664dce0d701ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf3587e2ef140d0c28a664dce0d701ca">&#9670;&nbsp;</a></span>obj_syntax</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701ca">obj_syntax</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>We use a table of rules to decide how to parse each token type. Rules for whether the keyword needs an object. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaf3587e2ef140d0c28a664dce0d701caa96edd6efecfc4c1078cfd69961fd88de"></a>NO_OBJ&#160;</td><td class="fielddoc"><p>No object, ever. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aaf3587e2ef140d0c28a664dce0d701caacdb0e1cfa06c47be275e0473804a1f75"></a>NEED_OBJ&#160;</td><td class="fielddoc"><p>Object is required. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aaf3587e2ef140d0c28a664dce0d701caa020c823722acaad64c7b47c03dedcfb0"></a>NEED_SKEY_1024&#160;</td><td class="fielddoc"><p>Object is required, and must be a 1024 bit private key </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aaf3587e2ef140d0c28a664dce0d701caaf9e55fe241c5b953d9c74bb51aa9344c"></a>NEED_KEY_1024&#160;</td><td class="fielddoc"><p>Object is required, and must be a 1024 bit public key </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aaf3587e2ef140d0c28a664dce0d701caa02e17140fecda61f5c4cb30c053dbc40"></a>NEED_KEY&#160;</td><td class="fielddoc"><p>Object is required, and must be a public key. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aaf3587e2ef140d0c28a664dce0d701caa632e902e7d2c9955c96b1876eca68589"></a>OBJ_OK&#160;</td><td class="fielddoc"><p>Object is optional. </p>
-</td></tr>
-</table>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -1261,43 +473,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="routerparse_8c_a6e030201d6bc0307036313ed138a0b63_cgraph.png" border="0" usemap="#routerparse_8c_a6e030201d6bc0307036313ed138a0b63_cgraph" alt=""/></div>
 <map name="routerparse_8c_a6e030201d6bc0307036313ed138a0b63_cgraph" id="routerparse_8c_a6e030201d6bc0307036313ed138a0b63_cgraph">
 <area shape="rect" id="node2" href="util_8c.html#a69faf166aa0aa9164d2134419c81ba1b" title="eat_whitespace" alt="" coords="193,13,307,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aed319ab6887b0eb56eff46fd83684017"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed319ab6887b0eb56eff46fd83684017">&#9670;&nbsp;</a></span>dump_desc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">STATIC void dump_desc </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>desc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>For debugging purposes, dump unparseable descriptor *<b>desc</b> of type *<b>type</b> to file $DATADIR/unparseable-desc. Do not write more than one descriptor to disk per minute. If there is already such a file in the data directory, overwrite it. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="routerparse_8c_aed319ab6887b0eb56eff46fd83684017_cgraph.png" border="0" usemap="#routerparse_8c_aed319ab6887b0eb56eff46fd83684017_cgraph" alt=""/></div>
-<map name="routerparse_8c_aed319ab6887b0eb56eff46fd83684017_cgraph" id="routerparse_8c_aed319ab6887b0eb56eff46fd83684017_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a42ff4ac7df6e3158f3a1a32d75081c32" title="crypto_digest256" alt="" coords="143,5,264,32"/>
 </map>
 </div>
 
@@ -1421,14 +596,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Parse a single extrainfo entry from the string <b>s</b>, ending at <b>end</b>. (If <b>end</b> is NULL, parse up to the end of <b>s</b>.) If <b>cache_copy</b> is true, make a copy of the extra-info document in the cache_info fields of the result. If <b>routermap</b> is provided, use it as a map from router identity to <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> when looking up signing keys.</p>
 <p>If <b>can_dl_again_out</b> is provided, set *<b>can_dl_again_out</b> to 1 if it's okay to try to download an extrainfo with this same digest again, and 0 if it isn't. (It might not be okay to download it again if part of the part covered by the digest is invalid.) </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="routerparse_8c_a5c7183356964eccb2338e4ce2c80eb36_cgraph.png" border="0" usemap="#routerparse_8c_a5c7183356964eccb2338e4ce2c80eb36_cgraph" alt=""/></div>
-<map name="routerparse_8c_a5c7183356964eccb2338e4ce2c80eb36_cgraph" id="routerparse_8c_a5c7183356964eccb2338e4ce2c80eb36_cgraph">
-<area shape="rect" id="node2" href="routerparse_8c.html#a38ef1e01c3b561811bc4bd4f0777eb3e" title="router_get_extrainfo_hash" alt="" coords="200,13,372,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1483,15 +650,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="routerparse_8c_abfc52ced95cf906593bbdab812e1cd8e_icgraph.png" border="0" usemap="#routerparse_8c_abfc52ced95cf906593bbdab812e1cd8e_icgraph" alt=""/></div>
 <map name="routerparse_8c_abfc52ced95cf906593bbdab812e1cd8e_icgraph" id="routerparse_8c_abfc52ced95cf906593bbdab812e1cd8e_icgraph">
-<area shape="rect" id="node2" href="dirvote_8h.html#a97feb95be6e8e94295fa6775355318ee" title="dirvote_create_microdescriptor" alt="" coords="215,5,415,32"/>
+<area shape="rect" id="node2" href="dirvote_8c.html#a059168318a87de5f77438cbcefdb73ed" title="dirvote_create_microdescriptor" alt="" coords="215,5,415,32"/>
 <area shape="rect" id="node3" href="microdesc_8h.html#a8c94ac08f79487c605faf8e543fc3057" title="microdescs_add_to_cache" alt="" coords="226,56,403,83"/>
+<area shape="rect" id="node4" href="microdesc_8h.html#a7955c20e8710e1f0b377d61eaba416b1" title="microdesc_cache_reload" alt="" coords="463,56,629,83"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="a2a8bb1810ff691f0bf5f99301b975242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a8bb1810ff691f0bf5f99301b975242">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a8bb1810ff691f0bf5f99301b975242">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1525,8 +693,43 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a3ea46983256e0a698ae2594641d9f0f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea46983256e0a698ae2594641d9f0f3">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">STATIC&#160;</td>
+          <td class="paramname"><em>void</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dump_desc&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(const char *desc, const char *type)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For debugging purposes, dump unparseable descriptor *<b>desc</b> of type *<b>type</b> to file $DATADIR/unparseable-desc. Do not write more than one descriptor to disk per minute. If there is already such a file in the data directory, overwrite it. </p>
+
+</div>
+</div>
 <a id="a65294e0f578a21d0e10431bf4ef1d038"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65294e0f578a21d0e10431bf4ef1d038">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a65294e0f578a21d0e10431bf4ef1d038">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1570,6 +773,41 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node4" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="315,56,409,83"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aedd5abe246bd7e473b999fee99fdaecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd5abe246bd7e473b999fee99fdaecf">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">STATIC&#160;</td>
+          <td class="paramname"><em>int</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">router_compute_hash_final&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(char *digest, const char *start, size_t len, digest_algorithm_t alg)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compute the digest of the <b>len</b>-byte directory object at <b>start</b>, using <b>alg</b>. Store the result in <b>digest</b>, which must be long enough to hold it. </p>
 
 </div>
 </div>
@@ -1639,7 +877,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="routerparse_8c_a65f051065986f87c9969726c07d761be_icgraph.png" border="0" usemap="#routerparse_8c_a65f051065986f87c9969726c07d761be_icgraph" alt=""/></div>
 <map name="routerparse_8c_a65f051065986f87c9969726c07d761be_icgraph" id="routerparse_8c_a65f051065986f87c9969726c07d761be_icgraph">
-<area shape="rect" id="node2" href="dirvote_8h.html#a41039a7c25c1f8a8be7d042dd256a4ad" title="dirvote_add_vote" alt="" coords="196,13,317,39"/>
+<area shape="rect" id="node2" href="dirvote_8c.html#ae4e7e393e4261047243c1c3f339886e4" title="dirvote_add_vote" alt="" coords="196,13,317,39"/>
 </map>
 </div>
 
@@ -1677,8 +915,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="routerparse_8c_a318846a3f10eacf7fe55df71d9f509f7_cgraph.png" border="0" usemap="#routerparse_8c_a318846a3f10eacf7fe55df71d9f509f7_cgraph" alt=""/></div>
 <map name="routerparse_8c_a318846a3f10eacf7fe55df71d9f509f7_cgraph" id="routerparse_8c_a318846a3f10eacf7fe55df71d9f509f7_cgraph">
 <area shape="rect" id="node2" href="networkstatus_8c.html#afda0b094982877af4c11b127167acb9e" title="networkstatus_get_weight\l_scale_param" alt="" coords="397,5,572,47"/>
-<area shape="rect" id="node4" href="networkstatus_8c.html#a77165f72d7e9e6e99fce27ee87a063a9" title="networkstatus_get_bw\l_weight" alt="" coords="196,35,349,76"/>
-<area shape="rect" id="node3" href="networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="620,13,792,39"/>
+<area shape="rect" id="node3" href="networkstatus_8c.html#a77165f72d7e9e6e99fce27ee87a063a9" title="networkstatus_get_bw\l_weight" alt="" coords="196,35,349,76"/>
 </map>
 </div>
 
@@ -1765,6 +1002,10 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="memarea_8c.html#a9bc481c5060ff6280cfb1e5eaaa915f4" title="memarea_new" alt="" coords="215,5,322,32"/>
 <area shape="rect" id="node3" href="util_8c.html#a69faf166aa0aa9164d2134419c81ba1b" title="eat_whitespace" alt="" coords="212,56,325,83"/>
 <area shape="rect" id="node4" href="util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="225,107,313,133"/>
+<area shape="rect" id="node5" href="parsecommon_8c.html#a0a897ae41319f84342483abb652dd6dd" title="token_clear" alt="" coords="224,157,313,184"/>
+<area shape="rect" id="node6" href="container_8c.html#ad24500d61ff1dbb6c845a8a70f6d2f14" title="smartlist_clear" alt="" coords="215,208,322,235"/>
+<area shape="rect" id="node7" href="memarea_8c.html#a98079351167b7e4a7e189045d8534dc8" title="memarea_clear" alt="" coords="213,259,324,285"/>
+<area shape="rect" id="node8" href="parsecommon_8c.html#af5a0f0fc39c7237d4d86a4288f31e19b" title="tokenize_string" alt="" coords="213,309,324,336"/>
 </map>
 </div>
 
@@ -1874,7 +1115,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="routerparse_8c_a2faba4db0eeeb6f97d9ba56983390b37_icgraph.png" border="0" usemap="#routerparse_8c_a2faba4db0eeeb6f97d9ba56983390b37_icgraph" alt=""/></div>
 <map name="routerparse_8c_a2faba4db0eeeb6f97d9ba56983390b37_icgraph" id="routerparse_8c_a2faba4db0eeeb6f97d9ba56983390b37_icgraph">
-<area shape="rect" id="node2" href="rendcache_8h.html#a0029729f71187fd666fb549197645b7e" title="rend_cache_store_v2\l_desc_as_dir" alt="" coords="209,5,356,47"/>
+<area shape="rect" id="node2" href="rendcache_8h.html#a0029729f71187fd666fb549197645b7e" title="rend_cache_store_v2\l_desc_as_dir" alt="" coords="224,5,371,47"/>
+<area shape="rect" id="node3" href="rendcommon_8c.html#a8fd972a1eacaa6e1208f2d02a51ba824" title="rend_desc_v2_is_parsable" alt="" coords="209,71,385,98"/>
 </map>
 </div>
 
@@ -1930,7 +1172,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="routerparse_8c_a594cb966cbb2893822d931ffe955b53d_cgraph.png" border="0" usemap="#routerparse_8c_a594cb966cbb2893822d931ffe955b53d_cgraph" alt=""/></div>
 <map name="routerparse_8c_a594cb966cbb2893822d931ffe955b53d_cgraph" id="routerparse_8c_a594cb966cbb2893822d931ffe955b53d_cgraph">
 <area shape="rect" id="node2" href="routerparse_8c.html#ada91c927ebf9cb2a3b92b285198f172a" title="router_get_dirobj_signature" alt="" coords="196,13,375,39"/>
-<area shape="rect" id="node3" href="crypto_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="423,13,553,39"/>
+<area shape="rect" id="node3" href="crypto__rsa_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="423,13,553,39"/>
 </map>
 </div>
 
@@ -2002,7 +1244,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="routerparse_8c_ada91c927ebf9cb2a3b92b285198f172a_cgraph.png" border="0" usemap="#routerparse_8c_ada91c927ebf9cb2a3b92b285198f172a_cgraph" alt=""/></div>
 <map name="routerparse_8c_ada91c927ebf9cb2a3b92b285198f172a_cgraph" id="routerparse_8c_ada91c927ebf9cb2a3b92b285198f172a_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="232,5,363,32"/>
+<area shape="rect" id="node2" href="crypto__rsa_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="232,5,363,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2048,14 +1290,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set <b>digest</b> to the SHA-1 digest of the hash of the <b>s_len</b>-byte extrainfo string at <b>s</b>. Return 0 on success, -1 on failure. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="routerparse_8c_a38ef1e01c3b561811bc4bd4f0777eb3e_icgraph.png" border="0" usemap="#routerparse_8c_a38ef1e01c3b561811bc4bd4f0777eb3e_icgraph" alt=""/></div>
-<map name="routerparse_8c_a38ef1e01c3b561811bc4bd4f0777eb3e_icgraph" id="routerparse_8c_a38ef1e01c3b561811bc4bd4f0777eb3e_icgraph">
-<area shape="rect" id="node2" href="routerparse_8h.html#a5c7183356964eccb2338e4ce2c80eb36" title="extrainfo_parse_entry\l_from_string" alt="" coords="225,5,372,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2085,6 +1319,96 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set <b>digests</b> to all the digests of the consensus document in <b>s</b> </p>
+
+</div>
+</div>
+<a id="afd89ff48acdb8ef399f773e42a8398d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd89ff48acdb8ef399f773e42a8398d8">&#9670;&nbsp;</a></span>router_get_networkstatus_v3_sha3_as_signed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int router_get_networkstatus_v3_sha3_as_signed </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>digest_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set <b>digest_out</b> to the SHA3-256 digest of the signed portion of the networkstatus vote in <b>s</b> &ndash; or of the entirety of <b>s</b> if no signed portion can be identified. Return 0 on success, -1 on failure. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="routerparse_8c_afd89ff48acdb8ef399f773e42a8398d8_cgraph.png" border="0" usemap="#routerparse_8c_afd89ff48acdb8ef399f773e42a8398d8_cgraph" alt=""/></div>
+<map name="routerparse_8c_afd89ff48acdb8ef399f773e42a8398d8_cgraph" id="routerparse_8c_afd89ff48acdb8ef399f773e42a8398d8_cgraph">
+<area shape="rect" id="node2" href="routerparse_8c.html#aae7e91b9970f52f892b255d99a2358fd" title="router_get_networkstatus\l_v3_signed_boundaries" alt="" coords="223,5,392,47"/>
+<area shape="rect" id="node3" href="crypto__digest_8c.html#a42ff4ac7df6e3158f3a1a32d75081c32" title="crypto_digest256" alt="" coords="247,71,368,98"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="routerparse_8c_afd89ff48acdb8ef399f773e42a8398d8_icgraph.png" border="0" usemap="#routerparse_8c_afd89ff48acdb8ef399f773e42a8398d8_icgraph" alt=""/></div>
+<map name="routerparse_8c_afd89ff48acdb8ef399f773e42a8398d8_icgraph" id="routerparse_8c_afd89ff48acdb8ef399f773e42a8398d8_icgraph">
+<area shape="rect" id="node2" href="consdiff_8c.html#af0b81e4502db10522c1051647963be2f" title="MOCK_IMPL" alt="" coords="223,13,323,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aae7e91b9970f52f892b255d99a2358fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae7e91b9970f52f892b255d99a2358fd">&#9670;&nbsp;</a></span>router_get_networkstatus_v3_signed_boundaries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int router_get_networkstatus_v3_signed_boundaries </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>start_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>end_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Try to find the start and end of the signed portion of a networkstatus document in <b>s</b>. On success, set <b>start_out</b> to the first character of the document, and <b>end_out</b> to a position one after the final character of the signed document, and return 0. On failure, return -1. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="routerparse_8c_aae7e91b9970f52f892b255d99a2358fd_icgraph.png" border="0" usemap="#routerparse_8c_aae7e91b9970f52f892b255d99a2358fd_icgraph" alt=""/></div>
+<map name="routerparse_8c_aae7e91b9970f52f892b255d99a2358fd_icgraph" id="routerparse_8c_aae7e91b9970f52f892b255d99a2358fd_icgraph">
+<area shape="rect" id="node2" href="routerparse_8h.html#afd89ff48acdb8ef399f773e42a8398d8" title="router_get_networkstatus\l_v3_sha3_as_signed" alt="" coords="223,5,392,47"/>
+<area shape="rect" id="node3" href="consdiff_8c.html#af0b81e4502db10522c1051647963be2f" title="MOCK_IMPL" alt="" coords="440,13,540,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2182,7 +1506,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="routerparse_8c_a6ed67129e89fe64d2f329a1e94063f48_cgraph.png" border="0" usemap="#routerparse_8c_a6ed67129e89fe64d2f329a1e94063f48_cgraph" alt=""/></div>
 <map name="routerparse_8c_a6ed67129e89fe64d2f329a1e94063f48_cgraph" id="routerparse_8c_a6ed67129e89fe64d2f329a1e94063f48_cgraph">
-<area shape="rect" id="node2" href="memarea_8c.html#a9bc481c5060ff6280cfb1e5eaaa915f4" title="memarea_new" alt="" coords="184,13,291,39"/>
+<area shape="rect" id="node2" href="memarea_8c.html#a9bc481c5060ff6280cfb1e5eaaa915f4" title="memarea_new" alt="" coords="186,5,293,32"/>
+<area shape="rect" id="node3" href="parsecommon_8c.html#af5a0f0fc39c7237d4d86a4288f31e19b" title="tokenize_string" alt="" coords="184,56,295,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2433,8 +1758,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="routerparse_8c_aa5182e7b61c8640ef94186a19760d90c_cgraph.png" border="0" usemap="#routerparse_8c_aa5182e7b61c8640ef94186a19760d90c_cgraph" alt=""/></div>
 <map name="routerparse_8c_aa5182e7b61c8640ef94186a19760d90c_cgraph" id="routerparse_8c_aa5182e7b61c8640ef94186a19760d90c_cgraph">
 <area shape="rect" id="node2" href="entrynodes_8c.html#abcf00389e72807f2534ffd3da3de31e6" title="should_apply_guardfraction" alt="" coords="184,5,364,32"/>
-<area shape="rect" id="node4" href="util_8c.html#a8c315755a2fb518d47d7397a14e506de" title="tor_parse_ulong" alt="" coords="217,56,331,83"/>
-<area shape="rect" id="node3" href="networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="412,5,584,32"/>
+<area shape="rect" id="node3" href="util_8c.html#a8c315755a2fb518d47d7397a14e506de" title="tor_parse_ulong" alt="" coords="217,56,331,83"/>
 </map>
 </div>
 
@@ -2472,6 +1796,50 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="routerparse_8c_a54739e9600d1d7d0941e77c8ddc53970_cgraph.png" border="0" usemap="#routerparse_8c_a54739e9600d1d7d0941e77c8ddc53970_cgraph" alt=""/></div>
 <map name="routerparse_8c_a54739e9600d1d7d0941e77c8ddc53970_cgraph" id="routerparse_8c_a54739e9600d1d7d0941e77c8ddc53970_cgraph">
 <area shape="rect" id="node2" href="container_8c.html#adeb0528c65b62117acb2b8f6e2b0e910" title="smartlist_sort" alt="" coords="171,5,272,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3fe59c4a0303366c3de158b6e59006cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe59c4a0303366c3de158b6e59006cf">&#9670;&nbsp;</a></span>summarize_protover_flags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC void summarize_protover_flags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structprotover__summary__flags__t.html">protover_summary_flags_t</a> *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>protocols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Summarize the protocols listed in <b>protocols</b> into <b>out</b>, falling back or correcting them based on <b>version</b> as appropriate. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="routerparse_8c_a3fe59c4a0303366c3de158b6e59006cf_cgraph.png" border="0" usemap="#routerparse_8c_a3fe59c4a0303366c3de158b6e59006cf_cgraph" alt=""/></div>
+<map name="routerparse_8c_a3fe59c4a0303366c3de158b6e59006cf_cgraph" id="routerparse_8c_a3fe59c4a0303366c3de158b6e59006cf_cgraph">
+<area shape="rect" id="node2" href="protover_8c.html#a82c169e6b51ef74fff02c0d43734d118" title="protocol_list_supports\l_protocol" alt="" coords="193,5,343,47"/>
+<area shape="rect" id="node3" href="protover_8c.html#ad786a6cc6895b76026179292fe0d39ad" title="parse_protocol_list" alt="" coords="391,13,521,39"/>
 </map>
 </div>
 
@@ -2517,7 +1885,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="routerparse_8c_a34e1f6d4f6429bcf1d565f54a1dfcd5c_icgraph.png" border="0" usemap="#routerparse_8c_a34e1f6d4f6429bcf1d565f54a1dfcd5c_icgraph" alt=""/></div>
 <map name="routerparse_8c_a34e1f6d4f6429bcf1d565f54a1dfcd5c_icgraph" id="routerparse_8c_a34e1f6d4f6429bcf1d565f54a1dfcd5c_icgraph">
-<area shape="rect" id="node2" href="protover_8h.html#a14cfeb2deba8e3104fc9ca36778312d9" title="protover_compute_for\l_old_tor" alt="" coords="212,5,360,47"/>
+<area shape="rect" id="node2" href="protover_8h.html#a14cfeb2deba8e3104fc9ca36778312d9" title="C_RUST_COUPLED: src/rust/protover/protover.rs compute_for_old_tor " alt="" coords="212,5,360,47"/>
 </map>
 </div>
 
@@ -2623,7 +1991,7 @@ Here is the caller graph for this function:</div>
 <map name="routerparse_8c_ace4c11b51ca67a4f140ed41ae3d47b6d_icgraph" id="routerparse_8c_ace4c11b51ca67a4f140ed41ae3d47b6d_icgraph">
 <area shape="rect" id="node2" href="routerparse_8h.html#a47c9a3cf5868b2133b4e5a582ca69aa6" title="tor_version_parse_platform" alt="" coords="179,5,357,32"/>
 <area shape="rect" id="node3" href="routerparse_8h.html#a34e1f6d4f6429bcf1d565f54a1dfcd5c" title="tor_version_as_new_as" alt="" coords="189,56,347,83"/>
-<area shape="rect" id="node4" href="protover_8h.html#a14cfeb2deba8e3104fc9ca36778312d9" title="protover_compute_for\l_old_tor" alt="" coords="405,49,553,90"/>
+<area shape="rect" id="node4" href="protover_8h.html#a14cfeb2deba8e3104fc9ca36778312d9" title="C_RUST_COUPLED: src/rust/protover/protover.rs compute_for_old_tor " alt="" coords="405,49,553,90"/>
 </map>
 </div>
 

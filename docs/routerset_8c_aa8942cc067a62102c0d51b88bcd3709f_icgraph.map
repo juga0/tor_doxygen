@@ -1,9 +1,5 @@
 <map id="routerset_contains_router" name="routerset_contains_router">
-<area shape="rect" id="node2" href="$router_8h.html#a93f4b5aab591c136663925a937575299" title="consider_testing_reachability" alt="" coords="183,17,373,43"/>
-<area shape="rect" id="node4" href="$routerset_8c.html#a59dc48808ca97d25748411b8053b28a2" title="routerset_contains_node" alt="" coords="196,71,360,98"/>
-<area shape="rect" id="node3" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="421,5,549,47"/>
-<area shape="rect" id="node5" href="$entrynodes_8c.html#afd4f8dd6f248abfc072ce641a568ddde" title="entry_is_live" alt="" coords="438,71,533,98"/>
-<area shape="rect" id="node8" href="$routerset_8c.html#a9be05b5c05c2be4f7ad45be6f705865d" title="routerset_subtract\l_nodes" alt="" coords="422,123,549,164"/>
-<area shape="rect" id="node6" href="$entrynodes_8h.html#accc850d23175b5132661a8c6e561e972" title="num_live_entry_guards" alt="" coords="597,42,753,69"/>
-<area shape="rect" id="node7" href="$entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="608,93,743,135"/>
+<area shape="rect" id="node2" href="$routerset_8c.html#a59dc48808ca97d25748411b8053b28a2" title="routerset_contains_node" alt="" coords="183,35,347,61"/>
+<area shape="rect" id="node3" href="$hs__common_8h.html#a9af4bf6fe3cc01d5524f2dd4123573a8" title="hs_pick_hsdir" alt="" coords="407,5,509,32"/>
+<area shape="rect" id="node4" href="$routerset_8c.html#a9be05b5c05c2be4f7ad45be6f705865d" title="routerset_subtract\l_nodes" alt="" coords="395,57,521,98"/>
 </map>

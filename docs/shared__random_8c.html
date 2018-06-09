@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tor: /home/user/_my/code/bwauth-related/tor/src/or/shared_random.c File Reference</title>
+<title>tor: /home/user/_my/code/bwauth-related/tor/src/or/dirauth/shared_random.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_386635fabd7f6c74e9d9c7a8604514a0.html">or</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_386635fabd7f6c74e9d9c7a8604514a0.html">or</a></li><li class="navelem"><a class="el" href="dir_c5d850bddae166bb86a80dcb64398e39.html">dirauth</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,53 +77,68 @@ $(function() {
 <code>#include &quot;shared_random.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;confparse.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirvote.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
-<code>#include &quot;routerkeys.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
+<code>#include &quot;routerkeys.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="shared__random__client_8h_source.html">shared_random_client.h</a>&quot;</code><br />
 <code>#include &quot;shared_random_state.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="voting__schedule_8h_source.html">voting_schedule.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirauth/dirvote.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mode_8h_source.html">dirauth/mode.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for shared_random.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="shared__random_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2shared__random_8c" alt=""/></div>
-<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2shared__random_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2shared__random_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1234,259,1278,285"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="1095,483,1146,509"/>
-<area shape="rect" id="node34" href="shared__random_8h_source.html" title="shared_random.h" alt="" coords="711,184,834,211"/>
-<area shape="rect" id="node35" href="config_8h.html" title="Header file for config.c. " alt="" coords="194,259,262,285"/>
-<area shape="rect" id="node36" href="confparse_8h_source.html" title="confparse.h" alt="" coords="978,109,1068,136"/>
-<area shape="rect" id="node37" href="dirvote_8h.html" title="Header file for dirvote.c. " alt="" coords="264,408,336,435"/>
-<area shape="rect" id="node38" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="347,184,462,211"/>
-<area shape="rect" id="node39" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="1534,184,1629,211"/>
-<area shape="rect" id="node40" href="router_8h.html" title="Header file for router.c. " alt="" coords="446,259,512,285"/>
-<area shape="rect" id="node41" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="512,408,595,435"/>
-<area shape="rect" id="node42" href="shared__random__state_8h_source.html" title="shared_random_state.h" alt="" coords="693,109,852,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1310,856,1389,883"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1722,781,1785,808"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="766,557,835,584"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1542,557,1656,584"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1632,632,1758,659"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1737,707,1880,733"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="682,483,745,509"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1262,557,1328,584"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="1336,408,1422,435"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="878,333,950,360"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="1732,333,1810,360"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="6,707,134,733"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="974,333,1018,360"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1042,333,1145,360"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1170,333,1260,360"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="2057,707,2152,733"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="628,781,727,808"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1033,632,1109,659"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1033,781,1141,808"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1286,707,1413,733"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="614,557,742,584"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1337,483,1416,509"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1540,707,1610,733"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="969,557,1048,584"/>
+<div class="center"><img src="shared__random_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirauth_2shared__random_8c" alt=""/></div>
+<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirauth_2shared__random_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirauth_2shared__random_8c">
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1369,273,1413,300"/>
+<area shape="rect" id="node12" href="util_8h.html" title="Headers for util.c. " alt="" coords="1057,721,1108,748"/>
+<area shape="rect" id="node37" href="shared__random_8h_source.html" title="shared_random.h" alt="" coords="1740,199,1863,225"/>
+<area shape="rect" id="node38" href="config_8h.html" title="Header file for config.c. " alt="" coords="2215,273,2283,300"/>
+<area shape="rect" id="node39" href="confparse_8h_source.html" title="confparse.h" alt="" coords="2380,124,2471,151"/>
+<area shape="rect" id="node40" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="376,647,477,673"/>
+<area shape="rect" id="node41" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="5,796,99,823"/>
+<area shape="rect" id="node42" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2212,199,2327,225"/>
+<area shape="rect" id="node43" href="router_8h.html" title="Header file for router.c. " alt="" coords="2365,273,2432,300"/>
+<area shape="rect" id="node44" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="987,199,1082,225"/>
+<area shape="rect" id="node45" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2157,572,2240,599"/>
+<area shape="rect" id="node46" href="shared__random__client_8h.html" title="Header file for shared_random_client.c. " alt="" coords="1629,124,1789,151"/>
+<area shape="rect" id="node47" href="shared__random__state_8h_source.html" title="shared_random_state.h" alt="" coords="1814,124,1973,151"/>
+<area shape="rect" id="node48" href="voting__schedule_8h.html" title="Header file for voting_schedule.c. " alt="" coords="1335,199,1462,225"/>
+<area shape="rect" id="node49" href="dirvote_8h.html" title="Header file for dirvote.c. " alt="" coords="2495,124,2609,151"/>
+<area shape="rect" id="node50" href="mode_8h.html" title="Standalone header file for directory authority mode. " alt="" coords="2634,124,2742,151"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1193,1020,1271,1047"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="493,945,555,972"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1376,423,1445,449"/>
+<area shape="rect" id="node18" href="container_8h_source.html" title="container.h" alt="" coords="705,647,791,673"/>
+<area shape="rect" id="node20" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1803,721,1869,748"/>
+<area shape="rect" id="node21" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1583,348,1697,375"/>
+<area shape="rect" id="node22" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1087,423,1212,449"/>
+<area shape="rect" id="node23" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="918,497,1061,524"/>
+<area shape="rect" id="node25" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1667,423,1730,449"/>
+<area shape="rect" id="node27" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1019,348,1109,375"/>
+<area shape="rect" id="node28" href="address_8h.html" title="Headers for address.h. " alt="" coords="603,572,682,599"/>
+<area shape="rect" id="node29" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2400,871,2528,897"/>
+<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="1134,348,1178,375"/>
+<area shape="rect" id="node31" href="confline_8h_source.html" title="confline.h" alt="" coords="713,423,791,449"/>
+<area shape="rect" id="node32" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1202,348,1305,375"/>
+<area shape="rect" id="node33" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1329,348,1420,375"/>
+<area shape="rect" id="node34" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="953,871,1063,897"/>
+<area shape="rect" id="node35" href="util__format_8h_source.html" title="util_format.h" alt="" coords="834,871,929,897"/>
+<area shape="rect" id="node36" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1444,348,1559,375"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1182,871,1258,897"/>
+<area shape="rect" id="node16" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1651,497,1746,524"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1944,945,2043,972"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1178,945,1286,972"/>
+<area shape="rect" id="node13" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="739,871,810,897"/>
+<area shape="rect" id="node15" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="1385,796,1463,823"/>
+<area shape="rect" id="node17" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="934,572,1045,599"/>
+<area shape="rect" id="node19" href="siphash_8h_source.html" title="siphash.h" alt="" coords="689,721,767,748"/>
+<area shape="rect" id="node24" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1222,647,1373,673"/>
+<area shape="rect" id="node26" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1448,497,1576,524"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -168,21 +183,15 @@ STATIC void&#160;</td><td class="memItemRight" valign="bottom"><b>save_commit_to
 <tr class="memitem:adda9b26cde87561265ec50339d746cb9"><td class="memItemLeft" align="right" valign="top"><a id="adda9b26cde87561265ec50339d746cb9"></a>
 STATIC <a class="el" href="structsr__srv__t.html">sr_srv_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_majority_srv_from_votes</b> (const <a class="el" href="structsmartlist__t.html">smartlist_t</a> *votes, int current)</td></tr>
 <tr class="separator:adda9b26cde87561265ec50339d746cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8772b0a81139b8105fe276e6aab2b2ae"><td class="memItemLeft" align="right" valign="top"><a id="a8772b0a81139b8105fe276e6aab2b2ae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sr_srv_encode</b> (char *dst, size_t dst_len, const <a class="el" href="structsr__srv__t.html">sr_srv_t</a> *srv)</td></tr>
-<tr class="separator:a8772b0a81139b8105fe276e6aab2b2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84ac4ae0251dc8b92c327ecff6c229cc"><td class="memItemLeft" align="right" valign="top"><a id="a84ac4ae0251dc8b92c327ecff6c229cc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sr_commit_free</b> (<a class="el" href="structsr__commit__t.html">sr_commit_t</a> *commit)</td></tr>
-<tr class="separator:a84ac4ae0251dc8b92c327ecff6c229cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb63e14ef5d63e682a06d043b595dc55"><td class="memItemLeft" align="right" valign="top"><a id="afb63e14ef5d63e682a06d043b595dc55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sr_commit_free_</b> (<a class="el" href="structsr__commit__t.html">sr_commit_t</a> *commit)</td></tr>
+<tr class="separator:afb63e14ef5d63e682a06d043b595dc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a132736a325c9fb84a06db87f8860ff2b"><td class="memItemLeft" align="right" valign="top"><a id="a132736a325c9fb84a06db87f8860ff2b"></a>
 <a class="el" href="structsr__commit__t.html">sr_commit_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sr_generate_our_commit</b> (time_t timestamp, const <a class="el" href="structauthority__cert__t.html">authority_cert_t</a> *my_rsa_cert)</td></tr>
 <tr class="separator:a132736a325c9fb84a06db87f8860ff2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3668524cdcd2fcc1e4f6014b82f679f"><td class="memItemLeft" align="right" valign="top"><a id="ad3668524cdcd2fcc1e4f6014b82f679f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sr_compute_srv</b> (void)</td></tr>
 <tr class="separator:ad3668524cdcd2fcc1e4f6014b82f679f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3753c9baa3add61828cda85d3b54348e"><td class="memItemLeft" align="right" valign="top"><a id="a3753c9baa3add61828cda85d3b54348e"></a>
-<a class="el" href="structsr__srv__t.html">sr_srv_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sr_parse_srv</b> (const <a class="el" href="structsmartlist__t.html">smartlist_t</a> *args)</td></tr>
-<tr class="separator:a3753c9baa3add61828cda85d3b54348e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ff82c23af81cdbad0621dfd698699a9"><td class="memItemLeft" align="right" valign="top"><a id="a1ff82c23af81cdbad0621dfd698699a9"></a>
 <a class="el" href="structsr__commit__t.html">sr_commit_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sr_parse_commit</b> (const <a class="el" href="structsmartlist__t.html">smartlist_t</a> *args)</td></tr>
 <tr class="separator:a1ff82c23af81cdbad0621dfd698699a9"><td class="memSeparator" colspan="2">&#160;</td></tr>

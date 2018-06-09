@@ -1,0 +1,6 @@
+<map id="token_bucket_cfg_init" name="token_bucket_cfg_init">
+<area shape="rect" id="node2" href="$token__bucket_8c.html#a50fe824eab38393da0fc4f96d745d42c" title="token_bucket_rw_adjust" alt="" coords="203,31,365,57"/>
+<area shape="rect" id="node3" href="$token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="427,5,573,32"/>
+<area shape="rect" id="node5" href="$connection_8h.html#a9c0760d1fc50f5bd96ab05890f121f11" title="connection_bucket_adjust" alt="" coords="413,56,587,83"/>
+<area shape="rect" id="node4" href="$connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="635,5,789,32"/>
+</map>

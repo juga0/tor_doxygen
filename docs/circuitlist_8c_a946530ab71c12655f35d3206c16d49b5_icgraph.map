@@ -1,0 +1,4 @@
+<map id="circuit_get_cpath_opened_len" name="circuit_get_cpath_opened_len">
+<area shape="rect" id="node2" href="$circuitbuild_8h.html#aa58d1c16591ccd8590c84255d7b3cc34" title="circuit_timeout_want\l_to_count_circ" alt="" coords="248,5,391,47"/>
+<area shape="rect" id="node3" href="$circuitstats_8h.html#a306615a489277731398dbd19065f7b2b" title="circuit_build_times\l_handle_completed_hop" alt="" coords="439,5,601,47"/>
+</map>

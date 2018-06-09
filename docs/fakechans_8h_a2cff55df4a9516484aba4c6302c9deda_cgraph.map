@@ -1,3 +1,7 @@
 <map id="scheduler_release_channel_mock" name="scheduler_release_channel_mock">
-<area shape="rect" id="node2" href="$fakechans_8h.html#a62bc6279958770db38f2eeb27f66a87a" title="new_fake_channel" alt="" coords="272,5,403,32"/>
+<area shape="rect" id="node2" href="$fakechans_8h.html#a62bc6279958770db38f2eeb27f66a87a" title="new_fake_channel" alt="" coords="288,5,419,32"/>
+<area shape="rect" id="node3" href="$channel_8c.html#a7becc4cc5e7dd116f44f86a1b826dc9a" title="channel_register" alt="" coords="295,56,412,83"/>
+<area shape="rect" id="node4" href="$channel_8c.html#a1ef365ba78cdfea35f694be31bfd6e91" title="channel_dumpstats" alt="" coords="286,107,421,133"/>
+<area shape="rect" id="node6" href="$channel_8c.html#ac5c51ad12ff89e0f63cc386ccda8493f" title="channel_mark_for_close" alt="" coords="272,157,435,184"/>
+<area shape="rect" id="node5" href="$log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="483,107,544,133"/>
 </map>

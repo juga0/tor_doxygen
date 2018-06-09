@@ -72,8 +72,10 @@ Collaboration diagram for or_connection_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structor__connection__t__coll__graph.png" border="0" usemap="#or__connection__t_coll__map" alt="Collaboration graph"/></div>
 <map name="or__connection__t_coll__map" id="or__connection__t_coll__map">
-<area shape="rect" id="node2" href="structor__handshake__state__t.html" title="or_handshake_state_t" alt="" coords="79,213,230,240"/>
-<area shape="rect" id="node3" href="structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="89,95,199,121"/>
+<area shape="rect" id="node2" href="structor__handshake__state__t.html" title="or_handshake_state_t" alt="" coords="155,243,306,269"/>
+<area shape="rect" id="node4" href="structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="175,124,286,151"/>
+<area shape="rect" id="node5" href="structor__handshake__certs__t.html" title="or_handshake_certs_t" alt="" coords="310,124,461,151"/>
+<area shape="rect" id="node6" href="structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="485,124,635,151"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -82,7 +84,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aaef13d692ce12bdf3b63c258aa6a69e7"><td class="memItemLeft" align="right" valign="top"><a id="aaef13d692ce12bdf3b63c258aa6a69e7"></a>
 <a class="el" href="structconnection__t.html">connection_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>base_</b></td></tr>
 <tr class="separator:aaef13d692ce12bdf3b63c258aa6a69e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55d09977f6fcf3c3be8dcc9625c14e60"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a55d09977f6fcf3c3be8dcc9625c14e60">identity_digest</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
+<tr class="memitem:a55d09977f6fcf3c3be8dcc9625c14e60"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a55d09977f6fcf3c3be8dcc9625c14e60">identity_digest</a> [<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
 <tr class="separator:a55d09977f6fcf3c3be8dcc9625c14e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a627d6fda0be1be48d3d17d75d4c94487"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a627d6fda0be1be48d3d17d75d4c94487">ext_or_conn_id</a></td></tr>
 <tr class="separator:a627d6fda0be1be48d3d17d75d4c94487"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,8 +104,6 @@ Data Fields</h2></td></tr>
 <tr class="separator:a077a90c536d624cf64731858c64c4a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae13c4e458c45cc3ddac15f08392bb730"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#ae13c4e458c45cc3ddac15f08392bb730">is_canonical</a>:1</td></tr>
 <tr class="separator:ae13c4e458c45cc3ddac15f08392bb730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25b7d4c2a4aba7ee4bcd99c5138db112"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a25b7d4c2a4aba7ee4bcd99c5138db112">is_connection_with_client</a>:1</td></tr>
-<tr class="separator:a25b7d4c2a4aba7ee4bcd99c5138db112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a941d4f305b69cbc1c786a7e5c70dceb9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a941d4f305b69cbc1c786a7e5c70dceb9">is_outgoing</a>:1</td></tr>
 <tr class="separator:a941d4f305b69cbc1c786a7e5c70dceb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea358d10ce7040e0024bbebfd24e5b6a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#aea358d10ce7040e0024bbebfd24e5b6a">proxy_type</a>:2</td></tr>
@@ -123,20 +123,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>wide_circ_ids
 <tr class="separator:a949e26643add240bd6ac2a106f7415c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad339a3042d0feed23dd3f4bc2b7d195e"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#ad339a3042d0feed23dd3f4bc2b7d195e">timestamp_lastempty</a></td></tr>
 <tr class="separator:ad339a3042d0feed23dd3f4bc2b7d195e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7244bd1bf5dffc33914e4149e3c15369"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a7244bd1bf5dffc33914e4149e3c15369">bandwidthrate</a></td></tr>
-<tr class="separator:a7244bd1bf5dffc33914e4149e3c15369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a4b81da047ca95386b645e20b82081"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a07a4b81da047ca95386b645e20b82081">bandwidthburst</a></td></tr>
-<tr class="separator:a07a4b81da047ca95386b645e20b82081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5a8e5cb5849774cf3b459dce3387dae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#ab5a8e5cb5849774cf3b459dce3387dae">read_bucket</a></td></tr>
-<tr class="separator:ab5a8e5cb5849774cf3b459dce3387dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a752b01495c598ee05dfdbd94e77233de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a752b01495c598ee05dfdbd94e77233de">write_bucket</a></td></tr>
-<tr class="separator:a752b01495c598ee05dfdbd94e77233de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a799898b04fcc0cc700e21467f64f55ea"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structor__connection__t.html">or_connection_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a799898b04fcc0cc700e21467f64f55ea">next_with_same_id</a></td></tr>
-<tr class="separator:a799898b04fcc0cc700e21467f64f55ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c5c30b0b7a8804724d1d6afd454b47c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a2c5c30b0b7a8804724d1d6afd454b47c">read_emptied_time</a></td></tr>
-<tr class="separator:a2c5c30b0b7a8804724d1d6afd454b47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68df7da0aee9eabf54de08a617369722"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a68df7da0aee9eabf54de08a617369722">write_emptied_time</a></td></tr>
-<tr class="separator:a68df7da0aee9eabf54de08a617369722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a778fd158075af472d29ef5f661d29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtoken__bucket__rw__t.html">token_bucket_rw_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connection__t.html#a20a778fd158075af472d29ef5f661d29">bucket</a></td></tr>
+<tr class="separator:a20a778fd158075af472d29ef5f661d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b352fce6a5f53d327cf0893840a234"><td class="memItemLeft" align="right" valign="top"><a id="a52b352fce6a5f53d327cf0893840a234"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>bytes_xmitted</b></td></tr>
 <tr class="separator:a52b352fce6a5f53d327cf0893840a234"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,33 +135,18 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>bytes_xmitted_by_
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Subtype of <a class="el" href="structconnection__t.html">connection_t</a> for an "OR connection" &ndash; that is, one that speaks cells over TLS. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a07a4b81da047ca95386b645e20b82081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07a4b81da047ca95386b645e20b82081">&#9670;&nbsp;</a></span>bandwidthburst</h2>
+<a id="a20a778fd158075af472d29ef5f661d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a778fd158075af472d29ef5f661d29">&#9670;&nbsp;</a></span>bucket</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int bandwidthburst</td>
+          <td class="memname"><a class="el" href="structtoken__bucket__rw__t.html">token_bucket_rw_t</a> bucket</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Max bucket size for this conn. (OPEN ORs only.) </p>
-
-</div>
-</div>
-<a id="a7244bd1bf5dffc33914e4149e3c15369"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7244bd1bf5dffc33914e4149e3c15369">&#9670;&nbsp;</a></span>bandwidthrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int bandwidthrate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Bytes/s added to the bucket. (OPEN ORs only.) </p>
+<p>Used for rate limiting when the connection is in state CONN_OPEN. </p>
 
 </div>
 </div>
@@ -274,7 +247,7 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>bytes_xmitted_by_
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char identity_digest[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
+          <td class="memname">char identity_digest[<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -312,21 +285,6 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>bytes_xmitted_by_
 
 </div>
 </div>
-<a id="a25b7d4c2a4aba7ee4bcd99c5138db112"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25b7d4c2a4aba7ee4bcd99c5138db112">&#9670;&nbsp;</a></span>is_connection_with_client</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int is_connection_with_client</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>True iff we have decided that the other end of this connection is a client. Connections with this flag set should never be used to satisfy an EXTEND request. </p>
-
-</div>
-</div>
 <a id="a941d4f305b69cbc1c786a7e5c70dceb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a941d4f305b69cbc1c786a7e5c70dceb9">&#9670;&nbsp;</a></span>is_outgoing</h2>
 
@@ -357,21 +315,6 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>bytes_xmitted_by_
 
 </div>
 </div>
-<a id="a799898b04fcc0cc700e21467f64f55ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a799898b04fcc0cc700e21467f64f55ea">&#9670;&nbsp;</a></span>next_with_same_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structor__connection__t.html">or_connection_t</a>* next_with_same_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Next connection with same identity digest as this one. </p>
-
-</div>
-</div>
 <a id="aebf3fd229429c27d00bd36dea7157407"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aebf3fd229429c27d00bd36dea7157407">&#9670;&nbsp;</a></span>nickname</h2>
 
@@ -399,36 +342,6 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>bytes_xmitted_by_
       </table>
 </div><div class="memdoc">
 <p>One of PROXY_NONE...PROXY_SOCKS5 </p>
-
-</div>
-</div>
-<a id="ab5a8e5cb5849774cf3b459dce3387dae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5a8e5cb5849774cf3b459dce3387dae">&#9670;&nbsp;</a></span>read_bucket</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int read_bucket</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>When this hits 0, stop receiving. Every second we add 'bandwidthrate' to this, capping it at bandwidthburst. (OPEN ORs only) </p>
-
-</div>
-</div>
-<a id="a2c5c30b0b7a8804724d1d6afd454b47c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c5c30b0b7a8804724d1d6afd454b47c">&#9670;&nbsp;</a></span>read_emptied_time</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t read_emptied_time</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Last emptied read token bucket in msec since midnight; only used if TB_EMPTY events are enabled. </p>
 
 </div>
 </div>
@@ -504,36 +417,6 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>bytes_xmitted_by_
       </table>
 </div><div class="memdoc">
 <p>True iff this is a client connection and its address has been put in the geoip cache and handled by the DoS mitigation subsystem. We use this to insure we have a coherent count of concurrent connection. </p>
-
-</div>
-</div>
-<a id="a752b01495c598ee05dfdbd94e77233de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a752b01495c598ee05dfdbd94e77233de">&#9670;&nbsp;</a></span>write_bucket</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int write_bucket</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>When this hits 0, stop writing. Like read_bucket. </p>
-
-</div>
-</div>
-<a id="a68df7da0aee9eabf54de08a617369722"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68df7da0aee9eabf54de08a617369722">&#9670;&nbsp;</a></span>write_emptied_time</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t write_emptied_time</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Last emptied write token bucket in msec since midnight; only used if TB_EMPTY events are enabled. </p>
 
 </div>
 </div>

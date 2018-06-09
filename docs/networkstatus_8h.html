@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Header file for <a class="el" href="networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. ">networkstatus.c</a>.  
+<p>Header file for <a class="el" href="networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache...">networkstatus.c</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;testsupport.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -87,36 +87,50 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="networkstatus_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2networkstatus_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2networkstatus_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2networkstatus_8hdep">
-<area shape="rect" id="node2" href="circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="5,117,153,173"/>
-<area shape="rect" id="node3" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="177,117,325,173"/>
-<area shape="rect" id="node4" href="circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. " alt="" coords="349,117,497,173"/>
-<area shape="rect" id="node5" href="circuitmux__ewma_8c.html" title="EWMA circuit selection as a circuitmux_t policy. " alt="" coords="522,117,698,173"/>
-<area shape="rect" id="node6" href="circuitstats_8c.html" title="Maintains and analyzes statistics about circuit built times, so we can tell how long we may need to w..." alt="" coords="723,117,871,173"/>
-<area shape="rect" id="node7" href="circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. " alt="" coords="895,117,1043,173"/>
-<area shape="rect" id="node8" href="config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="1067,117,1215,173"/>
-<area shape="rect" id="node9" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="1239,117,1394,173"/>
-<area shape="rect" id="node10" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1419,117,1567,173"/>
-<area shape="rect" id="node11" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="1591,117,1739,173"/>
-<area shape="rect" id="node12" href="dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="1763,117,1911,173"/>
-<area shape="rect" id="node13" href="dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="1935,117,2083,173"/>
-<area shape="rect" id="node14" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="2107,117,2255,173"/>
-<area shape="rect" id="node15" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="2279,117,2427,173"/>
-<area shape="rect" id="node16" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="2451,117,2599,173"/>
-<area shape="rect" id="node17" href="networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. " alt="" coords="2623,117,2779,173"/>
-<area shape="rect" id="node18" href="nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="2803,117,2951,173"/>
-<area shape="rect" id="node19" href="onion_8c.html" title="Functions to queue create cells, wrap the various onionskin types, and parse and create the CREATE ce..." alt="" coords="2975,117,3123,173"/>
-<area shape="rect" id="node20" href="policies_8c.html" title="Code to parse and use address policies and exit policies. " alt="" coords="3147,117,3295,173"/>
-<area shape="rect" id="node21" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="3319,117,3467,173"/>
-<area shape="rect" id="node22" href="rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="3491,117,3639,173"/>
-<area shape="rect" id="node23" href="rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points..." alt="" coords="3663,117,3813,173"/>
-<area shape="rect" id="node24" href="rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="3837,117,3985,173"/>
-<area shape="rect" id="node25" href="rephist_8c.html" title="Basic history and performance&#45;tracking functionality. " alt="" coords="4009,117,4157,173"/>
-<area shape="rect" id="node26" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="4181,117,4329,173"/>
-<area shape="rect" id="node27" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="4353,117,4501,173"/>
-<area shape="rect" id="node28" href="routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="4525,117,4673,173"/>
-<area shape="rect" id="node29" href="shared__random_8c.html" title="Functions and data structure needed to accomplish the shared random protocol as defined in proposal #..." alt="" coords="4698,117,4861,173"/>
-<area shape="rect" id="node30" href="shared__random__state_8c.html" title="Functions and data structures for the state of the random protocol as defined in proposal #250..." alt="" coords="4885,109,5037,180"/>
-<area shape="rect" id="node31" href="test__dir__common_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/test/test_dir_common.h" alt="" coords="5061,117,5247,173"/>
+<area shape="rect" id="node2" href="channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="5,117,153,173"/>
+<area shape="rect" id="node3" href="channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances..." alt="" coords="177,117,325,173"/>
+<area shape="rect" id="node4" href="circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="349,117,497,173"/>
+<area shape="rect" id="node5" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="521,117,669,173"/>
+<area shape="rect" id="node6" href="circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="693,117,841,173"/>
+<area shape="rect" id="node7" href="circuitmux__ewma_8c.html" title="EWMA circuit selection as a circuitmux_t policy. " alt="" coords="866,117,1042,173"/>
+<area shape="rect" id="node8" href="circuitstats_8c.html" title="Maintains and analyzes statistics about circuit built times, so we can tell how long we may need to w..." alt="" coords="1067,117,1215,173"/>
+<area shape="rect" id="node9" href="circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="1239,117,1387,173"/>
+<area shape="rect" id="node10" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="1411,117,1559,173"/>
+<area shape="rect" id="node11" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="1583,117,1755,173"/>
+<area shape="rect" id="node12" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="1779,117,1934,173"/>
+<area shape="rect" id="node13" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1959,117,2107,173"/>
+<area shape="rect" id="node14" href="dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="2131,117,2287,173"/>
+<area shape="rect" id="node15" href="shared__random_8c.html" title="Functions and data structure needed to accomplish the shared random protocol as defined in proposal #..." alt="" coords="2311,109,2459,180"/>
+<area shape="rect" id="node16" href="shared__random__state_8c.html" title="Functions and data structures for the state of the random protocol as defined in proposal #250..." alt="" coords="2483,109,2631,180"/>
+<area shape="rect" id="node17" href="directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="2655,117,2803,173"/>
+<area shape="rect" id="node18" href="dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="2827,117,2975,173"/>
+<area shape="rect" id="node19" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="2999,117,3147,173"/>
+<area shape="rect" id="node20" href="hs__cache_8c.html" title="Handle hidden service descriptor caches. " alt="" coords="3171,117,3319,173"/>
+<area shape="rect" id="node21" href="hs__client_8c.html" title="Implement next generation hidden service client functionality. " alt="" coords="3343,117,3491,173"/>
+<area shape="rect" id="node22" href="hs__common_8c.html" title="Contains code shared between different HS protocol version as well as useful data structures and acce..." alt="" coords="3515,117,3663,173"/>
+<area shape="rect" id="node23" href="hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="3687,117,3835,173"/>
+<area shape="rect" id="node24" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="3859,117,4007,173"/>
+<area shape="rect" id="node25" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="4031,117,4179,173"/>
+<area shape="rect" id="node26" href="networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache..." alt="" coords="4203,117,4359,173"/>
+<area shape="rect" id="node27" href="nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="4383,117,4531,173"/>
+<area shape="rect" id="node28" href="onion_8c.html" title="Functions to queue create cells, wrap the various onionskin types, and parse and create the CREATE ce..." alt="" coords="4555,117,4703,173"/>
+<area shape="rect" id="node29" href="policies_8c.html" title="Code to parse and use address policies and exit policies. " alt="" coords="4727,117,4875,173"/>
+<area shape="rect" id="node30" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="4899,117,5047,173"/>
+<area shape="rect" id="node31" href="rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="5071,117,5219,173"/>
+<area shape="rect" id="node32" href="rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points..." alt="" coords="5243,117,5393,173"/>
+<area shape="rect" id="node33" href="rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="5417,117,5565,173"/>
+<area shape="rect" id="node34" href="rephist_8c.html" title="Basic history and performance&#45;tracking functionality. " alt="" coords="5589,117,5737,173"/>
+<area shape="rect" id="node35" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="5761,117,5909,173"/>
+<area shape="rect" id="node36" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="5933,117,6081,173"/>
+<area shape="rect" id="node37" href="routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="6105,117,6253,173"/>
+<area shape="rect" id="node38" href="shared__random__client_8c.html" title="This file contains functions that are from the shared random subsystem but used by many part of tor..." alt="" coords="6278,109,6430,180"/>
+<area shape="rect" id="node39" href="voting__schedule_8c.html" title="This file contains functions that are from the directory authority subsystem related to voting specif..." alt="" coords="6454,117,6622,173"/>
+<area shape="rect" id="node40" href="test__dir__common_8h_source.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/test/test_dir_common.h" alt="" coords="6647,117,6832,173"/>
+<area shape="rect" id="node41" href="test__hs__cache_8c.html" title="Test hidden service caches. " alt="" coords="6857,117,7027,173"/>
+<area shape="rect" id="node42" href="test__hs__client_8c.html" title="Test prop224 HS client functionality. " alt="" coords="7052,117,7219,173"/>
+<area shape="rect" id="node43" href="test__hs__common_8c.html" title="Test hidden service common functionalities. " alt="" coords="7243,117,7428,173"/>
+<area shape="rect" id="node44" href="test__hs__service_8c.html" title="Test hidden service functionality. " alt="" coords="7452,117,7629,173"/>
+<area shape="rect" id="node45" href="test__nodelist_8c.html" title="Unit tests for nodelist related functions. " alt="" coords="7653,117,7812,173"/>
 </map>
 </div>
 </div>
@@ -124,6 +138,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a30bb14045609932b56b5f5cc91bb8b48"><td class="memItemLeft" align="right" valign="top"><a id="a30bb14045609932b56b5f5cc91bb8b48"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>routerstatus_free</b>(rs)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structrouterstatus__t.html">routerstatus_t</a>, <a class="el" href="networkstatus_8h.html#af7a88dc1dcc532507c069e007620677d">routerstatus_free_</a>, (rs))</td></tr>
+<tr class="separator:a30bb14045609932b56b5f5cc91bb8b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb07bff28c1340067debd2930723624"><td class="memItemLeft" align="right" valign="top"><a id="a6fb07bff28c1340067debd2930723624"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>networkstatus_vote_free</b>(ns)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a>, <a class="el" href="networkstatus_8h.html#ac431574021ec26d0de3d84b9bd0b3f38">networkstatus_vote_free_</a>, (ns))</td></tr>
+<tr class="separator:a6fb07bff28c1340067debd2930723624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fb87748365445b6729f98a9d8eb984"><td class="memItemLeft" align="right" valign="top"><a id="aa0fb87748365445b6729f98a9d8eb984"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ns_detached_signatures_free</b>(s)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structns__detached__signatures__t.html">ns_detached_signatures_t</a>, <a class="el" href="networkstatus_8h.html#ab67c1b78647e8e4babfbeee6ec9c767c">ns_detached_signatures_free_</a>, (s))</td></tr>
+<tr class="separator:aa0fb87748365445b6729f98a9d8eb984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b46dd44ba228174344b81b0bc412357"><td class="memItemLeft" align="right" valign="top"><a id="a9b46dd44ba228174344b81b0bc412357"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NSSET_FROM_CACHE</b>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a9b46dd44ba228174344b81b0bc412357"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +162,12 @@ Macros</h2></td></tr>
 <tr class="memitem:af172f27f187dac90eedcf7b25eab6634"><td class="memItemLeft" align="right" valign="top"><a id="af172f27f187dac90eedcf7b25eab6634"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NSSET_REQUIRE_FLAVOR</b>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:af172f27f187dac90eedcf7b25eab6634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29647f792342f09856566305c32fead4"><td class="memItemLeft" align="right" valign="top"><a id="a29647f792342f09856566305c32fead4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>document_signature_free</b>(sig)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structdocument__signature__t.html">document_signature_t</a>, <a class="el" href="networkstatus_8h.html#a515529f6d2dbe7d504d291801ae5939b">document_signature_free_</a>, (sig))</td></tr>
+<tr class="separator:a29647f792342f09856566305c32fead4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6002195bb5ec19c84c86a2e353a58b82"><td class="memItemLeft" align="right" valign="top"><a id="a6002195bb5ec19c84c86a2e353a58b82"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>vote_routerstatus_free</b>(rs)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structvote__routerstatus__t.html">vote_routerstatus_t</a>, <a class="el" href="networkstatus_8h.html#a9a1026b178124f6fedaf54066cca12a0">vote_routerstatus_free_</a>, (rs))</td></tr>
+<tr class="separator:a6002195bb5ec19c84c86a2e353a58b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -146,14 +175,20 @@ Functions</h2></td></tr>
 <tr class="separator:ad970a8be0b1c191044f84bd686747e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad86492baf32bd150a1848f70cc234977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#ad86492baf32bd150a1848f70cc234977">networkstatus_reset_download_failures</a> (void)</td></tr>
 <tr class="separator:ad86492baf32bd150a1848f70cc234977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1e7e6cb46e4a70d63a54a42ba7d2ff"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#abf1e7e6cb46e4a70d63a54a42ba7d2ff">networkstatus_read_cached_consensus</a> (const char *flavorname)</td></tr>
+<tr class="separator:abf1e7e6cb46e4a70d63a54a42ba7d2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6fd62492d7f4cfafd9ec042e995bfef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#aa6fd62492d7f4cfafd9ec042e995bfef">router_reload_consensus_networkstatus</a> (void)</td></tr>
 <tr class="separator:aa6fd62492d7f4cfafd9ec042e995bfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a092b9ad9a877f6cf042e8969d00fb5b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a092b9ad9a877f6cf042e8969d00fb5b6">routerstatus_free</a> (<a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *rs)</td></tr>
-<tr class="separator:a092b9ad9a877f6cf042e8969d00fb5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b3529b215fcf74c3d7a14a97b4bb541"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a0b3529b215fcf74c3d7a14a97b4bb541">networkstatus_vote_free</a> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns)</td></tr>
-<tr class="separator:a0b3529b215fcf74c3d7a14a97b4bb541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a88dc1dcc532507c069e007620677d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#af7a88dc1dcc532507c069e007620677d">routerstatus_free_</a> (<a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *rs)</td></tr>
+<tr class="separator:af7a88dc1dcc532507c069e007620677d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac431574021ec26d0de3d84b9bd0b3f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#ac431574021ec26d0de3d84b9bd0b3f38">networkstatus_vote_free_</a> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns)</td></tr>
+<tr class="separator:ac431574021ec26d0de3d84b9bd0b3f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67c1b78647e8e4babfbeee6ec9c767c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#ab67c1b78647e8e4babfbeee6ec9c767c">ns_detached_signatures_free_</a> (<a class="el" href="structns__detached__signatures__t.html">ns_detached_signatures_t</a> *s)</td></tr>
+<tr class="separator:ab67c1b78647e8e4babfbeee6ec9c767c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b27ffbed3cfefd3cdefa2deda029f7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnetworkstatus__voter__info__t.html">networkstatus_voter_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a4b27ffbed3cfefd3cdefa2deda029f7a">networkstatus_get_voter_by_id</a> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *vote, const char *identity)</td></tr>
 <tr class="separator:a4b27ffbed3cfefd3cdefa2deda029f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c593a6979ddceeed0f80cc5e114488"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdocument__signature__t.html">document_signature_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#ab8c593a6979ddceeed0f80cc5e114488">networkstatus_get_voter_sig_by_alg</a> (const <a class="el" href="structnetworkstatus__voter__info__t.html">networkstatus_voter_info_t</a> *voter, digest_algorithm_t alg)</td></tr>
+<tr class="separator:ab8c593a6979ddceeed0f80cc5e114488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bead3d790b19f3f5894a521526a3531"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a7bead3d790b19f3f5894a521526a3531">networkstatus_check_consensus_signature</a> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *consensus, int warn)</td></tr>
 <tr class="separator:a7bead3d790b19f3f5894a521526a3531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1695f89ba4a7206eab6d15d1e508c654"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a1695f89ba4a7206eab6d15d1e508c654">networkstatus_check_document_signature</a> (const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *consensus, <a class="el" href="structdocument__signature__t.html">document_signature_t</a> *sig, const <a class="el" href="structauthority__cert__t.html">authority_cert_t</a> *cert)</td></tr>
@@ -192,12 +227,10 @@ Functions</h2></td></tr>
 <tr class="memitem:af461764592abe74e8c4af9fc3e61c171"><td class="memItemLeft" align="right" valign="top"><a id="af461764592abe74e8c4af9fc3e61c171"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (<a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *, router_get_mutable_consensus_status_by_descriptor_digest,(<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *consensus, const char *digest))</td></tr>
 <tr class="separator:af461764592abe74e8c4af9fc3e61c171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28122f58af9ee7d89bc31efc2a2fb242"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a28122f58af9ee7d89bc31efc2a2fb242">router_get_consensus_status_by_nickname</a> (const char *nickname, int warn_if_unnamed)</td></tr>
-<tr class="separator:a28122f58af9ee7d89bc31efc2a2fb242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af663020b40e6b122a43b26aa62ca4ed4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#af663020b40e6b122a43b26aa62ca4ed4">networkstatus_get_router_digest_by_nickname</a> (const char *nickname)</td></tr>
-<tr class="separator:af663020b40e6b122a43b26aa62ca4ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a373d18a9265478c19fffe985c3384636"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a373d18a9265478c19fffe985c3384636">networkstatus_nickname_is_unnamed</a> (const char *nickname)</td></tr>
-<tr class="separator:a373d18a9265478c19fffe985c3384636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d20f569e83b9acf580732e6369285c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a32d20f569e83b9acf580732e6369285c">we_want_to_fetch_flavor</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, int flavor)</td></tr>
+<tr class="separator:a32d20f569e83b9acf580732e6369285c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae571a0f2e98aee6bb9b6a0df669b6c25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#ae571a0f2e98aee6bb9b6a0df669b6c25">we_want_to_fetch_unknown_auth_certs</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:ae571a0f2e98aee6bb9b6a0df669b6c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af85567c13446bbbae84ce4199b3b2134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#af85567c13446bbbae84ce4199b3b2134">networkstatus_consensus_download_failed</a> (int status_code, const char *flavname)</td></tr>
 <tr class="separator:af85567c13446bbbae84ce4199b3b2134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5b06eef1d3ad0356efd75d050cb857d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#ad5b06eef1d3ad0356efd75d050cb857d">update_consensus_networkstatus_fetch_time</a> (time_t now)</td></tr>
@@ -210,8 +243,8 @@ Functions</h2></td></tr>
 <tr class="separator:aac5e0a37016a04c309a791ae15ecc86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af728d99cfd15f4902ee7471ce45a2dd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#af728d99cfd15f4902ee7471ce45a2dd7">consensus_is_waiting_for_certs</a> (void)</td></tr>
 <tr class="separator:af728d99cfd15f4902ee7471ce45a2dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41ab3964eaa6b17fcb752444ad991f66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a41ab3964eaa6b17fcb752444ad991f66">client_would_use_router</a> (const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *rs, time_t now, const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
-<tr class="separator:a41ab3964eaa6b17fcb752444ad991f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4393859fc27824306d0e6b183c863466"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a4393859fc27824306d0e6b183c863466">client_would_use_router</a> (const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *rs, time_t now)</td></tr>
+<tr class="separator:a4393859fc27824306d0e6b183c863466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad80bf88cffbcde8b1a53052cbe6e5a21"><td class="memItemLeft" align="right" valign="top"><a id="ad80bf88cffbcde8b1a53052cbe6e5a21"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *, networkstatus_get_latest_consensus,(void))</td></tr>
 <tr class="separator:ad80bf88cffbcde8b1a53052cbe6e5a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,6 +254,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a5fab833699b5d011da6ac0a33e5219a5"><td class="memItemLeft" align="right" valign="top"><a id="a5fab833699b5d011da6ac0a33e5219a5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *, networkstatus_get_live_consensus,(time_t now))</td></tr>
 <tr class="separator:a5fab833699b5d011da6ac0a33e5219a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97698b7c730bb880670662020a79ece0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a97698b7c730bb880670662020a79ece0">networkstatus_is_live</a> (const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns, time_t now)</td></tr>
+<tr class="separator:a97698b7c730bb880670662020a79ece0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d356f4ab27d29e60c8f5114974fda96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a2d356f4ab27d29e60c8f5114974fda96">networkstatus_consensus_reasonably_live</a> (const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *consensus, time_t now)</td></tr>
+<tr class="separator:a2d356f4ab27d29e60c8f5114974fda96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a28d47b1bbf648c55caf48c618ef87"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a89a28d47b1bbf648c55caf48c618ef87">networkstatus_valid_until_is_reasonably_live</a> (time_t valid_until, time_t now)</td></tr>
+<tr class="separator:a89a28d47b1bbf648c55caf48c618ef87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44accdf47b7f9f40b25c45daf2c31475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a44accdf47b7f9f40b25c45daf2c31475">networkstatus_get_reasonably_live_consensus</a> (time_t now, int flavor)</td></tr>
 <tr class="separator:a44accdf47b7f9f40b25c45daf2c31475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2b394f1df37f5b257b6cd98e5d655c6"><td class="memItemLeft" align="right" valign="top"><a id="ac2b394f1df37f5b257b6cd98e5d655c6"></a>
@@ -234,6 +273,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a40c88d2757b7b3430cca3430235a1281"><td class="memItemLeft" align="right" valign="top"><a id="a40c88d2757b7b3430cca3430235a1281"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>networkstatus_consensus_is_already_downloading</b> (const char *resource)</td></tr>
 <tr class="separator:a40c88d2757b7b3430cca3430235a1281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4498324bf2e66e25b94b06a3ad8b0781"><td class="memItemLeft" align="right" valign="top"><a id="a4498324bf2e66e25b94b06a3ad8b0781"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>networkstatus_consensus_has_ipv6</b> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:a4498324bf2e66e25b94b06a3ad8b0781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bc8e47c7dbfc9cb7dbabab161bd6764"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a2bc8e47c7dbfc9cb7dbabab161bd6764">networkstatus_set_current_consensus</a> (const char *consensus, const char *flavor, unsigned flags, const char *source_dir)</td></tr>
 <tr class="separator:a2bc8e47c7dbfc9cb7dbabab161bd6764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d51fc24064bd6b1e7f3d148bddba693"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a6d51fc24064bd6b1e7f3d148bddba693">networkstatus_note_certs_arrived</a> (const char *source_dir)</td></tr>
@@ -250,8 +292,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>networkstatus_consensu
 <tr class="separator:a522e50eabe88fdafcc39b375b6e4cced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada1c2d5fcccff6ee4e7aff6a497ec2cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#ada1c2d5fcccff6ee4e7aff6a497ec2cf">networkstatus_dump_bridge_status_to_file</a> (time_t now)</td></tr>
 <tr class="separator:ada1c2d5fcccff6ee4e7aff6a497ec2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba1790be4b1cea243c3dac989ad1b05c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#aba1790be4b1cea243c3dac989ad1b05c">networkstatus_get_param</a> (const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns, const char *param_name, int32_t default_val, int32_t min_val, int32_t max_val)</td></tr>
-<tr class="separator:aba1790be4b1cea243c3dac989ad1b05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7867d902114fd43ab4ab111711c885"><td class="memItemLeft" align="right" valign="top"><a id="abb7867d902114fd43ab4ab111711c885"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (int32_t, networkstatus_get_param,(const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns, const char *param_name, int32_t default_val, int32_t min_val, int32_t max_val))</td></tr>
+<tr class="separator:abb7867d902114fd43ab4ab111711c885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad61a285a56c1cf64f591666ffd42de"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a3ad61a285a56c1cf64f591666ffd42de">networkstatus_get_overridable_param</a> (const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns, int32_t torrc_value, const char *param_name, int32_t default_val, int32_t min_val, int32_t max_val)</td></tr>
+<tr class="separator:a3ad61a285a56c1cf64f591666ffd42de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13617630ff7e7bd566e374e6610a8045"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a13617630ff7e7bd566e374e6610a8045">getinfo_helper_networkstatus</a> (<a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *conn, const char *question, char **answer, const char **errmsg)</td></tr>
 <tr class="separator:a13617630ff7e7bd566e374e6610a8045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2a338c07af7ab37504729f7c1404b55"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#ad2a338c07af7ab37504729f7c1404b55">networkstatus_get_bw_weight</a> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns, const char *weight, int32_t default_val)</td></tr>
@@ -260,20 +305,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>networkstatus_consensu
 <tr class="separator:a31e12c0cdd4c1a17f3ddcdab8cdcf86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a072f4231b410ee50501327f71d527e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a1a072f4231b410ee50501327f71d527e">networkstatus_parse_flavor_name</a> (const char *flavname)</td></tr>
 <tr class="separator:a1a072f4231b410ee50501327f71d527e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6fa8990a971778c3d879c662c1579a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#af6fa8990a971778c3d879c662c1579a9">document_signature_free</a> (<a class="el" href="structdocument__signature__t.html">document_signature_t</a> *sig)</td></tr>
-<tr class="separator:af6fa8990a971778c3d879c662c1579a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a515529f6d2dbe7d504d291801ae5939b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a515529f6d2dbe7d504d291801ae5939b">document_signature_free_</a> (<a class="el" href="structdocument__signature__t.html">document_signature_t</a> *sig)</td></tr>
+<tr class="separator:a515529f6d2dbe7d504d291801ae5939b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1f84b0c46db64ef2af6a8f2d5f9c25c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdocument__signature__t.html">document_signature_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#aa1f84b0c46db64ef2af6a8f2d5f9c25c">document_signature_dup</a> (const <a class="el" href="structdocument__signature__t.html">document_signature_t</a> *sig)</td></tr>
 <tr class="separator:aa1f84b0c46db64ef2af6a8f2d5f9c25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5903397efb4437a9f991843962369b72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a5903397efb4437a9f991843962369b72">networkstatus_free_all</a> (void)</td></tr>
 <tr class="separator:a5903397efb4437a9f991843962369b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afda0b094982877af4c11b127167acb9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#afda0b094982877af4c11b127167acb9e">networkstatus_get_weight_scale_param</a> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns)</td></tr>
 <tr class="separator:afda0b094982877af4c11b127167acb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1026b178124f6fedaf54066cca12a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html#a9a1026b178124f6fedaf54066cca12a0">vote_routerstatus_free_</a> (<a class="el" href="structvote__routerstatus__t.html">vote_routerstatus_t</a> *rs)</td></tr>
+<tr class="separator:a9a1026b178124f6fedaf54066cca12a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header file for <a class="el" href="networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. ">networkstatus.c</a>. </p>
+<div class="textblock"><p>Header file for <a class="el" href="networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache...">networkstatus.c</a>. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a41ab3964eaa6b17fcb752444ad991f66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41ab3964eaa6b17fcb752444ad991f66">&#9670;&nbsp;</a></span>client_would_use_router()</h2>
+<a id="a4393859fc27824306d0e6b183c863466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4393859fc27824306d0e6b183c863466">&#9670;&nbsp;</a></span>client_would_use_router()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,13 +335,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>networkstatus_consensu
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>now</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
-          <td class="paramname"><em>options</em>&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -449,14 +490,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="af6fa8990a971778c3d879c662c1579a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6fa8990a971778c3d879c662c1579a9">&#9670;&nbsp;</a></span>document_signature_free()</h2>
+<a id="a515529f6d2dbe7d504d291801ae5939b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a515529f6d2dbe7d504d291801ae5939b">&#9670;&nbsp;</a></span>document_signature_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void document_signature_free </td>
+          <td class="memname">void document_signature_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdocument__signature__t.html">document_signature_t</a> *&#160;</td>
           <td class="paramname"><em>sig</em></td><td>)</td>
@@ -465,16 +506,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Free all storage held in <b>sig</b> </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="networkstatus_8h_af6fa8990a971778c3d879c662c1579a9_icgraph.png" border="0" usemap="#networkstatus_8h_af6fa8990a971778c3d879c662c1579a9_icgraph" alt=""/></div>
-<map name="networkstatus_8h_af6fa8990a971778c3d879c662c1579a9_icgraph" id="networkstatus_8h_af6fa8990a971778c3d879c662c1579a9_icgraph">
-<area shape="rect" id="node2" href="dirvote_8h.html#a4a36c2930edf9d2ca915c30057a64da8" title="ns_detached_signatures_free" alt="" coords="221,5,413,32"/>
-<area shape="rect" id="node3" href="networkstatus_8h.html#a0b3529b215fcf74c3d7a14a97b4bb541" title="networkstatus_vote_free" alt="" coords="235,56,400,83"/>
-<area shape="rect" id="node4" href="networkstatus_8h.html#a5903397efb4437a9f991843962369b72" title="networkstatus_free_all" alt="" coords="461,56,615,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -652,6 +683,61 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="228,5,371,47"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="networkstatus_8h_af85567c13446bbbae84ce4199b3b2134_icgraph.png" border="0" usemap="#networkstatus_8h_af85567c13446bbbae84ce4199b3b2134_icgraph" alt=""/></div>
+<map name="networkstatus_8h_af85567c13446bbbae84ce4199b3b2134_icgraph" id="networkstatus_8h_af85567c13446bbbae84ce4199b3b2134_icgraph">
+<area shape="rect" id="node2" href="directory_8c.html#a4af7e7ade522a1f118e7770955ff50ea" title="handle_response_fetch\l_consensus" alt="" coords="228,5,384,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d356f4ab27d29e60c8f5114974fda96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d356f4ab27d29e60c8f5114974fda96">&#9670;&nbsp;</a></span>networkstatus_consensus_reasonably_live()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int networkstatus_consensus_reasonably_live </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *&#160;</td>
+          <td class="paramname"><em>consensus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determine if <b>consensus</b> is valid or expired recently enough that we can still use it.</p>
+<p>Return 1 if the consensus is reasonably live, or 0 if it is too old. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="networkstatus_8h_a2d356f4ab27d29e60c8f5114974fda96_icgraph.png" border="0" usemap="#networkstatus_8h_a2d356f4ab27d29e60c8f5114974fda96_icgraph" alt=""/></div>
+<map name="networkstatus_8h_a2d356f4ab27d29e60c8f5114974fda96_icgraph" id="networkstatus_8h_a2d356f4ab27d29e60c8f5114974fda96_icgraph">
+<area shape="rect" id="node2" href="networkstatus_8h.html#a44accdf47b7f9f40b25c45daf2c31475" title="networkstatus_get_reasonably\l_live_consensus" alt="" coords="228,166,427,207"/>
+<area shape="rect" id="node3" href="microdesc_8h.html#af6dd60dcd4d473a6b0c9fce9f0f3c1c3" title="microdesc_cache_clean" alt="" coords="492,5,655,32"/>
+<area shape="rect" id="node4" href="microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="475,56,672,83"/>
+<area shape="rect" id="node7" href="microdesc_8h.html#ad388d518c6750dce831b4d375e0efe5c" title="update_microdescs_from\l_networkstatus" alt="" coords="489,107,657,149"/>
+<area shape="rect" id="node8" href="networkstatus_8c.html#a5d89145cb4ce8b8ccd79da09bfc3ce8c" title="MOCK_IMPL" alt="" coords="523,173,623,200"/>
+<area shape="rect" id="node9" href="networkstatus_8h.html#a17d10602167e09e05f4d5aefc744141b" title="routers_update_all\l_from_networkstatus" alt="" coords="501,225,645,266"/>
+<area shape="rect" id="node10" href="nodelist_8h.html#ae883dd13e0b2365df6ce859e79de0bdf" title="count_loading_descriptors\l_progress" alt="" coords="487,290,660,331"/>
+<area shape="rect" id="node11" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="491,355,656,397"/>
+<area shape="rect" id="node5" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="720,202,865,243"/>
+<area shape="rect" id="node6" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="913,202,1041,243"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -702,17 +788,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Free all storage held locally in this module. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="networkstatus_8h_a5903397efb4437a9f991843962369b72_cgraph.png" border="0" usemap="#networkstatus_8h_a5903397efb4437a9f991843962369b72_cgraph" alt=""/></div>
-<map name="networkstatus_8h_a5903397efb4437a9f991843962369b72_cgraph" id="networkstatus_8h_a5903397efb4437a9f991843962369b72_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#a0b3529b215fcf74c3d7a14a97b4bb541" title="networkstatus_vote_free" alt="" coords="207,31,372,57"/>
-<area shape="rect" id="node3" href="networkstatus_8c.html#af6fa8990a971778c3d879c662c1579a9" title="document_signature_free" alt="" coords="420,5,588,32"/>
-<area shape="rect" id="node4" href="routerlist_8c.html#a2bb77cd705f2c621023fff9a114c01bf" title="authority_cert_free" alt="" coords="439,56,569,83"/>
-<area shape="rect" id="node5" href="crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="636,56,744,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -754,7 +829,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="networkstatus_8h_ad2a338c07af7ab37504729f7c1404b55_cgraph.png" border="0" usemap="#networkstatus_8h_ad2a338c07af7ab37504729f7c1404b55_cgraph" alt=""/></div>
 <map name="networkstatus_8h_ad2a338c07af7ab37504729f7c1404b55_cgraph" id="networkstatus_8h_ad2a338c07af7ab37504729f7c1404b55_cgraph">
 <area shape="rect" id="node2" href="networkstatus_8c.html#afda0b094982877af4c11b127167acb9e" title="networkstatus_get_weight\l_scale_param" alt="" coords="207,5,381,47"/>
-<area shape="rect" id="node3" href="networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="429,13,601,39"/>
 </map>
 </div>
 <div class="dynheader">
@@ -795,17 +869,23 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aba1790be4b1cea243c3dac989ad1b05c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba1790be4b1cea243c3dac989ad1b05c">&#9670;&nbsp;</a></span>networkstatus_get_param()</h2>
+<a id="a3ad61a285a56c1cf64f591666ffd42de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad61a285a56c1cf64f591666ffd42de">&#9670;&nbsp;</a></span>networkstatus_get_overridable_param()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t networkstatus_get_param </td>
+          <td class="memname">int32_t networkstatus_get_overridable_param </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *&#160;</td>
           <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>torrc_value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -838,42 +918,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the value of a integer parameter from the networkstatus <b>ns</b> whose name is <b>param_name</b>. If <b>ns</b> is NULL, try loading the latest consensus ourselves. Return <b>default_val</b> if no latest consensus, or if it has no parameter called <b>param_name</b>. Make sure the value parsed from the consensus is at least <b>min_val</b> and at most <b>max_val</b> and raise/cap the parsed value if necessary. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="networkstatus_8h_aba1790be4b1cea243c3dac989ad1b05c_icgraph.png" border="0" usemap="#networkstatus_8h_aba1790be4b1cea243c3dac989ad1b05c_icgraph" alt=""/></div>
-<map name="networkstatus_8h_aba1790be4b1cea243c3dac989ad1b05c_icgraph" id="networkstatus_8h_aba1790be4b1cea243c3dac989ad1b05c_icgraph">
-<area shape="rect" id="node2" href="circpathbias_8c.html#a4a34b780cfd22bf4b72e37aaf6e0e2c0" title="pathbias_get_extreme_rate" alt="" coords="226,5,405,32"/>
-<area shape="rect" id="node3" href="circpathbias_8c.html#ac18b8c5463815ebbcb9aa440e59b2f83" title="pathbias_get_dropguards" alt="" coords="232,56,399,83"/>
-<area shape="rect" id="node4" href="circpathbias_8c.html#a01c97964a06ef3c2ef14e6f45eb957c7" title="pathbias_get_extreme\l_use_rate" alt="" coords="240,107,391,149"/>
-<area shape="rect" id="node5" href="circuitlist_8h.html#afe5c2bcd4138363a8e5ab5943cd19b79" title="circuit_initial_package\l_window" alt="" coords="240,173,391,214"/>
-<area shape="rect" id="node6" href="circuitmux__ewma_8h.html#a34f42cc6605417f31fc9ba9576721751" title="cell_ewma_set_scale\l_factor" alt="" coords="242,238,389,279"/>
-<area shape="rect" id="node7" href="or_8h.html#abacdfcf8553c8ea4d5a8f1d7a813b452" title="circuit_build_times\l_quantile_cutoff" alt="" coords="250,303,381,345"/>
-<area shape="rect" id="node8" href="entrynodes_8c.html#aceef6f16e2ed25782da94e2e4f0f334d" title="decide_num_guards" alt="" coords="246,369,385,396"/>
-<area shape="rect" id="node11" href="entrynodes_8h.html#abcf00389e72807f2534ffd3da3de31e6" title="should_apply_guardfraction" alt="" coords="225,420,405,447"/>
-<area shape="rect" id="node13" href="networkstatus_8h.html#afda0b094982877af4c11b127167acb9e" title="networkstatus_get_weight\l_scale_param" alt="" coords="228,478,403,519"/>
-<area shape="rect" id="node16" href="router_8h.html#afa75de94186fffc8f373de610ae4cab3" title="should_refuse_unknown\l_exits" alt="" coords="234,595,397,637"/>
-<area shape="rect" id="node9" href="entrynodes_8c.html#aefcc8b3f1675f7480f0123af7def1879" title="entry_guards_set_from\l_config" alt="" coords="461,282,616,323"/>
-<area shape="rect" id="node10" href="entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="471,347,606,389"/>
-<area shape="rect" id="node12" href="routerparse_8c.html#aa5182e7b61c8640ef94186a19760d90c" title="routerstatus_parse\l_guardfraction" alt="" coords="473,413,604,454"/>
-<area shape="rect" id="node14" href="networkstatus_8h.html#ad2a338c07af7ab37504729f7c1404b55" title="networkstatus_get_bw\l_weight" alt="" coords="462,478,615,519"/>
-<area shape="rect" id="node15" href="routerparse_8h.html#aadb249c6c48887d46e7fc9d396f26c21" title="networkstatus_verify\l_bw_weights" alt="" coords="690,478,833,519"/>
-<area shape="rect" id="node17" href="dirserv_8h.html#a0b84786e17352524036694baf1955167" title="directory_fetches_from\l_authorities" alt="" coords="461,595,616,637"/>
-<area shape="rect" id="node22" href="dirserv_8h.html#a57e2ff1ad2ea65abe9b969ad3d76a418" title="directory_caches_dir_info" alt="" coords="453,792,624,819"/>
-<area shape="rect" id="node18" href="directory_8c.html#a2dcb34e25124200a8694ef07275a50b2" title="MOCK_IMPL" alt="" coords="711,544,811,571"/>
-<area shape="rect" id="node19" href="dirserv_8h.html#ab38d643312052d4bfdb7d49dcba344a6" title="directory_fetches_dir\l_info_early" alt="" coords="690,595,833,637"/>
-<area shape="rect" id="node21" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="1579,705,1707,746"/>
-<area shape="rect" id="node20" href="routerlist_8h.html#a33e8618001c42bd50575051362aaffa2" title="launch_descriptor_downloads" alt="" coords="899,603,1092,629"/>
-<area shape="rect" id="node23" href="dirserv_8h.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="688,755,835,797"/>
-<area shape="rect" id="node28" href="microdesc_8h.html#ad9c983a76a2f31a6a843f4df9be7de1d" title="we_fetch_microdescriptors" alt="" coords="672,821,851,848"/>
-<area shape="rect" id="node29" href="microdesc_8h.html#a2667d23ef05f514b5bf916791b4a6bbd" title="we_fetch_router_descriptors" alt="" coords="902,880,1089,907"/>
-<area shape="rect" id="node24" href="microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="1140,763,1337,789"/>
-<area shape="rect" id="node26" href="routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="910,814,1081,855"/>
-<area shape="rect" id="node25" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="1385,763,1531,805"/>
-<area shape="rect" id="node27" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="1156,814,1321,855"/>
-</map>
-</div>
+<p>As networkstatus_get_param(), but check torrc_value before checking the consensus. If torrc_value is in-range, then return it instead of the value from the consensus. </p>
 
 </div>
 </div>
@@ -904,6 +949,14 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>As networkstatus_get_live_consensus(), but is way more tolerant of expired consensuses. </p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="networkstatus_8h_a44accdf47b7f9f40b25c45daf2c31475_cgraph.png" border="0" usemap="#networkstatus_8h_a44accdf47b7f9f40b25c45daf2c31475_cgraph" alt=""/></div>
+<map name="networkstatus_8h_a44accdf47b7f9f40b25c45daf2c31475_cgraph" id="networkstatus_8h_a44accdf47b7f9f40b25c45daf2c31475_cgraph">
+<area shape="rect" id="node2" href="networkstatus_8c.html#a2d356f4ab27d29e60c8f5114974fda96" title="networkstatus_consensus\l_reasonably_live" alt="" coords="252,5,427,47"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="networkstatus_8h_a44accdf47b7f9f40b25c45daf2c31475_icgraph.png" border="0" usemap="#networkstatus_8h_a44accdf47b7f9f40b25c45daf2c31475_icgraph" alt=""/></div>
@@ -917,45 +970,6 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node10" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="268,355,433,397"/>
 <area shape="rect" id="node4" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="497,202,643,243"/>
 <area shape="rect" id="node5" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="691,202,819,243"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="af663020b40e6b122a43b26aa62ca4ed4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af663020b40e6b122a43b26aa62ca4ed4">&#9670;&nbsp;</a></span>networkstatus_get_router_digest_by_nickname()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* networkstatus_get_router_digest_by_nickname </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>nickname</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the identity digest that's mapped to officially by <b>nickname</b>. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="networkstatus_8h_af663020b40e6b122a43b26aa62ca4ed4_icgraph.png" border="0" usemap="#networkstatus_8h_af663020b40e6b122a43b26aa62ca4ed4_icgraph" alt=""/></div>
-<map name="networkstatus_8h_af663020b40e6b122a43b26aa62ca4ed4_icgraph" id="networkstatus_8h_af663020b40e6b122a43b26aa62ca4ed4_icgraph">
-<area shape="rect" id="node2" href="nodelist_8h.html#af8ce600bda89ce38020c61ccb3fdd6a6" title="node_get_by_hex_id" alt="" coords="223,5,364,32"/>
-<area shape="rect" id="node3" href="nodelist_8c.html#a331f404eaf4e481d2826de3ae45bcaff" title="MOCK_IMPL" alt="" coords="457,31,557,57"/>
-<area shape="rect" id="node4" href="nodelist_8h.html#a73dbc2267a8806e24ddc98fe7e2f1b31" title="node_is_named" alt="" coords="237,107,350,133"/>
-<area shape="rect" id="node9" href="router_8h.html#a2f3a022f2ddb8fb15047fb91522000eb" title="router_get_verbose\l_nickname" alt="" coords="227,158,360,199"/>
-<area shape="rect" id="node11" href="routerlist_8h.html#a8b764a3362e4c3245d5e430925e380f1" title="router_is_named" alt="" coords="234,224,353,251"/>
-<area shape="rect" id="node5" href="nodelist_8h.html#ae942465b949bf8cc1006ddd3e9c61221" title="node_get_verbose_nickname" alt="" coords="412,107,603,133"/>
-<area shape="rect" id="node6" href="control_8h.html#a3215ddc475a10ee916377da0a97e62f2" title="control_event_guard" alt="" coords="677,77,815,104"/>
-<area shape="rect" id="node7" href="nodelist_8h.html#a111b3704de6d40d874d64dbced6bb9ae" title="node_get_verbose_nickname\l_by_id" alt="" coords="651,129,841,170"/>
-<area shape="rect" id="node8" href="control_8c.html#a000c7faf94744c2b3a6f1753b513e5ae" title="MOCK_IMPL" alt="" coords="919,136,1019,163"/>
-<area shape="rect" id="node10" href="dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="434,165,581,192"/>
-<area shape="rect" id="node12" href="router_8h.html#ac97f03d757d76cc0e684e58d4dfea035" title="router_get_description" alt="" coords="432,224,583,251"/>
-<area shape="rect" id="node13" href="router_8h.html#a4d59ce576eb8716561e1bc6be6f88de1" title="router_describe" alt="" coords="691,224,801,251"/>
-<area shape="rect" id="node14" href="dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="889,217,1049,258"/>
 </map>
 </div>
 
@@ -990,6 +1004,35 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="ab8c593a6979ddceeed0f80cc5e114488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c593a6979ddceeed0f80cc5e114488">&#9670;&nbsp;</a></span>networkstatus_get_voter_sig_by_alg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdocument__signature__t.html">document_signature_t</a>* networkstatus_get_voter_sig_by_alg </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structnetworkstatus__voter__info__t.html">networkstatus_voter_info_t</a> *&#160;</td>
+          <td class="paramname"><em>voter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">digest_algorithm_t&#160;</td>
+          <td class="paramname"><em>alg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the signature made by <b>voter</b> using the algorithm <b>alg</b>, or NULL if none is found. </p>
+
+</div>
+</div>
 <a id="afda0b094982877af4c11b127167acb9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afda0b094982877af4c11b127167acb9e">&#9670;&nbsp;</a></span>networkstatus_get_weight_scale_param()</h2>
 
@@ -1006,14 +1049,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Retrieve the consensus parameter that governs the fixed-point precision of our network balancing 'bandwidth-weights' (which are themselves integer consensus values). We divide them by this value and ensure they never exceed this value. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="networkstatus_8h_afda0b094982877af4c11b127167acb9e_cgraph.png" border="0" usemap="#networkstatus_8h_afda0b094982877af4c11b127167acb9e_cgraph" alt=""/></div>
-<map name="networkstatus_8h_afda0b094982877af4c11b127167acb9e_cgraph" id="networkstatus_8h_afda0b094982877af4c11b127167acb9e_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="228,13,400,39"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1096,34 +1131,44 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="networkstatus_8h_a07b2840d2a72326847e2e68152402dcf_cgraph.png" border="0" usemap="#networkstatus_8h_a07b2840d2a72326847e2e68152402dcf_cgraph" alt=""/></div>
 <map name="networkstatus_8h_a07b2840d2a72326847e2e68152402dcf_cgraph" id="networkstatus_8h_a07b2840d2a72326847e2e68152402dcf_cgraph">
-<area shape="rect" id="node2" href="dirserv_8c.html#afeb9db63e957f2889d2c0b8bc3311107" title="routerstatus_format\l_entry" alt="" coords="204,5,339,47"/>
+<area shape="rect" id="node2" href="dirserv_8c.html#a462a8ae7270a4bea92c8d6269e7489db" title="routerstatus_format\l_entry" alt="" coords="204,5,339,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a373d18a9265478c19fffe985c3384636"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a373d18a9265478c19fffe985c3384636">&#9670;&nbsp;</a></span>networkstatus_nickname_is_unnamed()</h2>
+<a id="a97698b7c730bb880670662020a79ece0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97698b7c730bb880670662020a79ece0">&#9670;&nbsp;</a></span>networkstatus_is_live()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int networkstatus_nickname_is_unnamed </td>
+          <td class="memname">int networkstatus_is_live </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>nickname</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true iff <b>nickname</b> is disallowed from being the nickname of any server. </p>
+<p>Given a consensus in <b>ns</b>, return true iff currently live and unexpired. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="networkstatus_8h_a373d18a9265478c19fffe985c3384636_icgraph.png" border="0" usemap="#networkstatus_8h_a373d18a9265478c19fffe985c3384636_icgraph" alt=""/></div>
-<map name="networkstatus_8h_a373d18a9265478c19fffe985c3384636_icgraph" id="networkstatus_8h_a373d18a9265478c19fffe985c3384636_icgraph">
-<area shape="rect" id="node2" href="nodelist_8c.html#a331f404eaf4e481d2826de3ae45bcaff" title="MOCK_IMPL" alt="" coords="220,13,320,39"/>
+<div class="center"><img src="networkstatus_8h_a97698b7c730bb880670662020a79ece0_icgraph.png" border="0" usemap="#networkstatus_8h_a97698b7c730bb880670662020a79ece0_icgraph" alt=""/></div>
+<map name="networkstatus_8h_a97698b7c730bb880670662020a79ece0_icgraph" id="networkstatus_8h_a97698b7c730bb880670662020a79ece0_icgraph">
+<area shape="rect" id="node2" href="networkstatus_8c.html#ad87fadf53d87fbd3d0cdcc7e2cccaf6f" title="MOCK_IMPL" alt="" coords="201,5,301,32"/>
 </map>
 </div>
 
@@ -1151,11 +1196,12 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="networkstatus_8h_a6d51fc24064bd6b1e7f3d148bddba693_cgraph.png" border="0" usemap="#networkstatus_8h_a6d51fc24064bd6b1e7f3d148bddba693_cgraph" alt=""/></div>
 <map name="networkstatus_8h_a6d51fc24064bd6b1e7f3d148bddba693_cgraph" id="networkstatus_8h_a6d51fc24064bd6b1e7f3d148bddba693_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#a7bead3d790b19f3f5894a521526a3531" title="networkstatus_check\l_consensus_signature" alt="" coords="217,5,369,47"/>
-<area shape="rect" id="node4" href="networkstatus_8c.html#a2bc8e47c7dbfc9cb7dbabab161bd6764" title="networkstatus_set_current\l_consensus" alt="" coords="205,71,381,112"/>
-<area shape="rect" id="node6" href="networkstatus_8c.html#a31e12c0cdd4c1a17f3ddcdab8cdcf86f" title="networkstatus_get_flavor_name" alt="" coords="189,137,396,163"/>
-<area shape="rect" id="node3" href="routerlist_8c.html#a40b0857598d14d49c8082667c70bc023" title="get_n_authorities" alt="" coords="455,13,576,39"/>
-<area shape="rect" id="node5" href="networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="444,71,587,112"/>
+<area shape="rect" id="node2" href="networkstatus_8c.html#a31e12c0cdd4c1a17f3ddcdab8cdcf86f" title="networkstatus_get_flavor_name" alt="" coords="189,5,396,32"/>
+<area shape="rect" id="node3" href="networkstatus_8c.html#a7bead3d790b19f3f5894a521526a3531" title="networkstatus_check\l_consensus_signature" alt="" coords="217,57,369,98"/>
+<area shape="rect" id="node5" href="networkstatus_8c.html#a2bc8e47c7dbfc9cb7dbabab161bd6764" title="networkstatus_set_current\l_consensus" alt="" coords="205,122,381,163"/>
+<area shape="rect" id="node4" href="routerlist_8c.html#a40b0857598d14d49c8082667c70bc023" title="get_n_authorities" alt="" coords="455,64,576,91"/>
+<area shape="rect" id="node6" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="469,121,562,148"/>
+<area shape="rect" id="node7" href="networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="444,173,587,214"/>
 </map>
 </div>
 
@@ -1182,9 +1228,46 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="networkstatus_8h_a1a072f4231b410ee50501327f71d527e_icgraph.png" border="0" usemap="#networkstatus_8h_a1a072f4231b410ee50501327f71d527e_icgraph" alt=""/></div>
 <map name="networkstatus_8h_a1a072f4231b410ee50501327f71d527e_icgraph" id="networkstatus_8h_a1a072f4231b410ee50501327f71d527e_icgraph">
-<area shape="rect" id="node2" href="networkstatus_8h.html#af85567c13446bbbae84ce4199b3b2134" title="networkstatus_consensus\l_download_failed" alt="" coords="197,5,371,47"/>
-<area shape="rect" id="node3" href="networkstatus_8h.html#a2bc8e47c7dbfc9cb7dbabab161bd6764" title="networkstatus_set_current\l_consensus" alt="" coords="196,71,372,112"/>
-<area shape="rect" id="node4" href="networkstatus_8h.html#a6d51fc24064bd6b1e7f3d148bddba693" title="networkstatus_note\l_certs_arrived" alt="" coords="420,71,556,112"/>
+<area shape="rect" id="node2" href="networkstatus_8h.html#abf1e7e6cb46e4a70d63a54a42ba7d2ff" title="networkstatus_read\l_cached_consensus" alt="" coords="213,5,355,47"/>
+<area shape="rect" id="node4" href="networkstatus_8h.html#af85567c13446bbbae84ce4199b3b2134" title="networkstatus_consensus\l_download_failed" alt="" coords="197,71,371,112"/>
+<area shape="rect" id="node5" href="networkstatus_8h.html#a2bc8e47c7dbfc9cb7dbabab161bd6764" title="networkstatus_set_current\l_consensus" alt="" coords="196,136,372,177"/>
+<area shape="rect" id="node3" href="directory_8c.html#a4af7e7ade522a1f118e7770955ff50ea" title="handle_response_fetch\l_consensus" alt="" coords="420,39,576,80"/>
+<area shape="rect" id="node6" href="networkstatus_8h.html#a6d51fc24064bd6b1e7f3d148bddba693" title="networkstatus_note\l_certs_arrived" alt="" coords="430,136,566,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abf1e7e6cb46e4a70d63a54a42ba7d2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf1e7e6cb46e4a70d63a54a42ba7d2ff">&#9670;&nbsp;</a></span>networkstatus_read_cached_consensus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* networkstatus_read_cached_consensus </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>flavorname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a new string containing the current cached consensus of flavor <b>flavorname</b>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="networkstatus_8h_abf1e7e6cb46e4a70d63a54a42ba7d2ff_cgraph.png" border="0" usemap="#networkstatus_8h_abf1e7e6cb46e4a70d63a54a42ba7d2ff_cgraph" alt=""/></div>
+<map name="networkstatus_8h_abf1e7e6cb46e4a70d63a54a42ba7d2ff_cgraph" id="networkstatus_8h_abf1e7e6cb46e4a70d63a54a42ba7d2ff_cgraph">
+<area shape="rect" id="node2" href="networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="195,5,337,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="networkstatus_8h_abf1e7e6cb46e4a70d63a54a42ba7d2ff_icgraph.png" border="0" usemap="#networkstatus_8h_abf1e7e6cb46e4a70d63a54a42ba7d2ff_icgraph" alt=""/></div>
+<map name="networkstatus_8h_abf1e7e6cb46e4a70d63a54a42ba7d2ff_icgraph" id="networkstatus_8h_abf1e7e6cb46e4a70d63a54a42ba7d2ff_icgraph">
+<area shape="rect" id="node2" href="directory_8c.html#a4af7e7ade522a1f118e7770955ff50ea" title="handle_response_fetch\l_consensus" alt="" coords="195,5,351,47"/>
 </map>
 </div>
 
@@ -1278,13 +1361,13 @@ Here is the caller graph for this function:</div>
 <p>If source_dir is non-NULL, it's the identity digest for a directory that we've just successfully retrieved a consensus or certificates from, so try it first to fetch any missing certificates.</p>
 <p>Return 0 on success, &lt;0 on failure. On failure, caller should increment the failure count as appropriate.</p>
 <p>We return -1 for mild failures that don't need to be reported to the user, and -2 for more serious problems. </p>
-<p>If a consensus appears more than this many seconds before its declared valid-after time, declare that our clock is skewed. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="networkstatus_8h_a2bc8e47c7dbfc9cb7dbabab161bd6764_cgraph.png" border="0" usemap="#networkstatus_8h_a2bc8e47c7dbfc9cb7dbabab161bd6764_cgraph" alt=""/></div>
 <map name="networkstatus_8h_a2bc8e47c7dbfc9cb7dbabab161bd6764_cgraph" id="networkstatus_8h_a2bc8e47c7dbfc9cb7dbabab161bd6764_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="229,5,372,47"/>
+<area shape="rect" id="node2" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="254,5,347,32"/>
+<area shape="rect" id="node3" href="networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="229,57,372,98"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1295,6 +1378,35 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="networkstatus_8h.html#a6d51fc24064bd6b1e7f3d148bddba693" title="networkstatus_note\l_certs_arrived" alt="" coords="229,5,365,47"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a89a28d47b1bbf648c55caf48c618ef87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a28d47b1bbf648c55caf48c618ef87">&#9670;&nbsp;</a></span>networkstatus_valid_until_is_reasonably_live()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int networkstatus_valid_until_is_reasonably_live </td>
+          <td>(</td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>valid_until</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As networkstatus_consensus_reasonably_live, but takes a valid_until time rather than an entire consensus. </p>
 
 </div>
 </div>
@@ -1441,14 +1553,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a0b3529b215fcf74c3d7a14a97b4bb541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b3529b215fcf74c3d7a14a97b4bb541">&#9670;&nbsp;</a></span>networkstatus_vote_free()</h2>
+<a id="ac431574021ec26d0de3d84b9bd0b3f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac431574021ec26d0de3d84b9bd0b3f38">&#9670;&nbsp;</a></span>networkstatus_vote_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void networkstatus_vote_free </td>
+          <td class="memname">void networkstatus_vote_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *&#160;</td>
           <td class="paramname"><em>ns</em></td><td>)</td>
@@ -1457,24 +1569,25 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Free all storage held in <b>ns</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="networkstatus_8h_a0b3529b215fcf74c3d7a14a97b4bb541_cgraph.png" border="0" usemap="#networkstatus_8h_a0b3529b215fcf74c3d7a14a97b4bb541_cgraph" alt=""/></div>
-<map name="networkstatus_8h_a0b3529b215fcf74c3d7a14a97b4bb541_cgraph" id="networkstatus_8h_a0b3529b215fcf74c3d7a14a97b4bb541_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#af6fa8990a971778c3d879c662c1579a9" title="document_signature_free" alt="" coords="219,5,387,32"/>
-<area shape="rect" id="node3" href="routerlist_8c.html#a2bb77cd705f2c621023fff9a114c01bf" title="authority_cert_free" alt="" coords="237,56,368,83"/>
-<area shape="rect" id="node4" href="crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="435,56,543,83"/>
-</map>
+
 </div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="networkstatus_8h_a0b3529b215fcf74c3d7a14a97b4bb541_icgraph.png" border="0" usemap="#networkstatus_8h_a0b3529b215fcf74c3d7a14a97b4bb541_icgraph" alt=""/></div>
-<map name="networkstatus_8h_a0b3529b215fcf74c3d7a14a97b4bb541_icgraph" id="networkstatus_8h_a0b3529b215fcf74c3d7a14a97b4bb541_icgraph">
-<area shape="rect" id="node2" href="networkstatus_8h.html#a5903397efb4437a9f991843962369b72" title="networkstatus_free_all" alt="" coords="219,5,372,32"/>
-</map>
 </div>
+<a id="ab67c1b78647e8e4babfbeee6ec9c767c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab67c1b78647e8e4babfbeee6ec9c767c">&#9670;&nbsp;</a></span>ns_detached_signatures_free_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ns_detached_signatures_free_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structns__detached__signatures__t.html">ns_detached_signatures_t</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Release all storage held in <b>s</b>. </p>
 
 </div>
 </div>
@@ -1504,6 +1617,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return the consensus view of the status of the router whose current <em>descriptor</em> digest in <b>consensus</b> is <b>digest</b>, or NULL if no such router is known. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="networkstatus_8h_ae26b18ffeeda912deab35abe7bfe31da_icgraph.png" border="0" usemap="#networkstatus_8h_ae26b18ffeeda912deab35abe7bfe31da_icgraph" alt=""/></div>
+<map name="networkstatus_8h_ae26b18ffeeda912deab35abe7bfe31da_icgraph" id="networkstatus_8h_ae26b18ffeeda912deab35abe7bfe31da_icgraph">
+<area shape="rect" id="node2" href="networkstatus_8h.html#a28083077a140f44e651523c894509005" title="signed_descs_update\l_status_from_consensus\l_networkstatus" alt="" coords="204,5,372,61"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1543,35 +1664,6 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="connection__or_8h.html#a8573b49df7ffc3ad6df0faa6e7a12f10" title="connection_or_digest\l_is_known_relay" alt="" coords="204,5,349,47"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a28122f58af9ee7d89bc31efc2a2fb242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28122f58af9ee7d89bc31efc2a2fb242">&#9670;&nbsp;</a></span>router_get_consensus_status_by_nickname()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a>* router_get_consensus_status_by_nickname </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>nickname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>warn_if_unnamed</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Given a nickname (possibly verbose, possibly a hexadecimal digest), return the corresponding <a class="el" href="structrouterstatus__t.html">routerstatus_t</a>, or NULL if none exists. Warn the user if <b>warn_if_unnamed</b> is set, and they have specified a router by nickname, but the Named flag isn't set for that router. </p>
 
 </div>
 </div>
@@ -1666,6 +1758,7 @@ Here is the call graph for this function:</div>
 <map name="networkstatus_8h_a17d10602167e09e05f4d5aefc744141b_cgraph" id="networkstatus_8h_a17d10602167e09e05f4d5aefc744141b_cgraph">
 <area shape="rect" id="node2" href="routerlist_8c.html#a9181bbed0ee6ff8088a7c53fc8c446f1" title="router_get_routerlist" alt="" coords="228,5,365,32"/>
 <area shape="rect" id="node3" href="networkstatus_8c.html#a44accdf47b7f9f40b25c45daf2c31475" title="networkstatus_get_reasonably\l_live_consensus" alt="" coords="197,57,396,98"/>
+<area shape="rect" id="node4" href="networkstatus_8c.html#a2d356f4ab27d29e60c8f5114974fda96" title="networkstatus_consensus\l_reasonably_live" alt="" coords="444,57,619,98"/>
 </map>
 </div>
 
@@ -1698,29 +1791,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Given a list <b>routers</b> of <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *, update each status field according to our current consensus networkstatus. May re-order <b>routers</b>. </p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="networkstatus_8h_afcfacad25b94db6f21e0df2f7897a3cf_cgraph.png" border="0" usemap="#networkstatus_8h_afcfacad25b94db6f21e0df2f7897a3cf_cgraph" alt=""/></div>
-<map name="networkstatus_8h_afcfacad25b94db6f21e0df2f7897a3cf_cgraph" id="networkstatus_8h_afcfacad25b94db6f21e0df2f7897a3cf_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a71fbf956eedbc38a293306c9bf1962e7" title="authdir_mode_v3" alt="" coords="288,5,409,32"/>
-<area shape="rect" id="node4" href="routerlist_8c.html#aaf38df620524abf6789bd31196b07697" title="routers_sort_by_identity" alt="" coords="268,56,429,83"/>
-<area shape="rect" id="node6" href="di__ops_8c.html#a47393c6ace65b9b2173d60ac6ae119aa" title="tor_memcmp" alt="" coords="299,107,398,133"/>
-<area shape="rect" id="node7" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="305,157,392,184"/>
-<area shape="rect" id="node8" href="routerlist_8c.html#a848eea1698b3361538f190f55f2cc0e6" title="router_get_mutable\l_by_digest" alt="" coords="282,209,415,250"/>
-<area shape="rect" id="node9" href="dirserv_8c.html#a0c97fbc43a4398a45feb2fafa3d42fc1" title="dirserv_should_launch\l_reachability_test" alt="" coords="273,274,424,315"/>
-<area shape="rect" id="node14" href="directory_8c.html#ae0c46dd4ad90ff8350a03414a4d79307" title="download_status_reset" alt="" coords="271,340,427,367"/>
-<area shape="rect" id="node16" href="nodelist_8c.html#a32099caf417dbc0e15ea398b1bc2ea16" title="router_dir_info_changed" alt="" coords="269,395,429,421"/>
-<area shape="rect" id="node3" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="505,5,605,32"/>
-<area shape="rect" id="node5" href="container_8c.html#adeb0528c65b62117acb2b8f6e2b0e910" title="smartlist_sort" alt="" coords="504,56,605,83"/>
-<area shape="rect" id="node10" href="router_8c.html#a8522dfca1851365846ddef293a416656" title="authdir_mode_handles\l_descs" alt="" coords="479,209,631,250"/>
-<area shape="rect" id="node13" href="routerlist_8c.html#a9b25dd842df15283a342bb77cf5935a8" title="routers_have_same_or\l_addrs" alt="" coords="477,274,632,315"/>
-<area shape="rect" id="node11" href="router_8c.html#a9bcde98c72c7ec1b15a6c0837c6bec26" title="authdir_mode_any_nonhidserv" alt="" coords="680,191,879,217"/>
-<area shape="rect" id="node12" href="router_8c.html#aab8dc47aca12ebfdd7c4a01d7fc4290b" title="authdir_mode_any_main" alt="" coords="927,216,1089,243"/>
-<area shape="rect" id="node15" href="directory_8c.html#af6977c51923b32ba38e29dcf72163d1d" title="find_dl_schedule" alt="" coords="495,340,614,367"/>
-<area shape="rect" id="node17" href="rendservice_8c.html#ac44e79078bc122e1f77d770919baffa3" title="rend_hsdir_routers\l_changed" alt="" coords="490,391,619,433"/>
-</map>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="networkstatus_8h_afcfacad25b94db6f21e0df2f7897a3cf_icgraph.png" border="0" usemap="#networkstatus_8h_afcfacad25b94db6f21e0df2f7897a3cf_icgraph" alt=""/></div>
@@ -1731,14 +1801,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a092b9ad9a877f6cf042e8969d00fb5b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a092b9ad9a877f6cf042e8969d00fb5b6">&#9670;&nbsp;</a></span>routerstatus_free()</h2>
+<a id="af7a88dc1dcc532507c069e007620677d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a88dc1dcc532507c069e007620677d">&#9670;&nbsp;</a></span>routerstatus_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void routerstatus_free </td>
+          <td class="memname">void routerstatus_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *&#160;</td>
           <td class="paramname"><em>rs</em></td><td>)</td>
@@ -1783,14 +1853,14 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="networkstatus_8h_aa278011afd1917ef43cc44fac287f7bf_icgraph.png" border="0" usemap="#networkstatus_8h_aa278011afd1917ef43cc44fac287f7bf_icgraph" alt=""/></div>
 <map name="networkstatus_8h_aa278011afd1917ef43cc44fac287f7bf_icgraph" id="networkstatus_8h_aa278011afd1917ef43cc44fac287f7bf_icgraph">
 <area shape="rect" id="node2" href="microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="223,5,420,32"/>
-<area shape="rect" id="node5" href="networkstatus_8h.html#a1283a3574ff7fb0ceb2f4b80af9bdbf6" title="update_networkstatus\l_downloads" alt="" coords="246,57,397,98"/>
-<area shape="rect" id="node6" href="nodelist_8h.html#af33ffac546e0698e054eb3183e6579ae" title="router_have_minimum\l_dir_info" alt="" coords="246,187,397,229"/>
-<area shape="rect" id="node7" href="routerlist_8h.html#ab576efc7049ed4eca6fa56e9f0544844" title="update_extrainfo_downloads" alt="" coords="468,243,655,269"/>
-<area shape="rect" id="node8" href="routerlist_8h.html#a91f37bda7b9149b1da0f1abfff66ab23" title="authority_certs_fetch\l_missing" alt="" coords="249,305,393,346"/>
-<area shape="rect" id="node10" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="239,122,404,163"/>
-<area shape="rect" id="node3" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="489,122,634,163"/>
-<area shape="rect" id="node4" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="703,185,831,226"/>
-<area shape="rect" id="node9" href="networkstatus_8h.html#aac5e0a37016a04c309a791ae15ecc86a" title="update_certificate\l_downloads" alt="" coords="499,305,624,346"/>
+<area shape="rect" id="node3" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="489,137,634,178"/>
+<area shape="rect" id="node5" href="networkstatus_8h.html#a1283a3574ff7fb0ceb2f4b80af9bdbf6" title="update_networkstatus\l_downloads" alt="" coords="246,107,397,149"/>
+<area shape="rect" id="node6" href="nodelist_8c.html#a487da95d8f7026bb714950516ac5fb95" title="MOCK_IMPL" alt="" coords="271,173,371,200"/>
+<area shape="rect" id="node7" href="routerlist_8h.html#a91f37bda7b9149b1da0f1abfff66ab23" title="authority_certs_fetch\l_missing" alt="" coords="249,290,393,331"/>
+<area shape="rect" id="node9" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="239,225,404,266"/>
+<area shape="rect" id="node10" href="routerlist_8h.html#ab576efc7049ed4eca6fa56e9f0544844" title="update_extrainfo_downloads" alt="" coords="468,356,655,383"/>
+<area shape="rect" id="node4" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="703,243,831,285"/>
+<area shape="rect" id="node8" href="networkstatus_8h.html#aac5e0a37016a04c309a791ae15ecc86a" title="update_certificate\l_downloads" alt="" coords="499,290,624,331"/>
 </map>
 </div>
 
@@ -1812,6 +1882,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Given a list of <a class="el" href="structsigned__descriptor__t.html">signed_descriptor_t</a>, update their fields (mainly, when they were last listed) from the most recent consensus. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="networkstatus_8h_a28083077a140f44e651523c894509005_cgraph.png" border="0" usemap="#networkstatus_8h_a28083077a140f44e651523c894509005_cgraph" alt=""/></div>
+<map name="networkstatus_8h_a28083077a140f44e651523c894509005_cgraph" id="networkstatus_8h_a28083077a140f44e651523c894509005_cgraph">
+<area shape="rect" id="node2" href="networkstatus_8c.html#ae26b18ffeeda912deab35abe7bfe31da" title="router_get_consensus\l_status_by_descriptor\l_digest" alt="" coords="221,5,372,61"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1837,9 +1915,8 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="networkstatus_8h_aac5e0a37016a04c309a791ae15ecc86a_cgraph.png" border="0" usemap="#networkstatus_8h_aac5e0a37016a04c309a791ae15ecc86a_cgraph" alt=""/></div>
 <map name="networkstatus_8h_aac5e0a37016a04c309a791ae15ecc86a_cgraph" id="networkstatus_8h_aac5e0a37016a04c309a791ae15ecc86a_cgraph">
 <area shape="rect" id="node2" href="routerlist_8c.html#a91f37bda7b9149b1da0f1abfff66ab23" title="authority_certs_fetch\l_missing" alt="" coords="179,35,323,76"/>
-<area shape="rect" id="node3" href="dirserv_8c.html#a5a9cf7f465217dbc8142aaf11384abbf" title="directory_caches_unknown\l_auth_certs" alt="" coords="371,5,551,47"/>
-<area shape="rect" id="node5" href="networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf" title="should_delay_dir_fetches" alt="" coords="376,71,545,98"/>
-<area shape="rect" id="node4" href="router_8c.html#ab23297b12b098da9eac98126a587aa3b" title="dir_server_mode" alt="" coords="599,13,717,39"/>
+<area shape="rect" id="node3" href="networkstatus_8c.html#ae571a0f2e98aee6bb9b6a0df669b6c25" title="we_want_to_fetch_unknown\l_auth_certs" alt="" coords="371,5,557,47"/>
+<area shape="rect" id="node4" href="networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf" title="should_delay_dir_fetches" alt="" coords="379,71,549,98"/>
 </map>
 </div>
 
@@ -1861,6 +1938,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Update the time at which we'll consider replacing the current consensus of flavor 'flavor' </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="networkstatus_8h_ad5b06eef1d3ad0356efd75d050cb857d_cgraph.png" border="0" usemap="#networkstatus_8h_ad5b06eef1d3ad0356efd75d050cb857d_cgraph" alt=""/></div>
+<map name="networkstatus_8h_ad5b06eef1d3ad0356efd75d050cb857d_cgraph" id="networkstatus_8h_ad5b06eef1d3ad0356efd75d050cb857d_cgraph">
+<area shape="rect" id="node2" href="networkstatus_8c.html#a32d20f569e83b9acf580732e6369285c" title="we_want_to_fetch_flavor" alt="" coords="273,13,440,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1879,13 +1964,100 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Launch requests for networkstatus documents and authority certificates as appropriate. </p>
+<p>Launch requests for networkstatus documents as appropriate. This is called when we retry all the connections on a SIGHUP and periodically by a Periodic event which checks whether we want to download any networkstatus documents. </p>
+<p>Launch a consensus download request, we will wait for the consensus to download and when it completes we will launch a certificate download request. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="networkstatus_8h_a1283a3574ff7fb0ceb2f4b80af9bdbf6_cgraph.png" border="0" usemap="#networkstatus_8h_a1283a3574ff7fb0ceb2f4b80af9bdbf6_cgraph" alt=""/></div>
 <map name="networkstatus_8h_a1283a3574ff7fb0ceb2f4b80af9bdbf6_cgraph" id="networkstatus_8h_a1283a3574ff7fb0ceb2f4b80af9bdbf6_cgraph">
 <area shape="rect" id="node2" href="networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf" title="should_delay_dir_fetches" alt="" coords="204,13,373,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9a1026b178124f6fedaf54066cca12a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1026b178124f6fedaf54066cca12a0">&#9670;&nbsp;</a></span>vote_routerstatus_free_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vote_routerstatus_free_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structvote__routerstatus__t.html">vote_routerstatus_t</a> *&#160;</td>
+          <td class="paramname"><em>rs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Free all storage held by the vote_routerstatus object <b>rs</b>. </p>
+
+</div>
+</div>
+<a id="a32d20f569e83b9acf580732e6369285c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32d20f569e83b9acf580732e6369285c">&#9670;&nbsp;</a></span>we_want_to_fetch_flavor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int we_want_to_fetch_flavor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flavor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true iff, given the options listed in <b>options</b>, <b>flavor</b> is the flavor of a consensus networkstatus that we would like to fetch.</p>
+<p>For certificate fetches, use we_want_to_fetch_unknown_auth_certs, and for serving fetched documents, use directory_caches_dir_info. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="networkstatus_8h_a32d20f569e83b9acf580732e6369285c_icgraph.png" border="0" usemap="#networkstatus_8h_a32d20f569e83b9acf580732e6369285c_icgraph" alt=""/></div>
+<map name="networkstatus_8h_a32d20f569e83b9acf580732e6369285c_icgraph" id="networkstatus_8h_a32d20f569e83b9acf580732e6369285c_icgraph">
+<area shape="rect" id="node2" href="networkstatus_8h.html#ad5b06eef1d3ad0356efd75d050cb857d" title="update_consensus_networkstatus\l_fetch_time" alt="" coords="220,5,440,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae571a0f2e98aee6bb9b6a0df669b6c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae571a0f2e98aee6bb9b6a0df669b6c25">&#9670;&nbsp;</a></span>we_want_to_fetch_unknown_auth_certs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int we_want_to_fetch_unknown_auth_certs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true iff, given the options listed in <b>options</b>, we would like to fetch and store unknown authority certificates.</p>
+<p>For consensus and descriptor fetches, use we_want_to_fetch_flavor, and for serving fetched certificates, use directory_caches_unknown_auth_certs. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="networkstatus_8h_ae571a0f2e98aee6bb9b6a0df669b6c25_icgraph.png" border="0" usemap="#networkstatus_8h_ae571a0f2e98aee6bb9b6a0df669b6c25_icgraph" alt=""/></div>
+<map name="networkstatus_8h_ae571a0f2e98aee6bb9b6a0df669b6c25_icgraph" id="networkstatus_8h_ae571a0f2e98aee6bb9b6a0df669b6c25_icgraph">
+<area shape="rect" id="node2" href="routerlist_8h.html#a91f37bda7b9149b1da0f1abfff66ab23" title="authority_certs_fetch\l_missing" alt="" coords="240,5,384,47"/>
+<area shape="rect" id="node3" href="networkstatus_8h.html#aac5e0a37016a04c309a791ae15ecc86a" title="update_certificate\l_downloads" alt="" coords="432,5,557,47"/>
 </map>
 </div>
 

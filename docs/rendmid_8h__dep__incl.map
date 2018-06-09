@@ -1,4 +1,5 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/rendmid.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/rendmid.h">
-<area shape="rect" id="node2" href="$rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points..." alt="" coords="5,109,155,165"/>
-<area shape="rect" id="node3" href="$rendmid_8c.html" title="Implement introductions points and rendezvous points. " alt="" coords="179,109,327,165"/>
+<area shape="rect" id="node2" href="$hs__intropoint_8c.html" title="Implement next generation introductions point functionality. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points..." alt="" coords="178,109,327,165"/>
+<area shape="rect" id="node4" href="$rendmid_8c.html" title="Implement introductions points and rendezvous points. " alt="" coords="352,109,500,165"/>
 </map>

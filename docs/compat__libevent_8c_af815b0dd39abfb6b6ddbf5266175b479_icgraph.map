@@ -1,0 +1,6 @@
+<map id="mainloop_event_activate" name="mainloop_event_activate">
+<area shape="rect" id="node2" href="$control_8h.html#ade2557c81242d73d93750e0c68218a7c" title="control_event_logmsg\l_pending" alt="" coords="240,5,389,47"/>
+<area shape="rect" id="node3" href="$main_8h.html#ae90f277f5b30758b5ec08c7334a3d41a" title="mainloop_schedule_postloop\l_cleanup" alt="" coords="220,71,409,112"/>
+<area shape="rect" id="node5" href="$scheduler_8c.html#a199c3d59509d475c2ed08776bcdc9a8a" title="scheduler_ev_active" alt="" coords="244,137,385,163"/>
+<area shape="rect" id="node4" href="$main_8h.html#a5a32ff7bb266432116efdc333987a0e4" title="add_connection_to_closeable_list" alt="" coords="457,78,675,105"/>
+</map>

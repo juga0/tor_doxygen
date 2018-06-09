@@ -1,6 +1,9 @@
 <map id="write_short_policy" name="write_short_policy">
-<area shape="rect" id="node2" href="$util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="180,5,331,32"/>
-<area shape="rect" id="node5" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="584,56,684,83"/>
-<area shape="rect" id="node3" href="$util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="379,5,536,32"/>
+<area shape="rect" id="node2" href="$util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="180,31,331,57"/>
+<area shape="rect" id="node6" href="$util_8c.html#a95ad8dd258dec01eebc504928e6df180" title="smartlist_add_strdup" alt="" coords="184,81,327,108"/>
+<area shape="rect" id="node7" href="$container_8c.html#ab865391a8cac688c51809c33dad0bfe2" title="smartlist_join_strings" alt="" coords="183,132,328,159"/>
+<area shape="rect" id="node3" href="$util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="379,31,536,57"/>
 <area shape="rect" id="node4" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="587,5,681,32"/>
+<area shape="rect" id="node5" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="584,56,684,83"/>
+<area shape="rect" id="node8" href="$container_8c.html#aac69a4c0d462859a1a13a6eb35ab3c0a" title="smartlist_join_strings2" alt="" coords="381,132,533,159"/>
 </map>

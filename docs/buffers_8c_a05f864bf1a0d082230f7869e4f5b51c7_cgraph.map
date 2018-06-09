@@ -1,0 +1,5 @@
+<map id="buf_add_printf" name="buf_add_printf">
+<area shape="rect" id="node2" href="$buffers_8c.html#aa957514fdc2f68cccc3ec62ecb9448ef" title="buf_add_vprintf" alt="" coords="157,31,268,57"/>
+<area shape="rect" id="node3" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="316,5,411,32"/>
+<area shape="rect" id="node4" href="$buffers_8c.html#a2771e1c14c464b10533a079f40a59a8d" title="buf_add" alt="" coords="329,56,397,83"/>
+</map>

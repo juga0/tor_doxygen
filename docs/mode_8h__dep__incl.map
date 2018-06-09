@@ -1,0 +1,11 @@
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/dirauth/mode.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/dirauth/mode.h">
+<area shape="rect" id="node2" href="$config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="5,117,153,173"/>
+<area shape="rect" id="node3" href="$dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="177,117,333,173"/>
+<area shape="rect" id="node4" href="$shared__random_8c.html" title="Functions and data structure needed to accomplish the shared random protocol as defined in proposal #..." alt="" coords="357,109,505,180"/>
+<area shape="rect" id="node5" href="$directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="529,117,677,173"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="701,117,849,173"/>
+<area shape="rect" id="node7" href="$networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache..." alt="" coords="873,117,1029,173"/>
+<area shape="rect" id="node8" href="$nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="1053,117,1201,173"/>
+<area shape="rect" id="node9" href="$router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="1225,117,1373,173"/>
+<area shape="rect" id="node10" href="$routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="1397,117,1545,173"/>
+</map>

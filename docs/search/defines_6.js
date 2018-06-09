@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['fallback_5fcompress_5fmethod',['FALLBACK_COMPRESS_METHOD',['../directory_8c.html#a786b40c8b20290b21dc42e54f0691af3',1,'directory.c']]],
   ['fast_5fguard_5fstate_5fflush_5ftime',['FAST_GUARD_STATE_FLUSH_TIME',['../entrynodes_8c.html#ad81819d8305e2ed8f171fc0ddc979bfe',1,'entrynodes.c']]],
   ['fast_5fmemcmp',['fast_memcmp',['../di__ops_8h.html#aaa9a1e14eb0294fabe7c0fe8fb5c74a0',1,'di_ops.h']]],
   ['fast_5fretry_5fdescriptor_5finterval',['FAST_RETRY_DESCRIPTOR_INTERVAL',['../router_8c.html#a0a832609389b143be8385fa39212d958',1,'router.c']]],

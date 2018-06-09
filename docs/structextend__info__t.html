@@ -73,6 +73,7 @@ Collaboration diagram for extend_info_t:</div>
 <div class="center"><img src="structextend__info__t__coll__graph.png" border="0" usemap="#extend__info__t_coll__map" alt="Collaboration graph"/></div>
 <map name="extend__info__t_coll__map" id="extend__info__t_coll__map">
 <area shape="rect" id="node3" href="structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="151,5,242,32"/>
+<area shape="rect" id="node4" href="structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="267,5,417,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -80,8 +81,10 @@ Collaboration diagram for extend_info_t:</div>
 Data Fields</h2></td></tr>
 <tr class="memitem:a9004c70b3d8a1a7ec902150025792c44"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structextend__info__t.html#a9004c70b3d8a1a7ec902150025792c44">nickname</a> [<a class="el" href="or_8h.html#aeffe4d6ff7d4f9c0e2be166511ebe42a">MAX_HEX_NICKNAME_LEN</a>+1]</td></tr>
 <tr class="separator:a9004c70b3d8a1a7ec902150025792c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55d09977f6fcf3c3be8dcc9625c14e60"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structextend__info__t.html#a55d09977f6fcf3c3be8dcc9625c14e60">identity_digest</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
+<tr class="memitem:a55d09977f6fcf3c3be8dcc9625c14e60"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structextend__info__t.html#a55d09977f6fcf3c3be8dcc9625c14e60">identity_digest</a> [<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
 <tr class="separator:a55d09977f6fcf3c3be8dcc9625c14e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b71382bcc0d903ca55fc6b5ce6c7fbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structextend__info__t.html#a1b71382bcc0d903ca55fc6b5ce6c7fbd">ed_identity</a></td></tr>
+<tr class="separator:a1b71382bcc0d903ca55fc6b5ce6c7fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e0798404bf2cf5dabb84c5ba9a4f236"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structextend__info__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a></td></tr>
 <tr class="separator:a8e0798404bf2cf5dabb84c5ba9a4f236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af456b36b519e3ac91e16e8ba44d190b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__addr__t.html">tor_addr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structextend__info__t.html#af456b36b519e3ac91e16e8ba44d190b4">addr</a></td></tr>
@@ -110,6 +113,21 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a1b71382bcc0d903ca55fc6b5ce6c7fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b71382bcc0d903ca55fc6b5ce6c7fbd">&#9670;&nbsp;</a></span>ed_identity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> ed_identity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ed25519 identity for this router, if any. </p>
+
+</div>
+</div>
 <a id="a55d09977f6fcf3c3be8dcc9625c14e60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55d09977f6fcf3c3be8dcc9625c14e60">&#9670;&nbsp;</a></span>identity_digest</h2>
 
@@ -117,11 +135,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char identity_digest[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
+          <td class="memname">char identity_digest[<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Hash of this router's identity key. </p>
+<p>Hash of this router's RSA identity key. </p>
 
 </div>
 </div>

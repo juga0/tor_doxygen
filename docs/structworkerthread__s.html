@@ -86,9 +86,11 @@ Data Fields</h2></td></tr>
 <tr class="separator:af7b5efe10498b3edf959db6109f203f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db7eb9a8410fd508ad6dc871cdc8a47"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structworkerthread__s.html#a9db7eb9a8410fd508ad6dc871cdc8a47">generation</a></td></tr>
 <tr class="separator:a9db7eb9a8410fd508ad6dc871cdc8a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2278b7b8602477c48fe0414351a6f9a5"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structworkerthread__s.html#a2278b7b8602477c48fe0414351a6f9a5">lower_priority_chance</a></td></tr>
+<tr class="separator:a2278b7b8602477c48fe0414351a6f9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A worker thread represents a single thread in a thread pool. To avoid contention, each gets its own queue. This breaks the guarantee that that queued work will get executed strictly in order. </p>
+<div class="textblock"><p>A worker thread represents a single thread in a thread pool. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a9db7eb9a8410fd508ad6dc871cdc8a47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9db7eb9a8410fd508ad6dc871cdc8a47">&#9670;&nbsp;</a></span>generation</h2>
@@ -132,6 +134,21 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Which thread it this? In range 0..in_pool-&gt;n_threads-1 </p>
+
+</div>
+</div>
+<a id="a2278b7b8602477c48fe0414351a6f9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2278b7b8602477c48fe0414351a6f9a5">&#9670;&nbsp;</a></span>lower_priority_chance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t lower_priority_chance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>One over the probability of taking work from a lower-priority queue. </p>
 
 </div>
 </div>

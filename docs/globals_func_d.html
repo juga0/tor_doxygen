@@ -62,24 +62,21 @@ $(function() {
 &#160;
 
 <h3><a id="index_d"></a>- d -</h3><ul>
-<li>decide_num_guards()
-: <a class="el" href="entrynodes_8c.html#aceef6f16e2ed25782da94e2e4f0f334d">entrynodes.c</a>
-</li>
 <li>decode_address_from_payload()
 : <a class="el" href="relay_8c.html#a49ff1feb99a759a6480040144710078c">relay.c</a>
 , <a class="el" href="relay_8h.html#a49ff1feb99a759a6480040144710078c">relay.h</a>
 </li>
 <li>decode_hashed_passwords()
-: <a class="el" href="control_8c.html#ab464eef1adbc6df3fcc09063dc6f9c3e">control.c</a>
-, <a class="el" href="control_8h.html#ab464eef1adbc6df3fcc09063dc6f9c3e">control.h</a>
+: <a class="el" href="control_8h.html#ab464eef1adbc6df3fcc09063dc6f9c3e">control.h</a>
+, <a class="el" href="control_8c.html#ab464eef1adbc6df3fcc09063dc6f9c3e">control.c</a>
 </li>
 <li>destroy_cell_queue_append()
 : <a class="el" href="relay_8c.html#a1e23efefaa24599479c75005cb51a1ad">relay.c</a>
 , <a class="el" href="relay_8h.html#a1e23efefaa24599479c75005cb51a1ad">relay.h</a>
 </li>
 <li>destroy_cell_queue_clear()
-: <a class="el" href="relay_8c.html#a1c0fb884f9667aaa77a86d532e6c3cd6">relay.c</a>
-, <a class="el" href="relay_8h.html#a1c0fb884f9667aaa77a86d532e6c3cd6">relay.h</a>
+: <a class="el" href="relay_8h.html#a1c0fb884f9667aaa77a86d532e6c3cd6">relay.h</a>
+, <a class="el" href="relay_8c.html#a1c0fb884f9667aaa77a86d532e6c3cd6">relay.c</a>
 </li>
 <li>destroy_cell_queue_init()
 : <a class="el" href="relay_8c.html#a09d770a842a833e4d80d7400ddbd9f35">relay.c</a>
@@ -89,8 +86,8 @@ $(function() {
 : <a class="el" href="relay_8c.html#a5b9ffcb5702369ea9560d846f6a7c7a6">relay.c</a>
 </li>
 <li>detect_compression_method()
-: <a class="el" href="torgzip_8c.html#acb135f3757e18bf832c42662a146ef8e">torgzip.c</a>
-, <a class="el" href="torgzip_8h.html#acb135f3757e18bf832c42662a146ef8e">torgzip.h</a>
+: <a class="el" href="compress_8c.html#acb135f3757e18bf832c42662a146ef8e">compress.c</a>
+, <a class="el" href="compress_8h.html#acb135f3757e18bf832c42662a146ef8e">compress.h</a>
 </li>
 <li>did_last_state_file_write_fail()
 : <a class="el" href="statefile_8c.html#a6c78a643697345ad66be241e9d473227">statefile.c</a>
@@ -107,8 +104,8 @@ $(function() {
 <li>digest_to_base64()
 : <a class="el" href="crypto__format_8c.html#aa31b9d5fd609a1c8c3c888c7d817284c">crypto_format.c</a>
 </li>
-<li>digestset_free()
-: <a class="el" href="container_8c.html#a014a016478574c9338e047063307f7d4">container.c</a>
+<li>digestset_free_()
+: <a class="el" href="container_8c.html#a15c95ea744e25acbb920e092447c5583">container.c</a>
 </li>
 <li>digestset_new()
 : <a class="el" href="container_8c.html#aa0c4bc4260b654f0d9544675d3905865">container.c</a>
@@ -117,13 +114,17 @@ $(function() {
 : <a class="el" href="di__ops_8c.html#a0aaf282503417e5cc43bd18eb9cdd667">di_ops.c</a>
 , <a class="el" href="di__ops_8h.html#a0aaf282503417e5cc43bd18eb9cdd667">di_ops.h</a>
 </li>
-<li>dimap_free()
-: <a class="el" href="di__ops_8c.html#a7288cea0663552d036f0d8e3a17029f0">di_ops.c</a>
-, <a class="el" href="di__ops_8h.html#a7288cea0663552d036f0d8e3a17029f0">di_ops.h</a>
+<li>dimap_free_()
+: <a class="el" href="di__ops_8c.html#ac643ee2f81d6041631c4ab831ad9d962">di_ops.c</a>
+, <a class="el" href="di__ops_8h.html#ac643ee2f81d6041631c4ab831ad9d962">di_ops.h</a>
 </li>
 <li>dimap_search()
 : <a class="el" href="di__ops_8c.html#a032d26f93f592b1cf781c8f147b2e38e">di_ops.c</a>
 , <a class="el" href="di__ops_8h.html#a032d26f93f592b1cf781c8f147b2e38e">di_ops.h</a>
+</li>
+<li>dir_conn_clear_spool()
+: <a class="el" href="dirserv_8c.html#a8ff1a515883ea205753feb2f410cbea6">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#a8ff1a515883ea205753feb2f410cbea6">dirserv.h</a>
 </li>
 <li>dir_conn_purpose_to_string()
 : <a class="el" href="directory_8c.html#a8aabd75f035464ab0450ff60098e97d4">directory.c</a>
@@ -155,6 +156,10 @@ $(function() {
 : <a class="el" href="directory_8c.html#ab3cd3a5081cf507805b4b01c907dd168">directory.c</a>
 , <a class="el" href="directory_8h.html#ab3cd3a5081cf507805b4b01c907dd168">directory.h</a>
 </li>
+<li>dir_split_resource_into_spoolable()
+: <a class="el" href="directory_8c.html#ad940bd015d7ee064790d67bde5955450">directory.c</a>
+, <a class="el" href="directory_8h.html#ad732f40b40681f30b1bb905b15a09e0e">directory.h</a>
+</li>
 <li>dircollator_add_vote()
 : <a class="el" href="dircollate_8c.html#a9cf6dcea9f61cd4f93bec8bb9cbeda29">dircollate.c</a>
 , <a class="el" href="dircollate_8h.html#a9cf6dcea9f61cd4f93bec8bb9cbeda29">dircollate.h</a>
@@ -163,9 +168,9 @@ $(function() {
 : <a class="el" href="dircollate_8c.html#a960b8f12d7bbf0a24d87c7631df7a0e2">dircollate.c</a>
 , <a class="el" href="dircollate_8h.html#a960b8f12d7bbf0a24d87c7631df7a0e2">dircollate.h</a>
 </li>
-<li>dircollator_free()
-: <a class="el" href="dircollate_8c.html#a058749edca2a7754bf121cc2469fb7e1">dircollate.c</a>
-, <a class="el" href="dircollate_8h.html#a3dd8a2dd2be926429d19ae23fd195e4e">dircollate.h</a>
+<li>dircollator_free_()
+: <a class="el" href="dircollate_8c.html#a84e9d4fde728795c56daecfe2a132c7e">dircollate.c</a>
+, <a class="el" href="dircollate_8h.html#a309103f49df3c27fe3c5f687df7c6444">dircollate.h</a>
 </li>
 <li>dircollator_get_votes_for_router()
 : <a class="el" href="dircollate_8c.html#af0920fd15ad05b8759b06b9beb7f80aa">dircollate.c</a>
@@ -192,8 +197,8 @@ $(function() {
 , <a class="el" href="dirserv_8h.html#a57e2ff1ad2ea65abe9b969ad3d76a418">dirserv.h</a>
 </li>
 <li>directory_caches_unknown_auth_certs()
-: <a class="el" href="dirserv_8c.html#a5a9cf7f465217dbc8142aaf11384abbf">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#a5a9cf7f465217dbc8142aaf11384abbf">dirserv.h</a>
+: <a class="el" href="dirserv_8h.html#a5a9cf7f465217dbc8142aaf11384abbf">dirserv.h</a>
+, <a class="el" href="dirserv_8c.html#a5a9cf7f465217dbc8142aaf11384abbf">dirserv.c</a>
 </li>
 <li>directory_fetches_dir_info_early()
 : <a class="el" href="dirserv_8c.html#ab38d643312052d4bfdb7d49dcba344a6">dirserv.c</a>
@@ -211,20 +216,12 @@ $(function() {
 : <a class="el" href="directory_8c.html#a13483821c102fb862ab0d27091d7ffc7">directory.c</a>
 , <a class="el" href="directory_8h.html#a13483821c102fb862ab0d27091d7ffc7">directory.h</a>
 </li>
-<li>directory_handle_command_get()
-: <a class="el" href="directory_8c.html#ada931951a748ed6f95dc5f69bba31364">directory.c</a>
+<li>directory_handle_command()
+: <a class="el" href="directory_8c.html#ac2e15267200fb185ec30e74b7d16d834">directory.c</a>
 </li>
 <li>directory_info_has_arrived()
 : <a class="el" href="main_8c.html#ac64189cc036980dc5785f76d85db9fa6">main.c</a>
 , <a class="el" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6">main.h</a>
-</li>
-<li>directory_initiate_command()
-: <a class="el" href="directory_8c.html#ae333cd0dfde56a83ff29aef322a182c4">directory.c</a>
-, <a class="el" href="directory_8h.html#ae333cd0dfde56a83ff29aef322a182c4">directory.h</a>
-</li>
-<li>directory_initiate_command_routerstatus_rend()
-: <a class="el" href="directory_8c.html#a57800839006f921803cc3087b9ba59c9">directory.c</a>
-, <a class="el" href="directory_8h.html#a57800839006f921803cc3087b9ba59c9">directory.h</a>
 </li>
 <li>directory_permits_begindir_requests()
 : <a class="el" href="dirserv_8c.html#a7923860b3a8c27fa48c4dcec6ef6939f">dirserv.c</a>
@@ -237,6 +234,70 @@ $(function() {
 <li>directory_post_to_hs_dir()
 : <a class="el" href="rendservice_8c.html#ab506650aa443a97f3932b3f50652c90d">rendservice.c</a>
 , <a class="el" href="rendservice_8h.html#ab506650aa443a97f3932b3f50652c90d">rendservice.h</a>
+</li>
+<li>directory_request_add_header()
+: <a class="el" href="directory_8c.html#af68afba474b93d9917f8b76d739b8505">directory.c</a>
+, <a class="el" href="directory_8h.html#af68afba474b93d9917f8b76d739b8505">directory.h</a>
+</li>
+<li>directory_request_fetch_set_hs_ident()
+: <a class="el" href="directory_8c.html#ad8944f29dae81e9931e0bdef3b39e407">directory.c</a>
+, <a class="el" href="directory_8h.html#ad8944f29dae81e9931e0bdef3b39e407">directory.h</a>
+</li>
+<li>directory_request_free_()
+: <a class="el" href="directory_8c.html#a76bf5075b1b3e4131f2c4cf5ca0f0d8b">directory.c</a>
+, <a class="el" href="directory_8h.html#a76bf5075b1b3e4131f2c4cf5ca0f0d8b">directory.h</a>
+</li>
+<li>directory_request_new()
+: <a class="el" href="directory_8c.html#a85c888ac5ae7e9877281b1c87483cee1">directory.c</a>
+, <a class="el" href="directory_8h.html#a85c888ac5ae7e9877281b1c87483cee1">directory.h</a>
+</li>
+<li>directory_request_set_dir_addr_port()
+: <a class="el" href="directory_8c.html#a54586f3724c9b07dc9a28da6c496f92c">directory.c</a>
+, <a class="el" href="directory_8h.html#a54586f3724c9b07dc9a28da6c496f92c">directory.h</a>
+</li>
+<li>directory_request_set_directory_id_digest()
+: <a class="el" href="directory_8c.html#aa8e97475dd051b61e3e32585a7a3cf6c">directory.c</a>
+, <a class="el" href="directory_8h.html#aa8e97475dd051b61e3e32585a7a3cf6c">directory.h</a>
+</li>
+<li>directory_request_set_guard_state()
+: <a class="el" href="directory_8c.html#a619df20778c681f53b681bebc9802976">directory.c</a>
+, <a class="el" href="directory_8h.html#a51da81e00e4747ab55fb4af6dc1bc3c8">directory.h</a>
+</li>
+<li>directory_request_set_if_modified_since()
+: <a class="el" href="directory_8c.html#a2378f74f545dc3bd8f37daaacbf56294">directory.c</a>
+, <a class="el" href="directory_8h.html#a2378f74f545dc3bd8f37daaacbf56294">directory.h</a>
+</li>
+<li>directory_request_set_indirection()
+: <a class="el" href="directory_8c.html#a73c93da738cdb4945e336e4efc37dce7">directory.c</a>
+, <a class="el" href="directory_8h.html#a73c93da738cdb4945e336e4efc37dce7">directory.h</a>
+</li>
+<li>directory_request_set_or_addr_port()
+: <a class="el" href="directory_8c.html#a0fad9324c6504d8bf509247168e1b819">directory.c</a>
+, <a class="el" href="directory_8h.html#a0fad9324c6504d8bf509247168e1b819">directory.h</a>
+</li>
+<li>directory_request_set_payload()
+: <a class="el" href="directory_8c.html#ac2f9c30557e169548ab5871462d6ddd6">directory.c</a>
+, <a class="el" href="directory_8h.html#ac2f9c30557e169548ab5871462d6ddd6">directory.h</a>
+</li>
+<li>directory_request_set_rend_query()
+: <a class="el" href="directory_8c.html#aa038c1c27a5a5469ce9745a65fe1458e">directory.c</a>
+, <a class="el" href="directory_8h.html#aa038c1c27a5a5469ce9745a65fe1458e">directory.h</a>
+</li>
+<li>directory_request_set_resource()
+: <a class="el" href="directory_8c.html#a0f8877f88add95ceea302a569a095569">directory.c</a>
+, <a class="el" href="directory_8h.html#a0f8877f88add95ceea302a569a095569">directory.h</a>
+</li>
+<li>directory_request_set_router_purpose()
+: <a class="el" href="directory_8c.html#a9573f64df7aa31baf290b23ca8dbcee2">directory.c</a>
+, <a class="el" href="directory_8h.html#a9573f64df7aa31baf290b23ca8dbcee2">directory.h</a>
+</li>
+<li>directory_request_set_routerstatus()
+: <a class="el" href="directory_8c.html#a80d02180af0001ba29cdb088eeab3fba">directory.c</a>
+, <a class="el" href="directory_8h.html#a563eeb61880279783771d2f65b837c50">directory.h</a>
+</li>
+<li>directory_request_upload_set_hs_ident()
+: <a class="el" href="directory_8c.html#afb1872de41e8c93f3995a3cd6de31382">directory.c</a>
+, <a class="el" href="directory_8h.html#afb1872de41e8c93f3995a3cd6de31382">directory.h</a>
 </li>
 <li>directory_too_idle_to_fetch_descriptors()
 : <a class="el" href="dirserv_8c.html#a2c5edbbd6883a33af3d72bfead4033db">dirserv.c</a>
@@ -258,15 +319,16 @@ $(function() {
 : <a class="el" href="dirserv_8c.html#ac19029821b6c2868fd554e3b38e1ab59">dirserv.c</a>
 </li>
 <li>dirserv_clear_measured_bw_cache()
-: <a class="el" href="dirserv_8c.html#affc919a1a21f4d10e5844a19531140d1">dirserv.c</a>
+: <a class="el" href="dirserv_8c.html#af70a376b32a1d064cb589d81fa2f64d3">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#af70a376b32a1d064cb589d81fa2f64d3">dirserv.h</a>
 </li>
-<li>dirserv_estimate_data_size()
-: <a class="el" href="dirserv_8c.html#a8563ff795e78b4677acaec59712726bb">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#a8563ff795e78b4677acaec59712726bb">dirserv.h</a>
+<li>dirserv_compute_performance_thresholds()
+: <a class="el" href="dirserv_8c.html#a6254e57429acb014cb8026a0cd8cc087">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#a6254e57429acb014cb8026a0cd8cc087">dirserv.h</a>
 </li>
-<li>dirserv_estimate_microdesc_size()
-: <a class="el" href="dirserv_8c.html#a48cee7ff92f2da41f67b8f2a332ffa5a">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#a48cee7ff92f2da41f67b8f2a332ffa5a">dirserv.h</a>
+<li>dirserv_count_measured_bws()
+: <a class="el" href="dirserv_8h.html#a5bf5f153e699ad278fca9fb9371b2b0c">dirserv.h</a>
+, <a class="el" href="dirserv_8c.html#a5bf5f153e699ad278fca9fb9371b2b0c">dirserv.c</a>
 </li>
 <li>dirserv_expire_measured_bw_cache()
 : <a class="el" href="dirserv_8c.html#ab797c233e08456a060af12f1f85bbe88">dirserv.c</a>
@@ -280,7 +342,7 @@ $(function() {
 , <a class="el" href="dirserv_8h.html#a952a2a3f8acd42cdebbae8631123cf1c">dirserv.h</a>
 </li>
 <li>dirserv_generate_networkstatus_vote_obj()
-: <a class="el" href="dirserv_8c.html#ae288382ee634aeb5099f263fa9af8c25">dirserv.c</a>
+: <a class="el" href="dirvote_8c.html#ae288382ee634aeb5099f263fa9af8c25">dirvote.c</a>
 , <a class="el" href="dirvote_8h.html#ae288382ee634aeb5099f263fa9af8c25">dirvote.h</a>
 </li>
 <li>dirserv_get_consensus()
@@ -292,37 +354,32 @@ $(function() {
 , <a class="el" href="dirserv_8h.html#a5be126c4926e7257fa5fbe5463ff4a6a">dirserv.h</a>
 </li>
 <li>dirserv_get_measured_bw_cache_size()
-: <a class="el" href="dirserv_8c.html#a05e0b9d58ea3e9d0bf6d68a3aa6d7a06">dirserv.c</a>
+: <a class="el" href="dirserv_8c.html#a2a58cd8f1b1e22a024a25ec69c3a64ac">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#a2a58cd8f1b1e22a024a25ec69c3a64ac">dirserv.h</a>
 </li>
-<li>dirserv_get_routerdesc_fingerprints()
-: <a class="el" href="dirserv_8c.html#a285fc71bfe2b99bc2b09b949d95ac1b9">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#a285fc71bfe2b99bc2b09b949d95ac1b9">dirserv.h</a>
+<li>dirserv_get_routerdesc_spool()
+: <a class="el" href="dirserv_8c.html#a63ffc938377a00e7123a17569db911ed">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#a2e2cb1b422b5391b4b128813aac0971c">dirserv.h</a>
 </li>
 <li>dirserv_get_routerdescs()
 : <a class="el" href="dirserv_8c.html#a8fca5a38cd000d8ccabe5bc73e296bb2">dirserv.c</a>
 , <a class="el" href="dirserv_8h.html#a8fca5a38cd000d8ccabe5bc73e296bb2">dirserv.h</a>
 </li>
 <li>dirserv_has_measured_bw()
-: <a class="el" href="dirserv_8c.html#a21b4084acb1e20906fe38d1a0a905986">dirserv.c</a>
-</li>
-<li>dirserv_have_any_microdesc()
-: <a class="el" href="dirserv_8c.html#a89dcb27b45f04c12e789dee837b90fdc">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#a89dcb27b45f04c12e789dee837b90fdc">dirserv.h</a>
-</li>
-<li>dirserv_have_any_serverdesc()
-: <a class="el" href="dirserv_8c.html#a7c84a4724e9a8934918c2c8dcc927f0c">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#a7c84a4724e9a8934918c2c8dcc927f0c">dirserv.h</a>
+: <a class="el" href="dirserv_8c.html#ab77a8f39d9154260c0c9ab4abcaa1a58">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#ab77a8f39d9154260c0c9ab4abcaa1a58">dirserv.h</a>
 </li>
 <li>dirserv_load_fingerprint_file()
 : <a class="el" href="dirserv_8c.html#a258a245ff1505a9ea50b06de2b3e490f">dirserv.c</a>
 , <a class="el" href="dirserv_8h.html#a258a245ff1505a9ea50b06de2b3e490f">dirserv.h</a>
 </li>
 <li>dirserv_orconn_tls_done()
-: <a class="el" href="dirserv_8c.html#a8dd4c13ef93596eaa704393dbc6828e0">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#a8dd4c13ef93596eaa704393dbc6828e0">dirserv.h</a>
+: <a class="el" href="dirserv_8c.html#a2b981b610d4a3344b17a55300072ef66">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#a2b981b610d4a3344b17a55300072ef66">dirserv.h</a>
 </li>
 <li>dirserv_query_measured_bw_cache_kb()
-: <a class="el" href="dirserv_8c.html#a4a93860d395d1c2d9d50a360d013f365">dirserv.c</a>
+: <a class="el" href="dirserv_8c.html#a6162d3c2d43a0ba2921b9f8902fe3cfa">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#ab83fe95748f2a7626fbb05f2ada5896e">dirserv.h</a>
 </li>
 <li>dirserv_read_guardfraction_file()
 : <a class="el" href="dirserv_8c.html#a50e06fc916d8cbcc3ccfb7f919cb6928">dirserv.c</a>
@@ -332,20 +389,16 @@ $(function() {
 : <a class="el" href="dirserv_8c.html#a321d38c3a8578f36a42cef18c507bc90">dirserv.c</a>
 </li>
 <li>dirserv_read_measured_bandwidths()
-: <a class="el" href="dirserv_8h.html#af364b236821a07880cc8dc54e98ca999">dirserv.h</a>
-, <a class="el" href="dirserv_8c.html#af364b236821a07880cc8dc54e98ca999">dirserv.c</a>
-</li>
-<li>dirserv_remove_old_statuses()
-: <a class="el" href="dirserv_8c.html#af00dc463b7670924195592f7922afdfc">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#af00dc463b7670924195592f7922afdfc">dirserv.h</a>
+: <a class="el" href="dirserv_8c.html#af364b236821a07880cc8dc54e98ca999">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#af364b236821a07880cc8dc54e98ca999">dirserv.h</a>
 </li>
 <li>dirserv_router_get_status()
-: <a class="el" href="dirserv_8c.html#a95906070553304c94a590affb671223e">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#a95906070553304c94a590affb671223e">dirserv.h</a>
+: <a class="el" href="dirserv_8h.html#a95906070553304c94a590affb671223e">dirserv.h</a>
+, <a class="el" href="dirserv_8c.html#a95906070553304c94a590affb671223e">dirserv.c</a>
 </li>
 <li>dirserv_set_cached_consensus_networkstatus()
-: <a class="el" href="dirserv_8c.html#af60d63ae445884beb62813d3fd046c31">dirserv.c</a>
-, <a class="el" href="dirserv_8h.html#ab549d651e2fad3464f44c0e778821865">dirserv.h</a>
+: <a class="el" href="dirserv_8c.html#a4437cab3cce2d3058376bec071422015">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#a4ae8f9b0f02056a69bd8c92adda96579">dirserv.h</a>
 </li>
 <li>dirserv_set_node_flags_from_authoritative_status()
 : <a class="el" href="dirserv_8c.html#a5f2508c28e6b8a1d7b9ae921598a9860">dirserv.c</a>
@@ -359,12 +412,20 @@ $(function() {
 : <a class="el" href="dirserv_8c.html#a1808f4f273d59d32f2e29b968165e251">dirserv.c</a>
 </li>
 <li>dirserv_should_launch_reachability_test()
-: <a class="el" href="dirserv_8h.html#a0c97fbc43a4398a45feb2fafa3d42fc1">dirserv.h</a>
-, <a class="el" href="dirserv_8c.html#a0c97fbc43a4398a45feb2fafa3d42fc1">dirserv.c</a>
+: <a class="el" href="dirserv_8c.html#a0c97fbc43a4398a45feb2fafa3d42fc1">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#a0c97fbc43a4398a45feb2fafa3d42fc1">dirserv.h</a>
 </li>
 <li>dirserv_single_reachability_test()
 : <a class="el" href="dirserv_8c.html#a87235a887afe2a5f796bd9a88b474909">dirserv.c</a>
 , <a class="el" href="dirserv_8h.html#a87235a887afe2a5f796bd9a88b474909">dirserv.h</a>
+</li>
+<li>dirserv_spool_remove_missing_and_guess_size()
+: <a class="el" href="dirserv_8c.html#a37b7370c96e2e908512aea4ea2b3f458">dirserv.c</a>
+, <a class="el" href="dirserv_8h.html#a37b7370c96e2e908512aea4ea2b3f458">dirserv.h</a>
+</li>
+<li>dirserv_spool_sort()
+: <a class="el" href="dirserv_8h.html#a126be24e35ded1467ae68c81afee15bf">dirserv.h</a>
+, <a class="el" href="dirserv_8c.html#a126be24e35ded1467ae68c81afee15bf">dirserv.c</a>
 </li>
 <li>dirserv_test_reachability()
 : <a class="el" href="dirserv_8c.html#aac91a65fca7d877c033a594a96203ad7">dirserv.c</a>
@@ -375,66 +436,45 @@ $(function() {
 , <a class="el" href="dirserv_8h.html#abbb851f560879781b07f4b99762f45b3">dirserv.h</a>
 </li>
 <li>dirvote_act()
-: <a class="el" href="dirvote_8c.html#a333f56fb4797757ca9e04bee1550cabe">dirvote.c</a>
-, <a class="el" href="dirvote_8h.html#a333f56fb4797757ca9e04bee1550cabe">dirvote.h</a>
+: <a class="el" href="dirvote_8c.html#a400b5c51c76c06099342ee3501f5f66d">dirvote.c</a>
 </li>
 <li>dirvote_add_signatures()
 : <a class="el" href="dirvote_8c.html#a705721f192e93574c305f27b7e24f272">dirvote.c</a>
-, <a class="el" href="dirvote_8h.html#ad03bc934480606343e40ebc07c6fd22b">dirvote.h</a>
 </li>
 <li>dirvote_add_vote()
-: <a class="el" href="dirvote_8h.html#a41039a7c25c1f8a8be7d042dd256a4ad">dirvote.h</a>
-, <a class="el" href="dirvote_8c.html#ae4e7e393e4261047243c1c3f339886e4">dirvote.c</a>
+: <a class="el" href="dirvote_8c.html#ae4e7e393e4261047243c1c3f339886e4">dirvote.c</a>
 </li>
 <li>dirvote_compute_params()
 : <a class="el" href="dirvote_8c.html#ae8fd15ddb8a25674fa692b574339503c">dirvote.c</a>
 </li>
 <li>dirvote_create_microdescriptor()
-: <a class="el" href="dirvote_8c.html#a97feb95be6e8e94295fa6775355318ee">dirvote.c</a>
-, <a class="el" href="dirvote_8h.html#a97feb95be6e8e94295fa6775355318ee">dirvote.h</a>
+: <a class="el" href="dirvote_8c.html#a059168318a87de5f77438cbcefdb73ed">dirvote.c</a>
 </li>
 <li>dirvote_format_all_microdesc_vote_lines()
-: <a class="el" href="dirvote_8c.html#a7c8c11aee1a421ac4cd72f1d020ac6d5">dirvote.c</a>
-, <a class="el" href="dirvote_8h.html#a7c8c11aee1a421ac4cd72f1d020ac6d5">dirvote.h</a>
-</li>
-<li>dirvote_format_microdesc_vote_line()
-: <a class="el" href="dirvote_8c.html#aadeea5dccfa87bef2915fd6e9ad92a39">dirvote.c</a>
-, <a class="el" href="dirvote_8h.html#a914458f7367ecc3c6827787d674fd52a">dirvote.h</a>
+: <a class="el" href="dirvote_8h.html#a7c8c11aee1a421ac4cd72f1d020ac6d5">dirvote.h</a>
+, <a class="el" href="dirvote_8c.html#a7c8c11aee1a421ac4cd72f1d020ac6d5">dirvote.c</a>
 </li>
 <li>dirvote_free_all()
 : <a class="el" href="dirvote_8c.html#a585a4928108f1321756e08eb86712d51">dirvote.c</a>
-, <a class="el" href="dirvote_8h.html#a585a4928108f1321756e08eb86712d51">dirvote.h</a>
 </li>
 <li>dirvote_get_intermediate_param_value()
 : <a class="el" href="dirvote_8c.html#a53c84b14cb4293be3481901a2bf7d344">dirvote.c</a>
 </li>
-<li>dirvote_get_preferred_voting_intervals()
-: <a class="el" href="dirvote_8h.html#a60188357707e416d29de6342bc32a883">dirvote.h</a>
-, <a class="el" href="dirvote_8c.html#a60188357707e416d29de6342bc32a883">dirvote.c</a>
-</li>
-<li>dirvote_get_start_of_next_interval()
-: <a class="el" href="dirvote_8h.html#ad12be9f1748f89ce9e33a895218912fb">dirvote.h</a>
-, <a class="el" href="dirvote_8c.html#ad12be9f1748f89ce9e33a895218912fb">dirvote.c</a>
-</li>
 <li>dirvote_get_vote()
-: <a class="el" href="dirvote_8h.html#a6905fdc89a2bce64a9f79c526c140f94">dirvote.h</a>
-, <a class="el" href="dirvote_8c.html#a6905fdc89a2bce64a9f79c526c140f94">dirvote.c</a>
-</li>
-<li>dirvote_recalculate_timing()
-: <a class="el" href="dirvote_8c.html#aab7ea3ac9bbece8dbdd6c3c167dc0ae9">dirvote.c</a>
-, <a class="el" href="dirvote_8h.html#aab7ea3ac9bbece8dbdd6c3c167dc0ae9">dirvote.h</a>
+: <a class="el" href="dirvote_8c.html#a6905fdc89a2bce64a9f79c526c140f94">dirvote.c</a>
+, <a class="el" href="dirvote_8h.html#a6905fdc89a2bce64a9f79c526c140f94">dirvote.h</a>
 </li>
 <li>disable_control_logging()
 : <a class="el" href="control_8h.html#a3cf18ec51013b4b0b8b104ef4509ca61">control.h</a>
 , <a class="el" href="control_8c.html#a3cf18ec51013b4b0b8b104ef4509ca61">control.c</a>
 </li>
 <li>dns_clip_ttl()
-: <a class="el" href="dns_8h.html#adae55d1d541c43481d02de8254a805ec">dns.h</a>
-, <a class="el" href="dns_8c.html#adae55d1d541c43481d02de8254a805ec">dns.c</a>
+: <a class="el" href="dns_8c.html#adae55d1d541c43481d02de8254a805ec">dns.c</a>
+, <a class="el" href="dns_8h.html#adae55d1d541c43481d02de8254a805ec">dns.h</a>
 </li>
 <li>dns_free_all()
-: <a class="el" href="dns_8h.html#a87870a99d044d10adab219c61f4185a4">dns.h</a>
-, <a class="el" href="dns_8c.html#a87870a99d044d10adab219c61f4185a4">dns.c</a>
+: <a class="el" href="dns_8c.html#a87870a99d044d10adab219c61f4185a4">dns.c</a>
+, <a class="el" href="dns_8h.html#a87870a99d044d10adab219c61f4185a4">dns.h</a>
 </li>
 <li>dns_init()
 : <a class="el" href="dns_8h.html#a100ddc42d1f3411bc6cfbc6185af76ae">dns.h</a>
@@ -445,68 +485,68 @@ $(function() {
 , <a class="el" href="dns_8c.html#adf46fd8cafe93cc99a378d292b852c46">dns.c</a>
 </li>
 <li>dns_reset()
-: <a class="el" href="dns_8c.html#abc88406c6e9c82925d506b30b1e42c14">dns.c</a>
-, <a class="el" href="dns_8h.html#abc88406c6e9c82925d506b30b1e42c14">dns.h</a>
+: <a class="el" href="dns_8h.html#abc88406c6e9c82925d506b30b1e42c14">dns.h</a>
+, <a class="el" href="dns_8c.html#abc88406c6e9c82925d506b30b1e42c14">dns.c</a>
 </li>
 <li>dns_reset_correctness_checks()
 : <a class="el" href="dns_8h.html#a307a827eed6277f5125f6503da3ddbe2">dns.h</a>
 , <a class="el" href="dns_8c.html#a307a827eed6277f5125f6503da3ddbe2">dns.c</a>
 </li>
 <li>dns_resolve()
-: <a class="el" href="dns_8h.html#aa1ffeb643093b409c75573a27574afbc">dns.h</a>
-, <a class="el" href="dns_8c.html#aa1ffeb643093b409c75573a27574afbc">dns.c</a>
+: <a class="el" href="dns_8c.html#aa1ffeb643093b409c75573a27574afbc">dns.c</a>
+, <a class="el" href="dns_8h.html#aa1ffeb643093b409c75573a27574afbc">dns.h</a>
 </li>
 <li>dns_seems_to_be_broken()
 : <a class="el" href="dns_8h.html#a2b819cc48d2e8107d9679acb409a5e10">dns.h</a>
 , <a class="el" href="dns_8c.html#a2b819cc48d2e8107d9679acb409a5e10">dns.c</a>
 </li>
 <li>dns_seems_to_be_broken_for_ipv6()
-: <a class="el" href="dns_8c.html#a9e4cbe37fe053a171b05c21230dac9d9">dns.c</a>
-, <a class="el" href="dns_8h.html#a9e4cbe37fe053a171b05c21230dac9d9">dns.h</a>
+: <a class="el" href="dns_8h.html#a9e4cbe37fe053a171b05c21230dac9d9">dns.h</a>
+, <a class="el" href="dns_8c.html#a9e4cbe37fe053a171b05c21230dac9d9">dns.c</a>
 </li>
 <li>dns_servers_relaunch_checks()
-: <a class="el" href="main_8h.html#a1725c3c7eee555118c2f19cebe1ca00d">main.h</a>
-, <a class="el" href="main_8c.html#a1725c3c7eee555118c2f19cebe1ca00d">main.c</a>
+: <a class="el" href="main_8c.html#a1725c3c7eee555118c2f19cebe1ca00d">main.c</a>
+, <a class="el" href="main_8h.html#a1725c3c7eee555118c2f19cebe1ca00d">main.h</a>
 </li>
 <li>dnsserv_close_listener()
 : <a class="el" href="dnsserv_8h.html#af28e0da29fe3a31f27f505a82e4321c8">dnsserv.h</a>
 , <a class="el" href="dnsserv_8c.html#af28e0da29fe3a31f27f505a82e4321c8">dnsserv.c</a>
 </li>
 <li>dnsserv_configure_listener()
-: <a class="el" href="dnsserv_8h.html#a062a441e53c65a098426937bdfd6cd68">dnsserv.h</a>
-, <a class="el" href="dnsserv_8c.html#a062a441e53c65a098426937bdfd6cd68">dnsserv.c</a>
+: <a class="el" href="dnsserv_8c.html#a062a441e53c65a098426937bdfd6cd68">dnsserv.c</a>
+, <a class="el" href="dnsserv_8h.html#a062a441e53c65a098426937bdfd6cd68">dnsserv.h</a>
 </li>
 <li>dnsserv_launch_request()
 : <a class="el" href="dnsserv_8c.html#a4bd6c66966b4a68aad38d36bf86dde79">dnsserv.c</a>
 , <a class="el" href="dnsserv_8h.html#ac41a3d6a1cbe663ab2e46b5970f80050">dnsserv.h</a>
 </li>
 <li>dnsserv_reject_request()
-: <a class="el" href="dnsserv_8c.html#a0ec406c458245341e6db5722e03a5baf">dnsserv.c</a>
-, <a class="el" href="dnsserv_8h.html#a0ec406c458245341e6db5722e03a5baf">dnsserv.h</a>
+: <a class="el" href="dnsserv_8h.html#a0ec406c458245341e6db5722e03a5baf">dnsserv.h</a>
+, <a class="el" href="dnsserv_8c.html#a0ec406c458245341e6db5722e03a5baf">dnsserv.c</a>
 </li>
 <li>dnsserv_resolved()
 : <a class="el" href="dnsserv_8c.html#a6ba3ae36da13920d1f56555c60f2993e">dnsserv.c</a>
 , <a class="el" href="dnsserv_8h.html#a6ba3ae36da13920d1f56555c60f2993e">dnsserv.h</a>
 </li>
 <li>do_main_loop()
-: <a class="el" href="main_8h.html#a842d938cd262fb19c7c4d6177ccaa6fb">main.h</a>
-, <a class="el" href="main_8c.html#a842d938cd262fb19c7c4d6177ccaa6fb">main.c</a>
+: <a class="el" href="main_8c.html#a842d938cd262fb19c7c4d6177ccaa6fb">main.c</a>
+, <a class="el" href="main_8h.html#a842d938cd262fb19c7c4d6177ccaa6fb">main.h</a>
 </li>
 <li>document_signature_dup()
-: <a class="el" href="networkstatus_8h.html#aa1f84b0c46db64ef2af6a8f2d5f9c25c">networkstatus.h</a>
-, <a class="el" href="networkstatus_8c.html#aa1f84b0c46db64ef2af6a8f2d5f9c25c">networkstatus.c</a>
+: <a class="el" href="networkstatus_8c.html#aa1f84b0c46db64ef2af6a8f2d5f9c25c">networkstatus.c</a>
+, <a class="el" href="networkstatus_8h.html#aa1f84b0c46db64ef2af6a8f2d5f9c25c">networkstatus.h</a>
 </li>
-<li>document_signature_free()
-: <a class="el" href="networkstatus_8c.html#af6fa8990a971778c3d879c662c1579a9">networkstatus.c</a>
-, <a class="el" href="networkstatus_8h.html#af6fa8990a971778c3d879c662c1579a9">networkstatus.h</a>
+<li>document_signature_free_()
+: <a class="el" href="networkstatus_8c.html#a515529f6d2dbe7d504d291801ae5939b">networkstatus.c</a>
+, <a class="el" href="networkstatus_8h.html#a515529f6d2dbe7d504d291801ae5939b">networkstatus.h</a>
 </li>
 <li>download_status_get_n_attempts()
 : <a class="el" href="directory_8h.html#a465b447ad179780a88ffb88f1aeae12e">directory.h</a>
 , <a class="el" href="directory_8c.html#a465b447ad179780a88ffb88f1aeae12e">directory.c</a>
 </li>
 <li>download_status_get_n_failures()
-: <a class="el" href="directory_8h.html#a59a315ee3b1551a73aceac163faecd85">directory.h</a>
-, <a class="el" href="directory_8c.html#a59a315ee3b1551a73aceac163faecd85">directory.c</a>
+: <a class="el" href="directory_8c.html#a59a315ee3b1551a73aceac163faecd85">directory.c</a>
+, <a class="el" href="directory_8h.html#a59a315ee3b1551a73aceac163faecd85">directory.h</a>
 </li>
 <li>download_status_get_next_attempt_at()
 : <a class="el" href="directory_8c.html#acfdb8594e1a676e38ca79913320dea3e">directory.c</a>
@@ -517,22 +557,24 @@ $(function() {
 , <a class="el" href="directory_8c.html#abfbbd8729f4c0f94b6080020a729bc70">directory.c</a>
 </li>
 <li>download_status_increment_failure()
-: <a class="el" href="directory_8h.html#ad030aefd2edb06cac0a0477457631fab">directory.h</a>
-, <a class="el" href="directory_8c.html#ad030aefd2edb06cac0a0477457631fab">directory.c</a>
+: <a class="el" href="directory_8c.html#ad030aefd2edb06cac0a0477457631fab">directory.c</a>
+, <a class="el" href="directory_8h.html#ad030aefd2edb06cac0a0477457631fab">directory.h</a>
 </li>
 <li>download_status_reset()
 : <a class="el" href="directory_8c.html#ae0c46dd4ad90ff8350a03414a4d79307">directory.c</a>
 , <a class="el" href="directory_8h.html#ae0c46dd4ad90ff8350a03414a4d79307">directory.h</a>
 </li>
 <li>download_status_schedule_get_delay()
-: <a class="el" href="directory_8c.html#ad1fb73884e5ae3df6dea7d1bbb85634d">directory.c</a>
+: <a class="el" href="directory_8c.html#a436d633af7ce1becc0d71068ed466828">directory.c</a>
+</li>
+<li>DUMMY_TYPECHECK_INSTANCE()
+: <a class="el" href="config_8c.html#ac7904b90e061b9fb964e884ace2af3c0">config.c</a>
+, <a class="el" href="shared__random__state_8c.html#a483688400aa2c596145dec5b50747eab">shared_random_state.c</a>
+, <a class="el" href="statefile_8c.html#ae575a065831572dae58dabc9b4b50364">statefile.c</a>
 </li>
 <li>dump_cell_pool_usage()
-: <a class="el" href="relay_8c.html#a399571f2db1cf148aa247ae8186f4732">relay.c</a>
-, <a class="el" href="relay_8h.html#a399571f2db1cf148aa247ae8186f4732">relay.h</a>
-</li>
-<li>dump_desc()
-: <a class="el" href="routerparse_8c.html#aed319ab6887b0eb56eff46fd83684017">routerparse.c</a>
+: <a class="el" href="relay_8h.html#a399571f2db1cf148aa247ae8186f4732">relay.h</a>
+, <a class="el" href="relay_8c.html#a399571f2db1cf148aa247ae8186f4732">relay.c</a>
 </li>
 <li>dump_desc_fifo_cleanup()
 : <a class="el" href="routerparse_8c.html#a87185b16e92ff1ca520cd5293c20531d">routerparse.c</a>
@@ -547,10 +589,6 @@ $(function() {
 <li>dump_dns_mem_usage()
 : <a class="el" href="dns_8c.html#a810cf2d60d161a15ffada266dcddf3a4">dns.c</a>
 , <a class="el" href="dns_8h.html#a810cf2d60d161a15ffada266dcddf3a4">dns.h</a>
-</li>
-<li>dump_pk_ops()
-: <a class="el" href="rephist_8h.html#a445ff3ee23999b52d45c456c7b4f8e63">rephist.h</a>
-, <a class="el" href="rephist_8c.html#a445ff3ee23999b52d45c456c7b4f8e63">rephist.c</a>
 </li>
 <li>dump_routerlist_mem_usage()
 : <a class="el" href="routerlist_8c.html#a5062bf36695d11df627a5d3cda2954fe">routerlist.c</a>

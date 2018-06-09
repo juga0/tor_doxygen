@@ -77,18 +77,6 @@ Data Fields</h2></td></tr>
 <tr class="separator:a52056cf331e1775b7f12be9c45a2c484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3be84374ff7f8ff3ffd0c9a18daf0fa"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__history__t.html#ae3be84374ff7f8ff3ffd0c9a18daf0fa">changed</a></td></tr>
 <tr class="separator:ae3be84374ff7f8ff3ffd0c9a18daf0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5bda56f8830d5e2e106c4bf4d79140a"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__history__t.html#af5bda56f8830d5e2e106c4bf4d79140a">n_conn_ok</a></td></tr>
-<tr class="separator:af5bda56f8830d5e2e106c4bf4d79140a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ef4d994b6d24a8c56a5ae0e856a6ce8"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__history__t.html#a8ef4d994b6d24a8c56a5ae0e856a6ce8">n_conn_fail</a></td></tr>
-<tr class="separator:a8ef4d994b6d24a8c56a5ae0e856a6ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada266441835f6c84df287080413b8c3f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__history__t.html#ada266441835f6c84df287080413b8c3f">uptime</a></td></tr>
-<tr class="separator:ada266441835f6c84df287080413b8c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a15b1a3649f5fe2829f9fd8b199c16f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__history__t.html#a2a15b1a3649f5fe2829f9fd8b199c16f">downtime</a></td></tr>
-<tr class="separator:a2a15b1a3649f5fe2829f9fd8b199c16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a02161d320e57d4b1e4ea0d5593b977"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__history__t.html#a1a02161d320e57d4b1e4ea0d5593b977">up_since</a></td></tr>
-<tr class="separator:a1a02161d320e57d4b1e4ea0d5593b977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3c9be2d5e02f2a601065e557a3e7ff0"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__history__t.html#ae3c9be2d5e02f2a601065e557a3e7ff0">down_since</a></td></tr>
-<tr class="separator:ae3c9be2d5e02f2a601065e557a3e7ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae77e505cf1ce7931260f3116836de68e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__addr__t.html">tor_addr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__history__t.html#ae77e505cf1ce7931260f3116836de68e">last_reached_addr</a></td></tr>
 <tr class="separator:ae77e505cf1ce7931260f3116836de68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1bb50fe36eb760427b6a9758365c0d5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__history__t.html#ab1bb50fe36eb760427b6a9758365c0d5">last_reached_port</a></td></tr>
@@ -108,8 +96,6 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>weighted_upt
 <tr class="memitem:ab4191b6e15f831cd5b2e29e8daa596b6"><td class="memItemLeft" align="right" valign="top"><a id="ab4191b6e15f831cd5b2e29e8daa596b6"></a>
 unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>total_weighted_time</b></td></tr>
 <tr class="separator:ab4191b6e15f831cd5b2e29e8daa596b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf64fc52f89381f16b80e9c530ea32b7"><td class="memItemLeft" align="right" valign="top">digestmap_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__history__t.html#adf64fc52f89381f16b80e9c530ea32b7">link_history_map</a></td></tr>
-<tr class="separator:adf64fc52f89381f16b80e9c530ea32b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>History of an OR. </p>
@@ -126,36 +112,6 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>total_weight
       </table>
 </div><div class="memdoc">
 <p>When did we most recently note a change to this OR? </p>
-
-</div>
-</div>
-<a id="ae3c9be2d5e02f2a601065e557a3e7ff0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3c9be2d5e02f2a601065e557a3e7ff0">&#9670;&nbsp;</a></span>down_since</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t down_since</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If nonzero, we have been unable to connect since this time. </p>
-
-</div>
-</div>
-<a id="a2a15b1a3649f5fe2829f9fd8b199c16f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a15b1a3649f5fe2829f9fd8b199c16f">&#9670;&nbsp;</a></span>downtime</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned long downtime</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How many seconds have we been unable to connect to this OR before 'down_since'? </p>
 
 </div>
 </div>
@@ -186,51 +142,6 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>total_weight
       </table>
 </div><div class="memdoc">
 <p>The port at which we most recently connected to this OR successfully </p>
-
-</div>
-</div>
-<a id="adf64fc52f89381f16b80e9c530ea32b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf64fc52f89381f16b80e9c530ea32b7">&#9670;&nbsp;</a></span>link_history_map</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">digestmap_t* link_history_map</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Map from hex OR2 identity digest to a <a class="el" href="structlink__history__t.html">link_history_t</a> for the link from this OR to OR2. </p>
-
-</div>
-</div>
-<a id="a8ef4d994b6d24a8c56a5ae0e856a6ce8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ef4d994b6d24a8c56a5ae0e856a6ce8">&#9670;&nbsp;</a></span>n_conn_fail</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned long n_conn_fail</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How many times did we try to connect and fail? </p>
-
-</div>
-</div>
-<a id="af5bda56f8830d5e2e106c4bf4d79140a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5bda56f8830d5e2e106c4bf4d79140a">&#9670;&nbsp;</a></span>n_conn_ok</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned long n_conn_ok</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How many times did we successfully connect? </p>
 
 </div>
 </div>
@@ -276,36 +187,6 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>total_weight
       </table>
 </div><div class="memdoc">
 <p>Sum of weights for runs in weighted_run_length. </p>
-
-</div>
-</div>
-<a id="a1a02161d320e57d4b1e4ea0d5593b977"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a02161d320e57d4b1e4ea0d5593b977">&#9670;&nbsp;</a></span>up_since</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t up_since</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If nonzero, we have been connected since this time. </p>
-
-</div>
-</div>
-<a id="ada266441835f6c84df287080413b8c3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada266441835f6c84df287080413b8c3f">&#9670;&nbsp;</a></span>uptime</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned long uptime</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How many seconds have we been connected to this OR before 'up_since'? </p>
 
 </div>
 </div>

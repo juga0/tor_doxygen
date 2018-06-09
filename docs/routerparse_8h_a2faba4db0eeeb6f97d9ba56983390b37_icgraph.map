@@ -1,3 +1,4 @@
 <map id="rend_parse_v2_service_descriptor" name="rend_parse_v2_service_descriptor">
-<area shape="rect" id="node2" href="$rendcache_8h.html#a0029729f71187fd666fb549197645b7e" title="rend_cache_store_v2\l_desc_as_dir" alt="" coords="209,5,356,47"/>
+<area shape="rect" id="node2" href="$rendcache_8h.html#a0029729f71187fd666fb549197645b7e" title="rend_cache_store_v2\l_desc_as_dir" alt="" coords="224,5,371,47"/>
+<area shape="rect" id="node3" href="$rendcommon_8c.html#a8fd972a1eacaa6e1208f2d02a51ba824" title="rend_desc_v2_is_parsable" alt="" coords="209,71,385,98"/>
 </map>

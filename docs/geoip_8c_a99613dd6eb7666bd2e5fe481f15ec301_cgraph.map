@@ -1,5 +1,6 @@
 <map id="geoip_load_file" name="geoip_load_file">
-<area shape="rect" id="node2" href="$config_8c.html#ad09b1993fdca508d228a7585813efcac" title="options_need_geoip_info" alt="" coords="161,5,327,32"/>
-<area shape="rect" id="node4" href="$compat_8c.html#a99ee17f8317be48a2391c20e31e8a7b8" title="tor_fopen_cloexec" alt="" coords="180,56,308,83"/>
-<area shape="rect" id="node3" href="$routerset_8c.html#a06782dad9f20dd3a3da80d9df1d4c3b3" title="routerset_needs_geoip" alt="" coords="375,5,528,32"/>
+<area shape="rect" id="node2" href="$config_8c.html#ad09b1993fdca508d228a7585813efcac" title="options_need_geoip_info" alt="" coords="161,31,327,57"/>
+<area shape="rect" id="node5" href="$compat_8c.html#a99ee17f8317be48a2391c20e31e8a7b8" title="tor_fopen_cloexec" alt="" coords="180,81,308,108"/>
+<area shape="rect" id="node3" href="$geoip_8c.html#aecc961d6ac7cd75ec8593321d51d909a" title="should_record_bridge_info" alt="" coords="375,5,548,32"/>
+<area shape="rect" id="node4" href="$routerset_8c.html#a06782dad9f20dd3a3da80d9df1d4c3b3" title="routerset_needs_geoip" alt="" coords="385,56,538,83"/>
 </map>

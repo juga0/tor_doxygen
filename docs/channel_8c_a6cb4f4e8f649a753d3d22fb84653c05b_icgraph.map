@@ -1,4 +1,5 @@
 <map id="channel_matches_extend_info" name="channel_matches_extend_info">
-<area shape="rect" id="node2" href="$circuitlist_8h.html#aaef0c4aefe50f0432478e21e51814a34" title="circuit_get_all_pending\l_on_channel" alt="" coords="252,5,407,47"/>
-<area shape="rect" id="node3" href="$circuitlist_8h.html#aa797a036ce04a0d14f669e656ec62408" title="circuit_count_pending\l_on_channel" alt="" coords="455,5,603,47"/>
+<area shape="rect" id="node2" href="$circuitlist_8h.html#aaef0c4aefe50f0432478e21e51814a34" title="circuit_get_all_pending\l_on_channel" alt="" coords="252,35,407,76"/>
+<area shape="rect" id="node3" href="$circuitlist_8h.html#aa797a036ce04a0d14f669e656ec62408" title="circuit_count_pending\l_on_channel" alt="" coords="462,5,610,47"/>
+<area shape="rect" id="node4" href="$entrynodes_8h.html#a0e486d12b1fae8b40a392567b676a083" title="entry_guard_chan_failed" alt="" coords="455,71,617,98"/>
 </map>

@@ -1,10 +1,12 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/transports.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/transports.h">
-<area shape="rect" id="node2" href="$circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="$config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="177,109,325,165"/>
-<area shape="rect" id="node4" href="$connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="349,109,497,165"/>
-<area shape="rect" id="node5" href="$entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="521,109,669,165"/>
-<area shape="rect" id="node6" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="693,109,841,165"/>
-<area shape="rect" id="node7" href="$networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. " alt="" coords="865,109,1021,165"/>
-<area shape="rect" id="node8" href="$router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="1045,109,1193,165"/>
-<area shape="rect" id="node9" href="$transports_8c.html" title="Pluggable Transports related code. " alt="" coords="1217,109,1365,165"/>
+<area shape="rect" id="node2" href="$bridges_8c.html" title="Code to manage bridges and bridge selection. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="$circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="$config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="$connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="521,109,669,165"/>
+<area shape="rect" id="node6" href="$entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="693,109,841,165"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="865,109,1013,165"/>
+<area shape="rect" id="node8" href="$networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache..." alt="" coords="1037,109,1193,165"/>
+<area shape="rect" id="node9" href="$router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="1217,109,1365,165"/>
+<area shape="rect" id="node10" href="$transports_8c.html" title="Pluggable Transports related code. " alt="" coords="1389,109,1537,165"/>
+<area shape="rect" id="node11" href="$test__bridges_8c.html" title="Unittests for code in src/or/bridges.c. " alt="" coords="1561,109,1717,165"/>
 </map>

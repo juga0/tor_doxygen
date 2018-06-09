@@ -1,0 +1,5 @@
+<map id="token_bucket_raw_reset" name="token_bucket_raw_reset">
+<area shape="rect" id="node2" href="$token__bucket_8c.html#af5d53fffb8a825d38565fc013e04f4db" title="token_bucket_rw_reset" alt="" coords="217,5,375,32"/>
+<area shape="rect" id="node3" href="$token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="423,5,568,32"/>
+<area shape="rect" id="node4" href="$connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="616,5,771,32"/>
+</map>

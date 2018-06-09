@@ -1,3 +1,4 @@
 <map id="router_parse_entry_from_string" name="router_parse_entry_from_string">
-<area shape="rect" id="node2" href="$memarea_8c.html#a9bc481c5060ff6280cfb1e5eaaa915f4" title="memarea_new" alt="" coords="184,13,291,39"/>
+<area shape="rect" id="node2" href="$memarea_8c.html#a9bc481c5060ff6280cfb1e5eaaa915f4" title="memarea_new" alt="" coords="186,5,293,32"/>
+<area shape="rect" id="node3" href="$parsecommon_8c.html#af5a0f0fc39c7237d4d86a4288f31e19b" title="tokenize_string" alt="" coords="184,56,295,83"/>
 </map>

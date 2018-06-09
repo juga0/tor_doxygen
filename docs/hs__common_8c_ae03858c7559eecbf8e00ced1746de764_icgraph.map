@@ -1,0 +1,6 @@
+<map id="get_last_hid_serv_requests" name="get_last_hid_serv_requests">
+<area shape="rect" id="node2" href="$hs__common_8h.html#a7a3e59649c9a0a37894603b7da486229" title="hs_lookup_last_hid\l_serv_request" alt="" coords="250,5,383,47"/>
+<area shape="rect" id="node4" href="$hs__common_8h.html#ad18a9fbbc310683d64f150e1751be328" title="hs_clean_last_hid_serv\l_requests" alt="" coords="237,71,396,112"/>
+<area shape="rect" id="node5" href="$hs__common_8h.html#a9a2826477f65e0844c6fde09a42597b7" title="hs_purge_hid_serv_from\l_last_hid_serv_requests" alt="" coords="235,136,399,177"/>
+<area shape="rect" id="node3" href="$hs__common_8h.html#a9af4bf6fe3cc01d5524f2dd4123573a8" title="hs_pick_hsdir" alt="" coords="447,46,549,73"/>
+</map>

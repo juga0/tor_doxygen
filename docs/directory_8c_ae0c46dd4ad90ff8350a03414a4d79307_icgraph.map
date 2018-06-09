@@ -1,4 +1,4 @@
 <map id="download_status_reset" name="download_status_reset">
-<area shape="rect" id="node2" href="$networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="209,5,424,47"/>
-<area shape="rect" id="node3" href="$routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="472,5,605,47"/>
+<area shape="rect" id="node2" href="$directory_8h.html#ad030aefd2edb06cac0a0477457631fab" title="download_status_increment\l_failure" alt="" coords="209,5,393,47"/>
+<area shape="rect" id="node3" href="$directory_8h.html#abfbbd8729f4c0f94b6080020a729bc70" title="download_status_increment\l_attempt" alt="" coords="209,71,393,112"/>
 </map>

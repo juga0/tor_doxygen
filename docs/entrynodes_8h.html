@@ -65,7 +65,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">entrynodes.h File Reference</div>  </div>
@@ -74,29 +76,51 @@ $(function() {
 
 <p>Header file for <a class="el" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel...">circuitbuild.c</a>.  
 <a href="#details">More...</a></p>
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &quot;<a class="el" href="handles_8h_source.html">handles.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for entrynodes.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2entrynodes_8h" alt=""/></div>
+<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2entrynodes_8h" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2entrynodes_8h">
+<area shape="rect" id="node2" href="handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="920,109,998,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="549,557,628,584"/>
+<area shape="rect" id="node4" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="996,184,1087,211"/>
+<area shape="rect" id="node5" href="util_8h.html" title="Headers for util.c. " alt="" coords="586,184,636,211"/>
+<area shape="rect" id="node6" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="189,483,252,509"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="434,333,510,360"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="714,483,812,509"/>
+<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="26,408,97,435"/>
+<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="572,259,650,285"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="581,483,689,509"/>
+<area shape="rect" id="node14" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="490,408,617,435"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="entrynodes_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2entrynodes_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2entrynodes_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2entrynodes_8hdep">
-<area shape="rect" id="node2" href="channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="177,109,325,165"/>
-<area shape="rect" id="node4" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="349,109,497,165"/>
-<area shape="rect" id="node5" href="circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. " alt="" coords="521,109,669,165"/>
-<area shape="rect" id="node6" href="config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="693,109,841,165"/>
-<area shape="rect" id="node7" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="865,109,1013,165"/>
-<area shape="rect" id="node8" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="1038,109,1193,165"/>
-<area shape="rect" id="node9" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1217,109,1365,165"/>
-<area shape="rect" id="node10" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="1389,109,1537,165"/>
-<area shape="rect" id="node11" href="dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="1561,109,1709,165"/>
-<area shape="rect" id="node12" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="1733,109,1881,165"/>
-<area shape="rect" id="node13" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="1905,109,2053,165"/>
-<area shape="rect" id="node14" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="2077,109,2225,165"/>
-<area shape="rect" id="node15" href="networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. " alt="" coords="2249,109,2405,165"/>
-<area shape="rect" id="node16" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="2429,109,2577,165"/>
-<area shape="rect" id="node17" href="routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="2601,109,2749,165"/>
-<area shape="rect" id="node18" href="statefile_8c.html" title="Handles parsing and encoding the persistent &#39;state&#39; file that carries miscellaneous persistent state ..." alt="" coords="2773,109,2921,165"/>
-<area shape="rect" id="node19" href="transports_8c.html" title="Pluggable Transports related code. " alt="" coords="2945,109,3093,165"/>
+<area shape="rect" id="node2" href="bridges_8c.html" title="Code to manage bridges and bridge selection. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances..." alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="521,109,669,165"/>
+<area shape="rect" id="node6" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="693,109,841,165"/>
+<area shape="rect" id="node7" href="circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="865,109,1013,165"/>
+<area shape="rect" id="node8" href="circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="1037,109,1185,165"/>
+<area shape="rect" id="node9" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="1209,109,1357,165"/>
+<area shape="rect" id="node10" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="1381,109,1529,165"/>
+<area shape="rect" id="node11" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="1554,109,1709,165"/>
+<area shape="rect" id="node12" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1733,109,1881,165"/>
+<area shape="rect" id="node13" href="dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="1905,109,2061,165"/>
+<area shape="rect" id="node14" href="directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="2085,109,2233,165"/>
+<area shape="rect" id="node15" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="2257,109,2405,165"/>
+<area shape="rect" id="node16" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="2429,109,2577,165"/>
+<area shape="rect" id="node17" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="2601,109,2749,165"/>
+<area shape="rect" id="node18" href="networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache..." alt="" coords="2773,109,2929,165"/>
+<area shape="rect" id="node19" href="nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="2953,109,3101,165"/>
+<area shape="rect" id="node20" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="3125,109,3273,165"/>
+<area shape="rect" id="node21" href="routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="3297,109,3445,165"/>
+<area shape="rect" id="node22" href="statefile_8c.html" title="Handles parsing and encoding the persistent &#39;state&#39; file that carries miscellaneous persistent state ..." alt="" coords="3469,109,3617,165"/>
 </map>
 </div>
 </div>
@@ -104,130 +128,154 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentry__guard__t.html">entry_guard_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structguard__pathbias__t.html">guard_pathbias_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structguardfraction__bandwidth__t.html">guardfraction_bandwidth_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aabd43ad196c53f627b719e0a66c7440e"><td class="memItemLeft" align="right" valign="top"><a id="aabd43ad196c53f627b719e0a66c7440e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>circuit_guard_state_free</b>(val)&#160;&#160;&#160;FREE_AND_NULL(circuit_guard_state_t, <a class="el" href="entrynodes_8h.html#a89782b7020c630cfbfe37496991068e6">circuit_guard_state_free_</a>, (val))</td></tr>
+<tr class="separator:aabd43ad196c53f627b719e0a66c7440e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a7b3b6946a9ca4d29fc6c1047a8e2ce16"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structentry__guard__t.html">entry_guard_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a7b3b6946a9ca4d29fc6c1047a8e2ce16">entry_guard_t</a></td></tr>
-<tr class="separator:a7b3b6946a9ca4d29fc6c1047a8e2ce16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bbcdfcaa9e8f132b3abb5d52fcf1fb9"><td class="memItemLeft" align="right" valign="top"><a id="a4bbcdfcaa9e8f132b3abb5d52fcf1fb9"></a>
+typedef struct guard_selection_s&#160;</td><td class="memItemRight" valign="bottom"><b>guard_selection_t</b></td></tr>
+<tr class="separator:a4bbcdfcaa9e8f132b3abb5d52fcf1fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be81e6ec57be5bd3814450f3de4a8f0"><td class="memItemLeft" align="right" valign="top"><a id="a9be81e6ec57be5bd3814450f3de4a8f0"></a>
+typedef struct entry_guard_t&#160;</td><td class="memItemRight" valign="bottom"><b>entry_guard_t</b></td></tr>
+<tr class="separator:a9be81e6ec57be5bd3814450f3de4a8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed8f48dace09f6dc401c3b18ba6be86"><td class="memItemLeft" align="right" valign="top"><a id="abed8f48dace09f6dc401c3b18ba6be86"></a>
+typedef struct circuit_guard_state_t&#160;</td><td class="memItemRight" valign="bottom"><b>circuit_guard_state_t</b></td></tr>
+<tr class="separator:abed8f48dace09f6dc401c3b18ba6be86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033613a39f985ef545796ed47a8027b9"><td class="memItemLeft" align="right" valign="top"><a id="a033613a39f985ef545796ed47a8027b9"></a>
+typedef struct entry_guard_restriction_t&#160;</td><td class="memItemRight" valign="bottom"><b>entry_guard_restriction_t</b></td></tr>
+<tr class="separator:a033613a39f985ef545796ed47a8027b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff3a670423f186c5fec64c6fa187342"><td class="memItemLeft" align="right" valign="top"><a id="a4ff3a670423f186c5fec64c6fa187342"></a>
+typedef struct <a class="el" href="structguard__pathbias__t.html">guard_pathbias_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>guard_pathbias_t</b></td></tr>
+<tr class="separator:a4ff3a670423f186c5fec64c6fa187342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c8e3133957e80b9f9b89fd1f8dbeab9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structguardfraction__bandwidth__t.html">guardfraction_bandwidth_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a3c8e3133957e80b9f9b89fd1f8dbeab9">guardfraction_bandwidth_t</a></td></tr>
 <tr class="separator:a3c8e3133957e80b9f9b89fd1f8dbeab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aef1363614195376e58c3090a0f1a4ff6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aef1363614195376e58c3090a0f1a4ff6">guard_usage_t</a> { <b>GUARD_USAGE_TRAFFIC</b> = 0, 
+<b>GUARD_USAGE_DIRGUARD</b> = 1
+ }</td></tr>
+<tr class="separator:aef1363614195376e58c3090a0f1a4ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fb041037320051314cdd21597c2ceb"><td class="memItemLeft" align="right" valign="top"><a id="a71fb041037320051314cdd21597c2ceb"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>guard_usable_t</b> { <b>GUARD_USABLE_NEVER</b> = -1, 
+<b>GUARD_MAYBE_USABLE_LATER</b> = 0, 
+<b>GUARD_USABLE_NOW</b> = 1
+ }</td></tr>
+<tr class="separator:a71fb041037320051314cdd21597c2ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a059f7981078a896a9349a578b82bc645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structentry__guard__t.html">entry_guard_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a059f7981078a896a9349a578b82bc645">entry_guard_get_by_id_digest</a> (const char *digest)</td></tr>
+<tr class="memitem:aedaac29d3130717a9c3fdb8950a2f4af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aedaac29d3130717a9c3fdb8950a2f4af">guards_update_all</a> (void)</td></tr>
+<tr class="separator:aedaac29d3130717a9c3fdb8950a2f4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71ff8062c99e9722afef949590df2da"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#ab71ff8062c99e9722afef949590df2da">guards_choose_guard</a> (<a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *state, uint8_t purpose, circuit_guard_state_t **guard_state_out)</td></tr>
+<tr class="separator:ab71ff8062c99e9722afef949590df2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93db2fbe0af8230c60e96836cab30a29"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a93db2fbe0af8230c60e96836cab30a29">guards_choose_dirguard</a> (uint8_t dir_purpose, circuit_guard_state_t **guard_state_out)</td></tr>
+<tr class="separator:a93db2fbe0af8230c60e96836cab30a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecb7c2ddf9746ab0b0cb62a2239b6f6"><td class="memItemLeft" align="right" valign="top">entry_guard_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a9ecb7c2ddf9746ab0b0cb62a2239b6f6">entry_guard_get_by_id_digest_for_guard_selection</a> (guard_selection_t *gs, const char *digest)</td></tr>
+<tr class="separator:a9ecb7c2ddf9746ab0b0cb62a2239b6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a059f7981078a896a9349a578b82bc645"><td class="memItemLeft" align="right" valign="top">entry_guard_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a059f7981078a896a9349a578b82bc645">entry_guard_get_by_id_digest</a> (const char *digest)</td></tr>
 <tr class="separator:a059f7981078a896a9349a578b82bc645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5f4a60cc416cbf7109763a3b44c45a"><td class="memItemLeft" align="right" valign="top">circuit_guard_state_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aab5f4a60cc416cbf7109763a3b44c45a">get_guard_state_for_bridge_desc_fetch</a> (const char *digest)</td></tr>
+<tr class="separator:aab5f4a60cc416cbf7109763a3b44c45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe944c95b279887314f1101ada1f4884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#abe944c95b279887314f1101ada1f4884">entry_guards_changed_for_guard_selection</a> (guard_selection_t *gs)</td></tr>
+<tr class="separator:abe944c95b279887314f1101ada1f4884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aedcf8995075b212cce9d510e9e70d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a1aedcf8995075b212cce9d510e9e70d7">entry_guards_changed</a> (void)</td></tr>
 <tr class="separator:a1aedcf8995075b212cce9d510e9e70d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3275a2122be652bd96574f81aa6145f1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a3275a2122be652bd96574f81aa6145f1">get_entry_guards</a> (void)</td></tr>
-<tr class="separator:a3275a2122be652bd96574f81aa6145f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc850d23175b5132661a8c6e561e972"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#accc850d23175b5132661a8c6e561e972">num_live_entry_guards</a> (int for_directory)</td></tr>
+<tr class="memitem:ae55f2a4d95b0bc81220dd0464b8494f8"><td class="memItemLeft" align="right" valign="top">guard_selection_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#ae55f2a4d95b0bc81220dd0464b8494f8">get_guard_selection_info</a> (void)</td></tr>
+<tr class="separator:ae55f2a4d95b0bc81220dd0464b8494f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc36e645ff31abc47e23abe1851d504"><td class="memItemLeft" align="right" valign="top"><a id="abfc36e645ff31abc47e23abe1851d504"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>num_live_entry_guards_for_guard_selection</b> (guard_selection_t *gs, int for_directory)</td></tr>
+<tr class="separator:abfc36e645ff31abc47e23abe1851d504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc850d23175b5132661a8c6e561e972"><td class="memItemLeft" align="right" valign="top"><a id="accc850d23175b5132661a8c6e561e972"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>num_live_entry_guards</b> (int for_directory)</td></tr>
 <tr class="separator:accc850d23175b5132661a8c6e561e972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9225be7f0d88d71bbf0f0f728b809a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a1b9225be7f0d88d71bbf0f0f728b809a">entry_guard_find_node</a> (const entry_guard_t *guard)</td></tr>
+<tr class="separator:a1b9225be7f0d88d71bbf0f0f728b809a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728f1532a6ee05de69f5c8d988af2bd6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a728f1532a6ee05de69f5c8d988af2bd6">entry_guard_get_rsa_id_digest</a> (const entry_guard_t *guard)</td></tr>
+<tr class="separator:a728f1532a6ee05de69f5c8d988af2bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446ff1a56de96285dac2fe015e972bd0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a446ff1a56de96285dac2fe015e972bd0">entry_guard_describe</a> (const entry_guard_t *guard)</td></tr>
+<tr class="separator:a446ff1a56de96285dac2fe015e972bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438f7a3ebb9ad87d9baee6a364441007"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structguard__pathbias__t.html">guard_pathbias_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a438f7a3ebb9ad87d9baee6a364441007">entry_guard_get_pathbias_state</a> (entry_guard_t *guard)</td></tr>
+<tr class="separator:a438f7a3ebb9ad87d9baee6a364441007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89782b7020c630cfbfe37496991068e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a89782b7020c630cfbfe37496991068e6">circuit_guard_state_free_</a> (circuit_guard_state_t *state)</td></tr>
+<tr class="separator:a89782b7020c630cfbfe37496991068e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cd1e4049c1b18c57214d9414586ad4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a89cd1e4049c1b18c57214d9414586ad4">entry_guard_pick_for_circuit</a> (guard_selection_t *gs, <a class="el" href="entrynodes_8h.html#aef1363614195376e58c3090a0f1a4ff6">guard_usage_t</a> usage, entry_guard_restriction_t *rst, const <a class="el" href="structnode__t.html">node_t</a> **chosen_node_out, circuit_guard_state_t **guard_state_out)</td></tr>
+<tr class="separator:a89cd1e4049c1b18c57214d9414586ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aceb4f4f990b9b3ed2ecea41abc9aab"><td class="memItemLeft" align="right" valign="top">guard_usable_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a5aceb4f4f990b9b3ed2ecea41abc9aab">entry_guard_succeeded</a> (circuit_guard_state_t **guard_state_p)</td></tr>
+<tr class="separator:a5aceb4f4f990b9b3ed2ecea41abc9aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a05d40c93fe360c18cbf66dcbe2b29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a00a05d40c93fe360c18cbf66dcbe2b29">entry_guard_failed</a> (circuit_guard_state_t **guard_state_p)</td></tr>
+<tr class="separator:a00a05d40c93fe360c18cbf66dcbe2b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c41a0672c81fe07767a6e80523af88d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a2c41a0672c81fe07767a6e80523af88d">entry_guard_cancel</a> (circuit_guard_state_t **guard_state_p)</td></tr>
+<tr class="separator:a2c41a0672c81fe07767a6e80523af88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e486d12b1fae8b40a392567b676a083"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a0e486d12b1fae8b40a392567b676a083">entry_guard_chan_failed</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
+<tr class="separator:a0e486d12b1fae8b40a392567b676a083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4360ef3264ab398b48b851e0d2d675b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a4360ef3264ab398b48b851e0d2d675b5">entry_guards_update_all</a> (guard_selection_t *gs)</td></tr>
+<tr class="separator:a4360ef3264ab398b48b851e0d2d675b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af943c868320a66ee2dca652ad0555a32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#af943c868320a66ee2dca652ad0555a32">entry_guards_upgrade_waiting_circuits</a> (guard_selection_t *gs, const <a class="el" href="structsmartlist__t.html">smartlist_t</a> *all_circuits, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *newly_complete_out)</td></tr>
+<tr class="separator:af943c868320a66ee2dca652ad0555a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42b6de85549bfc96f56f89cab179042"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aa42b6de85549bfc96f56f89cab179042">entry_guard_state_should_expire</a> (circuit_guard_state_t *guard_state)</td></tr>
+<tr class="separator:aa42b6de85549bfc96f56f89cab179042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c84cb9bea9ab7fbeff429a27893c33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a61c84cb9bea9ab7fbeff429a27893c33">entry_guards_note_internet_connectivity</a> (guard_selection_t *gs)</td></tr>
+<tr class="separator:a61c84cb9bea9ab7fbeff429a27893c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8e402c5c5ea8de25416c11ff59d7b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a7b8e402c5c5ea8de25416c11ff59d7b8">update_guard_selection_choice</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:a7b8e402c5c5ea8de25416c11ff59d7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa848c940a527c2e4be395fdd4dc933c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aa848c940a527c2e4be395fdd4dc933c0">entry_guard_could_succeed</a> (const circuit_guard_state_t *guard_state)</td></tr>
+<tr class="separator:aa848c940a527c2e4be395fdd4dc933c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe9be747b5cf74d98c28cc109c86286"><td class="memItemLeft" align="right" valign="top"><a id="adfe9be747b5cf74d98c28cc109c86286"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (int, num_bridges_usable,(int use_maybe_reachable))</td></tr>
+<tr class="separator:adfe9be747b5cf74d98c28cc109c86286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37261ae47f6bec9d6ade03c87b74f916"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a37261ae47f6bec9d6ade03c87b74f916">remove_all_entry_guards_for_guard_selection</a> (guard_selection_t *gs)</td></tr>
+<tr class="separator:a37261ae47f6bec9d6ade03c87b74f916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2059c6a8b0ae5f6bd64087fe00a27d9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a2059c6a8b0ae5f6bd64087fe00a27d9d">remove_all_entry_guards</a> (void)</td></tr>
 <tr class="separator:a2059c6a8b0ae5f6bd64087fe00a27d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa295479ccc485da15d0e03872188cd68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aa295479ccc485da15d0e03872188cd68">entry_guards_compute_status</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, time_t now)</td></tr>
-<tr class="separator:aa295479ccc485da15d0e03872188cd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca1100341edbe9b4ff26527595ab56e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aca1100341edbe9b4ff26527595ab56e8">entry_guard_register_connect_status</a> (const char *digest, int succeeded, int mark_relay_status, time_t now)</td></tr>
-<tr class="separator:aca1100341edbe9b4ff26527595ab56e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef450c6c3b8cc0a8e7461e3826338ce7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aef450c6c3b8cc0a8e7461e3826338ce7">entry_nodes_should_be_added</a> (void)</td></tr>
-<tr class="separator:aef450c6c3b8cc0a8e7461e3826338ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06acab15b1c0a42b82485bf1f4fa78ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a06acab15b1c0a42b82485bf1f4fa78ed">entry_guard_learned_bridge_identity</a> (const <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *addrport, const uint8_t *rsa_id_digest)</td></tr>
+<tr class="separator:a06acab15b1c0a42b82485bf1f4fa78ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a574dc0f7b96e7da5652ddb234d42adb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a574dc0f7b96e7da5652ddb234d42adb3">entry_list_is_constrained</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
 <tr class="separator:a574dc0f7b96e7da5652ddb234d42adb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cde644220a9eaa9b3bdbb92a25607bd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a6cde644220a9eaa9b3bdbb92a25607bd">choose_random_entry</a> (<a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *state)</td></tr>
-<tr class="separator:a6cde644220a9eaa9b3bdbb92a25607bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95929eae9c8f108e16c0440a9404e0b5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a95929eae9c8f108e16c0440a9404e0b5">choose_random_dirguard</a> (<a class="el" href="or_8h.html#ae733ffc8e2cde85d0705d947f8f86ada">dirinfo_type_t</a> t)</td></tr>
-<tr class="separator:a95929eae9c8f108e16c0440a9404e0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9eddf77d45dab94c87c4ae9e9a659fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aa9eddf77d45dab94c87c4ae9e9a659fb">guards_retry_optimistic</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:aa9eddf77d45dab94c87c4ae9e9a659fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1d9f56432ab74a2a58c5eedf4a718c"><td class="memItemLeft" align="right" valign="top"><a id="a0f1d9f56432ab74a2a58c5eedf4a718c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>entry_guards_parse_state_for_guard_selection</b> (guard_selection_t *gs, <a class="el" href="structor__state__t.html">or_state_t</a> *state, int set, char **msg)</td></tr>
+<tr class="separator:a0f1d9f56432ab74a2a58c5eedf4a718c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fe13e92c8806b6fe22889c7e7b303f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a9fe13e92c8806b6fe22889c7e7b303f5">entry_guards_parse_state</a> (<a class="el" href="structor__state__t.html">or_state_t</a> *state, int set, char **msg)</td></tr>
 <tr class="separator:a9fe13e92c8806b6fe22889c7e7b303f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e4a5b6f39d4d23a701fa0ddc38e3e17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a6e4a5b6f39d4d23a701fa0ddc38e3e17">entry_guards_update_state</a> (<a class="el" href="structor__state__t.html">or_state_t</a> *state)</td></tr>
 <tr class="separator:a6e4a5b6f39d4d23a701fa0ddc38e3e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3a6a46f97e2693fa41867ff68a88a0f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#ae3a6a46f97e2693fa41867ff68a88a0f">getinfo_helper_entry_guards</a> (<a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *conn, const char *question, char **answer, const char **errmsg)</td></tr>
 <tr class="separator:ae3a6a46f97e2693fa41867ff68a88a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1237fc3844be7dd672552a99ba137a88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a1237fc3844be7dd672552a99ba137a88">mark_bridge_list</a> (void)</td></tr>
-<tr class="separator:a1237fc3844be7dd672552a99ba137a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a365f2e514e0575326c05fb6c36aa3ce9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a365f2e514e0575326c05fb6c36aa3ce9">sweep_bridge_list</a> (void)</td></tr>
-<tr class="separator:a365f2e514e0575326c05fb6c36aa3ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d44019e06142d75bf330e273815c54f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a2d44019e06142d75bf330e273815c54f">addr_is_a_configured_bridge</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port, const char *digest)</td></tr>
-<tr class="separator:a2d44019e06142d75bf330e273815c54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f341162101f7678384679361c28ae79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a6f341162101f7678384679361c28ae79">extend_info_is_a_configured_bridge</a> (const <a class="el" href="structextend__info__t.html">extend_info_t</a> *ei)</td></tr>
-<tr class="separator:a6f341162101f7678384679361c28ae79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2027007177e63941e2adf763a34a1b99"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a2027007177e63941e2adf763a34a1b99">routerinfo_is_a_configured_bridge</a> (const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *ri)</td></tr>
-<tr class="separator:a2027007177e63941e2adf763a34a1b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a823bac0acf5f6b68ab2074757215eac3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a823bac0acf5f6b68ab2074757215eac3">node_is_a_configured_bridge</a> (const <a class="el" href="structnode__t.html">node_t</a> *node)</td></tr>
-<tr class="separator:a823bac0acf5f6b68ab2074757215eac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1b2c6b58f355b442633b877f6a04202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aa1b2c6b58f355b442633b877f6a04202">learned_router_identity</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port, const char *digest)</td></tr>
-<tr class="separator:aa1b2c6b58f355b442633b877f6a04202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affaa0eba6400aae46fde3affcc686b1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#affaa0eba6400aae46fde3affcc686b1d">bridge_add_from_config</a> (struct <a class="el" href="structbridge__line__t.html">bridge_line_t</a> *bridge_line)</td></tr>
-<tr class="separator:affaa0eba6400aae46fde3affcc686b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af586c6437018de91c926dbabb4c802d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#af586c6437018de91c926dbabb4c802d6">retry_bridge_descriptor_fetch_directly</a> (const char *digest)</td></tr>
-<tr class="separator:af586c6437018de91c926dbabb4c802d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a958ebeeb4b45f01d919751bbcd6e79b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a958ebeeb4b45f01d919751bbcd6e79b2">fetch_bridge_descriptors</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, time_t now)</td></tr>
-<tr class="separator:a958ebeeb4b45f01d919751bbcd6e79b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8213fa6b22741a8c0b7d4834d7dccff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#af8213fa6b22741a8c0b7d4834d7dccff">learned_bridge_descriptor</a> (<a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *ri, int from_cache)</td></tr>
-<tr class="separator:af8213fa6b22741a8c0b7d4834d7dccff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab89703f540a86aadb7a54475e10ca673"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#ab89703f540a86aadb7a54475e10ca673">any_bridge_descriptors_known</a> (void)</td></tr>
-<tr class="separator:ab89703f540a86aadb7a54475e10ca673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f0faa21923511f6aa0338190066252"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a03f0faa21923511f6aa0338190066252">entries_known_but_down</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="memitem:a03f0faa21923511f6aa0338190066252"><td class="memItemLeft" align="right" valign="top"><a id="a03f0faa21923511f6aa0338190066252"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>entries_known_but_down</b> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
 <tr class="separator:a03f0faa21923511f6aa0338190066252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e6fe3993d40ab3adcf1e9a8e0bc9374"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a3e6fe3993d40ab3adcf1e9a8e0bc9374">entries_retry_all</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="memitem:a3e6fe3993d40ab3adcf1e9a8e0bc9374"><td class="memItemLeft" align="right" valign="top"><a id="a3e6fe3993d40ab3adcf1e9a8e0bc9374"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>entries_retry_all</b> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
 <tr class="separator:a3e6fe3993d40ab3adcf1e9a8e0bc9374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3f497d942ccb88742194e3fe973a49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#aec3f497d942ccb88742194e3fe973a49">any_bridge_supports_microdescriptors</a> (void)</td></tr>
-<tr class="separator:aec3f497d942ccb88742194e3fe973a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a563fb20442805d5fbe516b5f60fed5fd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a563fb20442805d5fbe516b5f60fed5fd">get_socks_args_by_bridge_addrport</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port)</td></tr>
-<tr class="separator:a563fb20442805d5fbe516b5f60fed5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fa2993dcd7d9902d602df32749727fc"><td class="memItemLeft" align="right" valign="top"><a id="a3fa2993dcd7d9902d602df32749727fc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>any_bridges_dont_support_microdescriptors</b> (void)</td></tr>
-<tr class="separator:a3fa2993dcd7d9902d602df32749727fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f69ddf668f984f783eb7cfcb358185e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a1f69ddf668f984f783eb7cfcb358185e">entry_guards_get_err_str_if_dir_info_missing</a> (int using_mds, int num_present, int num_usable)</td></tr>
+<tr class="separator:a1f69ddf668f984f783eb7cfcb358185e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9ad8a9d2d435a30b8ece9e786533bf"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a0e9ad8a9d2d435a30b8ece9e786533bf">guard_selection_get_err_str_if_dir_info_missing</a> (guard_selection_t *gs, int using_mds, int num_present, int num_usable)</td></tr>
+<tr class="separator:a0e9ad8a9d2d435a30b8ece9e786533bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe2c7c43057097f0ca57f4429249f576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#afe2c7c43057097f0ca57f4429249f576">entry_guards_free_all</a> (void)</td></tr>
 <tr class="separator:afe2c7c43057097f0ca57f4429249f576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f10cf1c3269fd2a3a93fe696e6a662"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a06f10cf1c3269fd2a3a93fe696e6a662">find_transport_name_by_bridge_addrport</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port)</td></tr>
-<tr class="separator:a06f10cf1c3269fd2a3a93fe696e6a662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac6e774d73c82c8f8553d0bb1a4f1eca"><td class="memItemLeft" align="right" valign="top"><a id="aac6e774d73c82c8f8553d0bb1a4f1eca"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_transport_by_bridge_addrport</b> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port, const struct <a class="el" href="structtransport__t.html">transport_t</a> **transport)</td></tr>
-<tr class="separator:aac6e774d73c82c8f8553d0bb1a4f1eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94d90f8639b5f29633f10c7191dcf95c"><td class="memItemLeft" align="right" valign="top"><a id="a94d90f8639b5f29633f10c7191dcf95c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (int, transport_is_needed,(const char *transport_name))</td></tr>
-<tr class="separator:a94d90f8639b5f29633f10c7191dcf95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b31cdc278f5f49841d8cf92b8f4354d"><td class="memItemLeft" align="right" valign="top"><a id="a4b31cdc278f5f49841d8cf92b8f4354d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_transports_config</b> (void)</td></tr>
-<tr class="separator:a4b31cdc278f5f49841d8cf92b8f4354d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe9ef8d49fc04454e5c3cf61b7c5667f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#afe9ef8d49fc04454e5c3cf61b7c5667f">pathbias_get_close_success_count</a> (<a class="el" href="structentry__guard__t.html">entry_guard_t</a> *guard)</td></tr>
+<tr class="memitem:afe9ef8d49fc04454e5c3cf61b7c5667f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#afe9ef8d49fc04454e5c3cf61b7c5667f">pathbias_get_close_success_count</a> (entry_guard_t *guard)</td></tr>
 <tr class="separator:afe9ef8d49fc04454e5c3cf61b7c5667f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65437bc034e2202eb60d5cffd285fd48"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a65437bc034e2202eb60d5cffd285fd48">pathbias_get_use_success_count</a> (<a class="el" href="structentry__guard__t.html">entry_guard_t</a> *guard)</td></tr>
+<tr class="memitem:a65437bc034e2202eb60d5cffd285fd48"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#a65437bc034e2202eb60d5cffd285fd48">pathbias_get_use_success_count</a> (entry_guard_t *guard)</td></tr>
 <tr class="separator:a65437bc034e2202eb60d5cffd285fd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf00389e72807f2534ffd3da3de31e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8h.html#abcf00389e72807f2534ffd3da3de31e6">should_apply_guardfraction</a> (const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns)</td></tr>
 <tr class="separator:abcf00389e72807f2534ffd3da3de31e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5872840b23806e149551b63fbf4e5407"><td class="memItemLeft" align="right" valign="top"><a id="a5872840b23806e149551b63fbf4e5407"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>guard_get_guardfraction_bandwidth</b> (<a class="el" href="structguardfraction__bandwidth__t.html">guardfraction_bandwidth_t</a> *guardfraction_bw, int orig_bandwidth, uint32_t guardfraction_percentage)</td></tr>
 <tr class="separator:a5872840b23806e149551b63fbf4e5407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a422d080f8855421de4748202ca5f9414"><td class="memItemLeft" align="right" valign="top"><a id="a422d080f8855421de4748202ca5f9414"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *, list_bridge_identities,(void))</td></tr>
-<tr class="separator:a422d080f8855421de4748202ca5f9414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e36eab66a63f0a055f3de7e8bce6b2"><td class="memItemLeft" align="right" valign="top"><a id="a34e36eab66a63f0a055f3de7e8bce6b2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (<a class="el" href="structdownload__status__t.html">download_status_t</a> *, get_bridge_dl_status_by_id,(const char *digest))</td></tr>
-<tr class="separator:a34e36eab66a63f0a055f3de7e8bce6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for <a class="el" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel...">circuitbuild.c</a>. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a7b3b6946a9ca4d29fc6c1047a8e2ce16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b3b6946a9ca4d29fc6c1047a8e2ce16">&#9670;&nbsp;</a></span>entry_guard_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structentry__guard__t.html">entry_guard_t</a>  <a class="el" href="structentry__guard__t.html">entry_guard_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An <a class="el" href="structentry__guard__t.html">entry_guard_t</a> represents our information about a chosen long-term first hop, known as a "helper" node in the literature. We can't just use a <a class="el" href="structnode__t.html">node_t</a>, since we want to remember these even when we don't have any directory info. </p>
-
-</div>
-</div>
 <a id="a3c8e3133957e80b9f9b89fd1f8dbeab9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c8e3133957e80b9f9b89fd1f8dbeab9">&#9670;&nbsp;</a></span>guardfraction_bandwidth_t</h2>
 
@@ -243,24 +291,219 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>guard_get_guardfracti
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a2d44019e06142d75bf330e273815c54f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d44019e06142d75bf330e273815c54f">&#9670;&nbsp;</a></span>addr_is_a_configured_bridge()</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aef1363614195376e58c3090a0f1a4ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1363614195376e58c3090a0f1a4ff6">&#9670;&nbsp;</a></span>guard_usage_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int addr_is_a_configured_bridge </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
+          <td class="memname">enum <a class="el" href="entrynodes_8h.html#aef1363614195376e58c3090a0f1a4ff6">guard_usage_t</a></td>
         </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enum to specify how we're going to use a given guard, when we're picking one for immediate use. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a89782b7020c630cfbfe37496991068e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89782b7020c630cfbfe37496991068e6">&#9670;&nbsp;</a></span>circuit_guard_state_free_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">void circuit_guard_state_free_ </td>
+          <td>(</td>
+          <td class="paramtype">circuit_guard_state_t *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Release all storage held in <b>state</b>. </p>
+
+</div>
+</div>
+<a id="a2c41a0672c81fe07767a6e80523af88d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c41a0672c81fe07767a6e80523af88d">&#9670;&nbsp;</a></span>entry_guard_cancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entry_guard_cancel </td>
+          <td>(</td>
+          <td class="paramtype">circuit_guard_state_t **&#160;</td>
+          <td class="paramname"><em>guard_state_p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cancel the selection of *<b>guard_state_p</b> without declaring success or failure. It is safe to call this function if success or failure <em>has</em> already been declared. </p>
+
+</div>
+</div>
+<a id="a0e486d12b1fae8b40a392567b676a083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e486d12b1fae8b40a392567b676a083">&#9670;&nbsp;</a></span>entry_guard_chan_failed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entry_guard_chan_failed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run the <a class="el" href="entrynodes_8c.html#a00a05d40c93fe360c18cbf66dcbe2b29">entry_guard_failed()</a> function on every circuit that is pending on <b>chan</b>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a0e486d12b1fae8b40a392567b676a083_cgraph.png" border="0" usemap="#entrynodes_8h_a0e486d12b1fae8b40a392567b676a083_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a0e486d12b1fae8b40a392567b676a083_cgraph" id="entrynodes_8h_a0e486d12b1fae8b40a392567b676a083_cgraph">
+<area shape="rect" id="node2" href="circuitlist_8c.html#aaef0c4aefe50f0432478e21e51814a34" title="circuit_get_all_pending\l_on_channel" alt="" coords="216,23,371,65"/>
+<area shape="rect" id="node3" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="454,5,582,32"/>
+<area shape="rect" id="node5" href="channel_8c.html#a6cb4f4e8f649a753d3d22fb84653c05b" title="channel_matches_extend_info" alt="" coords="419,56,617,83"/>
+<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="665,5,752,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa848c940a527c2e4be395fdd4dc933c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa848c940a527c2e4be395fdd4dc933c0">&#9670;&nbsp;</a></span>entry_guard_could_succeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int entry_guard_could_succeed </td>
+          <td>(</td>
+          <td class="paramtype">const circuit_guard_state_t *&#160;</td>
+          <td class="paramname"><em>guard_state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true iff the circuit's guard can succeed that is can be used. </p>
+
+</div>
+</div>
+<a id="a446ff1a56de96285dac2fe015e972bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a446ff1a56de96285dac2fe015e972bd0">&#9670;&nbsp;</a></span>entry_guard_describe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* entry_guard_describe </td>
+          <td>(</td>
+          <td class="paramtype">const entry_guard_t *&#160;</td>
+          <td class="paramname"><em>guard</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a statically allocated human-readable description of <b>guard</b> </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a446ff1a56de96285dac2fe015e972bd0_cgraph.png" border="0" usemap="#entrynodes_8h_a446ff1a56de96285dac2fe015e972bd0_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a446ff1a56de96285dac2fe015e972bd0_cgraph" id="entrynodes_8h_a446ff1a56de96285dac2fe015e972bd0_cgraph">
+<area shape="rect" id="node2" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="200,5,287,32"/>
+<area shape="rect" id="node4" href="util_8c.html#a17effd59ed2f9bf4cfebb12e423ded7f" title="hex_str" alt="" coords="211,56,276,83"/>
+<area shape="rect" id="node3" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="344,5,439,32"/>
+<area shape="rect" id="node5" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="335,56,448,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a00a05d40c93fe360c18cbf66dcbe2b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a05d40c93fe360c18cbf66dcbe2b29">&#9670;&nbsp;</a></span>entry_guard_failed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entry_guard_failed </td>
+          <td>(</td>
+          <td class="paramtype">circuit_guard_state_t **&#160;</td>
+          <td class="paramname"><em>guard_state_p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Called by the circuit building module when a circuit has failed: informs the guards code that the guard in *<b>guard_state_p</b> is not working, and advances the state of the guard module. </p>
+
+</div>
+</div>
+<a id="a1b9225be7f0d88d71bbf0f0f728b809a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9225be7f0d88d71bbf0f0f728b809a">&#9670;&nbsp;</a></span>entry_guard_find_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structnode__t.html">node_t</a>* entry_guard_find_node </td>
+          <td>(</td>
+          <td class="paramtype">const entry_guard_t *&#160;</td>
+          <td class="paramname"><em>guard</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the <a class="el" href="structnode__t.html">node_t</a> associated with a single entry_guard_t. May return NULL if the guard is not currently in the consensus. </p>
+
+</div>
+</div>
+<a id="a059f7981078a896a9349a578b82bc645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059f7981078a896a9349a578b82bc645">&#9670;&nbsp;</a></span>entry_guard_get_by_id_digest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entry_guard_t* entry_guard_get_by_id_digest </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>digest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If <b>digest</b> matches the identity of any node in the entry_guards list for the default guard selection state, return that node. Else return NULL. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a059f7981078a896a9349a578b82bc645_cgraph.png" border="0" usemap="#entrynodes_8h_a059f7981078a896a9349a578b82bc645_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a059f7981078a896a9349a578b82bc645_cgraph" id="entrynodes_8h_a059f7981078a896a9349a578b82bc645_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a9ecb7c2ddf9746ab0b0cb62a2239b6f6" title="entry_guard_get_by\l_id_digest_for_guard\l_selection" alt="" coords="201,5,344,61"/>
+<area shape="rect" id="node5" href="entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="189,85,356,112"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a85c4a90c7407cd8c13fae402c414a5c8" title="get_sampled_guard_with_id" alt="" coords="404,20,587,47"/>
+<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="635,20,721,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9ecb7c2ddf9746ab0b0cb62a2239b6f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ecb7c2ddf9746ab0b0cb62a2239b6f6">&#9670;&nbsp;</a></span>entry_guard_get_by_id_digest_for_guard_selection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entry_guard_t* entry_guard_get_by_id_digest_for_guard_selection </td>
+          <td>(</td>
+          <td class="paramtype">guard_selection_t *&#160;</td>
+          <td class="paramname"><em>gs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -275,262 +518,92 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>guard_get_guardfracti
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If we have a bridge configured whose digest matches <b>digest</b>, or a bridge with no known digest whose address matches <b>addr</b>:<b>port</b>, return 1. Else return 0. If <b>digest</b> is NULL, check for address/port matches only. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a2d44019e06142d75bf330e273815c54f_icgraph.png" border="0" usemap="#entrynodes_8h_a2d44019e06142d75bf330e273815c54f_icgraph" alt=""/></div>
-<map name="entrynodes_8h_a2d44019e06142d75bf330e273815c54f_icgraph" id="entrynodes_8h_a2d44019e06142d75bf330e273815c54f_icgraph">
-<area shape="rect" id="node2" href="entrynodes_8h.html#a6f341162101f7678384679361c28ae79" title="extend_info_is_a_configured\l_bridge" alt="" coords="199,5,385,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ab89703f540a86aadb7a54475e10ca673"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab89703f540a86aadb7a54475e10ca673">&#9670;&nbsp;</a></span>any_bridge_descriptors_known()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int any_bridge_descriptors_known </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the number of bridges that have descriptors that are marked with purpose 'bridge' and are running.</p>
-<p>We use this function to decide if we're ready to start building circuits through our bridges, or if we need to wait until the directory "server/authority" requests finish. </p>
+<p>If <b>digest</b> matches the identity of any node in the entry_guards list for the provided guard selection state, return that node. Else return NULL. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_ab89703f540a86aadb7a54475e10ca673_cgraph.png" border="0" usemap="#entrynodes_8h_ab89703f540a86aadb7a54475e10ca673_cgraph" alt=""/></div>
-<map name="entrynodes_8h_ab89703f540a86aadb7a54475e10ca673_cgraph" id="entrynodes_8h_ab89703f540a86aadb7a54475e10ca673_cgraph">
-<area shape="rect" id="node2" href="entrynodes_8c.html#a6cde644220a9eaa9b3bdbb92a25607bd" title="choose_random_entry" alt="" coords="209,13,360,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aec3f497d942ccb88742194e3fe973a49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec3f497d942ccb88742194e3fe973a49">&#9670;&nbsp;</a></span>any_bridge_supports_microdescriptors()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int any_bridge_supports_microdescriptors </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return true if at least one of our bridges runs a Tor version that can provide microdescriptors to us. If not, we'll fall back to asking for full descriptors. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_aec3f497d942ccb88742194e3fe973a49_icgraph.png" border="0" usemap="#entrynodes_8h_aec3f497d942ccb88742194e3fe973a49_icgraph" alt=""/></div>
-<map name="entrynodes_8h_aec3f497d942ccb88742194e3fe973a49_icgraph" id="entrynodes_8h_aec3f497d942ccb88742194e3fe973a49_icgraph">
-<area shape="rect" id="node2" href="microdesc_8h.html#adeff3a88aa40b67ab6407bda5c941910" title="we_use_microdescriptors\l_for_circuits" alt="" coords="196,49,367,90"/>
-<area shape="rect" id="node3" href="microdesc_8h.html#ad9c983a76a2f31a6a843f4df9be7de1d" title="we_fetch_microdescriptors" alt="" coords="419,5,597,32"/>
-<area shape="rect" id="node4" href="microdesc_8h.html#a2667d23ef05f514b5bf916791b4a6bbd" title="we_fetch_router_descriptors" alt="" coords="415,56,601,83"/>
-<area shape="rect" id="node8" href="microdesc_8c.html#a01ac96e92e27b924141e47289fc633b2" title="MOCK_IMPL" alt="" coords="458,107,558,133"/>
-<area shape="rect" id="node5" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="649,49,815,90"/>
-<area shape="rect" id="node6" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="863,49,1008,90"/>
-<area shape="rect" id="node7" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="1056,49,1184,90"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="affaa0eba6400aae46fde3affcc686b1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affaa0eba6400aae46fde3affcc686b1d">&#9670;&nbsp;</a></span>bridge_add_from_config()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bridge_add_from_config </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structbridge__line__t.html">bridge_line_t</a> *&#160;</td>
-          <td class="paramname"><em>bridge_line</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Register the bridge information in <b>bridge_line</b> to the bridge subsystem. Steals reference of <b>bridge_line</b>. </p>
-
-</div>
-</div>
-<a id="a95929eae9c8f108e16c0440a9404e0b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95929eae9c8f108e16c0440a9404e0b5">&#9670;&nbsp;</a></span>choose_random_dirguard()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structnode__t.html">node_t</a>* choose_random_dirguard </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="or_8h.html#ae733ffc8e2cde85d0705d947f8f86ada">dirinfo_type_t</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Pick a live (up and listed) directory guard from entry_guards for downloading information of type <b>type</b>. </p>
-
-</div>
-</div>
-<a id="a6cde644220a9eaa9b3bdbb92a25607bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cde644220a9eaa9b3bdbb92a25607bd">&#9670;&nbsp;</a></span>choose_random_entry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structnode__t.html">node_t</a>* choose_random_entry </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *&#160;</td>
-          <td class="paramname"><em>state</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Pick a live (up and listed) entry guard from entry_guards. If <b>state</b> is non-NULL, this is for a specific circuit &ndash; make sure not to pick this circuit's exit or any node in the exit's family. If <b>state</b> is NULL, we're looking for a random guard (likely a bridge). If <b>dirinfo</b> is not NO_DIRINFO (zero), then only select from nodes that know how to answer directory questions of that type. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a6cde644220a9eaa9b3bdbb92a25607bd_icgraph.png" border="0" usemap="#entrynodes_8h_a6cde644220a9eaa9b3bdbb92a25607bd_icgraph" alt=""/></div>
-<map name="entrynodes_8h_a6cde644220a9eaa9b3bdbb92a25607bd_icgraph" id="entrynodes_8h_a6cde644220a9eaa9b3bdbb92a25607bd_icgraph">
-<area shape="rect" id="node2" href="entrynodes_8h.html#ab89703f540a86aadb7a54475e10ca673" title="any_bridge_descriptors\l_known" alt="" coords="204,5,360,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a03f0faa21923511f6aa0338190066252"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03f0faa21923511f6aa0338190066252">&#9670;&nbsp;</a></span>entries_known_but_down()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int entries_known_but_down </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
-          <td class="paramname"><em>options</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Do we know any descriptors for our bridges / entrynodes, and are all the ones we have descriptors for down? </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a03f0faa21923511f6aa0338190066252_cgraph.png" border="0" usemap="#entrynodes_8h_a03f0faa21923511f6aa0338190066252_cgraph" alt=""/></div>
-<map name="entrynodes_8h_a03f0faa21923511f6aa0338190066252_cgraph" id="entrynodes_8h_a03f0faa21923511f6aa0338190066252_cgraph">
-<area shape="rect" id="node2" href="entrynodes_8c.html#a574dc0f7b96e7da5652ddb234d42adb3" title="entry_list_is_constrained" alt="" coords="223,5,389,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a3e6fe3993d40ab3adcf1e9a8e0bc9374"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e6fe3993d40ab3adcf1e9a8e0bc9374">&#9670;&nbsp;</a></span>entries_retry_all()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void entries_retry_all </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
-          <td class="paramname"><em>options</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Mark all down known bridges / entrynodes up. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a3e6fe3993d40ab3adcf1e9a8e0bc9374_cgraph.png" border="0" usemap="#entrynodes_8h_a3e6fe3993d40ab3adcf1e9a8e0bc9374_cgraph" alt=""/></div>
-<map name="entrynodes_8h_a3e6fe3993d40ab3adcf1e9a8e0bc9374_cgraph" id="entrynodes_8h_a3e6fe3993d40ab3adcf1e9a8e0bc9374_cgraph">
-<area shape="rect" id="node2" href="entrynodes_8c.html#a574dc0f7b96e7da5652ddb234d42adb3" title="entry_list_is_constrained" alt="" coords="168,5,335,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a059f7981078a896a9349a578b82bc645"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a059f7981078a896a9349a578b82bc645">&#9670;&nbsp;</a></span>entry_guard_get_by_id_digest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structentry__guard__t.html">entry_guard_t</a>* entry_guard_get_by_id_digest </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>digest</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If <b>digest</b> matches the identity of any node in the entry_guards list, return that node. Else return NULL. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a059f7981078a896a9349a578b82bc645_cgraph.png" border="0" usemap="#entrynodes_8h_a059f7981078a896a9349a578b82bc645_cgraph" alt=""/></div>
-<map name="entrynodes_8h_a059f7981078a896a9349a578b82bc645_cgraph" id="entrynodes_8h_a059f7981078a896a9349a578b82bc645_cgraph">
-<area shape="rect" id="node2" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="189,13,276,39"/>
+<div class="center"><img src="entrynodes_8h_a9ecb7c2ddf9746ab0b0cb62a2239b6f6_cgraph.png" border="0" usemap="#entrynodes_8h_a9ecb7c2ddf9746ab0b0cb62a2239b6f6_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a9ecb7c2ddf9746ab0b0cb62a2239b6f6_cgraph" id="entrynodes_8h_a9ecb7c2ddf9746ab0b0cb62a2239b6f6_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a85c4a90c7407cd8c13fae402c414a5c8" title="get_sampled_guard_with_id" alt="" coords="196,20,379,47"/>
+<area shape="rect" id="node3" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="427,20,513,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a059f7981078a896a9349a578b82bc645_icgraph.png" border="0" usemap="#entrynodes_8h_a059f7981078a896a9349a578b82bc645_icgraph" alt=""/></div>
-<map name="entrynodes_8h_a059f7981078a896a9349a578b82bc645_icgraph" id="entrynodes_8h_a059f7981078a896a9349a578b82bc645_icgraph">
-<area shape="rect" id="node2" href="entrynodes_8c.html#a12aaa196d99fc0a6a4416c17f8274e76" title="add_an_entry_guard" alt="" coords="189,13,328,39"/>
+<div class="center"><img src="entrynodes_8h_a9ecb7c2ddf9746ab0b0cb62a2239b6f6_icgraph.png" border="0" usemap="#entrynodes_8h_a9ecb7c2ddf9746ab0b0cb62a2239b6f6_icgraph" alt=""/></div>
+<map name="entrynodes_8h_a9ecb7c2ddf9746ab0b0cb62a2239b6f6_icgraph" id="entrynodes_8h_a9ecb7c2ddf9746ab0b0cb62a2239b6f6_icgraph">
+<area shape="rect" id="node2" href="entrynodes_8h.html#a059f7981078a896a9349a578b82bc645" title="entry_guard_get_by\l_id_digest" alt="" coords="197,5,333,47"/>
+<area shape="rect" id="node3" href="entrynodes_8h.html#aab5f4a60cc416cbf7109763a3b44c45a" title="get_guard_state_for\l_bridge_desc_fetch" alt="" coords="196,71,333,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aca1100341edbe9b4ff26527595ab56e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca1100341edbe9b4ff26527595ab56e8">&#9670;&nbsp;</a></span>entry_guard_register_connect_status()</h2>
+<a id="a438f7a3ebb9ad87d9baee6a364441007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a438f7a3ebb9ad87d9baee6a364441007">&#9670;&nbsp;</a></span>entry_guard_get_pathbias_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int entry_guard_register_connect_status </td>
+          <td class="memname"><a class="el" href="structguard__pathbias__t.html">guard_pathbias_t</a>* entry_guard_get_pathbias_state </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>digest</em>, </td>
+          <td class="paramtype">entry_guard_t *&#160;</td>
+          <td class="paramname"><em>guard</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the pathbias state associated with <b>guard</b>. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a438f7a3ebb9ad87d9baee6a364441007_icgraph.png" border="0" usemap="#entrynodes_8h_a438f7a3ebb9ad87d9baee6a364441007_icgraph" alt=""/></div>
+<map name="entrynodes_8h_a438f7a3ebb9ad87d9baee6a364441007_icgraph" id="entrynodes_8h_a438f7a3ebb9ad87d9baee6a364441007_icgraph">
+<area shape="rect" id="node2" href="entrynodes_8h.html#afe9ef8d49fc04454e5c3cf61b7c5667f" title="pathbias_get_close\l_success_count" alt="" coords="247,5,381,47"/>
+<area shape="rect" id="node3" href="entrynodes_8h.html#a65437bc034e2202eb60d5cffd285fd48" title="pathbias_get_use_success\l_count" alt="" coords="224,71,404,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a728f1532a6ee05de69f5c8d988af2bd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a728f1532a6ee05de69f5c8d988af2bd6">&#9670;&nbsp;</a></span>entry_guard_get_rsa_id_digest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* entry_guard_get_rsa_id_digest </td>
+          <td>(</td>
+          <td class="paramtype">const entry_guard_t *&#160;</td>
+          <td class="paramname"><em>guard</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return <b>guard</b>'s 20-byte RSA identity digest </p>
+
+</div>
+</div>
+<a id="a06acab15b1c0a42b82485bf1f4fa78ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06acab15b1c0a42b82485bf1f4fa78ed">&#9670;&nbsp;</a></span>entry_guard_learned_bridge_identity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entry_guard_learned_bridge_identity </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *&#160;</td>
+          <td class="paramname"><em>addrport</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>succeeded</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mark_relay_status</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>now</em>&#160;</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>rsa_id_digest</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -539,25 +612,134 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Called when a connection to an OR with the identity digest <b>digest</b> is established (<b>succeeded</b>==1) or has failed (<b>succeeded</b>==0). If the OR is an entry, change that entry's up/down status. Return 0 normally, or -1 if we want to tear down the new connection.</p>
-<p>If <b>mark_relay_status</b>, also call <a class="el" href="nodelist_8c.html#af9b98a83a74416a5d6cb256c66110b1b">router_set_status()</a> on this relay. </p>
+<p>Update the guard subsystem's knowledge of the identity of the bridge at <b>addrport</b>. Idempotent. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_aca1100341edbe9b4ff26527595ab56e8_cgraph.png" border="0" usemap="#entrynodes_8h_aca1100341edbe9b4ff26527595ab56e8_cgraph" alt=""/></div>
-<map name="entrynodes_8h_aca1100341edbe9b4ff26527595ab56e8_cgraph" id="entrynodes_8h_aca1100341edbe9b4ff26527595ab56e8_cgraph">
-<area shape="rect" id="node2" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="207,5,293,32"/>
-<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="193,56,307,83"/>
+<div class="center"><img src="entrynodes_8h_a06acab15b1c0a42b82485bf1f4fa78ed_cgraph.png" border="0" usemap="#entrynodes_8h_a06acab15b1c0a42b82485bf1f4fa78ed_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a06acab15b1c0a42b82485bf1f4fa78ed_cgraph" id="entrynodes_8h_a06acab15b1c0a42b82485bf1f4fa78ed_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a4ce04a08aa5735caf86d77a168eec0d4" title="get_guard_selection\l_by_name" alt="" coords="192,5,331,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a89cd1e4049c1b18c57214d9414586ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89cd1e4049c1b18c57214d9414586ad4">&#9670;&nbsp;</a></span>entry_guard_pick_for_circuit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int entry_guard_pick_for_circuit </td>
+          <td>(</td>
+          <td class="paramtype">guard_selection_t *&#160;</td>
+          <td class="paramname"><em>gs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="entrynodes_8h.html#aef1363614195376e58c3090a0f1a4ff6">guard_usage_t</a>&#160;</td>
+          <td class="paramname"><em>usage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">entry_guard_restriction_t *&#160;</td>
+          <td class="paramname"><em>rst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structnode__t.html">node_t</a> **&#160;</td>
+          <td class="paramname"><em>chosen_node_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">circuit_guard_state_t **&#160;</td>
+          <td class="paramname"><em>guard_state_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pick a suitable entry guard for a circuit in, and place that guard in *<b>chosen_node_out</b>. Set *<b>guard_state_out</b> to an opaque state object that will record whether the circuit is ready to be used or not. Return 0 on success; on failure, return -1.</p>
+<p>If a restriction is provided in <b>rst</b>, do not return any guards that violate it, and remember that restriction in <b>guard_state_out</b> for later use. (Takes ownership of the <b>rst</b> object.) </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a89cd1e4049c1b18c57214d9414586ad4_cgraph.png" border="0" usemap="#entrynodes_8h_a89cd1e4049c1b18c57214d9414586ad4_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a89cd1e4049c1b18c57214d9414586ad4_cgraph" id="entrynodes_8h_a89cd1e4049c1b18c57214d9414586ad4_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a997305afc0db6f7e66d50f4273db1898" title="select_entry_guard\l_for_circuit" alt="" coords="196,5,328,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_aca1100341edbe9b4ff26527595ab56e8_icgraph.png" border="0" usemap="#entrynodes_8h_aca1100341edbe9b4ff26527595ab56e8_icgraph" alt=""/></div>
-<map name="entrynodes_8h_aca1100341edbe9b4ff26527595ab56e8_icgraph" id="entrynodes_8h_aca1100341edbe9b4ff26527595ab56e8_icgraph">
-<area shape="rect" id="node2" href="channel_8c.html#a4bb9524073333e156da271ca623a772d" title="channel_do_open_actions" alt="" coords="193,13,365,39"/>
+<div class="center"><img src="entrynodes_8h_a89cd1e4049c1b18c57214d9414586ad4_icgraph.png" border="0" usemap="#entrynodes_8h_a89cd1e4049c1b18c57214d9414586ad4_icgraph" alt=""/></div>
+<map name="entrynodes_8h_a89cd1e4049c1b18c57214d9414586ad4_icgraph" id="entrynodes_8h_a89cd1e4049c1b18c57214d9414586ad4_icgraph">
+<area shape="rect" id="node2" href="entrynodes_8h.html#a93db2fbe0af8230c60e96836cab30a29" title="guards_choose_dirguard" alt="" coords="196,13,359,39"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aa42b6de85549bfc96f56f89cab179042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42b6de85549bfc96f56f89cab179042">&#9670;&nbsp;</a></span>entry_guard_state_should_expire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int entry_guard_state_should_expire </td>
+          <td>(</td>
+          <td class="paramtype">circuit_guard_state_t *&#160;</td>
+          <td class="paramname"><em>guard_state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true iff the circuit whose state is <b>guard_state</b> should expire. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_aa42b6de85549bfc96f56f89cab179042_cgraph.png" border="0" usemap="#entrynodes_8h_aa42b6de85549bfc96f56f89cab179042_cgraph" alt=""/></div>
+<map name="entrynodes_8h_aa42b6de85549bfc96f56f89cab179042_cgraph" id="entrynodes_8h_aa42b6de85549bfc96f56f89cab179042_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="253,5,346,32"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a2c7ec361faf235b7a77e9b73314046c5" title="get_nonprimary_guard\l_idle_timeout" alt="" coords="224,57,375,98"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_aa42b6de85549bfc96f56f89cab179042_icgraph.png" border="0" usemap="#entrynodes_8h_aa42b6de85549bfc96f56f89cab179042_icgraph" alt=""/></div>
+<map name="entrynodes_8h_aa42b6de85549bfc96f56f89cab179042_icgraph" id="entrynodes_8h_aa42b6de85549bfc96f56f89cab179042_icgraph">
+<area shape="rect" id="node2" href="circuituse_8h.html#a4be6726f65e9f2c81ad77a9c70002ad1" title="circuit_expire_waiting\l_for_better_guard" alt="" coords="224,5,371,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5aceb4f4f990b9b3ed2ecea41abc9aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aceb4f4f990b9b3ed2ecea41abc9aab">&#9670;&nbsp;</a></span>entry_guard_succeeded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">guard_usable_t entry_guard_succeeded </td>
+          <td>(</td>
+          <td class="paramtype">circuit_guard_state_t **&#160;</td>
+          <td class="paramname"><em>guard_state_p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Called by the circuit building module when a circuit has succeeded: informs the guards code that the guard in *<b>guard_state_p</b> is working, and advances the state of the guard module. On a GUARD_USABLE_NEVER return value, the circuit is broken and should not be used. On a GUARD_USABLE_NOW return value, the circuit is ready to use. On a GUARD_MAYBE_USABLE_LATER return value, the circuit should not be used until we find out whether preferred guards will work for us. </p>
 
 </div>
 </div>
@@ -576,52 +758,41 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Our list of entry guards has changed, or some element of one of our entry guards has changed. Write the changes to disk within the next few minutes. </p>
+<p>Our list of entry guards has changed for the default guard selection context, or some element of one of our entry guards has changed. Write the changes to disk within the next few minutes. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a1aedcf8995075b212cce9d510e9e70d7_cgraph.png" border="0" usemap="#entrynodes_8h_a1aedcf8995075b212cce9d510e9e70d7_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a1aedcf8995075b212cce9d510e9e70d7_cgraph" id="entrynodes_8h_a1aedcf8995075b212cce9d510e9e70d7_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#abe944c95b279887314f1101ada1f4884" title="entry_guards_changed\l_for_guard_selection" alt="" coords="213,5,367,47"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="207,71,373,98"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="aa295479ccc485da15d0e03872188cd68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa295479ccc485da15d0e03872188cd68">&#9670;&nbsp;</a></span>entry_guards_compute_status()</h2>
+<a id="abe944c95b279887314f1101ada1f4884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe944c95b279887314f1101ada1f4884">&#9670;&nbsp;</a></span>entry_guards_changed_for_guard_selection()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void entry_guards_compute_status </td>
+          <td class="memname">void entry_guards_changed_for_guard_selection </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
-          <td class="paramname"><em>options</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">guard_selection_t *&#160;</td>
+          <td class="paramname"><em>gs</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>now</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A new directory or router-status has arrived; update the down/listed status of the entry guards.</p>
-<p>An entry is 'down' if the directory lists it as nonrunning. An entry is 'unlisted' if the directory doesn't include it.</p>
-<p>Don't call this on startup; only on a fresh download. Otherwise we'll think that things are unlisted. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_aa295479ccc485da15d0e03872188cd68_cgraph.png" border="0" usemap="#entrynodes_8h_aa295479ccc485da15d0e03872188cd68_cgraph" alt=""/></div>
-<map name="entrynodes_8h_aa295479ccc485da15d0e03872188cd68_cgraph" id="entrynodes_8h_aa295479ccc485da15d0e03872188cd68_cgraph">
-<area shape="rect" id="node2" href="entrynodes_8c.html#aef450c6c3b8cc0a8e7461e3826338ce7" title="entry_nodes_should\l_be_added" alt="" coords="208,5,347,47"/>
-</map>
-</div>
+<p>Our list of entry guards has changed for a particular guard selection context, or some element of one of our entry guards has changed for one. Write the changes to disk within the next few minutes. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_aa295479ccc485da15d0e03872188cd68_icgraph.png" border="0" usemap="#entrynodes_8h_aa295479ccc485da15d0e03872188cd68_icgraph" alt=""/></div>
-<map name="entrynodes_8h_aa295479ccc485da15d0e03872188cd68_icgraph" id="entrynodes_8h_aa295479ccc485da15d0e03872188cd68_icgraph">
-<area shape="rect" id="node2" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="208,5,336,47"/>
+<div class="center"><img src="entrynodes_8h_abe944c95b279887314f1101ada1f4884_icgraph.png" border="0" usemap="#entrynodes_8h_abe944c95b279887314f1101ada1f4884_icgraph" alt=""/></div>
+<map name="entrynodes_8h_abe944c95b279887314f1101ada1f4884_icgraph" id="entrynodes_8h_abe944c95b279887314f1101ada1f4884_icgraph">
+<area shape="rect" id="node2" href="entrynodes_8h.html#a1aedcf8995075b212cce9d510e9e70d7" title="entry_guards_changed" alt="" coords="207,13,360,39"/>
 </map>
 </div>
 
@@ -643,6 +814,87 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all storage held by the list of entry guards and related memory structs. </p>
+
+</div>
+</div>
+<a id="a1f69ddf668f984f783eb7cfcb358185e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f69ddf668f984f783eb7cfcb358185e">&#9670;&nbsp;</a></span>entry_guards_get_err_str_if_dir_info_missing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* entry_guards_get_err_str_if_dir_info_missing </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>using_mds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_present</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_usable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As guard_selection_have_enough_dir_info_to_build_circuits, but uses the default guard selection. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a1f69ddf668f984f783eb7cfcb358185e_cgraph.png" border="0" usemap="#entrynodes_8h_a1f69ddf668f984f783eb7cfcb358185e_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a1f69ddf668f984f783eb7cfcb358185e_cgraph" id="entrynodes_8h_a1f69ddf668f984f783eb7cfcb358185e_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a0e9ad8a9d2d435a30b8ece9e786533bf" title="guard_selection_get\l_err_str_if_dir_info\l_missing" alt="" coords="226,125,365,181"/>
+<area shape="rect" id="node13" href="entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="212,205,379,232"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="431,99,573,141"/>
+<area shape="rect" id="node12" href="entrynodes_8c.html#acca85058789d4eb247b7e560bfeb7767" title="get_n_primary_guards\l_to_use" alt="" coords="427,165,577,206"/>
+<area shape="rect" id="node4" href="entrynodes_8c.html#a045186178310a765b1193b31c9c98be8" title="get_n_primary_guards" alt="" coords="637,5,787,32"/>
+<area shape="rect" id="node5" href="container_8c.html#a5e71fb7bc775f079d9f9d724f0203fc1" title="smartlist_add_all" alt="" coords="652,56,772,83"/>
+<area shape="rect" id="node6" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="662,107,762,133"/>
+<area shape="rect" id="node7" href="container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="648,157,776,184"/>
+<area shape="rect" id="node8" href="entrynodes_8c.html#a440f5217f0a557c13b02a251f93db5d6" title="sample_reachable_filtered\l_entry_guards" alt="" coords="625,209,799,250"/>
+<area shape="rect" id="node9" href="entrynodes_8c.html#ab335f71d2749aa457ffd8a82065649c6" title="entry_guard_consider\l_retry" alt="" coords="1051,209,1197,250"/>
+<area shape="rect" id="node11" href="entrynodes_8c.html#ac771815070c48fdafceda321e3b56739" title="num_reachable_filtered\l_guards" alt="" coords="847,238,1003,279"/>
+<area shape="rect" id="node10" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="1245,216,1339,243"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a61c84cb9bea9ab7fbeff429a27893c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c84cb9bea9ab7fbeff429a27893c33">&#9670;&nbsp;</a></span>entry_guards_note_internet_connectivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void entry_guards_note_internet_connectivity </td>
+          <td>(</td>
+          <td class="paramtype">guard_selection_t *&#160;</td>
+          <td class="paramname"><em>gs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell the entry guards subsystem that we have confirmed that as of just now, we're on the internet. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a61c84cb9bea9ab7fbeff429a27893c33_cgraph.png" border="0" usemap="#entrynodes_8h_a61c84cb9bea9ab7fbeff429a27893c33_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a61c84cb9bea9ab7fbeff429a27893c33_cgraph" id="entrynodes_8h_a61c84cb9bea9ab7fbeff429a27893c33_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="232,13,325,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -677,7 +929,48 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parse <b>state</b> and learn about the entry guards it describes. If <b>set</b> is true, and there are no errors, replace the global entry_list with what we find. On success, return 0. On failure, alloc into *<b>msg</b> a string describing the error, and return -1. </p>
+<p>Parse <b>state</b> and learn about the entry guards it describes. If <b>set</b> is true, and there are no errors, replace the guard list in the default guard selection context with what we find. On success, return 0. On failure, alloc into *<b>msg</b> a string describing the error, and return -1. </p>
+
+</div>
+</div>
+<a id="a4360ef3264ab398b48b851e0d2d675b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4360ef3264ab398b48b851e0d2d675b5">&#9670;&nbsp;</a></span>entry_guards_update_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int entry_guards_update_all </td>
+          <td>(</td>
+          <td class="paramtype">guard_selection_t *&#160;</td>
+          <td class="paramname"><em>gs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update all derived pieces of the guard selection state in <b>gs</b>. Return true iff we should stop using all previously generated circuits. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a4360ef3264ab398b48b851e0d2d675b5_cgraph.png" border="0" usemap="#entrynodes_8h_a4360ef3264ab398b48b851e0d2d675b5_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a4360ef3264ab398b48b851e0d2d675b5_cgraph" id="entrynodes_8h_a4360ef3264ab398b48b851e0d2d675b5_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#af2a8cbdaeab1361a4527e0d1b6233f25" title="sampled_guards_update\l_from_consensus" alt="" coords="216,5,379,47"/>
+<area shape="rect" id="node4" href="entrynodes_8c.html#a6d8b3b670aac830e78037876f2a000ea" title="entry_guards_update\l_filtered_sets" alt="" coords="226,71,369,112"/>
+<area shape="rect" id="node5" href="entrynodes_8c.html#a691aafe1ed64f00a693b7bd1b0675ef1" title="entry_guards_update\l_confirmed" alt="" coords="226,136,369,177"/>
+<area shape="rect" id="node9" href="entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="226,252,369,293"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a8eea3721f2ce3de824f68890f6ab1778" title="get_remove_unlisted\l_guards_after_days" alt="" coords="442,5,585,47"/>
+<area shape="rect" id="node6" href="container_8c.html#ad24500d61ff1dbb6c845a8a70f6d2f14" title="smartlist_clear" alt="" coords="460,82,567,109"/>
+<area shape="rect" id="node7" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="463,183,563,210"/>
+<area shape="rect" id="node8" href="container_8c.html#adeb0528c65b62117acb2b8f6e2b0e910" title="smartlist_sort" alt="" coords="463,133,564,159"/>
+<area shape="rect" id="node10" href="entrynodes_8c.html#a045186178310a765b1193b31c9c98be8" title="get_n_primary_guards" alt="" coords="438,234,589,261"/>
+<area shape="rect" id="node11" href="container_8c.html#a5e71fb7bc775f079d9f9d724f0203fc1" title="smartlist_add_all" alt="" coords="453,285,573,311"/>
+<area shape="rect" id="node12" href="container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="449,335,577,362"/>
+<area shape="rect" id="node13" href="entrynodes_8c.html#a440f5217f0a557c13b02a251f93db5d6" title="sample_reachable_filtered\l_entry_guards" alt="" coords="427,387,600,428"/>
+<area shape="rect" id="node14" href="entrynodes_8c.html#ab335f71d2749aa457ffd8a82065649c6" title="entry_guard_consider\l_retry" alt="" coords="852,387,999,428"/>
+<area shape="rect" id="node16" href="entrynodes_8c.html#ac771815070c48fdafceda321e3b56739" title="num_reachable_filtered\l_guards" alt="" coords="648,416,804,457"/>
+<area shape="rect" id="node15" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="1047,394,1140,421"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -697,6 +990,68 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>If the entry guard info has not changed, do nothing and return. Otherwise, free the EntryGuards piece of <b>state</b> and create a new one out of the global entry_guards list, and then mark <b>state</b> dirty so it will get saved to disk. </p>
+
+</div>
+</div>
+<a id="af943c868320a66ee2dca652ad0555a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af943c868320a66ee2dca652ad0555a32">&#9670;&nbsp;</a></span>entry_guards_upgrade_waiting_circuits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int entry_guards_upgrade_waiting_circuits </td>
+          <td>(</td>
+          <td class="paramtype">guard_selection_t *&#160;</td>
+          <td class="paramname"><em>gs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td>
+          <td class="paramname"><em>all_circuits_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td>
+          <td class="paramname"><em>newly_complete_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Look at all of the <a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> * objects in <b>all_circuits_in</b>, and see if any of them that were previously not ready to use for guard-related reasons are now ready to use. Place those circuits in <b>newly_complete_out</b>, and mark them COMPLETE.</p>
+<p>Return 1 if we upgraded any circuits, and 0 otherwise. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_af943c868320a66ee2dca652ad0555a32_cgraph.png" border="0" usemap="#entrynodes_8h_af943c868320a66ee2dca652ad0555a32_cgraph" alt=""/></div>
+<map name="entrynodes_8h_af943c868320a66ee2dca652ad0555a32_cgraph" id="entrynodes_8h_af943c868320a66ee2dca652ad0555a32_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#acad8e7ba6123e0a214361a425f711c05" title="entry_guards_all_primary\l_guards_are_down" alt="" coords="204,197,371,238"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="419,125,561,166"/>
+<area shape="rect" id="node9" href="entrynodes_8c.html#ab335f71d2749aa457ffd8a82065649c6" title="entry_guard_consider\l_retry" alt="" coords="1035,209,1181,250"/>
+<area shape="rect" id="node4" href="entrynodes_8c.html#a045186178310a765b1193b31c9c98be8" title="get_n_primary_guards" alt="" coords="621,5,771,32"/>
+<area shape="rect" id="node5" href="container_8c.html#a5e71fb7bc775f079d9f9d724f0203fc1" title="smartlist_add_all" alt="" coords="636,56,756,83"/>
+<area shape="rect" id="node6" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="646,107,746,133"/>
+<area shape="rect" id="node7" href="container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="632,157,760,184"/>
+<area shape="rect" id="node8" href="entrynodes_8c.html#a440f5217f0a557c13b02a251f93db5d6" title="sample_reachable_filtered\l_entry_guards" alt="" coords="609,209,783,250"/>
+<area shape="rect" id="node11" href="entrynodes_8c.html#ac771815070c48fdafceda321e3b56739" title="num_reachable_filtered\l_guards" alt="" coords="831,209,987,250"/>
+<area shape="rect" id="node10" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="1229,216,1323,243"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_af943c868320a66ee2dca652ad0555a32_icgraph.png" border="0" usemap="#entrynodes_8h_af943c868320a66ee2dca652ad0555a32_icgraph" alt=""/></div>
+<map name="entrynodes_8h_af943c868320a66ee2dca652ad0555a32_icgraph" id="entrynodes_8h_af943c868320a66ee2dca652ad0555a32_icgraph">
+<area shape="rect" id="node2" href="circuitlist_8h.html#a8d569b96b07da7c91549695cc1ce8ccf" title="circuit_find_circuits\l_to_upgrade_from_guard_wait" alt="" coords="204,5,400,47"/>
+<area shape="rect" id="node3" href="circuitbuild_8h.html#afbeee8004f6e86e019ed4c4a9556d7de" title="circuit_upgrade_circuits\l_from_guard_wait" alt="" coords="448,5,607,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -721,21 +1076,20 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="entrynodes_8h_a574dc0f7b96e7da5652ddb234d42adb3_icgraph.png" border="0" usemap="#entrynodes_8h_a574dc0f7b96e7da5652ddb234d42adb3_icgraph" alt=""/></div>
 <map name="entrynodes_8h_a574dc0f7b96e7da5652ddb234d42adb3_icgraph" id="entrynodes_8h_a574dc0f7b96e7da5652ddb234d42adb3_icgraph">
-<area shape="rect" id="node2" href="entrynodes_8h.html#a03f0faa21923511f6aa0338190066252" title="entries_known_but_down" alt="" coords="220,5,389,32"/>
-<area shape="rect" id="node3" href="entrynodes_8h.html#a3e6fe3993d40ab3adcf1e9a8e0bc9374" title="entries_retry_all" alt="" coords="247,56,362,83"/>
+<area shape="rect" id="node2" href="entrynodes_8h.html#aa9eddf77d45dab94c87c4ae9e9a659fb" title="guards_retry_optimistic" alt="" coords="220,5,377,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aef450c6c3b8cc0a8e7461e3826338ce7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef450c6c3b8cc0a8e7461e3826338ce7">&#9670;&nbsp;</a></span>entry_nodes_should_be_added()</h2>
+<a id="ae55f2a4d95b0bc81220dd0464b8494f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae55f2a4d95b0bc81220dd0464b8494f8">&#9670;&nbsp;</a></span>get_guard_selection_info()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void entry_nodes_should_be_added </td>
+          <td class="memname">guard_selection_t* get_guard_selection_info </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -743,163 +1097,53 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Called when the value of EntryNodes changes in our configuration. </p>
+<p>Get current default guard_selection_t, creating it if necessary </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_aef450c6c3b8cc0a8e7461e3826338ce7_icgraph.png" border="0" usemap="#entrynodes_8h_aef450c6c3b8cc0a8e7461e3826338ce7_icgraph" alt=""/></div>
-<map name="entrynodes_8h_aef450c6c3b8cc0a8e7461e3826338ce7_icgraph" id="entrynodes_8h_aef450c6c3b8cc0a8e7461e3826338ce7_icgraph">
-<area shape="rect" id="node2" href="entrynodes_8h.html#aa295479ccc485da15d0e03872188cd68" title="entry_guards_compute\l_status" alt="" coords="192,5,347,47"/>
-<area shape="rect" id="node3" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="395,5,523,47"/>
+<div class="center"><img src="entrynodes_8h_ae55f2a4d95b0bc81220dd0464b8494f8_icgraph.png" border="0" usemap="#entrynodes_8h_ae55f2a4d95b0bc81220dd0464b8494f8_icgraph" alt=""/></div>
+<map name="entrynodes_8h_ae55f2a4d95b0bc81220dd0464b8494f8_icgraph" id="entrynodes_8h_ae55f2a4d95b0bc81220dd0464b8494f8_icgraph">
+<area shape="rect" id="node2" href="circuitlist_8h.html#a8d569b96b07da7c91549695cc1ce8ccf" title="circuit_find_circuits\l_to_upgrade_from_guard_wait" alt="" coords="220,5,416,47"/>
+<area shape="rect" id="node4" href="entrynodes_8h.html#a059f7981078a896a9349a578b82bc645" title="entry_guard_get_by\l_id_digest" alt="" coords="250,71,386,112"/>
+<area shape="rect" id="node5" href="entrynodes_8h.html#aab5f4a60cc416cbf7109763a3b44c45a" title="get_guard_state_for\l_bridge_desc_fetch" alt="" coords="249,136,387,177"/>
+<area shape="rect" id="node6" href="entrynodes_8h.html#a1aedcf8995075b212cce9d510e9e70d7" title="entry_guards_changed" alt="" coords="241,202,395,229"/>
+<area shape="rect" id="node7" href="entrynodes_8h.html#ae3a6a46f97e2693fa41867ff68a88a0f" title="getinfo_helper_entry\l_guards" alt="" coords="249,253,387,295"/>
+<area shape="rect" id="node8" href="entrynodes_8h.html#a2059c6a8b0ae5f6bd64087fe00a27d9d" title="remove_all_entry_guards" alt="" coords="235,319,401,346"/>
+<area shape="rect" id="node9" href="entrynodes_8h.html#a93db2fbe0af8230c60e96836cab30a29" title="guards_choose_dirguard" alt="" coords="237,370,399,397"/>
+<area shape="rect" id="node10" href="entrynodes_8h.html#aa9eddf77d45dab94c87c4ae9e9a659fb" title="guards_retry_optimistic" alt="" coords="239,421,397,447"/>
+<area shape="rect" id="node11" href="entrynodes_8h.html#a1f69ddf668f984f783eb7cfcb358185e" title="entry_guards_get_err\l_str_if_dir_info_missing" alt="" coords="239,472,397,513"/>
+<area shape="rect" id="node3" href="circuitbuild_8h.html#afbeee8004f6e86e019ed4c4a9556d7de" title="circuit_upgrade_circuits\l_from_guard_wait" alt="" coords="464,5,623,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a6f341162101f7678384679361c28ae79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f341162101f7678384679361c28ae79">&#9670;&nbsp;</a></span>extend_info_is_a_configured_bridge()</h2>
+<a id="aab5f4a60cc416cbf7109763a3b44c45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab5f4a60cc416cbf7109763a3b44c45a">&#9670;&nbsp;</a></span>get_guard_state_for_bridge_desc_fetch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int extend_info_is_a_configured_bridge </td>
+          <td class="memname">circuit_guard_state_t* get_guard_state_for_bridge_desc_fetch </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structextend__info__t.html">extend_info_t</a> *&#160;</td>
-          <td class="paramname"><em>ei</em></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>digest</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If we have a bridge configured whose digest matches <b>ei-&gt;identity_digest</b>, or a bridge with no known digest whose address matches <b>ei-&gt;addr</b>:<b>ei-&gt;port</b>, return 1. Else return 0. If <b>ei-&gt;onion_key</b> is NULL, check for address/port matches only. </p>
+<p>We are about to connect to bridge with identity <b>digest</b> to fetch its descriptor. Create a new guard state for this connection and return it. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a6f341162101f7678384679361c28ae79_cgraph.png" border="0" usemap="#entrynodes_8h_a6f341162101f7678384679361c28ae79_cgraph" alt=""/></div>
-<map name="entrynodes_8h_a6f341162101f7678384679361c28ae79_cgraph" id="entrynodes_8h_a6f341162101f7678384679361c28ae79_cgraph">
-<area shape="rect" id="node2" href="entrynodes_8c.html#a2d44019e06142d75bf330e273815c54f" title="addr_is_a_configured\l_bridge" alt="" coords="240,5,385,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a958ebeeb4b45f01d919751bbcd6e79b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a958ebeeb4b45f01d919751bbcd6e79b2">&#9670;&nbsp;</a></span>fetch_bridge_descriptors()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fetch_bridge_descriptors </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
-          <td class="paramname"><em>options</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>now</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>For each bridge in our list for which we don't currently have a descriptor, fetch a new copy of its descriptor &ndash; either directly from the bridge or via a bridge authority. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a958ebeeb4b45f01d919751bbcd6e79b2_cgraph.png" border="0" usemap="#entrynodes_8h_a958ebeeb4b45f01d919751bbcd6e79b2_cgraph" alt=""/></div>
-<map name="entrynodes_8h_a958ebeeb4b45f01d919751bbcd6e79b2_cgraph" id="entrynodes_8h_a958ebeeb4b45f01d919751bbcd6e79b2_cgraph">
-<area shape="rect" id="node2" href="routerlist_8c.html#a40b0857598d14d49c8082667c70bc023" title="get_n_authorities" alt="" coords="217,5,339,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a06f10cf1c3269fd2a3a93fe696e6a662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f10cf1c3269fd2a3a93fe696e6a662">&#9670;&nbsp;</a></span>find_transport_name_by_bridge_addrport()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* find_transport_name_by_bridge_addrport </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Given the <b>addr</b> and <b>port</b> of a bridge, if that bridge supports a pluggable transport, return its name. Otherwise, return NULL. </p>
-
-</div>
-</div>
-<a id="a3275a2122be652bd96574f81aa6145f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3275a2122be652bd96574f81aa6145f1">&#9670;&nbsp;</a></span>get_entry_guards()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structsmartlist__t.html">smartlist_t</a>* get_entry_guards </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the list of entry guards, creating it if necessary. </p>
-
-</div>
-</div>
-<a id="a563fb20442805d5fbe516b5f60fed5fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a563fb20442805d5fbe516b5f60fed5fd">&#9670;&nbsp;</a></span>get_socks_args_by_bridge_addrport()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structsmartlist__t.html">smartlist_t</a>* get_socks_args_by_bridge_addrport </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return a smartlist containing all the SOCKS arguments that we should pass to the SOCKS proxy. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a563fb20442805d5fbe516b5f60fed5fd_icgraph.png" border="0" usemap="#entrynodes_8h_a563fb20442805d5fbe516b5f60fed5fd_icgraph" alt=""/></div>
-<map name="entrynodes_8h_a563fb20442805d5fbe516b5f60fed5fd_icgraph" id="entrynodes_8h_a563fb20442805d5fbe516b5f60fed5fd_icgraph">
-<area shape="rect" id="node2" href="transports_8h.html#a122033e171457c2474ad385177d1382a" title="pt_get_socks_args_for\l_proxy_addrport" alt="" coords="231,5,385,47"/>
+<div class="center"><img src="entrynodes_8h_aab5f4a60cc416cbf7109763a3b44c45a_cgraph.png" border="0" usemap="#entrynodes_8h_aab5f4a60cc416cbf7109763a3b44c45a_cgraph" alt=""/></div>
+<map name="entrynodes_8h_aab5f4a60cc416cbf7109763a3b44c45a_cgraph" id="entrynodes_8h_aab5f4a60cc416cbf7109763a3b44c45a_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a9ecb7c2ddf9746ab0b0cb62a2239b6f6" title="entry_guard_get_by\l_id_digest_for_guard\l_selection" alt="" coords="203,5,345,61"/>
+<area shape="rect" id="node5" href="entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="191,85,357,112"/>
+<area shape="rect" id="node6" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="227,136,321,163"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a85c4a90c7407cd8c13fae402c414a5c8" title="get_sampled_guard_with_id" alt="" coords="405,20,588,47"/>
+<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="636,20,723,47"/>
 </map>
 </div>
 
@@ -942,70 +1186,52 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If <b>question</b> is the string "entry-guards", then dump to *<b>answer</b> a newly allocated string describing all of the nodes in the global entry_guards list. See control-spec.txt for details. For backward compatibility, we also handle the string "helper-nodes". </p>
-
-</div>
-</div>
-<a id="af8213fa6b22741a8c0b7d4834d7dccff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8213fa6b22741a8c0b7d4834d7dccff">&#9670;&nbsp;</a></span>learned_bridge_descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void learned_bridge_descriptor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *&#160;</td>
-          <td class="paramname"><em>ri</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>from_cache</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>We just learned a descriptor for a bridge. See if that digest is in our entry guard list, and add it if not. </p>
+<p>If <b>question</b> is the string "entry-guards", then dump to *<b>answer</b> a newly allocated string describing all of the nodes in the global entry_guards list. See control-spec.txt for details. For backward compatibility, we also handle the string "helper-nodes".</p>
+<p>XXX this should be totally redesigned after prop 271 too, and that's going to take some control spec work. </p>
 <div class="dynheader">
-Here is the caller graph for this function:</div>
+Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_af8213fa6b22741a8c0b7d4834d7dccff_icgraph.png" border="0" usemap="#entrynodes_8h_af8213fa6b22741a8c0b7d4834d7dccff_icgraph" alt=""/></div>
-<map name="entrynodes_8h_af8213fa6b22741a8c0b7d4834d7dccff_icgraph" id="entrynodes_8h_af8213fa6b22741a8c0b7d4834d7dccff_icgraph">
-<area shape="rect" id="node2" href="routerlist_8h.html#ad0e00a6f0df9aace49976da496902957" title="routerlist_descriptors\l_added" alt="" coords="224,5,367,47"/>
+<div class="center"><img src="entrynodes_8h_ae3a6a46f97e2693fa41867ff68a88a0f_cgraph.png" border="0" usemap="#entrynodes_8h_ae3a6a46f97e2693fa41867ff68a88a0f_cgraph" alt=""/></div>
+<map name="entrynodes_8h_ae3a6a46f97e2693fa41867ff68a88a0f_cgraph" id="entrynodes_8h_ae3a6a46f97e2693fa41867ff68a88a0f_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="192,5,359,32"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a8e25941e32118099ac4b42000a37afc4" title="getinfo_helper_format\l_single_entry_guard" alt="" coords="202,57,349,98"/>
+<area shape="rect" id="node4" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="225,123,325,149"/>
+<area shape="rect" id="node5" href="container_8c.html#ab865391a8cac688c51809c33dad0bfe2" title="smartlist_join_strings" alt="" coords="203,173,348,200"/>
+<area shape="rect" id="node6" href="container_8c.html#aac69a4c0d462859a1a13a6eb35ab3c0a" title="smartlist_join_strings2" alt="" coords="407,173,559,200"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aa1b2c6b58f355b442633b877f6a04202"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1b2c6b58f355b442633b877f6a04202">&#9670;&nbsp;</a></span>learned_router_identity()</h2>
+<a id="a0e9ad8a9d2d435a30b8ece9e786533bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e9ad8a9d2d435a30b8ece9e786533bf">&#9670;&nbsp;</a></span>guard_selection_get_err_str_if_dir_info_missing()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void learned_router_identity </td>
+          <td class="memname">char* guard_selection_get_err_str_if_dir_info_missing </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
+          <td class="paramtype">guard_selection_t *&#160;</td>
+          <td class="paramname"><em>gs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>using_mds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>digest</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_present</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_usable</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1014,18 +1240,166 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>We made a connection to a router at <b>addr</b>:<b>port</b> without knowing its digest. Its digest turned out to be <b>digest</b>. If it was a bridge, and we still don't know its digest, record it. </p>
+<p>Check if we are missing any crucial dirinfo for the guard subsystem to work. Return NULL if everything went well, otherwise return a newly allocated string with an informative error message. In the latter case, use the genreal descriptor information <b>using_mds</b>, <b>num_present</b> and <b>num_usable</b> to improve the error message. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a0e9ad8a9d2d435a30b8ece9e786533bf_cgraph.png" border="0" usemap="#entrynodes_8h_a0e9ad8a9d2d435a30b8ece9e786533bf_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a0e9ad8a9d2d435a30b8ece9e786533bf_cgraph" id="entrynodes_8h_a0e9ad8a9d2d435a30b8ece9e786533bf_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="196,99,339,141"/>
+<area shape="rect" id="node11" href="entrynodes_8c.html#acca85058789d4eb247b7e560bfeb7767" title="get_n_primary_guards\l_to_use" alt="" coords="192,165,343,206"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a045186178310a765b1193b31c9c98be8" title="get_n_primary_guards" alt="" coords="402,5,553,32"/>
+<area shape="rect" id="node4" href="container_8c.html#a5e71fb7bc775f079d9f9d724f0203fc1" title="smartlist_add_all" alt="" coords="417,56,537,83"/>
+<area shape="rect" id="node5" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="427,107,527,133"/>
+<area shape="rect" id="node6" href="container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="413,157,541,184"/>
+<area shape="rect" id="node7" href="entrynodes_8c.html#a440f5217f0a557c13b02a251f93db5d6" title="sample_reachable_filtered\l_entry_guards" alt="" coords="391,209,564,250"/>
+<area shape="rect" id="node8" href="entrynodes_8c.html#ab335f71d2749aa457ffd8a82065649c6" title="entry_guard_consider\l_retry" alt="" coords="816,209,963,250"/>
+<area shape="rect" id="node10" href="entrynodes_8c.html#ac771815070c48fdafceda321e3b56739" title="num_reachable_filtered\l_guards" alt="" coords="612,238,768,279"/>
+<area shape="rect" id="node9" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="1011,216,1104,243"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a0e9ad8a9d2d435a30b8ece9e786533bf_icgraph.png" border="0" usemap="#entrynodes_8h_a0e9ad8a9d2d435a30b8ece9e786533bf_icgraph" alt=""/></div>
+<map name="entrynodes_8h_a0e9ad8a9d2d435a30b8ece9e786533bf_icgraph" id="entrynodes_8h_a0e9ad8a9d2d435a30b8ece9e786533bf_icgraph">
+<area shape="rect" id="node2" href="entrynodes_8h.html#a1f69ddf668f984f783eb7cfcb358185e" title="entry_guards_get_err\l_str_if_dir_info_missing" alt="" coords="192,13,351,54"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a1237fc3844be7dd672552a99ba137a88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1237fc3844be7dd672552a99ba137a88">&#9670;&nbsp;</a></span>mark_bridge_list()</h2>
+<a id="a93db2fbe0af8230c60e96836cab30a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93db2fbe0af8230c60e96836cab30a29">&#9670;&nbsp;</a></span>guards_choose_dirguard()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mark_bridge_list </td>
+          <td class="memname">const <a class="el" href="structnode__t.html">node_t</a>* guards_choose_dirguard </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>dir_purpose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">circuit_guard_state_t **&#160;</td>
+          <td class="paramname"><em>guard_state_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Helper: pick a directory guard, with whatever algorithm is used. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a93db2fbe0af8230c60e96836cab30a29_cgraph.png" border="0" usemap="#entrynodes_8h_a93db2fbe0af8230c60e96836cab30a29_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a93db2fbe0af8230c60e96836cab30a29_cgraph" id="entrynodes_8h_a93db2fbe0af8230c60e96836cab30a29_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a5b3f1de0905e52f3a76961bd1db25e01" title="guard_create_dirserver\l_md_restriction" alt="" coords="222,5,377,47"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a89cd1e4049c1b18c57214d9414586ad4" title="entry_guard_pick_for\l_circuit" alt="" coords="228,71,371,112"/>
+<area shape="rect" id="node5" href="entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="216,137,383,163"/>
+<area shape="rect" id="node4" href="entrynodes_8c.html#a997305afc0db6f7e66d50f4273db1898" title="select_entry_guard\l_for_circuit" alt="" coords="431,71,563,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab71ff8062c99e9722afef949590df2da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71ff8062c99e9722afef949590df2da">&#9670;&nbsp;</a></span>guards_choose_guard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structnode__t.html">node_t</a>* guards_choose_guard </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>purpose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">circuit_guard_state_t **&#160;</td>
+          <td class="paramname"><em>guard_state_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Helper: pick a guard for a circuit, with whatever algorithm is used. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_ab71ff8062c99e9722afef949590df2da_cgraph.png" border="0" usemap="#entrynodes_8h_ab71ff8062c99e9722afef949590df2da_cgraph" alt=""/></div>
+<map name="entrynodes_8h_ab71ff8062c99e9722afef949590df2da_cgraph" id="entrynodes_8h_ab71ff8062c99e9722afef949590df2da_cgraph">
+<area shape="rect" id="node2" href="circuituse_8c.html#a5e8e36fe1fa5af29eb3595f31e0e01db" title="circuit_should_use\l_vanguards" alt="" coords="207,5,337,47"/>
+<area shape="rect" id="node4" href="circuitbuild_8c.html#a4928871a4861aa6f71b50a5642406747" title="build_state_get_exit\l_rsa_id" alt="" coords="203,71,341,112"/>
+<area shape="rect" id="node3" href="circuituse_8c.html#aff875d76fff1f49cbbf561415216f3b3" title="circuit_purpose_is\l_hidden_service" alt="" coords="389,5,516,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa9eddf77d45dab94c87c4ae9e9a659fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9eddf77d45dab94c87c4ae9e9a659fb">&#9670;&nbsp;</a></span>guards_retry_optimistic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int guards_retry_optimistic </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If we're running with a constrained guard set, then maybe mark our guards usable. Return 1 if we do; 0 if we don't. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_aa9eddf77d45dab94c87c4ae9e9a659fb_cgraph.png" border="0" usemap="#entrynodes_8h_aa9eddf77d45dab94c87c4ae9e9a659fb_cgraph" alt=""/></div>
+<map name="entrynodes_8h_aa9eddf77d45dab94c87c4ae9e9a659fb_cgraph" id="entrynodes_8h_aa9eddf77d45dab94c87c4ae9e9a659fb_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a574dc0f7b96e7da5652ddb234d42adb3" title="entry_list_is_constrained" alt="" coords="211,48,377,75"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a30a477e0e6936f2e44747be238f30dd7" title="mark_primary_guards\l_maybe_reachable" alt="" coords="221,99,367,141"/>
+<area shape="rect" id="node13" href="entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="211,165,377,192"/>
+<area shape="rect" id="node4" href="entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="425,99,568,141"/>
+<area shape="rect" id="node5" href="entrynodes_8c.html#a045186178310a765b1193b31c9c98be8" title="get_n_primary_guards" alt="" coords="627,5,778,32"/>
+<area shape="rect" id="node6" href="container_8c.html#a5e71fb7bc775f079d9f9d724f0203fc1" title="smartlist_add_all" alt="" coords="643,56,763,83"/>
+<area shape="rect" id="node7" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="653,107,753,133"/>
+<area shape="rect" id="node8" href="container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="639,157,767,184"/>
+<area shape="rect" id="node9" href="entrynodes_8c.html#a440f5217f0a557c13b02a251f93db5d6" title="sample_reachable_filtered\l_entry_guards" alt="" coords="616,209,789,250"/>
+<area shape="rect" id="node10" href="entrynodes_8c.html#ab335f71d2749aa457ffd8a82065649c6" title="entry_guard_consider\l_retry" alt="" coords="1041,209,1188,250"/>
+<area shape="rect" id="node12" href="entrynodes_8c.html#ac771815070c48fdafceda321e3b56739" title="num_reachable_filtered\l_guards" alt="" coords="837,238,993,279"/>
+<area shape="rect" id="node11" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="1236,216,1329,243"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aedaac29d3130717a9c3fdb8950a2f4af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedaac29d3130717a9c3fdb8950a2f4af">&#9670;&nbsp;</a></span>guards_update_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int guards_update_all </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1033,82 +1407,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mark every entry of the bridge list to be removed on our next call to sweep_bridge_list unless it has first been un-marked. </p>
-
-</div>
-</div>
-<a id="a823bac0acf5f6b68ab2074757215eac3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a823bac0acf5f6b68ab2074757215eac3">&#9670;&nbsp;</a></span>node_is_a_configured_bridge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int node_is_a_configured_bridge </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td>
-          <td class="paramname"><em>node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return 1 if <b>node</b> is one of our configured bridges, else 0. </p>
+<p>Helper: Update the status of all entry guards, in whatever algorithm is used. Return true if we should stop using all previously generated circuits, by calling <a class="el" href="circuitlist_8c.html#afbc3a3bf5eccd42bc5dc3f75d5aec392">circuit_mark_all_unused_circs()</a> and <a class="el" href="circuitlist_8c.html#a52c4991dce45efd8d927b6092e3c85be">circuit_mark_all_dirty_circs_as_unusable()</a>. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a823bac0acf5f6b68ab2074757215eac3_cgraph.png" border="0" usemap="#entrynodes_8h_a823bac0acf5f6b68ab2074757215eac3_cgraph" alt=""/></div>
-<map name="entrynodes_8h_a823bac0acf5f6b68ab2074757215eac3_cgraph" id="entrynodes_8h_a823bac0acf5f6b68ab2074757215eac3_cgraph">
-<area shape="rect" id="node2" href="nodelist_8c.html#a551827c8c00ee79f3d3663d11b2b60a0" title="node_get_all_orports" alt="" coords="201,13,344,39"/>
+<div class="center"><img src="entrynodes_8h_aedaac29d3130717a9c3fdb8950a2f4af_cgraph.png" border="0" usemap="#entrynodes_8h_aedaac29d3130717a9c3fdb8950a2f4af_cgraph" alt=""/></div>
+<map name="entrynodes_8h_aedaac29d3130717a9c3fdb8950a2f4af_cgraph" id="entrynodes_8h_aedaac29d3130717a9c3fdb8950a2f4af_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a7b8e402c5c5ea8de25416c11ff59d7b8" title="update_guard_selection\l_choice" alt="" coords="180,5,339,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_a823bac0acf5f6b68ab2074757215eac3_icgraph.png" border="0" usemap="#entrynodes_8h_a823bac0acf5f6b68ab2074757215eac3_icgraph" alt=""/></div>
-<map name="entrynodes_8h_a823bac0acf5f6b68ab2074757215eac3_icgraph" id="entrynodes_8h_a823bac0acf5f6b68ab2074757215eac3_icgraph">
-<area shape="rect" id="node2" href="entrynodes_8c.html#afd4f8dd6f248abfc072ce641a568ddde" title="entry_is_live" alt="" coords="223,35,318,61"/>
-<area shape="rect" id="node5" href="entrynodes_8c.html#a12aaa196d99fc0a6a4416c17f8274e76" title="add_an_entry_guard" alt="" coords="201,85,340,112"/>
-<area shape="rect" id="node3" href="entrynodes_8h.html#accc850d23175b5132661a8c6e561e972" title="num_live_entry_guards" alt="" coords="388,5,544,32"/>
-<area shape="rect" id="node4" href="entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="399,57,533,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="accc850d23175b5132661a8c6e561e972"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc850d23175b5132661a8c6e561e972">&#9670;&nbsp;</a></span>num_live_entry_guards()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int num_live_entry_guards </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>for_directory</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the number of entry guards that we think are usable. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_accc850d23175b5132661a8c6e561e972_cgraph.png" border="0" usemap="#entrynodes_8h_accc850d23175b5132661a8c6e561e972_cgraph" alt=""/></div>
-<map name="entrynodes_8h_accc850d23175b5132661a8c6e561e972_cgraph" id="entrynodes_8h_accc850d23175b5132661a8c6e561e972_cgraph">
-<area shape="rect" id="node2" href="entrynodes_8c.html#afd4f8dd6f248abfc072ce641a568ddde" title="entry_is_live" alt="" coords="209,165,304,192"/>
-<area shape="rect" id="node3" href="entrynodes_8c.html#a34ef17d63d304b4c0f849cca5430844f" title="entry_is_time_to_retry" alt="" coords="371,5,521,32"/>
-<area shape="rect" id="node4" href="nodelist_8c.html#a4f18b4f896106632fed68e339debbb63" title="node_has_descriptor" alt="" coords="375,56,517,83"/>
-<area shape="rect" id="node5" href="nodelist_8c.html#ab43ea384ab6fafd3d360460011ec2a43" title="node_get_purpose" alt="" coords="382,107,510,133"/>
-<area shape="rect" id="node6" href="entrynodes_8c.html#a823bac0acf5f6b68ab2074757215eac3" title="node_is_a_configured\l_bridge" alt="" coords="372,158,520,199"/>
-<area shape="rect" id="node8" href="routerset_8c.html#a59dc48808ca97d25748411b8053b28a2" title="routerset_contains_node" alt="" coords="364,224,528,251"/>
-<area shape="rect" id="node13" href="nodelist_8c.html#a78e60dd983647dd0229d85517eba6921" title="node_is_unreliable" alt="" coords="381,275,511,301"/>
-<area shape="rect" id="node14" href="policies_8c.html#abcacc2af3dccb862768358fb53eb4570" title="fascist_firewall_allows_node" alt="" coords="352,325,540,352"/>
-<area shape="rect" id="node7" href="nodelist_8c.html#a551827c8c00ee79f3d3663d11b2b60a0" title="node_get_all_orports" alt="" coords="588,165,731,192"/>
-<area shape="rect" id="node9" href="routerset_8c.html#a46e8468ce37722ff71b91efd9d2f7ff0" title="routerset_contains\l_routerstatus" alt="" coords="595,217,724,258"/>
-<area shape="rect" id="node12" href="routerset_8c.html#aa8942cc067a62102c0d51b88bcd3709f" title="routerset_contains\l_router" alt="" coords="595,282,724,323"/>
-<area shape="rect" id="node10" href="routerset_8c.html#a1eda4526d656d042e5143ec79ee66be2" title="routerset_contains" alt="" coords="779,257,908,284"/>
-<area shape="rect" id="node11" href="container_8c.html#a1406b823cb6088df755f1b81153d137e" title="strmap_get_lc" alt="" coords="956,257,1060,284"/>
+<div class="center"><img src="entrynodes_8h_aedaac29d3130717a9c3fdb8950a2f4af_icgraph.png" border="0" usemap="#entrynodes_8h_aedaac29d3130717a9c3fdb8950a2f4af_icgraph" alt=""/></div>
+<map name="entrynodes_8h_aedaac29d3130717a9c3fdb8950a2f4af_icgraph" id="entrynodes_8h_aedaac29d3130717a9c3fdb8950a2f4af_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="180,5,308,47"/>
 </map>
 </div>
 
@@ -1123,7 +1436,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">double pathbias_get_close_success_count </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structentry__guard__t.html">entry_guard_t</a> *&#160;</td>
+          <td class="paramtype">entry_guard_t *&#160;</td>
           <td class="paramname"><em>guard</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1131,6 +1444,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Return the number of circuits counted as successfully closed for this guard.</p>
 <p>Also add in the currently open circuits to give them the benefit of the doubt. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_afe9ef8d49fc04454e5c3cf61b7c5667f_cgraph.png" border="0" usemap="#entrynodes_8h_afe9ef8d49fc04454e5c3cf61b7c5667f_cgraph" alt=""/></div>
+<map name="entrynodes_8h_afe9ef8d49fc04454e5c3cf61b7c5667f_cgraph" id="entrynodes_8h_afe9ef8d49fc04454e5c3cf61b7c5667f_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a438f7a3ebb9ad87d9baee6a364441007" title="entry_guard_get_pathbias\l_state" alt="" coords="188,5,359,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1143,7 +1464,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">double pathbias_get_use_success_count </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structentry__guard__t.html">entry_guard_t</a> *&#160;</td>
+          <td class="paramtype">entry_guard_t *&#160;</td>
           <td class="paramname"><em>guard</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1151,6 +1472,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Return the number of circuits counted as successfully used this guard.</p>
 <p>Also add in the currently open circuits that we are attempting to use to give them the benefit of the doubt. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a65437bc034e2202eb60d5cffd285fd48_cgraph.png" border="0" usemap="#entrynodes_8h_a65437bc034e2202eb60d5cffd285fd48_cgraph" alt=""/></div>
+<map name="entrynodes_8h_a65437bc034e2202eb60d5cffd285fd48_cgraph" id="entrynodes_8h_a65437bc034e2202eb60d5cffd285fd48_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a438f7a3ebb9ad87d9baee6a364441007" title="entry_guard_get_pathbias\l_state" alt="" coords="233,5,404,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1169,53 +1498,44 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove all currently listed entry guards. So new ones will be chosen. </p>
+<p>Remove all currently listed entry guards, so new ones will be chosen.</p>
+<p>XXXX This function shouldn't exist &ndash; it's meant to support the DROPGUARDS command, which is deprecated. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="entrynodes_8h_a2059c6a8b0ae5f6bd64087fe00a27d9d_cgraph.png" border="0" usemap="#entrynodes_8h_a2059c6a8b0ae5f6bd64087fe00a27d9d_cgraph" alt=""/></div>
 <map name="entrynodes_8h_a2059c6a8b0ae5f6bd64087fe00a27d9d_cgraph" id="entrynodes_8h_a2059c6a8b0ae5f6bd64087fe00a27d9d_cgraph">
-<area shape="rect" id="node2" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="220,5,333,32"/>
+<area shape="rect" id="node2" href="entrynodes_8c.html#a37261ae47f6bec9d6ade03c87b74f916" title="remove_all_entry_guards\l_for_guard_selection" alt="" coords="220,5,387,47"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="220,71,387,98"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af586c6437018de91c926dbabb4c802d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af586c6437018de91c926dbabb4c802d6">&#9670;&nbsp;</a></span>retry_bridge_descriptor_fetch_directly()</h2>
+<a id="a37261ae47f6bec9d6ade03c87b74f916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37261ae47f6bec9d6ade03c87b74f916">&#9670;&nbsp;</a></span>remove_all_entry_guards_for_guard_selection()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void retry_bridge_descriptor_fetch_directly </td>
+          <td class="memname">void remove_all_entry_guards_for_guard_selection </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>digest</em></td><td>)</td>
+          <td class="paramtype">guard_selection_t *&#160;</td>
+          <td class="paramname"><em>gs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Fetching the bridge descriptor from the bridge authority returned a "not found". Fall back to trying a direct fetch. </p>
-
+<p>Remove all currently listed entry guards for a given guard selection context. This frees and replaces <b>gs</b>, so don't use <b>gs</b> after calling this function. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a37261ae47f6bec9d6ade03c87b74f916_icgraph.png" border="0" usemap="#entrynodes_8h_a37261ae47f6bec9d6ade03c87b74f916_icgraph" alt=""/></div>
+<map name="entrynodes_8h_a37261ae47f6bec9d6ade03c87b74f916_icgraph" id="entrynodes_8h_a37261ae47f6bec9d6ade03c87b74f916_icgraph">
+<area shape="rect" id="node2" href="entrynodes_8h.html#a2059c6a8b0ae5f6bd64087fe00a27d9d" title="remove_all_entry_guards" alt="" coords="220,13,387,39"/>
+</map>
 </div>
-</div>
-<a id="a2027007177e63941e2adf763a34a1b99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2027007177e63941e2adf763a34a1b99">&#9670;&nbsp;</a></span>routerinfo_is_a_configured_bridge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int routerinfo_is_a_configured_bridge </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *&#160;</td>
-          <td class="paramname"><em>ri</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return 1 if <b>ri</b> is one of our known bridges, else 0. </p>
 
 </div>
 </div>
@@ -1236,14 +1556,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Return 0 if we should apply guardfraction information found in the consensus. A specific consensus can be specified with the <b>ns</b> argument, if NULL the most recent one will be picked. </p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="entrynodes_8h_abcf00389e72807f2534ffd3da3de31e6_cgraph.png" border="0" usemap="#entrynodes_8h_abcf00389e72807f2534ffd3da3de31e6_cgraph" alt=""/></div>
-<map name="entrynodes_8h_abcf00389e72807f2534ffd3da3de31e6_cgraph" id="entrynodes_8h_abcf00389e72807f2534ffd3da3de31e6_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="233,5,405,32"/>
-</map>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="entrynodes_8h_abcf00389e72807f2534ffd3da3de31e6_icgraph.png" border="0" usemap="#entrynodes_8h_abcf00389e72807f2534ffd3da3de31e6_icgraph" alt=""/></div>
@@ -1254,22 +1566,32 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a365f2e514e0575326c05fb6c36aa3ce9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a365f2e514e0575326c05fb6c36aa3ce9">&#9670;&nbsp;</a></span>sweep_bridge_list()</h2>
+<a id="a7b8e402c5c5ea8de25416c11ff59d7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8e402c5c5ea8de25416c11ff59d7b8">&#9670;&nbsp;</a></span>update_guard_selection_choice()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void sweep_bridge_list </td>
+          <td class="memname">int update_guard_selection_choice </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove every entry of the bridge list that was marked with mark_bridge_list if it has not subsequently been un-marked. </p>
+<p>Check whether we should switch from our current guard selection to a different one. If so, switch and return 1. Return 0 otherwise.</p>
+<p>On a 1 return, the caller should mark all currently live circuits unusable for new streams, by calling <a class="el" href="circuitlist_8c.html#afbc3a3bf5eccd42bc5dc3f75d5aec392">circuit_mark_all_unused_circs()</a> and <a class="el" href="circuitlist_8c.html#a52c4991dce45efd8d927b6092e3c85be">circuit_mark_all_dirty_circs_as_unusable()</a>. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="entrynodes_8h_a7b8e402c5c5ea8de25416c11ff59d7b8_icgraph.png" border="0" usemap="#entrynodes_8h_a7b8e402c5c5ea8de25416c11ff59d7b8_icgraph" alt=""/></div>
+<map name="entrynodes_8h_a7b8e402c5c5ea8de25416c11ff59d7b8_icgraph" id="entrynodes_8h_a7b8e402c5c5ea8de25416c11ff59d7b8_icgraph">
+<area shape="rect" id="node2" href="entrynodes_8h.html#aedaac29d3130717a9c3fdb8950a2f4af" title="guards_update_all" alt="" coords="212,13,339,39"/>
+<area shape="rect" id="node3" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="387,5,515,47"/>
+</map>
+</div>
 
 </div>
 </div>

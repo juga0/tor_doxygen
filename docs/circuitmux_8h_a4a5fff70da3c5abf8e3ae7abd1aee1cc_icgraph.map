@@ -1,4 +1,3 @@
 <map id="circuitmux_set_policy" name="circuitmux_set_policy">
-<area shape="rect" id="node2" href="$channel_8h.html#ab581fe82a432b885561d00ab3ecceba6" title="channel_set_cmux_policy\l_everywhere" alt="" coords="201,5,373,47"/>
-<area shape="rect" id="node3" href="$circuitmux_8h.html#a1eefa6dc14786d08f7dcc6a9d33c11b2" title="circuitmux_clear_policy" alt="" coords="208,71,367,98"/>
+<area shape="rect" id="node2" href="$circuitmux_8h.html#a1eefa6dc14786d08f7dcc6a9d33c11b2" title="circuitmux_clear_policy" alt="" coords="201,5,360,32"/>
 </map>

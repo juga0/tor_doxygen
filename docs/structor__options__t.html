@@ -73,14 +73,14 @@ Collaboration diagram for or_options_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structor__options__t__coll__graph.png" border="0" usemap="#or__options__t_coll__map" alt="Collaboration graph"/></div>
 <map name="or__options__t_coll__map" id="or__options__t_coll__map">
-<area shape="rect" id="node2" href="structconfig__line__t.html" title="config_line_t" alt="" coords="187,140,281,167"/>
-<area shape="rect" id="node4" href="structsmartlist__t.html" title="smartlist_t" alt="" coords="361,140,443,167"/>
+<area shape="rect" id="node2" href="structconfig__line__t.html" title="config_line_t" alt="" coords="171,118,265,145"/>
+<area shape="rect" id="node4" href="structsmartlist__t.html" title="smartlist_t" alt="" coords="345,118,427,145"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aaf105ae5beaca1dee30ae54530691fce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+<tr class="memitem:aaf8fd5f0e57d456151c951e0f3715fc4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>CMD_RUN_TOR</b> =0, 
 <b>CMD_LIST_FINGERPRINT</b>, 
 <b>CMD_HASH_PASSWORD</b>, 
@@ -88,40 +88,41 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<b>CMD_RUN_UNITTESTS</b>, 
 <b>CMD_DUMP_CONFIG</b>, 
-<b>CMD_KEYGEN</b>
+<b>CMD_KEYGEN</b>, 
+<b>CMD_KEY_EXPIRATION</b>
 <br />
  }</td></tr>
-<tr class="separator:aaf105ae5beaca1dee30ae54530691fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80155586fa275b28773c9b203f52caba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>TPT_DEFAULT</b>, 
+<tr class="separator:aaf8fd5f0e57d456151c951e0f3715fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94798fdadfbf49a7c658ace669a1d310"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>TPT_DEFAULT</b>, 
 <b>TPT_PF_DIVERT</b>, 
 <b>TPT_IPFW</b>, 
 <b>TPT_TPROXY</b>
  }</td></tr>
-<tr class="separator:a80155586fa275b28773c9b203f52caba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b7b47dd702d9e331586d485013fd1ea"><td class="memItemLeft" align="right" valign="top"><a id="a6b7b47dd702d9e331586d485013fd1ea"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>ACCT_MAX</b>, 
+<tr class="separator:a94798fdadfbf49a7c658ace669a1d310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d5251432e1a9e6803c0240cc492e18"><td class="memItemLeft" align="right" valign="top"><a id="ae4d5251432e1a9e6803c0240cc492e18"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>ACCT_MAX</b>, 
 <b>ACCT_SUM</b>, 
 <b>ACCT_IN</b>, 
 <b>ACCT_OUT</b>
  }</td></tr>
-<tr class="separator:a6b7b47dd702d9e331586d485013fd1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9bdc3014f3d54c426b6d2df10de4960"><td class="memItemLeft" align="right" valign="top"><a id="af9bdc3014f3d54c426b6d2df10de4960"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SAFELOG_SCRUB_ALL</b>, 
+<tr class="separator:ae4d5251432e1a9e6803c0240cc492e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff5f2dff38e7639981794c43dc9167b"><td class="memItemLeft" align="right" valign="top"><a id="a7ff5f2dff38e7639981794c43dc9167b"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SAFELOG_SCRUB_ALL</b>, 
 <b>SAFELOG_SCRUB_RELAY</b>, 
 <b>SAFELOG_SCRUB_NONE</b>
  }</td></tr>
-<tr class="separator:af9bdc3014f3d54c426b6d2df10de4960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb49720dc49f7d4e4cf9adbf2948e409"><td class="memItemLeft" align="right" valign="top"><a id="adb49720dc49f7d4e4cf9adbf2948e409"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>FORCE_PASSPHRASE_AUTO</b> =0, 
+<tr class="separator:a7ff5f2dff38e7639981794c43dc9167b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfcbcb5ac86a1edac4035264bc7d2b8"><td class="memItemLeft" align="right" valign="top"><a id="aabfcbcb5ac86a1edac4035264bc7d2b8"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>FORCE_PASSPHRASE_AUTO</b> =0, 
 <b>FORCE_PASSPHRASE_ON</b>, 
 <b>FORCE_PASSPHRASE_OFF</b>
  }</td></tr>
-<tr class="separator:adb49720dc49f7d4e4cf9adbf2948e409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aabfcbcb5ac86a1edac4035264bc7d2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a08047031a12c69928dd7758c75022eb8"><td class="memItemLeft" align="right" valign="top"><a id="a08047031a12c69928dd7758c75022eb8"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>magic_</b></td></tr>
 <tr class="separator:a08047031a12c69928dd7758c75022eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affae33c00dceae5b4281b53670f433c4"><td class="memItemLeft" align="right" valign="top">enum or_options_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#affae33c00dceae5b4281b53670f433c4">command</a></td></tr>
-<tr class="separator:affae33c00dceae5b4281b53670f433c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69105a978047c78f50487b48ac61246d"><td class="memItemLeft" align="right" valign="top">enum or_options_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a69105a978047c78f50487b48ac61246d">command</a></td></tr>
+<tr class="separator:a69105a978047c78f50487b48ac61246d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3437f972ef249a390ba31c23e88f5f79"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a3437f972ef249a390ba31c23e88f5f79">command_arg</a></td></tr>
 <tr class="separator:a3437f972ef249a390ba31c23e88f5f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc7d7e4dcc0414f035c9242c39376b91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#afc7d7e4dcc0414f035c9242c39376b91">Logs</a></td></tr>
@@ -134,12 +135,28 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>magic_</b></td></
 <tr class="separator:accf2a1db5d7af01e6c959c50b2eaacee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd2b216c2cfeab30d480ac03fc75feb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a1cd2b216c2cfeab30d480ac03fc75feb">SyslogIdentityTag</a></td></tr>
 <tr class="separator:a1cd2b216c2cfeab30d480ac03fc75feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2456dec65d15b5a33f01ed341306e90f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a2456dec65d15b5a33f01ed341306e90f">AndroidIdentityTag</a></td></tr>
+<tr class="separator:a2456dec65d15b5a33f01ed341306e90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f58ba513708583cf653f2be0987a78"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a74f58ba513708583cf653f2be0987a78">DebugLogFile</a></td></tr>
 <tr class="separator:a74f58ba513708583cf653f2be0987a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d495338cc223e804caa28209059a41"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#af2d495338cc223e804caa28209059a41">DataDirectory_option</a></td></tr>
+<tr class="separator:af2d495338cc223e804caa28209059a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae14972796db59ebf01b0c59cd3f2ee3f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ae14972796db59ebf01b0c59cd3f2ee3f">DataDirectory</a></td></tr>
 <tr class="separator:ae14972796db59ebf01b0c59cd3f2ee3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77196b047808734cc98454dc5bce7307"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a77196b047808734cc98454dc5bce7307">DataDirectoryGroupReadable</a></td></tr>
 <tr class="separator:a77196b047808734cc98454dc5bce7307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f2942dc64e8a4ca935d3d5c566b402"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a78f2942dc64e8a4ca935d3d5c566b402">KeyDirectory_option</a></td></tr>
+<tr class="separator:a78f2942dc64e8a4ca935d3d5c566b402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225af8a798e5c2401acb554dee56e815"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a225af8a798e5c2401acb554dee56e815">KeyDirectory</a></td></tr>
+<tr class="separator:a225af8a798e5c2401acb554dee56e815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788e8018ef4a286f87edacbc5b8b90fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a788e8018ef4a286f87edacbc5b8b90fc">KeyDirectoryGroupReadable</a></td></tr>
+<tr class="separator:a788e8018ef4a286f87edacbc5b8b90fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a2f40250642b5291f9bfcbbf263e89"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ac3a2f40250642b5291f9bfcbbf263e89">CacheDirectory_option</a></td></tr>
+<tr class="separator:ac3a2f40250642b5291f9bfcbbf263e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0f9de0ffd95c067ec1d3efde97cd06"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a1c0f9de0ffd95c067ec1d3efde97cd06">CacheDirectory</a></td></tr>
+<tr class="separator:a1c0f9de0ffd95c067ec1d3efde97cd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7832e1c171c81eae38041827d6b3495a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a7832e1c171c81eae38041827d6b3495a">CacheDirectoryGroupReadable</a></td></tr>
+<tr class="separator:a7832e1c171c81eae38041827d6b3495a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a838fd11215eea45f472cb6bb92ebf637"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a838fd11215eea45f472cb6bb92ebf637">Nickname</a></td></tr>
 <tr class="separator:a838fd11215eea45f472cb6bb92ebf637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14b5cf1d7f34e727531c0a4a6838fd54"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a14b5cf1d7f34e727531c0a4a6838fd54">Address</a></td></tr>
@@ -160,40 +177,26 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>magic_</b></td></
 <tr class="separator:ab1213df84ff9f690ea6c15895dea9702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40969cc19a0c9a5774d1ea98e3c43295"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a40969cc19a0c9a5774d1ea98e3c43295">DisableAllSwap</a></td></tr>
 <tr class="separator:a40969cc19a0c9a5774d1ea98e3c43295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b7bd86c7aa1750a4cbbb01d58b63e6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a6b7bd86c7aa1750a4cbbb01d58b63e6f">AllowInvalidNodes</a></td></tr>
-<tr class="separator:a6b7bd86c7aa1750a4cbbb01d58b63e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad35f5256cb59bc6aa4c20487ec0a086b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="or_8h.html#aa971c4fb6f405f887be449242ce5f6a1">invalid_router_usage_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ad35f5256cb59bc6aa4c20487ec0a086b">AllowInvalid_</a></td></tr>
-<tr class="separator:ad35f5256cb59bc6aa4c20487ec0a086b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ee744e1eb7ada90ea3fa26c593738ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a8ee744e1eb7ada90ea3fa26c593738ed">ExitPolicy</a></td></tr>
 <tr class="separator:a8ee744e1eb7ada90ea3fa26c593738ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c5e02152bd368e9edb57bf865acf9cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a3c5e02152bd368e9edb57bf865acf9cb">ExitPolicyRejectPrivate</a></td></tr>
 <tr class="separator:a3c5e02152bd368e9edb57bf865acf9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abde759c863e411d2d1b6498ea6e5a770"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#abde759c863e411d2d1b6498ea6e5a770">ExitPolicyRejectLocalInterfaces</a></td></tr>
 <tr class="separator:abde759c863e411d2d1b6498ea6e5a770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe7eb3755a6696cc6744a7fa52504da0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#afe7eb3755a6696cc6744a7fa52504da0">ReducedExitPolicy</a></td></tr>
+<tr class="separator:afe7eb3755a6696cc6744a7fa52504da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba43b4becd3da64f7bc51db118eb3e5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aba43b4becd3da64f7bc51db118eb3e5a">SocksPolicy</a></td></tr>
 <tr class="separator:aba43b4becd3da64f7bc51db118eb3e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a99d3f0e65b491f62016ebbdf0d8af3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0a99d3f0e65b491f62016ebbdf0d8af3">DirPolicy</a></td></tr>
 <tr class="separator:a0a99d3f0e65b491f62016ebbdf0d8af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14a240f881ed59a19a86b693effbfb07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a14a240f881ed59a19a86b693effbfb07">SocksListenAddress</a></td></tr>
-<tr class="separator:a14a240f881ed59a19a86b693effbfb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a555242dc7bd177ac47a027834d280e4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a555242dc7bd177ac47a027834d280e4b">TransListenAddress</a></td></tr>
-<tr class="separator:a555242dc7bd177ac47a027834d280e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a826b530e595ec58f2bb30b26998c336b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a826b530e595ec58f2bb30b26998c336b">NATDListenAddress</a></td></tr>
-<tr class="separator:a826b530e595ec58f2bb30b26998c336b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca056e49010f17b9a7b81e53327d79a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aca056e49010f17b9a7b81e53327d79a0">DNSListenAddress</a></td></tr>
-<tr class="separator:aca056e49010f17b9a7b81e53327d79a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13336d32712e29af32dff98352ac794c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a13336d32712e29af32dff98352ac794c">ORListenAddress</a></td></tr>
-<tr class="separator:a13336d32712e29af32dff98352ac794c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba9024eefebe44e075c7952ee2399fc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aba9024eefebe44e075c7952ee2399fc0">DirListenAddress</a></td></tr>
-<tr class="separator:aba9024eefebe44e075c7952ee2399fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a135a21b502de5bd2b59179234b97c673"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a135a21b502de5bd2b59179234b97c673">ControlListenAddress</a></td></tr>
-<tr class="separator:a135a21b502de5bd2b59179234b97c673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af768fa7aa35a2ed96bf4db722e3a89bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#af768fa7aa35a2ed96bf4db722e3a89bf">OutboundBindAddress</a></td></tr>
 <tr class="separator:af768fa7aa35a2ed96bf4db722e3a89bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8278ec75ba6f059b4eb220e257ed5ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__addr__t.html">tor_addr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ae8278ec75ba6f059b4eb220e257ed5ee">OutboundBindAddressIPv4_</a></td></tr>
-<tr class="separator:ae8278ec75ba6f059b4eb220e257ed5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72cbffc8f19c8092568ec73038e02735"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__addr__t.html">tor_addr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a72cbffc8f19c8092568ec73038e02735">OutboundBindAddressIPv6_</a></td></tr>
-<tr class="separator:a72cbffc8f19c8092568ec73038e02735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cdd2c04f5203e3d5e731aaf9c57831e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a7cdd2c04f5203e3d5e731aaf9c57831e">OutboundBindAddressOR</a></td></tr>
+<tr class="separator:a7cdd2c04f5203e3d5e731aaf9c57831e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b3546b1481d36c56bdced670f187e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a28b3546b1481d36c56bdced670f187e5">OutboundBindAddressExit</a></td></tr>
+<tr class="separator:a28b3546b1481d36c56bdced670f187e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb020dbbd963f6690e24bbf98baa98ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__addr__t.html">tor_addr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#abb020dbbd963f6690e24bbf98baa98ff">OutboundBindAddresses</a> [OUTBOUND_ADDR_MAX][2]</td></tr>
+<tr class="separator:abb020dbbd963f6690e24bbf98baa98ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a397246b10f7f79b55c0eb4bfd8a7cd7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a397246b10f7f79b55c0eb4bfd8a7cd7b">RecommendedVersions</a></td></tr>
 <tr class="separator:a397246b10f7f79b55c0eb4bfd8a7cd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a055267c627fd22a79d961a377bafd7cf"><td class="memItemLeft" align="right" valign="top"><a id="a055267c627fd22a79d961a377bafd7cf"></a>
@@ -211,8 +214,6 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>magic_</b></td></
 <tr class="separator:af039792b43121a839cadb51147b61a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e5a29a37f14394daf3df9b9e56a9f2c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0e5a29a37f14394daf3df9b9e56a9f2c">User</a></td></tr>
 <tr class="separator:a0e5a29a37f14394daf3df9b9e56a9f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ffed307d6d166bdbe9490e2a4ee536e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a1ffed307d6d166bdbe9490e2a4ee536e">Group</a></td></tr>
-<tr class="separator:a1ffed307d6d166bdbe9490e2a4ee536e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab09ec7ae7c0ce41400ba1c347a49c8b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ab09ec7ae7c0ce41400ba1c347a49c8b9">ORPort_lines</a></td></tr>
 <tr class="separator:ab09ec7ae7c0ce41400ba1c347a49c8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5027ee57105e9296bb8b11c008c7cb07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a5027ee57105e9296bb8b11c008c7cb07">ExtORPort_lines</a></td></tr>
@@ -221,20 +222,22 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>magic_</b></td></
 <tr class="separator:a6ae0de8d3bfb034b7a96230512536a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26a305dba8a05c28eea9e0d2d1c46b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aa26a305dba8a05c28eea9e0d2d1c46b5">TransPort_lines</a></td></tr>
 <tr class="separator:aa26a305dba8a05c28eea9e0d2d1c46b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde4ea0bb8b49b44b48e99b3fa113bc0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#abde4ea0bb8b49b44b48e99b3fa113bc0">TransProxyType</a></td></tr>
-<tr class="separator:abde4ea0bb8b49b44b48e99b3fa113bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a497b666ddc5385a9816e53e1a3174632"><td class="memItemLeft" align="right" valign="top">enum or_options_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a497b666ddc5385a9816e53e1a3174632">TransProxyType_parsed</a></td></tr>
-<tr class="separator:a497b666ddc5385a9816e53e1a3174632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5327100cf68a168477074c75e7c8710a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a5327100cf68a168477074c75e7c8710a">TransProxyType</a></td></tr>
+<tr class="separator:a5327100cf68a168477074c75e7c8710a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6987902795ddc20ece4861efabe18d7f"><td class="memItemLeft" align="right" valign="top">enum or_options_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a6987902795ddc20ece4861efabe18d7f">TransProxyType_parsed</a></td></tr>
+<tr class="separator:a6987902795ddc20ece4861efabe18d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc83328fc019e345293dbfa89e5c42b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#afc83328fc019e345293dbfa89e5c42b4">NATDPort_lines</a></td></tr>
 <tr class="separator:afc83328fc019e345293dbfa89e5c42b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e0cbe216f83fcb065ba5621ef2711b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a71e0cbe216f83fcb065ba5621ef2711b">HTTPTunnelPort_lines</a></td></tr>
+<tr class="separator:a71e0cbe216f83fcb065ba5621ef2711b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2170306ca3dffe35d766caa0e8f90b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ae2170306ca3dffe35d766caa0e8f90b6">ControlPort_lines</a></td></tr>
 <tr class="separator:ae2170306ca3dffe35d766caa0e8f90b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af711344990e4280410b6c00b09caf692"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#af711344990e4280410b6c00b09caf692">ControlSocket</a></td></tr>
 <tr class="separator:af711344990e4280410b6c00b09caf692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc4b712f2156c40016499c7e886bc0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a5bc4b712f2156c40016499c7e886bc0e">ControlSocketsGroupWritable</a></td></tr>
 <tr class="separator:a5bc4b712f2156c40016499c7e886bc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac388a9fa86d1a75edfdf055db51502d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ac388a9fa86d1a75edfdf055db51502d1">SocksSocketsGroupWritable</a></td></tr>
-<tr class="separator:ac388a9fa86d1a75edfdf055db51502d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906b30a9a5f0ea492105831c8e9b72fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a906b30a9a5f0ea492105831c8e9b72fe">UnixSocksGroupWritable</a></td></tr>
+<tr class="separator:a906b30a9a5f0ea492105831c8e9b72fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a9b63e10c36ece631eb3d3d21af9ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a7a9b63e10c36ece631eb3d3d21af9ca7">DirPort_lines</a></td></tr>
 <tr class="separator:a7a9b63e10c36ece631eb3d3d21af9ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381dd29d063495d0c43513395d00fbdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a381dd29d063495d0c43513395d00fbdc">DNSPort_lines</a></td></tr>
@@ -256,6 +259,8 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxMemInQueues_ra
 <tr class="separator:a46275a0deb85c902ab9317ba784623dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb5cfed0cea71f794348c40256c44900"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aeb5cfed0cea71f794348c40256c44900">BridgeAuthoritativeDir</a></td></tr>
 <tr class="separator:aeb5cfed0cea71f794348c40256c44900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b7df008b07c57e260cd57052fb0efe"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a41b7df008b07c57e260cd57052fb0efe">BridgeDistribution</a></td></tr>
+<tr class="separator:a41b7df008b07c57e260cd57052fb0efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c07371bcbb781533a1380f1751990fb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a2c07371bcbb781533a1380f1751990fb">BridgePassword</a></td></tr>
 <tr class="separator:a2c07371bcbb781533a1380f1751990fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b2883cf68685793a680ac8ea7fdeab7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a2b2883cf68685793a680ac8ea7fdeab7">BridgePassword_AuthDigest_</a></td></tr>
@@ -280,6 +285,10 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxMemInQueues_ra
 <tr class="separator:ace49f0b82c66303d1c04b294a2e3421e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2baacd07ec448fedc7721aadec3e9198"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a2baacd07ec448fedc7721aadec3e9198">ClientOnly</a></td></tr>
 <tr class="separator:a2baacd07ec448fedc7721aadec3e9198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0edfa93e50f6e46257502ee4f8b1751a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0edfa93e50f6e46257502ee4f8b1751a">ReducedConnectionPadding</a></td></tr>
+<tr class="separator:a0edfa93e50f6e46257502ee4f8b1751a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8a179d08ba0d6413a38d6bae80e347"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#afb8a179d08ba0d6413a38d6bae80e347">ConnectionPadding</a></td></tr>
+<tr class="separator:afb8a179d08ba0d6413a38d6bae80e347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba809cafce7e1ad1a69686350e69e93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a8ba809cafce7e1ad1a69686350e69e93">PublishServerDescriptor</a></td></tr>
 <tr class="separator:a8ba809cafce7e1ad1a69686350e69e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1391576428f537ee7db5e94a4f2a6b76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="or_8h.html#ae733ffc8e2cde85d0705d947f8f86ada">dirinfo_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a1391576428f537ee7db5e94a4f2a6b76">PublishServerDescriptor_</a></td></tr>
@@ -300,10 +309,10 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxMemInQueues_ra
 <tr class="separator:a14881e53324c261ff6dabeea88448626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99572b7a2441c9de1fff20001faaebc9"><td class="memItemLeft" align="right" valign="top">routerset_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a99572b7a2441c9de1fff20001faaebc9">Tor2webRendezvousPoints</a></td></tr>
 <tr class="separator:a99572b7a2441c9de1fff20001faaebc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a4e5a43d8e386f01351870a405d78c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a7a4e5a43d8e386f01351870a405d78c8">CloseHSClientCircuitsImmediatelyOnTimeout</a></td></tr>
-<tr class="separator:a7a4e5a43d8e386f01351870a405d78c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ec0a7405b49038a0de3b6ff72eeb83e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0ec0a7405b49038a0de3b6ff72eeb83e">CloseHSServiceRendCircuitsImmediatelyOnTimeout</a></td></tr>
-<tr class="separator:a0ec0a7405b49038a0de3b6ff72eeb83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47239296ed2808d73f9a45a76a96a758"><td class="memItemLeft" align="right" valign="top">routerset_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a47239296ed2808d73f9a45a76a96a758">HSLayer2Nodes</a></td></tr>
+<tr class="separator:a47239296ed2808d73f9a45a76a96a758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e965f73a800201f62b683616662141"><td class="memItemLeft" align="right" valign="top">routerset_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a56e965f73a800201f62b683616662141">HSLayer3Nodes</a></td></tr>
+<tr class="separator:a56e965f73a800201f62b683616662141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae939bcee520b7b3ce5bffcb3fe997a26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ae939bcee520b7b3ce5bffcb3fe997a26">HiddenServiceSingleHopMode</a></td></tr>
 <tr class="separator:ae939bcee520b7b3ce5bffcb3fe997a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a48e9716e8678965543ba1a6da66ce7"><td class="memItemLeft" align="right" valign="top"><a id="a5a48e9716e8678965543ba1a6da66ce7"></a>
@@ -361,8 +370,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>HiddenServiceNonAnonym
 <tr class="separator:a85a6e66f5f2574a1f9d6c52e7013ca26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82cc92ab413ab256c6f9393beaec449c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a82cc92ab413ab256c6f9393beaec449c">CircuitBuildTimeout</a></td></tr>
 <tr class="separator:a82cc92ab413ab256c6f9393beaec449c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9abd1f373e77165043b245cd03b44844"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a9abd1f373e77165043b245cd03b44844">CircuitIdleTimeout</a></td></tr>
-<tr class="separator:a9abd1f373e77165043b245cd03b44844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac956a28cbec3eeb68c5388331d970fa3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ac956a28cbec3eeb68c5388331d970fa3">CircuitsAvailableTimeout</a></td></tr>
+<tr class="separator:ac956a28cbec3eeb68c5388331d970fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add755596dcc4b5cc8c41d08020b0a3c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#add755596dcc4b5cc8c41d08020b0a3c8">CircuitStreamTimeout</a></td></tr>
 <tr class="separator:add755596dcc4b5cc8c41d08020b0a3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a948e0a3f008c3db0a532ee5fd8db4975"><td class="memItemLeft" align="right" valign="top"><a id="a948e0a3f008c3db0a532ee5fd8db4975"></a>
@@ -372,9 +381,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxOnionQueueDelay</b>
 <tr class="separator:a9c61c863d557f2cd6995726d6c42e8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0676b95db0fe5ead762e1383a0164ca6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0676b95db0fe5ead762e1383a0164ca6">MaxCircuitDirtiness</a></td></tr>
 <tr class="separator:a0676b95db0fe5ead762e1383a0164ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae10ad6878da9dbf24aadf9502bf27f3"><td class="memItemLeft" align="right" valign="top"><a id="aae10ad6878da9dbf24aadf9502bf27f3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>PredictedPortsRelevanceTime</b></td></tr>
-<tr class="separator:aae10ad6878da9dbf24aadf9502bf27f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53d68d807703ac21d86dc009296036f0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a53d68d807703ac21d86dc009296036f0">BandwidthRate</a></td></tr>
 <tr class="separator:a53d68d807703ac21d86dc009296036f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8a17320bd4b5b6ed045ff9f1471e31f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#af8a17320bd4b5b6ed045ff9f1471e31f">BandwidthBurst</a></td></tr>
@@ -399,6 +405,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>PredictedPortsRelevanc
 <tr class="separator:a2e60618af704f7e2d39fc875a30d1fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a538e48d1d7213bd0ac3359934878bce2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a538e48d1d7213bd0ac3359934878bce2">HeartbeatPeriod</a></td></tr>
 <tr class="separator:a538e48d1d7213bd0ac3359934878bce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe2e26889e4388269e8893f7c718de14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#afe2e26889e4388269e8893f7c718de14">MainloopStats</a></td></tr>
+<tr class="separator:afe2e26889e4388269e8893f7c718de14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dd2c73b0538f4505fd396eb89a1a17e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a4dd2c73b0538f4505fd396eb89a1a17e">HTTPProxy</a></td></tr>
 <tr class="separator:a4dd2c73b0538f4505fd396eb89a1a17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bc64c77c4df7278c05b413921660658"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__addr__t.html">tor_addr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0bc64c77c4df7278c05b413921660658">HTTPProxyAddr</a></td></tr>
@@ -443,8 +451,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>PredictedPortsRelevanc
 <tr class="separator:a2f0bf868578214594e344f9544ac4386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae40637998f02889b34e4161a873ac0a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ae40637998f02889b34e4161a873ac0a0">AlternateBridgeAuthority</a></td></tr>
 <tr class="separator:ae40637998f02889b34e4161a873ac0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d6d0c8bac7d6b6f53577ba0e0908f6c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a1d6d0c8bac7d6b6f53577ba0e0908f6c">MyFamily</a></td></tr>
-<tr class="separator:a1d6d0c8bac7d6b6f53577ba0e0908f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcaeafab9183fb4646a23cc024ef638"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a5fcaeafab9183fb4646a23cc024ef638">MyFamily_lines</a></td></tr>
+<tr class="separator:a5fcaeafab9183fb4646a23cc024ef638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d397a57e6424efaf4516c9ed77fcd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a28d397a57e6424efaf4516c9ed77fcd6">MyFamily</a></td></tr>
+<tr class="separator:a28d397a57e6424efaf4516c9ed77fcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2599a43ab259c1ccfdf08416e6896fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a2599a43ab259c1ccfdf08416e6896fd7">NodeFamilies</a></td></tr>
 <tr class="separator:a2599a43ab259c1ccfdf08416e6896fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab119a757c89682c0ac467113a172e59c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ab119a757c89682c0ac467113a172e59c">NodeFamilySets</a></td></tr>
@@ -459,8 +469,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>PredictedPortsRelevanc
 <tr class="separator:ab222120112859a9395e6f54b76cc9410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57a65838b9210e266d916b69f8a1f3cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a57a65838b9210e266d916b69f8a1f3cd">AuthDirMaxServersPerAddr</a></td></tr>
 <tr class="separator:a57a65838b9210e266d916b69f8a1f3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc1af44f52b8acb9fe7e465dbc557e1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#adc1af44f52b8acb9fe7e465dbc557e1e">AuthDirMaxServersPerAuthAddr</a></td></tr>
-<tr class="separator:adc1af44f52b8acb9fe7e465dbc557e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64d688a8b5edfe884186ffff66f3a3cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a64d688a8b5edfe884186ffff66f3a3cf">AuthDirHasIPv6Connectivity</a></td></tr>
 <tr class="separator:a64d688a8b5edfe884186ffff66f3a3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe85717c7461f5c71ecc956c466f20c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#afe85717c7461f5c71ecc956c466f20c1">AuthDirPinKeys</a></td></tr>
@@ -475,9 +483,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>PredictedPortsRelevanc
 <tr class="separator:a6cb06d285c3f6c05d3536855a9614d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae079bc1c29fb93124c9437ca544a5345"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ae079bc1c29fb93124c9437ca544a5345">AccountingRule_option</a></td></tr>
 <tr class="separator:ae079bc1c29fb93124c9437ca544a5345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa57038b329f3b404c888ece07ff7d550"><td class="memItemLeft" align="right" valign="top"><a id="aa57038b329f3b404c888ece07ff7d550"></a>
+<tr class="memitem:a55979e1010fad31d212f8151311e67f8"><td class="memItemLeft" align="right" valign="top"><a id="a55979e1010fad31d212f8151311e67f8"></a>
 enum or_options_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>AccountingRule</b></td></tr>
-<tr class="separator:aa57038b329f3b404c888ece07ff7d550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a55979e1010fad31d212f8151311e67f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a154bf30663bb0afd1cac27c936f97021"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a154bf30663bb0afd1cac27c936f97021">HashedControlPassword</a></td></tr>
 <tr class="separator:a154bf30663bb0afd1cac27c936f97021"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d7c5e5fc02cf2d6d449f613294879fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a3d7c5e5fc02cf2d6d449f613294879fe">HashedControlSessionPassword</a></td></tr>
@@ -498,13 +506,15 @@ enum or_options_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom">
 <tr class="separator:abf372a197fb8acfb7ca0cc8a31590f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef1110c51c5a5deff66245f7c52f846"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aaef1110c51c5a5deff66245f7c52f846">OwningControllerProcess</a></td></tr>
 <tr class="separator:aaef1110c51c5a5deff66245f7c52f846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a010368883b295fcedcba19dcd1e50532"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a010368883b295fcedcba19dcd1e50532">OwningControllerFD</a></td></tr>
+<tr class="separator:a010368883b295fcedcba19dcd1e50532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a240a9b5eb9850368cc09180379297566"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a240a9b5eb9850368cc09180379297566">ShutdownWaitLength</a></td></tr>
 <tr class="separator:a240a9b5eb9850368cc09180379297566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3316595714c74012a683e40b79b2a732"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a3316595714c74012a683e40b79b2a732">SafeLogging</a></td></tr>
 <tr class="separator:a3316595714c74012a683e40b79b2a732"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad99e31cd7c2f2587eac2044cf5325ba"><td class="memItemLeft" align="right" valign="top"><a id="aad99e31cd7c2f2587eac2044cf5325ba"></a>
+<tr class="memitem:a9ab430c416cf127ca0152d222d9b11ea"><td class="memItemLeft" align="right" valign="top"><a id="a9ab430c416cf127ca0152d222d9b11ea"></a>
 enum or_options_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>SafeLogging_</b></td></tr>
-<tr class="separator:aad99e31cd7c2f2587eac2044cf5325ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a9ab430c416cf127ca0152d222d9b11ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e56478020465975d164be2d4d3efd6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a2e56478020465975d164be2d4d3efd6f">Sandbox</a></td></tr>
 <tr class="separator:a2e56478020465975d164be2d4d3efd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c212bb40148dc291b185cc30f0bb08f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0c212bb40148dc291b185cc30f0bb08f">SafeSocks</a></td></tr>
@@ -527,17 +537,14 @@ enum or_options_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom">
 <tr class="separator:adeb2e80be475aece699a5131cc311f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace8b1a244598e7ee2e37c0b6c48147d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ace8b1a244598e7ee2e37c0b6c48147d4">NumEntryGuards</a></td></tr>
 <tr class="separator:ace8b1a244598e7ee2e37c0b6c48147d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada677f2cfb76b93d3c6dd03ce1498c19"><td class="memItemLeft" align="right" valign="top"><a id="ada677f2cfb76b93d3c6dd03ce1498c19"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>UseEntryGuardsAsDirGuards</b></td></tr>
-<tr class="separator:ada677f2cfb76b93d3c6dd03ce1498c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada916229b8009e958cf476310aeda5c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ada916229b8009e958cf476310aeda5c7">UseGuardFraction</a></td></tr>
 <tr class="separator:ada916229b8009e958cf476310aeda5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24141f60755f78bf51dca245c56b0b88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a24141f60755f78bf51dca245c56b0b88">NumDirectoryGuards</a></td></tr>
 <tr class="separator:a24141f60755f78bf51dca245c56b0b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ee442450c8d1909f944c7c7618d3c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a89ee442450c8d1909f944c7c7618d3c6">NumPrimaryGuards</a></td></tr>
+<tr class="separator:a89ee442450c8d1909f944c7c7618d3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8ba80bba6ccb5126ed7374633fdfad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#adf8ba80bba6ccb5126ed7374633fdfad">RephistTrackTime</a></td></tr>
 <tr class="separator:adf8ba80bba6ccb5126ed7374633fdfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae56933e86735f7d91a34be3e53bd7f38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ae56933e86735f7d91a34be3e53bd7f38">FastFirstHopPK</a></td></tr>
-<tr class="separator:ae56933e86735f7d91a34be3e53bd7f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab32ff542040eb97a5428d5851b1d392f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ab32ff542040eb97a5428d5851b1d392f">FetchDirInfoEarly</a></td></tr>
 <tr class="separator:ab32ff542040eb97a5428d5851b1d392f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f59f0fec52fee0cc0bd65714cf88c32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a4f59f0fec52fee0cc0bd65714cf88c32">FetchDirInfoExtraEarly</a></td></tr>
@@ -568,27 +575,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>UseEntryGuardsAsDirGua
 <tr class="separator:ab0dafca087d4f51df7c5d97a9aab660f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dfaa05bb8dbbb110c81ebcad8d2b3e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a7dfaa05bb8dbbb110c81ebcad8d2b3e9">EnforceDistinctSubnets</a></td></tr>
 <tr class="separator:a7dfaa05bb8dbbb110c81ebcad8d2b3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae43a47ecb82edd261ea50b8651fa0340"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ae43a47ecb82edd261ea50b8651fa0340">PortForwarding</a></td></tr>
-<tr class="separator:ae43a47ecb82edd261ea50b8651fa0340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ce8073ada0f3063dd0c4bb96543935e"><td class="memItemLeft" align="right" valign="top"><a id="a4ce8073ada0f3063dd0c4bb96543935e"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>PortForwardingHelper</b></td></tr>
-<tr class="separator:a4ce8073ada0f3063dd0c4bb96543935e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5307480219dcc1e704dee59ec83a6c45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a5307480219dcc1e704dee59ec83a6c45">AllowNonRFC953Hostnames</a></td></tr>
 <tr class="separator:a5307480219dcc1e704dee59ec83a6c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab249368b166810469902d2de996b0be8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ab249368b166810469902d2de996b0be8">ServerDNSAllowNonRFC953Hostnames</a></td></tr>
 <tr class="separator:ab249368b166810469902d2de996b0be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceff85ffdcba102518f7b868589d3cd9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aceff85ffdcba102518f7b868589d3cd9">DownloadExtraInfo</a></td></tr>
 <tr class="separator:aceff85ffdcba102518f7b868589d3cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeaad0292e54e4e50b0fb351d6d2dcf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aeeaad0292e54e4e50b0fb351d6d2dcf2">AllowSingleHopExits</a></td></tr>
-<tr class="separator:aeeaad0292e54e4e50b0fb351d6d2dcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04a8cd38e3a9160c31e9d97ce46f6ab2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a04a8cd38e3a9160c31e9d97ce46f6ab2">ExcludeSingleHopRelays</a></td></tr>
-<tr class="separator:a04a8cd38e3a9160c31e9d97ce46f6ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2239e21967fb6efa78aa50c211a38fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ae2239e21967fb6efa78aa50c211a38fa">AllowSingleHopCircuits</a></td></tr>
-<tr class="separator:ae2239e21967fb6efa78aa50c211a38fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c264abfeb4bb19e2b42f58b8d399586"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a9c264abfeb4bb19e2b42f58b8d399586">AllowDotExit</a></td></tr>
-<tr class="separator:a9c264abfeb4bb19e2b42f58b8d399586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a232503dd065a6bcc21161762ebd0a39f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a232503dd065a6bcc21161762ebd0a39f">WarnUnsafeSocks</a></td></tr>
-<tr class="separator:a232503dd065a6bcc21161762ebd0a39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a153ca6504bbebcf1c392381695b83a40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a153ca6504bbebcf1c392381695b83a40">DirReqStatistics_option</a></td></tr>
 <tr class="separator:a153ca6504bbebcf1c392381695b83a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4abaa6cd8b551dd7d490f6143f7f215"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ad4abaa6cd8b551dd7d490f6143f7f215">DirReqStatistics</a></td></tr>
@@ -599,8 +591,12 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>PortForwardingHelpe
 <tr class="separator:ad46201dd2663df33986b0b9922fd4712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9026a1360df862de8fe3cd198148ce34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a9026a1360df862de8fe3cd198148ce34">CellStatistics</a></td></tr>
 <tr class="separator:a9026a1360df862de8fe3cd198148ce34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf519e803c4ad5cf30d9072ff1bfee5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#abcf519e803c4ad5cf30d9072ff1bfee5">PaddingStatistics</a></td></tr>
+<tr class="separator:abcf519e803c4ad5cf30d9072ff1bfee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29085284e690175b815f521f22ee239c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a29085284e690175b815f521f22ee239c">EntryStatistics</a></td></tr>
 <tr class="separator:a29085284e690175b815f521f22ee239c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e585cbb9e683469bfd562702a33902c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a7e585cbb9e683469bfd562702a33902c">HiddenServiceStatistics_option</a></td></tr>
+<tr class="separator:a7e585cbb9e683469bfd562702a33902c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ceefb5d00152e3918c7e0aa7399c6ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a8ceefb5d00152e3918c7e0aa7399c6ab">HiddenServiceStatistics</a></td></tr>
 <tr class="separator:a8ceefb5d00152e3918c7e0aa7399c6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62ef1ea502ab948dbe2fb932f3526f7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a62ef1ea502ab948dbe2fb932f3526f7e">ExtraInfoStatistics</a></td></tr>
@@ -647,40 +643,30 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>PortForwardingHelpe
 <tr class="separator:a4173ffc28684553c754a70645c72ad1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb12ab71a6590dbf3dd76d565dbad538"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#adb12ab71a6590dbf3dd76d565dbad538">TestingEstimatedDescriptorPropagationTime</a></td></tr>
 <tr class="separator:adb12ab71a6590dbf3dd76d565dbad538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef4d6c5cf6e197f8710df599e01888a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aef4d6c5cf6e197f8710df599e01888a7">TestingServerDownloadSchedule</a></td></tr>
-<tr class="separator:aef4d6c5cf6e197f8710df599e01888a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e651b215935fc2b807cd171cf81d16d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a7e651b215935fc2b807cd171cf81d16d">TestingClientDownloadSchedule</a></td></tr>
-<tr class="separator:a7e651b215935fc2b807cd171cf81d16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4017e1b269ee635122c205afcd0561c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ac4017e1b269ee635122c205afcd0561c">TestingServerConsensusDownloadSchedule</a></td></tr>
-<tr class="separator:ac4017e1b269ee635122c205afcd0561c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5d9ff8231c89a55572af05952590b6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aa5d9ff8231c89a55572af05952590b6a">TestingClientConsensusDownloadSchedule</a></td></tr>
-<tr class="separator:aa5d9ff8231c89a55572af05952590b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae55787284e9e083e73fd9edfd4866729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ae55787284e9e083e73fd9edfd4866729">ClientBootstrapConsensusAuthorityDownloadSchedule</a></td></tr>
-<tr class="separator:ae55787284e9e083e73fd9edfd4866729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93964290248c0855669de375748232d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a93964290248c0855669de375748232d8">ClientBootstrapConsensusFallbackDownloadSchedule</a></td></tr>
-<tr class="separator:a93964290248c0855669de375748232d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c8dd1545bb547e07b6e1b423ed2029a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a2c8dd1545bb547e07b6e1b423ed2029a">ClientBootstrapConsensusAuthorityOnlyDownloadSchedule</a></td></tr>
-<tr class="separator:a2c8dd1545bb547e07b6e1b423ed2029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1af755836411d0d86d7f250841aa059d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a1af755836411d0d86d7f250841aa059d">TestingBridgeDownloadSchedule</a></td></tr>
-<tr class="separator:a1af755836411d0d86d7f250841aa059d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4e3a55b4f61465928e2fc2a7bffdaf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a8f4e3a55b4f61465928e2fc2a7bffdaf">TestingServerDownloadInitialDelay</a></td></tr>
+<tr class="separator:a8f4e3a55b4f61465928e2fc2a7bffdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b474f41346695ba1c9c64f787014c3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0b474f41346695ba1c9c64f787014c3f">TestingClientDownloadInitialDelay</a></td></tr>
+<tr class="separator:a0b474f41346695ba1c9c64f787014c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8492c5660f404a9b4740f12e4b22a1e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a8492c5660f404a9b4740f12e4b22a1e1">TestingServerConsensusDownloadInitialDelay</a></td></tr>
+<tr class="separator:a8492c5660f404a9b4740f12e4b22a1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fe0df1e18cc0435c704562bcd0c839"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a68fe0df1e18cc0435c704562bcd0c839">TestingClientConsensusDownloadInitialDelay</a></td></tr>
+<tr class="separator:a68fe0df1e18cc0435c704562bcd0c839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68582c40ba417e737616c35d0022aba0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a68582c40ba417e737616c35d0022aba0">ClientBootstrapConsensusAuthorityDownloadInitialDelay</a></td></tr>
+<tr class="separator:a68582c40ba417e737616c35d0022aba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da0b218ecc44541389744c9125a14c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0da0b218ecc44541389744c9125a14c0">ClientBootstrapConsensusFallbackDownloadInitialDelay</a></td></tr>
+<tr class="separator:a0da0b218ecc44541389744c9125a14c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22305a76a65f834471d7ba2fb6d8e6c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a22305a76a65f834471d7ba2fb6d8e6c5">ClientBootstrapConsensusAuthorityOnlyDownloadInitialDelay</a></td></tr>
+<tr class="separator:a22305a76a65f834471d7ba2fb6d8e6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f96c2fc4285569ccd5519b04c9b55a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ab4f96c2fc4285569ccd5519b04c9b55a">TestingBridgeDownloadInitialDelay</a></td></tr>
+<tr class="separator:ab4f96c2fc4285569ccd5519b04c9b55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e4a487d05cae93a30147b2bc0d911e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a22e4a487d05cae93a30147b2bc0d911e">TestingBridgeBootstrapDownloadInitialDelay</a></td></tr>
+<tr class="separator:a22e4a487d05cae93a30147b2bc0d911e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bd77c5bd7de3667169dab574ef2d430"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a4bd77c5bd7de3667169dab574ef2d430">TestingClientMaxIntervalWithoutRequest</a></td></tr>
 <tr class="separator:a4bd77c5bd7de3667169dab574ef2d430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e99389ce7bdbb38b90353f8a57681a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a3e99389ce7bdbb38b90353f8a57681a9">TestingDirConnectionMaxStall</a></td></tr>
 <tr class="separator:a3e99389ce7bdbb38b90353f8a57681a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a4561474465536545472bf643deecda"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a2a4561474465536545472bf643deecda">TestingConsensusMaxDownloadTries</a></td></tr>
-<tr class="separator:a2a4561474465536545472bf643deecda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a637688fd9e9aaf037476e2c5648f3cd9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a637688fd9e9aaf037476e2c5648f3cd9">ClientBootstrapConsensusMaxDownloadTries</a></td></tr>
-<tr class="separator:a637688fd9e9aaf037476e2c5648f3cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97e492050cbcbbdc483b015ac001d666"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a97e492050cbcbbdc483b015ac001d666">ClientBootstrapConsensusAuthorityOnlyMaxDownloadTries</a></td></tr>
-<tr class="separator:a97e492050cbcbbdc483b015ac001d666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fcff99f20f07a4de5fe09f224380ee2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a3fcff99f20f07a4de5fe09f224380ee2">ClientBootstrapConsensusMaxInProgressTries</a></td></tr>
 <tr class="separator:a3fcff99f20f07a4de5fe09f224380ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adab72c3931563e2432e7b7f30815d8cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#adab72c3931563e2432e7b7f30815d8cb">TestingDescriptorMaxDownloadTries</a></td></tr>
-<tr class="separator:adab72c3931563e2432e7b7f30815d8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75d2713202df6cc5d959a0672339eded"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a75d2713202df6cc5d959a0672339eded">TestingMicrodescMaxDownloadTries</a></td></tr>
-<tr class="separator:a75d2713202df6cc5d959a0672339eded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e946a3e1eeaf210a83518c058b5b99d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a4e946a3e1eeaf210a83518c058b5b99d">TestingCertMaxDownloadTries</a></td></tr>
-<tr class="separator:a4e946a3e1eeaf210a83518c058b5b99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab51b4a6863009ba38cc0d1881259d41e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ab51b4a6863009ba38cc0d1881259d41e">TestingTorNetwork</a></td></tr>
 <tr class="separator:ab51b4a6863009ba38cc0d1881259d41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a468c211257e6d579aa1a5feac1646074"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a468c211257e6d579aa1a5feac1646074">TestingMinExitFlagThreshold</a></td></tr>
@@ -706,8 +692,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>TestingDirAuthVoteHSDi
 <tr class="separator:a26361917e5e5ccefa638da16a0a543b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab32cc20586e651e9b29d5f4cf2a15a9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ab32cc20586e651e9b29d5f4cf2a15a9a">TestingEnableCellStatsEvent</a></td></tr>
 <tr class="separator:ab32cc20586e651e9b29d5f4cf2a15a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0cccb48a2a8af37126b8336cf66288a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ab0cccb48a2a8af37126b8336cf66288a">TestingEnableTbEmptyEvent</a></td></tr>
-<tr class="separator:ab0cccb48a2a8af37126b8336cf66288a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe5646cdf66e343423ba8066bdea2d95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#abe5646cdf66e343423ba8066bdea2d95">BridgeRecordUsageByCountry</a></td></tr>
 <tr class="separator:abe5646cdf66e343423ba8066bdea2d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a839dc4e36837ec5d3f98cd53db286108"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a839dc4e36837ec5d3f98cd53db286108">GeoIPFile</a></td></tr>
@@ -738,20 +722,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>CircuitPriorityHalf
 <tr class="separator:aef6f6008f61c8a3eea84dbc28aba1040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00cc342aa13f261feed319026275d102"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a00cc342aa13f261feed319026275d102">IPv6Exit</a></td></tr>
 <tr class="separator:a00cc342aa13f261feed319026275d102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c3019a65ec19dbdb55e6a9480e46a10"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a2c3019a65ec19dbdb55e6a9480e46a10">TLSECGroup</a></td></tr>
-<tr class="separator:a2c3019a65ec19dbdb55e6a9480e46a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefee95bed93dc558df66e7078a95e2c1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aefee95bed93dc558df66e7078a95e2c1">PathsNeededToBuildCircuits</a></td></tr>
 <tr class="separator:aefee95bed93dc558df66e7078a95e2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4722b44287c7c2b5e5333102e932a5e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a4722b44287c7c2b5e5333102e932a5e7">SSLKeyLifetime</a></td></tr>
 <tr class="separator:a4722b44287c7c2b5e5333102e932a5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5fddf9472528ac68bb1909c22cd1c91"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ad5fddf9472528ac68bb1909c22cd1c91">GuardLifetime</a></td></tr>
 <tr class="separator:ad5fddf9472528ac68bb1909c22cd1c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a697f79c839ec37c1661e3db26c0663d1"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a697f79c839ec37c1661e3db26c0663d1">SchedulerLowWaterMark__</a></td></tr>
-<tr class="separator:a697f79c839ec37c1661e3db26c0663d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71229d129743d4bcc2af8e23f15b9c47"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a71229d129743d4bcc2af8e23f15b9c47">SchedulerHighWaterMark__</a></td></tr>
-<tr class="separator:a71229d129743d4bcc2af8e23f15b9c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75393d0c2e5d7f59024366f10ed608b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a75393d0c2e5d7f59024366f10ed608b9">SchedulerMaxFlushCells__</a></td></tr>
-<tr class="separator:a75393d0c2e5d7f59024366f10ed608b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07efb63a67cbe085bc4e0dd277167799"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a07efb63a67cbe085bc4e0dd277167799">ExitRelay</a></td></tr>
 <tr class="separator:a07efb63a67cbe085bc4e0dd277167799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0cfb2d4c29ce08a9d34d0b1ce55246f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aa0cfb2d4c29ce08a9d34d0b1ce55246f">SigningKeyLifetime</a></td></tr>
@@ -768,9 +744,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>CircuitPriorityHalf
 <tr class="separator:ae3b031795943786c9eb397ead79da1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a404ac8eb164c06e94315cbff9bf30603"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a404ac8eb164c06e94315cbff9bf30603">OfflineMasterKey</a></td></tr>
 <tr class="separator:a404ac8eb164c06e94315cbff9bf30603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd4eb6bb250526e3523ba37dfefc7092"><td class="memItemLeft" align="right" valign="top"><a id="abd4eb6bb250526e3523ba37dfefc7092"></a>
+<tr class="memitem:a0bf7d99cf1e1063b2b6c563e3135f4ea"><td class="memItemLeft" align="right" valign="top"><a id="a0bf7d99cf1e1063b2b6c563e3135f4ea"></a>
 enum or_options_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>keygen_force_passphrase</b></td></tr>
-<tr class="separator:abd4eb6bb250526e3523ba37dfefc7092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0bf7d99cf1e1063b2b6c563e3135f4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a755fec13441e99b0c05fff1a833f1433"><td class="memItemLeft" align="right" valign="top"><a id="a755fec13441e99b0c05fff1a833f1433"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>use_keygen_passphrase_fd</b></td></tr>
 <tr class="separator:a755fec13441e99b0c05fff1a833f1433"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -791,6 +767,29 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>master_key_fname</b
 <tr class="separator:ad7dd11803b3bc83cb7296d12f20781de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0023f287ed9de15a4bfe6e0830b8a37e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0023f287ed9de15a4bfe6e0830b8a37e">DisableOOSCheck</a></td></tr>
 <tr class="separator:a0023f287ed9de15a4bfe6e0830b8a37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab7f425014a68f03d5e6519e1ee2298"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a7ab7f425014a68f03d5e6519e1ee2298">ExtendByEd25519ID</a></td></tr>
+<tr class="separator:a7ab7f425014a68f03d5e6519e1ee2298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0613a854ba9d1a0033270a86cc70a068"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a0613a854ba9d1a0033270a86cc70a068">AuthDirTestEd25519LinkKeys</a></td></tr>
+<tr class="separator:a0613a854ba9d1a0033270a86cc70a068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab828f7fdfd610fc9c495ee63318dc86f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ab828f7fdfd610fc9c495ee63318dc86f">IncludeUsed</a></td></tr>
+<tr class="separator:ab828f7fdfd610fc9c495ee63318dc86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4988145bffa8badd6c53a0badd8604cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a4988145bffa8badd6c53a0badd8604cc">MaxConsensusAgeForDiffs</a></td></tr>
+<tr class="separator:a4988145bffa8badd6c53a0badd8604cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b5714397c48928abe3d71fc7ba6c70"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#aa3b5714397c48928abe3d71fc7ba6c70">NoExec</a></td></tr>
+<tr class="separator:aa3b5714397c48928abe3d71fc7ba6c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110487866b1633a558463021b46c02a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a110487866b1633a558463021b46c02a2">KISTSchedRunInterval</a></td></tr>
+<tr class="separator:a110487866b1633a558463021b46c02a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2cb13a16d61e52fb4f02c3c166cb2c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a5e2cb13a16d61e52fb4f02c3c166cb2c">KISTSockBufSizeFactor</a></td></tr>
+<tr class="separator:a5e2cb13a16d61e52fb4f02c3c166cb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ba386e8d941c7ee03c72bd336b5967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ab1ba386e8d941c7ee03c72bd336b5967">Schedulers</a></td></tr>
+<tr class="separator:ab1ba386e8d941c7ee03c72bd336b5967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d21a6fc78aa7ca7a620f063ea8e7b58"><td class="memItemLeft" align="right" valign="top"><a id="a7d21a6fc78aa7ca7a620f063ea8e7b58"></a>
+<a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>SchedulerTypes_</b></td></tr>
+<tr class="separator:a7d21a6fc78aa7ca7a620f063ea8e7b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad668794b6e3a8bf69e33b25601310ff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#ad668794b6e3a8bf69e33b25601310ff2">FilesOpenedByIncludes</a></td></tr>
+<tr class="separator:ad668794b6e3a8bf69e33b25601310ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3562b29f5f6300a4800ef51f30869bd1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a3562b29f5f6300a4800ef51f30869bd1">DisableSignalHandlers</a></td></tr>
+<tr class="separator:a3562b29f5f6300a4800ef51f30869bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17131426752c9bf9d0a5fe3c9cca6564"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a17131426752c9bf9d0a5fe3c9cca6564">DoSCircuitCreationEnabled</a></td></tr>
 <tr class="separator:a17131426752c9bf9d0a5fe3c9cca6564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f53ba82004b5bffc9ff5648b259deee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a8f53ba82004b5bffc9ff5648b259deee">DoSCircuitCreationMinConnections</a></td></tr>
@@ -812,7 +811,7 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>master_key_fname</b
 <tr class="memitem:a6af8915720f753c826f0b50d93b35b61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__options__t.html#a6af8915720f753c826f0b50d93b35b61">DoSRefuseSingleHopClientRendezvous</a></td></tr>
 <tr class="separator:a6af8915720f753c826f0b50d93b35b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">port booleans</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Derived booleans: For server ports and ControlPort, true iff there is a non-listener port on an AF_INET or AF_INET6 address of the given type configured in one of the _lines options above. For client ports, also true if there is a unix socket configured. If you are checking for client ports, you may want to use: SocksPort_set || TransPort_set || NATDPort_set || DNSPort_set rather than SocksPort_set. </p>
+<tr><td colspan="2"><div class="groupText"><p>Derived booleans: For server ports and ControlPort, true iff there is a non-listener port on an AF_INET or AF_INET6 address of the given type configured in one of the _lines options above. For client ports, also true if there is a unix socket configured. If you are checking for client ports, you may want to use: SocksPort_set || TransPort_set || NATDPort_set || DNSPort_set || HTTPTunnelPort_set rather than SocksPort_set. </p>
 </div></td></tr>
 <tr class="memitem:a9817e912186e2041ca26ea9039af61cd"><td class="memItemLeft" align="right" valign="top"><a id="a9817e912186e2041ca26ea9039af61cd"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>ORPort_set</b>: 1</td></tr>
@@ -838,6 +837,9 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>DNSPort_set</
 <tr class="memitem:a72161858d463ccb5990de320d8062e13"><td class="memItemLeft" align="right" valign="top"><a id="a72161858d463ccb5990de320d8062e13"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>ExtORPort_set</b>: 1</td></tr>
 <tr class="separator:a72161858d463ccb5990de320d8062e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28835b22aba8c090644d96558b11afae"><td class="memItemLeft" align="right" valign="top"><a id="a28835b22aba8c090644d96558b11afae"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>HTTPTunnelPort_set</b>: 1</td></tr>
+<tr class="separator:a28835b22aba8c090644d96558b11afae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">AuthDir...CC</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Lists of country codes to mark as BadExit, or Invalid, or to reject entirely. </p>
 </div></td></tr>
@@ -884,8 +886,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>PathBiasScaleUseThresh
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configuration options for a Tor process. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="aaf105ae5beaca1dee30ae54530691fce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf105ae5beaca1dee30ae54530691fce">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aaf8fd5f0e57d456151c951e0f3715fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf8fd5f0e57d456151c951e0f3715fc4">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -899,8 +901,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>PathBiasScaleUseThresh
 
 </div>
 </div>
-<a id="a80155586fa275b28773c9b203f52caba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80155586fa275b28773c9b203f52caba">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a94798fdadfbf49a7c658ace669a1d310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94798fdadfbf49a7c658ace669a1d310">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1036,51 +1038,6 @@ hibernate." </p>
 
 </div>
 </div>
-<a id="a9c264abfeb4bb19e2b42f58b8d399586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c264abfeb4bb19e2b42f58b8d399586">&#9670;&nbsp;</a></span>AllowDotExit</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int AllowDotExit</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If true, we convert "www.google.com.foo.exit" addresses on the socks/trans/natd ports into "www.google.com" addresses that exit from the node "foo". Disabled by default since attacking websites and exit relays can use it to manipulate your path selection. </p>
-
-</div>
-</div>
-<a id="ad35f5256cb59bc6aa4c20487ec0a086b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad35f5256cb59bc6aa4c20487ec0a086b">&#9670;&nbsp;</a></span>AllowInvalid_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="or_8h.html#aa971c4fb6f405f887be449242ce5f6a1">invalid_router_usage_t</a> AllowInvalid_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Bitmask; derived from AllowInvalidNodes. </p>
-
-</div>
-</div>
-<a id="a6b7bd86c7aa1750a4cbbb01d58b63e6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b7bd86c7aa1750a4cbbb01d58b63e6f">&#9670;&nbsp;</a></span>AllowInvalidNodes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* AllowInvalidNodes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>List of "entry", "middle", "exit", "introduction", "rendezvous". </p>
-
-</div>
-</div>
 <a id="a5307480219dcc1e704dee59ec83a6c45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5307480219dcc1e704dee59ec83a6c45">&#9670;&nbsp;</a></span>AllowNonRFC953Hostnames</h2>
 
@@ -1092,37 +1049,7 @@ hibernate." </p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>&lt; Filename or full path of the port forwarding helper executable If true, we allow connections to hostnames with weird characters. </p>
-
-</div>
-</div>
-<a id="ae2239e21967fb6efa78aa50c211a38fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2239e21967fb6efa78aa50c211a38fa">&#9670;&nbsp;</a></span>AllowSingleHopCircuits</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int AllowSingleHopCircuits</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If true, and the controller tells us to use a one-hop circuit, and the exit allows it, we use it. </p>
-
-</div>
-</div>
-<a id="aeeaad0292e54e4e50b0fb351d6d2dcf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeaad0292e54e4e50b0fb351d6d2dcf2">&#9670;&nbsp;</a></span>AllowSingleHopExits</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int AllowSingleHopExits</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If true, and we are acting as a relay, allow exit circuits even when we are the first hop of a circuit. </p>
+<p>If true, we allow connections to hostnames with weird characters. </p>
 
 </div>
 </div>
@@ -1153,6 +1080,21 @@ hibernate." </p>
       </table>
 </div><div class="memdoc">
 <p>If set, use these main (currently v3) directory authorities and not the default ones. </p>
+
+</div>
+</div>
+<a id="a2456dec65d15b5a33f01ed341306e90f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2456dec65d15b5a33f01ed341306e90f">&#9670;&nbsp;</a></span>AndroidIdentityTag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* AndroidIdentityTag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Identity tag to add for Android logging. </p>
 
 </div>
 </div>
@@ -1276,21 +1218,6 @@ hibernate." </p>
 
 </div>
 </div>
-<a id="adc1af44f52b8acb9fe7e465dbc557e1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc1af44f52b8acb9fe7e465dbc557e1e">&#9670;&nbsp;</a></span>AuthDirMaxServersPerAuthAddr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int AuthDirMaxServersPerAuthAddr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Do not permit more than this number of servers per IP address shared with an authority. </p>
-
-</div>
-</div>
 <a id="afe85717c7461f5c71ecc956c466f20c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe85717c7461f5c71ecc956c466f20c1">&#9670;&nbsp;</a></span>AuthDirPinKeys</h2>
 
@@ -1333,6 +1260,21 @@ hibernate." </p>
       </table>
 </div><div class="memdoc">
 <p>Bool (default: 1): Switch for the shared random protocol. Only relevant to a directory authority. If off, the authority won't participate in the protocol. If on (default), a flag is added to the vote indicating participation. </p>
+
+</div>
+</div>
+<a id="a0613a854ba9d1a0033270a86cc70a068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0613a854ba9d1a0033270a86cc70a068">&#9670;&nbsp;</a></span>AuthDirTestEd25519LinkKeys</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AuthDirTestEd25519LinkKeys</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bool (default: 1): When testing routerinfos as a directory authority, do we enforce Ed25519 identity match? </p>
 
 </div>
 </div>
@@ -1422,7 +1364,7 @@ hibernate." </p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>How long after we've requested a connection for a given port, do we want to continue to pick exits that support that port? How much bandwidth, on average, are we willing to use in a second? </p>
+<p>How much bandwidth, on average, are we willing to use in a second? </p>
 
 </div>
 </div>
@@ -1438,6 +1380,21 @@ hibernate." </p>
       </table>
 </div><div class="memdoc">
 <p>Boolean: is this an authoritative directory that aggregates bridge descriptors? </p>
+
+</div>
+</div>
+<a id="a41b7df008b07c57e260cd57052fb0efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41b7df008b07c57e260cd57052fb0efe">&#9670;&nbsp;</a></span>BridgeDistribution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* BridgeDistribution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If set on a bridge relay, it will include this value on a new "bridge-distribution-request" line in its bridge descriptor. </p>
 
 </div>
 </div>
@@ -1516,6 +1473,51 @@ hibernate." </p>
 
 </div>
 </div>
+<a id="a1c0f9de0ffd95c067ec1d3efde97cd06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c0f9de0ffd95c067ec1d3efde97cd06">&#9670;&nbsp;</a></span>CacheDirectory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* CacheDirectory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Where to store cached data, as modified. </p>
+
+</div>
+</div>
+<a id="ac3a2f40250642b5291f9bfcbbf263e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a2f40250642b5291f9bfcbbf263e89">&#9670;&nbsp;</a></span>CacheDirectory_option</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* CacheDirectory_option</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Where to store cached data, as configured by the user. </p>
+
+</div>
+</div>
+<a id="a7832e1c171c81eae38041827d6b3495a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7832e1c171c81eae38041827d6b3495a">&#9670;&nbsp;</a></span>CacheDirectoryGroupReadable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CacheDirectoryGroupReadable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Boolean: Is the CacheDirectory g+r? </p>
+
+</div>
+</div>
 <a id="a9026a1360df862de8fe3cd198148ce34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9026a1360df862de8fe3cd198148ce34">&#9670;&nbsp;</a></span>CellStatistics</h2>
 
@@ -1546,18 +1548,18 @@ hibernate." </p>
 
 </div>
 </div>
-<a id="a9abd1f373e77165043b245cd03b44844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9abd1f373e77165043b245cd03b44844">&#9670;&nbsp;</a></span>CircuitIdleTimeout</h2>
+<a id="ac956a28cbec3eeb68c5388331d970fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac956a28cbec3eeb68c5388331d970fa3">&#9670;&nbsp;</a></span>CircuitsAvailableTimeout</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int CircuitIdleTimeout</td>
+          <td class="memname">int CircuitsAvailableTimeout</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Cull open clean circuits that were born at least this many seconds ago. </p>
+<p>Try to have an open circuit for at least this long after last activity </p>
 
 </div>
 </div>
@@ -1576,14 +1578,14 @@ hibernate." </p>
 
 </div>
 </div>
-<a id="ae55787284e9e083e73fd9edfd4866729"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae55787284e9e083e73fd9edfd4866729">&#9670;&nbsp;</a></span>ClientBootstrapConsensusAuthorityDownloadSchedule</h2>
+<a id="a68582c40ba417e737616c35d0022aba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68582c40ba417e737616c35d0022aba0">&#9670;&nbsp;</a></span>ClientBootstrapConsensusAuthorityDownloadInitialDelay</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* ClientBootstrapConsensusAuthorityDownloadSchedule</td>
+          <td class="memname">int ClientBootstrapConsensusAuthorityDownloadInitialDelay</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1592,14 +1594,14 @@ hibernate." </p>
 
 </div>
 </div>
-<a id="a2c8dd1545bb547e07b6e1b423ed2029a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c8dd1545bb547e07b6e1b423ed2029a">&#9670;&nbsp;</a></span>ClientBootstrapConsensusAuthorityOnlyDownloadSchedule</h2>
+<a id="a22305a76a65f834471d7ba2fb6d8e6c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22305a76a65f834471d7ba2fb6d8e6c5">&#9670;&nbsp;</a></span>ClientBootstrapConsensusAuthorityOnlyDownloadInitialDelay</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* ClientBootstrapConsensusAuthorityOnlyDownloadSchedule</td>
+          <td class="memname">int ClientBootstrapConsensusAuthorityOnlyDownloadInitialDelay</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1608,49 +1610,19 @@ hibernate." </p>
 
 </div>
 </div>
-<a id="a97e492050cbcbbdc483b015ac001d666"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97e492050cbcbbdc483b015ac001d666">&#9670;&nbsp;</a></span>ClientBootstrapConsensusAuthorityOnlyMaxDownloadTries</h2>
+<a id="a0da0b218ecc44541389744c9125a14c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da0b218ecc44541389744c9125a14c0">&#9670;&nbsp;</a></span>ClientBootstrapConsensusFallbackDownloadInitialDelay</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ClientBootstrapConsensusAuthorityOnlyMaxDownloadTries</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How many times will a client try to fetch a consensus while bootstrapping using only a list of authorities, before it gives up? Only altered on testing networks. </p>
-
-</div>
-</div>
-<a id="a93964290248c0855669de375748232d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93964290248c0855669de375748232d8">&#9670;&nbsp;</a></span>ClientBootstrapConsensusFallbackDownloadSchedule</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* ClientBootstrapConsensusFallbackDownloadSchedule</td>
+          <td class="memname">int ClientBootstrapConsensusFallbackDownloadInitialDelay</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Schedule for when clients should download consensuses from fallback directory mirrors if they are bootstrapping (that is, they don't have a usable, reasonably live consensus). Only used by clients fetching from a list of fallback directory mirrors.</p>
 <p>This schedule is incremented by (potentially concurrent) connection attempts, unlike other schedules, which are incremented by connection failures. Only altered on testing networks. </p>
-
-</div>
-</div>
-<a id="a637688fd9e9aaf037476e2c5648f3cd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a637688fd9e9aaf037476e2c5648f3cd9">&#9670;&nbsp;</a></span>ClientBootstrapConsensusMaxDownloadTries</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ClientBootstrapConsensusMaxDownloadTries</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How many times will a client try to fetch a consensus while bootstrapping using a list of fallback directories, before it gives up? Only altered on testing networks. </p>
 
 </div>
 </div>
@@ -1789,38 +1761,8 @@ hibernate." </p>
 
 </div>
 </div>
-<a id="a7a4e5a43d8e386f01351870a405d78c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a4e5a43d8e386f01351870a405d78c8">&#9670;&nbsp;</a></span>CloseHSClientCircuitsImmediatelyOnTimeout</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int CloseHSClientCircuitsImmediatelyOnTimeout</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Close hidden service client circuits immediately when they reach the normal circuit-build timeout, even if they have already sent an INTRODUCE1 cell on its way to the service. </p>
-
-</div>
-</div>
-<a id="a0ec0a7405b49038a0de3b6ff72eeb83e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ec0a7405b49038a0de3b6ff72eeb83e">&#9670;&nbsp;</a></span>CloseHSServiceRendCircuitsImmediatelyOnTimeout</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int CloseHSServiceRendCircuitsImmediatelyOnTimeout</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Close hidden-service-side rendezvous circuits immediately when they reach the normal circuit-build timeout. </p>
-
-</div>
-</div>
-<a id="affae33c00dceae5b4281b53670f433c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affae33c00dceae5b4281b53670f433c4">&#9670;&nbsp;</a></span>command</h2>
+<a id="a69105a978047c78f50487b48ac61246d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69105a978047c78f50487b48ac61246d">&#9670;&nbsp;</a></span>command</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1861,6 +1803,21 @@ hibernate." </p>
       </table>
 </div><div class="memdoc">
 <p>If true, the user wants us to collect connection statistics. </p>
+
+</div>
+</div>
+<a id="afb8a179d08ba0d6413a38d6bae80e347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8a179d08ba0d6413a38d6bae80e347">&#9670;&nbsp;</a></span>ConnectionPadding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConnectionPadding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Autobool: if auto, then connection padding will be negotiated by client and server. If 0, it will be fully disabled. If 1, the client will still pad to the server regardless of server support. </p>
 
 </div>
 </div>
@@ -1981,21 +1938,6 @@ hibernate." </p>
       </table>
 </div><div class="memdoc">
 <p>Contact info to be published in the directory. </p>
-
-</div>
-</div>
-<a id="a135a21b502de5bd2b59179234b97c673"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a135a21b502de5bd2b59179234b97c673">&#9670;&nbsp;</a></span>ControlListenAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* ControlListenAddress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Addresses to bind for listening for control connections. </p>
 
 </div>
 </div>
@@ -2145,7 +2087,22 @@ hibernate." </p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>OR only: where to store long-term data. </p>
+<p>Where to store long-term data, as modified. </p>
+
+</div>
+</div>
+<a id="af2d495338cc223e804caa28209059a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d495338cc223e804caa28209059a41">&#9670;&nbsp;</a></span>DataDirectory_option</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* DataDirectory_option</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Where to store long-term data, as configured by the user. </p>
 
 </div>
 </div>
@@ -2236,21 +2193,6 @@ hibernate." </p>
       </table>
 </div><div class="memdoc">
 <p>Cache all directory documents and accept requests via tunnelled dir conns from clients. If 1, enabled (default); If 0, disabled. </p>
-
-</div>
-</div>
-<a id="aba9024eefebe44e075c7952ee2399fc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba9024eefebe44e075c7952ee2399fc0">&#9670;&nbsp;</a></span>DirListenAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* DirListenAddress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Addresses to bind for listening for directory connections. </p>
 
 </div>
 </div>
@@ -2404,18 +2346,18 @@ hibernate." </p>
 
 </div>
 </div>
-<a id="aca056e49010f17b9a7b81e53327d79a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca056e49010f17b9a7b81e53327d79a0">&#9670;&nbsp;</a></span>DNSListenAddress</h2>
+<a id="a3562b29f5f6300a4800ef51f30869bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3562b29f5f6300a4800ef51f30869bd1">&#9670;&nbsp;</a></span>DisableSignalHandlers</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* DNSListenAddress</td>
+          <td class="memname">int DisableSignalHandlers</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Addresses to bind for listening for SOCKS connections. </p>
+<p>If true, Tor shouldn't install any posix signal handlers, since it is running embedded inside another process. </p>
 
 </div>
 </div>
@@ -2689,21 +2631,6 @@ hibernate." </p>
 
 </div>
 </div>
-<a id="a04a8cd38e3a9160c31e9d97ce46f6ab2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04a8cd38e3a9160c31e9d97ce46f6ab2">&#9670;&nbsp;</a></span>ExcludeSingleHopRelays</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ExcludeSingleHopRelays</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If true, don't allow relays with AllowSingleHopExits=1 to be used in circuits that we build. </p>
-
-</div>
-</div>
 <a id="aaf9d601f55404f2465a8aada41b7a56b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf9d601f55404f2465a8aada41b7a56b">&#9670;&nbsp;</a></span>ExitNodes</h2>
 
@@ -2812,6 +2739,21 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
+<a id="a7ab7f425014a68f03d5e6519e1ee2298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab7f425014a68f03d5e6519e1ee2298">&#9670;&nbsp;</a></span>ExtendByEd25519ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ExtendByEd25519ID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Autobool: Should we include Ed25519 identities in extend2 cells? If -1, we should do whatever the consensus parameter says. </p>
+
+</div>
+</div>
 <a id="a5027ee57105e9296bb8b11c008c7cb07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5027ee57105e9296bb8b11c008c7cb07">&#9670;&nbsp;</a></span>ExtORPort_lines</h2>
 
@@ -2902,21 +2844,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="ae56933e86735f7d91a34be3e53bd7f38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae56933e86735f7d91a34be3e53bd7f38">&#9670;&nbsp;</a></span>FastFirstHopPK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FastFirstHopPK</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If Tor believes it is safe, should we save a third of our PK time by sending CREATE_FAST cells? </p>
-
-</div>
-</div>
 <a id="ab32ff542040eb97a5428d5851b1d392f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab32ff542040eb97a5428d5851b1d392f">&#9670;&nbsp;</a></span>FetchDirInfoEarly</h2>
 
@@ -2992,6 +2919,21 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
+<a id="ad668794b6e3a8bf69e33b25601310ff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad668794b6e3a8bf69e33b25601310ff2">&#9670;&nbsp;</a></span>FilesOpenedByIncludes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* FilesOpenedByIncludes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>List of files that were opened by include in torrc and torrc-defaults </p>
+
+</div>
+</div>
 <a id="a41b104554eca8ac942ff6b4315adda75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41b104554eca8ac942ff6b4315adda75">&#9670;&nbsp;</a></span>FirewallPorts</h2>
 
@@ -3034,21 +2976,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>Optionally, IPv4 and IPv6 GeoIP data. </p>
-
-</div>
-</div>
-<a id="a1ffed307d6d166bdbe9490e2a4ee536e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ffed307d6d166bdbe9490e2a4ee536e">&#9670;&nbsp;</a></span>Group</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* Group</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Name of group to run Tor as. </p>
 
 </div>
 </div>
@@ -3168,6 +3095,21 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Internal variable to remember whether we're actually acting on HiddenServiceStatistics_option &ndash; yes if it's set and we're a server, else no. </p>
+
+</div>
+</div>
+<a id="a7e585cbb9e683469bfd562702a33902c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e585cbb9e683469bfd562702a33902c">&#9670;&nbsp;</a></span>HiddenServiceStatistics_option</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HiddenServiceStatistics_option</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 <p>If true, the user wants us to collect statistics as hidden service directory, introduction point, or rendezvous point. </p>
 
 </div>
@@ -3184,6 +3126,36 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>List of configuration lines for client-side authorizations for hidden services </p>
+
+</div>
+</div>
+<a id="a47239296ed2808d73f9a45a76a96a758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47239296ed2808d73f9a45a76a96a758">&#9670;&nbsp;</a></span>HSLayer2Nodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">routerset_t* HSLayer2Nodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A routerset that should be used when picking middle nodes for HS circuits. </p>
+
+</div>
+</div>
+<a id="a56e965f73a800201f62b683616662141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e965f73a800201f62b683616662141">&#9670;&nbsp;</a></span>HSLayer3Nodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">routerset_t* HSLayer3Nodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A routerset that should be used when picking third-hop nodes for HS circuits. </p>
 
 </div>
 </div>
@@ -3307,6 +3279,36 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
+<a id="a71e0cbe216f83fcb065ba5621ef2711b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e0cbe216f83fcb065ba5621ef2711b">&#9670;&nbsp;</a></span>HTTPTunnelPort_lines</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* HTTPTunnelPort_lines</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ports to listen on for HTTP Tunnel connections. </p>
+
+</div>
+</div>
+<a id="ab828f7fdfd610fc9c495ee63318dc86f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab828f7fdfd610fc9c495ee63318dc86f">&#9670;&nbsp;</a></span>IncludeUsed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IncludeUsed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bool (default: 0): Tells if a include was used on torrc </p>
+
+</div>
+</div>
 <a id="a00cc342aa13f261feed319026275d102"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00cc342aa13f261feed319026275d102">&#9670;&nbsp;</a></span>IPv6Exit</h2>
 
@@ -3352,6 +3354,81 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
+<a id="a225af8a798e5c2401acb554dee56e815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225af8a798e5c2401acb554dee56e815">&#9670;&nbsp;</a></span>KeyDirectory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* KeyDirectory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Where to store keys data, as modified. </p>
+
+</div>
+</div>
+<a id="a78f2942dc64e8a4ca935d3d5c566b402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f2942dc64e8a4ca935d3d5c566b402">&#9670;&nbsp;</a></span>KeyDirectory_option</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* KeyDirectory_option</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Where to store keys, as configured by the user. </p>
+
+</div>
+</div>
+<a id="a788e8018ef4a286f87edacbc5b8b90fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788e8018ef4a286f87edacbc5b8b90fc">&#9670;&nbsp;</a></span>KeyDirectoryGroupReadable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KeyDirectoryGroupReadable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Boolean: Is the KeyDirectory g+r? </p>
+
+</div>
+</div>
+<a id="a110487866b1633a558463021b46c02a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a110487866b1633a558463021b46c02a2">&#9670;&nbsp;</a></span>KISTSchedRunInterval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int KISTSchedRunInterval</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Have the KIST scheduler run every X milliseconds. If less than zero, do not use the KIST scheduler but use the old vanilla scheduler instead. If zero, do what the consensus says and fall back to using KIST as if this is set to "10 msec" if the consensus doesn't say anything. </p>
+
+</div>
+</div>
+<a id="a5e2cb13a16d61e52fb4f02c3c166cb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e2cb13a16d61e52fb4f02c3c166cb2c">&#9670;&nbsp;</a></span>KISTSockBufSizeFactor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double KISTSockBufSizeFactor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A multiplier for the KIST per-socket limit calculation. </p>
+
+</div>
+</div>
 <a id="a85a6e66f5f2574a1f9d6c52e7013ca26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85a6e66f5f2574a1f9d6c52e7013ca26">&#9670;&nbsp;</a></span>LearnCircuitBuildTimeout</h2>
 
@@ -3363,7 +3440,7 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If non-zero, we attempt to learn a value for CircuitBuildTimeout based on timeout history. Use <a class="el" href="circuitstats_8c.html#ab883ccb58a956f9f308b80249cee790d">circuit_build_times_disabled()</a> rather than checking this value directly. </p>
+<p>If non-zero, we attempt to learn a value for CircuitBuildTimeout based on timeout history. Use <a class="el" href="circuitstats_8c.html#ab1b73e0bb66fa432389a7cc95a62bb21">circuit_build_times_disabled()</a> rather than checking this value directly. </p>
 
 </div>
 </div>
@@ -3442,6 +3519,21 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
+<a id="afe2e26889e4388269e8893f7c718de14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe2e26889e4388269e8893f7c718de14">&#9670;&nbsp;</a></span>MainloopStats</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainloopStats</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Log main loop statistics as part of the heartbeat messages. </p>
+
+</div>
+</div>
 <a id="aceb09b5da56047265c998356f1265561"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aceb09b5da56047265c998356f1265561">&#9670;&nbsp;</a></span>MaxAdvertisedBandwidth</h2>
 
@@ -3453,7 +3545,7 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>How much bandwidth are we willing to tell people we have? </p>
+<p>How much bandwidth are we willing to tell other nodes we have? </p>
 
 </div>
 </div>
@@ -3484,6 +3576,21 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>Maximum number of non-open general-purpose origin circuits to allow at once. </p>
+
+</div>
+</div>
+<a id="a4988145bffa8badd6c53a0badd8604cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4988145bffa8badd6c53a0badd8604cc">&#9670;&nbsp;</a></span>MaxConsensusAgeForDiffs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MaxConsensusAgeForDiffs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The seconds after expiration which we as a relay should keep old consensuses around so that we can generate diffs from them. If 0, use the default. </p>
 
 </div>
 </div>
@@ -3562,33 +3669,33 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="a1d6d0c8bac7d6b6f53577ba0e0908f6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d6d0c8bac7d6b6f53577ba0e0908f6c">&#9670;&nbsp;</a></span>MyFamily</h2>
+<a id="a28d397a57e6424efaf4516c9ed77fcd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d397a57e6424efaf4516c9ed77fcd6">&#9670;&nbsp;</a></span>MyFamily</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* MyFamily</td>
+          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* MyFamily</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declared family for this OR, normalized </p>
+
+</div>
+</div>
+<a id="a5fcaeafab9183fb4646a23cc024ef638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcaeafab9183fb4646a23cc024ef638">&#9670;&nbsp;</a></span>MyFamily_lines</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* MyFamily_lines</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Declared family for this OR. </p>
-
-</div>
-</div>
-<a id="a826b530e595ec58f2bb30b26998c336b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a826b530e595ec58f2bb30b26998c336b">&#9670;&nbsp;</a></span>NATDListenAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* NATDListenAddress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Addresses to bind for listening for transparent natd connections </p>
 
 </div>
 </div>
@@ -3667,6 +3774,21 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
+<a id="aa3b5714397c48928abe3d71fc7ba6c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b5714397c48928abe3d71fc7ba6c70">&#9670;&nbsp;</a></span>NoExec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NoExec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bool (default: 0). Tells Tor to never try to exec another program. </p>
+
+</div>
+</div>
 <a id="a0e5dabda4ef21fb73dd52a82cebec875"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e5dabda4ef21fb73dd52a82cebec875">&#9670;&nbsp;</a></span>NumCPUs</h2>
 
@@ -3712,6 +3834,21 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
+<a id="a89ee442450c8d1909f944c7c7618d3c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ee442450c8d1909f944c7c7618d3c6">&#9670;&nbsp;</a></span>NumPrimaryGuards</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NumPrimaryGuards</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>How many primary guards do we want? </p>
+
+</div>
+</div>
 <a id="a404ac8eb164c06e94315cbff9bf30603"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a404ac8eb164c06e94315cbff9bf30603">&#9670;&nbsp;</a></span>OfflineMasterKey</h2>
 
@@ -3739,21 +3876,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>If 1, we always send optimistic data when it's supported. If 0, we never use it. If -1, we do what the consensus says. </p>
-
-</div>
-</div>
-<a id="a13336d32712e29af32dff98352ac794c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13336d32712e29af32dff98352ac794c">&#9670;&nbsp;</a></span>ORListenAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* ORListenAddress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Addresses to bind for listening for OR connections. </p>
 
 </div>
 </div>
@@ -3787,33 +3909,63 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="ae8278ec75ba6f059b4eb220e257ed5ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8278ec75ba6f059b4eb220e257ed5ee">&#9670;&nbsp;</a></span>OutboundBindAddressIPv4_</h2>
+<a id="abb020dbbd963f6690e24bbf98baa98ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb020dbbd963f6690e24bbf98baa98ff">&#9670;&nbsp;</a></span>OutboundBindAddresses</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structtor__addr__t.html">tor_addr_t</a> OutboundBindAddressIPv4_</td>
+          <td class="memname"><a class="el" href="structtor__addr__t.html">tor_addr_t</a> OutboundBindAddresses[OUTBOUND_ADDR_MAX][2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>IPv4 address derived from OutboundBindAddress. </p>
+<p>Addresses derived from the various OutboundBindAddress lines. [][0] is IPv4, [][1] is IPv6 </p>
 
 </div>
 </div>
-<a id="a72cbffc8f19c8092568ec73038e02735"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72cbffc8f19c8092568ec73038e02735">&#9670;&nbsp;</a></span>OutboundBindAddressIPv6_</h2>
+<a id="a28b3546b1481d36c56bdced670f187e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28b3546b1481d36c56bdced670f187e5">&#9670;&nbsp;</a></span>OutboundBindAddressExit</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structtor__addr__t.html">tor_addr_t</a> OutboundBindAddressIPv6_</td>
+          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* OutboundBindAddressExit</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>IPv6 address derived from OutboundBindAddress. </p>
+<p>Local address to bind outbound exit sockets </p>
+
+</div>
+</div>
+<a id="a7cdd2c04f5203e3d5e731aaf9c57831e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cdd2c04f5203e3d5e731aaf9c57831e">&#9670;&nbsp;</a></span>OutboundBindAddressOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* OutboundBindAddressOR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Local address to bind outbound relay sockets </p>
+
+</div>
+</div>
+<a id="a010368883b295fcedcba19dcd1e50532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a010368883b295fcedcba19dcd1e50532">&#9670;&nbsp;</a></span>OwningControllerFD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int OwningControllerFD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>FD specifier for a controller that owns this Tor instance. </p>
 
 </div>
 </div>
@@ -3829,6 +3981,21 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>Process specifier for a controller that ‘owns’ this Tor instance. Tor will terminate if its owning controller does. </p>
+
+</div>
+</div>
+<a id="abcf519e803c4ad5cf30d9072ff1bfee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf519e803c4ad5cf30d9072ff1bfee5">&#9670;&nbsp;</a></span>PaddingStatistics</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PaddingStatistics</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If true, the user wants us to collect padding statistics. </p>
 
 </div>
 </div>
@@ -3926,21 +4093,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>Where to store PID of Tor process. </p>
-
-</div>
-</div>
-<a id="ae43a47ecb82edd261ea50b8651fa0340"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae43a47ecb82edd261ea50b8651fa0340">&#9670;&nbsp;</a></span>PortForwarding</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int PortForwarding</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If true, use NAT-PMP or UPnP to automatically forward the DirPort and ORPort on the NAT device </p>
 
 </div>
 </div>
@@ -4061,6 +4213,36 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>Directory server only: which versions of Tor should we tell users to run? </p>
+
+</div>
+</div>
+<a id="a0edfa93e50f6e46257502ee4f8b1751a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0edfa93e50f6e46257502ee4f8b1751a">&#9670;&nbsp;</a></span>ReducedConnectionPadding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ReducedConnectionPadding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Boolean: Should we try to keep connections open shorter and pad them less against connection-level traffic analysis? </p>
+
+</div>
+</div>
+<a id="afe7eb3755a6696cc6744a7fa52504da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe7eb3755a6696cc6744a7fa52504da0">&#9670;&nbsp;</a></span>ReducedExitPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ReducedExitPolicy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Should we use the Reduced Exit Policy? </p>
 
 </div>
 </div>
@@ -4244,48 +4426,18 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="a71229d129743d4bcc2af8e23f15b9c47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71229d129743d4bcc2af8e23f15b9c47">&#9670;&nbsp;</a></span>SchedulerHighWaterMark__</h2>
+<a id="ab1ba386e8d941c7ee03c72bd336b5967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ba386e8d941c7ee03c72bd336b5967">&#9670;&nbsp;</a></span>Schedulers</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t SchedulerHighWaterMark__</td>
+          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* Schedulers</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>High-water mark for global scheduler - stop sending when estimated queued size exceeds this threshold. </p>
-
-</div>
-</div>
-<a id="a697f79c839ec37c1661e3db26c0663d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a697f79c839ec37c1661e3db26c0663d1">&#9670;&nbsp;</a></span>SchedulerLowWaterMark__</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t SchedulerLowWaterMark__</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Low-water mark for global scheduler - start sending when estimated queued size falls below this threshold. </p>
-
-</div>
-</div>
-<a id="a75393d0c2e5d7f59024366f10ed608b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75393d0c2e5d7f59024366f10ed608b9">&#9670;&nbsp;</a></span>SchedulerMaxFlushCells__</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int SchedulerMaxFlushCells__</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Flush size for global scheduler - flush this many cells at a time when sending. </p>
+<p>The list of scheduler type string ordered by priority that is first one has to be tried first. Default: KIST,KISTLite,Vanilla </p>
 
 </div>
 </div>
@@ -4465,7 +4617,7 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>For how long (seconds) do we declare our singning keys to be valid? </p>
+<p>For how long (seconds) do we declare our signing keys to be valid? </p>
 
 </div>
 </div>
@@ -4589,21 +4741,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="a14a240f881ed59a19a86b693effbfb07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14a240f881ed59a19a86b693effbfb07">&#9670;&nbsp;</a></span>SocksListenAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* SocksListenAddress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Addresses to bind for listening for SOCKS connections. </p>
-
-</div>
-</div>
 <a id="aba43b4becd3da64f7bc51db118eb3e5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba43b4becd3da64f7bc51db118eb3e5a">&#9670;&nbsp;</a></span>SocksPolicy</h2>
 
@@ -4631,21 +4768,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>Ports to listen on for SOCKS connections. </p>
-
-</div>
-</div>
-<a id="ac388a9fa86d1a75edfdf055db51502d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac388a9fa86d1a75edfdf055db51502d1">&#9670;&nbsp;</a></span>SocksSocketsGroupWritable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int SocksSocketsGroupWritable</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Boolean: Are SOCKS sockets g+rw? </p>
 
 </div>
 </div>
@@ -4754,14 +4876,29 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="a1af755836411d0d86d7f250841aa059d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1af755836411d0d86d7f250841aa059d">&#9670;&nbsp;</a></span>TestingBridgeDownloadSchedule</h2>
+<a id="a22e4a487d05cae93a30147b2bc0d911e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e4a487d05cae93a30147b2bc0d911e">&#9670;&nbsp;</a></span>TestingBridgeBootstrapDownloadInitialDelay</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* TestingBridgeDownloadSchedule</td>
+          <td class="memname">int TestingBridgeBootstrapDownloadInitialDelay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Schedule for when clients should download bridge descriptors when they have no running bridges. Only altered on testing networks. </p>
+
+</div>
+</div>
+<a id="ab4f96c2fc4285569ccd5519b04c9b55a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f96c2fc4285569ccd5519b04c9b55a">&#9670;&nbsp;</a></span>TestingBridgeDownloadInitialDelay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TestingBridgeDownloadInitialDelay</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4769,29 +4906,14 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="a4e946a3e1eeaf210a83518c058b5b99d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e946a3e1eeaf210a83518c058b5b99d">&#9670;&nbsp;</a></span>TestingCertMaxDownloadTries</h2>
+<a id="a68fe0df1e18cc0435c704562bcd0c839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68fe0df1e18cc0435c704562bcd0c839">&#9670;&nbsp;</a></span>TestingClientConsensusDownloadInitialDelay</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int TestingCertMaxDownloadTries</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How many times will we try to fetch a certificate before giving up? Only altered on testing networks. </p>
-
-</div>
-</div>
-<a id="aa5d9ff8231c89a55572af05952590b6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5d9ff8231c89a55572af05952590b6a">&#9670;&nbsp;</a></span>TestingClientConsensusDownloadSchedule</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* TestingClientConsensusDownloadSchedule</td>
+          <td class="memname">int TestingClientConsensusDownloadInitialDelay</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4799,14 +4921,14 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="a7e651b215935fc2b807cd171cf81d16d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e651b215935fc2b807cd171cf81d16d">&#9670;&nbsp;</a></span>TestingClientDownloadSchedule</h2>
+<a id="a0b474f41346695ba1c9c64f787014c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b474f41346695ba1c9c64f787014c3f">&#9670;&nbsp;</a></span>TestingClientDownloadInitialDelay</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* TestingClientDownloadSchedule</td>
+          <td class="memname">int TestingClientDownloadInitialDelay</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4826,36 +4948,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>When directory clients have only a few descriptors to request, they batch them until they have more, or until this amount of time has passed. Only altered on testing networks. </p>
-
-</div>
-</div>
-<a id="a2a4561474465536545472bf643deecda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a4561474465536545472bf643deecda">&#9670;&nbsp;</a></span>TestingConsensusMaxDownloadTries</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TestingConsensusMaxDownloadTries</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How many times will we try to fetch a consensus before we give up? Only altered on testing networks. </p>
-
-</div>
-</div>
-<a id="adab72c3931563e2432e7b7f30815d8cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adab72c3931563e2432e7b7f30815d8cb">&#9670;&nbsp;</a></span>TestingDescriptorMaxDownloadTries</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TestingDescriptorMaxDownloadTries</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How many times will we try to download a router's descriptor before giving up? Only altered on testing networks. </p>
 
 </div>
 </div>
@@ -4900,7 +4992,7 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Relays in a testing network which should be voted HSDir regardless of uptime and DirPort. Respects VoteOnHidServDirectoriesV2. </p>
+<p>Relays in a testing network which should be voted HSDir regardless of uptime and DirPort. </p>
 
 </div>
 </div>
@@ -4949,21 +5041,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="ab0cccb48a2a8af37126b8336cf66288a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0cccb48a2a8af37126b8336cf66288a">&#9670;&nbsp;</a></span>TestingEnableTbEmptyEvent</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TestingEnableTbEmptyEvent</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Enable TB_EMPTY events. Only altered on testing networks. </p>
-
-</div>
-</div>
 <a id="adb12ab71a6590dbf3dd76d565dbad538"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb12ab71a6590dbf3dd76d565dbad538">&#9670;&nbsp;</a></span>TestingEstimatedDescriptorPropagationTime</h2>
 
@@ -5009,21 +5086,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="a75d2713202df6cc5d959a0672339eded"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75d2713202df6cc5d959a0672339eded">&#9670;&nbsp;</a></span>TestingMicrodescMaxDownloadTries</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TestingMicrodescMaxDownloadTries</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How many times will we try to download a microdescriptor before giving up? Only altered on testing networks. </p>
-
-</div>
-</div>
 <a id="a468c211257e6d579aa1a5feac1646074"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a468c211257e6d579aa1a5feac1646074">&#9670;&nbsp;</a></span>TestingMinExitFlagThreshold</h2>
 
@@ -5054,14 +5116,14 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="ac4017e1b269ee635122c205afcd0561c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4017e1b269ee635122c205afcd0561c">&#9670;&nbsp;</a></span>TestingServerConsensusDownloadSchedule</h2>
+<a id="a8492c5660f404a9b4740f12e4b22a1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8492c5660f404a9b4740f12e4b22a1e1">&#9670;&nbsp;</a></span>TestingServerConsensusDownloadInitialDelay</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* TestingServerConsensusDownloadSchedule</td>
+          <td class="memname">int TestingServerConsensusDownloadInitialDelay</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5069,14 +5131,14 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="aef4d6c5cf6e197f8710df599e01888a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef4d6c5cf6e197f8710df599e01888a7">&#9670;&nbsp;</a></span>TestingServerDownloadSchedule</h2>
+<a id="a8f4e3a55b4f61465928e2fc2a7bffdaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4e3a55b4f61465928e2fc2a7bffdaf">&#9670;&nbsp;</a></span>TestingServerDownloadInitialDelay</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* TestingServerDownloadSchedule</td>
+          <td class="memname">int TestingServerDownloadInitialDelay</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5189,21 +5251,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="a2c3019a65ec19dbdb55e6a9480e46a10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c3019a65ec19dbdb55e6a9480e46a10">&#9670;&nbsp;</a></span>TLSECGroup</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* TLSECGroup</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>One of "P256", "P224", or nil for auto </p>
-
-</div>
-</div>
 <a id="a8393ce4254cff1b80a61336290ee05cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8393ce4254cff1b80a61336290ee05cf">&#9670;&nbsp;</a></span>TokenBucketRefillInterval</h2>
 
@@ -5279,21 +5326,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="a555242dc7bd177ac47a027834d280e4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a555242dc7bd177ac47a027834d280e4b">&#9670;&nbsp;</a></span>TransListenAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structconfig__line__t.html">config_line_t</a>* TransListenAddress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Addresses to bind for listening for transparent pf/netfilter connections. </p>
-
-</div>
-</div>
 <a id="aa26a305dba8a05c28eea9e0d2d1c46b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa26a305dba8a05c28eea9e0d2d1c46b5">&#9670;&nbsp;</a></span>TransPort_lines</h2>
 
@@ -5309,14 +5341,14 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="abde4ea0bb8b49b44b48e99b3fa113bc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abde4ea0bb8b49b44b48e99b3fa113bc0">&#9670;&nbsp;</a></span>TransProxyType</h2>
+<a id="a5327100cf68a168477074c75e7c8710a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5327100cf68a168477074c75e7c8710a">&#9670;&nbsp;</a></span>TransProxyType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* TransProxyType</td>
+          <td class="memname">char* TransProxyType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5324,8 +5356,8 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
 
 </div>
 </div>
-<a id="a497b666ddc5385a9816e53e1a3174632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a497b666ddc5385a9816e53e1a3174632">&#9670;&nbsp;</a></span>TransProxyType_parsed</h2>
+<a id="a6987902795ddc20ece4861efabe18d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6987902795ddc20ece4861efabe18d7f">&#9670;&nbsp;</a></span>TransProxyType_parsed</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5351,6 +5383,21 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>Boolean: Should we truncate the log file before we start writing? </p>
+
+</div>
+</div>
+<a id="a906b30a9a5f0ea492105831c8e9b72fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906b30a9a5f0ea492105831c8e9b72fe">&#9670;&nbsp;</a></span>UnixSocksGroupWritable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UnixSocksGroupWritable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Boolean: Are SOCKS Unix sockets g+rw? </p>
 
 </div>
 </div>
@@ -5410,7 +5457,7 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Internal variable to remember whether we're actually acting on UseEntryGuards_option &ndash; when we're a non-anonymous Tor2web client or Single Onion Service, it is alwasy false, otherwise we use the value of UseEntryGuards_option. </p>
+<p>Internal variable to remember whether we're actually acting on UseEntryGuards_option &ndash; when we're a non-anonymous Tor2web client or Single Onion Service, it is always false, otherwise we use the value of UseEntryGuards_option. </p>
 
 </div>
 </div>
@@ -5440,7 +5487,7 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Boolean: Do we try to get directory info from a smallish number of fixed nodes? If 1, we use any guardfraction information we see in the consensus. If 0, we don't. If -1, let the consensus parameter decide. </p>
+<p>If 1, we use any guardfraction information we see in the consensus. If 0, we don't. If -1, let the consensus parameter decide. </p>
 
 </div>
 </div>
@@ -5651,21 +5698,6 @@ is 'reject *'" and "auto" (-1) means "same as 1, but warn the user."</p>
       </table>
 </div><div class="memdoc">
 <p>Related to RejectPlaintextPorts above, except this config option controls whether we warn (in the log and via a controller status event) every time a risky connection is attempted. </p>
-
-</div>
-</div>
-<a id="a232503dd065a6bcc21161762ebd0a39f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a232503dd065a6bcc21161762ebd0a39f">&#9670;&nbsp;</a></span>WarnUnsafeSocks</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int WarnUnsafeSocks</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If true, we will warn if a user gives us only an IP address instead of a hostname. </p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 <map id="crypto_expand_key_material_rfc5869_sha256" name="crypto_expand_key_material_rfc5869_sha256">
-<area shape="rect" id="node2" href="$crypto_8c.html#a5ff5677d46393943eb3f852fba12c4e4" title="crypto_hmac_sha256" alt="" coords="241,5,388,32"/>
-<area shape="rect" id="node3" href="$crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="275,56,354,83"/>
+<area shape="rect" id="node2" href="$crypto__digest_8c.html#a5ff5677d46393943eb3f852fba12c4e4" title="crypto_hmac_sha256" alt="" coords="241,5,388,32"/>
+<area shape="rect" id="node3" href="$crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="275,56,354,83"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="monotime_init" name="monotime_init">
-<area shape="rect" id="node2" href="$test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="156,5,249,32"/>
+<area shape="rect" id="node2" href="$tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="161,5,259,32"/>
+<area shape="rect" id="node3" href="$test_8h.html#a334e47899bf2c19bf8a5ce0f226ab399" title="get_fname_rnd" alt="" coords="156,56,264,83"/>
 </map>

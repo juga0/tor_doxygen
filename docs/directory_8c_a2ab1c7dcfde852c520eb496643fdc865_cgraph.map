@@ -1,5 +1,8 @@
 <map id="parse_http_url" name="parse_http_url">
-<area shape="rect" id="node2" href="$util_8c.html#ab838c820246f358bc0b99884154b2704" title="eat_whitespace_no_nl" alt="" coords="157,5,308,32"/>
-<area shape="rect" id="node3" href="$util_8c.html#a34984f08eb3eef95438b8e65226dff8e" title="find_whitespace" alt="" coords="175,56,291,83"/>
-<area shape="rect" id="node4" href="$util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="189,107,277,133"/>
+<area shape="rect" id="node2" href="$directory_8c.html#adeaaed095405cd4aad17cf7a1197de3c" title="parse_http_command" alt="" coords="157,56,304,83"/>
+<area shape="rect" id="node5" href="$util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="383,107,471,133"/>
+<area shape="rect" id="node6" href="$compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="187,157,274,184"/>
+<area shape="rect" id="node3" href="$util_8c.html#ab838c820246f358bc0b99884154b2704" title="eat_whitespace_no_nl" alt="" coords="352,5,503,32"/>
+<area shape="rect" id="node4" href="$util_8c.html#a34984f08eb3eef95438b8e65226dff8e" title="find_whitespace" alt="" coords="369,56,485,83"/>
+<area shape="rect" id="node7" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="380,157,475,184"/>
 </map>

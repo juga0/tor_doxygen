@@ -1,3 +1,4 @@
 <map id="tor_x509_cert_get_id_digests" name="tor_x509_cert_get_id_digests">
-<area shape="rect" id="node2" href="$connection__or_8h.html#ab1ef7fb7062854e94bc474ccd0e51fbc" title="connection_or_compute\l_authenticate_cell_body" alt="" coords="196,5,359,47"/>
+<area shape="rect" id="node2" href="$connection__or_8h.html#a299125b246f5c829b4af2cef1efa7378" title="connection_or_compute\l_authenticate_cell_body" alt="" coords="196,5,359,47"/>
+<area shape="rect" id="node3" href="$torcert_8c.html#acd16d9acb0ee87c596577d7e3c333f39" title="or_handshake_certs\l_check_both" alt="" coords="208,71,347,112"/>
 </map>

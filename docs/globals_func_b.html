@@ -81,9 +81,6 @@ $(function() {
 <li>base64_decode()
 : <a class="el" href="util__format_8c.html#a21c1486a0e17c055aed65a12ec364350">util_format.c</a>
 </li>
-<li>base64_decode_nopad()
-: <a class="el" href="util__format_8c.html#ad7ca5ff39b35ee452b6213e85cadf08e">util_format.c</a>
-</li>
 <li>base64_encode()
 : <a class="el" href="util__format_8c.html#a2394b082102cdbb3d443955e9b056e0e">util_format.c</a>
 </li>
@@ -93,23 +90,67 @@ $(function() {
 <li>base64_encode_size()
 : <a class="el" href="util__format_8c.html#a733f32f58c6056750ad6f64228af51b2">util_format.c</a>
 </li>
+<li>base64cmp()
+: <a class="el" href="consdiff_8c.html#a8a21fba70e780340e95c15fce46cb765">consdiff.c</a>
+</li>
 <li>begin_cell_parse()
 : <a class="el" href="connection__edge_8c.html#abf2c59dfc51d377036486ec06428508b">connection_edge.c</a>
 </li>
 <li>bridge_add_from_config()
-: <a class="el" href="entrynodes_8c.html#a48b9dfc22b29d81757bd2668cb28da37">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#affaa0eba6400aae46fde3affcc686b1d">entrynodes.h</a>
+: <a class="el" href="bridges_8c.html#a48b9dfc22b29d81757bd2668cb28da37">bridges.c</a>
+, <a class="el" href="bridges_8h.html#affaa0eba6400aae46fde3affcc686b1d">bridges.h</a>
 </li>
-<li>bridge_line_free()
-: <a class="el" href="config_8h.html#a4c95a53f7068b75257c607405757b428">config.h</a>
-, <a class="el" href="config_8c.html#a4c95a53f7068b75257c607405757b428">config.c</a>
+<li>bridge_get_addr_port()
+: <a class="el" href="bridges_8h.html#a8ddc062ce747b84b38514706c0ab6965">bridges.h</a>
+, <a class="el" href="bridges_8c.html#a8ddc062ce747b84b38514706c0ab6965">bridges.c</a>
 </li>
-<li>bucket_millis_empty()
-: <a class="el" href="connection_8c.html#a2adb44ca5017e613d46a846c63710870">connection.c</a>
+<li>bridge_get_rsa_id_digest()
+: <a class="el" href="bridges_8c.html#abb7d7443c740c64187209e9a56d20b19">bridges.c</a>
+, <a class="el" href="bridges_8h.html#abb7d7443c740c64187209e9a56d20b19">bridges.h</a>
+</li>
+<li>bridge_line_free_()
+: <a class="el" href="config_8c.html#a248c5ed3d769432bffef44844128ed1e">config.c</a>
+, <a class="el" href="config_8h.html#a248c5ed3d769432bffef44844128ed1e">config.h</a>
+</li>
+<li>bridge_list_get()
+: <a class="el" href="bridges_8c.html#af023c216a9c4c87628d349356bea04bc">bridges.c</a>
+, <a class="el" href="bridges_8h.html#af023c216a9c4c87628d349356bea04bc">bridges.h</a>
+</li>
+<li>bridge_resolve_conflicts()
+: <a class="el" href="bridges_8c.html#a21b619ab73f8529d1c4c37fe0b1a6f8d">bridges.c</a>
+</li>
+<li>bridges_free_all()
+: <a class="el" href="bridges_8c.html#ac0d54cc37202f872efa7488bcf8d6724">bridges.c</a>
+, <a class="el" href="bridges_8h.html#ac0d54cc37202f872efa7488bcf8d6724">bridges.h</a>
+</li>
+<li>buf_add()
+: <a class="el" href="buffers_8c.html#a2771e1c14c464b10533a079f40a59a8d">buffers.c</a>
+, <a class="el" href="buffers_8h.html#a2771e1c14c464b10533a079f40a59a8d">buffers.h</a>
+</li>
+<li>buf_add_chunk_with_capacity()
+: <a class="el" href="buffers_8c.html#a200c41fd4c9428ee25c7426d2341cfa4">buffers.c</a>
+</li>
+<li>buf_add_compress()
+: <a class="el" href="buffers_8c.html#a41000b80bd29121f9b8197a2190cf601">buffers.c</a>
+, <a class="el" href="buffers_8h.html#aa7f2c6985fb46e56498bb3d79a0982af">buffers.h</a>
+</li>
+<li>buf_add_printf()
+: <a class="el" href="buffers_8c.html#a05f864bf1a0d082230f7869e4f5b51c7">buffers.c</a>
+</li>
+<li>buf_add_string()
+: <a class="el" href="buffers_8c.html#ac81f33eaee90f281dd2e983edb5d8a76">buffers.c</a>
+, <a class="el" href="buffers_8h.html#ac81f33eaee90f281dd2e983edb5d8a76">buffers.h</a>
+</li>
+<li>buf_add_vprintf()
+: <a class="el" href="buffers_8c.html#aa957514fdc2f68cccc3ec62ecb9448ef">buffers.c</a>
 </li>
 <li>buf_allocation()
 : <a class="el" href="buffers_8c.html#a364f8af28dc3b92ec93bf5c433a44209">buffers.c</a>
 , <a class="el" href="buffers_8h.html#a364f8af28dc3b92ec93bf5c433a44209">buffers.h</a>
+</li>
+<li>buf_assert_ok()
+: <a class="el" href="buffers_8c.html#a73c287855239cd653ece9a64f5e37628">buffers.c</a>
+, <a class="el" href="buffers_8h.html#a73c287855239cd653ece9a64f5e37628">buffers.h</a>
 </li>
 <li>buf_clear()
 : <a class="el" href="buffers_8c.html#a1d5f6af679f4b6ead9ba2aca03941931">buffers.c</a>
@@ -119,43 +160,92 @@ $(function() {
 : <a class="el" href="buffers_8c.html#a698473a00b89755b994e4f9b83817e98">buffers.c</a>
 , <a class="el" href="buffers_8h.html#a698473a00b89755b994e4f9b83817e98">buffers.h</a>
 </li>
-<li>buf_find_string_offset()
-: <a class="el" href="buffers_8c.html#a7a23ebe20c4bb735961e7ca3f290c6a8">buffers.c</a>
+<li>buf_drain()
+: <a class="el" href="buffers_8c.html#a35f5b3ecde022dbe0d090d05a124c161">buffers.c</a>
+, <a class="el" href="buffers_8h.html#a35f5b3ecde022dbe0d090d05a124c161">buffers.h</a>
 </li>
-<li>buf_free()
-: <a class="el" href="buffers_8c.html#a198f56649de692ac03c807c8406e4a00">buffers.c</a>
-, <a class="el" href="buffers_8h.html#a198f56649de692ac03c807c8406e4a00">buffers.h</a>
+<li>buf_extract()
+: <a class="el" href="buffers_8c.html#af5b7a576cef119053df2184f76e4000f">buffers.c</a>
+, <a class="el" href="buffers_8h.html#af5b7a576cef119053df2184f76e4000f">buffers.h</a>
+</li>
+<li>buf_find_string_offset()
+: <a class="el" href="buffers_8c.html#a521faf31db632ada50138286eeb8aef3">buffers.c</a>
+, <a class="el" href="buffers_8h.html#a521faf31db632ada50138286eeb8aef3">buffers.h</a>
+</li>
+<li>buf_flush_to_socket()
+: <a class="el" href="buffers_8c.html#a0f32546eb41f11cddf6ce32335c2705a">buffers.c</a>
+, <a class="el" href="buffers_8h.html#a0f32546eb41f11cddf6ce32335c2705a">buffers.h</a>
+</li>
+<li>buf_free_()
+: <a class="el" href="buffers_8c.html#ac4a84ddb637f879c6e24ef77a229b731">buffers.c</a>
+, <a class="el" href="buffers_8h.html#ac4a84ddb637f879c6e24ef77a229b731">buffers.h</a>
+</li>
+<li>buf_get_bytes()
+: <a class="el" href="buffers_8c.html#aee885c0513a4508ae43799128f2ef740">buffers.c</a>
+, <a class="el" href="buffers_8h.html#aee885c0513a4508ae43799128f2ef740">buffers.h</a>
+</li>
+<li>buf_get_line()
+: <a class="el" href="buffers_8c.html#a8eae1b7d95fe3452ed0a7015c8928d06">buffers.c</a>
+, <a class="el" href="buffers_8h.html#a8eae1b7d95fe3452ed0a7015c8928d06">buffers.h</a>
 </li>
 <li>buf_get_oldest_chunk_timestamp()
 : <a class="el" href="buffers_8c.html#a69be7777203d7b3f1626f62dea75cc61">buffers.c</a>
 , <a class="el" href="buffers_8h.html#a69be7777203d7b3f1626f62dea75cc61">buffers.h</a>
 </li>
+<li>buf_move_all()
+: <a class="el" href="buffers_8c.html#ad564d96c1341295bc78e91a63487b380">buffers.c</a>
+, <a class="el" href="buffers_8h.html#ad564d96c1341295bc78e91a63487b380">buffers.h</a>
+</li>
+<li>buf_move_to_buf()
+: <a class="el" href="buffers_8h.html#ac37c46ae32a03e102b2d96ead9720b78">buffers.h</a>
+, <a class="el" href="buffers_8c.html#ac37c46ae32a03e102b2d96ead9720b78">buffers.c</a>
+</li>
 <li>buf_new()
-: <a class="el" href="buffers_8c.html#a2792d274b6e45707b54d36697b575cd5">buffers.c</a>
-, <a class="el" href="buffers_8h.html#a2792d274b6e45707b54d36697b575cd5">buffers.h</a>
+: <a class="el" href="buffers_8h.html#a2792d274b6e45707b54d36697b575cd5">buffers.h</a>
+, <a class="el" href="buffers_8c.html#a2792d274b6e45707b54d36697b575cd5">buffers.c</a>
 </li>
 <li>buf_new_with_capacity()
-: <a class="el" href="buffers_8h.html#a25596a2194d00f8015a2a454ad0deede">buffers.h</a>
-, <a class="el" href="buffers_8c.html#a25596a2194d00f8015a2a454ad0deede">buffers.c</a>
+: <a class="el" href="buffers_8c.html#a25596a2194d00f8015a2a454ad0deede">buffers.c</a>
+, <a class="el" href="buffers_8h.html#a25596a2194d00f8015a2a454ad0deede">buffers.h</a>
+</li>
+<li>buf_peek()
+: <a class="el" href="buffers_8h.html#ab57eb196436a751b01d16d36800d024f">buffers.h</a>
+, <a class="el" href="buffers_8c.html#ab57eb196436a751b01d16d36800d024f">buffers.c</a>
+</li>
+<li>buf_peek_startswith()
+: <a class="el" href="buffers_8c.html#a71277fd087ceacf0a3895d986cffd8c9">buffers.c</a>
+, <a class="el" href="buffers_8h.html#a71277fd087ceacf0a3895d986cffd8c9">buffers.h</a>
+</li>
+<li>buf_preferred_chunk_size()
+: <a class="el" href="buffers_8c.html#ac9f6eb1228245bca00d9a3fbbe0fe755">buffers.c</a>
 </li>
 <li>buf_pullup()
-: <a class="el" href="buffers_8c.html#a7edd798450e4be4093e3e0f581037334">buffers.c</a>
+: <a class="el" href="buffers_8h.html#afc9b19740e96a976653effe8f2db21ff">buffers.h</a>
+, <a class="el" href="buffers_8c.html#afc9b19740e96a976653effe8f2db21ff">buffers.c</a>
+</li>
+<li>buf_read_from_socket()
+: <a class="el" href="buffers_8c.html#af302612b5c872f922c101cbeef706969">buffers.c</a>
+, <a class="el" href="buffers_8h.html#af302612b5c872f922c101cbeef706969">buffers.h</a>
 </li>
 <li>buf_set_to_copy()
-: <a class="el" href="buffers_8c.html#ad27eb7c3c9dcc484cbd276fbfb2a0791">buffers.c</a>
-, <a class="el" href="buffers_8h.html#ad27eb7c3c9dcc484cbd276fbfb2a0791">buffers.h</a>
+: <a class="el" href="buffers_8h.html#ad27eb7c3c9dcc484cbd276fbfb2a0791">buffers.h</a>
+, <a class="el" href="buffers_8c.html#ad27eb7c3c9dcc484cbd276fbfb2a0791">buffers.c</a>
 </li>
 <li>buf_slack()
-: <a class="el" href="buffers_8h.html#aa8042b5333db20f4e1198817d96ba0be">buffers.h</a>
-, <a class="el" href="buffers_8c.html#aa8042b5333db20f4e1198817d96ba0be">buffers.c</a>
+: <a class="el" href="buffers_8c.html#aa8042b5333db20f4e1198817d96ba0be">buffers.c</a>
+, <a class="el" href="buffers_8h.html#aa8042b5333db20f4e1198817d96ba0be">buffers.h</a>
 </li>
 <li>build_state_get_exit_nickname()
-: <a class="el" href="circuitbuild_8h.html#a0509680051f34495e2fcb706ea5c994e">circuitbuild.h</a>
-, <a class="el" href="circuitbuild_8c.html#a0509680051f34495e2fcb706ea5c994e">circuitbuild.c</a>
+: <a class="el" href="circuitbuild_8c.html#a0509680051f34495e2fcb706ea5c994e">circuitbuild.c</a>
+, <a class="el" href="circuitbuild_8h.html#a0509680051f34495e2fcb706ea5c994e">circuitbuild.h</a>
 </li>
 <li>build_state_get_exit_node()
-: <a class="el" href="circuitbuild_8h.html#a670517df044b68c0ec0db07a2447b29c">circuitbuild.h</a>
-, <a class="el" href="circuitbuild_8c.html#a670517df044b68c0ec0db07a2447b29c">circuitbuild.c</a>
+: <a class="el" href="circuitbuild_8c.html#a670517df044b68c0ec0db07a2447b29c">circuitbuild.c</a>
+, <a class="el" href="circuitbuild_8h.html#a670517df044b68c0ec0db07a2447b29c">circuitbuild.h</a>
+</li>
+<li>build_state_get_exit_rsa_id()
+: <a class="el" href="circuitbuild_8c.html#a4928871a4861aa6f71b50a5642406747">circuitbuild.c</a>
+, <a class="el" href="circuitbuild_8h.html#a4928871a4861aa6f71b50a5642406747">circuitbuild.h</a>
 </li>
 <li>bytes_to_usage()
 : <a class="el" href="status_8c.html#a01e4f8019372bf2266507c072a7f23f6">status.c</a>

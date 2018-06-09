@@ -1,9 +1,8 @@
 <map id="rend_cache_intro_failure_note" name="rend_cache_intro_failure_note">
-<area shape="rect" id="node2" href="$rendcache_8c.html#aa5d4ae0f3f0e44df2209977d622b6a5c" title="cache_failure_intro\l_lookup" alt="" coords="262,13,393,54"/>
-<area shape="rect" id="node4" href="$rendcache_8c.html#a29c3a627ad5064fa0df4d8ab96bad375" title="cache_failure_intro_add" alt="" coords="248,108,407,135"/>
-<area shape="rect" id="node3" href="$container_8c.html#a1406b823cb6088df755f1b81153d137e" title="strmap_get_lc" alt="" coords="468,5,572,32"/>
-<area shape="rect" id="node5" href="$rendcache_8c.html#a1129f843dc29e4d747bc378da1395d15" title="rend_cache_failure\l_entry_new" alt="" coords="455,57,585,98"/>
-<area shape="rect" id="node6" href="$container_8c.html#ab89b18ed07c18bdf4cb8d84bcc38f667" title="strmap_set_lc" alt="" coords="468,123,572,149"/>
-<area shape="rect" id="node7" href="$rendcache_8c.html#a4fcb974f5d0de00e8611297aa43a2979" title="rend_cache_failure\l_intro_entry_new" alt="" coords="455,174,585,215"/>
-<area shape="rect" id="node8" href="$rendcache_8c.html#ab207f629b9b48ea069f879ed27f26647" title="rend_cache_failure\l_intro_entry_free" alt="" coords="455,239,585,281"/>
+<area shape="rect" id="node2" href="$rendcache_8c.html#aa5d4ae0f3f0e44df2209977d622b6a5c" title="cache_failure_intro\l_lookup" alt="" coords="262,5,393,47"/>
+<area shape="rect" id="node4" href="$rendcache_8c.html#a29c3a627ad5064fa0df4d8ab96bad375" title="cache_failure_intro_add" alt="" coords="248,71,407,98"/>
+<area shape="rect" id="node3" href="$container_8c.html#a1406b823cb6088df755f1b81153d137e" title="strmap_get_lc" alt="" coords="468,13,572,39"/>
+<area shape="rect" id="node5" href="$rendcache_8c.html#a1129f843dc29e4d747bc378da1395d15" title="rend_cache_failure\l_entry_new" alt="" coords="455,64,585,105"/>
+<area shape="rect" id="node6" href="$container_8c.html#ab89b18ed07c18bdf4cb8d84bcc38f667" title="strmap_set_lc" alt="" coords="468,130,572,157"/>
+<area shape="rect" id="node7" href="$rendcache_8c.html#a4fcb974f5d0de00e8611297aa43a2979" title="rend_cache_failure\l_intro_entry_new" alt="" coords="455,181,585,223"/>
 </map>

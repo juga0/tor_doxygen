@@ -1,5 +1,4 @@
 <map id="resolve_my_address" name="resolve_my_address">
-<area shape="rect" id="node2" href="$router_8c.html#a2732ff3306e95d3579956be55f9cdc6d" title="MOCK_IMPL" alt="" coords="238,5,338,32"/>
-<area shape="rect" id="node3" href="$router_8h.html#a59446788bf67e78d0d930bcdc65f7717" title="check_descriptor_ipaddress\l_changed" alt="" coords="196,57,380,98"/>
-<area shape="rect" id="node4" href="$routerlist_8h.html#ab31a672081329b253fe2d46a506cc2f2" title="trusted_dir_server_new" alt="" coords="209,123,367,149"/>
+<area shape="rect" id="node2" href="$router_8c.html#a2732ff3306e95d3579956be55f9cdc6d" title="MOCK_IMPL" alt="" coords="225,5,325,32"/>
+<area shape="rect" id="node3" href="$routerlist_8h.html#ab31a672081329b253fe2d46a506cc2f2" title="trusted_dir_server_new" alt="" coords="196,56,353,83"/>
 </map>

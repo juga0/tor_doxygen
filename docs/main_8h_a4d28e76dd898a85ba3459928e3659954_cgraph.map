@@ -1,0 +1,11 @@
+<map id="tor_cleanup" name="tor_cleanup">
+<area shape="rect" id="node2" href="$main_8c.html#acd962fecaae8f194c79ebe9dbc624b02" title="tor_remove_file" alt="" coords="185,5,295,32"/>
+<area shape="rect" id="node3" href="$control_8c.html#a9443fc62bda985f770ac05fe96fcd4f4" title="get_controller_cookie\l_file_name" alt="" coords="167,57,313,98"/>
+<area shape="rect" id="node4" href="$ext__orport_8c.html#a62142eb5d3bc38acbfc09824d56d1352" title="get_ext_or_auth_cookie\l_file_name" alt="" coords="160,122,320,163"/>
+<area shape="rect" id="node5" href="$hibernate_8c.html#a29048647250bdaf695f3cb261d467cb5" title="accounting_record_bandwidth\l_usage" alt="" coords="143,187,337,229"/>
+<area shape="rect" id="node6" href="$statefile_8c.html#a39484525485ab1d840b0f487e47b5944" title="or_state_mark_dirty" alt="" coords="171,253,309,280"/>
+<area shape="rect" id="node9" href="$statefile_8c.html#ab01c2dfe50dff6fe4be4e528c68033af" title="or_state_save" alt="" coords="188,304,292,331"/>
+<area shape="rect" id="node10" href="$router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="190,355,290,381"/>
+<area shape="rect" id="node7" href="$main_8c.html#a99e4caa4cd2573a6e23e9980ae79547b" title="reschedule_or_state_save" alt="" coords="385,253,560,280"/>
+<area shape="rect" id="node8" href="$periodic_8c.html#ad9c12c89ef415b3c131f39f68534a974" title="periodic_event_reschedule" alt="" coords="608,253,784,280"/>
+</map>

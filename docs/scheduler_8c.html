@@ -72,108 +72,253 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Relay scheduling system.  
+<p>Channel scheduling system: decides which channels should send and receive when.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="channel_8h_source.html">channel.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;compat_libevent.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&quot;</code><br />
-<code>#include &lt;event2/event.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="buffers_8h_source.html">buffers.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="channeltls_8h_source.html">channeltls.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for scheduler.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="scheduler_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2scheduler_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2scheduler_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2scheduler_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="783,333,827,360"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="93,408,221,435"/>
-<area shape="rect" id="node34" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="205,184,284,211"/>
-<area shape="rect" id="node36" href="scheduler_8h.html" title="Header file for scheduler.c. " alt="" coords="280,109,369,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1831,931,1909,957"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1729,856,1792,883"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1219,632,1289,659"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="691,632,804,659"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="891,707,1017,733"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="943,781,1085,808"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="632,557,695,584"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="499,632,564,659"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="1773,483,1860,509"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="733,408,805,435"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="1959,408,2037,435"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="880,408,924,435"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="948,408,1051,435"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1075,408,1166,435"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="671,781,765,808"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="711,856,810,883"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1569,707,1645,733"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1816,856,1924,883"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1313,781,1440,808"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="346,632,474,659"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="1837,557,1887,584"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1733,557,1812,584"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="2188,781,2259,808"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="1679,632,1757,659"/>
-<area shape="rect" id="node35" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="194,259,287,285"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1649,333,1693,360"/>
+<area shape="rect" id="node33" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2455,931,2583,957"/>
+<area shape="rect" id="node41" href="config_8h.html" title="Header file for config.c. " alt="" coords="2589,184,2657,211"/>
+<area shape="rect" id="node42" href="scheduler_8h.html" title="Header file for scheduler*.c. " alt="" coords="1965,109,2054,136"/>
+<area shape="rect" id="node47" href="main_8h.html" title="Header file for main.c. " alt="" coords="2639,109,2700,136"/>
+<area shape="rect" id="node48" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="737,856,810,883"/>
+<area shape="rect" id="node49" href="channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="1849,109,1941,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1309,1155,1387,1181"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="570,1080,633,1107"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1029,483,1099,509"/>
+<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="1478,707,1565,733"/>
+<area shape="rect" id="node22" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1134,707,1199,733"/>
+<area shape="rect" id="node23" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1987,408,2101,435"/>
+<area shape="rect" id="node24" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1887,483,2012,509"/>
+<area shape="rect" id="node25" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1878,557,2021,584"/>
+<area shape="rect" id="node28" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1386,483,1449,509"/>
+<area shape="rect" id="node31" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1436,408,1527,435"/>
+<area shape="rect" id="node32" href="address_8h.html" title="Headers for address.h. " alt="" coords="465,632,543,659"/>
+<area shape="rect" id="node34" href="ht_8h_source.html" title="ht.h" alt="" coords="1551,408,1595,435"/>
+<area shape="rect" id="node35" href="confline_8h_source.html" title="confline.h" alt="" coords="1629,483,1707,509"/>
+<area shape="rect" id="node36" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1619,408,1722,435"/>
+<area shape="rect" id="node37" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="427,408,517,435"/>
+<area shape="rect" id="node38" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="499,1005,610,1032"/>
+<area shape="rect" id="node39" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1271,1005,1366,1032"/>
+<area shape="rect" id="node40" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1747,408,1861,435"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="943,931,1019,957"/>
+<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="1425,781,1476,808"/>
+<area shape="rect" id="node18" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1198,557,1293,584"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="2039,1080,2137,1107"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1239,1080,1347,1107"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1018,1005,1145,1032"/>
+<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1442,1005,1513,1032"/>
+<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="1589,856,1667,883"/>
+<area shape="rect" id="node19" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="1529,632,1639,659"/>
+<area shape="rect" id="node21" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1794,781,1873,808"/>
+<area shape="rect" id="node26" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1874,632,2025,659"/>
+<area shape="rect" id="node29" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1719,557,1847,584"/>
+<area shape="rect" id="node43" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="1859,184,1938,211"/>
+<area shape="rect" id="node44" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1860,259,1953,285"/>
+<area shape="rect" id="node45" href="timers_8h_source.html" title="timers.h" alt="" coords="2647,1005,2716,1032"/>
+<area shape="rect" id="node46" href="handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="391,333,470,360"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ab2eda2cfbeb176ae5a0ed6613d53022a"><td class="memItemLeft" align="right" valign="top"><a id="ab2eda2cfbeb176ae5a0ed6613d53022a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOR_CHANNEL_INTERNAL_</b>&#160;&#160;&#160;/* For channel_flush_some_cells() */</td></tr>
-<tr class="separator:ab2eda2cfbeb176ae5a0ed6613d53022a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cf6068a2cca1dd9285b5574bf3bad03"><td class="memItemLeft" align="right" valign="top"><a id="a2cf6068a2cca1dd9285b5574bf3bad03"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCHEDULER_PRIVATE_</b></td></tr>
-<tr class="separator:a2cf6068a2cca1dd9285b5574bf3bad03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9ee4177792a2e5ff8d3dfe4afef00ebc"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a9ee4177792a2e5ff8d3dfe4afef00ebc">get_scheduler_state_string</a> (int scheduler_state)</td></tr>
+<tr class="separator:a9ee4177792a2e5ff8d3dfe4afef00ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ba6397e720d3db09b5e4605dfd42c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a60ba6397e720d3db09b5e4605dfd42c7">scheduler_set_channel_state</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, int new_state)</td></tr>
+<tr class="separator:a60ba6397e720d3db09b5e4605dfd42c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6acf87afd167223833c3954eb0191e40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a6acf87afd167223833c3954eb0191e40">get_channels_pending</a> (void)</td></tr>
+<tr class="separator:a6acf87afd167223833c3954eb0191e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a6244333576b78274e7af15fbaecdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a51a6244333576b78274e7af15fbaecdd">MOCK_IMPL</a> (int, scheduler_compare_channels,(const void *c1_v, const void *c2_v))</td></tr>
+<tr class="separator:a51a6244333576b78274e7af15fbaecdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1164bd9d3c36dd53812829091c74e7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a1164bd9d3c36dd53812829091c74e7fc">scheduler_conf_changed</a> (void)</td></tr>
+<tr class="separator:a1164bd9d3c36dd53812829091c74e7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097a293a64c453d09615cea4df39a0af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a097a293a64c453d09615cea4df39a0af">scheduler_notify_networkstatus_changed</a> (void)</td></tr>
+<tr class="separator:a097a293a64c453d09615cea4df39a0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2088a76473dcdac2a9d0c3dbde56c6c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a2088a76473dcdac2a9d0c3dbde56c6c2">scheduler_free_all</a> (void)</td></tr>
 <tr class="separator:a2088a76473dcdac2a9d0c3dbde56c6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bd25d8c2b1d59ee60946a8b91f86811"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a2bd25d8c2b1d59ee60946a8b91f86811">MOCK_IMPL</a> (STATIC int, scheduler_compare_channels,(const void *c1_v, const void *c2_v))</td></tr>
-<tr class="separator:a2bd25d8c2b1d59ee60946a8b91f86811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bb1452b1a1592f7e4b14302ef433f34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a8bb1452b1a1592f7e4b14302ef433f34">MOCK_IMPL</a> (void, scheduler_channel_doesnt_want_writes,(<a class="el" href="structchannel__s.html">channel_t</a> *chan))</td></tr>
 <tr class="separator:a8bb1452b1a1592f7e4b14302ef433f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcca7b0d99922c9b96d474dda7b95f98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#abcca7b0d99922c9b96d474dda7b95f98">MOCK_IMPL</a> (void, scheduler_channel_has_waiting_cells,(<a class="el" href="structchannel__s.html">channel_t</a> *chan))</td></tr>
 <tr class="separator:abcca7b0d99922c9b96d474dda7b95f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab258cc2856e5f6bb125907cc23358fbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#ab258cc2856e5f6bb125907cc23358fbd">scheduler_init</a> (void)</td></tr>
+<tr class="memitem:a79d37fbaa3b4ae2fff6c7c534951e1de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a79d37fbaa3b4ae2fff6c7c534951e1de">scheduler_ev_add</a> (const struct <a class="el" href="structtimeval.html">timeval</a> *next_run)</td></tr>
+<tr class="separator:a79d37fbaa3b4ae2fff6c7c534951e1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199c3d59509d475c2ed08776bcdc9a8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a199c3d59509d475c2ed08776bcdc9a8a">scheduler_ev_active</a> (void)</td></tr>
+<tr class="separator:a199c3d59509d475c2ed08776bcdc9a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab258cc2856e5f6bb125907cc23358fbd"><td class="memItemLeft" align="right" valign="top"><a id="ab258cc2856e5f6bb125907cc23358fbd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>scheduler_init</b> (void)</td></tr>
 <tr class="separator:ab258cc2856e5f6bb125907cc23358fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3becabb4fa3bd27ed097923ea41690bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a3becabb4fa3bd27ed097923ea41690bd">MOCK_IMPL</a> (void, scheduler_release_channel,(<a class="el" href="structchannel__s.html">channel_t</a> *chan))</td></tr>
+<tr class="memitem:a3becabb4fa3bd27ed097923ea41690bd"><td class="memItemLeft" align="right" valign="top"><a id="a3becabb4fa3bd27ed097923ea41690bd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_IMPL</b> (void, scheduler_release_channel,(<a class="el" href="structchannel__s.html">channel_t</a> *chan))</td></tr>
 <tr class="separator:a3becabb4fa3bd27ed097923ea41690bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea2f114479bfb745da44918cb2f62aaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#aea2f114479bfb745da44918cb2f62aaf">MOCK_IMPL</a> (void, scheduler_run,(void))</td></tr>
-<tr class="separator:aea2f114479bfb745da44918cb2f62aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa56372f6c2d55b0346acd5111365a447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#aa56372f6c2d55b0346acd5111365a447">scheduler_channel_wants_writes</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:aa56372f6c2d55b0346acd5111365a447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0e63e87180008b072813670a1d2419a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#af0e63e87180008b072813670a1d2419a">scheduler_touch_channel</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:af0e63e87180008b072813670a1d2419a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a087fd81b86de21c70f9e3750f5b88792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a087fd81b86de21c70f9e3750f5b88792">scheduler_adjust_queue_size</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, int dir, uint64_t adj)</td></tr>
-<tr class="separator:a087fd81b86de21c70f9e3750f5b88792"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aede4632e18f27f3fe1362f6d19d8eea8"><td class="memItemLeft" align="right" valign="top">STATIC uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#aede4632e18f27f3fe1362f6d19d8eea8">scheduler_get_queue_heuristic</a> (void)</td></tr>
-<tr class="separator:aede4632e18f27f3fe1362f6d19d8eea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ebeeee0c516be8594b9cbc1f9462ff7"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#a6ebeeee0c516be8594b9cbc1f9462ff7">scheduler_update_queue_heuristic</a> (time_t now)</td></tr>
-<tr class="separator:a6ebeeee0c516be8594b9cbc1f9462ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6dab39a35cd1099ade32ff6df7cd299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#af6dab39a35cd1099ade32ff6df7cd299">scheduler_set_watermarks</a> (uint32_t lo, uint32_t hi, uint32_t max_flush)</td></tr>
-<tr class="separator:af6dab39a35cd1099ade32ff6df7cd299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae708e93c9c2a050cf6c1e2078b205f79"><td class="memItemLeft" align="right" valign="top"><a id="ae708e93c9c2a050cf6c1e2078b205f79"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>scheduler_bug_occurred</b> (const <a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
+<tr class="separator:ae708e93c9c2a050cf6c1e2078b205f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af79d758505a22d29b36320857eb0ad77"><td class="memItemLeft" align="right" valign="top"><a id="af79d758505a22d29b36320857eb0ad77"></a>
-STATIC <a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>channels_pending</b> = NULL</td></tr>
+<tr class="memitem:ac592cbd19ab63c6d5353038e72564135"><td class="memItemLeft" align="right" valign="top">STATIC const <a class="el" href="scheduler_8h.html#accbab322a2f3a548715826be997f83a4">scheduler_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#ac592cbd19ab63c6d5353038e72564135">the_scheduler</a></td></tr>
+<tr class="separator:ac592cbd19ab63c6d5353038e72564135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79d758505a22d29b36320857eb0ad77"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#af79d758505a22d29b36320857eb0ad77">channels_pending</a> = NULL</td></tr>
 <tr class="separator:af79d758505a22d29b36320857eb0ad77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b67406caa1805ba3147d00371e86d4c"><td class="memItemLeft" align="right" valign="top"><a id="a3b67406caa1805ba3147d00371e86d4c"></a>
-STATIC struct event *&#160;</td><td class="memItemRight" valign="bottom"><b>run_sched_ev</b> = NULL</td></tr>
-<tr class="separator:a3b67406caa1805ba3147d00371e86d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17614e56e40afac7f29f0298894b3d40"><td class="memItemLeft" align="right" valign="top"><a id="a17614e56e40afac7f29f0298894b3d40"></a>
-STATIC uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>queue_heuristic</b> = 0</td></tr>
-<tr class="separator:a17614e56e40afac7f29f0298894b3d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ee79c32d720599ef9dbd99badea9e65"><td class="memItemLeft" align="right" valign="top"><a id="a0ee79c32d720599ef9dbd99badea9e65"></a>
-STATIC time_t&#160;</td><td class="memItemRight" valign="bottom"><b>queue_heuristic_timestamp</b> = 0</td></tr>
-<tr class="separator:a0ee79c32d720599ef9dbd99badea9e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ed263bd5ee7c407f98fdd2c2d38e72"><td class="memItemLeft" align="right" valign="top">STATIC struct <a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html#aa1ed263bd5ee7c407f98fdd2c2d38e72">run_sched_ev</a> = NULL</td></tr>
+<tr class="separator:aa1ed263bd5ee7c407f98fdd2c2d38e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Relay scheduling system. </p>
+<div class="textblock"><p>Channel scheduling system: decides which channels should send and receive when. </p>
+<p>This module is the global/common parts of the scheduling system. This system is what decides what channels get to send cells on their circuits and when.</p>
+<p>Terms:</p><ul>
+<li>"Scheduling system": the collection of scheduler*.{h,c} files and their aggregate behavior.</li>
+<li>"Scheduler implementation": a scheduler_t. The scheduling system has one active scheduling implementation at a time.</li>
+</ul>
+<p>In this file you will find state that any scheduler implementation can have access to as well as the functions the rest of Tor uses to interact with the scheduling system.</p>
+<p>The earliest versions of Tor approximated a kind of round-robin system among active connections, but only approximated it. It would only consider one connection (roughly equal to a channel in today's terms) at a time, and thus could only prioritize circuits against others on the same connection.</p>
+<p>Then in response to the KIST paper<a href="http://www.robgjansen.com/publications/kist-sec2014.pdf">0</a>, Tor implemented a global circuit scheduler. It was supposed to prioritize circuits across many channels, but wasn't effective. It is preserved in scheduler_vanilla.c.</p>
+<p>Then we actually got around to implementing KIST for real. We decided to modularize the scheduler so new ones can be implemented. You can find KIST in scheduler_kist.c.</p>
+<p>Channels have one of four scheduling states based on whether or not they have cells to send and whether or not they are able to send.</p>
+<ol>
+<li>
+<p class="startli">Not open for writes, no cells to send. </p><ul>
+<li>
+Not much to do here, and the channel will have scheduler_state == SCHED_CHAN_IDLE </li>
+<li>
+Transitions from: <ul>
+<li>
+Open for writes/has cells by simultaneously draining all circuit queues and filling the output buffer. </li>
+</ul>
+</li>
+<li>
+Transitions to: <ul>
+<li>
+Not open for writes/has cells by arrival of cells on an attached circuit (this would be driven from <a class="el" href="relay_8c.html#a8d180aa954eaefa41bc868bed05b4d31">append_cell_to_circuit_queue()</a>) </li>
+<li>
+Open for writes/no cells by a channel type specific path; driven from <a class="el" href="connection__or_8c.html#a8e6891862efd73402fed97a4353b2b24">connection_or_flushed_some()</a> for channel_tls_t. </li>
+</ul>
+</li>
+</ul>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">Open for writes, no cells to send </p><ul>
+<li>
+Not much here either; this will be the state an idle but open channel can be expected to settle in. It will have scheduler_state == SCHED_CHAN_WAITING_FOR_CELLS </li>
+<li>
+Transitions from: <ul>
+<li>
+Not open for writes/no cells by flushing some of the output buffer. </li>
+<li>
+Open for writes/has cells by the scheduler moving cells from circuit queues to channel output queue, but not having enough to fill the output queue. </li>
+</ul>
+</li>
+<li>
+Transitions to: <ul>
+<li>
+Open for writes/has cells by arrival of new cells on an attached circuit, in <a class="el" href="relay_8c.html#a8d180aa954eaefa41bc868bed05b4d31">append_cell_to_circuit_queue()</a> </li>
+</ul>
+</li>
+</ul>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">Not open for writes, cells to send </p><ul>
+<li>
+This is the state of a busy circuit limited by output bandwidth; cells have piled up in the circuit queues waiting to be relayed. The channel will have scheduler_state == SCHED_CHAN_WAITING_TO_WRITE. </li>
+<li>
+Transitions from: <ul>
+<li>
+Not open for writes/no cells by arrival of cells on an attached circuit </li>
+<li>
+Open for writes/has cells by filling an output buffer without draining all cells from attached circuits </li>
+</ul>
+</li>
+<li>
+Transitions to: <ul>
+<li>
+Opens for writes/has cells by draining some of the output buffer via the <a class="el" href="connection__or_8c.html#a8e6891862efd73402fed97a4353b2b24">connection_or_flushed_some()</a> path (for channel_tls_t). </li>
+</ul>
+</li>
+</ul>
+<p class="endli"></p>
+</li>
+<li>
+Open for writes, cells to send <ul>
+<li>
+This connection is ready to relay some cells and waiting for the scheduler to choose it. The channel will have scheduler_state == SCHED_CHAN_PENDING. </li>
+<li>
+Transitions from: <ul>
+<li>
+Not open for writes/has cells by the <a class="el" href="connection__or_8c.html#a8e6891862efd73402fed97a4353b2b24">connection_or_flushed_some()</a> path </li>
+<li>
+Open for writes/no cells by the <a class="el" href="relay_8c.html#a8d180aa954eaefa41bc868bed05b4d31">append_cell_to_circuit_queue()</a> path </li>
+</ul>
+</li>
+<li>
+Transitions to: <ul>
+<li>
+Not open for writes/no cells by draining all circuit queues and simultaneously filling the output buffer. </li>
+<li>
+Not open for writes/has cells by writing enough cells to fill the output buffer </li>
+<li>
+Open for writes/no cells by draining all attached circuit queues without also filling the output buffer </li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>Other event-driven parts of the code move channels between these scheduling states by calling scheduler functions. The scheduling system builds up a list of channels in the SCHED_CHAN_PENDING state that the scheduler implementation should then use when it runs. Scheduling implementations need to properly update channel states during their scheduler_t-&gt;run() function as that is the only opportunity for channels to move from SCHED_CHAN_PENDING to any other state.</p>
+<p>The remainder of this file is a small amount of state that any scheduler implementation should have access to, and the functions the rest of Tor uses to interact with the scheduling system. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a2bd25d8c2b1d59ee60946a8b91f86811"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bd25d8c2b1d59ee60946a8b91f86811">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/5]</span></h2>
+<a id="a6acf87afd167223833c3954eb0191e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6acf87afd167223833c3954eb0191e40">&#9670;&nbsp;</a></span>get_channels_pending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsmartlist__t.html">smartlist_t</a>* get_channels_pending </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the pending channel list. </p>
+
+</div>
+</div>
+<a id="a9ee4177792a2e5ff8d3dfe4afef00ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee4177792a2e5ff8d3dfe4afef00ebc">&#9670;&nbsp;</a></span>get_scheduler_state_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* get_scheduler_state_string </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scheduler_state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns human readable string for the given channel scheduler state. </p>
+
+</div>
+</div>
+<a id="a51a6244333576b78274e7af15fbaecdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a6244333576b78274e7af15fbaecdd">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,8 +326,8 @@ STATIC time_t&#160;</td><td class="memItemRight" valign="bottom"><b>queue_heuris
         <tr>
           <td class="memname">MOCK_IMPL </td>
           <td>(</td>
-          <td class="paramtype">STATIC&#160;</td>
-          <td class="paramname"><em>int</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -203,12 +348,12 @@ STATIC time_t&#160;</td><td class="memItemRight" valign="bottom"><b>queue_heuris
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Comparison function to use when sorting pending channels </p>
+<p>Comparison function to use when sorting pending channels. </p>
 
 </div>
 </div>
 <a id="a8bb1452b1a1592f7e4b14302ef433f34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bb1452b1a1592f7e4b14302ef433f34">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bb1452b1a1592f7e4b14302ef433f34">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,12 +383,21 @@ STATIC time_t&#160;</td><td class="memItemRight" valign="bottom"><b>queue_heuris
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mark a channel as no longer ready to accept writes </p>
+<p>Mark a channel as no longer ready to accept writes. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="scheduler_8c_a8bb1452b1a1592f7e4b14302ef433f34_cgraph.png" border="0" usemap="#scheduler_8c_a8bb1452b1a1592f7e4b14302ef433f34_cgraph" alt=""/></div>
+<map name="scheduler_8c_a8bb1452b1a1592f7e4b14302ef433f34_cgraph" id="scheduler_8c_a8bb1452b1a1592f7e4b14302ef433f34_cgraph">
+<area shape="rect" id="node2" href="container_8c.html#a9d807b41953067eb578ad70cb5f0af70" title="smartlist_pqueue_remove" alt="" coords="153,5,324,32"/>
+<area shape="rect" id="node3" href="scheduler_8c.html#a60ba6397e720d3db09b5e4605dfd42c7" title="scheduler_set_channel\l_state" alt="" coords="161,57,316,98"/>
+</map>
+</div>
 
 </div>
 </div>
 <a id="abcca7b0d99922c9b96d474dda7b95f98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcca7b0d99922c9b96d474dda7b95f98">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abcca7b0d99922c9b96d474dda7b95f98">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,118 +427,15 @@ STATIC time_t&#160;</td><td class="memItemRight" valign="bottom"><b>queue_heuris
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mark a channel as having waiting cells </p>
-
-</div>
-</div>
-<a id="a3becabb4fa3bd27ed097923ea41690bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3becabb4fa3bd27ed097923ea41690bd">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MOCK_IMPL </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">scheduler_release_channel&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="structchannel__s.html">channel_t</a> *chan)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Notify the scheduler of a channel being closed </p>
-
-</div>
-</div>
-<a id="aea2f114479bfb745da44918cb2f62aaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea2f114479bfb745da44918cb2f62aaf">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MOCK_IMPL </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">scheduler_run&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(void)&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Run the scheduling algorithm if necessary </p>
-
-</div>
-</div>
-<a id="a087fd81b86de21c70f9e3750f5b88792"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a087fd81b86de21c70f9e3750f5b88792">&#9670;&nbsp;</a></span>scheduler_adjust_queue_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void scheduler_adjust_queue_size </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dir</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>adj</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Notify the scheduler of a queue size adjustment, to recalculate the queue heuristic. </p>
+<p>Mark a channel as having waiting cells. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="scheduler_8c_a087fd81b86de21c70f9e3750f5b88792_cgraph.png" border="0" usemap="#scheduler_8c_a087fd81b86de21c70f9e3750f5b88792_cgraph" alt=""/></div>
-<map name="scheduler_8c_a087fd81b86de21c70f9e3750f5b88792_cgraph" id="scheduler_8c_a087fd81b86de21c70f9e3750f5b88792_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="247,5,340,32"/>
+<div class="center"><img src="scheduler_8c_abcca7b0d99922c9b96d474dda7b95f98_cgraph.png" border="0" usemap="#scheduler_8c_abcca7b0d99922c9b96d474dda7b95f98_cgraph" alt=""/></div>
+<map name="scheduler_8c_abcca7b0d99922c9b96d474dda7b95f98_cgraph" id="scheduler_8c_abcca7b0d99922c9b96d474dda7b95f98_cgraph">
+<area shape="rect" id="node2" href="scheduler_8c.html#a60ba6397e720d3db09b5e4605dfd42c7" title="scheduler_set_channel\l_state" alt="" coords="153,5,308,47"/>
+<area shape="rect" id="node3" href="container_8c.html#ac8d1c136e510801ec9f801a3a3ec41b6" title="smartlist_pqueue_add" alt="" coords="156,71,305,98"/>
+<area shape="rect" id="node4" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="356,71,456,98"/>
 </map>
 </div>
 
@@ -405,7 +456,82 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Trigger the scheduling event so we run the scheduler later Mark a channel as ready to accept writes </p>
+<p>Mark a channel as ready to accept writes </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="scheduler_8c_aa56372f6c2d55b0346acd5111365a447_cgraph.png" border="0" usemap="#scheduler_8c_aa56372f6c2d55b0346acd5111365a447_cgraph" alt=""/></div>
+<map name="scheduler_8c_aa56372f6c2d55b0346acd5111365a447_cgraph" id="scheduler_8c_aa56372f6c2d55b0346acd5111365a447_cgraph">
+<area shape="rect" id="node2" href="scheduler_8c.html#a60ba6397e720d3db09b5e4605dfd42c7" title="scheduler_set_channel\l_state" alt="" coords="225,5,380,47"/>
+<area shape="rect" id="node3" href="container_8c.html#ac8d1c136e510801ec9f801a3a3ec41b6" title="smartlist_pqueue_add" alt="" coords="228,71,377,98"/>
+<area shape="rect" id="node4" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="428,71,528,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1164bd9d3c36dd53812829091c74e7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1164bd9d3c36dd53812829091c74e7fc">&#9670;&nbsp;</a></span>scheduler_conf_changed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scheduler_conf_changed </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is how the scheduling system is notified of Tor's configuration changing. For example: a SIGHUP was issued. </p>
+
+</div>
+</div>
+<a id="a199c3d59509d475c2ed08776bcdc9a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a199c3d59509d475c2ed08776bcdc9a8a">&#9670;&nbsp;</a></span>scheduler_ev_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scheduler_ev_active </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Make the scheduler event active with the given flags. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="scheduler_8c_a199c3d59509d475c2ed08776bcdc9a8a_cgraph.png" border="0" usemap="#scheduler_8c_a199c3d59509d475c2ed08776bcdc9a8a_cgraph" alt=""/></div>
+<map name="scheduler_8c_a199c3d59509d475c2ed08776bcdc9a8a_cgraph" id="scheduler_8c_a199c3d59509d475c2ed08776bcdc9a8a_cgraph">
+<area shape="rect" id="node2" href="compat__libevent_8c.html#af815b0dd39abfb6b6ddbf5266175b479" title="mainloop_event_activate" alt="" coords="195,5,361,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a79d37fbaa3b4ae2fff6c7c534951e1de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79d37fbaa3b4ae2fff6c7c534951e1de">&#9670;&nbsp;</a></span>scheduler_ev_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void scheduler_ev_add </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structtimeval.html">timeval</a> *&#160;</td>
+          <td class="paramname"><em>next_run</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add the scheduler event to the set of pending events with next_run being the longest time libevent should wait before triggering the event. </p>
 
 </div>
 </div>
@@ -424,18 +550,18 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Free everything and shut down the scheduling system </p>
+<p>Free everything scheduling-related from <a class="el" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop...">main.c</a>. Note this is only called when Tor is shutting down, while scheduler_t-&gt;free_all() is called both when Tor is shutting down and when we are switching schedulers. </p>
 
 </div>
 </div>
-<a id="aede4632e18f27f3fe1362f6d19d8eea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aede4632e18f27f3fe1362f6d19d8eea8">&#9670;&nbsp;</a></span>scheduler_get_queue_heuristic()</h2>
+<a id="a097a293a64c453d09615cea4df39a0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a097a293a64c453d09615cea4df39a0af">&#9670;&nbsp;</a></span>scheduler_notify_networkstatus_changed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">STATIC uint64_t scheduler_get_queue_heuristic </td>
+          <td class="memname">void scheduler_notify_networkstatus_changed </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -443,61 +569,27 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Query the current value of the queue heuristic </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="scheduler_8c_aede4632e18f27f3fe1362f6d19d8eea8_cgraph.png" border="0" usemap="#scheduler_8c_aede4632e18f27f3fe1362f6d19d8eea8_cgraph" alt=""/></div>
-<map name="scheduler_8c_aede4632e18f27f3fe1362f6d19d8eea8_cgraph" id="scheduler_8c_aede4632e18f27f3fe1362f6d19d8eea8_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="235,5,329,32"/>
-<area shape="rect" id="node3" href="scheduler_8c.html#a6ebeeee0c516be8594b9cbc1f9462ff7" title="scheduler_update_queue\l_heuristic" alt="" coords="199,57,365,98"/>
-</map>
-</div>
+<p>Whenever we get a new consensus, this function is called. </p>
 
 </div>
 </div>
-<a id="ab258cc2856e5f6bb125907cc23358fbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab258cc2856e5f6bb125907cc23358fbd">&#9670;&nbsp;</a></span>scheduler_init()</h2>
+<a id="a60ba6397e720d3db09b5e4605dfd42c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ba6397e720d3db09b5e4605dfd42c7">&#9670;&nbsp;</a></span>scheduler_set_channel_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void scheduler_init </td>
+          <td class="memname">void scheduler_set_channel_state </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set up the scheduling system </p>
-
-</div>
-</div>
-<a id="af6dab39a35cd1099ade32ff6df7cd299"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6dab39a35cd1099ade32ff6df7cd299">&#9670;&nbsp;</a></span>scheduler_set_watermarks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void scheduler_set_watermarks </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>lo</em>, </td>
+          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>hi</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>max_flush</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>new_state</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -506,61 +598,63 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set scheduler watermarks and flush size </p>
-
-</div>
-</div>
-<a id="af0e63e87180008b072813670a1d2419a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0e63e87180008b072813670a1d2419a">&#9670;&nbsp;</a></span>scheduler_touch_channel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void scheduler_touch_channel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Notify the scheduler that a channel's position in the pqueue may have changed </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="scheduler_8c_af0e63e87180008b072813670a1d2419a_cgraph.png" border="0" usemap="#scheduler_8c_af0e63e87180008b072813670a1d2419a_cgraph" alt=""/></div>
-<map name="scheduler_8c_af0e63e87180008b072813670a1d2419a_cgraph" id="scheduler_8c_af0e63e87180008b072813670a1d2419a_cgraph">
-<area shape="rect" id="node2" href="container_8c.html#a9d807b41953067eb578ad70cb5f0af70" title="smartlist_pqueue_remove" alt="" coords="223,5,393,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a6ebeeee0c516be8594b9cbc1f9462ff7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ebeeee0c516be8594b9cbc1f9462ff7">&#9670;&nbsp;</a></span>scheduler_update_queue_heuristic()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">STATIC void scheduler_update_queue_heuristic </td>
-          <td>(</td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>now</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Adjust the queue heuristic value to the present time </p>
+<p>Helper that logs channel scheduler_state changes. Use this instead of setting scheduler_state directly. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="scheduler_8c_a6ebeeee0c516be8594b9cbc1f9462ff7_icgraph.png" border="0" usemap="#scheduler_8c_a6ebeeee0c516be8594b9cbc1f9462ff7_icgraph" alt=""/></div>
-<map name="scheduler_8c_a6ebeeee0c516be8594b9cbc1f9462ff7_icgraph" id="scheduler_8c_a6ebeeee0c516be8594b9cbc1f9462ff7_icgraph">
-<area shape="rect" id="node2" href="scheduler_8c.html#aede4632e18f27f3fe1362f6d19d8eea8" title="scheduler_get_queue\l_heuristic" alt="" coords="220,5,365,47"/>
+<div class="center"><img src="scheduler_8c_a60ba6397e720d3db09b5e4605dfd42c7_icgraph.png" border="0" usemap="#scheduler_8c_a60ba6397e720d3db09b5e4605dfd42c7_icgraph" alt=""/></div>
+<map name="scheduler_8c_a60ba6397e720d3db09b5e4605dfd42c7_icgraph" id="scheduler_8c_a60ba6397e720d3db09b5e4605dfd42c7_icgraph">
+<area shape="rect" id="node2" href="scheduler_8c.html#a8bb1452b1a1592f7e4b14302ef433f34" title="MOCK_IMPL" alt="" coords="244,5,344,32"/>
+<area shape="rect" id="node3" href="scheduler_8h.html#aa56372f6c2d55b0346acd5111365a447" title="scheduler_channel_wants\l_writes" alt="" coords="208,57,380,98"/>
 </map>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="af79d758505a22d29b36320857eb0ad77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af79d758505a22d29b36320857eb0ad77">&#9670;&nbsp;</a></span>channels_pending</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC <a class="el" href="structsmartlist__t.html">smartlist_t</a>* channels_pending = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>We keep a list of channels that are pending - i.e, have cells to write and can accept them to send. The enum scheduler_state in channel_t is reserved for our use.</p>
+<p>Priority queue of channels that can write and have cells (pending work) </p>
+
+</div>
+</div>
+<a id="aa1ed263bd5ee7c407f98fdd2c2d38e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ed263bd5ee7c407f98fdd2c2d38e72">&#9670;&nbsp;</a></span>run_sched_ev</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC struct <a class="el" href="structmainloop__event__t.html">mainloop_event_t</a>* run_sched_ev = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This event runs the scheduler from its callback, and is manually activated whenever a channel enters open for writes/cells to send. </p>
+
+</div>
+</div>
+<a id="ac592cbd19ab63c6d5353038e72564135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac592cbd19ab63c6d5353038e72564135">&#9670;&nbsp;</a></span>the_scheduler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC const <a class="el" href="scheduler_8h.html#accbab322a2f3a548715826be997f83a4">scheduler_t</a>* the_scheduler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DOCDOC </p>
 
 </div>
 </div>

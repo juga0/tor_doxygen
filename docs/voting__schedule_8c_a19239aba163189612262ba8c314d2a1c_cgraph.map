@@ -1,0 +1,7 @@
+<map id="voting_schedule_get_start_of_next_interval" name="voting_schedule_get_start_of_next_interval">
+<area shape="rect" id="node2" href="$compat_8c.html#a983d273987a338a60523f0bce4006af2" title="tor_gmtime_r" alt="" coords="208,56,307,83"/>
+<area shape="rect" id="node6" href="$util_8c.html#a966c4dd39a43f89fd5207aebb4756654" title="tor_timegm" alt="" coords="214,107,301,133"/>
+<area shape="rect" id="node3" href="$compat__threads_8c.html#a0f3b168e06f8e4b99789af20771ee096" title="tor_mutex_new" alt="" coords="364,5,475,32"/>
+<area shape="rect" id="node4" href="$compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="355,56,484,83"/>
+<area shape="rect" id="node5" href="$compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="355,107,484,133"/>
+</map>

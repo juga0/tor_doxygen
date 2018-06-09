@@ -1,7 +1,7 @@
 <map id="dirserv_add_own_fingerprint" name="dirserv_add_own_fingerprint">
-<area shape="rect" id="node2" href="$crypto_8c.html#a10149de1598ad3852fa49aa2c708371b" title="crypto_pk_get_fingerprint" alt="" coords="237,56,405,83"/>
-<area shape="rect" id="node3" href="$crypto_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="465,5,612,32"/>
+<area shape="rect" id="node2" href="$crypto__rsa_8c.html#a10149de1598ad3852fa49aa2c708371b" title="crypto_pk_get_fingerprint" alt="" coords="237,56,405,83"/>
+<area shape="rect" id="node3" href="$crypto__rsa_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="465,5,612,32"/>
 <area shape="rect" id="node5" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="482,56,595,83"/>
 <area shape="rect" id="node6" href="$crypto_8c.html#aba85ade6ff380d6321263ca9363cb0ce" title="crypto_add_spaces_to_fp" alt="" coords="453,107,624,133"/>
-<area shape="rect" id="node4" href="$crypto_8c.html#adc1609ea0f9d65a1f60225cb001eeb15" title="crypto_digest" alt="" coords="672,5,772,32"/>
+<area shape="rect" id="node4" href="$crypto__rsa_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="672,5,803,32"/>
 </map>

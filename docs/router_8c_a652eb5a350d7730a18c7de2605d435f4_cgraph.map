@@ -1,5 +1,3 @@
 <map id="authdir_mode_tests_reachability" name="authdir_mode_tests_reachability">
-<area shape="rect" id="node2" href="$router_8c.html#a8522dfca1851365846ddef293a416656" title="authdir_mode_handles\l_descs" alt="" coords="189,23,341,65"/>
-<area shape="rect" id="node3" href="$router_8c.html#a9bcde98c72c7ec1b15a6c0837c6bec26" title="authdir_mode_any_nonhidserv" alt="" coords="389,5,588,32"/>
-<area shape="rect" id="node4" href="$router_8c.html#aab8dc47aca12ebfdd7c4a01d7fc4290b" title="authdir_mode_any_main" alt="" coords="636,31,799,57"/>
+<area shape="rect" id="node2" href="$router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="189,13,289,39"/>
 </map>

@@ -77,6 +77,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="channel_8h_source.html">channel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="channeltls_8h_source.html">channeltls.h</a>&quot;</code><br />
+<code>#include &quot;channelpadding.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitbuild_8h_source.html">circuitbuild.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitlist_8h_source.html">circuitlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitstats_8h_source.html">circuitstats.h</a>&quot;</code><br />
@@ -85,60 +86,69 @@ $(function() {
 <code>#include &quot;<a class="el" href="circuitmux_8h_source.html">circuitmux.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="geoip_8h_source.html">geoip.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nodelist_8h_source.html">nodelist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="relay_8h_source.html">relay.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rephist_8h_source.html">rephist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="compat__time_8h_source.html">compat_time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rendservice_8h_source.html">rendservice.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for channel.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="channel_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2channel_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2channel_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2channel_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1353,333,1397,360"/>
-<area shape="rect" id="node34" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="1638,184,1717,211"/>
-<area shape="rect" id="node35" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1792,259,1885,285"/>
-<area shape="rect" id="node36" href="channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="1631,109,1723,136"/>
-<area shape="rect" id="node37" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2306,109,2401,136"/>
-<area shape="rect" id="node38" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1960,259,2045,285"/>
-<area shape="rect" id="node39" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="2425,109,2522,136"/>
-<area shape="rect" id="node40" href="config_8h.html" title="Header file for config.c. " alt="" coords="2070,333,2138,360"/>
-<area shape="rect" id="node41" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2547,109,2661,136"/>
-<area shape="rect" id="node42" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2686,109,2783,136"/>
-<area shape="rect" id="node43" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="2116,109,2180,136"/>
-<area shape="rect" id="node45" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2807,109,2886,136"/>
-<area shape="rect" id="node46" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="2911,109,2972,136"/>
-<area shape="rect" id="node47" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2996,109,3068,136"/>
-<area shape="rect" id="node48" href="router_8h.html" title="Header file for router.c. " alt="" coords="2213,483,2280,509"/>
-<area shape="rect" id="node49" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2297,184,2380,211"/>
-<area shape="rect" id="node50" href="scheduler_8h.html" title="Header file for scheduler.c. " alt="" coords="1835,109,1925,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="847,931,926,957"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="378,856,441,883"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1371,632,1440,659"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="339,632,453,659"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="392,707,517,733"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="393,781,535,808"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1495,557,1558,584"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1769,632,1834,659"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="1106,483,1193,509"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="987,408,1059,435"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="627,408,706,435"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2315,781,2443,808"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="1083,408,1127,435"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1151,408,1254,435"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1329,408,1420,435"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="611,781,706,808"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1721,856,1820,883"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1193,707,1269,733"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="833,856,941,883"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="985,781,1111,808"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1616,632,1744,659"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="1080,557,1131,584"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1155,557,1234,584"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="145,781,215,808"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="1114,632,1193,659"/>
-<area shape="rect" id="node44" href="dos_8h_source.html" title="dos.h" alt="" coords="2167,184,2222,211"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="918,333,962,360"/>
+<area shape="rect" id="node24" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="1242,184,1321,211"/>
+<area shape="rect" id="node25" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1151,259,1244,285"/>
+<area shape="rect" id="node28" href="channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="814,109,906,136"/>
+<area shape="rect" id="node29" href="channelpadding_8h_source.html" title="channelpadding.h" alt="" coords="616,109,739,136"/>
+<area shape="rect" id="node31" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="930,109,1025,136"/>
+<area shape="rect" id="node32" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="430,333,515,360"/>
+<area shape="rect" id="node34" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="1101,109,1198,136"/>
+<area shape="rect" id="node35" href="config_8h.html" title="Header file for config.c. " alt="" coords="1950,259,2018,285"/>
+<area shape="rect" id="node36" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="1274,109,1388,136"/>
+<area shape="rect" id="node37" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1914,184,2012,211"/>
+<area shape="rect" id="node38" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="1527,109,1591,136"/>
+<area shape="rect" id="node40" href="main_8h.html" title="Header file for main.c. " alt="" coords="1615,109,1676,136"/>
+<area shape="rect" id="node41" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="1701,109,1780,136"/>
+<area shape="rect" id="node42" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="1804,109,1866,136"/>
+<area shape="rect" id="node43" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="1890,109,1962,136"/>
+<area shape="rect" id="node44" href="router_8h.html" title="Header file for router.c. " alt="" coords="1990,333,2056,360"/>
+<area shape="rect" id="node45" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2138,184,2220,211"/>
+<area shape="rect" id="node46" href="scheduler_8h.html" title="Header file for scheduler*.c. " alt="" coords="1413,109,1502,136"/>
+<area shape="rect" id="node47" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="2244,632,2352,659"/>
+<area shape="rect" id="node48" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2154,259,2268,285"/>
+<area shape="rect" id="node49" href="rendservice_8h.html" title="Header file for rendservice.c. " alt="" coords="510,259,610,285"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1164,707,1242,733"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="637,632,700,659"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="242,557,311,584"/>
+<area shape="rect" id="node7" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="549,408,662,435"/>
+<area shape="rect" id="node9" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="394,483,519,509"/>
+<area shape="rect" id="node10" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="437,557,580,584"/>
+<area shape="rect" id="node11" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1394,483,1457,509"/>
+<area shape="rect" id="node12" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1481,483,1546,509"/>
+<area shape="rect" id="node13" href="container_8h_source.html" title="container.h" alt="" coords="1284,483,1370,509"/>
+<area shape="rect" id="node14" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1132,408,1223,435"/>
+<area shape="rect" id="node15" href="address_8h.html" title="Headers for address.h. " alt="" coords="1029,408,1108,435"/>
+<area shape="rect" id="node16" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1063,557,1191,584"/>
+<area shape="rect" id="node17" href="ht_8h_source.html" title="ht.h" alt="" coords="1248,408,1292,435"/>
+<area shape="rect" id="node18" href="confline_8h_source.html" title="confline.h" alt="" coords="1316,408,1394,435"/>
+<area shape="rect" id="node19" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="141,408,244,435"/>
+<area shape="rect" id="node20" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1672,408,1763,435"/>
+<area shape="rect" id="node21" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="928,557,1038,584"/>
+<area shape="rect" id="node22" href="util__format_8h_source.html" title="util_format.h" alt="" coords="706,557,801,584"/>
+<area shape="rect" id="node23" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="788,408,903,435"/>
+<area shape="rect" id="node8" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1464,632,1563,659"/>
+<area shape="rect" id="node26" href="timers_8h_source.html" title="timers.h" alt="" coords="1612,557,1682,584"/>
+<area shape="rect" id="node27" href="handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="1785,259,1864,285"/>
+<area shape="rect" id="node30" href="channelpadding__negotiation_8h_source.html" title="channelpadding_negotiation.h" alt="" coords="580,184,773,211"/>
+<area shape="rect" id="node33" href="hs__ident_8h.html" title="Header file containing circuit and connection identifier data for the whole HS subsytem. " alt="" coords="34,408,116,435"/>
+<area shape="rect" id="node39" href="dos_8h_source.html" title="dos.h" alt="" coords="1836,184,1890,211"/>
+<area shape="rect" id="node50" href="hs__service_8h.html" title="Header file containing service data for the HS subsytem. " alt="" coords="27,333,123,360"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -150,16 +160,17 @@ Macros</h2></td></tr>
 <tr class="memitem:a4309c0844d736c45f510cd11b1fa9aa6"><td class="memItemLeft" align="right" valign="top"><a id="a4309c0844d736c45f510cd11b1fa9aa6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CHANNEL_PRIVATE_</b></td></tr>
 <tr class="separator:a4309c0844d736c45f510cd11b1fa9aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7bac158c25f8c448289831d330fa6af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ad7bac158c25f8c448289831d330fa6af">MAX_CELLS_TO_GET_FROM_CIRCUITS_FOR_UNLIMITED</a>&#160;&#160;&#160;256</td></tr>
+<tr class="memitem:a7c03e6a689e54d3619b4f096c508979e"><td class="memItemLeft" align="right" valign="top"><a id="a7c03e6a689e54d3619b4f096c508979e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_RELAY_CONNECTIONS_TO_WARN</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a7c03e6a689e54d3619b4f096c508979e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7bac158c25f8c448289831d330fa6af"><td class="memItemLeft" align="right" valign="top"><a id="ad7bac158c25f8c448289831d330fa6af"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CELLS_TO_GET_FROM_CIRCUITS_FOR_UNLIMITED</b>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:ad7bac158c25f8c448289831d330fa6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a685a0acb8e81241310cc7320fbf72cc7"><td class="memItemLeft" align="right" valign="top"><a id="a685a0acb8e81241310cc7320fbf72cc7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>NEW_CHAN_GRACE_PERIOD</b>&#160;&#160;&#160;(15*60)</td></tr>
-<tr class="separator:a685a0acb8e81241310cc7320fbf72cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a38d8588aca63b8d32676f209de93348a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a38d8588aca63b8d32676f209de93348a">HT_PROTOTYPE</a> (<a class="el" href="nodelist_8c.html#ab29f8b81bcf05c59f16fb5b42ec36879">HT_GENERATE2</a>(channel_idmap, <a class="el" href="nodelist_8c.html#ab29f8b81bcf05c59f16fb5b42ec36879">HT_GENERATE2</a>(channel_idmap_entry_s, <a class="el" href="nodelist_8c.html#ab29f8b81bcf05c59f16fb5b42ec36879">HT_GENERATE2</a>(node, <a class="el" href="nodelist_8c.html#ab29f8b81bcf05c59f16fb5b42ec36879">HT_GENERATE2</a>(channel_idmap_hash, <a class="el" href="nodelist_8c.html#ab29f8b81bcf05c59f16fb5b42ec36879">HT_GENERATE2</a>(channel_idmap_eq)</td></tr>
-<tr class="separator:a38d8588aca63b8d32676f209de93348a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47201fb54e0db44f552c018d59e535d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ad47201fb54e0db44f552c018d59e535d">HT_PROTOTYPE</a> (HT_GENERATE2(channel_gid_map, HT_GENERATE2(<a class="el" href="structchannel__s.html">channel_s</a>, HT_GENERATE2(gidmap_node, HT_GENERATE2(channel_id_hash, HT_GENERATE2(channel_id_eq)</td></tr>
+<tr class="separator:ad47201fb54e0db44f552c018d59e535d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bdf98e720a6acc2e476e681e91e4fde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a5bdf98e720a6acc2e476e681e91e4fde">channel_listener_state_is_valid</a> (channel_listener_state_t state)</td></tr>
 <tr class="separator:a5bdf98e720a6acc2e476e681e91e4fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a727f5f4b03dca7d9b0ef71842709c055"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a727f5f4b03dca7d9b0ef71842709c055">channel_state_can_transition</a> (channel_state_t from, channel_state_t to)</td></tr>
@@ -178,22 +189,24 @@ Functions</h2></td></tr>
 <tr class="separator:a7fc659d90d9518f8f8bcf5a4d4f49acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d954d609b0decab6e56e2ab7e2444f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a2d954d609b0decab6e56e2ab7e2444f6">channel_listener_unregister</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
 <tr class="separator:a2d954d609b0decab6e56e2ab7e2444f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479196792d3ddd821bdfe24cc25364b1"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a479196792d3ddd821bdfe24cc25364b1">channel_add_to_digest_map</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
+<tr class="separator:a479196792d3ddd821bdfe24cc25364b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03ce362c180c51c5018668bae7bb4f24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a03ce362c180c51c5018668bae7bb4f24">channel_find_by_global_id</a> (uint64_t global_identifier)</td></tr>
 <tr class="separator:a03ce362c180c51c5018668bae7bb4f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0542e2ca72fe8da87de8ea2f711dd7dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a0542e2ca72fe8da87de8ea2f711dd7dc">channel_find_by_remote_digest</a> (const char *identity_digest)</td></tr>
-<tr class="separator:a0542e2ca72fe8da87de8ea2f711dd7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53ee6566b1661b9e37181d8f83efdfbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a53ee6566b1661b9e37181d8f83efdfbd">channel_next_with_digest</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:a53ee6566b1661b9e37181d8f83efdfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ab9bd6d990fc6d07b0c8842a3aee71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a04ab9bd6d990fc6d07b0c8842a3aee71">channel_find_by_remote_identity</a> (const char *rsa_id_digest, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_id)</td></tr>
+<tr class="separator:a04ab9bd6d990fc6d07b0c8842a3aee71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb42fd943884ecec3e7a7469c4e52f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a1bb42fd943884ecec3e7a7469c4e52f3">channel_next_with_rsa_identity</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
+<tr class="separator:a1bb42fd943884ecec3e7a7469c4e52f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea19d2f4cb7ba545fffa00bf86b6559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a4ea19d2f4cb7ba545fffa00bf86b6559">channel_check_for_duplicates</a> (void)</td></tr>
+<tr class="separator:a4ea19d2f4cb7ba545fffa00bf86b6559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af394d37fffd7367c8c882834e6451a89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#af394d37fffd7367c8c882834e6451a89">channel_init</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:af394d37fffd7367c8c882834e6451a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4259678584b7e032533f1144a7412616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a4259678584b7e032533f1144a7412616">channel_init_listener</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
 <tr class="separator:a4259678584b7e032533f1144a7412616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ac80d0068b62d8da9adddb13ff2a6cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a3ac80d0068b62d8da9adddb13ff2a6cf">channel_free</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:a3ac80d0068b62d8da9adddb13ff2a6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5140f151872899d07a2f1cd451902d38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a5140f151872899d07a2f1cd451902d38">channel_listener_free</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
-<tr class="separator:a5140f151872899d07a2f1cd451902d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59de51fdda7279dce0fcbae586b50e38"><td class="memItemLeft" align="right" valign="top">channel_listener_fn_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a59de51fdda7279dce0fcbae586b50e38">channel_listener_get_listener_fn</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
-<tr class="separator:a59de51fdda7279dce0fcbae586b50e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa138124aa840cbabbbe2065c933b09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#afaa138124aa840cbabbbe2065c933b09">channel_free_</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
+<tr class="separator:afaa138124aa840cbabbbe2065c933b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa917fccb124ebe2d88705c5893875984"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#aa917fccb124ebe2d88705c5893875984">channel_listener_free_</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
+<tr class="separator:aa917fccb124ebe2d88705c5893875984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a770610a2b8d7a5c3060778b63a3d4030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a770610a2b8d7a5c3060778b63a3d4030">channel_listener_set_listener_fn</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l, channel_listener_fn_ptr listener)</td></tr>
 <tr class="separator:a770610a2b8d7a5c3060778b63a3d4030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f3b8c3a3d91967c63fea496d2fe1b2e"><td class="memItemLeft" align="right" valign="top">channel_cell_handler_fn_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a9f3b8c3a3d91967c63fea496d2fe1b2e">channel_get_cell_handler</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
@@ -208,43 +221,28 @@ Functions</h2></td></tr>
 <tr class="separator:a4d328d0eebd17c646ec3a1ff4442d827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e837dc6a0d539d5f38ed4b0977448f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a4e837dc6a0d539d5f38ed4b0977448f5">channel_close_from_lower_layer</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a4e837dc6a0d539d5f38ed4b0977448f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2d446886086cabc6998de0c9a2379ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#aa2d446886086cabc6998de0c9a2379ba">channel_listener_close_from_lower_layer</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
-<tr class="separator:aa2d446886086cabc6998de0c9a2379ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5b91c363817271b75f1f75fa967e5e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#aa5b91c363817271b75f1f75fa967e5e3">channel_close_for_error</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:aa5b91c363817271b75f1f75fa967e5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a129ce2c9cfd17476509259c64c96ef9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a129ce2c9cfd17476509259c64c96ef9a">channel_listener_close_for_error</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
-<tr class="separator:a129ce2c9cfd17476509259c64c96ef9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a07dcb3da5d642570a8ed069c27450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a41a07dcb3da5d642570a8ed069c27450">channel_closed</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a41a07dcb3da5d642570a8ed069c27450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeadb08bb4e207f76f8bff0aa060e552"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#aaeadb08bb4e207f76f8bff0aa060e552">channel_listener_closed</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
-<tr class="separator:aaeadb08bb4e207f76f8bff0aa060e552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7370451f8b2f2b79a84f7f9b902de34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ac7370451f8b2f2b79a84f7f9b902de34">channel_clear_identity_digest</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:ac7370451f8b2f2b79a84f7f9b902de34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1480a4744614272467a7a8f0d8fcfe10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a1480a4744614272467a7a8f0d8fcfe10">channel_set_identity_digest</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, const char *identity_digest)</td></tr>
-<tr class="separator:a1480a4744614272467a7a8f0d8fcfe10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232c3afb3714be50f965df83b2d2d40d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a232c3afb3714be50f965df83b2d2d40d">channel_set_identity_digest</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, const char *identity_digest, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_identity)</td></tr>
+<tr class="separator:a232c3afb3714be50f965df83b2d2d40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd708a0b9e8474dd133f87a50d341f7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#acd708a0b9e8474dd133f87a50d341f7b">channel_clear_remote_end</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:acd708a0b9e8474dd133f87a50d341f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c0eafffa39adec24d12c71d73ff787e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a4c0eafffa39adec24d12c71d73ff787e">channel_set_remote_end</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, const char *identity_digest, const char *nickname)</td></tr>
-<tr class="separator:a4c0eafffa39adec24d12c71d73ff787e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae06da2fa9517932c784776910a727575"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ae06da2fa9517932c784776910a727575">cell_queue_entry_free</a> (cell_queue_entry_t *q, int handed_off)</td></tr>
-<tr class="separator:ae06da2fa9517932c784776910a727575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7dce1c4def06886d0a3e8f2aeb9d136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ab7dce1c4def06886d0a3e8f2aeb9d136">channel_write_cell</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, <a class="el" href="structcell__t.html">cell_t</a> *cell)</td></tr>
-<tr class="separator:ab7dce1c4def06886d0a3e8f2aeb9d136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea0e0508f558e3d29851bbd87dfbf361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#aea0e0508f558e3d29851bbd87dfbf361">channel_write_packed_cell</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, <a class="el" href="structpacked__cell__t.html">packed_cell_t</a> *packed_cell)</td></tr>
-<tr class="separator:aea0e0508f558e3d29851bbd87dfbf361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a387865cbc97d826ef17a2f0d48a9cbfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a387865cbc97d826ef17a2f0d48a9cbfb">channel_write_var_cell</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, <a class="el" href="structvar__cell__t.html">var_cell_t</a> *var_cell)</td></tr>
-<tr class="separator:a387865cbc97d826ef17a2f0d48a9cbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea762ac9b96570c55daa5dd57c95eafa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#aea762ac9b96570c55daa5dd57c95eafa">channel_write_packed_cell</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, <a class="el" href="structpacked__cell__t.html">packed_cell_t</a> *cell)</td></tr>
+<tr class="separator:aea762ac9b96570c55daa5dd57c95eafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afae0c20f03e6a224c2d730ec96342097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#afae0c20f03e6a224c2d730ec96342097">channel_change_state</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, channel_state_t to_state)</td></tr>
 <tr class="separator:afae0c20f03e6a224c2d730ec96342097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f33612da14ec718ecaf16bfdd12908d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a4f33612da14ec718ecaf16bfdd12908d">channel_change_state_open</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
+<tr class="separator:a4f33612da14ec718ecaf16bfdd12908d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0126606a15537e0647e81a9c2ca8b74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ad0126606a15537e0647e81a9c2ca8b74">channel_listener_change_state</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l, channel_listener_state_t to_state)</td></tr>
 <tr class="separator:ad0126606a15537e0647e81a9c2ca8b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9de3211fa3b2007ca0f42e9022dc800"><td class="memItemLeft" align="right" valign="top"><a id="ae9de3211fa3b2007ca0f42e9022dc800"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_IMPL</b> (ssize_t, channel_flush_some_cells,(<a class="el" href="structchannel__s.html">channel_t</a> *chan, ssize_t num_cells))</td></tr>
+<tr class="memitem:ae9de3211fa3b2007ca0f42e9022dc800"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ae9de3211fa3b2007ca0f42e9022dc800">MOCK_IMPL</a> (ssize_t, channel_flush_some_cells,(<a class="el" href="structchannel__s.html">channel_t</a> *chan, ssize_t num_cells))</td></tr>
 <tr class="separator:ae9de3211fa3b2007ca0f42e9022dc800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62262142bf0c29177541974c9145e891"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a62262142bf0c29177541974c9145e891">channel_flush_cells</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:a62262142bf0c29177541974c9145e891"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae21ca65f57566e7d01246216b3a6927f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ae21ca65f57566e7d01246216b3a6927f">channel_more_to_flush</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:ae21ca65f57566e7d01246216b3a6927f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8cfb44344a590f1ac113dfd415b02f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a4c8cfb44344a590f1ac113dfd415b02f">MOCK_IMPL</a> (int, channel_more_to_flush,(<a class="el" href="structchannel__s.html">channel_t</a> *chan))</td></tr>
+<tr class="separator:a4c8cfb44344a590f1ac113dfd415b02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc5a904f9dc44b21911ceed8d18fd218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#abc5a904f9dc44b21911ceed8d18fd218">channel_notify_flushed</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:abc5a904f9dc44b21911ceed8d18fd218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a020ddaa5f55c078d4513c47128f263"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a1a020ddaa5f55c078d4513c47128f263">channel_listener_process_incoming</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *listener)</td></tr>
@@ -253,12 +251,8 @@ Functions</h2></td></tr>
 <tr class="separator:a4bb9524073333e156da271ca623a772d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54f08cb6c0828f43f1253018f9fe3650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a54f08cb6c0828f43f1253018f9fe3650">channel_listener_queue_incoming</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *listener, <a class="el" href="structchannel__s.html">channel_t</a> *incoming)</td></tr>
 <tr class="separator:a54f08cb6c0828f43f1253018f9fe3650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d779fa720c5cbfaf471beed3bb4a250"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a4d779fa720c5cbfaf471beed3bb4a250">channel_process_cells</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:a4d779fa720c5cbfaf471beed3bb4a250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6b3fc1d914f5b70d578f9d6c28b7d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ad6b3fc1d914f5b70d578f9d6c28b7d08">channel_queue_cell</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, <a class="el" href="structcell__t.html">cell_t</a> *cell)</td></tr>
-<tr class="separator:ad6b3fc1d914f5b70d578f9d6c28b7d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd3f5f080d288757750e3a87197e0fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#afd3f5f080d288757750e3a87197e0fe0">channel_queue_var_cell</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, <a class="el" href="structvar__cell__t.html">var_cell_t</a> *var_cell)</td></tr>
-<tr class="separator:afd3f5f080d288757750e3a87197e0fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee1b816cf17de95ff399e365f1725bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a4ee1b816cf17de95ff399e365f1725bd">channel_process_cell</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, <a class="el" href="structcell__t.html">cell_t</a> *cell)</td></tr>
+<tr class="separator:a4ee1b816cf17de95ff399e365f1725bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa036957ef1d90c086c403814da8de52f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#aa036957ef1d90c086c403814da8de52f">packed_cell_is_destroy</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, const <a class="el" href="structpacked__cell__t.html">packed_cell_t</a> *packed_cell, <a class="el" href="or_8h.html#a6607d3e1cd2b5deca02212435116a2ac">circid_t</a> *circid_out)</td></tr>
 <tr class="separator:aa036957ef1d90c086c403814da8de52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85e3e2de528821cdda969fba6de1e4f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a85e3e2de528821cdda969fba6de1e4f2">channel_send_destroy</a> (<a class="el" href="or_8h.html#a6607d3e1cd2b5deca02212435116a2ac">circid_t</a> circ_id, <a class="el" href="structchannel__s.html">channel_t</a> *chan, int reason)</td></tr>
@@ -267,26 +261,22 @@ Functions</h2></td></tr>
 <tr class="separator:a1ef365ba78cdfea35f694be31bfd6e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0519ba6c6b14de83e886ed42095fe68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ab0519ba6c6b14de83e886ed42095fe68">channel_listener_dumpstats</a> (int severity)</td></tr>
 <tr class="separator:ab0519ba6c6b14de83e886ed42095fe68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab581fe82a432b885561d00ab3ecceba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ab581fe82a432b885561d00ab3ecceba6">channel_set_cmux_policy_everywhere</a> (<a class="el" href="structcircuitmux__policy__s.html">circuitmux_policy_t</a> *pol)</td></tr>
-<tr class="separator:ab581fe82a432b885561d00ab3ecceba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d874b0dd28680dd7f9661e2490d9091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a1d874b0dd28680dd7f9661e2490d9091">channel_run_cleanup</a> (void)</td></tr>
 <tr class="separator:a1d874b0dd28680dd7f9661e2490d9091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e7838364ded7b78a661a1f3f2f1c266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a3e7838364ded7b78a661a1f3f2f1c266">channel_listener_run_cleanup</a> (void)</td></tr>
 <tr class="separator:a3e7838364ded7b78a661a1f3f2f1c266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb2d84e3ecc8f662ed2072a2104d0b6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#adb2d84e3ecc8f662ed2072a2104d0b6b">channel_free_all</a> (void)</td></tr>
 <tr class="separator:adb2d84e3ecc8f662ed2072a2104d0b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b8cc7d1d3dbbdca20c863c3cb35273"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a13b8cc7d1d3dbbdca20c863c3cb35273">channel_connect</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port, const char *id_digest)</td></tr>
-<tr class="separator:a13b8cc7d1d3dbbdca20c863c3cb35273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa37fcbdaafeac83501c1699e61d8e128"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#aa37fcbdaafeac83501c1699e61d8e128">channel_is_better</a> (time_t now, <a class="el" href="structchannel__s.html">channel_t</a> *a, <a class="el" href="structchannel__s.html">channel_t</a> *b, int forgive_new_connections)</td></tr>
-<tr class="separator:aa37fcbdaafeac83501c1699e61d8e128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41ebc2554b7f8fd2b5c331bf7dc94ecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a41ebc2554b7f8fd2b5c331bf7dc94ecc">channel_get_for_extend</a> (const char *digest, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *target_addr, const char **msg_out, int *launch_out)</td></tr>
-<tr class="separator:a41ebc2554b7f8fd2b5c331bf7dc94ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de1eedac60a9f05dd621bc9b07909dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a2de1eedac60a9f05dd621bc9b07909dd">channel_connect</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port, const char *id_digest, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_id)</td></tr>
+<tr class="separator:a2de1eedac60a9f05dd621bc9b07909dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098e7f8cd053cab6477b2ff9dcbd7190"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a098e7f8cd053cab6477b2ff9dcbd7190">channel_is_better</a> (<a class="el" href="structchannel__s.html">channel_t</a> *a, <a class="el" href="structchannel__s.html">channel_t</a> *b)</td></tr>
+<tr class="separator:a098e7f8cd053cab6477b2ff9dcbd7190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225a9a8dab25e6fa224525867d0a056e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a225a9a8dab25e6fa224525867d0a056e">channel_get_for_extend</a> (const char *rsa_id_digest, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_id, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *target_addr, const char **msg_out, int *launch_out)</td></tr>
+<tr class="separator:a225a9a8dab25e6fa224525867d0a056e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a185d59ac3e69ab26d2b71804cb882993"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a185d59ac3e69ab26d2b71804cb882993">channel_describe_transport</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a185d59ac3e69ab26d2b71804cb882993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0104c379fab8d5cf7dc3eddf113dc44e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a0104c379fab8d5cf7dc3eddf113dc44e">channel_listener_describe_transport</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
 <tr class="separator:a0104c379fab8d5cf7dc3eddf113dc44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f2355dcc6bc54b549bfbe8d6ae7f80e"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a4f2355dcc6bc54b549bfbe8d6ae7f80e">chan_cell_queue_len</a> (const chan_cell_queue_t *queue)</td></tr>
-<tr class="separator:a4f2355dcc6bc54b549bfbe8d6ae7f80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab56dc7ecc8a31e8bfa4dc5281b72c21e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ab56dc7ecc8a31e8bfa4dc5281b72c21e">MOCK_IMPL</a> (void, channel_dump_statistics,(<a class="el" href="structchannel__s.html">channel_t</a> *chan, int severity))</td></tr>
 <tr class="separator:ab56dc7ecc8a31e8bfa4dc5281b72c21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e2ae335dbe5af256b18df4f3c1070e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a31e2ae335dbe5af256b18df4f3c1070e">channel_listener_dump_statistics</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l, int severity)</td></tr>
@@ -309,10 +299,12 @@ Functions</h2></td></tr>
 <tr class="separator:a118d357c7f7accb2f220b000f33ea714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b61336ba7b19572a83d335a6aad65f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a93b61336ba7b19572a83d335a6aad65f">channel_mark_bad_for_new_circs</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a93b61336ba7b19572a83d335a6aad65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4970564e5ce0547254f76d09d942e0f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a4970564e5ce0547254f76d09d942e0f1">channel_is_client</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:a4970564e5ce0547254f76d09d942e0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e699a108ac50e3f7e356b336734a56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a94e699a108ac50e3f7e356b336734a56">channel_is_client</a> (const <a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
+<tr class="separator:a94e699a108ac50e3f7e356b336734a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ad8f3da9b53f2a239196da6a822420a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a3ad8f3da9b53f2a239196da6a822420a">channel_mark_client</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a3ad8f3da9b53f2a239196da6a822420a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c9de3ab9c23adb8e2646a4767e7d37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ae5c9de3ab9c23adb8e2646a4767e7d37">channel_clear_client</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
+<tr class="separator:ae5c9de3ab9c23adb8e2646a4767e7d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58978b931d8b11d4673287e59f8d54bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a58978b931d8b11d4673287e59f8d54bc">channel_is_canonical</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a58978b931d8b11d4673287e59f8d54bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2175e5e47f323e17e518474e8210907f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a2175e5e47f323e17e518474e8210907f">channel_is_canonical_is_reliable</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
@@ -331,11 +323,7 @@ Functions</h2></td></tr>
 <tr class="separator:a150180857a5c09e9ab16095b6011fd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad513e8317c2960176b7a646bb675b2e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ad513e8317c2960176b7a646bb675b2e9">channel_mark_outgoing</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:ad513e8317c2960176b7a646bb675b2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc43b3c8ca79ff5ac832ac80489b28ae"><td class="memItemLeft" align="right" valign="top"><a id="adc43b3c8ca79ff5ac832ac80489b28ae"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>channel_get_global_queue_estimate</b> (void)</td></tr>
-<tr class="separator:adc43b3c8ca79ff5ac832ac80489b28ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcbcbfef4049d88a2975b9cf4ca71645"><td class="memItemLeft" align="right" valign="top"><a id="abcbcbfef4049d88a2975b9cf4ca71645"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>channel_num_cells_writeable</b> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
+<tr class="memitem:abcbcbfef4049d88a2975b9cf4ca71645"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#abcbcbfef4049d88a2975b9cf4ca71645">channel_num_cells_writeable</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:abcbcbfef4049d88a2975b9cf4ca71645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63986ced82f0d5c58fd872e40ed46598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a63986ced82f0d5c58fd872e40ed46598">channel_timestamp_created</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a63986ced82f0d5c58fd872e40ed46598"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,36 +337,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>channel_num_cells_writ
 <tr class="separator:abc3b198fd2e78a28eda3228892847baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20cdde3933fc1ca5c83494d1fb0e684f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a20cdde3933fc1ca5c83494d1fb0e684f">channel_timestamp_client</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a20cdde3933fc1ca5c83494d1fb0e684f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae241ae9b959f87e8ef459072554b212c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ae241ae9b959f87e8ef459072554b212c">channel_timestamp_drained</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:ae241ae9b959f87e8ef459072554b212c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cc7e87f9acbb2d5954540f997cf0b57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a1cc7e87f9acbb2d5954540f997cf0b57">channel_timestamp_recv</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a1cc7e87f9acbb2d5954540f997cf0b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdbe03d1c68e1ebc7133e4195fbfca29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#abdbe03d1c68e1ebc7133e4195fbfca29">channel_timestamp_xmit</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:abdbe03d1c68e1ebc7133e4195fbfca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff1eebb5bba0a9371c5679994d51329"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#aeff1eebb5bba0a9371c5679994d51329">channel_when_created</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:aeff1eebb5bba0a9371c5679994d51329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dbcc9a594a0c1794e26a40e7c9dd99b"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a0dbcc9a594a0c1794e26a40e7c9dd99b">channel_listener_when_created</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
-<tr class="separator:a0dbcc9a594a0c1794e26a40e7c9dd99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a886fbc84390a27e4007562e2e3ddacb5"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a886fbc84390a27e4007562e2e3ddacb5">channel_when_last_active</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:a886fbc84390a27e4007562e2e3ddacb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f1789dfc777235ab09dabb4977653b6"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a2f1789dfc777235ab09dabb4977653b6">channel_listener_when_last_active</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
-<tr class="separator:a2f1789dfc777235ab09dabb4977653b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8926e55f5ad9503ad24c9c4e6f663df5"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a8926e55f5ad9503ad24c9c4e6f663df5">channel_listener_when_last_accepted</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
-<tr class="separator:a8926e55f5ad9503ad24c9c4e6f663df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c7c9bb52317ac2f0189a286108bdc7e"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a7c7c9bb52317ac2f0189a286108bdc7e">channel_when_last_client</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a7c7c9bb52317ac2f0189a286108bdc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04116ec19eadb75b7315366655023791"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a04116ec19eadb75b7315366655023791">channel_when_last_drained</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:a04116ec19eadb75b7315366655023791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcbc61adb34b9ce4351a0d5f68915e52"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#adcbc61adb34b9ce4351a0d5f68915e52">channel_when_last_recv</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:adcbc61adb34b9ce4351a0d5f68915e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ce5cc93d2f7a10ad18300c4049108ef"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a3ce5cc93d2f7a10ad18300c4049108ef">channel_when_last_xmit</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a3ce5cc93d2f7a10ad18300c4049108ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24b23c1e80a639fe9092437b9ddccadd"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a24b23c1e80a639fe9092437b9ddccadd">channel_listener_count_accepted</a> (<a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *chan_l)</td></tr>
-<tr class="separator:a24b23c1e80a639fe9092437b9ddccadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7a626fd0d7ed9d4107ace44f7544224"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ad7a626fd0d7ed9d4107ace44f7544224">channel_count_recved</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:ad7a626fd0d7ed9d4107ace44f7544224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a633aef9ca1dea3cfa6dc0ed41edd725b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a633aef9ca1dea3cfa6dc0ed41edd725b">channel_count_xmitted</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:a633aef9ca1dea3cfa6dc0ed41edd725b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cb4f4e8f649a753d3d22fb84653c05b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a6cb4f4e8f649a753d3d22fb84653c05b">channel_matches_extend_info</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, <a class="el" href="structextend__info__t.html">extend_info_t</a> *extend_info)</td></tr>
 <tr class="separator:a6cb4f4e8f649a753d3d22fb84653c05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9744cd45d925184288dc3751fc1d455"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ae9744cd45d925184288dc3751fc1d455">channel_matches_target_addr_for_extend</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *target)</td></tr>
@@ -387,14 +355,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>channel_num_cells_writ
 <tr class="separator:ae541683374c3002a6218c576c9775910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d6f1fad148b483bdb8d2443dab0718"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#ae9d6f1fad148b483bdb8d2443dab0718">MOCK_IMPL</a> (void, channel_set_circid_type,(<a class="el" href="structchannel__s.html">channel_t</a> *chan, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *identity_rcvd, int consider_identity))</td></tr>
 <tr class="separator:ae9d6f1fad148b483bdb8d2443dab0718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf9310a1fa1a4d1cb1e3af383a98d902"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#abf9310a1fa1a4d1cb1e3af383a98d902">channel_update_xmit_queue_size</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:abf9310a1fa1a4d1cb1e3af383a98d902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4bd42593d0df3646e947bf4661648f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html#a1e4bd42593d0df3646e947bf4661648f">channel_update_bad_for_new_circs</a> (const char *digest, int force)</td></tr>
+<tr class="separator:a1e4bd42593d0df3646e947bf4661648f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a273aee4b7226238875ef9523aaaf4e68"><td class="memItemLeft" align="right" valign="top"><a id="a273aee4b7226238875ef9523aaaf4e68"></a>
-STATIC uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>estimated_total_queue_size</b> = 0</td></tr>
-<tr class="separator:a273aee4b7226238875ef9523aaaf4e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92ce228e454d19690e5dad548a4cd29b"><td class="memItemLeft" align="right" valign="top"><a id="a92ce228e454d19690e5dad548a4cd29b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>channel_idmap_entry_t</b></td></tr>
 <tr class="separator:a92ce228e454d19690e5dad548a4cd29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -404,81 +369,29 @@ STATIC uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>estimated_
 <p>Channels are a higher-level abstraction than <a class="el" href="structor__connection__t.html">or_connection_t</a>: In general, any means that two Tor relays use to exchange cells, or any means that a relay and a client use to exchange cells, is a channel.</p>
 <p>Channels differ from pluggable transports in that they do not wrap an underlying protocol over which cells are transmitted: they <em>are</em> the underlying protocol.</p>
 <p>This module defines the generic parts of the channel_t interface, and provides the machinery necessary for specialized implementations to be created. At present, there is one specialized implementation in <a class="el" href="channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances...">channeltls.c</a>, which uses <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a> to send cells over a TLS connection.</p>
-<p>Every channel implementation is responsible for being able to transmit cells that are added to it with <a class="el" href="channel_8c.html#ab7dce1c4def06886d0a3e8f2aeb9d136">channel_write_cell()</a> and related functions, and to receive incoming cells with the <a class="el" href="channel_8c.html#ad6b3fc1d914f5b70d578f9d6c28b7d08">channel_queue_cell()</a> and related functions. See the channel_t documentation for more information.</p>
-<p>When new cells arrive on a channel, they are passed to cell handler functions, which can be set by <a class="el" href="channel_8c.html#a5c26cbf4843fb4609f3f0c1eee87498c">channel_set_cell_handlers()</a> functions. (Tor's cell handlers are in <a class="el" href="command_8c.html" title="Functions for processing incoming cells. ">command.c</a>.)</p>
-<p>Tor flushes cells to channels from <a class="el" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. ">relay.c</a> in channel_flush_from_first_active_circuit(). </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ad7bac158c25f8c448289831d330fa6af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7bac158c25f8c448289831d330fa6af">&#9670;&nbsp;</a></span>MAX_CELLS_TO_GET_FROM_CIRCUITS_FOR_UNLIMITED</h2>
+<p>Every channel implementation is responsible for being able to transmit cells that are passed to it</p>
+<p>For <em>inbound</em> cells, the entry point is: <a class="el" href="channel_8c.html#a4ee1b816cf17de95ff399e365f1725bd">channel_process_cell()</a>. It takes a cell and will pass it to the cell handler set by <a class="el" href="channel_8c.html#a5c26cbf4843fb4609f3f0c1eee87498c">channel_set_cell_handlers()</a>. Currently, this is passed back to the command subsystem which is <a class="el" href="command_8c.html#a1e6109e2d1a1b76f296a7abd9afac9d4">command_process_cell()</a>.</p>
+<p>NOTE: For now, the separation between channels and specialized channels (like channeltls) is not that well defined. So the channeltls layer calls <a class="el" href="channel_8c.html#a4ee1b816cf17de95ff399e365f1725bd">channel_process_cell()</a> which originally comes from the connection subsytem. This should be hopefully be fixed with #23993.</p>
+<p>For <em>outbound</em> cells, the entry point is: <a class="el" href="channel_8c.html#aea762ac9b96570c55daa5dd57c95eafa">channel_write_packed_cell()</a>. Only packed cells are dequeued from the circuit queue by the scheduler which uses channel_flush_from_first_active_circuit() to decide which cells to flush from which circuit on the channel. They are then passed down to the channel subsystem. This calls the low layer with the function pointer .write_packed_cell().</p>
+<p>Each specialized channel (currently only channeltls_t) MUST implement a series of function found in channel_t. See <a class="el" href="channel_8h.html" title="Header file for channel.c. ">channel.h</a> for more documentation. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a479196792d3ddd821bdfe24cc25364b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479196792d3ddd821bdfe24cc25364b1">&#9670;&nbsp;</a></span>channel_add_to_digest_map()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_CELLS_TO_GET_FROM_CIRCUITS_FOR_UNLIMITED&#160;&#160;&#160;256</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Try to flush cells to the lower layer</p>
-<p>this is called by the lower layer to indicate that it wants more cells; it will try to write up to num_cells cells from the channel's cell queue or from circuits active on that channel, or as many as it has available if num_cells == -1. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ae06da2fa9517932c784776910a727575"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae06da2fa9517932c784776910a727575">&#9670;&nbsp;</a></span>cell_queue_entry_free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">STATIC void cell_queue_entry_free </td>
+          <td class="memname">STATIC void channel_add_to_digest_map </td>
           <td>(</td>
-          <td class="paramtype">cell_queue_entry_t *&#160;</td>
-          <td class="paramname"><em>q</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>handed_off</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Free a cell_queue_entry_t; the handed_off parameter indicates whether the contents were passed to the lower layer (it is responsible for them) or not (we should free). </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="channel_8c_ae06da2fa9517932c784776910a727575_cgraph.png" border="0" usemap="#channel_8c_ae06da2fa9517932c784776910a727575_cgraph" alt=""/></div>
-<map name="channel_8c_ae06da2fa9517932c784776910a727575_cgraph" id="channel_8c_ae06da2fa9517932c784776910a727575_cgraph">
-<area shape="rect" id="node2" href="relay_8c.html#ab7d3c47d6949a2d0673807ec42fd812b" title="packed_cell_free" alt="" coords="203,5,323,32"/>
-<area shape="rect" id="node3" href="connection__or_8c.html#aaf174ef822b1a9135e9802171d39a082" title="var_cell_free" alt="" coords="215,56,311,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a4f2355dcc6bc54b549bfbe8d6ae7f80e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f2355dcc6bc54b549bfbe8d6ae7f80e">&#9670;&nbsp;</a></span>chan_cell_queue_len()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">STATIC int chan_cell_queue_len </td>
-          <td>(</td>
-          <td class="paramtype">const chan_cell_queue_t *&#160;</td>
-          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the number of entries in <b>queue</b> </p>
+<p>Add a channel to the digest map.</p>
+<p>This function adds a channel to the digest map and inserts it into the correct linked list if channels with that remote endpoint identity digest already exist. </p>
 
 </div>
 </div>
@@ -507,8 +420,66 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Change channel state</p>
-<p>This internal and subclass use only function is used to change channel state, performing all transition validity checks and whatever actions are appropriate to the state transition in question. </p>
+<p>As channel_change_state_, but change the state to any state but open. </p>
+
+</div>
+</div>
+<a id="a4f33612da14ec718ecaf16bfdd12908d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f33612da14ec718ecaf16bfdd12908d">&#9670;&nbsp;</a></span>channel_change_state_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void channel_change_state_open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As channel_change_state, but change the state to open. </p>
+
+</div>
+</div>
+<a id="a4ea19d2f4cb7ba545fffa00bf86b6559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea19d2f4cb7ba545fffa00bf86b6559">&#9670;&nbsp;</a></span>channel_check_for_duplicates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void channel_check_for_duplicates </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Relays run this once an hour to look over our list of channels to other relays. It prints out some statistics if there are multiple connections to many relays.</p>
+<p>This function is similar to connection_or_set_bad_connections(), and probably could be adapted to replace it, if it was modified to actually take action on any of these connections. </p>
+
+</div>
+</div>
+<a id="ae5c9de3ab9c23adb8e2646a4767e7d37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c9de3ab9c23adb8e2646a4767e7d37">&#9670;&nbsp;</a></span>channel_clear_client()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void channel_clear_client </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clear the client flag.</p>
+<p>Mark a channel as being <em>not</em> from a client. </p>
 
 </div>
 </div>
@@ -527,7 +498,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Clear the identity_digest of a channel</p>
+<p>Clear the identity_digest of a channel.</p>
 <p>This function clears the identity digest of the remote endpoint for a channel; this is intended for use by the lower layer. </p>
 
 </div>
@@ -547,7 +518,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Clear the remote end metadata (identity_digest/nickname) of a channel</p>
+<p>Clear the remote end metadata (identity_digest) of a channel.</p>
 <p>This function clears all the remote end info from a channel; this is intended for use by the lower layer. </p>
 
 </div>
@@ -567,7 +538,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Notify that the channel is being closed due to an error condition</p>
+<p>Notify that the channel is being closed due to an error condition.</p>
 <p>This function is called by the lower layer implementing the transport when a channel must be closed due to an error condition. This does not call the channel's close method, since the lower layer already knows. </p>
 
 </div>
@@ -587,7 +558,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Close a channel from the lower layer</p>
+<p>Close a channel from the lower layer.</p>
 <p>Notify the channel code that the channel is being closed due to a non-error condition in the lower layer. This does not call the close() method, since the lower layer already knows. </p>
 
 </div>
@@ -607,7 +578,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Notify that the lower layer is finished closing the channel</p>
+<p>Notify that the lower layer is finished closing the channel.</p>
 <p>This function should be called by the lower layer when a channel is finished closing and it should be regarded as inactive and freed by the channel code. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -620,8 +591,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a13b8cc7d1d3dbbdca20c863c3cb35273"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13b8cc7d1d3dbbdca20c863c3cb35273">&#9670;&nbsp;</a></span>channel_connect()</h2>
+<a id="a2de1eedac60a9f05dd621bc9b07909dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2de1eedac60a9f05dd621bc9b07909dd">&#9670;&nbsp;</a></span>channel_connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -642,7 +613,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>id_digest</em>&#160;</td>
+          <td class="paramname"><em>id_digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
+          <td class="paramname"><em>ed_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -651,54 +628,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Connect to a given addr/port/digest</p>
+<p>Connect to a given addr/port/digest.</p>
 <p>This sets up a new outgoing channel; in the future if multiple channel_t subclasses are available, this is where the selection policy should go. It may also be desirable to fold port into <a class="el" href="structtor__addr__t.html">tor_addr_t</a> or make a new type including a <a class="el" href="structtor__addr__t.html">tor_addr_t</a> and port, so we have a single abstract object encapsulating all the protocol details of how to contact an OR. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="channel_8c_a13b8cc7d1d3dbbdca20c863c3cb35273_cgraph.png" border="0" usemap="#channel_8c_a13b8cc7d1d3dbbdca20c863c3cb35273_cgraph" alt=""/></div>
-<map name="channel_8c_a13b8cc7d1d3dbbdca20c863c3cb35273_cgraph" id="channel_8c_a13b8cc7d1d3dbbdca20c863c3cb35273_cgraph">
-<area shape="rect" id="node2" href="channeltls_8c.html#a7a89e235963df96d4b8df41e90dd9447" title="channel_tls_connect" alt="" coords="173,5,315,32"/>
+<div class="center"><img src="channel_8c_a2de1eedac60a9f05dd621bc9b07909dd_cgraph.png" border="0" usemap="#channel_8c_a2de1eedac60a9f05dd621bc9b07909dd_cgraph" alt=""/></div>
+<map name="channel_8c_a2de1eedac60a9f05dd621bc9b07909dd_cgraph" id="channel_8c_a2de1eedac60a9f05dd621bc9b07909dd_cgraph">
+<area shape="rect" id="node2" href="channeltls_8c.html#a8178dc802e84ceb764d8d5803e8d9a6b" title="channel_tls_connect" alt="" coords="173,5,315,32"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="ad7a626fd0d7ed9d4107ace44f7544224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7a626fd0d7ed9d4107ace44f7544224">&#9670;&nbsp;</a></span>channel_count_recved()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t channel_count_recved </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Query received cell counter </p>
-
-</div>
-</div>
-<a id="a633aef9ca1dea3cfa6dc0ed41edd725b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a633aef9ca1dea3cfa6dc0ed41edd725b">&#9670;&nbsp;</a></span>channel_count_xmitted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t channel_count_xmitted </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Query transmitted cell counter </p>
 
 </div>
 </div>
@@ -717,7 +656,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Describe the transport subclass for a channel</p>
+<p>Describe the transport subclass for a channel.</p>
 <p>Invoke a method to get a string description of the lower-layer transport for this channel. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -745,9 +684,9 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Take actions required when a channel becomes open</p>
+<p>Take actions required when a channel becomes open.</p>
 <p>Handle actions we should do when we know a channel is open; a lot of this comes from the old <a class="el" href="connection__or_8c.html#a10910510a0e668c958457783ccf154c9">connection_or_set_state_open()</a> of <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a>.</p>
-<p>Because of this mechanism, future channel_t subclasses should take care not to change a channel to from CHANNEL_STATE_OPENING to CHANNEL_STATE_OPEN until there is positive confirmation that the network is operational. In particular, anything UDP-based should not make this transition until a packet is received from the other side. </p>
+<p>Because of this mechanism, future channel_t subclasses should take care not to change a channel from CHANNEL_STATE_OPENING to CHANNEL_STATE_OPEN until there is positive confirmation that the network is operational. In particular, anything UDP-based should not make this transition until a packet is received from the other side. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -756,11 +695,9 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="channel_8c.html#a150180857a5c09e9ab16095b6011fd06" title="channel_is_outgoing" alt="" coords="233,5,373,32"/>
 <area shape="rect" id="node3" href="circuitstats_8c.html#a2b95a37e26723de09e38d46549c9fba0" title="circuit_build_times\l_network_is_live" alt="" coords="237,57,368,98"/>
 <area shape="rect" id="node5" href="circuitstats_8c.html#ab6607aa51a9503278d8f893f8092aabc" title="get_circuit_build_times\l_mutable" alt="" coords="225,122,380,163"/>
-<area shape="rect" id="node6" href="rephist_8c.html#ab0585bb24fb7ba85dce36199cf9befe1" title="rep_hist_note_connect\l_succeeded" alt="" coords="226,187,379,229"/>
-<area shape="rect" id="node7" href="entrynodes_8c.html#aca1100341edbe9b4ff26527595ab56e8" title="entry_guard_register\l_connect_status" alt="" coords="233,253,373,294"/>
-<area shape="rect" id="node4" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="438,64,531,91"/>
-<area shape="rect" id="node8" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="441,235,528,261"/>
-<area shape="rect" id="node9" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="428,285,541,312"/>
+<area shape="rect" id="node6" href="nodelist_8c.html#af9b98a83a74416a5d6cb256c66110b1b" title="router_set_status" alt="" coords="241,188,364,215"/>
+<area shape="rect" id="node7" href="channel_8c.html#a94e699a108ac50e3f7e356b336734a56" title="channel_is_client" alt="" coords="241,239,364,265"/>
+<area shape="rect" id="node4" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="428,64,521,91"/>
 </map>
 </div>
 
@@ -791,8 +728,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Invoke transport-specific stats dump for channel</p>
-<p>If there is a lower-layer statistics dump method, invoke it </p>
+<p>Invoke transport-specific stats dump for channel.</p>
+<p>If there is a lower-layer statistics dump method, invoke it. </p>
 
 </div>
 </div>
@@ -811,7 +748,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Dump channel statistics to the log</p>
+<p>Dump channel statistics to the log.</p>
 <p>This is called from dumpstats() in <a class="el" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop...">main.c</a> and spams the log with statistics on channels. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -819,6 +756,14 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="channel_8c_a1ef365ba78cdfea35f694be31bfd6e91_cgraph.png" border="0" usemap="#channel_8c_a1ef365ba78cdfea35f694be31bfd6e91_cgraph" alt=""/></div>
 <map name="channel_8c_a1ef365ba78cdfea35f694be31bfd6e91_cgraph" id="channel_8c_a1ef365ba78cdfea35f694be31bfd6e91_cgraph">
 <area shape="rect" id="node2" href="log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="188,5,249,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channel_8c_a1ef365ba78cdfea35f694be31bfd6e91_icgraph.png" border="0" usemap="#channel_8c_a1ef365ba78cdfea35f694be31bfd6e91_icgraph" alt=""/></div>
+<map name="channel_8c_a1ef365ba78cdfea35f694be31bfd6e91_icgraph" id="channel_8c_a1ef365ba78cdfea35f694be31bfd6e91_icgraph">
+<area shape="rect" id="node2" href="fakechans_8h.html#a2cff55df4a9516484aba4c6302c9deda" title="scheduler_release_channel_mock" alt="" coords="188,5,407,32"/>
 </map>
 </div>
 
@@ -839,77 +784,67 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Find channel by global ID</p>
+<p>Find channel by global ID.</p>
 <p>This function searches for a channel by the global_identifier assigned at initialization time. This identifier is unique for the lifetime of the Tor process. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="channel_8c_a03ce362c180c51c5018668bae7bb4f24_icgraph.png" border="0" usemap="#channel_8c_a03ce362c180c51c5018668bae7bb4f24_icgraph" alt=""/></div>
 <map name="channel_8c_a03ce362c180c51c5018668bae7bb4f24_icgraph" id="channel_8c_a03ce362c180c51c5018668bae7bb4f24_icgraph">
-<area shape="rect" id="node2" href="circuitmux_8h.html#a4a5fff70da3c5abf8e3ae7abd1aee1cc" title="circuitmux_set_policy" alt="" coords="228,42,376,69"/>
-<area shape="rect" id="node3" href="channel_8h.html#ab581fe82a432b885561d00ab3ecceba6" title="channel_set_cmux_policy\l_everywhere" alt="" coords="424,5,596,47"/>
-<area shape="rect" id="node4" href="circuitmux_8h.html#a1eefa6dc14786d08f7dcc6a9d33c11b2" title="circuitmux_clear_policy" alt="" coords="431,71,589,98"/>
+<area shape="rect" id="node2" href="circuitmux_8h.html#a4a5fff70da3c5abf8e3ae7abd1aee1cc" title="circuitmux_set_policy" alt="" coords="228,5,376,32"/>
+<area shape="rect" id="node3" href="circuitmux_8h.html#a1eefa6dc14786d08f7dcc6a9d33c11b2" title="circuitmux_clear_policy" alt="" coords="424,5,583,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a0542e2ca72fe8da87de8ea2f711dd7dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0542e2ca72fe8da87de8ea2f711dd7dc">&#9670;&nbsp;</a></span>channel_find_by_remote_digest()</h2>
+<a id="a04ab9bd6d990fc6d07b0c8842a3aee71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ab9bd6d990fc6d07b0c8842a3aee71">&#9670;&nbsp;</a></span>channel_find_by_remote_identity()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structchannel__s.html">channel_t</a>* channel_find_by_remote_digest </td>
+          <td class="memname"><a class="el" href="structchannel__s.html">channel_t</a>* channel_find_by_remote_identity </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>identity_digest</em></td><td>)</td>
+          <td class="paramname"><em>rsa_id_digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
+          <td class="paramname"><em>ed_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Find channel by digest of the remote endpoint</p>
-<p>This function looks up a channel by the digest of its remote endpoint in the channel digest map. It's possible that more than one channel to a given endpoint exists. Use <a class="el" href="channel_8c.html#a53ee6566b1661b9e37181d8f83efdfbd">channel_next_with_digest()</a> to walk the list. </p>
+<p>Find channel by RSA/Ed25519 identity of of the remote endpoint.</p>
+<p>This function looks up a channel by the digest of its remote endpoint's RSA identity key. If <b>ed_id</b> is provided and nonzero, only a channel matching the <b>ed_id</b> will be returned.</p>
+<p>It's possible that more than one channel to a given endpoint exists. Use <a class="el" href="channel_8c.html#a1bb42fd943884ecec3e7a7469c4e52f3">channel_next_with_rsa_identity()</a> to walk the list of channels; make sure to test for Ed25519 identity match too (as appropriate) </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="channel_8c_a0542e2ca72fe8da87de8ea2f711dd7dc_icgraph.png" border="0" usemap="#channel_8c_a0542e2ca72fe8da87de8ea2f711dd7dc_icgraph" alt=""/></div>
-<map name="channel_8c_a0542e2ca72fe8da87de8ea2f711dd7dc_icgraph" id="channel_8c_a0542e2ca72fe8da87de8ea2f711dd7dc_icgraph">
-<area shape="rect" id="node2" href="channel_8h.html#a41ebc2554b7f8fd2b5c331bf7dc94ecc" title="channel_get_for_extend" alt="" coords="216,13,376,39"/>
+<div class="center"><img src="channel_8c_a04ab9bd6d990fc6d07b0c8842a3aee71_icgraph.png" border="0" usemap="#channel_8c_a04ab9bd6d990fc6d07b0c8842a3aee71_icgraph" alt=""/></div>
+<map name="channel_8c_a04ab9bd6d990fc6d07b0c8842a3aee71_icgraph" id="channel_8c_a04ab9bd6d990fc6d07b0c8842a3aee71_icgraph">
+<area shape="rect" id="node2" href="channel_8h.html#a225a9a8dab25e6fa224525867d0a056e" title="channel_get_for_extend" alt="" coords="216,13,376,39"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a62262142bf0c29177541974c9145e891"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62262142bf0c29177541974c9145e891">&#9670;&nbsp;</a></span>channel_flush_cells()</h2>
+<a id="afaa138124aa840cbabbbe2065c933b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa138124aa840cbabbbe2065c933b09">&#9670;&nbsp;</a></span>channel_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void channel_flush_cells </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Flush as many cells as we possibly can from the queue</p>
-<p>This tries to flush as many cells from the queue as the lower layer will take. It just calls channel_flush_some_cells_from_outgoing_queue() in unlimited mode. </p>
-
-</div>
-</div>
-<a id="a3ac80d0068b62d8da9adddb13ff2a6cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ac80d0068b62d8da9adddb13ff2a6cf">&#9670;&nbsp;</a></span>channel_free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_free </td>
+          <td class="memname">void channel_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
           <td class="paramname"><em>chan</em></td><td>)</td>
@@ -918,14 +853,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Free a channel; nothing outside of <a class="el" href="channel_8c.html" title="OR/OP-to-OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ...">channel.c</a> and subclasses should call this - it frees channels after they have closed and been unregistered. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="channel_8c_a3ac80d0068b62d8da9adddb13ff2a6cf_icgraph.png" border="0" usemap="#channel_8c_a3ac80d0068b62d8da9adddb13ff2a6cf_icgraph" alt=""/></div>
-<map name="channel_8c_a3ac80d0068b62d8da9adddb13ff2a6cf_icgraph" id="channel_8c_a3ac80d0068b62d8da9adddb13ff2a6cf_icgraph">
-<area shape="rect" id="node2" href="channel_8h.html#a1d874b0dd28680dd7f9661e2490d9091" title="channel_run_cleanup" alt="" coords="149,5,293,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -944,7 +871,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Close all channels and free everything</p>
+<p>Close all channels and free everything.</p>
 <p>This gets called from <a class="el" href="main_8c.html#a3d840759318fbf94fb7009cc0fba5c5d">tor_free_all()</a> in <a class="el" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop...">main.c</a> to clean up on exit. It will close all registered channels and free associated storage, then free the all_channels, active_channels, listening_channels and finished_channels lists and also channel_identity_map. </p>
 
 </div>
@@ -984,7 +911,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return text description of the remote endpoint</p>
+<p>Return text description of the remote endpoint.</p>
 <p>This function return a test provided by the lower layer of the remote endpoint for this channel; it should specify the actual address connected to/from.</p>
 <p>Subsequent calls to channel_get_{actual,canonical}_remote_{address,descr} may invalidate the return value from this function. </p>
 
@@ -1005,7 +932,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return text description of the remote endpoint canonical address</p>
+<p>Return text description of the remote endpoint canonical address.</p>
 <p>This function return a test provided by the lower layer of the remote endpoint for this channel; it should use the known canonical address for this OR's identity digest if possible.</p>
 <p>Subsequent calls to channel_get_{actual,canonical}_remote_{address,descr} may invalidate the return value from this function. </p>
 
@@ -1026,13 +953,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the fixed-length cell handler for a channel</p>
+<p>Return the fixed-length cell handler for a channel.</p>
 <p>This function gets the handler for incoming fixed-length cells installed on a channel. </p>
 
 </div>
 </div>
-<a id="a41ebc2554b7f8fd2b5c331bf7dc94ecc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41ebc2554b7f8fd2b5c331bf7dc94ecc">&#9670;&nbsp;</a></span>channel_get_for_extend()</h2>
+<a id="a225a9a8dab25e6fa224525867d0a056e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225a9a8dab25e6fa224525867d0a056e">&#9670;&nbsp;</a></span>channel_get_for_extend()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1041,7 +968,13 @@ Here is the caller graph for this function:</div>
           <td class="memname"><a class="el" href="structchannel__s.html">channel_t</a>* channel_get_for_extend </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>digest</em>, </td>
+          <td class="paramname"><em>rsa_id_digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
+          <td class="paramname"><em>ed_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1068,17 +1001,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a channel to extend a circuit</p>
-<p>Pick a suitable channel to extend a circuit to given the desired digest the address we believe is correct for that digest; this tries to see if we already have one for the requested endpoint, but if there is no good channel, set *msg_out to a message describing the channel's state and our next action, and set *launch_out to a boolean indicated whether the caller should try to launch a new channel with <a class="el" href="channel_8c.html#a13b8cc7d1d3dbbdca20c863c3cb35273">channel_connect()</a>. </p>
+<p>Get a channel to extend a circuit.</p>
+<p>Pick a suitable channel to extend a circuit to given the desired digest the address we believe is correct for that digest; this tries to see if we already have one for the requested endpoint, but if there is no good channel, set *msg_out to a message describing the channel's state and our next action, and set *launch_out to a boolean indicated whether the caller should try to launch a new channel with <a class="el" href="channel_8c.html#a2de1eedac60a9f05dd621bc9b07909dd">channel_connect()</a>. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="channel_8c_a41ebc2554b7f8fd2b5c331bf7dc94ecc_cgraph.png" border="0" usemap="#channel_8c_a41ebc2554b7f8fd2b5c331bf7dc94ecc_cgraph" alt=""/></div>
-<map name="channel_8c_a41ebc2554b7f8fd2b5c331bf7dc94ecc_cgraph" id="channel_8c_a41ebc2554b7f8fd2b5c331bf7dc94ecc_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="253,5,346,32"/>
-<area shape="rect" id="node3" href="channel_8c.html#a0542e2ca72fe8da87de8ea2f711dd7dc" title="channel_find_by_remote\l_digest" alt="" coords="218,57,381,98"/>
-<area shape="rect" id="node4" href="channel_8c.html#a53ee6566b1661b9e37181d8f83efdfbd" title="channel_next_with_digest" alt="" coords="213,123,385,149"/>
-<area shape="rect" id="node5" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="256,173,343,200"/>
+<div class="center"><img src="channel_8c_a225a9a8dab25e6fa224525867d0a056e_cgraph.png" border="0" usemap="#channel_8c_a225a9a8dab25e6fa224525867d0a056e_cgraph" alt=""/></div>
+<map name="channel_8c_a225a9a8dab25e6fa224525867d0a056e_cgraph" id="channel_8c_a225a9a8dab25e6fa224525867d0a056e_cgraph">
+<area shape="rect" id="node2" href="channel_8c.html#a04ab9bd6d990fc6d07b0c8842a3aee71" title="channel_find_by_remote\l_identity" alt="" coords="213,5,376,47"/>
+<area shape="rect" id="node3" href="channel_8c.html#a1bb42fd943884ecec3e7a7469c4e52f3" title="channel_next_with_rsa\l_identity" alt="" coords="217,71,372,112"/>
+<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="251,137,338,163"/>
 </map>
 </div>
 
@@ -1099,7 +1031,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the variable-length cell handler for a channel</p>
+<p>Return the variable-length cell handler for a channel.</p>
 <p>This function gets the handler for incoming variable-length cells installed on a channel. </p>
 
 </div>
@@ -1119,8 +1051,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if there are outgoing queue writes on this channel</p>
-<p>Indicate if either we have queued cells, or if not, whether the underlying lower-layer transport thinks it has an output queue. </p>
+<p>Return true iff the channel has any cells on the connection outbuf waiting to be sent onto the network. </p>
 
 </div>
 </div>
@@ -1139,8 +1070,16 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize a channel</p>
+<p>Initialize a channel.</p>
 <p>This function should be called by subclasses to set up some per-channel variables. I.e., this is the superclass constructor. Before this, the channel should be allocated with tor_malloc_zero(). </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channel_8c_af394d37fffd7367c8c882834e6451a89_cgraph.png" border="0" usemap="#channel_8c_af394d37fffd7367c8c882834e6451a89_cgraph" alt=""/></div>
+<map name="channel_8c_af394d37fffd7367c8c882834e6451a89_cgraph" id="channel_8c_af394d37fffd7367c8c882834e6451a89_cgraph">
+<area shape="rect" id="node2" href="channel_8c.html#a63986ced82f0d5c58fd872e40ed46598" title="channel_timestamp_created" alt="" coords="144,5,329,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1167,8 +1106,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize a channel listener</p>
+<p>Initialize a channel listener.</p>
 <p>This function should be called by subclasses to set up some per-channel variables. I.e., this is the superclass constructor. Before this, the channel listener should be allocated with tor_malloc_zero(). </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channel_8c_a4259678584b7e032533f1144a7412616_cgraph.png" border="0" usemap="#channel_8c_a4259678584b7e032533f1144a7412616_cgraph" alt=""/></div>
+<map name="channel_8c_a4259678584b7e032533f1144a7412616_cgraph" id="channel_8c_a4259678584b7e032533f1144a7412616_cgraph">
+<area shape="rect" id="node2" href="channel_8c.html#a7c86ea4153b077173702319f0fa5b196" title="channel_listener_timestamp\l_created" alt="" coords="193,5,377,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1187,13 +1134,21 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check the is_bad_for_new_circs flag</p>
+<p>Check the is_bad_for_new_circs flag.</p>
 <p>This function returns the is_bad_for_new_circs flag of the specified channel. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channel_8c_a118d357c7f7accb2f220b000f33ea714_icgraph.png" border="0" usemap="#channel_8c_a118d357c7f7accb2f220b000f33ea714_icgraph" alt=""/></div>
+<map name="channel_8c_a118d357c7f7accb2f220b000f33ea714_icgraph" id="channel_8c_a118d357c7f7accb2f220b000f33ea714_icgraph">
+<area shape="rect" id="node2" href="channel_8h.html#a098e7f8cd053cab6477b2ff9dcbd7190" title="channel_is_better" alt="" coords="188,13,312,39"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="aa37fcbdaafeac83501c1699e61d8e128"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa37fcbdaafeac83501c1699e61d8e128">&#9670;&nbsp;</a></span>channel_is_better()</h2>
+<a id="a098e7f8cd053cab6477b2ff9dcbd7190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a098e7f8cd053cab6477b2ff9dcbd7190">&#9670;&nbsp;</a></span>channel_is_better()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1201,12 +1156,6 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int channel_is_better </td>
           <td>(</td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>now</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
@@ -1214,13 +1163,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>forgive_new_connections</em>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1229,17 +1172,18 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Decide which of two channels to prefer for extending a circuit</p>
+<p>Decide which of two channels to prefer for extending a circuit.</p>
 <p>This function is called while extending a circuit and returns true iff a is 'better' than b. The most important criterion here is that a canonical channel is always better than a non-canonical one, but the number of circuits and the age are used as tie-breakers.</p>
 <p>This is based on the former connection_or_is_better() of <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a> </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="channel_8c_aa37fcbdaafeac83501c1699e61d8e128_cgraph.png" border="0" usemap="#channel_8c_aa37fcbdaafeac83501c1699e61d8e128_cgraph" alt=""/></div>
-<map name="channel_8c_aa37fcbdaafeac83501c1699e61d8e128_cgraph" id="channel_8c_aa37fcbdaafeac83501c1699e61d8e128_cgraph">
-<area shape="rect" id="node2" href="channel_8c.html#a58978b931d8b11d4673287e59f8d54bc" title="channel_is_canonical" alt="" coords="181,5,328,32"/>
-<area shape="rect" id="node3" href="channel_8c.html#ae541683374c3002a6218c576c9775910" title="channel_num_circuits" alt="" coords="181,56,329,83"/>
-<area shape="rect" id="node4" href="channel_8c.html#aeff1eebb5bba0a9371c5679994d51329" title="channel_when_created" alt="" coords="177,107,332,133"/>
+<div class="center"><img src="channel_8c_a098e7f8cd053cab6477b2ff9dcbd7190_cgraph.png" border="0" usemap="#channel_8c_a098e7f8cd053cab6477b2ff9dcbd7190_cgraph" alt=""/></div>
+<map name="channel_8c_a098e7f8cd053cab6477b2ff9dcbd7190_cgraph" id="channel_8c_a098e7f8cd053cab6477b2ff9dcbd7190_cgraph">
+<area shape="rect" id="node2" href="channel_8c.html#a118d357c7f7accb2f220b000f33ea714" title="channel_is_bad_for\l_new_circs" alt="" coords="187,5,322,47"/>
+<area shape="rect" id="node3" href="channel_8c.html#a58978b931d8b11d4673287e59f8d54bc" title="channel_is_canonical" alt="" coords="181,71,328,98"/>
+<area shape="rect" id="node4" href="channel_8c.html#aeff1eebb5bba0a9371c5679994d51329" title="channel_when_created" alt="" coords="177,122,332,149"/>
+<area shape="rect" id="node5" href="channel_8c.html#ae541683374c3002a6218c576c9775910" title="channel_num_circuits" alt="" coords="181,173,329,199"/>
 </map>
 </div>
 
@@ -1260,14 +1204,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the canonical flag for a channel</p>
+<p>Get the canonical flag for a channel.</p>
 <p>This returns the is_canonical for a channel; this flag is determined by the lower layer and can't be set in a transport-independent way. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="channel_8c_a58978b931d8b11d4673287e59f8d54bc_icgraph.png" border="0" usemap="#channel_8c_a58978b931d8b11d4673287e59f8d54bc_icgraph" alt=""/></div>
 <map name="channel_8c_a58978b931d8b11d4673287e59f8d54bc_icgraph" id="channel_8c_a58978b931d8b11d4673287e59f8d54bc_icgraph">
-<area shape="rect" id="node2" href="channel_8h.html#aa37fcbdaafeac83501c1699e61d8e128" title="channel_is_better" alt="" coords="200,5,324,32"/>
+<area shape="rect" id="node2" href="channel_8h.html#a098e7f8cd053cab6477b2ff9dcbd7190" title="channel_is_better" alt="" coords="200,5,324,32"/>
 </map>
 </div>
 
@@ -1288,13 +1232,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Test if the canonical flag is reliable</p>
-<p>This function asks if the lower layer thinks it's safe to trust the result of <a class="el" href="channel_8c.html#a58978b931d8b11d4673287e59f8d54bc">channel_is_canonical()</a> </p>
+<p>Test if the canonical flag is reliable.</p>
+<p>This function asks if the lower layer thinks it's safe to trust the result of <a class="el" href="channel_8c.html#a58978b931d8b11d4673287e59f8d54bc">channel_is_canonical()</a>. </p>
 
 </div>
 </div>
-<a id="a4970564e5ce0547254f76d09d942e0f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4970564e5ce0547254f76d09d942e0f1">&#9670;&nbsp;</a></span>channel_is_client()</h2>
+<a id="a94e699a108ac50e3f7e356b336734a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e699a108ac50e3f7e356b336734a56">&#9670;&nbsp;</a></span>channel_is_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1302,14 +1246,22 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int channel_is_client </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
           <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the client flag</p>
+<p>Get the client flag.</p>
 <p>This returns the client flag of a channel, which will be set if command_process_create_cell() in <a class="el" href="command_8c.html" title="Functions for processing incoming cells. ">command.c</a> thinks this is a connection from a client. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channel_8c_a94e699a108ac50e3f7e356b336734a56_icgraph.png" border="0" usemap="#channel_8c_a94e699a108ac50e3f7e356b336734a56_icgraph" alt=""/></div>
+<map name="channel_8c_a94e699a108ac50e3f7e356b336734a56_icgraph" id="channel_8c_a94e699a108ac50e3f7e356b336734a56_icgraph">
+<area shape="rect" id="node2" href="channel_8c.html#a4bb9524073333e156da271ca623a772d" title="channel_do_open_actions" alt="" coords="176,5,348,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1328,7 +1280,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Test incoming flag</p>
+<p>Test incoming flag.</p>
 <p>This function gets the incoming flag; this is set when a listener spawns a channel. If this returns true the channel was remotely initiated. </p>
 
 </div>
@@ -1348,7 +1300,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Test local flag</p>
+<p>Test local flag.</p>
 <p>This function gets the local flag; the lower layer should set this when setting up the channel if is_local_addr() is true for all of the destinations it will communicate with on behalf of this channel. It's used to decide whether to declare the network reachable when seeing incoming traffic on the channel. </p>
 
 </div>
@@ -1368,7 +1320,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Test outgoing flag</p>
+<p>Test outgoing flag.</p>
 <p>This function gets the outgoing flag; this is the inverse of the incoming bit set when a listener spawns a channel. If this returns true the channel was locally initiated. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1407,7 +1359,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Change channel listener state</p>
+<p>Change channel listener state.</p>
 <p>This internal and subclass use only function is used to change channel listener state, performing all transition validity checks and whatever actions are appropriate to the state transition in question. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1418,85 +1370,6 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node3" href="channel_8c.html#a447edc0876c6c437ae72b5c49b8e038a" title="channel_listener_state\l_can_transition" alt="" coords="219,71,371,112"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a129ce2c9cfd17476509259c64c96ef9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a129ce2c9cfd17476509259c64c96ef9a">&#9670;&nbsp;</a></span>channel_listener_close_for_error()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_listener_close_for_error </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td>
-          <td class="paramname"><em>chan_l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Notify that the channel listener is being closed due to an error condition</p>
-<p>This function is called by the lower layer implementing the transport when a channel listener must be closed due to an error condition. This does not call the channel listener's close method, since the lower layer already knows. </p>
-
-</div>
-</div>
-<a id="aa2d446886086cabc6998de0c9a2379ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2d446886086cabc6998de0c9a2379ba">&#9670;&nbsp;</a></span>channel_listener_close_from_lower_layer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_listener_close_from_lower_layer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td>
-          <td class="paramname"><em>chan_l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Close a channel listener from the lower layer</p>
-<p>Notify the channel code that the channel listener is being closed due to a non-error condition in the lower layer. This does not call the close() method, since the lower layer already knows. </p>
-
-</div>
-</div>
-<a id="aaeadb08bb4e207f76f8bff0aa060e552"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaeadb08bb4e207f76f8bff0aa060e552">&#9670;&nbsp;</a></span>channel_listener_closed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_listener_closed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td>
-          <td class="paramname"><em>chan_l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Notify that the lower layer is finished closing the channel listener</p>
-<p>This function should be called by the lower layer when a channel listener is finished closing and it should be regarded as inactive and freed by the channel code. </p>
-
-</div>
-</div>
-<a id="a24b23c1e80a639fe9092437b9ddccadd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24b23c1e80a639fe9092437b9ddccadd">&#9670;&nbsp;</a></span>channel_listener_count_accepted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t channel_listener_count_accepted </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td>
-          <td class="paramname"><em>chan_l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Query accepted counter </p>
 
 </div>
 </div>
@@ -1515,7 +1388,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Describe the transport subclass for a channel listener</p>
+<p>Describe the transport subclass for a channel listener.</p>
 <p>Invoke a method to get a string description of the lower-layer transport for this channel listener. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1554,8 +1427,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Dump channel listener statistics</p>
-<p>Dump statistics for one channel listener to the log </p>
+<p>Dump channel listener statistics.</p>
+<p>Dump statistics for one channel listener to the log. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1603,8 +1476,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Invoke transport-specific stats dump for channel listener</p>
-<p>If there is a lower-layer statistics dump method, invoke it </p>
+<p>Invoke transport-specific stats dump for channel listener.</p>
+<p>If there is a lower-layer statistics dump method, invoke it. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1632,7 +1505,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Dump channel listener statistics to the log</p>
+<p>Dump channel listener statistics to the log.</p>
 <p>This is called from dumpstats() in <a class="el" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop...">main.c</a> and spams the log with statistics on channel listeners. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1649,14 +1522,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a5140f151872899d07a2f1cd451902d38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5140f151872899d07a2f1cd451902d38">&#9670;&nbsp;</a></span>channel_listener_free()</h2>
+<a id="aa917fccb124ebe2d88705c5893875984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa917fccb124ebe2d88705c5893875984">&#9670;&nbsp;</a></span>channel_listener_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void channel_listener_free </td>
+          <td class="memname">void channel_listener_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td>
           <td class="paramname"><em>chan_l</em></td><td>)</td>
@@ -1665,34 +1538,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Free a channel listener; nothing outside of <a class="el" href="channel_8c.html" title="OR/OP-to-OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ...">channel.c</a> and subclasses should call this - it frees channel listeners after they have closed and been unregistered. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="channel_8c_a5140f151872899d07a2f1cd451902d38_icgraph.png" border="0" usemap="#channel_8c_a5140f151872899d07a2f1cd451902d38_icgraph" alt=""/></div>
-<map name="channel_8c_a5140f151872899d07a2f1cd451902d38_icgraph" id="channel_8c_a5140f151872899d07a2f1cd451902d38_icgraph">
-<area shape="rect" id="node2" href="channel_8h.html#a3e7838364ded7b78a661a1f3f2f1c266" title="channel_listener_run\l_cleanup" alt="" coords="199,5,340,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a59de51fdda7279dce0fcbae586b50e38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59de51fdda7279dce0fcbae586b50e38">&#9670;&nbsp;</a></span>channel_listener_get_listener_fn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">channel_listener_fn_ptr channel_listener_get_listener_fn </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td>
-          <td class="paramname"><em>chan_l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the current registered listener for a channel listener</p>
-<p>This function returns a function pointer to the current registered handler for new incoming channels on a channel listener. </p>
 
 </div>
 </div>
@@ -1711,7 +1556,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mark a channel listener for closure</p>
+<p>Mark a channel listener for closure.</p>
 <p>This function tries to close a channel_listener_t; it will go into the CLOSING state, and eventually the lower layer should put it into the CLOSED or ERROR state. Then, <a class="el" href="channel_8c.html#a1d874b0dd28680dd7f9661e2490d9091">channel_run_cleanup()</a> will eventually free it. </p>
 
 </div>
@@ -1731,7 +1576,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Process the queue of incoming channels on a listener</p>
+<p>Process the queue of incoming channels on a listener.</p>
 <p>Use a listener's registered callback to process as many entries in the queue of incoming channels as possible. </p>
 
 </div>
@@ -1761,7 +1606,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Queue an incoming channel on a listener</p>
+<p>Queue an incoming channel on a listener.</p>
 <p>Internal and subclass use only function to queue an incoming channel from a listener. A subclass of channel_listener_t should call this when a new incoming channel is created. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1789,8 +1634,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Register a channel listener</p>
-<p>This function registers a newly created channel listner in the global lists/maps of active channel listeners. </p>
+<p>Register a channel listener.</p>
+<p>This function registers a newly created channel listener in the global lists/maps of active channel listeners. </p>
 
 </div>
 </div>
@@ -1809,15 +1654,14 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Clean up channel listeners</p>
+<p>Clean up channel listeners.</p>
 <p>This gets called periodically from run_scheduled_events() in <a class="el" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop...">main.c</a>; it cleans up after closed channel listeners. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="channel_8c_a3e7838364ded7b78a661a1f3f2f1c266_cgraph.png" border="0" usemap="#channel_8c_a3e7838364ded7b78a661a1f3f2f1c266_cgraph" alt=""/></div>
 <map name="channel_8c_a3e7838364ded7b78a661a1f3f2f1c266_cgraph" id="channel_8c_a3e7838364ded7b78a661a1f3f2f1c266_cgraph">
-<area shape="rect" id="node2" href="channel_8c.html#a2d954d609b0decab6e56e2ab7e2444f6" title="channel_listener_unregister" alt="" coords="195,5,375,32"/>
-<area shape="rect" id="node3" href="channel_8c.html#a5140f151872899d07a2f1cd451902d38" title="channel_listener_free" alt="" coords="212,56,357,83"/>
+<area shape="rect" id="node2" href="channel_8c.html#a2d954d609b0decab6e56e2ab7e2444f6" title="channel_listener_unregister" alt="" coords="195,13,375,39"/>
 </map>
 </div>
 
@@ -1848,7 +1692,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the listener for a channel listener</p>
+<p>Set the listener for a channel listener.</p>
 <p>This function sets the handler for new incoming channels on a channel listener. </p>
 
 </div>
@@ -1878,7 +1722,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Indicate whether a channel listener state transition is valid</p>
+<p>Indicate whether a channel listener state transition is valid.</p>
 <p>This function takes two channel listener states and indicates whether a transition between them is permitted (see the state definitions and transition table in <a class="el" href="or_8h.html" title="Master header file for Tor-specific functionality. ">or.h</a> at the channel_listener_state_t typedef). </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1906,7 +1750,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Indicate whether a given channel listener state is valid </p>
+<p>Indicate whether a given channel listener state is valid. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1933,7 +1777,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return a human-readable description for a channel listenier state </p>
+<p>Return a human-readable description for a channel listener state. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1981,7 +1825,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update the last active timestamp for a channel listener </p>
+<p>Update the last active timestamp for a channel listener. </p>
 
 </div>
 </div>
@@ -2000,8 +1844,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update the created timestamp for a channel listener</p>
+<p>Update the created timestamp for a channel listener.</p>
 <p>This updates the channel listener's created timestamp and should only be called from <a class="el" href="channel_8c.html#a4259678584b7e032533f1144a7412616">channel_init_listener()</a>. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channel_8c_a7c86ea4153b077173702319f0fa5b196_icgraph.png" border="0" usemap="#channel_8c_a7c86ea4153b077173702319f0fa5b196_icgraph" alt=""/></div>
+<map name="channel_8c_a7c86ea4153b077173702319f0fa5b196_icgraph" id="channel_8c_a7c86ea4153b077173702319f0fa5b196_icgraph">
+<area shape="rect" id="node2" href="channel_8c.html#a4259678584b7e032533f1144a7412616" title="channel_init_listener" alt="" coords="237,13,377,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2020,7 +1872,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Unregister a channel listener</p>
+<p>Unregister a channel listener.</p>
 <p>This function removes a channel listener from the global lists and maps and is used when freeing a closed/errored channel listener. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2030,63 +1882,6 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="channel_8h.html#a3e7838364ded7b78a661a1f3f2f1c266" title="channel_listener_run\l_cleanup" alt="" coords="233,5,375,47"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a0dbcc9a594a0c1794e26a40e7c9dd99b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dbcc9a594a0c1794e26a40e7c9dd99b">&#9670;&nbsp;</a></span>channel_listener_when_created()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t channel_listener_when_created </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td>
-          <td class="paramname"><em>chan_l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Query created timestamp for a channel listener </p>
-
-</div>
-</div>
-<a id="a8926e55f5ad9503ad24c9c4e6f663df5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8926e55f5ad9503ad24c9c4e6f663df5">&#9670;&nbsp;</a></span>channel_listener_when_last_accepted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t channel_listener_when_last_accepted </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td>
-          <td class="paramname"><em>chan_l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Query last accepted timestamp for a channel listener </p>
-
-</div>
-</div>
-<a id="a2f1789dfc777235ab09dabb4977653b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f1789dfc777235ab09dabb4977653b6">&#9670;&nbsp;</a></span>channel_listener_when_last_active()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t channel_listener_when_last_active </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td>
-          <td class="paramname"><em>chan_l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Query last active timestamp for a channel listener </p>
 
 </div>
 </div>
@@ -2105,7 +1900,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mark a channel as bad for new circuits</p>
+<p>Mark a channel as bad for new circuits.</p>
 <p>Set the is_bad_for_new_circs_flag on chan. </p>
 
 </div>
@@ -2125,8 +1920,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the client flag</p>
-<p>Mark a channel as being from a client </p>
+<p>Set the client flag.</p>
+<p>Mark a channel as being from a client. </p>
 
 </div>
 </div>
@@ -2145,8 +1940,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mark a channel for closure</p>
+<p>Mark a channel for closure.</p>
 <p>This function tries to close a channel_t; it will go into the CLOSING state, and eventually the lower layer should put it into the CLOSED or ERROR state. Then, <a class="el" href="channel_8c.html#a1d874b0dd28680dd7f9661e2490d9091">channel_run_cleanup()</a> will eventually free it. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channel_8c_ac5c51ad12ff89e0f63cc386ccda8493f_icgraph.png" border="0" usemap="#channel_8c_ac5c51ad12ff89e0f63cc386ccda8493f_icgraph" alt=""/></div>
+<map name="channel_8c_ac5c51ad12ff89e0f63cc386ccda8493f_icgraph" id="channel_8c_ac5c51ad12ff89e0f63cc386ccda8493f_icgraph">
+<area shape="rect" id="node2" href="fakechans_8h.html#a2cff55df4a9516484aba4c6302c9deda" title="scheduler_release_channel_mock" alt="" coords="216,5,435,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2165,7 +1968,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the incoming flag</p>
+<p>Set the incoming flag.</p>
 <p>This function is called when a channel arrives on a listening channel to mark it as incoming. </p>
 
 </div>
@@ -2185,8 +1988,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the local flag</p>
-<p>This internal-only function should be called by the lower layer if the channel is to a local address. See <a class="el" href="channel_8c.html#ab7950c59a4fefcd76e3e3b327d86114f">channel_is_local()</a> above or the description of the is_local bit in <a class="el" href="channel_8h.html" title="Header file for channel.c. ">channel.h</a> </p>
+<p>Set the local flag.</p>
+<p>This internal-only function should be called by the lower layer if the channel is to a local address. See <a class="el" href="channel_8c.html#ab7950c59a4fefcd76e3e3b327d86114f">channel_is_local()</a> above or the description of the is_local bit in <a class="el" href="channel_8h.html" title="Header file for channel.c. ">channel.h</a>. </p>
 
 </div>
 </div>
@@ -2205,7 +2008,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mark a channel as outgoing</p>
+<p>Mark a channel as outgoing.</p>
 <p>This function clears the incoming flag and thus marks a channel as outgoing. </p>
 
 </div>
@@ -2225,7 +2028,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mark a channel as remote</p>
+<p>Mark a channel as remote.</p>
 <p>This internal-only function should be called by the lower layer if the channel is not to a local address but has previously been marked local. See <a class="el" href="channel_8c.html#ab7950c59a4fefcd76e3e3b327d86114f">channel_is_local()</a> above or the description of the is_local bit in <a class="el" href="channel_8h.html" title="Header file for channel.c. ">channel.h</a> </p>
 
 </div>
@@ -2255,15 +2058,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if a channel matches an <a class="el" href="structextend__info__t.html">extend_info_t</a></p>
+<p>Check if a channel matches an <a class="el" href="structextend__info__t.html">extend_info_t</a>.</p>
 <p>This function calls the lower layer and asks if this channel matches a given <a class="el" href="structextend__info__t.html">extend_info_t</a>. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="channel_8c_a6cb4f4e8f649a753d3d22fb84653c05b_icgraph.png" border="0" usemap="#channel_8c_a6cb4f4e8f649a753d3d22fb84653c05b_icgraph" alt=""/></div>
 <map name="channel_8c_a6cb4f4e8f649a753d3d22fb84653c05b_icgraph" id="channel_8c_a6cb4f4e8f649a753d3d22fb84653c05b_icgraph">
-<area shape="rect" id="node2" href="circuitlist_8h.html#aaef0c4aefe50f0432478e21e51814a34" title="circuit_get_all_pending\l_on_channel" alt="" coords="252,5,407,47"/>
-<area shape="rect" id="node3" href="circuitlist_8h.html#aa797a036ce04a0d14f669e656ec62408" title="circuit_count_pending\l_on_channel" alt="" coords="455,5,603,47"/>
+<area shape="rect" id="node2" href="circuitlist_8h.html#aaef0c4aefe50f0432478e21e51814a34" title="circuit_get_all_pending\l_on_channel" alt="" coords="252,35,407,76"/>
+<area shape="rect" id="node3" href="circuitlist_8h.html#aa797a036ce04a0d14f669e656ec62408" title="circuit_count_pending\l_on_channel" alt="" coords="462,5,610,47"/>
+<area shape="rect" id="node4" href="entrynodes_8h.html#a0e486d12b1fae8b40a392567b676a083" title="entry_guard_chan_failed" alt="" coords="455,71,617,98"/>
 </map>
 </div>
 
@@ -2299,14 +2103,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ae21ca65f57566e7d01246216b3a6927f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae21ca65f57566e7d01246216b3a6927f">&#9670;&nbsp;</a></span>channel_more_to_flush()</h2>
+<a id="a1bb42fd943884ecec3e7a7469c4e52f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb42fd943884ecec3e7a7469c4e52f3">&#9670;&nbsp;</a></span>channel_next_with_rsa_identity()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int channel_more_to_flush </td>
+          <td class="memname"><a class="el" href="structchannel__s.html">channel_t</a>* channel_next_with_rsa_identity </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
           <td class="paramname"><em>chan</em></td><td>)</td>
@@ -2314,34 +2118,14 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if any cells are available</p>
-<p>This gets used from the lower layer to check if any more cells are available. </p>
-
-</div>
-</div>
-<a id="a53ee6566b1661b9e37181d8f83efdfbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53ee6566b1661b9e37181d8f83efdfbd">&#9670;&nbsp;</a></span>channel_next_with_digest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structchannel__s.html">channel_t</a>* channel_next_with_digest </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get next channel with digest</p>
+<p>Get next channel with digest.</p>
 <p>This function takes a channel and finds the next channel in the list with the same digest. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="channel_8c_a53ee6566b1661b9e37181d8f83efdfbd_icgraph.png" border="0" usemap="#channel_8c_a53ee6566b1661b9e37181d8f83efdfbd_icgraph" alt=""/></div>
-<map name="channel_8c_a53ee6566b1661b9e37181d8f83efdfbd_icgraph" id="channel_8c_a53ee6566b1661b9e37181d8f83efdfbd_icgraph">
-<area shape="rect" id="node2" href="channel_8h.html#a41ebc2554b7f8fd2b5c331bf7dc94ecc" title="channel_get_for_extend" alt="" coords="225,5,385,32"/>
+<div class="center"><img src="channel_8c_a1bb42fd943884ecec3e7a7469c4e52f3_icgraph.png" border="0" usemap="#channel_8c_a1bb42fd943884ecec3e7a7469c4e52f3_icgraph" alt=""/></div>
+<map name="channel_8c_a1bb42fd943884ecec3e7a7469c4e52f3_icgraph" id="channel_8c_a1bb42fd943884ecec3e7a7469c4e52f3_icgraph">
+<area shape="rect" id="node2" href="channel_8h.html#a225a9a8dab25e6fa224525867d0a056e" title="channel_get_for_extend" alt="" coords="208,13,368,39"/>
 </map>
 </div>
 
@@ -2362,7 +2146,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Notify the channel we're done flushing the output in the lower layer</p>
+<p>Notify the channel we're done flushing the output in the lower layer.</p>
 <p><a class="el" href="connection_8c.html" title="General high-level functions to handle reading and writing on connections. ">Connection.c</a> will call this when we've flushed the output; there's some dirreq-related maintenance to do. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2372,6 +2156,26 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="geoip_8c.html#a2a34cf4b056ecac0418dcc5927b03bb6" title="geoip_change_dirreq\l_state" alt="" coords="208,5,349,47"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="abcbcbfef4049d88a2975b9cf4ca71645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbcbfef4049d88a2975b9cf4ca71645">&#9670;&nbsp;</a></span>channel_num_cells_writeable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int channel_num_cells_writeable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estimate the number of writeable cells.</p>
+<p>Ask the lower layer for an estimate of how many cells it can accept. </p>
 
 </div>
 </div>
@@ -2390,7 +2194,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the total number of circuits used by a channel</p>
+<p>Return the total number of circuits used by a channel.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">chan</td><td>Channel to query </td></tr>
@@ -2403,41 +2207,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="channel_8c_ae541683374c3002a6218c576c9775910_icgraph.png" border="0" usemap="#channel_8c_ae541683374c3002a6218c576c9775910_icgraph" alt=""/></div>
 <map name="channel_8c_ae541683374c3002a6218c576c9775910_icgraph" id="channel_8c_ae541683374c3002a6218c576c9775910_icgraph">
-<area shape="rect" id="node2" href="channel_8h.html#aa37fcbdaafeac83501c1699e61d8e128" title="channel_is_better" alt="" coords="201,5,325,32"/>
+<area shape="rect" id="node2" href="channel_8h.html#a098e7f8cd053cab6477b2ff9dcbd7190" title="channel_is_better" alt="" coords="201,5,325,32"/>
 <area shape="rect" id="node3" href="connection__or_8c.html#a91065ac60ede0c2ccdaf7d2ff4892d5d" title="MOCK_IMPL" alt="" coords="213,56,313,83"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a4d779fa720c5cbfaf471beed3bb4a250"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d779fa720c5cbfaf471beed3bb4a250">&#9670;&nbsp;</a></span>channel_process_cells()</h2>
+<a id="a4ee1b816cf17de95ff399e365f1725bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee1b816cf17de95ff399e365f1725bd">&#9670;&nbsp;</a></span>channel_process_cell()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void channel_process_cells </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Process queued incoming cells</p>
-<p>Process as many queued cells as we can from the incoming cell queue. </p>
-
-</div>
-</div>
-<a id="ad6b3fc1d914f5b70d578f9d6c28b7d08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6b3fc1d914f5b70d578f9d6c28b7d08">&#9670;&nbsp;</a></span>channel_queue_cell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_queue_cell </td>
+          <td class="memname">void channel_process_cell </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -2455,38 +2239,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Queue incoming cell</p>
-<p>This should be called by a channel_t subclass to queue an incoming fixed- length cell for processing, and process it if possible. </p>
-
-</div>
-</div>
-<a id="afd3f5f080d288757750e3a87197e0fe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd3f5f080d288757750e3a87197e0fe0">&#9670;&nbsp;</a></span>channel_queue_var_cell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_queue_var_cell </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvar__cell__t.html">var_cell_t</a> *&#160;</td>
-          <td class="paramname"><em>var_cell</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Queue incoming variable-length cell</p>
-<p>This should be called by a channel_t subclass to queue an incoming variable-length cell for processing, and process it if possible. </p>
+<p>Process a cell from the given channel. </p>
 
 </div>
 </div>
@@ -2505,8 +2258,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Register a channel</p>
+<p>Register a channel.</p>
 <p>This function registers a newly created channel in the global lists/maps of active channels. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channel_8c_a7becc4cc5e7dd116f44f86a1b826dc9a_icgraph.png" border="0" usemap="#channel_8c_a7becc4cc5e7dd116f44f86a1b826dc9a_icgraph" alt=""/></div>
+<map name="channel_8c_a7becc4cc5e7dd116f44f86a1b826dc9a_icgraph" id="channel_8c_a7becc4cc5e7dd116f44f86a1b826dc9a_icgraph">
+<area shape="rect" id="node2" href="fakechans_8h.html#a2cff55df4a9516484aba4c6302c9deda" title="scheduler_release_channel_mock" alt="" coords="171,5,389,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2525,7 +2286,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Clean up channels</p>
+<p>Clean up channels.</p>
 <p>This gets called periodically from run_scheduled_events() in <a class="el" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop...">main.c</a>; it cleans up after closed channels. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2533,7 +2294,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="channel_8c_a1d874b0dd28680dd7f9661e2490d9091_cgraph.png" border="0" usemap="#channel_8c_a1d874b0dd28680dd7f9661e2490d9091_cgraph" alt=""/></div>
 <map name="channel_8c_a1d874b0dd28680dd7f9661e2490d9091_cgraph" id="channel_8c_a1d874b0dd28680dd7f9661e2490d9091_cgraph">
 <area shape="rect" id="node2" href="channel_8c.html#a9bbc6210c258ddbc944e9f0d6d386b45" title="channel_unregister" alt="" coords="197,5,328,32"/>
-<area shape="rect" id="node3" href="channel_8c.html#a3ac80d0068b62d8da9adddb13ff2a6cf" title="channel_free" alt="" coords="215,56,311,83"/>
 </map>
 </div>
 
@@ -2570,7 +2330,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send destroy cell on a channel</p>
+<p>Send destroy cell on a channel.</p>
 <p>Write a destroy cell with circ ID <b>circ_id</b> and reason <b>reason</b> onto channel <b>chan</b>. Don't perform range-checking on reason: we may want to propagate reasons from other cells. </p>
 
 </div>
@@ -2606,8 +2366,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set both cell handlers for a channel</p>
-<p>This function sets both the fixed-length and variable length cell handlers for a channel and processes any incoming cells that had been blocked in the queue because none were available. </p>
+<p>Set both cell handlers for a channel.</p>
+<p>This function sets both the fixed-length and variable length cell handlers for a channel. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2619,37 +2379,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab581fe82a432b885561d00ab3ecceba6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab581fe82a432b885561d00ab3ecceba6">&#9670;&nbsp;</a></span>channel_set_cmux_policy_everywhere()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_set_cmux_policy_everywhere </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structcircuitmux__policy__s.html">circuitmux_policy_t</a> *&#160;</td>
-          <td class="paramname"><em>pol</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the cmux policy on all active channels </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="channel_8c_ab581fe82a432b885561d00ab3ecceba6_cgraph.png" border="0" usemap="#channel_8c_ab581fe82a432b885561d00ab3ecceba6_cgraph" alt=""/></div>
-<map name="channel_8c_ab581fe82a432b885561d00ab3ecceba6_cgraph" id="channel_8c_ab581fe82a432b885561d00ab3ecceba6_cgraph">
-<area shape="rect" id="node2" href="circuitmux_8c.html#a4a5fff70da3c5abf8e3ae7abd1aee1cc" title="circuitmux_set_policy" alt="" coords="225,35,373,61"/>
-<area shape="rect" id="node3" href="channel_8c.html#a03ce362c180c51c5018668bae7bb4f24" title="channel_find_by_global_id" alt="" coords="421,5,596,32"/>
-<area shape="rect" id="node4" href="circuitlist_8c.html#a0b3f5de779a301bc93a2293e6f689b60" title="circuit_get_by_circid\l_channel_even_if_marked" alt="" coords="422,57,595,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a1480a4744614272467a7a8f0d8fcfe10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1480a4744614272467a7a8f0d8fcfe10">&#9670;&nbsp;</a></span>channel_set_identity_digest()</h2>
+<a id="a232c3afb3714be50f965df83b2d2d40d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232c3afb3714be50f965df83b2d2d40d">&#9670;&nbsp;</a></span>channel_set_identity_digest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2664,43 +2395,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>identity_digest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the identity_digest of a channel</p>
-<p>This function sets the identity digest of the remote endpoint for a channel; this is intended for use by the lower layer. </p>
-
-</div>
-</div>
-<a id="a4c0eafffa39adec24d12c71d73ff787e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c0eafffa39adec24d12c71d73ff787e">&#9670;&nbsp;</a></span>channel_set_remote_end()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_set_remote_end </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>identity_digest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>nickname</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
+          <td class="paramname"><em>ed_identity</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2709,8 +2410,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the remote end metadata (identity_digest/nickname) of a channel</p>
-<p>This function sets new remote end info on a channel; this is intended for use by the lower layer. </p>
+<p>Set the identity_digest of a channel.</p>
+<p>This function sets the identity digest of the remote endpoint for a channel; this is intended for use by the lower layer. </p>
 
 </div>
 </div>
@@ -2739,7 +2440,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Indicate whether a channel state transition is valid</p>
+<p>Indicate whether a channel state transition is valid.</p>
 <p>This function takes two channel states and indicates whether a transition between them is permitted (see the state definitions and transition table in <a class="el" href="or_8h.html" title="Master header file for Tor-specific functionality. ">or.h</a> at the channel_state_t typedef). </p>
 
 </div>
@@ -2759,7 +2460,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return a human-readable description for a channel state </p>
+<p>Return a human-readable description for a channel state. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2786,8 +2487,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update the last active timestamp for a channel</p>
+<p>Update the last active timestamp for a channel.</p>
 <p>This function updates the channel's last active timestamp; it should be called by the lower layer whenever there is activity on the channel which does not lead to a cell being transmitted or received; the active timestamp is also updated from <a class="el" href="channel_8c.html#a1cc7e87f9acbb2d5954540f997cf0b57">channel_timestamp_recv()</a> and <a class="el" href="channel_8c.html#abdbe03d1c68e1ebc7133e4195fbfca29">channel_timestamp_xmit()</a>, but it should be updated for things like the v3 handshake and stuff that produce activity only visible to the lower layer. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channel_8c_a08dea4276de8427cb789cda94be8eea7_icgraph.png" border="0" usemap="#channel_8c_a08dea4276de8427cb789cda94be8eea7_icgraph" alt=""/></div>
+<map name="channel_8c_a08dea4276de8427cb789cda94be8eea7_icgraph" id="channel_8c_a08dea4276de8427cb789cda94be8eea7_icgraph">
+<area shape="rect" id="node2" href="connection__or_8h.html#a8e6891862efd73402fed97a4353b2b24" title="connection_or_flushed_some" alt="" coords="231,5,421,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2806,7 +2515,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update client timestamp</p>
+<p>Update client timestamp.</p>
 <p>This function is called by <a class="el" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. ">relay.c</a> to timestamp a channel that appears to be used as a client. </p>
 
 </div>
@@ -2826,28 +2535,17 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update the created timestamp for a channel</p>
+<p>Update the created timestamp for a channel.</p>
 <p>This updates the channel's created timestamp and should only be called from <a class="el" href="channel_8c.html#af394d37fffd7367c8c882834e6451a89">channel_init()</a>. </p>
-
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channel_8c_a63986ced82f0d5c58fd872e40ed46598_icgraph.png" border="0" usemap="#channel_8c_a63986ced82f0d5c58fd872e40ed46598_icgraph" alt=""/></div>
+<map name="channel_8c_a63986ced82f0d5c58fd872e40ed46598_icgraph" id="channel_8c_a63986ced82f0d5c58fd872e40ed46598_icgraph">
+<area shape="rect" id="node2" href="channel_8c.html#af394d37fffd7367c8c882834e6451a89" title="channel_init" alt="" coords="239,5,329,32"/>
+<area shape="rect" id="node3" href="channeltls_8c.html#af1ad4a1777eab15f13e8478802ac5d5e" title="channel_tls_common_init" alt="" coords="377,5,547,32"/>
+</map>
 </div>
-</div>
-<a id="ae241ae9b959f87e8ef459072554b212c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae241ae9b959f87e8ef459072554b212c">&#9670;&nbsp;</a></span>channel_timestamp_drained()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_timestamp_drained </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Update the last drained timestamp</p>
-<p>This is called whenever we transmit a cell which leaves the outgoing cell queue completely empty. It also updates the xmit time and the active time. </p>
 
 </div>
 </div>
@@ -2866,7 +2564,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update the recv timestamp</p>
+<p>Update the recv timestamp.</p>
 <p>This is called whenever we get an incoming cell from the lower layer. This also updates the active timestamp. </p>
 
 </div>
@@ -2886,7 +2584,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update the xmit timestamp This is called whenever we pass an outgoing cell to the lower layer. This also updates the active timestamp. </p>
+<p>Update the xmit timestamp.</p>
+<p>This is called whenever we pass an outgoing cell to the lower layer. This also updates the active timestamp. </p>
 
 </div>
 </div>
@@ -2905,7 +2604,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Unregister a channel</p>
+<p>Unregister a channel.</p>
 <p>This function removes a channel from the global lists and maps and is used when freeing a closed/errored channel. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2918,30 +2617,32 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="abf9310a1fa1a4d1cb1e3af383a98d902"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf9310a1fa1a4d1cb1e3af383a98d902">&#9670;&nbsp;</a></span>channel_update_xmit_queue_size()</h2>
+<a id="a1e4bd42593d0df3646e947bf4661648f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4bd42593d0df3646e947bf4661648f">&#9670;&nbsp;</a></span>channel_update_bad_for_new_circs()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void channel_update_xmit_queue_size </td>
+          <td class="memname">void channel_update_bad_for_new_circs </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>force</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update the estimated number of bytes queued to transmit for this channel, and notify the scheduler. The estimate includes both the channel queue and the queue size reported by the lower layer, and an overhead estimate optionally provided by the lower layer. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="channel_8c_abf9310a1fa1a4d1cb1e3af383a98d902_icgraph.png" border="0" usemap="#channel_8c_abf9310a1fa1a4d1cb1e3af383a98d902_icgraph" alt=""/></div>
-<map name="channel_8c_abf9310a1fa1a4d1cb1e3af383a98d902_icgraph" id="channel_8c_abf9310a1fa1a4d1cb1e3af383a98d902_icgraph">
-<area shape="rect" id="node2" href="connection__or_8h.html#a8e6891862efd73402fed97a4353b2b24" title="connection_or_flushed_some" alt="" coords="199,13,389,39"/>
-</map>
-</div>
+<p>Go through all the channels (or if <b>digest</b> is non-NULL, just the OR connections with that digest), and set the is_bad_for_new_circs flag based on the rules in connection_or_group_set_badness() (or just always set it if <b>force</b> is true). </p>
 
 </div>
 </div>
@@ -2960,34 +2661,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Query created timestamp for a channel </p>
+<p>Query created timestamp for a channel. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="channel_8c_aeff1eebb5bba0a9371c5679994d51329_icgraph.png" border="0" usemap="#channel_8c_aeff1eebb5bba0a9371c5679994d51329_icgraph" alt=""/></div>
 <map name="channel_8c_aeff1eebb5bba0a9371c5679994d51329_icgraph" id="channel_8c_aeff1eebb5bba0a9371c5679994d51329_icgraph">
-<area shape="rect" id="node2" href="channel_8h.html#aa37fcbdaafeac83501c1699e61d8e128" title="channel_is_better" alt="" coords="208,5,332,32"/>
+<area shape="rect" id="node2" href="channel_8h.html#a098e7f8cd053cab6477b2ff9dcbd7190" title="channel_is_better" alt="" coords="208,5,332,32"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a886fbc84390a27e4007562e2e3ddacb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a886fbc84390a27e4007562e2e3ddacb5">&#9670;&nbsp;</a></span>channel_when_last_active()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t channel_when_last_active </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Query last active timestamp for a channel </p>
 
 </div>
 </div>
@@ -3006,7 +2688,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Query client timestamp </p>
+<p>Query client timestamp. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -3015,44 +2697,6 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="connection__or_8h.html#a28d99e23c45ae40c245a0474ef4cfb98" title="connection_or_client_used" alt="" coords="224,5,400,32"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a04116ec19eadb75b7315366655023791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04116ec19eadb75b7315366655023791">&#9670;&nbsp;</a></span>channel_when_last_drained()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t channel_when_last_drained </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Query drained timestamp </p>
-
-</div>
-</div>
-<a id="adcbc61adb34b9ce4351a0d5f68915e52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcbc61adb34b9ce4351a0d5f68915e52">&#9670;&nbsp;</a></span>channel_when_last_recv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t channel_when_last_recv </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Query recv timestamp </p>
 
 </div>
 </div>
@@ -3071,18 +2715,18 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Query xmit timestamp </p>
+<p>Query xmit timestamp. </p>
 
 </div>
 </div>
-<a id="ab7dce1c4def06886d0a3e8f2aeb9d136"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7dce1c4def06886d0a3e8f2aeb9d136">&#9670;&nbsp;</a></span>channel_write_cell()</h2>
+<a id="aea762ac9b96570c55daa5dd57c95eafa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea762ac9b96570c55daa5dd57c95eafa">&#9670;&nbsp;</a></span>channel_write_packed_cell()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void channel_write_cell </td>
+          <td class="memname">int channel_write_packed_cell </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -3090,7 +2734,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structcell__t.html">cell_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structpacked__cell__t.html">packed_cell_t</a> *&#160;</td>
           <td class="paramname"><em>cell</em>&#160;</td>
         </tr>
         <tr>
@@ -3100,73 +2744,14 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Write a cell to a channel</p>
-<p>Write a fixed-length cell to a channel using the write_cell() method. This is equivalent to the pre-channels <a class="el" href="connection__or_8c.html#a1a80590d68a6d8ea9b011ae44245929b">connection_or_write_cell_to_buf()</a>; it is called by the transport-independent code to deliver a cell to a channel for transmission. </p>
+<p>Write a packed cell to a channel.</p>
+<p>Write a packed cell to a channel using the write_cell() method. This is called by the transport-independent code to deliver a packed cell to a channel for transmission.</p>
+<p>Return 0 on success else a negative value. In both cases, the caller should not access the cell anymore, it is freed both on success and error. </p>
 
 </div>
 </div>
-<a id="aea0e0508f558e3d29851bbd87dfbf361"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea0e0508f558e3d29851bbd87dfbf361">&#9670;&nbsp;</a></span>channel_write_packed_cell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_write_packed_cell </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structpacked__cell__t.html">packed_cell_t</a> *&#160;</td>
-          <td class="paramname"><em>packed_cell</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Write a packed cell to a channel</p>
-<p>Write a packed cell to a channel using the write_cell() method. This is called by the transport-independent code to deliver a packed cell to a channel for transmission. </p>
-
-</div>
-</div>
-<a id="a387865cbc97d826ef17a2f0d48a9cbfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a387865cbc97d826ef17a2f0d48a9cbfb">&#9670;&nbsp;</a></span>channel_write_var_cell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void channel_write_var_cell </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structvar__cell__t.html">var_cell_t</a> *&#160;</td>
-          <td class="paramname"><em>var_cell</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Write a variable-length cell to a channel</p>
-<p>Write a variable-length cell to a channel using the write_cell() method. This is equivalent to the pre-channels connection_or_write_var_cell_to_buf(); it's called by the transport- independent code to deliver a var_cell to a channel for transmission. </p>
-
-</div>
-</div>
-<a id="a38d8588aca63b8d32676f209de93348a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d8588aca63b8d32676f209de93348a">&#9670;&nbsp;</a></span>HT_PROTOTYPE()</h2>
+<a id="ad47201fb54e0db44f552c018d59e535d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad47201fb54e0db44f552c018d59e535d">&#9670;&nbsp;</a></span>HT_PROTOTYPE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3174,32 +2759,38 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">HT_PROTOTYPE </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="nodelist_8c.html#ab29f8b81bcf05c59f16fb5b42ec36879">HT_GENERATE2</a>(&#160;</td>
-          <td class="paramname"><em>channel_idmap</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indicate whether a given channel state is valid. </p>
+
+</div>
+</div>
+<a id="ae9de3211fa3b2007ca0f42e9022dc800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9de3211fa3b2007ca0f42e9022dc800">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">ssize_t&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nodelist_8c.html#ab29f8b81bcf05c59f16fb5b42ec36879">HT_GENERATE2</a>(&#160;</td>
-          <td class="paramname"><em>channel_idmap_entry_s</em>, </td>
+          <td class="paramtype">channel_flush_some_cells&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="nodelist_8c.html#ab29f8b81bcf05c59f16fb5b42ec36879">HT_GENERATE2</a>(&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nodelist_8c.html#ab29f8b81bcf05c59f16fb5b42ec36879">HT_GENERATE2</a>(&#160;</td>
-          <td class="paramname"><em>channel_idmap_hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nodelist_8c.html#ab29f8b81bcf05c59f16fb5b42ec36879">HT_GENERATE2</a>(&#160;</td>
-          <td class="paramname"><em>channel_idmap_eq</em>&#160;</td>
+          <td class="paramtype">(<a class="el" href="structchannel__s.html">channel_t</a> *chan, ssize_t num_cells)&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3208,12 +2799,53 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Indicate whether a given channel state is valid </p>
+<p>Try to flush cells of the given channel chan up to a maximum of num_cells.</p>
+<p>This is called by the scheduler when it wants to flush cells from the channel's circuit queue(s) to the connection outbuf (not yet on the wire).</p>
+<p>If the channel is not in state CHANNEL_STATE_OPEN, this does nothing and will return 0 meaning no cells were flushed.</p>
+<p>If num_cells is -1, we'll try to flush up to the maximum cells allowed defined in MAX_CELLS_TO_GET_FROM_CIRCUITS_FOR_UNLIMITED.</p>
+<p>On success, the number of flushed cells are returned and it can never be above num_cells. If 0 is returned, no cells were flushed either because the channel was not opened or we had no cells on the channel. A negative number can NOT be sent back.</p>
+<p>This function is part of the fast path. </p>
+
+</div>
+</div>
+<a id="a4c8cfb44344a590f1ac113dfd415b02f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8cfb44344a590f1ac113dfd415b02f">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">channel_more_to_flush&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="structchannel__s.html">channel_t</a> *chan)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check if any cells are available.</p>
+<p>This is used by the scheduler to know if the channel has more to flush after a scheduling round. </p>
 
 </div>
 </div>
 <a id="ab56dc7ecc8a31e8bfa4dc5281b72c21e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab56dc7ecc8a31e8bfa4dc5281b72c21e">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56dc7ecc8a31e8bfa4dc5281b72c21e">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3243,8 +2875,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Dump channel statistics</p>
-<p>Dump statistics for one channel to the log </p>
+<p>Dump channel statistics.</p>
+<p>Dump statistics for one channel to the log. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -3263,7 +2895,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a026e3719d86173650d21c6f28124514e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a026e3719d86173650d21c6f28124514e">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a026e3719d86173650d21c6f28124514e">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3299,7 +2931,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ae9d6f1fad148b483bdb8d2443dab0718"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9d6f1fad148b483bdb8d2443dab0718">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9d6f1fad148b483bdb8d2443dab0718">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3329,8 +2961,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set up circuit ID generation</p>
-<p>This is called when setting up a channel and replaces the old connection_or_set_circid_type() </p>
+<p>Set up circuit ID generation.</p>
+<p>This is called when setting up a channel and replaces the old connection_or_set_circid_type(). </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -3339,7 +2971,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="channel_8c.html#a150180857a5c09e9ab16095b6011fd06" title="channel_is_outgoing" alt="" coords="168,5,308,32"/>
 <area shape="rect" id="node3" href="router_8c.html#aef981f743b968779701f12f26922d523" title="get_tlsclient_identity_key" alt="" coords="153,56,323,83"/>
 <area shape="rect" id="node4" href="router_8c.html#a8fb30f05264b37bff37fe8824b4d854b" title="get_server_identity_key" alt="" coords="158,107,318,133"/>
-<area shape="rect" id="node5" href="crypto_8c.html#a46a418431f50aacae8a7392edcbb1d2b" title="crypto_pk_cmp_keys" alt="" coords="165,157,311,184"/>
+<area shape="rect" id="node5" href="crypto__rsa_8c.html#a46a418431f50aacae8a7392edcbb1d2b" title="crypto_pk_cmp_keys" alt="" coords="165,157,311,184"/>
 <area shape="rect" id="node6" href="di__ops_8c.html#a47393c6ace65b9b2173d60ac6ae119aa" title="tor_memcmp" alt="" coords="371,157,469,184"/>
 </map>
 </div>

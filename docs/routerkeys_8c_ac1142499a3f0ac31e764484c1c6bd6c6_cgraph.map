@@ -1,7 +1,6 @@
 <map id="make_ntor_onion_key_crosscert" name="make_ntor_onion_key_crosscert">
-<area shape="rect" id="node2" href="$crypto__ed25519_8c.html#abb50b5bb9010dfe33e19a08f5cc362da" title="ed25519_keypair_from\l_curve25519_keypair" alt="" coords="203,37,356,79"/>
-<area shape="rect" id="node5" href="$torcert_8c.html#afa728c2dfbf24182ade2227b5dca4fe9" title="tor_cert_create" alt="" coords="225,103,334,130"/>
-<area shape="rect" id="node6" href="$crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="240,154,319,181"/>
-<area shape="rect" id="node3" href="$crypto__ed25519_8c.html#a250f7c3af49aabe2d1173325ae0841f5" title="ed25519_public_key\l_generate" alt="" coords="433,5,573,47"/>
-<area shape="rect" id="node4" href="$crypto__ed25519_8c.html#a8c15f72552477f36fca48340e53644e9" title="ed25519_public_key\l_from_curve25519_public_key" alt="" coords="404,71,603,112"/>
+<area shape="rect" id="node2" href="$crypto__ed25519_8c.html#abb50b5bb9010dfe33e19a08f5cc362da" title="ed25519_keypair_from\l_curve25519_keypair" alt="" coords="203,5,356,47"/>
+<area shape="rect" id="node4" href="$torcert_8c.html#afa728c2dfbf24182ade2227b5dca4fe9" title="tor_cert_create" alt="" coords="225,71,334,98"/>
+<area shape="rect" id="node5" href="$crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="240,122,319,149"/>
+<area shape="rect" id="node3" href="$crypto__digest_8c.html#aff99a8b3d871957cbefb2d9bfa116d1f" title="crypto_digest512_new" alt="" coords="404,13,556,39"/>
 </map>

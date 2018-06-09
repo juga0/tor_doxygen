@@ -1,0 +1,6 @@
+<map id="get_configured_bridge_by_orports_digest" name="get_configured_bridge_by_orports_digest">
+<area shape="rect" id="node2" href="$bridges_8h.html#a823bac0acf5f6b68ab2074757215eac3" title="node_is_a_configured\l_bridge" alt="" coords="203,23,351,65"/>
+<area shape="rect" id="node3" href="$nodelist_8h.html#a5c994699835c0d610e072920f397d6e8" title="node_has_preferred\l_descriptor" alt="" coords="399,23,535,65"/>
+<area shape="rect" id="node4" href="$circuitbuild_8h.html#ae78b2dc4ee0d019045639d2a33eea506" title="extend_info_from_node" alt="" coords="583,5,740,32"/>
+<area shape="rect" id="node5" href="$hs__common_8h.html#a9af4bf6fe3cc01d5524f2dd4123573a8" title="hs_pick_hsdir" alt="" coords="610,56,713,83"/>
+</map>

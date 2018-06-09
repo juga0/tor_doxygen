@@ -1,5 +1,7 @@
 <map id="do_main_loop" name="do_main_loop">
-<area shape="rect" id="node2" href="$main_8c.html#afe588553f651b21dfd63eb7109168272" title="initialize_periodic\l_events" alt="" coords="156,5,277,47"/>
-<area shape="rect" id="node4" href="$dns_8c.html#a100ddc42d1f3411bc6cfbc6185af76ae" title="dns_init" alt="" coords="183,71,250,98"/>
-<area shape="rect" id="node3" href="$periodic_8c.html#afcc35ea29c517238c986af91334290f6" title="periodic_event_setup" alt="" coords="325,13,471,39"/>
+<area shape="rect" id="node2" href="$main_8c.html#afe588553f651b21dfd63eb7109168272" title="initialize_periodic\l_events" alt="" coords="159,5,281,47"/>
+<area shape="rect" id="node4" href="$main_8c.html#ac14ea279fb1aac55027fc5f87826f23c" title="initialize_mainloop\l_events" alt="" coords="156,71,284,112"/>
+<area shape="rect" id="node6" href="$dns_8c.html#a100ddc42d1f3411bc6cfbc6185af76ae" title="dns_init" alt="" coords="187,137,253,163"/>
+<area shape="rect" id="node3" href="$periodic_8c.html#afcc35ea29c517238c986af91334290f6" title="periodic_event_setup" alt="" coords="359,13,505,39"/>
+<area shape="rect" id="node5" href="$compat__libevent_8c.html#a5cd5019864755687d5e6c473f7483366" title="mainloop_event_postloop_new" alt="" coords="332,78,532,105"/>
 </map>

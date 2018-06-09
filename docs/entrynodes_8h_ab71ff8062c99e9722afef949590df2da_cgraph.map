@@ -1,0 +1,5 @@
+<map id="guards_choose_guard" name="guards_choose_guard">
+<area shape="rect" id="node2" href="$circuituse_8c.html#a5e8e36fe1fa5af29eb3595f31e0e01db" title="circuit_should_use\l_vanguards" alt="" coords="207,5,337,47"/>
+<area shape="rect" id="node4" href="$circuitbuild_8c.html#a4928871a4861aa6f71b50a5642406747" title="build_state_get_exit\l_rsa_id" alt="" coords="203,71,341,112"/>
+<area shape="rect" id="node3" href="$circuituse_8c.html#aff875d76fff1f49cbbf561415216f3b3" title="circuit_purpose_is\l_hidden_service" alt="" coords="389,5,516,47"/>
+</map>

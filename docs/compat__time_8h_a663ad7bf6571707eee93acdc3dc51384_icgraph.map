@@ -1,0 +1,7 @@
+<map id="monotime_coarse_stamp_units_to_approx_msec" name="monotime_coarse_stamp_units_to_approx_msec">
+<area shape="rect" id="node2" href="$token__bucket_8c.html#a22392cbca806a78cd2e87691a6065251" title="rate_per_sec_to_rate\l_per_step" alt="" coords="221,23,365,65"/>
+<area shape="rect" id="node3" href="$token__bucket_8c.html#a50fe824eab38393da0fc4f96d745d42c" title="token_bucket_rw_adjust" alt="" coords="413,31,576,57"/>
+<area shape="rect" id="node4" href="$token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="638,5,783,32"/>
+<area shape="rect" id="node6" href="$connection_8h.html#a9c0760d1fc50f5bd96ab05890f121f11" title="connection_bucket_adjust" alt="" coords="624,56,797,83"/>
+<area shape="rect" id="node5" href="$connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="845,5,1000,32"/>
+</map>

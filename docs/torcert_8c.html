@@ -64,6 +64,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">torcert.c File Reference</div>  </div>
@@ -72,7 +73,9 @@ $(function() {
 
 <p>Implementation for ed25519-signed certificates as used in the Tor protocol.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="crypto_8h_source.html">crypto.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;torcert.h&quot;</code><br />
 <code>#include &quot;ed25519_cert.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="torlog_8h_source.html">torlog.h</a>&quot;</code><br />
@@ -84,38 +87,73 @@ Include dependency graph for torcert.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="torcert_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2torcert_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2torcert_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2torcert_8c">
-<area shape="rect" id="node2" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1209,184,1278,211"/>
-<area shape="rect" id="node7" href="compat_8h_source.html" title="compat.h" alt="" coords="891,259,967,285"/>
-<area shape="rect" id="node12" href="torcert_8h_source.html" title="torcert.h" alt="" coords="496,109,567,136"/>
-<area shape="rect" id="node15" href="ed25519__cert_8h_source.html" title="ed25519_cert.h" alt="" coords="171,109,281,136"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="192,184,257,211"/>
-<area shape="rect" id="node20" href="util_8h.html" title="Headers for util.c. " alt="" coords="1069,109,1119,136"/>
-<area shape="rect" id="node24" href="link__handshake_8h_source.html" title="link_handshake.h" alt="" coords="23,109,146,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1255,483,1333,509"/>
-<area shape="rect" id="node5" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1075,408,1137,435"/>
-<area shape="rect" id="node6" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="347,408,446,435"/>
-<area shape="rect" id="node9" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="701,408,809,435"/>
-<area shape="rect" id="node11" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="816,333,943,360"/>
-<area shape="rect" id="node13" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="469,259,594,285"/>
-<area shape="rect" id="node14" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="460,333,603,360"/>
-<area shape="rect" id="node17" href="trunnel_8h_source.html" title="trunnel.h" alt="" coords="95,184,167,211"/>
-<area shape="rect" id="node21" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1451,333,1521,360"/>
-<area shape="rect" id="node23" href="util__bug_8h.html" title="util_bug.h" alt="" coords="1055,184,1133,211"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1075,109,1119,136"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1681,707,1757,733"/>
+<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="1009,557,1060,584"/>
+<area shape="rect" id="node22" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="2070,408,2135,435"/>
+<area shape="rect" id="node41" href="config_8h.html" title="Header file for config.c. " alt="" coords="478,707,546,733"/>
+<area shape="rect" id="node42" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="5,483,99,509"/>
+<area shape="rect" id="node43" href="torcert_8h_source.html" title="torcert.h" alt="" coords="810,109,881,136"/>
+<area shape="rect" id="node44" href="ed25519__cert_8h_source.html" title="ed25519_cert.h" alt="" coords="2507,109,2618,136"/>
+<area shape="rect" id="node48" href="link__handshake_8h_source.html" title="link_handshake.h" alt="" coords="2360,109,2483,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1785,931,1863,957"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="503,856,566,883"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="949,259,1019,285"/>
+<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="1369,483,1455,509"/>
+<area shape="rect" id="node23" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="519,184,633,211"/>
+<area shape="rect" id="node24" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="611,259,736,285"/>
+<area shape="rect" id="node25" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="799,333,942,360"/>
+<area shape="rect" id="node28" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1813,259,1875,285"/>
+<area shape="rect" id="node31" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="863,184,953,211"/>
+<area shape="rect" id="node32" href="address_8h.html" title="Headers for address.h. " alt="" coords="1502,408,1581,435"/>
+<area shape="rect" id="node33" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2261,781,2389,808"/>
+<area shape="rect" id="node34" href="ht_8h_source.html" title="ht.h" alt="" coords="978,184,1022,211"/>
+<area shape="rect" id="node35" href="confline_8h_source.html" title="confline.h" alt="" coords="1323,333,1402,360"/>
+<area shape="rect" id="node36" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1046,184,1149,211"/>
+<area shape="rect" id="node37" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1173,184,1264,211"/>
+<area shape="rect" id="node38" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="598,781,709,808"/>
+<area shape="rect" id="node39" href="util__format_8h_source.html" title="util_format.h" alt="" coords="377,781,471,808"/>
+<area shape="rect" id="node40" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1288,184,1403,211"/>
+<area shape="rect" id="node18" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1797,333,1891,360"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1429,856,1528,883"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1963,856,2071,883"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1523,781,1650,808"/>
+<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="835,781,906,808"/>
+<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="1369,632,1447,659"/>
+<area shape="rect" id="node19" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="835,408,946,435"/>
+<area shape="rect" id="node21" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1373,557,1451,584"/>
+<area shape="rect" id="node26" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1073,408,1223,435"/>
+<area shape="rect" id="node29" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1644,333,1772,360"/>
+<area shape="rect" id="node46" href="trunnel_8h_source.html" title="trunnel.h" alt="" coords="2409,184,2481,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a1b93f235891504e28a60c881b02f0506"><td class="memItemLeft" align="right" valign="top"><a id="a1b93f235891504e28a60c881b02f0506"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RSA_ED_CROSSCERT_PREFIX</b>&#160;&#160;&#160;&quot;Tor TLS RSA/Ed25519 cross-certificate&quot;</td></tr>
+<tr class="separator:a1b93f235891504e28a60c881b02f0506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb424e2b53e6f0e137dd3328fd249bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>ERR</b>(code,  s)</td></tr>
+<tr class="separator:adbb424e2b53e6f0e137dd3328fd249bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab868c2565ed051bd254d05db959901be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>ERR</b>(s)</td></tr>
+<tr class="separator:ab868c2565ed051bd254d05db959901be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4838a8c91cfee13f144f123dd2f4e7cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADDCERT</b>(cert,  pk)</td></tr>
+<tr class="separator:a4838a8c91cfee13f144f123dd2f4e7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afa728c2dfbf24182ade2227b5dca4fe9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__cert__st.html">tor_cert_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#afa728c2dfbf24182ade2227b5dca4fe9">tor_cert_create</a> (const <a class="el" href="structed25519__keypair__t.html">ed25519_keypair_t</a> *signing_key, uint8_t cert_type, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *signed_key, time_t now, time_t lifetime, uint32_t flags)</td></tr>
 <tr class="separator:afa728c2dfbf24182ade2227b5dca4fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69b51896c94df3682f5b40fdffd5daba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a69b51896c94df3682f5b40fdffd5daba">tor_cert_free</a> (<a class="el" href="structtor__cert__st.html">tor_cert_t</a> *cert)</td></tr>
-<tr class="separator:a69b51896c94df3682f5b40fdffd5daba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106c92bd967f88e3cefaa3b28b3f561e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a106c92bd967f88e3cefaa3b28b3f561e">tor_cert_free_</a> (<a class="el" href="structtor__cert__st.html">tor_cert_t</a> *cert)</td></tr>
+<tr class="separator:a106c92bd967f88e3cefaa3b28b3f561e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94fe09a017afc0d2c467178158d28d23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__cert__st.html">tor_cert_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a94fe09a017afc0d2c467178158d28d23">tor_cert_parse</a> (const uint8_t *encoded, const size_t len)</td></tr>
 <tr class="separator:a94fe09a017afc0d2c467178158d28d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a58d79eaff265358b26288eaf4cc9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a40a58d79eaff265358b26288eaf4cc9e">tor_cert_get_checkable_sig</a> (<a class="el" href="structed25519__checkable__t.html">ed25519_checkable_t</a> *checkable_out, const <a class="el" href="structtor__cert__st.html">tor_cert_t</a> *cert, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *pubkey)</td></tr>
-<tr class="separator:a40a58d79eaff265358b26288eaf4cc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e8102ac018cd880d631e0826143fd5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#aa7e8102ac018cd880d631e0826143fd5">tor_cert_get_checkable_sig</a> (<a class="el" href="structed25519__checkable__t.html">ed25519_checkable_t</a> *checkable_out, const <a class="el" href="structtor__cert__st.html">tor_cert_t</a> *cert, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *pubkey, time_t *expiration_out)</td></tr>
+<tr class="separator:aa7e8102ac018cd880d631e0826143fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fdcb671425022b0510132ebb2e1e4fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a3fdcb671425022b0510132ebb2e1e4fa">tor_cert_checksig</a> (<a class="el" href="structtor__cert__st.html">tor_cert_t</a> *cert, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *pubkey, time_t now)</td></tr>
 <tr class="separator:a3fdcb671425022b0510132ebb2e1e4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766de1214b83cebd6bca3790144e68b7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a766de1214b83cebd6bca3790144e68b7">tor_cert_describe_signature_status</a> (const <a class="el" href="structtor__cert__st.html">tor_cert_t</a> *cert)</td></tr>
+<tr class="separator:a766de1214b83cebd6bca3790144e68b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88966f145d903dbd806d25cfed1d3074"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__cert__st.html">tor_cert_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a88966f145d903dbd806d25cfed1d3074">tor_cert_dup</a> (const <a class="el" href="structtor__cert__st.html">tor_cert_t</a> *cert)</td></tr>
 <tr class="separator:a88966f145d903dbd806d25cfed1d3074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7095f56ae3473c1f521c2a911b7196c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a7095f56ae3473c1f521c2a911b7196c4">tor_cert_eq</a> (const <a class="el" href="structtor__cert__st.html">tor_cert_t</a> *cert1, const <a class="el" href="structtor__cert__st.html">tor_cert_t</a> *cert2)</td></tr>
@@ -124,10 +162,293 @@ Functions</h2></td></tr>
 <tr class="separator:a51febd9121ec0b0f8a0a89f39630c3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16498c8e4f3cfe93e8106580d44c3325"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a16498c8e4f3cfe93e8106580d44c3325">tor_make_rsa_ed25519_crosscert</a> (const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_key, const <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *rsa_key, time_t expires, uint8_t **cert)</td></tr>
 <tr class="separator:a16498c8e4f3cfe93e8106580d44c3325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1612e85f582e228bb0d773f37d9cff3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a1612e85f582e228bb0d773f37d9cff3b">MOCK_IMPL</a> (int, rsa_ed25519_crosscert_check,(const uint8_t *crosscert, const size_t crosscert_len, const <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *rsa_id_key, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *master_key, const time_t reject_if_expired_before))</td></tr>
+<tr class="separator:a1612e85f582e228bb0d773f37d9cff3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e80284ae724a1e617c0b0772809621"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a21e80284ae724a1e617c0b0772809621">or_handshake_certs_new</a> (void)</td></tr>
+<tr class="separator:a21e80284ae724a1e617c0b0772809621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329e5d91d9220f1041bde27f415cea4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a329e5d91d9220f1041bde27f415cea4a">or_handshake_certs_free_</a> (<a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a> *certs)</td></tr>
+<tr class="separator:a329e5d91d9220f1041bde27f415cea4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6047d113e8f08cc8684905902697885"><td class="memItemLeft" align="right" valign="top"><a id="af6047d113e8f08cc8684905902697885"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>or_handshake_certs_rsa_ok</b> (int severity, <a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a> *certs, tor_tls_t *tls, time_t now)</td></tr>
+<tr class="separator:af6047d113e8f08cc8684905902697885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a9b9e30bed6d35d967d381faeeb2d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#a41a9b9e30bed6d35d967d381faeeb2d4">or_handshake_certs_ed25519_ok</a> (int severity, <a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a> *certs, tor_tls_t *tls, time_t now)</td></tr>
+<tr class="separator:a41a9b9e30bed6d35d967d381faeeb2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd16d9acb0ee87c596577d7e3c333f39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="torcert_8c.html#acd16d9acb0ee87c596577d7e3c333f39">or_handshake_certs_check_both</a> (int severity, <a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a> *certs, tor_tls_t *tls, time_t now, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> **ed_id_out, const <a class="el" href="structcommon__digests__t.html">common_digests_t</a> **rsa_id_out)</td></tr>
+<tr class="separator:acd16d9acb0ee87c596577d7e3c333f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377025a6eb976fc8c2cf715bd23ee533"><td class="memItemLeft" align="right" valign="top"><a id="a377025a6eb976fc8c2cf715bd23ee533"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tor_cert_encode_ed22519</b> (const <a class="el" href="structtor__cert__st.html">tor_cert_t</a> *cert, char **cert_str_out)</td></tr>
+<tr class="separator:a377025a6eb976fc8c2cf715bd23ee533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation for ed25519-signed certificates as used in the Tor protocol. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<p>This certificate format is designed to be simple and compact; it's documented in tor-spec.txt in the torspec.git repository. All of the certificates in this format are signed with an Ed25519 key; the contents themselves may be another Ed25519 key, a digest of a RSA key, or some other material.</p>
+<p>In this module there is also support for a crooss-certification of Ed25519 identities using (older) RSA1024 identities.</p>
+<p>Tor uses other types of certificate too, beyond those described in this module. Notably, our use of TLS requires us to touch X.509 certificates, even though sensible people would stay away from those. Our X.509 certificates are represented with tor_x509_cert_t, and implemented in <a class="el" href="tortls_8c.html" title="Wrapper functions to present a consistent interface to TLS, SSL, and X.509 functions from OpenSSL...">tortls.c</a>. We also have a separate certificate type that authorities use to authenticate their RSA signing keys with their RSA identity keys: that one is <a class="el" href="structauthority__cert__t.html">authority_cert_t</a>, and it's mostly handled in <a class="el" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. ">routerlist.c</a>. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a4838a8c91cfee13f144f123dd2f4e7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4838a8c91cfee13f144f123dd2f4e7cc">&#9670;&nbsp;</a></span>ADDCERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADDCERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cert, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pk&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                  \</div><div class="line">    tor_assert(n_checkable &lt; ARRAY_LENGTH(check));                      \</div><div class="line">    if (<a class="code" href="torcert_8c.html#aa7e8102ac018cd880d631e0826143fd5">tor_cert_get_checkable_sig</a>(&amp;check[n_checkable++], cert, pk,     \</div><div class="line">                                   &amp;expiration) &lt; 0)                    \</div><div class="line">      ERR(<span class="stringliteral">&quot;Could not get checkable cert.&quot;</span>);                             \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="torcert_8c_html_aa7e8102ac018cd880d631e0826143fd5"><div class="ttname"><a href="torcert_8c.html#aa7e8102ac018cd880d631e0826143fd5">tor_cert_get_checkable_sig</a></div><div class="ttdeci">int tor_cert_get_checkable_sig(ed25519_checkable_t *checkable_out, const tor_cert_t *cert, const ed25519_public_key_t *pubkey, time_t *expiration_out)</div><div class="ttdef"><b>Definition:</b> torcert.c:208</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adbb424e2b53e6f0e137dd3328fd249bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb424e2b53e6f0e137dd3328fd249bc">&#9670;&nbsp;</a></span>ERR <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">code, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                          \</div><div class="line">    log_fn(LOG_PROTOCOL_WARN, <a class="code" href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a>,                      \</div><div class="line">           <span class="stringliteral">&quot;Received a bad RSA-&gt;Ed25519 crosscert: %s&quot;</span>,         \</div><div class="line">           (s));                                                \</div><div class="line">    rv = (code);                                                \</div><div class="line">    goto err;                                                   \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="torlog_8h_html_a5c0dc5a11299000c079e7677cc672269"><div class="ttname"><a href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a></div><div class="ttdeci">#define LD_PROTOCOL</div><div class="ttdef"><b>Definition:</b> torlog.h:66</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab868c2565ed051bd254d05db959901be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab868c2565ed051bd254d05db959901be">&#9670;&nbsp;</a></span>ERR <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ERR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                          \</div><div class="line">    log_fn(severity, <a class="code" href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a>,                               \</div><div class="line">           <span class="stringliteral">&quot;Received a bad CERTS cell: %s&quot;</span>,                     \</div><div class="line">           (s));                                                \</div><div class="line">    return 0;                                                   \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="torlog_8h_html_a5c0dc5a11299000c079e7677cc672269"><div class="ttname"><a href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a></div><div class="ttdeci">#define LD_PROTOCOL</div><div class="ttdef"><b>Definition:</b> torlog.h:66</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a1612e85f582e228bb0d773f37d9cff3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1612e85f582e228bb0d773f37d9cff3b">&#9670;&nbsp;</a></span>MOCK_IMPL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">rsa_ed25519_crosscert_check&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(const uint8_t *crosscert, const size_t crosscert_len, const <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *rsa_id_key, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *master_key, const time_t reject_if_expired_before)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether the <b>crosscert_len</b> byte certificate in <b>crosscert</b> is in fact a correct cross-certification of <b>master_key</b> using the RSA key <b>rsa_id_key</b>.</p>
+<p>Also reject the certificate if it expired before <b>reject_if_expired_before</b>.</p>
+<p>Return 0 on success, negative on failure. </p>
+
+</div>
+</div>
+<a id="acd16d9acb0ee87c596577d7e3c333f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd16d9acb0ee87c596577d7e3c333f39">&#9670;&nbsp;</a></span>or_handshake_certs_check_both()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void or_handshake_certs_check_both </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a> *&#160;</td>
+          <td class="paramname"><em>certs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tor_tls_t *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>now</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> **&#160;</td>
+          <td class="paramname"><em>ed_id_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcommon__digests__t.html">common_digests_t</a> **&#160;</td>
+          <td class="paramname"><em>rsa_id_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check the Ed certificates and/or the RSA certificates, as appropriate. If we obtained an Ed25519 identity, set *ed_id_out. If we obtained an RSA identity, set *rs_id_out. Otherwise, set them both to NULL. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="torcert_8c_acd16d9acb0ee87c596577d7e3c333f39_cgraph.png" border="0" usemap="#torcert_8c_acd16d9acb0ee87c596577d7e3c333f39_cgraph" alt=""/></div>
+<map name="torcert_8c_acd16d9acb0ee87c596577d7e3c333f39_cgraph" id="torcert_8c_acd16d9acb0ee87c596577d7e3c333f39_cgraph">
+<area shape="rect" id="node2" href="torcert_8c.html#a41a9b9e30bed6d35d967d381faeeb2d4" title="or_handshake_certs\l_ed25519_ok" alt="" coords="194,5,333,47"/>
+<area shape="rect" id="node3" href="tortls_8c.html#aeb4713a168234b69a9d25312a3a15770" title="tor_x509_cert_get_id\l_digests" alt="" coords="192,71,335,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41a9b9e30bed6d35d967d381faeeb2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a9b9e30bed6d35d967d381faeeb2d4">&#9670;&nbsp;</a></span>or_handshake_certs_ed25519_ok()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int or_handshake_certs_ed25519_ok </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a> *&#160;</td>
+          <td class="paramname"><em>certs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tor_tls_t *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check all the ed25519 certificates in <b>certs</b> against each other, and against the peer certificate in <b>tls</b> if appropriate. On success, return 0; on failure, return a negative value and warn at level <b>severity</b> </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="torcert_8c_a41a9b9e30bed6d35d967d381faeeb2d4_icgraph.png" border="0" usemap="#torcert_8c_a41a9b9e30bed6d35d967d381faeeb2d4_icgraph" alt=""/></div>
+<map name="torcert_8c_a41a9b9e30bed6d35d967d381faeeb2d4_icgraph" id="torcert_8c_a41a9b9e30bed6d35d967d381faeeb2d4_icgraph">
+<area shape="rect" id="node2" href="torcert_8c.html#acd16d9acb0ee87c596577d7e3c333f39" title="or_handshake_certs\l_check_both" alt="" coords="192,5,331,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a329e5d91d9220f1041bde27f415cea4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329e5d91d9220f1041bde27f415cea4a">&#9670;&nbsp;</a></span>or_handshake_certs_free_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void or_handshake_certs_free_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a> *&#160;</td>
+          <td class="paramname"><em>certs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Release all storage held in <b>certs</b> </p>
+
+</div>
+</div>
+<a id="a21e80284ae724a1e617c0b0772809621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e80284ae724a1e617c0b0772809621">&#9670;&nbsp;</a></span>or_handshake_certs_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a>* or_handshake_certs_new </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construct and return a new empty or_handshake_certs object </p>
+
+</div>
+</div>
 <a id="a3fdcb671425022b0510132ebb2e1e4fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3fdcb671425022b0510132ebb2e1e4fa">&#9670;&nbsp;</a></span>tor_cert_checksig()</h2>
 
@@ -160,15 +481,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Validates the signature on <b>cert</b> with <b>pubkey</b> relative to the current time <b>now</b>. (If <b>now</b> is 0, do not check the expiration time.) Return 0 on success, -1 on failure. Sets flags in <b>cert</b> as appropriate. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="torcert_8c_a3fdcb671425022b0510132ebb2e1e4fa_cgraph.png" border="0" usemap="#torcert_8c_a3fdcb671425022b0510132ebb2e1e4fa_cgraph" alt=""/></div>
-<map name="torcert_8c_a3fdcb671425022b0510132ebb2e1e4fa_cgraph" id="torcert_8c_a3fdcb671425022b0510132ebb2e1e4fa_cgraph">
-<area shape="rect" id="node2" href="torcert_8c.html#a40a58d79eaff265358b26288eaf4cc9e" title="tor_cert_get_checkable_sig" alt="" coords="179,5,360,32"/>
-<area shape="rect" id="node3" href="crypto__ed25519_8c.html#a3328c534892b47f310d62d5c3479d175" title="ed25519_checksig_batch" alt="" coords="185,56,354,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -231,6 +543,26 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="routerkeys_8c.html#ac1142499a3f0ac31e764484c1c6bd6c6" title="make_ntor_onion_key\l_crosscert" alt="" coords="163,5,312,47"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a766de1214b83cebd6bca3790144e68b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a766de1214b83cebd6bca3790144e68b7">&#9670;&nbsp;</a></span>tor_cert_describe_signature_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* tor_cert_describe_signature_status </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtor__cert__st.html">tor_cert_t</a> *&#160;</td>
+          <td class="paramname"><em>cert</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a string describing the status of the signature on <b>cert</b></p>
+<p>Will always be "unchecked" unless tor_cert_checksig has been called. </p>
 
 </div>
 </div>
@@ -298,14 +630,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a69b51896c94df3682f5b40fdffd5daba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69b51896c94df3682f5b40fdffd5daba">&#9670;&nbsp;</a></span>tor_cert_free()</h2>
+<a id="a106c92bd967f88e3cefaa3b28b3f561e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a106c92bd967f88e3cefaa3b28b3f561e">&#9670;&nbsp;</a></span>tor_cert_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void tor_cert_free </td>
+          <td class="memname">void tor_cert_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structtor__cert__st.html">tor_cert_t</a> *&#160;</td>
           <td class="paramname"><em>cert</em></td><td>)</td>
@@ -317,26 +649,16 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="torcert_8c_a69b51896c94df3682f5b40fdffd5daba_cgraph.png" border="0" usemap="#torcert_8c_a69b51896c94df3682f5b40fdffd5daba_cgraph" alt=""/></div>
-<map name="torcert_8c_a69b51896c94df3682f5b40fdffd5daba_cgraph" id="torcert_8c_a69b51896c94df3682f5b40fdffd5daba_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="148,5,227,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="torcert_8c_a69b51896c94df3682f5b40fdffd5daba_icgraph.png" border="0" usemap="#torcert_8c_a69b51896c94df3682f5b40fdffd5daba_icgraph" alt=""/></div>
-<map name="torcert_8c_a69b51896c94df3682f5b40fdffd5daba_icgraph" id="torcert_8c_a69b51896c94df3682f5b40fdffd5daba_icgraph">
-<area shape="rect" id="node2" href="routerlist_8h.html#af2db10502386ef035c89377d2968c7e0" title="routerinfo_free" alt="" coords="148,5,253,32"/>
-<area shape="rect" id="node4" href="routerlist_8h.html#a36bbf9bf41105f61c8f1f5b6ffc3b12b" title="extrainfo_free" alt="" coords="150,56,251,83"/>
-<area shape="rect" id="node3" href="router_8h.html#a278cf107b4a9b636b105ec5581b2f427" title="router_free_all" alt="" coords="301,31,405,57"/>
+<div class="center"><img src="torcert_8c_a106c92bd967f88e3cefaa3b28b3f561e_cgraph.png" border="0" usemap="#torcert_8c_a106c92bd967f88e3cefaa3b28b3f561e_cgraph" alt=""/></div>
+<map name="torcert_8c_a106c92bd967f88e3cefaa3b28b3f561e_cgraph" id="torcert_8c_a106c92bd967f88e3cefaa3b28b3f561e_cgraph">
+<area shape="rect" id="node2" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="156,5,235,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a40a58d79eaff265358b26288eaf4cc9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40a58d79eaff265358b26288eaf4cc9e">&#9670;&nbsp;</a></span>tor_cert_get_checkable_sig()</h2>
+<a id="aa7e8102ac018cd880d631e0826143fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e8102ac018cd880d631e0826143fd5">&#9670;&nbsp;</a></span>tor_cert_get_checkable_sig()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,7 +679,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>pubkey</em>&#160;</td>
+          <td class="paramname"><em>pubkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t *&#160;</td>
+          <td class="paramname"><em>expiration_out</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -366,15 +694,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Fill in <b>checkable_out</b> with the information needed to check the signature on <b>cert</b> with <b>pubkey</b>. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="torcert_8c_a40a58d79eaff265358b26288eaf4cc9e_icgraph.png" border="0" usemap="#torcert_8c_a40a58d79eaff265358b26288eaf4cc9e_icgraph" alt=""/></div>
-<map name="torcert_8c_a40a58d79eaff265358b26288eaf4cc9e_icgraph" id="torcert_8c_a40a58d79eaff265358b26288eaf4cc9e_icgraph">
-<area shape="rect" id="node2" href="torcert_8c.html#a3fdcb671425022b0510132ebb2e1e4fa" title="tor_cert_checksig" alt="" coords="235,5,360,32"/>
-</map>
-</div>
+<p>Fill in <b>checkable_out</b> with the information needed to check the signature on <b>cert</b> with <b>pubkey</b>.</p>
+<p>On success, if <b>expiration_out</b> is provided, and it is some time <em>after</em> the expiration time of this certificate, set it to the expiration time of this certificate. </p>
 
 </div>
 </div>

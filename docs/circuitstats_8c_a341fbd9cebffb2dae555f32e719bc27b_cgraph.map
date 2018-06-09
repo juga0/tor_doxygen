@@ -1,5 +1,5 @@
 <map id="circuit_build_times_calculate_timeout" name="circuit_build_times_calculate_timeout">
-<area shape="rect" id="node2" href="$crypto_8c.html#aba9d90b89a922bffd44210a996daf38e" title="crypto_rand_double" alt="" coords="184,5,319,32"/>
+<area shape="rect" id="node2" href="$crypto__rand_8c.html#aba9d90b89a922bffd44210a996daf38e" title="crypto_rand_double" alt="" coords="184,5,319,32"/>
 <area shape="rect" id="node3" href="$util_8c.html#a44cb339836df0bbfcf8416209976f6db" title="tor_lround" alt="" coords="212,56,291,83"/>
 <area shape="rect" id="node4" href="$util_8c.html#a439eb5ebebe45181a077082b5f5ec598" title="tor_mathlog" alt="" coords="206,107,297,133"/>
 </map>

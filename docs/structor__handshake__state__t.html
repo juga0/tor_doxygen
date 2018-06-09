@@ -72,7 +72,9 @@ Collaboration diagram for or_handshake_state_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structor__handshake__state__t__coll__graph.png" border="0" usemap="#or__handshake__state__t_coll__map" alt="Collaboration graph"/></div>
 <map name="or__handshake__state__t_coll__map" id="or__handshake__state__t_coll__map">
-<area shape="rect" id="node2" href="structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="25,95,136,121"/>
+<area shape="rect" id="node3" href="structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="112,124,223,151"/>
+<area shape="rect" id="node4" href="structor__handshake__certs__t.html" title="or_handshake_certs_t" alt="" coords="247,124,397,151"/>
+<area shape="rect" id="node5" href="structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="421,124,572,151"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -93,11 +95,23 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a119a5bc47fffedb3dbed15abf1581343"><td class="memItemLeft" align="right" valign="top"><a id="a119a5bc47fffedb3dbed15abf1581343"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>authenticated</b>: 1</td></tr>
 <tr class="separator:a119a5bc47fffedb3dbed15abf1581343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d4fc8ed869e5cc37784342fda5b232"><td class="memItemLeft" align="right" valign="top"><a id="a62d4fc8ed869e5cc37784342fda5b232"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>authenticated_rsa</b>: 1</td></tr>
+<tr class="separator:a62d4fc8ed869e5cc37784342fda5b232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea92824cd81fa812b7a42257d5b6d2a4"><td class="memItemLeft" align="right" valign="top"><a id="aea92824cd81fa812b7a42257d5b6d2a4"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>authenticated_ed25519</b>: 1</td></tr>
+<tr class="separator:aea92824cd81fa812b7a42257d5b6d2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a637a4d25b64688fac265f7cfa16e1f34"><td class="memItemLeft" align="right" valign="top"><a id="a637a4d25b64688fac265f7cfa16e1f34"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>sent_netinfo</b>: 1</td></tr>
 <tr class="separator:a637a4d25b64688fac265f7cfa16e1f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec608e797c752a433e84b1ccb374c290"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__handshake__state__t.html#aec608e797c752a433e84b1ccb374c290">authenticated_peer_id</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
-<tr class="separator:aec608e797c752a433e84b1ccb374c290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f45e2a803a6da5a370b962715dc77a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtor__cert__st.html">tor_cert_st</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__handshake__state__t.html#a48f45e2a803a6da5a370b962715dc77a">own_link_cert</a></td></tr>
+<tr class="separator:a48f45e2a803a6da5a370b962715dc77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7fd0599a19046f74f78076836874ca2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__handshake__state__t.html#af7fd0599a19046f74f78076836874ca2">authenticated_rsa_peer_id</a> [<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
+<tr class="separator:af7fd0599a19046f74f78076836874ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64ace4f658f7be72e7bdde6afaba2a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__handshake__state__t.html#ae64ace4f658f7be72e7bdde6afaba2a9">authenticated_ed25519_peer_id</a></td></tr>
+<tr class="separator:ae64ace4f658f7be72e7bdde6afaba2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2d31200fec54e2a7f0a7889b5a1959"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__handshake__state__t.html#a7c2d31200fec54e2a7f0a7889b5a1959">certs</a></td></tr>
+<tr class="separator:a7c2d31200fec54e2a7f0a7889b5a1959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a73a46c3261909f9939b58b909e2674ba"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__handshake__state__t.html#a73a46c3261909f9939b58b909e2674ba">digest_sent_data</a>: 1</td></tr>
 <tr class="separator:a73a46c3261909f9939b58b909e2674ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,42 +124,52 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>digest_receiv
 <tr class="memitem:ad75cb7aa3b89f27f9df1248f19fb67db"><td class="memItemLeft" align="right" valign="top"><a id="ad75cb7aa3b89f27f9df1248f19fb67db"></a>
 <a class="el" href="structcrypto__digest__t.html">crypto_digest_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>digest_received</b></td></tr>
 <tr class="separator:ad75cb7aa3b89f27f9df1248f19fb67db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a7dd174590cc5d98b37a4cdaa7378307e"><td class="memItemLeft" align="right" valign="top">tor_x509_cert_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__handshake__state__t.html#a7dd174590cc5d98b37a4cdaa7378307e">auth_cert</a></td></tr>
-<tr class="separator:a7dd174590cc5d98b37a4cdaa7378307e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4685c19dc8601be1b32f6470e35fbd0b"><td class="memItemLeft" align="right" valign="top">tor_x509_cert_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__handshake__state__t.html#a4685c19dc8601be1b32f6470e35fbd0b">id_cert</a></td></tr>
-<tr class="separator:a4685c19dc8601be1b32f6470e35fbd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores flags and information related to the portion of a v2/v3 Tor OR connection handshake that happens after the TLS handshake is finished. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a7dd174590cc5d98b37a4cdaa7378307e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dd174590cc5d98b37a4cdaa7378307e">&#9670;&nbsp;</a></span>auth_cert</h2>
+<a id="ae64ace4f658f7be72e7bdde6afaba2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64ace4f658f7be72e7bdde6afaba2a9">&#9670;&nbsp;</a></span>authenticated_ed25519_peer_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">tor_x509_cert_t* auth_cert</td>
+          <td class="memname"><a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> authenticated_ed25519_peer_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Certificates that a connection initiator sent us in a CERTS cell; we're holding on to them until we get an AUTHENTICATE cell.The cert for the key that's supposed to sign the AUTHENTICATE cell </p>
+<p>Identity Ed25519 public key that we have received and authenticated for our peer on this connection. </p>
 
 </div>
 </div>
-<a id="aec608e797c752a433e84b1ccb374c290"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec608e797c752a433e84b1ccb374c290">&#9670;&nbsp;</a></span>authenticated_peer_id</h2>
+<a id="af7fd0599a19046f74f78076836874ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7fd0599a19046f74f78076836874ca2">&#9670;&nbsp;</a></span>authenticated_rsa_peer_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t authenticated_peer_id[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
+          <td class="memname">uint8_t authenticated_rsa_peer_id[<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Identity digest that we have received and authenticated for our peer on this connection. </p>
+<p>Identity RSA digest that we have received and authenticated for our peer on this connection. </p>
+
+</div>
+</div>
+<a id="a7c2d31200fec54e2a7f0a7889b5a1959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c2d31200fec54e2a7f0a7889b5a1959">&#9670;&nbsp;</a></span>certs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structor__handshake__certs__t.html">or_handshake_certs_t</a>* certs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Certificates that a connection initiator sent us in a CERTS cell; we're holding on to them until we get an AUTHENTICATE cell. </p>
 
 </div>
 </div>
@@ -180,18 +204,18 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>digest_receiv
 
 </div>
 </div>
-<a id="a4685c19dc8601be1b32f6470e35fbd0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4685c19dc8601be1b32f6470e35fbd0b">&#9670;&nbsp;</a></span>id_cert</h2>
+<a id="a48f45e2a803a6da5a370b962715dc77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f45e2a803a6da5a370b962715dc77a">&#9670;&nbsp;</a></span>own_link_cert</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">tor_x509_cert_t* id_cert</td>
+          <td class="memname">struct <a class="el" href="structtor__cert__st.html">tor_cert_st</a>* own_link_cert</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A self-signed identity certificate </p>
+<p>The signing-&gt;ed25519 link certificate corresponding to the x509 certificate we used on the TLS connection (if this is a server-side connection). We make a copy of this here to prevent a race condition caused by TLS context rotation. </p>
 
 </div>
 </div>

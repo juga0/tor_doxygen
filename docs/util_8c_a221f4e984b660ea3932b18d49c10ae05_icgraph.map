@@ -1,5 +1,5 @@
 <map id="tor_log2" name="tor_log2">
-<area shape="rect" id="node2" href="$address__set_8c.html#a16efd809a0bda3d0dcb968987627c083" title="address_set_new" alt="" coords="133,5,257,32"/>
+<area shape="rect" id="node2" href="$address__set_8h.html#a16efd809a0bda3d0dcb968987627c083" title="address_set_new" alt="" coords="133,5,257,32"/>
 <area shape="rect" id="node3" href="$container_8c.html#aa0c4bc4260b654f0d9544675d3905865" title="digestset_new" alt="" coords="141,56,248,83"/>
 <area shape="rect" id="node4" href="$util_8h.html#ae44cd05245deb753551a05b5b4ad271f" title="round_to_power_of_2" alt="" coords="121,107,268,133"/>
 </map>

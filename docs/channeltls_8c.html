@@ -65,6 +65,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -84,59 +86,68 @@ $(function() {
 <code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__or_8h_source.html">connection_or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
 <code>#include &quot;link_handshake.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="relay_8h_source.html">relay.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rephist_8h_source.html">rephist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&quot;</code><br />
+<code>#include &quot;torcert.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
+<code>#include &quot;channelpadding_negotiation.h&quot;</code><br />
+<code>#include &quot;channelpadding.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for channeltls.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="channeltls_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2channeltls_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2channeltls_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2channeltls_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1347,333,1391,360"/>
-<area shape="rect" id="node32" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="1498,184,1576,211"/>
-<area shape="rect" id="node33" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1753,259,1846,285"/>
-<area shape="rect" id="node34" href="channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="1407,109,1499,136"/>
-<area shape="rect" id="node35" href="circuitmux__ewma_8h.html" title="Header file for circuitmux_ewma.c. " alt="" coords="1703,184,1838,211"/>
-<area shape="rect" id="node36" href="command_8h.html" title="Header file for command.c. " alt="" coords="1574,109,1665,136"/>
-<area shape="rect" id="node37" href="config_8h.html" title="Header file for config.c. " alt="" coords="1900,333,1968,360"/>
-<area shape="rect" id="node38" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1964,184,2060,211"/>
-<area shape="rect" id="node40" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2185,109,2300,136"/>
-<area shape="rect" id="node41" href="control_8h.html" title="Header file for control.c. " alt="" coords="2324,109,2396,136"/>
-<area shape="rect" id="node42" href="link__handshake_8h_source.html" title="link_handshake.h" alt="" coords="2420,109,2542,136"/>
-<area shape="rect" id="node46" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="2566,109,2628,136"/>
-<area shape="rect" id="node47" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2652,109,2724,136"/>
-<area shape="rect" id="node48" href="router_8h.html" title="Header file for router.c. " alt="" coords="2044,333,2110,360"/>
-<area shape="rect" id="node49" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2100,483,2182,509"/>
-<area shape="rect" id="node50" href="scheduler_8h.html" title="Header file for scheduler.c. " alt="" coords="1690,109,1779,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="836,856,915,883"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="383,781,446,808"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1250,557,1320,584"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="536,557,650,584"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="504,632,629,659"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="495,707,638,733"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1232,483,1295,509"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1650,557,1715,584"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="1019,483,1106,509"/>
-<area shape="rect" id="node24" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="1333,408,1405,435"/>
-<area shape="rect" id="node25" href="address_8h.html" title="Headers for address.h. " alt="" coords="1023,408,1102,435"/>
-<area shape="rect" id="node26" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2145,707,2273,733"/>
-<area shape="rect" id="node28" href="ht_8h_source.html" title="ht.h" alt="" coords="1430,408,1474,435"/>
-<area shape="rect" id="node29" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1498,408,1600,435"/>
-<area shape="rect" id="node30" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1625,408,1716,435"/>
-<area shape="rect" id="node31" href="util__format_8h_source.html" title="util_format.h" alt="" coords="324,707,419,733"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1602,781,1701,808"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1175,632,1251,659"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="776,781,884,808"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="916,707,1043,733"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1497,557,1625,584"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="950,557,1001,584"/>
-<area shape="rect" id="node23" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1026,557,1104,584"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="26,707,96,733"/>
-<area shape="rect" id="node39" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1972,259,2046,285"/>
-<area shape="rect" id="node44" href="trunnel_8h_source.html" title="trunnel.h" alt="" coords="2398,184,2470,211"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1233,333,1277,360"/>
+<area shape="rect" id="node26" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="381,184,459,211"/>
+<area shape="rect" id="node27" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="673,259,767,285"/>
+<area shape="rect" id="node30" href="channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="909,109,1001,136"/>
+<area shape="rect" id="node31" href="circuitmux__ewma_8h.html" title="Header file for circuitmux_ewma.c. " alt="" coords="1082,184,1217,211"/>
+<area shape="rect" id="node32" href="command_8h.html" title="Header file for command.c. " alt="" coords="292,109,383,136"/>
+<area shape="rect" id="node33" href="config_8h.html" title="Header file for config.c. " alt="" coords="551,333,619,360"/>
+<area shape="rect" id="node34" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="929,184,1025,211"/>
+<area shape="rect" id="node36" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="623,109,737,136"/>
+<area shape="rect" id="node37" href="control_8h.html" title="Header file for control.c. " alt="" coords="761,109,833,136"/>
+<area shape="rect" id="node38" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="247,259,345,285"/>
+<area shape="rect" id="node39" href="link__handshake_8h_source.html" title="link_handshake.h" alt="" coords="1355,184,1477,211"/>
+<area shape="rect" id="node42" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="1025,109,1087,136"/>
+<area shape="rect" id="node43" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="1111,109,1183,136"/>
+<area shape="rect" id="node44" href="router_8h.html" title="Header file for router.c. " alt="" coords="5,259,72,285"/>
+<area shape="rect" id="node45" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="159,333,241,360"/>
+<area shape="rect" id="node46" href="scheduler_8h.html" title="Header file for scheduler*.c. " alt="" coords="458,109,547,136"/>
+<area shape="rect" id="node47" href="torcert_8h_source.html" title="torcert.h" alt="" coords="1875,333,1946,360"/>
+<area shape="rect" id="node48" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="147,184,261,211"/>
+<area shape="rect" id="node49" href="channelpadding__negotiation_8h_source.html" title="channelpadding_negotiation.h" alt="" coords="1502,184,1695,211"/>
+<area shape="rect" id="node50" href="channelpadding_8h_source.html" title="channelpadding.h" alt="" coords="1521,109,1644,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="973,707,1051,733"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1630,632,1693,659"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="933,483,1003,509"/>
+<area shape="rect" id="node10" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1758,408,1871,435"/>
+<area shape="rect" id="node11" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1897,483,2023,509"/>
+<area shape="rect" id="node12" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1785,557,1927,584"/>
+<area shape="rect" id="node13" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="607,483,670,509"/>
+<area shape="rect" id="node14" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="694,483,759,509"/>
+<area shape="rect" id="node15" href="container_8h_source.html" title="container.h" alt="" coords="1266,557,1353,584"/>
+<area shape="rect" id="node16" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1336,408,1427,435"/>
+<area shape="rect" id="node17" href="address_8h.html" title="Headers for address.h. " alt="" coords="1402,483,1481,509"/>
+<area shape="rect" id="node18" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1012,557,1140,584"/>
+<area shape="rect" id="node19" href="ht_8h_source.html" title="ht.h" alt="" coords="799,408,843,435"/>
+<area shape="rect" id="node20" href="confline_8h_source.html" title="confline.h" alt="" coords="1451,408,1530,435"/>
+<area shape="rect" id="node21" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="867,408,970,435"/>
+<area shape="rect" id="node22" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="479,408,569,435"/>
+<area shape="rect" id="node23" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="1479,557,1590,584"/>
+<area shape="rect" id="node24" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1614,557,1709,584"/>
+<area shape="rect" id="node25" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1045,408,1160,435"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="810,557,886,584"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="621,632,720,659"/>
+<area shape="rect" id="node28" href="timers_8h_source.html" title="timers.h" alt="" coords="132,557,201,584"/>
+<area shape="rect" id="node29" href="handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="317,333,395,360"/>
+<area shape="rect" id="node35" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="835,483,909,509"/>
+<area shape="rect" id="node41" href="trunnel_8h_source.html" title="trunnel.h" alt="" coords="1519,259,1591,285"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -158,7 +169,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NETINFO_NOTICE_SKEW</b>&#160;&#160;&#160;3600</td></tr>
 <tr class="separator:ad3dfe6a2d15c5d55065153ac1feda33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79e47e644a815ebd090958e056af35be"><td class="memItemLeft" align="right" valign="top"><a id="a79e47e644a815ebd090958e056af35be"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CERT_TYPE_WANTED</b>&#160;&#160;&#160;<a class="el" href="or_8h.html#acd3b9a31d3fd28871c5df4d2419f3a4e">OR_CERT_TYPE_AUTH_1024</a></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CERT_TYPE_WANTED</b>&#160;&#160;&#160;CERTTYPE_RSA1024_ID_EDID</td></tr>
 <tr class="separator:a79e47e644a815ebd090958e056af35be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab868c2565ed051bd254d05db959901be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>ERR</b>(s)</td></tr>
 <tr class="separator:ab868c2565ed051bd254d05db959901be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,12 +178,26 @@ Macros</h2></td></tr>
 <tr class="memitem:ab868c2565ed051bd254d05db959901be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>ERR</b>(s)</td></tr>
 <tr class="separator:ab868c2565ed051bd254d05db959901be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aea7d3a06b0dd5b0bfc4524b5a7801b75"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="channeltls_8c.html#a5eb5248412c3e3d4e59030ea2dac56f0">cert_encoding_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channeltls_8c.html#aea7d3a06b0dd5b0bfc4524b5a7801b75">cert_encoding_t</a></td></tr>
+<tr class="separator:aea7d3a06b0dd5b0bfc4524b5a7801b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a5eb5248412c3e3d4e59030ea2dac56f0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channeltls_8c.html#a5eb5248412c3e3d4e59030ea2dac56f0">cert_encoding_t</a> { <a class="el" href="channeltls_8c.html#a5eb5248412c3e3d4e59030ea2dac56f0a41d0eb352d4ff582dce3e4aac6983e3f">CERT_ENCODING_UNKNOWN</a>, 
+<a class="el" href="channeltls_8c.html#a5eb5248412c3e3d4e59030ea2dac56f0aba9044f0d26e4091ac4710e7e23ccec5">CERT_ENCODING_X509</a>, 
+<a class="el" href="channeltls_8c.html#a5eb5248412c3e3d4e59030ea2dac56f0a1e4137077f9de4ebb05a12ee1150b542">CERT_ENCODING_ED25519</a>, 
+<a class="el" href="channeltls_8c.html#a5eb5248412c3e3d4e59030ea2dac56f0abba84da87d61c29feb84c2ab693cb913">CERT_ENCODING_RSA_CROSSCERT</a>
+ }</td></tr>
+<tr class="separator:a5eb5248412c3e3d4e59030ea2dac56f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af1ad4a1777eab15f13e8478802ac5d5e"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channeltls_8c.html#af1ad4a1777eab15f13e8478802ac5d5e">channel_tls_common_init</a> (channel_tls_t *tlschan)</td></tr>
 <tr class="separator:af1ad4a1777eab15f13e8478802ac5d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a89e235963df96d4b8df41e90dd9447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channeltls_8c.html#a7a89e235963df96d4b8df41e90dd9447">channel_tls_connect</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port, const char *id_digest)</td></tr>
-<tr class="separator:a7a89e235963df96d4b8df41e90dd9447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8178dc802e84ceb764d8d5803e8d9a6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channeltls_8c.html#a8178dc802e84ceb764d8d5803e8d9a6b">channel_tls_connect</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port, const char *id_digest, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_id)</td></tr>
+<tr class="separator:a8178dc802e84ceb764d8d5803e8d9a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fbe32c536a922af8a1aa588a239055b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channeltls_8c.html#a3fbe32c536a922af8a1aa588a239055b">channel_tls_get_listener</a> (void)</td></tr>
 <tr class="separator:a3fbe32c536a922af8a1aa588a239055b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e1f9831dfe17a5cebcc49982597d2d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchannel__listener__s.html">channel_listener_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channeltls_8c.html#a8e1f9831dfe17a5cebcc49982597d2d5">channel_tls_start_listener</a> (void)</td></tr>
@@ -221,7 +246,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A concrete subclass of channel_t using <a class="el" href="structor__connection__t.html">or_connection_t</a> to transfer cells between Tor instances. </p>
-<p>This module fills in the various function pointers in channel_t, to implement the channel_tls_t channels as used in Tor today. These channels are created from <a class="el" href="channeltls_8c.html#a7a89e235963df96d4b8df41e90dd9447">channel_tls_connect()</a> and <a class="el" href="channeltls_8c.html#af227caf294fbde3eeffa7588e1dd2a69">channel_tls_handle_incoming()</a>. Each corresponds 1:1 to <a class="el" href="structor__connection__t.html">or_connection_t</a> object, as implemented in <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a>. These channels transmit cells to the underlying <a class="el" href="structor__connection__t.html">or_connection_t</a> by calling connection_or_write_*_cell_to_buf(), and receive cells from the underlying <a class="el" href="structor__connection__t.html">or_connection_t</a> when connection_or_process_cells_from_inbuf() calls channel_tls_handle_*_cell().</p>
+<p>This module fills in the various function pointers in channel_t, to implement the channel_tls_t channels as used in Tor today. These channels are created from <a class="el" href="channeltls_8c.html#a8178dc802e84ceb764d8d5803e8d9a6b">channel_tls_connect()</a> and <a class="el" href="channeltls_8c.html#af227caf294fbde3eeffa7588e1dd2a69">channel_tls_handle_incoming()</a>. Each corresponds 1:1 to <a class="el" href="structor__connection__t.html">or_connection_t</a> object, as implemented in <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a>. These channels transmit cells to the underlying <a class="el" href="structor__connection__t.html">or_connection_t</a> by calling connection_or_write_*_cell_to_buf(), and receive cells from the underlying <a class="el" href="structor__connection__t.html">or_connection_t</a> when connection_or_process_cells_from_inbuf() calls channel_tls_handle_*_cell().</p>
 <p>Here we also implement the server (responder) side of the v3+ Tor link handshake, which uses CERTS and AUTHENTICATE cell to negotiate versions, exchange expected and observed IP and time information, and bootstrap a level of authentication higher than we have gotten on the raw TLS handshake.</p>
 <p>NOTE: Since there is currently only one type of channel, there are probably more than a few cases where functionality that is currently in <a class="el" href="channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances...">channeltls.c</a>, <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a>, and <a class="el" href="channel_8c.html" title="OR/OP-to-OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ...">channel.c</a> ought to be divided up differently. The right time to do this is probably whenever we introduce our next channel type. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -241,7 +266,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                          \</div><div class="line">    log_fn(LOG_PROTOCOL_WARN, <a class="code" href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a>,                      \</div><div class="line">           <span class="stringliteral">&quot;Received a bad CERTS cell from %s:%d: %s&quot;</span>,          \</div><div class="line">           <a class="code" href="config_8c.html#a1bd77cf9332670164717c98613279b0d">safe_str</a>(chan-&gt;conn-&gt;base_.address),                 \</div><div class="line">           chan-&gt;conn-&gt;base_.port, (s));                        \</div><div class="line">    connection_or_close_for_error(chan-&gt;conn, 0);               \</div><div class="line">    goto err;                                                   \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="torlog_8h_html_a5c0dc5a11299000c079e7677cc672269"><div class="ttname"><a href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a></div><div class="ttdeci">#define LD_PROTOCOL</div><div class="ttdef"><b>Definition:</b> torlog.h:66</div></div>
-<div class="ttc" id="config_8c_html_a1bd77cf9332670164717c98613279b0d"><div class="ttname"><a href="config_8c.html#a1bd77cf9332670164717c98613279b0d">safe_str</a></div><div class="ttdeci">const char * safe_str(const char *address)</div><div class="ttdef"><b>Definition:</b> config.c:934</div></div>
+<div class="ttc" id="config_8c_html_a1bd77cf9332670164717c98613279b0d"><div class="ttname"><a href="config_8c.html#a1bd77cf9332670164717c98613279b0d">safe_str</a></div><div class="ttdeci">const char * safe_str(const char *address)</div><div class="ttdef"><b>Definition:</b> config.c:1052</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -261,7 +286,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                          \</div><div class="line">    log_fn(LOG_PROTOCOL_WARN, <a class="code" href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a>,                      \</div><div class="line">           <span class="stringliteral">&quot;Received a bad AUTH_CHALLENGE cell from %s:%d: %s&quot;</span>, \</div><div class="line">           <a class="code" href="config_8c.html#a1bd77cf9332670164717c98613279b0d">safe_str</a>(chan-&gt;conn-&gt;base_.address),                 \</div><div class="line">           chan-&gt;conn-&gt;base_.port, (s));                        \</div><div class="line">    connection_or_close_for_error(chan-&gt;conn, 0);               \</div><div class="line">    goto done;                                                  \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="torlog_8h_html_a5c0dc5a11299000c079e7677cc672269"><div class="ttname"><a href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a></div><div class="ttdeci">#define LD_PROTOCOL</div><div class="ttdef"><b>Definition:</b> torlog.h:66</div></div>
-<div class="ttc" id="config_8c_html_a1bd77cf9332670164717c98613279b0d"><div class="ttname"><a href="config_8c.html#a1bd77cf9332670164717c98613279b0d">safe_str</a></div><div class="ttdeci">const char * safe_str(const char *address)</div><div class="ttdef"><b>Definition:</b> config.c:934</div></div>
+<div class="ttc" id="config_8c_html_a1bd77cf9332670164717c98613279b0d"><div class="ttname"><a href="config_8c.html#a1bd77cf9332670164717c98613279b0d">safe_str</a></div><div class="ttdeci">const char * safe_str(const char *address)</div><div class="ttdef"><b>Definition:</b> config.c:1052</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -280,9 +305,51 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                          \</div><div class="line">    log_fn(LOG_PROTOCOL_WARN, <a class="code" href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a>,                      \</div><div class="line">           <span class="stringliteral">&quot;Received a bad AUTHENTICATE cell from %s:%d: %s&quot;</span>,   \</div><div class="line">           <a class="code" href="config_8c.html#a1bd77cf9332670164717c98613279b0d">safe_str</a>(chan-&gt;conn-&gt;base_.address),                 \</div><div class="line">           chan-&gt;conn-&gt;base_.port, (s));                        \</div><div class="line">    connection_or_close_for_error(chan-&gt;conn, 0);               \</div><div class="line">    return;                                                     \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="torlog_8h_html_a5c0dc5a11299000c079e7677cc672269"><div class="ttname"><a href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a></div><div class="ttdeci">#define LD_PROTOCOL</div><div class="ttdef"><b>Definition:</b> torlog.h:66</div></div>
-<div class="ttc" id="config_8c_html_a1bd77cf9332670164717c98613279b0d"><div class="ttname"><a href="config_8c.html#a1bd77cf9332670164717c98613279b0d">safe_str</a></div><div class="ttdeci">const char * safe_str(const char *address)</div><div class="ttdef"><b>Definition:</b> config.c:934</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                          \</div><div class="line">    log_fn(LOG_PROTOCOL_WARN, <a class="code" href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a>,                      \</div><div class="line">           <span class="stringliteral">&quot;Received a bad AUTHENTICATE cell from %s:%d: %s&quot;</span>,   \</div><div class="line">           <a class="code" href="config_8c.html#a1bd77cf9332670164717c98613279b0d">safe_str</a>(chan-&gt;conn-&gt;base_.address),                 \</div><div class="line">           chan-&gt;conn-&gt;base_.port, (s));                        \</div><div class="line">    connection_or_close_for_error(chan-&gt;conn, 0);               \</div><div class="line">    var_cell_free(expected_cell);                               \</div><div class="line">    return;                                                     \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="torlog_8h_html_a5c0dc5a11299000c079e7677cc672269"><div class="ttname"><a href="torlog_8h.html#a5c0dc5a11299000c079e7677cc672269">LD_PROTOCOL</a></div><div class="ttdeci">#define LD_PROTOCOL</div><div class="ttdef"><b>Definition:</b> torlog.h:66</div></div>
+<div class="ttc" id="config_8c_html_a1bd77cf9332670164717c98613279b0d"><div class="ttname"><a href="config_8c.html#a1bd77cf9332670164717c98613279b0d">safe_str</a></div><div class="ttdeci">const char * safe_str(const char *address)</div><div class="ttdef"><b>Definition:</b> config.c:1052</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aea7d3a06b0dd5b0bfc4524b5a7801b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7d3a06b0dd5b0bfc4524b5a7801b75">&#9670;&nbsp;</a></span>cert_encoding_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="channeltls_8c.html#a5eb5248412c3e3d4e59030ea2dac56f0">cert_encoding_t</a>  <a class="el" href="channeltls_8c.html#a5eb5248412c3e3d4e59030ea2dac56f0">cert_encoding_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Types of certificates that we know how to parse from CERTS cells. Each type corresponds to a different encoding format. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a5eb5248412c3e3d4e59030ea2dac56f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb5248412c3e3d4e59030ea2dac56f0">&#9670;&nbsp;</a></span>cert_encoding_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="channeltls_8c.html#a5eb5248412c3e3d4e59030ea2dac56f0">cert_encoding_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Types of certificates that we know how to parse from CERTS cells. Each type corresponds to a different encoding format. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5eb5248412c3e3d4e59030ea2dac56f0a41d0eb352d4ff582dce3e4aac6983e3f"></a>CERT_ENCODING_UNKNOWN&#160;</td><td class="fielddoc"><p>We don't recognize this. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5eb5248412c3e3d4e59030ea2dac56f0aba9044f0d26e4091ac4710e7e23ccec5"></a>CERT_ENCODING_X509&#160;</td><td class="fielddoc"><p>It's an RSA key, signed with RSA, encoded in x509. (Actually, it might not be RSA. We test that later.) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5eb5248412c3e3d4e59030ea2dac56f0a1e4137077f9de4ebb05a12ee1150b542"></a>CERT_ENCODING_ED25519&#160;</td><td class="fielddoc"><p>It's something signed with an Ed25519 key, encoded asa a tor_cert_t. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5eb5248412c3e3d4e59030ea2dac56f0abba84da87d61c29feb84c2ab693cb913"></a>CERT_ENCODING_RSA_CROSSCERT&#160;</td><td class="fielddoc"><p>It's an Ed key signed with an RSA key. </p>
+</td></tr>
+</table>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -301,20 +368,21 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Do parts of channel_tls_t initialization common to <a class="el" href="channeltls_8c.html#a7a89e235963df96d4b8df41e90dd9447">channel_tls_connect()</a> and <a class="el" href="channeltls_8c.html#af227caf294fbde3eeffa7588e1dd2a69">channel_tls_handle_incoming()</a>. </p>
+<p>Do parts of channel_tls_t initialization common to <a class="el" href="channeltls_8c.html#a8178dc802e84ceb764d8d5803e8d9a6b">channel_tls_connect()</a> and <a class="el" href="channeltls_8c.html#af227caf294fbde3eeffa7588e1dd2a69">channel_tls_handle_incoming()</a>. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="channeltls_8c_af1ad4a1777eab15f13e8478802ac5d5e_cgraph.png" border="0" usemap="#channeltls_8c_af1ad4a1777eab15f13e8478802ac5d5e_cgraph" alt=""/></div>
 <map name="channeltls_8c_af1ad4a1777eab15f13e8478802ac5d5e_cgraph" id="channeltls_8c_af1ad4a1777eab15f13e8478802ac5d5e_cgraph">
 <area shape="rect" id="node2" href="channel_8c.html#af394d37fffd7367c8c882834e6451a89" title="channel_init" alt="" coords="223,5,313,32"/>
+<area shape="rect" id="node3" href="channel_8c.html#a63986ced82f0d5c58fd872e40ed46598" title="channel_timestamp_created" alt="" coords="361,5,547,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a7a89e235963df96d4b8df41e90dd9447"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a89e235963df96d4b8df41e90dd9447">&#9670;&nbsp;</a></span>channel_tls_connect()</h2>
+<a id="a8178dc802e84ceb764d8d5803e8d9a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8178dc802e84ceb764d8d5803e8d9a6b">&#9670;&nbsp;</a></span>channel_tls_connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,7 +403,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>id_digest</em>&#160;</td>
+          <td class="paramname"><em>id_digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
+          <td class="paramname"><em>ed_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -344,14 +418,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Start a new TLS channel</p>
+<p>Start a new TLS channel.</p>
 <p>Launch a new OR connection to <b>addr</b>:<b>port</b> and expect to handshake with an OR with identity digest <b>id_digest</b>, and wrap it in a channel_tls_t. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="channeltls_8c_a7a89e235963df96d4b8df41e90dd9447_icgraph.png" border="0" usemap="#channeltls_8c_a7a89e235963df96d4b8df41e90dd9447_icgraph" alt=""/></div>
-<map name="channeltls_8c_a7a89e235963df96d4b8df41e90dd9447_icgraph" id="channeltls_8c_a7a89e235963df96d4b8df41e90dd9447_icgraph">
-<area shape="rect" id="node2" href="channel_8h.html#a13b8cc7d1d3dbbdca20c863c3cb35273" title="channel_connect" alt="" coords="195,5,315,32"/>
+<div class="center"><img src="channeltls_8c_a8178dc802e84ceb764d8d5803e8d9a6b_icgraph.png" border="0" usemap="#channeltls_8c_a8178dc802e84ceb764d8d5803e8d9a6b_icgraph" alt=""/></div>
+<map name="channeltls_8c_a8178dc802e84ceb764d8d5803e8d9a6b_icgraph" id="channeltls_8c_a8178dc802e84ceb764d8d5803e8d9a6b_icgraph">
+<area shape="rect" id="node2" href="channel_8h.html#ace4d2973b9efd25ea2ffd54761ac8960" title="channel_connect" alt="" coords="195,5,315,32"/>
 </map>
 </div>
 
@@ -372,7 +446,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Free everything on shutdown</p>
+<p>Free everything on shutdown.</p>
 <p>Not much to do here, since <a class="el" href="channel_8c.html#adb2d84e3ecc8f662ed2072a2104d0b6b">channel_free_all()</a> takes care of a lot, but let's get rid of the listener. </p>
 
 </div>
@@ -411,7 +485,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the current channel_tls_t listener</p>
+<p>Return the current channel_tls_t listener.</p>
 <p>Returns the current channel listener for incoming TLS connections, or NULL if none has been established </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -449,7 +523,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Handle an incoming cell on a channel_tls_t</p>
+<p>Handle an incoming cell on a channel_tls_t.</p>
 <p>This is called from <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a> to handle an arriving cell; it checks for cell types specific to the handshake for this transport protocol and handles them, and queues all other cells to the channel_t layer, which eventually will hand them off to <a class="el" href="command_8c.html" title="Functions for processing incoming cells. ">command.c</a>.</p>
 <p>The channel layer itself decides whether the cell should be queued or can be handed off immediately to the upper-layer code. It is responsible for copying in the case that it queues; we merely pass pointers through which we get from connection_or_process_cells_from_inbuf(). </p>
 
@@ -470,7 +544,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a new channel around an incoming <a class="el" href="structor__connection__t.html">or_connection_t</a> </p>
+<p>Create a new channel around an incoming <a class="el" href="structor__connection__t.html">or_connection_t</a>. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -519,7 +593,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Handle an orconn state change</p>
+<p>Handle an orconn state change.</p>
 <p>This function will be called by <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a> when the <a class="el" href="structor__connection__t.html">or_connection_t</a> associated with this channel_tls_t changes state. </p>
 
 </div>
@@ -549,7 +623,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Handle an incoming variable-length cell on a channel_tls_t</p>
+<p>Handle an incoming variable-length cell on a channel_tls_t.</p>
 <p>Process a <b>var_cell</b> that was just received on <b>conn</b>. Keep internal statistics about how many of each cell we've processed so far this second, and the total number of microseconds it took to process each type of cell. All the var_cell commands are handshake- related and live below the channel_t layer, so no variable-length cells ever get delivered in the current implementation, but I've left the mechanism in place for future use.</p>
 <p>If we were handing them off to the upper layer, the channel_t queueing code would be responsible for memory management, and we'd just be passing pointers through from connection_or_process_cells_from_inbuf(). That caller always frees them after this function returns, so this function should never free var_cell. </p>
 
@@ -580,7 +654,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Process an AUTH_CHALLENGE cell from a channel_tls_t</p>
+<p>Process an AUTH_CHALLENGE cell from a channel_tls_t.</p>
 <p>This function is called to handle an incoming AUTH_CHALLENGE cell on a channel_tls_t; if we weren't supposed to get one (for example, because we're not the originator of the channel), or it's ill-formed, or we aren't doing a v3 handshake, mark the channel. If the cell is well-formed but we don't want to authenticate, just drop it. If the cell is well-formed <em>and</em> we want to authenticate, send an AUTHENTICATE cell and then a NETINFO cell. </p>
 
 </div>
@@ -610,7 +684,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Process an AUTHENTICATE cell from a channel_tls_t</p>
+<p>Process an AUTHENTICATE cell from a channel_tls_t.</p>
 <p>If it's ill-formed or we weren't supposed to get one or we're not doing a v3 handshake, then mark the connection. If it does not authenticate the other side of the connection successfully (because it isn't signed right, we didn't get a CERTS cell, etc) mark the connection. Otherwise, accept the identity of the router on the other side of the connection. </p>
 
 </div>
@@ -662,7 +736,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Start a channel_tls_t listener if necessary</p>
+<p>Start a channel_tls_t listener if necessary.</p>
 <p>Return the current channel_tls_t listener, or start one if we haven't yet, and return that. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -691,6 +765,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Cast a channel_tls_t to a channel_t. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="channeltls_8c_a103e1b5acee3f7892a537d0c6f143752_icgraph.png" border="0" usemap="#channeltls_8c_a103e1b5acee3f7892a537d0c6f143752_icgraph" alt=""/></div>
+<map name="channeltls_8c_a103e1b5acee3f7892a537d0c6f143752_icgraph" id="channeltls_8c_a103e1b5acee3f7892a537d0c6f143752_icgraph">
+<area shape="rect" id="node2" href="connection__or_8h.html#a25311bc6d11b48d5f281528453c53ab0" title="connection_or_client\l_learned_peer_id" alt="" coords="195,5,336,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -709,8 +791,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Update channel marks after <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a> has changed an address</p>
-<p>This is called from <a class="el" href="connection__or_8c.html#a81f0c0f45bf6e7d920db1c1603f448f9">connection_or_init_conn_from_address()</a> after the connection's _base.addr or real_addr fields have potentially been changed so we can recalculate the local mark. Notably, this happens when incoming connections are reverse-proxied and we only learn the real address of the remote router by looking it up in the consensus after we finish the handshake and know an authenticated identity digest. </p>
+<p>Update channel marks after <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a> has changed an address.</p>
+<p>This is called from <a class="el" href="connection__or_8c.html#a886ddcdf832a3d3ccc18184ee4d7dd26">connection_or_init_conn_from_address()</a> after the connection's _base.addr or real_addr fields have potentially been changed so we can recalculate the local mark. Notably, this happens when incoming connections are reverse-proxied and we only learn the real address of the remote router by looking it up in the consensus after we finish the handshake and know an authenticated identity digest. </p>
 
 </div>
 </div>

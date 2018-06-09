@@ -1,3 +1,5 @@
 <map id="connection_control_closed" name="connection_control_closed">
-<area shape="rect" id="node2" href="$control_8c.html#ade569bf3dbd2110f2ac817428885f0b9" title="control_update_global\l_event_mask" alt="" coords="184,5,332,47"/>
+<area shape="rect" id="node2" href="$control_8c.html#ade569bf3dbd2110f2ac817428885f0b9" title="control_update_global\l_event_mask" alt="" coords="203,5,351,47"/>
+<area shape="rect" id="node3" href="$rendcommon_8c.html#a07d97b83844365f0949fd9998269a5a9" title="rend_valid_v2_service_id" alt="" coords="419,97,587,123"/>
+<area shape="rect" id="node4" href="$rendservice_8c.html#a9adfef842de9b8aec233a9046b9faeb2" title="rend_service_del_ephemeral" alt="" coords="184,122,371,149"/>
 </map>

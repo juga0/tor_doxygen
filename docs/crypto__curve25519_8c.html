@@ -75,9 +75,11 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;orconfig.h&quot;</code><br />
 <code>#include &quot;container.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="crypto_8h_source.html">crypto.h</a>&quot;</code><br />
 <code>#include &quot;crypto_curve25519.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__digest_8h_source.html">crypto_digest.h</a>&quot;</code><br />
 <code>#include &quot;crypto_format.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="torlog_8h_source.html">torlog.h</a>&quot;</code><br />
 <code>#include &quot;ed25519/donna/ed25519_donna_tor.h&quot;</code><br />
@@ -86,23 +88,26 @@ Include dependency graph for crypto_curve25519.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="crypto__curve25519_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2crypto__curve25519_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2crypto__curve25519_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2crypto__curve25519_8c">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="309,572,387,599"/>
-<area shape="rect" id="node3" href="container_8h_source.html" title="container.h" alt="" coords="850,117,937,143"/>
-<area shape="rect" id="node4" href="util_8h.html" title="Headers for util.c. " alt="" coords="693,199,744,225"/>
-<area shape="rect" id="node17" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1071,273,1140,300"/>
-<area shape="rect" id="node18" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1278,423,1421,449"/>
-<area shape="rect" id="node19" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1331,273,1445,300"/>
-<area shape="rect" id="node21" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="923,273,989,300"/>
-<area shape="rect" id="node22" href="ed25519__donna__tor_8h_source.html" title="ed25519/donna/ed25519\l_donna_tor.h" alt="" coords="1403,109,1565,151"/>
-<area shape="rect" id="node16" href="siphash_8h_source.html" title="siphash.h" alt="" coords="854,199,933,225"/>
-<area shape="rect" id="node5" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1193,497,1255,524"/>
-<area shape="rect" id="node6" href="compat_8h_source.html" title="compat.h" alt="" coords="551,348,627,375"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="887,497,985,524"/>
-<area shape="rect" id="node13" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="55,423,126,449"/>
-<area shape="rect" id="node15" href="util__bug_8h.html" title="util_bug.h" alt="" coords="385,273,463,300"/>
-<area shape="rect" id="node9" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="202,497,310,524"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="585,423,711,449"/>
-<area shape="rect" id="node20" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1328,348,1453,375"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="867,871,946,897"/>
+<area shape="rect" id="node3" href="container_8h_source.html" title="container.h" alt="" coords="431,423,518,449"/>
+<area shape="rect" id="node4" href="util_8h.html" title="Headers for util.c. " alt="" coords="915,497,965,524"/>
+<area shape="rect" id="node18" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="738,266,881,293"/>
+<area shape="rect" id="node19" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="466,348,577,375"/>
+<area shape="rect" id="node22" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="995,109,1109,136"/>
+<area shape="rect" id="node24" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="1241,423,1343,449"/>
+<area shape="rect" id="node25" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="1384,184,1477,211"/>
+<area shape="rect" id="node26" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="105,572,170,599"/>
+<area shape="rect" id="node27" href="ed25519__donna__tor_8h_source.html" title="ed25519/donna/ed25519\l_donna_tor.h" alt="" coords="1468,259,1631,300"/>
+<area shape="rect" id="node17" href="siphash_8h_source.html" title="siphash.h" alt="" coords="246,497,325,524"/>
+<area shape="rect" id="node5" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1171,796,1234,823"/>
+<area shape="rect" id="node7" href="compat_8h_source.html" title="compat.h" alt="" coords="530,647,606,673"/>
+<area shape="rect" id="node8" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="269,796,368,823"/>
+<area shape="rect" id="node14" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1018,721,1089,748"/>
+<area shape="rect" id="node16" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="398,572,477,599"/>
+<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="637,796,745,823"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="678,721,805,748"/>
+<area shape="rect" id="node20" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="709,423,859,449"/>
+<area shape="rect" id="node23" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="939,184,1064,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -163,7 +168,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Helper function: Multiply the scalar "secret" by the Curve25519 basepoint (X=9), and store the result in "output". Return 0 on success, -1 on false. </p>
+<p>Helper function: Multiply the scalar "secret" by the Curve25519 basepoint (X=9), and store the result in "output". Return 0 on success, -1 on failure. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -215,7 +220,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="crypto__curve25519_8c_a000333c8503d33e0dd2d5c002a7dcd08_cgraph.png" border="0" usemap="#crypto__curve25519_8c_a000333c8503d33e0dd2d5c002a7dcd08_cgraph" alt=""/></div>
 <map name="crypto__curve25519_8c_a000333c8503d33e0dd2d5c002a7dcd08_cgraph" id="crypto__curve25519_8c_a000333c8503d33e0dd2d5c002a7dcd08_cgraph">
 <area shape="rect" id="node2" href="crypto__curve25519_8c.html#a5e7a8ab2c4c662058cadf28615d69518" title="curve25519_impl" alt="" coords="212,5,332,32"/>
-<area shape="rect" id="node3" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="380,5,459,32"/>
+<area shape="rect" id="node3" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="380,5,459,32"/>
 </map>
 </div>
 
@@ -258,7 +263,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="crypto__curve25519_8c_a5e7a8ab2c4c662058cadf28615d69518_cgraph.png" border="0" usemap="#crypto__curve25519_8c_a5e7a8ab2c4c662058cadf28615d69518_cgraph" alt=""/></div>
 <map name="crypto__curve25519_8c_a5e7a8ab2c4c662058cadf28615d69518_cgraph" id="crypto__curve25519_8c_a5e7a8ab2c4c662058cadf28615d69518_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="173,5,252,32"/>
+<area shape="rect" id="node2" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="173,5,252,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -325,7 +330,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="crypto__curve25519_8c.html#a33569d6170349126f87307f7a0c8c90e" title="curve25519_secret_key\l_generate" alt="" coords="192,5,352,47"/>
 <area shape="rect" id="node5" href="crypto__curve25519_8c.html#a68cbc7d4be1ea064154cbca18d51a53d" title="curve25519_public_key\l_generate" alt="" coords="193,71,351,112"/>
 <area shape="rect" id="node3" href="crypto__curve25519_8c.html#a3a41ce8071bcfcc3aef74d4e995e83d9" title="curve25519_rand_seckey\l_bytes" alt="" coords="406,5,577,47"/>
-<area shape="rect" id="node4" href="crypto_8c.html#ae5356daa13494dbcca77324c6a85b9da" title="crypto_strongest_rand" alt="" coords="631,13,781,39"/>
+<area shape="rect" id="node4" href="crypto__rand_8c.html#ae5356daa13494dbcca77324c6a85b9da" title="crypto_strongest_rand" alt="" coords="631,13,781,39"/>
 <area shape="rect" id="node6" href="crypto__curve25519_8c.html#af77c6aa2312f4e598306ffe516b8dfd1" title="curve25519_basepoint_impl" alt="" coords="400,78,583,105"/>
 </map>
 </div>
@@ -419,7 +424,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="crypto__curve25519_8c_a700be6ddcf2a5ddbbbf56c91f3cd7cc7_cgraph.png" border="0" usemap="#crypto__curve25519_8c_a700be6ddcf2a5ddbbbf56c91f3cd7cc7_cgraph" alt=""/></div>
 <map name="crypto__curve25519_8c_a700be6ddcf2a5ddbbbf56c91f3cd7cc7_cgraph" id="crypto__curve25519_8c_a700be6ddcf2a5ddbbbf56c91f3cd7cc7_cgraph">
 <area shape="rect" id="node2" href="crypto__format_8c.html#a58e217ce83721c40e22a70f6f9ca1544" title="crypto_write_tagged\l_contents_to_file" alt="" coords="192,49,331,90"/>
-<area shape="rect" id="node7" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="222,115,301,141"/>
+<area shape="rect" id="node7" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="222,115,301,141"/>
 <area shape="rect" id="node3" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="406,5,493,32"/>
 <area shape="rect" id="node5" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="399,56,499,83"/>
 <area shape="rect" id="node6" href="util_8c.html#ae01530967d53afcfefa8227c98072e83" title="write_chunks_to_file" alt="" coords="379,107,520,133"/>
@@ -534,7 +539,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="crypto__curve25519_8c_a3a41ce8071bcfcc3aef74d4e995e83d9_cgraph.png" border="0" usemap="#crypto__curve25519_8c_a3a41ce8071bcfcc3aef74d4e995e83d9_cgraph" alt=""/></div>
 <map name="crypto__curve25519_8c_a3a41ce8071bcfcc3aef74d4e995e83d9_cgraph" id="crypto__curve25519_8c_a3a41ce8071bcfcc3aef74d4e995e83d9_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#ae5356daa13494dbcca77324c6a85b9da" title="crypto_strongest_rand" alt="" coords="224,13,375,39"/>
+<area shape="rect" id="node2" href="crypto__rand_8c.html#ae5356daa13494dbcca77324c6a85b9da" title="crypto_strongest_rand" alt="" coords="224,13,375,39"/>
 </map>
 </div>
 <div class="dynheader">
@@ -581,7 +586,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="crypto__curve25519_8c_a33569d6170349126f87307f7a0c8c90e_cgraph.png" border="0" usemap="#crypto__curve25519_8c_a33569d6170349126f87307f7a0c8c90e_cgraph" alt=""/></div>
 <map name="crypto__curve25519_8c_a33569d6170349126f87307f7a0c8c90e_cgraph" id="crypto__curve25519_8c_a33569d6170349126f87307f7a0c8c90e_cgraph">
 <area shape="rect" id="node2" href="crypto__curve25519_8c.html#a3a41ce8071bcfcc3aef74d4e995e83d9" title="curve25519_rand_seckey\l_bytes" alt="" coords="213,5,384,47"/>
-<area shape="rect" id="node3" href="crypto_8c.html#ae5356daa13494dbcca77324c6a85b9da" title="crypto_strongest_rand" alt="" coords="432,13,583,39"/>
+<area shape="rect" id="node3" href="crypto__rand_8c.html#ae5356daa13494dbcca77324c6a85b9da" title="crypto_strongest_rand" alt="" coords="432,13,583,39"/>
 </map>
 </div>
 <div class="dynheader">

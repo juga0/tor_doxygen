@@ -69,6 +69,9 @@ $(function() {
 <li>LAZY_DESCRIPTOR_RETRY_INTERVAL
 : <a class="el" href="main_8c.html#a1570b311457bd13beb61254adfe22196">main.c</a>
 </li>
+<li>lcs_lengths()
+: <a class="el" href="consdiff_8c.html#a5d34451f43f802b7a490a684af67830d">consdiff.c</a>
+</li>
 <li>LD_ACCT
 : <a class="el" href="torlog_8h.html#a91a776827c099b3522320d5c79b615fc">torlog.h</a>
 </li>
@@ -86,6 +89,9 @@ $(function() {
 </li>
 <li>LD_CONFIG
 : <a class="el" href="torlog_8h.html#ae13c04fd65d721b4e7266eb85f37374e">torlog.h</a>
+</li>
+<li>LD_CONSDIFF
+: <a class="el" href="torlog_8h.html#a8b7098625d6ebfc1d632449856c3a2b2">torlog.h</a>
 </li>
 <li>LD_CONTROL
 : <a class="el" href="torlog_8h.html#ae16d1c1c438af0ad684c2d1114abf263">torlog.h</a>
@@ -110,6 +116,9 @@ $(function() {
 </li>
 <li>LD_GENERAL
 : <a class="el" href="torlog_8h.html#acca714107ebaa8b76d132fa5df44f528">torlog.h</a>
+</li>
+<li>LD_GUARD
+: <a class="el" href="torlog_8h.html#ac32d11d235a571c1e5c0d86e6329f048">torlog.h</a>
 </li>
 <li>LD_HANDSHAKE
 : <a class="el" href="torlog_8h.html#ab1ccc0ad223ccfff78e900505de78cb6">torlog.h</a>
@@ -148,12 +157,12 @@ $(function() {
 : <a class="el" href="torlog_8h.html#a69355d9560153044887b0d6dab0e237a">torlog.h</a>
 </li>
 <li>learned_bridge_descriptor()
-: <a class="el" href="entrynodes_8c.html#af8213fa6b22741a8c0b7d4834d7dccff">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#af8213fa6b22741a8c0b7d4834d7dccff">entrynodes.h</a>
+: <a class="el" href="bridges_8c.html#af8213fa6b22741a8c0b7d4834d7dccff">bridges.c</a>
+, <a class="el" href="bridges_8h.html#af8213fa6b22741a8c0b7d4834d7dccff">bridges.h</a>
 </li>
 <li>learned_router_identity()
-: <a class="el" href="entrynodes_8c.html#aa1b2c6b58f355b442633b877f6a04202">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#aa1b2c6b58f355b442633b877f6a04202">entrynodes.h</a>
+: <a class="el" href="bridges_8c.html#a362a2f2ca9c3d9f5956010fa079e1a6d">bridges.c</a>
+, <a class="el" href="bridges_8h.html#a362a2f2ca9c3d9f5956010fa079e1a6d">bridges.h</a>
 </li>
 <li>LEGAL_NICKNAME_CHARACTERS
 : <a class="el" href="or_8h.html#a30e3eed1f6a9e7d47c0d6a254f0e0133">or.h</a>
@@ -164,8 +173,11 @@ $(function() {
 <li>libevent_logging_callback()
 : <a class="el" href="compat__libevent_8c.html#a056aed1f0504286225a5fac6a1b8b45d">compat_libevent.c</a>
 </li>
-<li>link_history_t
-: <a class="el" href="rephist_8c.html#a592a221faee20e5afcc2d078bb43f658">rephist.c</a>
+<li>line_str_eq()
+: <a class="el" href="consdiff_8c.html#a296b2ba2a51a5e86b31543dddb2721d3">consdiff.c</a>
+</li>
+<li>lines_eq()
+: <a class="el" href="consdiff_8c.html#aedb26ab4096d0cbd46c879450b5724a2">consdiff.c</a>
 </li>
 <li>list_pending_microdesc_downloads()
 : <a class="el" href="routerlist_8c.html#a19e2aa4caae99a8eba67490a4d920794">routerlist.c</a>
@@ -194,6 +206,9 @@ $(function() {
 <li>log_callback
 : <a class="el" href="torlog_8h.html#ab4e750313777b3335b0e494c61387ee1">torlog.h</a>
 </li>
+<li>log_cert_expiration()
+: <a class="el" href="routerkeys_8c.html#ab742cda8cfa5557e3e7828362699a143">routerkeys.c</a>
+</li>
 <li>LOG_DEBUG
 : <a class="el" href="torlog_8h.html#a6ff63e8955665c4a58b1598f2b07c51a">torlog.h</a>
 </li>
@@ -204,8 +219,8 @@ $(function() {
 : <a class="el" href="torlog_8h.html#a96fad55b3f5adf08c39e4c877cf185e3">torlog.h</a>
 </li>
 <li>log_failed_proxy_connection()
-: <a class="el" href="connection_8h.html#ad7f6042798d28314aa4553456bd5f9e5">connection.h</a>
-, <a class="el" href="connection_8c.html#ad7f6042798d28314aa4553456bd5f9e5">connection.c</a>
+: <a class="el" href="connection_8c.html#ad7f6042798d28314aa4553456bd5f9e5">connection.c</a>
+, <a class="el" href="connection_8h.html#ad7f6042798d28314aa4553456bd5f9e5">connection.h</a>
 </li>
 <li>log_fn
 : <a class="el" href="torlog_8h.html#a186a0d4b5ab5d5ac71acd670690fc34a">torlog.h</a>
@@ -230,8 +245,12 @@ $(function() {
 : <a class="el" href="torlog_8h.html#aeb4f36db01bd128c7afeac5889dac311">torlog.h</a>
 </li>
 <li>log_level_to_string()
-: <a class="el" href="log_8c.html#a728cb8bb28bda4ab8254bf4c49ed88ce">log.c</a>
-, <a class="el" href="torlog_8h.html#a728cb8bb28bda4ab8254bf4c49ed88ce">torlog.h</a>
+: <a class="el" href="torlog_8h.html#a728cb8bb28bda4ab8254bf4c49ed88ce">torlog.h</a>
+, <a class="el" href="log_8c.html#a728cb8bb28bda4ab8254bf4c49ed88ce">log.c</a>
+</li>
+<li>log_message_is_interesting()
+: <a class="el" href="log_8c.html#a82c4eb3192bce9902d5d0aab8040d40c">log.c</a>
+, <a class="el" href="torlog_8h.html#a4fb4f65ebc0751b17ccf7fc73f534c9e">torlog.h</a>
 </li>
 <li>LOG_NOTICE
 : <a class="el" href="torlog_8h.html#ad89ee324d180cdcd7defcc709ff9ca42">torlog.h</a>
@@ -240,14 +259,18 @@ $(function() {
 : <a class="el" href="circuitmux__ewma_8c.html#a7e348e012de8a36ad4d1c87853d1485b">circuitmux_ewma.c</a>
 </li>
 <li>log_set_application_name()
-: <a class="el" href="log_8c.html#a665d03a179fc9e07ac04fd65dccb6d47">log.c</a>
-, <a class="el" href="torlog_8h.html#a665d03a179fc9e07ac04fd65dccb6d47">torlog.h</a>
+: <a class="el" href="torlog_8h.html#a665d03a179fc9e07ac04fd65dccb6d47">torlog.h</a>
+, <a class="el" href="log_8c.html#a665d03a179fc9e07ac04fd65dccb6d47">log.c</a>
 </li>
 <li>log_severity_list_t
 : <a class="el" href="torlog_8h.html#a296fc643ff1f829de3561c7cc9369a72">torlog.h</a>
 </li>
 <li>LOG_WARN
 : <a class="el" href="torlog_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27">torlog.h</a>
+</li>
+<li>LOG_WARN_
+: <a class="el" href="log_8c.html#a015dff46f539c633e9f7d1697ed92036">log.c</a>
+, <a class="el" href="torlog_8h.html#a015dff46f539c633e9f7d1697ed92036">torlog.h</a>
 </li>
 <li>logfile_t
 : <a class="el" href="log_8c.html#aefb1a2830c7e8d3f61ca6a7a20b06f2e">log.c</a>
@@ -259,6 +282,13 @@ $(function() {
 <li>logs_set_domain_logging()
 : <a class="el" href="log_8c.html#ad0d017c920375095ef5107dde9e04fbf">log.c</a>
 , <a class="el" href="torlog_8h.html#ad0d017c920375095ef5107dde9e04fbf">torlog.h</a>
+</li>
+<li>logs_set_pending_callback_callback()
+: <a class="el" href="log_8c.html#a4fe970d5272a608105f09afe4af9dd33">log.c</a>
+, <a class="el" href="torlog_8h.html#a4fe970d5272a608105f09afe4af9dd33">torlog.h</a>
+</li>
+<li>looks_like_a_consensus_diff()
+: <a class="el" href="consdiff_8c.html#aee547e5b36f9a6e0d89d5f95980bdb55">consdiff.c</a>
 </li>
 </ul>
 </div><!-- contents -->

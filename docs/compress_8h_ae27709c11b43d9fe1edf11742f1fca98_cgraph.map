@@ -1,0 +1,8 @@
+<map id="tor_compress_get_total_allocation" name="tor_compress_get_total_allocation">
+<area shape="rect" id="node2" href="$compat__threads_8c.html#ac98398f0f86e87b7dbac66d29b2a8ae2" title="atomic_counter_get" alt="" coords="389,70,525,96"/>
+<area shape="rect" id="node5" href="$compress__zlib_8c.html#ad48d2bb2d2de94a06c76dc59af54d420" title="tor_zlib_get_total\l_allocation" alt="" coords="216,29,337,70"/>
+<area shape="rect" id="node6" href="$compress__lzma_8c.html#adff782cddfac5049aa29d2767f37c9ae" title="tor_lzma_get_total\l_allocation" alt="" coords="212,94,341,136"/>
+<area shape="rect" id="node7" href="$compress__zstd_8c.html#aa08d17d2e15a5f836b544354cf3f6d59" title="tor_zstd_get_total\l_allocation" alt="" coords="213,160,340,201"/>
+<area shape="rect" id="node3" href="$compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="573,44,703,71"/>
+<area shape="rect" id="node4" href="$compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="573,95,703,122"/>
+</map>

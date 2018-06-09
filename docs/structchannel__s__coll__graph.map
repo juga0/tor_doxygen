@@ -1,10 +1,12 @@
 <map id="channel_s" name="channel_s">
-<area shape="rect" id="node6" href="$structcircuit__t.html" title="circuit_t" alt="" coords="245,298,313,325"/>
-<area shape="rect" id="node3" href="$structcircuitmux__s.html" title="circuitmux_s" alt="" coords="181,485,277,512"/>
-<area shape="rect" id="node7" href="$structextend__info__t.html" title="extend_info_t" alt="" coords="573,169,673,196"/>
-<area shape="rect" id="node4" href="$structcircuitmux__policy__data__s.html" title="circuitmux_policy_data_s" alt="" coords="547,298,717,325"/>
-<area shape="rect" id="node5" href="$structcircuitmux__policy__s.html" title="circuitmux_policy_s" alt="" coords="323,396,461,423"/>
-<area shape="rect" id="node8" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="577,5,668,32"/>
-<area shape="rect" id="node9" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="280,169,363,196"/>
-<area shape="rect" id="node10" href="$structcircuitmux__policy__circ__data__s.html" title="circuitmux_policy_circ\l_data_s" alt="" coords="342,291,493,332"/>
+<area shape="rect" id="node7" href="$structcircuit__t.html" title="circuit_t" alt="" coords="214,374,282,401"/>
+<area shape="rect" id="node2" href="$structtimeout.html" title="timeout" alt="" coords="307,133,373,159"/>
+<area shape="rect" id="node4" href="$structcircuitmux__s.html" title="circuitmux_s" alt="" coords="156,560,252,587"/>
+<area shape="rect" id="node8" href="$structextend__info__t.html" title="extend_info_t" alt="" coords="469,276,569,303"/>
+<area shape="rect" id="node5" href="$structcircuitmux__policy__data__s.html" title="circuitmux_policy_data_s" alt="" coords="522,374,691,401"/>
+<area shape="rect" id="node6" href="$structcircuitmux__policy__s.html" title="circuitmux_policy_s" alt="" coords="298,471,435,497"/>
+<area shape="rect" id="node9" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="572,133,663,159"/>
+<area shape="rect" id="node10" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="397,133,547,159"/>
+<area shape="rect" id="node11" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="592,276,675,303"/>
+<area shape="rect" id="node12" href="$structcircuitmux__policy__circ__data__s.html" title="circuitmux_policy_circ\l_data_s" alt="" coords="317,367,467,408"/>
 </map>

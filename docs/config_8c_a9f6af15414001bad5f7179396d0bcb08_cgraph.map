@@ -1,0 +1,5 @@
+<map id="get_protocol_warning_severity_level" name="get_protocol_warning_severity_level">
+<area shape="rect" id="node2" href="$compat__threads_8c.html#ac98398f0f86e87b7dbac66d29b2a8ae2" title="atomic_counter_get" alt="" coords="199,31,335,57"/>
+<area shape="rect" id="node3" href="$compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="383,5,512,32"/>
+<area shape="rect" id="node4" href="$compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="383,56,512,83"/>
+</map>

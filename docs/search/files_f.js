@@ -5,6 +5,8 @@ var searchData=
   ['scheduler_2ec',['scheduler.c',['../scheduler_8c.html',1,'']]],
   ['scheduler_2eh',['scheduler.h',['../scheduler_8h.html',1,'']]],
   ['shared_5frandom_2ec',['shared_random.c',['../shared__random_8c.html',1,'']]],
+  ['shared_5frandom_5fclient_2ec',['shared_random_client.c',['../shared__random__client_8c.html',1,'']]],
+  ['shared_5frandom_5fclient_2eh',['shared_random_client.h',['../shared__random__client_8h.html',1,'']]],
   ['shared_5frandom_5fstate_2ec',['shared_random_state.c',['../shared__random__state_8c.html',1,'']]],
   ['statefile_2ec',['statefile.c',['../statefile_8c.html',1,'']]],
   ['status_2ec',['status.c',['../status_8c.html',1,'']]]

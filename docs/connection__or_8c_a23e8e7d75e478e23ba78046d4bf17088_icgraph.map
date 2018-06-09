@@ -1,5 +1,4 @@
 <map id="var_cell_new" name="var_cell_new">
 <area shape="rect" id="node2" href="$connection__or_8h.html#a23cfebfdf4ea8cb551ab8d243b56b811" title="connection_or_send\l_versions" alt="" coords="154,5,293,47"/>
-<area shape="rect" id="node3" href="$connection__or_8h.html#a373bc2ce63f7b8a6530d1b16e420f7c4" title="connection_or_send\l_certs_cell" alt="" coords="154,71,293,112"/>
-<area shape="rect" id="node4" href="$connection__or_8h.html#acda2ead17f44091558bb27dd084517b9" title="connection_or_send\l_auth_challenge_cell" alt="" coords="152,136,295,177"/>
+<area shape="rect" id="node3" href="$connection__or_8h.html#acda2ead17f44091558bb27dd084517b9" title="connection_or_send\l_auth_challenge_cell" alt="" coords="152,71,295,112"/>
 </map>

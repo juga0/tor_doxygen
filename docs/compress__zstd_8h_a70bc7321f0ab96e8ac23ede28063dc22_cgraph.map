@@ -1,0 +1,4 @@
+<map id="tor_zstd_init" name="tor_zstd_init">
+<area shape="rect" id="node2" href="$compat__threads_8c.html#a28fc1a1e6d143b15ab62ddfa810a7ffd" title="atomic_counter_init" alt="" coords="147,5,281,32"/>
+<area shape="rect" id="node3" href="$compat__pthreads_8c.html#a900a1a27db8f1815a4db66e98e67bac0" title="tor_mutex_init_nonrecursive" alt="" coords="329,5,515,32"/>
+</map>

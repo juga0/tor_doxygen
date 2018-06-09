@@ -1,10 +1,10 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/geoip.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/geoip.h">
 <area shape="rect" id="node2" href="$channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="$config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node3" href="$config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="177,109,325,165"/>
 <area shape="rect" id="node4" href="$connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="349,109,497,165"/>
 <area shape="rect" id="node5" href="$connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="522,109,677,165"/>
 <area shape="rect" id="node6" href="$control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="701,109,849,165"/>
-<area shape="rect" id="node7" href="$directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="873,109,1021,165"/>
+<area shape="rect" id="node7" href="$directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="873,109,1021,165"/>
 <area shape="rect" id="node8" href="$geoip_8c.html" title="Functions related to maintaining an IP&#45;to&#45;country database; to summarizing client connections by coun..." alt="" coords="1045,109,1193,165"/>
 <area shape="rect" id="node9" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="1217,109,1365,165"/>
 <area shape="rect" id="node10" href="$nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="1389,109,1537,165"/>

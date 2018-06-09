@@ -2,7 +2,10 @@
 <area shape="rect" id="node2" href="$microdesc_8h.html#ad9c983a76a2f31a6a843f4df9be7de1d" title="we_fetch_microdescriptors" alt="" coords="228,5,407,32"/>
 <area shape="rect" id="node3" href="$microdesc_8h.html#a2667d23ef05f514b5bf916791b4a6bbd" title="we_fetch_router_descriptors" alt="" coords="224,56,411,83"/>
 <area shape="rect" id="node7" href="$microdesc_8c.html#a01ac96e92e27b924141e47289fc633b2" title="MOCK_IMPL" alt="" coords="267,107,367,133"/>
+<area shape="rect" id="node8" href="$nodelist_8h.html#a5c994699835c0d610e072920f397d6e8" title="node_has_preferred\l_descriptor" alt="" coords="249,158,385,199"/>
 <area shape="rect" id="node4" href="$routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="459,49,624,90"/>
 <area shape="rect" id="node5" href="$routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="672,49,817,90"/>
 <area shape="rect" id="node6" href="$main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="865,49,993,90"/>
+<area shape="rect" id="node9" href="$circuitbuild_8h.html#ae78b2dc4ee0d019045639d2a33eea506" title="extend_info_from_node" alt="" coords="463,140,620,167"/>
+<area shape="rect" id="node10" href="$hs__common_8h.html#a9af4bf6fe3cc01d5524f2dd4123573a8" title="hs_pick_hsdir" alt="" coords="490,191,593,217"/>
 </map>

@@ -68,12 +68,6 @@ $(function() {
 <li>IDLE_ONE_HOP_CIRC_TIMEOUT
 : <a class="el" href="circuituse_8c.html#a90e03463e7d0c47a8769249905cf7a78">circuituse.c</a>
 </li>
-<li>IDLE_OR_CONN_TIMEOUT_NONCANONICAL
-: <a class="el" href="connection__or_8c.html#a76970f55f4131fa6bc6372e7da902b58">connection_or.c</a>
-</li>
-<li>IDLE_TIMEOUT_WHILE_LEARNING
-: <a class="el" href="circuituse_8c.html#a0ca81d15a25ac1b6c378fe267ff81053">circuituse.c</a>
-</li>
 <li>IDXP
 : <a class="el" href="container_8c.html#a87fa4fe522ad43b687d206b978303337">container.c</a>
 </li>
@@ -103,12 +97,12 @@ $(function() {
 : <a class="el" href="main_8c.html#add1f47335c5e96d25eb95c6308b3ea1e">main.c</a>
 </li>
 <li>init_cookie_authentication()
-: <a class="el" href="config_8h.html#adf07ef53a0da7799871f735d941daf32">config.h</a>
-, <a class="el" href="config_8c.html#adf07ef53a0da7799871f735d941daf32">config.c</a>
+: <a class="el" href="config_8c.html#adf07ef53a0da7799871f735d941daf32">config.c</a>
+, <a class="el" href="config_8h.html#adf07ef53a0da7799871f735d941daf32">config.h</a>
 </li>
 <li>init_key_from_file()
-: <a class="el" href="router_8c.html#a7ca8d566f45ef49fb6fd7358c235a420">router.c</a>
-, <a class="el" href="router_8h.html#a7ca8d566f45ef49fb6fd7358c235a420">router.h</a>
+: <a class="el" href="router_8h.html#a7ca8d566f45ef49fb6fd7358c235a420">router.h</a>
+, <a class="el" href="router_8c.html#a7ca8d566f45ef49fb6fd7358c235a420">router.c</a>
 </li>
 <li>init_keys()
 : <a class="el" href="router_8c.html#a500b19001501e67b572ae39547800eb9">router.c</a>
@@ -118,11 +112,22 @@ $(function() {
 : <a class="el" href="log_8c.html#a0bc134e471615f694edc26aef8bf961f">log.c</a>
 , <a class="el" href="torlog_8h.html#a0bc134e471615f694edc26aef8bf961f">torlog.h</a>
 </li>
+<li>init_protocol_warning_severity_level()
+: <a class="el" href="config_8c.html#a9badc2e4e664120fd99bbd63cd4af3c6">config.c</a>
+, <a class="el" href="config_8h.html#a9badc2e4e664120fd99bbd63cd4af3c6">config.h</a>
+</li>
+<li>initialize_mainloop_events()
+: <a class="el" href="main_8c.html#ac14ea279fb1aac55027fc5f87826f23c">main.c</a>
+</li>
 <li>initialize_periodic_events()
 : <a class="el" href="main_8c.html#afe588553f651b21dfd63eb7109168272">main.c</a>
 </li>
+<li>interface_address6_list_free_()
+: <a class="el" href="address_8c.html#a2a1687c27ef8c950099109feade6cfd1">address.c</a>
+, <a class="el" href="address_8h.html#a2a1687c27ef8c950099109feade6cfd1">address.h</a>
+</li>
 <li>INTRO_CIRC_RETRY_PERIOD
-: <a class="el" href="rendservice_8c.html#ab963f65eba52d5384785dbece8f22417">rendservice.c</a>
+: <a class="el" href="hs__common_8h.html#ab963f65eba52d5384785dbece8f22417">hs_common.h</a>
 </li>
 <li>INTRO_POINT_LIFETIME_MAX_SECONDS
 : <a class="el" href="or_8h.html#a4210b7ecffc1176b6afd7625b7a982bc">or.h</a>
@@ -133,12 +138,12 @@ $(function() {
 <li>INTRO_POINT_MIN_LIFETIME_INTRODUCTIONS
 : <a class="el" href="or_8h.html#a720b13c1793ed2f836ef4fb8014efd55">or.h</a>
 </li>
-<li>invalid_router_usage_t
-: <a class="el" href="or_8h.html#aa971c4fb6f405f887be449242ce5f6a1">or.h</a>
+<li>INTRO_SECRET_HS_INPUT_LEN
+: <a class="el" href="hs__ntor_8c.html#a035815c9bc1e9257b9673ed5dba72e0b">hs_ntor.c</a>
 </li>
 <li>ip_address_changed()
-: <a class="el" href="main_8h.html#a898cc7397e9ea055a3554ce259a8a4cb">main.h</a>
-, <a class="el" href="main_8c.html#a898cc7397e9ea055a3554ce259a8a4cb">main.c</a>
+: <a class="el" href="main_8c.html#a898cc7397e9ea055a3554ce259a8a4cb">main.c</a>
+, <a class="el" href="main_8h.html#a898cc7397e9ea055a3554ce259a8a4cb">main.h</a>
 </li>
 <li>IP_GRANULARITY
 : <a class="el" href="geoip_8c.html#a562ce73ce3f55f278ebe7d77cf1b5e70">geoip.c</a>
@@ -151,20 +156,19 @@ $(function() {
 , <a class="el" href="router_8h.html#abc033c75201ad04ae8327fcce6edbb4c">router.h</a>
 </li>
 <li>is_legal_nickname()
-: <a class="el" href="router_8h.html#a7836bf949d53e2d964b72447c513d324">router.h</a>
-, <a class="el" href="router_8c.html#a7836bf949d53e2d964b72447c513d324">router.c</a>
+: <a class="el" href="router_8c.html#a7836bf949d53e2d964b72447c513d324">router.c</a>
+, <a class="el" href="router_8h.html#a7836bf949d53e2d964b72447c513d324">router.h</a>
 </li>
 <li>is_legal_nickname_or_hexdigest()
-: <a class="el" href="router_8h.html#a9256a0243b94ae50164d9d0df1df9042">router.h</a>
-, <a class="el" href="router_8c.html#a9256a0243b94ae50164d9d0df1df9042">router.c</a>
+: <a class="el" href="router_8c.html#a9256a0243b94ae50164d9d0df1df9042">router.c</a>
+, <a class="el" href="router_8h.html#a9256a0243b94ae50164d9d0df1df9042">router.h</a>
 </li>
 <li>is_or_protocol_version_known()
 : <a class="el" href="connection__or_8c.html#a1050c4f55437f7f68627c637a3dbc0e9">connection_or.c</a>
 , <a class="el" href="connection__or_8h.html#a0791fc12ab0cc5e212947e10d14a3374">connection_or.h</a>
 </li>
-<li>is_sensitive_dir_purpose()
-: <a class="el" href="directory_8h.html#af70528e82e9fdd7992b169feeda182ee">directory.h</a>
-, <a class="el" href="directory_8c.html#af70528e82e9fdd7992b169feeda182ee">directory.c</a>
+<li>is_valid_router_entry()
+: <a class="el" href="consdiff_8c.html#aba46559ed750532b53f83b29fd4569f0">consdiff.c</a>
 </li>
 <li>ISO_CLIENTADDR
 : <a class="el" href="or_8h.html#ac06682454742545c59fbd85168bfa852">or.h</a>

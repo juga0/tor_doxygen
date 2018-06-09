@@ -1,0 +1,5 @@
+<map id="should_record_bridge_info" name="should_record_bridge_info">
+<area shape="rect" id="node2" href="$config_8h.html#ad09b1993fdca508d228a7585813efcac" title="options_need_geoip_info" alt="" coords="227,5,392,32"/>
+<area shape="rect" id="node4" href="$geoip_8h.html#a89c00fefaf2f19a1097e93e3116cd30f" title="geoip_note_client_seen" alt="" coords="230,56,389,83"/>
+<area shape="rect" id="node3" href="$geoip_8h.html#a99613dd6eb7666bd2e5fe481f15ec301" title="geoip_load_file" alt="" coords="440,5,548,32"/>
+</map>

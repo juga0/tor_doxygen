@@ -71,14 +71,8 @@ $(function() {
 <li>p_circ_id
 : <a class="el" href="structor__circuit__t.html#a8b761e43b05f9cdab9fff3362192b759">or_circuit_t</a>
 </li>
-<li>p_crypto
-: <a class="el" href="structor__circuit__t.html#a89260cfd3552c3e8939ffcc4d045a374">or_circuit_t</a>
-</li>
 <li>p_delete_pending
 : <a class="el" href="structcircuit__t.html#a056015686cb0431370d73f56b3cf194b">circuit_t</a>
-</li>
-<li>p_digest
-: <a class="el" href="structor__circuit__t.html#af889ef20f50fd7ce2b006d895a9f8b69">or_circuit_t</a>
 </li>
 <li>p_mux
 : <a class="el" href="structor__circuit__t.html#ad433c9bab0262f2d6648276b572d6aca">or_circuit_t</a>
@@ -94,6 +88,18 @@ $(function() {
 , <a class="el" href="structcrypt__path__t.html#aca0daaf7b1351448f0b2008adadcbc4e">crypt_path_t</a>
 , <a class="el" href="structedge__connection__t.html#aca0daaf7b1351448f0b2008adadcbc4e">edge_connection_t</a>
 </li>
+<li>padding_enabled
+: <a class="el" href="structchannel__s.html#a51ce60bc5adc97a34329031140e083eb">channel_s</a>
+</li>
+<li>padding_timeout_low_ms
+: <a class="el" href="structchannel__s.html#a1d0759751e119a9160d071b1b6575b46">channel_s</a>
+</li>
+<li>padding_timer
+: <a class="el" href="structchannel__s.html#a6a525c446bd3ab57439449ad0dc2ba4a">channel_s</a>
+</li>
+<li>PaddingStatistics
+: <a class="el" href="structor__options__t.html#abcf519e803c4ad5cf30d9072ff1bfee5">or_options_t</a>
+</li>
 <li>parsed
 : <a class="el" href="structrend__cache__entry__t.html#a44f0c8bfcf65a2c2e4510be0d99f6e35">rend_cache_entry_t</a>
 </li>
@@ -104,22 +110,22 @@ $(function() {
 : <a class="el" href="structsocks__request__t.html#a4e99c1423de33fbf0b0f0164342b0105">socks_request_t</a>
 </li>
 <li>path_bias_disabled
-: <a class="el" href="structentry__guard__t.html#a8ff7f5e56152b09a668ac286fa9d430d">entry_guard_t</a>
+: <a class="el" href="structguard__pathbias__t.html#a8ff7f5e56152b09a668ac286fa9d430d">guard_pathbias_t</a>
 </li>
 <li>path_bias_extreme
-: <a class="el" href="structentry__guard__t.html#a53ac61f35ba11ff9545076290aa5d038">entry_guard_t</a>
+: <a class="el" href="structguard__pathbias__t.html#a53ac61f35ba11ff9545076290aa5d038">guard_pathbias_t</a>
 </li>
 <li>path_bias_noticed
-: <a class="el" href="structentry__guard__t.html#afee05480f0a0a08ee6f8330eecadede6">entry_guard_t</a>
+: <a class="el" href="structguard__pathbias__t.html#afee05480f0a0a08ee6f8330eecadede6">guard_pathbias_t</a>
 </li>
 <li>path_bias_use_extreme
-: <a class="el" href="structentry__guard__t.html#a229d11271997053b9d9c143dba5693d1">entry_guard_t</a>
+: <a class="el" href="structguard__pathbias__t.html#a229d11271997053b9d9c143dba5693d1">guard_pathbias_t</a>
 </li>
 <li>path_bias_use_noticed
-: <a class="el" href="structentry__guard__t.html#a1b0ba10d61a4140c4341b91e9ea0c9d8">entry_guard_t</a>
+: <a class="el" href="structguard__pathbias__t.html#a1b0ba10d61a4140c4341b91e9ea0c9d8">guard_pathbias_t</a>
 </li>
 <li>path_bias_warned
-: <a class="el" href="structentry__guard__t.html#a43335470f85552657e999f4c51844c20">entry_guard_t</a>
+: <a class="el" href="structguard__pathbias__t.html#a43335470f85552657e999f4c51844c20">guard_pathbias_t</a>
 </li>
 <li>path_state
 : <a class="el" href="structorigin__circuit__t.html#a6dc164012fbf279875917d6c4ca0351c">origin_circuit_t</a>
@@ -156,7 +162,10 @@ $(function() {
 : <a class="el" href="structcpath__build__state__t.html#a9ddc24cee8fdcb2919321eea8ca3b948">cpath_build_state_t</a>
 </li>
 <li>pending_optimistic_data
-: <a class="el" href="structentry__connection__t.html#a4ca64fab0a87005effb2981fa31cc368">entry_connection_t</a>
+: <a class="el" href="structentry__connection__t.html#ac63e73447c40f4d7e2aebd7568f50161">entry_connection_t</a>
+</li>
+<li>pending_padding_callback
+: <a class="el" href="structchannel__s.html#a966da169be1ecd088f2cd837db9df6d1">channel_s</a>
 </li>
 <li>pending_sig
 : <a class="el" href="structextrainfo__t.html#a0f9ce4a0a45a41e5e6f5af5d4449c1a0">extrainfo_t</a>
@@ -197,9 +206,6 @@ $(function() {
 , <a class="el" href="structsocks__request__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236">socks_request_t</a>
 , <a class="el" href="structtransport__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236">transport_t</a>
 </li>
-<li>PortForwarding
-: <a class="el" href="structor__options__t.html#ae43a47ecb82edd261ea50b8651fa0340">or_options_t</a>
-</li>
 <li>pos
 : <a class="el" href="structaes__cnt__cipher.html#addcb93d939ffa259ff1d9247bdd590fd">aes_cnt_cipher</a>
 , <a class="el" href="structbuf__pos__t.html#a1910d262855b71da353ed0d07a6c7823">buf_pos_t</a>
@@ -217,11 +223,8 @@ $(function() {
 <li>prev
 : <a class="el" href="structcrypt__path__t.html#a05bcff30fd48656f1ba41d4b42f75cb7">crypt_path_t</a>
 </li>
-<li>prev_active_on_n_chan
-: <a class="el" href="structcircuit__t.html#a82024133cf591e49304ff9720bd0c82b">circuit_t</a>
-</li>
-<li>prev_active_on_p_chan
-: <a class="el" href="structor__circuit__t.html#a245ab343b29c95a64702b9a8cae1aab0">or_circuit_t</a>
+<li>previous_hsdirs
+: <a class="el" href="strucths__service__descriptor__t.html#a2445f50694bba0d4c7a78d01c4b024da">hs_service_descriptor_t</a>
 </li>
 <li>priority
 : <a class="el" href="structpubsub__subscriber__t.html#aa7aaafb3574e276f4aec4faf02fc0b7b">pubsub_subscriber_t</a>
@@ -238,7 +241,7 @@ $(function() {
 , <a class="el" href="structvote__routerstatus__t.html#ae7799d7e9c180765a889a0a40b7ce4f9">vote_routerstatus_t</a>
 </li>
 <li>protocols_known
-: <a class="el" href="structrouterstatus__t.html#ac3728b95a8def5a969b208d1ba45ba7e">routerstatus_t</a>
+: <a class="el" href="structprotover__summary__flags__t.html#ac3728b95a8def5a969b208d1ba45ba7e">protover_summary_flags_t</a>
 </li>
 <li>ProtocolWarnings
 : <a class="el" href="structor__options__t.html#a2a1544db58a92a0f5e6203f908d94e4d">or_options_t</a>
@@ -280,6 +283,11 @@ $(function() {
 <li>purpose
 : <a class="el" href="structcircuit__t.html#a823d52c11f220ee6f7833d898f40814d">circuit_t</a>
 , <a class="el" href="structconnection__t.html#ab03b429c0dc436f505a875a0a4420e9a">connection_t</a>
+, <a class="el" href="structrouterinfo__t.html#a823d52c11f220ee6f7833d898f40814d">routerinfo_t</a>
+</li>
+<li>pv
+: <a class="el" href="structrouterinfo__t.html#a236520aa108becd0d0c15c41ac0f1f58">routerinfo_t</a>
+, <a class="el" href="structrouterstatus__t.html#a236520aa108becd0d0c15c41ac0f1f58">routerstatus_t</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_95039623eb1ebeaf46c028778b39de98.html">or</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_386635fabd7f6c74e9d9c7a8604514a0.html">or</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -200,6 +200,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>If we have a bridge configured whose digest matches <b>digest</b>, or a bridge with no known digest whose address matches <b>addr</b>:<b>port</b>, return 1. Else return 0. If <b>digest</b> is NULL, check for address/port matches only. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a2d44019e06142d75bf330e273815c54f_cgraph.png" border="0" usemap="#bridges_8h_a2d44019e06142d75bf330e273815c54f_cgraph" alt=""/></div>
+<map name="bridges_8h_a2d44019e06142d75bf330e273815c54f_cgraph" id="bridges_8h_a2d44019e06142d75bf330e273815c54f_cgraph">
+<area shape="rect" id="node2" href="bridges_8c.html#ac82940db703dbcfb9570f0506c5f2f8e" title="get_configured_bridge\l_by_addr_port_digest" alt="" coords="199,23,348,65"/>
+<area shape="rect" id="node3" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="396,5,524,32"/>
+<area shape="rect" id="node5" href="address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="397,56,523,83"/>
+<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="618,5,705,32"/>
+<area shape="rect" id="node6" href="address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="572,56,751,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a2d44019e06142d75bf330e273815c54f_icgraph.png" border="0" usemap="#bridges_8h_a2d44019e06142d75bf330e273815c54f_icgraph" alt=""/></div>
+<map name="bridges_8h_a2d44019e06142d75bf330e273815c54f_icgraph" id="bridges_8h_a2d44019e06142d75bf330e273815c54f_icgraph">
+<area shape="rect" id="node2" href="bridges_8h.html#a6f341162101f7678384679361c28ae79" title="extend_info_is_a_configured\l_bridge" alt="" coords="199,5,385,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -238,6 +258,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>Given a <b>bridge</b>, return a pointer to its configured addr:port combination. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a8ddc062ce747b84b38514706c0ab6965_icgraph.png" border="0" usemap="#bridges_8h_a8ddc062ce747b84b38514706c0ab6965_icgraph" alt=""/></div>
+<map name="bridges_8h_a8ddc062ce747b84b38514706c0ab6965_icgraph" id="bridges_8h_a8ddc062ce747b84b38514706c0ab6965_icgraph">
+<area shape="rect" id="node2" href="routerset_8c.html#ad8339cd37945cb76015ab95b289919ad" title="routerset_contains\l_bridge" alt="" coords="196,5,325,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -257,6 +285,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>Given a <b>bridge</b>, return a pointer to its RSA identity digest, or NULL if we don't know one for it. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_abb7d7443c740c64187209e9a56d20b19_cgraph.png" border="0" usemap="#bridges_8h_abb7d7443c740c64187209e9a56d20b19_cgraph" alt=""/></div>
+<map name="bridges_8h_abb7d7443c740c64187209e9a56d20b19_cgraph" id="bridges_8h_abb7d7443c740c64187209e9a56d20b19_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="220,5,348,32"/>
+<area shape="rect" id="node3" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="396,5,483,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_abb7d7443c740c64187209e9a56d20b19_icgraph.png" border="0" usemap="#bridges_8h_abb7d7443c740c64187209e9a56d20b19_icgraph" alt=""/></div>
+<map name="bridges_8h_abb7d7443c740c64187209e9a56d20b19_icgraph" id="bridges_8h_abb7d7443c740c64187209e9a56d20b19_icgraph">
+<area shape="rect" id="node2" href="routerset_8c.html#ad8339cd37945cb76015ab95b289919ad" title="routerset_contains\l_bridge" alt="" coords="220,5,349,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -295,6 +340,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>Release all storage held in <a class="el" href="bridges_8c.html" title="Code to manage bridges and bridge selection. ">bridges.c</a> </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_ac0d54cc37202f872efa7488bcf8d6724_cgraph.png" border="0" usemap="#bridges_8h_ac0d54cc37202f872efa7488bcf8d6724_cgraph" alt=""/></div>
+<map name="bridges_8h_ac0d54cc37202f872efa7488bcf8d6724_cgraph" id="bridges_8h_ac0d54cc37202f872efa7488bcf8d6724_cgraph">
+<area shape="rect" id="node2" href="bridges_8c.html#a3d1aa27e60d5ccdc7ae99bfe3f51a1bb" title="clear_bridge_list" alt="" coords="167,5,283,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -314,6 +367,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>If we have a bridge configured whose digest matches <b>ei-&gt;identity_digest</b>, or a bridge with no known digest whose address matches <b>ei-&gt;addr</b>:<b>ei-&gt;port</b>, return 1. Else return 0. If <b>ei-&gt;onion_key</b> is NULL, check for address/port matches only. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a6f341162101f7678384679361c28ae79_cgraph.png" border="0" usemap="#bridges_8h_a6f341162101f7678384679361c28ae79_cgraph" alt=""/></div>
+<map name="bridges_8h_a6f341162101f7678384679361c28ae79_cgraph" id="bridges_8h_a6f341162101f7678384679361c28ae79_cgraph">
+<area shape="rect" id="node2" href="bridges_8c.html#a2d44019e06142d75bf330e273815c54f" title="addr_is_a_configured\l_bridge" alt="" coords="240,23,385,65"/>
+<area shape="rect" id="node3" href="bridges_8c.html#ac82940db703dbcfb9570f0506c5f2f8e" title="get_configured_bridge\l_by_addr_port_digest" alt="" coords="433,23,583,65"/>
+<area shape="rect" id="node4" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="631,5,759,32"/>
+<area shape="rect" id="node6" href="address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="631,56,758,83"/>
+<area shape="rect" id="node5" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="853,5,939,32"/>
+<area shape="rect" id="node7" href="address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="807,56,985,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -343,6 +409,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>For each bridge in our list for which we don't currently have a descriptor, fetch a new copy of its descriptor &ndash; either directly from the bridge or via a bridge authority. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a958ebeeb4b45f01d919751bbcd6e79b2_cgraph.png" border="0" usemap="#bridges_8h_a958ebeeb4b45f01d919751bbcd6e79b2_cgraph" alt=""/></div>
+<map name="bridges_8h_a958ebeeb4b45f01d919751bbcd6e79b2_cgraph" id="bridges_8h_a958ebeeb4b45f01d919751bbcd6e79b2_cgraph">
+<area shape="rect" id="node2" href="routerlist_8c.html#a40b0857598d14d49c8082667c70bc023" title="get_n_authorities" alt="" coords="238,5,359,32"/>
+<area shape="rect" id="node3" href="transports_8c.html#a1626024d151d33d97fea20985434ce8d" title="pt_proxies_configuration\l_pending" alt="" coords="217,57,380,98"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -372,6 +447,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>Given the <b>addr</b> and <b>port</b> of a bridge, if that bridge supports a pluggable transport, return its name. Otherwise, return NULL. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a06f10cf1c3269fd2a3a93fe696e6a662_icgraph.png" border="0" usemap="#bridges_8h_a06f10cf1c3269fd2a3a93fe696e6a662_icgraph" alt=""/></div>
+<map name="bridges_8h_a06f10cf1c3269fd2a3a93fe696e6a662_icgraph" id="bridges_8h_a06f10cf1c3269fd2a3a93fe696e6a662_icgraph">
+<area shape="rect" id="node2" href="bridges_8h.html#a362a2f2ca9c3d9f5956010fa079e1a6d" title="learned_router_identity" alt="" coords="193,13,347,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -407,6 +490,28 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>If we have a bridge configured whose digest matches <b>digest</b>, or a bridge with no known digest whose address matches <b>addr</b>:<b>port</b>, return that bridge. Else return NULL. If <b>digest</b> is NULL, check for address/port matches only. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_ac82940db703dbcfb9570f0506c5f2f8e_cgraph.png" border="0" usemap="#bridges_8h_ac82940db703dbcfb9570f0506c5f2f8e_cgraph" alt=""/></div>
+<map name="bridges_8h_ac82940db703dbcfb9570f0506c5f2f8e_cgraph" id="bridges_8h_ac82940db703dbcfb9570f0506c5f2f8e_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="203,5,331,32"/>
+<area shape="rect" id="node4" href="address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="203,56,330,83"/>
+<area shape="rect" id="node3" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="425,5,511,32"/>
+<area shape="rect" id="node5" href="address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="379,56,557,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_ac82940db703dbcfb9570f0506c5f2f8e_icgraph.png" border="0" usemap="#bridges_8h_ac82940db703dbcfb9570f0506c5f2f8e_icgraph" alt=""/></div>
+<map name="bridges_8h_ac82940db703dbcfb9570f0506c5f2f8e_icgraph" id="bridges_8h_ac82940db703dbcfb9570f0506c5f2f8e_icgraph">
+<area shape="rect" id="node2" href="bridges_8h.html#a2d44019e06142d75bf330e273815c54f" title="addr_is_a_configured\l_bridge" alt="" coords="219,5,364,47"/>
+<area shape="rect" id="node4" href="bridges_8h.html#a563fb20442805d5fbe516b5f60fed5fd" title="get_socks_args_by_bridge\l_addrport" alt="" coords="203,71,380,112"/>
+<area shape="rect" id="node3" href="bridges_8h.html#a6f341162101f7678384679361c28ae79" title="extend_info_is_a_configured\l_bridge" alt="" coords="428,5,615,47"/>
+<area shape="rect" id="node5" href="transports_8h.html#a122033e171457c2474ad385177d1382a" title="pt_get_socks_args_for\l_proxy_addrport" alt="" coords="444,71,599,112"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -442,6 +547,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>As get_configured_bridge_by_addr_port, but require that the address match <b>addr</b>:<b>port</b>, and that the ID digest match <b>digest</b>. (The other function will ignore the address if the digest matches.) </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a6fb785f916f0d806e3bf33141f450600_cgraph.png" border="0" usemap="#bridges_8h_a6fb785f916f0d806e3bf33141f450600_cgraph" alt=""/></div>
+<map name="bridges_8h_a6fb785f916f0d806e3bf33141f450600_cgraph" id="bridges_8h_a6fb785f916f0d806e3bf33141f450600_cgraph">
+<area shape="rect" id="node2" href="address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="239,13,365,39"/>
+<area shape="rect" id="node3" href="address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="413,13,592,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a6fb785f916f0d806e3bf33141f450600_icgraph.png" border="0" usemap="#bridges_8h_a6fb785f916f0d806e3bf33141f450600_icgraph" alt=""/></div>
+<map name="bridges_8h_a6fb785f916f0d806e3bf33141f450600_icgraph" id="bridges_8h_a6fb785f916f0d806e3bf33141f450600_icgraph">
+<area shape="rect" id="node2" href="bridges_8h.html#a362a2f2ca9c3d9f5956010fa079e1a6d" title="learned_router_identity" alt="" coords="239,13,392,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -471,6 +593,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>Return a smartlist containing all the SOCKS arguments that we should pass to the SOCKS proxy. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a563fb20442805d5fbe516b5f60fed5fd_cgraph.png" border="0" usemap="#bridges_8h_a563fb20442805d5fbe516b5f60fed5fd_cgraph" alt=""/></div>
+<map name="bridges_8h_a563fb20442805d5fbe516b5f60fed5fd_cgraph" id="bridges_8h_a563fb20442805d5fbe516b5f60fed5fd_cgraph">
+<area shape="rect" id="node2" href="bridges_8c.html#ac82940db703dbcfb9570f0506c5f2f8e" title="get_configured_bridge\l_by_addr_port_digest" alt="" coords="231,23,380,65"/>
+<area shape="rect" id="node3" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="428,5,556,32"/>
+<area shape="rect" id="node5" href="address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="429,56,555,83"/>
+<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="650,5,737,32"/>
+<area shape="rect" id="node6" href="address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="604,56,783,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a563fb20442805d5fbe516b5f60fed5fd_icgraph.png" border="0" usemap="#bridges_8h_a563fb20442805d5fbe516b5f60fed5fd_icgraph" alt=""/></div>
+<map name="bridges_8h_a563fb20442805d5fbe516b5f60fed5fd_icgraph" id="bridges_8h_a563fb20442805d5fbe516b5f60fed5fd_icgraph">
+<area shape="rect" id="node2" href="transports_8h.html#a122033e171457c2474ad385177d1382a" title="pt_get_socks_args_for\l_proxy_addrport" alt="" coords="231,5,385,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -500,6 +642,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>We just learned a descriptor for a bridge. See if that digest is in our entry guard list, and add it if not. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_af8213fa6b22741a8c0b7d4834d7dccff_icgraph.png" border="0" usemap="#bridges_8h_af8213fa6b22741a8c0b7d4834d7dccff_icgraph" alt=""/></div>
+<map name="bridges_8h_af8213fa6b22741a8c0b7d4834d7dccff_icgraph" id="bridges_8h_af8213fa6b22741a8c0b7d4834d7dccff_icgraph">
+<area shape="rect" id="node2" href="routerlist_8h.html#ad0e00a6f0df9aace49976da496902957" title="routerlist_descriptors\l_added" alt="" coords="224,5,367,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -541,6 +691,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>We made a connection to a router at <b>addr</b>:<b>port</b> without knowing its digest. Its digest turned out to be <b>digest</b>. If it was a bridge, and we still don't know its digest, record it. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a362a2f2ca9c3d9f5956010fa079e1a6d_cgraph.png" border="0" usemap="#bridges_8h_a362a2f2ca9c3d9f5956010fa079e1a6d_cgraph" alt=""/></div>
+<map name="bridges_8h_a362a2f2ca9c3d9f5956010fa079e1a6d_cgraph" id="bridges_8h_a362a2f2ca9c3d9f5956010fa079e1a6d_cgraph">
+<area shape="rect" id="node2" href="bridges_8c.html#a6fb785f916f0d806e3bf33141f450600" title="get_configured_bridge\l_by_exact_addr_port_digest" alt="" coords="207,5,392,47"/>
+<area shape="rect" id="node5" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="235,71,363,98"/>
+<area shape="rect" id="node7" href="crypto__ed25519_8c.html#a1d56281a358363aa105b7032aebc46e4" title="ed25519_public_key\l_is_zero" alt="" coords="229,123,369,164"/>
+<area shape="rect" id="node9" href="bridges_8c.html#a06f10cf1c3269fd2a3a93fe696e6a662" title="find_transport_name\l_by_bridge_addrport" alt="" coords="229,188,369,229"/>
+<area shape="rect" id="node10" href="compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="256,254,343,281"/>
+<area shape="rect" id="node3" href="address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="440,13,567,39"/>
+<area shape="rect" id="node4" href="address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="615,13,793,39"/>
+<area shape="rect" id="node6" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="460,71,547,98"/>
+<area shape="rect" id="node8" href="util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="442,130,565,157"/>
+<area shape="rect" id="node11" href="compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="456,254,551,281"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -579,6 +746,29 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>Return 1 if <b>node</b> is one of our configured bridges, else 0. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a823bac0acf5f6b68ab2074757215eac3_cgraph.png" border="0" usemap="#bridges_8h_a823bac0acf5f6b68ab2074757215eac3_cgraph" alt=""/></div>
+<map name="bridges_8h_a823bac0acf5f6b68ab2074757215eac3_cgraph" id="bridges_8h_a823bac0acf5f6b68ab2074757215eac3_cgraph">
+<area shape="rect" id="node2" href="nodelist_8c.html#a551827c8c00ee79f3d3663d11b2b60a0" title="node_get_all_orports" alt="" coords="205,5,347,32"/>
+<area shape="rect" id="node3" href="bridges_8c.html#a6eaa7d5502639e1e5a484dcfddbba7d0" title="get_configured_bridge\l_by_orports_digest" alt="" coords="201,57,351,98"/>
+<area shape="rect" id="node4" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="399,39,527,65"/>
+<area shape="rect" id="node6" href="address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="399,89,526,116"/>
+<area shape="rect" id="node5" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="621,39,707,65"/>
+<area shape="rect" id="node7" href="address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="575,89,753,116"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_a823bac0acf5f6b68ab2074757215eac3_icgraph.png" border="0" usemap="#bridges_8h_a823bac0acf5f6b68ab2074757215eac3_icgraph" alt=""/></div>
+<map name="bridges_8h_a823bac0acf5f6b68ab2074757215eac3_icgraph" id="bridges_8h_a823bac0acf5f6b68ab2074757215eac3_icgraph">
+<area shape="rect" id="node2" href="nodelist_8h.html#a5c994699835c0d610e072920f397d6e8" title="node_has_preferred\l_descriptor" alt="" coords="201,23,337,65"/>
+<area shape="rect" id="node3" href="circuitbuild_8h.html#ae78b2dc4ee0d019045639d2a33eea506" title="extend_info_from_node" alt="" coords="385,5,543,32"/>
+<area shape="rect" id="node4" href="hs__common_8h.html#a9af4bf6fe3cc01d5524f2dd4123573a8" title="hs_pick_hsdir" alt="" coords="413,56,515,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -598,6 +788,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_pluggable_tra
       </table>
 </div><div class="memdoc">
 <p>Fetching the bridge descriptor from the bridge authority returned a "not found". Fall back to trying a direct fetch. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bridges_8h_af586c6437018de91c926dbabb4c802d6_cgraph.png" border="0" usemap="#bridges_8h_af586c6437018de91c926dbabb4c802d6_cgraph" alt=""/></div>
+<map name="bridges_8h_af586c6437018de91c926dbabb4c802d6_cgraph" id="bridges_8h_af586c6437018de91c926dbabb4c802d6_cgraph">
+<area shape="rect" id="node2" href="bridges_8c.html#a6f606330b47810e33e741bbefb1d2f9e" title="find_bridge_by_digest" alt="" coords="208,13,356,39"/>
+<area shape="rect" id="node3" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="404,13,491,39"/>
+</map>
+</div>
 
 </div>
 </div>

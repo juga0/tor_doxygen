@@ -2,4 +2,8 @@
 <area shape="rect" id="node2" href="$memarea_8c.html#a9bc481c5060ff6280cfb1e5eaaa915f4" title="memarea_new" alt="" coords="215,5,322,32"/>
 <area shape="rect" id="node3" href="$util_8c.html#a69faf166aa0aa9164d2134419c81ba1b" title="eat_whitespace" alt="" coords="212,56,325,83"/>
 <area shape="rect" id="node4" href="$util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="225,107,313,133"/>
+<area shape="rect" id="node5" href="$parsecommon_8c.html#a0a897ae41319f84342483abb652dd6dd" title="token_clear" alt="" coords="224,157,313,184"/>
+<area shape="rect" id="node6" href="$container_8c.html#ad24500d61ff1dbb6c845a8a70f6d2f14" title="smartlist_clear" alt="" coords="215,208,322,235"/>
+<area shape="rect" id="node7" href="$memarea_8c.html#a98079351167b7e4a7e189045d8534dc8" title="memarea_clear" alt="" coords="213,259,324,285"/>
+<area shape="rect" id="node8" href="$parsecommon_8c.html#af5a0f0fc39c7237d4d86a4288f31e19b" title="tokenize_string" alt="" coords="213,309,324,336"/>
 </map>

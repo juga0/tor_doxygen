@@ -90,6 +90,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:aff9b24e68cf31771da40fcc9b97c244a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f459e4b3cf39299de081624544dc88d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlogfile__t.html#a7f459e4b3cf39299de081624544dc88d">is_syslog</a></td></tr>
 <tr class="separator:a7f459e4b3cf39299de081624544dc88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a829ceb513f6d054ce176c1be2d9eb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlogfile__t.html#a9a829ceb513f6d054ce176c1be2d9eb5">is_android</a></td></tr>
+<tr class="separator:a9a829ceb513f6d054ce176c1be2d9eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b385e1b9c203fa41e3723ec0caeeed"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlogfile__t.html#a84b385e1b9c203fa41e3723ec0caeeed">android_tag</a></td></tr>
+<tr class="separator:a84b385e1b9c203fa41e3723ec0caeeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb585515b5729227f97b88da047f3b8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="torlog_8h.html#ab4e750313777b3335b0e494c61387ee1">log_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlogfile__t.html#adb585515b5729227f97b88da047f3b8b">callback</a></td></tr>
 <tr class="separator:adb585515b5729227f97b88da047f3b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03a51407fd44c27ca52ce1c1e021cf64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlog__severity__list__t.html">log_severity_list_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlogfile__t.html#a03a51407fd44c27ca52ce1c1e021cf64">severities</a></td></tr>
@@ -98,6 +102,21 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Information for a single logfile; only used in <a class="el" href="log_8c.html" title="Functions to send messages to log files or the console. ">log.c</a> </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a84b385e1b9c203fa41e3723ec0caeeed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84b385e1b9c203fa41e3723ec0caeeed">&#9670;&nbsp;</a></span>android_tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* android_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Identity Tag used in Android's log subsystem. </p>
+
+</div>
+</div>
 <a id="adb585515b5729227f97b88da047f3b8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb585515b5729227f97b88da047f3b8b">&#9670;&nbsp;</a></span>callback</h2>
 
@@ -140,6 +159,21 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Filename to open. </p>
+
+</div>
+</div>
+<a id="a9a829ceb513f6d054ce176c1be2d9eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a829ceb513f6d054ce176c1be2d9eb5">&#9670;&nbsp;</a></span>is_android</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_android</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Boolean: send messages to Android's log subsystem. </p>
 
 </div>
 </div>

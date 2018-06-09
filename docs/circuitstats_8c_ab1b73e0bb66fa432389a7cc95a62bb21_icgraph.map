@@ -1,0 +1,9 @@
+<map id="circuit_build_times_disabled" name="circuit_build_times_disabled">
+<area shape="rect" id="node2" href="$circuitstats_8h.html#afbfb286d45e72331adbc9eea6f92a30a" title="circuit_build_times\l_new_consensus_params" alt="" coords="184,5,357,47"/>
+<area shape="rect" id="node3" href="$circuitstats_8h.html#a783722d9622ae552e3f3d117163dd67a" title="circuit_build_times_init" alt="" coords="193,71,348,98"/>
+<area shape="rect" id="node4" href="$circuitstats_8h.html#a3698f5cf00759e40798b2dcb4097976c" title="circuit_build_times\l_parse_state" alt="" coords="405,89,536,131"/>
+<area shape="rect" id="node5" href="$circuitstats_8h.html#a306615a489277731398dbd19065f7b2b" title="circuit_build_times\l_handle_completed_hop" alt="" coords="189,173,352,215"/>
+<area shape="rect" id="node6" href="$circuitstats_8h.html#aae7a1d37f778a6e4e25443ec8a9b2c45" title="circuit_build_times\l_count_close" alt="" coords="205,239,336,280"/>
+<area shape="rect" id="node7" href="$circuitstats_8h.html#a5b7fc99dce125bfe7037769c7f300ed1" title="circuit_build_times\l_count_timeout" alt="" coords="205,304,336,345"/>
+<area shape="rect" id="node8" href="$circuitstats_8h.html#a321ec5d0efe5196955be8140397bba91" title="circuit_build_times\l_set_timeout" alt="" coords="205,369,336,411"/>
+</map>

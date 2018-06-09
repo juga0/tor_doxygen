@@ -1,0 +1,5 @@
+<map id="entry_guards_all_primary_guards_are_down" name="entry_guards_all_primary_guards_are_down">
+<area shape="rect" id="node2" href="$entrynodes_8h.html#af943c868320a66ee2dca652ad0555a32" title="entry_guards_upgrade\l_waiting_circuits" alt="" coords="220,5,371,47"/>
+<area shape="rect" id="node3" href="$circuitlist_8h.html#a8d569b96b07da7c91549695cc1ce8ccf" title="circuit_find_circuits\l_to_upgrade_from_guard_wait" alt="" coords="419,5,615,47"/>
+<area shape="rect" id="node4" href="$circuitbuild_8h.html#afbeee8004f6e86e019ed4c4a9556d7de" title="circuit_upgrade_circuits\l_from_guard_wait" alt="" coords="663,5,821,47"/>
+</map>

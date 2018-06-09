@@ -1,6 +1,4 @@
 <map id="init_connection_lists" name="init_connection_lists">
 <area shape="rect" id="node2" href="$main_8c.html#a5c761b9de5289922e4f75826f766355f" title="tor_init" alt="" coords="193,5,255,32"/>
-<area shape="rect" id="node3" href="$tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="303,5,375,32"/>
-<area shape="rect" id="node4" href="$tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="423,5,473,32"/>
-<area shape="rect" id="node5" href="$test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="521,5,615,32"/>
+<area shape="rect" id="node3" href="$tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="303,5,400,32"/>
 </map>

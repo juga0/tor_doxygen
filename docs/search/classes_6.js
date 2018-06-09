@@ -15,5 +15,6 @@ var searchData=
   ['geoip_5fipv6_5fentry_5ft',['geoip_ipv6_entry_t',['../structgeoip__ipv6__entry__t.html',1,'']]],
   ['get_5fhandler_5fargs_5ft',['get_handler_args_t',['../structget__handler__args__t.html',1,'']]],
   ['getinfo_5fitem_5ft',['getinfo_item_t',['../structgetinfo__item__t.html',1,'']]],
+  ['guard_5fpathbias_5ft',['guard_pathbias_t',['../structguard__pathbias__t.html',1,'']]],
   ['guardfraction_5fbandwidth_5ft',['guardfraction_bandwidth_t',['../structguardfraction__bandwidth__t.html',1,'']]]
 ];

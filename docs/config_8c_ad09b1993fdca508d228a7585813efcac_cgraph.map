@@ -1,3 +1,4 @@
 <map id="options_need_geoip_info" name="options_need_geoip_info">
-<area shape="rect" id="node2" href="$routerset_8c.html#a06782dad9f20dd3a3da80d9df1d4c3b3" title="routerset_needs_geoip" alt="" coords="219,5,372,32"/>
+<area shape="rect" id="node2" href="$geoip_8c.html#aecc961d6ac7cd75ec8593321d51d909a" title="should_record_bridge_info" alt="" coords="219,5,392,32"/>
+<area shape="rect" id="node3" href="$routerset_8c.html#a06782dad9f20dd3a3da80d9df1d4c3b3" title="routerset_needs_geoip" alt="" coords="229,56,382,83"/>
 </map>

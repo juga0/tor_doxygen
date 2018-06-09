@@ -1,0 +1,12 @@
+<map id="get_guard_selection_info" name="get_guard_selection_info">
+<area shape="rect" id="node2" href="$circuitlist_8h.html#a8d569b96b07da7c91549695cc1ce8ccf" title="circuit_find_circuits\l_to_upgrade_from_guard_wait" alt="" coords="220,5,416,47"/>
+<area shape="rect" id="node4" href="$entrynodes_8h.html#a059f7981078a896a9349a578b82bc645" title="entry_guard_get_by\l_id_digest" alt="" coords="250,71,386,112"/>
+<area shape="rect" id="node5" href="$entrynodes_8h.html#aab5f4a60cc416cbf7109763a3b44c45a" title="get_guard_state_for\l_bridge_desc_fetch" alt="" coords="249,136,387,177"/>
+<area shape="rect" id="node6" href="$entrynodes_8h.html#a1aedcf8995075b212cce9d510e9e70d7" title="entry_guards_changed" alt="" coords="241,202,395,229"/>
+<area shape="rect" id="node7" href="$entrynodes_8h.html#ae3a6a46f97e2693fa41867ff68a88a0f" title="getinfo_helper_entry\l_guards" alt="" coords="249,253,387,295"/>
+<area shape="rect" id="node8" href="$entrynodes_8h.html#a2059c6a8b0ae5f6bd64087fe00a27d9d" title="remove_all_entry_guards" alt="" coords="235,319,401,346"/>
+<area shape="rect" id="node9" href="$entrynodes_8h.html#a93db2fbe0af8230c60e96836cab30a29" title="guards_choose_dirguard" alt="" coords="237,370,399,397"/>
+<area shape="rect" id="node10" href="$entrynodes_8h.html#aa9eddf77d45dab94c87c4ae9e9a659fb" title="guards_retry_optimistic" alt="" coords="239,421,397,447"/>
+<area shape="rect" id="node11" href="$entrynodes_8h.html#a1f69ddf668f984f783eb7cfcb358185e" title="entry_guards_get_err\l_str_if_dir_info_missing" alt="" coords="239,472,397,513"/>
+<area shape="rect" id="node3" href="$circuitbuild_8h.html#afbeee8004f6e86e019ed4c4a9556d7de" title="circuit_upgrade_circuits\l_from_guard_wait" alt="" coords="464,5,623,47"/>
+</map>

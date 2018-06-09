@@ -1,0 +1,4 @@
+<map id="retry_bridge_descriptor_fetch_directly" name="retry_bridge_descriptor_fetch_directly">
+<area shape="rect" id="node2" href="$bridges_8c.html#a6f606330b47810e33e741bbefb1d2f9e" title="find_bridge_by_digest" alt="" coords="208,13,356,39"/>
+<area shape="rect" id="node3" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="404,13,491,39"/>
+</map>

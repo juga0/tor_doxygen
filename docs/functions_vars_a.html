@@ -138,6 +138,9 @@ $(function() {
 <li>AddressMap
 : <a class="el" href="structor__options__t.html#adf8ef5559aaccdb63ba80c4db98bf138">or_options_t</a>
 </li>
+<li>addrport_configured
+: <a class="el" href="structbridge__info__t.html#a73da69e3cefd1608e90a118f9754548a">bridge_info_t</a>
+</li>
 <li>after_firsthop_idx
 : <a class="el" href="structnetwork__liveness__t.html#acdbc7bb6f5dad6aaccc7823c40c203af">network_liveness_t</a>
 </li>
@@ -160,28 +163,15 @@ $(function() {
 : <a class="el" href="structor__options__t.html#a7bdb1bac9ec61082ab7fc98862951e05">or_options_t</a>
 </li>
 <li>allocation
-: <a class="el" href="structtor__zlib__state__t.html#a66d282e2a0e9255ea76e572a7cb03a19">tor_zlib_state_t</a>
+: <a class="el" href="structtor__lzma__compress__state__t.html#a66d282e2a0e9255ea76e572a7cb03a19">tor_lzma_compress_state_t</a>
+, <a class="el" href="structtor__zlib__compress__state__t.html#a66d282e2a0e9255ea76e572a7cb03a19">tor_zlib_compress_state_t</a>
+, <a class="el" href="structtor__zstd__compress__state__t.html#a66d282e2a0e9255ea76e572a7cb03a19">tor_zstd_compress_state_t</a>
 </li>
 <li>allow_single_hop_exits
 : <a class="el" href="structrouterinfo__t.html#a0e110fcd3c5d4142a9b023631a3a016d">routerinfo_t</a>
 </li>
-<li>AllowDotExit
-: <a class="el" href="structor__options__t.html#a9c264abfeb4bb19e2b42f58b8d399586">or_options_t</a>
-</li>
-<li>AllowInvalid_
-: <a class="el" href="structor__options__t.html#ad35f5256cb59bc6aa4c20487ec0a086b">or_options_t</a>
-</li>
-<li>AllowInvalidNodes
-: <a class="el" href="structor__options__t.html#a6b7bd86c7aa1750a4cbbb01d58b63e6f">or_options_t</a>
-</li>
 <li>AllowNonRFC953Hostnames
 : <a class="el" href="structor__options__t.html#a5307480219dcc1e704dee59ec83a6c45">or_options_t</a>
-</li>
-<li>AllowSingleHopCircuits
-: <a class="el" href="structor__options__t.html#ae2239e21967fb6efa78aa50c211a38fa">or_options_t</a>
-</li>
-<li>AllowSingleHopExits
-: <a class="el" href="structor__options__t.html#aeeaad0292e54e4e50b0fb351d6d2dcf2">or_options_t</a>
 </li>
 <li>AlternateBridgeAuthority
 : <a class="el" href="structor__options__t.html#ae40637998f02889b34e4161a873ac0a0">or_options_t</a>
@@ -189,11 +179,23 @@ $(function() {
 <li>AlternateDirAuthority
 : <a class="el" href="structor__options__t.html#a2f0bf868578214594e344f9544ac4386">or_options_t</a>
 </li>
+<li>android_tag
+: <a class="el" href="structlogfile__t.html#a84b385e1b9c203fa41e3723ec0caeeed">logfile_t</a>
+</li>
+<li>AndroidIdentityTag
+: <a class="el" href="structor__options__t.html#a2456dec65d15b5a33f01ed341306e90f">or_options_t</a>
+</li>
 <li>annotations_len
 : <a class="el" href="structsigned__descriptor__t.html#a7aaab40638e10815163c6fddf5e6e98d">signed_descriptor_t</a>
 </li>
+<li>argc
+: <a class="el" href="structtor__main__configuration__t.html#ad1447518f4372828b8435ae82e48499e">tor_main_configuration_t</a>
+</li>
 <li>args
 : <a class="el" href="structdirectory__token__t.html#aa24f72e6a4d6a997528142211b375496">directory_token_t</a>
+</li>
+<li>argv
+: <a class="el" href="structtor__main__configuration__t.html#af2efa898e9eed6fe6715279cb1ec35b0">tor_main_configuration_t</a>
 </li>
 <li>associated_isolated_stream_global_id
 : <a class="el" href="structorigin__circuit__t.html#a08a5d21580b1c9bae2b9b5e6e940194a">origin_circuit_t</a>
@@ -202,10 +204,10 @@ $(function() {
 : <a class="el" href="structor__options__t.html#a37d51d93c7ab3291e425d2715b13997a">or_options_t</a>
 </li>
 <li>auth_cert
-: <a class="el" href="structor__handshake__state__t.html#a7dd174590cc5d98b37a4cdaa7378307e">or_handshake_state_t</a>
+: <a class="el" href="structor__handshake__certs__t.html#a7dd174590cc5d98b37a4cdaa7378307e">or_handshake_certs_t</a>
 </li>
 <li>auth_type
-: <a class="el" href="structrend__data__t.html#a10517da7d3f8153662492a8720ba31ec">rend_data_t</a>
+: <a class="el" href="structrend__data__v2__t.html#a10517da7d3f8153662492a8720ba31ec">rend_data_v2_t</a>
 , <a class="el" href="structsocks__request__t.html#ac853d80a4be84d57cd987b407436a090">socks_request_t</a>
 </li>
 <li>AuthDirBadExit
@@ -229,9 +231,6 @@ $(function() {
 <li>AuthDirMaxServersPerAddr
 : <a class="el" href="structor__options__t.html#a57a65838b9210e266d916b69f8a1f3cd">or_options_t</a>
 </li>
-<li>AuthDirMaxServersPerAuthAddr
-: <a class="el" href="structor__options__t.html#adc1af44f52b8acb9fe7e465dbc557e1e">or_options_t</a>
-</li>
 <li>AuthDirPinKeys
 : <a class="el" href="structor__options__t.html#afe85717c7461f5c71ecc956c466f20c1">or_options_t</a>
 </li>
@@ -241,8 +240,14 @@ $(function() {
 <li>AuthDirSharedRandomness
 : <a class="el" href="structor__options__t.html#ad7dd11803b3bc83cb7296d12f20781de">or_options_t</a>
 </li>
-<li>authenticated_peer_id
-: <a class="el" href="structor__handshake__state__t.html#aec608e797c752a433e84b1ccb374c290">or_handshake_state_t</a>
+<li>AuthDirTestEd25519LinkKeys
+: <a class="el" href="structor__options__t.html#a0613a854ba9d1a0033270a86cc70a068">or_options_t</a>
+</li>
+<li>authenticated_ed25519_peer_id
+: <a class="el" href="structor__handshake__state__t.html#ae64ace4f658f7be72e7bdde6afaba2a9">or_handshake_state_t</a>
+</li>
+<li>authenticated_rsa_peer_id
+: <a class="el" href="structor__handshake__state__t.html#af7fd0599a19046f74f78076836874ca2">or_handshake_state_t</a>
 </li>
 <li>AuthoritativeDir
 : <a class="el" href="structor__options__t.html#a5c2e1f7905982063f9f47efe5ae1bd3f">or_options_t</a>

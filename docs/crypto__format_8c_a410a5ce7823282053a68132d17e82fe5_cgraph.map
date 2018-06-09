@@ -1,0 +1,8 @@
+<map id="ed25519_fmt" name="ed25519_fmt">
+<area shape="rect" id="node2" href="$crypto__ed25519_8c.html#a1d56281a358363aa105b7032aebc46e4" title="ed25519_public_key\l_is_zero" alt="" coords="170,5,310,47"/>
+<area shape="rect" id="node4" href="$crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364" title="ed25519_public_to_base64" alt="" coords="151,71,329,98"/>
+<area shape="rect" id="node3" href="$util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="389,13,511,39"/>
+<area shape="rect" id="node5" href="$crypto__format_8c.html#a357bf351fe9894c905f7e7029da38f9a" title="digest256_to_base64" alt="" coords="377,71,523,98"/>
+<area shape="rect" id="node6" href="$util__format_8c.html#a2394b082102cdbb3d443955e9b056e0e" title="base64_encode" alt="" coords="571,71,684,98"/>
+<area shape="rect" id="node7" href="$util__format_8c.html#a733f32f58c6056750ad6f64228af51b2" title="base64_encode_size" alt="" coords="732,71,876,98"/>
+</map>

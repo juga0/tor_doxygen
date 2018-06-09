@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tor: /home/user/_my/code/bwauth-related/tor/src/or/dirvote.c File Reference</title>
+<title>tor: /home/user/_my/code/bwauth-related/tor/src/or/dirauth/dirvote.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_386635fabd7f6c74e9d9c7a8604514a0.html">or</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_386635fabd7f6c74e9d9c7a8604514a0.html">or</a></li><li class="navelem"><a class="el" href="dir_c5d850bddae166bb86a80dcb64398e39.html">dirauth</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,9 +81,10 @@ $(function() {
 <code>#include &quot;<a class="el" href="dircollate_8h_source.html">dircollate.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="directory_8h_source.html">directory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dirserv_8h_source.html">dirserv.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirvote.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="microdesc_8h_source.html">microdesc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="nodelist_8h_source.html">nodelist.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parsecommon_8h_source.html">parsecommon.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="policies_8h_source.html">policies.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="protover_8h_source.html">protover.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rephist_8h_source.html">rephist.h</a>&quot;</code><br />
@@ -93,55 +94,62 @@ $(function() {
 <code>#include &quot;<a class="el" href="routerparse_8h_source.html">routerparse.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
 <code>#include &quot;torcert.h&quot;</code><br />
-<code>#include &quot;shared_random_state.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="voting__schedule_8h_source.html">voting_schedule.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirauth/dirvote.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mode_8h_source.html">dirauth/mode.h</a>&quot;</code><br />
+<code>#include &quot;dirauth/shared_random_state.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dirvote.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="dirvote_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirvote_8c" alt=""/></div>
-<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirvote_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirvote_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1201,259,1245,285"/>
-<area shape="rect" id="node33" href="config_8h.html" title="Header file for config.c. " alt="" coords="1766,408,1834,435"/>
-<area shape="rect" id="node34" href="dircollate_8h.html" title="Header file for dircollate.c. " alt="" coords="1808,184,1893,211"/>
-<area shape="rect" id="node35" href="directory_8h.html" title="Header file for directory.c. " alt="" coords="2216,109,2299,136"/>
-<area shape="rect" id="node36" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="1917,184,1989,211"/>
-<area shape="rect" id="node37" href="dirvote_8h.html" title="Header file for dirvote.c. " alt="" coords="1963,259,2035,285"/>
-<area shape="rect" id="node38" href="microdesc_8h.html" title="Header file for microdesc.c. " alt="" coords="2323,109,2416,136"/>
-<area shape="rect" id="node39" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2011,408,2125,435"/>
-<area shape="rect" id="node40" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="2440,109,2517,136"/>
-<area shape="rect" id="node41" href="protover_8h.html" title="Headers and type declarations for protover.c. " alt="" coords="1503,259,1583,285"/>
-<area shape="rect" id="node42" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2541,109,2613,136"/>
-<area shape="rect" id="node43" href="router_8h.html" title="Header file for router.c. " alt="" coords="2115,184,2181,211"/>
-<area shape="rect" id="node44" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="1678,259,1773,285"/>
-<area shape="rect" id="node45" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2251,259,2333,285"/>
-<area shape="rect" id="node46" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="2637,109,2736,136"/>
-<area shape="rect" id="node47" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2761,109,2858,136"/>
-<area shape="rect" id="node48" href="torcert_8h_source.html" title="torcert.h" alt="" coords="1607,184,1678,211"/>
-<area shape="rect" id="node49" href="shared__random__state_8h_source.html" title="shared_random_state.h" alt="" coords="1199,109,1358,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="407,781,486,808"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="687,707,750,733"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="611,483,680,509"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1475,483,1589,509"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1636,557,1761,584"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1539,632,1682,659"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="747,408,810,435"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1094,483,1159,509"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="1313,408,1399,435"/>
-<area shape="rect" id="node25" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="885,333,957,360"/>
-<area shape="rect" id="node26" href="address_8h.html" title="Headers for address.h. " alt="" coords="534,333,613,360"/>
-<area shape="rect" id="node27" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2243,632,2371,659"/>
-<area shape="rect" id="node29" href="ht_8h_source.html" title="ht.h" alt="" coords="982,333,1026,360"/>
-<area shape="rect" id="node30" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1050,333,1153,360"/>
-<area shape="rect" id="node31" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1177,333,1268,360"/>
-<area shape="rect" id="node32" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1369,632,1463,659"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1696,707,1795,733"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="606,557,682,584"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="347,707,455,733"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="398,632,525,659"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="760,483,888,509"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="1188,483,1239,509"/>
-<area shape="rect" id="node24" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1317,483,1395,509"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1070,632,1141,659"/>
-<area shape="rect" id="node50" href="shared__random_8h_source.html" title="shared_random.h" alt="" coords="1173,184,1296,211"/>
+<div class="center"><img src="dirvote_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirauth_2dirvote_8c" alt=""/></div>
+<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirauth_2dirvote_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirauth_2dirvote_8c">
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1141,273,1185,300"/>
+<area shape="rect" id="node26" href="config_8h.html" title="Header file for config.c. " alt="" coords="1741,273,1809,300"/>
+<area shape="rect" id="node27" href="dircollate_8h.html" title="Header file for dircollate.c. " alt="" coords="1652,199,1737,225"/>
+<area shape="rect" id="node28" href="directory_8h.html" title="Header file for directory.c. " alt="" coords="97,199,180,225"/>
+<area shape="rect" id="node30" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="1812,199,1884,225"/>
+<area shape="rect" id="node31" href="microdesc_8h.html" title="Header file for microdesc.c. " alt="" coords="2088,117,2181,143"/>
+<area shape="rect" id="node32" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="1885,273,2000,300"/>
+<area shape="rect" id="node33" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2206,117,2285,143"/>
+<area shape="rect" id="node34" href="parsecommon_8h.html" title="Header file for parsecommon.c. " alt="" coords="1449,348,1564,375"/>
+<area shape="rect" id="node36" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="2309,117,2387,143"/>
+<area shape="rect" id="node37" href="protover_8h.html" title="Headers and type declarations for protover.c. " alt="" coords="1584,273,1664,300"/>
+<area shape="rect" id="node38" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2411,117,2483,143"/>
+<area shape="rect" id="node39" href="router_8h.html" title="Header file for router.c. " alt="" coords="2108,497,2175,524"/>
+<area shape="rect" id="node40" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="113,273,207,300"/>
+<area shape="rect" id="node41" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2165,199,2248,225"/>
+<area shape="rect" id="node42" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="2507,117,2605,143"/>
+<area shape="rect" id="node43" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1965,199,2062,225"/>
+<area shape="rect" id="node45" href="torcert_8h_source.html" title="torcert.h" alt="" coords="899,199,970,225"/>
+<area shape="rect" id="node46" href="voting__schedule_8h.html" title="Header file for voting_schedule.c. " alt="" coords="1375,199,1502,225"/>
+<area shape="rect" id="node47" href="dirvote_8h.html" title="Header file for dirvote.c. " alt="" coords="2629,117,2744,143"/>
+<area shape="rect" id="node48" href="mode_8h.html" title="Standalone header file for directory authority mode. " alt="" coords="2769,117,2877,143"/>
+<area shape="rect" id="node49" href="shared__random__state_8h_source.html" title="dirauth/shared_random\l_state.h" alt="" coords="1104,109,1259,151"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1173,647,1251,673"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="663,572,726,599"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1047,423,1116,449"/>
+<area shape="rect" id="node10" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="350,348,463,375"/>
+<area shape="rect" id="node11" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="288,423,413,449"/>
+<area shape="rect" id="node12" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="489,497,631,524"/>
+<area shape="rect" id="node13" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1261,423,1323,449"/>
+<area shape="rect" id="node14" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1569,423,1634,449"/>
+<area shape="rect" id="node15" href="container_8h_source.html" title="container.h" alt="" coords="1347,423,1434,449"/>
+<area shape="rect" id="node16" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="795,348,885,375"/>
+<area shape="rect" id="node17" href="address_8h.html" title="Headers for address.h. " alt="" coords="641,348,719,375"/>
+<area shape="rect" id="node18" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1740,497,1868,524"/>
+<area shape="rect" id="node19" href="ht_8h_source.html" title="ht.h" alt="" coords="910,348,954,375"/>
+<area shape="rect" id="node20" href="confline_8h_source.html" title="confline.h" alt="" coords="1346,348,1425,375"/>
+<area shape="rect" id="node21" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="978,348,1081,375"/>
+<area shape="rect" id="node22" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1892,348,1983,375"/>
+<area shape="rect" id="node23" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="927,497,1038,524"/>
+<area shape="rect" id="node24" href="util__format_8h_source.html" title="util_format.h" alt="" coords="809,497,903,524"/>
+<area shape="rect" id="node25" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1105,348,1220,375"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1165,497,1241,524"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1552,572,1651,599"/>
+<area shape="rect" id="node29" href="hs__ident_8h.html" title="Header file containing circuit and connection identifier data for the whole HS subsytem. " alt="" coords="5,273,88,300"/>
+<area shape="rect" id="node35" href="memarea_8h_source.html" title="memarea.h" alt="" coords="1458,423,1545,449"/>
+<area shape="rect" id="node44" href="handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="2025,273,2103,300"/>
+<area shape="rect" id="node50" href="shared__random_8h_source.html" title="shared_random.h" alt="" coords="1103,199,1225,225"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -174,6 +182,10 @@ Macros</h2></td></tr>
 <tr class="memitem:aad81ce7a955cb848c14356df94c38eb8"><td class="memItemLeft" align="right" valign="top"><a id="aad81ce7a955cb848c14356df94c38eb8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CHECK_EQ</b>(a,  b,  margin)&#160;&#160;&#160;((a)-(b) &gt;= 0 ? (a)-(b) &lt;= (margin) : (b)-(a) &lt;= (margin))</td></tr>
 <tr class="separator:aad81ce7a955cb848c14356df94c38eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593ec48f332d0f3114976bfe78024fca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>IF_TIME_FOR_NEXT_ACTION</b>(when_field,  done_field)</td></tr>
+<tr class="separator:a593ec48f332d0f3114976bfe78024fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7039fb6fb9cb00f8e223a05e1ee436b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>ENDIF</b></td></tr>
+<tr class="separator:af7039fb6fb9cb00f8e223a05e1ee436b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -203,44 +215,28 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a52d3ec34f8dff4092975aeb4ccaaec68"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structauthority__cert__t.html">authority_cert_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a52d3ec34f8dff4092975aeb4ccaaec68">authority_cert_dup</a> (<a class="el" href="structauthority__cert__t.html">authority_cert_t</a> *cert)</td></tr>
+<tr class="separator:a52d3ec34f8dff4092975aeb4ccaaec68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c7f8a75319fa1345604f7cac5b02831"><td class="memItemLeft" align="right" valign="top">STATIC char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a7c7f8a75319fa1345604f7cac5b02831">format_networkstatus_vote</a> (<a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *private_signing_key, <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *v3_ns)</td></tr>
 <tr class="separator:a7c7f8a75319fa1345604f7cac5b02831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60af55f760759eb6ad39a5c11ba3baaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdocument__signature__t.html">document_signature_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a60af55f760759eb6ad39a5c11ba3baaf">voter_get_sig_by_algorithm</a> (const <a class="el" href="structnetworkstatus__voter__info__t.html">networkstatus_voter_info_t</a> *voter, digest_algorithm_t alg)</td></tr>
-<tr class="separator:a60af55f760759eb6ad39a5c11ba3baaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a170431e56608ff40b06dd265519102a7"><td class="memItemLeft" align="right" valign="top">STATIC char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a170431e56608ff40b06dd265519102a7">make_consensus_method_list</a> (int low, int high, const char *separator)</td></tr>
 <tr class="separator:a170431e56608ff40b06dd265519102a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53c84b14cb4293be3481901a2bf7d344"><td class="memItemLeft" align="right" valign="top">STATIC int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a53c84b14cb4293be3481901a2bf7d344">dirvote_get_intermediate_param_value</a> (const <a class="el" href="structsmartlist__t.html">smartlist_t</a> *param_list, const char *keyword, int32_t default_val)</td></tr>
 <tr class="separator:a53c84b14cb4293be3481901a2bf7d344"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8fd15ddb8a25674fa692b574339503c"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#ae8fd15ddb8a25674fa692b574339503c">dirvote_compute_params</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *votes, int method, int total_authorities)</td></tr>
 <tr class="separator:ae8fd15ddb8a25674fa692b574339503c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cedd7ac4100a20d3069d42dc535c84e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a0cedd7ac4100a20d3069d42dc535c84e">networkstatus_compute_consensus</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *votes, int total_authorities, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *identity_key, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *signing_key, const char *legacy_id_key_digest, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *legacy_signing_key, <a class="el" href="or_8h.html#ada0879620550843533b891a49543b109">consensus_flavor_t</a> flavor)</td></tr>
-<tr class="separator:a0cedd7ac4100a20d3069d42dc535c84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a826a16133541381aa8e115b2211e442e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a826a16133541381aa8e115b2211e442e">networkstatus_compute_bw_weights_v10</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *chunks, int64_t G, int64_t M, int64_t E, int64_t D, int64_t <a class="el" href="parsecommon_8h.html#ab691bd2eed9864879c6f851bda3168a8">T</a>, int64_t weight_scale)</td></tr>
+<tr class="separator:a826a16133541381aa8e115b2211e442e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa14e3f74b40d0a380fcda84609611c"><td class="memItemLeft" align="right" valign="top">STATIC char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a6fa14e3f74b40d0a380fcda84609611c">networkstatus_compute_consensus</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *votes, int total_authorities, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *identity_key, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *signing_key, const char *legacy_id_key_digest, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *legacy_signing_key, <a class="el" href="or_8h.html#ada0879620550843533b891a49543b109">consensus_flavor_t</a> flavor)</td></tr>
+<tr class="separator:a6fa14e3f74b40d0a380fcda84609611c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab876fd37d49b88c5ce095d93e458ff10"><td class="memItemLeft" align="right" valign="top">STATIC char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#ab876fd37d49b88c5ce095d93e458ff10">compute_consensus_package_lines</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *votes)</td></tr>
 <tr class="separator:ab876fd37d49b88c5ce095d93e458ff10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b21332ec8c217620fefe5f2bd405c93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a5b21332ec8c217620fefe5f2bd405c93">networkstatus_add_detached_signatures</a> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *target, <a class="el" href="structns__detached__signatures__t.html">ns_detached_signatures_t</a> *sigs, const char *source, int severity, const char **msg_out)</td></tr>
-<tr class="separator:a5b21332ec8c217620fefe5f2bd405c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88b12c0f09a9033deb2cb78cc1dc321c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a88b12c0f09a9033deb2cb78cc1dc321c">networkstatus_get_detached_signatures</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *consensuses)</td></tr>
-<tr class="separator:a88b12c0f09a9033deb2cb78cc1dc321c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a36c2930edf9d2ca915c30057a64da8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a4a36c2930edf9d2ca915c30057a64da8">ns_detached_signatures_free</a> (<a class="el" href="structns__detached__signatures__t.html">ns_detached_signatures_t</a> *s)</td></tr>
-<tr class="separator:a4a36c2930edf9d2ca915c30057a64da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38bc81b8644900e12b2b9b9569d105b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structauthority__cert__t.html">authority_cert_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a38bc81b8644900e12b2b9b9569d105b5">authority_cert_dup</a> (<a class="el" href="structauthority__cert__t.html">authority_cert_t</a> *cert)</td></tr>
-<tr class="separator:a38bc81b8644900e12b2b9b9569d105b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60188357707e416d29de6342bc32a883"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a60188357707e416d29de6342bc32a883">dirvote_get_preferred_voting_intervals</a> (<a class="el" href="structvote__timing__t.html">vote_timing_t</a> *timing_out)</td></tr>
-<tr class="separator:a60188357707e416d29de6342bc32a883"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad12be9f1748f89ce9e33a895218912fb"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#ad12be9f1748f89ce9e33a895218912fb">dirvote_get_start_of_next_interval</a> (time_t now, int interval, int offset)</td></tr>
-<tr class="separator:ad12be9f1748f89ce9e33a895218912fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7335b766c539b24f72e1953ed9ee59c1"><td class="memItemLeft" align="right" valign="top"><a id="a7335b766c539b24f72e1953ed9ee59c1"></a>
-time_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_next_valid_after_time</b> (time_t now)</td></tr>
-<tr class="separator:a7335b766c539b24f72e1953ed9ee59c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab7ea3ac9bbece8dbdd6c3c167dc0ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#aab7ea3ac9bbece8dbdd6c3c167dc0ae9">dirvote_recalculate_timing</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, time_t now)</td></tr>
-<tr class="separator:aab7ea3ac9bbece8dbdd6c3c167dc0ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f959ff7a4b18d042860c27616465a2b"><td class="memItemLeft" align="right" valign="top"><a id="a8f959ff7a4b18d042860c27616465a2b"></a>
-<a class="el" href="structvoting__schedule__t.html">voting_schedule_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_voting_schedule</b> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, time_t now, int severity)</td></tr>
-<tr class="separator:a8f959ff7a4b18d042860c27616465a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adffd241c7a248002845c761c4147ab58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#adffd241c7a248002845c761c4147ab58">voting_schedule_free</a> (<a class="el" href="structvoting__schedule__t.html">voting_schedule_t</a> *voting_schedule_to_free)</td></tr>
-<tr class="separator:adffd241c7a248002845c761c4147ab58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a333f56fb4797757ca9e04bee1550cabe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a333f56fb4797757ca9e04bee1550cabe">dirvote_act</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, time_t now)</td></tr>
-<tr class="separator:a333f56fb4797757ca9e04bee1550cabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa21e9db3a0c157ff08f322a8892609b8"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#aa21e9db3a0c157ff08f322a8892609b8">networkstatus_add_detached_signatures</a> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *target, <a class="el" href="structns__detached__signatures__t.html">ns_detached_signatures_t</a> *sigs, const char *source, int severity, const char **msg_out)</td></tr>
+<tr class="separator:aa21e9db3a0c157ff08f322a8892609b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621fb01e9587c2d750d2e8a08cf3fbcc"><td class="memItemLeft" align="right" valign="top">STATIC char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a621fb01e9587c2d750d2e8a08cf3fbcc">networkstatus_get_detached_signatures</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *consensuses)</td></tr>
+<tr class="separator:a621fb01e9587c2d750d2e8a08cf3fbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400b5c51c76c06099342ee3501f5f66d"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a400b5c51c76c06099342ee3501f5f66d">dirvote_act</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, time_t now)</td></tr>
+<tr class="separator:a400b5c51c76c06099342ee3501f5f66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e7e393e4261047243c1c3f339886e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpending__vote__t.html">pending_vote_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#ae4e7e393e4261047243c1c3f339886e4">dirvote_add_vote</a> (const char *vote_body, const char **msg_out, int *status_out)</td></tr>
 <tr class="separator:ae4e7e393e4261047243c1c3f339886e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a705721f192e93574c305f27b7e24f272"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a705721f192e93574c305f27b7e24f272">dirvote_add_signatures</a> (const char *detached_signatures_body, const char *source, const char **msg)</td></tr>
@@ -253,17 +249,48 @@ time_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_next_valid_afte
 <tr class="separator:a6e6f2ecd6383f9ed442ec8e827ce666e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6905fdc89a2bce64a9f79c526c140f94"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structcached__dir__t.html">cached_dir_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a6905fdc89a2bce64a9f79c526c140f94">dirvote_get_vote</a> (const char *fp, int flags)</td></tr>
 <tr class="separator:a6905fdc89a2bce64a9f79c526c140f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97feb95be6e8e94295fa6775355318ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmicrodesc__t.html">microdesc_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a97feb95be6e8e94295fa6775355318ee">dirvote_create_microdescriptor</a> (const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *ri, int consensus_method)</td></tr>
-<tr class="separator:a97feb95be6e8e94295fa6775355318ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadeea5dccfa87bef2915fd6e9ad92a39"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#aadeea5dccfa87bef2915fd6e9ad92a39">dirvote_format_microdesc_vote_line</a> (char *out_buf, size_t out_buf_len, const <a class="el" href="structmicrodesc__t.html">microdesc_t</a> *md, int consensus_method_low, int consensus_method_high)</td></tr>
-<tr class="separator:aadeea5dccfa87bef2915fd6e9ad92a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a059168318a87de5f77438cbcefdb73ed"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structmicrodesc__t.html">microdesc_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a059168318a87de5f77438cbcefdb73ed">dirvote_create_microdescriptor</a> (const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *ri, int consensus_method)</td></tr>
+<tr class="separator:a059168318a87de5f77438cbcefdb73ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8c11aee1a421ac4cd72f1d020ac6d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvote__microdesc__hash__t.html">vote_microdesc_hash_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a7c8c11aee1a421ac4cd72f1d020ac6d5">dirvote_format_all_microdesc_vote_lines</a> (const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *ri, time_t now, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *microdescriptors_out)</td></tr>
 <tr class="separator:a7c8c11aee1a421ac4cd72f1d020ac6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72cd954260c2fb4bfc45884588730a50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#a72cd954260c2fb4bfc45884588730a50">vote_routerstatus_find_microdesc_hash</a> (char *digest256_out, const <a class="el" href="structvote__routerstatus__t.html">vote_routerstatus_t</a> *vrs, int method, digest_algorithm_t alg)</td></tr>
-<tr class="separator:a72cd954260c2fb4bfc45884588730a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d7912178742b7e18778b375828f3c91"><td class="memItemLeft" align="right" valign="top"><a id="a2d7912178742b7e18778b375828f3c91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dirvote_parse_sr_commits</b> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns, const <a class="el" href="structsmartlist__t.html">smartlist_t</a> *tokens)</td></tr>
+<tr class="separator:a2d7912178742b7e18778b375828f3c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588a13d1e8e7be7ffa778f27566d1475"><td class="memItemLeft" align="right" valign="top"><a id="a588a13d1e8e7be7ffa778f27566d1475"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dirvote_clear_commits</b> (<a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns)</td></tr>
+<tr class="separator:a588a13d1e8e7be7ffa778f27566d1475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52bf9605db3dc6545f1b22b89de33cf"><td class="memItemLeft" align="right" valign="top"><a id="aa52bf9605db3dc6545f1b22b89de33cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dirvote_dirreq_get_status_vote</b> (const char *url, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *items, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *dir_items)</td></tr>
+<tr class="separator:aa52bf9605db3dc6545f1b22b89de33cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae288382ee634aeb5099f263fa9af8c25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html#ae288382ee634aeb5099f263fa9af8c25">dirserv_generate_networkstatus_vote_obj</a> (<a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *private_key, <a class="el" href="structauthority__cert__t.html">authority_cert_t</a> *cert)</td></tr>
+<tr class="separator:ae288382ee634aeb5099f263fa9af8c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to compute directory consensus, and schedule voting. </p>
+<p>This module is the center of the consensus-voting based directory authority system. With this system, a set of authorities first publish vote based on their opinions of the network, and then compute a consensus from those votes. Each authority signs the consensus, and clients trust the consensus if enough known authorities have signed it.</p>
+<p>The code in this module is only invoked on directory authorities. It's responsible for:</p>
+<ul>
+<li>
+Generating this authority's vote networkstatus, based on the authority's view of the network as represented in <a class="el" href="dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. ">dirserv.c</a> </li>
+<li>
+Formatting the vote networkstatus objects. </li>
+<li>
+Generating the microdescriptors that correspond to our own vote. </li>
+<li>
+Sending votes to all the other authorities. </li>
+<li>
+Trying to fetch missing votes from other authorities. </li>
+<li>
+Computing the consensus from a set of votes, as well as a "detached signature" object for other authorities to fetch. </li>
+<li>
+Collecting other authorities' signatures on the same consensus, until there are enough. </li>
+<li>
+Publishing the consensus to the reset of the directory system. </li>
+<li>
+Scheduling all of the above operations. </li>
+</ul>
+<p>The main entry points are in <a class="el" href="dirvote_8c.html#a400b5c51c76c06099342ee3501f5f66d">dirvote_act()</a>, which handles scheduled actions; and <a class="el" href="dirvote_8c.html#ae4e7e393e4261047243c1c3f339886e4">dirvote_add_vote()</a> and <a class="el" href="dirvote_8c.html#a705721f192e93574c305f27b7e24f272">dirvote_add_signatures()</a>, which handle uploaded and downloaded votes and signatures.</p>
+<p>(See dir-spec.txt from torspec.git for a complete specification of the directory protocol and voting algorithms.) </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a33655c8ce9871b95a88f4655acd785a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33655c8ce9871b95a88f4655acd785a8">&#9670;&nbsp;</a></span>CMP_FIELD</h2>
@@ -299,6 +326,20 @@ time_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_next_valid_afte
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                             \</div><div class="line">    utype aval = (utype) (itype) a-&gt;status.field;                       \</div><div class="line">    utype bval = (utype) (itype) b-&gt;status.field;                       \</div><div class="line">    utype u = bval - aval;                                              \</div><div class="line">    itype r2 = (itype) u;                                               \</div><div class="line">    if (r2 &lt; 0) {                                                       \</div><div class="line">      return -1;                                                        \</div><div class="line">    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (r2 &gt; 0) {                                                \</div><div class="line">      return 1;                                                         \</div><div class="line">    }                                                                   \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 </div>
 </div>
+<a id="af7039fb6fb9cb00f8e223a05e1ee436b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7039fb6fb9cb00f8e223a05e1ee436b">&#9670;&nbsp;</a></span>ENDIF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENDIF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">}           \</div><div class="line">  }</div></div><!-- fragment -->
+</div>
+</div>
 <a id="a8ac322bc7706fdb6fbe0b5ef824f40ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ac322bc7706fdb6fbe0b5ef824f40ed">&#9670;&nbsp;</a></span>get_most_frequent_member</h2>
 
@@ -316,6 +357,34 @@ time_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_next_valid_afte
 </div><div class="memdoc">
 <p>Given a sorted list of strings <b>lst</b>, return the member that appears most. Break ties in favor of later-occurring members. </p>
 
+</div>
+</div>
+<a id="a593ec48f332d0f3114976bfe78024fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593ec48f332d0f3114976bfe78024fca">&#9670;&nbsp;</a></span>IF_TIME_FOR_NEXT_ACTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IF_TIME_FOR_NEXT_ACTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">when_field, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">done_field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (! voting_schedule.done_field) {                   \</div><div class="line">    if (voting_schedule.when_field &gt; now) {             \</div><div class="line">      return voting_schedule.when_field;                \</div><div class="line">    } <span class="keywordflow">else</span> {</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aaf32d124cdb2c18fcf58f1665dfe2f72"></a>
@@ -460,14 +529,14 @@ time_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_next_valid_afte
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a38bc81b8644900e12b2b9b9569d105b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38bc81b8644900e12b2b9b9569d105b5">&#9670;&nbsp;</a></span>authority_cert_dup()</h2>
+<a id="a52d3ec34f8dff4092975aeb4ccaaec68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52d3ec34f8dff4092975aeb4ccaaec68">&#9670;&nbsp;</a></span>authority_cert_dup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structauthority__cert__t.html">authority_cert_t</a>* authority_cert_dup </td>
+          <td class="memname">STATIC <a class="el" href="structauthority__cert__t.html">authority_cert_t</a>* authority_cert_dup </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structauthority__cert__t.html">authority_cert_t</a> *&#160;</td>
           <td class="paramname"><em>cert</em></td><td>)</td>
@@ -506,14 +575,51 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a333f56fb4797757ca9e04bee1550cabe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a333f56fb4797757ca9e04bee1550cabe">&#9670;&nbsp;</a></span>dirvote_act()</h2>
+<a id="ae288382ee634aeb5099f263fa9af8c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae288382ee634aeb5099f263fa9af8c25">&#9670;&nbsp;</a></span>dirserv_generate_networkstatus_vote_obj()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dirvote_act </td>
+          <td class="memname"><a class="el" href="structnetworkstatus__t.html">networkstatus_t</a>* dirserv_generate_networkstatus_vote_obj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *&#160;</td>
+          <td class="paramname"><em>private_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structauthority__cert__t.html">authority_cert_t</a> *&#160;</td>
+          <td class="paramname"><em>cert</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a new networkstatus_t* containing our current opinion. (For v3 authorities) </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dirvote_8c_ae288382ee634aeb5099f263fa9af8c25_cgraph.png" border="0" usemap="#dirvote_8c_ae288382ee634aeb5099f263fa9af8c25_cgraph" alt=""/></div>
+<map name="dirvote_8c_ae288382ee634aeb5099f263fa9af8c25_cgraph" id="dirvote_8c_ae288382ee634aeb5099f263fa9af8c25_cgraph">
+<area shape="rect" id="node2" href="routerlist_8c.html#a9181bbed0ee6ff8088a7c53fc8c446f1" title="router_get_routerlist" alt="" coords="260,13,397,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a400b5c51c76c06099342ee3501f5f66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a400b5c51c76c06099342ee3501f5f66d">&#9670;&nbsp;</a></span>dirvote_act()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t dirvote_act </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
           <td class="paramname"><em>options</em>, </td>
@@ -531,16 +637,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Entry point: Take whatever voting actions are pending as of <b>now</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="dirvote_8c_a333f56fb4797757ca9e04bee1550cabe_cgraph.png" border="0" usemap="#dirvote_8c_a333f56fb4797757ca9e04bee1550cabe_cgraph" alt=""/></div>
-<map name="dirvote_8c_a333f56fb4797757ca9e04bee1550cabe_cgraph" id="dirvote_8c_a333f56fb4797757ca9e04bee1550cabe_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a71fbf956eedbc38a293306c9bf1962e7" title="authdir_mode_v3" alt="" coords="140,5,261,32"/>
-<area shape="rect" id="node3" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="309,5,409,32"/>
-</map>
-</div>
+<p>Entry point: Take whatever voting actions are pending as of <b>now</b>.</p>
+<p>Return the time at which the next action should be taken. </p>
 
 </div>
 </div>
@@ -657,14 +755,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a97feb95be6e8e94295fa6775355318ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97feb95be6e8e94295fa6775355318ee">&#9670;&nbsp;</a></span>dirvote_create_microdescriptor()</h2>
+<a id="a059168318a87de5f77438cbcefdb73ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059168318a87de5f77438cbcefdb73ed">&#9670;&nbsp;</a></span>dirvote_create_microdescriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmicrodesc__t.html">microdesc_t</a>* dirvote_create_microdescriptor </td>
+          <td class="memname">STATIC <a class="el" href="structmicrodesc__t.html">microdesc_t</a>* dirvote_create_microdescriptor </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *&#160;</td>
           <td class="paramname"><em>ri</em>, </td>
@@ -686,27 +784,28 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="dirvote_8c_a97feb95be6e8e94295fa6775355318ee_cgraph.png" border="0" usemap="#dirvote_8c_a97feb95be6e8e94295fa6775355318ee_cgraph" alt=""/></div>
-<map name="dirvote_8c_a97feb95be6e8e94295fa6775355318ee_cgraph" id="dirvote_8c_a97feb95be6e8e94295fa6775355318ee_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a557593755a335c3edf74bb3ead7af209" title="crypto_pk_write_public\l_key_to_string" alt="" coords="265,5,420,47"/>
+<div class="center"><img src="dirvote_8c_a059168318a87de5f77438cbcefdb73ed_cgraph.png" border="0" usemap="#dirvote_8c_a059168318a87de5f77438cbcefdb73ed_cgraph" alt=""/></div>
+<map name="dirvote_8c_a059168318a87de5f77438cbcefdb73ed_cgraph" id="dirvote_8c_a059168318a87de5f77438cbcefdb73ed_cgraph">
+<area shape="rect" id="node2" href="crypto__rsa_8c.html#a557593755a335c3edf74bb3ead7af209" title="crypto_pk_write_public\l_key_to_string" alt="" coords="265,5,420,47"/>
 <area shape="rect" id="node3" href="policies_8c.html#af2e21a770e119c34b55360c703040bdc" title="policy_summarize" alt="" coords="279,71,406,98"/>
-<area shape="rect" id="node4" href="container_8c.html#ab865391a8cac688c51809c33dad0bfe2" title="smartlist_join_strings" alt="" coords="270,122,415,149"/>
-<area shape="rect" id="node6" href="util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="481,173,631,199"/>
-<area shape="rect" id="node10" href="util__format_8c.html#a2394b082102cdbb3d443955e9b056e0e" title="base64_encode" alt="" coords="702,426,815,453"/>
+<area shape="rect" id="node4" href="container_8c.html#ab865391a8cac688c51809c33dad0bfe2" title="smartlist_join_strings" alt="" coords="483,122,628,149"/>
+<area shape="rect" id="node6" href="util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="480,223,631,250"/>
+<area shape="rect" id="node10" href="util__format_8c.html#a2394b082102cdbb3d443955e9b056e0e" title="base64_encode" alt="" coords="701,426,814,453"/>
 <area shape="rect" id="node12" href="address_8c.html#a6ecc12236743caf7527376436791c75e" title="tor_addr_is_null" alt="" coords="286,274,399,301"/>
 <area shape="rect" id="node13" href="address_8c.html#a1b6ba2d6f5a3bc607d7d761c849ec110" title="fmt_addrport" alt="" coords="295,325,390,351"/>
-<area shape="rect" id="node16" href="policies_8c.html#a8dd804fdc250aed2c7270fe142400c56" title="write_short_policy" alt="" coords="279,223,406,250"/>
-<area shape="rect" id="node17" href="crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364" title="ed25519_public_to_base64" alt="" coords="253,375,432,402"/>
-<area shape="rect" id="node19" href="crypto__format_8c.html#aa31b9d5fd609a1c8c3c888c7d817284c" title="digest_to_base64" alt="" coords="494,477,618,503"/>
-<area shape="rect" id="node20" href="routerparse_8c.html#abfc52ced95cf906593bbdab812e1cd8e" title="microdescs_parse_from\l_string" alt="" coords="262,528,423,569"/>
-<area shape="rect" id="node5" href="container_8c.html#aac69a4c0d462859a1a13a6eb35ab3c0a" title="smartlist_join_strings2" alt="" coords="480,122,632,149"/>
-<area shape="rect" id="node7" href="util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="680,173,837,199"/>
-<area shape="rect" id="node8" href="compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="910,173,1005,199"/>
-<area shape="rect" id="node9" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="907,223,1007,250"/>
-<area shape="rect" id="node11" href="util__format_8c.html#a733f32f58c6056750ad6f64228af51b2" title="base64_encode_size" alt="" coords="885,426,1029,453"/>
-<area shape="rect" id="node14" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="513,325,599,351"/>
-<area shape="rect" id="node15" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="711,325,806,351"/>
-<area shape="rect" id="node18" href="crypto__format_8c.html#a357bf351fe9894c905f7e7029da38f9a" title="digest256_to_base64" alt="" coords="483,375,629,402"/>
+<area shape="rect" id="node16" href="policies_8c.html#a8dd804fdc250aed2c7270fe142400c56" title="write_short_policy" alt="" coords="279,173,406,199"/>
+<area shape="rect" id="node18" href="crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364" title="ed25519_public_to_base64" alt="" coords="253,375,432,402"/>
+<area shape="rect" id="node20" href="crypto__format_8c.html#aa31b9d5fd609a1c8c3c888c7d817284c" title="digest_to_base64" alt="" coords="493,477,617,503"/>
+<area shape="rect" id="node21" href="routerparse_8c.html#abfc52ced95cf906593bbdab812e1cd8e" title="microdescs_parse_from\l_string" alt="" coords="262,528,423,569"/>
+<area shape="rect" id="node5" href="container_8c.html#aac69a4c0d462859a1a13a6eb35ab3c0a" title="smartlist_join_strings2" alt="" coords="681,122,833,149"/>
+<area shape="rect" id="node7" href="util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="679,223,836,250"/>
+<area shape="rect" id="node8" href="compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="909,249,1003,275"/>
+<area shape="rect" id="node9" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="906,198,1006,225"/>
+<area shape="rect" id="node11" href="util__format_8c.html#a733f32f58c6056750ad6f64228af51b2" title="base64_encode_size" alt="" coords="884,426,1028,453"/>
+<area shape="rect" id="node14" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="512,325,599,351"/>
+<area shape="rect" id="node15" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="710,325,805,351"/>
+<area shape="rect" id="node17" href="util_8c.html#a95ad8dd258dec01eebc504928e6df180" title="smartlist_add_strdup" alt="" coords="484,173,627,199"/>
+<area shape="rect" id="node19" href="crypto__format_8c.html#a357bf351fe9894c905f7e7029da38f9a" title="digest256_to_base64" alt="" coords="483,375,628,402"/>
 </map>
 </div>
 
@@ -744,53 +843,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Generate and return a linked list of all the lines that should appear to describe a router's microdescriptor versions in a directory vote. Add the generated microdescriptors to <b>microdescriptors_out</b>. </p>
-
-</div>
-</div>
-<a id="aadeea5dccfa87bef2915fd6e9ad92a39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadeea5dccfa87bef2915fd6e9ad92a39">&#9670;&nbsp;</a></span>dirvote_format_microdesc_vote_line()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ssize_t dirvote_format_microdesc_vote_line </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>out_buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>out_buf_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structmicrodesc__t.html">microdesc_t</a> *&#160;</td>
-          <td class="paramname"><em>md</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>consensus_method_low</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>consensus_method_high</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Format the appropriate vote line to describe the microdescriptor <b>md</b> in a consensus vote document. Write it into the <b>out_len</b>-byte buffer in <b>out</b>. Return -1 on failure and the number of characters written on success. </p>
 
 </div>
 </div>
@@ -857,72 +909,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a60188357707e416d29de6342bc32a883"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60188357707e416d29de6342bc32a883">&#9670;&nbsp;</a></span>dirvote_get_preferred_voting_intervals()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dirvote_get_preferred_voting_intervals </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvote__timing__t.html">vote_timing_t</a> *&#160;</td>
-          <td class="paramname"><em>timing_out</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set *<b>timing_out</b> to the intervals at which we would like to vote. Note that these aren't the intervals we'll use to vote; they're the ones that we'll vote to use. </p>
-
-</div>
-</div>
-<a id="ad12be9f1748f89ce9e33a895218912fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad12be9f1748f89ce9e33a895218912fb">&#9670;&nbsp;</a></span>dirvote_get_start_of_next_interval()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">time_t dirvote_get_start_of_next_interval </td>
-          <td>(</td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>now</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>interval</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>offset</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the start of the next interval of size <b>interval</b> (in seconds) after <b>now</b>, plus <b>offset</b>. Midnight always starts a fresh interval, and if the last interval of a day would be truncated to less than half its size, it is rolled into the previous interval. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="dirvote_8c_ad12be9f1748f89ce9e33a895218912fb_cgraph.png" border="0" usemap="#dirvote_8c_ad12be9f1748f89ce9e33a895218912fb_cgraph" alt=""/></div>
-<map name="dirvote_8c_ad12be9f1748f89ce9e33a895218912fb_cgraph" id="dirvote_8c_ad12be9f1748f89ce9e33a895218912fb_cgraph">
-<area shape="rect" id="node2" href="compat_8c.html#a983d273987a338a60523f0bce4006af2" title="tor_gmtime_r" alt="" coords="191,56,289,83"/>
-<area shape="rect" id="node6" href="util_8c.html#a966c4dd39a43f89fd5207aebb4756654" title="tor_timegm" alt="" coords="197,107,283,133"/>
-<area shape="rect" id="node3" href="compat__threads_8c.html#a0f3b168e06f8e4b99789af20771ee096" title="tor_mutex_new" alt="" coords="347,5,457,32"/>
-<area shape="rect" id="node4" href="compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="337,56,467,83"/>
-<area shape="rect" id="node5" href="compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="337,107,467,133"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a6905fdc89a2bce64a9f79c526c140f94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6905fdc89a2bce64a9f79c526c140f94">&#9670;&nbsp;</a></span>dirvote_get_vote()</h2>
 
@@ -949,44 +935,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return a given vote specified by <b>fp</b>. If <b>by_id</b>, return the vote for the authority with the v3 authority identity key digest <b>fp</b>; if <b>by_id</b> is false, return the vote whose digest is <b>fp</b>. If <b>fp</b> is NULL, return our own vote. If <b>include_previous</b> is false, do not consider any votes for a consensus that's already been built. If <b>include_pending</b> is false, do not consider any votes for the consensus that's in progress. May return NULL if we have no vote for the authority in question. </p>
-
-</div>
-</div>
-<a id="aab7ea3ac9bbece8dbdd6c3c167dc0ae9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab7ea3ac9bbece8dbdd6c3c167dc0ae9">&#9670;&nbsp;</a></span>dirvote_recalculate_timing()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dirvote_recalculate_timing </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
-          <td class="paramname"><em>options</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>now</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set voting_schedule to hold the timing for the next vote we should be doing. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="dirvote_8c_aab7ea3ac9bbece8dbdd6c3c167dc0ae9_cgraph.png" border="0" usemap="#dirvote_8c_aab7ea3ac9bbece8dbdd6c3c167dc0ae9_cgraph" alt=""/></div>
-<map name="dirvote_8c_aab7ea3ac9bbece8dbdd6c3c167dc0ae9_cgraph" id="dirvote_8c_aab7ea3ac9bbece8dbdd6c3c167dc0ae9_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a71fbf956eedbc38a293306c9bf1962e7" title="authdir_mode_v3" alt="" coords="184,13,305,39"/>
-<area shape="rect" id="node3" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="353,13,453,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1124,14 +1072,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a5b21332ec8c217620fefe5f2bd405c93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b21332ec8c217620fefe5f2bd405c93">&#9670;&nbsp;</a></span>networkstatus_add_detached_signatures()</h2>
+<a id="aa21e9db3a0c157ff08f322a8892609b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21e9db3a0c157ff08f322a8892609b8">&#9670;&nbsp;</a></span>networkstatus_add_detached_signatures()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int networkstatus_add_detached_signatures </td>
+          <td class="memname">STATIC int networkstatus_add_detached_signatures </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *&#160;</td>
           <td class="paramname"><em>target</em>, </td>
@@ -1172,14 +1120,74 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a0cedd7ac4100a20d3069d42dc535c84e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cedd7ac4100a20d3069d42dc535c84e">&#9670;&nbsp;</a></span>networkstatus_compute_consensus()</h2>
+<a id="a826a16133541381aa8e115b2211e442e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a826a16133541381aa8e115b2211e442e">&#9670;&nbsp;</a></span>networkstatus_compute_bw_weights_v10()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* networkstatus_compute_consensus </td>
+          <td class="memname">int networkstatus_compute_bw_weights_v10 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td>
+          <td class="paramname"><em>chunks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>G</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>M</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>E</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>T</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>weight_scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function computes the bandwidth weights for consensus method 10.</p>
+<p>It returns true if weights could be computed, false otherwise. </p>
+
+</div>
+</div>
+<a id="a6fa14e3f74b40d0a380fcda84609611c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa14e3f74b40d0a380fcda84609611c">&#9670;&nbsp;</a></span>networkstatus_compute_consensus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC char* networkstatus_compute_consensus </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td>
           <td class="paramname"><em>votes</em>, </td>
@@ -1227,19 +1235,20 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Given a list of vote <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> in <b>votes</b>, our public authority <b>identity_key</b>, our private authority <b>signing_key</b>, and the number of <b>total_authorities</b> that we believe exist in our voting quorum, generate the text of a new v3 consensus vote, and return the value in a newly allocated string.</p>
-<p>Note: this function DOES NOT check whether the votes are from recognized authorities. (dirvote_add_vote does that.) </p>
+<p>Given a list of vote <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> in <b>votes</b>, our public authority <b>identity_key</b>, our private authority <b>signing_key</b>, and the number of <b>total_authorities</b> that we believe exist in our voting quorum, generate the text of a new v3 consensus or microdescriptor consensus (depending on <b>flavor</b>), and return the value in a newly allocated string.</p>
+<p>Note: this function DOES NOT check whether the votes are from recognized authorities. (dirvote_add_vote does that.)</p>
+<p><b>WATCH OUT</b>: You need to think before you change the behavior of this function, or of the functions it calls! If some authorities compute the consensus with a different algorithm than others, they will not reach the same result, and they will not all sign the same thing! If you really need to change the algorithm here, you should allocate a new "consensus_method" for the new behavior, and make the new behavior conditional on a new-enough consensus_method. </p>
 
 </div>
 </div>
-<a id="a88b12c0f09a9033deb2cb78cc1dc321c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88b12c0f09a9033deb2cb78cc1dc321c">&#9670;&nbsp;</a></span>networkstatus_get_detached_signatures()</h2>
+<a id="a621fb01e9587c2d750d2e8a08cf3fbcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a621fb01e9587c2d750d2e8a08cf3fbcc">&#9670;&nbsp;</a></span>networkstatus_get_detached_signatures()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* networkstatus_get_detached_signatures </td>
+          <td class="memname">STATIC char* networkstatus_get_detached_signatures </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td>
           <td class="paramname"><em>consensuses</em></td><td>)</td>
@@ -1248,133 +1257,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return a newly allocated string holding the detached-signatures document corresponding to the signatures on <b>consensuses</b>, which must contain exactly one FLAV_NS consensus, and no more than one consensus for each other flavor. </p>
-
-</div>
-</div>
-<a id="a4a36c2930edf9d2ca915c30057a64da8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a36c2930edf9d2ca915c30057a64da8">&#9670;&nbsp;</a></span>ns_detached_signatures_free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ns_detached_signatures_free </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structns__detached__signatures__t.html">ns_detached_signatures_t</a> *&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Release all storage held in <b>s</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="dirvote_8c_a4a36c2930edf9d2ca915c30057a64da8_cgraph.png" border="0" usemap="#dirvote_8c_a4a36c2930edf9d2ca915c30057a64da8_cgraph" alt=""/></div>
-<map name="dirvote_8c_a4a36c2930edf9d2ca915c30057a64da8_cgraph" id="dirvote_8c_a4a36c2930edf9d2ca915c30057a64da8_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#af6fa8990a971778c3d879c662c1579a9" title="document_signature_free" alt="" coords="245,5,413,32"/>
-<area shape="rect" id="node3" href="util_8c.html#a40d94cc20afc38582c65aa418919ebed" title="tor_free_" alt="" coords="293,56,366,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a72cd954260c2fb4bfc45884588730a50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72cd954260c2fb4bfc45884588730a50">&#9670;&nbsp;</a></span>vote_routerstatus_find_microdesc_hash()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vote_routerstatus_find_microdesc_hash </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>digest256_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structvote__routerstatus__t.html">vote_routerstatus_t</a> *&#160;</td>
-          <td class="paramname"><em>vrs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>method</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">digest_algorithm_t&#160;</td>
-          <td class="paramname"><em>alg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If <b>vrs</b> has a hash made for the consensus method <b>method</b> with the digest algorithm <b>alg</b>, decode it and copy it into <b>digest256_out</b> and return 0. Otherwise return -1. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="dirvote_8c_a72cd954260c2fb4bfc45884588730a50_cgraph.png" border="0" usemap="#dirvote_8c_a72cd954260c2fb4bfc45884588730a50_cgraph" alt=""/></div>
-<map name="dirvote_8c_a72cd954260c2fb4bfc45884588730a50_cgraph" id="dirvote_8c_a72cd954260c2fb4bfc45884588730a50_cgraph">
-<area shape="rect" id="node2" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="241,5,327,32"/>
-<area shape="rect" id="node4" href="crypto_8c.html#adefcd6cb8ded2532779e981dce8d5011" title="crypto_digest_algorithm\l_get_name" alt="" coords="204,57,364,98"/>
-<area shape="rect" id="node3" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="412,5,507,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a60af55f760759eb6ad39a5c11ba3baaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60af55f760759eb6ad39a5c11ba3baaf">&#9670;&nbsp;</a></span>voter_get_sig_by_algorithm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structdocument__signature__t.html">document_signature_t</a>* voter_get_sig_by_algorithm </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structnetworkstatus__voter__info__t.html">networkstatus_voter_info_t</a> *&#160;</td>
-          <td class="paramname"><em>voter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">digest_algorithm_t&#160;</td>
-          <td class="paramname"><em>alg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the signature made by <b>voter</b> using the algorithm <b>alg</b>, or NULL if none is found. </p>
-
-</div>
-</div>
-<a id="adffd241c7a248002845c761c4147ab58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adffd241c7a248002845c761c4147ab58">&#9670;&nbsp;</a></span>voting_schedule_free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void voting_schedule_free </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvoting__schedule__t.html">voting_schedule_t</a> *&#160;</td>
-          <td class="paramname"><em>voting_schedule_to_free</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Frees a <a class="el" href="structvoting__schedule__t.html">voting_schedule_t</a>. This should be used instead of the generic tor_free. </p>
 
 </div>
 </div>

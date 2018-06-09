@@ -1,0 +1,7 @@
+<map id="ed25519_public_key_is_zero" name="ed25519_public_key_is_zero">
+<area shape="rect" id="node2" href="$crypto__format_8c.html#a410a5ce7823282053a68132d17e82fe5" title="ed25519_fmt" alt="" coords="235,5,332,32"/>
+<area shape="rect" id="node3" href="$bridges_8h.html#a362a2f2ca9c3d9f5956010fa079e1a6d" title="learned_router_identity" alt="" coords="207,56,360,83"/>
+<area shape="rect" id="node4" href="$connection__or_8h.html#a25311bc6d11b48d5f281528453c53ab0" title="connection_or_client\l_learned_peer_id" alt="" coords="213,107,354,149"/>
+<area shape="rect" id="node5" href="$dirserv_8h.html#a2b981b610d4a3344b17a55300072ef66" title="dirserv_orconn_tls_done" alt="" coords="202,173,365,200"/>
+<area shape="rect" id="node6" href="$nodelist_8h.html#a9a536b832b4e1fab98d98efed737ffff" title="node_ed25519_id_matches" alt="" coords="193,224,373,251"/>
+</map>

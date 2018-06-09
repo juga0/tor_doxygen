@@ -1,3 +1,8 @@
-<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/buffers.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/buffers.h">
-<area shape="rect" id="node2" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="30,109,129,136"/>
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/common/buffers.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/common/buffers.h">
+<area shape="rect" id="node2" href="$compat_8h_source.html" title="compat.h" alt="" coords="240,109,316,136"/>
+<area shape="rect" id="node4" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="83,259,145,285"/>
+<area shape="rect" id="node6" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="525,259,623,285"/>
+<area shape="rect" id="node3" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="309,333,388,360"/>
+<area shape="rect" id="node8" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="341,259,449,285"/>
+<area shape="rect" id="node11" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="401,184,528,211"/>
 </map>

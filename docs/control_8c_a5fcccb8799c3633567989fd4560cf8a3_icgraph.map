@@ -1,3 +1,4 @@
 <map id="control_event_circuit_status" name="control_event_circuit_status">
-<area shape="rect" id="node2" href="$circuituse_8h.html#a78a23775279a45daabbdc354310a9e1f" title="circuit_has_opened" alt="" coords="196,13,331,39"/>
+<area shape="rect" id="node2" href="$circuitstats_8h.html#a73e9aaecc9e72307e2483feeaed4c448" title="circuit_build_times\l_mark_circ_as_measurement_only" alt="" coords="196,5,420,47"/>
+<area shape="rect" id="node3" href="$circuituse_8h.html#a78a23775279a45daabbdc354310a9e1f" title="circuit_has_opened" alt="" coords="241,71,375,98"/>
 </map>

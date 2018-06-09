@@ -2,11 +2,9 @@ var searchData=
 [
   ['obsolete',['OBSOLETE',['../config_8c.html#a23aa8a0ad0e58d2d7f15bd4607768013',1,'config.c']]],
   ['old_5frouter_5fdesc_5fmax_5fage',['OLD_ROUTER_DESC_MAX_AGE',['../or_8h.html#a8fca63668a7055cdb2eb9bcd0e070c53',1,'or.h']]],
+  ['onion_5fkey_5fconsensus_5fcheck_5finterval',['ONION_KEY_CONSENSUS_CHECK_INTERVAL',['../or_8h.html#a61db4e4e5c8d1ec3b745ff9b766cbf4c',1,'or.h']]],
   ['onionqueue_5fwait_5fcutoff',['ONIONQUEUE_WAIT_CUTOFF',['../onion_8c.html#a54fd7d14b79974731209c25cf8eb9788',1,'onion.c']]],
-  ['openssl_5fv',['OPENSSL_V',['../crypto_8h.html#a58c6e41855facbbce8409e3f30c487ef',1,'crypto.h']]],
-  ['openssl_5fv_5fnopatch',['OPENSSL_V_NOPATCH',['../crypto_8h.html#a44663de8331f5a0742c11c67f288215a',1,'crypto.h']]],
-  ['openssl_5fv_5fseries',['OPENSSL_V_SERIES',['../crypto_8h.html#af2fe58c92e2d84095e411b1644b6d9d8',1,'crypto.h']]],
-  ['options_5fget_5fdatadir_5ffname2',['options_get_datadir_fname2',['../config_8h.html#ac2c2daaa69a2aa173cfa4d04f3f14d94',1,'config.h']]],
+  ['options_5fget_5fkeydir_5ffname',['options_get_keydir_fname',['../config_8h.html#a36bf5700ed26cde728431524460386c0',1,'config.h']]],
   ['or_5fauth_5fchallenge_5flen',['OR_AUTH_CHALLENGE_LEN',['../or_8h.html#add1b76c563f48196703a8fb1f842b54c',1,'or.h']]],
   ['or_5fcert_5ftype_5fauth_5f1024',['OR_CERT_TYPE_AUTH_1024',['../or_8h.html#acd3b9a31d3fd28871c5df4d2419f3a4e',1,'or.h']]],
   ['or_5fcert_5ftype_5fid_5f1024',['OR_CERT_TYPE_ID_1024',['../or_8h.html#a151322d59f9e615dc3add5b42405e0e6',1,'or.h']]],

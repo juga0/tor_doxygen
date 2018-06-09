@@ -80,14 +80,14 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="rect" id="node2" href="channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="5,109,153,165"/>
 <area shape="rect" id="node3" href="circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="177,109,325,165"/>
 <area shape="rect" id="node4" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="349,109,497,165"/>
-<area shape="rect" id="node5" href="circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. " alt="" coords="521,109,669,165"/>
+<area shape="rect" id="node5" href="circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="521,109,669,165"/>
 <area shape="rect" id="node6" href="circuitstats_8c.html" title="Maintains and analyzes statistics about circuit built times, so we can tell how long we may need to w..." alt="" coords="693,109,841,165"/>
-<area shape="rect" id="node7" href="circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. " alt="" coords="865,109,1013,165"/>
-<area shape="rect" id="node8" href="config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="1037,109,1185,165"/>
+<area shape="rect" id="node7" href="circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="865,109,1013,165"/>
+<area shape="rect" id="node8" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="1037,109,1185,165"/>
 <area shape="rect" id="node9" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="1210,109,1365,165"/>
 <area shape="rect" id="node10" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1389,109,1537,165"/>
 <area shape="rect" id="node11" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="1561,109,1709,165"/>
-<area shape="rect" id="node12" href="networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. " alt="" coords="1733,109,1889,165"/>
+<area shape="rect" id="node12" href="networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache..." alt="" coords="1733,109,1889,165"/>
 <area shape="rect" id="node13" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="1913,109,2061,165"/>
 <area shape="rect" id="node14" href="routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="2085,109,2233,165"/>
 <area shape="rect" id="node15" href="statefile_8c.html" title="Handles parsing and encoding the persistent &#39;state&#39; file that carries miscellaneous persistent state ..." alt="" coords="2257,109,2405,165"/>
@@ -106,8 +106,10 @@ Functions</h2></td></tr>
 <tr class="separator:a612d7d345a4328b8dd4d1079fb0bc9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33097eebbc8865c466107e5588f357ec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#a33097eebbc8865c466107e5588f357ec">get_circuit_build_timeout_ms</a> (void)</td></tr>
 <tr class="separator:a33097eebbc8865c466107e5588f357ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab883ccb58a956f9f308b80249cee790d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#ab883ccb58a956f9f308b80249cee790d">circuit_build_times_disabled</a> (void)</td></tr>
-<tr class="separator:ab883ccb58a956f9f308b80249cee790d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b73e0bb66fa432389a7cc95a62bb21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#ab1b73e0bb66fa432389a7cc95a62bb21">circuit_build_times_disabled</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:ab1b73e0bb66fa432389a7cc95a62bb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556d4f3e3d78886de05662aaf08f3c3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#a556d4f3e3d78886de05662aaf08f3c3f">circuit_build_times_disabled_</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, int ignore_consensus)</td></tr>
+<tr class="separator:a556d4f3e3d78886de05662aaf08f3c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3e86bd1570419757d3e1cdc577395a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#aa3e86bd1570419757d3e1cdc577395a3">circuit_build_times_enough_to_compute</a> (const circuit_build_times_t *cbt)</td></tr>
 <tr class="separator:aa3e86bd1570419757d3e1cdc577395a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cd11af3008cdeec3065dee7bed4cc88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#a6cd11af3008cdeec3065dee7bed4cc88">circuit_build_times_update_state</a> (const circuit_build_times_t *cbt, <a class="el" href="structor__state__t.html">or_state_t</a> *state)</td></tr>
@@ -124,6 +126,8 @@ Functions</h2></td></tr>
 <tr class="separator:a814d1a241f8835fa36625ee0a650733b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af926b84dc328f71fcccdaa4df5e418b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#af926b84dc328f71fcccdaa4df5e418b5">circuit_build_times_needs_circuits</a> (const circuit_build_times_t *cbt)</td></tr>
 <tr class="separator:af926b84dc328f71fcccdaa4df5e418b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a306615a489277731398dbd19065f7b2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#a306615a489277731398dbd19065f7b2b">circuit_build_times_handle_completed_hop</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
+<tr class="separator:a306615a489277731398dbd19065f7b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a078e35bc3a938238e3eac4eb29a076ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#a078e35bc3a938238e3eac4eb29a076ce">circuit_build_times_needs_circuits_now</a> (const circuit_build_times_t *cbt)</td></tr>
 <tr class="separator:a078e35bc3a938238e3eac4eb29a076ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a783722d9622ae552e3f3d117163dd67a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#a783722d9622ae552e3f3d117163dd67a">circuit_build_times_init</a> (circuit_build_times_t *cbt)</td></tr>
@@ -139,6 +143,8 @@ Functions</h2></td></tr>
 <tr class="memitem:aedc5c23b75049ef442f574713c61bc7d"><td class="memItemLeft" align="right" valign="top"><a id="aedc5c23b75049ef442f574713c61bc7d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>circuit_build_times_update_last_circ</b> (circuit_build_times_t *cbt)</td></tr>
 <tr class="separator:aedc5c23b75049ef442f574713c61bc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e9aaecc9e72307e2483feeaed4c448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#a73e9aaecc9e72307e2483feeaed4c448">circuit_build_times_mark_circ_as_measurement_only</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
+<tr class="separator:a73e9aaecc9e72307e2483feeaed4c448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b95a37e26723de09e38d46549c9fba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#a2b95a37e26723de09e38d46549c9fba0">circuit_build_times_network_is_live</a> (circuit_build_times_t *cbt)</td></tr>
 <tr class="separator:a2b95a37e26723de09e38d46549c9fba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c0ef1a1c2f4ee597394a8dc694e8e21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitstats_8h.html#a3c0ef1a1c2f4ee597394a8dc694e8e21">circuit_build_times_network_check_live</a> (const circuit_build_times_t *cbt)</td></tr>
@@ -236,7 +242,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="circuitstats_8h_aae7a1d37f778a6e4e25443ec8a9b2c45_cgraph.png" border="0" usemap="#circuitstats_8h_aae7a1d37f778a6e4e25443ec8a9b2c45_cgraph" alt=""/></div>
 <map name="circuitstats_8h_aae7a1d37f778a6e4e25443ec8a9b2c45_cgraph" id="circuitstats_8h_aae7a1d37f778a6e4e25443ec8a9b2c45_cgraph">
-<area shape="rect" id="node2" href="circuitstats_8c.html#ab883ccb58a956f9f308b80249cee790d" title="circuit_build_times\l_disabled" alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node2" href="circuitstats_8c.html#ab1b73e0bb66fa432389a7cc95a62bb21" title="circuit_build_times\l_disabled" alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node3" href="circuitstats_8c.html#a556d4f3e3d78886de05662aaf08f3c3f" title="circuit_build_times\l_disabled_" alt="" coords="363,5,493,47"/>
 </map>
 </div>
 
@@ -274,14 +281,15 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="circuitstats_8h_a5b7fc99dce125bfe7037769c7f300ed1_cgraph.png" border="0" usemap="#circuitstats_8h_a5b7fc99dce125bfe7037769c7f300ed1_cgraph" alt=""/></div>
 <map name="circuitstats_8h_a5b7fc99dce125bfe7037769c7f300ed1_cgraph" id="circuitstats_8h_a5b7fc99dce125bfe7037769c7f300ed1_cgraph">
-<area shape="rect" id="node2" href="circuitstats_8c.html#ab883ccb58a956f9f308b80249cee790d" title="circuit_build_times\l_disabled" alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node2" href="circuitstats_8c.html#ab1b73e0bb66fa432389a7cc95a62bb21" title="circuit_build_times\l_disabled" alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node3" href="circuitstats_8c.html#a556d4f3e3d78886de05662aaf08f3c3f" title="circuit_build_times\l_disabled_" alt="" coords="363,5,493,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab883ccb58a956f9f308b80249cee790d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab883ccb58a956f9f308b80249cee790d">&#9670;&nbsp;</a></span>circuit_build_times_disabled()</h2>
+<a id="ab1b73e0bb66fa432389a7cc95a62bb21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b73e0bb66fa432389a7cc95a62bb21">&#9670;&nbsp;</a></span>circuit_build_times_disabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,8 +297,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int circuit_build_times_disabled </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -305,16 +313,69 @@ Here is the call graph for this function:</div>
 <li>If we are configured in Single Onion mode </li>
 </ol>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitstats_8h_ab1b73e0bb66fa432389a7cc95a62bb21_cgraph.png" border="0" usemap="#circuitstats_8h_ab1b73e0bb66fa432389a7cc95a62bb21_cgraph" alt=""/></div>
+<map name="circuitstats_8h_ab1b73e0bb66fa432389a7cc95a62bb21_cgraph" id="circuitstats_8h_ab1b73e0bb66fa432389a7cc95a62bb21_cgraph">
+<area shape="rect" id="node2" href="circuitstats_8c.html#a556d4f3e3d78886de05662aaf08f3c3f" title="circuit_build_times\l_disabled_" alt="" coords="184,5,315,47"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="circuitstats_8h_ab883ccb58a956f9f308b80249cee790d_icgraph.png" border="0" usemap="#circuitstats_8h_ab883ccb58a956f9f308b80249cee790d_icgraph" alt=""/></div>
-<map name="circuitstats_8h_ab883ccb58a956f9f308b80249cee790d_icgraph" id="circuitstats_8h_ab883ccb58a956f9f308b80249cee790d_icgraph">
+<div class="center"><img src="circuitstats_8h_ab1b73e0bb66fa432389a7cc95a62bb21_icgraph.png" border="0" usemap="#circuitstats_8h_ab1b73e0bb66fa432389a7cc95a62bb21_icgraph" alt=""/></div>
+<map name="circuitstats_8h_ab1b73e0bb66fa432389a7cc95a62bb21_icgraph" id="circuitstats_8h_ab1b73e0bb66fa432389a7cc95a62bb21_icgraph">
 <area shape="rect" id="node2" href="circuitstats_8h.html#afbfb286d45e72331adbc9eea6f92a30a" title="circuit_build_times\l_new_consensus_params" alt="" coords="184,5,357,47"/>
 <area shape="rect" id="node3" href="circuitstats_8h.html#a783722d9622ae552e3f3d117163dd67a" title="circuit_build_times_init" alt="" coords="193,71,348,98"/>
 <area shape="rect" id="node4" href="circuitstats_8h.html#a3698f5cf00759e40798b2dcb4097976c" title="circuit_build_times\l_parse_state" alt="" coords="405,89,536,131"/>
-<area shape="rect" id="node5" href="circuitstats_8h.html#aae7a1d37f778a6e4e25443ec8a9b2c45" title="circuit_build_times\l_count_close" alt="" coords="205,173,336,215"/>
-<area shape="rect" id="node6" href="circuitstats_8h.html#a5b7fc99dce125bfe7037769c7f300ed1" title="circuit_build_times\l_count_timeout" alt="" coords="205,239,336,280"/>
-<area shape="rect" id="node7" href="circuitstats_8h.html#a321ec5d0efe5196955be8140397bba91" title="circuit_build_times\l_set_timeout" alt="" coords="205,304,336,345"/>
+<area shape="rect" id="node5" href="circuitstats_8h.html#a306615a489277731398dbd19065f7b2b" title="circuit_build_times\l_handle_completed_hop" alt="" coords="189,173,352,215"/>
+<area shape="rect" id="node6" href="circuitstats_8h.html#aae7a1d37f778a6e4e25443ec8a9b2c45" title="circuit_build_times\l_count_close" alt="" coords="205,239,336,280"/>
+<area shape="rect" id="node7" href="circuitstats_8h.html#a5b7fc99dce125bfe7037769c7f300ed1" title="circuit_build_times\l_count_timeout" alt="" coords="205,304,336,345"/>
+<area shape="rect" id="node8" href="circuitstats_8h.html#a321ec5d0efe5196955be8140397bba91" title="circuit_build_times\l_set_timeout" alt="" coords="205,369,336,411"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a556d4f3e3d78886de05662aaf08f3c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a556d4f3e3d78886de05662aaf08f3c3f">&#9670;&nbsp;</a></span>circuit_build_times_disabled_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int circuit_build_times_disabled_ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ignore_consensus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As circuit_build_times_disabled, but take options as an argument. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitstats_8h_a556d4f3e3d78886de05662aaf08f3c3f_icgraph.png" border="0" usemap="#circuitstats_8h_a556d4f3e3d78886de05662aaf08f3c3f_icgraph" alt=""/></div>
+<map name="circuitstats_8h_a556d4f3e3d78886de05662aaf08f3c3f_icgraph" id="circuitstats_8h_a556d4f3e3d78886de05662aaf08f3c3f_icgraph">
+<area shape="rect" id="node2" href="circuitstats_8h.html#ab1b73e0bb66fa432389a7cc95a62bb21" title="circuit_build_times\l_disabled" alt="" coords="184,173,315,215"/>
+<area shape="rect" id="node3" href="circuitstats_8h.html#afbfb286d45e72331adbc9eea6f92a30a" title="circuit_build_times\l_new_consensus_params" alt="" coords="363,5,536,47"/>
+<area shape="rect" id="node4" href="circuitstats_8h.html#a783722d9622ae552e3f3d117163dd67a" title="circuit_build_times_init" alt="" coords="372,71,527,98"/>
+<area shape="rect" id="node5" href="circuitstats_8h.html#a3698f5cf00759e40798b2dcb4097976c" title="circuit_build_times\l_parse_state" alt="" coords="584,89,715,131"/>
+<area shape="rect" id="node6" href="circuitstats_8h.html#a306615a489277731398dbd19065f7b2b" title="circuit_build_times\l_handle_completed_hop" alt="" coords="368,173,531,215"/>
+<area shape="rect" id="node7" href="circuitstats_8h.html#aae7a1d37f778a6e4e25443ec8a9b2c45" title="circuit_build_times\l_count_close" alt="" coords="384,239,515,280"/>
+<area shape="rect" id="node8" href="circuitstats_8h.html#a5b7fc99dce125bfe7037769c7f300ed1" title="circuit_build_times\l_count_timeout" alt="" coords="384,304,515,345"/>
+<area shape="rect" id="node9" href="circuitstats_8h.html#a321ec5d0efe5196955be8140397bba91" title="circuit_build_times\l_set_timeout" alt="" coords="384,369,515,411"/>
 </map>
 </div>
 
@@ -367,6 +428,41 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a306615a489277731398dbd19065f7b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a306615a489277731398dbd19065f7b2b">&#9670;&nbsp;</a></span>circuit_build_times_handle_completed_hop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void circuit_build_times_handle_completed_hop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td>
+          <td class="paramname"><em>circ</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Perform the build time work that needs to be done when a circuit completes a hop.</p>
+<p>This function decides if we should record a circuit's build time in our histogram data and other statistics, and if so, records it. It also will mark circuits that have already timed out as measurement-only circuits, so they can continue to build but not get used.</p>
+<p>For this, we want to consider circuits that will eventually make it to the third hop. For circuits longer than 3 hops, we want to record their build time when they reach the third hop, but let them continue (and not count them later). For circuits that are exactly 3 hops, this will count them when they are completed. We do this so that CBT is always gathering statistics on circuits of the same length, regardless of their type. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitstats_8h_a306615a489277731398dbd19065f7b2b_cgraph.png" border="0" usemap="#circuitstats_8h_a306615a489277731398dbd19065f7b2b_cgraph" alt=""/></div>
+<map name="circuitstats_8h_a306615a489277731398dbd19065f7b2b_cgraph" id="circuitstats_8h_a306615a489277731398dbd19065f7b2b_cgraph">
+<area shape="rect" id="node2" href="circuitstats_8c.html#ab1b73e0bb66fa432389a7cc95a62bb21" title="circuit_build_times\l_disabled" alt="" coords="246,5,377,47"/>
+<area shape="rect" id="node4" href="circuitbuild_8c.html#aa58d1c16591ccd8590c84255d7b3cc34" title="circuit_timeout_want\l_to_count_circ" alt="" coords="240,71,383,112"/>
+<area shape="rect" id="node6" href="util_8c.html#aa86d039278659b0bcd070908fb5e5218" title="tv_mdiff" alt="" coords="277,137,346,163"/>
+<area shape="rect" id="node7" href="circuitstats_8c.html#a33097eebbc8865c466107e5588f357ec" title="get_circuit_build_timeout_ms" alt="" coords="216,187,407,214"/>
+<area shape="rect" id="node8" href="circuitlist_8c.html#a1f1254d702e18cb40b466c578e7187d3" title="circuit_any_opened\l_circuits_cached" alt="" coords="244,239,379,280"/>
+<area shape="rect" id="node3" href="circuitstats_8c.html#a556d4f3e3d78886de05662aaf08f3c3f" title="circuit_build_times\l_disabled_" alt="" coords="487,5,617,47"/>
+<area shape="rect" id="node5" href="circuitlist_8c.html#a946530ab71c12655f35d3206c16d49b5" title="circuit_get_cpath_opened_len" alt="" coords="455,78,649,105"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a783722d9622ae552e3f3d117163dd67a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a783722d9622ae552e3f3d117163dd67a">&#9670;&nbsp;</a></span>circuit_build_times_init()</h2>
 
@@ -389,7 +485,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="circuitstats_8h_a783722d9622ae552e3f3d117163dd67a_cgraph.png" border="0" usemap="#circuitstats_8h_a783722d9622ae552e3f3d117163dd67a_cgraph" alt=""/></div>
 <map name="circuitstats_8h_a783722d9622ae552e3f3d117163dd67a_cgraph" id="circuitstats_8h_a783722d9622ae552e3f3d117163dd67a_cgraph">
-<area shape="rect" id="node2" href="circuitstats_8c.html#ab883ccb58a956f9f308b80249cee790d" title="circuit_build_times\l_disabled" alt="" coords="208,5,339,47"/>
+<area shape="rect" id="node2" href="circuitstats_8c.html#ab1b73e0bb66fa432389a7cc95a62bb21" title="circuit_build_times\l_disabled" alt="" coords="208,5,339,47"/>
+<area shape="rect" id="node3" href="circuitstats_8c.html#a556d4f3e3d78886de05662aaf08f3c3f" title="circuit_build_times\l_disabled_" alt="" coords="387,5,517,47"/>
 </map>
 </div>
 <div class="dynheader">
@@ -398,6 +495,33 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="circuitstats_8h_a783722d9622ae552e3f3d117163dd67a_icgraph.png" border="0" usemap="#circuitstats_8h_a783722d9622ae552e3f3d117163dd67a_icgraph" alt=""/></div>
 <map name="circuitstats_8h_a783722d9622ae552e3f3d117163dd67a_icgraph" id="circuitstats_8h_a783722d9622ae552e3f3d117163dd67a_icgraph">
 <area shape="rect" id="node2" href="circuitstats_8h.html#a3698f5cf00759e40798b2dcb4097976c" title="circuit_build_times\l_parse_state" alt="" coords="208,5,339,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73e9aaecc9e72307e2483feeaed4c448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e9aaecc9e72307e2483feeaed4c448">&#9670;&nbsp;</a></span>circuit_build_times_mark_circ_as_measurement_only()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void circuit_build_times_mark_circ_as_measurement_only </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td>
+          <td class="paramname"><em>circ</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mark this circuit as timed out, but change its purpose so that it continues to build, allowing us to measure its full build time. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitstats_8h_a73e9aaecc9e72307e2483feeaed4c448_cgraph.png" border="0" usemap="#circuitstats_8h_a73e9aaecc9e72307e2483feeaed4c448_cgraph" alt=""/></div>
+<map name="circuitstats_8h_a73e9aaecc9e72307e2483feeaed4c448_cgraph" id="circuitstats_8h_a73e9aaecc9e72307e2483feeaed4c448_cgraph">
+<area shape="rect" id="node2" href="control_8c.html#a5fcccb8799c3633567989fd4560cf8a3" title="control_event_circuit\l_status" alt="" coords="277,5,420,47"/>
 </map>
 </div>
 
@@ -503,7 +627,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Called to indicate that we completed a circuit. Because this circuit succeeded, it doesn't count as a timeout-after-the-first-hop.</p>
+<p>Called to indicate that we "completed" a circuit. Because this circuit succeeded, it doesn't count as a timeout-after-the-first-hop.</p>
+<p>(For the purposes of the cbt code, we consider a circuit "completed" if it has 3 hops, regardless of its final hop count. We do this because we're trying to answer the question, "how long should a circuit take to
+reach the 3-hop count".)</p>
 <p>This is used by <a class="el" href="circuitstats_8c.html#a4769116ba3c739de9deb558fb39470b7">circuit_build_times_network_check_changed()</a> to determine if we had too many recent timeouts and need to reset our learned timeout to something higher. </p>
 
 </div>
@@ -577,7 +703,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="circuitstats_8h_afbfb286d45e72331adbc9eea6f92a30a_cgraph.png" border="0" usemap="#circuitstats_8h_afbfb286d45e72331adbc9eea6f92a30a_cgraph" alt=""/></div>
 <map name="circuitstats_8h_afbfb286d45e72331adbc9eea6f92a30a_cgraph" id="circuitstats_8h_afbfb286d45e72331adbc9eea6f92a30a_cgraph">
-<area shape="rect" id="node2" href="circuitstats_8c.html#ab883ccb58a956f9f308b80249cee790d" title="circuit_build_times\l_disabled" alt="" coords="227,5,357,47"/>
+<area shape="rect" id="node2" href="circuitstats_8c.html#ab1b73e0bb66fa432389a7cc95a62bb21" title="circuit_build_times\l_disabled" alt="" coords="227,5,357,47"/>
+<area shape="rect" id="node3" href="circuitstats_8c.html#a556d4f3e3d78886de05662aaf08f3c3f" title="circuit_build_times\l_disabled_" alt="" coords="405,5,536,47"/>
 </map>
 </div>
 
@@ -616,7 +743,8 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="circuitstats_8h_a3698f5cf00759e40798b2dcb4097976c_cgraph.png" border="0" usemap="#circuitstats_8h_a3698f5cf00759e40798b2dcb4097976c_cgraph" alt=""/></div>
 <map name="circuitstats_8h_a3698f5cf00759e40798b2dcb4097976c_cgraph" id="circuitstats_8h_a3698f5cf00759e40798b2dcb4097976c_cgraph">
 <area shape="rect" id="node2" href="circuitstats_8c.html#a783722d9622ae552e3f3d117163dd67a" title="circuit_build_times_init" alt="" coords="184,5,339,32"/>
-<area shape="rect" id="node3" href="circuitstats_8c.html#ab883ccb58a956f9f308b80249cee790d" title="circuit_build_times\l_disabled" alt="" coords="387,23,517,65"/>
+<area shape="rect" id="node3" href="circuitstats_8c.html#ab1b73e0bb66fa432389a7cc95a62bb21" title="circuit_build_times\l_disabled" alt="" coords="387,23,517,65"/>
+<area shape="rect" id="node4" href="circuitstats_8c.html#a556d4f3e3d78886de05662aaf08f3c3f" title="circuit_build_times\l_disabled_" alt="" coords="565,23,696,65"/>
 </map>
 </div>
 
@@ -644,7 +772,8 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="circuitstats_8h_a321ec5d0efe5196955be8140397bba91_cgraph.png" border="0" usemap="#circuitstats_8h_a321ec5d0efe5196955be8140397bba91_cgraph" alt=""/></div>
 <map name="circuitstats_8h_a321ec5d0efe5196955be8140397bba91_cgraph" id="circuitstats_8h_a321ec5d0efe5196955be8140397bba91_cgraph">
 <area shape="rect" id="node2" href="util_8c.html#a44cb339836df0bbfcf8416209976f6db" title="tor_lround" alt="" coords="210,5,289,32"/>
-<area shape="rect" id="node3" href="circuitstats_8c.html#ab883ccb58a956f9f308b80249cee790d" title="circuit_build_times\l_disabled" alt="" coords="184,57,315,98"/>
+<area shape="rect" id="node3" href="circuitstats_8c.html#ab1b73e0bb66fa432389a7cc95a62bb21" title="circuit_build_times\l_disabled" alt="" coords="184,57,315,98"/>
+<area shape="rect" id="node4" href="circuitstats_8c.html#a556d4f3e3d78886de05662aaf08f3c3f" title="circuit_build_times\l_disabled_" alt="" coords="363,57,493,98"/>
 </map>
 </div>
 
@@ -733,6 +862,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return the time to wait before giving up on an under-construction circuit, in milliseconds. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitstats_8h_a33097eebbc8865c466107e5588f357ec_icgraph.png" border="0" usemap="#circuitstats_8h_a33097eebbc8865c466107e5588f357ec_icgraph" alt=""/></div>
+<map name="circuitstats_8h_a33097eebbc8865c466107e5588f357ec_icgraph" id="circuitstats_8h_a33097eebbc8865c466107e5588f357ec_icgraph">
+<area shape="rect" id="node2" href="circuitstats_8h.html#a306615a489277731398dbd19065f7b2b" title="circuit_build_times\l_handle_completed_hop" alt="" coords="244,5,407,47"/>
+</map>
+</div>
 
 </div>
 </div>

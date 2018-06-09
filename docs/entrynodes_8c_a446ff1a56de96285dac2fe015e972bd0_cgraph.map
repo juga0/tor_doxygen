@@ -1,0 +1,6 @@
+<map id="entry_guard_describe" name="entry_guard_describe">
+<area shape="rect" id="node2" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="200,5,287,32"/>
+<area shape="rect" id="node4" href="$util_8c.html#a17effd59ed2f9bf4cfebb12e423ded7f" title="hex_str" alt="" coords="211,56,276,83"/>
+<area shape="rect" id="node3" href="$compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="344,5,439,32"/>
+<area shape="rect" id="node5" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="335,56,448,83"/>
+</map>

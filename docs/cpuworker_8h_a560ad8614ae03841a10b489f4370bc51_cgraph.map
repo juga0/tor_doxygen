@@ -1,3 +1,6 @@
 <map id="cpu_init" name="cpu_init">
 <area shape="rect" id="node2" href="$workqueue_8c.html#a5bca099ce188de04027e4ef03fcbd97c" title="replyqueue_new" alt="" coords="120,5,236,32"/>
+<area shape="rect" id="node3" href="$config_8c.html#a24b84820686d4e33c276ae68be4f3c22" title="get_num_cpus" alt="" coords="125,56,231,83"/>
+<area shape="rect" id="node5" href="$workqueue_8c.html#a013cb0ab1ce586f5ab7d324416f9f1ff" title="threadpool_new" alt="" coords="121,107,235,133"/>
+<area shape="rect" id="node4" href="$compat_8c.html#aa88386bf611ee3d9a49f14414cb100b6" title="compute_num_cpus" alt="" coords="284,56,423,83"/>
 </map>

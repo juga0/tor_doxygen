@@ -1,0 +1,7 @@
+<map id="lines_eq" name="lines_eq">
+<area shape="rect" id="node2" href="$consdiff_8c.html#a296b2ba2a51a5e86b31543dddb2721d3" title="line_str_eq" alt="" coords="168,5,253,32"/>
+<area shape="rect" id="node3" href="$consdiff_8c.html#a450c29ea724a0271bfc227a157e24332" title="trim_slices" alt="" coords="351,56,436,83"/>
+<area shape="rect" id="node5" href="$consdiff_8c.html#af131136ce4b0bdead45911f3426d28d0" title="smartlist_slice_string_pos" alt="" coords="124,107,297,133"/>
+<area shape="rect" id="node4" href="$consdiff_8c.html#a93e600f2ec2f92de2a906ae8a73737a1" title="calc_changes" alt="" coords="489,81,592,108"/>
+<area shape="rect" id="node6" href="$consdiff_8c.html#a6293383be931683a9ccd524751c99cb1" title="set_changed" alt="" coords="345,107,441,133"/>
+</map>

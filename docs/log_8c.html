@@ -91,18 +91,18 @@ Include dependency graph for log.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="log_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2log_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2log_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2log_8c">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="503,557,581,584"/>
-<area shape="rect" id="node7" href="compat_8h_source.html" title="compat.h" alt="" coords="521,333,597,360"/>
-<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="591,184,642,211"/>
-<area shape="rect" id="node17" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="885,259,951,285"/>
-<area shape="rect" id="node18" href="container_8h_source.html" title="container.h" alt="" coords="655,109,741,136"/>
-<area shape="rect" id="node8" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="227,483,289,509"/>
-<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="718,483,817,509"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="535,483,643,509"/>
-<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="383,408,509,435"/>
-<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="5,408,76,435"/>
-<area shape="rect" id="node16" href="util__bug_8h.html" title="util_bug.h" alt="" coords="609,259,688,285"/>
-<area shape="rect" id="node19" href="siphash_8h_source.html" title="siphash.h" alt="" coords="667,184,745,211"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="485,557,563,584"/>
+<area shape="rect" id="node7" href="compat_8h_source.html" title="compat.h" alt="" coords="382,333,458,360"/>
+<area shape="rect" id="node15" href="util_8h.html" title="Headers for util.c. " alt="" coords="832,184,883,211"/>
+<area shape="rect" id="node18" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="397,259,462,285"/>
+<area shape="rect" id="node19" href="container_8h_source.html" title="container.h" alt="" coords="899,109,986,136"/>
+<area shape="rect" id="node8" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="851,483,914,509"/>
+<area shape="rect" id="node10" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="312,483,411,509"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="45,483,153,509"/>
+<area shape="rect" id="node14" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="197,408,323,435"/>
+<area shape="rect" id="node16" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="919,408,990,435"/>
+<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="719,259,798,285"/>
+<area shape="rect" id="node20" href="siphash_8h_source.html" title="siphash.h" alt="" coords="907,184,986,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -123,12 +123,18 @@ Macros</h2></td></tr>
 <tr class="memitem:a67123dab9fc1a60307fa654c8c182170"><td class="memItemLeft" align="right" valign="top"><a id="a67123dab9fc1a60307fa654c8c182170"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>raw_assert</b>(x)&#160;&#160;&#160;assert(x)</td></tr>
 <tr class="separator:a67123dab9fc1a60307fa654c8c182170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c6d131c0186ef68d24718b3d9db2f5"><td class="memItemLeft" align="right" valign="top"><a id="ac5c6d131c0186ef68d24718b3d9db2f5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>log_free</b>(lg)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structlogfile__t.html">logfile_t</a>, log_free_, (lg))</td></tr>
+<tr class="separator:ac5c6d131c0186ef68d24718b3d9db2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3b8c6e9472b4b90e403561e916c5f5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#ac3b8c6e9472b4b90e403561e916c5f5f">MAX_STARTUP_MSG_LEN</a>&#160;&#160;&#160;(1&lt;&lt;16)</td></tr>
 <tr class="separator:ac3b8c6e9472b4b90e403561e916c5f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a9132d05ebb59c729d69799b7902553"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a5a9132d05ebb59c729d69799b7902553">LOCK_LOGS</a>()</td></tr>
 <tr class="separator:a5a9132d05ebb59c729d69799b7902553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2e1127a707befb73ea5f27a61abfaeb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#ae2e1127a707befb73ea5f27a61abfaeb">UNLOCK_LOGS</a>()</td></tr>
 <tr class="separator:ae2e1127a707befb73ea5f27a61abfaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92811cc0a1021f17b4efd988564d9be7"><td class="memItemLeft" align="right" valign="top"><a id="a92811cc0a1021f17b4efd988564d9be7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>pending_log_message_free</b>(msg)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structpending__log__message__t.html">pending_log_message_t</a>, pending_log_message_free_, (msg))</td></tr>
+<tr class="separator:a92811cc0a1021f17b4efd988564d9be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63940bdf1a17dd41f2a6359582e0a22d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a63940bdf1a17dd41f2a6359582e0a22d">MAX_SIGSAFE_FDS</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:a63940bdf1a17dd41f2a6359582e0a22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -149,6 +155,10 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a665d03a179fc9e07ac04fd65dccb6d47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a665d03a179fc9e07ac04fd65dccb6d47">log_set_application_name</a> (const char *name)</td></tr>
 <tr class="separator:a665d03a179fc9e07ac04fd65dccb6d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c4eb3192bce9902d5d0aab8040d40c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a82c4eb3192bce9902d5d0aab8040d40c">log_message_is_interesting</a> (int severity, <a class="el" href="torlog_8h.html#a3ea3afb80db88b6ccec80d80ac98cea1">log_domain_mask_t</a> domain)</td></tr>
+<tr class="separator:a82c4eb3192bce9902d5d0aab8040d40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed4078ea6402d989c51c3b630c2c18b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a5ed4078ea6402d989c51c3b630c2c18b">tor_log_string</a> (int severity, <a class="el" href="torlog_8h.html#a3ea3afb80db88b6ccec80d80ac98cea1">log_domain_mask_t</a> domain, const char *function, const char *string)</td></tr>
+<tr class="separator:a5ed4078ea6402d989c51c3b630c2c18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d9773c46dca42387f5ae2604cec46cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a7d9773c46dca42387f5ae2604cec46cc">set_log_time_granularity</a> (int granularity_msec)</td></tr>
 <tr class="separator:a7d9773c46dca42387f5ae2604cec46cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d00baf128ff864946f0d6cb0170ecbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a3d00baf128ff864946f0d6cb0170ecbf">MOCK_IMPL</a> (STATIC void, logv,(int severity, <a class="el" href="torlog_8h.html#a3ea3afb80db88b6ccec80d80ac98cea1">log_domain_mask_t</a> domain, const char *funcname, const char *suffix, const char *format, va_list ap))</td></tr>
@@ -180,6 +190,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>log_fn_ratelim_</b> (
 <tr class="separator:ad0d017c920375095ef5107dde9e04fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae05c9d768a4300deac12b221dd8b4bc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#ae05c9d768a4300deac12b221dd8b4bc8">add_temp_log</a> (int min_severity)</td></tr>
 <tr class="separator:ae05c9d768a4300deac12b221dd8b4bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fe970d5272a608105f09afe4af9dd33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a4fe970d5272a608105f09afe4af9dd33">logs_set_pending_callback_callback</a> (pending_callback_callback cb)</td></tr>
+<tr class="separator:a4fe970d5272a608105f09afe4af9dd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50d0e6daed6f830195242259e4685aad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a50d0e6daed6f830195242259e4685aad">add_callback_log</a> (const <a class="el" href="structlog__severity__list__t.html">log_severity_list_t</a> *severity, <a class="el" href="torlog_8h.html#ab4e750313777b3335b0e494c61387ee1">log_callback</a> cb)</td></tr>
 <tr class="separator:a50d0e6daed6f830195242259e4685aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26c45902f415353a9ab42857c58f4580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a26c45902f415353a9ab42857c58f4580">change_callback_log_severity</a> (int loglevelMin, int loglevelMax, <a class="el" href="torlog_8h.html#ab4e750313777b3335b0e494c61387ee1">log_callback</a> cb)</td></tr>
@@ -211,6 +223,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>log_fn_ratelim_</b> (
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a015dff46f539c633e9f7d1697ed92036"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a015dff46f539c633e9f7d1697ed92036">LOG_WARN_</a> = <a class="el" href="torlog_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27">LOG_WARN</a></td></tr>
+<tr class="separator:a015dff46f539c633e9f7d1697ed92036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54eccfa797d1a98a145d740bc84227d5"><td class="memItemLeft" align="right" valign="top"><a id="a54eccfa797d1a98a145d740bc84227d5"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>LOG_NOTICE_</b> = <a class="el" href="torlog_8h.html#ad89ee324d180cdcd7defcc709ff9ca42">LOG_NOTICE</a></td></tr>
+<tr class="separator:a54eccfa797d1a98a145d740bc84227d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8e0015d00fd55c30faec6de6beecbc"><td class="memItemLeft" align="right" valign="top"><a id="afd8e0015d00fd55c30faec6de6beecbc"></a>
+const <a class="el" href="torlog_8h.html#a3ea3afb80db88b6ccec80d80ac98cea1">log_domain_mask_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LD_GENERAL_</b> = <a class="el" href="torlog_8h.html#acca714107ebaa8b76d132fa5df44f528">LD_GENERAL</a></td></tr>
+<tr class="separator:afd8e0015d00fd55c30faec6de6beecbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ec86260c6bd8aed7fd999a839caacd"><td class="memItemLeft" align="right" valign="top"><a id="a38ec86260c6bd8aed7fd999a839caacd"></a>
+const <a class="el" href="torlog_8h.html#a3ea3afb80db88b6ccec80d80ac98cea1">log_domain_mask_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LD_NET_</b> = <a class="el" href="torlog_8h.html#acb14d1c8357d6d727d62e293b75e575c">LD_NET</a></td></tr>
+<tr class="separator:a38ec86260c6bd8aed7fd999a839caacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b33df36926c3d1cb3dedbde63fc4ff4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html#a8b33df36926c3d1cb3dedbde63fc4ff4">log_global_min_severity_</a> = <a class="el" href="torlog_8h.html#ad89ee324d180cdcd7defcc709ff9ca42">LOG_NOTICE</a></td></tr>
 <tr class="separator:a8b33df36926c3d1cb3dedbde63fc4ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -231,7 +254,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">STMT_BEGIN                                          \</a></div><div class="line"><a class="code" href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">  tor_assert</a>(log_mutex_initialized);                                    \</div><div class="line">  tor_mutex_acquire(&amp;log_mutex);                                        \</div><div class="line">  STMT_END</div><div class="ttc" id="util__bug_8h_html_ac74618cc20e13497e7c9128b29b02192"><div class="ttname"><a href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">tor_assert</a></div><div class="ttdeci">#define tor_assert(expr)</div><div class="ttdef"><b>Definition:</b> util_bug.h:42</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">STMT_BEGIN                                          \</a></div><div class="line"><a class="code" href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">  tor_assert</a>(log_mutex_initialized);                                    \</div><div class="line">  tor_mutex_acquire(&amp;log_mutex);                                        \</div><div class="line">  STMT_END</div><div class="ttc" id="util__bug_8h_html_ac74618cc20e13497e7c9128b29b02192"><div class="ttname"><a href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">tor_assert</a></div><div class="ttdeci">#define tor_assert(expr)</div><div class="ttdef"><b>Definition:</b> util_bug.h:68</div></div>
 </div><!-- fragment --><p>Lock the log_mutex to prevent others from changing the <a class="el" href="structlogfile__t.html">logfile_t</a> list </p>
 
 </div>
@@ -314,7 +337,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">STMT_BEGIN                                        \</a></div><div class="line"><a class="code" href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">  tor_assert</a>(log_mutex_initialized);                                    \</div><div class="line">  tor_mutex_release(&amp;log_mutex);                                        \</div><div class="line">  STMT_END</div><div class="ttc" id="util__bug_8h_html_ac74618cc20e13497e7c9128b29b02192"><div class="ttname"><a href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">tor_assert</a></div><div class="ttdeci">#define tor_assert(expr)</div><div class="ttdef"><b>Definition:</b> util_bug.h:42</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">STMT_BEGIN                                        \</a></div><div class="line"><a class="code" href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">  tor_assert</a>(log_mutex_initialized);                                    \</div><div class="line">  tor_mutex_release(&amp;log_mutex);                                        \</div><div class="line">  STMT_END</div><div class="ttc" id="util__bug_8h_html_ac74618cc20e13497e7c9128b29b02192"><div class="ttname"><a href="util__bug_8h.html#ac74618cc20e13497e7c9128b29b02192">tor_assert</a></div><div class="ttdeci">#define tor_assert(expr)</div><div class="ttdef"><b>Definition:</b> util_bug.h:68</div></div>
 </div><!-- fragment --><p>Unlock the log_mutex </p>
 
 </div>
@@ -653,9 +676,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="log_8c_a0bc134e471615f694edc26aef8bf961f_icgraph.png" border="0" usemap="#log_8c_a0bc134e471615f694edc26aef8bf961f_icgraph" alt=""/></div>
 <map name="log_8c_a0bc134e471615f694edc26aef8bf961f_icgraph" id="log_8c_a0bc134e471615f694edc26aef8bf961f_icgraph">
-<area shape="rect" id="node2" href="tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="140,5,212,32"/>
-<area shape="rect" id="node4" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="359,31,452,57"/>
-<area shape="rect" id="node3" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="260,5,311,32"/>
+<area shape="rect" id="node2" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="145,5,243,32"/>
+<area shape="rect" id="node3" href="test_8h.html#a334e47899bf2c19bf8a5ce0f226ab399" title="get_fname_rnd" alt="" coords="140,56,248,83"/>
 </map>
 </div>
 
@@ -705,6 +727,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Implementation of the log_fn backend, used when we have variadic macros. All arguments are as for log_fn, except for <b>fn</b>, which is the name of the calling functions. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="log_8c_a592d3f67550c87de9892a10363389026_icgraph.png" border="0" usemap="#log_8c_a592d3f67550c87de9892a10363389026_icgraph" alt=""/></div>
+<map name="log_8c_a592d3f67550c87de9892a10363389026_icgraph" id="log_8c_a592d3f67550c87de9892a10363389026_icgraph">
+<area shape="rect" id="node2" href="torlog_8h.html#a5ed4078ea6402d989c51c3b630c2c18b" title="tor_log_string" alt="" coords="117,5,217,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -724,6 +754,35 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return the string equivalent of a given log level. </p>
+
+</div>
+</div>
+<a id="a82c4eb3192bce9902d5d0aab8040d40c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c4eb3192bce9902d5d0aab8040d40c">&#9670;&nbsp;</a></span>log_message_is_interesting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int log_message_is_interesting </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="torlog_8h.html#a3ea3afb80db88b6ccec80d80ac98cea1">log_domain_mask_t</a>&#160;</td>
+          <td class="paramname"><em>domain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true if some of the running logs might be interested in a log message of the given severity in the given domains. If this function returns true, the log message might be ignored anyway, but if it returns false, it is definitely_ safe not to log the message. </p>
 
 </div>
 </div>
@@ -750,9 +809,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="log_8c_a665d03a179fc9e07ac04fd65dccb6d47_icgraph.png" border="0" usemap="#log_8c_a665d03a179fc9e07ac04fd65dccb6d47_icgraph" alt=""/></div>
 <map name="log_8c_a665d03a179fc9e07ac04fd65dccb6d47_icgraph" id="log_8c_a665d03a179fc9e07ac04fd65dccb6d47_icgraph">
 <area shape="rect" id="node2" href="main_8c.html#a5c761b9de5289922e4f75826f766355f" title="tor_init" alt="" coords="225,5,287,32"/>
-<area shape="rect" id="node3" href="tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="335,5,407,32"/>
-<area shape="rect" id="node4" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="455,5,505,32"/>
-<area shape="rect" id="node5" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="553,5,647,32"/>
+<area shape="rect" id="node3" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="335,5,432,32"/>
 </map>
 </div>
 
@@ -793,6 +850,29 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set whether we report logging domains as a part of our log messages. </p>
+
+</div>
+</div>
+<a id="a4fe970d5272a608105f09afe4af9dd33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fe970d5272a608105f09afe4af9dd33">&#9670;&nbsp;</a></span>logs_set_pending_callback_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void logs_set_pending_callback_callback </td>
+          <td>(</td>
+          <td class="paramtype">pending_callback_callback&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Register "cb" as the callback to call when there are new pending log callbacks to be flushed with <a class="el" href="log_8c.html#a802865935b09c50703930cd14a56ea5f">flush_pending_log_callbacks()</a>.</p>
+<p>Note that this callback, if present, can be invoked from any thread.</p>
+<p>This callback must not log.</p>
+<p>It is intentional that this function contains the name "callback" twice: it sets a "callback" to be called on the condition that there is a "pending
+callback". </p>
 
 </div>
 </div>
@@ -1077,22 +1157,22 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node6" href="util_8h.html#af16b9ea01680fc8d8adb247d1549c00c" title="tor_log_mallinfo" alt="" coords="143,81,257,108"/>
 <area shape="rect" id="node7" href="util_8h.html#a4fb7293a905e61c3a9ba683a8ed9ad99" title="string_is_key_value" alt="" coords="131,132,269,159"/>
 <area shape="rect" id="node8" href="channel_8h.html#a1ef365ba78cdfea35f694be31bfd6e91" title="channel_dumpstats" alt="" coords="133,183,267,209"/>
-<area shape="rect" id="node9" href="channel_8h.html#ab0519ba6c6b14de83e886ed42095fe68" title="channel_listener_dumpstats" alt="" coords="333,288,517,315"/>
-<area shape="rect" id="node10" href="channel_8c.html#ab56dc7ecc8a31e8bfa4dc5281b72c21e" title="MOCK_IMPL" alt="" coords="150,284,250,311"/>
-<area shape="rect" id="node11" href="channel_8h.html#a31e2ae335dbe5af256b18df4f3c1070e" title="channel_listener_dump\l_statistics" alt="" coords="123,335,277,377"/>
-<area shape="rect" id="node12" href="circuitbuild_8h.html#a40cc65f3c1820f93996af79209385f7c" title="circuit_log_path" alt="" coords="143,401,257,428"/>
-<area shape="rect" id="node13" href="circuitbuild_8h.html#a9850a0ba60e6a62bc0a7267343418235" title="circuit_note_clock\l_jumped" alt="" coords="137,453,263,494"/>
-<area shape="rect" id="node14" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="136,518,264,559"/>
-<area shape="rect" id="node15" href="rendservice_8h.html#aca6ff2c7eb35e708f23676059431fa27" title="rend_service_dump_stats" alt="" coords="115,584,285,611"/>
-<area shape="rect" id="node16" href="rephist_8h.html#a86f2c4294a880006745284556ecbf7a6" title="rep_hist_dump_stats" alt="" coords="129,635,271,661"/>
-<area shape="rect" id="node17" href="rephist_8h.html#a445ff3ee23999b52d45c456c7b4f8e63" title="dump_pk_ops" alt="" coords="149,685,251,712"/>
-<area shape="rect" id="node18" href="router_8h.html#a7ca8d566f45ef49fb6fd7358c235a420" title="init_key_from_file" alt="" coords="138,736,262,763"/>
-<area shape="rect" id="node19" href="router_8h.html#a1ccf29e1bf3d8e43591f66d2a5118a6b" title="v3_authority_check\l_key_expiry" alt="" coords="133,787,267,829"/>
-<area shape="rect" id="node20" href="routerlist_8h.html#a5062bf36695d11df627a5d3cda2954fe" title="dump_routerlist_mem\l_usage" alt="" coords="127,853,273,894"/>
-<area shape="rect" id="node21" href="routerparse_8h.html#ae652ccb5411f5cb5eae101cd26ac4d6b" title="dump_distinct_digest\l_count" alt="" coords="127,918,273,959"/>
-<area shape="rect" id="node3" href="tortls_8c.html#adc2406721ee63472828ecc962767ebe2" title="tls_log_errors" alt="" coords="375,31,475,57"/>
-<area shape="rect" id="node4" href="tortls_8h.html#a13025f3a8714b2c00a7b7d0842fc5694" title="tor_tls_peer_has_cert" alt="" coords="565,5,712,32"/>
-<area shape="rect" id="node5" href="tortls_8c.html#a631d2a19bd52d1de8194b24da85c3317" title="MOCK_IMPL" alt="" coords="589,56,689,83"/>
+<area shape="rect" id="node10" href="channel_8h.html#ab0519ba6c6b14de83e886ed42095fe68" title="channel_listener_dumpstats" alt="" coords="351,288,535,315"/>
+<area shape="rect" id="node11" href="channel_8c.html#ab56dc7ecc8a31e8bfa4dc5281b72c21e" title="MOCK_IMPL" alt="" coords="150,284,250,311"/>
+<area shape="rect" id="node12" href="channel_8h.html#a31e2ae335dbe5af256b18df4f3c1070e" title="channel_listener_dump\l_statistics" alt="" coords="123,335,277,377"/>
+<area shape="rect" id="node13" href="circuitbuild_8h.html#a40cc65f3c1820f93996af79209385f7c" title="circuit_log_path" alt="" coords="143,401,257,428"/>
+<area shape="rect" id="node14" href="circuitbuild_8h.html#ad0daecc03b3062716a6845b8a522d3da" title="circuit_note_clock\l_jumped" alt="" coords="137,453,263,494"/>
+<area shape="rect" id="node15" href="directory_8c.html#a4af7e7ade522a1f118e7770955ff50ea" title="handle_response_fetch\l_consensus" alt="" coords="122,518,278,559"/>
+<area shape="rect" id="node16" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="136,583,264,625"/>
+<area shape="rect" id="node17" href="rendservice_8h.html#aca6ff2c7eb35e708f23676059431fa27" title="rend_service_dump_stats" alt="" coords="115,649,285,676"/>
+<area shape="rect" id="node18" href="rephist_8h.html#a86f2c4294a880006745284556ecbf7a6" title="rep_hist_dump_stats" alt="" coords="129,700,271,727"/>
+<area shape="rect" id="node19" href="router_8h.html#a7ca8d566f45ef49fb6fd7358c235a420" title="init_key_from_file" alt="" coords="138,751,262,777"/>
+<area shape="rect" id="node20" href="routerlist_8h.html#a5062bf36695d11df627a5d3cda2954fe" title="dump_routerlist_mem\l_usage" alt="" coords="127,802,273,843"/>
+<area shape="rect" id="node21" href="routerparse_8h.html#ae652ccb5411f5cb5eae101cd26ac4d6b" title="dump_distinct_digest\l_count" alt="" coords="127,867,273,909"/>
+<area shape="rect" id="node3" href="tortls_8c.html#adc2406721ee63472828ecc962767ebe2" title="tls_log_errors" alt="" coords="393,31,493,57"/>
+<area shape="rect" id="node4" href="tortls_8h.html#a13025f3a8714b2c00a7b7d0842fc5694" title="tor_tls_peer_has_cert" alt="" coords="600,5,747,32"/>
+<area shape="rect" id="node5" href="tortls_8c.html#a631d2a19bd52d1de8194b24da85c3317" title="MOCK_IMPL" alt="" coords="623,56,723,83"/>
+<area shape="rect" id="node9" href="fakechans_8h.html#a2cff55df4a9516484aba4c6302c9deda" title="scheduler_release_channel_mock" alt="" coords="333,183,552,209"/>
 </map>
 </div>
 
@@ -1151,14 +1231,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Add to <b>out</b> a copy of every currently configured log file name. Used to enable access to these filenames with the sandbox code. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="log_8c_add5085d3abd574f178eb1ae14c1ed30f_cgraph.png" border="0" usemap="#log_8c_add5085d3abd574f178eb1ae14c1ed30f_cgraph" alt=""/></div>
-<map name="log_8c_add5085d3abd574f178eb1ae14c1ed30f_cgraph" id="log_8c_add5085d3abd574f178eb1ae14c1ed30f_cgraph">
-<area shape="rect" id="node2" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="180,13,280,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1178,6 +1250,56 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set *<b>out</b> to a pointer to an array of the fds to log errors to from inside a signal handler. Return the number of elements in the array. </p>
+
+</div>
+</div>
+<a id="a5ed4078ea6402d989c51c3b630c2c18b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed4078ea6402d989c51c3b630c2c18b">&#9670;&nbsp;</a></span>tor_log_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tor_log_string </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>severity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="torlog_8h.html#a3ea3afb80db88b6ccec80d80ac98cea1">log_domain_mask_t</a>&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As tor_log, but takes an optional function name, and does not treat its <b>string</b> as a printf format.</p>
+<p>For use by Rust integration. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="log_8c_a5ed4078ea6402d989c51c3b630c2c18b_cgraph.png" border="0" usemap="#log_8c_a5ed4078ea6402d989c51c3b630c2c18b_cgraph" alt=""/></div>
+<map name="log_8c_a5ed4078ea6402d989c51c3b630c2c18b_cgraph" id="log_8c_a5ed4078ea6402d989c51c3b630c2c18b_cgraph">
+<area shape="rect" id="node2" href="log_8c.html#a592d3f67550c87de9892a10363389026" title="log_fn_" alt="" coords="153,5,217,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1241,6 +1363,21 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>What's the lowest log level anybody cares about? Checking this lets us bail out early from log_debug if we aren't debugging. </p>
+
+</div>
+</div>
+<a id="a015dff46f539c633e9f7d1697ed92036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015dff46f539c633e9f7d1697ed92036">&#9670;&nbsp;</a></span>LOG_WARN_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int LOG_WARN_ = <a class="el" href="torlog_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27">LOG_WARN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Defining compile-time constants for Tor log levels (used by the Rust log wrapper at src/rust/tor_log) </p>
 
 </div>
 </div>

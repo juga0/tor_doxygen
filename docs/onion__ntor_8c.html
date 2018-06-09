@@ -77,6 +77,8 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;orconfig.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="crypto_8h_source.html">crypto.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__digest_8h_source.html">crypto_digest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;onion_ntor.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="torlog_8h_source.html">torlog.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
@@ -85,19 +87,25 @@ Include dependency graph for onion_ntor.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="onion__ntor_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2onion__ntor_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2onion__ntor_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2onion__ntor_8c">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="568,483,647,509"/>
-<area shape="rect" id="node3" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="180,184,249,211"/>
-<area shape="rect" id="node12" href="onion__ntor_8h_source.html" title="onion_ntor.h" alt="" coords="84,259,177,285"/>
-<area shape="rect" id="node15" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1039,184,1104,211"/>
-<area shape="rect" id="node16" href="util_8h.html" title="Headers for util.c. " alt="" coords="872,109,922,136"/>
-<area shape="rect" id="node5" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="231,408,294,435"/>
-<area shape="rect" id="node6" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="710,408,809,435"/>
-<area shape="rect" id="node7" href="compat_8h_source.html" title="compat.h" alt="" coords="828,259,904,285"/>
-<area shape="rect" id="node9" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="456,408,564,435"/>
-<area shape="rect" id="node11" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="544,333,671,360"/>
-<area shape="rect" id="node13" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="326,333,468,360"/>
-<area shape="rect" id="node14" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="27,333,98,360"/>
-<area shape="rect" id="node18" href="util__bug_8h.html" title="util_bug.h" alt="" coords="1159,184,1238,211"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="758,781,837,808"/>
+<area shape="rect" id="node3" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1047,109,1116,136"/>
+<area shape="rect" id="node13" href="util_8h.html" title="Headers for util.c. " alt="" coords="759,408,809,435"/>
+<area shape="rect" id="node18" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="975,259,1086,285"/>
+<area shape="rect" id="node21" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="257,259,322,285"/>
+<area shape="rect" id="node22" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="1736,184,1829,211"/>
+<area shape="rect" id="node23" href="onion__ntor_8h_source.html" title="onion_ntor.h" alt="" coords="1424,109,1517,136"/>
+<area shape="rect" id="node5" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1315,707,1378,733"/>
+<area shape="rect" id="node7" href="compat_8h_source.html" title="compat.h" alt="" coords="495,557,571,584"/>
+<area shape="rect" id="node17" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="635,184,730,211"/>
+<area shape="rect" id="node8" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="260,707,359,733"/>
+<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="695,707,803,733"/>
+<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="347,632,474,659"/>
+<area shape="rect" id="node14" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1238,557,1309,584"/>
+<area shape="rect" id="node16" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="539,483,618,509"/>
+<area shape="rect" id="node19" href="container_8h_source.html" title="container.h" alt="" coords="873,333,959,360"/>
+<area shape="rect" id="node20" href="siphash_8h_source.html" title="siphash.h" alt="" coords="877,408,955,435"/>
+<area shape="rect" id="node24" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1323,184,1466,211"/>
+<area shape="rect" id="node25" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1151,333,1302,360"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -137,8 +145,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8fa2c57ed9d4853f66bba046754f7787"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="onion__ntor_8c.html#a8fa2c57ed9d4853f66bba046754f7787">ntor_handshake_state_free</a> (ntor_handshake_state_t *state)</td></tr>
-<tr class="separator:a8fa2c57ed9d4853f66bba046754f7787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addef92ad63b5e833ed2ba4d74ee75a41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="onion__ntor_8c.html#addef92ad63b5e833ed2ba4d74ee75a41">ntor_handshake_state_free_</a> (ntor_handshake_state_t *state)</td></tr>
+<tr class="separator:addef92ad63b5e833ed2ba4d74ee75a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5033e0e224249ea4c42b37ddd4937dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="onion__ntor_8c.html#ad5033e0e224249ea4c42b37ddd4937dd">onion_skin_ntor_create</a> (const uint8_t *router_id, const <a class="el" href="structcurve25519__public__key__t.html">curve25519_public_key_t</a> *router_key, ntor_handshake_state_t **handshake_state_out, uint8_t *onion_skin_out)</td></tr>
 <tr class="separator:ad5033e0e224249ea4c42b37ddd4937dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5251c28f884c978124716ebd807e3e56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="onion__ntor_8c.html#a5251c28f884c978124716ebd807e3e56">onion_skin_ntor_server_handshake</a> (const uint8_t *onion_skin, const <a class="el" href="structdi__digest256__map__t.html">di_digest256_map_t</a> *private_keys, const <a class="el" href="structcurve25519__keypair__t.html">curve25519_keypair_t</a> *junk_keys, const uint8_t *my_node_id, uint8_t *handshake_reply_out, uint8_t *key_out, size_t key_out_len)</td></tr>
@@ -198,8 +206,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="crypto_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a> + <a class="code" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a> +    \</div><div class="line">                        CURVE25519_PUBKEY_LEN*3 +       \</div><div class="line">                        PROTOID_LEN + SERVER_STR_LEN)</div><div class="ttc" id="crypto_8h_html_a14aa0c95ad1775ec290dc69b1ada1f6b"><div class="ttname"><a href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a></div><div class="ttdeci">#define DIGEST_LEN</div><div class="ttdef"><b>Definition:</b> crypto.h:56</div></div>
-<div class="ttc" id="crypto_8h_html_a34e055abb21d9f47b5f3d821e4beb091"><div class="ttname"><a href="crypto_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a></div><div class="ttdeci">#define DIGEST256_LEN</div><div class="ttdef"><b>Definition:</b> crypto.h:59</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a> + <a class="code" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a> +    \</div><div class="line">                        CURVE25519_PUBKEY_LEN*3 +       \</div><div class="line">                        PROTOID_LEN + SERVER_STR_LEN)</div><div class="ttc" id="crypto__digest_8h_html_a14aa0c95ad1775ec290dc69b1ada1f6b"><div class="ttname"><a href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a></div><div class="ttdeci">#define DIGEST_LEN</div><div class="ttdef"><b>Definition:</b> crypto_digest.h:22</div></div>
+<div class="ttc" id="crypto__digest_8h_html_a34e055abb21d9f47b5f3d821e4beb091"><div class="ttname"><a href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a></div><div class="ttdeci">#define DIGEST256_LEN</div><div class="ttdef"><b>Definition:</b> crypto_digest.h:25</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -234,14 +242,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a8fa2c57ed9d4853f66bba046754f7787"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fa2c57ed9d4853f66bba046754f7787">&#9670;&nbsp;</a></span>ntor_handshake_state_free()</h2>
+<a id="addef92ad63b5e833ed2ba4d74ee75a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addef92ad63b5e833ed2ba4d74ee75a41">&#9670;&nbsp;</a></span>ntor_handshake_state_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ntor_handshake_state_free </td>
+          <td class="memname">void ntor_handshake_state_free_ </td>
           <td>(</td>
           <td class="paramtype">ntor_handshake_state_t *&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -253,9 +261,9 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="onion__ntor_8c_a8fa2c57ed9d4853f66bba046754f7787_cgraph.png" border="0" usemap="#onion__ntor_8c_a8fa2c57ed9d4853f66bba046754f7787_cgraph" alt=""/></div>
-<map name="onion__ntor_8c_a8fa2c57ed9d4853f66bba046754f7787_cgraph" id="onion__ntor_8c_a8fa2c57ed9d4853f66bba046754f7787_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="232,5,311,32"/>
+<div class="center"><img src="onion__ntor_8c_addef92ad63b5e833ed2ba4d74ee75a41_cgraph.png" border="0" usemap="#onion__ntor_8c_addef92ad63b5e833ed2ba4d74ee75a41_cgraph" alt=""/></div>
+<map name="onion__ntor_8c_addef92ad63b5e833ed2ba4d74ee75a41_cgraph" id="onion__ntor_8c_addef92ad63b5e833ed2ba4d74ee75a41_cgraph">
+<area shape="rect" id="node2" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="204,13,283,39"/>
 </map>
 </div>
 

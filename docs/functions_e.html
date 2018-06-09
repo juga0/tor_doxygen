@@ -63,16 +63,41 @@ $(function() {
 
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>e
-: <a class="el" href="structtor__process__monitor__t.html#aae25c778a3d06e4af69b026b40aee75e">tor_process_monitor_t</a>
+: <a class="el" href="structtor__process__monitor__t.html#a28b5fd08363161c7cc3d710a90897073">tor_process_monitor_t</a>
 </li>
 <li>ed25519_id
-: <a class="el" href="structvote__routerstatus__t.html#a0f8e46fd3081b7e12aed3af752eff48b">vote_routerstatus_t</a>
+: <a class="el" href="structnode__t.html#a71c891a19870011cb9b2b8202d5095bf">node_t</a>
+, <a class="el" href="structvote__routerstatus__t.html#a0f8e46fd3081b7e12aed3af752eff48b">vote_routerstatus_t</a>
+</li>
+<li>ed25519_identity
+: <a class="el" href="structchannel__s.html#acfa855d8fddb8cf0041cd9f205241750">channel_s</a>
 </li>
 <li>ed25519_identity_pkey
 : <a class="el" href="structmicrodesc__t.html#af36ce3c57851291742bc99877e817536">microdesc_t</a>
 </li>
 <li>ed25519_reflects_consensus
 : <a class="el" href="structvote__routerstatus__t.html#a6411f99da8b67227216bb0d316128da7">vote_routerstatus_t</a>
+</li>
+<li>ed_id_sign
+: <a class="el" href="structor__handshake__certs__t.html#a01f85ad72eb5e38b51cf5b08efd1cb2f">or_handshake_certs_t</a>
+</li>
+<li>ed_identity
+: <a class="el" href="structextend__info__t.html#a1b71382bcc0d903ca55fc6b5ce6c7fbd">extend_info_t</a>
+</li>
+<li>ed_pubkey
+: <a class="el" href="structextend__cell__t.html#a13d942d6ccd8bcb2f423186d9d821a1e">extend_cell_t</a>
+</li>
+<li>ed_rsa_crosscert
+: <a class="el" href="structor__handshake__certs__t.html#a567abb3d81acc79f72ca21c27c7e5bd7">or_handshake_certs_t</a>
+</li>
+<li>ed_rsa_crosscert_len
+: <a class="el" href="structor__handshake__certs__t.html#aa61d6895ac59f65fdd6157889c37e8e3">or_handshake_certs_t</a>
+</li>
+<li>ed_sign_auth
+: <a class="el" href="structor__handshake__certs__t.html#a737d8caaeb94c8a5abbfcf261daed388">or_handshake_certs_t</a>
+</li>
+<li>ed_sign_link
+: <a class="el" href="structor__handshake__certs__t.html#a0213176b3e9f759d5d956df4ac8f8860">or_handshake_certs_t</a>
 </li>
 <li>edge_blocked_on_circ
 : <a class="el" href="structedge__connection__t.html#ad25ab2a822ed30eab983d543e6ec9cdc">edge_connection_t</a>
@@ -82,6 +107,18 @@ $(function() {
 </li>
 <li>ei_dl_status
 : <a class="el" href="structsigned__descriptor__t.html#a97eba0c0488f52a5d6ea2c8627703a6c">signed_descriptor_t</a>
+</li>
+<li>enabled_read_cell_count
+: <a class="el" href="structpadding__counts__t.html#acfe541378cb8ec87443a430bef435b59">padding_counts_t</a>
+</li>
+<li>enabled_read_pad_cell_count
+: <a class="el" href="structpadding__counts__t.html#a5b711ffbbdfe3541de1700cf8fa96f47">padding_counts_t</a>
+</li>
+<li>enabled_write_cell_count
+: <a class="el" href="structpadding__counts__t.html#a80aeab92b69d5a23495c4dd7f0bd7568">padding_counts_t</a>
+</li>
+<li>enabled_write_pad_cell_count
+: <a class="el" href="structpadding__counts__t.html#ae0e479c57d130f7a01e26a0121b4c72c">padding_counts_t</a>
 </li>
 <li>encoded
 : <a class="el" href="structtor__cert__st.html#aa412a66f5de820c319c70ea646aff776">tor_cert_st</a>
@@ -96,7 +133,8 @@ $(function() {
 : <a class="el" href="structor__options__t.html#a7dfaa05bb8dbbb110c81ebcad8d2b3e9">or_options_t</a>
 </li>
 <li>entries
-: <a class="el" href="structshort__policy__t.html#a3517a2e7329aef7f131fe3ceade02615">short_policy_t</a>
+: <a class="el" href="structconsensus__cache__t.html#a9d4187f6c95d57ca3923eee58ac017b4">consensus_cache_t</a>
+, <a class="el" href="structshort__policy__t.html#a3517a2e7329aef7f131fe3ceade02615">short_policy_t</a>
 </li>
 <li>EntryGuards
 : <a class="el" href="structor__state__t.html#a38a8d463b307bc7fc9569dd6a3fd5f3e">or_state_t</a>
@@ -123,7 +161,7 @@ $(function() {
 : <a class="el" href="structdirectory__token__t.html#a37a27b523e8aff433c8a4adda2295f0d">directory_token_t</a>
 </li>
 <li>ev
-: <a class="el" href="structperiodic__event__item__t.html#a4439c6aa7b7e595b4b50a30968fb53cf">periodic_event_item_t</a>
+: <a class="el" href="structperiodic__event__item__t.html#ab4fbb45a0d7ba1a4d2dd293ef62f0a06">periodic_event_item_t</a>
 , <a class="el" href="structperiodic__timer__t.html#a4439c6aa7b7e595b4b50a30968fb53cf">periodic_timer_t</a>
 </li>
 <li>event_mask
@@ -137,9 +175,6 @@ $(function() {
 </li>
 <li>ExcludeNodes
 : <a class="el" href="structor__options__t.html#a7f88860776646e286e2c53fef32ec006">or_options_t</a>
-</li>
-<li>ExcludeSingleHopRelays
-: <a class="el" href="structor__options__t.html#a04a8cd38e3a9160c31e9d97ce46f6ab2">or_options_t</a>
 </li>
 <li>exit_policy
 : <a class="el" href="structmicrodesc__t.html#af6573abb7c4b6cc7f8d5ee05797a4490">microdesc_t</a>
@@ -193,6 +228,9 @@ $(function() {
 </li>
 <li>ExtendAllowPrivateAddresses
 : <a class="el" href="structor__options__t.html#af039792b43121a839cadb51147b61a42">or_options_t</a>
+</li>
+<li>ExtendByEd25519ID
+: <a class="el" href="structor__options__t.html#a7ab7f425014a68f03d5e6519e1ee2298">or_options_t</a>
 </li>
 <li>ExtORPort_lines
 : <a class="el" href="structor__options__t.html#a5027ee57105e9296bb8b11c008c7cb07">or_options_t</a>

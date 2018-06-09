@@ -1,0 +1,5 @@
+<map id="circuit_get_global_origin_circuit_list" name="circuit_get_global_origin_circuit_list">
+<area shape="rect" id="node2" href="$circuitlist_8h.html#a7c20bc469ef67338216bb762b661b0ac" title="circuit_any_opened\l_circuits" alt="" coords="186,5,321,47"/>
+<area shape="rect" id="node4" href="$circuituse_8h.html#a4be6726f65e9f2c81ad77a9c70002ad1" title="circuit_expire_waiting\l_for_better_guard" alt="" coords="180,71,327,112"/>
+<area shape="rect" id="node3" href="$circuituse_8h.html#a857005b7512302feee182107aed11121" title="circuit_expire_building" alt="" coords="375,13,525,39"/>
+</map>

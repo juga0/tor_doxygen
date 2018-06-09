@@ -1,12 +1,14 @@
 <map id="base64_encode_size" name="base64_encode_size">
-<area shape="rect" id="node2" href="$crypto_8h.html#a6d6c114c5b560ac06e5bf3f38c112d47" title="crypto_pk_base64_encode" alt="" coords="197,71,375,98"/>
+<area shape="rect" id="node2" href="$crypto__rsa_8h.html#a6d6c114c5b560ac06e5bf3f38c112d47" title="crypto_pk_base64_encode" alt="" coords="197,71,375,98"/>
 <area shape="rect" id="node3" href="$util__format_8c.html#a2394b082102cdbb3d443955e9b056e0e" title="base64_encode" alt="" coords="229,122,343,149"/>
-<area shape="rect" id="node11" href="$connection_8h.html#aafb7ad80e97c7c4d92831785f5262853" title="alloc_http_authenticator" alt="" coords="206,173,366,199"/>
+<area shape="rect" id="node13" href="$connection_8h.html#aafb7ad80e97c7c4d92831785f5262853" title="alloc_http_authenticator" alt="" coords="206,173,366,199"/>
 <area shape="rect" id="node4" href="$crypto__format_8c.html#af5e410c14abfc060427f4ffdd868e301" title="curve25519_public_to\l_base64" alt="" coords="426,5,574,47"/>
 <area shape="rect" id="node5" href="$crypto__format_8c.html#aa31b9d5fd609a1c8c3c888c7d817284c" title="digest_to_base64" alt="" coords="653,71,777,98"/>
-<area shape="rect" id="node6" href="$dirvote_8h.html#a97feb95be6e8e94295fa6775355318ee" title="dirvote_create_microdescriptor" alt="" coords="852,122,1052,149"/>
+<area shape="rect" id="node6" href="$dirvote_8c.html#a059168318a87de5f77438cbcefdb73ed" title="dirvote_create_microdescriptor" alt="" coords="852,122,1052,149"/>
 <area shape="rect" id="node7" href="$crypto__format_8c.html#a357bf351fe9894c905f7e7029da38f9a" title="digest256_to_base64" alt="" coords="427,173,573,199"/>
-<area shape="rect" id="node9" href="$util__format_8c.html#a3f919cffd152c1dc1383c93ea6aa2c91" title="base64_encode_nopad" alt="" coords="423,227,577,254"/>
+<area shape="rect" id="node11" href="$util__format_8c.html#a3f919cffd152c1dc1383c93ea6aa2c91" title="base64_encode_nopad" alt="" coords="423,227,577,254"/>
 <area shape="rect" id="node8" href="$crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364" title="ed25519_public_to_base64" alt="" coords="625,173,804,199"/>
-<area shape="rect" id="node10" href="$crypto__format_8c.html#a582634f36c7e9f69d74313fceddbc101" title="ed25519_signature_to\l_base64" alt="" coords="640,224,789,265"/>
+<area shape="rect" id="node9" href="$crypto__format_8c.html#a410a5ce7823282053a68132d17e82fe5" title="ed25519_fmt" alt="" coords="903,173,1001,199"/>
+<area shape="rect" id="node10" href="$hs__service_8c.html#a0db0ef0b23d20f33bc2d933e9580303a" title="encode_desc_rev_counter\l_for_state" alt="" coords="865,224,1039,265"/>
+<area shape="rect" id="node12" href="$crypto__format_8c.html#a582634f36c7e9f69d74313fceddbc101" title="ed25519_signature_to\l_base64" alt="" coords="640,224,789,265"/>
 </map>

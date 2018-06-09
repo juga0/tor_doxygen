@@ -1,7 +1,8 @@
 <map id="networkstatus_note_certs_arrived" name="networkstatus_note_certs_arrived">
-<area shape="rect" id="node2" href="$networkstatus_8c.html#a7bead3d790b19f3f5894a521526a3531" title="networkstatus_check\l_consensus_signature" alt="" coords="217,5,369,47"/>
-<area shape="rect" id="node4" href="$networkstatus_8c.html#a2bc8e47c7dbfc9cb7dbabab161bd6764" title="networkstatus_set_current\l_consensus" alt="" coords="205,71,381,112"/>
-<area shape="rect" id="node6" href="$networkstatus_8c.html#a31e12c0cdd4c1a17f3ddcdab8cdcf86f" title="networkstatus_get_flavor_name" alt="" coords="189,137,396,163"/>
-<area shape="rect" id="node3" href="$routerlist_8c.html#a40b0857598d14d49c8082667c70bc023" title="get_n_authorities" alt="" coords="455,13,576,39"/>
-<area shape="rect" id="node5" href="$networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="444,71,587,112"/>
+<area shape="rect" id="node2" href="$networkstatus_8c.html#a31e12c0cdd4c1a17f3ddcdab8cdcf86f" title="networkstatus_get_flavor_name" alt="" coords="189,5,396,32"/>
+<area shape="rect" id="node3" href="$networkstatus_8c.html#a7bead3d790b19f3f5894a521526a3531" title="networkstatus_check\l_consensus_signature" alt="" coords="217,57,369,98"/>
+<area shape="rect" id="node5" href="$networkstatus_8c.html#a2bc8e47c7dbfc9cb7dbabab161bd6764" title="networkstatus_set_current\l_consensus" alt="" coords="205,122,381,163"/>
+<area shape="rect" id="node4" href="$routerlist_8c.html#a40b0857598d14d49c8082667c70bc023" title="get_n_authorities" alt="" coords="455,64,576,91"/>
+<area shape="rect" id="node6" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="469,121,562,148"/>
+<area shape="rect" id="node7" href="$networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="444,173,587,214"/>
 </map>

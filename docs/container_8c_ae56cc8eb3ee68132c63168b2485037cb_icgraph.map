@@ -1,5 +1,4 @@
 <map id="smartlist_del" name="smartlist_del">
 <area shape="rect" id="node2" href="$circuitlist_8h.html#a11c312b3a8d3a28dc90a5ec70e617043" title="circuit_close_all_marked" alt="" coords="149,5,315,32"/>
-<area shape="rect" id="node3" href="$circuituse_8h.html#ac0941a9dc5da7825f107d1d4bf028063" title="circuit_remove_handled\l_ports" alt="" coords="153,57,311,98"/>
-<area shape="rect" id="node4" href="$routerlist_8h.html#a8c328828cd94c3bb84044c9003f8c78f" title="routerlist_remove" alt="" coords="171,123,293,149"/>
+<area shape="rect" id="node3" href="$routerlist_8h.html#a8c328828cd94c3bb84044c9003f8c78f" title="routerlist_remove" alt="" coords="171,56,293,83"/>
 </map>

@@ -1,10 +1,10 @@
 <map id="node_t" name="node_t">
-<area shape="rect" id="node2" href="$structrouterinfo__t.html" title="routerinfo_t" alt="" coords="535,200,622,227"/>
-<area shape="rect" id="node7" href="$structmicrodesc__t.html" title="microdesc_t" alt="" coords="532,373,625,400"/>
-<area shape="rect" id="node8" href="$structshort__policy__t.html" title="short_policy_t" alt="" coords="203,452,305,479"/>
-<area shape="rect" id="node10" href="$structrouterstatus__t.html" title="routerstatus_t" alt="" coords="384,551,487,577"/>
-<area shape="rect" id="node4" href="$structcurve25519__public__key__t.html" title="curve25519_public_key_t" alt="" coords="169,131,339,157"/>
-<area shape="rect" id="node5" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="209,223,299,249"/>
-<area shape="rect" id="node6" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="213,321,295,348"/>
-<area shape="rect" id="node9" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="179,503,329,529"/>
+<area shape="rect" id="node2" href="$structrouterinfo__t.html" title="routerinfo_t" alt="" coords="201,260,288,287"/>
+<area shape="rect" id="node7" href="$structmicrodesc__t.html" title="microdesc_t" alt="" coords="739,260,833,287"/>
+<area shape="rect" id="node8" href="$structshort__policy__t.html" title="short_policy_t" alt="" coords="891,140,993,167"/>
+<area shape="rect" id="node10" href="$structrouterstatus__t.html" title="routerstatus_t" alt="" coords="1235,208,1337,235"/>
+<area shape="rect" id="node4" href="$structcurve25519__public__key__t.html" title="curve25519_public_key_t" alt="" coords="433,140,603,167"/>
+<area shape="rect" id="node5" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="775,140,866,167"/>
+<area shape="rect" id="node6" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="247,140,330,167"/>
+<area shape="rect" id="node9" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="1063,140,1213,167"/>
 </map>

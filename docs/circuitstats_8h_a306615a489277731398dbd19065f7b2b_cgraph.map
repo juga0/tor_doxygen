@@ -1,0 +1,9 @@
+<map id="circuit_build_times_handle_completed_hop" name="circuit_build_times_handle_completed_hop">
+<area shape="rect" id="node2" href="$circuitstats_8c.html#ab1b73e0bb66fa432389a7cc95a62bb21" title="circuit_build_times\l_disabled" alt="" coords="246,5,377,47"/>
+<area shape="rect" id="node4" href="$circuitbuild_8c.html#aa58d1c16591ccd8590c84255d7b3cc34" title="circuit_timeout_want\l_to_count_circ" alt="" coords="240,71,383,112"/>
+<area shape="rect" id="node6" href="$util_8c.html#aa86d039278659b0bcd070908fb5e5218" title="tv_mdiff" alt="" coords="277,137,346,163"/>
+<area shape="rect" id="node7" href="$circuitstats_8c.html#a33097eebbc8865c466107e5588f357ec" title="get_circuit_build_timeout_ms" alt="" coords="216,187,407,214"/>
+<area shape="rect" id="node8" href="$circuitlist_8c.html#a1f1254d702e18cb40b466c578e7187d3" title="circuit_any_opened\l_circuits_cached" alt="" coords="244,239,379,280"/>
+<area shape="rect" id="node3" href="$circuitstats_8c.html#a556d4f3e3d78886de05662aaf08f3c3f" title="circuit_build_times\l_disabled_" alt="" coords="487,5,617,47"/>
+<area shape="rect" id="node5" href="$circuitlist_8c.html#a946530ab71c12655f35d3206c16d49b5" title="circuit_get_cpath_opened_len" alt="" coords="455,78,649,105"/>
+</map>

@@ -76,6 +76,7 @@ $(function() {
 <p>Functions to handle OR connections, TLS handshaking, and cells on the network.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bridges_8h_source.html">bridges.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="buffers_8h_source.html">buffers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="channel_8h_source.html">channel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="channeltls_8h_source.html">channeltls.h</a>&quot;</code><br />
@@ -87,6 +88,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__or_8h_source.html">connection_or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dirserv_8h_source.html">dirserv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="geoip_8h_source.html">geoip.h</a>&quot;</code><br />
@@ -95,65 +98,71 @@ $(function() {
 <code>#include &quot;<a class="el" href="microdesc_8h_source.html">microdesc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nodelist_8h_source.html">nodelist.h</a>&quot;</code><br />
+<code>#include &quot;proto_cell.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="reasons_8h_source.html">reasons.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="relay_8h_source.html">relay.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rephist_8h_source.html">rephist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
+<code>#include &quot;routerkeys.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
 <code>#include &quot;ext_orport.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&quot;</code><br />
+<code>#include &quot;torcert.h&quot;</code><br />
+<code>#include &quot;channelpadding.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for connection_or.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="connection__or_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2connection__or_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2connection__or_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2connection__or_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="769,333,813,360"/>
-<area shape="rect" id="node21" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1599,184,1673,211"/>
-<area shape="rect" id="node22" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="954,184,1033,211"/>
-<area shape="rect" id="node24" href="channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="907,109,999,136"/>
-<area shape="rect" id="node25" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1885,109,1979,136"/>
-<area shape="rect" id="node26" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1673,259,1759,285"/>
-<area shape="rect" id="node27" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="2003,109,2101,136"/>
-<area shape="rect" id="node28" href="command_8h.html" title="Header file for command.c. " alt="" coords="1075,109,1165,136"/>
-<area shape="rect" id="node29" href="config_8h.html" title="Header file for config.c. " alt="" coords="1749,333,1817,360"/>
-<area shape="rect" id="node30" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1561,109,1657,136"/>
-<area shape="rect" id="node31" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2125,109,2240,136"/>
-<area shape="rect" id="node32" href="control_8h.html" title="Header file for control.c. " alt="" coords="2264,109,2336,136"/>
-<area shape="rect" id="node33" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="1833,259,1905,285"/>
-<area shape="rect" id="node34" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2361,109,2458,136"/>
-<area shape="rect" id="node35" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="1372,109,1436,136"/>
-<area shape="rect" id="node37" href="main_8h.html" title="Header file for main.c. " alt="" coords="2483,109,2544,136"/>
-<area shape="rect" id="node38" href="link__handshake_8h_source.html" title="link_handshake.h" alt="" coords="2568,109,2691,136"/>
-<area shape="rect" id="node41" href="microdesc_8h.html" title="Header file for microdesc.c. " alt="" coords="2715,109,2808,136"/>
-<area shape="rect" id="node42" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="1276,333,1391,360"/>
-<area shape="rect" id="node43" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2833,109,2911,136"/>
-<area shape="rect" id="node44" href="reasons_8h.html" title="Header file for reasons.c. " alt="" coords="2935,109,3014,136"/>
-<area shape="rect" id="node45" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="3039,109,3100,136"/>
-<area shape="rect" id="node46" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="3124,109,3196,136"/>
-<area shape="rect" id="node47" href="router_8h.html" title="Header file for router.c. " alt="" coords="1445,259,1512,285"/>
-<area shape="rect" id="node48" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="1516,333,1599,360"/>
-<area shape="rect" id="node49" href="ext__orport_8h_source.html" title="ext_orport.h" alt="" coords="3220,109,3311,136"/>
-<area shape="rect" id="node50" href="scheduler_8h.html" title="Header file for scheduler.c. " alt="" coords="1190,109,1279,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="326,707,405,733"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="334,632,397,659"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="689,557,759,584"/>
-<area shape="rect" id="node8" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="465,408,578,435"/>
-<area shape="rect" id="node9" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="408,483,533,509"/>
-<area shape="rect" id="node10" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="403,557,546,584"/>
-<area shape="rect" id="node11" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1086,483,1149,509"/>
-<area shape="rect" id="node12" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1173,483,1238,509"/>
-<area shape="rect" id="node13" href="container_8h_source.html" title="container.h" alt="" coords="195,483,282,509"/>
-<area shape="rect" id="node14" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="755,408,827,435"/>
-<area shape="rect" id="node15" href="address_8h.html" title="Headers for address.h. " alt="" coords="139,408,218,435"/>
-<area shape="rect" id="node16" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="783,557,911,584"/>
-<area shape="rect" id="node17" href="ht_8h_source.html" title="ht.h" alt="" coords="851,408,895,435"/>
-<area shape="rect" id="node18" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="919,408,1022,435"/>
-<area shape="rect" id="node19" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1047,408,1137,435"/>
-<area shape="rect" id="node20" href="util__format_8h_source.html" title="util_format.h" alt="" coords="570,557,665,584"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1252,632,1351,659"/>
-<area shape="rect" id="node23" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1108,259,1201,285"/>
-<area shape="rect" id="node36" href="dos_8h_source.html" title="dos.h" alt="" coords="1406,184,1461,211"/>
-<area shape="rect" id="node40" href="trunnel_8h_source.html" title="trunnel.h" alt="" coords="2640,184,2712,211"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="663,259,707,285"/>
+<area shape="rect" id="node18" href="bridges_8h.html" title="Header file for circuitbuild.c. " alt="" coords="120,109,195,136"/>
+<area shape="rect" id="node19" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1285,184,1358,211"/>
+<area shape="rect" id="node20" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="275,184,354,211"/>
+<area shape="rect" id="node21" href="channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="383,109,475,136"/>
+<area shape="rect" id="node22" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="499,109,594,136"/>
+<area shape="rect" id="node23" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="619,109,704,136"/>
+<area shape="rect" id="node24" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="729,109,826,136"/>
+<area shape="rect" id="node25" href="command_8h.html" title="Header file for command.c. " alt="" coords="5,109,96,136"/>
+<area shape="rect" id="node26" href="config_8h.html" title="Header file for config.c. " alt="" coords="902,109,970,136"/>
+<area shape="rect" id="node27" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1280,109,1376,136"/>
+<area shape="rect" id="node28" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="1045,109,1160,136"/>
+<area shape="rect" id="node29" href="control_8h.html" title="Header file for control.c. " alt="" coords="1184,109,1256,136"/>
+<area shape="rect" id="node30" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="2979,259,3080,285"/>
+<area shape="rect" id="node31" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="2887,408,2980,435"/>
+<area shape="rect" id="node32" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="1451,109,1523,136"/>
+<area shape="rect" id="node33" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1547,109,1645,136"/>
+<area shape="rect" id="node34" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="1669,109,1733,136"/>
+<area shape="rect" id="node35" href="main_8h.html" title="Header file for main.c. " alt="" coords="1757,109,1819,136"/>
+<area shape="rect" id="node36" href="link__handshake_8h_source.html" title="link_handshake.h" alt="" coords="1843,109,1965,136"/>
+<area shape="rect" id="node37" href="microdesc_8h.html" title="Header file for microdesc.c. " alt="" coords="1989,109,2083,136"/>
+<area shape="rect" id="node38" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2107,109,2221,136"/>
+<area shape="rect" id="node39" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2246,109,2325,136"/>
+<area shape="rect" id="node40" href="proto__cell_8h_source.html" title="proto_cell.h" alt="" coords="2349,109,2438,136"/>
+<area shape="rect" id="node41" href="reasons_8h.html" title="Header file for reasons.c. " alt="" coords="2462,109,2541,136"/>
+<area shape="rect" id="node42" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="2565,109,2627,136"/>
+<area shape="rect" id="node43" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2651,109,2723,136"/>
+<area shape="rect" id="node44" href="router_8h.html" title="Header file for router.c. " alt="" coords="2747,109,2813,136"/>
+<area shape="rect" id="node45" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="2461,259,2555,285"/>
+<area shape="rect" id="node46" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2888,109,2971,136"/>
+<area shape="rect" id="node47" href="ext__orport_8h_source.html" title="ext_orport.h" alt="" coords="2995,109,3085,136"/>
+<area shape="rect" id="node48" href="scheduler_8h.html" title="Header file for scheduler*.c. " alt="" coords="270,109,359,136"/>
+<area shape="rect" id="node49" href="torcert_8h_source.html" title="torcert.h" alt="" coords="1385,184,1455,211"/>
+<area shape="rect" id="node50" href="channelpadding_8h_source.html" title="channelpadding.h" alt="" coords="3211,109,3333,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="543,632,622,659"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1185,557,1247,584"/>
+<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="632,483,701,509"/>
+<area shape="rect" id="node6" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1170,333,1283,360"/>
+<area shape="rect" id="node7" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1359,408,1484,435"/>
+<area shape="rect" id="node8" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1090,483,1233,509"/>
+<area shape="rect" id="node9" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="201,333,263,360"/>
+<area shape="rect" id="node10" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="287,333,353,360"/>
+<area shape="rect" id="node11" href="container_8h_source.html" title="container.h" alt="" coords="777,408,863,435"/>
+<area shape="rect" id="node12" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="428,333,519,360"/>
+<area shape="rect" id="node13" href="address_8h.html" title="Headers for address.h. " alt="" coords="543,333,622,360"/>
+<area shape="rect" id="node14" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="163,557,291,584"/>
+<area shape="rect" id="node15" href="ht_8h_source.html" title="ht.h" alt="" coords="749,333,793,360"/>
+<area shape="rect" id="node16" href="confline_8h_source.html" title="confline.h" alt="" coords="646,333,725,360"/>
+<area shape="rect" id="node17" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="869,333,971,360"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -161,34 +170,46 @@ Include dependency graph for connection_or.c:</div>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbroken__state__count__t.html">broken_state_count_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structor__connect__failure__entry__t.html">or_connect_failure_entry_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ab2eda2cfbeb176ae5a0ed6613d53022a"><td class="memItemLeft" align="right" valign="top"><a id="ab2eda2cfbeb176ae5a0ed6613d53022a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TOR_CHANNEL_INTERNAL_</b></td></tr>
 <tr class="separator:ab2eda2cfbeb176ae5a0ed6613d53022a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf11de692d782e6860b253dfea8ad4b"><td class="memItemLeft" align="right" valign="top"><a id="accf11de692d782e6860b253dfea8ad4b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONNECTION_OR_PRIVATE</b></td></tr>
+<tr class="separator:accf11de692d782e6860b253dfea8ad4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85d6c0e2e0590e0cc5c1ec9303cfd14c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a85d6c0e2e0590e0cc5c1ec9303cfd14c">MAX_REASONS_TO_REPORT</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a85d6c0e2e0590e0cc5c1ec9303cfd14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acba9a39260d631b312ca35fa20593546"><td class="memItemLeft" align="right" valign="top"><a id="acba9a39260d631b312ca35fa20593546"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_OR_INBUF_WHEN_NONOPEN</b>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:acba9a39260d631b312ca35fa20593546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76970f55f4131fa6bc6372e7da902b58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a76970f55f4131fa6bc6372e7da902b58">IDLE_OR_CONN_TIMEOUT_NONCANONICAL</a>&#160;&#160;&#160;180</td></tr>
-<tr class="separator:a76970f55f4131fa6bc6372e7da902b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3448eb3b06bed249275d6d9c9a098690"><td class="memItemLeft" align="right" valign="top"><a id="a3448eb3b06bed249275d6d9c9a098690"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IDLE_OR_CONN_TIMEOUT_CANONICAL</b>&#160;&#160;&#160;900</td></tr>
-<tr class="separator:a3448eb3b06bed249275d6d9c9a098690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb4589f111a4ef5508c1dedb06aa5820"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#afb4589f111a4ef5508c1dedb06aa5820">TIME_BEFORE_OR_CONN_IS_TOO_OLD</a>&#160;&#160;&#160;(60*60*24*7)</td></tr>
 <tr class="separator:afb4589f111a4ef5508c1dedb06aa5820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7dcb8a07279970aecce1f1b88b338e9"><td class="memItemLeft" align="right" valign="top"><a id="ac7dcb8a07279970aecce1f1b88b338e9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OR_CONNECT_FAILURE_LIFETIME</b>&#160;&#160;&#160;60</td></tr>
+<tr class="separator:ac7dcb8a07279970aecce1f1b88b338e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1399d402142872e80ff4daa05263e83e"><td class="memItemLeft" align="right" valign="top"><a id="a1399d402142872e80ff4daa05263e83e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OR_CONNECT_FAILURE_CLEANUP_INTERVAL</b>&#160;&#160;&#160;60</td></tr>
+<tr class="separator:a1399d402142872e80ff4daa05263e83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dcb1c64ff2d5f2e662ed844f670201b"><td class="memItemLeft" align="right" valign="top"><a id="a0dcb1c64ff2d5f2e662ed844f670201b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>certs_cell_ed25519_disabled_for_testing</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a0dcb1c64ff2d5f2e662ed844f670201b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a7c4fee93ea184453cf4ea4f4e44add5d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structbroken__state__count__t.html">broken_state_count_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a7c4fee93ea184453cf4ea4f4e44add5d">broken_state_count_t</a></td></tr>
 <tr class="separator:a7c4fee93ea184453cf4ea4f4e44add5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886c956f73e08abf0308fdab9884aaf9"><td class="memItemLeft" align="right" valign="top"><a id="a886c956f73e08abf0308fdab9884aaf9"></a>
+typedef struct <a class="el" href="structor__connect__failure__entry__t.html">or_connect_failure_entry_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>or_connect_failure_entry_t</b></td></tr>
+<tr class="separator:a886c956f73e08abf0308fdab9884aaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af2d555975120054c38db70b91234678c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#af2d555975120054c38db70b91234678c">connection_or_remove_from_identity_map</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn)</td></tr>
-<tr class="separator:af2d555975120054c38db70b91234678c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203fccfbc180a939bcf81b19f8e567d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a203fccfbc180a939bcf81b19f8e567d4">connection_or_clear_identity</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn)</td></tr>
+<tr class="separator:a203fccfbc180a939bcf81b19f8e567d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af395c50f9f998656fe273222574dadeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#af395c50f9f998656fe273222574dadeb">connection_or_clear_identity_map</a> (void)</td></tr>
 <tr class="separator:af395c50f9f998656fe273222574dadeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7e49a59759436fa3e35e9cfd541e018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#ab7e49a59759436fa3e35e9cfd541e018">connection_or_remove_from_ext_or_id_map</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn)</td></tr>
@@ -213,8 +234,8 @@ Functions</h2></td></tr>
 <tr class="separator:a23e8e7d75e478e23ba78046d4bf17088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70378434d9f152969cf835cb7df59de1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvar__cell__t.html">var_cell_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a70378434d9f152969cf835cb7df59de1">var_cell_copy</a> (const <a class="el" href="structvar__cell__t.html">var_cell_t</a> *src)</td></tr>
 <tr class="separator:a70378434d9f152969cf835cb7df59de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf174ef822b1a9135e9802171d39a082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#aaf174ef822b1a9135e9802171d39a082">var_cell_free</a> (<a class="el" href="structvar__cell__t.html">var_cell_t</a> *cell)</td></tr>
-<tr class="separator:aaf174ef822b1a9135e9802171d39a082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c750321029bdf8f4083f6226102c6c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a6c750321029bdf8f4083f6226102c6c2">var_cell_free_</a> (<a class="el" href="structvar__cell__t.html">var_cell_t</a> *cell)</td></tr>
+<tr class="separator:a6c750321029bdf8f4083f6226102c6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11cff8523e1f4b95674f2b227a46c862"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a11cff8523e1f4b95674f2b227a46c862">connection_or_reached_eof</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn)</td></tr>
 <tr class="separator:a11cff8523e1f4b95674f2b227a46c862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c9c08479c7f8118438c42edb7046d32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a1c9c08479c7f8118438c42edb7046d32">connection_or_process_inbuf</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn)</td></tr>
@@ -236,16 +257,27 @@ Functions</h2></td></tr>
 <tr class="memitem:a69e2ac3bf5089e2a988c8ab994c4893e"><td class="memItemLeft" align="right" valign="top"><a id="a69e2ac3bf5089e2a988c8ab994c4893e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>connection_or_set_canonical</b> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *or_conn, int is_canonical)</td></tr>
 <tr class="separator:a69e2ac3bf5089e2a988c8ab994c4893e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81f0c0f45bf6e7d920db1c1603f448f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a81f0c0f45bf6e7d920db1c1603f448f9">connection_or_init_conn_from_address</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port, const char *id_digest, int started_here)</td></tr>
-<tr class="separator:a81f0c0f45bf6e7d920db1c1603f448f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3154bc0f1773329e4c86012d07397dfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a3154bc0f1773329e4c86012d07397dfe">connection_or_set_bad_connections</a> (const char *digest, int force)</td></tr>
-<tr class="separator:a3154bc0f1773329e4c86012d07397dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886ddcdf832a3d3ccc18184ee4d7dd26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a886ddcdf832a3d3ccc18184ee4d7dd26">connection_or_init_conn_from_address</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port, const char *id_digest, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_id, int started_here)</td></tr>
+<tr class="separator:a886ddcdf832a3d3ccc18184ee4d7dd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d119bfc7d08a4cf060280c100860560"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a6d119bfc7d08a4cf060280c100860560">connection_or_single_set_badness_</a> (time_t now, <a class="el" href="structor__connection__t.html">or_connection_t</a> *or_conn, int force)</td></tr>
+<tr class="separator:a6d119bfc7d08a4cf060280c100860560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac067ffdc1b5006a8ab7a3a18e760ade7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#ac067ffdc1b5006a8ab7a3a18e760ade7">connection_or_group_set_badness_</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *group, int force)</td></tr>
+<tr class="separator:ac067ffdc1b5006a8ab7a3a18e760ade7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983b93cd08e8aa2efa92be9bf80bbe69"><td class="memItemLeft" align="right" valign="top"><a id="a983b93cd08e8aa2efa92be9bf80bbe69"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>HT_PROTOTYPE</b> (HT_GENERATE2(or_connect_failure_ht, HT_GENERATE2(<a class="el" href="structor__connect__failure__entry__t.html">or_connect_failure_entry_t</a>, HT_GENERATE2(node, HT_GENERATE2(or_connect_failure_ht_hash, HT_GENERATE2(or_connect_failure_ht_eq)</td></tr>
+<tr class="separator:a983b93cd08e8aa2efa92be9bf80bbe69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5cad268fa75da899770cfda5d15828"><td class="memItemLeft" align="right" valign="top"><a id="ada5cad268fa75da899770cfda5d15828"></a>
+STATIC void&#160;</td><td class="memItemRight" valign="bottom"><b>note_or_connect_failed</b> (const <a class="el" href="structor__connection__t.html">or_connection_t</a> *or_conn)</td></tr>
+<tr class="separator:ada5cad268fa75da899770cfda5d15828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a5386c82e78ccc5fdbaeb6b91a5026"><td class="memItemLeft" align="right" valign="top"><a id="ae8a5386c82e78ccc5fdbaeb6b91a5026"></a>
+STATIC int&#160;</td><td class="memItemRight" valign="bottom"><b>should_connect_to_relay</b> (const <a class="el" href="structor__connection__t.html">or_connection_t</a> *or_conn)</td></tr>
+<tr class="separator:ae8a5386c82e78ccc5fdbaeb6b91a5026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a75b0592cc90f11549ed8899454a1f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a6a75b0592cc90f11549ed8899454a1f0">connection_or_connect_failed</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, int reason, const char *msg)</td></tr>
 <tr class="separator:a6a75b0592cc90f11549ed8899454a1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1782f56c8e2a13ef3db44eed29c83d28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a1782f56c8e2a13ef3db44eed29c83d28">connection_or_notify_error</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, int reason, const char *msg)</td></tr>
 <tr class="separator:a1782f56c8e2a13ef3db44eed29c83d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28eb841c609f9ecebcf27d0c31f4a6b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a28eb841c609f9ecebcf27d0c31f4a6b8">MOCK_IMPL</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *, connection_or_connect,(const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *_addr, uint16_t port, const char *id_digest, channel_tls_t *chan))</td></tr>
-<tr class="separator:a28eb841c609f9ecebcf27d0c31f4a6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fdf1e7144b7f497802d60f0f6a076fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a9fdf1e7144b7f497802d60f0f6a076fc">MOCK_IMPL</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *, connection_or_connect,(const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *_addr, uint16_t port, const char *id_digest, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_id, channel_tls_t *chan))</td></tr>
+<tr class="separator:a9fdf1e7144b7f497802d60f0f6a076fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4d087b0c7ef9745ce0296b5e28160c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#af4d087b0c7ef9745ce0296b5e28160c7">connection_or_close_normally</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *orconn, int flush)</td></tr>
 <tr class="separator:af4d087b0c7ef9745ce0296b5e28160c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cffbd09fb670b958a09e5d65982d560"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a7cffbd09fb670b958a09e5d65982d560">MOCK_IMPL</a> (void, connection_or_close_for_error,(<a class="el" href="structor__connection__t.html">or_connection_t</a> *orconn, int flush))</td></tr>
@@ -258,14 +290,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>connection_or_set_can
 <tr class="separator:a15ee02cde3308ff45253cd8832bf9dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9874fc9cd6f255b931cbbcfc534702b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a9874fc9cd6f255b931cbbcfc534702b7">connection_or_nonopen_was_started_here</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn)</td></tr>
 <tr class="separator:a9874fc9cd6f255b931cbbcfc534702b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a641743095fae21749e9f4bdf36c8e9e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a641743095fae21749e9f4bdf36c8e9e6">connection_or_client_learned_peer_id</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, const uint8_t *peer_id)</td></tr>
-<tr class="separator:a641743095fae21749e9f4bdf36c8e9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25311bc6d11b48d5f281528453c53ab0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a25311bc6d11b48d5f281528453c53ab0">connection_or_client_learned_peer_id</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, const uint8_t *rsa_peer_id, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_peer_id)</td></tr>
+<tr class="separator:a25311bc6d11b48d5f281528453c53ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28d99e23c45ae40c245a0474ef4cfb98"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a28d99e23c45ae40c245a0474ef4cfb98">connection_or_client_used</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn)</td></tr>
 <tr class="separator:a28d99e23c45ae40c245a0474ef4cfb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb9044e4d4dd0ad7d56e37ff633c223d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#aeb9044e4d4dd0ad7d56e37ff633c223d">connection_init_or_handshake_state</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, int started_here)</td></tr>
 <tr class="separator:aeb9044e4d4dd0ad7d56e37ff633c223d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa4b4ee00896c43391106b72f6bd31ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#afa4b4ee00896c43391106b72f6bd31ac">or_handshake_state_free</a> (<a class="el" href="structor__handshake__state__t.html">or_handshake_state_t</a> *state)</td></tr>
-<tr class="separator:afa4b4ee00896c43391106b72f6bd31ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543b7dc735432b7107d590ff058008b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a543b7dc735432b7107d590ff058008b0">or_handshake_state_free_</a> (<a class="el" href="structor__handshake__state__t.html">or_handshake_state_t</a> *state)</td></tr>
+<tr class="separator:a543b7dc735432b7107d590ff058008b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741e61a567306a7cc5aaaf9634ecda4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a741e61a567306a7cc5aaaf9634ecda4e">or_handshake_state_record_cell</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, <a class="el" href="structor__handshake__state__t.html">or_handshake_state_t</a> *state, const <a class="el" href="structcell__t.html">cell_t</a> *cell, int incoming)</td></tr>
 <tr class="separator:a741e61a567306a7cc5aaaf9634ecda4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eac340c62c1d3844d69235a6a53c15e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a5eac340c62c1d3844d69235a6a53c15e">or_handshake_state_record_var_cell</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, <a class="el" href="structor__handshake__state__t.html">or_handshake_state_t</a> *state, const <a class="el" href="structvar__cell__t.html">var_cell_t</a> *cell, int incoming)</td></tr>
@@ -284,10 +316,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>connection_or_set_can
 <tr class="separator:ab27b40a47b0943bf613f31427ad7b30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a373bc2ce63f7b8a6530d1b16e420f7c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a373bc2ce63f7b8a6530d1b16e420f7c4">connection_or_send_certs_cell</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn)</td></tr>
 <tr class="separator:a373bc2ce63f7b8a6530d1b16e420f7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730cf41ffc419e07bc10ec3dda904b7b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a730cf41ffc419e07bc10ec3dda904b7b">authchallenge_type_is_supported</a> (uint16_t challenge_type)</td></tr>
+<tr class="separator:a730cf41ffc419e07bc10ec3dda904b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3464c60e24d80f67248c6089221673"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a2a3464c60e24d80f67248c6089221673">authchallenge_type_is_better</a> (uint16_t challenge_type_a, uint16_t challenge_type_b)</td></tr>
+<tr class="separator:a2a3464c60e24d80f67248c6089221673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acda2ead17f44091558bb27dd084517b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#acda2ead17f44091558bb27dd084517b9">connection_or_send_auth_challenge_cell</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn)</td></tr>
 <tr class="separator:acda2ead17f44091558bb27dd084517b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1ef7fb7062854e94bc474ccd0e51fbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#ab1ef7fb7062854e94bc474ccd0e51fbc">connection_or_compute_authenticate_cell_body</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, uint8_t *out, size_t outlen, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *signing_key, int server)</td></tr>
-<tr class="separator:ab1ef7fb7062854e94bc474ccd0e51fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299125b246f5c829b4af2cef1efa7378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvar__cell__t.html">var_cell_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a299125b246f5c829b4af2cef1efa7378">connection_or_compute_authenticate_cell_body</a> (<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, const int authtype, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *signing_key, const <a class="el" href="structed25519__keypair__t.html">ed25519_keypair_t</a> *ed_signing_key, int server)</td></tr>
+<tr class="separator:a299125b246f5c829b4af2cef1efa7378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e89fff0e71d905b83cae2583a7bc49f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8c.html#a0e89fff0e71d905b83cae2583a7bc49f">MOCK_IMPL</a> (int, connection_or_send_authenticate_cell,(<a class="el" href="structor__connection__t.html">or_connection_t</a> *conn, int authtype))</td></tr>
 <tr class="separator:a0e89fff0e71d905b83cae2583a7bc49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -297,23 +333,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>connection_or_set_can
 <p>Every OR connection has an underlying tortls_t object (as implemented in <a class="el" href="tortls_8c.html" title="Wrapper functions to present a consistent interface to TLS, SSL, and X.509 functions from OpenSSL...">tortls.c</a>) which it uses as its TLS stream. It is responsible for sending and receiving cells over that TLS.</p>
 <p>This module also implements the client side of the v3 Tor link handshake, </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a76970f55f4131fa6bc6372e7da902b58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76970f55f4131fa6bc6372e7da902b58">&#9670;&nbsp;</a></span>IDLE_OR_CONN_TIMEOUT_NONCANONICAL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IDLE_OR_CONN_TIMEOUT_NONCANONICAL&#160;&#160;&#160;180</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>How long do we wait before killing non-canonical OR connections with no circuits? In Tor versions up to 0.2.1.25 and 0.2.2.12-alpha, we waited 15 minutes before cancelling these connections, which caused fast relays to accrue many many idle connections. Hopefully 3-4.5 minutes is low enough that it kills most idle connections, without being so low that we cause clients to bounce on and off.</p>
-<p>For canonical connections, the limit is higher, at 15-22.5 minutes.</p>
-<p>For each OR connection, we randomly add up to 50% extra to its idle_timeout field, to avoid exposing when exactly the last circuit closed. Since we're storing idle_timeout in a uint16_t, don't let these values get higher than 12 hours or so without revising connection_or_set_canonical and/or expanding idle_timeout. </p>
-
-</div>
-</div>
 <a id="a85d6c0e2e0590e0cc5c1ec9303cfd14c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85d6c0e2e0590e0cc5c1ec9303cfd14c">&#9670;&nbsp;</a></span>MAX_REASONS_TO_REPORT</h2>
 
@@ -361,6 +380,70 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>connection_or_set_can
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a2a3464c60e24d80f67248c6089221673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3464c60e24d80f67248c6089221673">&#9670;&nbsp;</a></span>authchallenge_type_is_better()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int authchallenge_type_is_better </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>challenge_type_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>challenge_type_b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true iff <b>challenge_type_a</b> is one that we would rather use than <b>challenge_type_b</b>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="connection__or_8c_a2a3464c60e24d80f67248c6089221673_cgraph.png" border="0" usemap="#connection__or_8c_a2a3464c60e24d80f67248c6089221673_cgraph" alt=""/></div>
+<map name="connection__or_8c_a2a3464c60e24d80f67248c6089221673_cgraph" id="connection__or_8c_a2a3464c60e24d80f67248c6089221673_cgraph">
+<area shape="rect" id="node2" href="connection__or_8c.html#a730cf41ffc419e07bc10ec3dda904b7b" title="authchallenge_type\l_is_supported" alt="" coords="188,5,323,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a730cf41ffc419e07bc10ec3dda904b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730cf41ffc419e07bc10ec3dda904b7b">&#9670;&nbsp;</a></span>authchallenge_type_is_supported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int authchallenge_type_is_supported </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>challenge_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true iff <b>challenge_type</b> is an AUTHCHALLENGE type that we can send and receive. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="connection__or_8c_a730cf41ffc419e07bc10ec3dda904b7b_icgraph.png" border="0" usemap="#connection__or_8c_a730cf41ffc419e07bc10ec3dda904b7b_icgraph" alt=""/></div>
+<map name="connection__or_8c_a730cf41ffc419e07bc10ec3dda904b7b_icgraph" id="connection__or_8c_a730cf41ffc419e07bc10ec3dda904b7b_icgraph">
+<area shape="rect" id="node2" href="connection__or_8h.html#a2a3464c60e24d80f67248c6089221673" title="authchallenge_type\l_is_better" alt="" coords="188,5,323,47"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a3452210724078c52a047cff4fecf264a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3452210724078c52a047cff4fecf264a">&#9670;&nbsp;</a></span>cell_pack()</h2>
 
@@ -502,10 +585,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="connection__or_8c_aecfd6590f4dd5c079f371e48eb1e09f2_cgraph.png" border="0" usemap="#connection__or_8c_aecfd6590f4dd5c079f371e48eb1e09f2_cgraph" alt=""/></div>
 <map name="connection__or_8c_aecfd6590f4dd5c079f371e48eb1e09f2_cgraph" id="connection__or_8c_aecfd6590f4dd5c079f371e48eb1e09f2_cgraph">
-<area shape="rect" id="node2" href="tortls_8c.html#a5823cfa710f0f7987d09dfececae28d0" title="tor_tls_set_renegotiate\l_callback" alt="" coords="206,35,361,76"/>
-<area shape="rect" id="node5" href="tortls_8c.html#a08342968552b84d5dfbd6493338f6058" title="tor_tls_block_renegotiation" alt="" coords="195,101,372,127"/>
-<area shape="rect" id="node3" href="tortls_8c.html#a3b0c0880a231328e1b5d7faa01fddcd9" title="tor_tls_server_info\l_callback" alt="" coords="420,5,549,47"/>
-<area shape="rect" id="node4" href="tortls_8c.html#a6f66b1039c2f3e00e4d4602f19d5ab02" title="tor_tls_debug_state\l_callback" alt="" coords="597,35,733,76"/>
+<area shape="rect" id="node2" href="tortls_8c.html#a5823cfa710f0f7987d09dfececae28d0" title="tor_tls_set_renegotiate\l_callback" alt="" coords="206,39,361,80"/>
+<area shape="rect" id="node5" href="tortls_8c.html#a08342968552b84d5dfbd6493338f6058" title="tor_tls_block_renegotiation" alt="" coords="195,105,372,131"/>
+<area shape="rect" id="node3" href="tortls_8c.html#a3b0c0880a231328e1b5d7faa01fddcd9" title="tor_tls_server_info\l_callback" alt="" coords="423,5,553,47"/>
+<area shape="rect" id="node4" href="tortls_8c.html#a6f66b1039c2f3e00e4d4602f19d5ab02" title="tor_tls_debug_state\l_callback" alt="" coords="420,71,556,112"/>
 </map>
 </div>
 
@@ -530,6 +613,25 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a203fccfbc180a939bcf81b19f8e567d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a203fccfbc180a939bcf81b19f8e567d4">&#9670;&nbsp;</a></span>connection_or_clear_identity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void connection_or_clear_identity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structor__connection__t.html">or_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clear clear conn-&gt;identity_digest and update other data structures as appropriate. </p>
+
+</div>
+</div>
 <a id="af395c50f9f998656fe273222574dadeb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af395c50f9f998656fe273222574dadeb">&#9670;&nbsp;</a></span>connection_or_clear_identity_map()</h2>
 
@@ -545,12 +647,12 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove all entries from the identity-to-orconn map, and clear all identities in OR conns. </p>
+<p>Clear all identities in OR conns. </p>
 
 </div>
 </div>
-<a id="a641743095fae21749e9f4bdf36c8e9e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a641743095fae21749e9f4bdf36c8e9e6">&#9670;&nbsp;</a></span>connection_or_client_learned_peer_id()</h2>
+<a id="a25311bc6d11b48d5f281528453c53ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25311bc6d11b48d5f281528453c53ab0">&#9670;&nbsp;</a></span>connection_or_client_learned_peer_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -565,7 +667,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>peer_id</em>&#160;</td>
+          <td class="paramname"><em>rsa_peer_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
+          <td class="paramname"><em>ed_peer_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -574,7 +682,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Called when we (as a connection initiator) have definitively, authenticatedly, learned that ID of the Tor instance on the other side of <b>conn</b> is <b>peer_id</b>. For v1 and v2 handshakes, this is right after we get a certificate chain in a TLS handshake or renegotiation. For v3 handshakes, this is right after we get a certificate chain in a CERTS cell.</p>
+<p>Called when we (as a connection initiator) have definitively, authenticatedly, learned that ID of the Tor instance on the other side of <b>conn</b> is <b>rsa_peer_id</b> and optionally <b>ed_peer_id</b>. For v1 and v2 handshakes, this is right after we get a certificate chain in a TLS handshake or renegotiation. For v3+ handshakes, this is right after we get a certificate chain in a CERTS cell.</p>
 <p>If we did not know the ID before, record the one we got.</p>
 <p>If we wanted an ID, but we didn't get the one we expected, log a message and return -1. On relays:</p><ul>
 <li>log a protocol warning whenever the fingerprints don't match; On clients:</li>
@@ -586,10 +694,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="connection__or_8c_a641743095fae21749e9f4bdf36c8e9e6_cgraph.png" border="0" usemap="#connection__or_8c_a641743095fae21749e9f4bdf36c8e9e6_cgraph" alt=""/></div>
-<map name="connection__or_8c_a641743095fae21749e9f4bdf36c8e9e6_cgraph" id="connection__or_8c_a641743095fae21749e9f4bdf36c8e9e6_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="195,13,323,39"/>
-<area shape="rect" id="node3" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="371,13,457,39"/>
+<div class="center"><img src="connection__or_8c_a25311bc6d11b48d5f281528453c53ab0_cgraph.png" border="0" usemap="#connection__or_8c_a25311bc6d11b48d5f281528453c53ab0_cgraph" alt=""/></div>
+<map name="connection__or_8c_a25311bc6d11b48d5f281528453c53ab0_cgraph" id="connection__or_8c_a25311bc6d11b48d5f281528453c53ab0_cgraph">
+<area shape="rect" id="node2" href="channeltls_8c.html#a103e1b5acee3f7892a537d0c6f143752" title="channel_tls_to_base" alt="" coords="195,5,336,32"/>
+<area shape="rect" id="node3" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="201,56,329,83"/>
+<area shape="rect" id="node5" href="crypto__ed25519_8c.html#a1d56281a358363aa105b7032aebc46e4" title="ed25519_public_key\l_is_zero" alt="" coords="195,107,335,149"/>
+<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="402,56,489,83"/>
+<area shape="rect" id="node6" href="util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="384,115,507,141"/>
 </map>
 </div>
 
@@ -610,7 +721,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return when a client used this, for <a class="el" href="connection_8c.html" title="General high-level functions to handle reading and writing on connections. ">connection.c</a>, since client_used is now one of the timestamps of channel_t </p>
+<p>Return when we last used this channel for client activity (origin circuits). This is called from <a class="el" href="connection_8c.html" title="General high-level functions to handle reading and writing on connections. ">connection.c</a>, since client_used is now one of the timestamps in channel_t </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -652,14 +763,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ab1ef7fb7062854e94bc474ccd0e51fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1ef7fb7062854e94bc474ccd0e51fbc">&#9670;&nbsp;</a></span>connection_or_compute_authenticate_cell_body()</h2>
+<a id="a299125b246f5c829b4af2cef1efa7378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299125b246f5c829b4af2cef1efa7378">&#9670;&nbsp;</a></span>connection_or_compute_authenticate_cell_body()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int connection_or_compute_authenticate_cell_body </td>
+          <td class="memname"><a class="el" href="structvar__cell__t.html">var_cell_t</a>* connection_or_compute_authenticate_cell_body </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structor__connection__t.html">or_connection_t</a> *&#160;</td>
           <td class="paramname"><em>conn</em>, </td>
@@ -667,20 +778,20 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>outlen</em>, </td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>authtype</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *&#160;</td>
           <td class="paramname"><em>signing_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structed25519__keypair__t.html">ed25519_keypair_t</a> *&#160;</td>
+          <td class="paramname"><em>ed_signing_key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -695,7 +806,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute the main body of an AUTHENTICATE cell that a client can use to authenticate itself on a v3 handshake for <b>conn</b>. Write it to the <b>outlen</b>-byte buffer at <b>out</b>.</p>
+<p>Compute the main body of an AUTHENTICATE cell that a client can use to authenticate itself on a v3 handshake for <b>conn</b>. Return it in a <a class="el" href="structvar__cell__t.html">var_cell_t</a>.</p>
 <p>If <b>server</b> is true, only calculate the first V3_AUTH_FIXED_PART_LEN bytes &ndash; the part of the authenticator that's determined by the rest of the handshake, and which match the provided value exactly.</p>
 <p>If <b>server</b> is false and <b>signing_key</b> is NULL, calculate the first V3_AUTH_BODY_LEN bytes of the authenticator (that is, everything that should be signed), but don't actually sign it.</p>
 <p>If <b>server</b> is false and <b>signing_key</b> is provided, calculate the entire authenticator, signed with <b>signing_key</b>.</p>
@@ -703,8 +814,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="connection__or_8c_ab1ef7fb7062854e94bc474ccd0e51fbc_cgraph.png" border="0" usemap="#connection__or_8c_ab1ef7fb7062854e94bc474ccd0e51fbc_cgraph" alt=""/></div>
-<map name="connection__or_8c_ab1ef7fb7062854e94bc474ccd0e51fbc_cgraph" id="connection__or_8c_ab1ef7fb7062854e94bc474ccd0e51fbc_cgraph">
+<div class="center"><img src="connection__or_8c_a299125b246f5c829b4af2cef1efa7378_cgraph.png" border="0" usemap="#connection__or_8c_a299125b246f5c829b4af2cef1efa7378_cgraph" alt=""/></div>
+<map name="connection__or_8c_a299125b246f5c829b4af2cef1efa7378_cgraph" id="connection__or_8c_a299125b246f5c829b4af2cef1efa7378_cgraph">
 <area shape="rect" id="node2" href="tortls_8c.html#a7aa93459dd4e3641e885932d682db4a0" title="tor_tls_get_my_certs" alt="" coords="216,5,360,32"/>
 <area shape="rect" id="node3" href="tortls_8c.html#aeb4713a168234b69a9d25312a3a15770" title="tor_x509_cert_get_id\l_digests" alt="" coords="217,57,359,98"/>
 </map>
@@ -867,7 +978,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="connection__or_8c_a8e6891862efd73402fed97a4353b2b24_cgraph.png" border="0" usemap="#connection__or_8c_a8e6891862efd73402fed97a4353b2b24_cgraph" alt=""/></div>
 <map name="connection__or_8c_a8e6891862efd73402fed97a4353b2b24_cgraph" id="connection__or_8c_a8e6891862efd73402fed97a4353b2b24_cgraph">
-<area shape="rect" id="node2" href="channel_8c.html#abf9310a1fa1a4d1cb1e3af383a98d902" title="channel_update_xmit\l_queue_size" alt="" coords="244,5,389,47"/>
+<area shape="rect" id="node2" href="channel_8c.html#a08dea4276de8427cb789cda94be8eea7" title="channel_timestamp_active" alt="" coords="244,5,421,32"/>
 </map>
 </div>
 
@@ -892,8 +1003,53 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a81f0c0f45bf6e7d920db1c1603f448f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81f0c0f45bf6e7d920db1c1603f448f9">&#9670;&nbsp;</a></span>connection_or_init_conn_from_address()</h2>
+<a id="ac067ffdc1b5006a8ab7a3a18e760ade7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac067ffdc1b5006a8ab7a3a18e760ade7">&#9670;&nbsp;</a></span>connection_or_group_set_badness_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void connection_or_group_set_badness_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>force</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Given a list of all the or_connections with a given identity, set elements of that list as is_bad_for_new_circs as appropriate. Helper for connection_or_set_bad_connections().</p>
+<p>Specifically, we set the is_bad_for_new_circs flag on:</p><ul>
+<li>all connections if <b>force</b> is true.</li>
+<li>all connections that are too old.</li>
+<li>all open non-canonical connections for which a canonical connection exists to the same router.</li>
+<li>all open canonical connections for which a 'better' canonical connection exists to the same router.</li>
+<li>all open non-canonical connections for which a 'better' non-canonical connection exists to the same router at the same address.</li>
+</ul>
+<p>See <a class="el" href="channel_8c.html#a098e7f8cd053cab6477b2ff9dcbd7190">channel_is_better()</a> in <a class="el" href="channel_8c.html" title="OR/OP-to-OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ...">channel.c</a> for our idea of what makes one OR connection better than another. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="connection__or_8c_ac067ffdc1b5006a8ab7a3a18e760ade7_cgraph.png" border="0" usemap="#connection__or_8c_ac067ffdc1b5006a8ab7a3a18e760ade7_cgraph" alt=""/></div>
+<map name="connection__or_8c_ac067ffdc1b5006a8ab7a3a18e760ade7_cgraph" id="connection__or_8c_ac067ffdc1b5006a8ab7a3a18e760ade7_cgraph">
+<area shape="rect" id="node2" href="connection__or_8c.html#a6d119bfc7d08a4cf060280c100860560" title="connection_or_single\l_set_badness_" alt="" coords="196,5,340,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a886ddcdf832a3d3ccc18184ee4d7dd26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a886ddcdf832a3d3ccc18184ee4d7dd26">&#9670;&nbsp;</a></span>connection_or_init_conn_from_address()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -921,6 +1077,12 @@ Here is the call graph for this function:</div>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>id_digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
+          <td class="paramname"><em>ed_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1096,25 +1258,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="af2d555975120054c38db70b91234678c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2d555975120054c38db70b91234678c">&#9670;&nbsp;</a></span>connection_or_remove_from_identity_map()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void connection_or_remove_from_identity_map </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structor__connection__t.html">or_connection_t</a> *&#160;</td>
-          <td class="paramname"><em>conn</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>If conn is listed in orconn_identity_map, remove it, and clear conn-&gt;identity_digest. Otherwise do nothing. </p>
-
-</div>
-</div>
 <a id="a7feaa6ab5ddfb6f1c64357cffbd5e70d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7feaa6ab5ddfb6f1c64357cffbd5e70d">&#9670;&nbsp;</a></span>connection_or_report_broken_states()</h2>
 
@@ -1192,9 +1335,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="connection__or_8c_a373bc2ce63f7b8a6530d1b16e420f7c4_cgraph.png" border="0" usemap="#connection__or_8c_a373bc2ce63f7b8a6530d1b16e420f7c4_cgraph" alt=""/></div>
 <map name="connection__or_8c_a373bc2ce63f7b8a6530d1b16e420f7c4_cgraph" id="connection__or_8c_a373bc2ce63f7b8a6530d1b16e420f7c4_cgraph">
-<area shape="rect" id="node2" href="tortls_8c.html#a7aa93459dd4e3641e885932d682db4a0" title="tor_tls_get_my_certs" alt="" coords="195,5,339,32"/>
-<area shape="rect" id="node3" href="tortls_8c.html#ae138ea45f150f1291b09f0b5dfa34ad4" title="tor_x509_cert_get_der" alt="" coords="192,56,343,83"/>
-<area shape="rect" id="node4" href="connection__or_8c.html#a23e8e7d75e478e23ba78046d4bf17088" title="var_cell_new" alt="" coords="218,107,317,133"/>
+<area shape="rect" id="node2" href="tortls_8c.html#a7aa93459dd4e3641e885932d682db4a0" title="tor_tls_get_my_certs" alt="" coords="192,13,336,39"/>
 </map>
 </div>
 
@@ -1238,35 +1379,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a3154bc0f1773329e4c86012d07397dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3154bc0f1773329e4c86012d07397dfe">&#9670;&nbsp;</a></span>connection_or_set_bad_connections()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void connection_or_set_bad_connections </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>digest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>force</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Go through all the OR connections (or if <b>digest</b> is non-NULL, just the OR connections with that digest), and set the is_bad_for_new_circs flag based on the rules in connection_or_group_set_badness() (or just always set it if <b>force</b> is true). </p>
-
-</div>
-</div>
 <a id="a8ad5485d3d553595f598242d862b20a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ad5485d3d553595f598242d862b20a0">&#9670;&nbsp;</a></span>connection_or_set_ext_or_identifier()</h2>
 
@@ -1302,6 +1414,50 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set <b>conn</b>'s state to OR_CONN_STATE_OPEN, and tell other subsystems as appropriate. Called when we are done with all TLS and OR handshaking. </p>
+
+</div>
+</div>
+<a id="a6d119bfc7d08a4cf060280c100860560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d119bfc7d08a4cf060280c100860560">&#9670;&nbsp;</a></span>connection_or_single_set_badness_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int connection_or_single_set_badness_ </td>
+          <td>(</td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>now</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structor__connection__t.html">or_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>or_conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>force</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Expire an or_connection if it is too old. Helper for connection_or_group_set_badness_ and fast path for channel_rsa_id_group_set_badness.</p>
+<p>Returns 1 if the connection was already expired, else 0. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="connection__or_8c_a6d119bfc7d08a4cf060280c100860560_icgraph.png" border="0" usemap="#connection__or_8c_a6d119bfc7d08a4cf060280c100860560_icgraph" alt=""/></div>
+<map name="connection__or_8c_a6d119bfc7d08a4cf060280c100860560_icgraph" id="connection__or_8c_a6d119bfc7d08a4cf060280c100860560_icgraph">
+<area shape="rect" id="node2" href="connection__or_8h.html#ac067ffdc1b5006a8ab7a3a18e760ade7" title="connection_or_group\l_set_badness_" alt="" coords="197,5,340,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1445,8 +1601,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a28eb841c609f9ecebcf27d0c31f4a6b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28eb841c609f9ecebcf27d0c31f4a6b8">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/7]</span></h2>
+<a id="a9fdf1e7144b7f497802d60f0f6a076fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fdf1e7144b7f497802d60f0f6a076fc">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1466,7 +1622,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *_addr, uint16_t port, const char *id_digest, channel_tls_t *chan)&#160;</td>
+          <td class="paramtype">(const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *_addr, uint16_t port, const char *id_digest, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_id, channel_tls_t *chan)&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1483,8 +1639,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="connection__or_8c_a28eb841c609f9ecebcf27d0c31f4a6b8_cgraph.png" border="0" usemap="#connection__or_8c_a28eb841c609f9ecebcf27d0c31f4a6b8_cgraph" alt=""/></div>
-<map name="connection__or_8c_a28eb841c609f9ecebcf27d0c31f4a6b8_cgraph" id="connection__or_8c_a28eb841c609f9ecebcf27d0c31f4a6b8_cgraph">
+<div class="center"><img src="connection__or_8c_a9fdf1e7144b7f497802d60f0f6a076fc_cgraph.png" border="0" usemap="#connection__or_8c_a9fdf1e7144b7f497802d60f0f6a076fc_cgraph" alt=""/></div>
+<map name="connection__or_8c_a9fdf1e7144b7f497802d60f0f6a076fc_cgraph" id="connection__or_8c_a9fdf1e7144b7f497802d60f0f6a076fc_cgraph">
 <area shape="rect" id="node2" href="address_8c.html#a139ff425c957e4eed3a766cb48f55f93" title="tor_addr_copy" alt="" coords="171,5,275,32"/>
 <area shape="rect" id="node3" href="router_8c.html#abeb0f38915a46f77352900604075d82f" title="router_digest_is_me" alt="" coords="153,56,292,83"/>
 <area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="340,56,427,83"/>
@@ -1700,14 +1856,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="afa4b4ee00896c43391106b72f6bd31ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa4b4ee00896c43391106b72f6bd31ac">&#9670;&nbsp;</a></span>or_handshake_state_free()</h2>
+<a id="a543b7dc735432b7107d590ff058008b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543b7dc735432b7107d590ff058008b0">&#9670;&nbsp;</a></span>or_handshake_state_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void or_handshake_state_free </td>
+          <td class="memname">void or_handshake_state_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structor__handshake__state__t.html">or_handshake_state_t</a> *&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -1716,16 +1872,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Free all storage held by <b>state</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="connection__or_8c_afa4b4ee00896c43391106b72f6bd31ac_cgraph.png" border="0" usemap="#connection__or_8c_afa4b4ee00896c43391106b72f6bd31ac_cgraph" alt=""/></div>
-<map name="connection__or_8c_afa4b4ee00896c43391106b72f6bd31ac_cgraph" id="connection__or_8c_afa4b4ee00896c43391106b72f6bd31ac_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a4ca581f3cf1db8b08e696a7c4efb8a90" title="crypto_digest_free" alt="" coords="222,5,351,32"/>
-<area shape="rect" id="node3" href="tortls_8c.html#a1bc75295b83d26baab00ad0cc44f46d4" title="tor_x509_cert_free" alt="" coords="221,56,352,83"/>
-<area shape="rect" id="node4" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="400,81,479,108"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1815,7 +1961,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="connection__or_8c_a5eac340c62c1d3844d69235a6a53c15e_cgraph.png" border="0" usemap="#connection__or_8c_a5eac340c62c1d3844d69235a6a53c15e_cgraph" alt=""/></div>
 <map name="connection__or_8c_a5eac340c62c1d3844d69235a6a53c15e_cgraph" id="connection__or_8c_a5eac340c62c1d3844d69235a6a53c15e_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#ab13a3ab6f6ca1febd6a1f0e0c7f52966" title="crypto_digest256_new" alt="" coords="192,13,344,39"/>
+<area shape="rect" id="node2" href="crypto__digest_8c.html#ab13a3ab6f6ca1febd6a1f0e0c7f52966" title="crypto_digest256_new" alt="" coords="192,13,344,39"/>
 </map>
 </div>
 
@@ -1840,14 +1986,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="aaf174ef822b1a9135e9802171d39a082"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf174ef822b1a9135e9802171d39a082">&#9670;&nbsp;</a></span>var_cell_free()</h2>
+<a id="a6c750321029bdf8f4083f6226102c6c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c750321029bdf8f4083f6226102c6c2">&#9670;&nbsp;</a></span>var_cell_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void var_cell_free </td>
+          <td class="memname">void var_cell_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structvar__cell__t.html">var_cell_t</a> *&#160;</td>
           <td class="paramname"><em>cell</em></td><td>)</td>
@@ -1856,14 +2002,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all space held by <b>cell</b>. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="connection__or_8c_aaf174ef822b1a9135e9802171d39a082_icgraph.png" border="0" usemap="#connection__or_8c_aaf174ef822b1a9135e9802171d39a082_icgraph" alt=""/></div>
-<map name="connection__or_8c_aaf174ef822b1a9135e9802171d39a082_icgraph" id="connection__or_8c_aaf174ef822b1a9135e9802171d39a082_icgraph">
-<area shape="rect" id="node2" href="channel_8c.html#ae06da2fa9517932c784776910a727575" title="cell_queue_entry_free" alt="" coords="149,5,299,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1889,8 +2027,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="connection__or_8c_a23e8e7d75e478e23ba78046d4bf17088_icgraph.png" border="0" usemap="#connection__or_8c_a23e8e7d75e478e23ba78046d4bf17088_icgraph" alt=""/></div>
 <map name="connection__or_8c_a23e8e7d75e478e23ba78046d4bf17088_icgraph" id="connection__or_8c_a23e8e7d75e478e23ba78046d4bf17088_icgraph">
 <area shape="rect" id="node2" href="connection__or_8h.html#a23cfebfdf4ea8cb551ab8d243b56b811" title="connection_or_send\l_versions" alt="" coords="154,5,293,47"/>
-<area shape="rect" id="node3" href="connection__or_8h.html#a373bc2ce63f7b8a6530d1b16e420f7c4" title="connection_or_send\l_certs_cell" alt="" coords="154,71,293,112"/>
-<area shape="rect" id="node4" href="connection__or_8h.html#acda2ead17f44091558bb27dd084517b9" title="connection_or_send\l_auth_challenge_cell" alt="" coords="152,136,295,177"/>
+<area shape="rect" id="node3" href="connection__or_8h.html#acda2ead17f44091558bb27dd084517b9" title="connection_or_send\l_auth_challenge_cell" alt="" coords="152,71,295,112"/>
 </map>
 </div>
 

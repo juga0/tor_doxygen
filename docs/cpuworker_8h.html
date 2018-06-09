@@ -78,7 +78,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="cpuworker_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2cpuworker_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2cpuworker_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2cpuworker_8hdep">
 <area shape="rect" id="node2" href="command_8c.html" title="Functions for processing incoming cells. " alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node3" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="177,109,325,165"/>
 <area shape="rect" id="node4" href="cpuworker_8c.html" title="Uses the workqueue/threadpool code to farm CPU&#45;intensive activities out to subprocesses. " alt="" coords="349,109,497,165"/>
 <area shape="rect" id="node5" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="521,109,669,165"/>
 <area shape="rect" id="node6" href="onion_8c.html" title="Functions to queue create cells, wrap the various onionskin types, and parse and create the CREATE ce..." alt="" coords="693,109,841,165"/>
@@ -93,6 +93,9 @@ Functions</h2></td></tr>
 <tr class="separator:a560ad8614ae03841a10b489f4370bc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e83641db8471cf0727e113713c278f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuworker_8h.html#ab9e83641db8471cf0727e113713c278f">cpuworkers_rotate_keyinfo</a> (void)</td></tr>
 <tr class="separator:ab9e83641db8471cf0727e113713c278f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133af584e8cfdeb0d6b291330c55b5d6"><td class="memItemLeft" align="right" valign="top"><a id="a133af584e8cfdeb0d6b291330c55b5d6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (struct <a class="el" href="structworkqueue__entry__s.html">workqueue_entry_s</a> *, cpuworker_queue_work,(enum workqueue_priority_t priority, enum workqueue_reply_t(*fn)(void *, void *), void(*reply_fn)(void *), void *arg))</td></tr>
+<tr class="separator:a133af584e8cfdeb0d6b291330c55b5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b1784f42124a8a9df56cf4d64b3d74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuworker_8h.html#a82b1784f42124a8a9df56cf4d64b3d74">assign_onionskin_to_cpuworker</a> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ, struct <a class="el" href="structcreate__cell__t.html">create_cell_t</a> *onionskin)</td></tr>
 <tr class="separator:a82b1784f42124a8a9df56cf4d64b3d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef0aef3ba4310dc866f2568e9a4eaeed"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuworker_8h.html#aef0aef3ba4310dc866f2568e9a4eaeed">estimated_usec_for_onionskins</a> (uint32_t n_requests, uint16_t onionskin_type)</td></tr>
@@ -157,6 +160,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="cpuworker_8h_a560ad8614ae03841a10b489f4370bc51_cgraph.png" border="0" usemap="#cpuworker_8h_a560ad8614ae03841a10b489f4370bc51_cgraph" alt=""/></div>
 <map name="cpuworker_8h_a560ad8614ae03841a10b489f4370bc51_cgraph" id="cpuworker_8h_a560ad8614ae03841a10b489f4370bc51_cgraph">
 <area shape="rect" id="node2" href="workqueue_8c.html#a5bca099ce188de04027e4ef03fcbd97c" title="replyqueue_new" alt="" coords="120,5,236,32"/>
+<area shape="rect" id="node3" href="config_8c.html#a24b84820686d4e33c276ae68be4f3c22" title="get_num_cpus" alt="" coords="125,56,231,83"/>
+<area shape="rect" id="node5" href="workqueue_8c.html#a013cb0ab1ce586f5ab7d324416f9f1ff" title="threadpool_new" alt="" coords="121,107,235,133"/>
+<area shape="rect" id="node4" href="compat_8c.html#aa88386bf611ee3d9a49f14414cb100b6" title="compute_num_cpus" alt="" coords="284,56,423,83"/>
 </map>
 </div>
 
@@ -184,7 +190,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="cpuworker_8h_a1b4530118cd6e50e83a95454a6f22036_cgraph.png" border="0" usemap="#cpuworker_8h_a1b4530118cd6e50e83a95454a6f22036_cgraph" alt=""/></div>
 <map name="cpuworker_8h_a1b4530118cd6e50e83a95454a6f22036_cgraph" id="cpuworker_8h_a1b4530118cd6e50e83a95454a6f22036_cgraph">
 <area shape="rect" id="node2" href="workqueue_8c.html#a19dc28519d407979f4a56f6c18a7f065" title="workqueue_entry_cancel" alt="" coords="208,31,375,57"/>
-<area shape="rect" id="node5" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="252,81,331,108"/>
+<area shape="rect" id="node5" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="252,81,331,108"/>
 <area shape="rect" id="node3" href="compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="423,5,552,32"/>
 <area shape="rect" id="node4" href="compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="423,56,552,83"/>
 </map>
@@ -280,7 +286,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return an estimate of how many microseconds we will need for a single cpuworker to to process <b>n_requests</b> onionskins of type <b>onionskin_type</b>. </p>
+<p>Return an estimate of how many microseconds we will need for a single cpuworker to process <b>n_requests</b> onionskins of type <b>onionskin_type</b>. </p>
 
 </div>
 </div>

@@ -1,0 +1,5 @@
+<map id="circuit_should_use_vanguards" name="circuit_should_use_vanguards">
+<area shape="rect" id="node2" href="$circuitbuild_8h.html#a48d96af7c68a635f9734d0aa0271ac7c" title="route_len_for_purpose" alt="" coords="184,5,335,32"/>
+<area shape="rect" id="node4" href="$entrynodes_8h.html#ab71ff8062c99e9722afef949590df2da" title="guards_choose_guard" alt="" coords="185,56,334,83"/>
+<area shape="rect" id="node3" href="$circuitbuild_8c.html#a77d283b19c68e94c4a306fd09c6a0e7f" title="new_route_len" alt="" coords="383,5,489,32"/>
+</map>

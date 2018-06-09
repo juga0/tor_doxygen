@@ -1,6 +1,4 @@
 <map id="file_status" name="file_status">
 <area shape="rect" id="node2" href="$compat_8c.html#abaceb8fb0b9b55778be3dd71cc847aee" title="replace_file" alt="" coords="154,5,242,32"/>
-<area shape="rect" id="node3" href="$router_8h.html#adf9d6e2bf82d6ddfb3e47cd7d49b57ec" title="rotate_onion_key" alt="" coords="137,56,259,83"/>
-<area shape="rect" id="node4" href="$router_8h.html#a7ca8d566f45ef49fb6fd7358c235a420" title="init_key_from_file" alt="" coords="136,107,260,133"/>
-<area shape="rect" id="node5" href="$statefile_8c.html#a25adaf118e940e7774207a8c926d4bad" title="or_state_load" alt="" coords="148,157,248,184"/>
+<area shape="rect" id="node3" href="$router_8h.html#a7ca8d566f45ef49fb6fd7358c235a420" title="init_key_from_file" alt="" coords="136,56,260,83"/>
 </map>

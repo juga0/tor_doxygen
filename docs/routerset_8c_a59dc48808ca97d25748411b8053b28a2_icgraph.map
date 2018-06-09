@@ -1,6 +1,4 @@
 <map id="routerset_contains_node" name="routerset_contains_node">
-<area shape="rect" id="node2" href="$entrynodes_8c.html#afd4f8dd6f248abfc072ce641a568ddde" title="entry_is_live" alt="" coords="233,35,328,61"/>
-<area shape="rect" id="node5" href="$routerset_8c.html#a9be05b5c05c2be4f7ad45be6f705865d" title="routerset_subtract\l_nodes" alt="" coords="217,86,344,127"/>
-<area shape="rect" id="node3" href="$entrynodes_8h.html#accc850d23175b5132661a8c6e561e972" title="num_live_entry_guards" alt="" coords="392,5,548,32"/>
-<area shape="rect" id="node4" href="$entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="403,57,537,98"/>
+<area shape="rect" id="node2" href="$hs__common_8h.html#a9af4bf6fe3cc01d5524f2dd4123573a8" title="hs_pick_hsdir" alt="" coords="229,5,332,32"/>
+<area shape="rect" id="node3" href="$routerset_8c.html#a9be05b5c05c2be4f7ad45be6f705865d" title="routerset_subtract\l_nodes" alt="" coords="217,57,344,98"/>
 </map>

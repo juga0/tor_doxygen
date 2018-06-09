@@ -77,11 +77,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="reasons_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2reasons_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2reasons_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2reasons_8hdep">
-<area shape="rect" id="node2" href="buffers_8c.html" title="Implements a generic buffer interface. " alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="177,109,325,165"/>
-<area shape="rect" id="node4" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="349,109,521,165"/>
-<area shape="rect" id="node5" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="546,109,701,165"/>
-<area shape="rect" id="node6" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="725,109,873,165"/>
+<area shape="rect" id="node2" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="177,109,349,165"/>
+<area shape="rect" id="node4" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="374,109,529,165"/>
+<area shape="rect" id="node5" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="553,109,701,165"/>
+<area shape="rect" id="node6" href="hs__client_8c.html" title="Implement next generation hidden service client functionality. " alt="" coords="725,109,873,165"/>
 <area shape="rect" id="node7" href="reasons_8c.html" title="Convert circuit, stream, and orconn error reasons to and/or from strings and errno values..." alt="" coords="897,109,1045,165"/>
 <area shape="rect" id="node8" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="1069,109,1217,165"/>
 <area shape="rect" id="node9" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="1241,109,1389,165"/>
@@ -114,6 +114,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae69b945d5eb23e79b93cc635d0dc7c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b8eebe5e78b235974b973983137f6c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reasons_8h.html#a16b8eebe5e78b235974b973983137f6c">bandwidth_weight_rule_to_string</a> (enum <a class="el" href="or_8h.html#afec7ed946efd497dc5d098510c5a2d87">bandwidth_weight_rule_t</a> rule)</td></tr>
 <tr class="separator:a16b8eebe5e78b235974b973983137f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e685df2edb65b4bf0d7c2c0b33ad53"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="reasons_8h.html#a80e685df2edb65b4bf0d7c2c0b33ad53">end_reason_to_http_connect_response_line</a> (int endreason)</td></tr>
+<tr class="separator:a80e685df2edb65b4bf0d7c2c0b33ad53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for <a class="el" href="reasons_8c.html" title="Convert circuit, stream, and orconn error reasons to and/or from strings and errno values...">reasons.c</a>. </p>
@@ -133,7 +135,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return a string corresponding to a bandwidht_weight_rule_t </p>
+<p>Return a string corresponding to a bandwidth_weight_rule_t </p>
 
 </div>
 </div>
@@ -153,6 +155,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Convert a numeric reason for destroying a circuit into a string for a CIRCUIT event. </p>
+
+</div>
+</div>
+<a id="a80e685df2edb65b4bf0d7c2c0b33ad53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e685df2edb65b4bf0d7c2c0b33ad53">&#9670;&nbsp;</a></span>end_reason_to_http_connect_response_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* end_reason_to_http_connect_response_line </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endreason</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Given a RELAY_END reason value, convert it to an HTTP response to be send over an HTTP tunnel connection. </p>
 
 </div>
 </div>

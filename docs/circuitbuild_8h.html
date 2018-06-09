@@ -64,6 +64,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">circuitbuild.h File Reference</div>  </div>
@@ -77,90 +78,107 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="circuitbuild_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2circuitbuild_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2circuitbuild_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2circuitbuild_8hdep">
-<area shape="rect" id="node2" href="channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="177,109,325,165"/>
-<area shape="rect" id="node4" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="349,109,497,165"/>
-<area shape="rect" id="node5" href="circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. " alt="" coords="521,109,669,165"/>
-<area shape="rect" id="node6" href="circuitstats_8c.html" title="Maintains and analyzes statistics about circuit built times, so we can tell how long we may need to w..." alt="" coords="693,109,841,165"/>
-<area shape="rect" id="node7" href="circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. " alt="" coords="865,109,1013,165"/>
-<area shape="rect" id="node8" href="command_8c.html" title="Functions for processing incoming cells. " alt="" coords="1037,109,1185,165"/>
-<area shape="rect" id="node9" href="config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="1209,109,1357,165"/>
-<area shape="rect" id="node10" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="1381,109,1529,165"/>
-<area shape="rect" id="node11" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="1553,109,1725,165"/>
-<area shape="rect" id="node12" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="1750,109,1905,165"/>
-<area shape="rect" id="node13" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1929,109,2077,165"/>
-<area shape="rect" id="node14" href="cpuworker_8c.html" title="Uses the workqueue/threadpool code to farm CPU&#45;intensive activities out to subprocesses. " alt="" coords="2101,109,2249,165"/>
-<area shape="rect" id="node15" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="2273,109,2421,165"/>
-<area shape="rect" id="node16" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="2445,109,2593,165"/>
-<area shape="rect" id="node17" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="2617,109,2765,165"/>
-<area shape="rect" id="node18" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="2789,109,2937,165"/>
-<area shape="rect" id="node19" href="onion_8c.html" title="Functions to queue create cells, wrap the various onionskin types, and parse and create the CREATE ce..." alt="" coords="2961,109,3109,165"/>
-<area shape="rect" id="node20" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="3133,109,3281,165"/>
-<area shape="rect" id="node21" href="rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="3305,109,3453,165"/>
-<area shape="rect" id="node22" href="rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points..." alt="" coords="3478,109,3627,165"/>
-<area shape="rect" id="node23" href="rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="3652,109,3800,165"/>
-<area shape="rect" id="node24" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="3824,109,3972,165"/>
-<area shape="rect" id="node25" href="transports_8c.html" title="Pluggable Transports related code. " alt="" coords="3996,109,4144,165"/>
-<area shape="rect" id="node26" href="test__hs_8c.html" title="Unit tests for hidden service. " alt="" coords="4168,109,4316,165"/>
+<area shape="rect" id="node2" href="bridges_8c.html" title="Code to manage bridges and bridge selection. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="521,109,669,165"/>
+<area shape="rect" id="node6" href="circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="693,109,841,165"/>
+<area shape="rect" id="node7" href="circuitstats_8c.html" title="Maintains and analyzes statistics about circuit built times, so we can tell how long we may need to w..." alt="" coords="865,109,1013,165"/>
+<area shape="rect" id="node8" href="circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="1037,109,1185,165"/>
+<area shape="rect" id="node9" href="command_8c.html" title="Functions for processing incoming cells. " alt="" coords="1209,109,1357,165"/>
+<area shape="rect" id="node10" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="1381,109,1529,165"/>
+<area shape="rect" id="node11" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="1553,109,1701,165"/>
+<area shape="rect" id="node12" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="1725,109,1897,165"/>
+<area shape="rect" id="node13" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="1922,109,2077,165"/>
+<area shape="rect" id="node14" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="2101,109,2249,165"/>
+<area shape="rect" id="node15" href="cpuworker_8c.html" title="Uses the workqueue/threadpool code to farm CPU&#45;intensive activities out to subprocesses. " alt="" coords="2273,109,2421,165"/>
+<area shape="rect" id="node16" href="directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="2445,109,2593,165"/>
+<area shape="rect" id="node17" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="2617,109,2765,165"/>
+<area shape="rect" id="node18" href="hs__circuit_8c.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/or/hs_circuit.c" alt="" coords="2789,109,2937,165"/>
+<area shape="rect" id="node19" href="hs__client_8c.html" title="Implement next generation hidden service client functionality. " alt="" coords="2961,109,3109,165"/>
+<area shape="rect" id="node20" href="hs__common_8c.html" title="Contains code shared between different HS protocol version as well as useful data structures and acce..." alt="" coords="3133,109,3281,165"/>
+<area shape="rect" id="node21" href="hs__descriptor_8c.html" title="Handle hidden service descriptor encoding/decoding. " alt="" coords="3306,109,3458,165"/>
+<area shape="rect" id="node22" href="hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="3483,109,3631,165"/>
+<area shape="rect" id="node23" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="3655,109,3803,165"/>
+<area shape="rect" id="node24" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="3827,109,3975,165"/>
+<area shape="rect" id="node25" href="onion_8c.html" title="Functions to queue create cells, wrap the various onionskin types, and parse and create the CREATE ce..." alt="" coords="3999,109,4147,165"/>
+<area shape="rect" id="node26" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="4171,109,4319,165"/>
+<area shape="rect" id="node27" href="rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="4343,109,4491,165"/>
+<area shape="rect" id="node28" href="rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points..." alt="" coords="4515,109,4665,165"/>
+<area shape="rect" id="node29" href="rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="4689,109,4837,165"/>
+<area shape="rect" id="node30" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="4861,109,5009,165"/>
+<area shape="rect" id="node31" href="transports_8c.html" title="Pluggable Transports related code. " alt="" coords="5033,109,5181,165"/>
+<area shape="rect" id="node32" href="test__hs_8c.html" title="Unit tests for hidden service. " alt="" coords="5205,109,5353,165"/>
+<area shape="rect" id="node33" href="test__hs__client_8c.html" title="Test prop224 HS client functionality. " alt="" coords="5377,109,5544,165"/>
+<area shape="rect" id="node34" href="test__hs__service_8c.html" title="Test hidden service functionality. " alt="" coords="5568,109,5745,165"/>
 </map>
 </div>
 </div>
 <p><a href="circuitbuild_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae085df30336808921f36c49c3f6e3d79"><td class="memItemLeft" align="right" valign="top"><a id="ae085df30336808921f36c49c3f6e3d79"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>extend_info_free</b>(info)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structextend__info__t.html">extend_info_t</a>, <a class="el" href="circuitbuild_8h.html#a0e247e65bf9d17af8f6628f91d572bae">extend_info_free_</a>, (info))</td></tr>
+<tr class="separator:ae085df30336808921f36c49c3f6e3d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a48d96af7c68a635f9734d0aa0271ac7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a48d96af7c68a635f9734d0aa0271ac7c">route_len_for_purpose</a> (uint8_t purpose, <a class="el" href="structextend__info__t.html">extend_info_t</a> *exit_ei)</td></tr>
+<tr class="separator:a48d96af7c68a635f9734d0aa0271ac7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f985be42c44b9f401f9538b18a43b58"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a1f985be42c44b9f401f9538b18a43b58">circuit_list_path</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, int verbose)</td></tr>
 <tr class="separator:a1f985be42c44b9f401f9538b18a43b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63c73dbf853d0e5ee7bbd00009c94e57"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a63c73dbf853d0e5ee7bbd00009c94e57">circuit_list_path_for_controller</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
 <tr class="separator:a63c73dbf853d0e5ee7bbd00009c94e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40cc65f3c1820f93996af79209385f7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a40cc65f3c1820f93996af79209385f7c">circuit_log_path</a> (int severity, unsigned int domain, <a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
 <tr class="separator:a40cc65f3c1820f93996af79209385f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf0a845654a793ae2d771696ef42ca7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#acf0a845654a793ae2d771696ef42ca7d">circuit_rep_hist_note_result</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
-<tr class="separator:acf0a845654a793ae2d771696ef42ca7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8532320d2ec89a1d23738911ef3673f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#ac8532320d2ec89a1d23738911ef3673f">origin_circuit_init</a> (uint8_t purpose, int flags)</td></tr>
 <tr class="separator:ac8532320d2ec89a1d23738911ef3673f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad080a73b41f96d923417f2b5b3535f50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#ad080a73b41f96d923417f2b5b3535f50">circuit_establish_circuit</a> (uint8_t purpose, <a class="el" href="structextend__info__t.html">extend_info_t</a> *exit, int flags)</td></tr>
 <tr class="separator:ad080a73b41f96d923417f2b5b3535f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f69e478bec0b22e9318bc9600fc4aa"><td class="memItemLeft" align="right" valign="top">struct circuit_guard_state_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#af2f69e478bec0b22e9318bc9600fc4aa">origin_circuit_get_guard_state</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
+<tr class="separator:af2f69e478bec0b22e9318bc9600fc4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31b5e1718bcb6aebffa4925124d34a3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a31b5e1718bcb6aebffa4925124d34a3f">circuit_handle_first_hop</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
 <tr class="separator:a31b5e1718bcb6aebffa4925124d34a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa06f5bb2ee0edfd8f7a82776574133"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a9fa06f5bb2ee0edfd8f7a82776574133">circuit_n_chan_done</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan, int status, int close_origin_circuits)</td></tr>
 <tr class="separator:a9fa06f5bb2ee0edfd8f7a82776574133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acccfc2539c7dd13ca9db049b3decc386"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#acccfc2539c7dd13ca9db049b3decc386">inform_testing_reachability</a> (void)</td></tr>
 <tr class="separator:acccfc2539c7dd13ca9db049b3decc386"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4c79689688591a1952b279dcdac792f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#ae4c79689688591a1952b279dcdac792f">circuit_timeout_want_to_count_circ</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
-<tr class="separator:ae4c79689688591a1952b279dcdac792f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58d1c16591ccd8590c84255d7b3cc34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#aa58d1c16591ccd8590c84255d7b3cc34">circuit_timeout_want_to_count_circ</a> (const <a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
+<tr class="separator:aa58d1c16591ccd8590c84255d7b3cc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad10a43182d0912b72adbbc2c1911e81c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#ad10a43182d0912b72adbbc2c1911e81c">circuit_send_next_onion_skin</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
 <tr class="separator:ad10a43182d0912b72adbbc2c1911e81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9850a0ba60e6a62bc0a7267343418235"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a9850a0ba60e6a62bc0a7267343418235">circuit_note_clock_jumped</a> (int seconds_elapsed)</td></tr>
-<tr class="separator:a9850a0ba60e6a62bc0a7267343418235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0daecc03b3062716a6845b8a522d3da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#ad0daecc03b3062716a6845b8a522d3da">circuit_note_clock_jumped</a> (int64_t seconds_elapsed, bool was_idle)</td></tr>
+<tr class="separator:ad0daecc03b3062716a6845b8a522d3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3767c914fa8ea632b4aa9cd4843072eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a3767c914fa8ea632b4aa9cd4843072eb">circuit_extend</a> (<a class="el" href="structcell__t.html">cell_t</a> *cell, <a class="el" href="structcircuit__t.html">circuit_t</a> *circ)</td></tr>
 <tr class="separator:a3767c914fa8ea632b4aa9cd4843072eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6e1de1a8a6bb7f32b780321e1d7745d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#ad6e1de1a8a6bb7f32b780321e1d7745d">circuit_init_cpath_crypto</a> (<a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *cpath, const char *key_data, int reverse)</td></tr>
-<tr class="separator:ad6e1de1a8a6bb7f32b780321e1d7745d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad611252932bffeded8d35ac623ce6cd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#ad611252932bffeded8d35ac623ce6cd0">circuit_init_cpath_crypto</a> (<a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *cpath, const char *key_data, size_t key_data_len, int reverse, int is_hs_v3)</td></tr>
+<tr class="separator:ad611252932bffeded8d35ac623ce6cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f0acd6f087c46e9c8df1ef820f182cd"><td class="memItemLeft" align="right" valign="top"><a id="a7f0acd6f087c46e9c8df1ef820f182cd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>circuit_finish_handshake</b> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, const struct <a class="el" href="structcreated__cell__t.html">created_cell_t</a> *created_cell)</td></tr>
 <tr class="separator:a7f0acd6f087c46e9c8df1ef820f182cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae61681570706f3a27c9d77cee2af95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a1ae61681570706f3a27c9d77cee2af95">circuit_truncated</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *layer, int reason)</td></tr>
 <tr class="separator:a1ae61681570706f3a27c9d77cee2af95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd544be397abcb35a80a28d1fb9dbd52"><td class="memItemLeft" align="right" valign="top"><a id="acd544be397abcb35a80a28d1fb9dbd52"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>onionskin_answer</b> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ, const struct <a class="el" href="structcreated__cell__t.html">created_cell_t</a> *created_cell, const char *keys, const uint8_t *rend_circ_nonce)</td></tr>
-<tr class="separator:acd544be397abcb35a80a28d1fb9dbd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca4049f7852fb4f700bd919db39eceaf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#aca4049f7852fb4f700bd919db39eceaf">circuit_all_predicted_ports_handled</a> (time_t now, int *need_uptime, int *need_capacity)</td></tr>
-<tr class="separator:aca4049f7852fb4f700bd919db39eceaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac260ba58c1ae1a60d512032b94698028"><td class="memItemLeft" align="right" valign="top"><a id="ac260ba58c1ae1a60d512032b94698028"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>onionskin_answer</b> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ, const struct <a class="el" href="structcreated__cell__t.html">created_cell_t</a> *created_cell, const char *keys, size_t keys_len, const uint8_t *rend_circ_nonce)</td></tr>
+<tr class="separator:ac260ba58c1ae1a60d512032b94698028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a975d0d4920bd5b24d23452fed92adc78"><td class="memItemLeft" align="right" valign="top"><a id="a975d0d4920bd5b24d23452fed92adc78"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (int, circuit_all_predicted_ports_handled,(time_t now, int *need_uptime, int *need_capacity))</td></tr>
+<tr class="separator:a975d0d4920bd5b24d23452fed92adc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa05d447828e5c9a73d52a507314de966"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#aa05d447828e5c9a73d52a507314de966">circuit_append_new_exit</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, <a class="el" href="structextend__info__t.html">extend_info_t</a> *info)</td></tr>
 <tr class="separator:aa05d447828e5c9a73d52a507314de966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94b90691697e9fbad0583abb7852287a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a94b90691697e9fbad0583abb7852287a">circuit_extend_to_new_exit</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, <a class="el" href="structextend__info__t.html">extend_info_t</a> *info)</td></tr>
 <tr class="separator:a94b90691697e9fbad0583abb7852287a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11af4b3e748a9ab1ea4274f4ffcd168a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a11af4b3e748a9ab1ea4274f4ffcd168a">onion_append_to_cpath</a> (<a class="el" href="structcrypt__path__t.html">crypt_path_t</a> **head_ptr, <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *new_hop)</td></tr>
 <tr class="separator:a11af4b3e748a9ab1ea4274f4ffcd168a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a117b09cbcdcf8f43a6b61226c83d7b93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structextend__info__t.html">extend_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a117b09cbcdcf8f43a6b61226c83d7b93">extend_info_new</a> (const char *nickname, const char *digest, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *onion_key, const <a class="el" href="structcurve25519__public__key__t.html">curve25519_public_key_t</a> *curve25519_key, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port)</td></tr>
-<tr class="separator:a117b09cbcdcf8f43a6b61226c83d7b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a813f2d14b4d62f7a52fcdfc9d9d2619d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structextend__info__t.html">extend_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a813f2d14b4d62f7a52fcdfc9d9d2619d">extend_info_new</a> (const char *nickname, const char *rsa_id_digest, const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *ed_id, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *onion_key, const <a class="el" href="structcurve25519__public__key__t.html">curve25519_public_key_t</a> *ntor_key, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port)</td></tr>
+<tr class="separator:a813f2d14b4d62f7a52fcdfc9d9d2619d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae78b2dc4ee0d019045639d2a33eea506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structextend__info__t.html">extend_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#ae78b2dc4ee0d019045639d2a33eea506">extend_info_from_node</a> (const <a class="el" href="structnode__t.html">node_t</a> *r, int for_direct_connect)</td></tr>
 <tr class="separator:ae78b2dc4ee0d019045639d2a33eea506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab87b30981d1baacf8452ccca39edc7ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structextend__info__t.html">extend_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#ab87b30981d1baacf8452ccca39edc7ae">extend_info_dup</a> (<a class="el" href="structextend__info__t.html">extend_info_t</a> *info)</td></tr>
 <tr class="separator:ab87b30981d1baacf8452ccca39edc7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ee63ec586b7d4f06830954b9aefb037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a2ee63ec586b7d4f06830954b9aefb037">extend_info_free</a> (<a class="el" href="structextend__info__t.html">extend_info_t</a> *info)</td></tr>
-<tr class="separator:a2ee63ec586b7d4f06830954b9aefb037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e247e65bf9d17af8f6628f91d572bae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a0e247e65bf9d17af8f6628f91d572bae">extend_info_free_</a> (<a class="el" href="structextend__info__t.html">extend_info_t</a> *info)</td></tr>
+<tr class="separator:a0e247e65bf9d17af8f6628f91d572bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af294fbb6c7b0647de3407c028ee0e2c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#af294fbb6c7b0647de3407c028ee0e2c1">extend_info_addr_is_allowed</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr)</td></tr>
 <tr class="separator:af294fbb6c7b0647de3407c028ee0e2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69ab9d6ff0b650461a933e1908783ee3"><td class="memItemLeft" align="right" valign="top"><a id="a69ab9d6ff0b650461a933e1908783ee3"></a>
@@ -178,12 +196,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>circuit_has_usable_oni
 <tr class="memitem:a66bf9c184153afb3f509a0f22b9b68d0"><td class="memItemLeft" align="right" valign="top"><a id="a66bf9c184153afb3f509a0f22b9b68d0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>extend_info_has_preferred_onion_key</b> (const <a class="el" href="structextend__info__t.html">extend_info_t</a> *ei)</td></tr>
 <tr class="separator:a66bf9c184153afb3f509a0f22b9b68d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4928871a4861aa6f71b50a5642406747"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a4928871a4861aa6f71b50a5642406747">build_state_get_exit_rsa_id</a> (<a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *state)</td></tr>
+<tr class="separator:a4928871a4861aa6f71b50a5642406747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a670517df044b68c0ec0db07a2447b29c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a670517df044b68c0ec0db07a2447b29c">build_state_get_exit_node</a> (<a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *state)</td></tr>
 <tr class="separator:a670517df044b68c0ec0db07a2447b29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0509680051f34495e2fcb706ea5c994e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a0509680051f34495e2fcb706ea5c994e">build_state_get_exit_nickname</a> (<a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *state)</td></tr>
 <tr class="separator:a0509680051f34495e2fcb706ea5c994e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a550f632e8e414c563bd41e35dbd820db"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#a550f632e8e414c563bd41e35dbd820db">choose_good_entry_server</a> (uint8_t purpose, <a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *state)</td></tr>
-<tr class="separator:a550f632e8e414c563bd41e35dbd820db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade14d455b02b46ef138c0fc7a12b840"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#aade14d455b02b46ef138c0fc7a12b840">choose_good_entry_server</a> (uint8_t purpose, <a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *state, struct circuit_guard_state_t **guard_state_out)</td></tr>
+<tr class="separator:aade14d455b02b46ef138c0fc7a12b840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbeee8004f6e86e019ed4c4a9556d7de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitbuild_8h.html#afbeee8004f6e86e019ed4c4a9556d7de">circuit_upgrade_circuits_from_guard_wait</a> (void)</td></tr>
+<tr class="separator:afbeee8004f6e86e019ed4c4a9556d7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for <a class="el" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel...">circuitbuild.c</a>. </p>
@@ -222,12 +244,39 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>extend_info_has_prefer
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> for the chosen exit router in <b>state</b>. If there is no chosen exit, or if we don't know the <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> for the chosen exit, return NULL. </p>
+<p>Return the <a class="el" href="structnode__t.html">node_t</a> for the chosen exit router in <b>state</b>. If there is no chosen exit, or if we don't know the <a class="el" href="structnode__t.html">node_t</a> for the chosen exit, return NULL. </p>
 
 </div>
 </div>
-<a id="a550f632e8e414c563bd41e35dbd820db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a550f632e8e414c563bd41e35dbd820db">&#9670;&nbsp;</a></span>choose_good_entry_server()</h2>
+<a id="a4928871a4861aa6f71b50a5642406747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4928871a4861aa6f71b50a5642406747">&#9670;&nbsp;</a></span>build_state_get_exit_rsa_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* build_state_get_exit_rsa_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the RSA ID digest for the chosen exit router in <b>state</b>. If there is no chosen exit, return NULL. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitbuild_8h_a4928871a4861aa6f71b50a5642406747_icgraph.png" border="0" usemap="#circuitbuild_8h_a4928871a4861aa6f71b50a5642406747_icgraph" alt=""/></div>
+<map name="circuitbuild_8h_a4928871a4861aa6f71b50a5642406747_icgraph" id="circuitbuild_8h_a4928871a4861aa6f71b50a5642406747_icgraph">
+<area shape="rect" id="node2" href="entrynodes_8h.html#ab71ff8062c99e9722afef949590df2da" title="guards_choose_guard" alt="" coords="192,13,341,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aade14d455b02b46ef138c0fc7a12b840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade14d455b02b46ef138c0fc7a12b840">&#9670;&nbsp;</a></span>choose_good_entry_server()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +291,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>extend_info_has_prefer
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structcpath__build__state__t.html">cpath_build_state_t</a> *&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">circuit_guard_state_t **&#160;</td>
+          <td class="paramname"><em>guard_state_out</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -252,51 +307,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>extend_info_has_prefer
       </table>
 </div><div class="memdoc">
 <p>Pick a good entry server for the circuit to be built according to <b>state</b>. Don't reuse a chosen exit (if any), don't use this router (if we're an OR), and respect firewall settings; if we're configured to use entry guards, return one.</p>
-<p>If <b>state</b> is NULL, we're choosing a router to serve as an entry guard, not for any particular circuit. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circuitbuild_8h_a550f632e8e414c563bd41e35dbd820db_icgraph.png" border="0" usemap="#circuitbuild_8h_a550f632e8e414c563bd41e35dbd820db_icgraph" alt=""/></div>
-<map name="circuitbuild_8h_a550f632e8e414c563bd41e35dbd820db_icgraph" id="circuitbuild_8h_a550f632e8e414c563bd41e35dbd820db_icgraph">
-<area shape="rect" id="node2" href="entrynodes_8c.html#a12aaa196d99fc0a6a4416c17f8274e76" title="add_an_entry_guard" alt="" coords="232,5,371,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aca4049f7852fb4f700bd919db39eceaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca4049f7852fb4f700bd919db39eceaf">&#9670;&nbsp;</a></span>circuit_all_predicted_ports_handled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int circuit_all_predicted_ports_handled </td>
-          <td>(</td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>now</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>need_uptime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>need_capacity</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return 1 if we already have circuits present or on the way for all anticipated ports. Return 0 if we should make more.</p>
-<p>If we're returning 0, set need_uptime and need_capacity to indicate any requirements that the unhandled ports have. </p>
+<p>Set *<b>guard_state_out</b> to information about the guard that we're selecting, which we'll use later to remember whether the guard worked or not. </p>
 
 </div>
 </div>
@@ -326,16 +337,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Give <b>circ</b> a new exit destination to <b>exit</b>, and add a hop to the cpath reflecting this. Don't send the next extend cell &ndash; the caller will do this if it wants to. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circuitbuild_8h_aa05d447828e5c9a73d52a507314de966_cgraph.png" border="0" usemap="#circuitbuild_8h_aa05d447828e5c9a73d52a507314de966_cgraph" alt=""/></div>
-<map name="circuitbuild_8h_aa05d447828e5c9a73d52a507314de966_cgraph" id="circuitbuild_8h_aa05d447828e5c9a73d52a507314de966_cgraph">
-<area shape="rect" id="node2" href="circuitbuild_8c.html#a2ee63ec586b7d4f06830954b9aefb037" title="extend_info_free" alt="" coords="219,5,337,32"/>
-<area shape="rect" id="node4" href="circuitbuild_8c.html#ab87b30981d1baacf8452ccca39edc7ae" title="extend_info_dup" alt="" coords="219,56,337,83"/>
-<area shape="rect" id="node3" href="crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="385,5,493,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -377,11 +378,12 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="circuitbuild_8h_ad080a73b41f96d923417f2b5b3535f50_cgraph.png" border="0" usemap="#circuitbuild_8h_ad080a73b41f96d923417f2b5b3535f50_cgraph" alt=""/></div>
 <map name="circuitbuild_8h_ad080a73b41f96d923417f2b5b3535f50_cgraph" id="circuitbuild_8h_ad080a73b41f96d923417f2b5b3535f50_cgraph">
-<area shape="rect" id="node2" href="circuitbuild_8c.html#ac8532320d2ec89a1d23738911ef3673f" title="origin_circuit_init" alt="" coords="212,31,331,57"/>
-<area shape="rect" id="node3" href="circuitlist_8c.html#a543a0ac445cdd07bd65cd176092a48a8" title="origin_circuit_new" alt="" coords="379,5,505,32"/>
-<area shape="rect" id="node4" href="circuitlist_8c.html#a59a56e94fe3ac816942314b7172c3b30" title="circuit_set_state" alt="" coords="383,56,501,83"/>
-<area shape="rect" id="node5" href="container_8c.html#ad318adf5db2ec229a43c0c567e1f6fce" title="smartlist_remove" alt="" coords="553,31,676,57"/>
-<area shape="rect" id="node6" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="565,81,665,108"/>
+<area shape="rect" id="node2" href="circuitbuild_8c.html#ac8532320d2ec89a1d23738911ef3673f" title="origin_circuit_init" alt="" coords="228,31,347,57"/>
+<area shape="rect" id="node7" href="circuitbuild_8c.html#a2a3a416c80ac5d027ba8c6ab48117d0f" title="onion_pick_cpath_exit" alt="" coords="212,81,363,108"/>
+<area shape="rect" id="node3" href="circuitlist_8c.html#a543a0ac445cdd07bd65cd176092a48a8" title="origin_circuit_new" alt="" coords="411,5,537,32"/>
+<area shape="rect" id="node4" href="circuitlist_8c.html#a59a56e94fe3ac816942314b7172c3b30" title="circuit_set_state" alt="" coords="415,56,533,83"/>
+<area shape="rect" id="node5" href="container_8c.html#ad318adf5db2ec229a43c0c567e1f6fce" title="smartlist_remove" alt="" coords="585,31,708,57"/>
+<area shape="rect" id="node6" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="597,81,697,108"/>
 </map>
 </div>
 
@@ -465,8 +467,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ad6e1de1a8a6bb7f32b780321e1d7745d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6e1de1a8a6bb7f32b780321e1d7745d">&#9670;&nbsp;</a></span>circuit_init_cpath_crypto()</h2>
+<a id="ad611252932bffeded8d35ac623ce6cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad611252932bffeded8d35ac623ce6cd0">&#9670;&nbsp;</a></span>circuit_init_cpath_crypto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -486,8 +488,20 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_data_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>reverse</em>&#160;</td>
+          <td class="paramname"><em>reverse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>is_hs_v3</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -496,26 +510,16 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize cpath-&gt;{f|b}_{crypto|digest} from the key material in key_data. key_data must contain CPATH_KEY_MATERIAL bytes, which are used as follows:</p><ul>
+<p>Initialize cpath-&gt;{f|b}_{crypto|digest} from the key material in key_data.</p>
+<p>If <b>is_hs_v3</b> is set, this cpath will be used for next gen hidden service circuits and <b>key_data</b> must be at least HS_NTOR_KEY_EXPANSION_KDF_OUT_LEN bytes in length.</p>
+<p>If <b>is_hs_v3</b> is not set, key_data must contain CPATH_KEY_MATERIAL_LEN bytes, which are used as follows:</p><ul>
 <li>20 to initialize f_digest</li>
 <li>20 to initialize b_digest</li>
 <li>16 to key f_crypto</li>
 <li>16 to key b_crypto</li>
 </ul>
-<p>(If 'reverse' is true, then f_XX and b_XX are swapped.) </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circuitbuild_8h_ad6e1de1a8a6bb7f32b780321e1d7745d_cgraph.png" border="0" usemap="#circuitbuild_8h_ad6e1de1a8a6bb7f32b780321e1d7745d_cgraph" alt=""/></div>
-<map name="circuitbuild_8h_ad6e1de1a8a6bb7f32b780321e1d7745d_cgraph" id="circuitbuild_8h_ad6e1de1a8a6bb7f32b780321e1d7745d_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#ae92ffdfbeff07ba661ed65ca7791915d" title="crypto_digest_new" alt="" coords="191,5,322,32"/>
-<area shape="rect" id="node3" href="crypto_8c.html#af702bc434eed2203f9dd1894ef5f5326" title="crypto_digest_add_bytes" alt="" coords="173,56,340,83"/>
-<area shape="rect" id="node4" href="crypto_8c.html#a1a44157cdf50927218728fde6e863b1e" title="crypto_cipher_new" alt="" coords="191,107,322,133"/>
-<area shape="rect" id="node5" href="crypto_8c.html#a5b2ea7a09521e9e4616f3452ca08eac4" title="crypto_cipher_new_with_bits" alt="" coords="388,107,579,133"/>
-<area shape="rect" id="node6" href="crypto_8c.html#aacd663e7c452d602918a12bc666466a8" title="crypto_cipher_new_with\l_iv_and_bits" alt="" coords="627,99,789,141"/>
-<area shape="rect" id="node7" href="aes_8c.html#a8e756990f15546ededa5afd6835eba06" title="aes_new_cipher" alt="" coords="837,107,953,133"/>
-</map>
-</div>
+<p>(If 'reverse' is true, then f_XX and b_XX are swapped.)</p>
+<p>Return 0 if init was successful, else -1 if it failed. </p>
 
 </div>
 </div>
@@ -656,8 +660,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a9850a0ba60e6a62bc0a7267343418235"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9850a0ba60e6a62bc0a7267343418235">&#9670;&nbsp;</a></span>circuit_note_clock_jumped()</h2>
+<a id="ad0daecc03b3062716a6845b8a522d3da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0daecc03b3062716a6845b8a522d3da">&#9670;&nbsp;</a></span>circuit_note_clock_jumped()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -665,18 +669,28 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void circuit_note_clock_jumped </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>seconds_elapsed</em></td><td>)</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>seconds_elapsed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>was_idle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Our clock just jumped by <b>seconds_elapsed</b>. Assume something has also gone wrong with our network: notify the user, and abandon all not-yet-used circuits. </p>
+<p>Our clock just jumped by <b>seconds_elapsed</b>. If <b>was_idle</b> is true, then the monotonic time matches; otherwise it doesn't. Assume something has also gone wrong with our network: notify the user, and abandon all not-yet-used circuits. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="circuitbuild_8h_a9850a0ba60e6a62bc0a7267343418235_cgraph.png" border="0" usemap="#circuitbuild_8h_a9850a0ba60e6a62bc0a7267343418235_cgraph" alt=""/></div>
-<map name="circuitbuild_8h_a9850a0ba60e6a62bc0a7267343418235_cgraph" id="circuitbuild_8h_a9850a0ba60e6a62bc0a7267343418235_cgraph">
+<div class="center"><img src="circuitbuild_8h_ad0daecc03b3062716a6845b8a522d3da_cgraph.png" border="0" usemap="#circuitbuild_8h_ad0daecc03b3062716a6845b8a522d3da_cgraph" alt=""/></div>
+<map name="circuitbuild_8h_ad0daecc03b3062716a6845b8a522d3da_cgraph" id="circuitbuild_8h_ad0daecc03b3062716a6845b8a522d3da_cgraph">
 <area shape="rect" id="node2" href="log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="231,5,292,32"/>
 <area shape="rect" id="node3" href="control_8c.html#a1bd4001ec6bb62a01e1d6d6c3f3bf44a" title="control_event_general\l_status" alt="" coords="187,57,336,98"/>
 <area shape="rect" id="node4" href="main_8c.html#a3c379175a5113f3cb9972ab5f4c4be7c" title="note_that_we_maybe\l_cant_complete_circuits" alt="" coords="180,122,343,163"/>
@@ -689,25 +703,6 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node11" href="periodic_8c.html#ad9c12c89ef415b3c131f39f68534a974" title="periodic_event_reschedule" alt="" coords="391,391,567,417"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="acf0a845654a793ae2d771696ef42ca7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf0a845654a793ae2d771696ef42ca7d">&#9670;&nbsp;</a></span>circuit_rep_hist_note_result()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void circuit_rep_hist_note_result </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td>
-          <td class="paramname"><em>circ</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Tell the rep(utation)hist(ory) module about the status of the links in <b>circ</b>. Hops that have become OPEN are marked as successfully extended; the <em>first</em> hop that isn't open (if any) is marked as unable to extend. </p>
 
 </div>
 </div>
@@ -728,13 +723,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>This is the backbone function for building circuits.</p>
 <p>If circ's first hop is closed, then we need to build a create cell and send it forward.</p>
-<p>Otherwise, we need to build a relay extend cell and send it forward.</p>
+<p>Otherwise, if circ's cpath still has any non-open hops, we need to build a relay extend cell and send it forward to the next non-open hop.</p>
+<p>If all hops on the cpath are open, we're done building the circuit and we should do housekeeping for the newly opened circuit.</p>
 <p>Return -reason if we want to tear down circ, else return 0. </p>
 
 </div>
 </div>
-<a id="ae4c79689688591a1952b279dcdac792f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4c79689688591a1952b279dcdac792f">&#9670;&nbsp;</a></span>circuit_timeout_want_to_count_circ()</h2>
+<a id="aa58d1c16591ccd8590c84255d7b3cc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa58d1c16591ccd8590c84255d7b3cc34">&#9670;&nbsp;</a></span>circuit_timeout_want_to_count_circ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -742,13 +738,31 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int circuit_timeout_want_to_count_circ </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td>
           <td class="paramname"><em>circ</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true if <b>circ</b> is the type of circuit we want to count timeouts from. In particular, we want it to have not completed yet (already completing indicates we cannibalized it), and we want it to have exactly three hops. </p>
+<p>Return true if <b>circ</b> is the type of circuit we want to count timeouts from.</p>
+<p>In particular, we want to consider any circuit that plans to build at least 3 hops (but maybe more), but has 3 or fewer hops built so far.</p>
+<p>We still want to consider circuits before 3 hops, because we need to decide if we should convert them to a measurement circuit in <a class="el" href="circuitstats_8c.html#a306615a489277731398dbd19065f7b2b">circuit_build_times_handle_completed_hop()</a>, rather than letting slow circuits get killed right away. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitbuild_8h_aa58d1c16591ccd8590c84255d7b3cc34_cgraph.png" border="0" usemap="#circuitbuild_8h_aa58d1c16591ccd8590c84255d7b3cc34_cgraph" alt=""/></div>
+<map name="circuitbuild_8h_aa58d1c16591ccd8590c84255d7b3cc34_cgraph" id="circuitbuild_8h_aa58d1c16591ccd8590c84255d7b3cc34_cgraph">
+<area shape="rect" id="node2" href="circuitlist_8c.html#a946530ab71c12655f35d3206c16d49b5" title="circuit_get_cpath_opened_len" alt="" coords="196,13,391,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitbuild_8h_aa58d1c16591ccd8590c84255d7b3cc34_icgraph.png" border="0" usemap="#circuitbuild_8h_aa58d1c16591ccd8590c84255d7b3cc34_icgraph" alt=""/></div>
+<map name="circuitbuild_8h_aa58d1c16591ccd8590c84255d7b3cc34_icgraph" id="circuitbuild_8h_aa58d1c16591ccd8590c84255d7b3cc34_icgraph">
+<area shape="rect" id="node2" href="circuitstats_8h.html#a306615a489277731398dbd19065f7b2b" title="circuit_build_times\l_handle_completed_hop" alt="" coords="196,5,359,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -788,6 +802,45 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="afbeee8004f6e86e019ed4c4a9556d7de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbeee8004f6e86e019ed4c4a9556d7de">&#9670;&nbsp;</a></span>circuit_upgrade_circuits_from_guard_wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void circuit_upgrade_circuits_from_guard_wait </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Find the circuits that are waiting to find out whether their guards are usable, and if any are ready to become usable, mark them open and try attaching streams as appropriate. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitbuild_8h_afbeee8004f6e86e019ed4c4a9556d7de_cgraph.png" border="0" usemap="#circuitbuild_8h_afbeee8004f6e86e019ed4c4a9556d7de_cgraph" alt=""/></div>
+<map name="circuitbuild_8h_afbeee8004f6e86e019ed4c4a9556d7de_cgraph" id="circuitbuild_8h_afbeee8004f6e86e019ed4c4a9556d7de_cgraph">
+<area shape="rect" id="node2" href="circuitlist_8c.html#a8d569b96b07da7c91549695cc1ce8ccf" title="circuit_find_circuits\l_to_upgrade_from_guard_wait" alt="" coords="212,226,408,267"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a30eec9f6966e2df9934d3d9770e45df9" title="entry_guards_upgrade\l_waiting_circuits" alt="" coords="464,197,615,238"/>
+<area shape="rect" id="node14" href="entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="456,263,623,289"/>
+<area shape="rect" id="node4" href="entrynodes_8c.html#acad8e7ba6123e0a214361a425f711c05" title="entry_guards_all_primary\l_guards_are_down" alt="" coords="671,197,837,238"/>
+<area shape="rect" id="node5" href="entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="885,125,1028,166"/>
+<area shape="rect" id="node11" href="entrynodes_8c.html#ab335f71d2749aa457ffd8a82065649c6" title="entry_guard_consider\l_retry" alt="" coords="1501,209,1648,250"/>
+<area shape="rect" id="node6" href="entrynodes_8c.html#a045186178310a765b1193b31c9c98be8" title="get_n_primary_guards" alt="" coords="1087,5,1238,32"/>
+<area shape="rect" id="node7" href="container_8c.html#a5e71fb7bc775f079d9f9d724f0203fc1" title="smartlist_add_all" alt="" coords="1103,56,1223,83"/>
+<area shape="rect" id="node8" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="1113,107,1213,133"/>
+<area shape="rect" id="node9" href="container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="1099,157,1227,184"/>
+<area shape="rect" id="node10" href="entrynodes_8c.html#a440f5217f0a557c13b02a251f93db5d6" title="sample_reachable_filtered\l_entry_guards" alt="" coords="1076,209,1249,250"/>
+<area shape="rect" id="node13" href="entrynodes_8c.html#ac771815070c48fdafceda321e3b56739" title="num_reachable_filtered\l_guards" alt="" coords="1297,209,1453,250"/>
+<area shape="rect" id="node12" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="1696,216,1789,243"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="af294fbb6c7b0647de3407c028ee0e2c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af294fbb6c7b0647de3407c028ee0e2c1">&#9670;&nbsp;</a></span>extend_info_addr_is_allowed()</h2>
 
@@ -823,25 +876,17 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Allocate and return a new <a class="el" href="structextend__info__t.html">extend_info_t</a> with the same contents as <b>info</b>. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circuitbuild_8h_ab87b30981d1baacf8452ccca39edc7ae_icgraph.png" border="0" usemap="#circuitbuild_8h_ab87b30981d1baacf8452ccca39edc7ae_icgraph" alt=""/></div>
-<map name="circuitbuild_8h_ab87b30981d1baacf8452ccca39edc7ae_icgraph" id="circuitbuild_8h_ab87b30981d1baacf8452ccca39edc7ae_icgraph">
-<area shape="rect" id="node2" href="circuitbuild_8h.html#aa05d447828e5c9a73d52a507314de966" title="circuit_append_new_exit" alt="" coords="171,5,336,32"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a2ee63ec586b7d4f06830954b9aefb037"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ee63ec586b7d4f06830954b9aefb037">&#9670;&nbsp;</a></span>extend_info_free()</h2>
+<a id="a0e247e65bf9d17af8f6628f91d572bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e247e65bf9d17af8f6628f91d572bae">&#9670;&nbsp;</a></span>extend_info_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void extend_info_free </td>
+          <td class="memname">void extend_info_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structextend__info__t.html">extend_info_t</a> *&#160;</td>
           <td class="paramname"><em>info</em></td><td>)</td>
@@ -850,28 +895,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release storage held by an <a class="el" href="structextend__info__t.html">extend_info_t</a> struct. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circuitbuild_8h_a2ee63ec586b7d4f06830954b9aefb037_cgraph.png" border="0" usemap="#circuitbuild_8h_a2ee63ec586b7d4f06830954b9aefb037_cgraph" alt=""/></div>
-<map name="circuitbuild_8h_a2ee63ec586b7d4f06830954b9aefb037_cgraph" id="circuitbuild_8h_a2ee63ec586b7d4f06830954b9aefb037_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="172,5,280,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circuitbuild_8h_a2ee63ec586b7d4f06830954b9aefb037_icgraph.png" border="0" usemap="#circuitbuild_8h_a2ee63ec586b7d4f06830954b9aefb037_icgraph" alt=""/></div>
-<map name="circuitbuild_8h_a2ee63ec586b7d4f06830954b9aefb037_icgraph" id="circuitbuild_8h_a2ee63ec586b7d4f06830954b9aefb037_icgraph">
-<area shape="rect" id="node2" href="circuitbuild_8h.html#aa05d447828e5c9a73d52a507314de966" title="circuit_append_new_exit" alt="" coords="172,5,337,32"/>
-<area shape="rect" id="node3" href="rendcommon_8h.html#a61dd29c390c943442cdd965fa9a31916" title="rend_intro_point_free" alt="" coords="183,56,326,83"/>
-<area shape="rect" id="node8" href="rendservice_8h.html#ab1e1ab28c3798f2915cd7520110b37a1" title="rend_service_free_intro" alt="" coords="176,107,333,133"/>
-<area shape="rect" id="node4" href="rendcommon_8h.html#a91927fc14b63a83089d9b0ee22184498" title="rend_service_descriptor_free" alt="" coords="385,31,575,57"/>
-<area shape="rect" id="node6" href="rendservice_8c.html#a8cd5cb06a8e03c07ed7d120f90cee388" title="rend_service_free" alt="" coords="637,81,763,108"/>
-<area shape="rect" id="node5" href="rendcache_8c.html#a2c5eb5e8ecaa713ec73cebc5ad4df905" title="rend_cache_entry_free" alt="" coords="623,31,777,57"/>
-<area shape="rect" id="node7" href="rendservice_8h.html#ade90973329e24160017a04e0503397bd" title="rend_service_free_all" alt="" coords="825,81,971,108"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -900,20 +923,30 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Allocate and return a new extend_info that can be used to build a circuit to or through the node <b>node</b>. Use the primary address of the node (i.e. its IPv4 address) unless <b>for_direct_connect</b> is true, in which case the preferred address is used instead. May return NULL if there is not enough info about <b>node</b> to extend to it&ndash;for example, if there is no <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> or <a class="el" href="structmicrodesc__t.html">microdesc_t</a>, or if for_direct_connect is true and none of the node's addresses are allowed by tor's firewall and IP version config. </p>
+<p>Allocate and return a new extend_info that can be used to build a circuit to or through the node <b>node</b>. Use the primary address of the node (i.e. its IPv4 address) unless <b>for_direct_connect</b> is true, in which case the preferred address is used instead. May return NULL if there is not enough info about <b>node</b> to extend to it&ndash;for example, if the preferred <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> or <a class="el" href="structmicrodesc__t.html">microdesc_t</a> is missing, or if for_direct_connect is true and none of the node's addresses is allowed by tor's firewall and IP version config. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="circuitbuild_8h_ae78b2dc4ee0d019045639d2a33eea506_cgraph.png" border="0" usemap="#circuitbuild_8h_ae78b2dc4ee0d019045639d2a33eea506_cgraph" alt=""/></div>
 <map name="circuitbuild_8h_ae78b2dc4ee0d019045639d2a33eea506_cgraph" id="circuitbuild_8h_ae78b2dc4ee0d019045639d2a33eea506_cgraph">
-<area shape="rect" id="node2" href="policies_8c.html#a1f36bc146b27988b048c665c1d969ed8" title="fascist_firewall_choose\l_address_node" alt="" coords="211,5,369,47"/>
+<area shape="rect" id="node2" href="nodelist_8c.html#a5c994699835c0d610e072920f397d6e8" title="node_has_preferred\l_descriptor" alt="" coords="222,89,358,130"/>
+<area shape="rect" id="node11" href="policies_8c.html#aba629c408829f02c4f32eaaad0a63809" title="fascist_firewall_choose\l_address_node" alt="" coords="211,154,369,195"/>
+<area shape="rect" id="node3" href="bridges_8c.html#a823bac0acf5f6b68ab2074757215eac3" title="node_is_a_configured\l_bridge" alt="" coords="429,27,577,69"/>
+<area shape="rect" id="node10" href="microdesc_8c.html#adeff3a88aa40b67ab6407bda5c941910" title="we_use_microdescriptors\l_for_circuits" alt="" coords="417,93,588,134"/>
+<area shape="rect" id="node4" href="nodelist_8c.html#a551827c8c00ee79f3d3663d11b2b60a0" title="node_get_all_orports" alt="" coords="639,5,782,32"/>
+<area shape="rect" id="node5" href="bridges_8c.html#a6eaa7d5502639e1e5a484dcfddbba7d0" title="get_configured_bridge\l_by_orports_digest" alt="" coords="636,57,785,98"/>
+<area shape="rect" id="node6" href="util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="833,39,961,65"/>
+<area shape="rect" id="node8" href="address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="834,89,961,116"/>
+<area shape="rect" id="node7" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="1055,39,1142,65"/>
+<area shape="rect" id="node9" href="address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="1009,89,1188,116"/>
+<area shape="rect" id="node12" href="address_8c.html#a41958bdb031cb11907e9973e32f8baa9" title="tor_addr_make_null" alt="" coords="435,161,570,188"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a117b09cbcdcf8f43a6b61226c83d7b93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a117b09cbcdcf8f43a6b61226c83d7b93">&#9670;&nbsp;</a></span>extend_info_new()</h2>
+<a id="a813f2d14b4d62f7a52fcdfc9d9d2619d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a813f2d14b4d62f7a52fcdfc9d9d2619d">&#9670;&nbsp;</a></span>extend_info_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -928,7 +961,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>digest</em>, </td>
+          <td class="paramname"><em>rsa_id_digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> *&#160;</td>
+          <td class="paramname"><em>ed_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -940,7 +979,7 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structcurve25519__public__key__t.html">curve25519_public_key_t</a> *&#160;</td>
-          <td class="paramname"><em>curve25519_key</em>, </td>
+          <td class="paramname"><em>ntor_key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -981,19 +1020,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>We've decided to start our reachability testing. If all is set, log this to the user. Return 1 if we did, or 0 if we chose not to log anything. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circuitbuild_8h_acccfc2539c7dd13ca9db049b3decc386_cgraph.png" border="0" usemap="#circuitbuild_8h_acccfc2539c7dd13ca9db049b3decc386_cgraph" alt=""/></div>
-<map name="circuitbuild_8h_acccfc2539c7dd13ca9db049b3decc386_cgraph" id="circuitbuild_8h_acccfc2539c7dd13ca9db049b3decc386_cgraph">
-<area shape="rect" id="node2" href="address_8c.html#a8f295ab5aa41d0ada9f87607c7632d9c" title="tor_dup_ip" alt="" coords="261,56,343,83"/>
-<area shape="rect" id="node5" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="712,56,799,83"/>
-<area shape="rect" id="node7" href="control_8c.html#a744e1e120d455e1662fdbb4704a1be20" title="control_event_server\l_status" alt="" coords="231,158,373,199"/>
-<area shape="rect" id="node3" href="compat_8c.html#aaf2add8a435d6a782f057562de228637" title="tor_inet_ntop" alt="" coords="421,56,519,83"/>
-<area shape="rect" id="node4" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="567,5,664,32"/>
-<area shape="rect" id="node6" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="847,56,941,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1023,6 +1049,25 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Add <b>new_hop</b> to the end of the doubly-linked-list <b>head_ptr</b>. This function is used to extend cpath by another hop. </p>
+
+</div>
+</div>
+<a id="af2f69e478bec0b22e9318bc9600fc4aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f69e478bec0b22e9318bc9600fc4aa">&#9670;&nbsp;</a></span>origin_circuit_get_guard_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct circuit_guard_state_t* origin_circuit_get_guard_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td>
+          <td class="paramname"><em>circ</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the guard state associated with <b>circ</b>, which may be NULL. </p>
 
 </div>
 </div>
@@ -1069,6 +1114,64 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="circuitbuild_8h_ac8532320d2ec89a1d23738911ef3673f_icgraph.png" border="0" usemap="#circuitbuild_8h_ac8532320d2ec89a1d23738911ef3673f_icgraph" alt=""/></div>
 <map name="circuitbuild_8h_ac8532320d2ec89a1d23738911ef3673f_icgraph" id="circuitbuild_8h_ac8532320d2ec89a1d23738911ef3673f_icgraph">
 <area shape="rect" id="node2" href="circuitbuild_8h.html#ad080a73b41f96d923417f2b5b3535f50" title="circuit_establish_circuit" alt="" coords="172,5,331,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a48d96af7c68a635f9734d0aa0271ac7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d96af7c68a635f9734d0aa0271ac7c">&#9670;&nbsp;</a></span>route_len_for_purpose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int route_len_for_purpose </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>purpose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structextend__info__t.html">extend_info_t</a> *&#160;</td>
+          <td class="paramname"><em>exit_ei</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Helper for <a class="el" href="circuitbuild_8c.html#a77d283b19c68e94c4a306fd09c6a0e7f">new_route_len()</a>. Choose a circuit length for purpose <b>purpose</b>: DEFAULT_ROUTE_LEN (+ 1 if someone else chose the exit). If someone else chose the exit, they could be colluding with the exit, so add a randomly selected node to preserve anonymity.</p>
+<p>Here, "exit node" sometimes means an OR acting as an internal endpoint, rather than as a relay to an external endpoint. This means there need to be at least DEFAULT_ROUTE_LEN routers between us and the internal endpoint to preserve the same anonymity properties that we would get when connecting to an external endpoint. These internal endpoints can include:</p>
+<ul>
+<li>Connections to a directory of hidden services (CIRCUIT_PURPOSE_C_GENERAL)</li>
+<li>A client connecting to an introduction point, which the hidden service picked (CIRCUIT_PURPOSE_C_INTRODUCING, via circuit_get_open_circ_or_launch() which rewrites it from CIRCUIT_PURPOSE_C_INTRODUCE_ACK_WAIT)</li>
+<li>A hidden service connecting to a rendezvous point, which the client picked (CIRCUIT_PURPOSE_S_CONNECT_REND, via <a class="el" href="rendservice_8c.html#a6a060371417948bb0cc60be0840ed451">rend_service_receive_introduction()</a> and rend_service_relaunch_rendezvous)</li>
+</ul>
+<p>There are currently two situations where we picked the exit node ourselves, making DEFAULT_ROUTE_LEN a safe circuit length:</p>
+<ul>
+<li>We are a hidden service connecting to an introduction point (CIRCUIT_PURPOSE_S_ESTABLISH_INTRO, via rend_service_launch_establish_intro())</li>
+<li>We are a router testing its own reachabiity (CIRCUIT_PURPOSE_TESTING, via <a class="el" href="router_8c.html#a242f0a76713d7b28d940880fc3dd03ed">router_do_reachability_checks()</a>)</li>
+</ul>
+<p><a class="el" href="circuitbuild_8c.html#a2a3a416c80ac5d027ba8c6ab48117d0f">onion_pick_cpath_exit()</a> bypasses us (by not calling <a class="el" href="circuitbuild_8c.html#a77d283b19c68e94c4a306fd09c6a0e7f">new_route_len()</a>) in the one-hop tunnel case, so we don't need to handle that. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitbuild_8h_a48d96af7c68a635f9734d0aa0271ac7c_cgraph.png" border="0" usemap="#circuitbuild_8h_a48d96af7c68a635f9734d0aa0271ac7c_cgraph" alt=""/></div>
+<map name="circuitbuild_8h_a48d96af7c68a635f9734d0aa0271ac7c_cgraph" id="circuitbuild_8h_a48d96af7c68a635f9734d0aa0271ac7c_cgraph">
+<area shape="rect" id="node2" href="circuituse_8c.html#a5e8e36fe1fa5af29eb3595f31e0e01db" title="circuit_should_use\l_vanguards" alt="" coords="204,5,335,47"/>
+<area shape="rect" id="node3" href="circuituse_8c.html#aff875d76fff1f49cbbf561415216f3b3" title="circuit_purpose_is\l_hidden_service" alt="" coords="383,5,509,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuitbuild_8h_a48d96af7c68a635f9734d0aa0271ac7c_icgraph.png" border="0" usemap="#circuitbuild_8h_a48d96af7c68a635f9734d0aa0271ac7c_icgraph" alt=""/></div>
+<map name="circuitbuild_8h_a48d96af7c68a635f9734d0aa0271ac7c_icgraph" id="circuitbuild_8h_a48d96af7c68a635f9734d0aa0271ac7c_icgraph">
+<area shape="rect" id="node2" href="circuitbuild_8c.html#a77d283b19c68e94c4a306fd09c6a0e7f" title="new_route_len" alt="" coords="204,5,311,32"/>
 </map>
 </div>
 

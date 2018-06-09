@@ -1,4 +1,5 @@
 <map id="hex_str" name="hex_str">
-<area shape="rect" id="node2" href="$channel_8c.html#ab56dc7ecc8a31e8bfa4dc5281b72c21e" title="MOCK_IMPL" alt="" coords="127,5,227,32"/>
-<area shape="rect" id="node3" href="$geoip_8h.html#a2facbb330d6f7714db2fd5293ed00477" title="geoip_db_digest" alt="" coords="119,56,235,83"/>
+<area shape="rect" id="node2" href="$channel_8c.html#ab56dc7ecc8a31e8bfa4dc5281b72c21e" title="MOCK_IMPL" alt="" coords="142,5,242,32"/>
+<area shape="rect" id="node3" href="$entrynodes_8h.html#a446ff1a56de96285dac2fe015e972bd0" title="entry_guard_describe" alt="" coords="119,56,265,83"/>
+<area shape="rect" id="node4" href="$geoip_8h.html#a2facbb330d6f7714db2fd5293ed00477" title="geoip_db_digest" alt="" coords="134,107,250,133"/>
 </map>

@@ -76,18 +76,23 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
 <code>#include &quot;addressmap.h&quot;</code><br />
+<code>#include &quot;backtrace.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="buffers_8h_source.html">buffers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="channel_8h_source.html">channel.h</a>&quot;</code><br />
 <code>#include &quot;circpathbias.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitbuild_8h_source.html">circuitbuild.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitlist_8h_source.html">circuitlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuituse_8h_source.html">circuituse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="compress_8h_source.html">compress.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__edge_8h_source.html">connection_edge.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__or_8h_source.html">connection_or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="geoip_8h_source.html">geoip.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__cache_8h_source.html">hs_cache.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nodelist_8h_source.html">nodelist.h</a>&quot;</code><br />
@@ -95,65 +100,68 @@ $(function() {
 <code>#include &quot;<a class="el" href="policies_8h_source.html">policies.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="reasons_8h_source.html">reasons.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="relay_8h_source.html">relay.h</a>&quot;</code><br />
+<code>#include &quot;relay_crypto.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="rendcache_8h_source.html">rendcache.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rendcommon_8h_source.html">rendcommon.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerparse_8h_source.html">routerparse.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rephist_8h_source.html">rephist.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for relay.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="relay_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2relay_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2relay_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2relay_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="857,333,901,360"/>
-<area shape="rect" id="node23" href="addressmap_8h_source.html" title="addressmap.h" alt="" coords="1903,259,2007,285"/>
-<area shape="rect" id="node24" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="2007,184,2081,211"/>
-<area shape="rect" id="node25" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="1154,184,1233,211"/>
-<area shape="rect" id="node27" href="circpathbias_8h_source.html" title="circpathbias.h" alt="" coords="2158,109,2261,136"/>
-<area shape="rect" id="node28" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2285,109,2379,136"/>
-<area shape="rect" id="node29" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="2081,333,2167,360"/>
-<area shape="rect" id="node30" href="circuituse_8h.html" title="Header file for circuituse.c. " alt="" coords="2403,109,2493,136"/>
-<area shape="rect" id="node31" href="config_8h.html" title="Header file for config.c. " alt="" coords="1458,259,1526,285"/>
-<area shape="rect" id="node32" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1936,109,2032,136"/>
-<area shape="rect" id="node33" href="connection__edge_8h.html" title="Header file for connection_edge.c. " alt="" coords="1507,333,1637,360"/>
-<area shape="rect" id="node34" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2517,109,2632,136"/>
-<area shape="rect" id="node35" href="control_8h.html" title="Header file for control.c. " alt="" coords="2656,109,2728,136"/>
-<area shape="rect" id="node36" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="1645,109,1709,136"/>
-<area shape="rect" id="node38" href="main_8h.html" title="Header file for main.c. " alt="" coords="2752,109,2813,136"/>
-<area shape="rect" id="node39" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="1653,259,1768,285"/>
-<area shape="rect" id="node40" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2838,109,2917,136"/>
-<area shape="rect" id="node41" href="onion_8h.html" title="Header file for onion.c. " alt="" coords="2941,109,3005,136"/>
-<area shape="rect" id="node42" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="3029,109,3107,136"/>
-<area shape="rect" id="node43" href="reasons_8h.html" title="Header file for reasons.c. " alt="" coords="3131,109,3210,136"/>
-<area shape="rect" id="node44" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="3235,109,3296,136"/>
-<area shape="rect" id="node45" href="rendcache_8h.html" title="Header file for rendcache.c. " alt="" coords="985,109,1079,136"/>
-<area shape="rect" id="node46" href="rendcommon_8h.html" title="Header file for rendcommon.c. " alt="" coords="889,184,997,211"/>
-<area shape="rect" id="node47" href="router_8h.html" title="Header file for router.c. " alt="" coords="1763,333,1829,360"/>
-<area shape="rect" id="node48" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="1835,184,1917,211"/>
-<area shape="rect" id="node49" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="3320,109,3419,136"/>
-<area shape="rect" id="node50" href="scheduler_8h.html" title="Header file for scheduler.c. " alt="" coords="1351,109,1441,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="238,707,317,733"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="593,632,655,659"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="73,483,143,509"/>
-<area shape="rect" id="node9" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1167,408,1281,435"/>
-<area shape="rect" id="node10" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="772,483,897,509"/>
-<area shape="rect" id="node11" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="763,557,906,584"/>
-<area shape="rect" id="node12" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="250,408,313,435"/>
-<area shape="rect" id="node14" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="626,483,691,509"/>
-<area shape="rect" id="node15" href="container_8h_source.html" title="container.h" alt="" coords="449,557,535,584"/>
-<area shape="rect" id="node16" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="760,408,832,435"/>
-<area shape="rect" id="node17" href="address_8h.html" title="Headers for address.h. " alt="" coords="370,483,449,509"/>
-<area shape="rect" id="node18" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1153,557,1281,584"/>
-<area shape="rect" id="node19" href="ht_8h_source.html" title="ht.h" alt="" coords="857,408,901,435"/>
-<area shape="rect" id="node20" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="925,408,1027,435"/>
-<area shape="rect" id="node21" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1052,408,1143,435"/>
-<area shape="rect" id="node22" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1034,557,1129,584"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1396,632,1495,659"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="195,557,271,584"/>
-<area shape="rect" id="node13" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="217,483,345,509"/>
-<area shape="rect" id="node26" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1288,259,1381,285"/>
-<area shape="rect" id="node37" href="dos_8h_source.html" title="dos.h" alt="" coords="1654,184,1709,211"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="830,259,874,285"/>
+<area shape="rect" id="node12" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1293,333,1384,360"/>
+<area shape="rect" id="node19" href="addressmap_8h_source.html" title="addressmap.h" alt="" coords="1731,109,1835,136"/>
+<area shape="rect" id="node20" href="backtrace_8h_source.html" title="backtrace.h" alt="" coords="1697,408,1788,435"/>
+<area shape="rect" id="node21" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1459,184,1533,211"/>
+<area shape="rect" id="node22" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="941,184,1019,211"/>
+<area shape="rect" id="node23" href="circpathbias_8h_source.html" title="circpathbias.h" alt="" coords="1859,109,1962,136"/>
+<area shape="rect" id="node24" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1986,109,2081,136"/>
+<area shape="rect" id="node25" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="2105,109,2191,136"/>
+<area shape="rect" id="node26" href="circuituse_8h.html" title="Header file for circuituse.c. " alt="" coords="2215,109,2305,136"/>
+<area shape="rect" id="node27" href="config_8h.html" title="Header file for config.c. " alt="" coords="2329,109,2397,136"/>
+<area shape="rect" id="node28" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1459,109,1555,136"/>
+<area shape="rect" id="node29" href="connection__edge_8h.html" title="Header file for connection_edge.c. " alt="" coords="2421,109,2552,136"/>
+<area shape="rect" id="node30" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2576,109,2691,136"/>
+<area shape="rect" id="node31" href="control_8h.html" title="Header file for control.c. " alt="" coords="2715,109,2787,136"/>
+<area shape="rect" id="node32" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="1509,259,1611,285"/>
+<area shape="rect" id="node33" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="1635,259,1728,285"/>
+<area shape="rect" id="node34" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="2811,109,2875,136"/>
+<area shape="rect" id="node35" href="hs__cache_8h.html" title="Header file for hs_cache.c. " alt="" coords="1243,109,1333,136"/>
+<area shape="rect" id="node36" href="rendcommon_8h.html" title="Header file for rendcommon.c. " alt="" coords="1151,184,1259,211"/>
+<area shape="rect" id="node37" href="main_8h.html" title="Header file for main.c. " alt="" coords="2899,109,2960,136"/>
+<area shape="rect" id="node38" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2984,109,3099,136"/>
+<area shape="rect" id="node39" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="3123,109,3202,136"/>
+<area shape="rect" id="node40" href="onion_8h.html" title="Header file for onion.c. " alt="" coords="3227,109,3291,136"/>
+<area shape="rect" id="node41" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="3315,109,3392,136"/>
+<area shape="rect" id="node42" href="reasons_8h.html" title="Header file for reasons.c. " alt="" coords="3417,109,3495,136"/>
+<area shape="rect" id="node43" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="3520,109,3581,136"/>
+<area shape="rect" id="node44" href="relay__crypto_8h_source.html" title="relay_crypto.h" alt="" coords="3605,109,3709,136"/>
+<area shape="rect" id="node45" href="rendcache_8h.html" title="Header file for rendcache.c. " alt="" coords="1075,109,1168,136"/>
+<area shape="rect" id="node46" href="router_8h.html" title="Header file for router.c. " alt="" coords="3733,109,3800,136"/>
+<area shape="rect" id="node47" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="3824,109,3907,136"/>
+<area shape="rect" id="node48" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="3931,109,4029,136"/>
+<area shape="rect" id="node49" href="scheduler_8h.html" title="Header file for scheduler*.c. " alt="" coords="910,109,999,136"/>
+<area shape="rect" id="node50" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="4053,109,4125,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="290,632,369,659"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1031,557,1094,584"/>
+<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="336,483,405,509"/>
+<area shape="rect" id="node6" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="915,333,1029,360"/>
+<area shape="rect" id="node7" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="955,408,1080,435"/>
+<area shape="rect" id="node8" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1046,483,1189,509"/>
+<area shape="rect" id="node9" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1155,333,1218,360"/>
+<area shape="rect" id="node10" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="362,333,427,360"/>
+<area shape="rect" id="node11" href="container_8h_source.html" title="container.h" alt="" coords="731,408,818,435"/>
+<area shape="rect" id="node13" href="address_8h.html" title="Headers for address.h. " alt="" coords="259,333,338,360"/>
+<area shape="rect" id="node14" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="5,557,133,584"/>
+<area shape="rect" id="node15" href="ht_8h_source.html" title="ht.h" alt="" coords="451,333,495,360"/>
+<area shape="rect" id="node16" href="confline_8h_source.html" title="confline.h" alt="" coords="813,333,891,360"/>
+<area shape="rect" id="node17" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="519,333,622,360"/>
+<area shape="rect" id="node18" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="647,333,737,360"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -171,34 +179,40 @@ Macros</h2></td></tr>
 <tr class="memitem:a98b99e269ae9363380d828b535f04523"><td class="memItemLeft" align="right" valign="top"><a id="a98b99e269ae9363380d828b535f04523"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>EARLY_WARNING_INTERVAL</b>&#160;&#160;&#160;3600</td></tr>
 <tr class="separator:a98b99e269ae9363380d828b535f04523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a8157c3097b9ad1e253eaf5c6575f5"><td class="memItemLeft" align="right" valign="top"><a id="ac0a8157c3097b9ad1e253eaf5c6575f5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>assert_cmux_ok_paranoid</b>(chan)</td></tr>
-<tr class="separator:ac0a8157c3097b9ad1e253eaf5c6575f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbbc930ea88b8a5c9aaebf61c6fcd91b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#adbbc930ea88b8a5c9aaebf61c6fcd91b">MEMORY_PRESSURE_INTERVAL</a>&#160;&#160;&#160;(30*60)</td></tr>
 <tr class="separator:adbbc930ea88b8a5c9aaebf61c6fcd91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6184e7c9d5bdaf753ff55e038f2a071d"><td class="memItemLeft" align="right" valign="top"><a id="a6184e7c9d5bdaf753ff55e038f2a071d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RELAY_CIRC_CELL_QUEUE_SIZE_MIN</b>&#160;&#160;&#160;CIRCWINDOW_START_MAX</td></tr>
+<tr class="separator:a6184e7c9d5bdaf753ff55e038f2a071d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34f337d796527994147e93298bf1768"><td class="memItemLeft" align="right" valign="top"><a id="ae34f337d796527994147e93298bf1768"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RELAY_CIRC_CELL_QUEUE_SIZE_MAX</b>&#160;&#160;&#160;INT32_MAX</td></tr>
+<tr class="separator:ae34f337d796527994147e93298bf1768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5b0d756e0f5f5e6ad6106ce21c8864"><td class="memItemLeft" align="right" valign="top"><a id="aec5b0d756e0f5f5e6ad6106ce21c8864"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RELAY_CIRC_CELL_QUEUE_SIZE_DEFAULT</b>&#160;&#160;&#160;(50 * RELAY_CIRC_CELL_QUEUE_SIZE_MIN)</td></tr>
+<tr class="separator:aec5b0d756e0f5f5e6ad6106ce21c8864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae5a32a290e574f8c5e1546c89b3e73a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#ae5a32a290e574f8c5e1546c89b3e73a5">circuit_receive_relay_cell</a> (<a class="el" href="structcell__t.html">cell_t</a> *cell, <a class="el" href="structcircuit__t.html">circuit_t</a> *circ, <a class="el" href="or_8h.html#aca15801a4820a4af0e24d4c2fecbe50f">cell_direction_t</a> cell_direction)</td></tr>
 <tr class="separator:ae5a32a290e574f8c5e1546c89b3e73a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a649cdf630194741484111faada5c2113"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a649cdf630194741484111faada5c2113">relay_crypt</a> (<a class="el" href="structcircuit__t.html">circuit_t</a> *circ, <a class="el" href="structcell__t.html">cell_t</a> *cell, <a class="el" href="or_8h.html#aca15801a4820a4af0e24d4c2fecbe50f">cell_direction_t</a> cell_direction, <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> **layer_hint, char *recognized)</td></tr>
-<tr class="separator:a649cdf630194741484111faada5c2113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f83d0d894f6754d7b1090d03f082e40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a7f83d0d894f6754d7b1090d03f082e40">relay_header_pack</a> (uint8_t *dest, const <a class="el" href="structrelay__header__t.html">relay_header_t</a> *src)</td></tr>
 <tr class="separator:a7f83d0d894f6754d7b1090d03f082e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b06f0a66f2b1af9d4e0855225192e1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a9b06f0a66f2b1af9d4e0855225192e1d">relay_header_unpack</a> (<a class="el" href="structrelay__header__t.html">relay_header_t</a> *dest, const uint8_t *src)</td></tr>
 <tr class="separator:a9b06f0a66f2b1af9d4e0855225192e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dccdf6e55fae4f927fcd32967666d22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a8dccdf6e55fae4f927fcd32967666d22">relay_send_command_from_edge_</a> (<a class="el" href="or_8h.html#a73c0506b3441b5715fa7affd5f8759fa">streamid_t</a> stream_id, <a class="el" href="structcircuit__t.html">circuit_t</a> *circ, uint8_t relay_command, const char *payload, size_t payload_len, <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *cpath_layer, const char *filename, int lineno)</td></tr>
-<tr class="separator:a8dccdf6e55fae4f927fcd32967666d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e34c3755e184e2c1d18f865acc2d69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#af2e34c3755e184e2c1d18f865acc2d69">MOCK_IMPL</a> (int, relay_send_command_from_edge_,(<a class="el" href="or_8h.html#a73c0506b3441b5715fa7affd5f8759fa">streamid_t</a> stream_id, <a class="el" href="structcircuit__t.html">circuit_t</a> *circ, uint8_t relay_command, const char *payload, size_t payload_len, <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *cpath_layer, const char *filename, int lineno))</td></tr>
+<tr class="separator:af2e34c3755e184e2c1d18f865acc2d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ec93dc628f8039615497b5644f8bf1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#ae7ec93dc628f8039615497b5644f8bf1">connection_edge_send_command</a> (<a class="el" href="structedge__connection__t.html">edge_connection_t</a> *fromconn, uint8_t relay_command, const char *payload, size_t payload_len)</td></tr>
 <tr class="separator:ae7ec93dc628f8039615497b5644f8bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dede264de96c7c9a8916ed1127bbbc5"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a6dede264de96c7c9a8916ed1127bbbc5">connected_cell_parse</a> (const <a class="el" href="structrelay__header__t.html">relay_header_t</a> *rh, const <a class="el" href="structcell__t.html">cell_t</a> *cell, <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr_out, int *ttl_out)</td></tr>
 <tr class="separator:a6dede264de96c7c9a8916ed1127bbbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3674012b59ee776df816b92551ba7c0"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#af3674012b59ee776df816b92551ba7c0">address_ttl_free</a> (address_ttl_t *addr)</td></tr>
-<tr class="separator:af3674012b59ee776df816b92551ba7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39b5f001826e5a220300b2b1583f390"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#ad39b5f001826e5a220300b2b1583f390">address_ttl_free_</a> (address_ttl_t *addr)</td></tr>
+<tr class="separator:ad39b5f001826e5a220300b2b1583f390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebfdf81590fd4512a62bb75c28a5714d"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#aebfdf81590fd4512a62bb75c28a5714d">resolved_cell_parse</a> (const <a class="el" href="structcell__t.html">cell_t</a> *cell, const <a class="el" href="structrelay__header__t.html">relay_header_t</a> *rh, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *addresses_out, int *errcode_out)</td></tr>
 <tr class="separator:aebfdf81590fd4512a62bb75c28a5714d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af115ed62dd199384128600a436b6ca84"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#af115ed62dd199384128600a436b6ca84">connection_edge_process_resolved_cell</a> (<a class="el" href="structedge__connection__t.html">edge_connection_t</a> *conn, const <a class="el" href="structcell__t.html">cell_t</a> *cell, const <a class="el" href="structrelay__header__t.html">relay_header_t</a> *rh)</td></tr>
 <tr class="separator:af115ed62dd199384128600a436b6ca84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c5f8972773d2093c9d2eae0993df43"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a43c5f8972773d2093c9d2eae0993df43">connection_edge_process_relay_cell</a> (<a class="el" href="structcell__t.html">cell_t</a> *cell, <a class="el" href="structcircuit__t.html">circuit_t</a> *circ, <a class="el" href="structedge__connection__t.html">edge_connection_t</a> *conn, <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *layer_hint)</td></tr>
+<tr class="separator:a43c5f8972773d2093c9d2eae0993df43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ab21527807bd31cd8a8559693ac35c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#ae6ab21527807bd31cd8a8559693ac35c">connection_edge_package_raw_inbuf</a> (<a class="el" href="structedge__connection__t.html">edge_connection_t</a> *conn, int package_partial, int *max_cells)</td></tr>
 <tr class="separator:ae6ab21527807bd31cd8a8559693ac35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e70e8fbfc6c89fa97102836a87a99c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a4e70e8fbfc6c89fa97102836a87a99c4">connection_edge_consider_sending_sendme</a> (<a class="el" href="structedge__connection__t.html">edge_connection_t</a> *conn)</td></tr>
@@ -208,8 +222,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stream_choice_seed_we
 <tr class="separator:af6281017d3d9848277dbc754d611c076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a45e0480e7ddc86e59bbbab6ee7cd31"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structpacked__cell__t.html">packed_cell_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a5a45e0480e7ddc86e59bbbab6ee7cd31">packed_cell_new</a> (void)</td></tr>
 <tr class="separator:a5a45e0480e7ddc86e59bbbab6ee7cd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7d3c47d6949a2d0673807ec42fd812b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#ab7d3c47d6949a2d0673807ec42fd812b">packed_cell_free</a> (<a class="el" href="structpacked__cell__t.html">packed_cell_t</a> *cell)</td></tr>
-<tr class="separator:ab7d3c47d6949a2d0673807ec42fd812b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a77c9bdc9313ccf771998e41deb9cf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a1a77c9bdc9313ccf771998e41deb9cf8">packed_cell_free_</a> (<a class="el" href="structpacked__cell__t.html">packed_cell_t</a> *cell)</td></tr>
+<tr class="separator:a1a77c9bdc9313ccf771998e41deb9cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a399571f2db1cf148aa247ae8186f4732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a399571f2db1cf148aa247ae8186f4732">dump_cell_pool_usage</a> (int severity)</td></tr>
 <tr class="separator:a399571f2db1cf148aa247ae8186f4732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae013e92f6410b1520895df1a10714c81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#ae013e92f6410b1520895df1a10714c81">cell_queue_append</a> (<a class="el" href="structcell__queue__t.html">cell_queue_t</a> *queue, <a class="el" href="structpacked__cell__t.html">packed_cell_t</a> *cell)</td></tr>
@@ -232,9 +246,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stream_choice_seed_we
 <tr class="separator:a1e23efefaa24599479c75005cb51a1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5c0bb1e5cbcfa09485bb559ce388fe4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#af5c0bb1e5cbcfa09485bb559ce388fe4">packed_cell_mem_cost</a> (void)</td></tr>
 <tr class="separator:af5c0bb1e5cbcfa09485bb559ce388fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1ccb94cd41eb37d20b4296b83845147"><td class="memItemLeft" align="right" valign="top"><a id="ac1ccb94cd41eb37d20b4296b83845147"></a>
-STATIC size_t&#160;</td><td class="memItemRight" valign="bottom"><b>cell_queues_get_total_allocation</b> (void)</td></tr>
-<tr class="separator:ac1ccb94cd41eb37d20b4296b83845147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8ecb4ef1333075dcd85353549f6cb0"><td class="memItemLeft" align="right" valign="top"><a id="a6c8ecb4ef1333075dcd85353549f6cb0"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>cell_queues_get_total_allocation</b> (void)</td></tr>
+<tr class="separator:a6c8ecb4ef1333075dcd85353549f6cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf25650acf3a469169f7c356ff6a5580"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#aaf25650acf3a469169f7c356ff6a5580">cell_queues_check_size</a> (void)</td></tr>
 <tr class="separator:aaf25650acf3a469169f7c356ff6a5580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cdcc52f9a06a285c55d5e18220325a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a7cdcc52f9a06a285c55d5e18220325a9">have_been_under_memory_pressure</a> (void)</td></tr>
@@ -247,6 +261,9 @@ STATIC size_t&#160;</td><td class="memItemRight" valign="bottom"><b>cell_queues_
 <tr class="separator:a80c7cd7222554bcc46ce4d6da8574499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a320518e56ceca1c4615302fef3810562"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a320518e56ceca1c4615302fef3810562">MOCK_IMPL</a> (int, channel_flush_from_first_active_circuit,(<a class="el" href="structchannel__s.html">channel_t</a> *chan, int max))</td></tr>
 <tr class="separator:a320518e56ceca1c4615302fef3810562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12265d7cf107efe63bc834b59fd26ee7"><td class="memItemLeft" align="right" valign="top"><a id="a12265d7cf107efe63bc834b59fd26ee7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>relay_consensus_has_changed</b> (const <a class="el" href="structnetworkstatus__t.html">networkstatus_t</a> *ns)</td></tr>
+<tr class="separator:a12265d7cf107efe63bc834b59fd26ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d180aa954eaefa41bc868bed05b4d31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a8d180aa954eaefa41bc868bed05b4d31">append_cell_to_circuit_queue</a> (<a class="el" href="structcircuit__t.html">circuit_t</a> *circ, <a class="el" href="structchannel__s.html">channel_t</a> *chan, <a class="el" href="structcell__t.html">cell_t</a> *cell, <a class="el" href="or_8h.html#aca15801a4820a4af0e24d4c2fecbe50f">cell_direction_t</a> direction, <a class="el" href="or_8h.html#a73c0506b3441b5715fa7affd5f8759fa">streamid_t</a> fromstream)</td></tr>
 <tr class="separator:a8d180aa954eaefa41bc868bed05b4d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17ac194c109bbd5ea04bb649faaea1bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a17ac194c109bbd5ea04bb649faaea1bc">append_address_to_payload</a> (uint8_t *payload_out, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr)</td></tr>
@@ -255,8 +272,6 @@ STATIC size_t&#160;</td><td class="memItemRight" valign="bottom"><b>cell_queues_
 <tr class="separator:a49ff1feb99a759a6480040144710078c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ef2c55f226c630509396c4474274e0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a6ef2c55f226c630509396c4474274e0b">circuit_clear_cell_queue</a> (<a class="el" href="structcircuit__t.html">circuit_t</a> *circ, <a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
 <tr class="separator:a6ef2c55f226c630509396c4474274e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c3309c3aa999c1177339ba7740a8ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a99c3309c3aa999c1177339ba7740a8ca">assert_circuit_mux_okay</a> (<a class="el" href="structchannel__s.html">channel_t</a> *chan)</td></tr>
-<tr class="separator:a99c3309c3aa999c1177339ba7740a8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -264,6 +279,8 @@ Variables</h2></td></tr>
 <tr class="separator:a50b56c80423bc21f710f3d3edc2b57bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad29282dd866a9a0c841b55c12875d2f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#aad29282dd866a9a0c841b55c12875d2f">stats_n_relay_cells_delivered</a> = 0</td></tr>
 <tr class="separator:aad29282dd866a9a0c841b55c12875d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c3e73b76431214164a602f8577c8e8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a56c3e73b76431214164a602f8577c8e8">stats_n_circ_max_cell_reached</a> = 0</td></tr>
+<tr class="separator:a56c3e73b76431214164a602f8577c8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6981dfc6c45ebadd30232ed0eb39c227"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#a6981dfc6c45ebadd30232ed0eb39c227">stats_n_data_cells_packaged</a> = 0</td></tr>
 <tr class="separator:a6981dfc6c45ebadd30232ed0eb39c227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc32bdfb76b45ae9dd684e7094ff762"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relay_8c.html#aecc32bdfb76b45ae9dd684e7094ff762">stats_n_data_bytes_packaged</a> = 0</td></tr>
@@ -275,6 +292,23 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. </p>
+<p>This is a core modules that makes Tor work. It's responsible for dealing with RELAY cells (the ones that travel more than one hop along a circuit), by: </p><ul>
+<li>
+constructing relays cells, </li>
+<li>
+encrypting relay cells, </li>
+<li>
+decrypting relay cells, </li>
+<li>
+demultiplexing relay cells as they arrive on a connection, </li>
+<li>
+queueing relay cells for retransmission, </li>
+<li>
+or handling relay cells that are for us to receive (as an exit or a client). </li>
+</ul>
+<p>RELAY cells are generated throughout the code at the client or relay side, using relay_send_command_from_edge() or one of the functions like <a class="el" href="relay_8c.html#ae7ec93dc628f8039615497b5644f8bf1">connection_edge_send_command()</a> that calls it. Of particular interest is <a class="el" href="relay_8c.html#ae6ab21527807bd31cd8a8559693ac35c">connection_edge_package_raw_inbuf()</a>, which takes information that has arrived on an edge connection socket, and packages it as a RELAY_DATA cell &ndash; this is how information is actually sent across the Tor network. The cryptography for these functions is handled deep in circuit_package_relay_cell(), which either adds a single layer of encryption (if we're an exit), or multiple layers (if we're the origin of the circuit). After construction and encryption, the RELAY cells are passed to <a class="el" href="relay_8c.html#a8d180aa954eaefa41bc868bed05b4d31">append_cell_to_circuit_queue()</a>, which queues them for transmission and tells the circuitmux (see <a class="el" href="circuitmux_8c.html" title="Circuit mux/cell selection abstraction. ">circuitmux.c</a>) that the circuit is waiting to send something.</p>
+<p>Incoming RELAY cells arrive at <a class="el" href="relay_8c.html#ae5a32a290e574f8c5e1546c89b3e73a5">circuit_receive_relay_cell()</a>, called from <a class="el" href="command_8c.html" title="Functions for processing incoming cells. ">command.c</a>. There they are decrypted and, if they are for us, are passed to <a class="el" href="relay_8c.html#a43c5f8972773d2093c9d2eae0993df43">connection_edge_process_relay_cell()</a>. If they're not for us, they're re-queued for retransmission again with <a class="el" href="relay_8c.html#a8d180aa954eaefa41bc868bed05b4d31">append_cell_to_circuit_queue()</a>.</p>
+<p>The <a class="el" href="relay_8c.html#a43c5f8972773d2093c9d2eae0993df43">connection_edge_process_relay_cell()</a> function handles all the different types of relay cells, launching requests or transmitting data as needed. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="afa6c9f60d1921cfb45bf2ab03c9cb9a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa6c9f60d1921cfb45bf2ab03c9cb9a4">&#9670;&nbsp;</a></span>CELL_QUEUE_HIGHWATER_SIZE</h2>
@@ -337,14 +371,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af3674012b59ee776df816b92551ba7c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3674012b59ee776df816b92551ba7c0">&#9670;&nbsp;</a></span>address_ttl_free()</h2>
+<a id="ad39b5f001826e5a220300b2b1583f390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad39b5f001826e5a220300b2b1583f390">&#9670;&nbsp;</a></span>address_ttl_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">STATIC void address_ttl_free </td>
+          <td class="memname">STATIC void address_ttl_free_ </td>
           <td>(</td>
           <td class="paramtype">address_ttl_t *&#160;</td>
           <td class="paramname"><em>addr</em></td><td>)</td>
@@ -428,34 +462,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add <b>cell</b> to the queue of <b>circ</b> writing to <b>chan</b> transmitting in <b>direction</b>. </p>
-
-</div>
-</div>
-<a id="a99c3309c3aa999c1177339ba7740a8ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99c3309c3aa999c1177339ba7740a8ca">&#9670;&nbsp;</a></span>assert_circuit_mux_okay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void assert_circuit_mux_okay </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structchannel__s.html">channel_t</a> *&#160;</td>
-          <td class="paramname"><em>chan</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Fail with an assert if the circuit mux on chan is corrupt </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="relay_8c_a99c3309c3aa999c1177339ba7740a8ca_cgraph.png" border="0" usemap="#relay_8c_a99c3309c3aa999c1177339ba7740a8ca_cgraph" alt=""/></div>
-<map name="relay_8c_a99c3309c3aa999c1177339ba7740a8ca_cgraph" id="relay_8c_a99c3309c3aa999c1177339ba7740a8ca_cgraph">
-<area shape="rect" id="node2" href="circuitmux_8c.html#a43d95a24a05cb75718f57b39d2cf3c2b" title="circuitmux_assert_okay" alt="" coords="220,5,380,32"/>
-</map>
-</div>
+<p>Add <b>cell</b> to the queue of <b>circ</b> writing to <b>chan</b> transmitting in <b>direction</b>.</p>
+<p>The given <b>cell</b> is copied onto the circuit queue so the caller must cleanup the memory.</p>
+<p>This function is part of the fast path. </p>
 
 </div>
 </div>
@@ -730,14 +739,6 @@ Here is the caller graph for this function:</div>
 <li>If not recognized, then we need to relay it: append it to the appropriate cell_queue on <b>circ</b>.</li>
 </ul>
 <p>Return -<b>reason</b> on failure. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="relay_8c_ae5a32a290e574f8c5e1546c89b3e73a5_cgraph.png" border="0" usemap="#relay_8c_ae5a32a290e574f8c5e1546c89b3e73a5_cgraph" alt=""/></div>
-<map name="relay_8c_ae5a32a290e574f8c5e1546c89b3e73a5_cgraph" id="relay_8c_ae5a32a290e574f8c5e1546c89b3e73a5_cgraph">
-<area shape="rect" id="node2" href="relay_8c.html#a649cdf630194741484111faada5c2113" title="relay_crypt" alt="" coords="221,5,308,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -778,7 +779,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Extract the contents of a connected cell in <b>cell</b>, whose relay header has already been parsed into <b>rh</b>. On success, set <b>addr_out</b> to the address we're connected to, and <b>ttl_out</b> to the ttl of that address, in seconds, and return 0. On failure, return -1. </p>
+<p>Extract the contents of a connected cell in <b>cell</b>, whose relay header has already been parsed into <b>rh</b>. On success, set <b>addr_out</b> to the address we're connected to, and <b>ttl_out</b> to the ttl of that address, in seconds, and return 0. On failure, return -1.</p>
+<p>Note that the resulting address can be UNSPEC if the connected cell had no address (as for a stream to an union service or a tunneled directory connection), and that the ttl can be absent (in which case <b>ttl_out</b> is set to -1). </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -864,6 +866,49 @@ Here is the caller graph for this function:</div>
 <p>If <b>conn</b> has an entire relay payload of bytes on its inbuf (or <b>package_partial</b> is true), and the appropriate package windows aren't empty, grab a cell and send it down the circuit.</p>
 <p>If *<b>max_cells</b> is given, package no more than max_cells. Decrement *<b>max_cells</b> by the number of cells packaged.</p>
 <p>Return -1 (and send a RELAY_COMMAND_END cell if necessary) if conn should be marked for close, else return 0. </p>
+
+</div>
+</div>
+<a id="a43c5f8972773d2093c9d2eae0993df43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c5f8972773d2093c9d2eae0993df43">&#9670;&nbsp;</a></span>connection_edge_process_relay_cell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC int connection_edge_process_relay_cell </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcell__t.html">cell_t</a> *&#160;</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcircuit__t.html">circuit_t</a> *&#160;</td>
+          <td class="paramname"><em>circ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structedge__connection__t.html">edge_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *&#160;</td>
+          <td class="paramname"><em>layer_hint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An incoming relay cell has arrived on circuit <b>circ</b>. If <b>conn</b> is NULL this is a control cell, else <b>cell</b> is destined for <b>conn</b>.</p>
+<p>If <b>layer_hint</b> is defined, then we're the origin of the circuit, and it specifies the hop that packaged <b>cell</b>.</p>
+<p>Return -reason if you want to warn and tear down the circuit, else 0. </p>
 
 </div>
 </div>
@@ -1115,18 +1160,62 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Return true if we've been under memory pressure in the last MEMORY_PRESSURE_INTERVAL seconds. </p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="relay_8c_a7cdcc52f9a06a285c55d5e18220325a9_cgraph.png" border="0" usemap="#relay_8c_a7cdcc52f9a06a285c55d5e18220325a9_cgraph" alt=""/></div>
+<map name="relay_8c_a7cdcc52f9a06a285c55d5e18220325a9_cgraph" id="relay_8c_a7cdcc52f9a06a285c55d5e18220325a9_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="232,13,325,39"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="relay_8c_a7cdcc52f9a06a285c55d5e18220325a9_icgraph.png" border="0" usemap="#relay_8c_a7cdcc52f9a06a285c55d5e18220325a9_icgraph" alt=""/></div>
 <map name="relay_8c_a7cdcc52f9a06a285c55d5e18220325a9_icgraph" id="relay_8c_a7cdcc52f9a06a285c55d5e18220325a9_icgraph">
-<area shape="rect" id="node2" href="directory_8c.html#a79465f9ed982843ae74cf72c01073309" title="choose_compression\l_level" alt="" coords="232,5,377,47"/>
+<area shape="rect" id="node2" href="directory_8c.html#add0e4d43f10e958101ec91c0307d9301" title="choose_compression\l_level" alt="" coords="232,5,377,47"/>
 </map>
 </div>
 
 </div>
 </div>
+<a id="af2e34c3755e184e2c1d18f865acc2d69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e34c3755e184e2c1d18f865acc2d69">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">relay_send_command_from_edge_&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="or_8h.html#a73c0506b3441b5715fa7affd5f8759fa">streamid_t</a> stream_id, <a class="el" href="structcircuit__t.html">circuit_t</a> *circ, uint8_t relay_command, const char *payload, size_t payload_len, <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *cpath_layer, const char *filename, int lineno)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Make a relay cell out of <b>relay_command</b> and <b>payload</b>, and send it onto the open circuit <b>circ</b>. <b>stream_id</b> is the ID on <b>circ</b> for the stream that's sending the relay cell, or 0 if it's a control cell. <b>cpath_layer</b> is NULL for OR-&gt;OP cells, or the destination hop for OP-&gt;OR cells.</p>
+<p>If you can't send the cell, mark the circuit for close and return -1. Else return 0. </p>
+
+</div>
+</div>
 <a id="a320518e56ceca1c4615302fef3810562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a320518e56ceca1c4615302fef3810562">&#9670;&nbsp;</a></span>MOCK_IMPL()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a320518e56ceca1c4615302fef3810562">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1169,14 +1258,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ab7d3c47d6949a2d0673807ec42fd812b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7d3c47d6949a2d0673807ec42fd812b">&#9670;&nbsp;</a></span>packed_cell_free()</h2>
+<a id="a1a77c9bdc9313ccf771998e41deb9cf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a77c9bdc9313ccf771998e41deb9cf8">&#9670;&nbsp;</a></span>packed_cell_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void packed_cell_free </td>
+          <td class="memname">void packed_cell_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structpacked__cell__t.html">packed_cell_t</a> *&#160;</td>
           <td class="paramname"><em>cell</em></td><td>)</td>
@@ -1185,14 +1274,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return a packed cell used outside by channel_t lower layer </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="relay_8c_ab7d3c47d6949a2d0673807ec42fd812b_icgraph.png" border="0" usemap="#relay_8c_ab7d3c47d6949a2d0673807ec42fd812b_icgraph" alt=""/></div>
-<map name="relay_8c_ab7d3c47d6949a2d0673807ec42fd812b_icgraph" id="relay_8c_ab7d3c47d6949a2d0673807ec42fd812b_icgraph">
-<area shape="rect" id="node2" href="channel_8c.html#ae06da2fa9517932c784776910a727575" title="cell_queue_entry_free" alt="" coords="173,5,323,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1269,70 +1350,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Allocate and return a new <a class="el" href="structpacked__cell__t.html">packed_cell_t</a>. </p>
-
-</div>
-</div>
-<a id="a649cdf630194741484111faada5c2113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a649cdf630194741484111faada5c2113">&#9670;&nbsp;</a></span>relay_crypt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int relay_crypt </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structcircuit__t.html">circuit_t</a> *&#160;</td>
-          <td class="paramname"><em>circ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structcell__t.html">cell_t</a> *&#160;</td>
-          <td class="paramname"><em>cell</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="or_8h.html#aca15801a4820a4af0e24d4c2fecbe50f">cell_direction_t</a>&#160;</td>
-          <td class="paramname"><em>cell_direction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structcrypt__path__t.html">crypt_path_t</a> **&#160;</td>
-          <td class="paramname"><em>layer_hint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>recognized</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Do the appropriate en/decryptions for <b>cell</b> arriving on <b>circ</b> in direction <b>cell_direction</b>.</p>
-<p>If cell_direction == CELL_DIRECTION_IN:</p><ul>
-<li>If we're at the origin (we're the OP), for hops 1..N, decrypt cell. If recognized, stop.</li>
-<li>Else (we're not the OP), encrypt one hop. Cell is not recognized.</li>
-</ul>
-<p>If cell_direction == CELL_DIRECTION_OUT:</p><ul>
-<li>decrypt one hop. Check if recognized.</li>
-</ul>
-<p>If cell is recognized, set *recognized to 1, and set *layer_hint to the hop that recognized it.</p>
-<p>Return -1 to indicate that we should mark the circuit for close, else return 0. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="relay_8c_a649cdf630194741484111faada5c2113_icgraph.png" border="0" usemap="#relay_8c_a649cdf630194741484111faada5c2113_icgraph" alt=""/></div>
-<map name="relay_8c_a649cdf630194741484111faada5c2113_icgraph" id="relay_8c_a649cdf630194741484111faada5c2113_icgraph">
-<area shape="rect" id="node2" href="relay_8h.html#ae5a32a290e574f8c5e1546c89b3e73a5" title="circuit_receive_relay_cell" alt="" coords="140,5,308,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1415,72 +1432,6 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="connection__edge_8h.html#a8805ef6708301581c9339e83f41e76e0" title="connection_exit_begin\l_resolve" alt="" coords="199,5,349,47"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a8dccdf6e55fae4f927fcd32967666d22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dccdf6e55fae4f927fcd32967666d22">&#9670;&nbsp;</a></span>relay_send_command_from_edge_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int relay_send_command_from_edge_ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="or_8h.html#a73c0506b3441b5715fa7affd5f8759fa">streamid_t</a>&#160;</td>
-          <td class="paramname"><em>stream_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structcircuit__t.html">circuit_t</a> *&#160;</td>
-          <td class="paramname"><em>circ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>relay_command</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>payload</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>payload_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *&#160;</td>
-          <td class="paramname"><em>cpath_layer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lineno</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Make a relay cell out of <b>relay_command</b> and <b>payload</b>, and send it onto the open circuit <b>circ</b>. <b>stream_id</b> is the ID on <b>circ</b> for the stream that's sending the relay cell, or 0 if it's a control cell. <b>cpath_layer</b> is NULL for OR-&gt;OP cells, or the destination hop for OP-&gt;OR cells.</p>
-<p>If you can't send the cell, mark the circuit for close and return -1. Else return 0. </p>
 
 </div>
 </div>
@@ -1567,6 +1518,21 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a56c3e73b76431214164a602f8577c8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c3e73b76431214164a602f8577c8e8">&#9670;&nbsp;</a></span>stats_n_circ_max_cell_reached</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t stats_n_circ_max_cell_reached = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stats: how many circuits have we closed due to the cell queue limit being reached (see <a class="el" href="relay_8c.html#a8d180aa954eaefa41bc868bed05b4d31">append_cell_to_circuit_queue()</a>) </p>
+
+</div>
+</div>
 <a id="aecc32bdfb76b45ae9dd684e7094ff762"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aecc32bdfb76b45ae9dd684e7094ff762">&#9670;&nbsp;</a></span>stats_n_data_bytes_packaged</h2>
 

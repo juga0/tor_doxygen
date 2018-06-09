@@ -1,15 +1,14 @@
 var searchData=
 [
-  ['ratelim_5ft',['ratelim_t',['../util_8h.html#a9098e9a0fbd29020d63e79142f0fa486',1,'util.h']]],
-  ['rend_5fauth_5ftype_5ft',['rend_auth_type_t',['../or_8h.html#a32f01ea7f3122894dac3ced372f33416',1,'or.h']]],
-  ['rend_5fauthorized_5fclient_5ft',['rend_authorized_client_t',['../or_8h.html#a8e8f4afe8c7e68a40ee8fecc59ef2490',1,'or.h']]],
-  ['rend_5fcache_5fentry_5ft',['rend_cache_entry_t',['../rendcache_8h.html#afa23073d4131b01677f2c8ce6f3193fc',1,'rendcache.h']]],
-  ['rend_5fcache_5ffailure_5ft',['rend_cache_failure_t',['../rendcache_8h.html#a15b4712c28ecb623624d76f2653d8c7f',1,'rendcache.h']]],
-  ['rend_5fdata_5ft',['rend_data_t',['../or_8h.html#a90b41cea62182d005a18e11ab15d8c95',1,'or.h']]],
-  ['rend_5fencoded_5fv2_5fservice_5fdescriptor_5ft',['rend_encoded_v2_service_descriptor_t',['../or_8h.html#a22b65e5471760d49b423d2e2b3d76e2a',1,'or.h']]],
-  ['rend_5fintro_5fpoint_5ft',['rend_intro_point_t',['../or_8h.html#a7f8198db900a8bdeac3761f11c78f586',1,'or.h']]],
-  ['rend_5fservice_5fauthorization_5ft',['rend_service_authorization_t',['../or_8h.html#aad47d7f728b3ee6569825cb61c1e4961',1,'or.h']]],
-  ['rend_5fservice_5fdescriptor_5ft',['rend_service_descriptor_t',['../or_8h.html#a5db65925cb60b9411002531a07d233c1',1,'or.h']]],
-  ['router_5fstatus_5ft',['router_status_t',['../dirserv_8c.html#a453c515453aa252487e73ed3d50d05af',1,'dirserv.c']]],
-  ['routerstatus_5ft',['routerstatus_t',['../or_8h.html#aca898677974c9590d19200ac289bd452',1,'or.h']]]
+  ['sandbox_5fcfg_5ft',['sandbox_cfg_t',['../sandbox_8h.html#a812e4f920c58bd27cbe074dd8a195305',1,'sandbox.h']]],
+  ['scheduler_5ft',['scheduler_t',['../scheduler_8h.html#accbab322a2f3a548715826be997f83a4',1,'scheduler.h']]],
+  ['setopt_5ferr_5ft',['setopt_err_t',['../or_8h.html#a7f250d48039a47632c0e5f35a6183204',1,'or.h']]],
+  ['short_5fpolicy_5fentry_5ft',['short_policy_entry_t',['../or_8h.html#acd885aae663ca40640848b3cb7eb79de',1,'or.h']]],
+  ['short_5fpolicy_5ft',['short_policy_t',['../or_8h.html#ad6eadbb82052c908a92e450de0bf2f1a',1,'or.h']]],
+  ['signed_5fdescriptor_5ft',['signed_descriptor_t',['../or_8h.html#a6a152b1691cde77b0b974397f9d8cc82',1,'or.h']]],
+  ['sized_5fchunk_5ft',['sized_chunk_t',['../util_8h.html#add7c7d604e585e84ffa60896fcc8996b',1,'util.h']]],
+  ['spooled_5fresource_5ft',['spooled_resource_t',['../dirserv_8h.html#abf27c2014f1f1b30b7da7194945055f8',1,'dirserv.h']]],
+  ['store_5ftype_5ft',['store_type_t',['../or_8h.html#a5e7495b73cd870e26a87b0597af5693a',1,'or.h']]],
+  ['stream_5fstatus_5fevent_5ft',['stream_status_event_t',['../or_8h.html#aa7150559a6040b34eea265c84fa6ee37',1,'or.h']]],
+  ['streamid_5ft',['streamid_t',['../or_8h.html#a73c0506b3441b5715fa7affd5f8759fa',1,'or.h']]]
 ];

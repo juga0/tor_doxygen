@@ -1,0 +1,23 @@
+<map id="crypto_pk_keysize" name="crypto_pk_keysize">
+<area shape="rect" id="node2" href="$crypto__rsa_8h.html#a30d6a44940fe781bb5961ace32c0cbb1" title="crypto_pk_obsolete\l_public_hybrid_encrypt" alt="" coords="417,10,572,52"/>
+<area shape="rect" id="node3" href="$crypto__rsa_8h.html#a4b6dfcd5e33e0a27ed45fe4e50590e46" title="crypto_pk_obsolete\l_private_hybrid_decrypt" alt="" coords="415,93,575,134"/>
+<area shape="rect" id="node4" href="$crypto__rsa_8h.html#a9b6359e576f3d22833ee2dc72ebda585" title="crypto_pk_public_encrypt" alt="" coords="188,50,359,76"/>
+<area shape="rect" id="node5" href="$crypto__rsa_8h.html#a73b93822d2a8fa4b21174f106defa772" title="crypto_pk_private_decrypt" alt="" coords="186,151,361,178"/>
+<area shape="rect" id="node6" href="$crypto__rsa_8c.html#acc8a2fb00cf54dbfed7b6e1c3cb025af" title="MOCK_IMPL" alt="" coords="223,202,323,228"/>
+<area shape="rect" id="node7" href="$crypto__rsa_8h.html#a5acc83e912de445c2e7f5655ec9fd031" title="crypto_pk_private_sign" alt="" coords="195,252,351,279"/>
+<area shape="rect" id="node10" href="$crypto__rsa_8h.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="200,326,347,352"/>
+<area shape="rect" id="node20" href="$crypto__rsa_8h.html#a6dab802e6d24fc1166c76f822ce41bb4" title="crypto_pk_get_common\l_digests" alt="" coords="193,377,354,418"/>
+<area shape="rect" id="node21" href="$routerparse_8h.html#ada91c927ebf9cb2a3b92b285198f172a" title="router_get_dirobj_signature" alt="" coords="184,531,363,558"/>
+<area shape="rect" id="node8" href="$crypto__rsa_8h.html#ac6f0f5c0ab3d2230d7c2ec0ed1794450" title="crypto_pk_private_sign\l_digest" alt="" coords="417,158,573,200"/>
+<area shape="rect" id="node9" href="$routerkeys_8c.html#a501cbbf6be9a4449c5976ccacc8b2cc4" title="make_tap_onion_key\l_crosscert" alt="" coords="422,224,567,265"/>
+<area shape="rect" id="node11" href="$crypto__rsa_8h.html#a10149de1598ad3852fa49aa2c708371b" title="crypto_pk_get_fingerprint" alt="" coords="411,290,579,316"/>
+<area shape="rect" id="node13" href="$crypto__rsa_8h.html#a910d30d7ec03da2c3ef3ac1eb0a01310" title="crypto_pk_get_hashed\l_fingerprint" alt="" coords="418,341,571,382"/>
+<area shape="rect" id="node14" href="$dirserv_8h.html#a95906070553304c94a590affb671223e" title="dirserv_router_get\l_status" alt="" coords="431,406,558,448"/>
+<area shape="rect" id="node16" href="$rendcommon_8h.html#abb619b1758ff82d476170d83fce49e77" title="rend_get_service_id" alt="" coords="425,472,564,499"/>
+<area shape="rect" id="node19" href="$rephist_8h.html#ab7fc106c03b6628580434b5469dae815" title="rep_hist_stored_maybe\l_new_hs" alt="" coords="416,524,573,565"/>
+<area shape="rect" id="node12" href="$dirserv_8h.html#a95deb3d9d5367525bb51127b82269c87" title="dirserv_add_own_fingerprint" alt="" coords="627,290,811,316"/>
+<area shape="rect" id="node15" href="$dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="639,402,799,444"/>
+<area shape="rect" id="node17" href="$rendcache_8c.html#a3b62337cd31ec86e2239ffbe6005adce" title="rend_cache_failure\l_remove" alt="" coords="653,468,784,509"/>
+<area shape="rect" id="node18" href="$rendcache_8c.html#a9c71adefc4d624d1be3abf7d25dedd1d" title="rend_cache_entry_free_" alt="" coords="859,475,1020,502"/>
+<area shape="rect" id="node22" href="$routerparse_8h.html#a594cb966cbb2893822d931ffe955b53d" title="router_append_dirobj\l_signature" alt="" coords="423,589,566,630"/>
+</map>

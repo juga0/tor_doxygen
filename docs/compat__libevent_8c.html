@@ -77,7 +77,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;orconfig.h&quot;</code><br />
 <code>#include &quot;compat.h&quot;</code><br />
 <code>#include &quot;compat_libevent.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="crypto_8h_source.html">crypto.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="torlog_8h_source.html">torlog.h</a>&quot;</code><br />
 <code>#include &lt;event2/event.h&gt;</code><br />
@@ -87,24 +87,26 @@ Include dependency graph for compat_libevent.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="compat__libevent_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2compat__libevent_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2compat__libevent_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2compat__libevent_8c">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="599,483,678,509"/>
-<area shape="rect" id="node3" href="compat_8h_source.html" title="compat.h" alt="" coords="394,259,470,285"/>
-<area shape="rect" id="node11" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="977,109,1105,136"/>
-<area shape="rect" id="node13" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="296,184,365,211"/>
-<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="788,109,839,136"/>
-<area shape="rect" id="node18" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="470,184,535,211"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="247,408,310,435"/>
-<area shape="rect" id="node5" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="620,408,719,435"/>
-<area shape="rect" id="node7" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="54,408,162,435"/>
-<area shape="rect" id="node10" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="137,333,263,360"/>
-<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="758,333,829,360"/>
-<area shape="rect" id="node17" href="util__bug_8h.html" title="util_bug.h" alt="" coords="902,184,981,211"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="278,557,357,584"/>
+<area shape="rect" id="node3" href="compat_8h_source.html" title="compat.h" alt="" coords="428,333,504,360"/>
+<area shape="rect" id="node12" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="951,408,1079,435"/>
+<area shape="rect" id="node13" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="171,109,272,136"/>
+<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="196,184,247,211"/>
+<area shape="rect" id="node18" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="932,259,997,285"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="46,483,109,509"/>
+<area shape="rect" id="node6" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="788,483,887,509"/>
+<area shape="rect" id="node8" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="264,483,372,509"/>
+<area shape="rect" id="node11" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="416,408,542,435"/>
+<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="32,408,102,435"/>
+<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="374,259,453,285"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structperiodic__timer__t.html">periodic_timer_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmainloop__event__t.html">mainloop_event_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -115,9 +117,9 @@ Functions</h2></td></tr>
 <tr class="separator:ae33ad985a5c0c676460dfca4d1e1c27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a151e308d2194cb78aac538904cfbd9b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a151e308d2194cb78aac538904cfbd9b1">suppress_libevent_log_msg</a> (const char *msg)</td></tr>
 <tr class="separator:a151e308d2194cb78aac538904cfbd9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3208d15453028fc5c6fefeffe3ccb104"><td class="memItemLeft" align="right" valign="top"><a id="a3208d15453028fc5c6fefeffe3ccb104"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>tor_event_free</b> (struct event *ev)</td></tr>
-<tr class="separator:a3208d15453028fc5c6fefeffe3ccb104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e45d95c94c09c11c7c70c644f131400"><td class="memItemLeft" align="right" valign="top"><a id="a3e45d95c94c09c11c7c70c644f131400"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tor_event_free_</b> (struct event *ev)</td></tr>
+<tr class="separator:a3e45d95c94c09c11c7c70c644f131400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9930d309f7a71fd2e1232fe337ddf0fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a9930d309f7a71fd2e1232fe337ddf0fb">tor_libevent_initialize</a> (<a class="el" href="structtor__libevent__cfg.html">tor_libevent_cfg</a> *torcfg)</td></tr>
 <tr class="separator:a9930d309f7a71fd2e1232fe337ddf0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb2a232f2ecba8e301650074f525b250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#afb2a232f2ecba8e301650074f525b250">MOCK_IMPL</a> (struct event_base *, tor_libevent_get_base,(void))</td></tr>
@@ -130,15 +132,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>tor_event_free</b> (s
 <tr class="separator:a93e3b7f7cbd294ce132d40b27791e5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dfc062052ad839b4bd0f4ea874e4028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structperiodic__timer__t.html">periodic_timer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a6dfc062052ad839b4bd0f4ea874e4028">periodic_timer_new</a> (struct event_base *base, const struct <a class="el" href="structtimeval.html">timeval</a> *tv, void(*cb)(<a class="el" href="structperiodic__timer__t.html">periodic_timer_t</a> *timer, void *data), void *data)</td></tr>
 <tr class="separator:a6dfc062052ad839b4bd0f4ea874e4028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab198b882386922611d39f80ef7d36eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#aab198b882386922611d39f80ef7d36eb">periodic_timer_free</a> (<a class="el" href="structperiodic__timer__t.html">periodic_timer_t</a> *timer)</td></tr>
-<tr class="separator:aab198b882386922611d39f80ef7d36eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a56742c18be2c4872a176de4cd5b462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a6a56742c18be2c4872a176de4cd5b462">periodic_timer_launch</a> (<a class="el" href="structperiodic__timer__t.html">periodic_timer_t</a> *timer, const struct <a class="el" href="structtimeval.html">timeval</a> *tv)</td></tr>
+<tr class="separator:a6a56742c18be2c4872a176de4cd5b462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af458486bb051dab617ffe003891be904"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#af458486bb051dab617ffe003891be904">periodic_timer_disable</a> (<a class="el" href="structperiodic__timer__t.html">periodic_timer_t</a> *timer)</td></tr>
+<tr class="separator:af458486bb051dab617ffe003891be904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf7237f1adc789dc9e87ccdf44ccae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#abdf7237f1adc789dc9e87ccdf44ccae3">periodic_timer_free_</a> (<a class="el" href="structperiodic__timer__t.html">periodic_timer_t</a> *timer)</td></tr>
+<tr class="separator:abdf7237f1adc789dc9e87ccdf44ccae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7900ec8114afee85be2cc2b20d3abb79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a7900ec8114afee85be2cc2b20d3abb79">mainloop_event_new</a> (void(*cb)(<a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *, void *), void *userdata)</td></tr>
+<tr class="separator:a7900ec8114afee85be2cc2b20d3abb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd5019864755687d5e6c473f7483366"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a5cd5019864755687d5e6c473f7483366">mainloop_event_postloop_new</a> (void(*cb)(<a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *, void *), void *userdata)</td></tr>
+<tr class="separator:a5cd5019864755687d5e6c473f7483366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af815b0dd39abfb6b6ddbf5266175b479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#af815b0dd39abfb6b6ddbf5266175b479">mainloop_event_activate</a> (<a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *event)</td></tr>
+<tr class="separator:af815b0dd39abfb6b6ddbf5266175b479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c2d032ec9ba12a786f6d7d09221a9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#ab8c2d032ec9ba12a786f6d7d09221a9e">mainloop_event_schedule</a> (<a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *event, const struct <a class="el" href="structtimeval.html">timeval</a> *tv)</td></tr>
+<tr class="separator:ab8c2d032ec9ba12a786f6d7d09221a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d260fbd85e064d42e3b7c14942ee73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a67d260fbd85e064d42e3b7c14942ee73">mainloop_event_cancel</a> (<a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *event)</td></tr>
+<tr class="separator:a67d260fbd85e064d42e3b7c14942ee73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83755967b1a8e5b82282c5a9c1703e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a83755967b1a8e5b82282c5a9c1703e4c">mainloop_event_free_</a> (<a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *event)</td></tr>
+<tr class="separator:a83755967b1a8e5b82282c5a9c1703e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b0a9ac2bda2f0b3571198e8b5fd07a8"><td class="memItemLeft" align="right" valign="top"><a id="a5b0a9ac2bda2f0b3571198e8b5fd07a8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>tor_init_libevent_rng</b> (void)</td></tr>
 <tr class="separator:a5b0a9ac2bda2f0b3571198e8b5fd07a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a01eb58e717767b19f84d68909cf58d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a0a01eb58e717767b19f84d68909cf58d">tor_gettimeofday_cached</a> (struct <a class="el" href="structtimeval.html">timeval</a> *tv)</td></tr>
-<tr class="separator:a0a01eb58e717767b19f84d68909cf58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8f9d1cae7a8cd3cfb2cb570c43d8ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#ab8f9d1cae7a8cd3cfb2cb570c43d8ed4">tor_gettimeofday_cache_clear</a> (void)</td></tr>
-<tr class="separator:ab8f9d1cae7a8cd3cfb2cb570c43d8ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96d3d0384ed6952c0d106e3a5a41f28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#ab96d3d0384ed6952c0d106e3a5a41f28">tor_libevent_free_all</a> (void)</td></tr>
+<tr class="separator:ab96d3d0384ed6952c0d106e3a5a41f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be16d3ebc22fc53c7b579a5a4222704"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a8be16d3ebc22fc53c7b579a5a4222704">tor_libevent_run_event_loop</a> (struct event_base *base, int once)</td></tr>
+<tr class="separator:a8be16d3ebc22fc53c7b579a5a4222704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9995bbcc6d366dde8763a2be4e19ed00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a9995bbcc6d366dde8763a2be4e19ed00">tor_libevent_exit_loop_after_delay</a> (struct event_base *base, const struct <a class="el" href="structtimeval.html">timeval</a> *delay)</td></tr>
+<tr class="separator:a9995bbcc6d366dde8763a2be4e19ed00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e263506d4ac5e96c8956d725759432f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__libevent_8c.html#a6e263506d4ac5e96c8956d725759432f">tor_libevent_exit_loop_after_callback</a> (struct event_base *base)</td></tr>
+<tr class="separator:a6e263506d4ac5e96c8956d725759432f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrappers and utility functions for Libevent. </p>
@@ -207,6 +229,193 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="af815b0dd39abfb6b6ddbf5266175b479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af815b0dd39abfb6b6ddbf5266175b479">&#9670;&nbsp;</a></span>mainloop_event_activate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mainloop_event_activate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Schedule <b>event</b> to run in the main loop, immediately. If it is not scheduled, it will run anyway. If it is already scheduled to run later, it will run now instead. This function will have no effect if the event is already scheduled to run.</p>
+<p>This function may only be called from the main thread. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="compat__libevent_8c_af815b0dd39abfb6b6ddbf5266175b479_icgraph.png" border="0" usemap="#compat__libevent_8c_af815b0dd39abfb6b6ddbf5266175b479_icgraph" alt=""/></div>
+<map name="compat__libevent_8c_af815b0dd39abfb6b6ddbf5266175b479_icgraph" id="compat__libevent_8c_af815b0dd39abfb6b6ddbf5266175b479_icgraph">
+<area shape="rect" id="node2" href="control_8h.html#ade2557c81242d73d93750e0c68218a7c" title="control_event_logmsg\l_pending" alt="" coords="240,5,389,47"/>
+<area shape="rect" id="node3" href="main_8h.html#ae90f277f5b30758b5ec08c7334a3d41a" title="mainloop_schedule_postloop\l_cleanup" alt="" coords="220,71,409,112"/>
+<area shape="rect" id="node5" href="scheduler_8c.html#a199c3d59509d475c2ed08776bcdc9a8a" title="scheduler_ev_active" alt="" coords="244,137,385,163"/>
+<area shape="rect" id="node4" href="main_8h.html#a5a32ff7bb266432116efdc333987a0e4" title="add_connection_to_closeable_list" alt="" coords="457,78,675,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a67d260fbd85e064d42e3b7c14942ee73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d260fbd85e064d42e3b7c14942ee73">&#9670;&nbsp;</a></span>mainloop_event_cancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mainloop_event_cancel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cancel <b>event</b> if it is currently active or pending. (Do nothing if the event is not currently active or pending.) </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="compat__libevent_8c_a67d260fbd85e064d42e3b7c14942ee73_icgraph.png" border="0" usemap="#compat__libevent_8c_a67d260fbd85e064d42e3b7c14942ee73_icgraph" alt=""/></div>
+<map name="compat__libevent_8c_a67d260fbd85e064d42e3b7c14942ee73_icgraph" id="compat__libevent_8c_a67d260fbd85e064d42e3b7c14942ee73_icgraph">
+<area shape="rect" id="node2" href="periodic_8c.html#a055fb96fcc90357978ca4c12f7c17fd4" title="periodic_event_disable" alt="" coords="212,5,367,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a83755967b1a8e5b82282c5a9c1703e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83755967b1a8e5b82282c5a9c1703e4c">&#9670;&nbsp;</a></span>mainloop_event_free_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mainloop_event_free_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cancel <b>event</b> and release all storage associated with it. </p>
+
+</div>
+</div>
+<a id="a7900ec8114afee85be2cc2b20d3abb79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7900ec8114afee85be2cc2b20d3abb79">&#9670;&nbsp;</a></span>mainloop_event_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmainloop__event__t.html">mainloop_event_t</a>* mainloop_event_new </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *, void *)&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create and return a new <a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> to run the function <b>cb</b>.</p>
+<p>When run, the callback function will be passed the <a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> and <b>userdata</b> as its arguments. The <b>userdata</b> pointer must remain valid for as long as the <a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> event exists: it is your responsibility to free it.</p>
+<p>The event is not scheduled by default: Use <a class="el" href="compat__libevent_8c.html#af815b0dd39abfb6b6ddbf5266175b479">mainloop_event_activate()</a> or <a class="el" href="compat__libevent_8c.html#ab8c2d032ec9ba12a786f6d7d09221a9e">mainloop_event_schedule()</a> to make it run. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="compat__libevent_8c_a7900ec8114afee85be2cc2b20d3abb79_icgraph.png" border="0" usemap="#compat__libevent_8c_a7900ec8114afee85be2cc2b20d3abb79_icgraph" alt=""/></div>
+<map name="compat__libevent_8c_a7900ec8114afee85be2cc2b20d3abb79_icgraph" id="compat__libevent_8c_a7900ec8114afee85be2cc2b20d3abb79_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#a59464f1df72e2aa554da128126909730" title="directory_all_unreachable" alt="" coords="197,5,367,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5cd5019864755687d5e6c473f7483366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd5019864755687d5e6c473f7483366">&#9670;&nbsp;</a></span>mainloop_event_postloop_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmainloop__event__t.html">mainloop_event_t</a>* mainloop_event_postloop_new </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *, void *)&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As <a class="el" href="compat__libevent_8c.html#a7900ec8114afee85be2cc2b20d3abb79">mainloop_event_new()</a>, but create a post-loop event.</p>
+<p>A post-loop event behaves like any ordinary event, but any events that <em>it</em> activates cannot run until Libevent has checked for other events at least once. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="compat__libevent_8c_a5cd5019864755687d5e6c473f7483366_icgraph.png" border="0" usemap="#compat__libevent_8c_a5cd5019864755687d5e6c473f7483366_icgraph" alt=""/></div>
+<map name="compat__libevent_8c_a5cd5019864755687d5e6c473f7483366_icgraph" id="compat__libevent_8c_a5cd5019864755687d5e6c473f7483366_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#ac14ea279fb1aac55027fc5f87826f23c" title="initialize_mainloop\l_events" alt="" coords="253,5,381,47"/>
+<area shape="rect" id="node3" href="main_8h.html#a842d938cd262fb19c7c4d6177ccaa6fb" title="do_main_loop" alt="" coords="429,13,532,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab8c2d032ec9ba12a786f6d7d09221a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c2d032ec9ba12a786f6d7d09221a9e">&#9670;&nbsp;</a></span>mainloop_event_schedule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mainloop_event_schedule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structtimeval.html">timeval</a> *&#160;</td>
+          <td class="paramname"><em>tv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Schedule <b>event</b> to run in the main loop, after a delay of <b>tv</b>.</p>
+<p>If the event is scheduled for a different time, cancel it and run after this delay instead. If the event is currently pending to run <em>now, has no effect.</em></p>
+<p><em>Do not call this function with <b>tv</b> == NULL &ndash; use <a class="el" href="compat__libevent_8c.html#af815b0dd39abfb6b6ddbf5266175b479">mainloop_event_activate()</a> instead.</em></p>
+<p><em>This function may only be called from the main thread. </em></p>
+
+</div>
+</div>
 <a id="afb2a232f2ecba8e301650074f525b250"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb2a232f2ecba8e301650074f525b250">&#9670;&nbsp;</a></span>MOCK_IMPL()</h2>
 
@@ -242,14 +451,35 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aab198b882386922611d39f80ef7d36eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab198b882386922611d39f80ef7d36eb">&#9670;&nbsp;</a></span>periodic_timer_free()</h2>
+<a id="af458486bb051dab617ffe003891be904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af458486bb051dab617ffe003891be904">&#9670;&nbsp;</a></span>periodic_timer_disable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void periodic_timer_free </td>
+          <td class="memname">void periodic_timer_disable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structperiodic__timer__t.html">periodic_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Disable the provided <b>timer</b>, but do not free it.</p>
+<p>You can reenable the same timer later with periodic_timer_launch.</p>
+<p>If the timer is already disabled, this function does nothing. </p>
+
+</div>
+</div>
+<a id="abdf7237f1adc789dc9e87ccdf44ccae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf7237f1adc789dc9e87ccdf44ccae3">&#9670;&nbsp;</a></span>periodic_timer_free_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void periodic_timer_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structperiodic__timer__t.html">periodic_timer_t</a> *&#160;</td>
           <td class="paramname"><em>timer</em></td><td>)</td>
@@ -258,6 +488,36 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Stop and free a periodic timer </p>
+
+</div>
+</div>
+<a id="a6a56742c18be2c4872a176de4cd5b462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a56742c18be2c4872a176de4cd5b462">&#9670;&nbsp;</a></span>periodic_timer_launch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void periodic_timer_launch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structperiodic__timer__t.html">periodic_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structtimeval.html">timeval</a> *&#160;</td>
+          <td class="paramname"><em>tv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Launch the timer <b>timer</b> to run at <b>tv</b> from now, and every <b>tv</b> thereafter.</p>
+<p>If the timer is already enabled, this function does nothing. </p>
 
 </div>
 </div>
@@ -299,6 +559,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Create and schedule a new timer that will run every <b>tv</b> in the event loop of <b>base</b>. When the timer fires, it will run the timer in <b>cb</b> with the user-supplied data in <b>data</b>. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="compat__libevent_8c_a6dfc062052ad839b4bd0f4ea874e4028_icgraph.png" border="0" usemap="#compat__libevent_8c_a6dfc062052ad839b4bd0f4ea874e4028_icgraph" alt=""/></div>
+<map name="compat__libevent_8c_a6dfc062052ad839b4bd0f4ea874e4028_icgraph" id="compat__libevent_8c_a6dfc062052ad839b4bd0f4ea874e4028_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#aa282b01934a6c82ad6d2c27cf5140a85" title="reschedule_per_second\l_timer" alt="" coords="188,5,347,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -321,14 +589,62 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab8f9d1cae7a8cd3cfb2cb570c43d8ed4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8f9d1cae7a8cd3cfb2cb570c43d8ed4">&#9670;&nbsp;</a></span>tor_gettimeofday_cache_clear()</h2>
+<a id="a6e263506d4ac5e96c8956d725759432f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e263506d4ac5e96c8956d725759432f">&#9670;&nbsp;</a></span>tor_libevent_exit_loop_after_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void tor_gettimeofday_cache_clear </td>
+          <td class="memname">void tor_libevent_exit_loop_after_callback </td>
+          <td>(</td>
+          <td class="paramtype">struct event_base *&#160;</td>
+          <td class="paramname"><em>base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell the event loop to exit after running whichever callback is currently active. </p>
+
+</div>
+</div>
+<a id="a9995bbcc6d366dde8763a2be4e19ed00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9995bbcc6d366dde8763a2be4e19ed00">&#9670;&nbsp;</a></span>tor_libevent_exit_loop_after_delay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tor_libevent_exit_loop_after_delay </td>
+          <td>(</td>
+          <td class="paramtype">struct event_base *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structtimeval.html">timeval</a> *&#160;</td>
+          <td class="paramname"><em>delay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell the event loop to exit after <b>delay</b>. If <b>delay</b> is NULL, instead exit after we're done running the currently active events. </p>
+
+</div>
+</div>
+<a id="ab96d3d0384ed6952c0d106e3a5a41f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab96d3d0384ed6952c0d106e3a5a41f28">&#9670;&nbsp;</a></span>tor_libevent_free_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tor_libevent_free_all </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -336,34 +652,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reset the cached view of the current time, so that the next time we try to learn it, we will get an up-to-date value. </p>
-
-</div>
-</div>
-<a id="a0a01eb58e717767b19f84d68909cf58d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a01eb58e717767b19f84d68909cf58d">&#9670;&nbsp;</a></span>tor_gettimeofday_cached()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void tor_gettimeofday_cached </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structtimeval.html">timeval</a> *&#160;</td>
-          <td class="paramname"><em>tv</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return a fairly recent view of the current time. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="compat__libevent_8c_a0a01eb58e717767b19f84d68909cf58d_cgraph.png" border="0" usemap="#compat__libevent_8c_a0a01eb58e717767b19f84d68909cf58d_cgraph" alt=""/></div>
-<map name="compat__libevent_8c_a0a01eb58e717767b19f84d68909cf58d_cgraph" id="compat__libevent_8c_a0a01eb58e717767b19f84d68909cf58d_cgraph">
-<area shape="rect" id="node2" href="compat__time_8c.html#a44ef505a26821a6ac00802efbdda9531" title="tor_gettimeofday" alt="" coords="221,5,340,32"/>
-</map>
-</div>
+<p>Un-initialize libevent in preparation for an exit </p>
 
 </div>
 </div>
@@ -445,9 +734,39 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="compat__libevent_8c_a9930d309f7a71fd2e1232fe337ddf0fb_icgraph.png" border="0" usemap="#compat__libevent_8c_a9930d309f7a71fd2e1232fe337ddf0fb_icgraph" alt=""/></div>
 <map name="compat__libevent_8c_a9930d309f7a71fd2e1232fe337ddf0fb_icgraph" id="compat__libevent_8c_a9930d309f7a71fd2e1232fe337ddf0fb_icgraph">
-<area shape="rect" id="node2" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="196,5,289,32"/>
+<area shape="rect" id="node2" href="test_8h.html#a334e47899bf2c19bf8a5ce0f226ab399" title="get_fname_rnd" alt="" coords="196,5,304,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a8be16d3ebc22fc53c7b579a5a4222704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be16d3ebc22fc53c7b579a5a4222704">&#9670;&nbsp;</a></span>tor_libevent_run_event_loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tor_libevent_run_event_loop </td>
+          <td>(</td>
+          <td class="paramtype">struct event_base *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>once</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run the event loop for the provided event_base, handling events until something stops it. If <b>once</b> is set, then just poll-and-run once, then exit. Return 0 on success, -1 if an error occurred, or 1 if we exited because no events were pending or active.</p>
+<p>This isn't reentrant or multithreaded. </p>
 
 </div>
 </div>

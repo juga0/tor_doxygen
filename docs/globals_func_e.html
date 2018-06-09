@@ -78,26 +78,26 @@ $(function() {
 : <a class="el" href="util_8h.html#ab838c820246f358bc0b99884154b2704">util.h</a>
 , <a class="el" href="util_8c.html#ab838c820246f358bc0b99884154b2704">util.c</a>
 </li>
-<li>ed25519_checksig()
-: <a class="el" href="crypto__ed25519_8c.html#a6638c201fc31127634b6e04cec6abe79">crypto_ed25519.c</a>
-</li>
-<li>ed25519_checksig_batch()
-: <a class="el" href="crypto__ed25519_8c.html#a3328c534892b47f310d62d5c3479d175">crypto_ed25519.c</a>
-</li>
 <li>ed25519_checksig_prefixed()
 : <a class="el" href="crypto__ed25519_8c.html#a005195c17a15a9b7cc8cf3b82709800e">crypto_ed25519.c</a>
+</li>
+<li>ed25519_fmt()
+: <a class="el" href="crypto__format_8c.html#a410a5ce7823282053a68132d17e82fe5">crypto_format.c</a>
 </li>
 <li>ed25519_keypair_blind()
 : <a class="el" href="crypto__ed25519_8c.html#a5b704dfeb238e199f7d1cf5d6ff8b349">crypto_ed25519.c</a>
 </li>
-<li>ed25519_keypair_free()
-: <a class="el" href="crypto__ed25519_8c.html#adb6d235525b50eceac6cd3dd5b5b2fc6">crypto_ed25519.c</a>
+<li>ed25519_keypair_free_()
+: <a class="el" href="crypto__ed25519_8c.html#a3252ebaf6f62d86ba6cc8880d49a7bb6">crypto_ed25519.c</a>
 </li>
 <li>ed25519_keypair_from_curve25519_keypair()
 : <a class="el" href="crypto__ed25519_8c.html#abb50b5bb9010dfe33e19a08f5cc362da">crypto_ed25519.c</a>
 </li>
 <li>ed25519_keypair_generate()
 : <a class="el" href="crypto__ed25519_8c.html#a53329d0f576211570b7481ad2a3cac04">crypto_ed25519.c</a>
+</li>
+<li>ed25519_pubkey_copy()
+: <a class="el" href="crypto__ed25519_8c.html#a0cb678831fd4973f9b1cd7602961db91">crypto_ed25519.c</a>
 </li>
 <li>ed25519_pubkey_eq()
 : <a class="el" href="crypto__ed25519_8c.html#af9396211603b40cf70b930b9ef726ed1">crypto_ed25519.c</a>
@@ -120,6 +120,9 @@ $(function() {
 <li>ed25519_public_key_generate()
 : <a class="el" href="crypto__ed25519_8c.html#a250f7c3af49aabe2d1173325ae0841f5">crypto_ed25519.c</a>
 </li>
+<li>ed25519_public_key_is_zero()
+: <a class="el" href="crypto__ed25519_8c.html#a1d56281a358363aa105b7032aebc46e4">crypto_ed25519.c</a>
+</li>
 <li>ed25519_public_to_base64()
 : <a class="el" href="crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364">crypto_format.c</a>
 </li>
@@ -141,14 +144,14 @@ $(function() {
 <li>ed25519_sign()
 : <a class="el" href="crypto__ed25519_8c.html#a372c6a68ee684f2c73a2dfd89864bd44">crypto_ed25519.c</a>
 </li>
-<li>ed25519_sign_prefixed()
-: <a class="el" href="crypto__ed25519_8c.html#a7d11e62a5ade103498362de1d41a9cdc">crypto_ed25519.c</a>
-</li>
 <li>ed25519_signature_from_base64()
 : <a class="el" href="crypto__format_8c.html#a0bf9c46d37d128f8207ae24b08626a1a">crypto_format.c</a>
 </li>
 <li>ed25519_signature_to_base64()
 : <a class="el" href="crypto__format_8c.html#a582634f36c7e9f69d74313fceddbc101">crypto_format.c</a>
+</li>
+<li>ed25519_validate_pubkey()
+: <a class="el" href="crypto__ed25519_8c.html#a2642c8e2e2a057408be149542e7c750c">crypto_ed25519.c</a>
 </li>
 <li>ed_key_init_from_file()
 : <a class="el" href="routerkeys_8c.html#aae1c5a5d448a1f0460373478e6304b36">routerkeys.c</a>
@@ -164,65 +167,157 @@ $(function() {
 : <a class="el" href="control_8c.html#a8336a8705fe16b16bc29aa26defeb567">control.c</a>
 , <a class="el" href="control_8h.html#a8336a8705fe16b16bc29aa26defeb567">control.h</a>
 </li>
+<li>encode_desc_rev_counter_for_state()
+: <a class="el" href="hs__service_8c.html#a0db0ef0b23d20f33bc2d933e9580303a">hs_service.c</a>
+</li>
 <li>encode_protocol_list()
 : <a class="el" href="protover_8c.html#aac7b23f286ab38a93ae9448d944ffff9">protover.c</a>
 </li>
-<li>entries_known_but_down()
-: <a class="el" href="entrynodes_8c.html#a03f0faa21923511f6aa0338190066252">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#a03f0faa21923511f6aa0338190066252">entrynodes.h</a>
-</li>
-<li>entries_retry_all()
-: <a class="el" href="entrynodes_8c.html#a3e6fe3993d40ab3adcf1e9a8e0bc9374">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#a3e6fe3993d40ab3adcf1e9a8e0bc9374">entrynodes.h</a>
+<li>end_reason_to_http_connect_response_line()
+: <a class="el" href="reasons_8c.html#a80e685df2edb65b4bf0d7c2c0b33ad53">reasons.c</a>
+, <a class="el" href="reasons_8h.html#a80e685df2edb65b4bf0d7c2c0b33ad53">reasons.h</a>
 </li>
 <li>entry_connection_new()
 : <a class="el" href="connection_8c.html#adf77e71582e9f5e3a07d50af731b0427">connection.c</a>
 , <a class="el" href="connection_8h.html#adf77e71582e9f5e3a07d50af731b0427">connection.h</a>
 </li>
+<li>entry_guard_add_to_sample()
+: <a class="el" href="entrynodes_8c.html#a55c3838fe87b6171719d729a6d24147c">entrynodes.c</a>
+</li>
+<li>entry_guard_cancel()
+: <a class="el" href="entrynodes_8c.html#a2c41a0672c81fe07767a6e80523af88d">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a2c41a0672c81fe07767a6e80523af88d">entrynodes.h</a>
+</li>
+<li>entry_guard_chan_failed()
+: <a class="el" href="entrynodes_8c.html#a0e486d12b1fae8b40a392567b676a083">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a0e486d12b1fae8b40a392567b676a083">entrynodes.h</a>
+</li>
+<li>entry_guard_consider_retry()
+: <a class="el" href="entrynodes_8c.html#ab335f71d2749aa457ffd8a82065649c6">entrynodes.c</a>
+</li>
+<li>entry_guard_could_succeed()
+: <a class="el" href="entrynodes_8c.html#aa848c940a527c2e4be395fdd4dc933c0">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#aa848c940a527c2e4be395fdd4dc933c0">entrynodes.h</a>
+</li>
+<li>entry_guard_describe()
+: <a class="el" href="entrynodes_8c.html#a446ff1a56de96285dac2fe015e972bd0">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a446ff1a56de96285dac2fe015e972bd0">entrynodes.h</a>
+</li>
+<li>entry_guard_encode_for_state()
+: <a class="el" href="entrynodes_8c.html#ae1db102ac34d25399676df24b415765b">entrynodes.c</a>
+</li>
+<li>entry_guard_failed()
+: <a class="el" href="entrynodes_8c.html#a00a05d40c93fe360c18cbf66dcbe2b29">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a00a05d40c93fe360c18cbf66dcbe2b29">entrynodes.h</a>
+</li>
+<li>entry_guard_find_node()
+: <a class="el" href="entrynodes_8c.html#a1b9225be7f0d88d71bbf0f0f728b809a">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a1b9225be7f0d88d71bbf0f0f728b809a">entrynodes.h</a>
+</li>
+<li>entry_guard_free_()
+: <a class="el" href="entrynodes_8c.html#a51a04fae0758a9edb54f2b4e12dc0713">entrynodes.c</a>
+</li>
 <li>entry_guard_get_by_id_digest()
 : <a class="el" href="entrynodes_8c.html#a059f7981078a896a9349a578b82bc645">entrynodes.c</a>
 , <a class="el" href="entrynodes_8h.html#a059f7981078a896a9349a578b82bc645">entrynodes.h</a>
 </li>
-<li>entry_guard_register_connect_status()
-: <a class="el" href="entrynodes_8c.html#aca1100341edbe9b4ff26527595ab56e8">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#aca1100341edbe9b4ff26527595ab56e8">entrynodes.h</a>
+<li>entry_guard_get_by_id_digest_for_guard_selection()
+: <a class="el" href="entrynodes_8c.html#a9ecb7c2ddf9746ab0b0cb62a2239b6f6">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a9ecb7c2ddf9746ab0b0cb62a2239b6f6">entrynodes.h</a>
+</li>
+<li>entry_guard_get_pathbias_state()
+: <a class="el" href="entrynodes_8c.html#a438f7a3ebb9ad87d9baee6a364441007">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a438f7a3ebb9ad87d9baee6a364441007">entrynodes.h</a>
+</li>
+<li>entry_guard_get_rsa_id_digest()
+: <a class="el" href="entrynodes_8c.html#a728f1532a6ee05de69f5c8d988af2bd6">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a728f1532a6ee05de69f5c8d988af2bd6">entrynodes.h</a>
+</li>
+<li>entry_guard_has_higher_priority()
+: <a class="el" href="entrynodes_8c.html#a5f45fc1e26c98705d0c0f1a9fb862b1a">entrynodes.c</a>
+</li>
+<li>entry_guard_learned_bridge_identity()
+: <a class="el" href="entrynodes_8c.html#a06acab15b1c0a42b82485bf1f4fa78ed">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a06acab15b1c0a42b82485bf1f4fa78ed">entrynodes.h</a>
+</li>
+<li>entry_guard_parse_from_state()
+: <a class="el" href="entrynodes_8c.html#afd874b8fcfbabcce363186ec1ce31577">entrynodes.c</a>
+</li>
+<li>entry_guard_pick_for_circuit()
+: <a class="el" href="entrynodes_8c.html#a89cd1e4049c1b18c57214d9414586ad4">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a89cd1e4049c1b18c57214d9414586ad4">entrynodes.h</a>
+</li>
+<li>entry_guard_restriction_free_()
+: <a class="el" href="entrynodes_8c.html#a554594e310c51064070d388bb682b1d4">entrynodes.c</a>
+</li>
+<li>entry_guard_state_should_expire()
+: <a class="el" href="entrynodes_8c.html#aa42b6de85549bfc96f56f89cab179042">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#aa42b6de85549bfc96f56f89cab179042">entrynodes.h</a>
+</li>
+<li>entry_guard_succeeded()
+: <a class="el" href="entrynodes_8c.html#a5aceb4f4f990b9b3ed2ecea41abc9aab">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a5aceb4f4f990b9b3ed2ecea41abc9aab">entrynodes.h</a>
+</li>
+<li>entry_guards_all_primary_guards_are_down()
+: <a class="el" href="entrynodes_8c.html#acad8e7ba6123e0a214361a425f711c05">entrynodes.c</a>
 </li>
 <li>entry_guards_changed()
 : <a class="el" href="entrynodes_8c.html#a1aedcf8995075b212cce9d510e9e70d7">entrynodes.c</a>
 , <a class="el" href="entrynodes_8h.html#a1aedcf8995075b212cce9d510e9e70d7">entrynodes.h</a>
 </li>
-<li>entry_guards_compute_status()
-: <a class="el" href="entrynodes_8c.html#aa295479ccc485da15d0e03872188cd68">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#aa295479ccc485da15d0e03872188cd68">entrynodes.h</a>
+<li>entry_guards_changed_for_guard_selection()
+: <a class="el" href="entrynodes_8c.html#abe944c95b279887314f1101ada1f4884">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#abe944c95b279887314f1101ada1f4884">entrynodes.h</a>
+</li>
+<li>entry_guards_expand_sample()
+: <a class="el" href="entrynodes_8c.html#a284215d5fcf3e4f5c33969072c4e27d5">entrynodes.c</a>
 </li>
 <li>entry_guards_free_all()
 : <a class="el" href="entrynodes_8c.html#afe2c7c43057097f0ca57f4429249f576">entrynodes.c</a>
 , <a class="el" href="entrynodes_8h.html#afe2c7c43057097f0ca57f4429249f576">entrynodes.h</a>
 </li>
+<li>entry_guards_get_err_str_if_dir_info_missing()
+: <a class="el" href="entrynodes_8c.html#a1f69ddf668f984f783eb7cfcb358185e">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a1f69ddf668f984f783eb7cfcb358185e">entrynodes.h</a>
+</li>
+<li>entry_guards_note_guard_failure()
+: <a class="el" href="entrynodes_8c.html#a1dcd016fd276da6af70697a39ab2b372">entrynodes.c</a>
+</li>
+<li>entry_guards_note_guard_success()
+: <a class="el" href="entrynodes_8c.html#aa020db50cb3f41bd32d264228a2bc249">entrynodes.c</a>
+</li>
+<li>entry_guards_note_internet_connectivity()
+: <a class="el" href="entrynodes_8c.html#a61c84cb9bea9ab7fbeff429a27893c33">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a61c84cb9bea9ab7fbeff429a27893c33">entrynodes.h</a>
+</li>
 <li>entry_guards_parse_state()
 : <a class="el" href="entrynodes_8c.html#a9fe13e92c8806b6fe22889c7e7b303f5">entrynodes.c</a>
 , <a class="el" href="entrynodes_8h.html#a9fe13e92c8806b6fe22889c7e7b303f5">entrynodes.h</a>
 </li>
-<li>entry_guards_set_from_config()
-: <a class="el" href="entrynodes_8c.html#aefcc8b3f1675f7480f0123af7def1879">entrynodes.c</a>
+<li>entry_guards_update_all()
+: <a class="el" href="entrynodes_8c.html#a4360ef3264ab398b48b851e0d2d675b5">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#a4360ef3264ab398b48b851e0d2d675b5">entrynodes.h</a>
+</li>
+<li>entry_guards_update_confirmed()
+: <a class="el" href="entrynodes_8c.html#a691aafe1ed64f00a693b7bd1b0675ef1">entrynodes.c</a>
+</li>
+<li>entry_guards_update_filtered_sets()
+: <a class="el" href="entrynodes_8c.html#a6d8b3b670aac830e78037876f2a000ea">entrynodes.c</a>
+</li>
+<li>entry_guards_update_primary()
+: <a class="el" href="entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801">entrynodes.c</a>
 </li>
 <li>entry_guards_update_state()
-: <a class="el" href="entrynodes_8c.html#a6e4a5b6f39d4d23a701fa0ddc38e3e17">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#a6e4a5b6f39d4d23a701fa0ddc38e3e17">entrynodes.h</a>
+: <a class="el" href="entrynodes_8h.html#a6e4a5b6f39d4d23a701fa0ddc38e3e17">entrynodes.h</a>
+, <a class="el" href="entrynodes_8c.html#a6e4a5b6f39d4d23a701fa0ddc38e3e17">entrynodes.c</a>
 </li>
-<li>entry_is_live()
-: <a class="el" href="entrynodes_8c.html#afd4f8dd6f248abfc072ce641a568ddde">entrynodes.c</a>
-</li>
-<li>entry_is_time_to_retry()
-: <a class="el" href="entrynodes_8c.html#a34ef17d63d304b4c0f849cca5430844f">entrynodes.c</a>
+<li>entry_guards_upgrade_waiting_circuits()
+: <a class="el" href="entrynodes_8c.html#a30eec9f6966e2df9934d3d9770e45df9">entrynodes.c</a>
+, <a class="el" href="entrynodes_8h.html#af943c868320a66ee2dca652ad0555a32">entrynodes.h</a>
 </li>
 <li>entry_list_is_constrained()
 : <a class="el" href="entrynodes_8h.html#a574dc0f7b96e7da5652ddb234d42adb3">entrynodes.h</a>
 , <a class="el" href="entrynodes_8c.html#a574dc0f7b96e7da5652ddb234d42adb3">entrynodes.c</a>
-</li>
-<li>entry_nodes_should_be_added()
-: <a class="el" href="entrynodes_8c.html#aef450c6c3b8cc0a8e7461e3826338ce7">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#aef450c6c3b8cc0a8e7461e3826338ce7">entrynodes.h</a>
 </li>
 <li>environment_variable_names_equal()
 : <a class="el" href="util_8c.html#a584e4996b64ee5bce8e33d46812388bc">util.c</a>
@@ -233,12 +328,12 @@ $(function() {
 , <a class="el" href="reasons_8h.html#a327ab419bce110d12871b6d50471bf23">reasons.h</a>
 </li>
 <li>errno_to_stream_end_reason()
-: <a class="el" href="reasons_8h.html#a8829a9ed7a54cfa9242d7dc5d205da0b">reasons.h</a>
-, <a class="el" href="reasons_8c.html#a8829a9ed7a54cfa9242d7dc5d205da0b">reasons.c</a>
+: <a class="el" href="reasons_8c.html#a8829a9ed7a54cfa9242d7dc5d205da0b">reasons.c</a>
+, <a class="el" href="reasons_8h.html#a8829a9ed7a54cfa9242d7dc5d205da0b">reasons.h</a>
 </li>
 <li>esc_for_log()
-: <a class="el" href="util_8c.html#ac152e18c6deb4f05823053bb2980a8e4">util.c</a>
-, <a class="el" href="util_8h.html#a0c64e97acc0df47b6c86b1df1d1d93de">util.h</a>
+: <a class="el" href="util_8h.html#a0c64e97acc0df47b6c86b1df1d1d93de">util.h</a>
+, <a class="el" href="util_8c.html#ac152e18c6deb4f05823053bb2980a8e4">util.c</a>
 </li>
 <li>esc_for_log_len()
 : <a class="el" href="util_8h.html#a76c884069e4448d4e4427901f04a85a0">util.h</a>
@@ -253,28 +348,28 @@ $(function() {
 , <a class="el" href="util_8c.html#a354eb90598823d4fd6111b94c9c0ce97">util.c</a>
 </li>
 <li>escaped_safe_str()
-: <a class="el" href="config_8c.html#af4f7098ccf9acfd57ab27de9ee917f48">config.c</a>
-, <a class="el" href="config_8h.html#af4f7098ccf9acfd57ab27de9ee917f48">config.h</a>
+: <a class="el" href="config_8h.html#af4f7098ccf9acfd57ab27de9ee917f48">config.h</a>
+, <a class="el" href="config_8c.html#af4f7098ccf9acfd57ab27de9ee917f48">config.c</a>
 </li>
 <li>escaped_safe_str_client()
-: <a class="el" href="config_8c.html#ac4eb7d900d6542f8b19af751d2c1bb05">config.c</a>
-, <a class="el" href="config_8h.html#ac4eb7d900d6542f8b19af751d2c1bb05">config.h</a>
+: <a class="el" href="config_8h.html#ac4eb7d900d6542f8b19af751d2c1bb05">config.h</a>
+, <a class="el" href="config_8c.html#ac4eb7d900d6542f8b19af751d2c1bb05">config.c</a>
 </li>
 <li>estimated_usec_for_onionskins()
 : <a class="el" href="cpuworker_8c.html#aef0aef3ba4310dc866f2568e9a4eaeed">cpuworker.c</a>
 , <a class="el" href="cpuworker_8h.html#aef0aef3ba4310dc866f2568e9a4eaeed">cpuworker.h</a>
 </li>
 <li>evaluate_ctr_for_aes()
-: <a class="el" href="aes_8h.html#a63bf76dc2ba480a13bbf131e49e8615f">aes.h</a>
-, <a class="el" href="aes_8c.html#a63bf76dc2ba480a13bbf131e49e8615f">aes.c</a>
+: <a class="el" href="aes_8c.html#a63bf76dc2ba480a13bbf131e49e8615f">aes.c</a>
+, <a class="el" href="aes_8h.html#a63bf76dc2ba480a13bbf131e49e8615f">aes.h</a>
 </li>
 <li>evaluate_ecgroup_for_tls()
 : <a class="el" href="tortls_8c.html#a479756d042d4e4890e403726e0cb2a5b">tortls.c</a>
 , <a class="el" href="tortls_8h.html#a479756d042d4e4890e403726e0cb2a5b">tortls.h</a>
 </li>
 <li>evaluate_evp_for_aes()
-: <a class="el" href="aes_8h.html#a322fa882ec2acd57ba3313161f569169">aes.h</a>
-, <a class="el" href="aes_8c.html#ad5366ecadd7a45a44a8714ffc453826d">aes.c</a>
+: <a class="el" href="aes_8c.html#ad5366ecadd7a45a44a8714ffc453826d">aes.c</a>
+, <a class="el" href="aes_8h.html#a322fa882ec2acd57ba3313161f569169">aes.h</a>
 </li>
 <li>exit_policy_is_general_exit()
 : <a class="el" href="policies_8h.html#af059fd7a534495a10726fcd70da08e2f">policies.h</a>
@@ -284,8 +379,12 @@ $(function() {
 : <a class="el" href="util_8c.html#a89a3242e83d59f2ccb9bb662e9a94134">util.c</a>
 , <a class="el" href="util_8h.html#a89a3242e83d59f2ccb9bb662e9a94134">util.h</a>
 </li>
-<li>ext_or_cmd_free()
-: <a class="el" href="ext__orport_8c.html#a90e47149804842f4ab232b90e6c76a13">ext_orport.c</a>
+<li>expire_old_onion_keys()
+: <a class="el" href="router_8c.html#a9b04ba161c869beb75a2a1d6f0d44f59">router.c</a>
+, <a class="el" href="router_8h.html#a9b04ba161c869beb75a2a1d6f0d44f59">router.h</a>
+</li>
+<li>ext_or_cmd_free_()
+: <a class="el" href="ext__orport_8c.html#a824f899f80f1f6519c78183deb55963c">ext_orport.c</a>
 </li>
 <li>ext_or_cmd_new()
 : <a class="el" href="ext__orport_8c.html#a9b98903c71b52bfe9d1463aff934f7a3">ext_orport.c</a>
@@ -298,64 +397,56 @@ $(function() {
 , <a class="el" href="onion_8h.html#ae16fc0d065f48abc6dcb87e0336fec24">onion.h</a>
 </li>
 <li>extend_cell_parse()
-: <a class="el" href="onion_8c.html#aaebaeddae4eaa032a5fd4ab9b956ec32">onion.c</a>
-, <a class="el" href="onion_8h.html#aa5b6aa0f7e4fbceb52ce9e421cb14f7e">onion.h</a>
+: <a class="el" href="onion_8h.html#aa5b6aa0f7e4fbceb52ce9e421cb14f7e">onion.h</a>
+, <a class="el" href="onion_8c.html#aaebaeddae4eaa032a5fd4ab9b956ec32">onion.c</a>
 </li>
 <li>extend_info_addr_is_allowed()
-: <a class="el" href="circuitbuild_8c.html#af294fbb6c7b0647de3407c028ee0e2c1">circuitbuild.c</a>
-, <a class="el" href="circuitbuild_8h.html#af294fbb6c7b0647de3407c028ee0e2c1">circuitbuild.h</a>
+: <a class="el" href="circuitbuild_8h.html#af294fbb6c7b0647de3407c028ee0e2c1">circuitbuild.h</a>
+, <a class="el" href="circuitbuild_8c.html#af294fbb6c7b0647de3407c028ee0e2c1">circuitbuild.c</a>
 </li>
 <li>extend_info_describe()
-: <a class="el" href="router_8c.html#a76d2b00d031ef80969722b77807f2f0c">router.c</a>
-, <a class="el" href="router_8h.html#a76d2b00d031ef80969722b77807f2f0c">router.h</a>
+: <a class="el" href="router_8h.html#a76d2b00d031ef80969722b77807f2f0c">router.h</a>
+, <a class="el" href="router_8c.html#a76d2b00d031ef80969722b77807f2f0c">router.c</a>
 </li>
 <li>extend_info_dup()
-: <a class="el" href="circuitbuild_8h.html#ab87b30981d1baacf8452ccca39edc7ae">circuitbuild.h</a>
-, <a class="el" href="circuitbuild_8c.html#ab87b30981d1baacf8452ccca39edc7ae">circuitbuild.c</a>
+: <a class="el" href="circuitbuild_8c.html#ab87b30981d1baacf8452ccca39edc7ae">circuitbuild.c</a>
+, <a class="el" href="circuitbuild_8h.html#ab87b30981d1baacf8452ccca39edc7ae">circuitbuild.h</a>
 </li>
-<li>extend_info_free()
-: <a class="el" href="circuitbuild_8c.html#a2ee63ec586b7d4f06830954b9aefb037">circuitbuild.c</a>
-, <a class="el" href="circuitbuild_8h.html#a2ee63ec586b7d4f06830954b9aefb037">circuitbuild.h</a>
+<li>extend_info_free_()
+: <a class="el" href="circuitbuild_8c.html#a0e247e65bf9d17af8f6628f91d572bae">circuitbuild.c</a>
+, <a class="el" href="circuitbuild_8h.html#a0e247e65bf9d17af8f6628f91d572bae">circuitbuild.h</a>
 </li>
 <li>extend_info_from_node()
-: <a class="el" href="circuitbuild_8c.html#a75ef69147a75a28106140ff64dc49cd8">circuitbuild.c</a>
-, <a class="el" href="circuitbuild_8h.html#ae78b2dc4ee0d019045639d2a33eea506">circuitbuild.h</a>
-</li>
-<li>extend_info_get_description()
-: <a class="el" href="router_8h.html#a4305332e798b11a30372e7f0e63ed15e">router.h</a>
-, <a class="el" href="router_8c.html#a4305332e798b11a30372e7f0e63ed15e">router.c</a>
+: <a class="el" href="circuitbuild_8h.html#ae78b2dc4ee0d019045639d2a33eea506">circuitbuild.h</a>
+, <a class="el" href="circuitbuild_8c.html#a75ef69147a75a28106140ff64dc49cd8">circuitbuild.c</a>
 </li>
 <li>extend_info_is_a_configured_bridge()
-: <a class="el" href="entrynodes_8c.html#a6f341162101f7678384679361c28ae79">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#a6f341162101f7678384679361c28ae79">entrynodes.h</a>
+: <a class="el" href="bridges_8c.html#a6f341162101f7678384679361c28ae79">bridges.c</a>
+, <a class="el" href="bridges_8h.html#a6f341162101f7678384679361c28ae79">bridges.h</a>
 </li>
 <li>extend_info_new()
-: <a class="el" href="circuitbuild_8c.html#a117b09cbcdcf8f43a6b61226c83d7b93">circuitbuild.c</a>
-, <a class="el" href="circuitbuild_8h.html#a117b09cbcdcf8f43a6b61226c83d7b93">circuitbuild.h</a>
+: <a class="el" href="circuitbuild_8h.html#a813f2d14b4d62f7a52fcdfc9d9d2619d">circuitbuild.h</a>
+, <a class="el" href="circuitbuild_8c.html#a813f2d14b4d62f7a52fcdfc9d9d2619d">circuitbuild.c</a>
 </li>
 <li>extended_cell_format()
-: <a class="el" href="onion_8h.html#adce24dca5e73ba9235510c3469c3e8de">onion.h</a>
-, <a class="el" href="onion_8c.html#adce24dca5e73ba9235510c3469c3e8de">onion.c</a>
+: <a class="el" href="onion_8c.html#adce24dca5e73ba9235510c3469c3e8de">onion.c</a>
+, <a class="el" href="onion_8h.html#adce24dca5e73ba9235510c3469c3e8de">onion.h</a>
 </li>
 <li>extended_cell_parse()
-: <a class="el" href="onion_8h.html#ada47de2980f97dbc8060822bf6af9ee7">onion.h</a>
-, <a class="el" href="onion_8c.html#ade647c0f619362d8743b1ceff7822925">onion.c</a>
+: <a class="el" href="onion_8c.html#ade647c0f619362d8743b1ceff7822925">onion.c</a>
+, <a class="el" href="onion_8h.html#ada47de2980f97dbc8060822bf6af9ee7">onion.h</a>
 </li>
 <li>extrainfo_dump_to_string()
 : <a class="el" href="router_8h.html#aa109b97230313d23488d9743dc3ad34a">router.h</a>
 , <a class="el" href="router_8c.html#a42c6925039da5abc3c264e5f00b72bdb">router.c</a>
 </li>
-<li>extrainfo_free()
-: <a class="el" href="routerlist_8c.html#a36bbf9bf41105f61c8f1f5b6ffc3b12b">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#a36bbf9bf41105f61c8f1f5b6ffc3b12b">routerlist.h</a>
-</li>
-<li>extrainfo_get_by_descriptor_digest()
-: <a class="el" href="routerlist_8c.html#ab49c0521b1d8a01f75abf4438992fd08">routerlist.c</a>
-, <a class="el" href="routerlist_8h.html#ab49c0521b1d8a01f75abf4438992fd08">routerlist.h</a>
+<li>extrainfo_free_()
+: <a class="el" href="routerlist_8h.html#a931e90ae1f57e2107a2c206c1941f231">routerlist.h</a>
+, <a class="el" href="routerlist_8c.html#a931e90ae1f57e2107a2c206c1941f231">routerlist.c</a>
 </li>
 <li>extrainfo_parse_entry_from_string()
-: <a class="el" href="routerparse_8h.html#a5c7183356964eccb2338e4ce2c80eb36">routerparse.h</a>
-, <a class="el" href="routerparse_8c.html#a5c7183356964eccb2338e4ce2c80eb36">routerparse.c</a>
+: <a class="el" href="routerparse_8c.html#a5c7183356964eccb2338e4ce2c80eb36">routerparse.c</a>
+, <a class="el" href="routerparse_8h.html#a5c7183356964eccb2338e4ce2c80eb36">routerparse.h</a>
 </li>
 </ul>
 </div><!-- contents -->

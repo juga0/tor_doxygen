@@ -77,30 +77,39 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
 <code>#include &quot;addressmap.h&quot;</code><br />
 <code>#include &quot;backtrace.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="bridges_8h_source.html">bridges.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="buffers_8h_source.html">buffers.h</a>&quot;</code><br />
+<code>#include &quot;buffers_tls.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="channel_8h_source.html">channel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="channeltls_8h_source.html">channeltls.h</a>&quot;</code><br />
+<code>#include &quot;channelpadding.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitbuild_8h_source.html">circuitbuild.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitlist_8h_source.html">circuitlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuituse_8h_source.html">circuituse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="circuitmux__ewma_8h_source.html">circuitmux_ewma.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="command_8h_source.html">command.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="compress_8h_source.html">compress.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;confparse.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__edge_8h_source.html">connection_edge.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__or_8h_source.html">connection_or.h</a>&quot;</code><br />
+<code>#include &quot;consdiffmgr.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cpuworker_8h_source.html">cpuworker.h</a>&quot;</code><br />
 <code>#include &quot;crypto_s2k.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="directory_8h_source.html">directory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dirserv_8h_source.html">dirserv.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirvote.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dns_8h_source.html">dns.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dnsserv_8h_source.html">dnsserv.h</a>&quot;</code><br />
 <code>#include &quot;dos.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="geoip_8h_source.html">geoip.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hibernate_8h_source.html">hibernate.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__cache_8h_source.html">hs_cache.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__circuitmap_8h_source.html">hs_circuitmap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__client_8h_source.html">hs_client.h</a>&quot;</code><br />
 <code>#include &quot;keypin.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="microdesc_8h_source.html">microdesc.h</a>&quot;</code><br />
@@ -122,14 +131,18 @@ $(function() {
 <code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerparse_8h_source.html">routerparse.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="scheduler_8h_source.html">scheduler.h</a>&quot;</code><br />
-<code>#include &quot;shared_random.h&quot;</code><br />
 <code>#include &quot;statefile.h&quot;</code><br />
 <code>#include &quot;status.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="tor__api_8h_source.html">tor_api.h</a>&quot;</code><br />
+<code>#include &quot;tor_api_internal.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="util__process_8h_source.html">util_process.h</a>&quot;</code><br />
 <code>#include &quot;ext_orport.h&quot;</code><br />
 <code>#include &quot;memarea.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="sandbox_8h_source.html">sandbox.h</a>&quot;</code><br />
 <code>#include &lt;event2/event.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirauth/dirvote.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mode_8h_source.html">dirauth/mode.h</a>&quot;</code><br />
+<code>#include &quot;dirauth/shared_random.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -145,9 +158,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a61c0ba84d526c3feb5ef53990188c5f4"><td class="memItemLeft" align="right" valign="top"><a id="a61c0ba84d526c3feb5ef53990188c5f4"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b>(name)&#160;&#160;&#160;static int name ## _callback(time_t, const <a class="el" href="structor__options__t.html">or_options_t</a> *)</td></tr>
 <tr class="separator:a61c0ba84d526c3feb5ef53990188c5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61c0ba84d526c3feb5ef53990188c5f4"><td class="memItemLeft" align="right" valign="top"><a id="a61c0ba84d526c3feb5ef53990188c5f4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b>(name)&#160;&#160;&#160;PERIODIC_EVENT(name)</td></tr>
-<tr class="separator:a61c0ba84d526c3feb5ef53990188c5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83257838d9d67a78d7a4a641ac6a7ab"><td class="memItemLeft" align="right" valign="top"><a id="af83257838d9d67a78d7a4a641ac6a7ab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b>(name,  r,  f)&#160;&#160;&#160;PERIODIC_EVENT(name, r, f)</td></tr>
+<tr class="separator:af83257838d9d67a78d7a4a641ac6a7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaf7e436d62d1f8cf19d50eed0c51d36"><td class="memItemLeft" align="right" valign="top"><a id="aaaf7e436d62d1f8cf19d50eed0c51d36"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NAMED_CALLBACK</b>(name)&#160;&#160;&#160;STMT_BEGIN name ## _event = find_periodic_event( #name ); STMT_END</td></tr>
 <tr class="separator:aaaf7e436d62d1f8cf19d50eed0c51d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +185,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a264934c7bcc1ac15391784ab06a53e9b"><td class="memItemLeft" align="right" valign="top"><a id="a264934c7bcc1ac15391784ab06a53e9b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CHECK_WRITE_STATS_INTERVAL</b>&#160;&#160;&#160;(60*60)</td></tr>
 <tr class="separator:a264934c7bcc1ac15391784ab06a53e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d6aa1c317f917897ca8f91167a9fdd"><td class="memItemLeft" align="right" valign="top"><a id="ae4d6aa1c317f917897ca8f91167a9fdd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CHANNEL_CHECK_INTERVAL</b>&#160;&#160;&#160;(60*60)</td></tr>
+<tr class="separator:ae4d6aa1c317f917897ca8f91167a9fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b76dbebcfc1f60ce3ff3836d376ea72"><td class="memItemLeft" align="right" valign="top"><a id="a5b76dbebcfc1f60ce3ff3836d376ea72"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CLEAN_CACHES_INTERVAL</b>&#160;&#160;&#160;(30*60)</td></tr>
 <tr class="separator:a5b76dbebcfc1f60ce3ff3836d376ea72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,12 +203,15 @@ Macros</h2></td></tr>
 <tr class="memitem:ab526e19de69caaea048600bed93de463"><td class="memItemLeft" align="right" valign="top"><a id="ab526e19de69caaea048600bed93de463"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BRIDGE_STATUSFILE_INTERVAL</b>&#160;&#160;&#160;(30*60)</td></tr>
 <tr class="separator:ab526e19de69caaea048600bed93de463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5038b7ef2d6594dced06d8c80d088b1"><td class="memItemLeft" align="right" valign="top"><a id="ac5038b7ef2d6594dced06d8c80d088b1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PORT_FORWARDING_CHECK_INTERVAL</b>&#160;&#160;&#160;5</td></tr>
-<tr class="separator:ac5038b7ef2d6594dced06d8c80d088b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70593074248c9076b05ba0f89f335a0"><td class="memItemLeft" align="right" valign="top"><a id="ac70593074248c9076b05ba0f89f335a0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CDM_CLEAN_CALLBACK_INTERVAL</b>&#160;&#160;&#160;600</td></tr>
+<tr class="separator:ac70593074248c9076b05ba0f89f335a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6133206181b9206d2881c9b3cfa2e004"><td class="memItemLeft" align="right" valign="top"><a id="a6133206181b9206d2881c9b3cfa2e004"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NUM_JUMPED_SECONDS_BEFORE_WARN</b>&#160;&#160;&#160;100</td></tr>
 <tr class="separator:a6133206181b9206d2881c9b3cfa2e004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abacbba910e9163342867bdd02baea1d2"><td class="memItemLeft" align="right" valign="top"><a id="abacbba910e9163342867bdd02baea1d2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NUM_IDLE_SECONDS_BEFORE_WARN</b>&#160;&#160;&#160;3600</td></tr>
+<tr class="separator:abacbba910e9163342867bdd02baea1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1991c0e9a57b6fa24ba1352c1804789b"><td class="memItemLeft" align="right" valign="top"><a id="a1991c0e9a57b6fa24ba1352c1804789b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>UPTIME_CUTOFF_FOR_NEW_BANDWIDTH_TEST</b>&#160;&#160;&#160;(6*60*60)</td></tr>
 <tr class="separator:a1991c0e9a57b6fa24ba1352c1804789b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,25 +222,48 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN</b>(name)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a01c8f148a1eb2eb18b837e8fc94f2aaa">sandbox_cfg_allow_open_filename</a>(&amp;cfg, tor_strdup(name))</td></tr>
 <tr class="separator:a12f9606a3c699a7a69c1ff7afa7e0302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bb578dcfb1fd4177b649d28fb02c42"><td class="memItemLeft" align="right" valign="top"><a id="a50bb578dcfb1fd4177b649d28fb02c42"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_DATADIR</b>(name)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a01c8f148a1eb2eb18b837e8fc94f2aaa">sandbox_cfg_allow_open_filename</a>(&amp;cfg, <a class="el" href="config_8h.html#a66cb7f93c516a96a6c78ea974f0753b8">get_datadir_fname</a>(name))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_DATADIR</b>(name)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a01c8f148a1eb2eb18b837e8fc94f2aaa">sandbox_cfg_allow_open_filename</a>(&amp;cfg, get_datadir_fname(name))</td></tr>
 <tr class="separator:a50bb578dcfb1fd4177b649d28fb02c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58977b775e9faa29ab845880c7730c43"><td class="memItemLeft" align="right" valign="top"><a id="a58977b775e9faa29ab845880c7730c43"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_DATADIR2</b>(name,  name2)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a01c8f148a1eb2eb18b837e8fc94f2aaa">sandbox_cfg_allow_open_filename</a>(&amp;cfg, <a class="el" href="config_8h.html#a40e74946f615b2f9f74caee757120017">get_datadir_fname2</a>((name), (name2)))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_DATADIR2</b>(name,  name2)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a01c8f148a1eb2eb18b837e8fc94f2aaa">sandbox_cfg_allow_open_filename</a>(&amp;cfg, get_datadir_fname2((name), (name2)))</td></tr>
 <tr class="separator:a58977b775e9faa29ab845880c7730c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46edea22ffc01b1cb727082018314c50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_DATADIR_SUFFIX</b>(name,  suffix)</td></tr>
 <tr class="separator:a46edea22ffc01b1cb727082018314c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117db210c9967b3e1f36a3e1578393aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_DATADIR2_SUFFIX</b>(name,  name2,  suffix)</td></tr>
 <tr class="separator:a117db210c9967b3e1f36a3e1578393aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d6228a2f44545f9be6f5d0b481fd326"><td class="memItemLeft" align="right" valign="top"><a id="a8d6228a2f44545f9be6f5d0b481fd326"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_KEY_DIRECTORY</b>()&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a01c8f148a1eb2eb18b837e8fc94f2aaa">sandbox_cfg_allow_open_filename</a>(&amp;cfg, tor_strdup(options-&gt;KeyDirectory))</td></tr>
+<tr class="separator:a8d6228a2f44545f9be6f5d0b481fd326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26ac59f8557e5bb3a07c1d9e97c7d4d"><td class="memItemLeft" align="right" valign="top"><a id="ac26ac59f8557e5bb3a07c1d9e97c7d4d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_CACHEDIR</b>(name)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a01c8f148a1eb2eb18b837e8fc94f2aaa">sandbox_cfg_allow_open_filename</a>(&amp;cfg, get_cachedir_fname(name))</td></tr>
+<tr class="separator:ac26ac59f8557e5bb3a07c1d9e97c7d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51293a1360bdc09441cbc1dffa28cbcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_CACHEDIR_SUFFIX</b>(name,  suffix)</td></tr>
+<tr class="separator:a51293a1360bdc09441cbc1dffa28cbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f60793f4a3bba7c6d546b1e10078ec0"><td class="memItemLeft" align="right" valign="top"><a id="a6f60793f4a3bba7c6d546b1e10078ec0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_KEYDIR</b>(name)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a01c8f148a1eb2eb18b837e8fc94f2aaa">sandbox_cfg_allow_open_filename</a>(&amp;cfg, get_keydir_fname(name))</td></tr>
+<tr class="separator:a6f60793f4a3bba7c6d546b1e10078ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabe9179749fd6ec1e36a87f93ae3371"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>OPEN_KEYDIR_SUFFIX</b>(name,  suffix)</td></tr>
+<tr class="separator:aaabe9179749fd6ec1e36a87f93ae3371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65cafe1ae766205ca499df9f43d22de4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RENAME_SUFFIX</b>(name,  suffix)</td></tr>
 <tr class="separator:a65cafe1ae766205ca499df9f43d22de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf153776359196327f3dd407dbad8ed2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RENAME_SUFFIX2</b>(prefix,  name,  suffix)</td></tr>
 <tr class="separator:adf153776359196327f3dd407dbad8ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50f2ff40624c38201f74cdafca667c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RENAME_CACHEDIR_SUFFIX</b>(name,  suffix)</td></tr>
+<tr class="separator:ad50f2ff40624c38201f74cdafca667c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c7588bb59f20430b112f8ed8eaf605"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RENAME_KEYDIR_SUFFIX</b>(name,  suffix)</td></tr>
+<tr class="separator:ae9c7588bb59f20430b112f8ed8eaf605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add3c63d613d34ac8f34bf3d1e49f5bb8"><td class="memItemLeft" align="right" valign="top"><a id="add3c63d613d34ac8f34bf3d1e49f5bb8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>STAT_DATADIR</b>(name)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a177c1385aca4eafa77e6228e1d687f6d">sandbox_cfg_allow_stat_filename</a>(&amp;cfg, <a class="el" href="config_8h.html#a66cb7f93c516a96a6c78ea974f0753b8">get_datadir_fname</a>(name))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STAT_DATADIR</b>(name)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a177c1385aca4eafa77e6228e1d687f6d">sandbox_cfg_allow_stat_filename</a>(&amp;cfg, get_datadir_fname(name))</td></tr>
 <tr class="separator:add3c63d613d34ac8f34bf3d1e49f5bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964d8140be1cf9a67c46a715f7fc7135"><td class="memItemLeft" align="right" valign="top"><a id="a964d8140be1cf9a67c46a715f7fc7135"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STAT_CACHEDIR</b>(name)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a177c1385aca4eafa77e6228e1d687f6d">sandbox_cfg_allow_stat_filename</a>(&amp;cfg, get_cachedir_fname(name))</td></tr>
+<tr class="separator:a964d8140be1cf9a67c46a715f7fc7135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3565bbb95841e277229b62ec0325aedb"><td class="memItemLeft" align="right" valign="top"><a id="a3565bbb95841e277229b62ec0325aedb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>STAT_DATADIR2</b>(name,  name2)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a177c1385aca4eafa77e6228e1d687f6d">sandbox_cfg_allow_stat_filename</a>(&amp;cfg, <a class="el" href="config_8h.html#a40e74946f615b2f9f74caee757120017">get_datadir_fname2</a>((name), (name2)))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STAT_DATADIR2</b>(name,  name2)&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a177c1385aca4eafa77e6228e1d687f6d">sandbox_cfg_allow_stat_filename</a>(&amp;cfg, get_datadir_fname2((name), (name2)))</td></tr>
 <tr class="separator:a3565bbb95841e277229b62ec0325aedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf04cf4cc406411a69d05cd734ef2b3"><td class="memItemLeft" align="right" valign="top"><a id="adcf04cf4cc406411a69d05cd734ef2b3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STAT_KEY_DIRECTORY</b>()&#160;&#160;&#160;<a class="el" href="sandbox_8h.html#a177c1385aca4eafa77e6228e1d687f6d">sandbox_cfg_allow_stat_filename</a>(&amp;cfg, tor_strdup(options-&gt;KeyDirectory))</td></tr>
+<tr class="separator:adcf04cf4cc406411a69d05cd734ef2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -252,13 +294,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>evdns_shutdown</b> (i
 <tr class="separator:a5be08a2aab34d457e06e2a7b274e60a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf49e099932e5d6d47c98bb73886de79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#abf49e099932e5d6d47c98bb73886de79">MOCK_IMPL</a> (uint64_t, get_bytes_read,(void))</td></tr>
 <tr class="separator:abf49e099932e5d6d47c98bb73886de79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84d2e15d7af6c3e939584809bbad8255"><td class="memItemLeft" align="right" valign="top"><a id="a84d2e15d7af6c3e939584809bbad8255"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_IMPL</b> (uint64_t, get_bytes_written,(void))</td></tr>
+<tr class="memitem:a84d2e15d7af6c3e939584809bbad8255"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a84d2e15d7af6c3e939584809bbad8255">MOCK_IMPL</a> (uint64_t, get_bytes_written,(void))</td></tr>
 <tr class="separator:a84d2e15d7af6c3e939584809bbad8255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2048d2c6e4ab00cb49e0deed579e56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a0d2048d2c6e4ab00cb49e0deed579e56">stats_increment_bytes_read_and_written</a> (uint64_t r, uint64_t w)</td></tr>
+<tr class="separator:a0d2048d2c6e4ab00cb49e0deed579e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15bfc77f804db60403980cb1abed4804"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a15bfc77f804db60403980cb1abed4804">connection_watch_events</a> (<a class="el" href="structconnection__t.html">connection_t</a> *conn, <a class="el" href="main_8h.html#a09655587c39ba1418b35c6a7b1b78af6">watchable_events_t</a> events)</td></tr>
 <tr class="separator:a15bfc77f804db60403980cb1abed4804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a998fed9e444283650d481cf0f716beac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a998fed9e444283650d481cf0f716beac">connection_is_reading</a> (<a class="el" href="structconnection__t.html">connection_t</a> *conn)</td></tr>
 <tr class="separator:a998fed9e444283650d481cf0f716beac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cfbc2252dcc87b85061c590b4adb1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ad4cfbc2252dcc87b85061c590b4adb1c">reset_main_loop_counters</a> (void)</td></tr>
+<tr class="separator:ad4cfbc2252dcc87b85061c590b4adb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbcd3675aa2873ead2772ccaa296ff9e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#abbcd3675aa2873ead2772ccaa296ff9e">get_main_loop_success_count</a> (void)</td></tr>
+<tr class="separator:abbcd3675aa2873ead2772ccaa296ff9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892ac378990bb6c836687b1b0621bccb"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a892ac378990bb6c836687b1b0621bccb">get_main_loop_error_count</a> (void)</td></tr>
+<tr class="separator:a892ac378990bb6c836687b1b0621bccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985dea1589f3c5501528be1fae39c0e5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a985dea1589f3c5501528be1fae39c0e5">get_main_loop_idle_count</a> (void)</td></tr>
+<tr class="separator:a985dea1589f3c5501528be1fae39c0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7323bc27c0cf63955e66be9ec6896c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ae7323bc27c0cf63955e66be9ec6896c6">MOCK_IMPL</a> (void, connection_stop_reading,(<a class="el" href="structconnection__t.html">connection_t</a> *conn))</td></tr>
 <tr class="separator:ae7323bc27c0cf63955e66be9ec6896c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af812166e44b26c20f8a67b9f7514dcdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#af812166e44b26c20f8a67b9f7514dcdd">MOCK_IMPL</a> (void, connection_start_reading,(<a class="el" href="structconnection__t.html">connection_t</a> *conn))</td></tr>
@@ -269,8 +320,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>evdns_shutdown</b> (i
 <tr class="separator:a64e85cfa1139d62b816528f81e04959b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a185683f405a47b1540c494acaa5157ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a185683f405a47b1540c494acaa5157ec">MOCK_IMPL</a> (void, connection_start_writing,(<a class="el" href="structconnection__t.html">connection_t</a> *conn))</td></tr>
 <tr class="separator:a185683f405a47b1540c494acaa5157ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15eec4f873b2fb50c2d7a94e45947ab2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a15eec4f873b2fb50c2d7a94e45947ab2">tell_event_loop_to_finish</a> (void)</td></tr>
-<tr class="separator:a15eec4f873b2fb50c2d7a94e45947ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca79fee181d0c89fe92473cad0621d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a9ca79fee181d0c89fe92473cad0621d6">tor_shutdown_event_loop_and_exit</a> (int exitcode)</td></tr>
+<tr class="separator:a9ca79fee181d0c89fe92473cad0621d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb7a9c7572d86e408db43bd1c5cbb7b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#adbb7a9c7572d86e408db43bd1c5cbb7b">tor_event_loop_shutdown_is_pending</a> (void)</td></tr>
+<tr class="separator:adbb7a9c7572d86e408db43bd1c5cbb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47f0f7ed57367c80e2cbf1769b7bb47c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a47f0f7ed57367c80e2cbf1769b7bb47c">connection_stop_reading_from_linked_conn</a> (<a class="el" href="structconnection__t.html">connection_t</a> *conn)</td></tr>
 <tr class="separator:a47f0f7ed57367c80e2cbf1769b7bb47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca5b13a7f212ef86cc8f0daf5706fc2"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a5ca5b13a7f212ef86cc8f0daf5706fc2">close_closeable_connections</a> (void)</td></tr>
@@ -283,99 +336,141 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>evdns_shutdown</b> (i
 <tr class="separator:ac64189cc036980dc5785f76d85db9fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3bc70df8ef6a05b8a770f5bf54c0e80"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#af3bc70df8ef6a05b8a770f5bf54c0e80">get_signewnym_epoch</a> (void)</td></tr>
 <tr class="separator:af3bc70df8ef6a05b8a770f5bf54c0e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7120e610d7f51354a2f5ee62c9972a3e"><td class="memItemLeft" align="right" valign="top"><a id="a7120e610d7f51354a2f5ee62c9972a3e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (<a class="el" href="router_8h.html#adf9d6e2bf82d6ddfb3e47cd7d49b57ec">rotate_onion_key</a>)</td></tr>
-<tr class="separator:a7120e610d7f51354a2f5ee62c9972a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c5d1e8eaa5f8c9c7605573fbcd6b72"><td class="memItemLeft" align="right" valign="top"><a id="ac3c5d1e8eaa5f8c9c7605573fbcd6b72"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_ed_keys)</td></tr>
-<tr class="separator:ac3c5d1e8eaa5f8c9c7605573fbcd6b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ab06491e91200301562054d9568d21"><td class="memItemLeft" align="right" valign="top"><a id="aa7ab06491e91200301562054d9568d21"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (launch_descriptor_fetches)</td></tr>
-<tr class="separator:aa7ab06491e91200301562054d9568d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ecc625f48ae76dfe36ad59e2a2f021e"><td class="memItemLeft" align="right" valign="top"><a id="a6ecc625f48ae76dfe36ad59e2a2f021e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (rotate_x509_certificate)</td></tr>
-<tr class="separator:a6ecc625f48ae76dfe36ad59e2a2f021e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70c2a507e091a553eb4ab7e18123df1c"><td class="memItemLeft" align="right" valign="top"><a id="a70c2a507e091a553eb4ab7e18123df1c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (add_entropy)</td></tr>
 <tr class="separator:a70c2a507e091a553eb4ab7e18123df1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a842ceb7e640a5193feb0901c3d52c502"><td class="memItemLeft" align="right" valign="top"><a id="a842ceb7e640a5193feb0901c3d52c502"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (launch_reachability_tests)</td></tr>
-<tr class="separator:a842ceb7e640a5193feb0901c3d52c502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98a836aab3e8bcf4527212234d79afe"><td class="memItemLeft" align="right" valign="top"><a id="ae98a836aab3e8bcf4527212234d79afe"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (downrate_stability)</td></tr>
-<tr class="separator:ae98a836aab3e8bcf4527212234d79afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a801bc09b4c4163b0bf49dbd390849b8b"><td class="memItemLeft" align="right" valign="top"><a id="a801bc09b4c4163b0bf49dbd390849b8b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (save_stability)</td></tr>
-<tr class="separator:a801bc09b4c4163b0bf49dbd390849b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e63b5d6498c529752862e847a7aeba2"><td class="memItemLeft" align="right" valign="top"><a id="a6e63b5d6498c529752862e847a7aeba2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_authority_cert)</td></tr>
 <tr class="separator:a6e63b5d6498c529752862e847a7aeba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5203ff3376eb51da782ac3613a751d05"><td class="memItemLeft" align="right" valign="top"><a id="a5203ff3376eb51da782ac3613a751d05"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_expired_networkstatus)</td></tr>
-<tr class="separator:a5203ff3376eb51da782ac3613a751d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabd86b76ba394ad2a7269a15819c9f66"><td class="memItemLeft" align="right" valign="top"><a id="aabd86b76ba394ad2a7269a15819c9f66"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (write_stats_file)</td></tr>
-<tr class="separator:aabd86b76ba394ad2a7269a15819c9f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31f6a361bcce9c585ce4f9d50046d91"><td class="memItemLeft" align="right" valign="top"><a id="ae31f6a361bcce9c585ce4f9d50046d91"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (record_bridge_stats)</td></tr>
-<tr class="separator:ae31f6a361bcce9c585ce4f9d50046d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac32f023692f1ea2e5162b12f70ebecbc"><td class="memItemLeft" align="right" valign="top"><a id="ac32f023692f1ea2e5162b12f70ebecbc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (clean_caches)</td></tr>
-<tr class="separator:ac32f023692f1ea2e5162b12f70ebecbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63ff587e490871edba188ed31a41e177"><td class="memItemLeft" align="right" valign="top"><a id="a63ff587e490871edba188ed31a41e177"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (<a class="el" href="rendcache_8h.html#aab95357bc318649e8bbce982ecbae0d6">rend_cache_failure_clean</a>)</td></tr>
-<tr class="separator:a63ff587e490871edba188ed31a41e177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20c4fef22ad1f2bd632dc5a708b01607"><td class="memItemLeft" align="right" valign="top"><a id="a20c4fef22ad1f2bd632dc5a708b01607"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (retry_dns)</td></tr>
-<tr class="separator:a20c4fef22ad1f2bd632dc5a708b01607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb667f36674d07284f229180ec0056ef"><td class="memItemLeft" align="right" valign="top"><a id="aeb667f36674d07284f229180ec0056ef"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_canonical_channels)</td></tr>
+<tr class="separator:aeb667f36674d07284f229180ec0056ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d6af6ca4bc8bbd415fa0222278625c0"><td class="memItemLeft" align="right" valign="top"><a id="a4d6af6ca4bc8bbd415fa0222278625c0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_descriptor)</td></tr>
 <tr class="separator:a4d6af6ca4bc8bbd415fa0222278625c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23377382502038b62ddd08532b69f140"><td class="memItemLeft" align="right" valign="top"><a id="a23377382502038b62ddd08532b69f140"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_for_reachability_bw)</td></tr>
-<tr class="separator:a23377382502038b62ddd08532b69f140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa331e6de2c1e65e9d11e3b25d4e817e8"><td class="memItemLeft" align="right" valign="top"><a id="aa331e6de2c1e65e9d11e3b25d4e817e8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (fetch_networkstatus)</td></tr>
-<tr class="separator:aa331e6de2c1e65e9d11e3b25d4e817e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45d309b3ece619475909dfa14f8219ad"><td class="memItemLeft" align="right" valign="top"><a id="a45d309b3ece619475909dfa14f8219ad"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (retry_listeners)</td></tr>
-<tr class="separator:a45d309b3ece619475909dfa14f8219ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5606b289f66d729799545d638148e73"><td class="memItemLeft" align="right" valign="top"><a id="af5606b289f66d729799545d638148e73"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (expire_old_ciruits_serverside)</td></tr>
-<tr class="separator:af5606b289f66d729799545d638148e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a562c6c1ed911a83a9ef0d1fd95326bda"><td class="memItemLeft" align="right" valign="top"><a id="a562c6c1ed911a83a9ef0d1fd95326bda"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_dns_honesty)</td></tr>
 <tr class="separator:a562c6c1ed911a83a9ef0d1fd95326bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3088c97b797d6635425155a9b2a2987"><td class="memItemLeft" align="right" valign="top"><a id="ab3088c97b797d6635425155a9b2a2987"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (write_bridge_ns)</td></tr>
-<tr class="separator:ab3088c97b797d6635425155a9b2a2987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4802be732438ef74d362a48c34e8575e"><td class="memItemLeft" align="right" valign="top"><a id="a4802be732438ef74d362a48c34e8575e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_fw_helper_app)</td></tr>
-<tr class="separator:a4802be732438ef74d362a48c34e8575e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c5d1e8eaa5f8c9c7605573fbcd6b72"><td class="memItemLeft" align="right" valign="top"><a id="ac3c5d1e8eaa5f8c9c7605573fbcd6b72"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_ed_keys)</td></tr>
+<tr class="separator:ac3c5d1e8eaa5f8c9c7605573fbcd6b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5203ff3376eb51da782ac3613a751d05"><td class="memItemLeft" align="right" valign="top"><a id="a5203ff3376eb51da782ac3613a751d05"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_expired_networkstatus)</td></tr>
+<tr class="separator:a5203ff3376eb51da782ac3613a751d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23377382502038b62ddd08532b69f140"><td class="memItemLeft" align="right" valign="top"><a id="a23377382502038b62ddd08532b69f140"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_for_reachability_bw)</td></tr>
+<tr class="separator:a23377382502038b62ddd08532b69f140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4bb3e8a48d13b18ba833e3098cb58d"><td class="memItemLeft" align="right" valign="top"><a id="a1d4bb3e8a48d13b18ba833e3098cb58d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (check_onion_keys_expiry_time)</td></tr>
+<tr class="separator:a1d4bb3e8a48d13b18ba833e3098cb58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32f023692f1ea2e5162b12f70ebecbc"><td class="memItemLeft" align="right" valign="top"><a id="ac32f023692f1ea2e5162b12f70ebecbc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (clean_caches)</td></tr>
+<tr class="separator:ac32f023692f1ea2e5162b12f70ebecbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21c13da9b760dbe98e7586b23ca4fe8"><td class="memItemLeft" align="right" valign="top"><a id="ae21c13da9b760dbe98e7586b23ca4fe8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (clean_consdiffmgr)</td></tr>
+<tr class="separator:ae21c13da9b760dbe98e7586b23ca4fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb80b4b9c2697e48c76b3981dc05e4d"><td class="memItemLeft" align="right" valign="top"><a id="a2bb80b4b9c2697e48c76b3981dc05e4d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (dirvote)</td></tr>
+<tr class="separator:a2bb80b4b9c2697e48c76b3981dc05e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98a836aab3e8bcf4527212234d79afe"><td class="memItemLeft" align="right" valign="top"><a id="ae98a836aab3e8bcf4527212234d79afe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (downrate_stability)</td></tr>
+<tr class="separator:ae98a836aab3e8bcf4527212234d79afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5606b289f66d729799545d638148e73"><td class="memItemLeft" align="right" valign="top"><a id="af5606b289f66d729799545d638148e73"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (expire_old_ciruits_serverside)</td></tr>
+<tr class="separator:af5606b289f66d729799545d638148e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa331e6de2c1e65e9d11e3b25d4e817e8"><td class="memItemLeft" align="right" valign="top"><a id="aa331e6de2c1e65e9d11e3b25d4e817e8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (fetch_networkstatus)</td></tr>
+<tr class="separator:aa331e6de2c1e65e9d11e3b25d4e817e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f10af90e70a3dd7d96ec7b1e2443442"><td class="memItemLeft" align="right" valign="top"><a id="a3f10af90e70a3dd7d96ec7b1e2443442"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (heartbeat)</td></tr>
 <tr class="separator:a3f10af90e70a3dd7d96ec7b1e2443442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4cd69f90559ab97b86f0b5ce1e8a6b9"><td class="memItemLeft" align="right" valign="top"><a id="ae4cd69f90559ab97b86f0b5ce1e8a6b9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (hs_service)</td></tr>
+<tr class="separator:ae4cd69f90559ab97b86f0b5ce1e8a6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ab06491e91200301562054d9568d21"><td class="memItemLeft" align="right" valign="top"><a id="aa7ab06491e91200301562054d9568d21"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (launch_descriptor_fetches)</td></tr>
+<tr class="separator:aa7ab06491e91200301562054d9568d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842ceb7e640a5193feb0901c3d52c502"><td class="memItemLeft" align="right" valign="top"><a id="a842ceb7e640a5193feb0901c3d52c502"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (launch_reachability_tests)</td></tr>
+<tr class="separator:a842ceb7e640a5193feb0901c3d52c502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481f1be740f2844acff23dce38992c2f"><td class="memItemLeft" align="right" valign="top"><a id="a481f1be740f2844acff23dce38992c2f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (reachability_warnings)</td></tr>
+<tr class="separator:a481f1be740f2844acff23dce38992c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31f6a361bcce9c585ce4f9d50046d91"><td class="memItemLeft" align="right" valign="top"><a id="ae31f6a361bcce9c585ce4f9d50046d91"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (record_bridge_stats)</td></tr>
+<tr class="separator:ae31f6a361bcce9c585ce4f9d50046d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ff587e490871edba188ed31a41e177"><td class="memItemLeft" align="right" valign="top"><a id="a63ff587e490871edba188ed31a41e177"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (<a class="el" href="rendcache_8h.html#aab95357bc318649e8bbce982ecbae0d6">rend_cache_failure_clean</a>)</td></tr>
+<tr class="separator:a63ff587e490871edba188ed31a41e177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f4b777c87a77b114d0c9cd784ac23c"><td class="memItemLeft" align="right" valign="top"><a id="a21f4b777c87a77b114d0c9cd784ac23c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (reset_padding_counts)</td></tr>
+<tr class="separator:a21f4b777c87a77b114d0c9cd784ac23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c4fef22ad1f2bd632dc5a708b01607"><td class="memItemLeft" align="right" valign="top"><a id="a20c4fef22ad1f2bd632dc5a708b01607"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (retry_dns)</td></tr>
+<tr class="separator:a20c4fef22ad1f2bd632dc5a708b01607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d309b3ece619475909dfa14f8219ad"><td class="memItemLeft" align="right" valign="top"><a id="a45d309b3ece619475909dfa14f8219ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (retry_listeners)</td></tr>
+<tr class="separator:a45d309b3ece619475909dfa14f8219ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7120e610d7f51354a2f5ee62c9972a3e"><td class="memItemLeft" align="right" valign="top"><a id="a7120e610d7f51354a2f5ee62c9972a3e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (<a class="el" href="router_8h.html#adf9d6e2bf82d6ddfb3e47cd7d49b57ec">rotate_onion_key</a>)</td></tr>
+<tr class="separator:a7120e610d7f51354a2f5ee62c9972a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ecc625f48ae76dfe36ad59e2a2f021e"><td class="memItemLeft" align="right" valign="top"><a id="a6ecc625f48ae76dfe36ad59e2a2f021e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (rotate_x509_certificate)</td></tr>
+<tr class="separator:a6ecc625f48ae76dfe36ad59e2a2f021e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801bc09b4c4163b0bf49dbd390849b8b"><td class="memItemLeft" align="right" valign="top"><a id="a801bc09b4c4163b0bf49dbd390849b8b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (save_stability)</td></tr>
+<tr class="separator:a801bc09b4c4163b0bf49dbd390849b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1d1e3ea092bf30a47eae0c4a781106"><td class="memItemLeft" align="right" valign="top"><a id="a3c1d1e3ea092bf30a47eae0c4a781106"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (save_state)</td></tr>
+<tr class="separator:a3c1d1e3ea092bf30a47eae0c4a781106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3088c97b797d6635425155a9b2a2987"><td class="memItemLeft" align="right" valign="top"><a id="ab3088c97b797d6635425155a9b2a2987"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (write_bridge_ns)</td></tr>
+<tr class="separator:ab3088c97b797d6635425155a9b2a2987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd86b76ba394ad2a7269a15819c9f66"><td class="memItemLeft" align="right" valign="top"><a id="aabd86b76ba394ad2a7269a15819c9f66"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CALLBACK</b> (write_stats_file)</td></tr>
+<tr class="separator:aabd86b76ba394ad2a7269a15819c9f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa79d6ccbf076c44946971ac8dbbb5e1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aa79d6ccbf076c44946971ac8dbbb5e1d">reset_all_main_loop_timers</a> (void)</td></tr>
 <tr class="separator:aa79d6ccbf076c44946971ac8dbbb5e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac02d62503e0f6d84ffc919a7cc7a70f"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aac02d62503e0f6d84ffc919a7cc7a70f">get_my_roles</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:aac02d62503e0f6d84ffc919a7cc7a70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe588553f651b21dfd63eb7109168272"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#afe588553f651b21dfd63eb7109168272">initialize_periodic_events</a> (void)</td></tr>
 <tr class="separator:afe588553f651b21dfd63eb7109168272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6a9175decf12b6b3d664c42ad9f68dd"><td class="memItemLeft" align="right" valign="top"><a id="ad6a9175decf12b6b3d664c42ad9f68dd"></a>
 STATIC void&#160;</td><td class="memItemRight" valign="bottom"><b>teardown_periodic_events</b> (void)</td></tr>
 <tr class="separator:ad6a9175decf12b6b3d664c42ad9f68dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecdbc14b2fa5dcece5ca26ba80dc2876"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aecdbc14b2fa5dcece5ca26ba80dc2876">rescan_periodic_events</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:aecdbc14b2fa5dcece5ca26ba80dc2876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d553a2f573f9a11485a7d0738082f0c"><td class="memItemLeft" align="right" valign="top"><a id="a6d553a2f573f9a11485a7d0738082f0c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>periodic_events_on_new_options</b> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:a6d553a2f573f9a11485a7d0738082f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07295da993bf4aa46f05959eb5597633"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a07295da993bf4aa46f05959eb5597633">reschedule_descriptor_update_check</a> (void)</td></tr>
 <tr class="separator:a07295da993bf4aa46f05959eb5597633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e52e7505835cfedd05201509a19d301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a5e52e7505835cfedd05201509a19d301">reschedule_directory_downloads</a> (void)</td></tr>
 <tr class="separator:a5e52e7505835cfedd05201509a19d301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90f277f5b30758b5ec08c7334a3d41a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ae90f277f5b30758b5ec08c7334a3d41a">mainloop_schedule_postloop_cleanup</a> (void)</td></tr>
+<tr class="separator:ae90f277f5b30758b5ec08c7334a3d41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b11a4237598f0f5a4465578266d0d14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a5b11a4237598f0f5a4465578266d0d14">reschedule_dirvote</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:a5b11a4237598f0f5a4465578266d0d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e4caa4cd2573a6e23e9980ae79547b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a99e4caa4cd2573a6e23e9980ae79547b">reschedule_or_state_save</a> (void)</td></tr>
+<tr class="separator:a99e4caa4cd2573a6e23e9980ae79547b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa282b01934a6c82ad6d2c27cf5140a85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aa282b01934a6c82ad6d2c27cf5140a85">reschedule_per_second_timer</a> (void)</td></tr>
+<tr class="separator:aa282b01934a6c82ad6d2c27cf5140a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765f755e15383b9204cbce97eeb3a633"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a765f755e15383b9204cbce97eeb3a633">update_current_time</a> (time_t now)</td></tr>
+<tr class="separator:a765f755e15383b9204cbce97eeb3a633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a898cc7397e9ea055a3554ce259a8a4cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a898cc7397e9ea055a3554ce259a8a4cb">ip_address_changed</a> (int at_interface)</td></tr>
 <tr class="separator:a898cc7397e9ea055a3554ce259a8a4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1725c3c7eee555118c2f19cebe1ca00d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a1725c3c7eee555118c2f19cebe1ca00d">dns_servers_relaunch_checks</a> (void)</td></tr>
 <tr class="separator:a1725c3c7eee555118c2f19cebe1ca00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14ea279fb1aac55027fc5f87826f23c"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ac14ea279fb1aac55027fc5f87826f23c">initialize_mainloop_events</a> (void)</td></tr>
+<tr class="separator:ac14ea279fb1aac55027fc5f87826f23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a842d938cd262fb19c7c4d6177ccaa6fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a842d938cd262fb19c7c4d6177ccaa6fb">do_main_loop</a> (void)</td></tr>
 <tr class="separator:a842d938cd262fb19c7c4d6177ccaa6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac40d21ca9eac4c5a73971a55e72f201"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aac40d21ca9eac4c5a73971a55e72f201">MOCK_IMPL</a> (long, get_uptime,(void))</td></tr>
 <tr class="separator:aac40d21ca9eac4c5a73971a55e72f201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8832dc2f4f991a44fe999920ccf8a073"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a8832dc2f4f991a44fe999920ccf8a073">handle_signals</a> (int is_parent)</td></tr>
-<tr class="separator:a8832dc2f4f991a44fe999920ccf8a073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591179378a3ba03b646bf73a40318509"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a591179378a3ba03b646bf73a40318509">MOCK_IMPL</a> (void, reset_uptime,(void))</td></tr>
+<tr class="separator:a591179378a3ba03b646bf73a40318509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90d54275c3f302332ac0724037f3371"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ad90d54275c3f302332ac0724037f3371">handle_signals</a> (void)</td></tr>
+<tr class="separator:ad90d54275c3f302332ac0724037f3371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bb1af7ef4a0e70c4384ccf514927ea3"><td class="memItemLeft" align="right" valign="top"><a id="a4bb1af7ef4a0e70c4384ccf514927ea3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>activate_signal</b> (int signal_num)</td></tr>
 <tr class="separator:a4bb1af7ef4a0e70c4384ccf514927ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -389,30 +484,61 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>activate_signal</b> (
 <tr class="separator:a47f354a197343260ba0e44498b9a495e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d840759318fbf94fb7009cc0fba5c5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3d840759318fbf94fb7009cc0fba5c5d">tor_free_all</a> (int postfork)</td></tr>
 <tr class="separator:a3d840759318fbf94fb7009cc0fba5c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd962fecaae8f194c79ebe9dbc624b02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#acd962fecaae8f194c79ebe9dbc624b02">tor_remove_file</a> (const char *filename)</td></tr>
+<tr class="separator:acd962fecaae8f194c79ebe9dbc624b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d28e76dd898a85ba3459928e3659954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a4d28e76dd898a85ba3459928e3659954">tor_cleanup</a> (void)</td></tr>
 <tr class="separator:a4d28e76dd898a85ba3459928e3659954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6374afd9273e4780748fb27a8c15f2a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a6374afd9273e4780748fb27a8c15f2a3">tor_main</a> (int argc, char *argv[])</td></tr>
-<tr class="separator:a6374afd9273e4780748fb27a8c15f2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c3e5a86baa59a53c56426841a61b5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a09c3e5a86baa59a53c56426841a61b5a">tor_run_main</a> (const <a class="el" href="structtor__main__configuration__t.html">tor_main_configuration_t</a> *tor_cfg)</td></tr>
+<tr class="separator:a09c3e5a86baa59a53c56426841a61b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a30c26f4a9a87139212768dcfa58b9556"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a30c26f4a9a87139212768dcfa58b9556">global_read_bucket</a></td></tr>
-<tr class="separator:a30c26f4a9a87139212768dcfa58b9556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08e804cc3e43bbd9b62ac9348e6a0293"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a08e804cc3e43bbd9b62ac9348e6a0293">global_write_bucket</a></td></tr>
-<tr class="separator:a08e804cc3e43bbd9b62ac9348e6a0293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6691c0077d988275c6a2a4dac50bde8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a6691c0077d988275c6a2a4dac50bde8a">global_relayed_read_bucket</a></td></tr>
-<tr class="separator:a6691c0077d988275c6a2a4dac50bde8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30e3e8413780b0ee9fb1be0331168829"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a30e3e8413780b0ee9fb1be0331168829">global_relayed_write_bucket</a></td></tr>
-<tr class="separator:a30e3e8413780b0ee9fb1be0331168829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34619f9d41cb0d023b8ba67163fef82a"><td class="memItemLeft" align="right" valign="top"><a id="a34619f9d41cb0d023b8ba67163fef82a"></a>
+<a class="el" href="structtoken__bucket__rw__t.html">token_bucket_rw_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>global_bucket</b></td></tr>
+<tr class="separator:a34619f9d41cb0d023b8ba67163fef82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32791d6a709c6d0ee203a81cece566b"><td class="memItemLeft" align="right" valign="top"><a id="aa32791d6a709c6d0ee203a81cece566b"></a>
+<a class="el" href="structtoken__bucket__rw__t.html">token_bucket_rw_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>global_relayed_bucket</b></td></tr>
+<tr class="separator:aa32791d6a709c6d0ee203a81cece566b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf69cec97fa500244d34e702079fae1d"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#adf69cec97fa500244d34e702079fae1d">time_of_process_start</a> = 0</td></tr>
 <tr class="separator:adf69cec97fa500244d34e702079fae1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932543f7a0440bd2dae14c697d5daf88"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a932543f7a0440bd2dae14c697d5daf88">stats_n_seconds_working</a> = 0</td></tr>
-<tr class="separator:a932543f7a0440bd2dae14c697d5daf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95df24b7bc6f56d705af81b71d075be"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aa95df24b7bc6f56d705af81b71d075be">connection_array</a> = NULL</td></tr>
+<tr class="separator:aa95df24b7bc6f56d705af81b71d075be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2c30ee9d076a20132a5bc44dc2d91aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aa2c30ee9d076a20132a5bc44dc2d91aa">quiet_level</a> = 0</td></tr>
 <tr class="separator:aa2c30ee9d076a20132a5bc44dc2d91aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ae35f7aa342162e42ecf0acc4887b2"><td class="memItemLeft" align="right" valign="top"><a id="aa6ae35f7aa342162e42ecf0acc4887b2"></a>
+STATIC <a class="el" href="structperiodic__event__item__t.html">periodic_event_item_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>periodic_events</b> []</td></tr>
+<tr class="separator:aa6ae35f7aa342162e42ecf0acc4887b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Toplevel module. Handles signals, multiplexes between connections, implements main loop, and drives scheduled events. </p>
+<p>For the main loop itself; see run_main_loop_once(). It invokes the rest of Tor mostly through Libevent callbacks. Libevent callbacks can happen when a timer elapses, a signal is received, a socket is ready to read or write, or an event is manually activated.</p>
+<p>Most events in Tor are driven from these callbacks: </p><ul>
+<li>
+conn_read_callback() and conn_write_callback() here, which are invoked when a socket is ready to read or write respectively. </li>
+<li>
+signal_callback(), which handles incoming signals. </li>
+</ul>
+<p>Other events are used for specific purposes, or for building more complex control structures. If you search for usage of tor_libevent_new(), you will find all the events that we construct in Tor.</p>
+<p>Tor has numerous housekeeping operations that need to happen regularly. They are handled in different ways: </p><ul>
+<li>
+<p class="startli">The most frequent operations are handled after every read or write event, at the end of connection_handle_read() and connection_handle_write().</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">The next most frequent operations happen after each invocation of the main loop, in run_main_loop_once().</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">Once per second, we run all of the operations listed in second_elapsed_callback(), and in its child, run_scheduled_events().</p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">Once-a-second operations are handled in second_elapsed_callback().</p>
+<p class="endli"></p>
+</li>
+<li>
+More infrequent operations take place based on the periodic event driver in <a class="el" href="periodic_8c.html" title="Generic backend for handling periodic events. ">periodic.c</a> . These are stored in the periodic_events[] table. </li>
+</ul>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a73c1e99a31f68e332cc9cd1fbd98cc20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73c1e99a31f68e332cc9cd1fbd98cc20">&#9670;&nbsp;</a></span>GREEDY_DESCRIPTOR_RETRY_INTERVAL</h2>
@@ -457,6 +583,34 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>How often will we honor SIGNEWNYM requests? </p>
 
+</div>
+</div>
+<a id="a51293a1360bdc09441cbc1dffa28cbcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51293a1360bdc09441cbc1dffa28cbcb">&#9670;&nbsp;</a></span>OPEN_CACHEDIR_SUFFIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPEN_CACHEDIR_SUFFIX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">suffix&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {  \</div><div class="line">    OPEN_CACHEDIR(name);                         \</div><div class="line">    OPEN_CACHEDIR(name suffix);                  \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a117db210c9967b3e1f36a3e1578393aa"></a>
@@ -521,6 +675,90 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {  \</div><div class="line">    OPEN_DATADIR(name);                         \</div><div class="line">    OPEN_DATADIR(name suffix);                  \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 </div>
 </div>
+<a id="aaabe9179749fd6ec1e36a87f93ae3371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabe9179749fd6ec1e36a87f93ae3371">&#9670;&nbsp;</a></span>OPEN_KEYDIR_SUFFIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPEN_KEYDIR_SUFFIX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">suffix&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {    \</div><div class="line">    OPEN_KEYDIR(name);                           \</div><div class="line">    OPEN_KEYDIR(name suffix);                    \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ad50f2ff40624c38201f74cdafca667c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad50f2ff40624c38201f74cdafca667c9">&#9670;&nbsp;</a></span>RENAME_CACHEDIR_SUFFIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RENAME_CACHEDIR_SUFFIX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">suffix&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">sandbox_cfg_allow_rename(&amp;cfg,           \</div><div class="line">      get_cachedir_fname(name suffix),      \</div><div class="line">      get_cachedir_fname(name))</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ae9c7588bb59f20430b112f8ed8eaf605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9c7588bb59f20430b112f8ed8eaf605">&#9670;&nbsp;</a></span>RENAME_KEYDIR_SUFFIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RENAME_KEYDIR_SUFFIX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">suffix&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">sandbox_cfg_allow_rename(&amp;cfg,           \</div><div class="line">      get_keydir_fname(name suffix),      \</div><div class="line">      get_keydir_fname(name))</div></div><!-- fragment -->
+</div>
+</div>
 <a id="a65cafe1ae766205ca499df9f43d22de4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65cafe1ae766205ca499df9f43d22de4">&#9670;&nbsp;</a></span>RENAME_SUFFIX</h2>
 
@@ -546,8 +784,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">sandbox_cfg_allow_rename(&amp;cfg,           \</div><div class="line">      <a class="code" href="config_8h.html#a66cb7f93c516a96a6c78ea974f0753b8">get_datadir_fname</a>(name suffix),      \</div><div class="line">      <a class="code" href="config_8h.html#a66cb7f93c516a96a6c78ea974f0753b8">get_datadir_fname</a>(name))</div><div class="ttc" id="config_8h_html_a66cb7f93c516a96a6c78ea974f0753b8"><div class="ttname"><a href="config_8h.html#a66cb7f93c516a96a6c78ea974f0753b8">get_datadir_fname</a></div><div class="ttdeci">#define get_datadir_fname(sub1)</div><div class="ttdef"><b>Definition:</b> config.h:65</div></div>
-</div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">sandbox_cfg_allow_rename(&amp;cfg,           \</div><div class="line">      get_datadir_fname(name suffix),      \</div><div class="line">      get_datadir_fname(name))</div></div><!-- fragment -->
 </div>
 </div>
 <a id="adf153776359196327f3dd407dbad8ed2"></a>
@@ -581,8 +818,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">sandbox_cfg_allow_rename(&amp;cfg,                                        \</div><div class="line">                           <a class="code" href="config_8h.html#a40e74946f615b2f9f74caee757120017">get_datadir_fname2</a>(prefix, name suffix),     \</div><div class="line">                           <a class="code" href="config_8h.html#a40e74946f615b2f9f74caee757120017">get_datadir_fname2</a>(prefix, name))</div><div class="ttc" id="config_8h_html_a40e74946f615b2f9f74caee757120017"><div class="ttname"><a href="config_8h.html#a40e74946f615b2f9f74caee757120017">get_datadir_fname2</a></div><div class="ttdeci">#define get_datadir_fname2(sub1, sub2)</div><div class="ttdef"><b>Definition:</b> config.h:68</div></div>
-</div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">sandbox_cfg_allow_rename(&amp;cfg,                                        \</div><div class="line">                           get_datadir_fname2(prefix, name suffix),     \</div><div class="line">                           get_datadir_fname2(prefix, name))</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -607,9 +843,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_a5a32ff7bb266432116efdc333987a0e4_cgraph.png" border="0" usemap="#main_8c_a5a32ff7bb266432116efdc333987a0e4_cgraph" alt=""/></div>
 <map name="main_8c_a5a32ff7bb266432116efdc333987a0e4_cgraph" id="main_8c_a5a32ff7bb266432116efdc333987a0e4_cgraph">
-<area shape="rect" id="node2" href="container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="281,5,409,32"/>
-<area shape="rect" id="node3" href="connection_8c.html#a738d9e7ef0c4a101c2adbd4cade35475" title="assert_connection_ok" alt="" coords="271,56,420,83"/>
-<area shape="rect" id="node4" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="295,107,395,133"/>
+<area shape="rect" id="node2" href="container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="301,5,429,32"/>
+<area shape="rect" id="node3" href="connection_8c.html#a738d9e7ef0c4a101c2adbd4cade35475" title="assert_connection_ok" alt="" coords="291,56,440,83"/>
+<area shape="rect" id="node4" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="315,107,415,133"/>
+<area shape="rect" id="node5" href="main_8c.html#ae90f277f5b30758b5ec08c7334a3d41a" title="mainloop_schedule_postloop\l_cleanup" alt="" coords="271,158,460,199"/>
+<area shape="rect" id="node6" href="compat__libevent_8c.html#af815b0dd39abfb6b6ddbf5266175b479" title="mainloop_event_activate" alt="" coords="508,165,675,192"/>
 </map>
 </div>
 
@@ -692,7 +930,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_a49e8c66d5c632a692690342427171dd7_icgraph.png" border="0" usemap="#main_8c_a49e8c66d5c632a692690342427171dd7_icgraph" alt=""/></div>
 <map name="main_8c_a49e8c66d5c632a692690342427171dd7_icgraph" id="main_8c_a49e8c66d5c632a692690342427171dd7_icgraph">
-<area shape="rect" id="node2" href="connection_8c.html#a1d5a8a5c4222d5e678e98af904285d90" title="MOCK_IMPL" alt="" coords="207,5,307,32"/>
+<area shape="rect" id="node2" href="connection_8c.html#a39b04f82ada8e36e17821d9fbfaa43df" title="MOCK_IMPL" alt="" coords="207,5,307,32"/>
 <area shape="rect" id="node3" href="dns_8h.html#abab9ee4ae98eafd0454adef2477f1a76" title="assert_all_pending\l_dns_resolves_ok" alt="" coords="192,57,323,98"/>
 </map>
 </div>
@@ -728,7 +966,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_a66b81d23c35de4399af3b83ae7a569db_icgraph.png" border="0" usemap="#main_8c_a66b81d23c35de4399af3b83ae7a569db_icgraph" alt=""/></div>
 <map name="main_8c_a66b81d23c35de4399af3b83ae7a569db_icgraph" id="main_8c_a66b81d23c35de4399af3b83ae7a569db_icgraph">
-<area shape="rect" id="node2" href="connection_8c.html#a1d5a8a5c4222d5e678e98af904285d90" title="MOCK_IMPL" alt="" coords="263,5,363,32"/>
+<area shape="rect" id="node2" href="connection_8c.html#a39b04f82ada8e36e17821d9fbfaa43df" title="MOCK_IMPL" alt="" coords="263,5,363,32"/>
 </map>
 </div>
 
@@ -883,6 +1121,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>We've just tried every dirserver we know about, and none of them were reachable. Assume the network is down. Change state so next time an application connection arrives we'll delay it and try another directory fetch. Kill off all the circuit_wait streams that are waiting now, since they will all timeout anyway. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_a59464f1df72e2aa554da128126909730_cgraph.png" border="0" usemap="#main_8c_a59464f1df72e2aa554da128126909730_cgraph" alt=""/></div>
+<map name="main_8c_a59464f1df72e2aa554da128126909730_cgraph" id="main_8c_a59464f1df72e2aa554da128126909730_cgraph">
+<area shape="rect" id="node2" href="compat__libevent_8c.html#a7900ec8114afee85be2cc2b20d3abb79" title="mainloop_event_new" alt="" coords="223,5,367,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -923,39 +1169,38 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_ac64189cc036980dc5785f76d85db9fa6_cgraph.png" border="0" usemap="#main_8c_ac64189cc036980dc5785f76d85db9fa6_cgraph" alt=""/></div>
 <map name="main_8c_ac64189cc036980dc5785f76d85db9fa6_cgraph" id="main_8c_ac64189cc036980dc5785f76d85db9fa6_cgraph">
-<area shape="rect" id="node2" href="nodelist_8c.html#af33ffac546e0698e054eb3183e6579ae" title="router_have_minimum\l_dir_info" alt="" coords="443,5,594,47"/>
-<area shape="rect" id="node4" href="dirserv_8c.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="924,239,1071,280"/>
-<area shape="rect" id="node10" href="rephist_8c.html#ae234f5b5dcf88ea65ef20ff5c3512327" title="any_predicted_circuits" alt="" coords="1355,394,1507,421"/>
-<area shape="rect" id="node14" href="log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="246,499,307,526"/>
-<area shape="rect" id="node15" href="nodelist_8c.html#ada6e670aafec4ca8804035153b50400a" title="get_dir_info_status\l_string" alt="" coords="211,551,343,592"/>
-<area shape="rect" id="node16" href="routerlist_8c.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="204,181,349,223"/>
-<area shape="rect" id="node25" href="dirserv_8c.html#a0b84786e17352524036694baf1955167" title="directory_fetches_from\l_authorities" alt="" coords="1139,197,1293,239"/>
-<area shape="rect" id="node26" href="entrynodes_8c.html#aa295479ccc485da15d0e03872188cd68" title="entry_guards_compute\l_status" alt="" coords="199,616,354,657"/>
-<area shape="rect" id="node28" href="routerlist_8c.html#ab576efc7049ed4eca6fa56e9f0544844" title="update_extrainfo_downloads" alt="" coords="183,71,370,98"/>
-<area shape="rect" id="node29" href="router_8c.html#a0b7d8b358c0cdb6359916151f1863e36" title="net_is_disabled" alt="" coords="221,682,333,709"/>
-<area shape="rect" id="node30" href="main_8c.html#a4cd9a2be61f9fef21bc3b214116a4c8f" title="have_completed_a_circuit" alt="" coords="190,733,363,759"/>
-<area shape="rect" id="node31" href="router_8c.html#a93f4b5aab591c136663925a937575299" title="consider_testing_reachability" alt="" coords="181,449,372,475"/>
-<area shape="rect" id="node3" href="networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf" title="should_delay_dir_fetches" alt="" coords="680,13,849,39"/>
-<area shape="rect" id="node5" href="dirserv_8c.html#a57e2ff1ad2ea65abe9b969ad3d76a418" title="directory_caches_dir_info" alt="" coords="1131,146,1301,173"/>
-<area shape="rect" id="node9" href="rephist_8c.html#a890009e83c2e90292a435526b8111727" title="rep_hist_circbuilding\l_dormant" alt="" coords="1146,328,1286,369"/>
-<area shape="rect" id="node6" href="router_8c.html#ab23297b12b098da9eac98126a587aa3b" title="dir_server_mode" alt="" coords="1371,146,1490,173"/>
-<area shape="rect" id="node7" href="router_8c.html#afa75de94186fffc8f373de610ae4cab3" title="should_refuse_unknown\l_exits" alt="" coords="1349,197,1512,239"/>
-<area shape="rect" id="node8" href="networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="1560,205,1732,231"/>
-<area shape="rect" id="node11" href="router_8c.html#a8b917b11fb2945b314286a6a567e34c3" title="check_whether_orport\l_reachable" alt="" coords="1355,445,1506,487"/>
-<area shape="rect" id="node12" href="circuituse_8c.html#ac6c1a2c715351d85ef6747ca1a4db958" title="circuit_enough_testing\l_circs" alt="" coords="1355,263,1507,304"/>
-<area shape="rect" id="node13" href="router_8c.html#a98317a030cb30700f60c8444d676087b" title="check_whether_dirport\l_reachable" alt="" coords="1354,328,1507,369"/>
-<area shape="rect" id="node17" href="routerlist_8c.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="436,123,601,164"/>
-<area shape="rect" id="node24" href="microdesc_8c.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="420,189,617,215"/>
-<area shape="rect" id="node18" href="microdesc_8c.html#a2667d23ef05f514b5bf916791b4a6bbd" title="we_fetch_router_descriptors" alt="" coords="671,63,858,90"/>
-<area shape="rect" id="node21" href="routerlist_8c.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="679,115,850,156"/>
-<area shape="rect" id="node23" href="networkstatus_8c.html#a44accdf47b7f9f40b25c45daf2c31475" title="networkstatus_get_reasonably\l_live_consensus" alt="" coords="665,180,864,221"/>
-<area shape="rect" id="node19" href="microdesc_8c.html#adeff3a88aa40b67ab6407bda5c941910" title="we_use_microdescriptors\l_for_circuits" alt="" coords="912,31,1083,72"/>
-<area shape="rect" id="node20" href="entrynodes_8c.html#aec3f497d942ccb88742194e3fe973a49" title="any_bridge_supports\l_microdescriptors" alt="" coords="1145,31,1287,72"/>
-<area shape="rect" id="node22" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="947,147,1047,174"/>
-<area shape="rect" id="node27" href="entrynodes_8c.html#aef450c6c3b8cc0a8e7461e3826338ce7" title="entry_nodes_should\l_be_added" alt="" coords="449,616,588,657"/>
-<area shape="rect" id="node32" href="routerset_8c.html#aa8942cc067a62102c0d51b88bcd3709f" title="routerset_contains\l_router" alt="" coords="454,500,583,541"/>
-<area shape="rect" id="node33" href="routerset_8c.html#a1eda4526d656d042e5143ec79ee66be2" title="routerset_contains" alt="" coords="700,507,829,534"/>
-<area shape="rect" id="node34" href="container_8c.html#a1406b823cb6088df755f1b81153d137e" title="strmap_get_lc" alt="" coords="945,507,1049,534"/>
+<area shape="rect" id="node2" href="entrynodes_8c.html#aedaac29d3130717a9c3fdb8950a2f4af" title="guards_update_all" alt="" coords="205,13,331,39"/>
+<area shape="rect" id="node4" href="circuitlist_8c.html#afbc3a3bf5eccd42bc5dc3f75d5aec392" title="circuit_mark_all_unused\l_circs" alt="" coords="187,64,349,105"/>
+<area shape="rect" id="node5" href="circuitlist_8c.html#a52c4991dce45efd8d927b6092e3c85be" title="circuit_mark_all_dirty\l_circs_as_unusable" alt="" coords="195,129,341,171"/>
+<area shape="rect" id="node8" href="dirserv_8c.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="909,359,1055,400"/>
+<area shape="rect" id="node13" href="rephist_8c.html#ae234f5b5dcf88ea65ef20ff5c3512327" title="any_predicted_circuits" alt="" coords="1341,574,1493,601"/>
+<area shape="rect" id="node17" href="log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="237,589,299,615"/>
+<area shape="rect" id="node18" href="nodelist_8c.html#ada6e670aafec4ca8804035153b50400a" title="get_dir_info_status\l_string" alt="" coords="202,640,334,681"/>
+<area shape="rect" id="node19" href="routerlist_8c.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="195,421,341,463"/>
+<area shape="rect" id="node29" href="dirserv_8c.html#a0b84786e17352524036694baf1955167" title="directory_fetches_from\l_authorities" alt="" coords="1125,241,1280,283"/>
+<area shape="rect" id="node30" href="routerlist_8c.html#ab576efc7049ed4eca6fa56e9f0544844" title="update_extrainfo_downloads" alt="" coords="408,530,595,557"/>
+<area shape="rect" id="node31" href="router_8c.html#a0b7d8b358c0cdb6359916151f1863e36" title="net_is_disabled" alt="" coords="212,706,324,733"/>
+<area shape="rect" id="node32" href="main_8c.html#a4cd9a2be61f9fef21bc3b214116a4c8f" title="have_completed_a_circuit" alt="" coords="181,757,355,783"/>
+<area shape="rect" id="node33" href="router_8c.html#a242f0a76713d7b28d940880fc3dd03ed" title="router_do_reachability\l_checks" alt="" coords="193,808,343,849"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#a7b8e402c5c5ea8de25416c11ff59d7b8" title="update_guard_selection\l_choice" alt="" coords="422,5,581,47"/>
+<area shape="rect" id="node6" href="circuituse_8c.html#adf36645f7a473ad622918668f2f5ba33" title="mark_circuit_unusable\l_for_new_conns" alt="" coords="425,129,577,171"/>
+<area shape="rect" id="node7" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="701,137,794,163"/>
+<area shape="rect" id="node9" href="dirserv_8c.html#a57e2ff1ad2ea65abe9b969ad3d76a418" title="directory_caches_dir_info" alt="" coords="1117,307,1288,334"/>
+<area shape="rect" id="node12" href="rephist_8c.html#a890009e83c2e90292a435526b8111727" title="rep_hist_circbuilding\l_dormant" alt="" coords="1133,431,1273,472"/>
+<area shape="rect" id="node10" href="router_8c.html#ab23297b12b098da9eac98126a587aa3b" title="dir_server_mode" alt="" coords="1358,307,1477,334"/>
+<area shape="rect" id="node11" href="router_8c.html#afa75de94186fffc8f373de610ae4cab3" title="should_refuse_unknown\l_exits" alt="" coords="1336,241,1499,283"/>
+<area shape="rect" id="node14" href="router_8c.html#a8b917b11fb2945b314286a6a567e34c3" title="check_whether_orport\l_reachable" alt="" coords="1342,431,1493,472"/>
+<area shape="rect" id="node15" href="circuituse_8c.html#ac6c1a2c715351d85ef6747ca1a4db958" title="circuit_enough_testing\l_circs" alt="" coords="1341,496,1493,537"/>
+<area shape="rect" id="node16" href="router_8c.html#a98317a030cb30700f60c8444d676087b" title="check_whether_dirport\l_reachable" alt="" coords="1341,365,1494,407"/>
+<area shape="rect" id="node20" href="networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf" title="should_delay_dir_fetches" alt="" coords="663,530,832,557"/>
+<area shape="rect" id="node21" href="routerlist_8c.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="419,363,584,404"/>
+<area shape="rect" id="node28" href="microdesc_8c.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="403,429,600,455"/>
+<area shape="rect" id="node22" href="microdesc_8c.html#a2667d23ef05f514b5bf916791b4a6bbd" title="we_fetch_router_descriptors" alt="" coords="654,246,841,273"/>
+<area shape="rect" id="node24" href="routerlist_8c.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="662,348,833,389"/>
+<area shape="rect" id="node26" href="networkstatus_8c.html#a44accdf47b7f9f40b25c45daf2c31475" title="networkstatus_get_reasonably\l_live_consensus" alt="" coords="648,413,847,455"/>
+<area shape="rect" id="node23" href="microdesc_8c.html#adeff3a88aa40b67ab6407bda5c941910" title="we_use_microdescriptors\l_for_circuits" alt="" coords="897,241,1067,283"/>
+<area shape="rect" id="node25" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="932,425,1032,451"/>
+<area shape="rect" id="node27" href="networkstatus_8c.html#a2d356f4ab27d29e60c8f5114974fda96" title="networkstatus_consensus\l_reasonably_live" alt="" coords="895,476,1069,517"/>
 </map>
 </div>
 
@@ -1012,9 +1257,103 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_a842d938cd262fb19c7c4d6177ccaa6fb_cgraph.png" border="0" usemap="#main_8c_a842d938cd262fb19c7c4d6177ccaa6fb_cgraph" alt=""/></div>
 <map name="main_8c_a842d938cd262fb19c7c4d6177ccaa6fb_cgraph" id="main_8c_a842d938cd262fb19c7c4d6177ccaa6fb_cgraph">
-<area shape="rect" id="node2" href="main_8c.html#afe588553f651b21dfd63eb7109168272" title="initialize_periodic\l_events" alt="" coords="156,5,277,47"/>
-<area shape="rect" id="node4" href="dns_8c.html#a100ddc42d1f3411bc6cfbc6185af76ae" title="dns_init" alt="" coords="183,71,250,98"/>
-<area shape="rect" id="node3" href="periodic_8c.html#afcc35ea29c517238c986af91334290f6" title="periodic_event_setup" alt="" coords="325,13,471,39"/>
+<area shape="rect" id="node2" href="main_8c.html#afe588553f651b21dfd63eb7109168272" title="initialize_periodic\l_events" alt="" coords="159,5,281,47"/>
+<area shape="rect" id="node4" href="main_8c.html#ac14ea279fb1aac55027fc5f87826f23c" title="initialize_mainloop\l_events" alt="" coords="156,71,284,112"/>
+<area shape="rect" id="node6" href="dns_8c.html#a100ddc42d1f3411bc6cfbc6185af76ae" title="dns_init" alt="" coords="187,137,253,163"/>
+<area shape="rect" id="node3" href="periodic_8c.html#afcc35ea29c517238c986af91334290f6" title="periodic_event_setup" alt="" coords="359,13,505,39"/>
+<area shape="rect" id="node5" href="compat__libevent_8c.html#a5cd5019864755687d5e6c473f7483366" title="mainloop_event_postloop_new" alt="" coords="332,78,532,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a892ac378990bb6c836687b1b0621bccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892ac378990bb6c836687b1b0621bccb">&#9670;&nbsp;</a></span>get_main_loop_error_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t get_main_loop_error_count </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the main loop error counter. </p>
+
+</div>
+</div>
+<a id="a985dea1589f3c5501528be1fae39c0e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985dea1589f3c5501528be1fae39c0e5">&#9670;&nbsp;</a></span>get_main_loop_idle_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t get_main_loop_idle_count </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the main loop idle counter. </p>
+
+</div>
+</div>
+<a id="abbcd3675aa2873ead2772ccaa296ff9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbcd3675aa2873ead2772ccaa296ff9e">&#9670;&nbsp;</a></span>get_main_loop_success_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t get_main_loop_success_count </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the main loop success counter. </p>
+
+</div>
+</div>
+<a id="aac02d62503e0f6d84ffc919a7cc7a70f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac02d62503e0f6d84ffc919a7cc7a70f">&#9670;&nbsp;</a></span>get_my_roles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC int get_my_roles </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a bitmask of the roles this tor instance is configured for using the given options. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_aac02d62503e0f6d84ffc919a7cc7a70f_cgraph.png" border="0" usemap="#main_8c_aac02d62503e0f6d84ffc919a7cc7a70f_cgraph" alt=""/></div>
+<map name="main_8c_aac02d62503e0f6d84ffc919a7cc7a70f_cgraph" id="main_8c_aac02d62503e0f6d84ffc919a7cc7a70f_cgraph">
+<area shape="rect" id="node2" href="config_8c.html#a9909c87ec1bec7cb4229ad3718a6fd2f" title="options_any_client\l_port_set" alt="" coords="153,5,284,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_aac02d62503e0f6d84ffc919a7cc7a70f_icgraph.png" border="0" usemap="#main_8c_aac02d62503e0f6d84ffc919a7cc7a70f_icgraph" alt=""/></div>
+<map name="main_8c_aac02d62503e0f6d84ffc919a7cc7a70f_icgraph" id="main_8c_aac02d62503e0f6d84ffc919a7cc7a70f_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#aecdbc14b2fa5dcece5ca26ba80dc2876" title="rescan_periodic_events" alt="" coords="153,5,312,32"/>
 </map>
 </div>
 
@@ -1039,8 +1378,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a8832dc2f4f991a44fe999920ccf8a073"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8832dc2f4f991a44fe999920ccf8a073">&#9670;&nbsp;</a></span>handle_signals()</h2>
+<a id="ad90d54275c3f302332ac0724037f3371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad90d54275c3f302332ac0724037f3371">&#9670;&nbsp;</a></span>handle_signals()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1048,13 +1387,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void handle_signals </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>is_parent</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set up the signal handlers for either parent or child process </p>
+<p>Set up the signal handler events for this process, and register them with libevent if appropriate. </p>
 
 </div>
 </div>
@@ -1126,9 +1465,42 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="main_8c_add1f47335c5e96d25eb95c6308b3ea1e_icgraph.png" border="0" usemap="#main_8c_add1f47335c5e96d25eb95c6308b3ea1e_icgraph" alt=""/></div>
 <map name="main_8c_add1f47335c5e96d25eb95c6308b3ea1e_icgraph" id="main_8c_add1f47335c5e96d25eb95c6308b3ea1e_icgraph">
 <area shape="rect" id="node2" href="main_8c.html#a5c761b9de5289922e4f75826f766355f" title="tor_init" alt="" coords="193,5,255,32"/>
-<area shape="rect" id="node3" href="tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="303,5,375,32"/>
-<area shape="rect" id="node4" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="423,5,473,32"/>
-<area shape="rect" id="node5" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="521,5,615,32"/>
+<area shape="rect" id="node3" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="303,5,400,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac14ea279fb1aac55027fc5f87826f23c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14ea279fb1aac55027fc5f87826f23c">&#9670;&nbsp;</a></span>initialize_mainloop_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC void initialize_mainloop_events </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize some <a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> objects that we require. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_ac14ea279fb1aac55027fc5f87826f23c_cgraph.png" border="0" usemap="#main_8c_ac14ea279fb1aac55027fc5f87826f23c_cgraph" alt=""/></div>
+<map name="main_8c_ac14ea279fb1aac55027fc5f87826f23c_cgraph" id="main_8c_ac14ea279fb1aac55027fc5f87826f23c_cgraph">
+<area shape="rect" id="node2" href="compat__libevent_8c.html#a5cd5019864755687d5e6c473f7483366" title="mainloop_event_postloop_new" alt="" coords="181,13,381,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_ac14ea279fb1aac55027fc5f87826f23c_icgraph.png" border="0" usemap="#main_8c_ac14ea279fb1aac55027fc5f87826f23c_icgraph" alt=""/></div>
+<map name="main_8c_ac14ea279fb1aac55027fc5f87826f23c_icgraph" id="main_8c_ac14ea279fb1aac55027fc5f87826f23c_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#a842d938cd262fb19c7c4d6177ccaa6fb" title="do_main_loop" alt="" coords="181,13,284,39"/>
 </map>
 </div>
 
@@ -1188,8 +1560,43 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="ae90f277f5b30758b5ec08c7334a3d41a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90f277f5b30758b5ec08c7334a3d41a">&#9670;&nbsp;</a></span>mainloop_schedule_postloop_cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mainloop_schedule_postloop_cleanup </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Schedule a post-loop event to clean up marked channels, connections, and circuits. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_ae90f277f5b30758b5ec08c7334a3d41a_cgraph.png" border="0" usemap="#main_8c_ae90f277f5b30758b5ec08c7334a3d41a_cgraph" alt=""/></div>
+<map name="main_8c_ae90f277f5b30758b5ec08c7334a3d41a_cgraph" id="main_8c_ae90f277f5b30758b5ec08c7334a3d41a_cgraph">
+<area shape="rect" id="node2" href="compat__libevent_8c.html#af815b0dd39abfb6b6ddbf5266175b479" title="mainloop_event_activate" alt="" coords="243,13,409,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_ae90f277f5b30758b5ec08c7334a3d41a_icgraph.png" border="0" usemap="#main_8c_ae90f277f5b30758b5ec08c7334a3d41a_icgraph" alt=""/></div>
+<map name="main_8c_ae90f277f5b30758b5ec08c7334a3d41a_icgraph" id="main_8c_ae90f277f5b30758b5ec08c7334a3d41a_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#a5a32ff7bb266432116efdc333987a0e4" title="add_connection_to_closeable_list" alt="" coords="243,13,460,39"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a5be08a2aab34d457e06e2a7b274e60a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5be08a2aab34d457e06e2a7b274e60a5">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be08a2aab34d457e06e2a7b274e60a5">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1224,7 +1631,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="abf49e099932e5d6d47c98bb73886de79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf49e099932e5d6d47c98bb73886de79">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abf49e099932e5d6d47c98bb73886de79">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1254,12 +1661,47 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Provides the traffic read and written over the life of the process. </p>
+<p>Return the amount of network traffic read, in bytes, over the life of this process. </p>
+
+</div>
+</div>
+<a id="a84d2e15d7af6c3e939584809bbad8255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d2e15d7af6c3e939584809bbad8255">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">get_bytes_written&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(void)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the amount of network traffic read, in bytes, over the life of this process. </p>
 
 </div>
 </div>
 <a id="ae7323bc27c0cf63955e66be9ec6896c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7323bc27c0cf63955e66be9ec6896c6">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7323bc27c0cf63955e66be9ec6896c6">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1294,7 +1736,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="af812166e44b26c20f8a67b9f7514dcdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af812166e44b26c20f8a67b9f7514dcdd">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af812166e44b26c20f8a67b9f7514dcdd">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1329,7 +1771,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="a64e85cfa1139d62b816528f81e04959b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64e85cfa1139d62b816528f81e04959b">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a64e85cfa1139d62b816528f81e04959b">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1364,7 +1806,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="a185683f405a47b1540c494acaa5157ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a185683f405a47b1540c494acaa5157ec">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a185683f405a47b1540c494acaa5157ec">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1399,7 +1841,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="ad4f9264955d20a76c9e4435fe20f9e66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4f9264955d20a76c9e4435fe20f9e66">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f9264955d20a76c9e4435fe20f9e66">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1434,7 +1876,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="aac40d21ca9eac4c5a73971a55e72f201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac40d21ca9eac4c5a73971a55e72f201">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aac40d21ca9eac4c5a73971a55e72f201">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1465,6 +1907,41 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Returns Tor's uptime. </p>
+
+</div>
+</div>
+<a id="a591179378a3ba03b646bf73a40318509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a591179378a3ba03b646bf73a40318509">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">reset_uptime&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(void)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reset Tor's uptime. </p>
 
 </div>
 </div>
@@ -1508,7 +1985,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_a3c379175a5113f3cb9972ab5f4c4be7c_icgraph.png" border="0" usemap="#main_8c_a3c379175a5113f3cb9972ab5f4c4be7c_icgraph" alt=""/></div>
 <map name="main_8c_a3c379175a5113f3cb9972ab5f4c4be7c_icgraph" id="main_8c_a3c379175a5113f3cb9972ab5f4c4be7c_icgraph">
-<area shape="rect" id="node2" href="circuitbuild_8h.html#a9850a0ba60e6a62bc0a7267343418235" title="circuit_note_clock\l_jumped" alt="" coords="216,5,343,47"/>
+<area shape="rect" id="node2" href="circuitbuild_8h.html#ad0daecc03b3062716a6845b8a522d3da" title="circuit_note_clock\l_jumped" alt="" coords="216,5,343,47"/>
 </map>
 </div>
 
@@ -1536,6 +2013,35 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="main_8c_a47f354a197343260ba0e44498b9a495e_cgraph.png" border="0" usemap="#main_8c_a47f354a197343260ba0e44498b9a495e_cgraph" alt=""/></div>
 <map name="main_8c_a47f354a197343260ba0e44498b9a495e_cgraph" id="main_8c_a47f354a197343260ba0e44498b9a495e_cgraph">
 <area shape="rect" id="node2" href="compat_8c.html#afcfbcea2492c890d03a51c8feb0b797b" title="tor_lockfile_unlock" alt="" coords="165,5,296,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aecdbc14b2fa5dcece5ca26ba80dc2876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecdbc14b2fa5dcece5ca26ba80dc2876">&#9670;&nbsp;</a></span>rescan_periodic_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rescan_periodic_events </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Do a pass at all our periodic events, disable those we don't need anymore and enable those we need now using the given options. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_aecdbc14b2fa5dcece5ca26ba80dc2876_cgraph.png" border="0" usemap="#main_8c_aecdbc14b2fa5dcece5ca26ba80dc2876_cgraph" alt=""/></div>
+<map name="main_8c_aecdbc14b2fa5dcece5ca26ba80dc2876_cgraph" id="main_8c_aecdbc14b2fa5dcece5ca26ba80dc2876_cgraph">
+<area shape="rect" id="node2" href="main_8c.html#aac02d62503e0f6d84ffc919a7cc7a70f" title="get_my_roles" alt="" coords="218,13,318,39"/>
+<area shape="rect" id="node4" href="router_8c.html#a0b7d8b358c0cdb6359916151f1863e36" title="net_is_disabled" alt="" coords="212,63,324,90"/>
+<area shape="rect" id="node3" href="config_8c.html#a9909c87ec1bec7cb4229ad3718a6fd2f" title="options_any_client\l_port_set" alt="" coords="372,5,503,47"/>
 </map>
 </div>
 
@@ -1595,6 +2101,89 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a5b11a4237598f0f5a4465578266d0d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b11a4237598f0f5a4465578266d0d14">&#9670;&nbsp;</a></span>reschedule_dirvote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reschedule_dirvote </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reschedule the directory-authority voting event. Run this whenever the schedule has changed. </p>
+
+</div>
+</div>
+<a id="a99e4caa4cd2573a6e23e9980ae79547b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e4caa4cd2573a6e23e9980ae79547b">&#9670;&nbsp;</a></span>reschedule_or_state_save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reschedule_or_state_save </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reschedule the event for saving the state file.</p>
+<p>Run this when the state becomes dirty. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_a99e4caa4cd2573a6e23e9980ae79547b_cgraph.png" border="0" usemap="#main_8c_a99e4caa4cd2573a6e23e9980ae79547b_cgraph" alt=""/></div>
+<map name="main_8c_a99e4caa4cd2573a6e23e9980ae79547b_cgraph" id="main_8c_a99e4caa4cd2573a6e23e9980ae79547b_cgraph">
+<area shape="rect" id="node2" href="periodic_8c.html#ad9c12c89ef415b3c131f39f68534a974" title="periodic_event_reschedule" alt="" coords="228,5,404,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_a99e4caa4cd2573a6e23e9980ae79547b_icgraph.png" border="0" usemap="#main_8c_a99e4caa4cd2573a6e23e9980ae79547b_icgraph" alt=""/></div>
+<map name="main_8c_a99e4caa4cd2573a6e23e9980ae79547b_icgraph" id="main_8c_a99e4caa4cd2573a6e23e9980ae79547b_icgraph">
+<area shape="rect" id="node2" href="statefile_8c.html#a39484525485ab1d840b0f487e47b5944" title="or_state_mark_dirty" alt="" coords="228,5,365,32"/>
+<area shape="rect" id="node3" href="main_8h.html#a4d28e76dd898a85ba3459928e3659954" title="tor_cleanup" alt="" coords="413,5,503,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa282b01934a6c82ad6d2c27cf5140a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa282b01934a6c82ad6d2c27cf5140a85">&#9670;&nbsp;</a></span>reschedule_per_second_timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reschedule_per_second_timer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable or disable the per-second timer as appropriate, creating it if necessary. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_aa282b01934a6c82ad6d2c27cf5140a85_cgraph.png" border="0" usemap="#main_8c_aa282b01934a6c82ad6d2c27cf5140a85_cgraph" alt=""/></div>
+<map name="main_8c_aa282b01934a6c82ad6d2c27cf5140a85_cgraph" id="main_8c_aa282b01934a6c82ad6d2c27cf5140a85_cgraph">
+<area shape="rect" id="node2" href="compat__libevent_8c.html#a6dfc062052ad839b4bd0f4ea874e4028" title="periodic_timer_new" alt="" coords="212,13,347,39"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="aa79d6ccbf076c44946971ac8dbbb5e1d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa79d6ccbf076c44946971ac8dbbb5e1d">&#9670;&nbsp;</a></span>reset_all_main_loop_timers()</h2>
 
@@ -1624,20 +2213,20 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_aa79d6ccbf076c44946971ac8dbbb5e1d_icgraph.png" border="0" usemap="#main_8c_aa79d6ccbf076c44946971ac8dbbb5e1d_icgraph" alt=""/></div>
 <map name="main_8c_aa79d6ccbf076c44946971ac8dbbb5e1d_icgraph" id="main_8c_aa79d6ccbf076c44946971ac8dbbb5e1d_icgraph">
-<area shape="rect" id="node2" href="circuitbuild_8h.html#a9850a0ba60e6a62bc0a7267343418235" title="circuit_note_clock\l_jumped" alt="" coords="191,5,317,47"/>
+<area shape="rect" id="node2" href="circuitbuild_8h.html#ad0daecc03b3062716a6845b8a522d3da" title="circuit_note_clock\l_jumped" alt="" coords="191,5,317,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a15eec4f873b2fb50c2d7a94e45947ab2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15eec4f873b2fb50c2d7a94e45947ab2">&#9670;&nbsp;</a></span>tell_event_loop_to_finish()</h2>
+<a id="ad4cfbc2252dcc87b85061c590b4adb1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4cfbc2252dcc87b85061c590b4adb1c">&#9670;&nbsp;</a></span>reset_main_loop_counters()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void tell_event_loop_to_finish </td>
+          <td class="memname">void reset_main_loop_counters </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1645,7 +2234,36 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If we called event_base_loop() and told it to never stop until it runs out of events, now we've changed our mind: tell it we want it to finish. </p>
+<p>Reset our main loop counters. </p>
+
+</div>
+</div>
+<a id="a0d2048d2c6e4ab00cb49e0deed579e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d2048d2c6e4ab00cb49e0deed579e56">&#9670;&nbsp;</a></span>stats_increment_bytes_read_and_written()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stats_increment_bytes_read_and_written </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Increment the amount of network traffic read and written, over the life of this process. </p>
 
 </div>
 </div>
@@ -1665,6 +2283,41 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Do whatever cleanup is necessary before shutting Tor down. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_a4d28e76dd898a85ba3459928e3659954_cgraph.png" border="0" usemap="#main_8c_a4d28e76dd898a85ba3459928e3659954_cgraph" alt=""/></div>
+<map name="main_8c_a4d28e76dd898a85ba3459928e3659954_cgraph" id="main_8c_a4d28e76dd898a85ba3459928e3659954_cgraph">
+<area shape="rect" id="node2" href="main_8c.html#acd962fecaae8f194c79ebe9dbc624b02" title="tor_remove_file" alt="" coords="185,5,295,32"/>
+<area shape="rect" id="node3" href="control_8c.html#a9443fc62bda985f770ac05fe96fcd4f4" title="get_controller_cookie\l_file_name" alt="" coords="167,57,313,98"/>
+<area shape="rect" id="node4" href="ext__orport_8c.html#a62142eb5d3bc38acbfc09824d56d1352" title="get_ext_or_auth_cookie\l_file_name" alt="" coords="160,122,320,163"/>
+<area shape="rect" id="node5" href="hibernate_8c.html#a29048647250bdaf695f3cb261d467cb5" title="accounting_record_bandwidth\l_usage" alt="" coords="143,187,337,229"/>
+<area shape="rect" id="node6" href="statefile_8c.html#a39484525485ab1d840b0f487e47b5944" title="or_state_mark_dirty" alt="" coords="171,253,309,280"/>
+<area shape="rect" id="node9" href="statefile_8c.html#ab01c2dfe50dff6fe4be4e528c68033af" title="or_state_save" alt="" coords="188,304,292,331"/>
+<area shape="rect" id="node10" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="190,355,290,381"/>
+<area shape="rect" id="node7" href="main_8c.html#a99e4caa4cd2573a6e23e9980ae79547b" title="reschedule_or_state_save" alt="" coords="385,253,560,280"/>
+<area shape="rect" id="node8" href="periodic_8c.html#ad9c12c89ef415b3c131f39f68534a974" title="periodic_event_reschedule" alt="" coords="608,253,784,280"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adbb7a9c7572d86e408db43bd1c5cbb7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb7a9c7572d86e408db43bd1c5cbb7b">&#9670;&nbsp;</a></span>tor_event_loop_shutdown_is_pending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tor_event_loop_shutdown_is_pending </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true iff <a class="el" href="main_8c.html#a9ca79fee181d0c89fe92473cad0621d6">tor_shutdown_event_loop_and_exit()</a> has been called. </p>
 
 </div>
 </div>
@@ -1713,7 +2366,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main entry point for the Tor command-line client. </p>
+<p>Main entry point for the Tor command-line client. Return 0 on "success", negative on "failure", and positive on "success and exit". </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1735,74 +2388,80 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_a5c761b9de5289922e4f75826f766355f_icgraph.png" border="0" usemap="#main_8c_a5c761b9de5289922e4f75826f766355f_icgraph" alt=""/></div>
 <map name="main_8c_a5c761b9de5289922e4f75826f766355f_icgraph" id="main_8c_a5c761b9de5289922e4f75826f766355f_icgraph">
-<area shape="rect" id="node2" href="tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="115,5,187,32"/>
-<area shape="rect" id="node3" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="235,5,285,32"/>
-<area shape="rect" id="node4" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="333,5,427,32"/>
+<area shape="rect" id="node2" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="115,5,212,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a6374afd9273e4780748fb27a8c15f2a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6374afd9273e4780748fb27a8c15f2a3">&#9670;&nbsp;</a></span>tor_main()</h2>
+<a id="acd962fecaae8f194c79ebe9dbc624b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd962fecaae8f194c79ebe9dbc624b02">&#9670;&nbsp;</a></span>tor_remove_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int tor_main </td>
+          <td class="memname">void tor_remove_file </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main entry point for the Tor process. Called from <a class="el" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="main_8c_a6374afd9273e4780748fb27a8c15f2a3_cgraph.png" border="0" usemap="#main_8c_a6374afd9273e4780748fb27a8c15f2a3_cgraph" alt=""/></div>
-<map name="main_8c_a6374afd9273e4780748fb27a8c15f2a3_cgraph" id="main_8c_a6374afd9273e4780748fb27a8c15f2a3_cgraph">
-<area shape="rect" id="node2" href="backtrace_8c.html#a6d08b912f24793f23f1ab1dfbc7c423e" title="configure_backtrace\l_handler" alt="" coords="125,5,264,47"/>
-<area shape="rect" id="node3" href="config_8c.html#a3113591cdd3555bd354860a3a0802222" title="get_version" alt="" coords="353,249,443,275"/>
-<area shape="rect" id="node7" href="util_8c.html#a866d4c80bbdc37a0279c2bd02f4b2bde" title="update_approx_time" alt="" coords="125,122,264,149"/>
-<area shape="rect" id="node8" href="compat__pthreads_8c.html#ad7af2665dcebaab14be9e040eef67de0" title="tor_threads_init" alt="" coords="139,173,250,199"/>
-<area shape="rect" id="node9" href="log_8c.html#a0bc134e471615f694edc26aef8bf961f" title="init_logging" alt="" coords="151,71,238,98"/>
-<area shape="rect" id="node11" href="util_8c.html#ac4fb16a7033fadcbbef9267c543e1956" title="tor_malloc_" alt="" coords="150,274,239,301"/>
-<area shape="rect" id="node12" href="util_8c.html#a3d169aae56af8034ded171839c8a5c4a" title="tor_realloc_" alt="" coords="150,325,239,351"/>
-<area shape="rect" id="node13" href="util_8c.html#a40d94cc20afc38582c65aa418919ebed" title="tor_free_" alt="" coords="158,375,231,402"/>
-<area shape="rect" id="node14" href="main_8c.html#a5c761b9de5289922e4f75826f766355f" title="tor_init" alt="" coords="164,426,225,453"/>
-<area shape="rect" id="node4" href="compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="705,249,792,275"/>
-<area shape="rect" id="node6" href="config_8c.html#a229118cbc4221ec841824b17f7c82b06" title="get_short_version" alt="" coords="532,274,657,301"/>
-<area shape="rect" id="node5" href="compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="840,249,935,275"/>
-<area shape="rect" id="node10" href="compat__pthreads_8c.html#accea24c75779968942013afa3ae1c051" title="tor_mutex_init" alt="" coords="346,71,450,98"/>
-<area shape="rect" id="node15" href="main_8c.html#add1f47335c5e96d25eb95c6308b3ea1e" title="init_connection_lists" alt="" coords="328,451,468,478"/>
-<area shape="rect" id="node16" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="355,502,441,529"/>
-<area shape="rect" id="node18" href="log_8c.html#a665d03a179fc9e07ac04fd65dccb6d47" title="log_set_application_name" alt="" coords="312,350,484,377"/>
-<area shape="rect" id="node19" href="crypto_8c.html#a6bde73f49ce0082ba60bf6fa8abee655" title="crypto_early_init" alt="" coords="339,401,457,427"/>
-<area shape="rect" id="node17" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="547,502,642,529"/>
-</map>
-</div>
+<p>Remove the specified file, and log a warning if the operation fails for any reason other than the file not existing. Ignores NULL filenames. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c_a6374afd9273e4780748fb27a8c15f2a3_icgraph.png" border="0" usemap="#main_8c_a6374afd9273e4780748fb27a8c15f2a3_icgraph" alt=""/></div>
-<map name="main_8c_a6374afd9273e4780748fb27a8c15f2a3_icgraph" id="main_8c_a6374afd9273e4780748fb27a8c15f2a3_icgraph">
-<area shape="rect" id="node2" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="125,5,176,32"/>
-<area shape="rect" id="node3" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="224,5,317,32"/>
+<div class="center"><img src="main_8c_acd962fecaae8f194c79ebe9dbc624b02_icgraph.png" border="0" usemap="#main_8c_acd962fecaae8f194c79ebe9dbc624b02_icgraph" alt=""/></div>
+<map name="main_8c_acd962fecaae8f194c79ebe9dbc624b02_icgraph" id="main_8c_acd962fecaae8f194c79ebe9dbc624b02_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#a4d28e76dd898a85ba3459928e3659954" title="tor_cleanup" alt="" coords="164,5,253,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a09c3e5a86baa59a53c56426841a61b5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c3e5a86baa59a53c56426841a61b5a">&#9670;&nbsp;</a></span>tor_run_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tor_run_main </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtor__main__configuration__t.html">tor_main_configuration_t</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run the tor process, as if from the command line.</p>
+<p>The command line arguments from <a class="el" href="tor__api_8h.html#a4e4d16991254ff6ede69bc5050796130">tor_main_configuration_set_command_line()</a> are taken as if they had been passed to <a class="el" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a>.</p>
+<p>This function will not return until Tor is done running. It returns zero on success, and nonzero on failure.</p>
+<p>If you want to control when Tor exits, make sure to configure a control socket. The OwningControllerFD option may be helpful there.</p>
+<p>BUG 23847: Sometimes, if you call tor_main a second time (after it has returned), Tor may crash or behave strangely. We have fixed all issues of this type that we could find, but more may remain.</p>
+<p>LIMITATION: You cannot run more than one instance of Tor in the same process at the same time. Concurrent calls will cause undefined behavior. We do not currently have plans to change this.</p>
+<p>LIMITATION: While we will try to fix any problems found here, you should be aware that Tor was originally written to run as its own process, and that the functionality of this file was added later. If you find any bugs or strange behavior, please report them, and we'll try to straighten them out. </p>
+
+</div>
+</div>
+<a id="a9ca79fee181d0c89fe92473cad0621d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca79fee181d0c89fe92473cad0621d6">&#9670;&nbsp;</a></span>tor_shutdown_event_loop_and_exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tor_shutdown_event_loop_and_exit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exitcode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>After finishing the current callback (if any), shut down the main loop, clean up the process, and exit with <b>exitcode</b>. </p>
 
 </div>
 </div>
@@ -1832,75 +2491,43 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Try to grab the lock file described in <b>options</b>, if we do not already have it. If <b>err_if_locked</b> is true, warn if somebody else is holding the lock, and exit if we can't get it after waiting. Otherwise, return -1 if we can't get the lockfile. Return 0 on success. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="main_8c_a74db2eb78882d98d386071907fb43464_cgraph.png" border="0" usemap="#main_8c_a74db2eb78882d98d386071907fb43464_cgraph" alt=""/></div>
-<map name="main_8c_a74db2eb78882d98d386071907fb43464_cgraph" id="main_8c_a74db2eb78882d98d386071907fb43464_cgraph">
-<area shape="rect" id="node2" href="compat_8c.html#a06e59a7b36c548f64eacef17c6f27f65" title="tor_lockfile_lock" alt="" coords="139,5,255,32"/>
-</map>
+
 </div>
+</div>
+<a id="a765f755e15383b9204cbce97eeb3a633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a765f755e15383b9204cbce97eeb3a633">&#9670;&nbsp;</a></span>update_current_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update_current_time </td>
+          <td>(</td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>now</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the current time to "now", which should be the value returned by time(). Check for clock jumps and track the total number of seconds we have been running. </p>
+<p>How much clock jumping do we tolerate?</p>
+<p>How much idleness do we tolerate? </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a30c26f4a9a87139212768dcfa58b9556"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30c26f4a9a87139212768dcfa58b9556">&#9670;&nbsp;</a></span>global_read_bucket</h2>
+<a id="aa95df24b7bc6f56d705af81b71d075be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95df24b7bc6f56d705af81b71d075be">&#9670;&nbsp;</a></span>connection_array</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int global_read_bucket</td>
+          <td class="memname">STATIC <a class="el" href="structsmartlist__t.html">smartlist_t</a>* connection_array = NULL</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Max number of bytes I can read this second. </p>
-
-</div>
-</div>
-<a id="a6691c0077d988275c6a2a4dac50bde8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6691c0077d988275c6a2a4dac50bde8a">&#9670;&nbsp;</a></span>global_relayed_read_bucket</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int global_relayed_read_bucket</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Max number of relayed (bandwidth class 1) bytes I can read this second. </p>
-
-</div>
-</div>
-<a id="a30e3e8413780b0ee9fb1be0331168829"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30e3e8413780b0ee9fb1be0331168829">&#9670;&nbsp;</a></span>global_relayed_write_bucket</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int global_relayed_write_bucket</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Max number of relayed (bandwidth class 1) bytes I can write this second. </p>
-
-</div>
-</div>
-<a id="a08e804cc3e43bbd9b62ac9348e6a0293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08e804cc3e43bbd9b62ac9348e6a0293">&#9670;&nbsp;</a></span>global_write_bucket</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int global_write_bucket</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Max number of bytes I can write this second. </p>
+<p>Smartlist of all open connections. </p>
 
 </div>
 </div>
@@ -1919,18 +2546,33 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a932543f7a0440bd2dae14c697d5daf88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a932543f7a0440bd2dae14c697d5daf88">&#9670;&nbsp;</a></span>stats_n_seconds_working</h2>
+<a id="a3c28bd7ff656b4167284695f65381dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c28bd7ff656b4167284695f65381dca">&#9670;&nbsp;</a></span>signal_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">long stats_n_seconds_working = 0</td>
+          <td class="memname">struct event* signal_event</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>How many seconds have we been running? </p>
+<p>Pointer to hold the event object constructed for this signal. </p>
+
+</div>
+</div>
+<a id="aaddd9624b1405cf93ba323424899a52e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaddd9624b1405cf93ba323424899a52e">&#9670;&nbsp;</a></span>signal_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int signal_value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A numeric code for this signal. Must match the signal value if try_to_register is true. </p>
 
 </div>
 </div>
@@ -1946,6 +2588,21 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>What time did this process start up? </p>
+
+</div>
+</div>
+<a id="abca734f928282908b4ae19461bf870bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca734f928282908b4ae19461bf870bc">&#9670;&nbsp;</a></span>try_to_register</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int try_to_register</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>True if we should try to register this signal with libevent and catch corresponding posix signals. False otherwise. </p>
 
 </div>
 </div>

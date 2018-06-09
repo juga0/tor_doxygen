@@ -1,0 +1,5 @@
+<map id="ed25519_pubkey_eq" name="ed25519_pubkey_eq">
+<area shape="rect" id="node2" href="$dirserv_8h.html#a2b981b610d4a3344b17a55300072ef66" title="dirserv_orconn_tls_done" alt="" coords="203,5,366,32"/>
+<area shape="rect" id="node3" href="$nodelist_8h.html#a9a536b832b4e1fab98d98efed737ffff" title="node_ed25519_id_matches" alt="" coords="195,56,375,83"/>
+<area shape="rect" id="node4" href="$routerkeys_8c.html#a32baa1ac0f83ced1415a21b99e3ba47a" title="router_ed25519_id_is_me" alt="" coords="199,107,370,133"/>
+</map>

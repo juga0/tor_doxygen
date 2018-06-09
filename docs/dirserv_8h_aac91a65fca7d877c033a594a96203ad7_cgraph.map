@@ -2,9 +2,10 @@
 <area shape="rect" id="node2" href="$routerlist_8c.html#a9181bbed0ee6ff8088a7c53fc8c446f1" title="router_get_routerlist" alt="" coords="249,5,387,32"/>
 <area shape="rect" id="node3" href="$router_8c.html#aabab68011cc297e16ad83af25c521bf6" title="authdir_mode_bridge" alt="" coords="247,56,389,83"/>
 <area shape="rect" id="node5" href="$router_8c.html#adcfdecf66a4aa5e6d09a702784c8197f" title="router_is_me" alt="" coords="269,107,367,133"/>
-<area shape="rect" id="node8" href="$dirserv_8c.html#a87235a887afe2a5f796bd9a88b474909" title="dirserv_single_reachability_test" alt="" coords="216,157,420,184"/>
-<area shape="rect" id="node4" href="$router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="501,56,601,83"/>
-<area shape="rect" id="node6" href="$router_8c.html#abeb0f38915a46f77352900604075d82f" title="router_digest_is_me" alt="" coords="482,107,621,133"/>
-<area shape="rect" id="node7" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="683,107,769,133"/>
-<area shape="rect" id="node9" href="$nodelist_8c.html#a114f706e8f9039f1dce0137619807581" title="node_get_mutable_by_id" alt="" coords="468,157,635,184"/>
+<area shape="rect" id="node8" href="$dirserv_8c.html#a87235a887afe2a5f796bd9a88b474909" title="dirserv_single_reachability_test" alt="" coords="216,161,420,188"/>
+<area shape="rect" id="node4" href="$router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="499,56,599,83"/>
+<area shape="rect" id="node6" href="$router_8c.html#abeb0f38915a46f77352900604075d82f" title="router_digest_is_me" alt="" coords="480,107,619,133"/>
+<area shape="rect" id="node7" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="709,107,796,133"/>
+<area shape="rect" id="node9" href="$nodelist_8c.html#a798e84107f21829549b67e28dca267ef" title="node_supports_ed25519\l_link_authentication" alt="" coords="468,158,631,199"/>
+<area shape="rect" id="node10" href="$nodelist_8c.html#ad46ce292894cace0427366a53b765602" title="node_get_ed25519_id" alt="" coords="679,165,827,192"/>
 </map>

@@ -77,6 +77,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
 <code>#include &quot;addressmap.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="bridges_8h_source.html">bridges.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="buffers_8h_source.html">buffers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="channel_8h_source.html">channel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="channeltls_8h_source.html">channeltls.h</a>&quot;</code><br />
@@ -92,16 +93,24 @@ $(function() {
 <code>#include &quot;<a class="el" href="connection__edge_8h_source.html">connection_edge.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__or_8h_source.html">connection_or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="directory_8h_source.html">directory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dirserv_8h_source.html">dirserv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dnsserv_8h_source.html">dnsserv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="geoip_8h_source.html">geoip.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hibernate_8h_source.html">hibernate.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__cache_8h_source.html">hs_cache.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__common_8h_source.html">hs_common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__control_8h_source.html">hs_control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="microdesc_8h_source.html">microdesc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nodelist_8h_source.html">nodelist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="policies_8h_source.html">policies.h</a>&quot;</code><br />
+<code>#include &quot;proto_control0.h&quot;</code><br />
+<code>#include &quot;proto_http.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="reasons_8h_source.html">reasons.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rendclient_8h_source.html">rendclient.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rendcommon_8h_source.html">rendcommon.h</a>&quot;</code><br />
@@ -110,9 +119,9 @@ $(function() {
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerparse_8h_source.html">routerparse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="shared__random__client_8h_source.html">shared_random_client.h</a>&quot;</code><br />
 <code>#include &lt;pwd.h&gt;</code><br />
 <code>#include &lt;sys/resource.h&gt;</code><br />
-<code>#include &lt;event2/event.h&gt;</code><br />
 <code>#include &quot;crypto_s2k.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="procmon_8h_source.html">procmon.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -120,52 +129,53 @@ Include dependency graph for control.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="control_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2control_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2control_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2control_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="494,259,538,285"/>
-<area shape="rect" id="node12" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="779,333,907,360"/>
-<area shape="rect" id="node14" href="addressmap_8h_source.html" title="addressmap.h" alt="" coords="971,109,1075,136"/>
-<area shape="rect" id="node15" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="1118,184,1191,211"/>
-<area shape="rect" id="node16" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="558,184,637,211"/>
-<area shape="rect" id="node17" href="channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="486,109,578,136"/>
-<area shape="rect" id="node18" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1270,109,1365,136"/>
-<area shape="rect" id="node19" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1389,109,1475,136"/>
-<area shape="rect" id="node20" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="1499,109,1597,136"/>
-<area shape="rect" id="node21" href="circuituse_8h.html" title="Header file for circuituse.c. " alt="" coords="1621,109,1710,136"/>
-<area shape="rect" id="node22" href="command_8h.html" title="Header file for command.c. " alt="" coords="653,109,744,136"/>
-<area shape="rect" id="node23" href="config_8h.html" title="Header file for config.c. " alt="" coords="1734,109,1802,136"/>
-<area shape="rect" id="node24" href="confparse_8h_source.html" title="confparse.h" alt="" coords="1827,109,1917,136"/>
-<area shape="rect" id="node25" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1149,109,1245,136"/>
-<area shape="rect" id="node26" href="connection__edge_8h.html" title="Header file for connection_edge.c. " alt="" coords="1941,109,2072,136"/>
-<area shape="rect" id="node27" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2096,109,2211,136"/>
-<area shape="rect" id="node28" href="control_8h.html" title="Header file for control.c. " alt="" coords="2235,109,2307,136"/>
-<area shape="rect" id="node29" href="directory_8h.html" title="Header file for directory.c. " alt="" coords="2331,109,2413,136"/>
-<area shape="rect" id="node30" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="2437,109,2509,136"/>
-<area shape="rect" id="node31" href="dnsserv_8h.html" title="Header file for dnsserv.c. " alt="" coords="2534,109,2613,136"/>
-<area shape="rect" id="node32" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2637,109,2734,136"/>
-<area shape="rect" id="node33" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="2759,109,2823,136"/>
-<area shape="rect" id="node34" href="hibernate_8h.html" title="Header file for hibernate.c. " alt="" coords="2847,109,2934,136"/>
-<area shape="rect" id="node35" href="main_8h.html" title="Header file for main.c. " alt="" coords="2959,109,3020,136"/>
-<area shape="rect" id="node36" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="3044,109,3159,136"/>
-<area shape="rect" id="node37" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="3183,109,3262,136"/>
-<area shape="rect" id="node38" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="3287,109,3364,136"/>
-<area shape="rect" id="node39" href="reasons_8h.html" title="Header file for reasons.c. " alt="" coords="3389,109,3467,136"/>
-<area shape="rect" id="node40" href="rendclient_8h.html" title="Header file for rendclient.c. " alt="" coords="3491,109,3581,136"/>
-<area shape="rect" id="node41" href="rendcommon_8h.html" title="Header file for rendcommon.c. " alt="" coords="3605,109,3713,136"/>
-<area shape="rect" id="node42" href="rendservice_8h.html" title="Header file for rendservice.c. " alt="" coords="671,184,771,211"/>
-<area shape="rect" id="node43" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="3737,109,3809,136"/>
-<area shape="rect" id="node44" href="router_8h.html" title="Header file for router.c. " alt="" coords="3833,109,3900,136"/>
-<area shape="rect" id="node45" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="3924,109,4007,136"/>
-<area shape="rect" id="node46" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="4031,109,4129,136"/>
-<area shape="rect" id="node49" href="crypto__s2k_8h_source.html" title="crypto_s2k.h" alt="" coords="134,184,231,211"/>
-<area shape="rect" id="node50" href="procmon_8h.html" title="Headers for procmon.c. " alt="" coords="763,259,845,285"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="473,557,551,584"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="297,483,359,509"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="549,408,619,435"/>
-<area shape="rect" id="node6" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="35,408,149,435"/>
-<area shape="rect" id="node7" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="550,333,613,360"/>
-<area shape="rect" id="node8" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="689,333,754,360"/>
-<area shape="rect" id="node9" href="container_8h_source.html" title="container.h" alt="" coords="275,408,362,435"/>
-<area shape="rect" id="node10" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="403,333,475,360"/>
-<area shape="rect" id="node11" href="address_8h.html" title="Headers for address.h. " alt="" coords="198,333,277,360"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="266,259,310,285"/>
+<area shape="rect" id="node3" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="224,333,352,360"/>
+<area shape="rect" id="node4" href="addressmap_8h_source.html" title="addressmap.h" alt="" coords="714,109,818,136"/>
+<area shape="rect" id="node5" href="bridges_8h.html" title="Header file for circuitbuild.c. " alt="" coords="842,109,917,136"/>
+<area shape="rect" id="node6" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="995,184,1068,211"/>
+<area shape="rect" id="node7" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="248,184,327,211"/>
+<area shape="rect" id="node8" href="channeltls_8h.html" title="Header file for channeltls.c. " alt="" coords="331,109,423,136"/>
+<area shape="rect" id="node9" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1112,109,1207,136"/>
+<area shape="rect" id="node10" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1232,109,1317,136"/>
+<area shape="rect" id="node11" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="1342,109,1439,136"/>
+<area shape="rect" id="node12" href="circuituse_8h.html" title="Header file for circuituse.c. " alt="" coords="1463,109,1552,136"/>
+<area shape="rect" id="node13" href="command_8h.html" title="Header file for command.c. " alt="" coords="165,109,256,136"/>
+<area shape="rect" id="node14" href="config_8h.html" title="Header file for config.c. " alt="" coords="1576,109,1644,136"/>
+<area shape="rect" id="node15" href="confparse_8h_source.html" title="confparse.h" alt="" coords="1669,109,1760,136"/>
+<area shape="rect" id="node16" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="941,109,1037,136"/>
+<area shape="rect" id="node17" href="connection__edge_8h.html" title="Header file for connection_edge.c. " alt="" coords="1784,109,1914,136"/>
+<area shape="rect" id="node18" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="1938,109,2053,136"/>
+<area shape="rect" id="node19" href="control_8h.html" title="Header file for control.c. " alt="" coords="2077,109,2149,136"/>
+<area shape="rect" id="node20" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="2173,109,2274,136"/>
+<area shape="rect" id="node21" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="2298,109,2392,136"/>
+<area shape="rect" id="node22" href="directory_8h.html" title="Header file for directory.c. " alt="" coords="2416,109,2498,136"/>
+<area shape="rect" id="node23" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="2522,109,2594,136"/>
+<area shape="rect" id="node24" href="dnsserv_8h.html" title="Header file for dnsserv.c. " alt="" coords="2619,109,2698,136"/>
+<area shape="rect" id="node25" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2722,109,2819,136"/>
+<area shape="rect" id="node26" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="2844,109,2908,136"/>
+<area shape="rect" id="node27" href="hibernate_8h.html" title="Header file for hibernate.c. " alt="" coords="2932,109,3019,136"/>
+<area shape="rect" id="node28" href="hs__cache_8h.html" title="Header file for hs_cache.c. " alt="" coords="499,109,588,136"/>
+<area shape="rect" id="node29" href="hs__common_8h.html" title="Header file containing common data for the whole HS subsytem. " alt="" coords="402,184,506,211"/>
+<area shape="rect" id="node30" href="rendcommon_8h.html" title="Header file for rendcommon.c. " alt="" coords="531,184,639,211"/>
+<area shape="rect" id="node31" href="hs__control_8h.html" title="Header file containing control port event related code. " alt="" coords="3044,109,3137,136"/>
+<area shape="rect" id="node32" href="main_8h.html" title="Header file for main.c. " alt="" coords="3161,109,3222,136"/>
+<area shape="rect" id="node33" href="microdesc_8h.html" title="Header file for microdesc.c. " alt="" coords="3246,109,3340,136"/>
+<area shape="rect" id="node34" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="3364,109,3478,136"/>
+<area shape="rect" id="node35" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="3503,109,3582,136"/>
+<area shape="rect" id="node36" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="3606,109,3684,136"/>
+<area shape="rect" id="node37" href="proto__control0_8h_source.html" title="proto_control0.h" alt="" coords="3708,109,3822,136"/>
+<area shape="rect" id="node38" href="proto__http_8h_source.html" title="proto_http.h" alt="" coords="3846,109,3937,136"/>
+<area shape="rect" id="node39" href="reasons_8h.html" title="Header file for reasons.c. " alt="" coords="3962,109,4040,136"/>
+<area shape="rect" id="node40" href="rendclient_8h.html" title="Header file for rendclient.c. " alt="" coords="4064,109,4154,136"/>
+<area shape="rect" id="node41" href="rendservice_8h.html" title="Header file for rendservice.c. " alt="" coords="27,184,127,211"/>
+<area shape="rect" id="node42" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="4178,109,4250,136"/>
+<area shape="rect" id="node43" href="router_8h.html" title="Header file for router.c. " alt="" coords="4274,109,4341,136"/>
+<area shape="rect" id="node44" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="4365,109,4448,136"/>
+<area shape="rect" id="node45" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="4472,109,4570,136"/>
+<area shape="rect" id="node46" href="shared__random__client_8h.html" title="Header file for shared_random_client.c. " alt="" coords="4594,109,4754,136"/>
+<area shape="rect" id="node49" href="crypto__s2k_8h_source.html" title="crypto_s2k.h" alt="" coords="4992,109,5090,136"/>
+<area shape="rect" id="node50" href="procmon_8h.html" title="Headers for procmon.c. " alt="" coords="485,259,568,285"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -191,6 +201,8 @@ Macros</h2></td></tr>
 <tr class="separator:a891794d9838a445210cb070c284656a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c6516221d89f0b2355a553950ee5829"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a1c6516221d89f0b2355a553950ee5829">EVENT_IS_INTERESTING</a>(e)&#160;&#160;&#160;(!! (global_event_mask &amp; EVENT_MASK_(e)))</td></tr>
 <tr class="separator:a1c6516221d89f0b2355a553950ee5829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff97f4aa113ab62b61d865d5d3c4724d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#aff97f4aa113ab62b61d865d5d3c4724d">ANY_EVENT_IS_INTERESTING</a>(e)&#160;&#160;&#160;(!! (global_event_mask &amp; (e)))</td></tr>
+<tr class="separator:aff97f4aa113ab62b61d865d5d3c4724d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaab749d06c1a84ec27463752fb227ad5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#aaab749d06c1a84ec27463752fb227ad5">AUTHENTICATION_COOKIE_LEN</a>&#160;&#160;&#160;32</td></tr>
 <tr class="separator:aaab749d06c1a84ec27463752fb227ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc7f2031f34d922a94bd6dd9b2be5556"><td class="memItemLeft" align="right" valign="top"><a id="abc7f2031f34d922a94bd6dd9b2be5556"></a>
@@ -200,10 +212,16 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SAFECOOKIE_CONTROLLER_TO_SERVER_CONSTANT</b>&#160;&#160;&#160;&quot;Tor safe cookie authentication controller-to-server hash&quot;</td></tr>
 <tr class="separator:a75601561e3f474cb45c80e5d95d12344"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4a0650c4340678d60419ed3a1bc543e"><td class="memItemLeft" align="right" valign="top"><a id="aa4a0650c4340678d60419ed3a1bc543e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAFECOOKIE_SERVER_NONCE_LEN</b>&#160;&#160;&#160;<a class="el" href="crypto_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SAFECOOKIE_SERVER_NONCE_LEN</b>&#160;&#160;&#160;<a class="el" href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a></td></tr>
 <tr class="separator:aa4a0650c4340678d60419ed3a1bc543e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a213fb63ea766eb6ee39839947219f55b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a213fb63ea766eb6ee39839947219f55b">BOOTSTRAP_MSG_LEN</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a213fb63ea766eb6ee39839947219f55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2a20bd43abf70b852dc7885ae148ad"><td class="memItemLeft" align="right" valign="top"><a id="aaa2a20bd43abf70b852dc7885ae148ad"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NEWLY_ENABLED</b>(ev)&#160;&#160;&#160;(! (old_mask &amp; (ev)) &amp;&amp; (new_mask &amp; (ev)))</td></tr>
+<tr class="separator:aaa2a20bd43abf70b852dc7885ae148ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfcc73ba8755bb83f87a2354aafe22fa"><td class="memItemLeft" align="right" valign="top"><a id="adfcc73ba8755bb83f87a2354aafe22fa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>queued_event_free</b>(ev)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="control_8c.html#a96479016ed9454057dacd4502232dc71">queued_event_t</a>, queued_event_free_, (ev))</td></tr>
+<tr class="separator:adfcc73ba8755bb83f87a2354aafe22fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e648154620a303b70a3597d1bbc41ab"><td class="memItemLeft" align="right" valign="top"><a id="a5e648154620a303b70a3597d1bbc41ab"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ITEM</b>(name,  fn,  desc)&#160;&#160;&#160;{ name, getinfo_helper_##fn, desc, 0 }</td></tr>
 <tr class="separator:a5e648154620a303b70a3597d1bbc41ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,10 +262,16 @@ Functions</h2></td></tr>
 <tr class="separator:a91f5ce05444faa77077480ce8327d878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bba7fc2c25aada4416d77a64caa4219"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a7bba7fc2c25aada4416d77a64caa4219">control_event_is_interesting</a> (int event)</td></tr>
 <tr class="separator:a7bba7fc2c25aada4416d77a64caa4219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7eff3569fc8e5e5e27c1d6d9f02125"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#afa7eff3569fc8e5e5e27c1d6d9f02125">control_any_per_second_event_enabled</a> (void)</td></tr>
+<tr class="separator:afa7eff3569fc8e5e5e27c1d6d9f02125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1881d4083d31106d2108a1ac919ac4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#ae1881d4083d31106d2108a1ac919ac4e">control_per_second_events</a> (void)</td></tr>
+<tr class="separator:ae1881d4083d31106d2108a1ac919ac4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2fafbf3893d3223323b28be3324b199"><td class="memItemLeft" align="right" valign="top">STATIC size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#af2fafbf3893d3223323b28be3324b199">write_escaped_data</a> (const char *data, size_t len, char **out)</td></tr>
 <tr class="separator:af2fafbf3893d3223323b28be3324b199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdb9c00c330d8c723c5e307c46aa7387"><td class="memItemLeft" align="right" valign="top">STATIC size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#abdb9c00c330d8c723c5e307c46aa7387">read_escaped_data</a> (const char *data, size_t len, char **out)</td></tr>
 <tr class="separator:abdb9c00c330d8c723c5e307c46aa7387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5fbf9ddc3b167562660a53442f004f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a1b5fbf9ddc3b167562660a53442f004f">control_connection_add_local_fd</a> (tor_socket_t sock, unsigned flags)</td></tr>
+<tr class="separator:a1b5fbf9ddc3b167562660a53442f004f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0381183e4e119ef80562083e5d6305fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a0381183e4e119ef80562083e5d6305fe">control_ports_write_to_file</a> (void)</td></tr>
 <tr class="separator:a0381183e4e119ef80562083e5d6305fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a590753eb9db711112424117649f5cfa7"><td class="memItemLeft" align="right" valign="top"><a id="a590753eb9db711112424117649f5cfa7"></a>
@@ -259,6 +283,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>control_initialize_ev
 <tr class="separator:a8920daea607720e420120036eafa61f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab464eef1adbc6df3fcc09063dc6f9c3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#ab464eef1adbc6df3fcc09063dc6f9c3e">decode_hashed_passwords</a> (<a class="el" href="structconfig__line__t.html">config_line_t</a> *passwords)</td></tr>
 <tr class="separator:ab464eef1adbc6df3fcc09063dc6f9c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa944da80f923edd033b270cb4b84cba"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#aaa944da80f923edd033b270cb4b84cba">getinfo_helper_current_time</a> (<a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *control_conn, const char *question, char **answer, const char **errmsg)</td></tr>
+<tr class="separator:aaa944da80f923edd033b270cb4b84cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbf616bddc3f380f8c682ed7550e3c4"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#aafbf616bddc3f380f8c682ed7550e3c4">getinfo_helper_dir</a> (<a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *control_conn, const char *question, char **answer, const char **errmsg)</td></tr>
+<tr class="separator:aafbf616bddc3f380f8c682ed7550e3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee0cff899e0420de1d16379fffe98c8"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#aaee0cff899e0420de1d16379fffe98c8">getinfo_helper_downloads_networkstatus</a> (const char *flavor, <a class="el" href="structdownload__status__t.html">download_status_t</a> **dl_to_emit, const char **errmsg)</td></tr>
 <tr class="separator:aaee0cff899e0420de1d16379fffe98c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb5aa2ca5fb7e5db504bf1d3ff1342c5"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#afb5aa2ca5fb7e5db504bf1d3ff1342c5">getinfo_helper_downloads_cert</a> (const char *fp_sk_req, <a class="el" href="structdownload__status__t.html">download_status_t</a> **dl_to_emit, <a class="el" href="structsmartlist__t.html">smartlist_t</a> **digest_list, const char **errmsg)</td></tr>
@@ -269,8 +297,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>control_initialize_ev
 <tr class="separator:ad3d55d1ae306e3c81057ead47dcafb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8464eca5a44ec95b58f55316cd5a4ceb"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a8464eca5a44ec95b58f55316cd5a4ceb">getinfo_helper_downloads</a> (<a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *control_conn, const char *question, char **answer, const char **errmsg)</td></tr>
 <tr class="separator:a8464eca5a44ec95b58f55316cd5a4ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96cb386ecd3106b1bb91df8909f97a2d"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a96cb386ecd3106b1bb91df8909f97a2d">add_onion_helper_keyarg</a> (const char *arg, int discard_pk, const char **key_new_alg_out, char **key_new_blob_out, char **err_msg_out)</td></tr>
-<tr class="separator:a96cb386ecd3106b1bb91df8909f97a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b56ac7ede2a04d5c8311a5fbae88ab"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#ad7b56ac7ede2a04d5c8311a5fbae88ab">getinfo_helper_onions</a> (<a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *control_conn, const char *question, char **answer, const char **errmsg)</td></tr>
+<tr class="separator:ad7b56ac7ede2a04d5c8311a5fbae88ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429edbc8e613a788ea2b42b9e5050f09"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a429edbc8e613a788ea2b42b9e5050f09">add_onion_helper_keyarg</a> (const char *arg, int discard_pk, const char **key_new_alg_out, char **key_new_blob_out, add_onion_secret_key_t *decoded_key, int *hs_version, char **err_msg_out)</td></tr>
+<tr class="separator:a429edbc8e613a788ea2b42b9e5050f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a193624b5e0d5d45a44a529b732d3e4f7"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structrend__authorized__client__t.html">rend_authorized_client_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a193624b5e0d5d45a44a529b732d3e4f7">add_onion_helper_clientauth</a> (const char *arg, int *created, char **err_msg)</td></tr>
 <tr class="separator:a193624b5e0d5d45a44a529b732d3e4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cb5d6cdb0f965dcd9a3e9529e2b4a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#ad7cb5d6cdb0f965dcd9a3e9529e2b4a4">connection_control_finished_flushing</a> (<a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *conn)</td></tr>
@@ -309,8 +339,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>control_initialize_ev
 <tr class="separator:a21f67f80a4baa5a7432a916937e38d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ccad9d6430df1ed10abf18fda46891"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a34ccad9d6430df1ed10abf18fda46891">control_event_circuit_cell_stats</a> (void)</td></tr>
 <tr class="separator:a34ccad9d6430df1ed10abf18fda46891"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca2e7a3741df65cee13d64bb84118cbf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#aca2e7a3741df65cee13d64bb84118cbf">control_event_tb_empty</a> (const char *bucket, uint32_t read_empty_time, uint32_t write_empty_time, int milliseconds_elapsed)</td></tr>
-<tr class="separator:aca2e7a3741df65cee13d64bb84118cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a282f3c5c767e9a652b4519e5c19016aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a282f3c5c767e9a652b4519e5c19016aa">control_event_bandwidth_used</a> (uint32_t n_read, uint32_t n_written)</td></tr>
 <tr class="separator:a282f3c5c767e9a652b4519e5c19016aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57fedb007398cca6edebf8635f35f210"><td class="memItemLeft" align="right" valign="top"><a id="a57fedb007398cca6edebf8635f35f210"></a>
@@ -322,12 +350,12 @@ STATIC char *&#160;</td><td class="memItemRight" valign="bottom"><b>get_bw_sampl
 <tr class="separator:a8336a8705fe16b16bc29aa26defeb567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e2cfc4aa0b38b8043b3e4aa467e0745"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a2e2cfc4aa0b38b8043b3e4aa467e0745">control_event_logmsg</a> (int severity, uint32_t domain, const char *msg)</td></tr>
 <tr class="separator:a2e2cfc4aa0b38b8043b3e4aa467e0745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2557c81242d73d93750e0c68218a7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#ade2557c81242d73d93750e0c68218a7c">control_event_logmsg_pending</a> (void)</td></tr>
+<tr class="separator:ade2557c81242d73d93750e0c68218a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1c562cb6f09c13a49ec73cc1b72c7f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#ac1c562cb6f09c13a49ec73cc1b72c7f8">control_event_descriptors_changed</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *routers)</td></tr>
 <tr class="separator:ac1c562cb6f09c13a49ec73cc1b72c7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf333c7b412035374239a43e99c4f588"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#abf333c7b412035374239a43e99c4f588">control_event_address_mapped</a> (const char *from, const char *to, time_t expires, const char *error, const int cached)</td></tr>
 <tr class="separator:abf333c7b412035374239a43e99c4f588"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3947f915e7d21adeeefff1ffd29e546"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#ae3947f915e7d21adeeefff1ffd29e546">control_event_or_authdir_new_descriptor</a> (const char *action, const char *desc, size_t desclen, const char *msg)</td></tr>
-<tr class="separator:ae3947f915e7d21adeeefff1ffd29e546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88dfbfe80b8462d7ca8e438a40e6d30f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a88dfbfe80b8462d7ca8e438a40e6d30f">control_event_network_liveness_update</a> (int liveness)</td></tr>
 <tr class="separator:a88dfbfe80b8462d7ca8e438a40e6d30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7331ec4f1191128906b7dcb447dad328"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a7331ec4f1191128906b7dcb447dad328">control_event_networkstatus_changed</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *statuses)</td></tr>
@@ -367,8 +395,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_control_cookie_au
 <tr class="separator:ad1f8aa865448a4f8c34719f2b1ea67d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedcfacb9f04291c724b3a7cd1cac4d39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#aedcfacb9f04291c724b3a7cd1cac4d39">control_event_bootstrap</a> (<a class="el" href="or_8h.html#aca5cc90a3504ceeacfbdca51d6e4f46d">bootstrap_status_t</a> status, int progress)</td></tr>
 <tr class="separator:aedcfacb9f04291c724b3a7cd1cac4d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a855b816259eba937deffaece856dac5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a855b816259eba937deffaece856dac5e">MOCK_IMPL</a> (void, control_event_bootstrap_problem,(const char *warn, int reason, <a class="el" href="structor__connection__t.html">or_connection_t</a> *or_conn))</td></tr>
-<tr class="separator:a855b816259eba937deffaece856dac5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909cd7f141f9111cda009bd1960d7e08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a909cd7f141f9111cda009bd1960d7e08">control_event_bootstrap_problem</a> (const char *warn, const char *reason, const <a class="el" href="structconnection__t.html">connection_t</a> *conn, int dowarn)</td></tr>
+<tr class="separator:a909cd7f141f9111cda009bd1960d7e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cf925561cc1fc7aab3dc2b383a3071"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a12cf925561cc1fc7aab3dc2b383a3071">MOCK_IMPL</a> (void, control_event_bootstrap_prob_or,(const char *warn, int reason, <a class="el" href="structor__connection__t.html">or_connection_t</a> *or_conn))</td></tr>
+<tr class="separator:a12cf925561cc1fc7aab3dc2b383a3071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268c6940e7eb06fe81447d3f1a423b81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a268c6940e7eb06fe81447d3f1a423b81">control_event_clients_seen</a> (const char *controller_str)</td></tr>
 <tr class="separator:a268c6940e7eb06fe81447d3f1a423b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d693451765fc0a044d1bc40ce0a0809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a8d693451765fc0a044d1bc40ce0a0809">control_event_transport_launched</a> (const char *mode, const char *transport_name, <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port)</td></tr>
@@ -377,22 +407,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_control_cookie_au
 <tr class="separator:a9f5b8b8ca50d94db752f91e1d59034b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a000c7faf94744c2b3a6f1753b513e5ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a000c7faf94744c2b3a6f1753b513e5ae">MOCK_IMPL</a> (const char *, node_describe_longname_by_id,(const char *id_digest))</td></tr>
 <tr class="separator:a000c7faf94744c2b3a6f1753b513e5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57961987ad1a6fc81270fee060ae0403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a57961987ad1a6fc81270fee060ae0403">control_event_hs_descriptor_requested</a> (const <a class="el" href="structrend__data__t.html">rend_data_t</a> *rend_query, const char *id_digest, const char *desc_id_base32)</td></tr>
-<tr class="separator:a57961987ad1a6fc81270fee060ae0403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca8b9e9f3dddde1997092abb88afb262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#aca8b9e9f3dddde1997092abb88afb262">control_event_hs_descriptor_created</a> (const char *service_id, const char *desc_id_base32, int replica)</td></tr>
-<tr class="separator:aca8b9e9f3dddde1997092abb88afb262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9158d4100feb52f6dc5ba9f98c4c77d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#ad9158d4100feb52f6dc5ba9f98c4c77d">control_event_hs_descriptor_upload</a> (const char *service_id, const char *id_digest, const char *desc_id_base32)</td></tr>
-<tr class="separator:ad9158d4100feb52f6dc5ba9f98c4c77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f3344dfae3df20aa756247dde4b6cd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a6f3344dfae3df20aa756247dde4b6cd6">control_event_hs_descriptor_receive_end</a> (const char *action, const char *onion_address, const <a class="el" href="structrend__data__t.html">rend_data_t</a> *rend_data, const char *id_digest, const char *reason)</td></tr>
-<tr class="separator:a6f3344dfae3df20aa756247dde4b6cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9d57f7220ee44755362058ffa97892"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a3b9d57f7220ee44755362058ffa97892">control_event_hs_descriptor_requested</a> (const char *onion_address, <a class="el" href="or_8h.html#aafc6920f8a16e10f46703e7819795c74">rend_auth_type_t</a> auth_type, const char *id_digest, const char *desc_id, const char *hsdir_index)</td></tr>
+<tr class="separator:a3b9d57f7220ee44755362058ffa97892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add53b1a6396162e3bb9eab66a6afebdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#add53b1a6396162e3bb9eab66a6afebdc">control_event_hs_descriptor_created</a> (const char *onion_address, const char *desc_id, int replica)</td></tr>
+<tr class="separator:add53b1a6396162e3bb9eab66a6afebdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6195a5446c44a761339449df87237887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a6195a5446c44a761339449df87237887">control_event_hs_descriptor_upload</a> (const char *onion_address, const char *id_digest, const char *desc_id, const char *hsdir_index)</td></tr>
+<tr class="separator:a6195a5446c44a761339449df87237887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a689805429adc3369580c97c9e8b9bdd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a689805429adc3369580c97c9e8b9bdd7">control_event_hs_descriptor_upload_end</a> (const char *action, const char *onion_address, const char *id_digest, const char *reason)</td></tr>
 <tr class="separator:a689805429adc3369580c97c9e8b9bdd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b1ba802587d7b3043927a2c3ca2c4e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a3b1ba802587d7b3043927a2c3ca2c4e1">control_event_hs_descriptor_received</a> (const char *onion_address, const <a class="el" href="structrend__data__t.html">rend_data_t</a> *rend_data, const char *id_digest)</td></tr>
-<tr class="separator:a3b1ba802587d7b3043927a2c3ca2c4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ebad4c4804dd1e80cd580233af062a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a45ebad4c4804dd1e80cd580233af062a">control_event_hsv2_descriptor_received</a> (const char *onion_address, const <a class="el" href="structrend__data__t.html">rend_data_t</a> *rend_data, const char *hsdir_id_digest)</td></tr>
+<tr class="separator:a45ebad4c4804dd1e80cd580233af062a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93051e46f7c876546586fe7e454f91e"><td class="memItemLeft" align="right" valign="top"><a id="ae93051e46f7c876546586fe7e454f91e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>control_event_hsv3_descriptor_received</b> (const char *onion_address, const char *desc_id, const char *hsdir_id_digest)</td></tr>
+<tr class="separator:ae93051e46f7c876546586fe7e454f91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6668148651c111619b3cbe75c39d75d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a6668148651c111619b3cbe75c39d75d6">control_event_hs_descriptor_uploaded</a> (const char *id_digest, const char *onion_address)</td></tr>
 <tr class="separator:a6668148651c111619b3cbe75c39d75d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a128d229744935862e28d70f1fb0b5821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a128d229744935862e28d70f1fb0b5821">control_event_hs_descriptor_failed</a> (const <a class="el" href="structrend__data__t.html">rend_data_t</a> *rend_data, const char *id_digest, const char *reason)</td></tr>
-<tr class="separator:a128d229744935862e28d70f1fb0b5821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7407c201dd8249d580be5eeb048a74f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a7407c201dd8249d580be5eeb048a74f6">control_event_hsv2_descriptor_failed</a> (const <a class="el" href="structrend__data__t.html">rend_data_t</a> *rend_data, const char *hsdir_id_digest, const char *reason)</td></tr>
+<tr class="separator:a7407c201dd8249d580be5eeb048a74f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8420c8c951d738c5f549820689ae4ac8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a8420c8c951d738c5f549820689ae4ac8">control_event_hsv3_descriptor_failed</a> (const char *onion_address, const char *desc_id, const char *hsdir_id_digest, const char *reason)</td></tr>
+<tr class="separator:a8420c8c951d738c5f549820689ae4ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc2b6b7637cc858a77a37f96129edf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a2fc2b6b7637cc858a77a37f96129edf4">control_event_hs_descriptor_content</a> (const char *onion_address, const char *desc_id, const char *hsdir_id_digest, const char *content)</td></tr>
 <tr class="separator:a2fc2b6b7637cc858a77a37f96129edf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dbd4bf59a3490e0272203314f56a66c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html#a3dbd4bf59a3490e0272203314f56a66c">control_event_hs_descriptor_upload_failed</a> (const char *id_digest, const char *onion_address, const char *reason)</td></tr>
@@ -408,6 +441,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_control_cookie_au
 <p>This module generally has two kinds of entry points: those based on having received a command on a controller socket, which are handled in <a class="el" href="control_8c.html#af432f1e6e596c37d0320e46106243253">connection_control_process_inbuf()</a>, and dispatched to individual functions with names like control_handle_COMMANDNAME(); and those based on events that occur elsewhere in Tor, which are handled by functions with names like control_event_EVENTTYPE().</p>
 <p>Controller events are not sent immediately; rather, they are inserted into the queued_control_events array, and flushed later from flush_queued_events_cb(). Doing this simplifies our callgraph greatly, by limiting the number of places in Tor that can call back into the network stack. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aff97f4aa113ab62b61d865d5d3c4724d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff97f4aa113ab62b61d865d5d3c4724d">&#9670;&nbsp;</a></span>ANY_EVENT_IS_INTERESTING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ANY_EVENT_IS_INTERESTING</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">e</td><td>)</td>
+          <td>&#160;&#160;&#160;(!! (global_event_mask &amp; (e)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Macro: true if any event from the bitfield 'e' is interesting. </p>
+
+</div>
+</div>
 <a id="aaab749d06c1a84ec27463752fb227ad5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaab749d06c1a84ec27463752fb227ad5">&#9670;&nbsp;</a></span>AUTHENTICATION_COOKIE_LEN</h2>
 
@@ -493,7 +545,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_control_cookie_au
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">int</span> r;                                                        \</div><div class="line">  do {                                                          \</div><div class="line">    va_list ap;                                                 \</div><div class="line">    if (!<a class="code" href="control_8c.html#a1c6516221d89f0b2355a553950ee5829">EVENT_IS_INTERESTING</a>(event))                           \</div><div class="line">      return 0;                                                 \</div><div class="line">                                                                \</div><div class="line">    va_start(ap, format);                                       \</div><div class="line">    r = control_event_status((event), (sev), format, ap);       \</div><div class="line">    va_end(ap);                                                 \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="control_8c_html_a1c6516221d89f0b2355a553950ee5829"><div class="ttname"><a href="control_8c.html#a1c6516221d89f0b2355a553950ee5829">EVENT_IS_INTERESTING</a></div><div class="ttdeci">#define EVENT_IS_INTERESTING(e)</div><div class="ttdef"><b>Definition:</b> control.c:104</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">int</span> r;                                                        \</div><div class="line">  do {                                                          \</div><div class="line">    va_list ap;                                                 \</div><div class="line">    if (!<a class="code" href="control_8c.html#a1c6516221d89f0b2355a553950ee5829">EVENT_IS_INTERESTING</a>(event))                           \</div><div class="line">      return 0;                                                 \</div><div class="line">                                                                \</div><div class="line">    va_start(ap, format);                                       \</div><div class="line">    r = control_event_status((event), (sev), format, ap);       \</div><div class="line">    va_end(ap);                                                 \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="control_8c_html_a1c6516221d89f0b2355a553950ee5829"><div class="ttname"><a href="control_8c.html#a1c6516221d89f0b2355a553950ee5829">EVENT_IS_INTERESTING</a></div><div class="ttdeci">#define EVENT_IS_INTERESTING(e)</div><div class="ttdef"><b>Definition:</b> control.c:113</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -577,7 +629,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_control_cookie_au
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Callback function for GETINFO: on a given control connection, try to answer the question <b>q</b> and store the newly-allocated answer in *<b>a</b>. If an internal error occurs, return -1 and optionally set *<b>error_out</b> to point to an error message to be delivered to the controller. On success, <em>or if the key is not recognized</em>, return 0. Do not set <b>a</b> if the key is not recognized. </p>
+<p>Callback function for GETINFO: on a given control connection, try to answer the question <b>q</b> and store the newly-allocated answer in *<b>a</b>. If an internal error occurs, return -1 and optionally set *<b>error_out</b> to point to an error message to be delivered to the controller. On success, <em>or if the key is not recognized</em>, return 0. Do not set <b>a</b> if the key is not recognized but you may set <b>error_out</b> to improve the error message. </p>
 
 </div>
 </div>
@@ -648,14 +700,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_control_cookie_au
 
 </div>
 </div>
-<a id="a96cb386ecd3106b1bb91df8909f97a2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96cb386ecd3106b1bb91df8909f97a2d">&#9670;&nbsp;</a></span>add_onion_helper_keyarg()</h2>
+<a id="a429edbc8e613a788ea2b42b9e5050f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429edbc8e613a788ea2b42b9e5050f09">&#9670;&nbsp;</a></span>add_onion_helper_keyarg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">STATIC <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a>* add_onion_helper_keyarg </td>
+          <td class="memname">STATIC int add_onion_helper_keyarg </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>arg</em>, </td>
@@ -681,6 +733,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_control_cookie_au
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">add_onion_secret_key_t *&#160;</td>
+          <td class="paramname"><em>decoded_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>hs_version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">char **&#160;</td>
           <td class="paramname"><em>err_msg_out</em>&#160;</td>
         </tr>
@@ -696,8 +760,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_control_cookie_au
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="control_8c_a96cb386ecd3106b1bb91df8909f97a2d_cgraph.png" border="0" usemap="#control_8c_a96cb386ecd3106b1bb91df8909f97a2d_cgraph" alt=""/></div>
-<map name="control_8c_a96cb386ecd3106b1bb91df8909f97a2d_cgraph" id="control_8c_a96cb386ecd3106b1bb91df8909f97a2d_cgraph">
+<div class="center"><img src="control_8c_a429edbc8e613a788ea2b42b9e5050f09_cgraph.png" border="0" usemap="#control_8c_a429edbc8e613a788ea2b42b9e5050f09_cgraph" alt=""/></div>
+<map name="control_8c_a429edbc8e613a788ea2b42b9e5050f09_cgraph" id="control_8c_a429edbc8e613a788ea2b42b9e5050f09_cgraph">
 <area shape="rect" id="node2" href="container_8c.html#a1d75cac5583c66900c032ba972ffabc8" title="smartlist_split_string" alt="" coords="223,5,365,32"/>
 </map>
 </div>
@@ -766,7 +830,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="control_8c_a966dc2b23c935600dc1f815fe8e88fda_cgraph.png" border="0" usemap="#control_8c_a966dc2b23c935600dc1f815fe8e88fda_cgraph" alt=""/></div>
 <map name="control_8c_a966dc2b23c935600dc1f815fe8e88fda_cgraph" id="control_8c_a966dc2b23c935600dc1f815fe8e88fda_cgraph">
-<area shape="rect" id="node2" href="control_8c.html#ade569bf3dbd2110f2ac817428885f0b9" title="control_update_global\l_event_mask" alt="" coords="184,5,332,47"/>
+<area shape="rect" id="node2" href="control_8c.html#ade569bf3dbd2110f2ac817428885f0b9" title="control_update_global\l_event_mask" alt="" coords="203,5,351,47"/>
+<area shape="rect" id="node3" href="rendcommon_8c.html#a07d97b83844365f0949fd9998269a5a9" title="rend_valid_v2_service_id" alt="" coords="419,97,587,123"/>
+<area shape="rect" id="node4" href="rendservice_8c.html#a9adfef842de9b8aec233a9046b9faeb2" title="rend_service_del_ephemeral" alt="" coords="184,122,371,149"/>
 </map>
 </div>
 
@@ -855,6 +921,62 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node4" href="log_8c.html#a62f4e494ccdddfdd631addbc64507976" title="get_min_log_level" alt="" coords="403,56,529,83"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="afa7eff3569fc8e5e5e27c1d6d9f02125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7eff3569fc8e5e5e27c1d6d9f02125">&#9670;&nbsp;</a></span>control_any_per_second_event_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int control_any_per_second_event_enabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true if any event that needs to fire once a second is enabled. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="control_8c_afa7eff3569fc8e5e5e27c1d6d9f02125_icgraph.png" border="0" usemap="#control_8c_afa7eff3569fc8e5e5e27c1d6d9f02125_icgraph" alt=""/></div>
+<map name="control_8c_afa7eff3569fc8e5e5e27c1d6d9f02125_icgraph" id="control_8c_afa7eff3569fc8e5e5e27c1d6d9f02125_icgraph">
+<area shape="rect" id="node2" href="control_8h.html#ae1881d4083d31106d2108a1ac919ac4e" title="control_per_second\l_events" alt="" coords="216,5,351,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1b5fbf9ddc3b167562660a53442f004f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5fbf9ddc3b167562660a53442f004f">&#9670;&nbsp;</a></span>control_connection_add_local_fd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int control_connection_add_local_fd </td>
+          <td>(</td>
+          <td class="paramtype">tor_socket_t&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create and add a new controller connection on <b>sock</b>. If <b>CC_LOCAL_FD_IS_OWNER</b> is set in <b>flags</b>, this Tor process should exit when the connection closes. If <b>CC_LOCAL_FD_IS_AUTHENTICATED</b> is set, then the connection does not need to authenticate. </p>
 
 </div>
 </div>
@@ -965,6 +1087,47 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a909cd7f141f9111cda009bd1960d7e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a909cd7f141f9111cda009bd1960d7e08">&#9670;&nbsp;</a></span>control_event_bootstrap_problem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void control_event_bootstrap_problem </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>warn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structconnection__t.html">connection_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dowarn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Called when Tor has failed to make bootstrapping progress in a way that indicates a problem. <b>warn</b> gives a human-readable hint as to why, and <b>reason</b> provides a controller-facing short tag. <b>conn</b> is the connection that caused this problem and can be NULL if a connection cannot be easily identified. </p>
+
+</div>
+</div>
 <a id="a3a2b503ef04599f6c944ecb4a71aefc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a2b503ef04599f6c944ecb4a71aefc5">&#9670;&nbsp;</a></span>control_event_buildtimeout_set()</h2>
 
@@ -991,14 +1154,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Called when we compute a new circuitbuildtimeout </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="control_8c_a3a2b503ef04599f6c944ecb4a71aefc5_cgraph.png" border="0" usemap="#control_8c_a3a2b503ef04599f6c944ecb4a71aefc5_cgraph" alt=""/></div>
-<map name="control_8c_a3a2b503ef04599f6c944ecb4a71aefc5_cgraph" id="control_8c_a3a2b503ef04599f6c944ecb4a71aefc5_cgraph">
-<area shape="rect" id="node2" href="control_8c.html#a7bba7fc2c25aada4416d77a64caa4219" title="control_event_is_interesting" alt="" coords="256,5,440,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1141,7 +1296,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="control_8c_a5fcccb8799c3633567989fd4560cf8a3_icgraph.png" border="0" usemap="#control_8c_a5fcccb8799c3633567989fd4560cf8a3_icgraph" alt=""/></div>
 <map name="control_8c_a5fcccb8799c3633567989fd4560cf8a3_icgraph" id="control_8c_a5fcccb8799c3633567989fd4560cf8a3_icgraph">
-<area shape="rect" id="node2" href="circuituse_8h.html#a78a23775279a45daabbdc354310a9e1f" title="circuit_has_opened" alt="" coords="196,13,331,39"/>
+<area shape="rect" id="node2" href="circuitstats_8h.html#a73e9aaecc9e72307e2483feeaed4c448" title="circuit_build_times\l_mark_circ_as_measurement_only" alt="" coords="196,5,420,47"/>
+<area shape="rect" id="node3" href="circuituse_8h.html#a78a23775279a45daabbdc354310a9e1f" title="circuit_has_opened" alt="" coords="241,71,375,98"/>
 </map>
 </div>
 
@@ -1213,7 +1369,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="control_8c_a92de51ab68d72df3bf43754758ba5c00_icgraph.png" border="0" usemap="#control_8c_a92de51ab68d72df3bf43754758ba5c00_icgraph" alt=""/></div>
 <map name="control_8c_a92de51ab68d72df3bf43754758ba5c00_icgraph" id="control_8c_a92de51ab68d72df3bf43754758ba5c00_icgraph">
-<area shape="rect" id="node2" href="circuitbuild_8h.html#a9850a0ba60e6a62bc0a7267343418235" title="circuit_note_clock\l_jumped" alt="" coords="192,5,319,47"/>
+<area shape="rect" id="node2" href="circuitbuild_8h.html#ad0daecc03b3062716a6845b8a522d3da" title="circuit_note_clock\l_jumped" alt="" coords="192,5,319,47"/>
 </map>
 </div>
 
@@ -1417,7 +1573,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="control_8c_a1bd4001ec6bb62a01e1d6d6c3f3bf44a_icgraph.png" border="0" usemap="#control_8c_a1bd4001ec6bb62a01e1d6d6c3f3bf44a_icgraph" alt=""/></div>
 <map name="control_8c_a1bd4001ec6bb62a01e1d6d6c3f3bf44a_icgraph" id="control_8c_a1bd4001ec6bb62a01e1d6d6c3f3bf44a_icgraph">
-<area shape="rect" id="node2" href="circuitbuild_8h.html#a9850a0ba60e6a62bc0a7267343418235" title="circuit_note_clock\l_jumped" alt="" coords="203,5,329,47"/>
+<area shape="rect" id="node2" href="circuitbuild_8h.html#ad0daecc03b3062716a6845b8a522d3da" title="circuit_note_clock\l_jumped" alt="" coords="203,5,329,47"/>
 </map>
 </div>
 
@@ -1460,14 +1616,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="control_8c_a4bcae87af9362ae1e34ba942a5ac124e_cgraph.png" border="0" usemap="#control_8c_a4bcae87af9362ae1e34ba942a5ac124e_cgraph" alt=""/></div>
 <map name="control_8c_a4bcae87af9362ae1e34ba942a5ac124e_cgraph" id="control_8c_a4bcae87af9362ae1e34ba942a5ac124e_cgraph">
-<area shape="rect" id="node2" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="431,5,544,32"/>
+<area shape="rect" id="node2" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="443,5,557,32"/>
 <area shape="rect" id="node3" href="nodelist_8c.html#ae942465b949bf8cc1006ddd3e9c61221" title="node_get_verbose_nickname" alt="" coords="192,56,383,83"/>
-<area shape="rect" id="node8" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="244,132,331,159"/>
-<area shape="rect" id="node4" href="nodelist_8c.html#a6d458e5290092933bd5c1aae33b2654f" title="node_get_nickname" alt="" coords="607,52,746,79"/>
-<area shape="rect" id="node5" href="nodelist_8c.html#a73dbc2267a8806e24ddc98fe7e2f1b31" title="node_is_named" alt="" coords="431,107,544,133"/>
-<area shape="rect" id="node6" href="networkstatus_8c.html#af663020b40e6b122a43b26aa62ca4ed4" title="networkstatus_get_router\l_digest_by_nickname" alt="" coords="592,103,761,145"/>
-<area shape="rect" id="node7" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="633,169,720,196"/>
-<area shape="rect" id="node9" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="440,157,535,184"/>
+<area shape="rect" id="node5" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="244,107,331,133"/>
+<area shape="rect" id="node4" href="nodelist_8c.html#a6d458e5290092933bd5c1aae33b2654f" title="node_get_nickname" alt="" coords="431,56,569,83"/>
+<area shape="rect" id="node6" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="453,107,547,133"/>
 </map>
 </div>
 
@@ -1510,12 +1663,12 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>send HS_DESC_CONTENT event after completion of a successful fetch from hs directory. </p>
+<p>Send HS_DESC_CONTENT event after completion of a successful fetch from hs directory. If <b>hsdir_id_digest</b> is NULL, it is replaced by "UNKNOWN". If <b>content</b> is NULL, it is replaced by an empty string. The <b>onion_address</b> or <b>desc_id</b> set to NULL will no trigger the control event. </p>
 
 </div>
 </div>
-<a id="aca8b9e9f3dddde1997092abb88afb262"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca8b9e9f3dddde1997092abb88afb262">&#9670;&nbsp;</a></span>control_event_hs_descriptor_created()</h2>
+<a id="add53b1a6396162e3bb9eab66a6afebdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add53b1a6396162e3bb9eab66a6afebdc">&#9670;&nbsp;</a></span>control_event_hs_descriptor_created()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1524,13 +1677,13 @@ Here is the call graph for this function:</div>
           <td class="memname">void control_event_hs_descriptor_created </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>service_id</em>, </td>
+          <td class="paramname"><em>onion_address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>desc_id_base32</em>, </td>
+          <td class="paramname"><em>desc_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1546,132 +1699,12 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>send HS_DESC CREATED event when a local service generates a descriptor.</p>
-<p><b>service_id</b> is the descriptor onion address. <b>desc_id_base32</b> is the descriptor ID. <b>replica</b> is the the descriptor replica number. </p>
+<p><b>onion_address</b> is service address. <b>desc_id</b> is the descriptor ID. <b>replica</b> is the the descriptor replica number. If it is negative, it is ignored. </p>
 
 </div>
 </div>
-<a id="a128d229744935862e28d70f1fb0b5821"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a128d229744935862e28d70f1fb0b5821">&#9670;&nbsp;</a></span>control_event_hs_descriptor_failed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void control_event_hs_descriptor_failed </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td>
-          <td class="paramname"><em>rend_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>id_digest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>reason</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Send HS_DESC event to inform controller that query <b>rend_query</b> failed to retrieve hidden service descriptor identified by <b>id_digest</b>. If <b>reason</b> is not NULL, add it to REASON= field. </p>
-
-</div>
-</div>
-<a id="a6f3344dfae3df20aa756247dde4b6cd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f3344dfae3df20aa756247dde4b6cd6">&#9670;&nbsp;</a></span>control_event_hs_descriptor_receive_end()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void control_event_hs_descriptor_receive_end </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>onion_address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td>
-          <td class="paramname"><em>rend_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>id_digest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>reason</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>send HS_DESC event after got response from hs directory.</p>
-<p>NOTE: this is an internal function used by following functions: control_event_hs_descriptor_received control_event_hs_descriptor_failed</p>
-<p>So do not call this function directly. </p>
-
-</div>
-</div>
-<a id="a3b1ba802587d7b3043927a2c3ca2c4e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b1ba802587d7b3043927a2c3ca2c4e1">&#9670;&nbsp;</a></span>control_event_hs_descriptor_received()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void control_event_hs_descriptor_received </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>onion_address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td>
-          <td class="paramname"><em>rend_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>id_digest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>send HS_DESC RECEIVED event</p>
-<p>called when we successfully received a hidden service descriptor. </p>
-
-</div>
-</div>
-<a id="a57961987ad1a6fc81270fee060ae0403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57961987ad1a6fc81270fee060ae0403">&#9670;&nbsp;</a></span>control_event_hs_descriptor_requested()</h2>
+<a id="a3b9d57f7220ee44755362058ffa97892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9d57f7220ee44755362058ffa97892">&#9670;&nbsp;</a></span>control_event_hs_descriptor_requested()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1679,8 +1712,14 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void control_event_hs_descriptor_requested </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td>
-          <td class="paramname"><em>rend_query</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>onion_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="or_8h.html#aafc6920f8a16e10f46703e7819795c74">rend_auth_type_t</a>&#160;</td>
+          <td class="paramname"><em>auth_type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1692,7 +1731,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>desc_id_base32</em>&#160;</td>
+          <td class="paramname"><em>desc_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hsdir_index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1702,12 +1747,12 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>send HS_DESC requested event.</p>
-<p><b>rend_query</b> is used to fetch requested onion address and auth type. <b>hs_dir</b> is the description of contacting hs directory. <b>desc_id_base32</b> is the ID of requested hs descriptor. </p>
+<p><b>rend_query</b> is used to fetch requested onion address and auth type. <b>hs_dir</b> is the description of contacting hs directory. <b>desc_id_base32</b> is the ID of requested hs descriptor. <b>hsdir_index</b> is the HSDir fetch index value for v3, an hex string. </p>
 
 </div>
 </div>
-<a id="ad9158d4100feb52f6dc5ba9f98c4c77d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9158d4100feb52f6dc5ba9f98c4c77d">&#9670;&nbsp;</a></span>control_event_hs_descriptor_upload()</h2>
+<a id="a6195a5446c44a761339449df87237887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6195a5446c44a761339449df87237887">&#9670;&nbsp;</a></span>control_event_hs_descriptor_upload()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1716,7 +1761,7 @@ Here is the call graph for this function:</div>
           <td class="memname">void control_event_hs_descriptor_upload </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>service_id</em>, </td>
+          <td class="paramname"><em>onion_address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1728,7 +1773,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>desc_id_base32</em>&#160;</td>
+          <td class="paramname"><em>desc_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hsdir_index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1738,7 +1789,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>send HS_DESC upload event.</p>
-<p><b>service_id</b> is the descriptor onion address. <b>hs_dir</b> is the description of contacting hs directory. <b>desc_id_base32</b> is the ID of requested hs descriptor. </p>
+<p><b>onion_address</b> is service address. <b>hs_dir</b> is the description of contacting hs directory. <b>desc_id</b> is the ID of requested hs descriptor. </p>
 
 </div>
 </div>
@@ -1850,6 +1901,118 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a7407c201dd8249d580be5eeb048a74f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7407c201dd8249d580be5eeb048a74f6">&#9670;&nbsp;</a></span>control_event_hsv2_descriptor_failed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void control_event_hsv2_descriptor_failed </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td>
+          <td class="paramname"><em>rend_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hsdir_id_digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send HS_DESC event to inform controller that query <b>rend_data</b> failed to retrieve hidden service descriptor from directory identified by <b>id_digest</b>. If NULL, "UNKNOWN" is used. If <b>reason</b> is not NULL, add it to REASON= field. </p>
+
+</div>
+</div>
+<a id="a45ebad4c4804dd1e80cd580233af062a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ebad4c4804dd1e80cd580233af062a">&#9670;&nbsp;</a></span>control_event_hsv2_descriptor_received()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void control_event_hsv2_descriptor_received </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>onion_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td>
+          <td class="paramname"><em>rend_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hsdir_id_digest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>send HS_DESC RECEIVED event</p>
+<p>called when we successfully received a hidden service descriptor. </p>
+
+</div>
+</div>
+<a id="a8420c8c951d738c5f549820689ae4ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8420c8c951d738c5f549820689ae4ac8">&#9670;&nbsp;</a></span>control_event_hsv3_descriptor_failed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void control_event_hsv3_descriptor_failed </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>onion_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>desc_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hsdir_id_digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send HS_DESC event to inform controller that the query to <b>onion_address</b> failed to retrieve hidden service descriptor <b>desc_id</b> from directory identified by <b>hsdir_id_digest</b>. If NULL, "UNKNOWN" is used. If <b>reason</b> is not NULL, add it to REASON= field. </p>
+
+</div>
+</div>
 <a id="a7bba7fc2c25aada4416d77a64caa4219"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7bba7fc2c25aada4416d77a64caa4219">&#9670;&nbsp;</a></span>control_event_is_interesting()</h2>
 
@@ -1871,9 +2034,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="control_8c_a7bba7fc2c25aada4416d77a64caa4219_icgraph.png" border="0" usemap="#control_8c_a7bba7fc2c25aada4416d77a64caa4219_icgraph" alt=""/></div>
 <map name="control_8c_a7bba7fc2c25aada4416d77a64caa4219_icgraph" id="control_8c_a7bba7fc2c25aada4416d77a64caa4219_icgraph">
-<area shape="rect" id="node2" href="control_8h.html#ac2cce566f007535370cda5c829181ede" title="control_event_newconsensus" alt="" coords="241,5,436,32"/>
-<area shape="rect" id="node3" href="control_8h.html#a3a2b503ef04599f6c944ecb4a71aefc5" title="control_event_buildtimeout_set" alt="" coords="237,56,440,83"/>
-<area shape="rect" id="node4" href="control_8h.html#ad6e3451a891012be7336b7b5a24a8465" title="control_event_signal" alt="" coords="268,107,409,133"/>
+<area shape="rect" id="node2" href="control_8h.html#ac2cce566f007535370cda5c829181ede" title="control_event_newconsensus" alt="" coords="237,5,432,32"/>
+<area shape="rect" id="node3" href="control_8h.html#ad6e3451a891012be7336b7b5a24a8465" title="control_event_signal" alt="" coords="264,56,405,83"/>
 </map>
 </div>
 
@@ -1917,6 +2079,34 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="control_8c_a2e2cfc4aa0b38b8043b3e4aa467e0745_cgraph.png" border="0" usemap="#control_8c_a2e2cfc4aa0b38b8043b3e4aa467e0745_cgraph" alt=""/></div>
 <map name="control_8c_a2e2cfc4aa0b38b8043b3e4aa467e0745_cgraph" id="control_8c_a2e2cfc4aa0b38b8043b3e4aa467e0745_cgraph">
 <area shape="rect" id="node2" href="compat__threads_8c.html#a92e0c20ce48368802f8fcab7eaa6c669" title="in_main_thread" alt="" coords="203,5,313,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ade2557c81242d73d93750e0c68218a7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade2557c81242d73d93750e0c68218a7c">&#9670;&nbsp;</a></span>control_event_logmsg_pending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void control_event_logmsg_pending </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Logging callback: called when there is a queued pending log callback. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="control_8c_ade2557c81242d73d93750e0c68218a7c_cgraph.png" border="0" usemap="#control_8c_ade2557c81242d73d93750e0c68218a7c_cgraph" alt=""/></div>
+<map name="control_8c_ade2557c81242d73d93750e0c68218a7c_cgraph" id="control_8c_ade2557c81242d73d93750e0c68218a7c_cgraph">
+<area shape="rect" id="node2" href="compat__threads_8c.html#a92e0c20ce48368802f8fcab7eaa6c669" title="in_main_thread" alt="" coords="231,5,341,32"/>
+<area shape="rect" id="node3" href="compat__libevent_8c.html#af815b0dd39abfb6b6ddbf5266175b479" title="mainloop_event_activate" alt="" coords="203,56,369,83"/>
 </map>
 </div>
 
@@ -2025,48 +2215,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ae3947f915e7d21adeeefff1ffd29e546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3947f915e7d21adeeefff1ffd29e546">&#9670;&nbsp;</a></span>control_event_or_authdir_new_descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int control_event_or_authdir_new_descriptor </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>desc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>desclen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>msg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The authoritative dirserver has received a new descriptor that has passed basic syntax checks and is properly self-signed.</p>
-<p>Notify any interested party of the new descriptor and what has been done with it, and also optionally give an explanation/reason. </p>
-
-</div>
-</div>
 <a id="a7ec5a96f0e43d4719b7992819bb3f1ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ec5a96f0e43d4719b7992819bb3f1ac">&#9670;&nbsp;</a></span>control_event_or_conn_status()</h2>
 
@@ -2172,14 +2320,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Format and send an EVENT_STATUS_SERVER event whose main text is obtained by formatting the arguments using the printf-style <b>format</b>. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="control_8c_a744e1e120d455e1662fdbb4704a1be20_icgraph.png" border="0" usemap="#control_8c_a744e1e120d455e1662fdbb4704a1be20_icgraph" alt=""/></div>
-<map name="control_8c_a744e1e120d455e1662fdbb4704a1be20_icgraph" id="control_8c_a744e1e120d455e1662fdbb4704a1be20_icgraph">
-<area shape="rect" id="node2" href="circuitbuild_8h.html#acccfc2539c7dd13ca9db049b3decc386" title="inform_testing_reachability" alt="" coords="196,13,373,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2291,47 +2431,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aca2e7a3741df65cee13d64bb84118cbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca2e7a3741df65cee13d64bb84118cbf">&#9670;&nbsp;</a></span>control_event_tb_empty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int control_event_tb_empty </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>bucket</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>read_empty_time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>write_empty_time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>milliseconds_elapsed</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Tokens in <b>bucket</b> have been refilled: the read bucket was empty for <b>read_empty_time</b> millis, the write bucket was empty for <b>write_empty_time</b> millis, and buckets were last refilled <b>milliseconds_elapsed</b> millis ago. Only emit TB_EMPTY event if either read or write bucket have been empty before. </p>
-
-</div>
-</div>
 <a id="a8d693451765fc0a044d1bc40ce0a0809"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d693451765fc0a044d1bc40ce0a0809">&#9670;&nbsp;</a></span>control_event_transport_launched()</h2>
 
@@ -2389,6 +2488,33 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Free any leftover allocated memory of the <a class="el" href="control_8c.html" title="Implementation for Tor&#39;s control-socket interface. ">control.c</a> subsystem. </p>
+
+</div>
+</div>
+<a id="ae1881d4083d31106d2108a1ac919ac4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1881d4083d31106d2108a1ac919ac4e">&#9670;&nbsp;</a></span>control_per_second_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void control_per_second_events </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run all the controller events (if any) that are scheduled to trigger once per second. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="control_8c_ae1881d4083d31106d2108a1ac919ac4e_cgraph.png" border="0" usemap="#control_8c_ae1881d4083d31106d2108a1ac919ac4e_cgraph" alt=""/></div>
+<map name="control_8c_ae1881d4083d31106d2108a1ac919ac4e_cgraph" id="control_8c_ae1881d4083d31106d2108a1ac919ac4e_cgraph">
+<area shape="rect" id="node2" href="control_8c.html#afa7eff3569fc8e5e5e27c1d6d9f02125" title="control_any_per_second\l_event_enabled" alt="" coords="188,5,351,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2570,6 +2696,108 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Helper: Return a newly allocated string containing a path to the file where we store our authentication cookie. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="control_8c_a9443fc62bda985f770ac05fe96fcd4f4_icgraph.png" border="0" usemap="#control_8c_a9443fc62bda985f770ac05fe96fcd4f4_icgraph" alt=""/></div>
+<map name="control_8c_a9443fc62bda985f770ac05fe96fcd4f4_icgraph" id="control_8c_a9443fc62bda985f770ac05fe96fcd4f4_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#a4d28e76dd898a85ba3459928e3659954" title="tor_cleanup" alt="" coords="199,13,288,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaa944da80f923edd033b270cb4b84cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa944da80f923edd033b270cb4b84cba">&#9670;&nbsp;</a></span>getinfo_helper_current_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC int getinfo_helper_current_time </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>control_conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>question</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>answer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>errmsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Implementation helper for GETINFO: answers requests for information about the current time in both local and UTF forms. </p>
+
+</div>
+</div>
+<a id="aafbf616bddc3f380f8c682ed7550e3c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbf616bddc3f380f8c682ed7550e3c4">&#9670;&nbsp;</a></span>getinfo_helper_dir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC int getinfo_helper_dir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>control_conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>question</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>answer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>errmsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Implementation helper for GETINFO: knows the answers for questions about directory information. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="control_8c_aafbf616bddc3f380f8c682ed7550e3c4_cgraph.png" border="0" usemap="#control_8c_aafbf616bddc3f380f8c682ed7550e3c4_cgraph" alt=""/></div>
+<map name="control_8c_aafbf616bddc3f380f8c682ed7550e3c4_cgraph" id="control_8c_aafbf616bddc3f380f8c682ed7550e3c4_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="225,5,313,32"/>
+<area shape="rect" id="node3" href="nodelist_8c.html#ab876cec61e163d3246f27357c98d0687" title="node_get_by_hex_id" alt="" coords="199,56,340,83"/>
+<area shape="rect" id="node6" href="routerlist_8c.html#af4d8bdd829c8eab4c9060c014fb59af8" title="signed_descriptor_get_body" alt="" coords="177,107,361,133"/>
+<area shape="rect" id="node4" href="routerlist_8c.html#a589e19badbee6e0257d94d03dcc40ba7" title="hex_digest_nickname\l_decode" alt="" coords="409,49,557,90"/>
+<area shape="rect" id="node5" href="util__format_8c.html#a6942053f58dd619a86734e55a42d7266" title="base16_decode" alt="" coords="605,56,719,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2842,6 +3070,47 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="ad7b56ac7ede2a04d5c8311a5fbae88ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b56ac7ede2a04d5c8311a5fbae88ab">&#9670;&nbsp;</a></span>getinfo_helper_onions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC int getinfo_helper_onions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *&#160;</td>
+          <td class="paramname"><em>control_conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>question</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>answer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>errmsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Implementation helper for GETINFO: knows how to enumerate hidden services created via the control port. </p>
+
+</div>
+</div>
 <a id="afbfd2697ea512e2df42fc31c8e1d208a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbfd2697ea512e2df42fc31c8e1d208a">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/4]</span></h2>
 
@@ -2915,8 +3184,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a855b816259eba937deffaece856dac5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a855b816259eba937deffaece856dac5e">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/4]</span></h2>
+<a id="a12cf925561cc1fc7aab3dc2b383a3071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12cf925561cc1fc7aab3dc2b383a3071">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2930,7 +3199,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">control_event_bootstrap_problem&#160;</td>
+          <td class="paramtype">control_event_bootstrap_prob_or&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -2989,12 +3258,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="control_8c_a000c7faf94744c2b3a6f1753b513e5ae_cgraph.png" border="0" usemap="#control_8c_a000c7faf94744c2b3a6f1753b513e5ae_cgraph" alt=""/></div>
 <map name="control_8c_a000c7faf94744c2b3a6f1753b513e5ae_cgraph" id="control_8c_a000c7faf94744c2b3a6f1753b513e5ae_cgraph">
 <area shape="rect" id="node2" href="nodelist_8c.html#a111b3704de6d40d874d64dbced6bb9ae" title="node_get_verbose_nickname\l_by_id" alt="" coords="153,23,344,65"/>
-<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="631,5,744,32"/>
+<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="643,5,757,32"/>
 <area shape="rect" id="node4" href="nodelist_8c.html#ae942465b949bf8cc1006ddd3e9c61221" title="node_get_verbose_nickname" alt="" coords="392,56,583,83"/>
-<area shape="rect" id="node5" href="nodelist_8c.html#a6d458e5290092933bd5c1aae33b2654f" title="node_get_nickname" alt="" coords="807,53,946,80"/>
-<area shape="rect" id="node6" href="nodelist_8c.html#a73dbc2267a8806e24ddc98fe7e2f1b31" title="node_is_named" alt="" coords="631,111,744,137"/>
-<area shape="rect" id="node7" href="networkstatus_8c.html#af663020b40e6b122a43b26aa62ca4ed4" title="networkstatus_get_router\l_digest_by_nickname" alt="" coords="792,105,961,146"/>
-<area shape="rect" id="node8" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="833,171,920,197"/>
+<area shape="rect" id="node5" href="nodelist_8c.html#a6d458e5290092933bd5c1aae33b2654f" title="node_get_nickname" alt="" coords="631,56,769,83"/>
 </map>
 </div>
 
@@ -3016,14 +3282,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set <b>process_spec</b> as Tor's owning controller process. Exit on failure. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="control_8c_ad1f8aa865448a4f8c34719f2b1ea67d2_cgraph.png" border="0" usemap="#control_8c_ad1f8aa865448a4f8c34719f2b1ea67d2_cgraph" alt=""/></div>
-<map name="control_8c_ad1f8aa865448a4f8c34719f2b1ea67d2_cgraph" id="control_8c_ad1f8aa865448a4f8c34719f2b1ea67d2_cgraph">
-<area shape="rect" id="node2" href="procmon_8c.html#aaa9db5e3da740165746e2779de66955c" title="tor_process_monitor_free" alt="" coords="227,13,396,39"/>
-</map>
-</div>
 
 </div>
 </div>

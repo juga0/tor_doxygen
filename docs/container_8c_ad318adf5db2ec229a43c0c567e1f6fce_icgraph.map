@@ -2,7 +2,6 @@
 <area shape="rect" id="node2" href="$container_8c.html#aa00abe45bd3538f0ade311596436c33f" title="smartlist_subtract" alt="" coords="196,5,323,32"/>
 <area shape="rect" id="node3" href="$circuitlist_8h.html#a59a56e94fe3ac816942314b7172c3b30" title="circuit_set_state" alt="" coords="200,56,319,83"/>
 <area shape="rect" id="node6" href="$main_8h.html#a47f0f7ed57367c80e2cbf1769b7bb47c" title="connection_stop_reading\l_from_linked_conn" alt="" coords="176,107,343,149"/>
-<area shape="rect" id="node7" href="$transports_8c.html#a437490d8399f97fdfad6573249e6992b" title="managed_proxy_destroy" alt="" coords="177,173,341,200"/>
 <area shape="rect" id="node4" href="$circuitbuild_8h.html#ac8532320d2ec89a1d23738911ef3673f" title="origin_circuit_init" alt="" coords="391,56,509,83"/>
 <area shape="rect" id="node5" href="$circuitbuild_8h.html#ad080a73b41f96d923417f2b5b3535f50" title="circuit_establish_circuit" alt="" coords="557,56,716,83"/>
 </map>

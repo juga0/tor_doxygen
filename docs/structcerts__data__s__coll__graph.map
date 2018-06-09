@@ -1,8 +1,10 @@
 <map id="certs_data_s" name="certs_data_s">
-<area shape="rect" id="node2" href="$structcerts__cell__st.html" title="certs_cell_st" alt="" coords="5,303,101,329"/>
-<area shape="rect" id="node3" href="$structor__connection__t.html" title="or_connection_t" alt="" coords="125,303,240,329"/>
-<area shape="rect" id="node4" href="$structor__handshake__state__t.html" title="or_handshake_state_t" alt="" coords="217,213,367,240"/>
-<area shape="rect" id="node5" href="$structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="226,95,337,121"/>
-<area shape="rect" id="node7" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="264,303,355,329"/>
-<area shape="rect" id="node8" href="$structvar__cell__t.html" title="var_cell_t" alt="" coords="379,303,458,329"/>
+<area shape="rect" id="node2" href="$structcerts__cell__st.html" title="certs_cell_st" alt="" coords="5,332,101,359"/>
+<area shape="rect" id="node3" href="$structor__connection__t.html" title="or_connection_t" alt="" coords="125,332,240,359"/>
+<area shape="rect" id="node4" href="$structor__handshake__state__t.html" title="or_handshake_state_t" alt="" coords="325,243,475,269"/>
+<area shape="rect" id="node6" href="$structcrypto__digest__t.html" title="crypto_digest_t" alt="" coords="345,124,455,151"/>
+<area shape="rect" id="node7" href="$structor__handshake__certs__t.html" title="or_handshake_certs_t" alt="" coords="479,124,630,151"/>
+<area shape="rect" id="node8" href="$structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="654,124,805,151"/>
+<area shape="rect" id="node9" href="$structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="264,332,355,359"/>
+<area shape="rect" id="node10" href="$structvar__cell__t.html" title="var_cell_t" alt="" coords="379,332,458,359"/>
 </map>

@@ -1,6 +1,5 @@
 <map id="router_get_trusted_dir_servers" name="router_get_trusted_dir_servers">
-<area shape="rect" id="node2" href="$config_8c.html#a44bd3659f3928dce51310d4313e5fb93" title="consider_adding_dir\l_servers" alt="" coords="205,5,342,47"/>
-<area shape="rect" id="node3" href="$directory_8h.html#ae4524a59d1b721804ba0cb5c0b7cf53a" title="directories_have_accepted\l_server_descriptor" alt="" coords="185,71,362,112"/>
-<area shape="rect" id="node4" href="$directory_8h.html#aace63698f64d26bc7a14531381e2fa57" title="directory_post_to_dirservers" alt="" coords="180,137,367,163"/>
-<area shape="rect" id="node5" href="$directory_8h.html#a13483821c102fb862ab0d27091d7ffc7" title="directory_get_from\l_all_authorities" alt="" coords="208,188,339,229"/>
+<area shape="rect" id="node2" href="$config_8c.html#a44bd3659f3928dce51310d4313e5fb93" title="consider_adding_dir\l_servers" alt="" coords="200,5,337,47"/>
+<area shape="rect" id="node3" href="$directory_8h.html#ae4524a59d1b721804ba0cb5c0b7cf53a" title="directories_have_accepted\l_server_descriptor" alt="" coords="180,71,357,112"/>
+<area shape="rect" id="node4" href="$directory_8h.html#a13483821c102fb862ab0d27091d7ffc7" title="directory_get_from\l_all_authorities" alt="" coords="203,136,334,177"/>
 </map>

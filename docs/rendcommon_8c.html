@@ -75,8 +75,15 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitbuild_8h_source.html">circuitbuild.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="circuituse_8h_source.html">circuituse.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__client_8h_source.html">hs_client.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__common_8h_source.html">hs_common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__intropoint_8h_source.html">hs_intropoint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rendclient_8h_source.html">rendclient.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rendcommon_8h_source.html">rendcommon.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rendmid_8h_source.html">rendmid.h</a>&quot;</code><br />
@@ -85,56 +92,66 @@ $(function() {
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerlist_8h_source.html">routerlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="routerparse_8h_source.html">routerparse.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for rendcommon.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="rendcommon_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2rendcommon_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2rendcommon_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2rendcommon_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1405,259,1449,285"/>
-<area shape="rect" id="node34" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2070,109,2165,136"/>
-<area shape="rect" id="node35" href="config_8h.html" title="Header file for config.c. " alt="" coords="1657,184,1725,211"/>
-<area shape="rect" id="node36" href="control_8h.html" title="Header file for control.c. " alt="" coords="2189,109,2261,136"/>
-<area shape="rect" id="node37" href="rendclient_8h.html" title="Header file for rendclient.c. " alt="" coords="1753,109,1842,136"/>
-<area shape="rect" id="node39" href="rendcommon_8h.html" title="Header file for rendcommon.c. " alt="" coords="1785,259,1893,285"/>
-<area shape="rect" id="node40" href="rendmid_8h.html" title="Header file for rendmid.c. " alt="" coords="2286,109,2365,136"/>
-<area shape="rect" id="node41" href="rendservice_8h.html" title="Header file for rendservice.c. " alt="" coords="1394,184,1494,211"/>
-<area shape="rect" id="node42" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2389,109,2461,136"/>
-<area shape="rect" id="node43" href="router_8h.html" title="Header file for router.c. " alt="" coords="1889,408,1956,435"/>
-<area shape="rect" id="node44" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="1968,184,2051,211"/>
-<area shape="rect" id="node45" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="2485,109,2584,136"/>
-<area shape="rect" id="node46" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2031,259,2145,285"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="409,856,487,883"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="526,781,589,808"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1028,557,1097,584"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1405,557,1518,584"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1463,632,1588,659"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1369,707,1511,733"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1157,483,1219,509"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1675,557,1741,584"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="287,408,374,435"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="1308,333,1380,360"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="373,333,451,360"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2132,707,2260,733"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="1405,333,1449,360"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1473,333,1575,360"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1600,333,1691,360"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1587,707,1682,733"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1628,781,1727,808"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="635,632,711,659"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="394,781,502,808"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="595,707,722,733"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1252,557,1380,584"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="324,483,375,509"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="221,483,299,509"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="195,707,266,733"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="469,557,547,584"/>
-<area shape="rect" id="node38" href="rendcache_8h.html" title="Header file for rendcache.c. " alt="" coords="1749,184,1843,211"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1241,408,1285,435"/>
+<area shape="rect" id="node27" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="81,109,175,136"/>
+<area shape="rect" id="node28" href="circuituse_8h.html" title="Header file for circuituse.c. " alt="" coords="199,109,289,136"/>
+<area shape="rect" id="node29" href="config_8h.html" title="Header file for config.c. " alt="" coords="2154,333,2222,360"/>
+<area shape="rect" id="node30" href="control_8h.html" title="Header file for control.c. " alt="" coords="364,109,436,136"/>
+<area shape="rect" id="node31" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="113,557,215,584"/>
+<area shape="rect" id="node32" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="5,408,99,435"/>
+<area shape="rect" id="node33" href="hs__client_8h.html" title="Header file containing client data for the HS subsytem. " alt="" coords="511,184,596,211"/>
+<area shape="rect" id="node38" href="hs__common_8h.html" title="Header file containing common data for the whole HS subsytem. " alt="" coords="936,333,1040,360"/>
+<area shape="rect" id="node39" href="hs__intropoint_8h.html" title="Header file for hs_intropoint.c. " alt="" coords="276,259,383,285"/>
+<area shape="rect" id="node40" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="1927,184,2041,211"/>
+<area shape="rect" id="node41" href="rendclient_8h.html" title="Header file for rendclient.c. " alt="" coords="1167,109,1257,136"/>
+<area shape="rect" id="node43" href="rendcommon_8h.html" title="Header file for rendcommon.c. " alt="" coords="1217,259,1325,285"/>
+<area shape="rect" id="node44" href="rendmid_8h.html" title="Header file for rendmid.c. " alt="" coords="1443,109,1522,136"/>
+<area shape="rect" id="node45" href="rendservice_8h.html" title="Header file for rendservice.c. " alt="" coords="990,109,1090,136"/>
+<area shape="rect" id="node47" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="1597,109,1669,136"/>
+<area shape="rect" id="node48" href="router_8h.html" title="Header file for router.c. " alt="" coords="1424,259,1491,285"/>
+<area shape="rect" id="node49" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="2047,333,2129,360"/>
+<area shape="rect" id="node50" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="1795,109,1893,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1682,856,1761,883"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="905,781,967,808"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1085,557,1155,584"/>
+<area shape="rect" id="node11" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="855,483,969,509"/>
+<area shape="rect" id="node12" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="655,557,780,584"/>
+<area shape="rect" id="node13" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="705,632,847,659"/>
+<area shape="rect" id="node14" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1835,632,1898,659"/>
+<area shape="rect" id="node15" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1974,632,2039,659"/>
+<area shape="rect" id="node16" href="container_8h_source.html" title="container.h" alt="" coords="1251,557,1338,584"/>
+<area shape="rect" id="node17" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1489,483,1580,509"/>
+<area shape="rect" id="node18" href="address_8h.html" title="Headers for address.h. " alt="" coords="1839,483,1918,509"/>
+<area shape="rect" id="node19" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2348,707,2476,733"/>
+<area shape="rect" id="node20" href="ht_8h_source.html" title="ht.h" alt="" coords="1605,483,1649,509"/>
+<area shape="rect" id="node21" href="confline_8h_source.html" title="confline.h" alt="" coords="1146,483,1225,509"/>
+<area shape="rect" id="node22" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="575,483,678,509"/>
+<area shape="rect" id="node23" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1673,483,1764,509"/>
+<area shape="rect" id="node24" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="1430,707,1541,733"/>
+<area shape="rect" id="node25" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1565,707,1659,733"/>
+<area shape="rect" id="node26" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1351,483,1465,509"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1683,707,1759,733"/>
+<area shape="rect" id="node10" href="util_8h.html" title="Headers for util.c. " alt="" coords="1157,632,1208,659"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1861,781,1960,808"/>
+<area shape="rect" id="node34" href="hs__descriptor_8h.html" title="Header file for hs_descriptor.c. " alt="" coords="801,333,911,360"/>
+<area shape="rect" id="node37" href="hs__ident_8h.html" title="Header file containing circuit and connection identifier data for the whole HS subsytem. " alt="" coords="508,259,591,285"/>
+<area shape="rect" id="node35" href="ed25519__cert_8h_source.html" title="ed25519_cert.h" alt="" coords="1106,408,1217,435"/>
+<area shape="rect" id="node36" href="torcert_8h_source.html" title="torcert.h" alt="" coords="423,408,494,435"/>
+<area shape="rect" id="node42" href="rendcache_8h.html" title="Header file for rendcache.c. " alt="" coords="1165,184,1259,211"/>
+<area shape="rect" id="node46" href="hs__service_8h.html" title="Header file containing service data for the HS subsytem. " alt="" coords="627,184,723,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a58f93131efc3381ad7f9f006c4b39e62"><td class="memItemLeft" align="right" valign="top"><a id="a58f93131efc3381ad7f9f006c4b39e62"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RENDCOMMON_PRIVATE</b></td></tr>
+<tr class="separator:a58f93131efc3381ad7f9f006c4b39e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb2686408816c0dc134615160ed3fd7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#aeb2686408816c0dc134615160ed3fd7f">REND_DESC_COOKIE_LEN</a>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:aeb2686408816c0dc134615160ed3fd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff9079d47391ba4745b27ae1370978ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#aff9079d47391ba4745b27ae1370978ab">REND_REPLICA_LEN</a>&#160;&#160;&#160;1</td></tr>
@@ -150,34 +167,30 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a4f290e9602660feb24c410603a298ef8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a4f290e9602660feb24c410603a298ef8">rend_cmp_service_ids</a> (const char *one, const char *two)</td></tr>
 <tr class="separator:a4f290e9602660feb24c410603a298ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91927fc14b63a83089d9b0ee22184498"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a91927fc14b63a83089d9b0ee22184498">rend_service_descriptor_free</a> (<a class="el" href="structrend__service__descriptor__t.html">rend_service_descriptor_t</a> *desc)</td></tr>
-<tr class="separator:a91927fc14b63a83089d9b0ee22184498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54154ff9167c1c08a58b06e4e26ae7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#ac54154ff9167c1c08a58b06e4e26ae7e">rend_service_descriptor_free_</a> (<a class="el" href="structrend__service__descriptor__t.html">rend_service_descriptor_t</a> *desc)</td></tr>
+<tr class="separator:ac54154ff9167c1c08a58b06e4e26ae7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50e9a99ec6511e2cfdcfebcdc2213c2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a50e9a99ec6511e2cfdcfebcdc2213c2a">rend_get_descriptor_id_bytes</a> (char *descriptor_id_out, const char *service_id, const char *secret_id_part)</td></tr>
 <tr class="separator:a50e9a99ec6511e2cfdcfebcdc2213c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7b00bb6a2b63bab1c0a8cf1f6ca0048"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#af7b00bb6a2b63bab1c0a8cf1f6ca0048">rend_compute_v2_desc_id</a> (char *desc_id_out, const char *service_id, const char *descriptor_cookie, time_t now, uint8_t replica)</td></tr>
 <tr class="separator:af7b00bb6a2b63bab1c0a8cf1f6ca0048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af739253549fdf62a61e2b029a9892ea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#af739253549fdf62a61e2b029a9892ea9">rend_encoded_v2_service_descriptor_free</a> (<a class="el" href="structrend__encoded__v2__service__descriptor__t.html">rend_encoded_v2_service_descriptor_t</a> *desc)</td></tr>
-<tr class="separator:af739253549fdf62a61e2b029a9892ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61dd29c390c943442cdd965fa9a31916"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a61dd29c390c943442cdd965fa9a31916">rend_intro_point_free</a> (<a class="el" href="structrend__intro__point__t.html">rend_intro_point_t</a> *intro)</td></tr>
-<tr class="separator:a61dd29c390c943442cdd965fa9a31916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd972a1eacaa6e1208f2d02a51ba824"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a8fd972a1eacaa6e1208f2d02a51ba824">rend_desc_v2_is_parsable</a> (<a class="el" href="structrend__encoded__v2__service__descriptor__t.html">rend_encoded_v2_service_descriptor_t</a> *desc)</td></tr>
+<tr class="separator:a8fd972a1eacaa6e1208f2d02a51ba824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affec24bb3727b47b405639dfffc2fc0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#affec24bb3727b47b405639dfffc2fc0d">rend_encoded_v2_service_descriptor_free_</a> (<a class="el" href="structrend__encoded__v2__service__descriptor__t.html">rend_encoded_v2_service_descriptor_t</a> *desc)</td></tr>
+<tr class="separator:affec24bb3727b47b405639dfffc2fc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08badbe45eac2ee1af0da03d8ff971db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a08badbe45eac2ee1af0da03d8ff971db">rend_intro_point_free_</a> (<a class="el" href="structrend__intro__point__t.html">rend_intro_point_t</a> *intro)</td></tr>
+<tr class="separator:a08badbe45eac2ee1af0da03d8ff971db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabd63c8ba90edf8d2d8970be04bae97b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#aabd63c8ba90edf8d2d8970be04bae97b">rend_encode_v2_descriptors</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *descs_out, <a class="el" href="structrend__service__descriptor__t.html">rend_service_descriptor_t</a> *desc, time_t now, uint8_t period, <a class="el" href="or_8h.html#aafc6920f8a16e10f46703e7819795c74">rend_auth_type_t</a> auth_type, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *client_key, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *client_cookies)</td></tr>
 <tr class="separator:aabd63c8ba90edf8d2d8970be04bae97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb619b1758ff82d476170d83fce49e77"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#abb619b1758ff82d476170d83fce49e77">rend_get_service_id</a> (<a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *pk, char *out)</td></tr>
 <tr class="separator:abb619b1758ff82d476170d83fce49e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c98beed11b35d28c3e8fe8249d027c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a4c98beed11b35d28c3e8fe8249d027c5">rend_valid_service_id</a> (const char *query)</td></tr>
-<tr class="separator:a4c98beed11b35d28c3e8fe8249d027c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d97b83844365f0949fd9998269a5a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a07d97b83844365f0949fd9998269a5a9">rend_valid_v2_service_id</a> (const char *query)</td></tr>
+<tr class="separator:a07d97b83844365f0949fd9998269a5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5ccbcbbd3b16b2dadbe09d4f286acba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#af5ccbcbbd3b16b2dadbe09d4f286acba">rend_valid_descriptor_id</a> (const char *query)</td></tr>
 <tr class="separator:af5ccbcbbd3b16b2dadbe09d4f286acba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab85bc5f1bcd5c91edb70efede89c8ee6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#ab85bc5f1bcd5c91edb70efede89c8ee6">rend_valid_client_name</a> (const char *client_name)</td></tr>
 <tr class="separator:ab85bc5f1bcd5c91edb70efede89c8ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e66ba6d7ab8afe4f3fb51cb9478bc9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a4e66ba6d7ab8afe4f3fb51cb9478bc9e">rend_process_relay_cell</a> (<a class="el" href="structcircuit__t.html">circuit_t</a> *circ, const <a class="el" href="structcrypt__path__t.html">crypt_path_t</a> *layer_hint, int command, size_t length, const uint8_t *payload)</td></tr>
 <tr class="separator:a4e66ba6d7ab8afe4f3fb51cb9478bc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e861907b5ed972758bdff02b1fff7f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a3e861907b5ed972758bdff02b1fff7f7">rend_data_dup</a> (const <a class="el" href="structrend__data__t.html">rend_data_t</a> *data)</td></tr>
-<tr class="separator:a3e861907b5ed972758bdff02b1fff7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32bf2108c6c803a11486e89dfa5b55ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a32bf2108c6c803a11486e89dfa5b55ab">rend_data_service_create</a> (const char *onion_address, const char *pk_digest, const uint8_t *cookie, <a class="el" href="or_8h.html#aafc6920f8a16e10f46703e7819795c74">rend_auth_type_t</a> auth_type)</td></tr>
-<tr class="separator:a32bf2108c6c803a11486e89dfa5b55ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba983562d99c5c2f278cd4e1f616ff93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#aba983562d99c5c2f278cd4e1f616ff93">rend_data_client_create</a> (const char *onion_address, const char *desc_id, const char *cookie, <a class="el" href="or_8h.html#aafc6920f8a16e10f46703e7819795c74">rend_auth_type_t</a> auth_type)</td></tr>
-<tr class="separator:aba983562d99c5c2f278cd4e1f616ff93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a154a5fdb5490cbf22ae39bff6564bcdf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#a154a5fdb5490cbf22ae39bff6564bcdf">hid_serv_get_responsible_directories</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *responsible_dirs, const char *id)</td></tr>
 <tr class="separator:a154a5fdb5490cbf22ae39bff6564bcdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6c48ed956d918bba341bec3c7980364"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rendcommon_8c.html#af6c48ed956d918bba341bec3c7980364">rend_auth_encode_cookie</a> (const uint8_t *cookie_in, <a class="el" href="or_8h.html#aafc6920f8a16e10f46703e7819795c74">rend_auth_type_t</a> auth_type)</td></tr>
@@ -190,9 +203,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>rend_allow_non_anonymo
 <tr class="memitem:ae84c40d313f62f1f2c6ef1f8710df6cc"><td class="memItemLeft" align="right" valign="top"><a id="ae84c40d313f62f1f2c6ef1f8710df6cc"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>rend_non_anonymous_mode_enabled</b> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
 <tr class="separator:ae84c40d313f62f1f2c6ef1f8710df6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6914515abf5af93d6349c29ecb3e91d"><td class="memItemLeft" align="right" valign="top"><a id="aa6914515abf5af93d6349c29ecb3e91d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>assert_circ_anonymity_ok</b> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
-<tr class="separator:aa6914515abf5af93d6349c29ecb3e91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fcdf6245988249e8b5ae6a70d9a4774"><td class="memItemLeft" align="right" valign="top"><a id="a8fcdf6245988249e8b5ae6a70d9a4774"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>assert_circ_anonymity_ok</b> (const <a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:a8fcdf6245988249e8b5ae6a70d9a4774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed74662fbcc8f662191e3ca6c27f7a24"><td class="memItemLeft" align="right" valign="top"><a id="aed74662fbcc8f662191e3ca6c27f7a24"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rend_circuit_pk_digest_eq</b> (const <a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *ocirc, const uint8_t *digest)</td></tr>
+<tr class="separator:aed74662fbcc8f662191e3ca6c27f7a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points. </p>
@@ -422,106 +438,30 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aba983562d99c5c2f278cd4e1f616ff93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba983562d99c5c2f278cd4e1f616ff93">&#9670;&nbsp;</a></span>rend_data_client_create()</h2>
+<a id="a8fd972a1eacaa6e1208f2d02a51ba824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd972a1eacaa6e1208f2d02a51ba824">&#9670;&nbsp;</a></span>rend_desc_v2_is_parsable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structrend__data__t.html">rend_data_t</a>* rend_data_client_create </td>
+          <td class="memname">STATIC int rend_desc_v2_is_parsable </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>onion_address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>desc_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>cookie</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="or_8h.html#aafc6920f8a16e10f46703e7819795c74">rend_auth_type_t</a>&#160;</td>
-          <td class="paramname"><em>auth_type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Allocate and initialize a <a class="el" href="structrend__data__t.html">rend_data_t</a> object for a client request using the given arguments. Either an onion address or a descriptor ID is needed. Both can be given but only the onion address will be used to make the descriptor fetch.</p>
-<p>Return a valid <a class="el" href="structrend__data__t.html">rend_data_t</a> pointer or NULL on error meaning the descriptor IDs couldn't be computed from the given data. </p>
-
-</div>
-</div>
-<a id="a3e861907b5ed972758bdff02b1fff7f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e861907b5ed972758bdff02b1fff7f7">&#9670;&nbsp;</a></span>rend_data_dup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrend__data__t.html">rend_data_t</a>* rend_data_dup </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structrend__encoded__v2__service__descriptor__t.html">rend_encoded_v2_service_descriptor_t</a> *&#160;</td>
+          <td class="paramname"><em>desc</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Allocate and return a new <a class="el" href="structrend__data__t.html">rend_data_t</a> with the same contents as <b>query</b>. </p>
-
+<p>Attempt to parse the given <b>desc_str</b> and return true if this succeeds, false otherwise. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="rendcommon_8c_a8fd972a1eacaa6e1208f2d02a51ba824_cgraph.png" border="0" usemap="#rendcommon_8c_a8fd972a1eacaa6e1208f2d02a51ba824_cgraph" alt=""/></div>
+<map name="rendcommon_8c_a8fd972a1eacaa6e1208f2d02a51ba824_cgraph" id="rendcommon_8c_a8fd972a1eacaa6e1208f2d02a51ba824_cgraph">
+<area shape="rect" id="node2" href="routerparse_8c.html#a2faba4db0eeeb6f97d9ba56983390b37" title="rend_parse_v2_service\l_descriptor" alt="" coords="229,5,385,47"/>
+</map>
 </div>
-</div>
-<a id="a32bf2108c6c803a11486e89dfa5b55ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32bf2108c6c803a11486e89dfa5b55ab">&#9670;&nbsp;</a></span>rend_data_service_create()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structrend__data__t.html">rend_data_t</a>* rend_data_service_create </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>onion_address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>pk_digest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>cookie</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="or_8h.html#aafc6920f8a16e10f46703e7819795c74">rend_auth_type_t</a>&#160;</td>
-          <td class="paramname"><em>auth_type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Allocate and initialize a <a class="el" href="structrend__data__t.html">rend_data_t</a> object for a service using the given arguments. Only the <b>onion_address</b> is not optional.</p>
-<p>Return a valid <a class="el" href="structrend__data__t.html">rend_data_t</a> pointer. </p>
 
 </div>
 </div>
@@ -584,14 +524,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="af739253549fdf62a61e2b029a9892ea9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af739253549fdf62a61e2b029a9892ea9">&#9670;&nbsp;</a></span>rend_encoded_v2_service_descriptor_free()</h2>
+<a id="affec24bb3727b47b405639dfffc2fc0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affec24bb3727b47b405639dfffc2fc0d">&#9670;&nbsp;</a></span>rend_encoded_v2_service_descriptor_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void rend_encoded_v2_service_descriptor_free </td>
+          <td class="memname">void rend_encoded_v2_service_descriptor_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structrend__encoded__v2__service__descriptor__t.html">rend_encoded_v2_service_descriptor_t</a> *&#160;</td>
           <td class="paramname"><em>desc</em></td><td>)</td>
@@ -640,11 +580,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="rendcommon_8c_a50e9a99ec6511e2cfdcfebcdc2213c2a_cgraph.png" border="0" usemap="#rendcommon_8c_a50e9a99ec6511e2cfdcfebcdc2213c2a_cgraph" alt=""/></div>
 <map name="rendcommon_8c_a50e9a99ec6511e2cfdcfebcdc2213c2a_cgraph" id="rendcommon_8c_a50e9a99ec6511e2cfdcfebcdc2213c2a_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#ae92ffdfbeff07ba661ed65ca7791915d" title="crypto_digest_new" alt="" coords="207,5,338,32"/>
-<area shape="rect" id="node3" href="crypto_8c.html#af702bc434eed2203f9dd1894ef5f5326" title="crypto_digest_add_bytes" alt="" coords="189,56,356,83"/>
-<area shape="rect" id="node4" href="crypto_8c.html#a75e95996fd9dcf7f2e3800407bba12c9" title="crypto_digest_get_digest" alt="" coords="189,107,356,133"/>
-<area shape="rect" id="node6" href="crypto_8c.html#a4ca581f3cf1db8b08e696a7c4efb8a90" title="crypto_digest_free" alt="" coords="208,157,337,184"/>
-<area shape="rect" id="node5" href="crypto_8c.html#a0ea6f0654f17288e6896a83a749354b5" title="crypto_digest_algorithm\l_get_length" alt="" coords="404,99,564,141"/>
+<area shape="rect" id="node2" href="crypto__digest_8c.html#ae92ffdfbeff07ba661ed65ca7791915d" title="crypto_digest_new" alt="" coords="207,5,338,32"/>
+<area shape="rect" id="node3" href="crypto__digest_8c.html#af702bc434eed2203f9dd1894ef5f5326" title="crypto_digest_add_bytes" alt="" coords="189,56,356,83"/>
+<area shape="rect" id="node4" href="crypto__digest_8c.html#a75e95996fd9dcf7f2e3800407bba12c9" title="crypto_digest_get_digest" alt="" coords="189,107,356,133"/>
+<area shape="rect" id="node5" href="crypto__digest_8c.html#a0ea6f0654f17288e6896a83a749354b5" title="crypto_digest_algorithm\l_get_length" alt="" coords="404,99,564,141"/>
 </map>
 </div>
 
@@ -681,9 +620,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="rendcommon_8c_abb619b1758ff82d476170d83fce49e77_cgraph.png" border="0" usemap="#rendcommon_8c_abb619b1758ff82d476170d83fce49e77_cgraph" alt=""/></div>
 <map name="rendcommon_8c_abb619b1758ff82d476170d83fce49e77_cgraph" id="rendcommon_8c_abb619b1758ff82d476170d83fce49e77_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="192,5,339,32"/>
+<area shape="rect" id="node2" href="crypto__rsa_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="192,5,339,32"/>
 <area shape="rect" id="node4" href="util__format_8c.html#af100283587ab62e6645c900859f95c8e" title="base32_encode" alt="" coords="209,56,322,83"/>
-<area shape="rect" id="node3" href="crypto_8c.html#adc1609ea0f9d65a1f60225cb001eeb15" title="crypto_digest" alt="" coords="387,5,487,32"/>
+<area shape="rect" id="node3" href="crypto__rsa_8c.html#a47b1080a7a68f04e0e745168075c235f" title="crypto_pk_keysize" alt="" coords="387,5,517,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -692,20 +631,20 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="rendcommon_8c_abb619b1758ff82d476170d83fce49e77_icgraph.png" border="0" usemap="#rendcommon_8c_abb619b1758ff82d476170d83fce49e77_icgraph" alt=""/></div>
 <map name="rendcommon_8c_abb619b1758ff82d476170d83fce49e77_icgraph" id="rendcommon_8c_abb619b1758ff82d476170d83fce49e77_icgraph">
 <area shape="rect" id="node2" href="rendcache_8c.html#a3b62337cd31ec86e2239ffbe6005adce" title="rend_cache_failure\l_remove" alt="" coords="192,5,323,47"/>
-<area shape="rect" id="node3" href="rendcache_8c.html#a2c5eb5e8ecaa713ec73cebc5ad4df905" title="rend_cache_entry_free" alt="" coords="371,13,525,39"/>
+<area shape="rect" id="node3" href="rendcache_8c.html#a9c71adefc4d624d1be3abf7d25dedd1d" title="rend_cache_entry_free_" alt="" coords="371,13,532,39"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a61dd29c390c943442cdd965fa9a31916"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61dd29c390c943442cdd965fa9a31916">&#9670;&nbsp;</a></span>rend_intro_point_free()</h2>
+<a id="a08badbe45eac2ee1af0da03d8ff971db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08badbe45eac2ee1af0da03d8ff971db">&#9670;&nbsp;</a></span>rend_intro_point_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void rend_intro_point_free </td>
+          <td class="memname">void rend_intro_point_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structrend__intro__point__t.html">rend_intro_point_t</a> *&#160;</td>
           <td class="paramname"><em>intro</em></td><td>)</td>
@@ -714,27 +653,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Free the storage held by an introduction point info. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="rendcommon_8c_a61dd29c390c943442cdd965fa9a31916_cgraph.png" border="0" usemap="#rendcommon_8c_a61dd29c390c943442cdd965fa9a31916_cgraph" alt=""/></div>
-<map name="rendcommon_8c_a61dd29c390c943442cdd965fa9a31916_cgraph" id="rendcommon_8c_a61dd29c390c943442cdd965fa9a31916_cgraph">
-<area shape="rect" id="node2" href="circuitbuild_8c.html#a2ee63ec586b7d4f06830954b9aefb037" title="extend_info_free" alt="" coords="197,5,316,32"/>
-<area shape="rect" id="node3" href="crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="365,31,473,57"/>
-<area shape="rect" id="node4" href="replaycache_8c.html#a3820bca2b83e616483e752d3e5adfd92" title="replaycache_free" alt="" coords="196,107,317,133"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="rendcommon_8c_a61dd29c390c943442cdd965fa9a31916_icgraph.png" border="0" usemap="#rendcommon_8c_a61dd29c390c943442cdd965fa9a31916_icgraph" alt=""/></div>
-<map name="rendcommon_8c_a61dd29c390c943442cdd965fa9a31916_icgraph" id="rendcommon_8c_a61dd29c390c943442cdd965fa9a31916_icgraph">
-<area shape="rect" id="node2" href="rendcommon_8h.html#a91927fc14b63a83089d9b0ee22184498" title="rend_service_descriptor_free" alt="" coords="196,5,385,32"/>
-<area shape="rect" id="node4" href="rendservice_8c.html#a8cd5cb06a8e03c07ed7d120f90cee388" title="rend_service_free" alt="" coords="448,56,573,83"/>
-<area shape="rect" id="node3" href="rendcache_8c.html#a2c5eb5e8ecaa713ec73cebc5ad4df905" title="rend_cache_entry_free" alt="" coords="433,5,588,32"/>
-<area shape="rect" id="node5" href="rendservice_8h.html#ade90973329e24160017a04e0503397bd" title="rend_service_free_all" alt="" coords="636,56,781,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -785,14 +703,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a91927fc14b63a83089d9b0ee22184498"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91927fc14b63a83089d9b0ee22184498">&#9670;&nbsp;</a></span>rend_service_descriptor_free()</h2>
+<a id="ac54154ff9167c1c08a58b06e4e26ae7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac54154ff9167c1c08a58b06e4e26ae7e">&#9670;&nbsp;</a></span>rend_service_descriptor_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void rend_service_descriptor_free </td>
+          <td class="memname">void rend_service_descriptor_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structrend__service__descriptor__t.html">rend_service_descriptor_t</a> *&#160;</td>
           <td class="paramname"><em>desc</em></td><td>)</td>
@@ -801,27 +719,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Free the storage held by the service descriptor <b>desc</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="rendcommon_8c_a91927fc14b63a83089d9b0ee22184498_cgraph.png" border="0" usemap="#rendcommon_8c_a91927fc14b63a83089d9b0ee22184498_cgraph" alt=""/></div>
-<map name="rendcommon_8c_a91927fc14b63a83089d9b0ee22184498_cgraph" id="rendcommon_8c_a91927fc14b63a83089d9b0ee22184498_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="603,31,711,57"/>
-<area shape="rect" id="node3" href="rendcommon_8c.html#a61dd29c390c943442cdd965fa9a31916" title="rend_intro_point_free" alt="" coords="243,56,385,83"/>
-<area shape="rect" id="node4" href="circuitbuild_8c.html#a2ee63ec586b7d4f06830954b9aefb037" title="extend_info_free" alt="" coords="435,81,553,108"/>
-<area shape="rect" id="node5" href="replaycache_8c.html#a3820bca2b83e616483e752d3e5adfd92" title="replaycache_free" alt="" coords="433,132,555,159"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="rendcommon_8c_a91927fc14b63a83089d9b0ee22184498_icgraph.png" border="0" usemap="#rendcommon_8c_a91927fc14b63a83089d9b0ee22184498_icgraph" alt=""/></div>
-<map name="rendcommon_8c_a91927fc14b63a83089d9b0ee22184498_icgraph" id="rendcommon_8c_a91927fc14b63a83089d9b0ee22184498_icgraph">
-<area shape="rect" id="node2" href="rendcache_8c.html#a2c5eb5e8ecaa713ec73cebc5ad4df905" title="rend_cache_entry_free" alt="" coords="243,5,397,32"/>
-<area shape="rect" id="node3" href="rendservice_8c.html#a8cd5cb06a8e03c07ed7d120f90cee388" title="rend_service_free" alt="" coords="257,56,383,83"/>
-<area shape="rect" id="node4" href="rendservice_8h.html#ade90973329e24160017a04e0503397bd" title="rend_service_free_all" alt="" coords="445,56,591,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -863,14 +760,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a4c98beed11b35d28c3e8fe8249d027c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c98beed11b35d28c3e8fe8249d027c5">&#9670;&nbsp;</a></span>rend_valid_service_id()</h2>
+<a id="a07d97b83844365f0949fd9998269a5a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d97b83844365f0949fd9998269a5a9">&#9670;&nbsp;</a></span>rend_valid_v2_service_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int rend_valid_service_id </td>
+          <td class="memname">int rend_valid_v2_service_id </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>query</em></td><td>)</td>
@@ -882,15 +779,11 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="rendcommon_8c_a4c98beed11b35d28c3e8fe8249d027c5_icgraph.png" border="0" usemap="#rendcommon_8c_a4c98beed11b35d28c3e8fe8249d027c5_icgraph" alt=""/></div>
-<map name="rendcommon_8c_a4c98beed11b35d28c3e8fe8249d027c5_icgraph" id="rendcommon_8c_a4c98beed11b35d28c3e8fe8249d027c5_icgraph">
-<area shape="rect" id="node2" href="rendcache_8h.html#ad9955a4d0f958b0bd0222b5d2c278015" title="rend_cache_lookup_entry" alt="" coords="208,111,379,138"/>
-<area shape="rect" id="node8" href="rendservice_8h.html#a9adfef842de9b8aec233a9046b9faeb2" title="rend_service_del_ephemeral" alt="" coords="200,162,387,189"/>
-<area shape="rect" id="node3" href="rendclient_8h.html#a69147b3604e7988bbe30715c04fb1ee2" title="rend_client_refetch\l_v2_renddesc" alt="" coords="462,5,594,47"/>
-<area shape="rect" id="node4" href="rendclient_8h.html#acb88060f4b84c006debe7de7e0eb7eaf" title="rend_client_report\l_intro_point_failure" alt="" coords="463,71,593,112"/>
-<area shape="rect" id="node5" href="rendclient_8h.html#ab6a404500892962da09d28a99822d176" title="rend_client_note_connection\l_attempt_ended" alt="" coords="435,136,621,177"/>
-<area shape="rect" id="node7" href="rendclient_8h.html#a57db1b6cc827d2f8376ad36191c422fe" title="rend_client_get_random\l_intro" alt="" coords="448,201,608,243"/>
-<area shape="rect" id="node6" href="connection__edge_8c.html#a5922c995ab015f688168d02a6b954050" title="MOCK_IMPL" alt="" coords="669,143,769,170"/>
+<div class="center"><img src="rendcommon_8c_a07d97b83844365f0949fd9998269a5a9_icgraph.png" border="0" usemap="#rendcommon_8c_a07d97b83844365f0949fd9998269a5a9_icgraph" alt=""/></div>
+<map name="rendcommon_8c_a07d97b83844365f0949fd9998269a5a9_icgraph" id="rendcommon_8c_a07d97b83844365f0949fd9998269a5a9_icgraph">
+<area shape="rect" id="node2" href="control_8h.html#a966dc2b23c935600dc1f815fe8e88fda" title="connection_control\l_closed" alt="" coords="456,17,587,58"/>
+<area shape="rect" id="node3" href="rendcache_8h.html#ad9955a4d0f958b0bd0222b5d2c278015" title="rend_cache_lookup_entry" alt="" coords="229,24,400,51"/>
+<area shape="rect" id="node4" href="rendservice_8h.html#a9adfef842de9b8aec233a9046b9faeb2" title="rend_service_del_ephemeral" alt="" coords="221,75,408,101"/>
 </map>
 </div>
 

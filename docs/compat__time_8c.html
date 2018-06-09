@@ -82,18 +82,18 @@ Include dependency graph for compat_time.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="compat__time_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2compat__time_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2compat__time_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2compat__time_8c">
-<area shape="rect" id="node2" href="compat_8h_source.html" title="compat.h" alt="" coords="439,333,515,360"/>
-<area shape="rect" id="node11" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="5,259,71,285"/>
-<area shape="rect" id="node12" href="util_8h.html" title="Headers for util.c. " alt="" coords="617,184,667,211"/>
-<area shape="rect" id="node16" href="container_8h_source.html" title="container.h" alt="" coords="599,109,685,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="708,557,787,584"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="716,483,779,509"/>
-<area shape="rect" id="node5" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="105,483,203,509"/>
-<area shape="rect" id="node7" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="483,483,591,509"/>
-<area shape="rect" id="node10" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="525,408,652,435"/>
-<area shape="rect" id="node13" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="915,408,985,435"/>
-<area shape="rect" id="node15" href="util__bug_8h.html" title="util_bug.h" alt="" coords="641,259,720,285"/>
-<area shape="rect" id="node17" href="siphash_8h_source.html" title="siphash.h" alt="" coords="692,184,771,211"/>
+<area shape="rect" id="node2" href="compat_8h_source.html" title="compat.h" alt="" coords="335,333,411,360"/>
+<area shape="rect" id="node12" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="5,259,71,285"/>
+<area shape="rect" id="node13" href="util_8h.html" title="Headers for util.c. " alt="" coords="386,184,437,211"/>
+<area shape="rect" id="node17" href="container_8h_source.html" title="container.h" alt="" coords="368,109,455,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="723,557,801,584"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="851,483,913,509"/>
+<area shape="rect" id="node6" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="41,483,139,509"/>
+<area shape="rect" id="node8" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="335,483,443,509"/>
+<area shape="rect" id="node11" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="411,408,537,435"/>
+<area shape="rect" id="node14" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="901,408,972,435"/>
+<area shape="rect" id="node16" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="333,259,412,285"/>
+<area shape="rect" id="node18" href="siphash_8h_source.html" title="siphash.h" alt="" coords="461,184,540,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -108,19 +108,32 @@ Macros</h2></td></tr>
 <tr class="memitem:af05eba65a3d4d0547dba7e69e440db2c"><td class="memItemLeft" align="right" valign="top"><a id="af05eba65a3d4d0547dba7e69e440db2c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ONE_BILLION</b>&#160;&#160;&#160;((int64_t) (1000 * 1000 * 1000))</td></tr>
 <tr class="separator:af05eba65a3d4d0547dba7e69e440db2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625143ad0c15ef2017a4b0026198ce58"><td class="memItemLeft" align="right" valign="top"><a id="a625143ad0c15ef2017a4b0026198ce58"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>initialized_at_coarse</b>&#160;&#160;&#160;initialized_at</td></tr>
+<tr class="separator:a625143ad0c15ef2017a4b0026198ce58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a44ef505a26821a6ac00802efbdda9531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#a44ef505a26821a6ac00802efbdda9531">tor_gettimeofday</a> (struct <a class="el" href="structtimeval.html">timeval</a> *<a class="el" href="structtimeval.html">timeval</a>)</td></tr>
-<tr class="separator:a44ef505a26821a6ac00802efbdda9531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab01e4af9013af7e4e5eeaa1dcdd576"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#a8ab01e4af9013af7e4e5eeaa1dcdd576">MOCK_IMPL</a> (void, tor_gettimeofday,(struct <a class="el" href="structtimeval.html">timeval</a> *<a class="el" href="structtimeval.html">timeval</a>))</td></tr>
+<tr class="separator:a8ab01e4af9013af7e4e5eeaa1dcdd576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad756e69a29321442d2a355a3785b7b9c"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#ad756e69a29321442d2a355a3785b7b9c">ratchet_timeval</a> (const struct <a class="el" href="structtimeval.html">timeval</a> *timeval_raw, struct <a class="el" href="structtimeval.html">timeval</a> *out)</td></tr>
 <tr class="separator:ad756e69a29321442d2a355a3785b7b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ebc4d67a1d3915e46616c926138eb58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#a0ebc4d67a1d3915e46616c926138eb58">monotime_get</a> (<a class="el" href="structmonotime__t.html">monotime_t</a> *out)</td></tr>
 <tr class="separator:a0ebc4d67a1d3915e46616c926138eb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3fc4a3ade60710e15fc96d44d8f0e10"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#aa3fc4a3ade60710e15fc96d44d8f0e10">monotime_diff_nsec</a> (const <a class="el" href="structmonotime__t.html">monotime_t</a> *start, const <a class="el" href="structmonotime__t.html">monotime_t</a> *end)</td></tr>
 <tr class="separator:aa3fc4a3ade60710e15fc96d44d8f0e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a2a6e2752ea3c8c059fc44dad6cefc"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#ad3a2a6e2752ea3c8c059fc44dad6cefc">monotime_coarse_diff_msec32_</a> (const monotime_coarse_t *start, const monotime_coarse_t *end)</td></tr>
+<tr class="separator:ad3a2a6e2752ea3c8c059fc44dad6cefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c176ac0bb1966a5bf971987f9081857"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#a4c176ac0bb1966a5bf971987f9081857">monotime_coarse_to_stamp</a> (const monotime_coarse_t *t)</td></tr>
+<tr class="separator:a4c176ac0bb1966a5bf971987f9081857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8582e55bc0f29aca73fbc2a72b28a0e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#a8582e55bc0f29aca73fbc2a72b28a0e8">monotime_is_zero</a> (const <a class="el" href="structmonotime__t.html">monotime_t</a> *val)</td></tr>
+<tr class="separator:a8582e55bc0f29aca73fbc2a72b28a0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cea83e88d543c4d4997ed73c40e2848"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#a8cea83e88d543c4d4997ed73c40e2848">monotime_add_msec</a> (<a class="el" href="structmonotime__t.html">monotime_t</a> *out, const <a class="el" href="structmonotime__t.html">monotime_t</a> *val, uint32_t msec)</td></tr>
+<tr class="separator:a8cea83e88d543c4d4997ed73c40e2848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3081103a772136f197e2eda085ff26d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#ac3081103a772136f197e2eda085ff26d">monotime_init</a> (void)</td></tr>
 <tr class="separator:ac3081103a772136f197e2eda085ff26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743ac0e9b71a189e147a0261b5abde71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#a743ac0e9b71a189e147a0261b5abde71">monotime_zero</a> (<a class="el" href="structmonotime__t.html">monotime_t</a> *out)</td></tr>
+<tr class="separator:a743ac0e9b71a189e147a0261b5abde71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8a6278eadd8ef89ccb578be6bf65b16"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#ac8a6278eadd8ef89ccb578be6bf65b16">monotime_diff_usec</a> (const <a class="el" href="structmonotime__t.html">monotime_t</a> *start, const <a class="el" href="structmonotime__t.html">monotime_t</a> *end)</td></tr>
 <tr class="separator:ac8a6278eadd8ef89ccb578be6bf65b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a459191adc6c2a3c0d118fe2b4b6103cf"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#a459191adc6c2a3c0d118fe2b4b6103cf">monotime_diff_msec</a> (const <a class="el" href="structmonotime__t.html">monotime_t</a> *start, const <a class="el" href="structmonotime__t.html">monotime_t</a> *end)</td></tr>
@@ -131,10 +144,52 @@ Functions</h2></td></tr>
 <tr class="separator:af338351348036a5f6d597fcc61499528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad58fa0d7cfc838e2a670a7c2dea81ad6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#ad58fa0d7cfc838e2a670a7c2dea81ad6">monotime_absolute_msec</a> (void)</td></tr>
 <tr class="separator:ad58fa0d7cfc838e2a670a7c2dea81ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7b0b5ad3f045729cb47cc2151000b2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#abb7b0b5ad3f045729cb47cc2151000b2">monotime_coarse_get_stamp</a> (void)</td></tr>
+<tr class="separator:abb7b0b5ad3f045729cb47cc2151000b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663ad7bf6571707eee93acdc3dc51384"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="compat__time_8c.html#a663ad7bf6571707eee93acdc3dc51384">monotime_coarse_stamp_units_to_approx_msec</a> (uint64_t units)</td></tr>
+<tr class="separator:a663ad7bf6571707eee93acdc3dc51384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673af5fe5298b87f02efd7c6adcea2d0"><td class="memItemLeft" align="right" valign="top"><a id="a673af5fe5298b87f02efd7c6adcea2d0"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>monotime_msec_to_approx_coarse_stamp_units</b> (uint64_t msec)</td></tr>
+<tr class="separator:a673af5fe5298b87f02efd7c6adcea2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Portable wrappers for finding out the current time, running timers, etc. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a8ab01e4af9013af7e4e5eeaa1dcdd576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ab01e4af9013af7e4e5eeaa1dcdd576">&#9670;&nbsp;</a></span>MOCK_IMPL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tor_gettimeofday&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(struct <a class="el" href="structtimeval.html">timeval</a> *<a class="el" href="structtimeval.html">timeval</a>)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set *timeval to the current time of day. On error, log and terminate. (Same as gettimeofday(timeval,NULL), but never returns -1.) </p>
+
+</div>
+</div>
 <a id="ad58fa0d7cfc838e2a670a7c2dea81ad6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad58fa0d7cfc838e2a670a7c2dea81ad6">&#9670;&nbsp;</a></span>monotime_absolute_msec()</h2>
 
@@ -214,6 +269,150 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="compat__time_8c.html#a92aa6f5c07c561a576f5573f32263751" title="monotime_absolute_nsec" alt="" coords="224,5,395,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a8cea83e88d543c4d4997ed73c40e2848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cea83e88d543c4d4997ed73c40e2848">&#9670;&nbsp;</a></span>monotime_add_msec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void monotime_add_msec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmonotime__t.html">monotime_t</a> *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmonotime__t.html">monotime_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>msec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set <b>out</b> to N milliseconds after <b>val</b>. </p>
+
+</div>
+</div>
+<a id="ad3a2a6e2752ea3c8c059fc44dad6cefc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a2a6e2752ea3c8c059fc44dad6cefc">&#9670;&nbsp;</a></span>monotime_coarse_diff_msec32_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t monotime_coarse_diff_msec32_ </td>
+          <td>(</td>
+          <td class="paramtype">const monotime_coarse_t *&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const monotime_coarse_t *&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As monotime_coarse_diff_msec, but avoid 64-bit division.</p>
+<p>Requires that the difference fit into an int32_t; not for use with large time differences. </p>
+
+</div>
+</div>
+<a id="abb7b0b5ad3f045729cb47cc2151000b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7b0b5ad3f045729cb47cc2151000b2">&#9670;&nbsp;</a></span>monotime_coarse_get_stamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t monotime_coarse_get_stamp </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the current time "stamp" as described by monotime_coarse_to_stamp. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="compat__time_8c_abb7b0b5ad3f045729cb47cc2151000b2_icgraph.png" border="0" usemap="#compat__time_8c_abb7b0b5ad3f045729cb47cc2151000b2_icgraph" alt=""/></div>
+<map name="compat__time_8c_abb7b0b5ad3f045729cb47cc2151000b2_icgraph" id="compat__time_8c_abb7b0b5ad3f045729cb47cc2151000b2_icgraph">
+<area shape="rect" id="node2" href="connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="204,13,359,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a663ad7bf6571707eee93acdc3dc51384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663ad7bf6571707eee93acdc3dc51384">&#9670;&nbsp;</a></span>monotime_coarse_stamp_units_to_approx_msec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t monotime_coarse_stamp_units_to_approx_msec </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>units</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert a difference, expressed in the units of monotime_coarse_to_stamp, into an approximate number of milliseconds. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="compat__time_8c_a663ad7bf6571707eee93acdc3dc51384_icgraph.png" border="0" usemap="#compat__time_8c_a663ad7bf6571707eee93acdc3dc51384_icgraph" alt=""/></div>
+<map name="compat__time_8c_a663ad7bf6571707eee93acdc3dc51384_icgraph" id="compat__time_8c_a663ad7bf6571707eee93acdc3dc51384_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a22392cbca806a78cd2e87691a6065251" title="rate_per_sec_to_rate\l_per_step" alt="" coords="221,23,365,65"/>
+<area shape="rect" id="node3" href="token__bucket_8c.html#a50fe824eab38393da0fc4f96d745d42c" title="token_bucket_rw_adjust" alt="" coords="413,31,576,57"/>
+<area shape="rect" id="node4" href="token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="638,5,783,32"/>
+<area shape="rect" id="node6" href="connection_8h.html#a9c0760d1fc50f5bd96ab05890f121f11" title="connection_bucket_adjust" alt="" coords="624,56,797,83"/>
+<area shape="rect" id="node5" href="connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="845,5,1000,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4c176ac0bb1966a5bf971987f9081857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c176ac0bb1966a5bf971987f9081857">&#9670;&nbsp;</a></span>monotime_coarse_to_stamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t monotime_coarse_to_stamp </td>
+          <td>(</td>
+          <td class="paramtype">const monotime_coarse_t *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a "timestamp" approximation for a coarse monotonic timer. This timestamp is meant to be fast to calculate and easy to compare, and have a unit of something roughly around 1 msec.</p>
+<p>It will wrap over from time to time.</p>
+<p>It has no defined zero point. </p>
 
 </div>
 </div>
@@ -345,6 +544,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set <b>out</b> to the current time. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="compat__time_8c_a0ebc4d67a1d3915e46616c926138eb58_icgraph.png" border="0" usemap="#compat__time_8c_a0ebc4d67a1d3915e46616c926138eb58_icgraph" alt=""/></div>
+<map name="compat__time_8c_a0ebc4d67a1d3915e46616c926138eb58_icgraph" id="compat__time_8c_a0ebc4d67a1d3915e46616c926138eb58_icgraph">
+<area shape="rect" id="node2" href="timers_8c.html#ad0725635a49f8b999778334248977fcb" title="timers_run_pending" alt="" coords="157,5,292,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -369,9 +576,48 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="compat__time_8c_ac3081103a772136f197e2eda085ff26d_icgraph.png" border="0" usemap="#compat__time_8c_ac3081103a772136f197e2eda085ff26d_icgraph" alt=""/></div>
 <map name="compat__time_8c_ac3081103a772136f197e2eda085ff26d_icgraph" id="compat__time_8c_ac3081103a772136f197e2eda085ff26d_icgraph">
-<area shape="rect" id="node2" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="156,5,249,32"/>
+<area shape="rect" id="node2" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="161,5,259,32"/>
+<area shape="rect" id="node3" href="test_8h.html#a334e47899bf2c19bf8a5ce0f226ab399" title="get_fname_rnd" alt="" coords="156,56,264,83"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a8582e55bc0f29aca73fbc2a72b28a0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8582e55bc0f29aca73fbc2a72b28a0e8">&#9670;&nbsp;</a></span>monotime_is_zero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int monotime_is_zero </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmonotime__t.html">monotime_t</a> *&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true iff <b>out</b> is zero </p>
+
+</div>
+</div>
+<a id="a743ac0e9b71a189e147a0261b5abde71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743ac0e9b71a189e147a0261b5abde71">&#9670;&nbsp;</a></span>monotime_zero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void monotime_zero </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmonotime__t.html">monotime_t</a> *&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set <b>out</b> to zero. </p>
 
 </div>
 </div>
@@ -402,34 +648,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Helper for gettimeofday(): Called with a sequence of times that are supposed to be monotonic; increments them as appropriate so that they actually <em>are</em> monotonic.</p>
 <p>Caller must hold lock. </p>
-
-</div>
-</div>
-<a id="a44ef505a26821a6ac00802efbdda9531"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44ef505a26821a6ac00802efbdda9531">&#9670;&nbsp;</a></span>tor_gettimeofday()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void tor_gettimeofday </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structtimeval.html">timeval</a> *&#160;</td>
-          <td class="paramname"><em>timeval</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set *timeval to the current time of day. On error, log and terminate. (Same as gettimeofday(timeval,NULL), but never returns -1.) </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="compat__time_8c_a44ef505a26821a6ac00802efbdda9531_icgraph.png" border="0" usemap="#compat__time_8c_a44ef505a26821a6ac00802efbdda9531_icgraph" alt=""/></div>
-<map name="compat__time_8c_a44ef505a26821a6ac00802efbdda9531_icgraph" id="compat__time_8c_a44ef505a26821a6ac00802efbdda9531_icgraph">
-<area shape="rect" id="node2" href="compat__libevent_8c.html#a0a01eb58e717767b19f84d68909cf58d" title="tor_gettimeofday_cached" alt="" coords="172,5,340,32"/>
-<area shape="rect" id="node3" href="circuituse_8h.html#a857005b7512302feee182107aed11121" title="circuit_expire_building" alt="" coords="181,56,331,83"/>
-</map>
-</div>
 
 </div>
 </div>

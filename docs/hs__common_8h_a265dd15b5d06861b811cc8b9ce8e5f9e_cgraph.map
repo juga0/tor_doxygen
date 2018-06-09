@@ -1,0 +1,6 @@
+<map id="hs_get_time_period_num" name="hs_get_time_period_num">
+<area shape="rect" id="node2" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="251,5,345,32"/>
+<area shape="rect" id="node3" href="$hs__common_8c.html#ad86b31c9e6c875ceceee74cfab4fbf64" title="get_time_period_length" alt="" coords="220,56,376,83"/>
+<area shape="rect" id="node5" href="$shared__random__client_8c.html#af5f648c27b17b932935fcbe8eb2e6a70" title="sr_state_get_phase\l_duration" alt="" coords="230,107,366,149"/>
+<area shape="rect" id="node4" href="$shared__random__client_8c.html#a826be70231c0c78acf089f7b86594582" title="sr_state_get_protocol\l_run_duration" alt="" coords="424,49,571,90"/>
+</map>

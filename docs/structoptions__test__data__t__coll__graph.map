@@ -1,5 +1,5 @@
 <map id="options_test_data_t" name="options_test_data_t">
-<area shape="rect" id="node2" href="$structor__options__t.html" title="or_options_t" alt="" coords="131,495,225,521"/>
-<area shape="rect" id="node3" href="$structconfig__line__t.html" title="config_line_t" alt="" coords="187,140,281,167"/>
-<area shape="rect" id="node5" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="361,140,443,167"/>
+<area shape="rect" id="node2" href="$structor__options__t.html" title="or_options_t" alt="" coords="115,377,209,404"/>
+<area shape="rect" id="node3" href="$structconfig__line__t.html" title="config_line_t" alt="" coords="171,118,265,145"/>
+<area shape="rect" id="node5" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="345,118,427,145"/>
 </map>

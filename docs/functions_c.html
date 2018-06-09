@@ -68,11 +68,20 @@ $(function() {
 <li>cache_ipv4_answers
 : <a class="el" href="structentry__port__cfg__t.html#a0a1ba66c13cdabb8a019254dfdef0034">entry_port_cfg_t</a>
 </li>
-<li>cached_dir
-: <a class="el" href="structdir__connection__t.html#adbcde0790c868d60cf703f70008270e6">dir_connection_t</a>
-</li>
 <li>cached_dir_offset
-: <a class="el" href="structdir__connection__t.html#a8aed39a139d9b5dcba95ab946738f796">dir_connection_t</a>
+: <a class="el" href="structspooled__resource__t.html#a8aed39a139d9b5dcba95ab946738f796">spooled_resource_t</a>
+</li>
+<li>cached_dir_ref
+: <a class="el" href="structspooled__resource__t.html#acd8a13b80cdd5dc57be42cad6d654e5e">spooled_resource_t</a>
+</li>
+<li>CacheDirectory
+: <a class="el" href="structor__options__t.html#a1c0f9de0ffd95c067ec1d3efde97cd06">or_options_t</a>
+</li>
+<li>CacheDirectory_option
+: <a class="el" href="structor__options__t.html#ac3a2f40250642b5291f9bfcbbf263e89">or_options_t</a>
+</li>
+<li>CacheDirectoryGroupReadable
+: <a class="el" href="structor__options__t.html#a7832e1c171c81eae38041827d6b3495a">or_options_t</a>
 </li>
 <li>caches_extra_info
 : <a class="el" href="structrouterinfo__t.html#a1cf7a44898041d99c5e79e2a633391e5">routerinfo_t</a>
@@ -80,8 +89,8 @@ $(function() {
 <li>callback
 : <a class="el" href="structlogfile__t.html#adb585515b5729227f97b88da047f3b8b">logfile_t</a>
 </li>
-<li>can_retry
-: <a class="el" href="structentry__guard__t.html#a267edf7e94a06144bc9b0a11b06738d6">entry_guard_t</a>
+<li>can_remove
+: <a class="el" href="structconsensus__cache__entry__t.html#ac248280e95e9f0c34c54770d01bb9f4a">consensus_cache_entry_t</a>
 </li>
 <li>cb
 : <a class="el" href="structperiodic__timer__t.html#a88183c24e0b32f0a2c2fe20888194aeb">periodic_timer_t</a>
@@ -123,15 +132,17 @@ $(function() {
 <li>cert_valid
 : <a class="el" href="structtor__cert__st.html#a63e92eae0802a7abc513bcc13419df34">tor_cert_st</a>
 </li>
+<li>certs
+: <a class="el" href="structor__handshake__state__t.html#a7c2d31200fec54e2a7f0a7889b5a1959">or_handshake_state_t</a>
+</li>
 <li>chan
 : <a class="el" href="structor__connection__t.html#a2f10d40869c2ad14b0ba3142340cfd87">or_connection_t</a>
 </li>
 <li>changed
-: <a class="el" href="structlink__history__t.html#ae3be84374ff7f8ff3ffd0c9a18daf0fa">link_history_t</a>
-, <a class="el" href="structor__history__t.html#ae3be84374ff7f8ff3ffd0c9a18daf0fa">or_history_t</a>
+: <a class="el" href="structor__history__t.html#ae3be84374ff7f8ff3ffd0c9a18daf0fa">or_history_t</a>
 </li>
-<li>chosen_by_version
-: <a class="el" href="structentry__guard__t.html#a33dd064e089e762248a0b57d573ada48">entry_guard_t</a>
+<li>channel_usage
+: <a class="el" href="structchannel__s.html#a6909e282ec3ce469c84d7bba5853065e">channel_s</a>
 </li>
 <li>chosen_exit
 : <a class="el" href="structcpath__build__state__t.html#a4ae16f9cd9bbd372d6c8588d7b900f8a">cpath_build_state_t</a>
@@ -145,9 +156,6 @@ $(function() {
 <li>chosen_exit_retries
 : <a class="el" href="structentry__connection__t.html#a6a5194b7d0b9df7ec5554ee0e9f1f47e">entry_connection_t</a>
 </li>
-<li>chosen_on_date
-: <a class="el" href="structentry__guard__t.html#a855673f76e6db1690d3ea79b13d4df91">entry_guard_t</a>
-</li>
 <li>chunk
 : <a class="el" href="structbuf__pos__t.html#a77c49cccc8a740b9f88dda1cf7bd2cd7">buf_pos_t</a>
 </li>
@@ -158,7 +166,7 @@ $(function() {
 : <a class="el" href="structewma__policy__circ__data__s.html#add13a9da623cd69bb5a57dd47d6a51d1">ewma_policy_circ_data_s</a>
 </li>
 <li>circ_attempts
-: <a class="el" href="structentry__guard__t.html#a6773ed04a4068b72bbf9d42cfc726824">entry_guard_t</a>
+: <a class="el" href="structguard__pathbias__t.html#a6773ed04a4068b72bbf9d42cfc726824">guard_pathbias_t</a>
 </li>
 <li>circ_id
 : <a class="el" href="structcell__t.html#ac58212164886f6cd25368e64ee4a804a">cell_t</a>
@@ -168,7 +176,7 @@ $(function() {
 : <a class="el" href="structchannel__s.html#a4b5c4efce97c3256128f3c28cca0fc0b">channel_s</a>
 </li>
 <li>circ_successes
-: <a class="el" href="structentry__guard__t.html#a6e69c29d3e4bea9c28e234e54601f64a">entry_guard_t</a>
+: <a class="el" href="structguard__pathbias__t.html#a6e69c29d3e4bea9c28e234e54601f64a">guard_pathbias_t</a>
 </li>
 <li>circuit_carries_hs_traffic_stats
 : <a class="el" href="structor__circuit__t.html#a33bb6a33fb09e3293a3c009887bcec15">or_circuit_t</a>
@@ -176,14 +184,17 @@ $(function() {
 <li>circuit_established
 : <a class="el" href="structrend__intro__point__t.html#a9097cd90b21c76224d60b41be7c9d19b">rend_intro_point_t</a>
 </li>
+<li>circuit_idle_timeout
+: <a class="el" href="structorigin__circuit__t.html#a769323da3e4163e60b6fb847cef3e02d">origin_circuit_t</a>
+</li>
 <li>circuit_retries
 : <a class="el" href="structrend__intro__point__t.html#ab2b501c1dfbbd244fab583123803bf29">rend_intro_point_t</a>
 </li>
 <li>CircuitBuildTimeout
 : <a class="el" href="structor__options__t.html#a82cc92ab413ab256c6f9393beaec449c">or_options_t</a>
 </li>
-<li>CircuitIdleTimeout
-: <a class="el" href="structor__options__t.html#a9abd1f373e77165043b245cd03b44844">or_options_t</a>
+<li>CircuitsAvailableTimeout
+: <a class="el" href="structor__options__t.html#ac956a28cbec3eeb68c5388331d970fa3">or_options_t</a>
 </li>
 <li>CircuitStreamTimeout
 : <a class="el" href="structor__options__t.html#add755596dcc4b5cc8c41d08020b0a3c8">or_options_t</a>
@@ -194,20 +205,14 @@ $(function() {
 <li>client_versions
 : <a class="el" href="structnetworkstatus__t.html#a4f170342a537aebae0ad357a64b42bcd">networkstatus_t</a>
 </li>
-<li>ClientBootstrapConsensusAuthorityDownloadSchedule
-: <a class="el" href="structor__options__t.html#ae55787284e9e083e73fd9edfd4866729">or_options_t</a>
+<li>ClientBootstrapConsensusAuthorityDownloadInitialDelay
+: <a class="el" href="structor__options__t.html#a68582c40ba417e737616c35d0022aba0">or_options_t</a>
 </li>
-<li>ClientBootstrapConsensusAuthorityOnlyDownloadSchedule
-: <a class="el" href="structor__options__t.html#a2c8dd1545bb547e07b6e1b423ed2029a">or_options_t</a>
+<li>ClientBootstrapConsensusAuthorityOnlyDownloadInitialDelay
+: <a class="el" href="structor__options__t.html#a22305a76a65f834471d7ba2fb6d8e6c5">or_options_t</a>
 </li>
-<li>ClientBootstrapConsensusAuthorityOnlyMaxDownloadTries
-: <a class="el" href="structor__options__t.html#a97e492050cbcbbdc483b015ac001d666">or_options_t</a>
-</li>
-<li>ClientBootstrapConsensusFallbackDownloadSchedule
-: <a class="el" href="structor__options__t.html#a93964290248c0855669de375748232d8">or_options_t</a>
-</li>
-<li>ClientBootstrapConsensusMaxDownloadTries
-: <a class="el" href="structor__options__t.html#a637688fd9e9aaf037476e2c5648f3cd9">or_options_t</a>
+<li>ClientBootstrapConsensusFallbackDownloadInitialDelay
+: <a class="el" href="structor__options__t.html#a0da0b218ecc44541389744c9125a14c0">or_options_t</a>
 </li>
 <li>ClientBootstrapConsensusMaxInProgressTries
 : <a class="el" href="structor__options__t.html#a3fcff99f20f07a4de5fe09f224380ee2">or_options_t</a>
@@ -240,22 +245,16 @@ $(function() {
 : <a class="el" href="structchannel__listener__s.html#af5e345b18c8778101933cfc00213dd08">channel_listener_s</a>
 , <a class="el" href="structchannel__s.html#a1443b6af96b12275aebd0e6407c175e5">channel_s</a>
 </li>
-<li>CloseHSClientCircuitsImmediatelyOnTimeout
-: <a class="el" href="structor__options__t.html#a7a4e5a43d8e386f01351870a405d78c8">or_options_t</a>
-</li>
-<li>CloseHSServiceRendCircuitsImmediatelyOnTimeout
-: <a class="el" href="structor__options__t.html#a0ec0a7405b49038a0de3b6ff72eeb83e">or_options_t</a>
-</li>
 <li>cmux
 : <a class="el" href="structchannel__s.html#ae9447ed41f9c520e52203fce685b2c96">channel_s</a>
 </li>
 <li>collapsed_circuits
-: <a class="el" href="structentry__guard__t.html#a6c608326d5f4594a70d7d4e26a8e0410">entry_guard_t</a>
+: <a class="el" href="structguard__pathbias__t.html#a6c608326d5f4594a70d7d4e26a8e0410">guard_pathbias_t</a>
 </li>
 <li>command
 : <a class="el" href="structcell__t.html#a1a5aaa930940857f68f245eeb89506b5">cell_t</a>
 , <a class="el" href="structconfig__line__t.html#ab3f01a3cc60db47aec60d3ad57d17a93">config_line_t</a>
-, <a class="el" href="structor__options__t.html#affae33c00dceae5b4281b53670f433c4">or_options_t</a>
+, <a class="el" href="structor__options__t.html#a69105a978047c78f50487b48ac61246d">or_options_t</a>
 , <a class="el" href="structrelay__header__t.html#a1a5aaa930940857f68f245eeb89506b5">relay_header_t</a>
 , <a class="el" href="structsocks__request__t.html#a1a5aaa930940857f68f245eeb89506b5">socks_request_t</a>
 , <a class="el" href="structtesting__cell__stats__entry__t.html#a1a5aaa930940857f68f245eeb89506b5">testing_cell_stats_entry_t</a>
@@ -265,10 +264,15 @@ $(function() {
 : <a class="el" href="structor__options__t.html#a3437f972ef249a390ba31c23e88f5f79">or_options_t</a>
 </li>
 <li>compress
-: <a class="el" href="structtor__zlib__state__t.html#a85da040f0a3577b447e8db1532d319d6">tor_zlib_state_t</a>
+: <a class="el" href="structtor__lzma__compress__state__t.html#a85da040f0a3577b447e8db1532d319d6">tor_lzma_compress_state_t</a>
+, <a class="el" href="structtor__zlib__compress__state__t.html#a85da040f0a3577b447e8db1532d319d6">tor_zlib_compress_state_t</a>
+, <a class="el" href="structtor__zstd__compress__state__t.html#a85da040f0a3577b447e8db1532d319d6">tor_zstd_compress_state_t</a>
 </li>
-<li>compressed
-: <a class="el" href="structget__handler__args__t.html#ab26d537449e341d679c99e4d287d645b">get_handler_args_t</a>
+<li>compress_state
+: <a class="el" href="structdir__connection__t.html#a0b232d7903d532e89527a9276529ba46">dir_connection_t</a>
+</li>
+<li>compression_supported
+: <a class="el" href="structget__handler__args__t.html#aef968c1fb5dbbcb061b5432d2f5cb19f">get_handler_args_t</a>
 </li>
 <li>concat_args
 : <a class="el" href="structtoken__rule__t.html#aa109e7077af37c8052ff2193723d4a57">token_rule_t</a>
@@ -281,6 +285,9 @@ $(function() {
 </li>
 <li>ConnDirectionStatistics
 : <a class="el" href="structor__options__t.html#ad46201dd2663df33986b0b9922fd4712">or_options_t</a>
+</li>
+<li>ConnectionPadding
+: <a class="el" href="structor__options__t.html#afb8a179d08ba0d6413a38d6bae80e347">or_options_t</a>
 </li>
 <li>ConnLimit
 : <a class="el" href="structor__options__t.html#a2ac2a247fe6fbdb50b46ccd5eb699654">or_options_t</a>
@@ -297,6 +304,9 @@ $(function() {
 <li>consensus
 : <a class="el" href="structconsensus__waiting__for__certs__t.html#a48079672220272126046acf2c88e86e0">consensus_waiting_for_certs_t</a>
 , <a class="el" href="structpending__consensus__t.html#a48079672220272126046acf2c88e86e0">pending_consensus_t</a>
+</li>
+<li>consensus_cache_entry
+: <a class="el" href="structspooled__resource__t.html#a9295f1a09aed2cbf0535a7418fabcd9c">spooled_resource_t</a>
 </li>
 <li>consensus_method
 : <a class="el" href="structnetworkstatus__t.html#a710402d1814b80148d5f23987630ed9a">networkstatus_t</a>
@@ -319,8 +329,8 @@ $(function() {
 <li>ContactInfo
 : <a class="el" href="structor__options__t.html#a2e60618af704f7e2d39fc875a30d1fe7">or_options_t</a>
 </li>
-<li>ControlListenAddress
-: <a class="el" href="structor__options__t.html#a135a21b502de5bd2b59179234b97c673">or_options_t</a>
+<li>contents
+: <a class="el" href="structstorage__dir__t.html#a077b0d165cefc4b9528a514ea299dc5b">storage_dir_t</a>
 </li>
 <li>ControlPort_lines
 : <a class="el" href="structor__options__t.html#ae2170306ca3dffe35d766caa0e8f90b6">or_options_t</a>
@@ -373,11 +383,18 @@ $(function() {
 : <a class="el" href="structcpuworker__reply__t.html#a387de9c79fdeaf43173f16476fb02afa">cpuworker_reply_t</a>
 , <a class="el" href="structextended__cell__t.html#a387de9c79fdeaf43173f16476fb02afa">extended_cell_t</a>
 </li>
+<li>crypto
+: <a class="el" href="structcrypt__path__t.html#aec5bc1604f864fd87187deaa74d88a16">crypt_path_t</a>
+, <a class="el" href="structor__circuit__t.html#aec5bc1604f864fd87187deaa74d88a16">or_circuit_t</a>
+</li>
 <li>cur_obs_idx
 : <a class="el" href="structbw__array__t.html#a4c07a5be5afdc3057e31f885b63af451">bw_array_t</a>
 </li>
 <li>cur_obs_time
 : <a class="el" href="structbw__array__t.html#aefe957d42f72873a08c22801432a835e">bw_array_t</a>
+</li>
+<li>currently_padding
+: <a class="el" href="structchannel__s.html#ac8d6e2e66b5508d8d206024b72f4879a">channel_s</a>
 </li>
 </ul>
 </div><!-- contents -->

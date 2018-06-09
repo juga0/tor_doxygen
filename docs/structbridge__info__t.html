@@ -70,19 +70,21 @@ Collaboration diagram for bridge_info_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structbridge__info__t__coll__graph.png" border="0" usemap="#bridge__info__t_coll__map" alt="Collaboration graph"/></div>
 <map name="bridge__info__t_coll__map" id="bridge__info__t_coll__map">
-<area shape="rect" id="node3" href="structsmartlist__t.html" title="smartlist_t" alt="" coords="95,5,178,32"/>
+<area shape="rect" id="node3" href="structsmartlist__t.html" title="smartlist_t" alt="" coords="137,5,219,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:a73da69e3cefd1608e90a118f9754548a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbridge__info__t.html#a73da69e3cefd1608e90a118f9754548a">addrport_configured</a></td></tr>
+<tr class="separator:a73da69e3cefd1608e90a118f9754548a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af456b36b519e3ac91e16e8ba44d190b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__addr__t.html">tor_addr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbridge__info__t.html#af456b36b519e3ac91e16e8ba44d190b4">addr</a></td></tr>
 <tr class="separator:af456b36b519e3ac91e16e8ba44d190b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e0798404bf2cf5dabb84c5ba9a4f236"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbridge__info__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a></td></tr>
 <tr class="separator:a8e0798404bf2cf5dabb84c5ba9a4f236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab81b5e6dd5d804b74d806f8d1d0487d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbridge__info__t.html#aab81b5e6dd5d804b74d806f8d1d0487d">marked_for_removal</a>: 1</td></tr>
 <tr class="separator:aab81b5e6dd5d804b74d806f8d1d0487d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c519dcad897e9cb928e63f2ef816c8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbridge__info__t.html#a99c519dcad897e9cb928e63f2ef816c8">identity</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
+<tr class="memitem:a99c519dcad897e9cb928e63f2ef816c8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbridge__info__t.html#a99c519dcad897e9cb928e63f2ef816c8">identity</a> [<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
 <tr class="separator:a99c519dcad897e9cb928e63f2ef816c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76bfc4580ecce3bd49fab35b0e5bd74a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbridge__info__t.html#a76bfc4580ecce3bd49fab35b0e5bd74a">transport_name</a></td></tr>
 <tr class="separator:a76bfc4580ecce3bd49fab35b0e5bd74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +111,21 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a73da69e3cefd1608e90a118f9754548a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73da69e3cefd1608e90a118f9754548a">&#9670;&nbsp;</a></span>addrport_configured</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> addrport_configured</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Address and port of the bridge, as configured by the user. </p>
+
+</div>
+</div>
 <a id="ac2ee6ff3b72cc787b253ccebefa7c545"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2ee6ff3b72cc787b253ccebefa7c545">&#9670;&nbsp;</a></span>fetch_status</h2>
 
@@ -131,7 +148,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char identity[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
+          <td class="memname">char identity[<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,7 +217,7 @@ Data Fields</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/user/_my/code/bwauth-related/tor/src/or/<a class="el" href="entrynodes_8c.html">entrynodes.c</a></li>
+<li>/home/user/_my/code/bwauth-related/tor/src/or/<a class="el" href="bridges_8c.html">bridges.c</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

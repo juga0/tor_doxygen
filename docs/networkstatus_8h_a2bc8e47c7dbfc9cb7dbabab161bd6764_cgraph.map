@@ -1,3 +1,4 @@
 <map id="networkstatus_set_current_consensus" name="networkstatus_set_current_consensus">
-<area shape="rect" id="node2" href="$networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="229,5,372,47"/>
+<area shape="rect" id="node2" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="254,5,347,32"/>
+<area shape="rect" id="node3" href="$networkstatus_8c.html#a1a072f4231b410ee50501327f71d527e" title="networkstatus_parse\l_flavor_name" alt="" coords="229,57,372,98"/>
 </map>

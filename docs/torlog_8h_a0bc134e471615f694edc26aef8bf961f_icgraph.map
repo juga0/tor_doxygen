@@ -1,5 +1,4 @@
 <map id="init_logging" name="init_logging">
-<area shape="rect" id="node2" href="$tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="140,5,212,32"/>
-<area shape="rect" id="node4" href="$test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="359,31,452,57"/>
-<area shape="rect" id="node3" href="$tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="260,5,311,32"/>
+<area shape="rect" id="node2" href="$tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="145,5,243,32"/>
+<area shape="rect" id="node3" href="$test_8h.html#a334e47899bf2c19bf8a5ce0f226ab399" title="get_fname_rnd" alt="" coords="140,56,248,83"/>
 </map>

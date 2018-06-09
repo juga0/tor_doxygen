@@ -17,6 +17,7 @@ var searchData=
   ['has_5fqueued_5fwrites',['has_queued_writes',['../structchannel__s.html#afdef949f9c411bce0f6337e1152426c1',1,'channel_s']]],
   ['hashedcontrolpassword',['HashedControlPassword',['../structor__options__t.html#a154bf30663bb0afd1cac27c936f97021',1,'or_options_t']]],
   ['hashedcontrolsessionpassword',['HashedControlSessionPassword',['../structor__options__t.html#a3d7c5e5fc02cf2d6d449f613294879fe',1,'or_options_t']]],
+  ['have_5fcalled_5fend',['have_called_end',['../structtor__zstd__compress__state__t.html#a27589d3ab1cf9f0d69506fd71f44ce04',1,'tor_zstd_compress_state_t']]],
   ['have_5fnoted_5fbootstrap_5fproblem',['have_noted_bootstrap_problem',['../structor__connection__t.html#aab00a24d723409e60bbb1b0ca883be36',1,'or_connection_t']]],
   ['have_5fsent_5fprotocolinfo',['have_sent_protocolinfo',['../structcontrol__connection__t.html#aaaaef6021b9ec0ccb1c6b12c0b53e240',1,'control_connection_t']]],
   ['headers',['headers',['../structget__handler__args__t.html#aa9567ed5e76525b6d7d86a1057aeb97e',1,'get_handler_args_t']]],
@@ -26,11 +27,17 @@ var searchData=
   ['held_5fin_5fmap',['held_in_map',['../structmicrodesc__t.html#a38c6d3c6dafeedb69552788177abcac7',1,'microdesc_t']]],
   ['hiddenservicesinglehopmode',['HiddenServiceSingleHopMode',['../structor__options__t.html#ae939bcee520b7b3ce5bffcb3fe997a26',1,'or_options_t']]],
   ['hiddenservicestatistics',['HiddenServiceStatistics',['../structor__options__t.html#a8ceefb5d00152e3918c7e0aa7399c6ab',1,'or_options_t']]],
+  ['hiddenservicestatistics_5foption',['HiddenServiceStatistics_option',['../structor__options__t.html#a7e585cbb9e683469bfd562702a33902c',1,'or_options_t']]],
   ['hidservauth',['HidServAuth',['../structor__options__t.html#a1c33b59c67baeb315d5692c23d769a89',1,'or_options_t']]],
+  ['hidservrevcounter',['HidServRevCounter',['../structor__state__t.html#a783efdef62e3d231b15205961801d719',1,'or_state_t']]],
   ['hold_5fopen_5funtil_5fflushed',['hold_open_until_flushed',['../structconnection__t.html#a2d61d29f4b0a6948e50bcd5b16e329c0',1,'connection_t']]],
   ['hs_5fcirc_5fhas_5ftimed_5fout',['hs_circ_has_timed_out',['../structorigin__circuit__t.html#acb3e1f89c7f3b21e52f72db033997811',1,'origin_circuit_t']]],
+  ['hs_5fident',['hs_ident',['../structorigin__circuit__t.html#a29175fe0b44d53028076f964e834fd1d',1,'origin_circuit_t']]],
   ['hs_5fservice_5fside_5frend_5fcirc_5fhas_5fbeen_5frelaunched',['hs_service_side_rend_circ_has_been_relaunched',['../structorigin__circuit__t.html#a11be118558d2adea0ba841c44363977f',1,'origin_circuit_t']]],
+  ['hs_5ftoken',['hs_token',['../structcircuit__t.html#a6cfb8e46cfe2cd1e0e25d67224cfdb10',1,'circuit_t']]],
   ['hsdirs_5ffp',['hsdirs_fp',['../structrend__data__t.html#ac22097b732ab7bd90e924df61052cd66',1,'rend_data_t']]],
+  ['hslayer2nodes',['HSLayer2Nodes',['../structor__options__t.html#a47239296ed2808d73f9a45a76a96a758',1,'or_options_t']]],
+  ['hslayer3nodes',['HSLayer3Nodes',['../structor__options__t.html#a56e965f73a800201f62b683616662141',1,'or_options_t']]],
   ['httpproxy',['HTTPProxy',['../structor__options__t.html#a4dd2c73b0538f4505fd396eb89a1a17e',1,'or_options_t']]],
   ['httpproxyaddr',['HTTPProxyAddr',['../structor__options__t.html#a0bc64c77c4df7278c05b413921660658',1,'or_options_t']]],
   ['httpproxyauthenticator',['HTTPProxyAuthenticator',['../structor__options__t.html#a819748196142b65e0521bd9afcad5e51',1,'or_options_t']]],
@@ -38,5 +45,6 @@ var searchData=
   ['httpsproxy',['HTTPSProxy',['../structor__options__t.html#a2e0c678903e014dfc46fc44167543f47',1,'or_options_t']]],
   ['httpsproxyaddr',['HTTPSProxyAddr',['../structor__options__t.html#a1c597cf5f25fb066c7d27b8b266f6da0',1,'or_options_t']]],
   ['httpsproxyauthenticator',['HTTPSProxyAuthenticator',['../structor__options__t.html#ad9279a6066f9daf724278c47a0e44e58',1,'or_options_t']]],
-  ['httpsproxyport',['HTTPSProxyPort',['../structor__options__t.html#af86314361ba2ffa4aa3f35f58b940fe0',1,'or_options_t']]]
+  ['httpsproxyport',['HTTPSProxyPort',['../structor__options__t.html#af86314361ba2ffa4aa3f35f58b940fe0',1,'or_options_t']]],
+  ['httptunnelport_5flines',['HTTPTunnelPort_lines',['../structor__options__t.html#a71e0cbe216f83fcb065ba5621ef2711b',1,'or_options_t']]]
 ];

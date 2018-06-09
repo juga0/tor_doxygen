@@ -1,11 +1,12 @@
 <map id="esc_for_log" name="esc_for_log">
-<area shape="rect" id="node2" href="$util_8h.html#aea75d86d98077dca32127a8cb0fe97dc" title="escaped" alt="" coords="180,81,251,108"/>
-<area shape="rect" id="node6" href="$util_8h.html#a1b3dda16e5097d60dd0a43815cc84fa8" title="parse_iso_time_" alt="" coords="157,136,274,163"/>
-<area shape="rect" id="node8" href="$config_8h.html#a3f20cb3dcadc8c6d0982ac29ccd3a6bf" title="getinfo_helper_config" alt="" coords="143,187,288,213"/>
-<area shape="rect" id="node9" href="$routerlist_8h.html#afd620fb5cbc29f6895ae016c0240d9a6" title="esc_router_info" alt="" coords="160,237,271,264"/>
-<area shape="rect" id="node3" href="$util_8h.html#a4fb7293a905e61c3a9ba683a8ed9ad99" title="string_is_key_value" alt="" coords="349,5,486,32"/>
-<area shape="rect" id="node4" href="$config_8h.html#ac4eb7d900d6542f8b19af751d2c1bb05" title="escaped_safe_str_client" alt="" coords="336,56,499,83"/>
-<area shape="rect" id="node5" href="$config_8h.html#af4f7098ccf9acfd57ab27de9ee917f48" title="escaped_safe_str" alt="" coords="355,107,480,133"/>
-<area shape="rect" id="node7" href="$util_8h.html#a8d4de39a48bc02621960c1d162478c63" title="parse_iso_time" alt="" coords="362,157,473,184"/>
-<area shape="rect" id="node10" href="$dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="337,230,497,271"/>
+<area shape="rect" id="node2" href="$util_8h.html#aea75d86d98077dca32127a8cb0fe97dc" title="escaped" alt="" coords="166,107,237,133"/>
+<area shape="rect" id="node7" href="$util_8h.html#a2cdd5d3aa409882a55771d79c506b269" title="parse_iso_time_" alt="" coords="143,249,260,276"/>
+<area shape="rect" id="node10" href="$routerlist_8h.html#afd620fb5cbc29f6895ae016c0240d9a6" title="esc_router_info" alt="" coords="146,304,257,331"/>
+<area shape="rect" id="node3" href="$util_8h.html#a4fb7293a905e61c3a9ba683a8ed9ad99" title="string_is_key_value" alt="" coords="323,5,460,32"/>
+<area shape="rect" id="node4" href="$config_8h.html#ac4eb7d900d6542f8b19af751d2c1bb05" title="escaped_safe_str_client" alt="" coords="310,56,473,83"/>
+<area shape="rect" id="node5" href="$config_8h.html#af4f7098ccf9acfd57ab27de9ee917f48" title="escaped_safe_str" alt="" coords="329,107,454,133"/>
+<area shape="rect" id="node6" href="$directory_8c.html#a4af7e7ade522a1f118e7770955ff50ea" title="handle_response_fetch\l_consensus" alt="" coords="313,158,469,199"/>
+<area shape="rect" id="node8" href="$util_8h.html#a8d4de39a48bc02621960c1d162478c63" title="parse_iso_time" alt="" coords="336,224,447,251"/>
+<area shape="rect" id="node9" href="$util_8h.html#aa0779e255dfcab930dc0016b1d78657a" title="parse_iso_time_nospace" alt="" coords="308,275,475,301"/>
+<area shape="rect" id="node11" href="$dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="311,326,471,367"/>
 </map>

@@ -1,7 +1,10 @@
 <map id="periodic_event_reschedule" name="periodic_event_reschedule">
-<area shape="rect" id="node2" href="$main_8h.html#aa79d6ccbf076c44946971ac8dbbb5e1d" title="reset_all_main_loop\l_timers" alt="" coords="235,5,373,47"/>
-<area shape="rect" id="node4" href="$main_8h.html#a07295da993bf4aa46f05959eb5597633" title="reschedule_descriptor\l_update_check" alt="" coords="229,71,379,112"/>
-<area shape="rect" id="node5" href="$main_8h.html#a5e52e7505835cfedd05201509a19d301" title="reschedule_directory\l_downloads" alt="" coords="233,136,375,177"/>
-<area shape="rect" id="node6" href="$main_8h.html#a1725c3c7eee555118c2f19cebe1ca00d" title="dns_servers_relaunch\l_checks" alt="" coords="229,201,379,243"/>
-<area shape="rect" id="node3" href="$circuitbuild_8h.html#a9850a0ba60e6a62bc0a7267343418235" title="circuit_note_clock\l_jumped" alt="" coords="427,5,553,47"/>
+<area shape="rect" id="node2" href="$main_8h.html#aa79d6ccbf076c44946971ac8dbbb5e1d" title="reset_all_main_loop\l_timers" alt="" coords="248,5,385,47"/>
+<area shape="rect" id="node4" href="$main_8h.html#a07295da993bf4aa46f05959eb5597633" title="reschedule_descriptor\l_update_check" alt="" coords="242,71,391,112"/>
+<area shape="rect" id="node5" href="$main_8h.html#a5e52e7505835cfedd05201509a19d301" title="reschedule_directory\l_downloads" alt="" coords="245,136,388,177"/>
+<area shape="rect" id="node6" href="$main_8h.html#a99e4caa4cd2573a6e23e9980ae79547b" title="reschedule_or_state_save" alt="" coords="229,202,404,229"/>
+<area shape="rect" id="node9" href="$main_8h.html#a1725c3c7eee555118c2f19cebe1ca00d" title="dns_servers_relaunch\l_checks" alt="" coords="242,253,391,295"/>
+<area shape="rect" id="node3" href="$circuitbuild_8h.html#ad0daecc03b3062716a6845b8a522d3da" title="circuit_note_clock\l_jumped" alt="" coords="457,5,584,47"/>
+<area shape="rect" id="node7" href="$statefile_8c.html#a39484525485ab1d840b0f487e47b5944" title="or_state_mark_dirty" alt="" coords="452,202,589,229"/>
+<area shape="rect" id="node8" href="$main_8h.html#a4d28e76dd898a85ba3459928e3659954" title="tor_cleanup" alt="" coords="637,202,727,229"/>
 </map>

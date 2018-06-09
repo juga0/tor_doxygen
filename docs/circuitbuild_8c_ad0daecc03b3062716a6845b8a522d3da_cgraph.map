@@ -1,0 +1,12 @@
+<map id="circuit_note_clock_jumped" name="circuit_note_clock_jumped">
+<area shape="rect" id="node2" href="$log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="231,5,292,32"/>
+<area shape="rect" id="node3" href="$control_8c.html#a1bd4001ec6bb62a01e1d6d6c3f3bf44a" title="control_event_general\l_status" alt="" coords="187,57,336,98"/>
+<area shape="rect" id="node4" href="$main_8c.html#a3c379175a5113f3cb9972ab5f4c4be7c" title="note_that_we_maybe\l_cant_complete_circuits" alt="" coords="180,122,343,163"/>
+<area shape="rect" id="node5" href="$control_8c.html#a92de51ab68d72df3bf43754758ba5c00" title="control_event_client\l_status" alt="" coords="192,187,331,229"/>
+<area shape="rect" id="node6" href="$circuitlist_8c.html#afbc3a3bf5eccd42bc5dc3f75d5aec392" title="circuit_mark_all_unused\l_circs" alt="" coords="180,253,343,294"/>
+<area shape="rect" id="node7" href="$circuitlist_8c.html#a52c4991dce45efd8d927b6092e3c85be" title="circuit_mark_all_dirty\l_circs_as_unusable" alt="" coords="189,318,334,359"/>
+<area shape="rect" id="node10" href="$main_8c.html#aa79d6ccbf076c44946971ac8dbbb5e1d" title="reset_all_main_loop\l_timers" alt="" coords="193,383,330,425"/>
+<area shape="rect" id="node8" href="$circuituse_8c.html#adf36645f7a473ad622918668f2f5ba33" title="mark_circuit_unusable\l_for_new_conns" alt="" coords="403,318,555,359"/>
+<area shape="rect" id="node9" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="615,325,708,352"/>
+<area shape="rect" id="node11" href="$periodic_8c.html#ad9c12c89ef415b3c131f39f68534a974" title="periodic_event_reschedule" alt="" coords="391,391,567,417"/>
+</map>

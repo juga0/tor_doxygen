@@ -1,5 +1,5 @@
 <map id="tor_addr_keyed_hash" name="tor_addr_keyed_hash">
-<area shape="rect" id="node2" href="$address__set_8c.html#a691440eb018370aa9177ea208a9ae311" title="address_set_add" alt="" coords="214,5,335,32"/>
-<area shape="rect" id="node4" href="$address__set_8c.html#a32e47a3863982409f60b632dbad21f3f" title="address_set_probably\l_contains" alt="" coords="200,57,349,98"/>
-<area shape="rect" id="node3" href="$address__set_8c.html#a29c25de2c0e00f704132f4000d483d66" title="address_set_add_ipv4h" alt="" coords="397,5,556,32"/>
+<area shape="rect" id="node2" href="$address__set_8h.html#a691440eb018370aa9177ea208a9ae311" title="address_set_add" alt="" coords="214,5,335,32"/>
+<area shape="rect" id="node4" href="$address__set_8h.html#a32e47a3863982409f60b632dbad21f3f" title="address_set_probably\l_contains" alt="" coords="200,57,349,98"/>
+<area shape="rect" id="node3" href="$address__set_8h.html#a29c25de2c0e00f704132f4000d483d66" title="address_set_add_ipv4h" alt="" coords="397,5,556,32"/>
 </map>

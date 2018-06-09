@@ -1,3 +1,4 @@
 <map id="tor_htonll" name="tor_htonll">
-<area shape="rect" id="node2" href="$util_8h.html#a4959f0aba8a681ab08cfdccfbe16ffc2" title="tor_ntohll" alt="" coords="128,5,203,32"/>
+<area shape="rect" id="node2" href="$crypto__digest_8h.html#a046c01e397aa2194d635318802b90d04" title="crypto_mac_sha3_256" alt="" coords="128,5,281,32"/>
+<area shape="rect" id="node3" href="$util_8h.html#a4959f0aba8a681ab08cfdccfbe16ffc2" title="tor_ntohll" alt="" coords="167,56,242,83"/>
 </map>

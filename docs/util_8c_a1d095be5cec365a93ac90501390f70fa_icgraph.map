@@ -1,8 +1,9 @@
 <map id="strcasecmpstart" name="strcasecmpstart">
 <area shape="rect" id="node2" href="$config_8c.html#aa33011ecb969cfb88f0e8979654d1fed" title="parse_dir_fallback_line" alt="" coords="169,5,324,32"/>
-<area shape="rect" id="node4" href="$routerparse_8h.html#ace4c11b51ca67a4f140ed41ae3d47b6d" title="tor_version_parse" alt="" coords="184,56,309,83"/>
+<area shape="rect" id="node4" href="$directory_8h.html#a6cd94a3fa7e78209bcf82533c1128d19" title="http_get_header" alt="" coords="189,56,304,83"/>
+<area shape="rect" id="node5" href="$routerparse_8h.html#ace4c11b51ca67a4f140ed41ae3d47b6d" title="tor_version_parse" alt="" coords="184,107,309,133"/>
 <area shape="rect" id="node3" href="$config_8c.html#ada6cefd4da1cfdc3d1588721bafc0a3f" title="MOCK_IMPL" alt="" coords="411,5,511,32"/>
-<area shape="rect" id="node5" href="$routerparse_8h.html#a47c9a3cf5868b2133b4e5a582ca69aa6" title="tor_version_parse_platform" alt="" coords="372,56,551,83"/>
-<area shape="rect" id="node6" href="$routerparse_8h.html#a34e1f6d4f6429bcf1d565f54a1dfcd5c" title="tor_version_as_new_as" alt="" coords="382,107,541,133"/>
-<area shape="rect" id="node7" href="$protover_8h.html#a14cfeb2deba8e3104fc9ca36778312d9" title="protover_compute_for\l_old_tor" alt="" coords="599,99,747,141"/>
+<area shape="rect" id="node6" href="$routerparse_8h.html#a47c9a3cf5868b2133b4e5a582ca69aa6" title="tor_version_parse_platform" alt="" coords="372,81,551,108"/>
+<area shape="rect" id="node7" href="$routerparse_8h.html#a34e1f6d4f6429bcf1d565f54a1dfcd5c" title="tor_version_as_new_as" alt="" coords="382,132,541,159"/>
+<area shape="rect" id="node8" href="$protover_8h.html#a14cfeb2deba8e3104fc9ca36778312d9" title="C_RUST_COUPLED: src/rust/protover/protover.rs compute_for_old_tor " alt="" coords="599,125,747,166"/>
 </map>

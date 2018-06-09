@@ -1,3 +1,5 @@
 <map id="circuit_expire_building" name="circuit_expire_building">
-<area shape="rect" id="node2" href="$compat__time_8c.html#a44ef505a26821a6ac00802efbdda9531" title="tor_gettimeofday" alt="" coords="204,5,323,32"/>
+<area shape="rect" id="node2" href="$circuitlist_8c.html#a7c20bc469ef67338216bb762b661b0ac" title="circuit_any_opened\l_circuits" alt="" coords="204,39,339,80"/>
+<area shape="rect" id="node3" href="$circuitlist_8c.html#ab526f33075e1edd4dd62437af9ef6c43" title="circuit_get_global\l_origin_circuit_list" alt="" coords="397,5,524,47"/>
+<area shape="rect" id="node4" href="$circuitlist_8c.html#ac4fb133db6217d7f5fa19a5dee77ca19" title="circuit_cache_opened\l_circuit_state" alt="" coords="387,71,535,112"/>
 </map>

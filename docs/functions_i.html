@@ -63,7 +63,7 @@ $(function() {
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>id_cert
-: <a class="el" href="structor__handshake__state__t.html#a4685c19dc8601be1b32f6470e35fbd0b">or_handshake_state_t</a>
+: <a class="el" href="structor__handshake__certs__t.html#a4685c19dc8601be1b32f6470e35fbd0b">or_handshake_certs_t</a>
 </li>
 <li>identity
 : <a class="el" href="structbridge__info__t.html#a99c519dcad897e9cb928e63f2ef816c8">bridge_info_t</a>
@@ -94,6 +94,9 @@ $(function() {
 <li>if_modified_since
 : <a class="el" href="structget__handler__args__t.html#a3307131a11a48444d922bb69889ff239">get_handler_args_t</a>
 </li>
+<li>in_cache
+: <a class="el" href="structconsensus__cache__entry__t.html#a708eaa79cc2882ea8e678a8cd946ba93">consensus_cache_entry_t</a>
+</li>
 <li>in_connection_handle_write
 : <a class="el" href="structconnection__t.html#a1d72640997aa768a63922fbe80aeb060">connection_t</a>
 </li>
@@ -104,10 +107,13 @@ $(function() {
 : <a class="el" href="structworkerthread__s.html#a879b483427886f7ac2309ede7792c4c3">workerthread_s</a>
 </li>
 <li>inbuf
-: <a class="el" href="structconnection__t.html#ab467c13fb1a69585f59ac2977c5f9bb3">connection_t</a>
+: <a class="el" href="structconnection__t.html#a192752bac8c205950c80ee2d4ef8ee77">connection_t</a>
 </li>
 <li>inbuf_reached_eof
 : <a class="el" href="structconnection__t.html#a23d486418c4fb21e6624530e99095b9f">connection_t</a>
+</li>
+<li>IncludeUsed
+: <a class="el" href="structor__options__t.html#ab828f7fdfd610fc9c495ee63318dc86f">or_options_t</a>
 </li>
 <li>incoming_cmd
 : <a class="el" href="structcontrol__connection__t.html#a421cb8970fbca2a7bf9b72821b5e3556">control_connection_t</a>
@@ -121,9 +127,6 @@ $(function() {
 <li>incoming_list
 : <a class="el" href="structchannel__listener__s.html#a94050fa36e904be9d171ef506f1f0ba7">channel_listener_s</a>
 </li>
-<li>incoming_queue
-: <a class="el" href="structchannel__s.html#a835bd5cab7aa5739bd80c5eb286b607e">channel_s</a>
-</li>
 <li>increment_on
 : <a class="el" href="structdownload__status__t.html#a4fd01f06bf1092800a913b6876f40ecf">download_status_t</a>
 </li>
@@ -134,10 +137,13 @@ $(function() {
 : <a class="el" href="structconfig__var__t.html#a6c57ab68381855094d0d1bc5e0fa93bd">config_var_t</a>
 </li>
 <li>input_so_far
-: <a class="el" href="structtor__zlib__state__t.html#a787e6057111d9bc27d6f14b7faa32f4e">tor_zlib_state_t</a>
+: <a class="el" href="structtor__lzma__compress__state__t.html#a787e6057111d9bc27d6f14b7faa32f4e">tor_lzma_compress_state_t</a>
+, <a class="el" href="structtor__zlib__compress__state__t.html#a787e6057111d9bc27d6f14b7faa32f4e">tor_zlib_compress_state_t</a>
+, <a class="el" href="structtor__zstd__compress__state__t.html#a787e6057111d9bc27d6f14b7faa32f4e">tor_zstd_compress_state_t</a>
 </li>
-<li>inserted_time
-: <a class="el" href="structpacked__cell__t.html#af6aa574b16a76e9f64d4b704fdff048b">packed_cell_t</a>
+<li>inserted_timestamp
+: <a class="el" href="structdestroy__cell__t.html#a6cb37d76f00f1e7cb26fd0b102498daf">destroy_cell_t</a>
+, <a class="el" href="structpacked__cell__t.html#a6cb37d76f00f1e7cb26fd0b102498daf">packed_cell_t</a>
 </li>
 <li>int_val()
 : <a class="el" href="classmmdb-convert_1_1_datum.html#a4f249798beeb88403fd3d1f2c8b0cc4c">Datum</a>
@@ -189,6 +195,9 @@ $(function() {
 <li>is_ancient
 : <a class="el" href="structorigin__circuit__t.html#a7ee79a56f106bdea1b33854eb066ef70">origin_circuit_t</a>
 </li>
+<li>is_android
+: <a class="el" href="structlogfile__t.html#a9a829ceb513f6d054ce176c1be2d9eb5">logfile_t</a>
+</li>
 <li>is_annotation
 : <a class="el" href="structtoken__rule__t.html#af930881ab3ed3781e7a31e29438b832a">token_rule_t</a>
 </li>
@@ -208,14 +217,11 @@ $(function() {
 , <a class="el" href="structchannel__s.html#adf3155a623ca3d85d81f20f122966042">channel_s</a>
 , <a class="el" href="structor__connection__t.html#ae13c4e458c45cc3ddac15f08392bb730">or_connection_t</a>
 </li>
+<li>is_canonical_to_peer
+: <a class="el" href="structchannel__s.html#ad546ae0c58a9d80c0560eb8e188b2a8c">channel_s</a>
+</li>
 <li>is_client
 : <a class="el" href="structchannel__s.html#acb16a6d3640395b7965c84ea6d8476ab">channel_s</a>
-</li>
-<li>is_connection_with_client
-: <a class="el" href="structor__connection__t.html#a25b7d4c2a4aba7ee4bcd99c5138db112">or_connection_t</a>
-</li>
-<li>is_dir_cache
-: <a class="el" href="structentry__guard__t.html#ac3cf5c8b392f269fd775adf0e7aab213">entry_guard_t</a>
 </li>
 <li>is_dns_request
 : <a class="el" href="structedge__connection__t.html#a3691838bbc87417bb31c62b871532ff4">edge_connection_t</a>
@@ -226,9 +232,6 @@ $(function() {
 </li>
 <li>is_fast
 : <a class="el" href="structrouterstatus__t.html#add54b468600ea5be135b729c68332dcf">routerstatus_t</a>
-</li>
-<li>is_first_hop
-: <a class="el" href="structor__circuit__t.html#ac5fcb44fe5722a6eeaccc8998b2da0d3">or_circuit_t</a>
 </li>
 <li>is_flagged_running
 : <a class="el" href="structrouterstatus__t.html#aadeb0b85e6692167f12c4147a1d17c59">routerstatus_t</a>
@@ -268,18 +271,12 @@ $(function() {
 <li>is_private
 : <a class="el" href="structaddr__policy__t.html#aac992dea72e17c94c5b843591a04c55e">addr_policy_t</a>
 </li>
-<li>is_rend_circ
-: <a class="el" href="structor__circuit__rendinfo__s.html#aa7d08b9d33563f48810d59dd38ff58b6">or_circuit_rendinfo_s</a>
-</li>
 <li>is_reverse_dns_lookup
 : <a class="el" href="structedge__connection__t.html#a111244830897457edd47d0f94c4cec34">edge_connection_t</a>
 </li>
 <li>is_running
 : <a class="el" href="structdir__server__t.html#a0b7b30d6d8c5ebacccc2e456b8bf877a">dir_server_t</a>
 , <a class="el" href="structnode__t.html#a0b7b30d6d8c5ebacccc2e456b8bf877a">node_t</a>
-</li>
-<li>is_socks_socket
-: <a class="el" href="structentry__connection__t.html#ad80bbfeb98cb049f0c66a73efcb6189b">entry_connection_t</a>
 </li>
 <li>is_stable
 : <a class="el" href="structnode__t.html#aa91d6b7140b36ea988e1449445ef3705">node_t</a>

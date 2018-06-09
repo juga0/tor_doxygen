@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fdedb0aba14d44ce9d99bc100e026e6a.html">common</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_b7e1585941a202f53e5249c42015d573.html">common</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -142,6 +142,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Convert a rate in bytes per second to a rate in bytes per step </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a22392cbca806a78cd2e87691a6065251_cgraph.png" border="0" usemap="#token__bucket_8c_a22392cbca806a78cd2e87691a6065251_cgraph" alt=""/></div>
+<map name="token__bucket_8c_a22392cbca806a78cd2e87691a6065251_cgraph" id="token__bucket_8c_a22392cbca806a78cd2e87691a6065251_cgraph">
+<area shape="rect" id="node2" href="compat__time_8c.html#a663ad7bf6571707eee93acdc3dc51384" title="monotime_coarse_stamp\l_units_to_approx_msec" alt="" coords="197,5,365,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a22392cbca806a78cd2e87691a6065251_icgraph.png" border="0" usemap="#token__bucket_8c_a22392cbca806a78cd2e87691a6065251_icgraph" alt=""/></div>
+<map name="token__bucket_8c_a22392cbca806a78cd2e87691a6065251_icgraph" id="token__bucket_8c_a22392cbca806a78cd2e87691a6065251_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a50fe824eab38393da0fc4f96d745d42c" title="token_bucket_rw_adjust" alt="" coords="197,31,360,57"/>
+<area shape="rect" id="node3" href="token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="422,5,567,32"/>
+<area shape="rect" id="node5" href="connection_8h.html#a9c0760d1fc50f5bd96ab05890f121f11" title="connection_bucket_adjust" alt="" coords="408,56,581,83"/>
+<area shape="rect" id="node4" href="connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="629,5,784,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -178,6 +197,17 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Set the <b>rate</b> and <b>burst</b> value in a token_bucket_cfg.</p>
 <p>Note that the <b>rate</b> value is in arbitrary units, but those units will determine the units of <a class="el" href="token__bucket_8c.html#a3d4fbe71d5e1a956791c78074609346f">token_bucket_raw_dec()</a>, token_bucket_raw_refill, and so on. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a7e7591bea5c400ec818196fc5435cb15_icgraph.png" border="0" usemap="#token__bucket_8c_a7e7591bea5c400ec818196fc5435cb15_icgraph" alt=""/></div>
+<map name="token__bucket_8c_a7e7591bea5c400ec818196fc5435cb15_icgraph" id="token__bucket_8c_a7e7591bea5c400ec818196fc5435cb15_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a50fe824eab38393da0fc4f96d745d42c" title="token_bucket_rw_adjust" alt="" coords="203,31,365,57"/>
+<area shape="rect" id="node3" href="token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="427,5,573,32"/>
+<area shape="rect" id="node5" href="connection_8h.html#a9c0760d1fc50f5bd96ab05890f121f11" title="connection_bucket_adjust" alt="" coords="413,56,587,83"/>
+<area shape="rect" id="node4" href="connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="635,5,789,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -207,6 +237,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adust a preexisting token bucket to respect the new configuration <b>cfg</b>, by decreasing its current level if needed. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a43ef8eed8a63421520fce9b002013f46_icgraph.png" border="0" usemap="#token__bucket_8c_a43ef8eed8a63421520fce9b002013f46_icgraph" alt=""/></div>
+<map name="token__bucket_8c_a43ef8eed8a63421520fce9b002013f46_icgraph" id="token__bucket_8c_a43ef8eed8a63421520fce9b002013f46_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a50fe824eab38393da0fc4f96d745d42c" title="token_bucket_rw_adjust" alt="" coords="224,31,387,57"/>
+<area shape="rect" id="node3" href="token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="449,5,594,32"/>
+<area shape="rect" id="node5" href="connection_8h.html#a9c0760d1fc50f5bd96ab05890f121f11" title="connection_bucket_adjust" alt="" coords="435,56,608,83"/>
+<area shape="rect" id="node4" href="connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="656,5,811,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -236,6 +277,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Decrement a provided bucket by <b>n</b> units. Note that <b>n</b> must be nonnegative. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a3d4fbe71d5e1a956791c78074609346f_icgraph.png" border="0" usemap="#token__bucket_8c_a3d4fbe71d5e1a956791c78074609346f_icgraph" alt=""/></div>
+<map name="token__bucket_8c_a3d4fbe71d5e1a956791c78074609346f_icgraph" id="token__bucket_8c_a3d4fbe71d5e1a956791c78074609346f_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a2428bdaecfad9bfcf8f327b5a9eaffc4" title="token_bucket_rw_dec_read" alt="" coords="209,5,391,32"/>
+<area shape="rect" id="node4" href="token__bucket_8c.html#aaae036f5d846cd8f167ed19894203326" title="token_bucket_rw_dec\l_write" alt="" coords="225,57,375,98"/>
+<area shape="rect" id="node3" href="token__bucket_8c.html#a1ba85130f858b76019c716d017ea6681" title="token_bucket_rw_dec" alt="" coords="439,35,588,61"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -271,6 +322,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Given an amount of <b>elapsed</b> time units, and a bucket configuration <b>cfg</b>, refill the level of <b>bucket</b> accordingly. Note that the units of time in <b>elapsed</b> must correspond to those used to set the rate in <b>cfg</b>, or the result will be illogical. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_aab04b741717c1e77a777479c1215ace7_icgraph.png" border="0" usemap="#token__bucket_8c_aab04b741717c1e77a777479c1215ace7_icgraph" alt=""/></div>
+<map name="token__bucket_8c_aab04b741717c1e77a777479c1215ace7_icgraph" id="token__bucket_8c_aab04b741717c1e77a777479c1215ace7_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#ab306c1d9c3c6f138d343868ea9851e6e" title="token_bucket_rw_refill" alt="" coords="212,13,364,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -300,6 +359,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Initialize a raw token bucket and its associated timestamp to the "full" state, according to <b>cfg</b>. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_abd787fcddb80c9ea7ace35aece2f3988_icgraph.png" border="0" usemap="#token__bucket_8c_abd787fcddb80c9ea7ace35aece2f3988_icgraph" alt=""/></div>
+<map name="token__bucket_8c_abd787fcddb80c9ea7ace35aece2f3988_icgraph" id="token__bucket_8c_abd787fcddb80c9ea7ace35aece2f3988_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#af5d53fffb8a825d38565fc013e04f4db" title="token_bucket_rw_reset" alt="" coords="217,5,375,32"/>
+<area shape="rect" id="node3" href="token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="423,5,568,32"/>
+<area shape="rect" id="node4" href="connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="616,5,771,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -335,6 +404,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Change the configured rate (in bytes per second) and burst (in bytes) for the token bucket in *<b>bucket</b>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a50fe824eab38393da0fc4f96d745d42c_cgraph.png" border="0" usemap="#token__bucket_8c_a50fe824eab38393da0fc4f96d745d42c_cgraph" alt=""/></div>
+<map name="token__bucket_8c_a50fe824eab38393da0fc4f96d745d42c_cgraph" id="token__bucket_8c_a50fe824eab38393da0fc4f96d745d42c_cgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a7e7591bea5c400ec818196fc5435cb15" title="token_bucket_cfg_init" alt="" coords="227,5,376,32"/>
+<area shape="rect" id="node3" href="token__bucket_8c.html#a22392cbca806a78cd2e87691a6065251" title="rate_per_sec_to_rate\l_per_step" alt="" coords="229,57,373,98"/>
+<area shape="rect" id="node5" href="token__bucket_8c.html#a43ef8eed8a63421520fce9b002013f46" title="token_bucket_raw_adjust" alt="" coords="216,123,387,149"/>
+<area shape="rect" id="node4" href="compat__time_8c.html#a663ad7bf6571707eee93acdc3dc51384" title="monotime_coarse_stamp\l_units_to_approx_msec" alt="" coords="435,57,603,98"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a50fe824eab38393da0fc4f96d745d42c_icgraph.png" border="0" usemap="#token__bucket_8c_a50fe824eab38393da0fc4f96d745d42c_icgraph" alt=""/></div>
+<map name="token__bucket_8c_a50fe824eab38393da0fc4f96d745d42c_icgraph" id="token__bucket_8c_a50fe824eab38393da0fc4f96d745d42c_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="230,5,375,32"/>
+<area shape="rect" id="node4" href="connection_8h.html#a9c0760d1fc50f5bd96ab05890f121f11" title="connection_bucket_adjust" alt="" coords="216,56,389,83"/>
+<area shape="rect" id="node3" href="connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="437,5,592,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -370,6 +460,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>As token_bucket_rw_dec_read and token_bucket_rw_dec_write, in a single operation. Return a bitmask of TB_READ and TB_WRITE to indicate which buckets became empty. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a1ba85130f858b76019c716d017ea6681_cgraph.png" border="0" usemap="#token__bucket_8c_a1ba85130f858b76019c716d017ea6681_cgraph" alt=""/></div>
+<map name="token__bucket_8c_a1ba85130f858b76019c716d017ea6681_cgraph" id="token__bucket_8c_a1ba85130f858b76019c716d017ea6681_cgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a2428bdaecfad9bfcf8f327b5a9eaffc4" title="token_bucket_rw_dec_read" alt="" coords="203,5,384,32"/>
+<area shape="rect" id="node4" href="token__bucket_8c.html#aaae036f5d846cd8f167ed19894203326" title="token_bucket_rw_dec\l_write" alt="" coords="219,57,368,98"/>
+<area shape="rect" id="node3" href="token__bucket_8c.html#a3d4fbe71d5e1a956791c78074609346f" title="token_bucket_raw_dec" alt="" coords="432,35,588,61"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -400,6 +500,22 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Decrement the read token bucket in <b>bucket</b> by <b>n</b> bytes.</p>
 <p>Return true if the bucket was nonempty and became empty; return false otherwise. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a2428bdaecfad9bfcf8f327b5a9eaffc4_cgraph.png" border="0" usemap="#token__bucket_8c_a2428bdaecfad9bfcf8f327b5a9eaffc4_cgraph" alt=""/></div>
+<map name="token__bucket_8c_a2428bdaecfad9bfcf8f327b5a9eaffc4_cgraph" id="token__bucket_8c_a2428bdaecfad9bfcf8f327b5a9eaffc4_cgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a3d4fbe71d5e1a956791c78074609346f" title="token_bucket_raw_dec" alt="" coords="235,5,391,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a2428bdaecfad9bfcf8f327b5a9eaffc4_icgraph.png" border="0" usemap="#token__bucket_8c_a2428bdaecfad9bfcf8f327b5a9eaffc4_icgraph" alt=""/></div>
+<map name="token__bucket_8c_a2428bdaecfad9bfcf8f327b5a9eaffc4_icgraph" id="token__bucket_8c_a2428bdaecfad9bfcf8f327b5a9eaffc4_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a1ba85130f858b76019c716d017ea6681" title="token_bucket_rw_dec" alt="" coords="235,5,384,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -430,6 +546,22 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Decrement the write token bucket in <b>bucket</b> by <b>n</b> bytes.</p>
 <p>Return true if the bucket was nonempty and became empty; return false otherwise. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_aaae036f5d846cd8f167ed19894203326_cgraph.png" border="0" usemap="#token__bucket_8c_aaae036f5d846cd8f167ed19894203326_cgraph" alt=""/></div>
+<map name="token__bucket_8c_aaae036f5d846cd8f167ed19894203326_cgraph" id="token__bucket_8c_aaae036f5d846cd8f167ed19894203326_cgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a3d4fbe71d5e1a956791c78074609346f" title="token_bucket_raw_dec" alt="" coords="203,13,359,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_aaae036f5d846cd8f167ed19894203326_icgraph.png" border="0" usemap="#token__bucket_8c_aaae036f5d846cd8f167ed19894203326_icgraph" alt=""/></div>
+<map name="token__bucket_8c_aaae036f5d846cd8f167ed19894203326_icgraph" id="token__bucket_8c_aaae036f5d846cd8f167ed19894203326_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a1ba85130f858b76019c716d017ea6681" title="token_bucket_rw_dec" alt="" coords="203,13,352,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -471,6 +603,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Initialize a token bucket in *<b>bucket</b>, set up to allow <b>rate</b> bytes per second, with a maximum burst of <b>burst</b> bytes. The bucket is created such that <b>now_ts</b> is the current timestamp. The bucket starts out full. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a41006ac9011ad57892c02f1e6448a9f2_cgraph.png" border="0" usemap="#token__bucket_8c_a41006ac9011ad57892c02f1e6448a9f2_cgraph" alt=""/></div>
+<map name="token__bucket_8c_a41006ac9011ad57892c02f1e6448a9f2_cgraph" id="token__bucket_8c_a41006ac9011ad57892c02f1e6448a9f2_cgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a50fe824eab38393da0fc4f96d745d42c" title="token_bucket_rw_adjust" alt="" coords="199,79,361,105"/>
+<area shape="rect" id="node7" href="token__bucket_8c.html#af5d53fffb8a825d38565fc013e04f4db" title="token_bucket_rw_reset" alt="" coords="201,144,359,171"/>
+<area shape="rect" id="node3" href="token__bucket_8c.html#a7e7591bea5c400ec818196fc5435cb15" title="token_bucket_cfg_init" alt="" coords="420,5,569,32"/>
+<area shape="rect" id="node4" href="token__bucket_8c.html#a22392cbca806a78cd2e87691a6065251" title="rate_per_sec_to_rate\l_per_step" alt="" coords="423,57,567,98"/>
+<area shape="rect" id="node6" href="token__bucket_8c.html#a43ef8eed8a63421520fce9b002013f46" title="token_bucket_raw_adjust" alt="" coords="409,123,580,149"/>
+<area shape="rect" id="node5" href="compat__time_8c.html#a663ad7bf6571707eee93acdc3dc51384" title="monotime_coarse_stamp\l_units_to_approx_msec" alt="" coords="628,57,796,98"/>
+<area shape="rect" id="node8" href="token__bucket_8c.html#abd787fcddb80c9ea7ace35aece2f3988" title="token_bucket_raw_reset" alt="" coords="413,173,577,200"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_a41006ac9011ad57892c02f1e6448a9f2_icgraph.png" border="0" usemap="#token__bucket_8c_a41006ac9011ad57892c02f1e6448a9f2_icgraph" alt=""/></div>
+<map name="token__bucket_8c_a41006ac9011ad57892c02f1e6448a9f2_icgraph" id="token__bucket_8c_a41006ac9011ad57892c02f1e6448a9f2_icgraph">
+<area shape="rect" id="node2" href="connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="199,5,353,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -501,6 +655,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Refill <b>bucket</b> as appropriate, given that the current timestamp is <b>now_ts</b>.</p>
 <p>Return a bitmask containing TB_READ iff read bucket was empty and became nonempty, and TB_WRITE iff the write bucket was empty and became nonempty. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_ab306c1d9c3c6f138d343868ea9851e6e_cgraph.png" border="0" usemap="#token__bucket_8c_ab306c1d9c3c6f138d343868ea9851e6e_cgraph" alt=""/></div>
+<map name="token__bucket_8c_ab306c1d9c3c6f138d343868ea9851e6e_cgraph" id="token__bucket_8c_ab306c1d9c3c6f138d343868ea9851e6e_cgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#aab04b741717c1e77a777479c1215ace7" title="token_bucket_raw_refill\l_steps" alt="" coords="205,5,364,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -530,6 +692,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Reset <b>bucket</b> to be full, as of timestamp <b>now_ts</b>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_af5d53fffb8a825d38565fc013e04f4db_cgraph.png" border="0" usemap="#token__bucket_8c_af5d53fffb8a825d38565fc013e04f4db_cgraph" alt=""/></div>
+<map name="token__bucket_8c_af5d53fffb8a825d38565fc013e04f4db_cgraph" id="token__bucket_8c_af5d53fffb8a825d38565fc013e04f4db_cgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#abd787fcddb80c9ea7ace35aece2f3988" title="token_bucket_raw_reset" alt="" coords="211,5,375,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="token__bucket_8c_af5d53fffb8a825d38565fc013e04f4db_icgraph.png" border="0" usemap="#token__bucket_8c_af5d53fffb8a825d38565fc013e04f4db_icgraph" alt=""/></div>
+<map name="token__bucket_8c_af5d53fffb8a825d38565fc013e04f4db_icgraph" id="token__bucket_8c_af5d53fffb8a825d38565fc013e04f4db_icgraph">
+<area shape="rect" id="node2" href="token__bucket_8c.html#a41006ac9011ad57892c02f1e6448a9f2" title="token_bucket_rw_init" alt="" coords="211,5,356,32"/>
+<area shape="rect" id="node3" href="connection_8h.html#a4ff0267e6da4a42daaca672efb6a82b0" title="connection_bucket_init" alt="" coords="404,5,559,32"/>
+</map>
+</div>
 
 </div>
 </div>

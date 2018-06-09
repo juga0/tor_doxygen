@@ -1,0 +1,4 @@
+<map id="init_protocol_warning_severity_level" name="init_protocol_warning_severity_level">
+<area shape="rect" id="node2" href="$compat__threads_8c.html#a28fc1a1e6d143b15ab62ddfa810a7ffd" title="atomic_counter_init" alt="" coords="197,13,332,39"/>
+<area shape="rect" id="node3" href="$compat__pthreads_8c.html#a900a1a27db8f1815a4db66e98e67bac0" title="tor_mutex_init_nonrecursive" alt="" coords="380,13,565,39"/>
+</map>

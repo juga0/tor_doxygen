@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['obj_5fsyntax',['obj_syntax',['../routerparse_8c.html#aaf3587e2ef140d0c28a664dce0d701ca',1,'routerparse.c']]],
-  ['or_5fconn_5fstatus_5fevent_5ft',['or_conn_status_event_t',['../or_8h.html#a53c095ab81f2a8e2c459a95c35ab6ecc',1,'or.h']]]
+  ['padding_5ftype_5ft',['padding_type_t',['../rephist_8h.html#a185a8001412dc5fcf3eb2e078ff36cd3',1,'rephist.h']]],
+  ['path_5fstate_5ft',['path_state_t',['../or_8h.html#af80a11a4a183036a52b66a1b48c61ac9',1,'or.h']]],
+  ['pk_5fop_5ft',['pk_op_t',['../or_8h.html#ad4049c44927c69ab79f92289e6b72937',1,'or.h']]],
+  ['protocol_5ftype_5ft',['protocol_type_t',['../protover_8h.html#a932bee6e7c2e702a8cce14cfd728ba92',1,'protover.h']]]
 ];

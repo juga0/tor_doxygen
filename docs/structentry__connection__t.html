@@ -94,11 +94,11 @@ Data Fields</h2></td></tr>
 <tr class="separator:a66bd418ba0d1ef6d3a0b1a42b74344d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0fa08c4e26bebfaed5d22bd33600e8a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentry__connection__t.html#ae0fa08c4e26bebfaed5d22bd33600e8a">num_socks_retries</a></td></tr>
 <tr class="separator:ae0fa08c4e26bebfaed5d22bd33600e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ca64fab0a87005effb2981fa31cc368"><td class="memItemLeft" align="right" valign="top">buf_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentry__connection__t.html#a4ca64fab0a87005effb2981fa31cc368">pending_optimistic_data</a></td></tr>
-<tr class="separator:a4ca64fab0a87005effb2981fa31cc368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7657a8439a0ca6b8908d66458dc57b17"><td class="memItemLeft" align="right" valign="top"><a id="a7657a8439a0ca6b8908d66458dc57b17"></a>
-buf_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sending_optimistic_data</b></td></tr>
-<tr class="separator:a7657a8439a0ca6b8908d66458dc57b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63e73447c40f4d7e2aebd7568f50161"><td class="memItemLeft" align="right" valign="top">struct buf_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentry__connection__t.html#ac63e73447c40f4d7e2aebd7568f50161">pending_optimistic_data</a></td></tr>
+<tr class="separator:ac63e73447c40f4d7e2aebd7568f50161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a8c393d15d975d4a3aeab29e1e6ece"><td class="memItemLeft" align="right" valign="top"><a id="a72a8c393d15d975d4a3aeab29e1e6ece"></a>
+struct buf_t *&#160;</td><td class="memItemRight" valign="bottom"><b>sending_optimistic_data</b></td></tr>
+<tr class="separator:a72a8c393d15d975d4a3aeab29e1e6ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e4cca1d1a941db675554e59de1aa5bd"><td class="memItemLeft" align="right" valign="top">struct evdns_server_request *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentry__connection__t.html#a3e4cca1d1a941db675554e59de1aa5bd">dns_server_request</a></td></tr>
 <tr class="separator:a3e4cca1d1a941db675554e59de1aa5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd748a99cfb0610526f6e08d3e14408"><td class="memItemLeft" align="right" valign="top"><a id="addd748a99cfb0610526f6e08d3e14408"></a>
@@ -121,8 +121,6 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>marked_pendin
 <tr class="separator:a2a034a728b8e2d51b0b3ed2fbea768da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a1b10a1dad68f80a8e7fd249592efe5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentry__connection__t.html#a7a1b10a1dad68f80a8e7fd249592efe5">may_use_optimistic_data</a>: 1</td></tr>
 <tr class="separator:a7a1b10a1dad68f80a8e7fd249592efe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad80bbfeb98cb049f0c66a73efcb6189b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentry__connection__t.html#ad80bbfeb98cb049f0c66a73efcb6189b">is_socks_socket</a>:1</td></tr>
-<tr class="separator:ad80bbfeb98cb049f0c66a73efcb6189b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Subtype of <a class="el" href="structedge__connection__t.html">edge_connection_t</a> for an "entry connection" &ndash; that is, a SOCKS connection, a DNS request, a TransPort connection or a NATD connection </p>
@@ -184,21 +182,6 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>marked_pendin
       </table>
 </div><div class="memdoc">
 <p>If this is a DNSPort connection, this field holds the pending DNS request that we're going to try to answer. </p>
-
-</div>
-</div>
-<a id="ad80bbfeb98cb049f0c66a73efcb6189b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad80bbfeb98cb049f0c66a73efcb6189b">&#9670;&nbsp;</a></span>is_socks_socket</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int is_socks_socket</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Are we a socks SocksSocket listener? </p>
 
 </div>
 </div>
@@ -293,14 +276,14 @@ stream to one of the available circuits" logic. </p>
 
 </div>
 </div>
-<a id="a4ca64fab0a87005effb2981fa31cc368"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ca64fab0a87005effb2981fa31cc368">&#9670;&nbsp;</a></span>pending_optimistic_data</h2>
+<a id="ac63e73447c40f4d7e2aebd7568f50161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63e73447c40f4d7e2aebd7568f50161">&#9670;&nbsp;</a></span>pending_optimistic_data</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">buf_t* pending_optimistic_data</td>
+          <td class="memname">struct buf_t* pending_optimistic_data</td>
         </tr>
       </table>
 </div><div class="memdoc">

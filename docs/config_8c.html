@@ -73,9 +73,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Code to parse and interpret configuration files.  
+<p>Code to interpret the user's configuration of Tor.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bridges_8h_source.html">bridges.h</a>&quot;</code><br />
 <code>#include &quot;compat.h&quot;</code><br />
 <code>#include &quot;addressmap.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="channel_8h_source.html">channel.h</a>&quot;</code><br />
@@ -84,18 +85,22 @@ $(function() {
 <code>#include &quot;<a class="el" href="circuitmux_8h_source.html">circuitmux.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitmux__ewma_8h_source.html">circuitmux_ewma.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="circuitstats_8h_source.html">circuitstats.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="compress_8h_source.html">compress.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__edge_8h_source.html">connection_edge.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__or_8h_source.html">connection_or.h</a>&quot;</code><br />
+<code>#include &quot;consdiffmgr.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
 <code>#include &quot;confparse.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="cpuworker_8h_source.html">cpuworker.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dirserv_8h_source.html">dirserv.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirvote.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dns_8h_source.html">dns.h</a>&quot;</code><br />
 <code>#include &quot;dos.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
+<code>#include &quot;git_revision.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="geoip_8h_source.html">geoip.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hibernate_8h_source.html">hibernate.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
@@ -105,6 +110,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="relay_8h_source.html">relay.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rendclient_8h_source.html">rendclient.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rendservice_8h_source.html">rendservice.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hs__config_8h_source.html">hs_config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rephist_8h_source.html">rephist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sandbox_8h_source.html">sandbox.h</a>&quot;</code><br />
@@ -115,83 +121,48 @@ $(function() {
 <code>#include &quot;statefile.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="transports_8h_source.html">transports.h</a>&quot;</code><br />
 <code>#include &quot;ext_orport.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="torgzip_8h_source.html">torgzip.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="voting__schedule_8h_source.html">voting_schedule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="procmon_8h_source.html">procmon.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirauth/dirvote.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mode_8h_source.html">dirauth/mode.h</a>&quot;</code><br />
 <code>#include &quot;auth_dirs.inc&quot;</code><br />
 <code>#include &quot;fallback_dirs.inc&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for config.c:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2config_8c" alt=""/></div>
-<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2config_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2config_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="271,333,315,360"/>
-<area shape="rect" id="node6" href="compat_8h_source.html" title="compat.h" alt="" coords="487,557,563,584"/>
-<area shape="rect" id="node11" href="util_8h.html" title="Headers for util.c. " alt="" coords="482,483,533,509"/>
-<area shape="rect" id="node12" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="477,408,549,435"/>
-<area shape="rect" id="node13" href="addressmap_8h_source.html" title="addressmap.h" alt="" coords="810,109,914,136"/>
-<area shape="rect" id="node14" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="392,184,471,211"/>
-<area shape="rect" id="node15" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="290,259,383,285"/>
-<area shape="rect" id="node16" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="939,109,1033,136"/>
-<area shape="rect" id="node17" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1058,109,1143,136"/>
-<area shape="rect" id="node18" href="circuitmux__ewma_8h.html" title="Header file for circuitmux_ewma.c. " alt="" coords="181,184,316,211"/>
-<area shape="rect" id="node19" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="1168,109,1265,136"/>
-<area shape="rect" id="node20" href="config_8h.html" title="Header file for config.c. " alt="" coords="1289,109,1357,136"/>
-<area shape="rect" id="node21" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1382,109,1478,136"/>
-<area shape="rect" id="node22" href="connection__edge_8h.html" title="Header file for connection_edge.c. " alt="" coords="1502,109,1633,136"/>
-<area shape="rect" id="node23" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="1657,109,1771,136"/>
-<area shape="rect" id="node24" href="control_8h.html" title="Header file for control.c. " alt="" coords="1795,109,1867,136"/>
-<area shape="rect" id="node25" href="confparse_8h_source.html" title="confparse.h" alt="" coords="1891,109,1982,136"/>
-<area shape="rect" id="node26" href="cpuworker_8h.html" title="Header file for cpuworker.c. " alt="" coords="2006,109,2099,136"/>
-<area shape="rect" id="node27" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="2123,109,2195,136"/>
-<area shape="rect" id="node28" href="dirvote_8h.html" title="Header file for dirvote.c. " alt="" coords="2219,109,2291,136"/>
-<area shape="rect" id="node29" href="dns_8h.html" title="Header file for dns.c. " alt="" coords="2316,109,2371,136"/>
-<area shape="rect" id="node30" href="dos_8h_source.html" title="dos.h" alt="" coords="2416,184,2471,211"/>
-<area shape="rect" id="node31" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2535,109,2632,136"/>
-<area shape="rect" id="node32" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="2446,109,2510,136"/>
-<area shape="rect" id="node33" href="hibernate_8h.html" title="Header file for hibernate.c. " alt="" coords="2656,109,2743,136"/>
-<area shape="rect" id="node34" href="main_8h.html" title="Header file for main.c. " alt="" coords="2767,109,2829,136"/>
-<area shape="rect" id="node35" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2853,109,2967,136"/>
-<area shape="rect" id="node36" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2992,109,3071,136"/>
-<area shape="rect" id="node37" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="3095,109,3173,136"/>
-<area shape="rect" id="node38" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="3197,109,3258,136"/>
-<area shape="rect" id="node39" href="rendclient_8h.html" title="Header file for rendclient.c. " alt="" coords="3283,109,3372,136"/>
-<area shape="rect" id="node40" href="rendservice_8h.html" title="Header file for rendservice.c. " alt="" coords="5,259,105,285"/>
-<area shape="rect" id="node41" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="3397,109,3469,136"/>
-<area shape="rect" id="node42" href="router_8h.html" title="Header file for router.c. " alt="" coords="3493,109,3559,136"/>
-<area shape="rect" id="node43" href="sandbox_8h.html" title="Header file for sandbox.c. " alt="" coords="587,557,670,584"/>
-<area shape="rect" id="node44" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="3583,109,3666,136"/>
-<area shape="rect" id="node45" href="routerset_8h_source.html" title="routerset.h" alt="" coords="3691,109,3775,136"/>
-<area shape="rect" id="node46" href="scheduler_8h.html" title="Header file for scheduler.c. " alt="" coords="443,109,532,136"/>
-<area shape="rect" id="node47" href="statefile_8h_source.html" title="statefile.h" alt="" coords="3799,109,3877,136"/>
-<area shape="rect" id="node48" href="transports_8h.html" title="Headers for transports.c. " alt="" coords="3902,109,3993,136"/>
-<area shape="rect" id="node49" href="ext__orport_8h_source.html" title="ext_orport.h" alt="" coords="4017,109,4107,136"/>
-<area shape="rect" id="node50" href="procmon_8h.html" title="Headers for procmon.c. " alt="" coords="709,333,791,360"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="375,707,453,733"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="348,632,411,659"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="199,483,269,509"/>
-<area shape="rect" id="node7" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="293,483,407,509"/>
-<area shape="rect" id="node8" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="227,408,289,435"/>
-<area shape="rect" id="node9" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="624,408,689,435"/>
-<area shape="rect" id="node10" href="container_8h_source.html" title="container.h" alt="" coords="365,408,452,435"/>
-</map>
-</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ad9da8c9546fa9e7a8d6860eafa374792"><td class="memItemLeft" align="right" valign="top"><a id="ad9da8c9546fa9e7a8d6860eafa374792"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CONFIG_PRIVATE</b></td></tr>
 <tr class="separator:ad9da8c9546fa9e7a8d6860eafa374792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c9581cb134dd3f395d4c0c9ae6260c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#af6c9581cb134dd3f395d4c0c9ae6260c">DOWNLOAD_SCHEDULE</a>(name)&#160;&#160;&#160;{ #name &quot;DownloadSchedule&quot;, #name &quot;DownloadInitialDelay&quot;, 0, 1 }</td></tr>
+<tr class="separator:af6c9581cb134dd3f395d4c0c9ae6260c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a029c46c0fa7e72503c0490f01aa35bfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a029c46c0fa7e72503c0490f01aa35bfb">VAR</a>(name,  conftype,  member,  initvalue)</td></tr>
 <tr class="separator:a029c46c0fa7e72503c0490f01aa35bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adacae73549bfbc6b27841ca32728f750"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#adacae73549bfbc6b27841ca32728f750">V</a>(member,  conftype,  initvalue)&#160;&#160;&#160;<a class="el" href="config_8c.html#a029c46c0fa7e72503c0490f01aa35bfb">VAR</a>(#member, conftype, member, initvalue)</td></tr>
 <tr class="separator:adacae73549bfbc6b27841ca32728f750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23aa8a0ad0e58d2d7f15bd4607768013"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a23aa8a0ad0e58d2d7f15bd4607768013">OBSOLETE</a>(name)&#160;&#160;&#160;{ name, CONFIG_TYPE_OBSOLETE, 0, NULL }</td></tr>
 <tr class="separator:a23aa8a0ad0e58d2d7f15bd4607768013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1f60dadd3423c8059cc56f7638d4805"><td class="memItemLeft" align="right" valign="top"><a id="ab1f60dadd3423c8059cc56f7638d4805"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VPORT</b>(member,  conftype,  initvalue)&#160;&#160;&#160;<a class="el" href="config_8c.html#a029c46c0fa7e72503c0490f01aa35bfb">VAR</a>(#member, conftype, member ## _lines, initvalue)</td></tr>
-<tr class="separator:ab1f60dadd3423c8059cc56f7638d4805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cb3efb21513bb5ff5b053df1b660d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ab1cb3efb21513bb5ff5b053df1b660d9">VPORT</a>(member)</td></tr>
+<tr class="separator:ab1cb3efb21513bb5ff5b053df1b660d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1872433ec80dc10d18e8e501cfabccb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a1872433ec80dc10d18e8e501cfabccb0">OR_OPTIONS_MAGIC</a>&#160;&#160;&#160;9090909</td></tr>
 <tr class="separator:a1872433ec80dc10d18e8e501cfabccb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddbe55bcb37f860d728766fa87328cf"><td class="memItemLeft" align="right" valign="top"><a id="a0ddbe55bcb37f860d728766fa87328cf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>YES_IF_CHANGED_BOOL</b>(opt)&#160;&#160;&#160;if (!CFG_EQ_BOOL(old_options, new_options, opt)) return 1;</td></tr>
+<tr class="separator:a0ddbe55bcb37f860d728766fa87328cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c2978da05f7129d7c8758d1cc77936"><td class="memItemLeft" align="right" valign="top"><a id="af4c2978da05f7129d7c8758d1cc77936"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>YES_IF_CHANGED_INT</b>(opt)&#160;&#160;&#160;if (!CFG_EQ_INT(old_options, new_options, opt)) return 1;</td></tr>
+<tr class="separator:af4c2978da05f7129d7c8758d1cc77936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f75aff556ed995469917163bcb3fa7"><td class="memItemLeft" align="right" valign="top"><a id="ad1f75aff556ed995469917163bcb3fa7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>YES_IF_CHANGED_STRING</b>(opt)&#160;&#160;&#160;if (!CFG_EQ_STRING(old_options, new_options, opt)) return 1;</td></tr>
+<tr class="separator:ad1f75aff556ed995469917163bcb3fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eecd900d5cc954c412c89eb125bcfb9"><td class="memItemLeft" align="right" valign="top"><a id="a0eecd900d5cc954c412c89eb125bcfb9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>YES_IF_CHANGED_LINELIST</b>(opt)&#160;&#160;&#160;if (!CFG_EQ_LINELIST(old_options, new_options, opt)) return 1;</td></tr>
+<tr class="separator:a0eecd900d5cc954c412c89eb125bcfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c6c68ddc5d367eb443336aa993d789"><td class="memItemLeft" align="right" valign="top"><a id="a34c6c68ddc5d367eb443336aa993d789"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>YES_IF_CHANGED_SMARTLIST</b>(opt)&#160;&#160;&#160;if (!CFG_EQ_SMARTLIST(old_options, new_options, opt)) return 1;</td></tr>
+<tr class="separator:a34c6c68ddc5d367eb443336aa993d789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f69791c0148efd125f6e315961524b8"><td class="memItemLeft" align="right" valign="top"><a id="a3f69791c0148efd125f6e315961524b8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>YES_IF_CHANGED_ROUTERSET</b>(opt)&#160;&#160;&#160;if (!CFG_EQ_ROUTERSET(old_options, new_options, opt)) return 1;</td></tr>
+<tr class="separator:a3f69791c0148efd125f6e315961524b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a344a13c0d9a9f4f05a3bfd34bf2db695"><td class="memItemLeft" align="right" valign="top"><a id="a344a13c0d9a9f4f05a3bfd34bf2db695"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>RELAY_BRIDGE_STATS_DELAY</b>&#160;&#160;&#160;(6 * 60 * 60)</td></tr>
 <tr class="separator:a344a13c0d9a9f4f05a3bfd34bf2db695"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,9 +171,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a65c16724d133884f92b302bd1999825d"><td class="memItemLeft" align="right" valign="top"><a id="a65c16724d133884f92b302bd1999825d"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_REND_POST_PERIOD_TESTING</b>&#160;&#160;&#160;(5)</td></tr>
 <tr class="separator:a65c16724d133884f92b302bd1999825d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba0a0ce1db424e1e057a461a57224e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a2ba0a0ce1db424e1e057a461a57224e0">MAX_PREDICTED_CIRCS_RELEVANCE</a>&#160;&#160;&#160;(60*60)</td></tr>
-<tr class="separator:a2ba0a0ce1db424e1e057a461a57224e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f51f7e2fa6104358bddf00f3769ab9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a3f51f7e2fa6104358bddf00f3769ab9f">MAX_DIR_PERIOD</a>&#160;&#160;&#160;(<a class="el" href="or_8h.html#ae811733068515cf4c29773d0f1b2dd58">MIN_ONION_KEY_LIFETIME</a>/2)</td></tr>
+<tr class="memitem:a9af49342e47f721c9204cf872f48a368"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a9af49342e47f721c9204cf872f48a368">MAX_CIRCS_AVAILABLE_TIME</a>&#160;&#160;&#160;(24*60*60)</td></tr>
+<tr class="separator:a9af49342e47f721c9204cf872f48a368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f51f7e2fa6104358bddf00f3769ab9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a3f51f7e2fa6104358bddf00f3769ab9f">MAX_DIR_PERIOD</a>&#160;&#160;&#160;((7*24*60*60)/2)</td></tr>
 <tr class="separator:a3f51f7e2fa6104358bddf00f3769ab9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ce65de17ad945cdfd7a3464df7398f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a1ce65de17ad945cdfd7a3464df7398f3">MIN_MAX_CIRCUIT_DIRTINESS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a1ce65de17ad945cdfd7a3464df7398f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,8 +181,6 @@ Macros</h2></td></tr>
 <tr class="separator:a1c1c2de8e42791f1cb67b2109e7521f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32f2dbe6d533fdcd5a1abc3919499aa3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a32f2dbe6d533fdcd5a1abc3919499aa3">MIN_CIRCUIT_STREAM_TIMEOUT</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a32f2dbe6d533fdcd5a1abc3919499aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2f5463d81932340f961af2363f6aae9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ab2f5463d81932340f961af2363f6aae9">MIN_HEARTBEAT_PERIOD</a>&#160;&#160;&#160;(30*60)</td></tr>
-<tr class="separator:ab2f5463d81932340f961af2363f6aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabce10b3e73ca8bae930deae06483a87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#aabce10b3e73ca8bae930deae06483a87">RECOMMENDED_MIN_CIRCUIT_BUILD_TIMEOUT</a>&#160;&#160;&#160;(10)</td></tr>
 <tr class="separator:aabce10b3e73ca8bae930deae06483a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ed49112f86689abf0e3d655f854515b"><td class="memItemLeft" align="right" valign="top"><a id="a3ed49112f86689abf0e3d655f854515b"></a>
@@ -220,8 +189,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a38d9c7518e2ba89e456b35e3f94a1d6a"><td class="memItemLeft" align="right" valign="top"><a id="a38d9c7518e2ba89e456b35e3f94a1d6a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLAIN</b>(args, ...)&#160;&#160;&#160;STMT_BEGIN log_warn(<a class="el" href="torlog_8h.html#ae13c04fd65d721b4e7266eb85f37374e">LD_CONFIG</a>, args, ##__VA_ARGS__); STMT_END</td></tr>
 <tr class="separator:a38d9c7518e2ba89e456b35e3f94a1d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc55631fcd4149c55f183fecc5676852"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>WARN_PLEASE_USE_IPV6_LOG_MSG</b></td></tr>
-<tr class="separator:afc55631fcd4149c55f183fecc5676852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d70373e62ee68fd1954267a24f16be5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>CHECK_DEFAULT</b>(arg)</td></tr>
 <tr class="separator:a6d70373e62ee68fd1954267a24f16be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a392b0fd73abc05b7803d7db8975d1ffa"><td class="memItemLeft" align="right" valign="top"><a id="a392b0fd73abc05b7803d7db8975d1ffa"></a>
@@ -230,27 +197,39 @@ Macros</h2></td></tr>
 <tr class="memitem:aae4d4761b231a4321c08bd4bd18937e0"><td class="memItemLeft" align="right" valign="top"><a id="aae4d4761b231a4321c08bd4bd18937e0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ONE_MEGABYTE</b>&#160;&#160;&#160;(U64_LITERAL(1) &lt;&lt; 20)</td></tr>
 <tr class="separator:aae4d4761b231a4321c08bd4bd18937e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ab2fbf00c5c61b87753f33e2579575b"><td class="memItemLeft" align="right" valign="top"><a id="a8ab2fbf00c5c61b87753f33e2579575b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_DEFAULT_MAXMEM</b>&#160;&#160;&#160;(2*ONE_GIGABYTE)</td></tr>
-<tr class="separator:a8ab2fbf00c5c61b87753f33e2579575b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4370bf37c8716e824cbc397104a874a1"><td class="memItemLeft" align="right" valign="top"><a id="a4370bf37c8716e824cbc397104a874a1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIRCACHE_MIN_MB_BANDWIDTH</b>&#160;&#160;&#160;300</td></tr>
-<tr class="separator:a4370bf37c8716e824cbc397104a874a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e5f02a448ea10a71ba34b2bc1b8ead5"><td class="memItemLeft" align="right" valign="top"><a id="a9e5f02a448ea10a71ba34b2bc1b8ead5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIRCACHE_MIN_BANDWIDTH</b>&#160;&#160;&#160;(DIRCACHE_MIN_MB_BANDWIDTH*ONE_MEGABYTE)</td></tr>
-<tr class="separator:a9e5f02a448ea10a71ba34b2bc1b8ead5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649e2aae668eabe9fb72db81a2612c39"><td class="memItemLeft" align="right" valign="top"><a id="a649e2aae668eabe9fb72db81a2612c39"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RAM_IS_VERY_LARGE</b>(x)&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:a649e2aae668eabe9fb72db81a2612c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39522bb24d96247eb315ad6e664f18a8"><td class="memItemLeft" align="right" valign="top"><a id="a39522bb24d96247eb315ad6e664f18a8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIRCACHE_MIN_MEM_MB</b>&#160;&#160;&#160;300</td></tr>
+<tr class="separator:a39522bb24d96247eb315ad6e664f18a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167a6bbbce4e94351172b920f955ce25"><td class="memItemLeft" align="right" valign="top"><a id="a167a6bbbce4e94351172b920f955ce25"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIRCACHE_MIN_MEM_BYTES</b>&#160;&#160;&#160;(DIRCACHE_MIN_MEM_MB*ONE_MEGABYTE)</td></tr>
+<tr class="separator:a167a6bbbce4e94351172b920f955ce25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48427dfe592fe681211be3b0bcab7bd8"><td class="memItemLeft" align="right" valign="top"><a id="a48427dfe592fe681211be3b0bcab7bd8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>STRINGIFY</b>(val)&#160;&#160;&#160;#val</td></tr>
 <tr class="separator:a48427dfe592fe681211be3b0bcab7bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e09a0231e1d7182e1da8d955897835"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>BAD_CHANGE_TO</b>(opt,  how)</td></tr>
+<tr class="separator:a23e09a0231e1d7182e1da8d955897835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8747a342626501c5d38ea965f9578d"><td class="memItemLeft" align="right" valign="top"><a id="a6a8747a342626501c5d38ea965f9578d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NO_CHANGE_BOOL</b>(opt)&#160;&#160;&#160;if (! CFG_EQ_BOOL(old, new_val, opt)) BAD_CHANGE_TO(opt,&quot;&quot;)</td></tr>
+<tr class="separator:a6a8747a342626501c5d38ea965f9578d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b28b9110eb052c150e9f2ca590b1b12"><td class="memItemLeft" align="right" valign="top"><a id="a6b28b9110eb052c150e9f2ca590b1b12"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NO_CHANGE_INT</b>(opt)&#160;&#160;&#160;if (! CFG_EQ_INT(old, new_val, opt)) BAD_CHANGE_TO(opt,&quot;&quot;)</td></tr>
+<tr class="separator:a6b28b9110eb052c150e9f2ca590b1b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e348a9a85ea2214313a0d4d584e6538"><td class="memItemLeft" align="right" valign="top"><a id="a1e348a9a85ea2214313a0d4d584e6538"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NO_CHANGE_STRING</b>(opt)&#160;&#160;&#160;if (! CFG_EQ_STRING(old, new_val, opt)) BAD_CHANGE_TO(opt,&quot;&quot;)</td></tr>
+<tr class="separator:a1e348a9a85ea2214313a0d4d584e6538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c415583ae81981dd2b1f8b5b2f156f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SB_NOCHANGE_STR</b>(opt)</td></tr>
 <tr class="separator:a4c415583ae81981dd2b1f8b5b2f156f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468d1bff8afcac4e4ecaf531407f33e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SB_NOCHANGE_LINELIST</b>(opt)</td></tr>
+<tr class="separator:a468d1bff8afcac4e4ecaf531407f33e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20d921b7309846730df73c8ce82ea81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SB_NOCHANGE_INT</b>(opt)</td></tr>
+<tr class="separator:ad20d921b7309846730df73c8ce82ea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab212860247bb19ce00fcbd96817e4bc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ab212860247bb19ce00fcbd96817e4bc2">GENERATED_FILE_PREFIX</a></td></tr>
 <tr class="separator:ab212860247bb19ce00fcbd96817e4bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba493a66e268dac30fad9e505bdb389"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#afba493a66e268dac30fad9e505bdb389">GENERATED_FILE_COMMENT</a></td></tr>
 <tr class="separator:afba493a66e268dac30fad9e505bdb389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2706437d6ac9961009ccc800af7c953d"><td class="memItemLeft" align="right" valign="top"><a id="a2706437d6ac9961009ccc800af7c953d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>VERY_OLD_FILE_AGE</b>&#160;&#160;&#160;(28*24*60*60)</td></tr>
-<tr class="separator:a2706437d6ac9961009ccc800af7c953d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -262,6 +241,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ac7904b90e061b9fb964e884ace2af3c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ac7904b90e061b9fb964e884ace2af3c0">DUMMY_TYPECHECK_INSTANCE</a> (<a class="el" href="structor__options__t.html">or_options_t</a>)</td></tr>
+<tr class="separator:ac7904b90e061b9fb964e884ace2af3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32fb164ebdcdc5d97d4b9638a7f10c11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a32fb164ebdcdc5d97d4b9638a7f10c11">MOCK_IMPL</a> (const char *, get_dirportfrontpage,(void))</td></tr>
 <tr class="separator:a32fb164ebdcdc5d97d4b9638a7f10c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac613062499456ecc25011b1f5c2f8e3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ac613062499456ecc25011b1f5c2f8e3b">MOCK_IMPL</a> (<a class="el" href="structor__options__t.html">or_options_t</a> *, get_options_mutable,(void))</td></tr>
@@ -274,8 +255,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3113591cdd3555bd354860a3a0802222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a229118cbc4221ec841824b17f7c82b06"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a229118cbc4221ec841824b17f7c82b06">get_short_version</a> (void)</td></tr>
 <tr class="separator:a229118cbc4221ec841824b17f7c82b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d66419dd103a30396f877c79c31f137"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a9d66419dd103a30396f877c79c31f137">or_options_free</a> (<a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
-<tr class="separator:a9d66419dd103a30396f877c79c31f137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353c87fbabb08149a99b6800569b5b79"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a353c87fbabb08149a99b6800569b5b79">or_options_free_</a> (<a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:a353c87fbabb08149a99b6800569b5b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad82f38255905a78c85baf3224551787d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ad82f38255905a78c85baf3224551787d">config_free_all</a> (void)</td></tr>
 <tr class="separator:ad82f38255905a78c85baf3224551787d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e31046631b0cc0f5d01c8d411b886e6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a7e31046631b0cc0f5d01c8d411b886e6">safe_str_client</a> (const char *address)</td></tr>
@@ -286,12 +267,18 @@ Functions</h2></td></tr>
 <tr class="separator:ac4eb7d900d6542f8b19af751d2c1bb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4f7098ccf9acfd57ab27de9ee917f48"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#af4f7098ccf9acfd57ab27de9ee917f48">escaped_safe_str</a> (const char *address)</td></tr>
 <tr class="separator:af4f7098ccf9acfd57ab27de9ee917f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6af15414001bad5f7179396d0bcb08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a9f6af15414001bad5f7179396d0bcb08">get_protocol_warning_severity_level</a> (void)</td></tr>
+<tr class="separator:a9f6af15414001bad5f7179396d0bcb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9badc2e4e664120fd99bbd63cd4af3c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a9badc2e4e664120fd99bbd63cd4af3c6">init_protocol_warning_severity_level</a> (void)</td></tr>
+<tr class="separator:a9badc2e4e664120fd99bbd63cd4af3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a128f795f7c324880de1b9c76ae0042af"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a128f795f7c324880de1b9c76ae0042af">add_default_trusted_dir_authorities</a> (<a class="el" href="or_8h.html#ae733ffc8e2cde85d0705d947f8f86ada">dirinfo_type_t</a> type)</td></tr>
 <tr class="separator:a128f795f7c324880de1b9c76ae0042af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada6cefd4da1cfdc3d1588721bafc0a3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ada6cefd4da1cfdc3d1588721bafc0a3f">MOCK_IMPL</a> (void, add_default_fallback_dir_servers,(void))</td></tr>
 <tr class="separator:ada6cefd4da1cfdc3d1588721bafc0a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44bd3659f3928dce51310d4313e5fb93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a44bd3659f3928dce51310d4313e5fb93">consider_adding_dir_servers</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, const <a class="el" href="structor__options__t.html">or_options_t</a> *old_options)</td></tr>
 <tr class="separator:a44bd3659f3928dce51310d4313e5fb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b40c6329b1df51c3d9970205af74fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a99b40c6329b1df51c3d9970205af74fa">create_keys_directory</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:a99b40c6329b1df51c3d9970205af74fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad09b1993fdca508d228a7585813efcac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ad09b1993fdca508d228a7585813efcac">options_need_geoip_info</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, const char **reason_out)</td></tr>
 <tr class="separator:ad09b1993fdca508d228a7585813efcac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae937a27a04bbab82090c0d47c5846309"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ae937a27a04bbab82090c0d47c5846309">get_effective_bwrate</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
@@ -332,6 +319,9 @@ STATIC int&#160;</td><td class="memItemRight" valign="bottom"><b>options_validat
 <tr class="separator:a4c636ce6415192dbef92273831ac2965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c11ad3e523e5698240314b49f8538a3"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a5c11ad3e523e5698240314b49f8538a3">options_validate</a> (<a class="el" href="structor__options__t.html">or_options_t</a> *old_options, <a class="el" href="structor__options__t.html">or_options_t</a> *options, <a class="el" href="structor__options__t.html">or_options_t</a> *default_options, int from_setconf, char **msg)</td></tr>
 <tr class="separator:a5c11ad3e523e5698240314b49f8538a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af761f3f4c6b83ab5c23a7b025a18176f"><td class="memItemLeft" align="right" valign="top"><a id="af761f3f4c6b83ab5c23a7b025a18176f"></a>
+STATIC uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>compute_real_max_mem_in_queues</b> (const uint64_t val, int log_guess)</td></tr>
+<tr class="separator:af761f3f4c6b83ab5c23a7b025a18176f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adccda65b3bf9a9471890360153b3a86d"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#adccda65b3bf9a9471890360153b3a86d">have_enough_mem_for_dircache</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, size_t total_mem, char **msg)</td></tr>
 <tr class="separator:adccda65b3bf9a9471890360153b3a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f8b7e68e2106113d00a3a49d77d519c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a4f8b7e68e2106113d00a3a49d77d519c">options_init_from_torrc</a> (int argc, char **argv)</td></tr>
@@ -344,8 +334,8 @@ STATIC int&#160;</td><td class="memItemRight" valign="bottom"><b>options_validat
 <tr class="separator:ad5b1441c46e173be812f5739141e1a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0680dcf72ca4379b07f06e83f2c2a21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#ad0680dcf72ca4379b07f06e83f2c2a21">addressmap_register_auto</a> (const char *from, const char *to, time_t expires, <a class="el" href="or_8h.html#a0e9fdce0c31c7eeaae43aadf4ff6644b">addressmap_entry_source_t</a> addrmap_source, const char **msg)</td></tr>
 <tr class="separator:ad0680dcf72ca4379b07f06e83f2c2a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c95a53f7068b75257c607405757b428"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a4c95a53f7068b75257c607405757b428">bridge_line_free</a> (<a class="el" href="structbridge__line__t.html">bridge_line_t</a> *bridge_line)</td></tr>
-<tr class="separator:a4c95a53f7068b75257c607405757b428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248c5ed3d769432bffef44844128ed1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a248c5ed3d769432bffef44844128ed1e">bridge_line_free_</a> (<a class="el" href="structbridge__line__t.html">bridge_line_t</a> *bridge_line)</td></tr>
+<tr class="separator:a248c5ed3d769432bffef44844128ed1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe088dc796b29c435c910fdd49397bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbridge__line__t.html">bridge_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#abfe088dc796b29c435c910fdd49397bf">parse_bridge_line</a> (const char *line)</td></tr>
 <tr class="separator:abfe088dc796b29c435c910fdd49397bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afffa2fb6e12f263d25ea6bbc9b7a4b8d"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#afffa2fb6e12f263d25ea6bbc9b7a4b8d">parse_transport_line</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, const char *line, int validate_only, int server)</td></tr>
@@ -362,12 +352,14 @@ STATIC int&#160;</td><td class="memItemRight" valign="bottom"><b>options_validat
 <tr class="separator:aa33011ecb969cfb88f0e8979654d1fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe597126376671a6dfdede2997bc6c77"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structport__cfg__t.html">port_cfg_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#abe597126376671a6dfdede2997bc6c77">port_cfg_new</a> (size_t namelen)</td></tr>
 <tr class="separator:abe597126376671a6dfdede2997bc6c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6691cf726086717907bc0b918b13d55"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#aa6691cf726086717907bc0b918b13d55">port_cfg_free</a> (<a class="el" href="structport__cfg__t.html">port_cfg_t</a> *port)</td></tr>
-<tr class="separator:aa6691cf726086717907bc0b918b13d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59704a0ee1924eb022c37dfa669a0d9d"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a59704a0ee1924eb022c37dfa669a0d9d">port_cfg_free_</a> (<a class="el" href="structport__cfg__t.html">port_cfg_t</a> *port)</td></tr>
+<tr class="separator:a59704a0ee1924eb022c37dfa669a0d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a921479be2cc807b006e928356bc0ba51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a921479be2cc807b006e928356bc0ba51">port_cfg_line_extract_addrport</a> (const char *line, char **addrport_out, int *is_unix_out, const char **rest_out)</td></tr>
 <tr class="separator:a921479be2cc807b006e928356bc0ba51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabfc92450485592a3ea1d316ad8a5c33"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#aabfc92450485592a3ea1d316ad8a5c33">parse_port_config</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *out, const <a class="el" href="structconfig__line__t.html">config_line_t</a> *ports, const <a class="el" href="structconfig__line__t.html">config_line_t</a> *listenaddrs, const char *portname, int listener_type, const char *defaultaddr, int defaultport, const unsigned flags)</td></tr>
-<tr class="separator:aabfc92450485592a3ea1d316ad8a5c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111e4aec559ae132f2b93ec88691e7e7"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a111e4aec559ae132f2b93ec88691e7e7">check_bridge_distribution_setting</a> (const char *bd)</td></tr>
+<tr class="separator:a111e4aec559ae132f2b93ec88691e7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f94cacd47e7b9730a2255c0a7c618ca"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a2f94cacd47e7b9730a2255c0a7c618ca">parse_port_config</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *out, const <a class="el" href="structconfig__line__t.html">config_line_t</a> *ports, const char *portname, int listener_type, const char *defaultaddr, int defaultport, const unsigned flags)</td></tr>
+<tr class="separator:a2f94cacd47e7b9730a2255c0a7c618ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06d52c0769f88484121da66ca0e1cc9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a06d52c0769f88484121da66ca0e1cc9d">MOCK_IMPL</a> (const <a class="el" href="structsmartlist__t.html">smartlist_t</a> *, get_configured_ports,(void))</td></tr>
 <tr class="separator:a06d52c0769f88484121da66ca0e1cc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4064bd33d53d72c0ed59cfdc71f897ff"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a4064bd33d53d72c0ed59cfdc71f897ff">get_first_listener_addrport_string</a> (int listener_type)</td></tr>
@@ -385,31 +377,82 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>port_exists_by_type_ad
 <tr class="separator:a09df3e7f9c4fcece4717b3bf234b857d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b84820686d4e33c276ae68be4f3c22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a24b84820686d4e33c276ae68be4f3c22">get_num_cpus</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
 <tr class="separator:a24b84820686d4e33c276ae68be4f3c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73574d97d5ba0ecbd5533a231c402e67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a73574d97d5ba0ecbd5533a231c402e67">MOCK_IMPL</a> (char *, options_get_datadir_fname2_suffix,(const <a class="el" href="structor__options__t.html">or_options_t</a> *options, const char *sub1, const char *sub2, const char *suffix))</td></tr>
-<tr class="separator:a73574d97d5ba0ecbd5533a231c402e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69964d27ff1266254c6d3f032d1fc5ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a69964d27ff1266254c6d3f032d1fc5ec">MOCK_IMPL</a> (char *, options_get_dir_fname2_suffix,(const <a class="el" href="structor__options__t.html">or_options_t</a> *options, directory_root_t roottype, const char *sub1, const char *sub2, const char *suffix))</td></tr>
+<tr class="separator:a69964d27ff1266254c6d3f032d1fc5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9282325eab022df725dcd69e9f085899"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a9282325eab022df725dcd69e9f085899">check_or_create_data_subdir</a> (const char *subdir)</td></tr>
 <tr class="separator:a9282325eab022df725dcd69e9f085899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6fce4621aba7f08d192d44da9d26127"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#af6fce4621aba7f08d192d44da9d26127">write_to_data_subdir</a> (const char *subdir, const char *fname, const char *str, const char *descr)</td></tr>
 <tr class="separator:af6fce4621aba7f08d192d44da9d26127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2f366b0c29db44baa2477bebbae15d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#aeb2f366b0c29db44baa2477bebbae15d">remove_file_if_very_old</a> (const char *fname, time_t now)</td></tr>
-<tr class="separator:aeb2f366b0c29db44baa2477bebbae15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a371199c6500ed7bbdf40789df8310c92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a371199c6500ed7bbdf40789df8310c92">get_list_of_ports_to_forward</a> (void)</td></tr>
 <tr class="separator:a371199c6500ed7bbdf40789df8310c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f20cb3dcadc8c6d0982ac29ccd3a6bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a3f20cb3dcadc8c6d0982ac29ccd3a6bf">getinfo_helper_config</a> (<a class="el" href="structcontrol__connection__t.html">control_connection_t</a> *conn, const char *question, char **answer, const char **errmsg)</td></tr>
 <tr class="separator:a3f20cb3dcadc8c6d0982ac29ccd3a6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf07ef53a0da7799871f735d941daf32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#adf07ef53a0da7799871f735d941daf32">init_cookie_authentication</a> (const char *fname, const char *header, int cookie_len, int group_readable, uint8_t **cookie_out, int *cookie_is_set_out)</td></tr>
 <tr class="separator:adf07ef53a0da7799871f735d941daf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9909c87ec1bec7cb4229ad3718a6fd2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a9909c87ec1bec7cb4229ad3718a6fd2f">options_any_client_port_set</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:a9909c87ec1bec7cb4229ad3718a6fd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a34f3003a5b943fd3ebccecc52f93d3c0"><td class="memItemLeft" align="right" valign="top">STATIC <a class="el" href="structconfig__format__t.html">config_format_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a34f3003a5b943fd3ebccecc52f93d3c0">options_format</a></td></tr>
 <tr class="separator:a34f3003a5b943fd3ebccecc52f93d3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a09797e475374874db942a4ebcad1ba"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html#a4a09797e475374874db942a4ebcad1ba">tor_git_revision</a> []</td></tr>
-<tr class="separator:a4a09797e475374874db942a4ebcad1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Code to parse and interpret configuration files. </p>
+<div class="textblock"><p>Code to interpret the user's configuration of Tor. </p>
+<p>This module handles torrc configuration file, including parsing it, combining it with torrc.defaults and the command line, allowing user changes to it (via editing and SIGHUP or via the control port), writing it back to disk (because of SAVECONF from the control port), and &ndash; most importantly, acting on it.</p>
+<p>The module additionally has some tools for manipulating and inspecting values that are calculated as a result of the configured options.</p>
+<h3>How to add new options</h3>
+<p>To add new items to the torrc, there are a minimum of three places to edit: </p><ul>
+<li>
+The <a class="el" href="structor__options__t.html">or_options_t</a> structure in <a class="el" href="or_8h.html" title="Master header file for Tor-specific functionality. ">or.h</a>, where the options are stored. </li>
+<li>
+The option_vars_ array below in this module, which configures the names of the torrc options, their types, their multiplicities, and their mappings to fields in <a class="el" href="structor__options__t.html">or_options_t</a>. </li>
+<li>
+The manual in doc/tor.1.txt, to document what the new option is, and how it works. </li>
+</ul>
+<p>Additionally, you might need to edit these places too: </p><ul>
+<li>
+<a class="el" href="config_8c.html#a5c11ad3e523e5698240314b49f8538a3">options_validate()</a> below, in case you want to reject some possible values of the new configuration option. </li>
+<li>
+options_transition_allowed() below, in case you need to forbid some or all changes in the option while Tor is running. </li>
+<li>
+options_transition_affects_workers(), in case changes in the option might require Tor to relaunch or reconfigure its worker threads. </li>
+<li>
+options_transition_affects_descriptor(), in case changes in the option might require a Tor relay to build and publish a new server descriptor. </li>
+<li>
+<a class="el" href="config_8c.html#aaa136efef070ea80539ab48ec0e59d88">options_act()</a> and/or options_act_reversible(), in case there's some action that needs to be taken immediately based on the option's value. </li>
+</ul>
+<h3>Changing the value of an option</h3>
+<p>Because of the SAVECONF command from the control port, it's a bad idea to change the value of any user-configured option in the <a class="el" href="structor__options__t.html">or_options_t</a>. If you want to sometimes do this anyway, we recommend that you create a secondary field in <a class="el" href="structor__options__t.html">or_options_t</a>; that you have the user option linked only to the secondary field; that you use the secondary field to initialize the one that Tor actually looks at; and that you use the one Tor looks as the one that you modify. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a23e09a0231e1d7182e1da8d955897835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23e09a0231e1d7182e1da8d955897835">&#9670;&nbsp;</a></span>BAD_CHANGE_TO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BAD_CHANGE_TO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">opt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">how&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                    \</div><div class="line">    *msg = tor_strdup(<span class="stringliteral">&quot;While Tor is running&quot;</span>how<span class="stringliteral">&quot;, changing &quot;</span> #opt       \</div><div class="line">                      <span class="stringliteral">&quot; is not allowed&quot;</span>);                               \</div><div class="line">    return -1;                                                          \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+</div>
+</div>
 <a id="a6d70373e62ee68fd1954267a24f16be5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d70373e62ee68fd1954267a24f16be5">&#9670;&nbsp;</a></span>CHECK_DEFAULT</h2>
 
@@ -425,9 +468,28 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">STMT_BEGIN                                                            \</div><div class="line">    if (!options-&gt;TestingTorNetwork &amp;&amp;                                  \</div><div class="line">        !options-&gt;UsingTestNetworkDefaults_ &amp;&amp;                          \</div><div class="line">        !<a class="code" href="confparse_8c.html#ab40ae526facf215c56a10e62adc32cac">config_is_same</a>(&amp;<a class="code" href="config_8c.html#a34f3003a5b943fd3ebccecc52f93d3c0">options_format</a>,options,                        \</div><div class="line">                        default_options,#arg)) {                        \</div><div class="line">      REJECT(#arg <span class="stringliteral">&quot; may only be changed in testing Tor &quot;</span>                \</div><div class="line">             <span class="stringliteral">&quot;networks!&quot;</span>);                                              \</div><div class="line">    } STMT_END</div><div class="ttc" id="config_8c_html_a34f3003a5b943fd3ebccecc52f93d3c0"><div class="ttname"><a href="config_8c.html#a34f3003a5b943fd3ebccecc52f93d3c0">options_format</a></div><div class="ttdeci">STATIC config_format_t options_format</div><div class="ttdef"><b>Definition:</b> config.c:700</div></div>
-<div class="ttc" id="confparse_8c_html_ab40ae526facf215c56a10e62adc32cac"><div class="ttname"><a href="confparse_8c.html#ab40ae526facf215c56a10e62adc32cac">config_is_same</a></div><div class="ttdeci">int config_is_same(const config_format_t *fmt, const void *o1, const void *o2, const char *name)</div><div class="ttdef"><b>Definition:</b> confparse.c:1039</div></div>
+<b>Value:</b><div class="fragment"><div class="line">STMT_BEGIN                                                            \</div><div class="line">    if (!options-&gt;TestingTorNetwork &amp;&amp;                                  \</div><div class="line">        !options-&gt;UsingTestNetworkDefaults_ &amp;&amp;                          \</div><div class="line">        !<a class="code" href="confparse_8c.html#ab40ae526facf215c56a10e62adc32cac">config_is_same</a>(&amp;<a class="code" href="config_8c.html#a34f3003a5b943fd3ebccecc52f93d3c0">options_format</a>,options,                        \</div><div class="line">                        default_options,#arg)) {                        \</div><div class="line">      REJECT(#arg <span class="stringliteral">&quot; may only be changed in testing Tor &quot;</span>                \</div><div class="line">             <span class="stringliteral">&quot;networks!&quot;</span>);                                              \</div><div class="line">    } STMT_END</div><div class="ttc" id="config_8c_html_a34f3003a5b943fd3ebccecc52f93d3c0"><div class="ttname"><a href="config_8c.html#a34f3003a5b943fd3ebccecc52f93d3c0">options_format</a></div><div class="ttdeci">STATIC config_format_t options_format</div><div class="ttdef"><b>Definition:</b> config.c:789</div></div>
+<div class="ttc" id="confparse_8c_html_ab40ae526facf215c56a10e62adc32cac"><div class="ttname"><a href="confparse_8c.html#ab40ae526facf215c56a10e62adc32cac">config_is_same</a></div><div class="ttdeci">int config_is_same(const config_format_t *fmt, const void *o1, const void *o2, const char *name)</div><div class="ttdef"><b>Definition:</b> confparse.c:861</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="af6c9581cb134dd3f395d4c0c9ae6260c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c9581cb134dd3f395d4c0c9ae6260c">&#9670;&nbsp;</a></span>DOWNLOAD_SCHEDULE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOWNLOAD_SCHEDULE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td>&#160;&#160;&#160;{ #name &quot;DownloadSchedule&quot;, #name &quot;DownloadInitialDelay&quot;, 0, 1 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>macro to help with the bulk rename of *DownloadSchedule to *DowloadInitialDelay . </p>
+
 </div>
 </div>
 <a id="afba493a66e268dac30fad9e505bdb389"></a>
@@ -460,6 +522,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a9af49342e47f721c9204cf872f48a368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af49342e47f721c9204cf872f48a368">&#9670;&nbsp;</a></span>MAX_CIRCS_AVAILABLE_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_CIRCS_AVAILABLE_TIME&#160;&#160;&#160;(24*60*60)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Highest allowable value for CircuitsAvailableTimeout. If this is too large, client connections will stay open for too long, incurring extra padding overhead. </p>
+
+</div>
+</div>
 <a id="a3f51f7e2fa6104358bddf00f3769ab9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f51f7e2fa6104358bddf00f3769ab9f">&#9670;&nbsp;</a></span>MAX_DIR_PERIOD</h2>
 
@@ -467,7 +544,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_DIR_PERIOD&#160;&#160;&#160;(<a class="el" href="or_8h.html#ae811733068515cf4c29773d0f1b2dd58">MIN_ONION_KEY_LIFETIME</a>/2)</td>
+          <td class="memname">#define MAX_DIR_PERIOD&#160;&#160;&#160;((7*24*60*60)/2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -490,21 +567,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ba0a0ce1db424e1e057a461a57224e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ba0a0ce1db424e1e057a461a57224e0">&#9670;&nbsp;</a></span>MAX_PREDICTED_CIRCS_RELEVANCE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_PREDICTED_CIRCS_RELEVANCE&#160;&#160;&#160;(60*60)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Higest allowable value for PredictedPortsRelevanceTime; if this is too high, our selection of exits will decrease for an extended period of time to an uncomfortable level . </p>
-
-</div>
-</div>
 <a id="a32f2dbe6d533fdcd5a1abc3919499aa3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32f2dbe6d533fdcd5a1abc3919499aa3">&#9670;&nbsp;</a></span>MIN_CIRCUIT_STREAM_TIMEOUT</h2>
 
@@ -517,21 +579,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Lowest allowable value for CircuitStreamTimeout; if this is too low, Tor will generate too many circuits and potentially overload the network. </p>
-
-</div>
-</div>
-<a id="ab2f5463d81932340f961af2363f6aae9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2f5463d81932340f961af2363f6aae9">&#9670;&nbsp;</a></span>MIN_HEARTBEAT_PERIOD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MIN_HEARTBEAT_PERIOD&#160;&#160;&#160;(30*60)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Lowest allowable value for HeartbeatPeriod; if this is too low, we might expose more information than we're comfortable with. </p>
 
 </div>
 </div>
@@ -614,6 +661,42 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ad20d921b7309846730df73c8ce82ea81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20d921b7309846730df73c8ce82ea81">&#9670;&nbsp;</a></span>SB_NOCHANGE_INT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SB_NOCHANGE_INT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">opt</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (! CFG_EQ_INT(old, new_val, opt))           \</div><div class="line">      BAD_CHANGE_TO(opt,<span class="stringliteral">&quot; with Sandbox active&quot;</span>)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a468d1bff8afcac4e4ecaf531407f33e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a468d1bff8afcac4e4ecaf531407f33e6">&#9670;&nbsp;</a></span>SB_NOCHANGE_LINELIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SB_NOCHANGE_LINELIST</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">opt</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (! CFG_EQ_LINELIST(old, new_val, opt))      \</div><div class="line">      BAD_CHANGE_TO(opt,<span class="stringliteral">&quot; with Sandbox active&quot;</span>)</div></div><!-- fragment -->
+</div>
+</div>
 <a id="a4c415583ae81981dd2b1f8b5b2f156f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c415583ae81981dd2b1f8b5b2f156f7">&#9670;&nbsp;</a></span>SB_NOCHANGE_STR</h2>
 
@@ -629,7 +712,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                \</div><div class="line">      if (! opt_streq(old-&gt;opt, new_val-&gt;opt)) {                        \</div><div class="line">        *msg = tor_strdup(<span class="stringliteral">&quot;Can&#39;t change &quot;</span> #opt <span class="stringliteral">&quot; while Sandbox is active&quot;</span>); \</div><div class="line">        return -1;                                                      \</div><div class="line">      }                                                                 \</div><div class="line">    } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (! CFG_EQ_STRING(old, new_val, opt))       \</div><div class="line">      BAD_CHANGE_TO(opt,<span class="stringliteral">&quot; with Sandbox active&quot;</span>)</div></div><!-- fragment -->
 </div>
 </div>
 <a id="adacae73549bfbc6b27841ca32728f750"></a>
@@ -704,24 +787,29 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ name, CONFIG_TYPE_ ## conftype, <a class="code" href="util_8h.html#a34bb1d41c655823d71f9ce54196bcfd9">STRUCT_OFFSET</a>(<a class="code" href="structor__options__t.html">or_options_t</a>, member), \</div><div class="line">      initvalue }</div><div class="ttc" id="structor__options__t_html"><div class="ttname"><a href="structor__options__t.html">or_options_t</a></div><div class="ttdef"><b>Definition:</b> or.h:3493</div></div>
-<div class="ttc" id="util_8h_html_a34bb1d41c655823d71f9ce54196bcfd9"><div class="ttname"><a href="util_8h.html#a34bb1d41c655823d71f9ce54196bcfd9">STRUCT_OFFSET</a></div><div class="ttdeci">#define STRUCT_OFFSET(tp, member)</div><div class="ttdef"><b>Definition:</b> util.h:116</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{ name, CONFIG_TYPE_ ## conftype, offsetof(<a class="code" href="structor__options__t.html">or_options_t</a>, member),     \</div><div class="line">      initvalue CONF_TEST_MEMBERS(<a class="code" href="structor__options__t.html">or_options_t</a>, conftype, member) }</div><div class="ttc" id="structor__options__t_html"><div class="ttname"><a href="structor__options__t.html">or_options_t</a></div><div class="ttdef"><b>Definition:</b> or.h:3657</div></div>
 </div><!-- fragment --><p>An entry for config_vars: "The option <b>name</b> has type CONFIG_TYPE_<b>conftype</b>, and corresponds to <a class="el" href="structor__options__t.html">or_options_t</a>.<b>member</b>" </p>
 
 </div>
 </div>
-<a id="afc55631fcd4149c55f183fecc5676852"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc55631fcd4149c55f183fecc5676852">&#9670;&nbsp;</a></span>WARN_PLEASE_USE_IPV6_LOG_MSG</h2>
+<a id="ab1cb3efb21513bb5ff5b053df1b660d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1cb3efb21513bb5ff5b053df1b660d9">&#9670;&nbsp;</a></span>VPORT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define WARN_PLEASE_USE_IPV6_LOG_MSG</td>
+          <td class="memname">#define VPORT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">member</td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="stringliteral">&quot;ClientPreferIPv6%sPort 1 is ignored unless tor is using IPv6. &quot;</span> \</div><div class="line">        <span class="stringliteral">&quot;Please set ClientUseIPv6 1, ClientUseIPv4 0, or configure bridges.&quot;</span></div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="config_8c.html#a029c46c0fa7e72503c0490f01aa35bfb">VAR</a>(#member <span class="stringliteral">&quot;Lines&quot;</span>, LINELIST_V, member ## _lines, NULL),     \</div><div class="line">  VAR(#member, LINELIST_S, member ## _lines, NULL),             \</div><div class="line">  VAR(<span class="stringliteral">&quot;__&quot;</span> #member, LINELIST_S, member ## _lines, NULL)</div><div class="ttc" id="config_8c_html_a029c46c0fa7e72503c0490f01aa35bfb"><div class="ttname"><a href="config_8c.html#a029c46c0fa7e72503c0490f01aa35bfb">VAR</a></div><div class="ttdeci">#define VAR(name, conftype, member, initvalue)</div><div class="ttdef"><b>Definition:</b> config.c:210</div></div>
+</div><!-- fragment --><p>Macro to declare *Port options. Each one comes in three entries. For example, most users should use "SocksPort" to configure the socks port, but TorBrowser wants to use __SocksPort so that it isn't stored by SAVECONF. The SocksPortLines virtual option is used to query both options from the controller. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -741,15 +829,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Add the default directory authorities directly into the trusted dir list, but only add them insofar as they share bits with <b>type</b>. Each authority's bits are restricted to the bits shared with <b>type</b>. If <b>type</b> is ALL_DIRINFO or NO_DIRINFO (zero), add all authorities. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c_a128f795f7c324880de1b9c76ae0042af_cgraph.png" border="0" usemap="#config_8c_a128f795f7c324880de1b9c76ae0042af_cgraph" alt=""/></div>
-<map name="config_8c_a128f795f7c324880de1b9c76ae0042af_cgraph" id="config_8c_a128f795f7c324880de1b9c76ae0042af_cgraph">
-<area shape="rect" id="node2" href="config_8c.html#aabe4a246354d4e34e68c37462d41c4bf" title="parse_dir_authority_line" alt="" coords="189,13,348,39"/>
-<area shape="rect" id="node3" href="container_8c.html#a1d75cac5583c66900c032ba972ffabc8" title="smartlist_split_string" alt="" coords="396,13,539,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -810,14 +889,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a4c95a53f7068b75257c607405757b428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c95a53f7068b75257c607405757b428">&#9670;&nbsp;</a></span>bridge_line_free()</h2>
+<a id="a248c5ed3d769432bffef44844128ed1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248c5ed3d769432bffef44844128ed1e">&#9670;&nbsp;</a></span>bridge_line_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void bridge_line_free </td>
+          <td class="memname">void bridge_line_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structbridge__line__t.html">bridge_line_t</a> *&#160;</td>
           <td class="paramname"><em>bridge_line</em></td><td>)</td>
@@ -826,6 +905,35 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Deallocate a <a class="el" href="structbridge__line__t.html">bridge_line_t</a> structure. </p>
+
+</div>
+</div>
+<a id="a111e4aec559ae132f2b93ec88691e7e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a111e4aec559ae132f2b93ec88691e7e7">&#9670;&nbsp;</a></span>check_bridge_distribution_setting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC int check_bridge_distribution_setting </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>bd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Validate the configured bridge distribution method from a BridgeDistribution config line.</p>
+<p>The input <b>bd</b>, is a string taken from the BridgeDistribution config line (if present). If the option wasn't set, return 0 immediately. The BridgeDistribution option is then validated. Currently valid, recognised options are:</p>
+<ul>
+<li>"none"</li>
+<li>"any"</li>
+<li>"https"</li>
+<li>"email"</li>
+<li>"moat"</li>
+<li>"hyphae"</li>
+</ul>
+<p>If the option string is unrecognised, a warning will be logged and 0 is returned. If the option string contains an invalid character, -1 is returned. </p>
 
 </div>
 </div>
@@ -864,19 +972,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all memory and resources held by global configuration structures. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c_ad82f38255905a78c85baf3224551787d_cgraph.png" border="0" usemap="#config_8c_ad82f38255905a78c85baf3224551787d_cgraph" alt=""/></div>
-<map name="config_8c_ad82f38255905a78c85baf3224551787d_cgraph" id="config_8c_ad82f38255905a78c85baf3224551787d_cgraph">
-<area shape="rect" id="node2" href="config_8c.html#a9d66419dd103a30396f877c79c31f137" title="or_options_free" alt="" coords="165,31,275,57"/>
-<area shape="rect" id="node6" href="confparse_8c.html#af5dc1a4d3c8ec8c56b27ca6e40a8df21" title="config_free_lines" alt="" coords="160,81,280,108"/>
-<area shape="rect" id="node7" href="config_8c.html#aa6691cf726086717907bc0b918b13d55" title="port_cfg_free" alt="" coords="171,132,269,159"/>
-<area shape="rect" id="node3" href="routerset_8c.html#a33e9d1e799e9cac73343c73126b104c6" title="routerset_free" alt="" coords="328,5,431,32"/>
-<area shape="rect" id="node5" href="confparse_8c.html#a166f2d294fb67cfc6af9501599dfe549" title="config_free" alt="" coords="336,56,423,83"/>
-<area shape="rect" id="node4" href="policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="479,5,596,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -990,6 +1085,44 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="routerlist_8c.html#aa9b36f7b87463dc114065ea058660ac4" title="router_get_trusted\l_dir_servers" alt="" coords="191,5,317,47"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a99b40c6329b1df51c3d9970205af74fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b40c6329b1df51c3d9970205af74fa">&#9670;&nbsp;</a></span>create_keys_directory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int create_keys_directory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ensure that our keys directory exists, with appropriate permissions. Return 0 on success, -1 on failure. </p>
+
+</div>
+</div>
+<a id="ac7904b90e061b9fb964e884ace2af3c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7904b90e061b9fb964e884ace2af3c0">&#9670;&nbsp;</a></span>DUMMY_TYPECHECK_INSTANCE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DUMMY_TYPECHECK_INSTANCE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structor__options__t.html">or_options_t</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dummy instance of <a class="el" href="structor__options__t.html">or_options_t</a>, used for type-checking its members with CONF_CHECK_VAR_TYPE. </p>
 
 </div>
 </div>
@@ -1152,11 +1285,10 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node4" href="router_8h.html#a74a228ad9efff13643397a5c02d7bec7" title="router_get_advertised\l_or_port" alt="" coords="384,57,531,98"/>
 <area shape="rect" id="node5" href="config_8h.html#a371199c6500ed7bbdf40789df8310c92" title="get_list_of_ports_to\l_forward" alt="" coords="593,57,729,98"/>
 <area shape="rect" id="node6" href="router_8h.html#ac23927b27e54ab8752d8a379b5136b50" title="router_rebuild_descriptor" alt="" coords="579,123,743,149"/>
-<area shape="rect" id="node7" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="801,57,943,98"/>
-<area shape="rect" id="node8" href="router_8c.html#ad474de0d17eaff8d2d6ac9f83621d4fc" title="MOCK_IMPL" alt="" coords="822,123,922,149"/>
-<area shape="rect" id="node9" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="791,173,953,200"/>
-<area shape="rect" id="node10" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="1001,137,1156,178"/>
-<area shape="rect" id="node11" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="1029,203,1129,229"/>
+<area shape="rect" id="node7" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="801,86,943,127"/>
+<area shape="rect" id="node8" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="791,152,953,179"/>
+<area shape="rect" id="node9" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="1001,115,1156,157"/>
+<area shape="rect" id="node10" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="1029,181,1129,208"/>
 </map>
 </div>
 
@@ -1271,6 +1403,14 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="compat_8c.html#aa88386bf611ee3d9a49f14414cb100b6" title="compute_num_cpus" alt="" coords="160,5,299,32"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8c_a24b84820686d4e33c276ae68be4f3c22_icgraph.png" border="0" usemap="#config_8c_a24b84820686d4e33c276ae68be4f3c22_icgraph" alt=""/></div>
+<map name="config_8c_a24b84820686d4e33c276ae68be4f3c22_icgraph" id="config_8c_a24b84820686d4e33c276ae68be4f3c22_icgraph">
+<area shape="rect" id="node2" href="cpuworker_8h.html#a560ad8614ae03841a10b489f4370bc51" title="cpu_init" alt="" coords="160,5,227,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1358,6 +1498,35 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a9f6af15414001bad5f7179396d0bcb08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f6af15414001bad5f7179396d0bcb08">&#9670;&nbsp;</a></span>get_protocol_warning_severity_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_protocol_warning_severity_level </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the severity level that should be used for warnings of severity LOG_PROTOCOL_WARN. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8c_a9f6af15414001bad5f7179396d0bcb08_cgraph.png" border="0" usemap="#config_8c_a9f6af15414001bad5f7179396d0bcb08_cgraph" alt=""/></div>
+<map name="config_8c_a9f6af15414001bad5f7179396d0bcb08_cgraph" id="config_8c_a9f6af15414001bad5f7179396d0bcb08_cgraph">
+<area shape="rect" id="node2" href="compat__threads_8c.html#ac98398f0f86e87b7dbac66d29b2a8ae2" title="atomic_counter_get" alt="" coords="199,31,335,57"/>
+<area shape="rect" id="node3" href="compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="383,5,512,32"/>
+<area shape="rect" id="node4" href="compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="383,56,512,83"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a229118cbc4221ec841824b17f7c82b06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a229118cbc4221ec841824b17f7c82b06">&#9670;&nbsp;</a></span>get_short_version()</h2>
 
@@ -1389,11 +1558,9 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="config_8c_a229118cbc4221ec841824b17f7c82b06_icgraph.png" border="0" usemap="#config_8c_a229118cbc4221ec841824b17f7c82b06_icgraph" alt=""/></div>
 <map name="config_8c_a229118cbc4221ec841824b17f7c82b06_icgraph" id="config_8c_a229118cbc4221ec841824b17f7c82b06_icgraph">
 <area shape="rect" id="node2" href="config_8h.html#a3113591cdd3555bd354860a3a0802222" title="get_version" alt="" coords="192,31,281,57"/>
-<area shape="rect" id="node7" href="router_8c.html#af8911501c12d293f7fe03a101f3563ba" title="get_platform_str" alt="" coords="179,81,295,108"/>
+<area shape="rect" id="node5" href="router_8c.html#af8911501c12d293f7fe03a101f3563ba" title="get_platform_str" alt="" coords="179,81,295,108"/>
 <area shape="rect" id="node3" href="main_8c.html#a5c761b9de5289922e4f75826f766355f" title="tor_init" alt="" coords="343,5,404,32"/>
-<area shape="rect" id="node4" href="tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="452,31,524,57"/>
-<area shape="rect" id="node5" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="572,31,623,57"/>
-<area shape="rect" id="node6" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="671,31,764,57"/>
+<area shape="rect" id="node4" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="452,31,549,57"/>
 </map>
 </div>
 
@@ -1477,9 +1644,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="config_8c_a3113591cdd3555bd354860a3a0802222_icgraph.png" border="0" usemap="#config_8c_a3113591cdd3555bd354860a3a0802222_icgraph" alt=""/></div>
 <map name="config_8c_a3113591cdd3555bd354860a3a0802222_icgraph" id="config_8c_a3113591cdd3555bd354860a3a0802222_icgraph">
 <area shape="rect" id="node2" href="main_8c.html#a5c761b9de5289922e4f75826f766355f" title="tor_init" alt="" coords="143,5,204,32"/>
-<area shape="rect" id="node3" href="tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="252,31,324,57"/>
-<area shape="rect" id="node4" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="372,31,423,57"/>
-<area shape="rect" id="node5" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="471,31,564,57"/>
+<area shape="rect" id="node3" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="252,31,349,57"/>
 </map>
 </div>
 
@@ -1523,20 +1688,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Helper to implement GETINFO functions about configuration variables (not their values). Given a "config/names" question, set *<b>answer</b> to a new string describing the supported configuration variables and their types. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c_a3f20cb3dcadc8c6d0982ac29ccd3a6bf_cgraph.png" border="0" usemap="#config_8c_a3f20cb3dcadc8c6d0982ac29ccd3a6bf_cgraph" alt=""/></div>
-<map name="config_8c_a3f20cb3dcadc8c6d0982ac29ccd3a6bf_cgraph" id="config_8c_a3f20cb3dcadc8c6d0982ac29ccd3a6bf_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="199,31,349,57"/>
-<area shape="rect" id="node6" href="container_8c.html#ab865391a8cac688c51809c33dad0bfe2" title="smartlist_join_strings" alt="" coords="201,81,347,108"/>
-<area shape="rect" id="node8" href="util_8c.html#ac152e18c6deb4f05823053bb2980a8e4" title="esc_for_log" alt="" coords="229,132,319,159"/>
-<area shape="rect" id="node3" href="util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="397,31,555,57"/>
-<area shape="rect" id="node4" href="compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="605,5,700,32"/>
-<area shape="rect" id="node5" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="603,56,703,83"/>
-<area shape="rect" id="node7" href="container_8c.html#aac69a4c0d462859a1a13a6eb35ab3c0a" title="smartlist_join_strings2" alt="" coords="400,81,552,108"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1572,14 +1723,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Create a warning message for emitting if we are a dircache but may not have enough system memory, or if we are not a dircache but probably should be. Return -1 when a message is returned in <em>msg</em>, else return 0. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c_adccda65b3bf9a9471890360153b3a86d_cgraph.png" border="0" usemap="#config_8c_adccda65b3bf9a9471890360153b3a86d_cgraph" alt=""/></div>
-<map name="config_8c_adccda65b3bf9a9471890360153b3a86d_cgraph" id="config_8c_adccda65b3bf9a9471890360153b3a86d_cgraph">
-<area shape="rect" id="node2" href="compat_8c.html#aab903b7c7146dcff263530d404709f89" title="get_total_system_memory" alt="" coords="211,13,387,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1636,6 +1779,42 @@ Here is the call graph for this function:</div>
 <p>Allocate memory and create a cookie (of length <b>cookie_len</b>) in <b>cookie_out</b>. Then write it down to <b>fname</b> and prepend it with <b>header</b>.</p>
 <p>If <b>group_readable</b> is set, set <b>fname</b> to be readable by the default GID.</p>
 <p>If the whole procedure was successful, set <b>cookie_is_set_out</b> to True. </p>
+
+</div>
+</div>
+<a id="a9badc2e4e664120fd99bbd63cd4af3c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9badc2e4e664120fd99bbd63cd4af3c6">&#9670;&nbsp;</a></span>init_protocol_warning_severity_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_protocol_warning_severity_level </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize the log warning severity level for protocol warnings. Call only once at startup. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8c_a9badc2e4e664120fd99bbd63cd4af3c6_cgraph.png" border="0" usemap="#config_8c_a9badc2e4e664120fd99bbd63cd4af3c6_cgraph" alt=""/></div>
+<map name="config_8c_a9badc2e4e664120fd99bbd63cd4af3c6_cgraph" id="config_8c_a9badc2e4e664120fd99bbd63cd4af3c6_cgraph">
+<area shape="rect" id="node2" href="compat__threads_8c.html#a28fc1a1e6d143b15ab62ddfa810a7ffd" title="atomic_counter_init" alt="" coords="197,13,332,39"/>
+<area shape="rect" id="node3" href="compat__pthreads_8c.html#a900a1a27db8f1815a4db66e98e67bac0" title="tor_mutex_init_nonrecursive" alt="" coords="380,13,565,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8c_a9badc2e4e664120fd99bbd63cd4af3c6_icgraph.png" border="0" usemap="#config_8c_a9badc2e4e664120fd99bbd63cd4af3c6_icgraph" alt=""/></div>
+<map name="config_8c_a9badc2e4e664120fd99bbd63cd4af3c6_icgraph" id="config_8c_a9badc2e4e664120fd99bbd63cd4af3c6_icgraph">
+<area shape="rect" id="node2" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="197,13,295,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1863,8 +2042,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a73574d97d5ba0ecbd5533a231c402e67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73574d97d5ba0ecbd5533a231c402e67">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[7/7]</span></h2>
+<a id="a69964d27ff1266254c6d3f032d1fc5ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69964d27ff1266254c6d3f032d1fc5ec">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1878,13 +2057,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">options_get_datadir_fname2_suffix&#160;</td>
+          <td class="paramtype">options_get_dir_fname2_suffix&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(const <a class="el" href="structor__options__t.html">or_options_t</a> *options, const char *sub1, const char *sub2, const char *suffix)&#160;</td>
+          <td class="paramtype">(const <a class="el" href="structor__options__t.html">or_options_t</a> *options, directory_root_t roottype, const char *sub1, const char *sub2, const char *suffix)&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1894,9 +2073,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return a newly allocated string holding a filename relative to the data directory. If <b>sub1</b> is present, it is the first path component after the data directory. If <b>sub2</b> is also present, it is the second path component after the data directory. If <b>suffix</b> is present, it is appended to the filename.</p>
-<p>Examples: get_datadir_fname2_suffix("a", NULL, NULL) -&gt; $DATADIR/a get_datadir_fname2_suffix("a", NULL, ".tmp") -&gt; $DATADIR/a.tmp get_datadir_fname2_suffix("a", "b", ".tmp") -&gt; $DATADIR/a/b/.tmp get_datadir_fname2_suffix("a", "b", NULL) -&gt; $DATADIR/a/b</p>
-<p>Note: Consider using the get_datadir_fname* macros in <a class="el" href="or_8h.html" title="Master header file for Tor-specific functionality. ">or.h</a>. </p>
+<p>Return a newly allocated string holding a filename relative to the directory in <b>options</b> specified by <b>roottype</b>. If <b>sub1</b> is present, it is the first path component after the data directory. If <b>sub2</b> is also present, it is the second path component after the data directory. If <b>suffix</b> is present, it is appended to the filename.</p>
+<p>Note: Consider using macros in <a class="el" href="config_8h.html" title="Header file for config.c. ">config.h</a> that wrap this function; you should probably never need to call it as-is. </p>
 
 </div>
 </div>
@@ -2013,6 +2191,34 @@ Here is the call graph for this function:</div>
 <p>Fetch the active option list, and take actions based on it. All of the things we do should survive being done repeatedly. If present, <b>old_options</b> contains the previous value of the options.</p>
 <p>Return 0 if all goes well, return -1 if it's time to die.</p>
 <p>Note: We haven't moved all the "act on new configuration" logic here yet. Some is still in do_hup() and other places. </p>
+
+</div>
+</div>
+<a id="a9909c87ec1bec7cb4229ad3718a6fd2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9909c87ec1bec7cb4229ad3718a6fd2f">&#9670;&nbsp;</a></span>options_any_client_port_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int options_any_client_port_set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true if any option is set in <b>options</b> to make us behave as a client. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8c_a9909c87ec1bec7cb4229ad3718a6fd2f_icgraph.png" border="0" usemap="#config_8c_a9909c87ec1bec7cb4229ad3718a6fd2f_icgraph" alt=""/></div>
+<map name="config_8c_a9909c87ec1bec7cb4229ad3718a6fd2f_icgraph" id="config_8c_a9909c87ec1bec7cb4229ad3718a6fd2f_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#aac02d62503e0f6d84ffc919a7cc7a70f" title="get_my_roles" alt="" coords="184,13,284,39"/>
+<area shape="rect" id="node3" href="main_8h.html#aecdbc14b2fa5dcece5ca26ba80dc2876" title="rescan_periodic_events" alt="" coords="332,13,491,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2150,7 +2356,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read a configuration file into <b>options</b>, finding the configuration file location based on the command line. After loading the file call <a class="el" href="config_8c.html#ae70354dc5628e7b59d1a64156eb10dc3">options_init_from_string()</a> to load the config. Return 0 if success, -1 if failure. </p>
+<p>Read a configuration file into <b>options</b>, finding the configuration file location based on the command line. After loading the file call <a class="el" href="config_8c.html#ae70354dc5628e7b59d1a64156eb10dc3">options_init_from_string()</a> to load the config. Return 0 if success, -1 if failure, and 1 if we succeeded but should exit anyway. </p>
 
 </div>
 </div>
@@ -2185,7 +2391,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="config_8c_ad09b1993fdca508d228a7585813efcac_cgraph.png" border="0" usemap="#config_8c_ad09b1993fdca508d228a7585813efcac_cgraph" alt=""/></div>
 <map name="config_8c_ad09b1993fdca508d228a7585813efcac_cgraph" id="config_8c_ad09b1993fdca508d228a7585813efcac_cgraph">
-<area shape="rect" id="node2" href="routerset_8c.html#a06782dad9f20dd3a3da80d9df1d4c3b3" title="routerset_needs_geoip" alt="" coords="219,5,372,32"/>
+<area shape="rect" id="node2" href="geoip_8c.html#aecc961d6ac7cd75ec8593321d51d909a" title="should_record_bridge_info" alt="" coords="219,5,392,32"/>
+<area shape="rect" id="node3" href="routerset_8c.html#a06782dad9f20dd3a3da80d9df1d4c3b3" title="routerset_needs_geoip" alt="" coords="229,56,382,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2228,7 +2435,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="config_8c_a303e3d94635a1fd3ce1b6731d157f588_icgraph.png" border="0" usemap="#config_8c_a303e3d94635a1fd3ce1b6731d157f588_icgraph" alt=""/></div>
 <map name="config_8c_a303e3d94635a1fd3ce1b6731d157f588_icgraph" id="config_8c_a303e3d94635a1fd3ce1b6731d157f588_icgraph">
-<area shape="rect" id="node2" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="148,5,241,32"/>
+<area shape="rect" id="node2" href="test_8h.html#a334e47899bf2c19bf8a5ce0f226ab399" title="get_fname_rnd" alt="" coords="148,5,256,32"/>
 </map>
 </div>
 
@@ -2291,17 +2498,12 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="config_8c_aa7167b27553a3e3b6cb70346b05e1c6b_cgraph.png" border="0" usemap="#config_8c_aa7167b27553a3e3b6cb70346b05e1c6b_cgraph" alt=""/></div>
 <map name="config_8c_aa7167b27553a3e3b6cb70346b05e1c6b_cgraph" id="config_8c_aa7167b27553a3e3b6cb70346b05e1c6b_cgraph">
-<area shape="rect" id="node2" href="confparse_8c.html#a09ae038a28a4e774eeaca1b481f05f22" title="config_dup" alt="" coords="206,68,291,95"/>
-<area shape="rect" id="node7" href="confparse_8c.html#a61e7d485802b42ca101ade85d2fd81ca" title="config_assign" alt="" coords="374,123,477,149"/>
-<area shape="rect" id="node8" href="config_8c.html#a9d66419dd103a30396f877c79c31f137" title="or_options_free" alt="" coords="193,173,304,200"/>
-<area shape="rect" id="node12" href="config_8c.html#a5c11ad3e523e5698240314b49f8538a3" title="options_validate" alt="" coords="191,224,307,251"/>
-<area shape="rect" id="node3" href="confparse_8c.html#a469abeef7861fdda2539ca17496b166e" title="config_new" alt="" coords="381,5,469,32"/>
-<area shape="rect" id="node4" href="confparse_8c.html#ab60b5e719a2972ab031e29f568db72fd" title="config_get_assigned\l_option" alt="" coords="355,57,496,98"/>
-<area shape="rect" id="node5" href="confparse_8c.html#a322d9a327ae38a92bbde12b0014cabc3" title="config_find_option" alt="" coords="544,64,671,91"/>
-<area shape="rect" id="node6" href="confparse_8c.html#a6cb95da8138860838ea3c47a4395f854" title="config_find_option\l_mutable" alt="" coords="719,57,845,98"/>
-<area shape="rect" id="node9" href="routerset_8c.html#a33e9d1e799e9cac73343c73126b104c6" title="routerset_free" alt="" coords="374,173,477,200"/>
-<area shape="rect" id="node11" href="confparse_8c.html#a166f2d294fb67cfc6af9501599dfe549" title="config_free" alt="" coords="382,224,469,251"/>
-<area shape="rect" id="node10" href="policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="549,173,666,200"/>
+<area shape="rect" id="node2" href="confparse_8c.html#a09ae038a28a4e774eeaca1b481f05f22" title="config_dup" alt="" coords="191,67,276,93"/>
+<area shape="rect" id="node7" href="confparse_8c.html#a61e7d485802b42ca101ade85d2fd81ca" title="config_assign" alt="" coords="343,123,446,149"/>
+<area shape="rect" id="node3" href="confparse_8c.html#a469abeef7861fdda2539ca17496b166e" title="config_new" alt="" coords="351,5,439,32"/>
+<area shape="rect" id="node4" href="confparse_8c.html#ab60b5e719a2972ab031e29f568db72fd" title="config_get_assigned\l_option" alt="" coords="324,57,465,98"/>
+<area shape="rect" id="node5" href="confparse_8c.html#a322d9a327ae38a92bbde12b0014cabc3" title="config_find_option" alt="" coords="513,64,640,91"/>
+<area shape="rect" id="node6" href="confparse_8c.html#a6cb95da8138860838ea3c47a4395f854" title="config_find_option\l_mutable" alt="" coords="688,57,815,98"/>
 </map>
 </div>
 
@@ -2355,25 +2557,17 @@ Here is the call graph for this function:</div>
 <p>XXX If <b>from_setconf</b>, we were called by the controller, and our Log line should stay empty. If it's 0, then give us a default log if there are no logs defined. </p>
 <p>If get_bindaddr_from_transport_listen_line() fails with 'transport' being NULL, it means that something went wrong while parsing the ServerTransportListenAddr line.</p>
 <p>If <a class="el" href="config_8c.html#adc39ddee02665bacd8cf8ddbb5ab194d">get_options_from_transport_options_line()</a> fails with 'transport' being NULL, it means that something went wrong while parsing the ServerTransportOptions line. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c_a5c11ad3e523e5698240314b49f8538a3_icgraph.png" border="0" usemap="#config_8c_a5c11ad3e523e5698240314b49f8538a3_icgraph" alt=""/></div>
-<map name="config_8c_a5c11ad3e523e5698240314b49f8538a3_icgraph" id="config_8c_a5c11ad3e523e5698240314b49f8538a3_icgraph">
-<area shape="rect" id="node2" href="config_8h.html#aa7167b27553a3e3b6cb70346b05e1c6b" title="options_trial_assign" alt="" coords="169,5,307,32"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a9d66419dd103a30396f877c79c31f137"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d66419dd103a30396f877c79c31f137">&#9670;&nbsp;</a></span>or_options_free()</h2>
+<a id="a353c87fbabb08149a99b6800569b5b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353c87fbabb08149a99b6800569b5b79">&#9670;&nbsp;</a></span>or_options_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">STATIC void or_options_free </td>
+          <td class="memname">STATIC void or_options_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
           <td class="paramname"><em>options</em></td><td>)</td>
@@ -2382,25 +2576,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release additional memory allocated in options </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c_a9d66419dd103a30396f877c79c31f137_cgraph.png" border="0" usemap="#config_8c_a9d66419dd103a30396f877c79c31f137_cgraph" alt=""/></div>
-<map name="config_8c_a9d66419dd103a30396f877c79c31f137_cgraph" id="config_8c_a9d66419dd103a30396f877c79c31f137_cgraph">
-<area shape="rect" id="node2" href="routerset_8c.html#a33e9d1e799e9cac73343c73126b104c6" title="routerset_free" alt="" coords="164,5,267,32"/>
-<area shape="rect" id="node4" href="confparse_8c.html#a166f2d294fb67cfc6af9501599dfe549" title="config_free" alt="" coords="172,56,259,83"/>
-<area shape="rect" id="node3" href="policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="315,5,432,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c_a9d66419dd103a30396f877c79c31f137_icgraph.png" border="0" usemap="#config_8c_a9d66419dd103a30396f877c79c31f137_icgraph" alt=""/></div>
-<map name="config_8c_a9d66419dd103a30396f877c79c31f137_icgraph" id="config_8c_a9d66419dd103a30396f877c79c31f137_icgraph">
-<area shape="rect" id="node2" href="config_8h.html#ad82f38255905a78c85baf3224551787d" title="config_free_all" alt="" coords="179,5,286,32"/>
-<area shape="rect" id="node3" href="config_8h.html#aa7167b27553a3e3b6cb70346b05e1c6b" title="options_trial_assign" alt="" coords="164,56,301,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2458,22 +2633,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Read the contents of a DirAuthority line from <b>line</b>. If <b>validate_only</b> is 0, and the line is well-formed, and it shares any bits with <b>required_type</b> or <b>required_type</b> is NO_DIRINFO (zero), then add the dirserver described in the line (minus whatever bits it's missing) as a valid authority. Return 0 on success or filtering out by type, or -1 if the line isn't well-formed or if we can't add it. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c_aabe4a246354d4e34e68c37462d41c4bf_cgraph.png" border="0" usemap="#config_8c_aabe4a246354d4e34e68c37462d41c4bf_cgraph" alt=""/></div>
-<map name="config_8c_aabe4a246354d4e34e68c37462d41c4bf_cgraph" id="config_8c_aabe4a246354d4e34e68c37462d41c4bf_cgraph">
-<area shape="rect" id="node2" href="container_8c.html#a1d75cac5583c66900c032ba972ffabc8" title="smartlist_split_string" alt="" coords="212,5,355,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c_aabe4a246354d4e34e68c37462d41c4bf_icgraph.png" border="0" usemap="#config_8c_aabe4a246354d4e34e68c37462d41c4bf_icgraph" alt=""/></div>
-<map name="config_8c_aabe4a246354d4e34e68c37462d41c4bf_icgraph" id="config_8c_aabe4a246354d4e34e68c37462d41c4bf_icgraph">
-<area shape="rect" id="node2" href="config_8c.html#a128f795f7c324880de1b9c76ae0042af" title="add_default_trusted\l_dir_authorities" alt="" coords="212,5,348,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2527,8 +2686,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aabfc92450485592a3ea1d316ad8a5c33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabfc92450485592a3ea1d316ad8a5c33">&#9670;&nbsp;</a></span>parse_port_config()</h2>
+<a id="a2f94cacd47e7b9730a2255c0a7c618ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f94cacd47e7b9730a2255c0a7c618ca">&#9670;&nbsp;</a></span>parse_port_config()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2544,12 +2703,6 @@ Here is the caller graph for this function:</div>
           <td></td>
           <td class="paramtype">const <a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td>
           <td class="paramname"><em>ports</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structconfig__line__t.html">config_line_t</a> *&#160;</td>
-          <td class="paramname"><em>listenaddrs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2589,15 +2742,28 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Parse port configuration for a single port type.</p>
-<p>Read entries of the "FooPort" type from the list <b>ports</b>, and entries of the "FooListenAddress" type from the list <b>listenaddrs</b>. Two syntaxes are supported: a legacy syntax where FooPort is at most a single entry containing a port number and where FooListenAddress has any number of address:port combinations; and a new syntax where there are no FooListenAddress entries and where FooPort can have any number of entries of the format "[Address:][Port] IsolationOptions".</p>
+<p>Read entries of the "FooPort" type from the list <b>ports</b>. Syntax is that FooPort can have any number of entries of the format "[Address:][Port] IsolationOptions".</p>
 <p>In log messages, describe the port type as <b>portname</b>.</p>
 <p>If no address is specified, default to <b>defaultaddr</b>. If no FooPort is given, default to defaultport (if 0, there is no default).</p>
 <p>If CL_PORT_NO_STREAM_OPTIONS is set in <b>flags</b>, do not allow stream isolation options in the FooPort entries.</p>
 <p>If CL_PORT_WARN_NONLOCAL is set in <b>flags</b>, warn if any of the ports are not on a local address. If CL_PORT_FORBID_NONLOCAL is set, this is a control port with no password set: don't even allow it.</p>
-<p>Unless CL_PORT_ALLOW_EXTRA_LISTENADDR is set in <b>flags</b>, warn if FooListenAddress is set but FooPort is 0.</p>
 <p>If CL_PORT_SERVER_OPTIONS is set in <b>flags</b>, do not allow stream isolation options in the FooPort entries; instead allow the server-port option set.</p>
 <p>If CL_PORT_TAKES_HOSTNAMES is set in <b>flags</b>, allow the options {No,}IPv{4,6}Traffic.</p>
 <p>On success, if <b>out</b> is given, add a new <a class="el" href="structport__cfg__t.html">port_cfg_t</a> entry to <b>out</b> for every port that the client should listen on. Return 0 on success, -1 on failure. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8c_a2f94cacd47e7b9730a2255c0a7c618ca_cgraph.png" border="0" usemap="#config_8c_a2f94cacd47e7b9730a2255c0a7c618ca_cgraph" alt=""/></div>
+<map name="config_8c_a2f94cacd47e7b9730a2255c0a7c618ca_cgraph" id="config_8c_a2f94cacd47e7b9730a2255c0a7c618ca_cgraph">
+<area shape="rect" id="node2" href="config_8c.html#abe597126376671a6dfdede2997bc6c77" title="port_cfg_new" alt="" coords="207,5,307,32"/>
+<area shape="rect" id="node3" href="address_8c.html#a2205d8bd7d91e067863932b7f68ef3b2" title="tor_addr_make_unspec" alt="" coords="179,56,336,83"/>
+<area shape="rect" id="node4" href="address_8c.html#a3cd537bd8104a89a5996793ee3f1d0dc" title="tor_addr_parse" alt="" coords="203,107,311,133"/>
+<area shape="rect" id="node5" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="207,157,307,184"/>
+<area shape="rect" id="node6" href="config_8c.html#a921479be2cc807b006e928356bc0ba51" title="port_cfg_line_extract\l_addrport" alt="" coords="186,209,329,250"/>
+<area shape="rect" id="node7" href="util_8c.html#a69faf166aa0aa9164d2134419c81ba1b" title="eat_whitespace" alt="" coords="384,191,497,217"/>
+<area shape="rect" id="node8" href="util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="397,241,485,268"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2646,14 +2812,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aa6691cf726086717907bc0b918b13d55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6691cf726086717907bc0b918b13d55">&#9670;&nbsp;</a></span>port_cfg_free()</h2>
+<a id="a59704a0ee1924eb022c37dfa669a0d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59704a0ee1924eb022c37dfa669a0d9d">&#9670;&nbsp;</a></span>port_cfg_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">STATIC void port_cfg_free </td>
+          <td class="memname">STATIC void port_cfg_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structport__cfg__t.html">port_cfg_t</a> *&#160;</td>
           <td class="paramname"><em>port</em></td><td>)</td>
@@ -2662,14 +2828,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Free all storage held in <b>port</b> </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8c_aa6691cf726086717907bc0b918b13d55_icgraph.png" border="0" usemap="#config_8c_aa6691cf726086717907bc0b918b13d55_icgraph" alt=""/></div>
-<map name="config_8c_aa6691cf726086717907bc0b918b13d55_icgraph" id="config_8c_aa6691cf726086717907bc0b918b13d55_icgraph">
-<area shape="rect" id="node2" href="config_8h.html#ad82f38255905a78c85baf3224551787d" title="config_free_all" alt="" coords="152,5,259,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2721,6 +2879,14 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node3" href="util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="209,56,297,83"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8c_a921479be2cc807b006e928356bc0ba51_icgraph.png" border="0" usemap="#config_8c_a921479be2cc807b006e928356bc0ba51_icgraph" alt=""/></div>
+<map name="config_8c_a921479be2cc807b006e928356bc0ba51_icgraph" id="config_8c_a921479be2cc807b006e928356bc0ba51_icgraph">
+<area shape="rect" id="node2" href="config_8c.html#a2f94cacd47e7b9730a2255c0a7c618ca" title="parse_port_config" alt="" coords="196,13,321,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2740,6 +2906,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Allocate and return a new <a class="el" href="structport__cfg__t.html">port_cfg_t</a> with reasonable defaults. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8c_abe597126376671a6dfdede2997bc6c77_icgraph.png" border="0" usemap="#config_8c_abe597126376671a6dfdede2997bc6c77_icgraph" alt=""/></div>
+<map name="config_8c_abe597126376671a6dfdede2997bc6c77_icgraph" id="config_8c_abe597126376671a6dfdede2997bc6c77_icgraph">
+<area shape="rect" id="node2" href="config_8c.html#a2f94cacd47e7b9730a2255c0a7c618ca" title="parse_port_config" alt="" coords="153,5,279,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -2781,35 +2955,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return 1 if a port exists of type <b>listener_type</b> on <b>addr</b> and <b>port</b>. If <b>check_wildcard</b> is true, INADDR[6]_ANY and AF_UNSPEC addresses match any address of the appropriate family; and port -1 matches any port. To match auto ports, pass CFG_PORT_AUTO. (Does not match on the actual automatically chosen listener ports.) </p>
-
-</div>
-</div>
-<a id="aeb2f366b0c29db44baa2477bebbae15d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb2f366b0c29db44baa2477bebbae15d">&#9670;&nbsp;</a></span>remove_file_if_very_old()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void remove_file_if_very_old </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>now</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Given a file name check to see whether the file exists but has not been modified for a very long time. If so, remove it. </p>
 
 </div>
 </div>
@@ -2884,8 +3029,8 @@ Here is the call graph for this function:</div>
 <p>Fail if one or more of the following is true:</p><ul>
 <li>DNS name in <b>options-&gt;Address</b> cannot be resolved.</li>
 <li><b>options-&gt;Address</b> is a local host address.</li>
-<li>Attempt to getting local hostname fails.</li>
-<li>Attempt to getting network interface address fails.</li>
+<li>Attempt at getting local hostname fails.</li>
+<li>Attempt at getting network interface address fails.</li>
 </ul>
 <p>Return 0 if all is well, or -1 if we can't find a suitable public IP address.</p>
 <p>If we are returning 0:</p><ul>
@@ -2905,9 +3050,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="config_8c_ab211028e24942a1bc1827afaae620d4a_icgraph.png" border="0" usemap="#config_8c_ab211028e24942a1bc1827afaae620d4a_icgraph" alt=""/></div>
 <map name="config_8c_ab211028e24942a1bc1827afaae620d4a_icgraph" id="config_8c_ab211028e24942a1bc1827afaae620d4a_icgraph">
-<area shape="rect" id="node2" href="router_8c.html#a2732ff3306e95d3579956be55f9cdc6d" title="MOCK_IMPL" alt="" coords="238,5,338,32"/>
-<area shape="rect" id="node3" href="router_8h.html#a59446788bf67e78d0d930bcdc65f7717" title="check_descriptor_ipaddress\l_changed" alt="" coords="196,57,380,98"/>
-<area shape="rect" id="node4" href="routerlist_8h.html#ab31a672081329b253fe2d46a506cc2f2" title="trusted_dir_server_new" alt="" coords="209,123,367,149"/>
+<area shape="rect" id="node2" href="router_8c.html#a2732ff3306e95d3579956be55f9cdc6d" title="MOCK_IMPL" alt="" coords="225,5,325,32"/>
+<area shape="rect" id="node3" href="routerlist_8h.html#ab31a672081329b253fe2d46a506cc2f2" title="trusted_dir_server_new" alt="" coords="196,56,353,83"/>
 </map>
 </div>
 
@@ -2956,7 +3100,6 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="config_8c_a7e31046631b0cc0f5d01c8d411b886e6_icgraph.png" border="0" usemap="#config_8c_a7e31046631b0cc0f5d01c8d411b886e6_icgraph" alt=""/></div>
 <map name="config_8c_a7e31046631b0cc0f5d01c8d411b886e6_icgraph" id="config_8c_a7e31046631b0cc0f5d01c8d411b886e6_icgraph">
 <area shape="rect" id="node2" href="circuituse_8h.html#a8d5c81bf7d6238331123b1e8753597f1" title="connection_ap_handshake\l_attach_circuit" alt="" coords="160,5,336,47"/>
-<area shape="rect" id="node3" href="rendservice_8h.html#aca6ff2c7eb35e708f23676059431fa27" title="rend_service_dump_stats" alt="" coords="163,71,333,98"/>
 </map>
 </div>
 
@@ -3044,25 +3187,9 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">  <span class="keyword">sizeof</span>(<a class="code" href="structor__options__t.html">or_options_t</a>),</div><div class="line">  <a class="code" href="config_8c.html#a1872433ec80dc10d18e8e501cfabccb0">OR_OPTIONS_MAGIC</a>,</div><div class="line">  <a class="code" href="util_8h.html#a34bb1d41c655823d71f9ce54196bcfd9">STRUCT_OFFSET</a>(<a class="code" href="structor__options__t.html">or_options_t</a>, magic_),</div><div class="line">  option_abbrevs_,</div><div class="line">  option_deprecation_notes_,</div><div class="line">  option_vars_,</div><div class="line">  options_validate_cb,</div><div class="line">  NULL</div><div class="line">}</div><div class="ttc" id="structor__options__t_html"><div class="ttname"><a href="structor__options__t.html">or_options_t</a></div><div class="ttdef"><b>Definition:</b> or.h:3493</div></div>
-<div class="ttc" id="util_8h_html_a34bb1d41c655823d71f9ce54196bcfd9"><div class="ttname"><a href="util_8h.html#a34bb1d41c655823d71f9ce54196bcfd9">STRUCT_OFFSET</a></div><div class="ttdeci">#define STRUCT_OFFSET(tp, member)</div><div class="ttdef"><b>Definition:</b> util.h:116</div></div>
-<div class="ttc" id="config_8c_html_a1872433ec80dc10d18e8e501cfabccb0"><div class="ttname"><a href="config_8c.html#a1872433ec80dc10d18e8e501cfabccb0">OR_OPTIONS_MAGIC</a></div><div class="ttdeci">#define OR_OPTIONS_MAGIC</div><div class="ttdef"><b>Definition:</b> config.c:697</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">  <span class="keyword">sizeof</span>(<a class="code" href="structor__options__t.html">or_options_t</a>),</div><div class="line">  <a class="code" href="config_8c.html#a1872433ec80dc10d18e8e501cfabccb0">OR_OPTIONS_MAGIC</a>,</div><div class="line">  offsetof(<a class="code" href="structor__options__t.html">or_options_t</a>, magic_),</div><div class="line">  option_abbrevs_,</div><div class="line">  option_deprecation_notes_,</div><div class="line">  option_vars_,</div><div class="line">  options_validate_cb,</div><div class="line">  NULL</div><div class="line">}</div><div class="ttc" id="structor__options__t_html"><div class="ttname"><a href="structor__options__t.html">or_options_t</a></div><div class="ttdef"><b>Definition:</b> or.h:3657</div></div>
+<div class="ttc" id="config_8c_html_a1872433ec80dc10d18e8e501cfabccb0"><div class="ttname"><a href="config_8c.html#a1872433ec80dc10d18e8e501cfabccb0">OR_OPTIONS_MAGIC</a></div><div class="ttdeci">#define OR_OPTIONS_MAGIC</div><div class="ttdef"><b>Definition:</b> config.c:786</div></div>
 </div><!-- fragment --><p>Configuration format for <a class="el" href="structor__options__t.html">or_options_t</a>. </p>
-
-</div>
-</div>
-<a id="a4a09797e475374874db942a4ebcad1ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a09797e475374874db942a4ebcad1ba">&#9670;&nbsp;</a></span>tor_git_revision</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char tor_git_revision</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">  <span class="stringliteral">&quot;&quot;</span></div></div><!-- fragment --><p>String describing which Tor Git repository version the source was built from. This string is generated by a bit of shell kludging in src/or/include.am, and is usually right. </p>
 
 </div>
 </div>

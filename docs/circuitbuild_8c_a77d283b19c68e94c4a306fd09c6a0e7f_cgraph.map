@@ -1,0 +1,5 @@
+<map id="new_route_len" name="new_route_len">
+<area shape="rect" id="node2" href="$circuitbuild_8c.html#a48d96af7c68a635f9734d0aa0271ac7c" title="route_len_for_purpose" alt="" coords="160,13,311,39"/>
+<area shape="rect" id="node3" href="$circuituse_8c.html#a5e8e36fe1fa5af29eb3595f31e0e01db" title="circuit_should_use\l_vanguards" alt="" coords="359,5,489,47"/>
+<area shape="rect" id="node4" href="$circuituse_8c.html#aff875d76fff1f49cbbf561415216f3b3" title="circuit_purpose_is\l_hidden_service" alt="" coords="537,5,664,47"/>
+</map>

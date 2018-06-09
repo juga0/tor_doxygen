@@ -1,4 +1,4 @@
 <map id="tor_mutex_uninit" name="tor_mutex_uninit">
-<area shape="rect" id="node2" href="$compat__threads_8c.html#a204271ab584393121f49bae2f6363ffa" title="tor_mutex_free" alt="" coords="172,5,281,32"/>
-<area shape="rect" id="node3" href="$router_8h.html#a278cf107b4a9b636b105ec5581b2f427" title="router_free_all" alt="" coords="329,5,433,32"/>
+<area shape="rect" id="node2" href="$compat__threads_8c.html#a1663aa5f5dd65fd2aca172b12ea52a96" title="tor_mutex_free_" alt="" coords="195,5,311,32"/>
+<area shape="rect" id="node3" href="$compat__threads_8c.html#acb994a78d66f030e5df55d26239995c2" title="atomic_counter_destroy" alt="" coords="172,56,333,83"/>
 </map>

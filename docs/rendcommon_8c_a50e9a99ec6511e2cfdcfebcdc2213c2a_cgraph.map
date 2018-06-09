@@ -1,7 +1,6 @@
 <map id="rend_get_descriptor_id_bytes" name="rend_get_descriptor_id_bytes">
-<area shape="rect" id="node2" href="$crypto_8c.html#ae92ffdfbeff07ba661ed65ca7791915d" title="crypto_digest_new" alt="" coords="207,5,338,32"/>
-<area shape="rect" id="node3" href="$crypto_8c.html#af702bc434eed2203f9dd1894ef5f5326" title="crypto_digest_add_bytes" alt="" coords="189,56,356,83"/>
-<area shape="rect" id="node4" href="$crypto_8c.html#a75e95996fd9dcf7f2e3800407bba12c9" title="crypto_digest_get_digest" alt="" coords="189,107,356,133"/>
-<area shape="rect" id="node6" href="$crypto_8c.html#a4ca581f3cf1db8b08e696a7c4efb8a90" title="crypto_digest_free" alt="" coords="208,157,337,184"/>
-<area shape="rect" id="node5" href="$crypto_8c.html#a0ea6f0654f17288e6896a83a749354b5" title="crypto_digest_algorithm\l_get_length" alt="" coords="404,99,564,141"/>
+<area shape="rect" id="node2" href="$crypto__digest_8c.html#ae92ffdfbeff07ba661ed65ca7791915d" title="crypto_digest_new" alt="" coords="207,5,338,32"/>
+<area shape="rect" id="node3" href="$crypto__digest_8c.html#af702bc434eed2203f9dd1894ef5f5326" title="crypto_digest_add_bytes" alt="" coords="189,56,356,83"/>
+<area shape="rect" id="node4" href="$crypto__digest_8c.html#a75e95996fd9dcf7f2e3800407bba12c9" title="crypto_digest_get_digest" alt="" coords="189,107,356,133"/>
+<area shape="rect" id="node5" href="$crypto__digest_8c.html#a0ea6f0654f17288e6896a83a749354b5" title="crypto_digest_algorithm\l_get_length" alt="" coords="404,99,564,141"/>
 </map>

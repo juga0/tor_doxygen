@@ -1,5 +1,5 @@
 <map id="tor_version_parse" name="tor_version_parse">
 <area shape="rect" id="node2" href="$routerparse_8h.html#a47c9a3cf5868b2133b4e5a582ca69aa6" title="tor_version_parse_platform" alt="" coords="179,5,357,32"/>
 <area shape="rect" id="node3" href="$routerparse_8h.html#a34e1f6d4f6429bcf1d565f54a1dfcd5c" title="tor_version_as_new_as" alt="" coords="189,56,347,83"/>
-<area shape="rect" id="node4" href="$protover_8h.html#a14cfeb2deba8e3104fc9ca36778312d9" title="protover_compute_for\l_old_tor" alt="" coords="405,49,553,90"/>
+<area shape="rect" id="node4" href="$protover_8h.html#a14cfeb2deba8e3104fc9ca36778312d9" title="C_RUST_COUPLED: src/rust/protover/protover.rs compute_for_old_tor " alt="" coords="405,49,553,90"/>
 </map>

@@ -1,11 +1,21 @@
 <map id="smartlist_contains" name="smartlist_contains">
-<area shape="rect" id="node2" href="$container_8c.html#af894ea30e26e5feabc37fc45d5c62f66" title="smartlist_overlap" alt="" coords="229,5,351,32"/>
-<area shape="rect" id="node3" href="$container_8c.html#a2c3ad5111bb625b16dc7a4f2018d34df" title="smartlist_intersect" alt="" coords="225,56,355,83"/>
-<area shape="rect" id="node4" href="$entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="223,107,357,149"/>
-<area shape="rect" id="node5" href="$main_8h.html#a5a32ff7bb266432116efdc333987a0e4" title="add_connection_to_closeable_list" alt="" coords="181,173,399,200"/>
-<area shape="rect" id="node6" href="$main_8h.html#a66b81d23c35de4399af3b83ae7a569db" title="connection_is_on_closeable_list" alt="" coords="185,224,395,251"/>
-<area shape="rect" id="node8" href="$main_8h.html#a49e8c66d5c632a692690342427171dd7" title="connection_in_array" alt="" coords="221,275,359,301"/>
-<area shape="rect" id="node10" href="$main_8h.html#a47f0f7ed57367c80e2cbf1769b7bb47c" title="connection_stop_reading\l_from_linked_conn" alt="" coords="207,326,373,367"/>
-<area shape="rect" id="node7" href="$connection_8c.html#a1d5a8a5c4222d5e678e98af904285d90" title="MOCK_IMPL" alt="" coords="462,224,562,251"/>
-<area shape="rect" id="node9" href="$dns_8h.html#abab9ee4ae98eafd0454adef2477f1a76" title="assert_all_pending\l_dns_resolves_ok" alt="" coords="447,275,577,317"/>
+<area shape="rect" id="node2" href="$container_8c.html#af894ea30e26e5feabc37fc45d5c62f66" title="smartlist_overlap" alt="" coords="229,78,351,105"/>
+<area shape="rect" id="node3" href="$container_8c.html#a2c3ad5111bb625b16dc7a4f2018d34df" title="smartlist_intersect" alt="" coords="225,129,355,155"/>
+<area shape="rect" id="node4" href="$entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="219,180,361,221"/>
+<area shape="rect" id="node15" href="$main_8h.html#a5a32ff7bb266432116efdc333987a0e4" title="add_connection_to_closeable_list" alt="" coords="181,246,399,273"/>
+<area shape="rect" id="node16" href="$main_8h.html#a66b81d23c35de4399af3b83ae7a569db" title="connection_is_on_closeable_list" alt="" coords="185,297,395,323"/>
+<area shape="rect" id="node18" href="$main_8h.html#a49e8c66d5c632a692690342427171dd7" title="connection_in_array" alt="" coords="221,347,359,374"/>
+<area shape="rect" id="node20" href="$main_8h.html#a47f0f7ed57367c80e2cbf1769b7bb47c" title="connection_stop_reading\l_from_linked_conn" alt="" coords="207,399,373,440"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#a30a477e0e6936f2e44747be238f30dd7" title="mark_primary_guards\l_maybe_reachable" alt="" coords="457,5,604,47"/>
+<area shape="rect" id="node7" href="$entrynodes_8c.html#aa020db50cb3f41bd32d264228a2bc249" title="entry_guards_note_guard\l_success" alt="" coords="447,71,615,112"/>
+<area shape="rect" id="node8" href="$entrynodes_8c.html#acad8e7ba6123e0a214361a425f711c05" title="entry_guards_all_primary\l_guards_are_down" alt="" coords="447,136,614,177"/>
+<area shape="rect" id="node12" href="$entrynodes_8h.html#a4360ef3264ab398b48b851e0d2d675b5" title="entry_guards_update_all" alt="" coords="449,202,612,229"/>
+<area shape="rect" id="node13" href="$entrynodes_8h.html#a0e9ad8a9d2d435a30b8ece9e786533bf" title="guard_selection_get\l_err_str_if_dir_info\l_missing" alt="" coords="461,253,600,309"/>
+<area shape="rect" id="node6" href="$entrynodes_8h.html#aa9eddf77d45dab94c87c4ae9e9a659fb" title="guards_retry_optimistic" alt="" coords="663,13,821,39"/>
+<area shape="rect" id="node9" href="$entrynodes_8h.html#af943c868320a66ee2dca652ad0555a32" title="entry_guards_upgrade\l_waiting_circuits" alt="" coords="667,136,817,177"/>
+<area shape="rect" id="node10" href="$circuitlist_8h.html#a8d569b96b07da7c91549695cc1ce8ccf" title="circuit_find_circuits\l_to_upgrade_from_guard_wait" alt="" coords="869,136,1065,177"/>
+<area shape="rect" id="node11" href="$circuitbuild_8h.html#afbeee8004f6e86e019ed4c4a9556d7de" title="circuit_upgrade_circuits\l_from_guard_wait" alt="" coords="1113,136,1272,177"/>
+<area shape="rect" id="node14" href="$entrynodes_8h.html#a1f69ddf668f984f783eb7cfcb358185e" title="entry_guards_get_err\l_str_if_dir_info_missing" alt="" coords="663,260,821,301"/>
+<area shape="rect" id="node17" href="$connection_8c.html#a39b04f82ada8e36e17821d9fbfaa43df" title="MOCK_IMPL" alt="" coords="481,333,581,359"/>
+<area shape="rect" id="node19" href="$dns_8h.html#abab9ee4ae98eafd0454adef2477f1a76" title="assert_all_pending\l_dns_resolves_ok" alt="" coords="465,384,596,425"/>
 </map>

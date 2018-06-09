@@ -1,4 +1,17 @@
 <map id="smartlist_add_all" name="smartlist_add_all">
-<area shape="rect" id="node2" href="$config_8h.html#a371199c6500ed7bbdf40789df8310c92" title="get_list_of_ports_to\l_forward" alt="" coords="187,5,323,47"/>
-<area shape="rect" id="node3" href="$rendservice_8h.html#ab506650aa443a97f3932b3f50652c90d" title="directory_post_to_hs_dir" alt="" coords="173,71,337,98"/>
+<area shape="rect" id="node2" href="$config_8h.html#a371199c6500ed7bbdf40789df8310c92" title="get_list_of_ports_to\l_forward" alt="" coords="187,38,323,79"/>
+<area shape="rect" id="node3" href="$consdiff_8c.html#ae0687383d619c3e157da44c9c43615c4" title="gen_ed_diff" alt="" coords="211,104,300,131"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="184,155,327,197"/>
+<area shape="rect" id="node16" href="$rendservice_8h.html#ab506650aa443a97f3932b3f50652c90d" title="directory_post_to_hs_dir" alt="" coords="173,221,337,248"/>
+<area shape="rect" id="node4" href="$consdiff_8c.html#a7705423da427c72ba7509701c5287e81" title="consdiff_gen_diff" alt="" coords="409,5,530,32"/>
+<area shape="rect" id="node6" href="$entrynodes_8c.html#a30a477e0e6936f2e44747be238f30dd7" title="mark_primary_guards\l_maybe_reachable" alt="" coords="396,57,543,98"/>
+<area shape="rect" id="node8" href="$entrynodes_8c.html#aa020db50cb3f41bd32d264228a2bc249" title="entry_guards_note_guard\l_success" alt="" coords="385,122,553,163"/>
+<area shape="rect" id="node9" href="$entrynodes_8c.html#acad8e7ba6123e0a214361a425f711c05" title="entry_guards_all_primary\l_guards_are_down" alt="" coords="386,187,553,229"/>
+<area shape="rect" id="node13" href="$entrynodes_8h.html#a4360ef3264ab398b48b851e0d2d675b5" title="entry_guards_update_all" alt="" coords="388,253,551,280"/>
+<area shape="rect" id="node14" href="$entrynodes_8h.html#a0e9ad8a9d2d435a30b8ece9e786533bf" title="guard_selection_get\l_err_str_if_dir_info\l_missing" alt="" coords="400,304,539,360"/>
+<area shape="rect" id="node7" href="$entrynodes_8h.html#aa9eddf77d45dab94c87c4ae9e9a659fb" title="guards_retry_optimistic" alt="" coords="602,64,759,91"/>
+<area shape="rect" id="node10" href="$entrynodes_8h.html#af943c868320a66ee2dca652ad0555a32" title="entry_guards_upgrade\l_waiting_circuits" alt="" coords="605,187,756,229"/>
+<area shape="rect" id="node11" href="$circuitlist_8h.html#a8d569b96b07da7c91549695cc1ce8ccf" title="circuit_find_circuits\l_to_upgrade_from_guard_wait" alt="" coords="808,187,1004,229"/>
+<area shape="rect" id="node12" href="$circuitbuild_8h.html#afbeee8004f6e86e019ed4c4a9556d7de" title="circuit_upgrade_circuits\l_from_guard_wait" alt="" coords="1052,187,1211,229"/>
+<area shape="rect" id="node15" href="$entrynodes_8h.html#a1f69ddf668f984f783eb7cfcb358185e" title="entry_guards_get_err\l_str_if_dir_info_missing" alt="" coords="601,311,760,353"/>
 </map>

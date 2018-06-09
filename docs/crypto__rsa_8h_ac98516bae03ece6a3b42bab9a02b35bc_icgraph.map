@@ -1,0 +1,7 @@
+<map id="crypto_pk_key_is_private" name="crypto_pk_key_is_private">
+<area shape="rect" id="node2" href="$crypto__rsa_8h.html#a73b93822d2a8fa4b21174f106defa772" title="crypto_pk_private_decrypt" alt="" coords="224,21,399,47"/>
+<area shape="rect" id="node4" href="$crypto__rsa_8h.html#a5acc83e912de445c2e7f5655ec9fd031" title="crypto_pk_private_sign" alt="" coords="233,78,389,105"/>
+<area shape="rect" id="node3" href="$crypto__rsa_8h.html#a4b6dfcd5e33e0a27ed45fe4e50590e46" title="crypto_pk_obsolete\l_private_hybrid_decrypt" alt="" coords="447,5,607,47"/>
+<area shape="rect" id="node5" href="$crypto__rsa_8h.html#ac6f0f5c0ab3d2230d7c2ec0ed1794450" title="crypto_pk_private_sign\l_digest" alt="" coords="449,71,605,112"/>
+<area shape="rect" id="node6" href="$routerkeys_8c.html#a501cbbf6be9a4449c5976ccacc8b2cc4" title="make_tap_onion_key\l_crosscert" alt="" coords="454,136,599,177"/>
+</map>

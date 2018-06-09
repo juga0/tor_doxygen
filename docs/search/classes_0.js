@@ -6,6 +6,7 @@ var searchData=
   ['aes_5fcnt_5fcipher',['aes_cnt_cipher',['../structaes__cnt__cipher.html',1,'']]],
   ['alert_5fsockets_5fs',['alert_sockets_s',['../structalert__sockets__s.html',1,'']]],
   ['argument',['argument',['../classargument.html',1,'']]],
+  ['atomic_5fcounter_5ft',['atomic_counter_t',['../structatomic__counter__t.html',1,'']]],
   ['auth1_5fst',['auth1_st',['../structauth1__st.html',1,'']]],
   ['auth_5fchallenge_5fcell_5fst',['auth_challenge_cell_st',['../structauth__challenge__cell__st.html',1,'']]],
   ['auth_5fctx_5fst',['auth_ctx_st',['../structauth__ctx__st.html',1,'']]],

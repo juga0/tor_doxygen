@@ -76,9 +76,11 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;orconfig.h&quot;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="crypto_8h_source.html">crypto.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;compat.h&quot;</code><br />
 <code>#include &lt;openssl/opensslv.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="crypto_8h_source.html">crypto.h</a>&quot;</code><br />
 <code>#include &lt;openssl/ssl.h&gt;</code><br />
 <code>#include &lt;openssl/ssl3.h&gt;</code><br />
 <code>#include &lt;openssl/err.h&gt;</code><br />
@@ -98,21 +100,26 @@ Include dependency graph for tortls.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="tortls_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2tortls_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2tortls_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2tortls_8c">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="405,557,484,584"/>
-<area shape="rect" id="node4" href="compat_8h_source.html" title="compat.h" alt="" coords="496,333,572,360"/>
-<area shape="rect" id="node13" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="44,259,114,285"/>
-<area shape="rect" id="node22" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="814,184,877,211"/>
-<area shape="rect" id="node24" href="util_8h.html" title="Headers for util.c. " alt="" coords="987,184,1038,211"/>
-<area shape="rect" id="node28" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="742,259,808,285"/>
-<area shape="rect" id="node29" href="container_8h_source.html" title="container.h" alt="" coords="1162,109,1249,136"/>
-<area shape="rect" id="node5" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="237,483,300,509"/>
-<area shape="rect" id="node6" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="823,483,922,509"/>
-<area shape="rect" id="node8" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="390,483,498,509"/>
-<area shape="rect" id="node11" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="280,408,406,435"/>
-<area shape="rect" id="node23" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1139,259,1267,285"/>
-<area shape="rect" id="node25" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="662,408,733,435"/>
-<area shape="rect" id="node27" href="util__bug_8h.html" title="util_bug.h" alt="" coords="985,259,1064,285"/>
-<area shape="rect" id="node30" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1166,184,1245,211"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1137,781,1216,808"/>
+<area shape="rect" id="node4" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1218,109,1287,136"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="532,557,608,584"/>
+<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="1051,408,1102,435"/>
+<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="853,333,940,360"/>
+<area shape="rect" id="node22" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="213,483,279,509"/>
+<area shape="rect" id="node23" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="1530,333,1631,360"/>
+<area shape="rect" id="node24" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="1589,557,1682,584"/>
+<area shape="rect" id="node34" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="387,109,449,136"/>
+<area shape="rect" id="node6" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1343,707,1405,733"/>
+<area shape="rect" id="node18" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="867,184,961,211"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="329,707,427,733"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="560,707,668,733"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="749,632,876,659"/>
+<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1240,632,1311,659"/>
+<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="840,483,919,509"/>
+<area shape="rect" id="node19" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="888,259,999,285"/>
+<area shape="rect" id="node21" href="siphash_8h_source.html" title="siphash.h" alt="" coords="857,408,936,435"/>
+<area shape="rect" id="node35" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="253,184,381,211"/>
+<area shape="rect" id="node36" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="617,333,768,360"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -121,6 +128,9 @@ Macros</h2></td></tr>
 <tr class="memitem:aa99725b6e375fd8860f7636efa529297"><td class="memItemLeft" align="right" valign="top"><a id="aa99725b6e375fd8860f7636efa529297"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TORTLS_PRIVATE</b></td></tr>
 <tr class="separator:aa99725b6e375fd8860f7636efa529297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8f95025b24159e6dcfeb436eb1f192"><td class="memItemLeft" align="right" valign="top"><a id="aac8f95025b24159e6dcfeb436eb1f192"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TORTLS_OPENSSL_PRIVATE</b></td></tr>
+<tr class="separator:aac8f95025b24159e6dcfeb436eb1f192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa99725b6e375fd8860f7636efa529297"><td class="memItemLeft" align="right" valign="top"><a id="aa99725b6e375fd8860f7636efa529297"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TORTLS_PRIVATE</b></td></tr>
 <tr class="separator:aa99725b6e375fd8860f7636efa529297"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +183,9 @@ Macros</h2></td></tr>
 <tr class="separator:aa03ca4b32f87aa50c3b46f77e025325f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d1ad01829ae65a5c90d8fd86ed797e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a3d1ad01829ae65a5c90d8fd86ed797e1">NID_tor_default_ecdhe_group</a>&#160;&#160;&#160;NID_X9_62_prime256v1</td></tr>
 <tr class="separator:a3d1ad01829ae65a5c90d8fd86ed797e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072a1afc24ff2e7907ba56cb0f9e9cbc"><td class="memItemLeft" align="right" valign="top"><a id="a072a1afc24ff2e7907ba56cb0f9e9cbc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RSA_LINK_KEY_BITS</b>&#160;&#160;&#160;2048</td></tr>
+<tr class="separator:a072a1afc24ff2e7907ba56cb0f9e9cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f4d33677adca16e2e5b25db5d4cb61c"><td class="memItemLeft" align="right" valign="top"><a id="a5f4d33677adca16e2e5b25db5d4cb61c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TLSSECRET_MAGIC</b>&#160;&#160;&#160;&quot;Tor V3 handshake TLS cross-certification&quot;</td></tr>
 <tr class="separator:a5f4d33677adca16e2e5b25db5d4cb61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,8 +223,8 @@ Functions</h2></td></tr>
 <tr class="separator:aea3023aa883bf22a995291113ca37f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac50648346a7461e7e16cfcb3d0998a64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#ac50648346a7461e7e16cfcb3d0998a64">MOCK_IMPL</a> (STATIC X509 *, tor_tls_create_certificate,(<a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *rsa, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *rsa_sign, const char *cname, const char *cname_sign, unsigned int cert_lifetime))</td></tr>
 <tr class="separator:ac50648346a7461e7e16cfcb3d0998a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bc75295b83d26baab00ad0cc44f46d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a1bc75295b83d26baab00ad0cc44f46d4">tor_x509_cert_free</a> (tor_x509_cert_t *cert)</td></tr>
-<tr class="separator:a1bc75295b83d26baab00ad0cc44f46d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af396dc12cfe27527a145727f28bbbe62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#af396dc12cfe27527a145727f28bbbe62">tor_x509_cert_free_</a> (tor_x509_cert_t *cert)</td></tr>
+<tr class="separator:af396dc12cfe27527a145727f28bbbe62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafa992ad5321d733430656f683c23387"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#aafa992ad5321d733430656f683c23387">MOCK_IMPL</a> (STATIC tor_x509_cert_t *, tor_x509_cert_new,(X509 *x509_cert))</td></tr>
 <tr class="separator:aafa992ad5321d733430656f683c23387"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01200614cea5495e3bf7ff1b9157811c"><td class="memItemLeft" align="right" valign="top">tor_x509_cert_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a01200614cea5495e3bf7ff1b9157811c">tor_x509_cert_dup</a> (const tor_x509_cert_t *cert)</td></tr>
@@ -232,8 +245,8 @@ Functions</h2></td></tr>
 <tr class="separator:a4cdf67e68f80f5bef7c52a5964416024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad355a1780bc2ed2dac97586713a40447"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#ad355a1780bc2ed2dac97586713a40447">MOCK_IMPL</a> (int, tor_tls_cert_matches_key,(const tor_tls_t *tls, const tor_x509_cert_t *cert))</td></tr>
 <tr class="separator:ad355a1780bc2ed2dac97586713a40447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb2bfd53a90516f1da0363a97d5f47e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a6bb2bfd53a90516f1da0363a97d5f47e">tor_tls_cert_is_valid</a> (int severity, const tor_x509_cert_t *cert, const tor_x509_cert_t *signing_cert, int check_rsa_1024)</td></tr>
-<tr class="separator:a6bb2bfd53a90516f1da0363a97d5f47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805d08ed945976a2b66c748073be0abc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a805d08ed945976a2b66c748073be0abc">tor_tls_cert_is_valid</a> (int severity, const tor_x509_cert_t *cert, const tor_x509_cert_t *signing_cert, time_t now, int check_rsa_1024)</td></tr>
+<tr class="separator:a805d08ed945976a2b66c748073be0abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18b7b628cbb659c7899ef90e58abb559"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a18b7b628cbb659c7899ef90e58abb559">tor_tls_context_init</a> (unsigned flags, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *client_identity, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *server_identity, unsigned int key_lifetime)</td></tr>
 <tr class="separator:a18b7b628cbb659c7899ef90e58abb559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bf12ea45b278b5644c7b180a1170360"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a5bf12ea45b278b5644c7b180a1170360">tor_tls_context_init_one</a> (tor_tls_context_t **ppcontext, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *identity, unsigned int key_lifetime, unsigned int flags, int is_client)</td></tr>
@@ -269,8 +282,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>tor_tls_get_c
 <tr class="separator:a56d9241115f8182cbdb26be9756f25fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89dbecf04240626af4b070b1b83c9f56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a89dbecf04240626af4b070b1b83c9f56">tor_tls_is_server</a> (tor_tls_t *tls)</td></tr>
 <tr class="separator:a89dbecf04240626af4b070b1b83c9f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaddbe5e7dc330d16435c9ea767942f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#aaddbe5e7dc330d16435c9ea767942f7e">tor_tls_free</a> (tor_tls_t *tls)</td></tr>
-<tr class="separator:aaddbe5e7dc330d16435c9ea767942f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5a528cdb3b8cb9ce04b40bb899dbeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a6f5a528cdb3b8cb9ce04b40bb899dbeb">tor_tls_free_</a> (tor_tls_t *tls)</td></tr>
+<tr class="separator:a6f5a528cdb3b8cb9ce04b40bb899dbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa34410a913d12aff35c6df7c9d558e6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#aa34410a913d12aff35c6df7c9d558e6e">MOCK_IMPL</a> (int, tor_tls_read,(tor_tls_t *tls, char *cp, size_t len))</td></tr>
 <tr class="separator:aa34410a913d12aff35c6df7c9d558e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f79960ae7a36ce6647ceafd36c7e162"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a5f79960ae7a36ce6647ceafd36c7e162">tor_tls_write</a> (tor_tls_t *tls, const char *cp, size_t n)</td></tr>
@@ -291,8 +304,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>tor_tls_get_c
 <tr class="separator:afa6f172724874c8eadf30664594c48a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05ab54f8371c33d1f9ff9484ffad2732"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a05ab54f8371c33d1f9ff9484ffad2732">tor_tls_verify</a> (int severity, tor_tls_t *tls, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> **identity_key)</td></tr>
 <tr class="separator:a05ab54f8371c33d1f9ff9484ffad2732"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefbd38f40f6bf851dfd06a36941a4251"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#aefbd38f40f6bf851dfd06a36941a4251">tor_tls_check_lifetime</a> (int severity, tor_tls_t *tls, int past_tolerance, int future_tolerance)</td></tr>
-<tr class="separator:aefbd38f40f6bf851dfd06a36941a4251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7493fe8a822f0ef8d46980439882fbb1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a7493fe8a822f0ef8d46980439882fbb1">tor_tls_check_lifetime</a> (int severity, tor_tls_t *tls, time_t now, int past_tolerance, int future_tolerance)</td></tr>
+<tr class="separator:a7493fe8a822f0ef8d46980439882fbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeaf421de8fd8d7d4d3bad71272bfc4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#aaeaf421de8fd8d7d4d3bad71272bfc4e">tor_tls_get_pending_bytes</a> (tor_tls_t *tls)</td></tr>
 <tr class="separator:aaeaf421de8fd8d7d4d3bad71272bfc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc7afb97a99f6f7664a9ced2b8baab54"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#afc7afb97a99f6f7664a9ced2b8baab54">tor_tls_get_forced_write_size</a> (tor_tls_t *tls)</td></tr>
@@ -314,6 +327,8 @@ STATIC size_t&#160;</td><td class="memItemRight" valign="bottom"><b>SSL_SESSION_
 <tr class="separator:a167465e8f2e2cd8909823fea132bf68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cdc403d61257cf30593a0084910587d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a0cdc403d61257cf30593a0084910587d">MOCK_IMPL</a> (int, tor_tls_get_tlssecrets,(tor_tls_t *tls, uint8_t *secrets_out))</td></tr>
 <tr class="separator:a0cdc403d61257cf30593a0084910587d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9230eaa3952409a4fc289e2bdb059cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#aa9230eaa3952409a4fc289e2bdb059cf">MOCK_IMPL</a> (int, tor_tls_export_key_material,(tor_tls_t *tls, uint8_t *secrets_out, const uint8_t *context, size_t context_len, const char *label))</td></tr>
+<tr class="separator:aa9230eaa3952409a4fc289e2bdb059cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fef8380f402b3e300d756a828ba9d56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a6fef8380f402b3e300d756a828ba9d56">tor_tls_get_buffer_sizes</a> (tor_tls_t *tls, size_t *rbuf_capacity, size_t *rbuf_bytes, size_t *wbuf_capacity, size_t *wbuf_bytes)</td></tr>
 <tr class="separator:a6fef8380f402b3e300d756a828ba9d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a479756d042d4e4890e403726e0cb2a5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tortls_8c.html#a479756d042d4e4890e403726e0cb2a5b">evaluate_ecgroup_for_tls</a> (const char *ecgroup)</td></tr>
@@ -552,7 +567,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ac50648346a7461e7e16cfcb3d0998a64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac50648346a7461e7e16cfcb3d0998a64">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50648346a7461e7e16cfcb3d0998a64">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -588,7 +603,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aafa992ad5321d733430656f683c23387"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafa992ad5321d733430656f683c23387">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa992ad5321d733430656f683c23387">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -624,7 +639,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad355a1780bc2ed2dac97586713a40447"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad355a1780bc2ed2dac97586713a40447">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad355a1780bc2ed2dac97586713a40447">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -659,7 +674,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aa34410a913d12aff35c6df7c9d558e6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa34410a913d12aff35c6df7c9d558e6e">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[4/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34410a913d12aff35c6df7c9d558e6e">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -694,7 +709,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a631d2a19bd52d1de8194b24da85c3317"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a631d2a19bd52d1de8194b24da85c3317">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[5/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a631d2a19bd52d1de8194b24da85c3317">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -739,7 +754,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a97b1047e5a7253e677fb549a9d2910c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97b1047e5a7253e677fb549a9d2910c3">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[6/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b1047e5a7253e677fb549a9d2910c3">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -784,7 +799,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="afa6f172724874c8eadf30664594c48a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa6f172724874c8eadf30664594c48a1">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[7/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afa6f172724874c8eadf30664594c48a1">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -820,7 +835,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a0a4312bcca2c2fa92120225aa44b32e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a4312bcca2c2fa92120225aa44b32e0">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[8/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a4312bcca2c2fa92120225aa44b32e0">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -855,7 +870,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a0cdc403d61257cf30593a0084910587d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cdc403d61257cf30593a0084910587d">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[9/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cdc403d61257cf30593a0084910587d">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -886,6 +901,41 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set the DIGEST256_LEN buffer at <b>secrets_out</b> to the value used in the v3 handshake to prove that the client knows the TLS secrets for the connection <b>tls</b>. Return 0 on success, -1 on failure. </p>
+
+</div>
+</div>
+<a id="aa9230eaa3952409a4fc289e2bdb059cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9230eaa3952409a4fc289e2bdb059cf">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tor_tls_export_key_material&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(tor_tls_t *tls, uint8_t *secrets_out, const uint8_t *context, size_t context_len, const char *label)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Using the RFC5705 key material exporting construction, and the provided <b>context</b> (<b>context_len</b> bytes long) and <b>label</b> (a NUL-terminated string), compute a 32-byte secret in <b>secrets_out</b> that only the parties to this TLS session can compute. Return 0 on success and -1 on failure. </p>
 
 </div>
 </div>
@@ -1047,20 +1097,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return a newly allocated copy of the public key that a certificate certifies. Return NULL if the cert's key is not RSA. </p>
+<p>Return a newly allocated copy of the public key that a certificate certifies. Watch out! This returns NULL if the cert's key is not RSA. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tortls_8c_a4cdf67e68f80f5bef7c52a5964416024_cgraph.png" border="0" usemap="#tortls_8c_a4cdf67e68f80f5bef7c52a5964416024_cgraph" alt=""/></div>
 <map name="tortls_8c_a4cdf67e68f80f5bef7c52a5964416024_cgraph" id="tortls_8c_a4cdf67e68f80f5bef7c52a5964416024_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a1218ae18907870b5eba2e014006c41e3" title="crypto_new_pk_from_rsa_" alt="" coords="193,5,368,32"/>
+<area shape="rect" id="node2" href="crypto__rsa_8c.html#a1218ae18907870b5eba2e014006c41e3" title="crypto_new_pk_from_rsa_" alt="" coords="193,5,368,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a6bb2bfd53a90516f1da0363a97d5f47e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bb2bfd53a90516f1da0363a97d5f47e">&#9670;&nbsp;</a></span>tor_tls_cert_is_valid()</h2>
+<a id="a805d08ed945976a2b66c748073be0abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a805d08ed945976a2b66c748073be0abc">&#9670;&nbsp;</a></span>tor_tls_cert_is_valid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1086,6 +1136,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>now</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>check_rsa_1024</em>&#160;</td>
         </tr>
@@ -1100,8 +1156,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="aefbd38f40f6bf851dfd06a36941a4251"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefbd38f40f6bf851dfd06a36941a4251">&#9670;&nbsp;</a></span>tor_tls_check_lifetime()</h2>
+<a id="a7493fe8a822f0ef8d46980439882fbb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7493fe8a822f0ef8d46980439882fbb1">&#9670;&nbsp;</a></span>tor_tls_check_lifetime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1117,6 +1173,12 @@ Here is the call graph for this function:</div>
           <td></td>
           <td class="paramtype">tor_tls_t *&#160;</td>
           <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>now</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1374,9 +1436,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tortls_8c_a6f66b1039c2f3e00e4d4602f19d5ab02_icgraph.png" border="0" usemap="#tortls_8c_a6f66b1039c2f3e00e4d4602f19d5ab02_icgraph" alt=""/></div>
 <map name="tortls_8c_a6f66b1039c2f3e00e4d4602f19d5ab02_icgraph" id="tortls_8c_a6f66b1039c2f3e00e4d4602f19d5ab02_icgraph">
-<area shape="rect" id="node2" href="tortls_8c.html#a3b0c0880a231328e1b5d7faa01fddcd9" title="tor_tls_server_info\l_callback" alt="" coords="189,5,319,47"/>
-<area shape="rect" id="node3" href="tortls_8h.html#a5823cfa710f0f7987d09dfececae28d0" title="tor_tls_set_renegotiate\l_callback" alt="" coords="367,35,521,76"/>
-<area shape="rect" id="node4" href="connection__or_8h.html#aecfd6590f4dd5c079f371e48eb1e09f2" title="connection_or_block\l_renegotiation" alt="" coords="569,35,711,76"/>
+<area shape="rect" id="node2" href="tortls_8h.html#a5823cfa710f0f7987d09dfececae28d0" title="tor_tls_set_renegotiate\l_callback" alt="" coords="189,5,344,47"/>
+<area shape="rect" id="node3" href="connection__or_8h.html#aecfd6590f4dd5c079f371e48eb1e09f2" title="connection_or_block\l_renegotiation" alt="" coords="392,5,533,47"/>
 </map>
 </div>
 
@@ -1416,19 +1477,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Perform the final part of the intial TLS handshake on <b>tls</b>. This should be called for the first handshake only: it determines whether the v1 or the v2 handshake was used, and adjusts things for the renegotiation handshake as appropriate.</p>
+<p>Perform the final part of the initial TLS handshake on <b>tls</b>. This should be called for the first handshake only: it determines whether the v1 or the v2 handshake was used, and adjusts things for the renegotiation handshake as appropriate.</p>
 <p><a class="el" href="tortls_8c.html#ab228adf4f9dbd0f8739a657ea66f389e">tor_tls_handshake()</a> calls this on its own; you only need to call this if bufferevent is doing the handshake for you. </p>
 
 </div>
 </div>
-<a id="aaddbe5e7dc330d16435c9ea767942f7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaddbe5e7dc330d16435c9ea767942f7e">&#9670;&nbsp;</a></span>tor_tls_free()</h2>
+<a id="a6f5a528cdb3b8cb9ce04b40bb899dbeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f5a528cdb3b8cb9ce04b40bb899dbeb">&#9670;&nbsp;</a></span>tor_tls_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void tor_tls_free </td>
+          <td class="memname">void tor_tls_free_ </td>
           <td>(</td>
           <td class="paramtype">tor_tls_t *&#160;</td>
           <td class="paramname"><em>tls</em></td><td>)</td>
@@ -1440,9 +1501,9 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="tortls_8c_aaddbe5e7dc330d16435c9ea767942f7e_cgraph.png" border="0" usemap="#tortls_8c_aaddbe5e7dc330d16435c9ea767942f7e_cgraph" alt=""/></div>
-<map name="tortls_8c_aaddbe5e7dc330d16435c9ea767942f7e_cgraph" id="tortls_8c_aaddbe5e7dc330d16435c9ea767942f7e_cgraph">
-<area shape="rect" id="node2" href="tortls_8c.html#a2052799333f0e6afd56d3a3fc640d879" title="tor_tls_get_n_raw_bytes" alt="" coords="140,5,304,32"/>
+<div class="center"><img src="tortls_8c_a6f5a528cdb3b8cb9ce04b40bb899dbeb_cgraph.png" border="0" usemap="#tortls_8c_a6f5a528cdb3b8cb9ce04b40bb899dbeb_cgraph" alt=""/></div>
+<map name="tortls_8c_a6f5a528cdb3b8cb9ce04b40bb899dbeb_cgraph" id="tortls_8c_a6f5a528cdb3b8cb9ce04b40bb899dbeb_cgraph">
+<area shape="rect" id="node2" href="tortls_8c.html#a2052799333f0e6afd56d3a3fc640d879" title="tor_tls_get_n_raw_bytes" alt="" coords="148,5,312,32"/>
 </map>
 </div>
 
@@ -1638,14 +1699,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set *<b>link_cert_out</b> and *<b>id_cert_out</b> to the link certificate and ID certificate that we're currently using for our V3 in-protocol handshake's certificate chain. If <b>server</b> is true, provide the certs that we use in server mode; otherwise, provide the certs that we use in client mode. </p>
+<p>Set *<b>link_cert_out</b> and *<b>id_cert_out</b> to the link certificate and ID certificate that we're currently using for our V3 in-protocol handshake's certificate chain. If <b>server</b> is true, provide the certs that we use in server mode (auth, ID); otherwise, provide the certs that we use in client mode. (link, ID) </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tortls_8c_a7aa93459dd4e3641e885932d682db4a0_icgraph.png" border="0" usemap="#tortls_8c_a7aa93459dd4e3641e885932d682db4a0_icgraph" alt=""/></div>
 <map name="tortls_8c_a7aa93459dd4e3641e885932d682db4a0_icgraph" id="tortls_8c_a7aa93459dd4e3641e885932d682db4a0_icgraph">
 <area shape="rect" id="node2" href="connection__or_8h.html#a373bc2ce63f7b8a6530d1b16e420f7c4" title="connection_or_send\l_certs_cell" alt="" coords="209,5,348,47"/>
-<area shape="rect" id="node3" href="connection__or_8h.html#ab1ef7fb7062854e94bc474ccd0e51fbc" title="connection_or_compute\l_authenticate_cell_body" alt="" coords="197,71,360,112"/>
+<area shape="rect" id="node3" href="connection__or_8h.html#a299125b246f5c829b4af2cef1efa7378" title="connection_or_compute\l_authenticate_cell_body" alt="" coords="197,71,360,112"/>
+<area shape="rect" id="node4" href="routerkeys_8c.html#abebfd6b56ecfb14c8ef132e50485907e" title="generate_ed_link_cert" alt="" coords="204,137,353,163"/>
 </map>
 </div>
 
@@ -1715,7 +1777,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tortls_8c_a2052799333f0e6afd56d3a3fc640d879_icgraph.png" border="0" usemap="#tortls_8c_a2052799333f0e6afd56d3a3fc640d879_icgraph" alt=""/></div>
 <map name="tortls_8c_a2052799333f0e6afd56d3a3fc640d879_icgraph" id="tortls_8c_a2052799333f0e6afd56d3a3fc640d879_icgraph">
-<area shape="rect" id="node2" href="tortls_8h.html#aaddbe5e7dc330d16435c9ea767942f7e" title="tor_tls_free" alt="" coords="217,5,304,32"/>
+<area shape="rect" id="node2" href="tortls_8h.html#a6f5a528cdb3b8cb9ce04b40bb899dbeb" title="tor_tls_free_" alt="" coords="217,5,312,32"/>
 </map>
 </div>
 
@@ -2020,14 +2082,6 @@ To alter the state of the handshake partway through, so we do not send or reques
 To detect renegotiation</li>
 </ul>
 <div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="tortls_8c_a3b0c0880a231328e1b5d7faa01fddcd9_cgraph.png" border="0" usemap="#tortls_8c_a3b0c0880a231328e1b5d7faa01fddcd9_cgraph" alt=""/></div>
-<map name="tortls_8c_a3b0c0880a231328e1b5d7faa01fddcd9_cgraph" id="tortls_8c_a3b0c0880a231328e1b5d7faa01fddcd9_cgraph">
-<area shape="rect" id="node2" href="tortls_8c.html#a6f66b1039c2f3e00e4d4602f19d5ab02" title="tor_tls_debug_state\l_callback" alt="" coords="183,5,319,47"/>
-</map>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tortls_8c_a3b0c0880a231328e1b5d7faa01fddcd9_icgraph.png" border="0" usemap="#tortls_8c_a3b0c0880a231328e1b5d7faa01fddcd9_icgraph" alt=""/></div>
@@ -2160,8 +2214,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tortls_8c_a5823cfa710f0f7987d09dfececae28d0_cgraph.png" border="0" usemap="#tortls_8c_a5823cfa710f0f7987d09dfececae28d0_cgraph" alt=""/></div>
 <map name="tortls_8c_a5823cfa710f0f7987d09dfececae28d0_cgraph" id="tortls_8c_a5823cfa710f0f7987d09dfececae28d0_cgraph">
-<area shape="rect" id="node2" href="tortls_8c.html#a3b0c0880a231328e1b5d7faa01fddcd9" title="tor_tls_server_info\l_callback" alt="" coords="208,5,337,47"/>
-<area shape="rect" id="node3" href="tortls_8c.html#a6f66b1039c2f3e00e4d4602f19d5ab02" title="tor_tls_debug_state\l_callback" alt="" coords="385,35,521,76"/>
+<area shape="rect" id="node2" href="tortls_8c.html#a3b0c0880a231328e1b5d7faa01fddcd9" title="tor_tls_server_info\l_callback" alt="" coords="211,5,341,47"/>
+<area shape="rect" id="node3" href="tortls_8c.html#a6f66b1039c2f3e00e4d4602f19d5ab02" title="tor_tls_debug_state\l_callback" alt="" coords="208,71,344,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2350,14 +2404,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a1bc75295b83d26baab00ad0cc44f46d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bc75295b83d26baab00ad0cc44f46d4">&#9670;&nbsp;</a></span>tor_x509_cert_free()</h2>
+<a id="af396dc12cfe27527a145727f28bbbe62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af396dc12cfe27527a145727f28bbbe62">&#9670;&nbsp;</a></span>tor_x509_cert_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void tor_x509_cert_free </td>
+          <td class="memname">void tor_x509_cert_free_ </td>
           <td>(</td>
           <td class="paramtype">tor_x509_cert_t *&#160;</td>
           <td class="paramname"><em>cert</em></td><td>)</td>
@@ -2369,17 +2423,9 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="tortls_8c_a1bc75295b83d26baab00ad0cc44f46d4_cgraph.png" border="0" usemap="#tortls_8c_a1bc75295b83d26baab00ad0cc44f46d4_cgraph" alt=""/></div>
-<map name="tortls_8c_a1bc75295b83d26baab00ad0cc44f46d4_cgraph" id="tortls_8c_a1bc75295b83d26baab00ad0cc44f46d4_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="184,5,263,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="tortls_8c_a1bc75295b83d26baab00ad0cc44f46d4_icgraph.png" border="0" usemap="#tortls_8c_a1bc75295b83d26baab00ad0cc44f46d4_icgraph" alt=""/></div>
-<map name="tortls_8c_a1bc75295b83d26baab00ad0cc44f46d4_icgraph" id="tortls_8c_a1bc75295b83d26baab00ad0cc44f46d4_icgraph">
-<area shape="rect" id="node2" href="connection__or_8h.html#afa4b4ee00896c43391106b72f6bd31ac" title="or_handshake_state_free" alt="" coords="184,5,352,32"/>
+<div class="center"><img src="tortls_8c_af396dc12cfe27527a145727f28bbbe62_cgraph.png" border="0" usemap="#tortls_8c_af396dc12cfe27527a145727f28bbbe62_cgraph" alt=""/></div>
+<map name="tortls_8c_af396dc12cfe27527a145727f28bbbe62_cgraph" id="tortls_8c_af396dc12cfe27527a145727f28bbbe62_cgraph">
+<area shape="rect" id="node2" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="191,5,269,32"/>
 </map>
 </div>
 
@@ -2436,14 +2482,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set *<b>encoded_out</b> and *<b>size_out</b> to <b>cert</b>'s encoded DER representation and length, respectively. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="tortls_8c_ae138ea45f150f1291b09f0b5dfa34ad4_icgraph.png" border="0" usemap="#tortls_8c_ae138ea45f150f1291b09f0b5dfa34ad4_icgraph" alt=""/></div>
-<map name="tortls_8c_ae138ea45f150f1291b09f0b5dfa34ad4_icgraph" id="tortls_8c_ae138ea45f150f1291b09f0b5dfa34ad4_icgraph">
-<area shape="rect" id="node2" href="connection__or_8h.html#a373bc2ce63f7b8a6530d1b16e420f7c4" title="connection_or_send\l_certs_cell" alt="" coords="204,5,343,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2468,7 +2506,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="tortls_8c_aeb4713a168234b69a9d25312a3a15770_icgraph.png" border="0" usemap="#tortls_8c_aeb4713a168234b69a9d25312a3a15770_icgraph" alt=""/></div>
 <map name="tortls_8c_aeb4713a168234b69a9d25312a3a15770_icgraph" id="tortls_8c_aeb4713a168234b69a9d25312a3a15770_icgraph">
-<area shape="rect" id="node2" href="connection__or_8h.html#ab1ef7fb7062854e94bc474ccd0e51fbc" title="connection_or_compute\l_authenticate_cell_body" alt="" coords="196,5,359,47"/>
+<area shape="rect" id="node2" href="connection__or_8h.html#a299125b246f5c829b4af2cef1efa7378" title="connection_or_compute\l_authenticate_cell_body" alt="" coords="196,5,359,47"/>
+<area shape="rect" id="node3" href="torcert_8c.html#acd16d9acb0ee87c596577d7e3c333f39" title="or_handshake_certs\l_check_both" alt="" coords="208,71,347,112"/>
 </map>
 </div>
 

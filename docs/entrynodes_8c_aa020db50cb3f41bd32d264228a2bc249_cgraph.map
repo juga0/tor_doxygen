@@ -1,0 +1,12 @@
+<map id="entry_guards_note_guard_success" name="entry_guards_note_guard_success">
+<area shape="rect" id="node2" href="$util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="1047,93,1140,120"/>
+<area shape="rect" id="node3" href="$entrynodes_8c.html#ae0098c969567b69eb585160f12700b06" title="make_guard_confirmed" alt="" coords="221,53,379,80"/>
+<area shape="rect" id="node4" href="$entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="229,126,371,167"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#a045186178310a765b1193b31c9c98be8" title="get_n_primary_guards" alt="" coords="438,43,589,69"/>
+<area shape="rect" id="node6" href="$container_8c.html#a5e71fb7bc775f079d9f9d724f0203fc1" title="smartlist_add_all" alt="" coords="453,93,573,120"/>
+<area shape="rect" id="node7" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="463,144,563,171"/>
+<area shape="rect" id="node8" href="$container_8c.html#abbb4ca13d840b2761ed4d70c63f0b2f4" title="smartlist_contains" alt="" coords="449,195,577,221"/>
+<area shape="rect" id="node9" href="$entrynodes_8c.html#a440f5217f0a557c13b02a251f93db5d6" title="sample_reachable_filtered\l_entry_guards" alt="" coords="427,246,600,287"/>
+<area shape="rect" id="node10" href="$entrynodes_8c.html#ab335f71d2749aa457ffd8a82065649c6" title="entry_guard_consider\l_retry" alt="" coords="852,187,999,229"/>
+<area shape="rect" id="node11" href="$entrynodes_8c.html#ac771815070c48fdafceda321e3b56739" title="num_reachable_filtered\l_guards" alt="" coords="648,246,804,287"/>
+</map>

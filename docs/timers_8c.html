@@ -80,25 +80,24 @@ $(function() {
 <code>#include &quot;timers.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="torlog_8h_source.html">torlog.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
-<code>#include &lt;event2/event.h&gt;</code><br />
 <code>#include &quot;src/ext/timeouts/timeout.c&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for timers.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="timers_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2timers_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2timers_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2timers_8c">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="765,483,843,509"/>
-<area shape="rect" id="node3" href="compat_8h_source.html" title="compat.h" alt="" coords="607,259,683,285"/>
-<area shape="rect" id="node11" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="112,109,240,136"/>
-<area shape="rect" id="node13" href="timers_8h_source.html" title="timers.h" alt="" coords="5,333,75,360"/>
-<area shape="rect" id="node14" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="333,184,398,211"/>
-<area shape="rect" id="node15" href="util_8h.html" title="Headers for util.c. " alt="" coords="944,109,995,136"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="889,408,951,435"/>
-<area shape="rect" id="node5" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="215,408,313,435"/>
-<area shape="rect" id="node7" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="705,408,813,435"/>
-<area shape="rect" id="node10" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="635,333,762,360"/>
-<area shape="rect" id="node16" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1126,333,1197,360"/>
-<area shape="rect" id="node18" href="util__bug_8h.html" title="util_bug.h" alt="" coords="793,184,871,211"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="511,483,589,509"/>
+<area shape="rect" id="node3" href="compat_8h_source.html" title="compat.h" alt="" coords="601,259,677,285"/>
+<area shape="rect" id="node12" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1061,333,1189,360"/>
+<area shape="rect" id="node13" href="timers_8h_source.html" title="timers.h" alt="" coords="1213,333,1282,360"/>
+<area shape="rect" id="node14" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1039,184,1104,211"/>
+<area shape="rect" id="node15" href="util_8h.html" title="Headers for util.c. " alt="" coords="313,109,363,136"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="99,408,161,435"/>
+<area shape="rect" id="node6" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="923,408,1022,435"/>
+<area shape="rect" id="node8" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="697,408,805,435"/>
+<area shape="rect" id="node11" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="424,333,551,360"/>
+<area shape="rect" id="node16" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="5,333,76,360"/>
+<area shape="rect" id="node18" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="460,184,539,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -109,6 +108,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:adb0c95da8844ab81b75c75757d3b034f"><td class="memItemLeft" align="right" valign="top"><a id="adb0c95da8844ab81b75c75757d3b034f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOR_TIMERS_PRIVATE</b></td></tr>
+<tr class="separator:adb0c95da8844ab81b75c75757d3b034f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80e1ab4acb888652739c4571de667f54"><td class="memItemLeft" align="right" valign="top"><a id="a80e1ab4acb888652739c4571de667f54"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TIMEOUT_PUBLIC</b>&#160;&#160;&#160;static</td></tr>
 <tr class="separator:a80e1ab4acb888652739c4571de667f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,16 +137,20 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad0725635a49f8b999778334248977fcb"><td class="memItemLeft" align="right" valign="top">STATIC void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8c.html#ad0725635a49f8b999778334248977fcb">timers_run_pending</a> (void)</td></tr>
+<tr class="separator:ad0725635a49f8b999778334248977fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e430b5953862158426b1f99a788b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8c.html#a74e430b5953862158426b1f99a788b8b">timers_initialize</a> (void)</td></tr>
 <tr class="separator:a74e430b5953862158426b1f99a788b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6441eeba1520edf3a66596ea3bf90f56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8c.html#a6441eeba1520edf3a66596ea3bf90f56">timers_shutdown</a> (void)</td></tr>
 <tr class="separator:a6441eeba1520edf3a66596ea3bf90f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac83b29b32d2c4127a7cd32d8155dc16c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtimeout.html">tor_timer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8c.html#ac83b29b32d2c4127a7cd32d8155dc16c">timer_new</a> (timer_cb_fn_t cb, void *arg)</td></tr>
 <tr class="separator:ac83b29b32d2c4127a7cd32d8155dc16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2cafccd0b9d32c8b2f7d1e2d2500728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8c.html#ae2cafccd0b9d32c8b2f7d1e2d2500728">timer_free</a> (<a class="el" href="structtimeout.html">tor_timer_t</a> *t)</td></tr>
-<tr class="separator:ae2cafccd0b9d32c8b2f7d1e2d2500728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d33c37b0824767b8a868de7e63bcd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8c.html#af5d33c37b0824767b8a868de7e63bcd0">timer_free_</a> (<a class="el" href="structtimeout.html">tor_timer_t</a> *t)</td></tr>
+<tr class="separator:af5d33c37b0824767b8a868de7e63bcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33308d1fb5a891782c88c7bc8568f1e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8c.html#a33308d1fb5a891782c88c7bc8568f1e9">timer_set_cb</a> (<a class="el" href="structtimeout.html">tor_timer_t</a> *t, timer_cb_fn_t cb, void *arg)</td></tr>
 <tr class="separator:a33308d1fb5a891782c88c7bc8568f1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440646028b93178fd6fbe2b9dd028130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8c.html#a440646028b93178fd6fbe2b9dd028130">timer_get_cb</a> (const <a class="el" href="structtimeout.html">tor_timer_t</a> *t, timer_cb_fn_t *cb_out, void **arg_out)</td></tr>
+<tr class="separator:a440646028b93178fd6fbe2b9dd028130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42251bcc0e0c33d5530a4aa1b0b20c3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8c.html#a42251bcc0e0c33d5530a4aa1b0b20c3d">timer_schedule</a> (<a class="el" href="structtimeout.html">tor_timer_t</a> *t, const struct <a class="el" href="structtimeval.html">timeval</a> *tv)</td></tr>
 <tr class="separator:a42251bcc0e0c33d5530a4aa1b0b20c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace10ab47fd5db3db2e5d342d26f9d459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timers_8c.html#ace10ab47fd5db3db2e5d342d26f9d459">timer_disable</a> (<a class="el" href="structtimeout.html">tor_timer_t</a> *t)</td></tr>
@@ -237,14 +243,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2cafccd0b9d32c8b2f7d1e2d2500728"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2cafccd0b9d32c8b2f7d1e2d2500728">&#9670;&nbsp;</a></span>timer_free()</h2>
+<a id="af5d33c37b0824767b8a868de7e63bcd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d33c37b0824767b8a868de7e63bcd0">&#9670;&nbsp;</a></span>timer_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void timer_free </td>
+          <td class="memname">void timer_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structtimeout.html">tor_timer_t</a> *&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
@@ -253,6 +259,41 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Release all storage held by <b>t</b>, and unschedule it if was already scheduled. </p>
+
+</div>
+</div>
+<a id="a440646028b93178fd6fbe2b9dd028130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a440646028b93178fd6fbe2b9dd028130">&#9670;&nbsp;</a></span>timer_get_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void timer_get_cb </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtimeout.html">tor_timer_t</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timer_cb_fn_t *&#160;</td>
+          <td class="paramname"><em>cb_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>arg_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set *<b>cb_out</b> (if provided) to this timer's callback function, and *<b>arg_out</b> (if provided) to this timer's callback argument. </p>
 
 </div>
 </div>
@@ -365,6 +406,33 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Initialize the timers subsystem. Requires that libevent has already been initialized. </p>
+
+</div>
+</div>
+<a id="ad0725635a49f8b999778334248977fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0725635a49f8b999778334248977fcb">&#9670;&nbsp;</a></span>timers_run_pending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC void timers_run_pending </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run the callback of every timer that has expired, based on the current output of <a class="el" href="compat__time_8c.html#a0ebc4d67a1d3915e46616c926138eb58">monotime_get()</a>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="timers_8c_ad0725635a49f8b999778334248977fcb_cgraph.png" border="0" usemap="#timers_8c_ad0725635a49f8b999778334248977fcb_cgraph" alt=""/></div>
+<map name="timers_8c_ad0725635a49f8b999778334248977fcb_cgraph" id="timers_8c_ad0725635a49f8b999778334248977fcb_cgraph">
+<area shape="rect" id="node2" href="compat__time_8c.html#a0ebc4d67a1d3915e46616c926138eb58" title="monotime_get" alt="" coords="188,5,292,32"/>
+</map>
+</div>
 
 </div>
 </div>

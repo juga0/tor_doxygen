@@ -82,6 +82,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="circuitstats_8h_source.html">circuitstats.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection__edge_8h_source.html">connection_edge.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="relay_8h_source.html">relay.h</a>&quot;</code><br />
@@ -90,44 +91,52 @@ Include dependency graph for circpathbias.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="circpathbias_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2circpathbias_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2circpathbias_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2circpathbias_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1435,259,1479,285"/>
-<area shape="rect" id="node34" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="1501,109,1579,136"/>
-<area shape="rect" id="node36" href="circpathbias_8h_source.html" title="circpathbias.h" alt="" coords="1603,109,1706,136"/>
-<area shape="rect" id="node37" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1730,109,1825,136"/>
-<area shape="rect" id="node38" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1885,184,1971,211"/>
-<area shape="rect" id="node39" href="circuituse_8h.html" title="Header file for circuituse.c. " alt="" coords="1901,109,1990,136"/>
-<area shape="rect" id="node40" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="2014,109,2111,136"/>
-<area shape="rect" id="node41" href="connection__edge_8h.html" title="Header file for connection_edge.c. " alt="" coords="2032,259,2163,285"/>
-<area shape="rect" id="node42" href="config_8h.html" title="Header file for config.c. " alt="" coords="2129,408,2197,435"/>
-<area shape="rect" id="node43" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2238,109,2335,136"/>
-<area shape="rect" id="node44" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2276,184,2391,211"/>
-<area shape="rect" id="node45" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="2411,109,2472,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="265,856,343,883"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="850,781,913,808"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="936,557,1005,584"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1619,557,1733,584"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1456,632,1581,659"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1489,707,1631,733"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1054,483,1117,509"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1478,557,1543,584"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="561,408,647,435"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="1123,333,1195,360"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="255,333,334,360"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2233,707,2361,733"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="1321,333,1365,360"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1389,333,1491,360"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1516,333,1607,360"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1065,707,1159,733"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1671,781,1769,808"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="650,632,726,659"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="342,781,450,808"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="726,707,853,733"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1047,557,1175,584"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="624,483,675,509"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="521,483,599,509"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="145,707,215,733"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="571,557,650,584"/>
-<area shape="rect" id="node35" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1545,184,1639,211"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1039,333,1083,360"/>
+<area shape="rect" id="node34" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="1915,184,1994,211"/>
+<area shape="rect" id="node38" href="circpathbias_8h_source.html" title="circpathbias.h" alt="" coords="2333,109,2435,136"/>
+<area shape="rect" id="node39" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2459,109,2554,136"/>
+<area shape="rect" id="node40" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1748,109,1833,136"/>
+<area shape="rect" id="node43" href="circuituse_8h.html" title="Header file for circuituse.c. " alt="" coords="2578,109,2667,136"/>
+<area shape="rect" id="node44" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="2691,109,2789,136"/>
+<area shape="rect" id="node45" href="connection__edge_8h.html" title="Header file for connection_edge.c. " alt="" coords="2076,259,2207,285"/>
+<area shape="rect" id="node46" href="config_8h.html" title="Header file for config.c. " alt="" coords="2185,333,2253,360"/>
+<area shape="rect" id="node47" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="296,707,397,733"/>
+<area shape="rect" id="node48" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="558,184,655,211"/>
+<area shape="rect" id="node49" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2229,632,2344,659"/>
+<area shape="rect" id="node50" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="2813,109,2875,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1133,1005,1211,1032"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="499,931,562,957"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1397,483,1467,509"/>
+<area shape="rect" id="node15" href="container_8h_source.html" title="container.h" alt="" coords="1155,707,1242,733"/>
+<area shape="rect" id="node17" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1723,781,1789,808"/>
+<area shape="rect" id="node18" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1074,408,1187,435"/>
+<area shape="rect" id="node19" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="727,483,852,509"/>
+<area shape="rect" id="node20" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="862,557,1005,584"/>
+<area shape="rect" id="node22" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1494,483,1557,509"/>
+<area shape="rect" id="node24" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="624,408,715,435"/>
+<area shape="rect" id="node25" href="address_8h.html" title="Headers for address.h. " alt="" coords="673,632,751,659"/>
+<area shape="rect" id="node26" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2331,856,2459,883"/>
+<area shape="rect" id="node27" href="ht_8h_source.html" title="ht.h" alt="" coords="739,408,783,435"/>
+<area shape="rect" id="node28" href="confline_8h_source.html" title="confline.h" alt="" coords="1294,483,1373,509"/>
+<area shape="rect" id="node29" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="807,408,910,435"/>
+<area shape="rect" id="node30" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="155,408,245,435"/>
+<area shape="rect" id="node31" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="619,856,730,883"/>
+<area shape="rect" id="node32" href="util__format_8h_source.html" title="util_format.h" alt="" coords="754,856,849,883"/>
+<area shape="rect" id="node33" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="935,408,1049,435"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1514,856,1590,883"/>
+<area shape="rect" id="node10" href="util_8h.html" title="Headers for util.c. " alt="" coords="985,781,1036,808"/>
+<area shape="rect" id="node13" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1478,557,1573,584"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1889,931,1988,957"/>
+<area shape="rect" id="node11" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="975,856,1046,883"/>
+<area shape="rect" id="node14" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="1081,632,1191,659"/>
+<area shape="rect" id="node16" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1162,781,1241,808"/>
+<area shape="rect" id="node21" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="929,707,1079,733"/>
+<area shape="rect" id="node23" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1325,557,1453,584"/>
+<area shape="rect" id="node35" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1908,259,2001,285"/>
+<area shape="rect" id="node36" href="timers_8h_source.html" title="timers.h" alt="" coords="2483,856,2552,883"/>
+<area shape="rect" id="node37" href="handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="161,333,239,360"/>
+<area shape="rect" id="node41" href="hs__ident_8h.html" title="Header file containing circuit and connection identifier data for the whole HS subsytem. " alt="" coords="1020,184,1103,211"/>
+<area shape="rect" id="node42" href="hs__common_8h.html" title="Header file containing common data for the whole HS subsytem. " alt="" coords="1009,259,1113,285"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -202,13 +211,15 @@ Functions</h2></td></tr>
 <tr class="separator:a29f4dbbb0c9b624910fc74fbb399dde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4176722d670efca21d265bc4a1e44ba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circpathbias_8c.html#a4176722d670efca21d265bc4a1e44ba4">pathbias_count_timeout</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
 <tr class="separator:a4176722d670efca21d265bc4a1e44ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe9ef8d49fc04454e5c3cf61b7c5667f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circpathbias_8c.html#afe9ef8d49fc04454e5c3cf61b7c5667f">pathbias_get_close_success_count</a> (<a class="el" href="structentry__guard__t.html">entry_guard_t</a> *guard)</td></tr>
+<tr class="memitem:afe9ef8d49fc04454e5c3cf61b7c5667f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circpathbias_8c.html#afe9ef8d49fc04454e5c3cf61b7c5667f">pathbias_get_close_success_count</a> (entry_guard_t *guard)</td></tr>
 <tr class="separator:afe9ef8d49fc04454e5c3cf61b7c5667f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65437bc034e2202eb60d5cffd285fd48"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circpathbias_8c.html#a65437bc034e2202eb60d5cffd285fd48">pathbias_get_use_success_count</a> (<a class="el" href="structentry__guard__t.html">entry_guard_t</a> *guard)</td></tr>
+<tr class="memitem:a65437bc034e2202eb60d5cffd285fd48"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circpathbias_8c.html#a65437bc034e2202eb60d5cffd285fd48">pathbias_get_use_success_count</a> (entry_guard_t *guard)</td></tr>
 <tr class="separator:a65437bc034e2202eb60d5cffd285fd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. </p>
+<p>This code is currently configured in a warning-only mode, though false positives appear to be rare in practice. There is also support for disabling really bad guards, but it's quite experimental and may have bad anonymity effects.</p>
+<p>The information here is associated with the entry_guard_t object for each guard, and stored persistently in the state file. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a29f4dbbb0c9b624910fc74fbb399dde4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29f4dbbb0c9b624910fc74fbb399dde4">&#9670;&nbsp;</a></span>pathbias_check_close()</h2>
@@ -369,7 +380,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">double pathbias_get_close_success_count </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structentry__guard__t.html">entry_guard_t</a> *&#160;</td>
+          <td class="paramtype">entry_guard_t *&#160;</td>
           <td class="paramname"><em>guard</em></td><td>)</td>
           <td></td>
         </tr>
@@ -377,6 +388,14 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Return the number of circuits counted as successfully closed for this guard.</p>
 <p>Also add in the currently open circuits to give them the benefit of the doubt. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circpathbias_8c_afe9ef8d49fc04454e5c3cf61b7c5667f_cgraph.png" border="0" usemap="#circpathbias_8c_afe9ef8d49fc04454e5c3cf61b7c5667f_cgraph" alt=""/></div>
+<map name="circpathbias_8c_afe9ef8d49fc04454e5c3cf61b7c5667f_cgraph" id="circpathbias_8c_afe9ef8d49fc04454e5c3cf61b7c5667f_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a438f7a3ebb9ad87d9baee6a364441007" title="entry_guard_get_pathbias\l_state" alt="" coords="188,5,359,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -396,14 +415,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>If 1, we actually disable use of guards that fall below the extreme_pct. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circpathbias_8c_ac18b8c5463815ebbcb9aa440e59b2f83_cgraph.png" border="0" usemap="#circpathbias_8c_ac18b8c5463815ebbcb9aa440e59b2f83_cgraph" alt=""/></div>
-<map name="circpathbias_8c_ac18b8c5463815ebbcb9aa440e59b2f83_cgraph" id="circpathbias_8c_ac18b8c5463815ebbcb9aa440e59b2f83_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="220,5,392,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -423,14 +434,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>The extreme rate is the rate at which we would drop the guard, if pb_dropguard is also set. Otherwise we just warn. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circpathbias_8c_a4a34b780cfd22bf4b72e37aaf6e0e2c0_cgraph.png" border="0" usemap="#circpathbias_8c_a4a34b780cfd22bf4b72e37aaf6e0e2c0_cgraph" alt=""/></div>
-<map name="circpathbias_8c_a4a34b780cfd22bf4b72e37aaf6e0e2c0_cgraph" id="circpathbias_8c_a4a34b780cfd22bf4b72e37aaf6e0e2c0_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="232,5,404,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -450,14 +453,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>The extreme use rate is the rate at which we would drop the guard, if pb_dropguard is also set. Otherwise we just warn. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circpathbias_8c_a01c97964a06ef3c2ef14e6f45eb957c7_cgraph.png" border="0" usemap="#circpathbias_8c_a01c97964a06ef3c2ef14e6f45eb957c7_cgraph" alt=""/></div>
-<map name="circpathbias_8c_a01c97964a06ef3c2ef14e6f45eb957c7_cgraph" id="circpathbias_8c_a01c97964a06ef3c2ef14e6f45eb957c7_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="204,13,376,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -470,7 +465,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">double pathbias_get_use_success_count </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structentry__guard__t.html">entry_guard_t</a> *&#160;</td>
+          <td class="paramtype">entry_guard_t *&#160;</td>
           <td class="paramname"><em>guard</em></td><td>)</td>
           <td></td>
         </tr>
@@ -478,6 +473,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Return the number of circuits counted as successfully used this guard.</p>
 <p>Also add in the currently open circuits that we are attempting to use to give them the benefit of the doubt. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circpathbias_8c_a65437bc034e2202eb60d5cffd285fd48_cgraph.png" border="0" usemap="#circpathbias_8c_a65437bc034e2202eb60d5cffd285fd48_cgraph" alt=""/></div>
+<map name="circpathbias_8c_a65437bc034e2202eb60d5cffd285fd48_cgraph" id="circpathbias_8c_a65437bc034e2202eb60d5cffd285fd48_cgraph">
+<area shape="rect" id="node2" href="entrynodes_8c.html#a438f7a3ebb9ad87d9baee6a364441007" title="entry_guard_get_pathbias\l_state" alt="" coords="233,5,404,47"/>
+</map>
+</div>
 
 </div>
 </div>

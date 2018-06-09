@@ -1,6 +1,3 @@
 <map id="tor_inet_ntop" name="tor_inet_ntop">
-<area shape="rect" id="node2" href="$address_8h.html#a4ec1578f8fab114634b8b58d68d02be8" title="tor_dup_ip" alt="" coords="151,64,233,91"/>
-<area shape="rect" id="node3" href="$circuitbuild_8h.html#acccfc2539c7dd13ca9db049b3decc386" title="inform_testing_reachability" alt="" coords="281,5,459,32"/>
-<area shape="rect" id="node4" href="$router_8h.html#a81d0eddf34d18d1da24a0f14e1c54c1f" title="router_orport_found\l_reachable" alt="" coords="303,57,437,98"/>
-<area shape="rect" id="node5" href="$router_8h.html#ab0152c6014466eaafa2e666bb38ba16b" title="router_dirport_found\l_reachable" alt="" coords="301,122,439,163"/>
+<area shape="rect" id="node2" href="$address_8h.html#a4ec1578f8fab114634b8b58d68d02be8" title="tor_dup_ip" alt="" coords="151,5,233,32"/>
 </map>

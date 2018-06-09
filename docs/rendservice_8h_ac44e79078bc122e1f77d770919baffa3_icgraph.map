@@ -1,7 +1,5 @@
 <map id="rend_hsdir_routers_changed" name="rend_hsdir_routers_changed">
-<area shape="rect" id="node2" href="$nodelist_8h.html#a32099caf417dbc0e15ea398b1bc2ea16" title="router_dir_info_changed" alt="" coords="183,71,343,98"/>
-<area shape="rect" id="node3" href="$networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="391,5,605,47"/>
-<area shape="rect" id="node5" href="$routerlist_8h.html#a8c328828cd94c3bb84044c9003f8c78f" title="routerlist_remove" alt="" coords="437,71,559,98"/>
-<area shape="rect" id="node6" href="$routerlist_8h.html#a9bd4c9992a1cf27e95e2829ae40c7b79" title="dir_server_add" alt="" coords="445,122,551,149"/>
-<area shape="rect" id="node4" href="$routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="653,5,787,47"/>
+<area shape="rect" id="node2" href="$nodelist_8h.html#a32099caf417dbc0e15ea398b1bc2ea16" title="router_dir_info_changed" alt="" coords="183,31,343,57"/>
+<area shape="rect" id="node3" href="$routerlist_8h.html#a8c328828cd94c3bb84044c9003f8c78f" title="routerlist_remove" alt="" coords="391,5,513,32"/>
+<area shape="rect" id="node4" href="$routerlist_8h.html#a9bd4c9992a1cf27e95e2829ae40c7b79" title="dir_server_add" alt="" coords="399,56,505,83"/>
 </map>

@@ -1,3 +1,6 @@
 <map id="entry_guard_get_by_id_digest" name="entry_guard_get_by_id_digest">
-<area shape="rect" id="node2" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="189,13,276,39"/>
+<area shape="rect" id="node2" href="$entrynodes_8c.html#a9ecb7c2ddf9746ab0b0cb62a2239b6f6" title="entry_guard_get_by\l_id_digest_for_guard\l_selection" alt="" coords="201,5,344,61"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="189,85,356,112"/>
+<area shape="rect" id="node3" href="$entrynodes_8c.html#a85c4a90c7407cd8c13fae402c414a5c8" title="get_sampled_guard_with_id" alt="" coords="404,20,587,47"/>
+<area shape="rect" id="node4" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="635,20,721,47"/>
 </map>

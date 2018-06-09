@@ -1,5 +1,8 @@
 <map id="parse_protocol_list" name="parse_protocol_list">
-<area shape="rect" id="node2" href="$protover_8h.html#a82c169e6b51ef74fff02c0d43734d118" title="protocol_list_supports\l_protocol" alt="" coords="189,5,338,47"/>
-<area shape="rect" id="node3" href="$protover_8h.html#aa28fb6499696543d0c8c1923f92ed8c4" title="protover_compute_vote" alt="" coords="184,71,343,98"/>
-<area shape="rect" id="node4" href="$protover_8h.html#a59c4f8d7d59f4ce0714096fb4ca67071" title="protover_all_supported" alt="" coords="187,122,340,149"/>
+<area shape="rect" id="node2" href="$protover_8h.html#a9c8395ce78704a29631050334087ab9d" title="protover_contains_long\l_protocol_names" alt="" coords="185,5,341,47"/>
+<area shape="rect" id="node3" href="$protover_8h.html#a82c169e6b51ef74fff02c0d43734d118" title="protocol_list_supports\l_protocol" alt="" coords="189,71,338,112"/>
+<area shape="rect" id="node5" href="$protover_8h.html#aa1b923963d510522ad8754aab3796965" title="protocol_list_supports\l_protocol_or_later" alt="" coords="189,136,338,177"/>
+<area shape="rect" id="node6" href="$protover_8h.html#aa28fb6499696543d0c8c1923f92ed8c4" title="protover_compute_vote" alt="" coords="184,202,343,229"/>
+<area shape="rect" id="node7" href="$protover_8h.html#a59c4f8d7d59f4ce0714096fb4ca67071" title="protover_all_supported" alt="" coords="187,253,340,279"/>
+<area shape="rect" id="node4" href="$routerparse_8c.html#a3fe59c4a0303366c3de158b6e59006cf" title="summarize_protover\l_flags" alt="" coords="391,71,531,112"/>
 </map>

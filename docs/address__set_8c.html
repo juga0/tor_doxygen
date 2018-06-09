@@ -75,11 +75,11 @@ $(function() {
 <p>Implementation for a set of addresses.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;orconfig.h&quot;</code><br />
-<code>#include &quot;address_set.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="address__set_8h_source.html">address_set.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="address_8h_source.html">address.h</a>&quot;</code><br />
 <code>#include &quot;compat.h&quot;</code><br />
 <code>#include &quot;container.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="crypto_8h_source.html">crypto.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="util_8h_source.html">util.h</a>&quot;</code><br />
 <code>#include &quot;siphash.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -87,20 +87,20 @@ Include dependency graph for address_set.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="address__set_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2address__set_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2address__set_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2address__set_8c">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="563,632,642,659"/>
-<area shape="rect" id="node3" href="address__set_8h_source.html" title="address_set.h" alt="" coords="5,483,109,509"/>
-<area shape="rect" id="node5" href="address_8h.html" title="Headers for address.h. " alt="" coords="317,109,395,136"/>
-<area shape="rect" id="node6" href="compat_8h_source.html" title="compat.h" alt="" coords="637,408,713,435"/>
-<area shape="rect" id="node13" href="container_8h_source.html" title="container.h" alt="" coords="763,184,850,211"/>
-<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="780,259,831,285"/>
-<area shape="rect" id="node18" href="siphash_8h_source.html" title="siphash.h" alt="" coords="855,259,934,285"/>
-<area shape="rect" id="node19" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="249,333,319,360"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="343,557,406,584"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1068,557,1167,584"/>
-<area shape="rect" id="node9" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="711,557,819,584"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="438,483,565,509"/>
-<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="958,483,1029,509"/>
-<area shape="rect" id="node17" href="util__bug_8h.html" title="util_bug.h" alt="" coords="1055,333,1134,360"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="627,632,706,659"/>
+<area shape="rect" id="node3" href="address__set_8h.html" title="Types to handle sets of addresses. " alt="" coords="235,483,339,509"/>
+<area shape="rect" id="node6" href="address_8h.html" title="Headers for address.h. " alt="" coords="163,109,242,136"/>
+<area shape="rect" id="node7" href="compat_8h_source.html" title="compat.h" alt="" coords="609,408,685,435"/>
+<area shape="rect" id="node14" href="container_8h_source.html" title="container.h" alt="" coords="709,184,795,211"/>
+<area shape="rect" id="node15" href="util_8h.html" title="Headers for util.c. " alt="" coords="725,259,776,285"/>
+<area shape="rect" id="node19" href="siphash_8h_source.html" title="siphash.h" alt="" coords="801,259,879,285"/>
+<area shape="rect" id="node20" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="52,184,153,211"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="211,557,274,584"/>
+<area shape="rect" id="node8" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="929,557,1028,584"/>
+<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="659,557,767,584"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="363,483,490,509"/>
+<area shape="rect" id="node16" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="934,483,1005,509"/>
+<area shape="rect" id="node18" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="839,333,918,360"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -235,7 +235,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="address__set_8c_a691440eb018370aa9177ea208a9ae311_icgraph.png" border="0" usemap="#address__set_8c_a691440eb018370aa9177ea208a9ae311_icgraph" alt=""/></div>
 <map name="address__set_8c_a691440eb018370aa9177ea208a9ae311_icgraph" id="address__set_8c_a691440eb018370aa9177ea208a9ae311_icgraph">
-<area shape="rect" id="node2" href="address__set_8c.html#a29c25de2c0e00f704132f4000d483d66" title="address_set_add_ipv4h" alt="" coords="175,5,333,32"/>
+<area shape="rect" id="node2" href="address__set_8h.html#a29c25de2c0e00f704132f4000d483d66" title="address_set_add_ipv4h" alt="" coords="175,5,333,32"/>
 </map>
 </div>
 
@@ -294,7 +294,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Release all storage associated with <b>set</b> </p>
+<p>Release all storage associated with <b>set</b>. </p>
 
 </div>
 </div>
@@ -350,7 +350,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true if <b>addr</b> if a member of <b>set</b>. (And probably, return false if <b>addr</b> is not a member of set.) </p>
+<p>Return true if <b>addr</b> is a member of <b>set</b>. (And probably, return false if <b>addr</b> is not a member of set.) </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

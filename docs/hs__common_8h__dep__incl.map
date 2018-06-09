@@ -45,7 +45,7 @@
 <area shape="rect" id="node38" href="$hs__circuit_8h.html" title="Header file containing circuit data for the whole HS subsytem. " alt="" coords="3500,325,3648,381"/>
 <area shape="rect" id="node39" href="$hs__cell_8h.html" title="Header file containing cell data for the whole HS subsytem. " alt="" coords="4821,325,4969,381"/>
 <area shape="rect" id="node40" href="$test__hs__cell_8c.html" title="Test hidden service cell functionality. " alt="" coords="5143,436,5298,492"/>
-<area shape="rect" id="node42" href="$hs__stats_8c.html" title="Keeps stats about the activity of our hidden service. " alt="" coords="4649,325,4797,381"/>
+<area shape="rect" id="node42" href="$hs__stats_8c.html" title="Keeps stats about the activity of our onion service(s). " alt="" coords="4649,325,4797,381"/>
 <area shape="rect" id="node43" href="$test__periodic__event_8c.html" title="Test the periodic events that Tor uses for different roles. They are part of the libevent mainloop..." alt="" coords="4375,317,4523,388"/>
 <area shape="rect" id="node50" href="$hs__descriptor_8c.html" title="Handle hidden service descriptor encoding/decoding. " alt="" coords="350,436,502,492"/>
 </map>

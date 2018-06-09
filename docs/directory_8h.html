@@ -65,6 +65,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -72,28 +73,77 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Header file for <a class="el" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv...">directory.c</a>.  
+<p>Header file for <a class="el" href="directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. ">directory.c</a>.  
 <a href="#details">More...</a></p>
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &quot;<a class="el" href="hs__ident_8h_source.html">hs_ident.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for directory.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2directory_8h" alt=""/></div>
+<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2directory_8h" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2directory_8h">
+<area shape="rect" id="node2" href="hs__ident_8h.html" title="Header file containing circuit and connection identifier data for the whole HS subsytem. " alt="" coords="38,109,121,136"/>
+<area shape="rect" id="node3" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="413,408,538,435"/>
+<area shape="rect" id="node24" href="hs__common_8h.html" title="Header file containing common data for the whole HS subsytem. " alt="" coords="93,184,197,211"/>
+<area shape="rect" id="node4" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1433,1005,1531,1032"/>
+<area shape="rect" id="node5" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="899,1005,961,1032"/>
+<area shape="rect" id="node8" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="392,483,535,509"/>
+<area shape="rect" id="node12" href="util_8h.html" title="Headers for util.c. " alt="" coords="1147,707,1198,733"/>
+<area shape="rect" id="node6" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1459,1080,1537,1107"/>
+<area shape="rect" id="node9" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="735,557,845,584"/>
+<area shape="rect" id="node22" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="972,557,1123,584"/>
+<area shape="rect" id="node11" href="container_8h_source.html" title="container.h" alt="" coords="1331,632,1417,659"/>
+<area shape="rect" id="node21" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1335,707,1413,733"/>
+<area shape="rect" id="node13" href="compat_8h_source.html" title="compat.h" alt="" coords="1612,856,1688,883"/>
+<area shape="rect" id="node18" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="968,931,1039,957"/>
+<area shape="rect" id="node20" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="1381,781,1460,808"/>
+<area shape="rect" id="node15" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1556,1005,1664,1032"/>
+<area shape="rect" id="node17" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1317,931,1444,957"/>
+<area shape="rect" id="node25" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1109,259,1153,285"/>
+<area shape="rect" id="node43" href="ed25519__cert_8h_source.html" title="ed25519_cert.h" alt="" coords="89,259,200,285"/>
+<area shape="rect" id="node26" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1195,408,1265,435"/>
+<area shape="rect" id="node28" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="2012,632,2077,659"/>
+<area shape="rect" id="node29" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1028,333,1141,360"/>
+<area shape="rect" id="node30" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1911,408,1973,435"/>
+<area shape="rect" id="node33" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="463,333,554,360"/>
+<area shape="rect" id="node34" href="address_8h.html" title="Headers for address.h. " alt="" coords="1709,557,1788,584"/>
+<area shape="rect" id="node35" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2327,931,2455,957"/>
+<area shape="rect" id="node36" href="ht_8h_source.html" title="ht.h" alt="" coords="579,333,623,360"/>
+<area shape="rect" id="node37" href="confline_8h_source.html" title="confline.h" alt="" coords="1381,483,1460,509"/>
+<area shape="rect" id="node38" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="647,333,749,360"/>
+<area shape="rect" id="node39" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="774,333,865,360"/>
+<area shape="rect" id="node40" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="595,931,705,957"/>
+<area shape="rect" id="node41" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1853,931,1948,957"/>
+<area shape="rect" id="node42" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="889,333,1003,360"/>
+<area shape="rect" id="node27" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1524,483,1619,509"/>
+<area shape="rect" id="node31" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1878,483,2006,509"/>
+<area shape="rect" id="node45" href="trunnel_8h_source.html" title="trunnel.h" alt="" coords="53,333,125,360"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="directory_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2directory_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2directory_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2directory_8hdep">
-<area shape="rect" id="node2" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="177,109,325,165"/>
-<area shape="rect" id="node4" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="349,109,521,165"/>
-<area shape="rect" id="node5" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="545,109,693,165"/>
-<area shape="rect" id="node6" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="717,109,865,165"/>
-<area shape="rect" id="node7" href="dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="889,109,1037,165"/>
-<area shape="rect" id="node8" href="dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="1061,109,1209,165"/>
-<area shape="rect" id="node9" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="1233,109,1381,165"/>
-<area shape="rect" id="node10" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="1405,109,1553,165"/>
-<area shape="rect" id="node11" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="1577,109,1725,165"/>
-<area shape="rect" id="node12" href="networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. " alt="" coords="1749,109,1905,165"/>
-<area shape="rect" id="node13" href="rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="1929,109,2077,165"/>
-<area shape="rect" id="node14" href="rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="2101,109,2249,165"/>
-<area shape="rect" id="node15" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="2273,109,2421,165"/>
-<area shape="rect" id="node16" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="2445,109,2593,165"/>
+<area shape="rect" id="node2" href="bridges_8c.html" title="Code to manage bridges and bridge selection. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="521,109,693,165"/>
+<area shape="rect" id="node6" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="717,109,865,165"/>
+<area shape="rect" id="node7" href="dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="889,109,1045,165"/>
+<area shape="rect" id="node8" href="directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="1069,109,1217,165"/>
+<area shape="rect" id="node9" href="dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="1241,109,1389,165"/>
+<area shape="rect" id="node10" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="1413,109,1561,165"/>
+<area shape="rect" id="node11" href="hs__client_8c.html" title="Implement next generation hidden service client functionality. " alt="" coords="1585,109,1733,165"/>
+<area shape="rect" id="node12" href="hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="1757,109,1905,165"/>
+<area shape="rect" id="node13" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="1929,109,2077,165"/>
+<area shape="rect" id="node14" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="2101,109,2249,165"/>
+<area shape="rect" id="node15" href="networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache..." alt="" coords="2273,109,2429,165"/>
+<area shape="rect" id="node16" href="rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="2453,109,2601,165"/>
+<area shape="rect" id="node17" href="rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="2625,109,2773,165"/>
+<area shape="rect" id="node18" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="2797,109,2945,165"/>
+<area shape="rect" id="node19" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="2969,109,3117,165"/>
+<area shape="rect" id="node20" href="test__hs__cache_8c.html" title="Test hidden service caches. " alt="" coords="3142,109,3313,165"/>
+<area shape="rect" id="node21" href="test__hs__common_8c.html" title="Test hidden service common functionalities. " alt="" coords="3337,109,3523,165"/>
 </map>
 </div>
 </div>
@@ -101,6 +151,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ac543b408e9c1e7cb25741adcac0faa3d"><td class="memItemLeft" align="right" valign="top"><a id="ac543b408e9c1e7cb25741adcac0faa3d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>directory_request_free</b>(req)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a>, <a class="el" href="directory_8h.html#a76bf5075b1b3e4131f2c4cf5ca0f0d8b">directory_request_free_</a>, (req))</td></tr>
+<tr class="separator:ac543b408e9c1e7cb25741adcac0faa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5c7c897720d726898e0e6ebfc793eb0"><td class="memItemLeft" align="right" valign="top"><a id="aa5c7c897720d726898e0e6ebfc793eb0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DSR_HEX</b>&#160;&#160;&#160;(1&lt;&lt;0)</td></tr>
 <tr class="separator:aa5c7c897720d726898e0e6ebfc793eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,6 +168,11 @@ Macros</h2></td></tr>
 <tr class="separator:a3c7312e604bcbe44a63173509c8270f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd9525e627745f75c67854d988c2e0da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#abd9525e627745f75c67854d988c2e0da">download_status_failed</a>(dls,  sc)</td></tr>
 <tr class="separator:abd9525e627745f75c67854d988c2e0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a7cb5ccaf42b2a548659cd3f3d16adcf9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a></td></tr>
+<tr class="separator:a7cb5ccaf42b2a548659cd3f3d16adcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -139,15 +197,49 @@ Functions</h2></td></tr>
 <tr class="memitem:a5230127838f35e68b6a9ee6ded4ad8ca"><td class="memItemLeft" align="right" valign="top"><a id="a5230127838f35e68b6a9ee6ded4ad8ca"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>directory_must_use_begindir</b> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
 <tr class="separator:a5230127838f35e68b6a9ee6ded4ad8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afadfff0e934154568f5b02d224232930"><td class="memItemLeft" align="right" valign="top"><a id="afadfff0e934154568f5b02d224232930"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (void, directory_initiate_command_routerstatus,(const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *status, uint8_t dir_purpose, uint8_t router_purpose, <a class="el" href="directory_8h.html#a1c9628f500a2efb8bacf72a85faf121b">dir_indirection_t</a> indirection, const char *resource, const char *payload, size_t payload_len, time_t if_modified_since))</td></tr>
-<tr class="separator:afadfff0e934154568f5b02d224232930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57800839006f921803cc3087b9ba59c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a57800839006f921803cc3087b9ba59c9">directory_initiate_command_routerstatus_rend</a> (const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *status, uint8_t dir_purpose, uint8_t router_purpose, <a class="el" href="directory_8h.html#a1c9628f500a2efb8bacf72a85faf121b">dir_indirection_t</a> indirection, const char *resource, const char *payload, size_t payload_len, time_t if_modified_since, const <a class="el" href="structrend__data__t.html">rend_data_t</a> *rend_query)</td></tr>
-<tr class="separator:a57800839006f921803cc3087b9ba59c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43bc796c4088dbcdd37736c26f6f3275"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a43bc796c4088dbcdd37736c26f6f3275">parse_http_response</a> (const char *headers, int *code, time_t *date, <a class="el" href="torgzip_8h.html#a97a284cf1b98eccbe7964617ed797eee">compress_method_t</a> *compression, char **response)</td></tr>
+<tr class="memitem:a85c888ac5ae7e9877281b1c87483cee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a85c888ac5ae7e9877281b1c87483cee1">directory_request_new</a> (uint8_t dir_purpose)</td></tr>
+<tr class="separator:a85c888ac5ae7e9877281b1c87483cee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bf5075b1b3e4131f2c4cf5ca0f0d8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a76bf5075b1b3e4131f2c4cf5ca0f0d8b">directory_request_free_</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req)</td></tr>
+<tr class="separator:a76bf5075b1b3e4131f2c4cf5ca0f0d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fad9324c6504d8bf509247168e1b819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a0fad9324c6504d8bf509247168e1b819">directory_request_set_or_addr_port</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, const <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *p)</td></tr>
+<tr class="separator:a0fad9324c6504d8bf509247168e1b819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54586f3724c9b07dc9a28da6c496f92c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a54586f3724c9b07dc9a28da6c496f92c">directory_request_set_dir_addr_port</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, const <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *p)</td></tr>
+<tr class="separator:a54586f3724c9b07dc9a28da6c496f92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e97475dd051b61e3e32585a7a3cf6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#aa8e97475dd051b61e3e32585a7a3cf6c">directory_request_set_directory_id_digest</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, const char *digest)</td></tr>
+<tr class="separator:aa8e97475dd051b61e3e32585a7a3cf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51da81e00e4747ab55fb4af6dc1bc3c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a51da81e00e4747ab55fb4af6dc1bc3c8">directory_request_set_guard_state</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, struct circuit_guard_state_t *state)</td></tr>
+<tr class="separator:a51da81e00e4747ab55fb4af6dc1bc3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9573f64df7aa31baf290b23ca8dbcee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a9573f64df7aa31baf290b23ca8dbcee2">directory_request_set_router_purpose</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, uint8_t router_purpose)</td></tr>
+<tr class="separator:a9573f64df7aa31baf290b23ca8dbcee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c93da738cdb4945e336e4efc37dce7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a73c93da738cdb4945e336e4efc37dce7">directory_request_set_indirection</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, <a class="el" href="directory_8h.html#a1c9628f500a2efb8bacf72a85faf121b">dir_indirection_t</a> indirection)</td></tr>
+<tr class="separator:a73c93da738cdb4945e336e4efc37dce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8877f88add95ceea302a569a095569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a0f8877f88add95ceea302a569a095569">directory_request_set_resource</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, const char *resource)</td></tr>
+<tr class="separator:a0f8877f88add95ceea302a569a095569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f9c30557e169548ab5871462d6ddd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#ac2f9c30557e169548ab5871462d6ddd6">directory_request_set_payload</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, const char *payload, size_t payload_len)</td></tr>
+<tr class="separator:ac2f9c30557e169548ab5871462d6ddd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2378f74f545dc3bd8f37daaacbf56294"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a2378f74f545dc3bd8f37daaacbf56294">directory_request_set_if_modified_since</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, time_t if_modified_since)</td></tr>
+<tr class="separator:a2378f74f545dc3bd8f37daaacbf56294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa038c1c27a5a5469ce9745a65fe1458e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#aa038c1c27a5a5469ce9745a65fe1458e">directory_request_set_rend_query</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, const <a class="el" href="structrend__data__t.html">rend_data_t</a> *query)</td></tr>
+<tr class="separator:aa038c1c27a5a5469ce9745a65fe1458e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb1872de41e8c93f3995a3cd6de31382"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#afb1872de41e8c93f3995a3cd6de31382">directory_request_upload_set_hs_ident</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, const <a class="el" href="strucths__ident__dir__conn__t.html">hs_ident_dir_conn_t</a> *ident)</td></tr>
+<tr class="separator:afb1872de41e8c93f3995a3cd6de31382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8944f29dae81e9931e0bdef3b39e407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#ad8944f29dae81e9931e0bdef3b39e407">directory_request_fetch_set_hs_ident</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, const <a class="el" href="strucths__ident__dir__conn__t.html">hs_ident_dir_conn_t</a> *ident)</td></tr>
+<tr class="separator:ad8944f29dae81e9931e0bdef3b39e407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563eeb61880279783771d2f65b837c50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a563eeb61880279783771d2f65b837c50">directory_request_set_routerstatus</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *rs)</td></tr>
+<tr class="separator:a563eeb61880279783771d2f65b837c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68afba474b93d9917f8b76d739b8505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#af68afba474b93d9917f8b76d739b8505">directory_request_add_header</a> (<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *req, const char *key, const char *val)</td></tr>
+<tr class="separator:af68afba474b93d9917f8b76d739b8505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa715fde8dae46d5ea54b7d324d591951"><td class="memItemLeft" align="right" valign="top"><a id="aa715fde8dae46d5ea54b7d324d591951"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (void, directory_initiate_request,(<a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *request))</td></tr>
+<tr class="separator:aa715fde8dae46d5ea54b7d324d591951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43bc796c4088dbcdd37736c26f6f3275"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a43bc796c4088dbcdd37736c26f6f3275">parse_http_response</a> (const char *headers, int *code, time_t *date, <a class="el" href="compress_8h.html#a97a284cf1b98eccbe7964617ed797eee">compress_method_t</a> *compression, char **response)</td></tr>
 <tr class="separator:a43bc796c4088dbcdd37736c26f6f3275"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac275636256d237d3858ddd9c9f008cc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#ac275636256d237d3858ddd9c9f008cc0">connection_dir_is_encrypted</a> (<a class="el" href="structdir__connection__t.html">dir_connection_t</a> *conn)</td></tr>
-<tr class="separator:ac275636256d237d3858ddd9c9f008cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeaaed095405cd4aad17cf7a1197de3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#adeaaed095405cd4aad17cf7a1197de3c">parse_http_command</a> (const char *headers, char **command_out, char **url_out)</td></tr>
+<tr class="separator:adeaaed095405cd4aad17cf7a1197de3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd94a3fa7e78209bcf82533c1128d19"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a6cd94a3fa7e78209bcf82533c1128d19">http_get_header</a> (const char *headers, const char *which)</td></tr>
+<tr class="separator:a6cd94a3fa7e78209bcf82533c1128d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ea9fd0d00375fc50652182d4d35a93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a60ea9fd0d00375fc50652182d4d35a93">connection_dir_is_encrypted</a> (const <a class="el" href="structdir__connection__t.html">dir_connection_t</a> *conn)</td></tr>
+<tr class="separator:a60ea9fd0d00375fc50652182d4d35a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0f61e005774a8b52467b2dea7528d2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#ad0f61e005774a8b52467b2dea7528d2a">connection_dir_reached_eof</a> (<a class="el" href="structdir__connection__t.html">dir_connection_t</a> *conn)</td></tr>
 <tr class="separator:ad0f61e005774a8b52467b2dea7528d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2bfa4b827d711bd2ed6bdeb506c8b6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#af2bfa4b827d711bd2ed6bdeb506c8b6d">connection_dir_process_inbuf</a> (<a class="el" href="structdir__connection__t.html">dir_connection_t</a> *conn)</td></tr>
@@ -158,10 +250,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>directory_must_use_beg
 <tr class="separator:a226f54e5ed405ed992c6a8e79c63a59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae225c64a35559d7a6e7b06d8fd5c121c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#ae225c64a35559d7a6e7b06d8fd5c121c">connection_dir_about_to_close</a> (<a class="el" href="structdir__connection__t.html">dir_connection_t</a> *dir_conn)</td></tr>
 <tr class="separator:ae225c64a35559d7a6e7b06d8fd5c121c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae333cd0dfde56a83ff29aef322a182c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#ae333cd0dfde56a83ff29aef322a182c4">directory_initiate_command</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *or_addr, uint16_t or_port, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *dir_addr, uint16_t dir_port, const char *digest, uint8_t dir_purpose, uint8_t router_purpose, <a class="el" href="directory_8h.html#a1c9628f500a2efb8bacf72a85faf121b">dir_indirection_t</a> indirection, const char *resource, const char *payload, size_t payload_len, time_t if_modified_since)</td></tr>
-<tr class="separator:ae333cd0dfde56a83ff29aef322a182c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3cd3a5081cf507805b4b01c907dd168"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#ab3cd3a5081cf507805b4b01c907dd168">dir_split_resource_into_fingerprints</a> (const char *resource, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *fp_out, int *compressed_out, int flags)</td></tr>
 <tr class="separator:ab3cd3a5081cf507805b4b01c907dd168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad732f40b40681f30b1bb905b15a09e0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#ad732f40b40681f30b1bb905b15a09e0e">dir_split_resource_into_spoolable</a> (const char *resource, enum <a class="el" href="dirserv_8h.html#aac355320fd3daf8319b7fb1839c976d3">dir_spool_source_t</a> source, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *spool_out, int *compressed_out, int flags)</td></tr>
+<tr class="separator:ad732f40b40681f30b1bb905b15a09e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37450cb94cd7190d5030b4429ba408c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a37450cb94cd7190d5030b4429ba408c2">dir_split_resource_into_fingerprint_pairs</a> (const char *res, <a class="el" href="structsmartlist__t.html">smartlist_t</a> *pairs_out)</td></tr>
 <tr class="separator:a37450cb94cd7190d5030b4429ba408c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede673a7dd7f659a7139bec458e40596"><td class="memItemLeft" align="right" valign="top"><a id="aede673a7dd7f659a7139bec458e40596"></a>
@@ -178,19 +270,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>note_request</b> (con
 <tr class="separator:abfbbd8729f4c0f94b6080020a729bc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0c46dd4ad90ff8350a03414a4d79307"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#ae0c46dd4ad90ff8350a03414a4d79307">download_status_reset</a> (<a class="el" href="structdownload__status__t.html">download_status_t</a> *dls)</td></tr>
 <tr class="separator:ae0c46dd4ad90ff8350a03414a4d79307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfdb8594e1a676e38ca79913320dea3e"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#acfdb8594e1a676e38ca79913320dea3e">download_status_get_next_attempt_at</a> (const <a class="el" href="structdownload__status__t.html">download_status_t</a> *dls)</td></tr>
+<tr class="separator:acfdb8594e1a676e38ca79913320dea3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59a315ee3b1551a73aceac163faecd85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a59a315ee3b1551a73aceac163faecd85">download_status_get_n_failures</a> (const <a class="el" href="structdownload__status__t.html">download_status_t</a> *dls)</td></tr>
 <tr class="separator:a59a315ee3b1551a73aceac163faecd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a465b447ad179780a88ffb88f1aeae12e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a465b447ad179780a88ffb88f1aeae12e">download_status_get_n_attempts</a> (const <a class="el" href="structdownload__status__t.html">download_status_t</a> *dls)</td></tr>
 <tr class="separator:a465b447ad179780a88ffb88f1aeae12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfdb8594e1a676e38ca79913320dea3e"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#acfdb8594e1a676e38ca79913320dea3e">download_status_get_next_attempt_at</a> (const <a class="el" href="structdownload__status__t.html">download_status_t</a> *dls)</td></tr>
-<tr class="separator:acfdb8594e1a676e38ca79913320dea3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9295a0181da0aabb17bd451f4b24f9bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a9295a0181da0aabb17bd451f4b24f9bb">purpose_needs_anonymity</a> (uint8_t dir_purpose, uint8_t router_purpose)</td></tr>
-<tr class="separator:a9295a0181da0aabb17bd451f4b24f9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af70528e82e9fdd7992b169feeda182ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#af70528e82e9fdd7992b169feeda182ee">is_sensitive_dir_purpose</a> (uint8_t dir_purpose)</td></tr>
-<tr class="separator:af70528e82e9fdd7992b169feeda182ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303b2f05c493a74b33537b47b5f00fe0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html#a303b2f05c493a74b33537b47b5f00fe0">purpose_needs_anonymity</a> (uint8_t dir_purpose, uint8_t router_purpose, const char *resource)</td></tr>
+<tr class="separator:a303b2f05c493a74b33537b47b5f00fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header file for <a class="el" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv...">directory.c</a>. </p>
+<div class="textblock"><p>Header file for <a class="el" href="directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. ">directory.c</a>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="abd9525e627745f75c67854d988c2e0da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd9525e627745f75c67854d988c2e0da">&#9670;&nbsp;</a></span>download_status_failed</h2>
@@ -217,9 +307,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>note_request</b> (con
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="directory_8h.html#ad030aefd2edb06cac0a0477457631fab">download_status_increment_failure</a>((dls), (sc), NULL,                  \</div><div class="line">                                    <a class="code" href="router_8c.html#ab23297b12b098da9eac98126a587aa3b">dir_server_mode</a>(get_options()), \</div><div class="line">                                    time(NULL))</div><div class="ttc" id="router_8c_html_ab23297b12b098da9eac98126a587aa3b"><div class="ttname"><a href="router_8c.html#ab23297b12b098da9eac98126a587aa3b">dir_server_mode</a></div><div class="ttdeci">int dir_server_mode(const or_options_t *options)</div><div class="ttdef"><b>Definition:</b> router.c:1236</div></div>
-<div class="ttc" id="directory_8h_html_ad030aefd2edb06cac0a0477457631fab"><div class="ttname"><a href="directory_8h.html#ad030aefd2edb06cac0a0477457631fab">download_status_increment_failure</a></div><div class="ttdeci">time_t download_status_increment_failure(download_status_t *dls, int status_code, const char *item, int server, time_t now)</div><div class="ttdef"><b>Definition:</b> directory.c:3947</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="directory_8h.html#ad030aefd2edb06cac0a0477457631fab">download_status_increment_failure</a>((dls), (sc), NULL,                  \</div><div class="line">                                    <a class="code" href="router_8c.html#ab23297b12b098da9eac98126a587aa3b">dir_server_mode</a>(get_options()), \</div><div class="line">                                    time(NULL))</div><div class="ttc" id="router_8c_html_ab23297b12b098da9eac98126a587aa3b"><div class="ttname"><a href="router_8c.html#ab23297b12b098da9eac98126a587aa3b">dir_server_mode</a></div><div class="ttdeci">int dir_server_mode(const or_options_t *options)</div><div class="ttdef"><b>Definition:</b> router.c:1387</div></div>
+<div class="ttc" id="directory_8h_html_ad030aefd2edb06cac0a0477457631fab"><div class="ttname"><a href="directory_8h.html#ad030aefd2edb06cac0a0477457631fab">download_status_increment_failure</a></div><div class="ttdeci">time_t download_status_increment_failure(download_status_t *dls, int status_code, const char *item, int server, time_t now)</div><div class="ttdef"><b>Definition:</b> directory.c:5487</div></div>
 </div><!-- fragment --><p>Increment the failure count of the <a class="el" href="structdownload__status__t.html">download_status_t</a> <b>dls</b>, with the optional status code <b>sc</b>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a7cb5ccaf42b2a548659cd3f3d16adcf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb5ccaf42b2a548659cd3f3d16adcf9">&#9670;&nbsp;</a></span>directory_request_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> <a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A directory_request_t describes the information about a directory request at the client side. It describes what we're going to ask for, which directory we're going to ask for it, how we're going to contact that directory, and (in some cases) what to do with it when we're done. </p>
 
 </div>
 </div>
@@ -323,8 +429,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ac275636256d237d3858ddd9c9f008cc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac275636256d237d3858ddd9c9f008cc0">&#9670;&nbsp;</a></span>connection_dir_is_encrypted()</h2>
+<a id="a60ea9fd0d00375fc50652182d4d35a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ea9fd0d00375fc50652182d4d35a93">&#9670;&nbsp;</a></span>connection_dir_is_encrypted()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,13 +438,21 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int connection_dir_is_encrypted </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structdir__connection__t.html">dir_connection_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdir__connection__t.html">dir_connection_t</a> *&#160;</td>
           <td class="paramname"><em>conn</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Return true iff anything we say on <b>conn</b> is being encrypted before we send it to the client/server. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h_a60ea9fd0d00375fc50652182d4d35a93_icgraph.png" border="0" usemap="#directory_8h_a60ea9fd0d00375fc50652182d4d35a93_icgraph" alt=""/></div>
+<map name="directory_8h_a60ea9fd0d00375fc50652182d4d35a93_icgraph" id="directory_8h_a60ea9fd0d00375fc50652182d4d35a93_icgraph">
+<area shape="rect" id="node2" href="directory_8c.html#a47a1c51a14441dfc298cce6cc85037d3" title="handle_get_hs_descriptor_v3" alt="" coords="240,5,431,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -358,6 +472,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Read handler for directory connections. (That's connections <em>to</em> directory servers and connections <em>at</em> directory servers.) </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h_af2bfa4b827d711bd2ed6bdeb506c8b6d_cgraph.png" border="0" usemap="#directory_8h_af2bfa4b827d711bd2ed6bdeb506c8b6d_cgraph" alt=""/></div>
+<map name="directory_8h_af2bfa4b827d711bd2ed6bdeb506c8b6d_cgraph" id="directory_8h_af2bfa4b827d711bd2ed6bdeb506c8b6d_cgraph">
+<area shape="rect" id="node2" href="directory_8c.html#ac2e15267200fb185ec30e74b7d16d834" title="directory_handle_command" alt="" coords="212,13,393,39"/>
+<area shape="rect" id="node3" href="connection_8c.html#a173a993b4f9bcc7522f35c56e65b615f" title="connection_fetch_from\l_buf_http" alt="" coords="441,5,596,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -457,14 +580,53 @@ Here is the call graph for this function:</div>
 <p>Given a directory <b>resource</b> request, containing zero or more strings separated by plus signs, followed optionally by ".z", store the strings, in order, into <b>fp_out</b>. If <b>compressed_out</b> is non-NULL, set it to 1 if the resource ends in ".z", else set it to 0.</p>
 <p>If (flags &amp; DSR_HEX), then delete all elements that aren't hex digests, and decode the rest. If (flags &amp; DSR_BASE64), then use "-" rather than "+" as a separator, delete all the elements that aren't base64-encoded digests, and decode the rest. If (flags &amp; DSR_DIGEST256), these digests should be 256 bits long; else they should be 160.</p>
 <p>If (flags &amp; DSR_SORT_UNIQ), then sort the list and remove all duplicates. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="directory_8h_ab3cd3a5081cf507805b4b01c907dd168_icgraph.png" border="0" usemap="#directory_8h_ab3cd3a5081cf507805b4b01c907dd168_icgraph" alt=""/></div>
-<map name="directory_8h_ab3cd3a5081cf507805b4b01c907dd168_icgraph" id="directory_8h_ab3cd3a5081cf507805b4b01c907dd168_icgraph">
-<area shape="rect" id="node2" href="dirserv_8h.html#a8fca5a38cd000d8ccabe5bc73e296bb2" title="dirserv_get_routerdescs" alt="" coords="177,13,339,39"/>
-</map>
+
 </div>
+</div>
+<a id="ad732f40b40681f30b1bb905b15a09e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad732f40b40681f30b1bb905b15a09e0e">&#9670;&nbsp;</a></span>dir_split_resource_into_spoolable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dir_split_resource_into_spoolable </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dirserv_8h.html#aac355320fd3daf8319b7fb1839c976d3">dir_spool_source_t</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td>
+          <td class="paramname"><em>spool_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>compressed_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As dir_split_resource_into_fingerprints, but instead fills <b>spool_out</b> with a list of spoolable_resource_t for the resource identified through <b>source</b>. </p>
 
 </div>
 </div>
@@ -533,177 +695,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="directory_8h_a13483821c102fb862ab0d27091d7ffc7_cgraph.png" border="0" usemap="#directory_8h_a13483821c102fb862ab0d27091d7ffc7_cgraph" alt=""/></div>
 <map name="directory_8h_a13483821c102fb862ab0d27091d7ffc7_cgraph" id="directory_8h_a13483821c102fb862ab0d27091d7ffc7_cgraph">
-<area shape="rect" id="node2" href="routerlist_8c.html#aa9b36f7b87463dc114065ea058660ac4" title="router_get_trusted\l_dir_servers" alt="" coords="190,5,317,47"/>
-<area shape="rect" id="node3" href="router_8c.html#abeb0f38915a46f77352900604075d82f" title="router_digest_is_me" alt="" coords="184,71,323,98"/>
-<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="371,71,457,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ae333cd0dfde56a83ff29aef322a182c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae333cd0dfde56a83ff29aef322a182c4">&#9670;&nbsp;</a></span>directory_initiate_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void directory_initiate_command </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *&#160;</td>
-          <td class="paramname"><em>or_addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>or_port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *&#160;</td>
-          <td class="paramname"><em>dir_addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>dir_port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>digest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>dir_purpose</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>router_purpose</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="directory_8h.html#a1c9628f500a2efb8bacf72a85faf121b">dir_indirection_t</a>&#160;</td>
-          <td class="paramname"><em>indirection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>resource</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>payload</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>payload_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>if_modified_since</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Helper for directory_initiate_command_rend: send the command to a server whose OR address/port is <b>or_addr</b>/<b>or_port</b>, whose directory address/port is <b>dir_addr</b>/<b>dir_port</b>, whose identity key digest is <b>digest</b>, with purposes <b>dir_purpose</b> and <b>router_purpose</b>, making an (in)direct connection as specified in <b>indirection</b>, with command <b>resource</b>, <b>payload</b> of <b>payload_len</b>, and asking for a result only <b>if_modified_since</b>. </p>
-
-</div>
-</div>
-<a id="a57800839006f921803cc3087b9ba59c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57800839006f921803cc3087b9ba59c9">&#9670;&nbsp;</a></span>directory_initiate_command_routerstatus_rend()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void directory_initiate_command_routerstatus_rend </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *&#160;</td>
-          <td class="paramname"><em>status</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>dir_purpose</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>router_purpose</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="directory_8h.html#a1c9628f500a2efb8bacf72a85faf121b">dir_indirection_t</a>&#160;</td>
-          <td class="paramname"><em>indirection</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>resource</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>payload</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>payload_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">time_t&#160;</td>
-          <td class="paramname"><em>if_modified_since</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td>
-          <td class="paramname"><em>rend_query</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Same as directory_initiate_command_routerstatus(), but accepts rendezvous data to fetch a hidden service descriptor. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="directory_8h_a57800839006f921803cc3087b9ba59c9_icgraph.png" border="0" usemap="#directory_8h_a57800839006f921803cc3087b9ba59c9_icgraph" alt=""/></div>
-<map name="directory_8h_a57800839006f921803cc3087b9ba59c9_icgraph" id="directory_8h_a57800839006f921803cc3087b9ba59c9_icgraph">
-<area shape="rect" id="node2" href="directory_8c.html#a73ef1e03e77e562991ea7237f61f7c36" title="MOCK_IMPL" alt="" coords="248,13,348,39"/>
+<area shape="rect" id="node2" href="routerlist_8c.html#aa9b36f7b87463dc114065ea058660ac4" title="router_get_trusted\l_dir_servers" alt="" coords="197,5,324,47"/>
+<area shape="rect" id="node3" href="router_8c.html#abeb0f38915a46f77352900604075d82f" title="router_digest_is_me" alt="" coords="191,71,330,98"/>
+<area shape="rect" id="node5" href="directory_8c.html#a85c888ac5ae7e9877281b1c87483cee1" title="directory_request_new" alt="" coords="184,122,337,149"/>
+<area shape="rect" id="node6" href="directory_8c.html#a80d02180af0001ba29cdb088eeab3fba" title="directory_request_set\l_routerstatus" alt="" coords="187,173,334,215"/>
+<area shape="rect" id="node7" href="directory_8c.html#a9573f64df7aa31baf290b23ca8dbcee2" title="directory_request_set\l_router_purpose" alt="" coords="187,239,334,280"/>
+<area shape="rect" id="node8" href="directory_8c.html#a0f8877f88add95ceea302a569a095569" title="directory_request_set\l_resource" alt="" coords="187,304,334,345"/>
+<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="385,71,472,98"/>
 </map>
 </div>
 
@@ -762,19 +760,495 @@ Here is the caller graph for this function:</div>
 <p><b>router_purpose</b> describes the type of descriptor we're publishing, if we're publishing a descriptor &ndash; e.g. general or bridge.</p>
 <p><b>type</b> specifies what sort of dir authorities (V3, BRIDGE, etc) we should upload to.</p>
 <p>If <b>extrainfo_len</b> is nonzero, the first <b>payload_len</b> bytes of <b>payload</b> hold a router descriptor, and the next <b>extrainfo_len</b> bytes of <b>payload</b> hold an extra-info document. Upload the descriptor to all authorities, and the extra-info document to all authorities that support it. </p>
+
+</div>
+</div>
+<a id="af68afba474b93d9917f8b76d739b8505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af68afba474b93d9917f8b76d739b8505">&#9670;&nbsp;</a></span>directory_request_add_header()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_add_header </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Include a header of name <b>key</b> with content <b>val</b> in the request. Neither may include newlines or other odd characters. Their ordering is not currently guaranteed.</p>
+<p>Note that, as elsewhere in this module, header keys include a trailing colon and space. </p>
+
+</div>
+</div>
+<a id="ad8944f29dae81e9931e0bdef3b39e407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8944f29dae81e9931e0bdef3b39e407">&#9670;&nbsp;</a></span>directory_request_fetch_set_hs_ident()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_fetch_set_hs_ident </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="strucths__ident__dir__conn__t.html">hs_ident_dir_conn_t</a> *&#160;</td>
+          <td class="paramname"><em>ident</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set an object containing HS connection identifier to be associated with this fetch request. Note that only an alias to <b>ident</b> is stored, so the <b>ident</b> object must outlive the request. </p>
+
+</div>
+</div>
+<a id="a76bf5075b1b3e4131f2c4cf5ca0f0d8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76bf5075b1b3e4131f2c4cf5ca0f0d8b">&#9670;&nbsp;</a></span>directory_request_free_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_free_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Release all resources held by <b>req</b>. </p>
+
+</div>
+</div>
+<a id="a85c888ac5ae7e9877281b1c87483cee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85c888ac5ae7e9877281b1c87483cee1">&#9670;&nbsp;</a></span>directory_request_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a>* directory_request_new </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>dir_purpose</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create and return a new directory_request_t with purpose <b>dir_purpose</b>. </p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="directory_8h_aace63698f64d26bc7a14531381e2fa57_cgraph.png" border="0" usemap="#directory_8h_aace63698f64d26bc7a14531381e2fa57_cgraph" alt=""/></div>
-<map name="directory_8h_aace63698f64d26bc7a14531381e2fa57_cgraph" id="directory_8h_aace63698f64d26bc7a14531381e2fa57_cgraph">
-<area shape="rect" id="node2" href="routerlist_8c.html#aa9b36f7b87463dc114065ea058660ac4" title="router_get_trusted\l_dir_servers" alt="" coords="246,5,373,47"/>
-<area shape="rect" id="node3" href="router_8c.html#abeb0f38915a46f77352900604075d82f" title="router_digest_is_me" alt="" coords="240,71,379,98"/>
-<area shape="rect" id="node5" href="routerset_8c.html#a46e8468ce37722ff71b91efd9d2f7ff0" title="routerset_contains\l_routerstatus" alt="" coords="245,123,374,164"/>
-<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="448,71,535,98"/>
-<area shape="rect" id="node6" href="routerset_8c.html#a1eda4526d656d042e5143ec79ee66be2" title="routerset_contains" alt="" coords="427,130,556,157"/>
-<area shape="rect" id="node7" href="container_8c.html#a1406b823cb6088df755f1b81153d137e" title="strmap_get_lc" alt="" coords="604,130,708,157"/>
+<div class="center"><img src="directory_8h_a85c888ac5ae7e9877281b1c87483cee1_icgraph.png" border="0" usemap="#directory_8h_a85c888ac5ae7e9877281b1c87483cee1_icgraph" alt=""/></div>
+<map name="directory_8h_a85c888ac5ae7e9877281b1c87483cee1_icgraph" id="directory_8h_a85c888ac5ae7e9877281b1c87483cee1_icgraph">
+<area shape="rect" id="node2" href="directory_8h.html#a13483821c102fb862ab0d27091d7ffc7" title="directory_get_from\l_all_authorities" alt="" coords="207,5,337,47"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a54586f3724c9b07dc9a28da6c496f92c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54586f3724c9b07dc9a28da6c496f92c">&#9670;&nbsp;</a></span>directory_request_set_dir_addr_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_dir_addr_port </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the address and dirport to use for this directory request. If there is no dirport, we'll have to connect over the OR port. (If there are both, the indirection setting determines which to use.) </p>
+
+</div>
+</div>
+<a id="aa8e97475dd051b61e3e32585a7a3cf6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e97475dd051b61e3e32585a7a3cf6c">&#9670;&nbsp;</a></span>directory_request_set_directory_id_digest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_directory_id_digest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>digest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the RSA identity digest of the directory to use for this directory request. </p>
+
+</div>
+</div>
+<a id="a51da81e00e4747ab55fb4af6dc1bc3c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51da81e00e4747ab55fb4af6dc1bc3c8">&#9670;&nbsp;</a></span>directory_request_set_guard_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_guard_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">circuit_guard_state_t *&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a static circuit_guard_state_t object to affliate with the request in <b>req</b>. This object will receive notification when the attempt to connect to the guard either succeeds or fails. </p>
+
+</div>
+</div>
+<a id="a2378f74f545dc3bd8f37daaacbf56294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2378f74f545dc3bd8f37daaacbf56294">&#9670;&nbsp;</a></span>directory_request_set_if_modified_since()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_if_modified_since </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>if_modified_since</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set an if-modified-since date to send along with the request. The default is 0 (meaning, send no if-modified-since header). </p>
+
+</div>
+</div>
+<a id="a73c93da738cdb4945e336e4efc37dce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c93da738cdb4945e336e4efc37dce7">&#9670;&nbsp;</a></span>directory_request_set_indirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_indirection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a1c9628f500a2efb8bacf72a85faf121b">dir_indirection_t</a>&#160;</td>
+          <td class="paramname"><em>indirection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the indirection to be used for the directory request. The indirection parameter configures whether to connect to a DirPort or ORPort, and whether to anonymize the connection. DIRIND_ONEHOP (use ORPort, don't anonymize) is the default. See dir_indirection_t for more information. </p>
+
+</div>
+</div>
+<a id="a0fad9324c6504d8bf509247168e1b819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fad9324c6504d8bf509247168e1b819">&#9670;&nbsp;</a></span>directory_request_set_or_addr_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_or_addr_port </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the address and OR port to use for this directory request. If there is no OR port, we'll have to connect over the dirport. (If there are both, the indirection setting determines which to use.) </p>
+
+</div>
+</div>
+<a id="ac2f9c30557e169548ab5871462d6ddd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f9c30557e169548ab5871462d6ddd6">&#9670;&nbsp;</a></span>directory_request_set_payload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_payload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>payload_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a pointer to the payload to include with this directory request, along with its length. Note that only an alias to <b>payload</b> is stored, so the <b>payload</b> must outlive the request. </p>
+
+</div>
+</div>
+<a id="aa038c1c27a5a5469ce9745a65fe1458e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa038c1c27a5a5469ce9745a65fe1458e">&#9670;&nbsp;</a></span>directory_request_set_rend_query()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_rend_query </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrend__data__t.html">rend_data_t</a> *&#160;</td>
+          <td class="paramname"><em>query</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set an object containing HS data to be associated with this request. Note that only an alias to <b>query</b> is stored, so the <b>query</b> object must outlive the request. </p>
+
+</div>
+</div>
+<a id="a0f8877f88add95ceea302a569a095569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8877f88add95ceea302a569a095569">&#9670;&nbsp;</a></span>directory_request_set_resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_resource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>resource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a pointer to the resource to request from a directory. Different request types use resources to indicate different components of their URL. Note that only an alias to <b>resource</b> is stored, so the <b>resource</b> must outlive the request. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h_a0f8877f88add95ceea302a569a095569_icgraph.png" border="0" usemap="#directory_8h_a0f8877f88add95ceea302a569a095569_icgraph" alt=""/></div>
+<map name="directory_8h_a0f8877f88add95ceea302a569a095569_icgraph" id="directory_8h_a0f8877f88add95ceea302a569a095569_icgraph">
+<area shape="rect" id="node2" href="directory_8h.html#a13483821c102fb862ab0d27091d7ffc7" title="directory_get_from\l_all_authorities" alt="" coords="200,5,331,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9573f64df7aa31baf290b23ca8dbcee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9573f64df7aa31baf290b23ca8dbcee2">&#9670;&nbsp;</a></span>directory_request_set_router_purpose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_router_purpose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>router_purpose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the router purpose associated with uploaded and downloaded router descriptors and extrainfo documents in this directory request. The purpose must be one of ROUTER_PURPOSE_GENERAL (the default) or ROUTER_PURPOSE_BRIDGE. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h_a9573f64df7aa31baf290b23ca8dbcee2_icgraph.png" border="0" usemap="#directory_8h_a9573f64df7aa31baf290b23ca8dbcee2_icgraph" alt=""/></div>
+<map name="directory_8h_a9573f64df7aa31baf290b23ca8dbcee2_icgraph" id="directory_8h_a9573f64df7aa31baf290b23ca8dbcee2_icgraph">
+<area shape="rect" id="node2" href="directory_8h.html#a13483821c102fb862ab0d27091d7ffc7" title="directory_get_from\l_all_authorities" alt="" coords="200,5,331,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a563eeb61880279783771d2f65b837c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a563eeb61880279783771d2f65b837c50">&#9670;&nbsp;</a></span>directory_request_set_routerstatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_set_routerstatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the routerstatus to use for the directory associated with this request. If this option is set, then no other function to set the directory's address or identity should be called. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h_a563eeb61880279783771d2f65b837c50_icgraph.png" border="0" usemap="#directory_8h_a563eeb61880279783771d2f65b837c50_icgraph" alt=""/></div>
+<map name="directory_8h_a563eeb61880279783771d2f65b837c50_icgraph" id="directory_8h_a563eeb61880279783771d2f65b837c50_icgraph">
+<area shape="rect" id="node2" href="directory_8h.html#a13483821c102fb862ab0d27091d7ffc7" title="directory_get_from\l_all_authorities" alt="" coords="200,5,331,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afb1872de41e8c93f3995a3cd6de31382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb1872de41e8c93f3995a3cd6de31382">&#9670;&nbsp;</a></span>directory_request_upload_set_hs_ident()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void directory_request_upload_set_hs_ident </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="directory_8h.html#a7cb5ccaf42b2a548659cd3f3d16adcf9">directory_request_t</a> *&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="strucths__ident__dir__conn__t.html">hs_ident_dir_conn_t</a> *&#160;</td>
+          <td class="paramname"><em>ident</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set an object containing HS connection identifier to be associated with this request. Note that only an alias to <b>ident</b> is stored, so the <b>ident</b> object must outlive the request. </p>
 
 </div>
 </div>
@@ -875,6 +1349,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Determine when the next download attempt should be made when using an attempt-based (potentially concurrent) download schedule. Called when an attempt to download <b>dls</b> is being initiated. Increment the attempt count and set <b>dls</b>-&gt;next_attempt_at to an appropriate time in the future and return it. If <b>dls-&gt;increment_on</b> is DL_SCHED_INCREMENT_FAILURE, don't increment the attempts, and return a time in the far future (to avoid launching a concurrent attempt). </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h_abfbbd8729f4c0f94b6080020a729bc70_cgraph.png" border="0" usemap="#directory_8h_abfbbd8729f4c0f94b6080020a729bc70_cgraph" alt=""/></div>
+<map name="directory_8h_abfbbd8729f4c0f94b6080020a729bc70_cgraph" id="directory_8h_abfbbd8729f4c0f94b6080020a729bc70_cgraph">
+<area shape="rect" id="node2" href="directory_8c.html#ae0c46dd4ad90ff8350a03414a4d79307" title="download_status_reset" alt="" coords="237,13,393,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -922,6 +1404,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Determine when a failed download attempt should be retried. Called when an attempt to download <b>dls</b> has failed with HTTP status <b>status_code</b>. Increment the failure count (if the code indicates a real failure, or if we're a server) and set <b>dls</b>-&gt;next_attempt_at to an appropriate time in the future and return it. If <b>dls-&gt;increment_on</b> is DL_SCHED_INCREMENT_ATTEMPT, increment the failure count, and return a time in the far future for the next attempt (to avoid an immediate retry). </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h_ad030aefd2edb06cac0a0477457631fab_cgraph.png" border="0" usemap="#directory_8h_ad030aefd2edb06cac0a0477457631fab_cgraph" alt=""/></div>
+<map name="directory_8h_ad030aefd2edb06cac0a0477457631fab_cgraph" id="directory_8h_ad030aefd2edb06cac0a0477457631fab_cgraph">
+<area shape="rect" id="node2" href="directory_8c.html#ae0c46dd4ad90ff8350a03414a4d79307" title="download_status_reset" alt="" coords="237,13,393,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -942,43 +1432,106 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Reset <b>dls</b> so that it will be considered downloadable immediately, and/or to show that we don't need it anymore.</p>
 <p>Must be called to initialise a download schedule, otherwise the zeroth item in the schedule will never be used.</p>
-<p>(We find the zeroth element of the download schedule, and set next_attempt_at to be the appropriate offset from 'now'. In most cases this means setting it to 'now', so the item will be immediately downloadable; in the case of bridge descriptors, the zeroth element is an hour from now.) </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="directory_8h_ae0c46dd4ad90ff8350a03414a4d79307_cgraph.png" border="0" usemap="#directory_8h_ae0c46dd4ad90ff8350a03414a4d79307_cgraph" alt=""/></div>
-<map name="directory_8h_ae0c46dd4ad90ff8350a03414a4d79307_cgraph" id="directory_8h_ae0c46dd4ad90ff8350a03414a4d79307_cgraph">
-<area shape="rect" id="node2" href="directory_8c.html#af6977c51923b32ba38e29dcf72163d1d" title="find_dl_schedule" alt="" coords="209,5,328,32"/>
-</map>
-</div>
+<p>(We find the zeroth element of the download schedule, and set next_attempt_at to be the appropriate offset from 'now'. In most cases this means setting it to 'now', so the item will be immediately downloadable; when using authorities with fallbacks, there is a few seconds' delay.) </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="directory_8h_ae0c46dd4ad90ff8350a03414a4d79307_icgraph.png" border="0" usemap="#directory_8h_ae0c46dd4ad90ff8350a03414a4d79307_icgraph" alt=""/></div>
 <map name="directory_8h_ae0c46dd4ad90ff8350a03414a4d79307_icgraph" id="directory_8h_ae0c46dd4ad90ff8350a03414a4d79307_icgraph">
-<area shape="rect" id="node2" href="networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="209,5,424,47"/>
-<area shape="rect" id="node3" href="routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="472,5,605,47"/>
+<area shape="rect" id="node2" href="directory_8h.html#ad030aefd2edb06cac0a0477457631fab" title="download_status_increment\l_failure" alt="" coords="209,5,393,47"/>
+<area shape="rect" id="node3" href="directory_8h.html#abfbbd8729f4c0f94b6080020a729bc70" title="download_status_increment\l_attempt" alt="" coords="209,71,393,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af70528e82e9fdd7992b169feeda182ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af70528e82e9fdd7992b169feeda182ee">&#9670;&nbsp;</a></span>is_sensitive_dir_purpose()</h2>
+<a id="a6cd94a3fa7e78209bcf82533c1128d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd94a3fa7e78209bcf82533c1128d19">&#9670;&nbsp;</a></span>http_get_header()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int is_sensitive_dir_purpose </td>
+          <td class="memname">char* http_get_header </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>dir_purpose</em></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>headers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>which</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return non-zero iff a directory connection with purpose <b>dir_purpose</b> reveals sensitive information about a Tor instance's client activities. (Such connections must be performed through normal three-hop Tor circuits.) </p>
+<p>Return a copy of the first HTTP header in <b>headers</b> whose key is <b>which</b>. The key should be given with a terminating colon and space; this function copies everything after, up to but not including the following \r\n. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h_a6cd94a3fa7e78209bcf82533c1128d19_cgraph.png" border="0" usemap="#directory_8h_a6cd94a3fa7e78209bcf82533c1128d19_cgraph" alt=""/></div>
+<map name="directory_8h_a6cd94a3fa7e78209bcf82533c1128d19_cgraph" id="directory_8h_a6cd94a3fa7e78209bcf82533c1128d19_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#a1d095be5cec365a93ac90501390f70fa" title="strcasecmpstart" alt="" coords="168,5,284,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adeaaed095405cd4aad17cf7a1197de3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeaaed095405cd4aad17cf7a1197de3c">&#9670;&nbsp;</a></span>parse_http_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parse_http_command </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>headers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>command_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>url_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parse an HTTP request line at the start of a headers string. On failure, return -1. On success, set *<b>command_out</b> to a copy of the HTTP command ("get", "post", etc), set *<b>url_out</b> to a copy of the URL, and return 0. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h_adeaaed095405cd4aad17cf7a1197de3c_cgraph.png" border="0" usemap="#directory_8h_adeaaed095405cd4aad17cf7a1197de3c_cgraph" alt=""/></div>
+<map name="directory_8h_adeaaed095405cd4aad17cf7a1197de3c_cgraph" id="directory_8h_adeaaed095405cd4aad17cf7a1197de3c_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#ab838c820246f358bc0b99884154b2704" title="eat_whitespace_no_nl" alt="" coords="200,5,351,32"/>
+<area shape="rect" id="node3" href="util_8c.html#a34984f08eb3eef95438b8e65226dff8e" title="find_whitespace" alt="" coords="217,56,333,83"/>
+<area shape="rect" id="node4" href="util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="231,107,319,133"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="directory_8h_adeaaed095405cd4aad17cf7a1197de3c_icgraph.png" border="0" usemap="#directory_8h_adeaaed095405cd4aad17cf7a1197de3c_icgraph" alt=""/></div>
+<map name="directory_8h_adeaaed095405cd4aad17cf7a1197de3c_icgraph" id="directory_8h_adeaaed095405cd4aad17cf7a1197de3c_icgraph">
+<area shape="rect" id="node2" href="directory_8c.html#a2ab1c7dcfde852c520eb496643fdc865" title="parse_http_url" alt="" coords="200,5,304,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1009,7 +1562,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="torgzip_8h.html#a97a284cf1b98eccbe7964617ed797eee">compress_method_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="compress_8h.html#a97a284cf1b98eccbe7964617ed797eee">compress_method_t</a> *&#160;</td>
           <td class="paramname"><em>compression</em>, </td>
         </tr>
         <tr>
@@ -1031,8 +1584,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a9295a0181da0aabb17bd451f4b24f9bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9295a0181da0aabb17bd451f4b24f9bb">&#9670;&nbsp;</a></span>purpose_needs_anonymity()</h2>
+<a id="a303b2f05c493a74b33537b47b5f00fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303b2f05c493a74b33537b47b5f00fe0">&#9670;&nbsp;</a></span>purpose_needs_anonymity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1047,7 +1600,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>router_purpose</em>&#160;</td>
+          <td class="paramname"><em>router_purpose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>resource</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1056,7 +1615,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true iff the directory purpose <b>dir_purpose</b> (and if it's fetching descriptors, it's fetching them for <b>router_purpose</b>) must use an anonymous connection to a directory. </p>
+<p>Return false if the directory purpose <b>dir_purpose</b> does not require an anonymous (three-hop) connection.</p>
+<p>Return true 1) by default, 2) if all directory actions have specifically been configured to be over an anonymous connection, or 3) if the router is a bridge </p>
 
 </div>
 </div>

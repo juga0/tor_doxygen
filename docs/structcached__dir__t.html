@@ -80,22 +80,39 @@ Collaboration diagram for cached_dir_t:</div>
 Data Fields</h2></td></tr>
 <tr class="memitem:a73da71b9c136e698a3ccaa1366e455a8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcached__dir__t.html#a73da71b9c136e698a3ccaa1366e455a8">dir</a></td></tr>
 <tr class="separator:a73da71b9c136e698a3ccaa1366e455a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb0da983a41bc4785916e311735527c4"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcached__dir__t.html#acb0da983a41bc4785916e311735527c4">dir_z</a></td></tr>
-<tr class="separator:acb0da983a41bc4785916e311735527c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c7b3ea34ffb85dcc17d78d753bb645"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcached__dir__t.html#ad9c7b3ea34ffb85dcc17d78d753bb645">dir_compressed</a></td></tr>
+<tr class="separator:ad9c7b3ea34ffb85dcc17d78d753bb645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a107cfd30fb0637816936319ff5cb1b2a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcached__dir__t.html#a107cfd30fb0637816936319ff5cb1b2a">dir_len</a></td></tr>
 <tr class="separator:a107cfd30fb0637816936319ff5cb1b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f1bb4fea4f95f3e39777e97a665d113"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcached__dir__t.html#a9f1bb4fea4f95f3e39777e97a665d113">dir_z_len</a></td></tr>
-<tr class="separator:a9f1bb4fea4f95f3e39777e97a665d113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ff010d5aa71ea1f1c252880f1f1d37"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcached__dir__t.html#ae8ff010d5aa71ea1f1c252880f1f1d37">dir_compressed_len</a></td></tr>
+<tr class="separator:ae8ff010d5aa71ea1f1c252880f1f1d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f3c06fa738986e847ce84231a340e5"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcached__dir__t.html#ae3f3c06fa738986e847ce84231a340e5">published</a></td></tr>
 <tr class="separator:ae3f3c06fa738986e847ce84231a340e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13acbdeee23dabbdea1847bdc93ac03b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcommon__digests__t.html">common_digests_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcached__dir__t.html#a13acbdeee23dabbdea1847bdc93ac03b">digests</a></td></tr>
 <tr class="separator:a13acbdeee23dabbdea1847bdc93ac03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20a61328bb7a797cd9d7178eb481eb4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcached__dir__t.html#ad20a61328bb7a797cd9d7178eb481eb4">digest_sha3_as_signed</a> [<a class="el" href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a>]</td></tr>
+<tr class="separator:ad20a61328bb7a797cd9d7178eb481eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc0873ec70fe10be301b3ec811a1d6e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcached__dir__t.html#afc0873ec70fe10be301b3ec811a1d6e5">refcnt</a></td></tr>
 <tr class="separator:afc0873ec70fe10be301b3ec811a1d6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="structcached__dir__t.html">cached_dir_t</a> represents a cacheable directory object, along with its compressed form. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="ad20a61328bb7a797cd9d7178eb481eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20a61328bb7a797cd9d7178eb481eb4">&#9670;&nbsp;</a></span>digest_sha3_as_signed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t digest_sha3_as_signed[<a class="el" href="crypto__digest_8h.html#a34e055abb21d9f47b5f3d821e4beb091">DIGEST256_LEN</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sha3 digest (also ns only) </p>
+
+</div>
+</div>
 <a id="a13acbdeee23dabbdea1847bdc93ac03b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13acbdeee23dabbdea1847bdc93ac03b">&#9670;&nbsp;</a></span>digests</h2>
 
@@ -126,6 +143,36 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="ad9c7b3ea34ffb85dcc17d78d753bb645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c7b3ea34ffb85dcc17d78d753bb645">&#9670;&nbsp;</a></span>dir_compressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* dir_compressed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compressed contents of this object. </p>
+
+</div>
+</div>
+<a id="ae8ff010d5aa71ea1f1c252880f1f1d37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8ff010d5aa71ea1f1c252880f1f1d37">&#9670;&nbsp;</a></span>dir_compressed_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t dir_compressed_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Length of <b>dir_compressed</b>. </p>
+
+</div>
+</div>
 <a id="a107cfd30fb0637816936319ff5cb1b2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a107cfd30fb0637816936319ff5cb1b2a">&#9670;&nbsp;</a></span>dir_len</h2>
 
@@ -138,36 +185,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Length of <b>dir</b> (not counting its NUL). </p>
-
-</div>
-</div>
-<a id="acb0da983a41bc4785916e311735527c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb0da983a41bc4785916e311735527c4">&#9670;&nbsp;</a></span>dir_z</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* dir_z</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Compressed contents of this object. </p>
-
-</div>
-</div>
-<a id="a9f1bb4fea4f95f3e39777e97a665d113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f1bb4fea4f95f3e39777e97a665d113">&#9670;&nbsp;</a></span>dir_z_len</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t dir_z_len</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Length of <b>dir_z</b>. </p>
 
 </div>
 </div>

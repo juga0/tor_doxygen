@@ -1,18 +1,18 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/dirserv.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/dirserv.h">
-<area shape="rect" id="node2" href="$config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node2" href="$config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="5,109,153,165"/>
 <area shape="rect" id="node3" href="$connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="177,109,325,165"/>
 <area shape="rect" id="node4" href="$connection__edge_8c.html" title="Handle edge streams. " alt="" coords="349,109,521,165"/>
 <area shape="rect" id="node5" href="$connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="546,109,701,165"/>
 <area shape="rect" id="node6" href="$control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="725,109,873,165"/>
-<area shape="rect" id="node7" href="$directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="897,109,1045,165"/>
-<area shape="rect" id="node8" href="$dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="1069,109,1217,165"/>
-<area shape="rect" id="node9" href="$dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="1241,109,1389,165"/>
-<area shape="rect" id="node10" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="1413,109,1561,165"/>
-<area shape="rect" id="node11" href="$microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="1585,109,1733,165"/>
-<area shape="rect" id="node12" href="$networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. " alt="" coords="1757,109,1913,165"/>
-<area shape="rect" id="node13" href="$nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="1937,109,2085,165"/>
-<area shape="rect" id="node14" href="$policies_8c.html" title="Code to parse and use address policies and exit policies. " alt="" coords="2109,109,2257,165"/>
-<area shape="rect" id="node15" href="$router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="2281,109,2429,165"/>
-<area shape="rect" id="node16" href="$routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="2453,109,2601,165"/>
-<area shape="rect" id="node17" href="$routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="2625,109,2773,165"/>
+<area shape="rect" id="node7" href="$dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="897,109,1053,165"/>
+<area shape="rect" id="node8" href="$directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="1077,109,1225,165"/>
+<area shape="rect" id="node9" href="$dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="1249,109,1397,165"/>
+<area shape="rect" id="node10" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="1421,109,1569,165"/>
+<area shape="rect" id="node11" href="$microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="1593,109,1741,165"/>
+<area shape="rect" id="node12" href="$networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache..." alt="" coords="1765,109,1921,165"/>
+<area shape="rect" id="node13" href="$nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="1945,109,2093,165"/>
+<area shape="rect" id="node14" href="$policies_8c.html" title="Code to parse and use address policies and exit policies. " alt="" coords="2117,109,2265,165"/>
+<area shape="rect" id="node15" href="$router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="2289,109,2437,165"/>
+<area shape="rect" id="node16" href="$routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="2461,109,2609,165"/>
+<area shape="rect" id="node17" href="$routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="2633,109,2781,165"/>
 </map>

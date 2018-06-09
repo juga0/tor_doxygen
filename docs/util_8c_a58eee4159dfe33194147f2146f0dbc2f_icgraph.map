@@ -1,11 +1,13 @@
 <map id="tor_sscanf" name="tor_sscanf">
 <area shape="rect" id="node2" href="$compat_8c.html#a802226afdc80ad46ae394289b1e586ee" title="tor_inet_aton" alt="" coords="146,68,243,95"/>
 <area shape="rect" id="node4" href="$compat_8c.html#a8ba87984a3a5dd16e7b60621ff983a89" title="tor_inet_pton" alt="" coords="343,123,441,149"/>
-<area shape="rect" id="node8" href="$util_8h.html#a1b3dda16e5097d60dd0a43815cc84fa8" title="parse_iso_time_" alt="" coords="136,173,253,200"/>
-<area shape="rect" id="node10" href="$util_8h.html#a01ef63d549917f359c58e5b9261a1bcb" title="parse_http_time" alt="" coords="137,224,252,251"/>
+<area shape="rect" id="node9" href="$util_8h.html#a2cdd5d3aa409882a55771d79c506b269" title="parse_iso_time_" alt="" coords="136,173,253,200"/>
+<area shape="rect" id="node12" href="$util_8h.html#a01ef63d549917f359c58e5b9261a1bcb" title="parse_http_time" alt="" coords="137,224,252,251"/>
 <area shape="rect" id="node3" href="$address_8h.html#a704407961c6ac0d2fddfd29b8a719d91" title="tor_addr_parse_PTR_name" alt="" coords="301,5,483,32"/>
-<area shape="rect" id="node7" href="$nodelist_8h.html#aa6437a3da576fc05f0b444878bbeb93e" title="router_find_exact_exit\l_enclave" alt="" coords="317,57,467,98"/>
+<area shape="rect" id="node8" href="$nodelist_8h.html#aa6437a3da576fc05f0b444878bbeb93e" title="router_find_exact_exit\l_enclave" alt="" coords="317,57,467,98"/>
 <area shape="rect" id="node5" href="$util_8h.html#a307d12f617bd1f5606b8f971733e4c48" title="string_is_valid_ipv4\l_address" alt="" coords="531,82,667,123"/>
-<area shape="rect" id="node6" href="$util_8h.html#a06c31f983cd56699cca308532a09a14c" title="string_is_valid_ipv6\l_address" alt="" coords="531,147,667,189"/>
-<area shape="rect" id="node9" href="$util_8h.html#a8d4de39a48bc02621960c1d162478c63" title="parse_iso_time" alt="" coords="337,173,447,200"/>
+<area shape="rect" id="node7" href="$util_8h.html#a06c31f983cd56699cca308532a09a14c" title="string_is_valid_ipv6\l_address" alt="" coords="531,147,667,189"/>
+<area shape="rect" id="node6" href="$util_8h.html#a526379934c7164b1f7d675cf9b725846" title="string_is_valid_nonrfc\l_hostname" alt="" coords="715,82,863,123"/>
+<area shape="rect" id="node10" href="$util_8h.html#a8d4de39a48bc02621960c1d162478c63" title="parse_iso_time" alt="" coords="337,173,447,200"/>
+<area shape="rect" id="node11" href="$util_8h.html#aa0779e255dfcab930dc0016b1d78657a" title="parse_iso_time_nospace" alt="" coords="309,224,475,251"/>
 </map>

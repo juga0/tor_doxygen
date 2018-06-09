@@ -1,3 +1,4 @@
 <map id="routerset_refresh_countries" name="routerset_refresh_countries">
-<area shape="rect" id="node2" href="$routerlist_8h.html#a8989395a52cfb9cb553c9eebf44395eb" title="refresh_all_country_info" alt="" coords="233,5,393,32"/>
+<area shape="rect" id="node2" href="$routerlist_8h.html#a8989395a52cfb9cb553c9eebf44395eb" title="refresh_all_country_info" alt="" coords="247,5,407,32"/>
+<area shape="rect" id="node3" href="$routerset_8c.html#a5f4149eb7a8b9082fc69e6fda85ebb59" title="routerset_add_unknown_ccs" alt="" coords="233,56,421,83"/>
 </map>

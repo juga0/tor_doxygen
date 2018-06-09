@@ -1,10 +1,10 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/common/util.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/common/util.h">
-<area shape="rect" id="node2" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="353,408,432,435"/>
-<area shape="rect" id="node3" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="200,333,263,360"/>
-<area shape="rect" id="node4" href="$compat_8h_source.html" title="compat.h" alt="" coords="473,184,549,211"/>
-<area shape="rect" id="node5" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="667,333,766,360"/>
-<area shape="rect" id="node11" href="$di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="5,259,76,285"/>
-<area shape="rect" id="node13" href="$util__bug_8h.html" title="util_bug.h" alt="" coords="756,109,835,136"/>
-<area shape="rect" id="node7" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="339,333,447,360"/>
-<area shape="rect" id="node10" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="389,259,516,285"/>
+<area shape="rect" id="node2" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="495,408,574,435"/>
+<area shape="rect" id="node3" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="118,333,181,360"/>
+<area shape="rect" id="node5" href="$compat_8h_source.html" title="compat.h" alt="" coords="479,184,555,211"/>
+<area shape="rect" id="node6" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="705,333,804,360"/>
+<area shape="rect" id="node12" href="$di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="25,259,95,285"/>
+<area shape="rect" id="node14" href="$util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="653,109,731,136"/>
+<area shape="rect" id="node8" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="573,333,681,360"/>
+<area shape="rect" id="node11" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="489,259,615,285"/>
 </map>

@@ -1,0 +1,8 @@
+<map id="encode_desc_rev_counter_for_state" name="encode_desc_rev_counter_for_state">
+<area shape="rect" id="node2" href="$crypto__format_8c.html#abfe3914879d93c7eb2f06d9628979364" title="ed25519_public_to_base64" alt="" coords="228,5,407,32"/>
+<area shape="rect" id="node6" href="$compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="274,56,361,83"/>
+<area shape="rect" id="node3" href="$crypto__format_8c.html#a357bf351fe9894c905f7e7029da38f9a" title="digest256_to_base64" alt="" coords="455,5,600,32"/>
+<area shape="rect" id="node4" href="$util__format_8c.html#a2394b082102cdbb3d443955e9b056e0e" title="base64_encode" alt="" coords="648,5,761,32"/>
+<area shape="rect" id="node5" href="$util__format_8c.html#a733f32f58c6056750ad6f64228af51b2" title="base64_encode_size" alt="" coords="809,5,953,32"/>
+<area shape="rect" id="node7" href="$compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="480,56,575,83"/>
+</map>

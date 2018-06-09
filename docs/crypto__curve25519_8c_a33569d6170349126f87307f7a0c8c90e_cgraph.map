@@ -1,4 +1,4 @@
 <map id="curve25519_secret_key_generate" name="curve25519_secret_key_generate">
 <area shape="rect" id="node2" href="$crypto__curve25519_8c.html#a3a41ce8071bcfcc3aef74d4e995e83d9" title="curve25519_rand_seckey\l_bytes" alt="" coords="213,5,384,47"/>
-<area shape="rect" id="node3" href="$crypto_8c.html#ae5356daa13494dbcca77324c6a85b9da" title="crypto_strongest_rand" alt="" coords="432,13,583,39"/>
+<area shape="rect" id="node3" href="$crypto__rand_8c.html#ae5356daa13494dbcca77324c6a85b9da" title="crypto_strongest_rand" alt="" coords="432,13,583,39"/>
 </map>

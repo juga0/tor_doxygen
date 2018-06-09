@@ -78,88 +78,19 @@ Collaboration diagram for rend_data_t:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a7e2cdeb193204a8e79f8d8515f3d7d39"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrend__data__t.html#a7e2cdeb193204a8e79f8d8515f3d7d39">onion_address</a> [<a class="el" href="or_8h.html#a6b32c944603240c13bd7d661d2ea78ce">REND_SERVICE_ID_LEN_BASE32</a>+1]</td></tr>
-<tr class="separator:a7e2cdeb193204a8e79f8d8515f3d7d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7238b3b9bc9b57451e2271d03f878ea9"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrend__data__t.html#a7238b3b9bc9b57451e2271d03f878ea9">descriptor_id</a> [<a class="el" href="or_8h.html#af899a8a226fb7efa16df4745034fc502">REND_NUMBER_OF_NON_CONSECUTIVE_REPLICAS</a>][<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
-<tr class="separator:a7238b3b9bc9b57451e2271d03f878ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a16e5af1b66f3a37e500589640cfe89"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrend__data__t.html#a3a16e5af1b66f3a37e500589640cfe89">descriptor_cookie</a> [<a class="el" href="rendcommon_8c.html#aeb2686408816c0dc134615160ed3fd7f">REND_DESC_COOKIE_LEN</a>]</td></tr>
-<tr class="separator:a3a16e5af1b66f3a37e500589640cfe89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10517da7d3f8153662492a8720ba31ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="or_8h.html#aafc6920f8a16e10f46703e7819795c74">rend_auth_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrend__data__t.html#a10517da7d3f8153662492a8720ba31ec">auth_type</a></td></tr>
-<tr class="separator:a10517da7d3f8153662492a8720ba31ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e6b7acd796b373d2dbcd9f7f44fa063"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrend__data__t.html#a9e6b7acd796b373d2dbcd9f7f44fa063">desc_id_fetch</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
-<tr class="separator:a9e6b7acd796b373d2dbcd9f7f44fa063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa374c5ffb54f4c75970fc55407cdff10"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrend__data__t.html#aa374c5ffb54f4c75970fc55407cdff10">rend_pk_digest</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
-<tr class="separator:aa374c5ffb54f4c75970fc55407cdff10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eb73936d5e72ca242e41b7e0734d141"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrend__data__t.html#a9eb73936d5e72ca242e41b7e0734d141">rend_cookie</a> [<a class="el" href="or_8h.html#a0f777b066f2bd36625966e34a07d9236">REND_COOKIE_LEN</a>]</td></tr>
-<tr class="separator:a9eb73936d5e72ca242e41b7e0734d141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd99bb05ca015e7d74448acb1deba7ca"><td class="memItemLeft" align="right" valign="top"><a id="acd99bb05ca015e7d74448acb1deba7ca"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>version</b></td></tr>
+<tr class="separator:acd99bb05ca015e7d74448acb1deba7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac22097b732ab7bd90e924df61052cd66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrend__data__t.html#ac22097b732ab7bd90e924df61052cd66">hsdirs_fp</a></td></tr>
 <tr class="separator:ac22097b732ab7bd90e924df61052cd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb73936d5e72ca242e41b7e0734d141"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrend__data__t.html#a9eb73936d5e72ca242e41b7e0734d141">rend_cookie</a> [<a class="el" href="or_8h.html#a0f777b066f2bd36625966e34a07d9236">REND_COOKIE_LEN</a>]</td></tr>
+<tr class="separator:a9eb73936d5e72ca242e41b7e0734d141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f0ef2bee7640888aae90e8c1e1963d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrend__data__t.html#a2f0ef2bee7640888aae90e8c1e1963d0">nr_streams</a></td></tr>
 <tr class="separator:a2f0ef2bee7640888aae90e8c1e1963d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Client- and server-side data that is used for hidden service connection establishment. Not all fields contain data depending on where this struct is used. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a10517da7d3f8153662492a8720ba31ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10517da7d3f8153662492a8720ba31ec">&#9670;&nbsp;</a></span>auth_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="or_8h.html#aafc6920f8a16e10f46703e7819795c74">rend_auth_type_t</a> auth_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Authorization type for accessing a service used by a client. </p>
-
-</div>
-</div>
-<a id="a9e6b7acd796b373d2dbcd9f7f44fa063"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e6b7acd796b373d2dbcd9f7f44fa063">&#9670;&nbsp;</a></span>desc_id_fetch</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char desc_id_fetch[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Descriptor ID for a client request. The control port command HSFETCH uses this. It's set if the descriptor query should only use this descriptor ID. </p>
-
-</div>
-</div>
-<a id="a3a16e5af1b66f3a37e500589640cfe89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a16e5af1b66f3a37e500589640cfe89">&#9670;&nbsp;</a></span>descriptor_cookie</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char descriptor_cookie[<a class="el" href="rendcommon_8c.html#aeb2686408816c0dc134615160ed3fd7f">REND_DESC_COOKIE_LEN</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>(Optional) descriptor cookie that is used by a client. </p>
-
-</div>
-</div>
-<a id="a7238b3b9bc9b57451e2271d03f878ea9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7238b3b9bc9b57451e2271d03f878ea9">&#9670;&nbsp;</a></span>descriptor_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char descriptor_id[<a class="el" href="or_8h.html#af899a8a226fb7efa16df4745034fc502">REND_NUMBER_OF_NON_CONSECUTIVE_REPLICAS</a>][<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Descriptor ID for each replicas computed from the onion address. If the onion address is empty, this array MUST be empty. We keep them so we know when to purge our entry in the last hsdir request table. </p>
-
-</div>
-</div>
 <a id="ac22097b732ab7bd90e924df61052cd66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac22097b732ab7bd90e924df61052cd66">&#9670;&nbsp;</a></span>hsdirs_fp</h2>
 
@@ -171,7 +102,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>List of HSDir fingerprints on which this request has been sent to. This contains binary identity digest of the directory. </p>
+<p>List of HSDir fingerprints on which this request has been sent to. This contains binary identity digest of the directory of size DIGEST_LEN. </p>
 
 </div>
 </div>
@@ -190,21 +121,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e2cdeb193204a8e79f8d8515f3d7d39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e2cdeb193204a8e79f8d8515f3d7d39">&#9670;&nbsp;</a></span>onion_address</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char onion_address[<a class="el" href="or_8h.html#a6b32c944603240c13bd7d661d2ea78ce">REND_SERVICE_ID_LEN_BASE32</a>+1]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Onion address (without the .onion part) that a client requests. </p>
-
-</div>
-</div>
 <a id="a9eb73936d5e72ca242e41b7e0734d141"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9eb73936d5e72ca242e41b7e0734d141">&#9670;&nbsp;</a></span>rend_cookie</h2>
 
@@ -217,21 +133,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Rendezvous cookie used by both, client and service. </p>
-
-</div>
-</div>
-<a id="aa374c5ffb54f4c75970fc55407cdff10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa374c5ffb54f4c75970fc55407cdff10">&#9670;&nbsp;</a></span>rend_pk_digest</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char rend_pk_digest[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Hash of the hidden service's PK used by a service. </p>
 
 </div>
 </div>

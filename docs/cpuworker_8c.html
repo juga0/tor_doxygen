@@ -82,55 +82,65 @@ $(function() {
 <code>#include &quot;<a class="el" href="connection__or_8h_source.html">connection_or.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cpuworker_8h_source.html">cpuworker.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="onion_8h_source.html">onion.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rephist_8h_source.html">rephist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
 <code>#include &quot;workqueue.h&quot;</code><br />
-<code>#include &lt;event2/event.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for cpuworker.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="cpuworker_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2cpuworker_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2cpuworker_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2cpuworker_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1281,259,1325,285"/>
-<area shape="rect" id="node34" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="1738,109,1817,136"/>
-<area shape="rect" id="node36" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1947,109,2042,136"/>
-<area shape="rect" id="node37" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="2220,184,2305,211"/>
-<area shape="rect" id="node38" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="2117,109,2232,136"/>
-<area shape="rect" id="node39" href="config_8h.html" title="Header file for config.c. " alt="" coords="2247,259,2315,285"/>
-<area shape="rect" id="node40" href="cpuworker_8h.html" title="Header file for cpuworker.c. " alt="" coords="2307,109,2400,136"/>
-<area shape="rect" id="node41" href="main_8h.html" title="Header file for main.c. " alt="" coords="2424,109,2485,136"/>
-<area shape="rect" id="node42" href="onion_8h.html" title="Header file for onion.c. " alt="" coords="2509,109,2573,136"/>
-<area shape="rect" id="node43" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2597,109,2669,136"/>
-<area shape="rect" id="node44" href="router_8h.html" title="Header file for router.c. " alt="" coords="2744,184,2811,211"/>
-<area shape="rect" id="node45" href="workqueue_8h_source.html" title="workqueue.h" alt="" coords="1911,259,2007,285"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="807,856,886,883"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="521,781,583,808"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1271,557,1340,584"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="738,557,851,584"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="732,632,857,659"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="666,707,809,733"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1549,483,1611,509"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1719,557,1785,584"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="883,408,970,435"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="972,333,1044,360"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="721,333,799,360"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1911,333,2039,360"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="1221,333,1265,360"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1341,333,1443,360"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1468,333,1559,360"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="394,707,489,733"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1647,781,1745,808"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1271,632,1347,659"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1239,781,1347,808"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="935,707,1062,733"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1516,557,1644,584"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="979,483,1029,509"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="875,483,954,509"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="45,707,115,733"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="965,557,1043,584"/>
-<area shape="rect" id="node35" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="1731,184,1824,211"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1203,333,1247,360"/>
+<area shape="rect" id="node33" href="channel_8h.html" title="Header file for channel.c. " alt="" coords="2058,184,2137,211"/>
+<area shape="rect" id="node37" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1183,109,1278,136"/>
+<area shape="rect" id="node38" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1760,109,1845,136"/>
+<area shape="rect" id="node41" href="connection__or_8h.html" title="Header file for connection_or.c. " alt="" coords="1453,109,1568,136"/>
+<area shape="rect" id="node42" href="config_8h.html" title="Header file for config.c. " alt="" coords="2182,184,2250,211"/>
+<area shape="rect" id="node43" href="cpuworker_8h.html" title="Header file for cpuworker.c. " alt="" coords="1643,109,1736,136"/>
+<area shape="rect" id="node44" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="292,707,393,733"/>
+<area shape="rect" id="node45" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="5,632,99,659"/>
+<area shape="rect" id="node46" href="main_8h.html" title="Header file for main.c. " alt="" coords="1920,109,1981,136"/>
+<area shape="rect" id="node47" href="onion_8h.html" title="Header file for onion.c. " alt="" coords="2005,109,2069,136"/>
+<area shape="rect" id="node48" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2093,109,2165,136"/>
+<area shape="rect" id="node49" href="router_8h.html" title="Header file for router.c. " alt="" coords="2332,259,2399,285"/>
+<area shape="rect" id="node50" href="workqueue_8h_source.html" title="workqueue.h" alt="" coords="2004,333,2100,360"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1477,1005,1555,1032"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="466,931,529,957"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1241,483,1311,509"/>
+<area shape="rect" id="node14" href="container_8h_source.html" title="container.h" alt="" coords="671,707,758,733"/>
+<area shape="rect" id="node16" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1871,781,1937,808"/>
+<area shape="rect" id="node17" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1074,408,1187,435"/>
+<area shape="rect" id="node18" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1073,483,1199,509"/>
+<area shape="rect" id="node19" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="943,557,1086,584"/>
+<area shape="rect" id="node21" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1675,483,1738,509"/>
+<area shape="rect" id="node23" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1263,408,1353,435"/>
+<area shape="rect" id="node24" href="address_8h.html" title="Headers for address.h. " alt="" coords="519,632,598,659"/>
+<area shape="rect" id="node25" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2327,856,2455,883"/>
+<area shape="rect" id="node26" href="ht_8h_source.html" title="ht.h" alt="" coords="535,408,579,435"/>
+<area shape="rect" id="node27" href="confline_8h_source.html" title="confline.h" alt="" coords="535,483,614,509"/>
+<area shape="rect" id="node28" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="655,408,758,435"/>
+<area shape="rect" id="node29" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1873,408,1964,435"/>
+<area shape="rect" id="node30" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="671,856,782,883"/>
+<area shape="rect" id="node31" href="util__format_8h_source.html" title="util_format.h" alt="" coords="858,856,953,883"/>
+<area shape="rect" id="node32" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="833,408,948,435"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1478,856,1554,883"/>
+<area shape="rect" id="node10" href="util_8h.html" title="Headers for util.c. " alt="" coords="1125,781,1176,808"/>
+<area shape="rect" id="node12" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1659,557,1754,584"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1956,931,2055,957"/>
+<area shape="rect" id="node11" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1029,856,1099,883"/>
+<area shape="rect" id="node13" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="925,632,1035,659"/>
+<area shape="rect" id="node15" href="siphash_8h_source.html" title="siphash.h" alt="" coords="629,781,707,808"/>
+<area shape="rect" id="node20" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1189,707,1339,733"/>
+<area shape="rect" id="node22" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1456,557,1584,584"/>
+<area shape="rect" id="node34" href="circuitmux_8h.html" title="Header file for circuitmux.c. " alt="" coords="2108,259,2201,285"/>
+<area shape="rect" id="node35" href="timers_8h_source.html" title="timers.h" alt="" coords="2529,856,2599,883"/>
+<area shape="rect" id="node36" href="handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="1901,333,1979,360"/>
+<area shape="rect" id="node39" href="hs__ident_8h.html" title="Header file containing circuit and connection identifier data for the whole HS subsytem. " alt="" coords="1453,184,1536,211"/>
+<area shape="rect" id="node40" href="hs__common_8h.html" title="Header file containing common data for the whole HS subsytem. " alt="" coords="1353,259,1457,285"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -147,6 +157,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:afcacfe63e5a8ea37b5bbe6929fe5bd36"><td class="memItemLeft" align="right" valign="top"><a id="afcacfe63e5a8ea37b5bbe6929fe5bd36"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>worker_state_free</b>(ws)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structworker__state__s.html">worker_state_t</a>, worker_state_free_, (ws))</td></tr>
+<tr class="separator:afcacfe63e5a8ea37b5bbe6929fe5bd36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0785c9a7931a3d9123203e22be92ec64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuworker_8c.html#a0785c9a7931a3d9123203e22be92ec64">CPUWORKER_REQUEST_MAGIC</a>&#160;&#160;&#160;0xda4afeed</td></tr>
 <tr class="separator:a0785c9a7931a3d9123203e22be92ec64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af724987834d0a052f98598206254fe50"><td class="memItemLeft" align="right" valign="top"><a id="af724987834d0a052f98598206254fe50"></a>
@@ -178,6 +191,8 @@ Functions</h2></td></tr>
 <tr class="separator:aef0aef3ba4310dc866f2568e9a4eaeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa853271a4d8cd929d59e6f75a27fa4a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuworker_8c.html#aa853271a4d8cd929d59e6f75a27fa4a8">cpuworker_log_onionskin_overhead</a> (int severity, int onionskin_type, const char *onionskin_type_name)</td></tr>
 <tr class="separator:aa853271a4d8cd929d59e6f75a27fa4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49e479132ab946189140169fd9ab789"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuworker_8c.html#ab49e479132ab946189140169fd9ab789">MOCK_IMPL</a> (<a class="el" href="structworkqueue__entry__s.html">workqueue_entry_t</a> *, cpuworker_queue_work,(workqueue_priority_t priority, workqueue_reply_t(*fn)(void *, void *), void(*reply_fn)(void *), void *arg))</td></tr>
+<tr class="separator:ab49e479132ab946189140169fd9ab789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4593e2d1d9201290194888fd171a6791"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuworker_8c.html#a4593e2d1d9201290194888fd171a6791">assign_onionskin_to_cpuworker</a> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ, <a class="el" href="structcreate__cell__t.html">create_cell_t</a> *onionskin)</td></tr>
 <tr class="separator:a4593e2d1d9201290194888fd171a6791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b4530118cd6e50e83a95454a6f22036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuworker_8c.html#a1b4530118cd6e50e83a95454a6f22036">cpuworker_cancel_circ_handshake</a> (<a class="el" href="structor__circuit__t.html">or_circuit_t</a> *circ)</td></tr>
@@ -186,7 +201,14 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Uses the workqueue/threadpool code to farm CPU-intensive activities out to subprocesses. </p>
 <p>The multithreading backend for this module is in <a class="el" href="workqueue_8c.html" title="Implements worker threads, queues of work for them, and mechanisms for them to send answers back to t...">workqueue.c</a>; this module specializes <a class="el" href="workqueue_8c.html" title="Implements worker threads, queues of work for them, and mechanisms for them to send answers back to t...">workqueue.c</a>.</p>
-<p>Right now, we only use this for processing onionskins, and invoke it mostly from <a class="el" href="onion_8c.html" title="Functions to queue create cells, wrap the various onionskin types, and parse and create the CREATE ce...">onion.c</a>. </p>
+<p>Right now, we use this infrastructure </p><ul>
+<li>
+for processing onionskins in <a class="el" href="onion_8c.html" title="Functions to queue create cells, wrap the various onionskin types, and parse and create the CREATE ce...">onion.c</a> </li>
+<li>
+for compressing consensuses in consdiffmgr.c, </li>
+<li>
+and for calculating diffs and compressing them in consdiffmgr.c. </li>
+</ul>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a0785c9a7931a3d9123203e22be92ec64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0785c9a7931a3d9123203e22be92ec64">&#9670;&nbsp;</a></span>CPUWORKER_REQUEST_MAGIC</h2>
@@ -302,6 +324,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="cpuworker_8c_a560ad8614ae03841a10b489f4370bc51_cgraph.png" border="0" usemap="#cpuworker_8c_a560ad8614ae03841a10b489f4370bc51_cgraph" alt=""/></div>
 <map name="cpuworker_8c_a560ad8614ae03841a10b489f4370bc51_cgraph" id="cpuworker_8c_a560ad8614ae03841a10b489f4370bc51_cgraph">
 <area shape="rect" id="node2" href="workqueue_8c.html#a5bca099ce188de04027e4ef03fcbd97c" title="replyqueue_new" alt="" coords="120,5,236,32"/>
+<area shape="rect" id="node3" href="config_8c.html#a24b84820686d4e33c276ae68be4f3c22" title="get_num_cpus" alt="" coords="125,56,231,83"/>
+<area shape="rect" id="node5" href="workqueue_8c.html#a013cb0ab1ce586f5ab7d324416f9f1ff" title="threadpool_new" alt="" coords="121,107,235,133"/>
+<area shape="rect" id="node4" href="compat_8c.html#aa88386bf611ee3d9a49f14414cb100b6" title="compute_num_cpus" alt="" coords="284,56,423,83"/>
 </map>
 </div>
 
@@ -329,7 +354,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="cpuworker_8c_a1b4530118cd6e50e83a95454a6f22036_cgraph.png" border="0" usemap="#cpuworker_8c_a1b4530118cd6e50e83a95454a6f22036_cgraph" alt=""/></div>
 <map name="cpuworker_8c_a1b4530118cd6e50e83a95454a6f22036_cgraph" id="cpuworker_8c_a1b4530118cd6e50e83a95454a6f22036_cgraph">
 <area shape="rect" id="node2" href="workqueue_8c.html#a19dc28519d407979f4a56f6c18a7f065" title="workqueue_entry_cancel" alt="" coords="208,31,375,57"/>
-<area shape="rect" id="node5" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="252,81,331,108"/>
+<area shape="rect" id="node5" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="252,81,331,108"/>
 <area shape="rect" id="node3" href="compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="423,5,552,32"/>
 <area shape="rect" id="node4" href="compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="423,56,552,83"/>
 </map>
@@ -425,7 +450,50 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return an estimate of how many microseconds we will need for a single cpuworker to to process <b>n_requests</b> onionskins of type <b>onionskin_type</b>. </p>
+<p>Return an estimate of how many microseconds we will need for a single cpuworker to process <b>n_requests</b> onionskins of type <b>onionskin_type</b>. </p>
+
+</div>
+</div>
+<a id="ab49e479132ab946189140169fd9ab789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49e479132ab946189140169fd9ab789">&#9670;&nbsp;</a></span>MOCK_IMPL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structworkqueue__entry__s.html">workqueue_entry_t</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cpuworker_queue_work&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(workqueue_priority_t priority, workqueue_reply_t(*fn)(void *, void *), void(*reply_fn)(void *), void *arg)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DOCDOC </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cpuworker_8c_ab49e479132ab946189140169fd9ab789_cgraph.png" border="0" usemap="#cpuworker_8c_ab49e479132ab946189140169fd9ab789_cgraph" alt=""/></div>
+<map name="cpuworker_8c_ab49e479132ab946189140169fd9ab789_cgraph" id="cpuworker_8c_ab49e479132ab946189140169fd9ab789_cgraph">
+<area shape="rect" id="node2" href="workqueue_8c.html#a8ab0f4ba9acd40d05c24117fa7754e03" title="threadpool_queue_work\l_priority" alt="" coords="153,5,312,47"/>
+</map>
+</div>
 
 </div>
 </div>

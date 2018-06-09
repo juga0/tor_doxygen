@@ -1,5 +1,4 @@
 <map id="authority_certs_fetch_missing" name="authority_certs_fetch_missing">
-<area shape="rect" id="node2" href="$dirserv_8c.html#a5a9cf7f465217dbc8142aaf11384abbf" title="directory_caches_unknown\l_auth_certs" alt="" coords="197,5,377,47"/>
-<area shape="rect" id="node4" href="$networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf" title="should_delay_dir_fetches" alt="" coords="203,71,372,98"/>
-<area shape="rect" id="node3" href="$router_8c.html#ab23297b12b098da9eac98126a587aa3b" title="dir_server_mode" alt="" coords="425,13,544,39"/>
+<area shape="rect" id="node2" href="$networkstatus_8c.html#ae571a0f2e98aee6bb9b6a0df669b6c25" title="we_want_to_fetch_unknown\l_auth_certs" alt="" coords="197,5,384,47"/>
+<area shape="rect" id="node3" href="$networkstatus_8c.html#aa278011afd1917ef43cc44fac287f7bf" title="should_delay_dir_fetches" alt="" coords="206,71,375,98"/>
 </map>

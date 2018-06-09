@@ -1,6 +1,6 @@
 <map id="router_get_routerlist" name="router_get_routerlist">
 <area shape="rect" id="node2" href="$dirvote_8h.html#ae288382ee634aeb5099f263fa9af8c25" title="dirserv_generate_networkstatus\l_vote_obj" alt="" coords="191,5,397,47"/>
-<area shape="rect" id="node3" href="$dirserv_8h.html#a285fc71bfe2b99bc2b09b949d95ac1b9" title="dirserv_get_routerdesc\l_fingerprints" alt="" coords="217,71,371,112"/>
+<area shape="rect" id="node3" href="$dirserv_8h.html#a2e2cb1b422b5391b4b128813aac0971c" title="dirserv_get_routerdesc\l_spool" alt="" coords="217,71,371,112"/>
 <area shape="rect" id="node4" href="$dirserv_8h.html#a8fca5a38cd000d8ccabe5bc73e296bb2" title="dirserv_get_routerdescs" alt="" coords="213,137,375,163"/>
 <area shape="rect" id="node5" href="$dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="213,187,375,214"/>
 <area shape="rect" id="node6" href="$networkstatus_8h.html#a17d10602167e09e05f4d5aefc744141b" title="routers_update_all\l_from_networkstatus" alt="" coords="222,239,366,280"/>

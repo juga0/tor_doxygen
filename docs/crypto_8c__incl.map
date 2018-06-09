@@ -1,23 +1,28 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/common/crypto.c" name="/home/user/_my/code/bwauth&#45;related/tor/src/common/crypto.c">
-<area shape="rect" id="node2" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="458,572,537,599"/>
-<area shape="rect" id="node3" href="$crypto_8h.html" title="Headers for crypto.c. " alt="" coords="944,273,1013,300"/>
-<area shape="rect" id="node5" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1318,497,1381,524"/>
-<area shape="rect" id="node7" href="$compat_8h_source.html" title="compat.h" alt="" coords="498,348,574,375"/>
-<area shape="rect" id="node12" href="$compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="667,117,795,143"/>
-<area shape="rect" id="node14" href="$crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1489,423,1631,449"/>
-<area shape="rect" id="node15" href="$crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1437,348,1563,375"/>
-<area shape="rect" id="node16" href="$crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1387,273,1501,300"/>
-<area shape="rect" id="node27" href="$torlog_8h.html" title="Headers for log.c. " alt="" coords="851,273,917,300"/>
-<area shape="rect" id="node28" href="$aes_8h.html" title="Headers for aes.c. " alt="" coords="2363,117,2418,143"/>
-<area shape="rect" id="node29" href="$util_8h.html" title="Headers for util.c. " alt="" coords="483,199,533,225"/>
-<area shape="rect" id="node33" href="$container_8h_source.html" title="container.h" alt="" coords="554,117,641,143"/>
-<area shape="rect" id="node35" href="$sandbox_8h.html" title="Header file for sandbox.c. " alt="" coords="2661,423,2744,449"/>
-<area shape="rect" id="node36" href="$util__format_8h_source.html" title="util_format.h" alt="" coords="1217,423,1311,449"/>
-<area shape="rect" id="node37" href="$keccak-tiny_8h_source.html" title="keccak&#45;tiny/keccak\l&#45;tiny.h" alt="" coords="2545,109,2679,151"/>
-<area shape="rect" id="node6" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="901,497,1000,524"/>
-<area shape="rect" id="node9" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="366,497,474,524"/>
-<area shape="rect" id="node11" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="574,423,701,449"/>
-<area shape="rect" id="node30" href="$di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="43,423,114,449"/>
-<area shape="rect" id="node32" href="$util__bug_8h.html" title="util_bug.h" alt="" coords="293,273,371,300"/>
-<area shape="rect" id="node34" href="$siphash_8h_source.html" title="siphash.h" alt="" coords="558,199,637,225"/>
+<area shape="rect" id="node2" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="993,871,1071,897"/>
+<area shape="rect" id="node3" href="$compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1175,117,1303,143"/>
+<area shape="rect" id="node7" href="$util_8h.html" title="Headers for util.c. " alt="" coords="1075,497,1125,524"/>
+<area shape="rect" id="node8" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1570,796,1633,823"/>
+<area shape="rect" id="node10" href="$compat_8h_source.html" title="compat.h" alt="" coords="741,647,817,673"/>
+<area shape="rect" id="node20" href="$crypto_8h.html" title="Headers for crypto.c. " alt="" coords="599,199,668,225"/>
+<area shape="rect" id="node21" href="$crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="349,273,443,300"/>
+<area shape="rect" id="node22" href="$crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="823,348,934,375"/>
+<area shape="rect" id="node23" href="$container_8h_source.html" title="container.h" alt="" coords="722,423,809,449"/>
+<area shape="rect" id="node25" href="$torlog_8h.html" title="Headers for log.c. " alt="" coords="198,497,263,524"/>
+<area shape="rect" id="node26" href="$crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1063,273,1206,300"/>
+<area shape="rect" id="node27" href="$crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1551,199,1676,225"/>
+<area shape="rect" id="node28" href="$crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1558,117,1671,143"/>
+<area shape="rect" id="node29" href="$crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="1783,423,1884,449"/>
+<area shape="rect" id="node30" href="$crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="1841,647,1935,673"/>
+<area shape="rect" id="node38" href="$aes_8h.html" title="Headers for aes.c. " alt="" coords="3095,117,3150,143"/>
+<area shape="rect" id="node39" href="$sandbox_8h.html" title="Header file for sandbox.c. " alt="" coords="2068,721,2151,748"/>
+<area shape="rect" id="node40" href="$util__format_8h_source.html" title="util_format.h" alt="" coords="1171,721,1266,748"/>
+<area shape="rect" id="node41" href="$keccak-tiny_8h_source.html" title="keccak&#45;tiny/keccak\l&#45;tiny.h" alt="" coords="2055,109,2190,151"/>
+<area shape="rect" id="node5" href="$crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1061,348,1211,375"/>
+<area shape="rect" id="node11" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="715,796,813,823"/>
+<area shape="rect" id="node16" href="$di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1290,721,1361,748"/>
+<area shape="rect" id="node18" href="$util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="993,572,1071,599"/>
+<area shape="rect" id="node13" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="299,796,407,823"/>
+<area shape="rect" id="node15" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="483,721,610,748"/>
+<area shape="rect" id="node24" href="$siphash_8h_source.html" title="siphash.h" alt="" coords="726,497,805,524"/>
 </map>

@@ -2,6 +2,8 @@
 <area shape="rect" id="node2" href="$nodelist_8c.html#aedef5331fdf01f16cdd5bbe528aae5db" title="node_get_declared_family" alt="" coords="212,5,385,32"/>
 <area shape="rect" id="node3" href="$container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="249,56,349,83"/>
 <area shape="rect" id="node4" href="$nodelist_8c.html#ad81a144f3a7aae0ee6a4406c8bcf137b" title="node_get_addr" alt="" coords="245,107,352,133"/>
-<area shape="rect" id="node5" href="$nodelist_8c.html#adf96bfe6edfb4e349eee15c66f6eda8e" title="node_get_prim_orport" alt="" coords="433,81,580,108"/>
-<area shape="rect" id="node6" href="$address_8c.html#a139ff425c957e4eed3a766cb48f55f93" title="tor_addr_copy" alt="" coords="455,132,559,159"/>
+<area shape="rect" id="node7" href="$nodelist_8c.html#a39712e702247f78a9f824a0c96b2a2b3" title="addrs_in_same_network\l_family" alt="" coords="217,158,380,199"/>
+<area shape="rect" id="node5" href="$nodelist_8c.html#a0ebc2be100c1842a1897987652011bd2" title="node_get_prim_orport" alt="" coords="449,60,596,87"/>
+<area shape="rect" id="node6" href="$address_8c.html#a139ff425c957e4eed3a766cb48f55f93" title="tor_addr_copy" alt="" coords="471,111,575,137"/>
+<area shape="rect" id="node8" href="$address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="433,165,612,192"/>
 </map>

@@ -91,11 +91,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="geoip_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2geoip_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2geoip_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2geoip_8hdep">
 <area shape="rect" id="node2" href="channel_8c.html" title="OR/OP&#45;to&#45;OR channel abstraction layer. A channel&#39;s job is to transfer cells from Tor instance to Tor ..." alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node3" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="177,109,325,165"/>
 <area shape="rect" id="node4" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="349,109,497,165"/>
 <area shape="rect" id="node5" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="522,109,677,165"/>
 <area shape="rect" id="node6" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="701,109,849,165"/>
-<area shape="rect" id="node7" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="873,109,1021,165"/>
+<area shape="rect" id="node7" href="directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="873,109,1021,165"/>
 <area shape="rect" id="node8" href="geoip_8c.html" title="Functions related to maintaining an IP&#45;to&#45;country database; to summarizing client connections by coun..." alt="" coords="1045,109,1193,165"/>
 <area shape="rect" id="node9" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="1217,109,1365,165"/>
 <area shape="rect" id="node10" href="nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="1389,109,1537,165"/>
@@ -758,9 +758,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="geoip_8h_a99613dd6eb7666bd2e5fe481f15ec301_cgraph.png" border="0" usemap="#geoip_8h_a99613dd6eb7666bd2e5fe481f15ec301_cgraph" alt=""/></div>
 <map name="geoip_8h_a99613dd6eb7666bd2e5fe481f15ec301_cgraph" id="geoip_8h_a99613dd6eb7666bd2e5fe481f15ec301_cgraph">
-<area shape="rect" id="node2" href="config_8c.html#ad09b1993fdca508d228a7585813efcac" title="options_need_geoip_info" alt="" coords="161,5,327,32"/>
-<area shape="rect" id="node4" href="compat_8c.html#a99ee17f8317be48a2391c20e31e8a7b8" title="tor_fopen_cloexec" alt="" coords="180,56,308,83"/>
-<area shape="rect" id="node3" href="routerset_8c.html#a06782dad9f20dd3a3da80d9df1d4c3b3" title="routerset_needs_geoip" alt="" coords="375,5,528,32"/>
+<area shape="rect" id="node2" href="config_8c.html#ad09b1993fdca508d228a7585813efcac" title="options_need_geoip_info" alt="" coords="161,31,327,57"/>
+<area shape="rect" id="node5" href="compat_8c.html#a99ee17f8317be48a2391c20e31e8a7b8" title="tor_fopen_cloexec" alt="" coords="180,81,308,108"/>
+<area shape="rect" id="node3" href="geoip_8c.html#aecc961d6ac7cd75ec8593321d51d909a" title="should_record_bridge_info" alt="" coords="375,5,548,32"/>
+<area shape="rect" id="node4" href="routerset_8c.html#a06782dad9f20dd3a3da80d9df1d4c3b3" title="routerset_needs_geoip" alt="" coords="385,56,538,83"/>
 </map>
 </div>
 
@@ -805,6 +806,14 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Note that we've seen a client connect from the IP <b>addr</b> at time <b>now</b>. Ignored by all but bridges and directories if configured accordingly. </p>
 <p>unresolved requests are stored at index 0. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="geoip_8h_a89c00fefaf2f19a1097e93e3116cd30f_cgraph.png" border="0" usemap="#geoip_8h_a89c00fefaf2f19a1097e93e3116cd30f_cgraph" alt=""/></div>
+<map name="geoip_8h_a89c00fefaf2f19a1097e93e3116cd30f_cgraph" id="geoip_8h_a89c00fefaf2f19a1097e93e3116cd30f_cgraph">
+<area shape="rect" id="node2" href="geoip_8c.html#aecc961d6ac7cd75ec8593321d51d909a" title="should_record_bridge_info" alt="" coords="212,5,385,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -979,10 +988,12 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="geoip_8h_a921840886e0a3d9ba57b014e6629cf1b_cgraph.png" border="0" usemap="#geoip_8h_a921840886e0a3d9ba57b014e6629cf1b_cgraph" alt=""/></div>
 <map name="geoip_8h_a921840886e0a3d9ba57b014e6629cf1b_cgraph" id="geoip_8h_a921840886e0a3d9ba57b014e6629cf1b_cgraph">
 <area shape="rect" id="node2" href="util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="241,5,329,32"/>
-<area shape="rect" id="node3" href="address_8c.html#a3cd537bd8104a89a5996793ee3f1d0dc" title="tor_addr_parse" alt="" coords="231,56,339,83"/>
-<area shape="rect" id="node4" href="geoip_8c.html#a8db18a0728871a50a20c43d1ebef6be0" title="geoip_get_country_by_ipv4" alt="" coords="195,107,375,133"/>
-<area shape="rect" id="node5" href="container_8c.html#a6722b8c6ca501b524958b3cdac2bc70c" title="smartlist_bsearch" alt="" coords="423,107,548,133"/>
-<area shape="rect" id="node6" href="container_8c.html#af0f195f396d7f97e7f2f2367453da119" title="smartlist_bsearch_idx" alt="" coords="596,107,745,133"/>
+<area shape="rect" id="node3" href="compat_8c.html#ade97970c1d8a691241adac739c4f9b12" title="tor_asprintf" alt="" coords="241,56,328,83"/>
+<area shape="rect" id="node5" href="address_8c.html#a3cd537bd8104a89a5996793ee3f1d0dc" title="tor_addr_parse" alt="" coords="231,107,339,133"/>
+<area shape="rect" id="node6" href="geoip_8c.html#a8db18a0728871a50a20c43d1ebef6be0" title="geoip_get_country_by_ipv4" alt="" coords="195,157,375,184"/>
+<area shape="rect" id="node4" href="compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="438,56,533,83"/>
+<area shape="rect" id="node7" href="container_8c.html#a6722b8c6ca501b524958b3cdac2bc70c" title="smartlist_bsearch" alt="" coords="423,157,548,184"/>
+<area shape="rect" id="node8" href="container_8c.html#af0f195f396d7f97e7f2f2367453da119" title="smartlist_bsearch_idx" alt="" coords="596,157,745,184"/>
 </map>
 </div>
 
@@ -1004,6 +1015,16 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return 1 if we should collect geoip stats on bridge users, and include them in our extrainfo descriptor. Else return 0. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="geoip_8h_aecc961d6ac7cd75ec8593321d51d909a_icgraph.png" border="0" usemap="#geoip_8h_aecc961d6ac7cd75ec8593321d51d909a_icgraph" alt=""/></div>
+<map name="geoip_8h_aecc961d6ac7cd75ec8593321d51d909a_icgraph" id="geoip_8h_aecc961d6ac7cd75ec8593321d51d909a_icgraph">
+<area shape="rect" id="node2" href="config_8h.html#ad09b1993fdca508d228a7585813efcac" title="options_need_geoip_info" alt="" coords="227,5,392,32"/>
+<area shape="rect" id="node4" href="geoip_8h.html#a89c00fefaf2f19a1097e93e3116cd30f" title="geoip_note_client_seen" alt="" coords="230,56,389,83"/>
+<area shape="rect" id="node3" href="geoip_8h.html#a99613dd6eb7666bd2e5fe481f15ec301" title="geoip_load_file" alt="" coords="440,5,548,32"/>
+</map>
+</div>
 
 </div>
 </div>

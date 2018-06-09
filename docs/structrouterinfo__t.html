@@ -140,8 +140,9 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>ipv6_orport</b></
 <tr class="separator:a8e19cda912a3cf7c979eddb7189e7a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12535e3289307c026ad1c03dc1eeb176"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterinfo__t.html#a12535e3289307c026ad1c03dc1eeb176">omit_from_vote</a>:1</td></tr>
 <tr class="separator:a12535e3289307c026ad1c03dc1eeb176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a823d52c11f220ee6f7833d898f40814d"><td class="memItemLeft" align="right" valign="top"><a id="a823d52c11f220ee6f7833d898f40814d"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>purpose</b></td></tr>
+<tr class="memitem:a236520aa108becd0d0c15c41ac0f1f58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structprotover__summary__flags__t.html">protover_summary_flags_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterinfo__t.html#a236520aa108becd0d0c15c41ac0f1f58">pv</a></td></tr>
+<tr class="separator:a236520aa108becd0d0c15c41ac0f1f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823d52c11f220ee6f7833d898f40814d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouterinfo__t.html#a823d52c11f220ee6f7833d898f40814d">purpose</a></td></tr>
 <tr class="separator:a823d52c11f220ee6f7833d898f40814d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -504,6 +505,36 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>purpose</b></td></
       </table>
 </div><div class="memdoc">
 <p>Encoded list of subprotocol versions supported by this OR </p>
+
+</div>
+</div>
+<a id="a823d52c11f220ee6f7833d898f40814d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a823d52c11f220ee6f7833d898f40814d">&#9670;&nbsp;</a></span>purpose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t purpose</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>In what way did we find out about this router? One of ROUTER_PURPOSE_*. Routers of different purposes are kept segregated and used for different things; see notes on ROUTER_PURPOSE_* macros above. </p>
+
+</div>
+</div>
+<a id="a236520aa108becd0d0c15c41ac0f1f58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a236520aa108becd0d0c15c41ac0f1f58">&#9670;&nbsp;</a></span>pv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structprotover__summary__flags__t.html">protover_summary_flags_t</a> pv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flags to summarize the protocol versions for this <a class="el" href="structrouterinfo__t.html">routerinfo_t</a>. </p>
 
 </div>
 </div>

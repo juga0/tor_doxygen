@@ -1,11 +1,10 @@
 <map id="directory_too_idle_to_fetch_descriptors" name="directory_too_idle_to_fetch_descriptors">
 <area shape="rect" id="node2" href="$dirserv_8c.html#a57e2ff1ad2ea65abe9b969ad3d76a418" title="directory_caches_dir_info" alt="" coords="200,64,371,91"/>
-<area shape="rect" id="node6" href="$rephist_8c.html#a890009e83c2e90292a435526b8111727" title="rep_hist_circbuilding\l_dormant" alt="" coords="215,174,355,215"/>
+<area shape="rect" id="node5" href="$rephist_8c.html#a890009e83c2e90292a435526b8111727" title="rep_hist_circbuilding\l_dormant" alt="" coords="215,174,355,215"/>
 <area shape="rect" id="node3" href="$router_8c.html#ab23297b12b098da9eac98126a587aa3b" title="dir_server_mode" alt="" coords="441,5,559,32"/>
 <area shape="rect" id="node4" href="$router_8c.html#afa75de94186fffc8f373de610ae4cab3" title="should_refuse_unknown\l_exits" alt="" coords="419,57,581,98"/>
-<area shape="rect" id="node5" href="$networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="629,64,801,91"/>
-<area shape="rect" id="node7" href="$rephist_8c.html#ae234f5b5dcf88ea65ef20ff5c3512327" title="any_predicted_circuits" alt="" coords="424,123,576,149"/>
-<area shape="rect" id="node8" href="$router_8c.html#a8b917b11fb2945b314286a6a567e34c3" title="check_whether_orport\l_reachable" alt="" coords="425,174,575,215"/>
-<area shape="rect" id="node9" href="$circuituse_8c.html#ac6c1a2c715351d85ef6747ca1a4db958" title="circuit_enough_testing\l_circs" alt="" coords="424,239,576,281"/>
-<area shape="rect" id="node10" href="$router_8c.html#a98317a030cb30700f60c8444d676087b" title="check_whether_dirport\l_reachable" alt="" coords="423,305,577,346"/>
+<area shape="rect" id="node6" href="$rephist_8c.html#ae234f5b5dcf88ea65ef20ff5c3512327" title="any_predicted_circuits" alt="" coords="424,123,576,149"/>
+<area shape="rect" id="node7" href="$router_8c.html#a8b917b11fb2945b314286a6a567e34c3" title="check_whether_orport\l_reachable" alt="" coords="425,174,575,215"/>
+<area shape="rect" id="node8" href="$circuituse_8c.html#ac6c1a2c715351d85ef6747ca1a4db958" title="circuit_enough_testing\l_circs" alt="" coords="424,239,576,281"/>
+<area shape="rect" id="node9" href="$router_8c.html#a98317a030cb30700f60c8444d676087b" title="check_whether_dirport\l_reachable" alt="" coords="423,305,577,346"/>
 </map>

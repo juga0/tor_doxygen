@@ -1,28 +1,38 @@
-<map id="/home/user/_my/code/bwauth&#45;related/tor/src/or/buffers.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/or/buffers.h">
-<area shape="rect" id="node2" href="$buffers_8c.html" title="Implements a generic buffer interface. " alt="" coords="411,109,559,165"/>
-<area shape="rect" id="node3" href="$connection_8h.html" title="Header file for connection.c. " alt="" coords="1937,109,2085,165"/>
-<area shape="rect" id="node10" href="$connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="5,213,153,269"/>
-<area shape="rect" id="node11" href="$connection__edge_8c.html" title="Handle edge streams. " alt="" coords="177,213,349,269"/>
-<area shape="rect" id="node12" href="$connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="374,213,529,269"/>
-<area shape="rect" id="node13" href="$control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="553,213,701,269"/>
-<area shape="rect" id="node14" href="$directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="725,213,873,269"/>
-<area shape="rect" id="node15" href="$dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="897,213,1045,269"/>
-<area shape="rect" id="node21" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="3829,213,3977,269"/>
-<area shape="rect" id="node23" href="$relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="4001,213,4149,269"/>
-<area shape="rect" id="node4" href="$channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances..." alt="" coords="2453,213,2601,269"/>
-<area shape="rect" id="node5" href="$circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="2625,213,2773,269"/>
-<area shape="rect" id="node6" href="$circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. " alt="" coords="2797,213,2945,269"/>
-<area shape="rect" id="node7" href="$circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. " alt="" coords="2969,213,3117,269"/>
-<area shape="rect" id="node8" href="$command_8c.html" title="Functions for processing incoming cells. " alt="" coords="3141,213,3289,269"/>
-<area shape="rect" id="node9" href="$config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="3313,213,3461,269"/>
-<area shape="rect" id="node16" href="$dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada..." alt="" coords="3485,213,3633,269"/>
-<area shape="rect" id="node17" href="$dnsserv_8c.html" title="Implements client&#45;side DNS proxy server code. Note: this is the DNS Server code, not the Server DNS c..." alt="" coords="3657,213,3805,269"/>
-<area shape="rect" id="node18" href="$entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="1069,213,1217,269"/>
-<area shape="rect" id="node19" href="$ext__orport_8c.html" title="Code implementing the Extended ORPort. " alt="" coords="1241,213,1389,269"/>
-<area shape="rect" id="node20" href="$hibernate_8c.html" title="Functions to close listeners, stop allowing new circuits, etc in preparation for closing down or goin..." alt="" coords="1413,213,1561,269"/>
-<area shape="rect" id="node22" href="$networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. " alt="" coords="1585,213,1741,269"/>
-<area shape="rect" id="node24" href="$rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="1765,213,1913,269"/>
-<area shape="rect" id="node25" href="$router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="1937,213,2085,269"/>
-<area shape="rect" id="node26" href="$routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="2109,213,2257,269"/>
-<area shape="rect" id="node27" href="$statefile_8c.html" title="Handles parsing and encoding the persistent &#39;state&#39; file that carries miscellaneous persistent state ..." alt="" coords="2281,213,2429,269"/>
+<map id="/home/user/_my/code/bwauth&#45;related/tor/src/common/buffers.h" name="/home/user/_my/code/bwauth&#45;related/tor/src/common/buffers.h">
+<area shape="rect" id="node2" href="$buffers_8c.html" title="Implements a generic buffer interface. " alt="" coords="1791,117,1944,173"/>
+<area shape="rect" id="node3" href="$connection_8h.html" title="Header file for connection.c. " alt="" coords="2273,117,2421,173"/>
+<area shape="rect" id="node11" href="$connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="5,228,153,284"/>
+<area shape="rect" id="node12" href="$connection__edge_8c.html" title="Handle edge streams. " alt="" coords="177,228,349,284"/>
+<area shape="rect" id="node13" href="$connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. " alt="" coords="374,228,529,284"/>
+<area shape="rect" id="node14" href="$control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="553,228,701,284"/>
+<area shape="rect" id="node15" href="$directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="725,228,873,284"/>
+<area shape="rect" id="node16" href="$dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="897,228,1045,284"/>
+<area shape="rect" id="node24" href="$main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="4732,228,4880,284"/>
+<area shape="rect" id="node26" href="$relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="4904,228,5052,284"/>
+<area shape="rect" id="node31" href="$test__helpers_8c.html" title="Some helper functions to avoid code duplication in unit tests. " alt="" coords="5076,228,5232,284"/>
+<area shape="rect" id="node34" href="$geoip_8c.html" title="Functions related to maintaining an IP&#45;to&#45;country database; to summarizing client connections by coun..." alt="" coords="2599,117,2747,173"/>
+<area shape="rect" id="node35" href="$scheduler_8c.html" title="Channel scheduling system: decides which channels should send and receive when. " alt="" coords="2771,117,2919,173"/>
+<area shape="rect" id="node36" href="$test__proto__http_8c.html" title="Tests for our HTTP protocol parser code. " alt="" coords="2943,109,3091,180"/>
+<area shape="rect" id="node37" href="$test__proto__misc_8c.html" title="Test our smaller buffer&#45;based protocol functions. " alt="" coords="3115,109,3263,180"/>
+<area shape="rect" id="node4" href="$bridges_8c.html" title="Code to manage bridges and bridge selection. " alt="" coords="3700,228,3848,284"/>
+<area shape="rect" id="node5" href="$channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances..." alt="" coords="3872,228,4020,284"/>
+<area shape="rect" id="node6" href="$circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="4044,228,4192,284"/>
+<area shape="rect" id="node7" href="$circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="4216,228,4364,284"/>
+<area shape="rect" id="node8" href="$circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="4388,228,4536,284"/>
+<area shape="rect" id="node9" href="$command_8c.html" title="Functions for processing incoming cells. " alt="" coords="4560,228,4708,284"/>
+<area shape="rect" id="node10" href="$config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="1069,228,1217,284"/>
+<area shape="rect" id="node17" href="$dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada..." alt="" coords="1241,228,1389,284"/>
+<area shape="rect" id="node18" href="$dnsserv_8c.html" title="Implements client&#45;side DNS proxy server code. " alt="" coords="1413,228,1561,284"/>
+<area shape="rect" id="node19" href="$entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="1585,228,1733,284"/>
+<area shape="rect" id="node20" href="$ext__orport_8c.html" title="Code implementing the Extended ORPort. " alt="" coords="1757,228,1905,284"/>
+<area shape="rect" id="node21" href="$hibernate_8c.html" title="Functions to close listeners, stop allowing new circuits, etc in preparation for closing down or goin..." alt="" coords="1929,228,2077,284"/>
+<area shape="rect" id="node22" href="$hs__client_8c.html" title="Implement next generation hidden service client functionality. " alt="" coords="2101,228,2249,284"/>
+<area shape="rect" id="node23" href="$hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="2273,228,2421,284"/>
+<area shape="rect" id="node25" href="$networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache..." alt="" coords="2445,228,2601,284"/>
+<area shape="rect" id="node27" href="$rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="2625,228,2773,284"/>
+<area shape="rect" id="node28" href="$router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="2797,228,2945,284"/>
+<area shape="rect" id="node29" href="$routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="2969,228,3117,284"/>
+<area shape="rect" id="node30" href="$statefile_8c.html" title="Handles parsing and encoding the persistent &#39;state&#39; file that carries miscellaneous persistent state ..." alt="" coords="3141,228,3289,284"/>
+<area shape="rect" id="node32" href="$test__hs__cache_8c.html" title="Test hidden service caches. " alt="" coords="3314,228,3485,284"/>
+<area shape="rect" id="node33" href="$test__hs__client_8c.html" title="Test prop224 HS client functionality. " alt="" coords="3509,228,3676,284"/>
 </map>

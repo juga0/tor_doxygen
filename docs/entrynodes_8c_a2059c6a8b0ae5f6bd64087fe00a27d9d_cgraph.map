@@ -1,3 +1,4 @@
 <map id="remove_all_entry_guards" name="remove_all_entry_guards">
-<area shape="rect" id="node2" href="$util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="220,5,333,32"/>
+<area shape="rect" id="node2" href="$entrynodes_8c.html#a37261ae47f6bec9d6ade03c87b74f916" title="remove_all_entry_guards\l_for_guard_selection" alt="" coords="220,5,387,47"/>
+<area shape="rect" id="node3" href="$entrynodes_8c.html#ae55f2a4d95b0bc81220dd0464b8494f8" title="get_guard_selection_info" alt="" coords="220,71,387,98"/>
 </map>

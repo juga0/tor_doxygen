@@ -1,4 +1,4 @@
 <map id="crypto_cipher_new_with_bits" name="crypto_cipher_new_with_bits">
 <area shape="rect" id="node2" href="$crypto_8h.html#a1a44157cdf50927218728fde6e863b1e" title="crypto_cipher_new" alt="" coords="244,13,375,39"/>
-<area shape="rect" id="node3" href="$circuitbuild_8h.html#ad6e1de1a8a6bb7f32b780321e1d7745d" title="circuit_init_cpath\l_crypto" alt="" coords="423,5,543,47"/>
+<area shape="rect" id="node3" href="$crypto__rsa_8h.html#a30d6a44940fe781bb5961ace32c0cbb1" title="crypto_pk_obsolete\l_public_hybrid_encrypt" alt="" coords="423,5,577,47"/>
 </map>

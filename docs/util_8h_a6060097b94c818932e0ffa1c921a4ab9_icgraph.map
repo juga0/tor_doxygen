@@ -1,0 +1,8 @@
+<map id="smartlist_add_strdup" name="smartlist_add_strdup">
+<area shape="rect" id="node2" href="$util_8h.html#a98f5785d540bfcd4822ebbcbe61685cd" title="get_current_process\l_environment_variables" alt="" coords="211,5,369,47"/>
+<area shape="rect" id="node3" href="$dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="217,71,363,98"/>
+<area shape="rect" id="node4" href="$policies_8h.html#a8dd804fdc250aed2c7270fe142400c56" title="write_short_policy" alt="" coords="227,122,353,149"/>
+<area shape="rect" id="node6" href="$protover_8c.html#aac7b23f286ab38a93ae9448d944ffff9" title="encode_protocol_list" alt="" coords="219,173,361,199"/>
+<area shape="rect" id="node7" href="$routerset_8c.html#a5f4149eb7a8b9082fc69e6fda85ebb59" title="routerset_add_unknown_ccs" alt="" coords="196,223,384,250"/>
+<area shape="rect" id="node5" href="$dirvote_8c.html#a059168318a87de5f77438cbcefdb73ed" title="dirvote_create_microdescriptor" alt="" coords="432,122,632,149"/>
+</map>

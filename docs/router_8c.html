@@ -80,6 +80,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__rand_8h_source.html">crypto_rand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
 <code>#include &quot;crypto_curve25519.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="directory_8h_source.html">directory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dirserv_8h_source.html">dirserv.h</a>&quot;</code><br />
@@ -101,59 +103,61 @@ $(function() {
 <code>#include &quot;torcert.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="transports_8h_source.html">transports.h</a>&quot;</code><br />
 <code>#include &quot;routerset.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="mode_8h_source.html">dirauth/mode.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for router.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2router_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2router_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2router_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="682,109,726,136"/>
-<area shape="rect" id="node11" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1082,333,1225,360"/>
-<area shape="rect" id="node23" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2146,109,2241,136"/>
-<area shape="rect" id="node24" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1849,333,1935,360"/>
-<area shape="rect" id="node25" href="circuituse_8h.html" title="Header file for circuituse.c. " alt="" coords="2265,109,2354,136"/>
-<area shape="rect" id="node26" href="config_8h.html" title="Header file for config.c. " alt="" coords="1906,259,1974,285"/>
-<area shape="rect" id="node27" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1999,259,2095,285"/>
-<area shape="rect" id="node29" href="control_8h.html" title="Header file for control.c. " alt="" coords="2379,109,2451,136"/>
-<area shape="rect" id="node30" href="directory_8h.html" title="Header file for directory.c. " alt="" coords="2475,109,2557,136"/>
-<area shape="rect" id="node31" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="2108,333,2180,360"/>
-<area shape="rect" id="node32" href="dns_8h.html" title="Header file for dns.c. " alt="" coords="2582,109,2637,136"/>
-<area shape="rect" id="node33" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="2057,109,2121,136"/>
-<area shape="rect" id="node35" href="hibernate_8h.html" title="Header file for hibernate.c. " alt="" coords="1551,259,1638,285"/>
-<area shape="rect" id="node36" href="main_8h.html" title="Header file for main.c. " alt="" coords="2661,109,2723,136"/>
-<area shape="rect" id="node37" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="1553,333,1668,360"/>
-<area shape="rect" id="node38" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2747,109,2826,136"/>
-<area shape="rect" id="node39" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="2851,109,2928,136"/>
-<area shape="rect" id="node40" href="protover_8h.html" title="Headers and type declarations for protover.c. " alt="" coords="5,184,85,211"/>
-<area shape="rect" id="node41" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="2952,109,3013,136"/>
-<area shape="rect" id="node42" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="3037,109,3109,136"/>
-<area shape="rect" id="node43" href="router_8h.html" title="Header file for router.c. " alt="" coords="1713,259,1780,285"/>
-<area shape="rect" id="node44" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="1337,184,1431,211"/>
-<area shape="rect" id="node45" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="1743,333,1825,360"/>
-<area shape="rect" id="node46" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="3133,109,3232,136"/>
-<area shape="rect" id="node47" href="statefile_8h_source.html" title="statefile.h" alt="" coords="3257,109,3335,136"/>
-<area shape="rect" id="node48" href="torcert_8h_source.html" title="torcert.h" alt="" coords="1455,184,1526,211"/>
-<area shape="rect" id="node49" href="transports_8h.html" title="Headers for transports.c. " alt="" coords="3360,109,3451,136"/>
-<area shape="rect" id="node50" href="routerset_8h_source.html" title="routerset.h" alt="" coords="3475,109,3559,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="317,483,395,509"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="641,408,703,435"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="312,259,381,285"/>
-<area shape="rect" id="node9" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1199,184,1313,211"/>
-<area shape="rect" id="node10" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1193,259,1319,285"/>
-<area shape="rect" id="node12" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="451,184,514,211"/>
-<area shape="rect" id="node14" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="710,259,775,285"/>
-<area shape="rect" id="node15" href="container_8h_source.html" title="container.h" alt="" coords="49,259,135,285"/>
-<area shape="rect" id="node16" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="792,184,864,211"/>
-<area shape="rect" id="node17" href="address_8h.html" title="Headers for address.h. " alt="" coords="235,184,314,211"/>
-<area shape="rect" id="node18" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1300,333,1428,360"/>
-<area shape="rect" id="node19" href="ht_8h_source.html" title="ht.h" alt="" coords="889,184,933,211"/>
-<area shape="rect" id="node20" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="957,184,1059,211"/>
-<area shape="rect" id="node21" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1084,184,1175,211"/>
-<area shape="rect" id="node22" href="util__format_8h_source.html" title="util_format.h" alt="" coords="963,333,1058,360"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1441,408,1540,435"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="381,333,457,360"/>
-<area shape="rect" id="node13" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="507,259,635,285"/>
-<area shape="rect" id="node28" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="2010,333,2083,360"/>
-<area shape="rect" id="node34" href="dos_8h_source.html" title="dos.h" alt="" coords="2062,184,2117,211"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="933,109,977,136"/>
+<area shape="rect" id="node8" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1542,333,1685,360"/>
+<area shape="rect" id="node22" href="circuitbuild_8h.html" title="Header file for circuitbuild.c. " alt="" coords="1001,109,1095,136"/>
+<area shape="rect" id="node23" href="circuitlist_8h.html" title="Header file for circuitlist.c. " alt="" coords="1120,109,1205,136"/>
+<area shape="rect" id="node24" href="circuituse_8h.html" title="Header file for circuituse.c. " alt="" coords="1230,109,1319,136"/>
+<area shape="rect" id="node25" href="config_8h.html" title="Header file for config.c. " alt="" coords="1343,109,1411,136"/>
+<area shape="rect" id="node26" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="1436,109,1532,136"/>
+<area shape="rect" id="node27" href="control_8h.html" title="Header file for control.c. " alt="" coords="1556,109,1628,136"/>
+<area shape="rect" id="node28" href="crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="2388,259,2489,285"/>
+<area shape="rect" id="node29" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="2741,333,2835,360"/>
+<area shape="rect" id="node30" href="directory_8h.html" title="Header file for directory.c. " alt="" coords="1753,109,1836,136"/>
+<area shape="rect" id="node31" href="dirserv_8h.html" title="Header file for dirserv.c. " alt="" coords="1860,109,1932,136"/>
+<area shape="rect" id="node32" href="dns_8h.html" title="Header file for dns.c. " alt="" coords="1957,109,2011,136"/>
+<area shape="rect" id="node33" href="geoip_8h.html" title="Header file for geoip.c. " alt="" coords="2036,109,2100,136"/>
+<area shape="rect" id="node34" href="hibernate_8h.html" title="Header file for hibernate.c. " alt="" coords="2125,109,2211,136"/>
+<area shape="rect" id="node35" href="main_8h.html" title="Header file for main.c. " alt="" coords="2236,109,2297,136"/>
+<area shape="rect" id="node36" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2321,109,2436,136"/>
+<area shape="rect" id="node37" href="nodelist_8h.html" title="Header file for nodelist.c. " alt="" coords="2461,109,2539,136"/>
+<area shape="rect" id="node38" href="policies_8h.html" title="Header file for policies.c. " alt="" coords="2564,109,2641,136"/>
+<area shape="rect" id="node39" href="protover_8h.html" title="Headers and type declarations for protover.c. " alt="" coords="5,184,85,211"/>
+<area shape="rect" id="node40" href="relay_8h.html" title="Header file for relay.c. " alt="" coords="2716,109,2777,136"/>
+<area shape="rect" id="node41" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2801,109,2873,136"/>
+<area shape="rect" id="node42" href="router_8h.html" title="Header file for router.c. " alt="" coords="2897,109,2964,136"/>
+<area shape="rect" id="node43" href="routerkeys_8h_source.html" title="routerkeys.h" alt="" coords="2215,184,2310,211"/>
+<area shape="rect" id="node44" href="routerlist_8h.html" title="Header file for routerlist.c. " alt="" coords="3039,109,3121,136"/>
+<area shape="rect" id="node45" href="routerparse_8h.html" title="Header file for routerparse.c. " alt="" coords="3145,109,3244,136"/>
+<area shape="rect" id="node46" href="statefile_8h_source.html" title="statefile.h" alt="" coords="3269,109,3347,136"/>
+<area shape="rect" id="node47" href="torcert_8h_source.html" title="torcert.h" alt="" coords="1703,184,1774,211"/>
+<area shape="rect" id="node48" href="transports_8h.html" title="Headers for transports.c. " alt="" coords="3423,109,3513,136"/>
+<area shape="rect" id="node49" href="routerset_8h_source.html" title="routerset.h" alt="" coords="3538,109,3622,136"/>
+<area shape="rect" id="node50" href="mode_8h.html" title="Standalone header file for directory authority mode. " alt="" coords="3646,109,3754,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="571,483,650,509"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1359,408,1422,435"/>
+<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1103,333,1172,360"/>
+<area shape="rect" id="node6" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1463,184,1577,211"/>
+<area shape="rect" id="node7" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1676,259,1801,285"/>
+<area shape="rect" id="node9" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="161,184,223,211"/>
+<area shape="rect" id="node10" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="247,184,313,211"/>
+<area shape="rect" id="node11" href="container_8h_source.html" title="container.h" alt="" coords="859,259,946,285"/>
+<area shape="rect" id="node12" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="388,184,479,211"/>
+<area shape="rect" id="node13" href="address_8h.html" title="Headers for address.h. " alt="" coords="571,184,650,211"/>
+<area shape="rect" id="node14" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="123,408,251,435"/>
+<area shape="rect" id="node15" href="ht_8h_source.html" title="ht.h" alt="" coords="503,184,547,211"/>
+<area shape="rect" id="node16" href="confline_8h_source.html" title="confline.h" alt="" coords="917,184,995,211"/>
+<area shape="rect" id="node17" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="674,184,777,211"/>
+<area shape="rect" id="node18" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="801,184,892,211"/>
+<area shape="rect" id="node19" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="1175,259,1286,285"/>
+<area shape="rect" id="node20" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1258,333,1353,360"/>
+<area shape="rect" id="node21" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="1071,184,1185,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -176,17 +180,27 @@ Macros</h2></td></tr>
 <tr class="memitem:a2e2465d5d711cedebe59cceb59cf896a"><td class="memItemLeft" align="right" valign="top"><a id="a2e2465d5d711cedebe59cceb59cf896a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DEBUG_ROUTER_DUMP_ROUTER_TO_STRING</b></td></tr>
 <tr class="separator:a2e2465d5d711cedebe59cceb59cf896a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a392831ecd0ad8a403b1dc0e837d161"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a7a392831ecd0ad8a403b1dc0e837d161">NODE_DESC_BUF_LEN</a>&#160;&#160;&#160;(<a class="el" href="or_8h.html#a8e619cd29da4289b84f936357bcb9c2c">MAX_VERBOSE_NICKNAME_LEN</a>+4+<a class="el" href="address_8h.html#ac43ab33ae6719d7549644d40fe89bd5f">TOR_ADDR_BUF_LEN</a>)</td></tr>
+<tr class="separator:a7a392831ecd0ad8a403b1dc0e837d161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a54ab47db660fac7decf06081ba29f8dd"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a54ab47db660fac7decf06081ba29f8dd">format_node_description</a> (char *buf, const char *id_digest, int is_named, const char *nickname, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint32_t addr32h)</td></tr>
+<tr class="separator:a54ab47db660fac7decf06081ba29f8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01343bdaa55370c9b0663208d4e1e67c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a01343bdaa55370c9b0663208d4e1e67c">routerinfo_err_to_string</a> (int err)</td></tr>
+<tr class="separator:a01343bdaa55370c9b0663208d4e1e67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee06541f1d25bedac9166f4a08834c16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#aee06541f1d25bedac9166f4a08834c16">routerinfo_err_is_transient</a> (int err)</td></tr>
+<tr class="separator:aee06541f1d25bedac9166f4a08834c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18f3561f96c3a73512e97860624b9cc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a18f3561f96c3a73512e97860624b9cc1">get_onion_key</a> (void)</td></tr>
 <tr class="separator:a18f3561f96c3a73512e97860624b9cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d8f6e0ed3558284e43371894abb504"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a71d8f6e0ed3558284e43371894abb504">dup_onion_keys</a> (<a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> **key, <a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> **last)</td></tr>
 <tr class="separator:a71d8f6e0ed3558284e43371894abb504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b04ba161c869beb75a2a1d6f0d44f59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a9b04ba161c869beb75a2a1d6f0d44f59">expire_old_onion_keys</a> (void)</td></tr>
+<tr class="separator:a9b04ba161c869beb75a2a1d6f0d44f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c647445efb73188e0ba32510afbee0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdi__digest256__map__t.html">di_digest256_map_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a4c647445efb73188e0ba32510afbee0d">construct_ntor_key_map</a> (void)</td></tr>
 <tr class="separator:a4c647445efb73188e0ba32510afbee0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6d902dd7289b2388a4c4f33a43d75dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#aa6d902dd7289b2388a4c4f33a43d75dd">ntor_key_map_free</a> (<a class="el" href="structdi__digest256__map__t.html">di_digest256_map_t</a> *map)</td></tr>
-<tr class="separator:aa6d902dd7289b2388a4c4f33a43d75dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07026739772087089f5b5a27813e646b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a07026739772087089f5b5a27813e646b">ntor_key_map_free_</a> (<a class="el" href="structdi__digest256__map__t.html">di_digest256_map_t</a> *map)</td></tr>
+<tr class="separator:a07026739772087089f5b5a27813e646b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a875c79d86af54c7cd80c8e9844d8d347"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a875c79d86af54c7cd80c8e9844d8d347">get_onion_key_set_at</a> (void)</td></tr>
 <tr class="separator:a875c79d86af54c7cd80c8e9844d8d347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad833b358871f8b821b26628c5457e134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#ad833b358871f8b821b26628c5457e134">set_server_identity_key</a> (<a class="el" href="structcrypto__pk__t.html">crypto_pk_t</a> *k)</td></tr>
@@ -215,6 +229,10 @@ Functions</h2></td></tr>
 <tr class="separator:a7ca8d566f45ef49fb6fd7358c235a420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ccf29e1bf3d8e43591f66d2a5118a6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a1ccf29e1bf3d8e43591f66d2a5118a6b">v3_authority_check_key_expiry</a> (void)</td></tr>
 <tr class="separator:a1ccf29e1bf3d8e43591f66d2a5118a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9dc576492cd81658d909e790c138904"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#ab9dc576492cd81658d909e790c138904">get_onion_key_lifetime</a> (void)</td></tr>
+<tr class="separator:ab9dc576492cd81658d909e790c138904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a01b088538e0c0a72535474724bcd9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a51a01b088538e0c0a72535474724bcd9">get_onion_key_grace_period</a> (void)</td></tr>
+<tr class="separator:a51a01b088538e0c0a72535474724bcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67d28ab5fe06baaec0c4e7575a9502cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a67d28ab5fe06baaec0c4e7575a9502cc">router_initialize_tls_context</a> (void)</td></tr>
 <tr class="separator:a67d28ab5fe06baaec0c4e7575a9502cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6be11a2e3d79f8639b03e0b96290102"><td class="memItemLeft" align="right" valign="top">STATIC int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#af6be11a2e3d79f8639b03e0b96290102">router_write_fingerprint</a> (int hashed)</td></tr>
@@ -232,8 +250,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_keys_client</b> (
 <tr class="separator:a98317a030cb30700f60c8444d676087b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab23297b12b098da9eac98126a587aa3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#ab23297b12b098da9eac98126a587aa3b">dir_server_mode</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
 <tr class="separator:ab23297b12b098da9eac98126a587aa3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93f4b5aab591c136663925a937575299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a93f4b5aab591c136663925a937575299">consider_testing_reachability</a> (int test_or, int test_dir)</td></tr>
-<tr class="separator:a93f4b5aab591c136663925a937575299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242f0a76713d7b28d940880fc3dd03ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a242f0a76713d7b28d940880fc3dd03ed">router_do_reachability_checks</a> (int test_or, int test_dir)</td></tr>
+<tr class="separator:a242f0a76713d7b28d940880fc3dd03ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81d0eddf34d18d1da24a0f14e1c54c1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a81d0eddf34d18d1da24a0f14e1c54c1f">router_orport_found_reachable</a> (void)</td></tr>
 <tr class="separator:a81d0eddf34d18d1da24a0f14e1c54c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0152c6014466eaafa2e666bb38ba16b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#ab0152c6014466eaafa2e666bb38ba16b">router_dirport_found_reachable</a> (void)</td></tr>
@@ -242,14 +260,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_keys_client</b> (
 <tr class="separator:a95281001f99f50d14056c2b9fd51bc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7d8b358c0cdb6359916151f1863e36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a0b7d8b358c0cdb6359916151f1863e36">net_is_disabled</a> (void)</td></tr>
 <tr class="separator:a0b7d8b358c0cdb6359916151f1863e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f26f7d8212be928f60b7daf0279f029"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a1f26f7d8212be928f60b7daf0279f029">net_is_completely_disabled</a> (void)</td></tr>
+<tr class="separator:a1f26f7d8212be928f60b7daf0279f029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d62b1eeaa990670a04de8dfbb42ab8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f">authdir_mode</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
 <tr class="separator:a2d62b1eeaa990670a04de8dfbb42ab8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71fbf956eedbc38a293306c9bf1962e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a71fbf956eedbc38a293306c9bf1962e7">authdir_mode_v3</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
-<tr class="separator:a71fbf956eedbc38a293306c9bf1962e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab8dc47aca12ebfdd7c4a01d7fc4290b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#aab8dc47aca12ebfdd7c4a01d7fc4290b">authdir_mode_any_main</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
-<tr class="separator:aab8dc47aca12ebfdd7c4a01d7fc4290b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bcde98c72c7ec1b15a6c0837c6bec26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a9bcde98c72c7ec1b15a6c0837c6bec26">authdir_mode_any_nonhidserv</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
-<tr class="separator:a9bcde98c72c7ec1b15a6c0837c6bec26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8522dfca1851365846ddef293a416656"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a8522dfca1851365846ddef293a416656">authdir_mode_handles_descs</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options, int purpose)</td></tr>
 <tr class="separator:a8522dfca1851365846ddef293a416656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea820da6141eaf03649558d4ec6d5872"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#aea820da6141eaf03649558d4ec6d5872">authdir_mode_publishes_statuses</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
@@ -294,6 +308,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init_keys_client</b> (
 <tr class="separator:adcfdecf66a4aa5e6d09a702784c8197f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad474de0d17eaff8d2d6ac9f83621d4fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#ad474de0d17eaff8d2d6ac9f83621d4fc">MOCK_IMPL</a> (const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *, router_get_my_routerinfo,(void))</td></tr>
 <tr class="separator:ad474de0d17eaff8d2d6ac9f83621d4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68f27a8a221a32372f4798fb66c58f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#af68f27a8a221a32372f4798fb66c58f3">MOCK_IMPL</a> (const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *, router_get_my_routerinfo_with_err,(int *err))</td></tr>
+<tr class="separator:af68f27a8a221a32372f4798fb66c58f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c282d28d3993d673a0bedf91e5d776"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a41c282d28d3993d673a0bedf91e5d776">router_get_my_descriptor</a> (void)</td></tr>
 <tr class="separator:a41c282d28d3993d673a0bedf91e5d776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30c5482965fda685a86a170304d48532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structextrainfo__t.html">extrainfo_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a30c5482965fda685a86a170304d48532">router_get_my_extrainfo</a> (void)</td></tr>
@@ -337,16 +353,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>router_has_orport</b> 
 <tr class="separator:a9256a0243b94ae50164d9d0df1df9042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc033c75201ad04ae8327fcce6edbb4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#abc033c75201ad04ae8327fcce6edbb4c">is_legal_hexdigest</a> (const char *s)</td></tr>
 <tr class="separator:abc033c75201ad04ae8327fcce6edbb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0380dfe3cb20aa1aa730b929e888aba"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba">format_node_description</a> (char *buf, const char *id_digest, int is_named, const char *nickname, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint32_t addr32h)</td></tr>
-<tr class="separator:ab0380dfe3cb20aa1aa730b929e888aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac97f03d757d76cc0e684e58d4dfea035"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#ac97f03d757d76cc0e684e58d4dfea035">router_get_description</a> (char *buf, const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *ri)</td></tr>
-<tr class="separator:ac97f03d757d76cc0e684e58d4dfea035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a54eda729e6f6f8e957a9d8b0f016f9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a0a54eda729e6f6f8e957a9d8b0f016f9">node_get_description</a> (char *buf, const <a class="el" href="structnode__t.html">node_t</a> *node)</td></tr>
-<tr class="separator:a0a54eda729e6f6f8e957a9d8b0f016f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d97aa986a058d558934f0ce97416b0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a38d97aa986a058d558934f0ce97416b0">routerstatus_get_description</a> (char *buf, const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *rs)</td></tr>
-<tr class="separator:a38d97aa986a058d558934f0ce97416b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4305332e798b11a30372e7f0e63ed15e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a4305332e798b11a30372e7f0e63ed15e">extend_info_get_description</a> (char *buf, const <a class="el" href="structextend__info__t.html">extend_info_t</a> *ei)</td></tr>
-<tr class="separator:a4305332e798b11a30372e7f0e63ed15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d59ce576eb8716561e1bc6be6f88de1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a4d59ce576eb8716561e1bc6be6f88de1">router_describe</a> (const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *ri)</td></tr>
 <tr class="separator:a4d59ce576eb8716561e1bc6be6f88de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9123f7ab38acbdf103fcb38433311d42"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="router_8c.html#a9123f7ab38acbdf103fcb38433311d42">node_describe</a> (const <a class="el" href="structnode__t.html">node_t</a> *node)</td></tr>
@@ -434,6 +440,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>router_has_orport</b> 
 
 </div>
 </div>
+<a id="a7a392831ecd0ad8a403b1dc0e837d161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a392831ecd0ad8a403b1dc0e837d161">&#9670;&nbsp;</a></span>NODE_DESC_BUF_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NODE_DESC_BUF_LEN&#160;&#160;&#160;(<a class="el" href="or_8h.html#a8e619cd29da4289b84f936357bcb9c2c">MAX_VERBOSE_NICKNAME_LEN</a>+4+<a class="el" href="address_8h.html#ac43ab33ae6719d7549644d40fe89bd5f">TOR_ADDR_BUF_LEN</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Longest allowed output of format_node_description, plus 1 character for NUL. This allows space for: "$FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF~xxxxxxxxxxxxxxxxxxx at" " [ffff:ffff:ffff:ffff:ffff:ffff:255.255.255.255]" plus a terminating NUL. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a2d62b1eeaa990670a04de8dfbb42ab8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d62b1eeaa990670a04de8dfbb42ab8f">&#9670;&nbsp;</a></span>authdir_mode()</h2>
@@ -456,104 +477,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a2d62b1eeaa990670a04de8dfbb42ab8f_icgraph.png" border="0" usemap="#router_8c_a2d62b1eeaa990670a04de8dfbb42ab8f_icgraph" alt=""/></div>
 <map name="router_8c_a2d62b1eeaa990670a04de8dfbb42ab8f_icgraph" id="router_8c_a2d62b1eeaa990670a04de8dfbb42ab8f_icgraph">
-<area shape="rect" id="node2" href="connection_8h.html#af717f75714620d7187bcdaae2df1434e" title="global_write_bucket_low" alt="" coords="157,139,321,165"/>
-<area shape="rect" id="node3" href="rephist_8h.html#ab26034f0ea8dbd53bbe580f88de3adb6" title="rep_history_clean" alt="" coords="177,189,301,216"/>
-<area shape="rect" id="node5" href="router_8h.html#a71fbf956eedbc38a293306c9bf1962e7" title="authdir_mode_v3" alt="" coords="178,240,299,267"/>
-<area shape="rect" id="node12" href="router_8h.html#aabab68011cc297e16ad83af25c521bf6" title="authdir_mode_bridge" alt="" coords="167,357,310,384"/>
-<area shape="rect" id="node18" href="routerlist_8h.html#a6c38eadb28cf4532a7623c5aa1885cec" title="router_digest_is_trusted\l_dir_type" alt="" coords="158,409,319,450"/>
-<area shape="rect" id="node19" href="routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="153,506,324,547"/>
-<area shape="rect" id="node4" href="rephist_8h.html#a86f2c4294a880006745284556ecbf7a6" title="rep_hist_dump_stats" alt="" coords="408,5,551,32"/>
-<area shape="rect" id="node6" href="dirvote_8h.html#aab7ea3ac9bbece8dbdd6c3c167dc0ae9" title="dirvote_recalculate\l_timing" alt="" coords="414,57,545,98"/>
-<area shape="rect" id="node7" href="dirvote_8h.html#a333f56fb4797757ca9e04bee1550cabe" title="dirvote_act" alt="" coords="436,123,523,149"/>
-<area shape="rect" id="node8" href="networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="372,174,587,215"/>
-<area shape="rect" id="node10" href="nodelist_8h.html#a88530130321dca1f862717bfb5a0834a" title="nodelist_set_consensus" alt="" coords="398,240,561,267"/>
-<area shape="rect" id="node11" href="router_8h.html#a1ccf29e1bf3d8e43591f66d2a5118a6b" title="v3_authority_check\l_key_expiry" alt="" coords="412,291,547,333"/>
-<area shape="rect" id="node9" href="routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="643,174,776,215"/>
-<area shape="rect" id="node13" href="dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="398,357,561,384"/>
-<area shape="rect" id="node14" href="networkstatus_8h.html#a522e50eabe88fdafcc39b375b6e4cced" title="networkstatus_getinfo\l_by_purpose" alt="" coords="404,409,555,450"/>
-<area shape="rect" id="node16" href="router_8h.html#aea820da6141eaf03649558d4ec6d5872" title="authdir_mode_publishes\l_statuses" alt="" coords="398,474,561,515"/>
-<area shape="rect" id="node15" href="networkstatus_8h.html#ada1c2d5fcccff6ee4e7aff6a497ec2cf" title="networkstatus_dump\l_bridge_status_to_file" alt="" coords="635,409,784,450"/>
-<area shape="rect" id="node17" href="dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="636,481,783,508"/>
-<area shape="rect" id="node20" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="397,539,562,581"/>
-<area shape="rect" id="node21" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="637,539,782,581"/>
-<area shape="rect" id="node22" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="832,539,960,581"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aab8dc47aca12ebfdd7c4a01d7fc4290b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab8dc47aca12ebfdd7c4a01d7fc4290b">&#9670;&nbsp;</a></span>authdir_mode_any_main()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int authdir_mode_any_main </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
-          <td class="paramname"><em>options</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return true iff we are a v3 directory authority. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_aab8dc47aca12ebfdd7c4a01d7fc4290b_icgraph.png" border="0" usemap="#router_8c_aab8dc47aca12ebfdd7c4a01d7fc4290b_icgraph" alt=""/></div>
-<map name="router_8c_aab8dc47aca12ebfdd7c4a01d7fc4290b_icgraph" id="router_8c_aab8dc47aca12ebfdd7c4a01d7fc4290b_icgraph">
-<area shape="rect" id="node2" href="router_8h.html#a9bcde98c72c7ec1b15a6c0837c6bec26" title="authdir_mode_any_nonhidserv" alt="" coords="216,141,415,167"/>
-<area shape="rect" id="node3" href="router_8h.html#a8522dfca1851365846ddef293a416656" title="authdir_mode_handles\l_descs" alt="" coords="468,83,620,124"/>
-<area shape="rect" id="node9" href="router_8h.html#aea820da6141eaf03649558d4ec6d5872" title="authdir_mode_publishes\l_statuses" alt="" coords="463,159,625,200"/>
-<area shape="rect" id="node4" href="dirserv_8h.html#a0c97fbc43a4398a45feb2fafa3d42fc1" title="dirserv_should_launch\l_reachability_test" alt="" coords="677,5,828,47"/>
-<area shape="rect" id="node7" href="router_8h.html#a652eb5a350d7730a18c7de2605d435f4" title="authdir_mode_tests\l_reachability" alt="" coords="685,71,821,112"/>
-<area shape="rect" id="node8" href="routerlist_8h.html#ab1878aef0f1dd92c783d5477248b985d" title="router_add_to_routerlist" alt="" coords="673,137,832,163"/>
-<area shape="rect" id="node5" href="networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="880,5,1095,47"/>
-<area shape="rect" id="node6" href="routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="1143,5,1276,47"/>
-<area shape="rect" id="node10" href="dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="679,187,826,214"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a9bcde98c72c7ec1b15a6c0837c6bec26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bcde98c72c7ec1b15a6c0837c6bec26">&#9670;&nbsp;</a></span>authdir_mode_any_nonhidserv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int authdir_mode_any_nonhidserv </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
-          <td class="paramname"><em>options</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return true if we believe ourselves to be any kind of authoritative directory beyond just a hidserv authority. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a9bcde98c72c7ec1b15a6c0837c6bec26_cgraph.png" border="0" usemap="#router_8c_a9bcde98c72c7ec1b15a6c0837c6bec26_cgraph" alt=""/></div>
-<map name="router_8c_a9bcde98c72c7ec1b15a6c0837c6bec26_cgraph" id="router_8c_a9bcde98c72c7ec1b15a6c0837c6bec26_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#aab8dc47aca12ebfdd7c4a01d7fc4290b" title="authdir_mode_any_main" alt="" coords="252,5,415,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a9bcde98c72c7ec1b15a6c0837c6bec26_icgraph.png" border="0" usemap="#router_8c_a9bcde98c72c7ec1b15a6c0837c6bec26_icgraph" alt=""/></div>
-<map name="router_8c_a9bcde98c72c7ec1b15a6c0837c6bec26_icgraph" id="router_8c_a9bcde98c72c7ec1b15a6c0837c6bec26_icgraph">
-<area shape="rect" id="node2" href="router_8h.html#a8522dfca1851365846ddef293a416656" title="authdir_mode_handles\l_descs" alt="" coords="257,83,409,124"/>
-<area shape="rect" id="node8" href="router_8h.html#aea820da6141eaf03649558d4ec6d5872" title="authdir_mode_publishes\l_statuses" alt="" coords="252,159,415,200"/>
-<area shape="rect" id="node3" href="dirserv_8h.html#a0c97fbc43a4398a45feb2fafa3d42fc1" title="dirserv_should_launch\l_reachability_test" alt="" coords="467,5,617,47"/>
-<area shape="rect" id="node6" href="router_8h.html#a652eb5a350d7730a18c7de2605d435f4" title="authdir_mode_tests\l_reachability" alt="" coords="474,71,610,112"/>
-<area shape="rect" id="node7" href="routerlist_8h.html#ab1878aef0f1dd92c783d5477248b985d" title="router_add_to_routerlist" alt="" coords="463,137,621,163"/>
-<area shape="rect" id="node4" href="networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="669,5,884,47"/>
-<area shape="rect" id="node5" href="routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="932,5,1065,47"/>
-<area shape="rect" id="node9" href="dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="469,187,615,214"/>
+<area shape="rect" id="node2" href="main_8h.html#a4d28e76dd898a85ba3459928e3659954" title="tor_cleanup" alt="" coords="194,5,283,32"/>
+<area shape="rect" id="node3" href="rephist_8h.html#ab26034f0ea8dbd53bbe580f88de3adb6" title="rep_history_clean" alt="" coords="177,56,301,83"/>
+<area shape="rect" id="node5" href="router_8h.html#aea820da6141eaf03649558d4ec6d5872" title="authdir_mode_publishes\l_statuses" alt="" coords="373,133,536,174"/>
+<area shape="rect" id="node7" href="router_8h.html#a652eb5a350d7730a18c7de2605d435f4" title="authdir_mode_tests\l_reachability" alt="" coords="171,158,307,199"/>
+<area shape="rect" id="node8" href="router_8h.html#aabab68011cc297e16ad83af25c521bf6" title="authdir_mode_bridge" alt="" coords="167,224,310,251"/>
+<area shape="rect" id="node12" href="routerlist_8h.html#a6c38eadb28cf4532a7623c5aa1885cec" title="router_digest_is_trusted\l_dir_type" alt="" coords="158,275,319,317"/>
+<area shape="rect" id="node13" href="routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="153,341,324,382"/>
+<area shape="rect" id="node4" href="rephist_8h.html#a86f2c4294a880006745284556ecbf7a6" title="rep_hist_dump_stats" alt="" coords="383,56,526,83"/>
+<area shape="rect" id="node6" href="dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="587,140,733,167"/>
+<area shape="rect" id="node9" href="dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="373,212,536,239"/>
+<area shape="rect" id="node10" href="networkstatus_8h.html#a522e50eabe88fdafcc39b375b6e4cced" title="networkstatus_getinfo\l_by_purpose" alt="" coords="379,263,530,305"/>
+<area shape="rect" id="node11" href="networkstatus_8h.html#ada1c2d5fcccff6ee4e7aff6a497ec2cf" title="networkstatus_dump\l_bridge_status_to_file" alt="" coords="585,263,735,305"/>
+<area shape="rect" id="node14" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="372,341,537,382"/>
+<area shape="rect" id="node15" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="587,341,733,382"/>
+<area shape="rect" id="node16" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="783,341,911,382"/>
 </map>
 </div>
 
@@ -623,26 +561,14 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true iff we are an authoritative directory server that is authoritative about receiving and serving descriptors of type <b>purpose</b> on its dirport. Use -1 for "any purpose". </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a8522dfca1851365846ddef293a416656_cgraph.png" border="0" usemap="#router_8c_a8522dfca1851365846ddef293a416656_cgraph" alt=""/></div>
-<map name="router_8c_a8522dfca1851365846ddef293a416656_cgraph" id="router_8c_a8522dfca1851365846ddef293a416656_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a9bcde98c72c7ec1b15a6c0837c6bec26" title="authdir_mode_any_nonhidserv" alt="" coords="205,5,404,32"/>
-<area shape="rect" id="node3" href="router_8c.html#aab8dc47aca12ebfdd7c4a01d7fc4290b" title="authdir_mode_any_main" alt="" coords="452,31,615,57"/>
-</map>
-</div>
+<p>Return true iff we are an authoritative directory server that is authoritative about receiving and serving descriptors of type <b>purpose</b> on its dirport. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a8522dfca1851365846ddef293a416656_icgraph.png" border="0" usemap="#router_8c_a8522dfca1851365846ddef293a416656_icgraph" alt=""/></div>
 <map name="router_8c_a8522dfca1851365846ddef293a416656_icgraph" id="router_8c_a8522dfca1851365846ddef293a416656_icgraph">
 <area shape="rect" id="node2" href="dirserv_8h.html#a0c97fbc43a4398a45feb2fafa3d42fc1" title="dirserv_should_launch\l_reachability_test" alt="" coords="209,5,360,47"/>
-<area shape="rect" id="node5" href="router_8h.html#a652eb5a350d7730a18c7de2605d435f4" title="authdir_mode_tests\l_reachability" alt="" coords="217,71,353,112"/>
-<area shape="rect" id="node6" href="routerlist_8h.html#ab1878aef0f1dd92c783d5477248b985d" title="router_add_to_routerlist" alt="" coords="205,137,364,163"/>
-<area shape="rect" id="node3" href="networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="412,5,627,47"/>
-<area shape="rect" id="node4" href="routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="675,5,808,47"/>
+<area shape="rect" id="node3" href="routerlist_8h.html#ab1878aef0f1dd92c783d5477248b985d" title="router_add_to_routerlist" alt="" coords="205,71,364,98"/>
 </map>
 </div>
 
@@ -669,10 +595,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_aea820da6141eaf03649558d4ec6d5872_cgraph.png" border="0" usemap="#router_8c_aea820da6141eaf03649558d4ec6d5872_cgraph" alt=""/></div>
 <map name="router_8c_aea820da6141eaf03649558d4ec6d5872_cgraph" id="router_8c_aea820da6141eaf03649558d4ec6d5872_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#aabab68011cc297e16ad83af25c521bf6" title="authdir_mode_bridge" alt="" coords="244,5,387,32"/>
-<area shape="rect" id="node4" href="router_8c.html#a9bcde98c72c7ec1b15a6c0837c6bec26" title="authdir_mode_any_nonhidserv" alt="" coords="216,56,415,83"/>
-<area shape="rect" id="node3" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="494,5,594,32"/>
-<area shape="rect" id="node5" href="router_8c.html#aab8dc47aca12ebfdd7c4a01d7fc4290b" title="authdir_mode_any_main" alt="" coords="463,56,625,83"/>
+<area shape="rect" id="node2" href="router_8c.html#aabab68011cc297e16ad83af25c521bf6" title="authdir_mode_bridge" alt="" coords="216,5,359,32"/>
+<area shape="rect" id="node3" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="407,31,507,57"/>
 </map>
 </div>
 <div class="dynheader">
@@ -707,49 +631,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a652eb5a350d7730a18c7de2605d435f4_cgraph.png" border="0" usemap="#router_8c_a652eb5a350d7730a18c7de2605d435f4_cgraph" alt=""/></div>
 <map name="router_8c_a652eb5a350d7730a18c7de2605d435f4_cgraph" id="router_8c_a652eb5a350d7730a18c7de2605d435f4_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a8522dfca1851365846ddef293a416656" title="authdir_mode_handles\l_descs" alt="" coords="189,23,341,65"/>
-<area shape="rect" id="node3" href="router_8c.html#a9bcde98c72c7ec1b15a6c0837c6bec26" title="authdir_mode_any_nonhidserv" alt="" coords="389,5,588,32"/>
-<area shape="rect" id="node4" href="router_8c.html#aab8dc47aca12ebfdd7c4a01d7fc4290b" title="authdir_mode_any_main" alt="" coords="636,31,799,57"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a71fbf956eedbc38a293306c9bf1962e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71fbf956eedbc38a293306c9bf1962e7">&#9670;&nbsp;</a></span>authdir_mode_v3()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int authdir_mode_v3 </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
-          <td class="paramname"><em>options</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return true iff we believe ourselves to be a v3 authoritative directory server. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a71fbf956eedbc38a293306c9bf1962e7_cgraph.png" border="0" usemap="#router_8c_a71fbf956eedbc38a293306c9bf1962e7_cgraph" alt=""/></div>
-<map name="router_8c_a71fbf956eedbc38a293306c9bf1962e7_cgraph" id="router_8c_a71fbf956eedbc38a293306c9bf1962e7_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="175,5,275,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a71fbf956eedbc38a293306c9bf1962e7_icgraph.png" border="0" usemap="#router_8c_a71fbf956eedbc38a293306c9bf1962e7_icgraph" alt=""/></div>
-<map name="router_8c_a71fbf956eedbc38a293306c9bf1962e7_icgraph" id="router_8c_a71fbf956eedbc38a293306c9bf1962e7_icgraph">
-<area shape="rect" id="node2" href="dirvote_8h.html#aab7ea3ac9bbece8dbdd6c3c167dc0ae9" title="dirvote_recalculate\l_timing" alt="" coords="217,5,347,47"/>
-<area shape="rect" id="node3" href="dirvote_8h.html#a333f56fb4797757ca9e04bee1550cabe" title="dirvote_act" alt="" coords="239,71,325,98"/>
-<area shape="rect" id="node4" href="networkstatus_8h.html#afcfacad25b94db6f21e0df2f7897a3cf" title="routers_update_status\l_from_consensus_networkstatus" alt="" coords="175,123,389,164"/>
-<area shape="rect" id="node6" href="nodelist_8h.html#a88530130321dca1f862717bfb5a0834a" title="nodelist_set_consensus" alt="" coords="201,189,363,215"/>
-<area shape="rect" id="node7" href="router_8h.html#a1ccf29e1bf3d8e43591f66d2a5118a6b" title="v3_authority_check\l_key_expiry" alt="" coords="215,240,349,281"/>
-<area shape="rect" id="node5" href="routerlist_8h.html#ae08c5697c58be20a7bb11b34ca9aba5e" title="router_load_routers\l_from_string" alt="" coords="437,123,571,164"/>
+<area shape="rect" id="node2" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="189,13,289,39"/>
 </map>
 </div>
 
@@ -771,14 +653,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Check whether bandwidth has changed a lot since the last time we announced bandwidth. If so, mark our descriptor dirty. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_ab9b5c1a252539d60ae2cfaca3a06c4e7_cgraph.png" border="0" usemap="#router_8c_ab9b5c1a252539d60ae2cfaca3a06c4e7_cgraph" alt=""/></div>
-<map name="router_8c_ab9b5c1a252539d60ae2cfaca3a06c4e7_cgraph" id="router_8c_ab9b5c1a252539d60ae2cfaca3a06c4e7_cgraph">
-<area shape="rect" id="node2" href="rephist_8c.html#a747be37fb2bcd6f96de5e6ba3b365238" title="rep_hist_bandwidth\l_assess" alt="" coords="240,5,375,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -798,14 +672,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Check whether our own address as defined by the Address configuration has changed. This is for routers that get their address from a service like dyndns. If our address has changed, mark our descriptor dirty. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a59446788bf67e78d0d930bcdc65f7717_cgraph.png" border="0" usemap="#router_8c_a59446788bf67e78d0d930bcdc65f7717_cgraph" alt=""/></div>
-<map name="router_8c_a59446788bf67e78d0d930bcdc65f7717_cgraph" id="router_8c_a59446788bf67e78d0d930bcdc65f7717_cgraph">
-<area shape="rect" id="node2" href="config_8c.html#ab211028e24942a1bc1827afaae620d4a" title="resolve_my_address" alt="" coords="237,13,380,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -876,14 +742,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a8b917b11fb2945b314286a6a567e34c3_icgraph.png" border="0" usemap="#router_8c_a8b917b11fb2945b314286a6a567e34c3_icgraph" alt=""/></div>
 <map name="router_8c_a8b917b11fb2945b314286a6a567e34c3_icgraph" id="router_8c_a8b917b11fb2945b314286a6a567e34c3_icgraph">
-<area shape="rect" id="node2" href="rephist_8h.html#a890009e83c2e90292a435526b8111727" title="rep_hist_circbuilding\l_dormant" alt="" coords="204,34,344,76"/>
-<area shape="rect" id="node9" href="router_8h.html#a93f4b5aab591c136663925a937575299" title="consider_testing_reachability" alt="" coords="392,144,583,171"/>
-<area shape="rect" id="node3" href="dirserv_8h.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="414,28,561,69"/>
-<area shape="rect" id="node4" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="1288,57,1416,98"/>
-<area shape="rect" id="node5" href="microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="849,31,1047,58"/>
-<area shape="rect" id="node7" href="routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="631,82,801,124"/>
-<area shape="rect" id="node6" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="1095,57,1240,98"/>
-<area shape="rect" id="node8" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="865,82,1031,124"/>
+<area shape="rect" id="node2" href="rephist_8h.html#a890009e83c2e90292a435526b8111727" title="rep_hist_circbuilding\l_dormant" alt="" coords="204,27,344,68"/>
+<area shape="rect" id="node3" href="dirserv_8h.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="392,27,539,68"/>
+<area shape="rect" id="node4" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="1244,5,1372,47"/>
+<area shape="rect" id="node5" href="microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="805,34,1003,61"/>
+<area shape="rect" id="node7" href="routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="587,85,757,127"/>
+<area shape="rect" id="node6" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="1051,35,1196,76"/>
+<area shape="rect" id="node8" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="821,85,987,127"/>
 </map>
 </div>
 
@@ -940,56 +805,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a93f4b5aab591c136663925a937575299"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93f4b5aab591c136663925a937575299">&#9670;&nbsp;</a></span>consider_testing_reachability()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void consider_testing_reachability </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>test_or</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>test_dir</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Some time has passed, or we just got new directory information. See if we currently believe our ORPort or DirPort to be unreachable. If so, launch a new test for it.</p>
-<p>For ORPort, we simply try making a circuit that ends at ourselves. Success is noticed in <a class="el" href="circuitbuild_8c.html#a0580c51628841ddaa2bf99d4475881bf">onionskin_answer()</a>.</p>
-<p>For DirPort, we make a connection via Tor to our DirPort and ask for our own server descriptor. Success is noticed in connection_dir_client_reached_eof(). </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a93f4b5aab591c136663925a937575299_cgraph.png" border="0" usemap="#router_8c_a93f4b5aab591c136663925a937575299_cgraph" alt=""/></div>
-<map name="router_8c_a93f4b5aab591c136663925a937575299_cgraph" id="router_8c_a93f4b5aab591c136663925a937575299_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a8b917b11fb2945b314286a6a567e34c3" title="check_whether_orport\l_reachable" alt="" coords="244,5,395,47"/>
-<area shape="rect" id="node3" href="routerset_8c.html#aa8942cc067a62102c0d51b88bcd3709f" title="routerset_contains\l_router" alt="" coords="255,71,384,112"/>
-<area shape="rect" id="node4" href="routerset_8c.html#a1eda4526d656d042e5143ec79ee66be2" title="routerset_contains" alt="" coords="443,78,572,105"/>
-<area shape="rect" id="node5" href="container_8c.html#a1406b823cb6088df755f1b81153d137e" title="strmap_get_lc" alt="" coords="620,78,724,105"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a93f4b5aab591c136663925a937575299_icgraph.png" border="0" usemap="#router_8c_a93f4b5aab591c136663925a937575299_icgraph" alt=""/></div>
-<map name="router_8c_a93f4b5aab591c136663925a937575299_icgraph" id="router_8c_a93f4b5aab591c136663925a937575299_icgraph">
-<area shape="rect" id="node2" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="244,5,372,47"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a4c647445efb73188e0ba32510afbee0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c647445efb73188e0ba32510afbee0d">&#9670;&nbsp;</a></span>construct_ntor_key_map()</h2>
 
@@ -1011,9 +826,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a4c647445efb73188e0ba32510afbee0d_cgraph.png" border="0" usemap="#router_8c_a4c647445efb73188e0ba32510afbee0d_cgraph" alt=""/></div>
 <map name="router_8c_a4c647445efb73188e0ba32510afbee0d_cgraph" id="router_8c_a4c647445efb73188e0ba32510afbee0d_cgraph">
-<area shape="rect" id="node2" href="di__ops_8c.html#a0aaf282503417e5cc43bd18eb9cdd667" title="dimap_add_entry" alt="" coords="219,5,340,32"/>
-<area shape="rect" id="node3" href="di__ops_8c.html#a032d26f93f592b1cf781c8f147b2e38e" title="dimap_search" alt="" coords="388,5,491,32"/>
-<area shape="rect" id="node4" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="539,5,625,32"/>
+<area shape="rect" id="node2" href="util_8c.html#a7c5079074e649dc0369225eca3073f7d" title="tor_mem_is_zero" alt="" coords="219,5,341,32"/>
+<area shape="rect" id="node3" href="di__ops_8c.html#a0aaf282503417e5cc43bd18eb9cdd667" title="dimap_add_entry" alt="" coords="219,56,341,83"/>
+<area shape="rect" id="node4" href="di__ops_8c.html#a032d26f93f592b1cf781c8f147b2e38e" title="dimap_search" alt="" coords="389,56,492,83"/>
+<area shape="rect" id="node5" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="540,56,627,83"/>
 </map>
 </div>
 
@@ -1040,23 +856,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_ab23297b12b098da9eac98126a587aa3b_icgraph.png" border="0" usemap="#router_8c_ab23297b12b098da9eac98126a587aa3b_icgraph" alt=""/></div>
 <map name="router_8c_ab23297b12b098da9eac98126a587aa3b_icgraph" id="router_8c_ab23297b12b098da9eac98126a587aa3b_icgraph">
-<area shape="rect" id="node2" href="dirserv_8h.html#a0b84786e17352524036694baf1955167" title="directory_fetches_from\l_authorities" alt="" coords="185,82,339,123"/>
-<area shape="rect" id="node7" href="dirserv_8h.html#a5a9cf7f465217dbc8142aaf11384abbf" title="directory_caches_unknown\l_auth_certs" alt="" coords="172,195,352,237"/>
-<area shape="rect" id="node10" href="dirserv_8h.html#a57e2ff1ad2ea65abe9b969ad3d76a418" title="directory_caches_dir_info" alt="" coords="177,276,347,303"/>
-<area shape="rect" id="node18" href="dirserv_8h.html#a7923860b3a8c27fa48c4dcec6ef6939f" title="directory_permits_begindir\l_requests" alt="" coords="175,327,349,369"/>
+<area shape="rect" id="node2" href="dirserv_8h.html#a0b84786e17352524036694baf1955167" title="directory_fetches_from\l_authorities" alt="" coords="185,74,339,115"/>
+<area shape="rect" id="node7" href="dirserv_8h.html#a5a9cf7f465217dbc8142aaf11384abbf" title="directory_caches_unknown\l_auth_certs" alt="" coords="172,187,352,229"/>
+<area shape="rect" id="node8" href="dirserv_8h.html#a57e2ff1ad2ea65abe9b969ad3d76a418" title="directory_caches_dir_info" alt="" coords="177,253,347,280"/>
+<area shape="rect" id="node16" href="dirserv_8h.html#a7923860b3a8c27fa48c4dcec6ef6939f" title="directory_permits_begindir\l_requests" alt="" coords="175,305,349,346"/>
 <area shape="rect" id="node3" href="directory_8c.html#a2dcb34e25124200a8694ef07275a50b2" title="MOCK_IMPL" alt="" coords="439,5,539,32"/>
 <area shape="rect" id="node4" href="dirserv_8h.html#ab38d643312052d4bfdb7d49dcba344a6" title="directory_fetches_dir\l_info_early" alt="" coords="418,57,561,98"/>
-<area shape="rect" id="node6" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="1307,233,1435,274"/>
+<area shape="rect" id="node6" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="1307,166,1435,207"/>
 <area shape="rect" id="node5" href="routerlist_8h.html#a33e8618001c42bd50575051362aaffa2" title="launch_descriptor_downloads" alt="" coords="627,64,820,91"/>
-<area shape="rect" id="node8" href="routerlist_8h.html#a91f37bda7b9149b1da0f1abfff66ab23" title="authority_certs_fetch\l_missing" alt="" coords="417,182,561,223"/>
-<area shape="rect" id="node9" href="networkstatus_8h.html#aac5e0a37016a04c309a791ae15ecc86a" title="update_certificate\l_downloads" alt="" coords="661,174,786,215"/>
-<area shape="rect" id="node11" href="dirserv_8h.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="416,269,563,310"/>
-<area shape="rect" id="node16" href="microdesc_8h.html#ad9c983a76a2f31a6a843f4df9be7de1d" title="we_fetch_microdescriptors" alt="" coords="400,335,579,361"/>
-<area shape="rect" id="node17" href="microdesc_8h.html#a2667d23ef05f514b5bf916791b4a6bbd" title="we_fetch_router_descriptors" alt="" coords="630,408,817,435"/>
-<area shape="rect" id="node12" href="microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="868,291,1065,317"/>
-<area shape="rect" id="node14" href="routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="638,342,809,383"/>
-<area shape="rect" id="node13" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="1113,291,1259,333"/>
-<area shape="rect" id="node15" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="884,342,1049,383"/>
+<area shape="rect" id="node9" href="dirserv_8h.html#a2c5edbbd6883a33af3d72bfead4033db" title="directory_too_idle\l_to_fetch_descriptors" alt="" coords="416,217,563,258"/>
+<area shape="rect" id="node14" href="microdesc_8h.html#ad9c983a76a2f31a6a843f4df9be7de1d" title="we_fetch_microdescriptors" alt="" coords="400,283,579,309"/>
+<area shape="rect" id="node15" href="microdesc_8h.html#a2667d23ef05f514b5bf916791b4a6bbd" title="we_fetch_router_descriptors" alt="" coords="630,341,817,368"/>
+<area shape="rect" id="node10" href="microdesc_8h.html#aad7f413d899b72e58bed8efc0162d8bd" title="update_microdesc_downloads" alt="" coords="868,224,1065,251"/>
+<area shape="rect" id="node12" href="routerlist_8h.html#a1a7cfda729e27cf26089db2112d21965" title="update_consensus_router\l_descriptor_downloads" alt="" coords="638,275,809,317"/>
+<area shape="rect" id="node11" href="routerlist_8h.html#afe7f2c6bcc3135272bc6aa66ec09cd76" title="update_all_descriptor\l_downloads" alt="" coords="1113,225,1259,266"/>
+<area shape="rect" id="node13" href="routerlist_8h.html#a8b67f737b9ea614297414b26eb3b784c" title="update_router_descriptor\l_downloads" alt="" coords="884,275,1049,317"/>
 </map>
 </div>
 
@@ -1087,15 +901,43 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Store a full copy of the current onion key into *<b>key</b>, and a full copy of the most recent onion key into *<b>last</b>. </p>
+<p>Store a full copy of the current onion key into *<b>key</b>, and a full copy of the most recent onion key into *<b>last</b>. Store NULL into a pointer if the corresponding key does not exist. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a71d8f6e0ed3558284e43371894abb504_cgraph.png" border="0" usemap="#router_8c_a71d8f6e0ed3558284e43371894abb504_cgraph" alt=""/></div>
 <map name="router_8c_a71d8f6e0ed3558284e43371894abb504_cgraph" id="router_8c_a71d8f6e0ed3558284e43371894abb504_cgraph">
 <area shape="rect" id="node2" href="compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="174,5,303,32"/>
-<area shape="rect" id="node3" href="crypto_8c.html#a7ef622a79ac33d4b2dcce1be0bd27e71" title="crypto_pk_copy_full" alt="" coords="169,56,308,83"/>
+<area shape="rect" id="node3" href="crypto__rsa_8c.html#a7ef622a79ac33d4b2dcce1be0bd27e71" title="crypto_pk_copy_full" alt="" coords="169,56,308,83"/>
 <area shape="rect" id="node4" href="compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="174,107,303,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9b04ba161c869beb75a2a1d6f0d44f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b04ba161c869beb75a2a1d6f0d44f59">&#9670;&nbsp;</a></span>expire_old_onion_keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void expire_old_onion_keys </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Expire our old set of onion keys. This is done by setting last_curve25519_onion_key and lastonionkey to all zero's and NULL respectively.</p>
+<p>This function does not perform any grace period checks for the old onion keys. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="router_8c_a9b04ba161c869beb75a2a1d6f0d44f59_cgraph.png" border="0" usemap="#router_8c_a9b04ba161c869beb75a2a1d6f0d44f59_cgraph" alt=""/></div>
+<map name="router_8c_a9b04ba161c869beb75a2a1d6f0d44f59_cgraph" id="router_8c_a9b04ba161c869beb75a2a1d6f0d44f59_cgraph">
+<area shape="rect" id="node2" href="compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="208,5,337,32"/>
 </map>
 </div>
 
@@ -1116,71 +958,19 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return a human-readable description of the <a class="el" href="structextend__info__t.html">extend_info_t</a> <b>ri</b>.</p>
+<p>Return a human-readable description of the <a class="el" href="structextend__info__t.html">extend_info_t</a> <b>ei</b>.</p>
 <p>This function is not thread-safe. Each call to this function invalidates previous values returned by this function. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a76d2b00d031ef80969722b77807f2f0c_cgraph.png" border="0" usemap="#router_8c_a76d2b00d031ef80969722b77807f2f0c_cgraph" alt=""/></div>
 <map name="router_8c_a76d2b00d031ef80969722b77807f2f0c_cgraph" id="router_8c_a76d2b00d031ef80969722b77807f2f0c_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a4305332e798b11a30372e7f0e63ed15e" title="extend_info_get_description" alt="" coords="199,56,383,83"/>
-<area shape="rect" id="node3" href="router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="431,56,595,83"/>
-<area shape="rect" id="node4" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="643,5,756,32"/>
-<area shape="rect" id="node5" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="645,56,754,83"/>
-<area shape="rect" id="node6" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="651,107,748,133"/>
-<area shape="rect" id="node7" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="804,107,891,133"/>
-<area shape="rect" id="node8" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="939,107,1033,133"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a4305332e798b11a30372e7f0e63ed15e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4305332e798b11a30372e7f0e63ed15e">&#9670;&nbsp;</a></span>extend_info_get_description()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* extend_info_get_description </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structextend__info__t.html">extend_info_t</a> *&#160;</td>
-          <td class="paramname"><em>ei</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Use <b>buf</b> (which must be at least NODE_DESC_BUF_LEN bytes long) to hold a human-readable description of <b>ei</b>.</p>
-<p>Return a pointer to the front of <b>buf</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a4305332e798b11a30372e7f0e63ed15e_cgraph.png" border="0" usemap="#router_8c_a4305332e798b11a30372e7f0e63ed15e_cgraph" alt=""/></div>
-<map name="router_8c_a4305332e798b11a30372e7f0e63ed15e_cgraph" id="router_8c_a4305332e798b11a30372e7f0e63ed15e_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="237,56,401,83"/>
-<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="449,5,563,32"/>
-<area shape="rect" id="node4" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="451,56,561,83"/>
-<area shape="rect" id="node5" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="457,107,555,133"/>
-<area shape="rect" id="node6" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="611,107,697,133"/>
-<area shape="rect" id="node7" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="745,107,840,133"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a4305332e798b11a30372e7f0e63ed15e_icgraph.png" border="0" usemap="#router_8c_a4305332e798b11a30372e7f0e63ed15e_icgraph" alt=""/></div>
-<map name="router_8c_a4305332e798b11a30372e7f0e63ed15e_icgraph" id="router_8c_a4305332e798b11a30372e7f0e63ed15e_icgraph">
-<area shape="rect" id="node2" href="router_8h.html#a76d2b00d031ef80969722b77807f2f0c" title="extend_info_describe" alt="" coords="237,5,383,32"/>
+<area shape="rect" id="node2" href="router_8c.html#a54ab47db660fac7decf06081ba29f8dd" title="format_node_description" alt="" coords="199,56,363,83"/>
+<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="411,5,524,32"/>
+<area shape="rect" id="node4" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="413,56,522,83"/>
+<area shape="rect" id="node5" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="419,107,516,133"/>
+<area shape="rect" id="node6" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="572,107,659,133"/>
+<area shape="rect" id="node7" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="707,107,801,133"/>
 </map>
 </div>
 
@@ -1227,14 +1017,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab0380dfe3cb20aa1aa730b929e888aba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0380dfe3cb20aa1aa730b929e888aba">&#9670;&nbsp;</a></span>format_node_description()</h2>
+<a id="a54ab47db660fac7decf06081ba29f8dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ab47db660fac7decf06081ba29f8dd">&#9670;&nbsp;</a></span>format_node_description()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* format_node_description </td>
+          <td class="memname">const char * format_node_description </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -1282,8 +1072,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="router_8c_ab0380dfe3cb20aa1aa730b929e888aba_cgraph.png" border="0" usemap="#router_8c_ab0380dfe3cb20aa1aa730b929e888aba_cgraph" alt=""/></div>
-<map name="router_8c_ab0380dfe3cb20aa1aa730b929e888aba_cgraph" id="router_8c_ab0380dfe3cb20aa1aa730b929e888aba_cgraph">
+<div class="center"><img src="router_8c_a54ab47db660fac7decf06081ba29f8dd_cgraph.png" border="0" usemap="#router_8c_a54ab47db660fac7decf06081ba29f8dd_cgraph" alt=""/></div>
+<map name="router_8c_a54ab47db660fac7decf06081ba29f8dd_cgraph" id="router_8c_a54ab47db660fac7decf06081ba29f8dd_cgraph">
 <area shape="rect" id="node2" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="217,5,331,32"/>
 <area shape="rect" id="node3" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="219,56,329,83"/>
 <area shape="rect" id="node4" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="225,107,323,133"/>
@@ -1294,17 +1084,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="router_8c_ab0380dfe3cb20aa1aa730b929e888aba_icgraph.png" border="0" usemap="#router_8c_ab0380dfe3cb20aa1aa730b929e888aba_icgraph" alt=""/></div>
-<map name="router_8c_ab0380dfe3cb20aa1aa730b929e888aba_icgraph" id="router_8c_ab0380dfe3cb20aa1aa730b929e888aba_icgraph">
-<area shape="rect" id="node2" href="router_8h.html#ac97f03d757d76cc0e684e58d4dfea035" title="router_get_description" alt="" coords="235,13,386,39"/>
-<area shape="rect" id="node5" href="router_8h.html#a0a54eda729e6f6f8e957a9d8b0f016f9" title="node_get_description" alt="" coords="238,63,383,90"/>
-<area shape="rect" id="node7" href="router_8h.html#a38d97aa986a058d558934f0ce97416b0" title="routerstatus_get_description" alt="" coords="217,114,404,141"/>
-<area shape="rect" id="node9" href="router_8h.html#a4305332e798b11a30372e7f0e63ed15e" title="extend_info_get_description" alt="" coords="219,165,403,191"/>
-<area shape="rect" id="node3" href="router_8h.html#a4d59ce576eb8716561e1bc6be6f88de1" title="router_describe" alt="" coords="470,13,581,39"/>
-<area shape="rect" id="node4" href="dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="647,5,807,47"/>
-<area shape="rect" id="node6" href="router_8h.html#a9123f7ab38acbdf103fcb38433311d42" title="node_describe" alt="" coords="472,63,579,90"/>
-<area shape="rect" id="node8" href="router_8h.html#ab375311f5454761bc6691091cdf50847" title="routerstatus_describe" alt="" coords="452,114,599,141"/>
-<area shape="rect" id="node10" href="router_8h.html#a76d2b00d031ef80969722b77807f2f0c" title="extend_info_describe" alt="" coords="453,165,598,191"/>
+<div class="center"><img src="router_8c_a54ab47db660fac7decf06081ba29f8dd_icgraph.png" border="0" usemap="#router_8c_a54ab47db660fac7decf06081ba29f8dd_icgraph" alt=""/></div>
+<map name="router_8c_a54ab47db660fac7decf06081ba29f8dd_icgraph" id="router_8c_a54ab47db660fac7decf06081ba29f8dd_icgraph">
+<area shape="rect" id="node2" href="router_8h.html#a4d59ce576eb8716561e1bc6be6f88de1" title="router_describe" alt="" coords="235,13,346,39"/>
+<area shape="rect" id="node4" href="router_8h.html#a9123f7ab38acbdf103fcb38433311d42" title="node_describe" alt="" coords="237,63,344,90"/>
+<area shape="rect" id="node5" href="router_8h.html#ab375311f5454761bc6691091cdf50847" title="routerstatus_describe" alt="" coords="217,114,364,141"/>
+<area shape="rect" id="node6" href="router_8h.html#a76d2b00d031ef80969722b77807f2f0c" title="extend_info_describe" alt="" coords="218,165,363,191"/>
+<area shape="rect" id="node3" href="dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="412,5,572,47"/>
 </map>
 </div>
 
@@ -1391,6 +1177,44 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return the current onion key. Requires that the onion key has been loaded or generated. </p>
+
+</div>
+</div>
+<a id="a51a01b088538e0c0a72535474724bcd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a01b088538e0c0a72535474724bcd9">&#9670;&nbsp;</a></span>get_onion_key_grace_period()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_onion_key_grace_period </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the grace period of an onion key in seconds. This value is defined by the network consesus parameter "onion-key-grace-period-days", but the value is converted to seconds. </p>
+
+</div>
+</div>
+<a id="ab9dc576492cd81658d909e790c138904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9dc576492cd81658d909e790c138904">&#9670;&nbsp;</a></span>get_onion_key_lifetime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_onion_key_lifetime </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the current lifetime of an onion key in seconds. This value is defined by the network consesus parameter "onion-key-rotation-days", but the value is converted to seconds. </p>
 
 </div>
 </div>
@@ -1733,7 +1557,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a6b3989f239a7c716e23e397c2dbecb4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b3989f239a7c716e23e397c2dbecb4b">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b3989f239a7c716e23e397c2dbecb4b">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1768,7 +1592,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aa04d0b378d4bf9995ebbdc2c84d03561"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa04d0b378d4bf9995ebbdc2c84d03561">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04d0b378d4bf9995ebbdc2c84d03561">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1803,7 +1627,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a6332bfb34c12a7b4a2c16aa8a3abdd7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6332bfb34c12a7b4a2c16aa8a3abdd7b">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6332bfb34c12a7b4a2c16aa8a3abdd7b">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1838,7 +1662,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a724ccb2800a474e36ae4a808944446e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724ccb2800a474e36ae4a808944446e8">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[4/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a724ccb2800a474e36ae4a808944446e8">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1873,7 +1697,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad510701c8387a948e0694f40d866b2d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad510701c8387a948e0694f40d866b2d4">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[5/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad510701c8387a948e0694f40d866b2d4">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1908,7 +1732,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad474de0d17eaff8d2d6ac9f83621d4fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad474de0d17eaff8d2d6ac9f83621d4fc">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[6/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad474de0d17eaff8d2d6ac9f83621d4fc">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1939,23 +1763,46 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return a routerinfo for this OR, rebuilding a fresh one if necessary. Return NULL on error, or if called on an OP. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_ad474de0d17eaff8d2d6ac9f83621d4fc_cgraph.png" border="0" usemap="#router_8c_ad474de0d17eaff8d2d6ac9f83621d4fc_cgraph" alt=""/></div>
-<map name="router_8c_ad474de0d17eaff8d2d6ac9f83621d4fc_cgraph" id="router_8c_ad474de0d17eaff8d2d6ac9f83621d4fc_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#ac23927b27e54ab8752d8a379b5136b50" title="router_rebuild_descriptor" alt="" coords="153,46,317,73"/>
-<area shape="rect" id="node3" href="router_8c.html#a74a228ad9efff13643397a5c02d7bec7" title="router_get_advertised\l_or_port" alt="" coords="365,39,512,80"/>
-<area shape="rect" id="node4" href="router_8c.html#a19b606096c7f385bb3db639b1a1c15fe" title="router_get_advertised\l_or_port_by_af" alt="" coords="560,39,707,80"/>
-<area shape="rect" id="node5" href="config_8c.html#a8b79c094d201fd02944aa463dcc6433c" title="get_first_advertised\l_port_by_type_af" alt="" coords="772,5,908,47"/>
-<area shape="rect" id="node6" href="router_8c.html#a8bfae58f61a3329fd20f43c378bff0bb" title="router_get_active_listener\l_port_by_type_af" alt="" coords="755,71,925,112"/>
-</map>
+
 </div>
+</div>
+<a id="af68f27a8a221a32372f4798fb66c58f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af68f27a8a221a32372f4798fb66c58f3">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_IMPL </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">router_get_my_routerinfo_with_err&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(int *err)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return routerinfo of this OR. Rebuild it from scratch if needed. Set <b>*err</b> to 0 on success or to appropriate TOR_ROUTERINFO_ERROR_* value on failure. </p>
 
 </div>
 </div>
 <a id="a2732ff3306e95d3579956be55f9cdc6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2732ff3306e95d3579956be55f9cdc6d">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2732ff3306e95d3579956be55f9cdc6d">&#9670;&nbsp;</a></span>MOCK_IMPL() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1999,6 +1846,33 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a1f26f7d8212be928f60b7daf0279f029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f26f7d8212be928f60b7daf0279f029">&#9670;&nbsp;</a></span>net_is_completely_disabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int net_is_completely_disabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true iff our network is in some sense "completely disabled" either we're fully hibernating or the network is turned off with DisableNetwork. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="router_8c_a1f26f7d8212be928f60b7daf0279f029_icgraph.png" border="0" usemap="#router_8c_a1f26f7d8212be928f60b7daf0279f029_icgraph" alt=""/></div>
+<map name="router_8c_a1f26f7d8212be928f60b7daf0279f029_icgraph" id="router_8c_a1f26f7d8212be928f60b7daf0279f029_icgraph">
+<area shape="rect" id="node2" href="connection_8c.html#a2d38cc1df37b7254ce759c39b7c550b9" title="MOCK_IMPL" alt="" coords="236,5,336,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a0b7d8b358c0cdb6359916151f1863e36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b7d8b358c0cdb6359916151f1863e36">&#9670;&nbsp;</a></span>net_is_disabled()</h2>
 
@@ -2014,13 +1888,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true iff our network is in some sense disabled: either we're hibernating, entering hibernation, or the network is turned off with DisableNetwork. </p>
+<p>Return true iff our network is in some sense disabled or shutting down: either we're hibernating, entering hibernation, or the network is turned off with DisableNetwork. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a0b7d8b358c0cdb6359916151f1863e36_icgraph.png" border="0" usemap="#router_8c_a0b7d8b358c0cdb6359916151f1863e36_icgraph" alt=""/></div>
 <map name="router_8c_a0b7d8b358c0cdb6359916151f1863e36_icgraph" id="router_8c_a0b7d8b358c0cdb6359916151f1863e36_icgraph">
-<area shape="rect" id="node2" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="165,5,293,47"/>
+<area shape="rect" id="node2" href="dns_8c.html#a54580f3c6a1aa8cb61ba34ea2d4086b2" title="MOCK_IMPL" alt="" coords="195,5,295,32"/>
+<area shape="rect" id="node3" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="181,57,309,98"/>
+<area shape="rect" id="node4" href="main_8h.html#aecdbc14b2fa5dcece5ca26ba80dc2876" title="rescan_periodic_events" alt="" coords="165,123,324,149"/>
 </map>
 </div>
 
@@ -2048,77 +1924,25 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a9123f7ab38acbdf103fcb38433311d42_cgraph.png" border="0" usemap="#router_8c_a9123f7ab38acbdf103fcb38433311d42_cgraph" alt=""/></div>
 <map name="router_8c_a9123f7ab38acbdf103fcb38433311d42_cgraph" id="router_8c_a9123f7ab38acbdf103fcb38433311d42_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a0a54eda729e6f6f8e957a9d8b0f016f9" title="node_get_description" alt="" coords="160,56,305,83"/>
-<area shape="rect" id="node3" href="router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="353,56,517,83"/>
-<area shape="rect" id="node4" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="565,5,679,32"/>
-<area shape="rect" id="node5" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="567,56,677,83"/>
-<area shape="rect" id="node6" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="573,107,671,133"/>
-<area shape="rect" id="node7" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="727,107,813,133"/>
-<area shape="rect" id="node8" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="861,107,956,133"/>
+<area shape="rect" id="node2" href="router_8c.html#a54ab47db660fac7decf06081ba29f8dd" title="format_node_description" alt="" coords="160,56,324,83"/>
+<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="372,5,485,32"/>
+<area shape="rect" id="node4" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="374,56,483,83"/>
+<area shape="rect" id="node5" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="380,107,477,133"/>
+<area shape="rect" id="node6" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="533,107,620,133"/>
+<area shape="rect" id="node7" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="668,107,763,133"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a0a54eda729e6f6f8e957a9d8b0f016f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a54eda729e6f6f8e957a9d8b0f016f9">&#9670;&nbsp;</a></span>node_get_description()</h2>
+<a id="a07026739772087089f5b5a27813e646b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07026739772087089f5b5a27813e646b">&#9670;&nbsp;</a></span>ntor_key_map_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* node_get_description </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td>
-          <td class="paramname"><em>node</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Use <b>buf</b> (which must be at least NODE_DESC_BUF_LEN bytes long) to hold a human-readable description of <b>node</b>.</p>
-<p>Return a pointer to the front of <b>buf</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a0a54eda729e6f6f8e957a9d8b0f016f9_cgraph.png" border="0" usemap="#router_8c_a0a54eda729e6f6f8e957a9d8b0f016f9_cgraph" alt=""/></div>
-<map name="router_8c_a0a54eda729e6f6f8e957a9d8b0f016f9_cgraph" id="router_8c_a0a54eda729e6f6f8e957a9d8b0f016f9_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="199,56,363,83"/>
-<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="411,5,524,32"/>
-<area shape="rect" id="node4" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="413,56,522,83"/>
-<area shape="rect" id="node5" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="419,107,516,133"/>
-<area shape="rect" id="node6" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="572,107,659,133"/>
-<area shape="rect" id="node7" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="707,107,801,133"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a0a54eda729e6f6f8e957a9d8b0f016f9_icgraph.png" border="0" usemap="#router_8c_a0a54eda729e6f6f8e957a9d8b0f016f9_icgraph" alt=""/></div>
-<map name="router_8c_a0a54eda729e6f6f8e957a9d8b0f016f9_icgraph" id="router_8c_a0a54eda729e6f6f8e957a9d8b0f016f9_icgraph">
-<area shape="rect" id="node2" href="router_8h.html#a9123f7ab38acbdf103fcb38433311d42" title="node_describe" alt="" coords="199,5,305,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aa6d902dd7289b2388a4c4f33a43d75dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6d902dd7289b2388a4c4f33a43d75dd">&#9670;&nbsp;</a></span>ntor_key_map_free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ntor_key_map_free </td>
+          <td class="memname">void ntor_key_map_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdi__digest256__map__t.html">di_digest256_map_t</a> *&#160;</td>
           <td class="paramname"><em>map</em></td><td>)</td>
@@ -2127,22 +1951,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all storage from a keymap returned by construct_ntor_key_map. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_aa6d902dd7289b2388a4c4f33a43d75dd_cgraph.png" border="0" usemap="#router_8c_aa6d902dd7289b2388a4c4f33a43d75dd_cgraph" alt=""/></div>
-<map name="router_8c_aa6d902dd7289b2388a4c4f33a43d75dd_cgraph" id="router_8c_aa6d902dd7289b2388a4c4f33a43d75dd_cgraph">
-<area shape="rect" id="node2" href="di__ops_8c.html#a7288cea0663552d036f0d8e3a17029f0" title="dimap_free" alt="" coords="187,5,273,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_aa6d902dd7289b2388a4c4f33a43d75dd_icgraph.png" border="0" usemap="#router_8c_aa6d902dd7289b2388a4c4f33a43d75dd_icgraph" alt=""/></div>
-<map name="router_8c_aa6d902dd7289b2388a4c4f33a43d75dd_icgraph" id="router_8c_aa6d902dd7289b2388a4c4f33a43d75dd_icgraph">
-<area shape="rect" id="node2" href="onion_8h.html#aa6c71bd5a96f194744360e231cf351f5" title="server_onion_keys_free" alt="" coords="187,5,347,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2192,14 +2000,6 @@ Here is the caller graph for this function:</div>
 <li>schedule all previous cpuworkers to shut down <em>after</em> processing pending work. (This will cause fresh cpuworkers to be generated.)</li>
 <li>generate and upload a fresh routerinfo. </li>
 </ul>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_adf9d6e2bf82d6ddfb3e47cd7d49b57ec_cgraph.png" border="0" usemap="#router_8c_adf9d6e2bf82d6ddfb3e47cd7d49b57ec_cgraph" alt=""/></div>
-<map name="router_8c_adf9d6e2bf82d6ddfb3e47cd7d49b57ec_cgraph" id="router_8c_adf9d6e2bf82d6ddfb3e47cd7d49b57ec_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#aae26b1614b89d2c4bbfe5a7c2dab7c76" title="file_status" alt="" coords="175,5,257,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2258,14 +2058,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>OR only: Check whether my exit policy says to allow connection to conn. Return 0 if we accept; non-0 if we reject. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a003a3604c6a65b73394ca22117d0dff8_cgraph.png" border="0" usemap="#router_8c_a003a3604c6a65b73394ca22117d0dff8_cgraph" alt=""/></div>
-<map name="router_8c_a003a3604c6a65b73394ca22117d0dff8_cgraph" id="router_8c_a003a3604c6a65b73394ca22117d0dff8_cgraph">
-<area shape="rect" id="node2" href="address_8c.html#a6ecc12236743caf7527376436791c75e" title="tor_addr_is_null" alt="" coords="208,13,321,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2291,16 +2083,12 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a4d59ce576eb8716561e1bc6be6f88de1_cgraph.png" border="0" usemap="#router_8c_a4d59ce576eb8716561e1bc6be6f88de1_cgraph" alt=""/></div>
 <map name="router_8c_a4d59ce576eb8716561e1bc6be6f88de1_cgraph" id="router_8c_a4d59ce576eb8716561e1bc6be6f88de1_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#ac97f03d757d76cc0e684e58d4dfea035" title="router_get_description" alt="" coords="164,124,315,151"/>
-<area shape="rect" id="node3" href="router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="363,81,527,108"/>
-<area shape="rect" id="node9" href="routerlist_8c.html#a8b764a3362e4c3245d5e430925e380f1" title="router_is_named" alt="" coords="385,165,504,192"/>
-<area shape="rect" id="node4" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="603,5,716,32"/>
-<area shape="rect" id="node5" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="605,56,714,83"/>
-<area shape="rect" id="node6" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="611,107,708,133"/>
-<area shape="rect" id="node7" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="792,107,879,133"/>
-<area shape="rect" id="node8" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="927,107,1021,133"/>
-<area shape="rect" id="node10" href="networkstatus_8c.html#af663020b40e6b122a43b26aa62ca4ed4" title="networkstatus_get_router\l_digest_by_nickname" alt="" coords="575,158,744,199"/>
-<area shape="rect" id="node11" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="616,224,703,251"/>
+<area shape="rect" id="node2" href="router_8c.html#a54ab47db660fac7decf06081ba29f8dd" title="format_node_description" alt="" coords="164,56,328,83"/>
+<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="376,5,489,32"/>
+<area shape="rect" id="node4" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="378,56,487,83"/>
+<area shape="rect" id="node5" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="384,107,481,133"/>
+<area shape="rect" id="node6" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="537,107,624,133"/>
+<area shape="rect" id="node7" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="672,107,767,133"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2343,15 +2131,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_abeb0f38915a46f77352900604075d82f_icgraph.png" border="0" usemap="#router_8c_abeb0f38915a46f77352900604075d82f_icgraph" alt=""/></div>
 <map name="router_8c_abeb0f38915a46f77352900604075d82f_icgraph" id="router_8c_abeb0f38915a46f77352900604075d82f_icgraph">
-<area shape="rect" id="node2" href="connection__or_8c.html#a28eb841c609f9ecebcf27d0c31f4a6b8" title="MOCK_IMPL" alt="" coords="235,5,335,32"/>
-<area shape="rect" id="node3" href="directory_8h.html#aace63698f64d26bc7a14531381e2fa57" title="directory_post_to_dirservers" alt="" coords="192,56,379,83"/>
-<area shape="rect" id="node4" href="directory_8h.html#a13483821c102fb862ab0d27091d7ffc7" title="directory_get_from\l_all_authorities" alt="" coords="220,107,351,149"/>
-<area shape="rect" id="node5" href="nodelist_8h.html#a6849fb3c0f5d471d3d13f1502fc2ba8b" title="node_is_me" alt="" coords="239,173,331,200"/>
-<area shape="rect" id="node6" href="router_8h.html#adcfdecf66a4aa5e6d09a702784c8197f" title="router_is_me" alt="" coords="237,224,334,251"/>
-<area shape="rect" id="node10" href="routerlist_8h.html#a6c38eadb28cf4532a7623c5aa1885cec" title="router_digest_is_trusted\l_dir_type" alt="" coords="205,275,366,317"/>
-<area shape="rect" id="node7" href="dirserv_8h.html#ad1772dc2a4a12cc0eb181d1f52c5a54a" title="dirserv_set_router\l_is_running" alt="" coords="445,187,571,229"/>
-<area shape="rect" id="node9" href="dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="427,253,589,280"/>
-<area shape="rect" id="node8" href="dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="637,195,784,221"/>
+<area shape="rect" id="node2" href="connection__or_8c.html#a9fdf1e7144b7f497802d60f0f6a076fc" title="MOCK_IMPL" alt="" coords="223,5,323,32"/>
+<area shape="rect" id="node3" href="directory_8h.html#a13483821c102fb862ab0d27091d7ffc7" title="directory_get_from\l_all_authorities" alt="" coords="207,57,338,98"/>
+<area shape="rect" id="node4" href="nodelist_8h.html#a6849fb3c0f5d471d3d13f1502fc2ba8b" title="node_is_me" alt="" coords="227,123,319,149"/>
+<area shape="rect" id="node5" href="router_8h.html#adcfdecf66a4aa5e6d09a702784c8197f" title="router_is_me" alt="" coords="224,173,321,200"/>
+<area shape="rect" id="node9" href="routerlist_8h.html#a6c38eadb28cf4532a7623c5aa1885cec" title="router_digest_is_trusted\l_dir_type" alt="" coords="192,225,353,266"/>
+<area shape="rect" id="node6" href="dirserv_8h.html#ad1772dc2a4a12cc0eb181d1f52c5a54a" title="dirserv_set_router\l_is_running" alt="" coords="419,137,546,178"/>
+<area shape="rect" id="node8" href="dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="401,203,564,229"/>
+<area shape="rect" id="node7" href="dirserv_8h.html#a6c7009f040e0a812c40a6ae0fa6efd79" title="list_server_status_v1" alt="" coords="612,144,759,171"/>
 </map>
 </div>
 
@@ -2373,16 +2160,43 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Annotate that we found our DirPort reachable. </p>
+
+</div>
+</div>
+<a id="a242f0a76713d7b28d940880fc3dd03ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a242f0a76713d7b28d940880fc3dd03ed">&#9670;&nbsp;</a></span>router_do_reachability_checks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void router_do_reachability_checks </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>test_or</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>test_dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Some time has passed, or we just got new directory information. See if we currently believe our ORPort or DirPort to be unreachable. If so, launch a new test for it.</p>
+<p>For ORPort, we simply try making a circuit that ends at ourselves. Success is noticed in <a class="el" href="circuitbuild_8c.html#a79990c0f11c854f132e798f4425280ae">onionskin_answer()</a>.</p>
+<p>For DirPort, we make a connection via Tor to our DirPort and ask for our own server descriptor. Success is noticed in connection_dir_client_reached_eof(). </p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="router_8c_ab0152c6014466eaafa2e666bb38ba16b_cgraph.png" border="0" usemap="#router_8c_ab0152c6014466eaafa2e666bb38ba16b_cgraph" alt=""/></div>
-<map name="router_8c_ab0152c6014466eaafa2e666bb38ba16b_cgraph" id="router_8c_ab0152c6014466eaafa2e666bb38ba16b_cgraph">
-<area shape="rect" id="node2" href="address_8c.html#a8f295ab5aa41d0ada9f87607c7632d9c" title="tor_dup_ip" alt="" coords="191,31,273,57"/>
-<area shape="rect" id="node3" href="compat_8c.html#aaf2add8a435d6a782f057562de228637" title="tor_inet_ntop" alt="" coords="321,31,419,57"/>
-<area shape="rect" id="node4" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="467,5,564,32"/>
-<area shape="rect" id="node5" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="612,31,699,57"/>
-<area shape="rect" id="node6" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="747,31,841,57"/>
+<div class="center"><img src="router_8c_a242f0a76713d7b28d940880fc3dd03ed_icgraph.png" border="0" usemap="#router_8c_a242f0a76713d7b28d940880fc3dd03ed_icgraph" alt=""/></div>
+<map name="router_8c_a242f0a76713d7b28d940880fc3dd03ed_icgraph" id="router_8c_a242f0a76713d7b28d940880fc3dd03ed_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="203,5,331,47"/>
 </map>
 </div>
 
@@ -2519,24 +2333,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all static resources held in <a class="el" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des...">router.c</a> </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a278cf107b4a9b636b105ec5581b2f427_cgraph.png" border="0" usemap="#router_8c_a278cf107b4a9b636b105ec5581b2f427_cgraph" alt=""/></div>
-<map name="router_8c_a278cf107b4a9b636b105ec5581b2f427_cgraph" id="router_8c_a278cf107b4a9b636b105ec5581b2f427_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="353,32,461,59"/>
-<area shape="rect" id="node3" href="compat__threads_8c.html#a204271ab584393121f49bae2f6363ffa" title="tor_mutex_free" alt="" coords="168,260,277,287"/>
-<area shape="rect" id="node5" href="routerlist_8c.html#af2db10502386ef035c89377d2968c7e0" title="routerinfo_free" alt="" coords="170,184,275,211"/>
-<area shape="rect" id="node7" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="545,108,623,135"/>
-<area shape="rect" id="node11" href="routerlist_8c.html#a36bbf9bf41105f61c8f1f5b6ffc3b12b" title="extrainfo_free" alt="" coords="172,134,273,160"/>
-<area shape="rect" id="node12" href="routerlist_8c.html#a2bb77cd705f2c621023fff9a114c01bf" title="authority_cert_free" alt="" coords="157,32,288,59"/>
-<area shape="rect" id="node4" href="compat__pthreads_8c.html#affc9b93e04c69ebd4c63c25563b4a9b7" title="tor_mutex_uninit" alt="" coords="347,286,466,312"/>
-<area shape="rect" id="node6" href="torcert_8c.html#a69b51896c94df3682f5b40fdffd5daba" title="tor_cert_free" alt="" coords="359,134,454,160"/>
-<area shape="rect" id="node8" href="policies_8c.html#af4571826592c41142d57b3240016812e" title="addr_policy_list_free" alt="" coords="336,184,477,211"/>
-<area shape="rect" id="node10" href="policies_8c.html#a3a0c68a8d1b8b63eaa6ee5fe12eeb108" title="short_policy_free" alt="" coords="346,235,467,262"/>
-<area shape="rect" id="node9" href="policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="525,184,643,211"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2576,11 +2372,10 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node4" href="router_8h.html#a74a228ad9efff13643397a5c02d7bec7" title="router_get_advertised\l_or_port" alt="" coords="419,57,565,98"/>
 <area shape="rect" id="node5" href="config_8h.html#a371199c6500ed7bbdf40789df8310c92" title="get_list_of_ports_to\l_forward" alt="" coords="627,57,763,98"/>
 <area shape="rect" id="node6" href="router_8h.html#ac23927b27e54ab8752d8a379b5136b50" title="router_rebuild_descriptor" alt="" coords="613,123,777,149"/>
-<area shape="rect" id="node7" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="835,57,978,98"/>
-<area shape="rect" id="node8" href="router_8c.html#ad474de0d17eaff8d2d6ac9f83621d4fc" title="MOCK_IMPL" alt="" coords="857,123,957,149"/>
-<area shape="rect" id="node9" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="825,173,988,200"/>
-<area shape="rect" id="node10" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="1036,137,1191,178"/>
-<area shape="rect" id="node11" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="1063,203,1163,229"/>
+<area shape="rect" id="node7" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="835,86,978,127"/>
+<area shape="rect" id="node8" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="825,152,988,179"/>
+<area shape="rect" id="node9" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="1036,115,1191,157"/>
+<area shape="rect" id="node10" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="1063,181,1163,208"/>
 </map>
 </div>
 
@@ -2658,11 +2453,10 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="config_8h.html#a371199c6500ed7bbdf40789df8310c92" title="get_list_of_ports_to\l_forward" alt="" coords="214,5,350,47"/>
 <area shape="rect" id="node3" href="connection_8h.html#a70eb2da60775cc0bda58682470a752b6" title="retry_all_listeners" alt="" coords="220,71,344,98"/>
 <area shape="rect" id="node4" href="router_8h.html#ac23927b27e54ab8752d8a379b5136b50" title="router_rebuild_descriptor" alt="" coords="200,122,364,149"/>
-<area shape="rect" id="node5" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="422,56,565,97"/>
-<area shape="rect" id="node6" href="router_8c.html#ad474de0d17eaff8d2d6ac9f83621d4fc" title="MOCK_IMPL" alt="" coords="443,122,543,149"/>
-<area shape="rect" id="node7" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="412,173,575,199"/>
-<area shape="rect" id="node8" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="623,136,777,177"/>
-<area shape="rect" id="node9" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="650,202,750,229"/>
+<area shape="rect" id="node5" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="422,85,565,127"/>
+<area shape="rect" id="node6" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="412,151,575,178"/>
+<area shape="rect" id="node7" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="623,115,777,156"/>
+<area shape="rect" id="node8" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="650,181,750,207"/>
 </map>
 </div>
 
@@ -2712,11 +2506,10 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node3" href="router_8h.html#a74a228ad9efff13643397a5c02d7bec7" title="router_get_advertised\l_or_port" alt="" coords="200,57,347,98"/>
 <area shape="rect" id="node4" href="config_8h.html#a371199c6500ed7bbdf40789df8310c92" title="get_list_of_ports_to\l_forward" alt="" coords="409,57,545,98"/>
 <area shape="rect" id="node5" href="router_8h.html#ac23927b27e54ab8752d8a379b5136b50" title="router_rebuild_descriptor" alt="" coords="395,123,559,149"/>
-<area shape="rect" id="node6" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="617,57,759,98"/>
-<area shape="rect" id="node7" href="router_8c.html#ad474de0d17eaff8d2d6ac9f83621d4fc" title="MOCK_IMPL" alt="" coords="638,123,738,149"/>
-<area shape="rect" id="node8" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="607,173,769,200"/>
-<area shape="rect" id="node9" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="817,137,972,178"/>
-<area shape="rect" id="node10" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="845,203,945,229"/>
+<area shape="rect" id="node6" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="617,86,759,127"/>
+<area shape="rect" id="node7" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="607,152,769,179"/>
+<area shape="rect" id="node8" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="817,115,972,157"/>
+<area shape="rect" id="node9" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="845,181,945,208"/>
 </map>
 </div>
 
@@ -2744,61 +2537,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="router_8c_a7ca65441213fb44d6dde8432c943a6c3_cgraph.png" border="0" usemap="#router_8c_a7ca65441213fb44d6dde8432c943a6c3_cgraph" alt=""/></div>
 <map name="router_8c_a7ca65441213fb44d6dde8432c943a6c3_cgraph" id="router_8c_a7ca65441213fb44d6dde8432c943a6c3_cgraph">
 <area shape="rect" id="node2" href="nodelist_8c.html#a551827c8c00ee79f3d3663d11b2b60a0" title="node_get_all_orports" alt="" coords="200,5,343,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ac97f03d757d76cc0e684e58d4dfea035"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac97f03d757d76cc0e684e58d4dfea035">&#9670;&nbsp;</a></span>router_get_description()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* router_get_description </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structrouterinfo__t.html">routerinfo_t</a> *&#160;</td>
-          <td class="paramname"><em>ri</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Use <b>buf</b> (which must be at least NODE_DESC_BUF_LEN bytes long) to hold a human-readable description of <b>ri</b>.</p>
-<p>Return a pointer to the front of <b>buf</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_ac97f03d757d76cc0e684e58d4dfea035_cgraph.png" border="0" usemap="#router_8c_ac97f03d757d76cc0e684e58d4dfea035_cgraph" alt=""/></div>
-<map name="router_8c_ac97f03d757d76cc0e684e58d4dfea035_cgraph" id="router_8c_ac97f03d757d76cc0e684e58d4dfea035_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="204,81,368,108"/>
-<area shape="rect" id="node8" href="routerlist_8c.html#a8b764a3362e4c3245d5e430925e380f1" title="router_is_named" alt="" coords="227,165,345,192"/>
-<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="444,5,557,32"/>
-<area shape="rect" id="node4" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="446,56,555,83"/>
-<area shape="rect" id="node5" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="452,107,549,133"/>
-<area shape="rect" id="node6" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="633,107,720,133"/>
-<area shape="rect" id="node7" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="768,107,863,133"/>
-<area shape="rect" id="node9" href="networkstatus_8c.html#af663020b40e6b122a43b26aa62ca4ed4" title="networkstatus_get_router\l_digest_by_nickname" alt="" coords="416,158,585,199"/>
-<area shape="rect" id="node10" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="457,224,544,251"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_ac97f03d757d76cc0e684e58d4dfea035_icgraph.png" border="0" usemap="#router_8c_ac97f03d757d76cc0e684e58d4dfea035_icgraph" alt=""/></div>
-<map name="router_8c_ac97f03d757d76cc0e684e58d4dfea035_icgraph" id="router_8c_ac97f03d757d76cc0e684e58d4dfea035_icgraph">
-<area shape="rect" id="node2" href="router_8h.html#a4d59ce576eb8716561e1bc6be6f88de1" title="router_describe" alt="" coords="204,13,315,39"/>
-<area shape="rect" id="node3" href="dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="363,5,523,47"/>
 </map>
 </div>
 
@@ -2839,14 +2577,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>OR only: Return a signed server descriptor for this OR, rebuilding a fresh one if necessary. Return NULL on error. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a41c282d28d3993d673a0bedf91e5d776_cgraph.png" border="0" usemap="#router_8c_a41c282d28d3993d673a0bedf91e5d776_cgraph" alt=""/></div>
-<map name="router_8c_a41c282d28d3993d673a0bedf91e5d776_cgraph" id="router_8c_a41c282d28d3993d673a0bedf91e5d776_cgraph">
-<area shape="rect" id="node2" href="routerlist_8c.html#af4d8bdd829c8eab4c9060c014fb59af8" title="signed_descriptor_get_body" alt="" coords="223,5,407,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2963,15 +2693,13 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set <b>buf</b> (which must have MAX_VERBOSE_NICKNAME_LEN+1 bytes) to the verbose representation of the identity of <b>router</b>. The format is: A dollar sign. The upper-case hexadecimal encoding of the SHA1 hash of router's identity. A "=" if the router is named; a "~" if it is not. The router's nickname. </p>
+<p>Set <b>buf</b> (which must have MAX_VERBOSE_NICKNAME_LEN+1 bytes) to the verbose representation of the identity of <b>router</b>. The format is: A dollar sign. The upper-case hexadecimal encoding of the SHA1 hash of router's identity. A "=" if the router is named (no longer implemented); a "~" if it is not. The router's nickname. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a2f3a022f2ddb8fb15047fb91522000eb_cgraph.png" border="0" usemap="#router_8c_a2f3a022f2ddb8fb15047fb91522000eb_cgraph" alt=""/></div>
 <map name="router_8c_a2f3a022f2ddb8fb15047fb91522000eb_cgraph" id="router_8c_a2f3a022f2ddb8fb15047fb91522000eb_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#af663020b40e6b122a43b26aa62ca4ed4" title="networkstatus_get_router\l_digest_by_nickname" alt="" coords="187,5,356,47"/>
-<area shape="rect" id="node3" href="di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="228,71,315,98"/>
-<area shape="rect" id="node4" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="215,122,328,149"/>
+<area shape="rect" id="node2" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="187,13,300,39"/>
 </map>
 </div>
 <div class="dynheader">
@@ -3124,18 +2852,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Annotate that we found our ORPort reachable. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a81d0eddf34d18d1da24a0f14e1c54c1f_cgraph.png" border="0" usemap="#router_8c_a81d0eddf34d18d1da24a0f14e1c54c1f_cgraph" alt=""/></div>
-<map name="router_8c_a81d0eddf34d18d1da24a0f14e1c54c1f_cgraph" id="router_8c_a81d0eddf34d18d1da24a0f14e1c54c1f_cgraph">
-<area shape="rect" id="node2" href="address_8c.html#a8f295ab5aa41d0ada9f87607c7632d9c" title="tor_dup_ip" alt="" coords="188,31,271,57"/>
-<area shape="rect" id="node3" href="compat_8c.html#aaf2add8a435d6a782f057562de228637" title="tor_inet_ntop" alt="" coords="319,31,416,57"/>
-<area shape="rect" id="node4" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="464,5,561,32"/>
-<area shape="rect" id="node5" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="609,31,696,57"/>
-<area shape="rect" id="node6" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="744,31,839,57"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -3256,10 +2972,9 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="router_8c_ac23927b27e54ab8752d8a379b5136b50_icgraph.png" border="0" usemap="#router_8c_ac23927b27e54ab8752d8a379b5136b50_icgraph" alt=""/></div>
 <map name="router_8c_ac23927b27e54ab8752d8a379b5136b50_icgraph" id="router_8c_ac23927b27e54ab8752d8a379b5136b50_icgraph">
 <area shape="rect" id="node2" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="227,5,370,47"/>
-<area shape="rect" id="node3" href="router_8c.html#ad474de0d17eaff8d2d6ac9f83621d4fc" title="MOCK_IMPL" alt="" coords="249,71,349,98"/>
-<area shape="rect" id="node4" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="217,122,380,149"/>
-<area shape="rect" id="node5" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="428,85,583,127"/>
-<area shape="rect" id="node6" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="455,151,555,178"/>
+<area shape="rect" id="node3" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="217,71,380,98"/>
+<area shape="rect" id="node4" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="428,35,583,76"/>
+<area shape="rect" id="node5" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="455,101,555,127"/>
 </map>
 </div>
 
@@ -3349,6 +3064,44 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="aee06541f1d25bedac9166f4a08834c16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee06541f1d25bedac9166f4a08834c16">&#9670;&nbsp;</a></span>routerinfo_err_is_transient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int routerinfo_err_is_transient </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true if we expect given error to be transient. Return false otherwise. </p>
+
+</div>
+</div>
+<a id="a01343bdaa55370c9b0663208d4e1e67c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01343bdaa55370c9b0663208d4e1e67c">&#9670;&nbsp;</a></span>routerinfo_err_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* routerinfo_err_to_string </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return a readonly string with human readable description of <b>err</b>. </p>
+
+</div>
+</div>
 <a id="a7b7a73bfdbc7db6767f9b07fe53e9874"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b7a73bfdbc7db6767f9b07fe53e9874">&#9670;&nbsp;</a></span>routerstatus_describe()</h2>
 
@@ -3371,64 +3124,12 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="router_8c_a7b7a73bfdbc7db6767f9b07fe53e9874_cgraph.png" border="0" usemap="#router_8c_a7b7a73bfdbc7db6767f9b07fe53e9874_cgraph" alt=""/></div>
 <map name="router_8c_a7b7a73bfdbc7db6767f9b07fe53e9874_cgraph" id="router_8c_a7b7a73bfdbc7db6767f9b07fe53e9874_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a38d97aa986a058d558934f0ce97416b0" title="routerstatus_get_description" alt="" coords="200,56,387,83"/>
-<area shape="rect" id="node3" href="router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="435,56,599,83"/>
-<area shape="rect" id="node4" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="647,5,760,32"/>
-<area shape="rect" id="node5" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="649,56,758,83"/>
-<area shape="rect" id="node6" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="655,107,752,133"/>
-<area shape="rect" id="node7" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="808,107,895,133"/>
-<area shape="rect" id="node8" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="943,107,1037,133"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a38d97aa986a058d558934f0ce97416b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d97aa986a058d558934f0ce97416b0">&#9670;&nbsp;</a></span>routerstatus_get_description()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* routerstatus_get_description </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *&#160;</td>
-          <td class="paramname"><em>rs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Use <b>buf</b> (which must be at least NODE_DESC_BUF_LEN bytes long) to hold a human-readable description of <b>rs</b>.</p>
-<p>Return a pointer to the front of <b>buf</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a38d97aa986a058d558934f0ce97416b0_cgraph.png" border="0" usemap="#router_8c_a38d97aa986a058d558934f0ce97416b0_cgraph" alt=""/></div>
-<map name="router_8c_a38d97aa986a058d558934f0ce97416b0_cgraph" id="router_8c_a38d97aa986a058d558934f0ce97416b0_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#ab0380dfe3cb20aa1aa730b929e888aba" title="format_node_description" alt="" coords="240,56,404,83"/>
-<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="452,5,565,32"/>
-<area shape="rect" id="node4" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="454,56,563,83"/>
-<area shape="rect" id="node5" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="460,107,557,133"/>
-<area shape="rect" id="node6" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="613,107,700,133"/>
-<area shape="rect" id="node7" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="748,107,843,133"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a38d97aa986a058d558934f0ce97416b0_icgraph.png" border="0" usemap="#router_8c_a38d97aa986a058d558934f0ce97416b0_icgraph" alt=""/></div>
-<map name="router_8c_a38d97aa986a058d558934f0ce97416b0_icgraph" id="router_8c_a38d97aa986a058d558934f0ce97416b0_icgraph">
-<area shape="rect" id="node2" href="router_8h.html#ab375311f5454761bc6691091cdf50847" title="routerstatus_describe" alt="" coords="240,5,387,32"/>
+<area shape="rect" id="node2" href="router_8c.html#a54ab47db660fac7decf06081ba29f8dd" title="format_node_description" alt="" coords="200,56,364,83"/>
+<area shape="rect" id="node3" href="util__format_8c.html#a8b8940b2ef607928eb3dca4850567ea5" title="base16_encode" alt="" coords="412,5,525,32"/>
+<area shape="rect" id="node4" href="address_8c.html#a2de0e7c83f59d6235f74e76147db6e29" title="tor_addr_to_str" alt="" coords="414,56,523,83"/>
+<area shape="rect" id="node5" href="address_8c.html#a78e7adae7e6b4e12cff810f6bd3a4e71" title="tor_inet_ntoa" alt="" coords="420,107,517,133"/>
+<area shape="rect" id="node6" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="573,107,660,133"/>
+<area shape="rect" id="node7" href="compat_8c.html#a1df7873b16ae8936d25dfedb706f4ea6" title="tor_vsnprintf" alt="" coords="708,107,803,133"/>
 </map>
 </div>
 
@@ -3469,14 +3170,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set the current client identity key to <b>k</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a680d1900f3bcbc97dd4ddf6efa5fb35b_cgraph.png" border="0" usemap="#router_8c_a680d1900f3bcbc97dd4ddf6efa5fb35b_cgraph" alt=""/></div>
-<map name="router_8c_a680d1900f3bcbc97dd4ddf6efa5fb35b_cgraph" id="router_8c_a680d1900f3bcbc97dd4ddf6efa5fb35b_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="208,5,316,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -3496,16 +3189,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Set the current server identity key to <b>k</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_ad833b358871f8b821b26628c5457e134_cgraph.png" border="0" usemap="#router_8c_ad833b358871f8b821b26628c5457e134_cgraph" alt=""/></div>
-<map name="router_8c_ad833b358871f8b821b26628c5457e134_cgraph" id="router_8c_ad833b358871f8b821b26628c5457e134_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a2a5f687763115d7c79f977a0abfddaff" title="crypto_pk_free" alt="" coords="233,5,341,32"/>
-<area shape="rect" id="node3" href="crypto_8c.html#a91336077a5062618ff895dae4e50079d" title="crypto_pk_get_digest" alt="" coords="213,56,360,83"/>
-<area shape="rect" id="node4" href="crypto_8c.html#adc1609ea0f9d65a1f60225cb001eeb15" title="crypto_digest" alt="" coords="408,56,508,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -3525,14 +3208,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Return true iff the combination of options in <b>options</b> and parameters in the consensus mean that we don't want to allow exits from circuits we got from addresses not known to be servers. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_afa75de94186fffc8f373de610ae4cab3_cgraph.png" border="0" usemap="#router_8c_afa75de94186fffc8f373de610ae4cab3_cgraph" alt=""/></div>
-<map name="router_8c_afa75de94186fffc8f373de610ae4cab3_cgraph" id="router_8c_afa75de94186fffc8f373de610ae4cab3_cgraph">
-<area shape="rect" id="node2" href="networkstatus_8c.html#aba1790be4b1cea243c3dac989ad1b05c" title="networkstatus_get_param" alt="" coords="216,13,388,39"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -3572,16 +3247,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>If we're a v3 authority, check whether we have a certificate that's likely to expire soon. Warn if we do, but not too often. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="router_8c_a1ccf29e1bf3d8e43591f66d2a5118a6b_cgraph.png" border="0" usemap="#router_8c_a1ccf29e1bf3d8e43591f66d2a5118a6b_cgraph" alt=""/></div>
-<map name="router_8c_a1ccf29e1bf3d8e43591f66d2a5118a6b_cgraph" id="router_8c_a1ccf29e1bf3d8e43591f66d2a5118a6b_cgraph">
-<area shape="rect" id="node2" href="router_8c.html#a71fbf956eedbc38a293306c9bf1962e7" title="authdir_mode_v3" alt="" coords="188,5,309,32"/>
-<area shape="rect" id="node4" href="log_8c.html#a048192107dfd3f8f22b9e599e45d0b34" title="tor_log" alt="" coords="218,56,279,83"/>
-<area shape="rect" id="node3" href="router_8c.html#a2d62b1eeaa990670a04de8dfbb42ab8f" title="authdir_mode" alt="" coords="357,5,457,32"/>
-</map>
-</div>
 
 </div>
 </div>

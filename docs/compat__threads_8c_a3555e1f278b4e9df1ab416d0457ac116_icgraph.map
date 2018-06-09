@@ -1,0 +1,5 @@
+<map id="atomic_counter_sub" name="atomic_counter_sub">
+<area shape="rect" id="node2" href="$compress__lzma_8h.html#ae7f27b06964fc601209ddf3a7bbcbae3" title="tor_lzma_compress_free_" alt="" coords="192,5,364,32"/>
+<area shape="rect" id="node3" href="$compress__zlib_8h.html#a012688e7ab9f9a41136724a0924e6b89" title="tor_zlib_compress_free_" alt="" coords="196,56,360,83"/>
+<area shape="rect" id="node4" href="$compress__zstd_8h.html#a0f8c0e0674f196bb3d1f454de061f6e4" title="tor_zstd_compress_free_" alt="" coords="193,107,363,133"/>
+</map>

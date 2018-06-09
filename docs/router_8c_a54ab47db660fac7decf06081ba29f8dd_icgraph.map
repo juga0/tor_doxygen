@@ -1,0 +1,7 @@
+<map id="format_node_description" name="format_node_description">
+<area shape="rect" id="node2" href="$router_8h.html#a4d59ce576eb8716561e1bc6be6f88de1" title="router_describe" alt="" coords="235,13,346,39"/>
+<area shape="rect" id="node4" href="$router_8h.html#a9123f7ab38acbdf103fcb38433311d42" title="node_describe" alt="" coords="237,63,344,90"/>
+<area shape="rect" id="node5" href="$router_8h.html#ab375311f5454761bc6691091cdf50847" title="routerstatus_describe" alt="" coords="217,114,364,141"/>
+<area shape="rect" id="node6" href="$router_8h.html#a76d2b00d031ef80969722b77807f2f0c" title="extend_info_describe" alt="" coords="218,165,363,191"/>
+<area shape="rect" id="node3" href="$dirserv_8h.html#adaceacf408562b95dd1169799995bd6c" title="authdir_wants_to_reject\l_router" alt="" coords="412,5,572,47"/>
+</map>

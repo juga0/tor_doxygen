@@ -1,0 +1,5 @@
+<map id="get_sampled_guard_with_id" name="get_sampled_guard_with_id">
+<area shape="rect" id="node2" href="$entrynodes_8h.html#a9ecb7c2ddf9746ab0b0cb62a2239b6f6" title="entry_guard_get_by\l_id_digest_for_guard\l_selection" alt="" coords="236,31,379,87"/>
+<area shape="rect" id="node3" href="$entrynodes_8h.html#a059f7981078a896a9349a578b82bc645" title="entry_guard_get_by\l_id_digest" alt="" coords="427,5,563,47"/>
+<area shape="rect" id="node4" href="$entrynodes_8h.html#aab5f4a60cc416cbf7109763a3b44c45a" title="get_guard_state_for\l_bridge_desc_fetch" alt="" coords="427,71,564,112"/>
+</map>

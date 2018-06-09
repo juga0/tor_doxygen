@@ -1,6 +1,5 @@
 <map id="circuit_remove_handled_ports" name="circuit_remove_handled_ports">
 <area shape="rect" id="node2" href="$circuituse_8c.html#aa9c9e6111de126ec1c3ca4dd17f4091c" title="circuit_stream_is_being\l_handled" alt="" coords="212,27,371,69"/>
-<area shape="rect" id="node7" href="$container_8c.html#ae56cc8eb3ee68132c63168b2485037cb" title="smartlist_del" alt="" coords="243,93,339,120"/>
 <area shape="rect" id="node3" href="$container_8c.html#a9060e1f019093c294f1a076b6f0226da" title="smartlist_contains\l_int_as_string" alt="" coords="419,27,547,69"/>
 <area shape="rect" id="node4" href="$compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="615,5,702,32"/>
 <area shape="rect" id="node6" href="$container_8c.html#ac33bb0aa376a138f6ca81d6e8ea25e60" title="smartlist_contains\l_string" alt="" coords="595,57,723,98"/>

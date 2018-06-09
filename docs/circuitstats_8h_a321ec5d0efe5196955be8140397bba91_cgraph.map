@@ -1,4 +1,5 @@
 <map id="circuit_build_times_set_timeout" name="circuit_build_times_set_timeout">
 <area shape="rect" id="node2" href="$util_8c.html#a44cb339836df0bbfcf8416209976f6db" title="tor_lround" alt="" coords="210,5,289,32"/>
-<area shape="rect" id="node3" href="$circuitstats_8c.html#ab883ccb58a956f9f308b80249cee790d" title="circuit_build_times\l_disabled" alt="" coords="184,57,315,98"/>
+<area shape="rect" id="node3" href="$circuitstats_8c.html#ab1b73e0bb66fa432389a7cc95a62bb21" title="circuit_build_times\l_disabled" alt="" coords="184,57,315,98"/>
+<area shape="rect" id="node4" href="$circuitstats_8c.html#a556d4f3e3d78886de05662aaf08f3c3f" title="circuit_build_times\l_disabled_" alt="" coords="363,57,493,98"/>
 </map>

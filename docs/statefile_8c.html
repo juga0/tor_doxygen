@@ -78,8 +78,10 @@ $(function() {
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;confparse.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="control_8h_source.html">control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="entrynodes_8h_source.html">entrynodes.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hibernate_8h_source.html">hibernate.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rephist_8h_source.html">rephist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sandbox_8h_source.html">sandbox.h</a>&quot;</code><br />
@@ -89,43 +91,51 @@ Include dependency graph for statefile.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="statefile_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2statefile_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2statefile_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2statefile_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1406,109,1450,136"/>
-<area shape="rect" id="node34" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="1770,109,1867,136"/>
-<area shape="rect" id="node35" href="config_8h.html" title="Header file for config.c. " alt="" coords="1942,259,2010,285"/>
-<area shape="rect" id="node36" href="confparse_8h_source.html" title="confparse.h" alt="" coords="1943,109,2033,136"/>
-<area shape="rect" id="node37" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="2023,184,2119,211"/>
-<area shape="rect" id="node39" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2109,109,2206,136"/>
-<area shape="rect" id="node40" href="hibernate_8h.html" title="Header file for hibernate.c. " alt="" coords="2166,259,2253,285"/>
-<area shape="rect" id="node41" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2281,109,2353,136"/>
-<area shape="rect" id="node42" href="router_8h.html" title="Header file for router.c. " alt="" coords="2215,333,2281,360"/>
-<area shape="rect" id="node43" href="sandbox_8h.html" title="Header file for sandbox.c. " alt="" coords="2351,557,2433,584"/>
-<area shape="rect" id="node44" href="statefile_8h_source.html" title="statefile.h" alt="" coords="2479,109,2558,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="310,707,389,733"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="945,632,1007,659"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="924,408,993,435"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1601,408,1714,435"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1437,483,1563,509"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1489,557,1631,584"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1042,333,1105,360"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1459,408,1525,435"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="562,259,649,285"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="1111,184,1183,211"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="254,184,333,211"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2195,557,2323,584"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="1309,184,1353,211"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1377,184,1479,211"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1504,184,1595,211"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1065,557,1159,584"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1645,632,1744,659"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="650,483,726,509"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="342,632,450,659"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="726,557,853,584"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1035,408,1163,435"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="624,333,675,360"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="521,333,599,360"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="145,557,215,584"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="571,408,650,435"/>
-<area shape="rect" id="node38" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="2034,259,2107,285"/>
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1757,109,1801,136"/>
+<area shape="rect" id="node37" href="circuitstats_8h.html" title="Header file for circuitstats.c. " alt="" coords="1636,109,1733,136"/>
+<area shape="rect" id="node38" href="config_8h.html" title="Header file for config.c. " alt="" coords="2463,632,2531,659"/>
+<area shape="rect" id="node39" href="confparse_8h_source.html" title="confparse.h" alt="" coords="2061,109,2151,136"/>
+<area shape="rect" id="node40" href="connection_8h.html" title="Header file for connection.c. " alt="" coords="79,333,175,360"/>
+<area shape="rect" id="node42" href="control_8h.html" title="Header file for control.c. " alt="" coords="2298,109,2370,136"/>
+<area shape="rect" id="node43" href="entrynodes_8h.html" title="Header file for circuitbuild.c. " alt="" coords="2176,109,2273,136"/>
+<area shape="rect" id="node45" href="hibernate_8h.html" title="Header file for hibernate.c. " alt="" coords="2591,632,2677,659"/>
+<area shape="rect" id="node46" href="main_8h.html" title="Header file for main.c. " alt="" coords="2495,109,2557,136"/>
+<area shape="rect" id="node47" href="rephist_8h.html" title="Header file for rephist.c. " alt="" coords="2581,109,2653,136"/>
+<area shape="rect" id="node48" href="router_8h.html" title="Header file for router.c. " alt="" coords="2727,408,2794,435"/>
+<area shape="rect" id="node49" href="sandbox_8h.html" title="Header file for sandbox.c. " alt="" coords="2387,707,2470,733"/>
+<area shape="rect" id="node50" href="statefile_8h_source.html" title="statefile.h" alt="" coords="2779,109,2857,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1323,856,1401,883"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="1207,781,1269,808"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="555,259,625,285"/>
+<area shape="rect" id="node18" href="container_8h_source.html" title="container.h" alt="" coords="1905,483,1992,509"/>
+<area shape="rect" id="node20" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="805,483,871,509"/>
+<area shape="rect" id="node21" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1577,184,1691,211"/>
+<area shape="rect" id="node22" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1585,259,1710,285"/>
+<area shape="rect" id="node23" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1383,333,1525,360"/>
+<area shape="rect" id="node25" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="889,259,952,285"/>
+<area shape="rect" id="node27" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1969,184,2059,211"/>
+<area shape="rect" id="node28" href="address_8h.html" title="Headers for address.h. " alt="" coords="1804,408,1883,435"/>
+<area shape="rect" id="node29" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2185,707,2313,733"/>
+<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="144,184,188,211"/>
+<area shape="rect" id="node31" href="confline_8h_source.html" title="confline.h" alt="" coords="1956,333,2035,360"/>
+<area shape="rect" id="node32" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="729,184,832,211"/>
+<area shape="rect" id="node33" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="2077,259,2167,285"/>
+<area shape="rect" id="node34" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="1727,707,1837,733"/>
+<area shape="rect" id="node35" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1964,707,2059,733"/>
+<area shape="rect" id="node36" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="958,184,1073,211"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="668,632,744,659"/>
+<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="1374,557,1425,584"/>
+<area shape="rect" id="node16" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="669,333,764,360"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1686,781,1785,808"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="601,781,709,808"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="785,707,912,733"/>
+<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1327,707,1397,733"/>
+<area shape="rect" id="node17" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="985,408,1096,435"/>
+<area shape="rect" id="node19" href="siphash_8h_source.html" title="siphash.h" alt="" coords="1909,557,1988,584"/>
+<area shape="rect" id="node24" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="1273,483,1424,509"/>
+<area shape="rect" id="node26" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1273,408,1401,435"/>
+<area shape="rect" id="node41" href="buffers_8h.html" title="Header file for buffers.c. " alt="" coords="320,557,393,584"/>
+<area shape="rect" id="node44" href="handles_8h.html" title="Macros for C weak&#45;handle implementation. " alt="" coords="2185,184,2264,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -147,6 +157,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ae575a065831572dae58dabc9b4b50364"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="statefile_8c.html#ae575a065831572dae58dabc9b4b50364">DUMMY_TYPECHECK_INSTANCE</a> (<a class="el" href="structor__state__t.html">or_state_t</a>)</td></tr>
+<tr class="separator:ae575a065831572dae58dabc9b4b50364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5733ba0bd7d265317d75d4029929c4e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="statefile_8c.html#a5733ba0bd7d265317d75d4029929c4e7">MOCK_IMPL</a> (<a class="el" href="structor__state__t.html">or_state_t</a> *, get_or_state,(void))</td></tr>
 <tr class="separator:a5733ba0bd7d265317d75d4029929c4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c86e233fc463a9aca4c585578c2fa1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="statefile_8c.html#a1c86e233fc463a9aca4c585578c2fa1a">or_state_loaded</a> (void)</td></tr>
@@ -166,9 +178,11 @@ STATIC <a class="el" href="structor__state__t.html">or_state_t</a> *&#160;</td><
 <tr class="separator:a5b6c049d701661f46a33c3bcf27563c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a208f199309effd7e40d29e220551d3d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="statefile_8c.html#a208f199309effd7e40d29e220551d3d0">save_transport_to_state</a> (const char *transport, const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port)</td></tr>
 <tr class="separator:a208f199309effd7e40d29e220551d3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adea25c19f98534b233279a9822f71e25"><td class="memItemLeft" align="right" valign="top"><a id="adea25c19f98534b233279a9822f71e25"></a>
-STATIC void&#160;</td><td class="memItemRight" valign="bottom"><b>or_state_free</b> (<a class="el" href="structor__state__t.html">or_state_t</a> *state)</td></tr>
-<tr class="separator:adea25c19f98534b233279a9822f71e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39484525485ab1d840b0f487e47b5944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="statefile_8c.html#a39484525485ab1d840b0f487e47b5944">or_state_mark_dirty</a> (<a class="el" href="structor__state__t.html">or_state_t</a> *state, time_t when)</td></tr>
+<tr class="separator:a39484525485ab1d840b0f487e47b5944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c9288e220d1a5b1f442098308bdcc8"><td class="memItemLeft" align="right" valign="top"><a id="a33c9288e220d1a5b1f442098308bdcc8"></a>
+STATIC void&#160;</td><td class="memItemRight" valign="bottom"><b>or_state_free_</b> (<a class="el" href="structor__state__t.html">or_state_t</a> *state)</td></tr>
+<tr class="separator:a33c9288e220d1a5b1f442098308bdcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a160883379955676a1f2fdc1b5316ad01"><td class="memItemLeft" align="right" valign="top"><a id="a160883379955676a1f2fdc1b5316ad01"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>or_state_free_all</b> (void)</td></tr>
 <tr class="separator:a160883379955676a1f2fdc1b5316ad01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,7 +191,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>or_state_free_all</b>
 <div class="textblock"><p>Handles parsing and encoding the persistent 'state' file that carries miscellaneous persistent state between Tor invocations. </p>
 <p>This 'state' file is a typed key-value store that allows multiple entries for the same key. It follows the same metaformat as described in <a class="el" href="confparse_8c.html" title="Back-end for parsing and generating key-value files, used to implement the torrc file format and the ...">confparse.c</a>, and uses the same code to read and write itself.</p>
 <p>The state file is most suitable for small values that don't change too frequently. For values that become very large, we typically use a separate file &ndash; for example, see how we handle microdescriptors, by storing them in a separate file with a journal.</p>
-<p>The current state is accessed via get_or_state(), which returns a singleton <a class="el" href="structor__state__t.html">or_state_t</a> object. Functions that change it should call or_state_mark_dirty() to ensure that it will get written to disk.</p>
+<p>The current state is accessed via get_or_state(), which returns a singleton <a class="el" href="structor__state__t.html">or_state_t</a> object. Functions that change it should call <a class="el" href="statefile_8c.html#a39484525485ab1d840b0f487e47b5944">or_state_mark_dirty()</a> to ensure that it will get written to disk.</p>
 <p>The <a class="el" href="statefile_8c.html#ab01c2dfe50dff6fe4be4e528c68033af">or_state_save()</a> function additionally calls various functioens throughout Tor that might want to flush more state to the the disk, including some in <a class="el" href="rephist_8c.html" title="Basic history and performance-tracking functionality. ">rephist.c</a>, <a class="el" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. ">entrynodes.c</a>, <a class="el" href="circuitstats_8c.html" title="Maintains and analyzes statistics about circuit built times, so we can tell how long we may need to w...">circuitstats.c</a>, <a class="el" href="hibernate_8c.html" title="Functions to close listeners, stop allowing new circuits, etc in preparation for closing down or goin...">hibernate.c</a>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5c7f930e8c7dd9c9dc294de3e1959780"></a>
@@ -297,8 +311,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>or_state_free_all</b>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ name, CONFIG_TYPE_ ## conftype, <a class="code" href="util_8h.html#a34bb1d41c655823d71f9ce54196bcfd9">STRUCT_OFFSET</a>(<a class="code" href="structor__state__t.html">or_state_t</a>, member),  \</div><div class="line">      initvalue }</div><div class="ttc" id="structor__state__t_html"><div class="ttname"><a href="structor__state__t.html">or_state_t</a></div><div class="ttdef"><b>Definition:</b> or.h:4549</div></div>
-<div class="ttc" id="util_8h_html_a34bb1d41c655823d71f9ce54196bcfd9"><div class="ttname"><a href="util_8h.html#a34bb1d41c655823d71f9ce54196bcfd9">STRUCT_OFFSET</a></div><div class="ttdeci">#define STRUCT_OFFSET(tp, member)</div><div class="ttdef"><b>Definition:</b> util.h:116</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{ name, CONFIG_TYPE_ ## conftype, offsetof(<a class="code" href="structor__state__t.html">or_state_t</a>, member),       \</div><div class="line">      initvalue CONF_TEST_MEMBERS(<a class="code" href="structor__state__t.html">or_state_t</a>, conftype, member) }</div><div class="ttc" id="structor__state__t_html"><div class="ttname"><a href="structor__state__t.html">or_state_t</a></div><div class="ttdef"><b>Definition:</b> or.h:4708</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -319,6 +332,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>or_state_free_all</b>
       </table>
 </div><div class="memdoc">
 <p>Return whether the state file failed to write last time we tried. </p>
+
+</div>
+</div>
+<a id="ae575a065831572dae58dabc9b4b50364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae575a065831572dae58dabc9b4b50364">&#9670;&nbsp;</a></span>DUMMY_TYPECHECK_INSTANCE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DUMMY_TYPECHECK_INSTANCE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structor__state__t.html">or_state_t</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dummy instance of <a class="el" href="structor__state__t.html">or_state_t</a>, used for type-checking its members with CONF_CHECK_VAR_TYPE. </p>
 
 </div>
 </div>
@@ -439,14 +471,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Reload the persistent state from disk, generating a new state as needed. Return 0 on success, less than 0 on failure. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="statefile_8c_a25adaf118e940e7774207a8c926d4bad_cgraph.png" border="0" usemap="#statefile_8c_a25adaf118e940e7774207a8c926d4bad_cgraph" alt=""/></div>
-<map name="statefile_8c_a25adaf118e940e7774207a8c926d4bad_cgraph" id="statefile_8c_a25adaf118e940e7774207a8c926d4bad_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#aae26b1614b89d2c4bbfe5a7c2dab7c76" title="file_status" alt="" coords="153,5,236,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -469,6 +493,52 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a39484525485ab1d840b0f487e47b5944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39484525485ab1d840b0f487e47b5944">&#9670;&nbsp;</a></span>or_state_mark_dirty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void or_state_mark_dirty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structor__state__t.html">or_state_t</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>when</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Change the next_write time of <b>state</b> to <b>when</b>, unless the state is already scheduled to be written to disk earlier than <b>when</b>. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="statefile_8c_a39484525485ab1d840b0f487e47b5944_cgraph.png" border="0" usemap="#statefile_8c_a39484525485ab1d840b0f487e47b5944_cgraph" alt=""/></div>
+<map name="statefile_8c_a39484525485ab1d840b0f487e47b5944_cgraph" id="statefile_8c_a39484525485ab1d840b0f487e47b5944_cgraph">
+<area shape="rect" id="node2" href="main_8c.html#a99e4caa4cd2573a6e23e9980ae79547b" title="reschedule_or_state_save" alt="" coords="191,5,365,32"/>
+<area shape="rect" id="node3" href="periodic_8c.html#ad9c12c89ef415b3c131f39f68534a974" title="periodic_event_reschedule" alt="" coords="413,5,589,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="statefile_8c_a39484525485ab1d840b0f487e47b5944_icgraph.png" border="0" usemap="#statefile_8c_a39484525485ab1d840b0f487e47b5944_icgraph" alt=""/></div>
+<map name="statefile_8c_a39484525485ab1d840b0f487e47b5944_icgraph" id="statefile_8c_a39484525485ab1d840b0f487e47b5944_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#a4d28e76dd898a85ba3459928e3659954" title="tor_cleanup" alt="" coords="191,5,280,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ab01c2dfe50dff6fe4be4e528c68033af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab01c2dfe50dff6fe4be4e528c68033af">&#9670;&nbsp;</a></span>or_state_save()</h2>
 
@@ -485,6 +555,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Write the persistent state to disk. Return 0 for success, &lt;0 on failure. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="statefile_8c_ab01c2dfe50dff6fe4be4e528c68033af_icgraph.png" border="0" usemap="#statefile_8c_ab01c2dfe50dff6fe4be4e528c68033af_icgraph" alt=""/></div>
+<map name="statefile_8c_ab01c2dfe50dff6fe4be4e528c68033af_icgraph" id="statefile_8c_ab01c2dfe50dff6fe4be4e528c68033af_icgraph">
+<area shape="rect" id="node2" href="main_8h.html#a4d28e76dd898a85ba3459928e3659954" title="tor_cleanup" alt="" coords="157,5,247,32"/>
+</map>
+</div>
 
 </div>
 </div>

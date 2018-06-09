@@ -1,0 +1,8 @@
+<map id="crypto_rand_int" name="crypto_rand_int">
+<area shape="rect" id="node2" href="$crypto__rand_8h.html#ad0c5a5e2dd124a11b373b0f50bc9a6a7" title="crypto_rand_int_range" alt="" coords="165,5,316,32"/>
+<area shape="rect" id="node4" href="$crypto__rand_8c.html#ade8ce8fa149116f2afb764c3ad983873" title="smartlist_choose" alt="" coords="180,56,301,83"/>
+<area shape="rect" id="node6" href="$crypto__rand_8h.html#a56bc6ef989ec27c2b561694e8a5e1807" title="smartlist_shuffle" alt="" coords="181,107,300,133"/>
+<area shape="rect" id="node7" href="$routerlist_8c.html#a8b22797a2be55707af8334b747d51047" title="choose_array_element\l_by_weight" alt="" coords="164,158,317,199"/>
+<area shape="rect" id="node3" href="$crypto__rand_8h.html#a745e8aeb9b4c5d52084f5bdc7be78e17" title="crypto_random_hostname" alt="" coords="365,5,537,32"/>
+<area shape="rect" id="node5" href="$hs__common_8h.html#a9af4bf6fe3cc01d5524f2dd4123573a8" title="hs_pick_hsdir" alt="" coords="400,56,503,83"/>
+</map>

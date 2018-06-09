@@ -1,14 +1,14 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/common/pubsub.c" name="/home/user/_my/code/bwauth&#45;related/tor/src/common/pubsub.c">
-<area shape="rect" id="node2" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="567,557,646,584"/>
+<area shape="rect" id="node2" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="639,557,718,584"/>
 <area shape="rect" id="node3" href="$pubsub_8h.html" title="Macros to implement publish/subscribe abstractions. " alt="" coords="5,333,80,360"/>
-<area shape="rect" id="node5" href="$container_8h_source.html" title="container.h" alt="" coords="725,109,811,136"/>
-<area shape="rect" id="node4" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="190,483,253,509"/>
-<area shape="rect" id="node6" href="$util_8h.html" title="Headers for util.c. " alt="" coords="699,184,749,211"/>
-<area shape="rect" id="node17" href="$siphash_8h_source.html" title="siphash.h" alt="" coords="774,184,853,211"/>
-<area shape="rect" id="node7" href="$compat_8h_source.html" title="compat.h" alt="" coords="567,333,643,360"/>
-<area shape="rect" id="node8" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="737,483,836,509"/>
-<area shape="rect" id="node14" href="$di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="75,408,146,435"/>
-<area shape="rect" id="node16" href="$util__bug_8h.html" title="util_bug.h" alt="" coords="815,259,894,285"/>
-<area shape="rect" id="node10" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="381,483,489,509"/>
-<area shape="rect" id="node13" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="410,408,537,435"/>
+<area shape="rect" id="node6" href="$container_8h_source.html" title="container.h" alt="" coords="765,109,851,136"/>
+<area shape="rect" id="node4" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="243,483,306,509"/>
+<area shape="rect" id="node7" href="$util_8h.html" title="Headers for util.c. " alt="" coords="739,184,789,211"/>
+<area shape="rect" id="node18" href="$siphash_8h_source.html" title="siphash.h" alt="" coords="814,184,893,211"/>
+<area shape="rect" id="node8" href="$compat_8h_source.html" title="compat.h" alt="" coords="605,333,681,360"/>
+<area shape="rect" id="node9" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="829,483,928,509"/>
+<area shape="rect" id="node15" href="$di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="155,408,226,435"/>
+<area shape="rect" id="node17" href="$util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="909,259,987,285"/>
+<area shape="rect" id="node11" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="425,483,533,509"/>
+<area shape="rect" id="node14" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="438,408,565,435"/>
 </map>

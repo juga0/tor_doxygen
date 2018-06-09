@@ -75,8 +75,9 @@ $(function() {
 <p>Implements a counter-mode stream cipher on top of AES.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;orconfig.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="compat__openssl_8h_source.html">compat_openssl.h</a>&quot;</code><br />
 <code>#include &lt;openssl/opensslv.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="crypto_8h_source.html">crypto.h</a>&quot;</code><br />
+<code>#include &quot;crypto_openssl_mgt.h&quot;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
@@ -94,18 +95,19 @@ Include dependency graph for aes.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="aes_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2aes_8c" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2aes_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2aes_8c">
-<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="809,483,887,509"/>
-<area shape="rect" id="node4" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="771,184,840,211"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="262,259,338,285"/>
-<area shape="rect" id="node20" href="aes_8h.html" title="Headers for aes.c. " alt="" coords="1139,109,1194,136"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="431,109,481,136"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="1089,259,1159,285"/>
-<area shape="rect" id="node24" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="197,184,262,211"/>
-<area shape="rect" id="node6" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="817,408,879,435"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="356,408,455,435"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="117,408,225,435"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="547,333,674,360"/>
-<area shape="rect" id="node23" href="util__bug_8h.html" title="util_bug.h" alt="" coords="94,184,173,211"/>
+<area shape="rect" id="node2" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="438,632,517,659"/>
+<area shape="rect" id="node3" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="251,109,379,136"/>
+<area shape="rect" id="node5" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="278,184,429,211"/>
+<area shape="rect" id="node7" href="util_8h.html" title="Headers for util.c. " alt="" coords="379,259,429,285"/>
+<area shape="rect" id="node10" href="compat_8h_source.html" title="compat.h" alt="" coords="499,408,575,435"/>
+<area shape="rect" id="node16" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="94,408,165,435"/>
+<area shape="rect" id="node25" href="aes_8h.html" title="Headers for aes.c. " alt="" coords="1238,109,1293,136"/>
+<area shape="rect" id="node26" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="949,333,1014,360"/>
+<area shape="rect" id="node8" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="66,557,129,584"/>
+<area shape="rect" id="node11" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="916,557,1015,584"/>
+<area shape="rect" id="node18" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="606,333,685,360"/>
+<area shape="rect" id="node13" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="719,557,827,584"/>
+<area shape="rect" id="node15" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="613,483,739,509"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -133,8 +135,8 @@ Functions</h2></td></tr>
 <tr class="separator:a63bf76dc2ba480a13bbf131e49e8615f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e756990f15546ededa5afd6835eba06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#a8e756990f15546ededa5afd6835eba06">aes_new_cipher</a> (const uint8_t *key, const uint8_t *iv, int bits)</td></tr>
 <tr class="separator:a8e756990f15546ededa5afd6835eba06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c9590cc53e7c37355be6a8acd1d34e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#af2c9590cc53e7c37355be6a8acd1d34e">aes_cipher_free</a> (<a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a> *cipher)</td></tr>
-<tr class="separator:af2c9590cc53e7c37355be6a8acd1d34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed811be78171c2b905c60658e185be12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#aed811be78171c2b905c60658e185be12">aes_cipher_free_</a> (<a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a> *cipher)</td></tr>
+<tr class="separator:aed811be78171c2b905c60658e185be12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1fa0b10bf5fa32c66fe9fab0d6bed02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aes_8c.html#ac1fa0b10bf5fa32c66fe9fab0d6bed02">aes_crypt_inplace</a> (<a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a> *cipher, char *data, size_t len)</td></tr>
 <tr class="separator:ac1fa0b10bf5fa32c66fe9fab0d6bed02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -170,14 +172,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af2c9590cc53e7c37355be6a8acd1d34e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2c9590cc53e7c37355be6a8acd1d34e">&#9670;&nbsp;</a></span>aes_cipher_free()</h2>
+<a id="aed811be78171c2b905c60658e185be12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed811be78171c2b905c60658e185be12">&#9670;&nbsp;</a></span>aes_cipher_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void aes_cipher_free </td>
+          <td class="memname">void aes_cipher_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structaes__cnt__cipher.html">aes_cnt_cipher_t</a> *&#160;</td>
           <td class="paramname"><em>cipher</em></td><td>)</td>
@@ -189,19 +191,9 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="aes_8c_af2c9590cc53e7c37355be6a8acd1d34e_cgraph.png" border="0" usemap="#aes_8c_af2c9590cc53e7c37355be6a8acd1d34e_cgraph" alt=""/></div>
-<map name="aes_8c_af2c9590cc53e7c37355be6a8acd1d34e_cgraph" id="aes_8c_af2c9590cc53e7c37355be6a8acd1d34e_cgraph">
-<area shape="rect" id="node2" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="168,5,247,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="aes_8c_af2c9590cc53e7c37355be6a8acd1d34e_icgraph.png" border="0" usemap="#aes_8c_af2c9590cc53e7c37355be6a8acd1d34e_icgraph" alt=""/></div>
-<map name="aes_8c_af2c9590cc53e7c37355be6a8acd1d34e_icgraph" id="aes_8c_af2c9590cc53e7c37355be6a8acd1d34e_icgraph">
-<area shape="rect" id="node2" href="crypto_8h.html#a03f018a78f86020d36a4b1d41a0cf4c4" title="crypto_cipher_free" alt="" coords="168,46,297,73"/>
-<area shape="rect" id="node3" href="crypto_8h.html#a83e86c4d91db59b9716111008e32a503" title="crypto_cipher_encrypt\l_with_iv" alt="" coords="345,5,496,47"/>
-<area shape="rect" id="node4" href="crypto_8h.html#a11d6507b680acf27240a1803fbddba65" title="crypto_cipher_decrypt\l_with_iv" alt="" coords="345,71,496,112"/>
+<div class="center"><img src="aes_8c_aed811be78171c2b905c60658e185be12_cgraph.png" border="0" usemap="#aes_8c_aed811be78171c2b905c60658e185be12_cgraph" alt=""/></div>
+<map name="aes_8c_aed811be78171c2b905c60658e185be12_cgraph" id="aes_8c_aed811be78171c2b905c60658e185be12_cgraph">
+<area shape="rect" id="node2" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="175,5,253,32"/>
 </map>
 </div>
 
@@ -297,7 +289,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node4" href="crypto_8h.html#a83e86c4d91db59b9716111008e32a503" title="crypto_cipher_encrypt\l_with_iv" alt="" coords="619,5,769,47"/>
 <area shape="rect" id="node5" href="crypto_8h.html#a11d6507b680acf27240a1803fbddba65" title="crypto_cipher_decrypt\l_with_iv" alt="" coords="619,71,769,112"/>
 <area shape="rect" id="node7" href="crypto_8h.html#a1a44157cdf50927218728fde6e863b1e" title="crypto_cipher_new" alt="" coords="629,137,759,163"/>
-<area shape="rect" id="node8" href="circuitbuild_8h.html#ad6e1de1a8a6bb7f32b780321e1d7745d" title="circuit_init_cpath\l_crypto" alt="" coords="817,129,937,171"/>
+<area shape="rect" id="node8" href="crypto__rsa_8h.html#a30d6a44940fe781bb5961ace32c0cbb1" title="crypto_pk_obsolete\l_public_hybrid_encrypt" alt="" coords="817,129,972,171"/>
 </map>
 </div>
 

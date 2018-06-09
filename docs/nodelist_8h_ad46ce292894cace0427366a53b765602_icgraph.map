@@ -1,0 +1,9 @@
+<map id="node_get_ed25519_id" name="node_get_ed25519_id">
+<area shape="rect" id="node2" href="$nodelist_8h.html#ac9a8eefc5429bb575b26374ef24bce88" title="nodelist_remove_microdesc" alt="" coords="201,5,385,32"/>
+<area shape="rect" id="node3" href="$nodelist_8h.html#a9a536b832b4e1fab98d98efed737ffff" title="node_ed25519_id_matches" alt="" coords="203,56,383,83"/>
+<area shape="rect" id="node4" href="$nodelist_8h.html#a798e84107f21829549b67e28dca267ef" title="node_supports_ed25519\l_link_authentication" alt="" coords="212,107,375,149"/>
+<area shape="rect" id="node5" href="$dirserv_8h.html#a2b981b610d4a3344b17a55300072ef66" title="dirserv_orconn_tls_done" alt="" coords="454,89,617,116"/>
+<area shape="rect" id="node6" href="$dirserv_8h.html#a87235a887afe2a5f796bd9a88b474909" title="dirserv_single_reachability_test" alt="" coords="433,140,637,167"/>
+<area shape="rect" id="node7" href="$dirserv_8h.html#aac91a65fca7d877c033a594a96203ad7" title="dirserv_test_reachability" alt="" coords="685,111,848,137"/>
+<area shape="rect" id="node8" href="$routerlist_8h.html#ad0e00a6f0df9aace49976da496902957" title="routerlist_descriptors\l_added" alt="" coords="695,162,838,203"/>
+</map>

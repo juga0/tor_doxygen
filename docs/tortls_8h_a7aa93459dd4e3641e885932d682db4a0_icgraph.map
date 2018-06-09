@@ -1,4 +1,5 @@
 <map id="tor_tls_get_my_certs" name="tor_tls_get_my_certs">
 <area shape="rect" id="node2" href="$connection__or_8h.html#a373bc2ce63f7b8a6530d1b16e420f7c4" title="connection_or_send\l_certs_cell" alt="" coords="209,5,348,47"/>
-<area shape="rect" id="node3" href="$connection__or_8h.html#ab1ef7fb7062854e94bc474ccd0e51fbc" title="connection_or_compute\l_authenticate_cell_body" alt="" coords="197,71,360,112"/>
+<area shape="rect" id="node3" href="$connection__or_8h.html#a299125b246f5c829b4af2cef1efa7378" title="connection_or_compute\l_authenticate_cell_body" alt="" coords="197,71,360,112"/>
+<area shape="rect" id="node4" href="$routerkeys_8c.html#abebfd6b56ecfb14c8ef132e50485907e" title="generate_ed_link_cert" alt="" coords="204,137,353,163"/>
 </map>

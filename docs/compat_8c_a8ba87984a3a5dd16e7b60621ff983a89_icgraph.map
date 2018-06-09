@@ -1,4 +1,5 @@
 <map id="tor_inet_pton" name="tor_inet_pton">
 <area shape="rect" id="node2" href="$util_8h.html#a307d12f617bd1f5606b8f971733e4c48" title="string_is_valid_ipv4\l_address" alt="" coords="151,5,287,47"/>
-<area shape="rect" id="node3" href="$util_8h.html#a06c31f983cd56699cca308532a09a14c" title="string_is_valid_ipv6\l_address" alt="" coords="151,71,287,112"/>
+<area shape="rect" id="node4" href="$util_8h.html#a06c31f983cd56699cca308532a09a14c" title="string_is_valid_ipv6\l_address" alt="" coords="151,71,287,112"/>
+<area shape="rect" id="node3" href="$util_8h.html#a526379934c7164b1f7d675cf9b725846" title="string_is_valid_nonrfc\l_hostname" alt="" coords="335,5,483,47"/>
 </map>

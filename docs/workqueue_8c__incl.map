@@ -1,14 +1,16 @@
 <map id="/home/user/_my/code/bwauth&#45;related/tor/src/common/workqueue.c" name="/home/user/_my/code/bwauth&#45;related/tor/src/common/workqueue.c">
-<area shape="rect" id="node2" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="687,483,765,509"/>
-<area shape="rect" id="node3" href="$compat_8h_source.html" title="compat.h" alt="" coords="492,259,568,285"/>
-<area shape="rect" id="node10" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="189,333,316,360"/>
-<area shape="rect" id="node11" href="$util_8h.html" title="Headers for util.c. " alt="" coords="798,109,849,136"/>
-<area shape="rect" id="node15" href="$workqueue_8h_source.html" title="workqueue.h" alt="" coords="517,109,613,136"/>
-<area shape="rect" id="node16" href="$tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1205,109,1295,136"/>
-<area shape="rect" id="node17" href="$torlog_8h.html" title="Headers for log.c. " alt="" coords="568,184,633,211"/>
-<area shape="rect" id="node4" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="595,408,657,435"/>
-<area shape="rect" id="node5" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="682,408,781,435"/>
-<area shape="rect" id="node7" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="5,408,113,435"/>
-<area shape="rect" id="node12" href="$di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="811,333,881,360"/>
-<area shape="rect" id="node14" href="$util__bug_8h.html" title="util_bug.h" alt="" coords="861,184,940,211"/>
+<area shape="rect" id="node2" href="$orconfig_8h_source.html" title="orconfig.h" alt="" coords="647,557,726,584"/>
+<area shape="rect" id="node3" href="$compat_8h_source.html" title="compat.h" alt="" coords="577,333,653,360"/>
+<area shape="rect" id="node11" href="$compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="291,408,418,435"/>
+<area shape="rect" id="node12" href="$compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="1113,408,1241,435"/>
+<area shape="rect" id="node13" href="$crypto__rand_8h.html" title="Common functions for using (pseudo&#45;)random number generators. " alt="" coords="421,109,523,136"/>
+<area shape="rect" id="node14" href="$util_8h.html" title="Headers for util.c. " alt="" coords="675,184,725,211"/>
+<area shape="rect" id="node18" href="$workqueue_8h_source.html" title="workqueue.h" alt="" coords="789,184,885,211"/>
+<area shape="rect" id="node19" href="$tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1316,109,1407,136"/>
+<area shape="rect" id="node20" href="$torlog_8h.html" title="Headers for log.c. " alt="" coords="993,259,1058,285"/>
+<area shape="rect" id="node4" href="$torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="186,483,249,509"/>
+<area shape="rect" id="node6" href="$testsupport_8h_source.html" title="testsupport.h" alt="" coords="857,483,956,509"/>
+<area shape="rect" id="node8" href="$compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="525,483,633,509"/>
+<area shape="rect" id="node15" href="$di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="145,408,215,435"/>
+<area shape="rect" id="node17" href="$util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="787,259,866,285"/>
 </map>

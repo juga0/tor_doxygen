@@ -1,7 +1,8 @@
 <map id="tor_addr_from_ipv6_bytes" name="tor_addr_from_ipv6_bytes">
 <area shape="rect" id="node2" href="$address_8h.html#abf67a34456e0c4de9ae7bb63a9c6dc16" title="tor_addr_from_in6" alt="" coords="197,31,324,57"/>
-<area shape="rect" id="node6" href="$relay_8c.html#a6dede264de96c7c9a8916ed1127bbbc5" title="connected_cell_parse" alt="" coords="187,81,335,108"/>
+<area shape="rect" id="node7" href="$relay_8c.html#a6dede264de96c7c9a8916ed1127bbbc5" title="connected_cell_parse" alt="" coords="187,81,335,108"/>
 <area shape="rect" id="node3" href="$address_8h.html#ad420cb52f698056c5680b8fa80e44998" title="tor_addr_from_sockaddr" alt="" coords="392,5,555,32"/>
-<area shape="rect" id="node5" href="$address_8h.html#a704407961c6ac0d2fddfd29b8a719d91" title="tor_addr_parse_PTR_name" alt="" coords="383,56,564,83"/>
-<area shape="rect" id="node4" href="$address_8c.html#af2b3d99f38741ff959e402198f02f963" title="MOCK_IMPL" alt="" coords="612,5,712,32"/>
+<area shape="rect" id="node6" href="$address_8h.html#a704407961c6ac0d2fddfd29b8a719d91" title="tor_addr_parse_PTR_name" alt="" coords="383,56,564,83"/>
+<area shape="rect" id="node4" href="$compat_8c.html#a43c2b4a2e5f57a92dd11e2034839f785" title="tor_addr_from_getsockname" alt="" coords="612,5,799,32"/>
+<area shape="rect" id="node5" href="$address_8c.html#af2b3d99f38741ff959e402198f02f963" title="MOCK_IMPL" alt="" coords="847,5,947,32"/>
 </map>

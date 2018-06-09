@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['invalid_5frouter_5fusage_5ft',['invalid_router_usage_t',['../or_8h.html#aa971c4fb6f405f887be449242ce5f6a1',1,'or.h']]]
+  ['networkstatus_5ftype_5ft',['networkstatus_type_t',['../or_8h.html#a4cc3535cd1c60e55a79683e1b3ae8814',1,'or.h']]]
 ];

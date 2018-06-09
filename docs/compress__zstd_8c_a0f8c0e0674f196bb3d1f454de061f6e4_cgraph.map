@@ -1,0 +1,6 @@
+<map id="tor_zstd_compress_free_" name="tor_zstd_compress_free_">
+<area shape="rect" id="node2" href="$compat__threads_8c.html#a3555e1f278b4e9df1ab416d0457ac116" title="atomic_counter_sub" alt="" coords="223,31,361,57"/>
+<area shape="rect" id="node3" href="$compat__threads_8c.html#a35f483e0f791a26685dcb5e06a5e3b4e" title="atomic_counter_add" alt="" coords="409,31,548,57"/>
+<area shape="rect" id="node4" href="$compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="596,5,725,32"/>
+<area shape="rect" id="node5" href="$compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="596,56,725,83"/>
+</map>

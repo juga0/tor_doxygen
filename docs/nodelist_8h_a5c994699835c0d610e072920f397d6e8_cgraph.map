@@ -1,0 +1,10 @@
+<map id="node_has_preferred_descriptor" name="node_has_preferred_descriptor">
+<area shape="rect" id="node2" href="$bridges_8c.html#a823bac0acf5f6b68ab2074757215eac3" title="node_is_a_configured\l_bridge" alt="" coords="201,27,349,69"/>
+<area shape="rect" id="node9" href="$microdesc_8c.html#adeff3a88aa40b67ab6407bda5c941910" title="we_use_microdescriptors\l_for_circuits" alt="" coords="189,93,360,134"/>
+<area shape="rect" id="node3" href="$nodelist_8c.html#a551827c8c00ee79f3d3663d11b2b60a0" title="node_get_all_orports" alt="" coords="411,5,554,32"/>
+<area shape="rect" id="node4" href="$bridges_8c.html#a6eaa7d5502639e1e5a484dcfddbba7d0" title="get_configured_bridge\l_by_orports_digest" alt="" coords="408,57,557,98"/>
+<area shape="rect" id="node5" href="$util_8c.html#add0703747195c2abd042572426e80266" title="tor_digest_is_zero" alt="" coords="605,39,733,65"/>
+<area shape="rect" id="node7" href="$address_8c.html#a5d0ab0962a11944d8f8b0c4e4d6c395b" title="tor_addr_compare" alt="" coords="606,89,733,116"/>
+<area shape="rect" id="node6" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="827,39,914,65"/>
+<area shape="rect" id="node8" href="$address_8c.html#a50ffbc22a605ec09f42d7687588741b9" title="tor_addr_compare_masked" alt="" coords="781,89,960,116"/>
+</map>

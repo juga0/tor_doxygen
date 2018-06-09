@@ -96,9 +96,9 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>nickname</b></td></
 <tr class="memitem:a99108733d00274978a4979dc072bd513"><td class="memItemLeft" align="right" valign="top"><a id="a99108733d00274978a4979dc072bd513"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b></td></tr>
 <tr class="separator:a99108733d00274978a4979dc072bd513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdb067a4bcfe8f01f22e26feb1e4dfd8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdir__server__t.html#abdb067a4bcfe8f01f22e26feb1e4dfd8">digest</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
+<tr class="memitem:abdb067a4bcfe8f01f22e26feb1e4dfd8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdir__server__t.html#abdb067a4bcfe8f01f22e26feb1e4dfd8">digest</a> [<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
 <tr class="separator:abdb067a4bcfe8f01f22e26feb1e4dfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8ce8693730161b113a0543be6d3955a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdir__server__t.html#af8ce8693730161b113a0543be6d3955a">v3_identity_digest</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
+<tr class="memitem:af8ce8693730161b113a0543be6d3955a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdir__server__t.html#af8ce8693730161b113a0543be6d3955a">v3_identity_digest</a> [<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
 <tr class="separator:af8ce8693730161b113a0543be6d3955a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7b30d6d8c5ebacccc2e456b8bf877a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdir__server__t.html#a0b7b30d6d8c5ebacccc2e456b8bf877a">is_running</a>:1</td></tr>
 <tr class="separator:a0b7b30d6d8c5ebacccc2e456b8bf877a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +168,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b></td></tr
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char digest[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
+          <td class="memname">char digest[<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,7 +202,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b></td></tr
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Used when we need to pass this trusted <a class="el" href="structdir__server__t.html">dir_server_t</a> to directory_initiate_command_* as a <a class="el" href="structrouterstatus__t.html">routerstatus_t</a>. Not updated by the router-status management code! </p>
+<p>Used when we need to pass this trusted <a class="el" href="structdir__server__t.html">dir_server_t</a> to directory_request_set_routerstatus. as a <a class="el" href="structrouterstatus__t.html">routerstatus_t</a>. Not updated by the router-status management code! </p>
 
 </div>
 </div>
@@ -318,7 +318,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b></td></tr
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char v3_identity_digest[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
+          <td class="memname">char v3_identity_digest[<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">

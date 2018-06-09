@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tor: /home/user/_my/code/bwauth-related/tor/src/or/shared_random_state.c File Reference</title>
+<title>tor: /home/user/_my/code/bwauth-related/tor/src/or/dirauth/shared_random_state.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_386635fabd7f6c74e9d9c7a8604514a0.html">or</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_97b64286d42c5ef1697cb5f17129db19.html">tor</a></li><li class="navelem"><a class="el" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html">src</a></li><li class="navelem"><a class="el" href="dir_386635fabd7f6c74e9d9c7a8604514a0.html">or</a></li><li class="navelem"><a class="el" href="dir_c5d850bddae166bb86a80dcb64398e39.html">dirauth</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,51 +74,63 @@ $(function() {
 <p>Functions and data structures for the state of the random protocol as defined in proposal #250.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="or_8h_source.html">or.h</a>&quot;</code><br />
-<code>#include &quot;shared_random.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;confparse.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirvote.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="crypto__util_8h_source.html">crypto_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dirvote_8h_source.html">dirauth/dirvote.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="networkstatus_8h_source.html">networkstatus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="router_8h_source.html">router.h</a>&quot;</code><br />
+<code>#include &quot;shared_random.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="shared__random__client_8h_source.html">shared_random_client.h</a>&quot;</code><br />
 <code>#include &quot;shared_random_state.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="voting__schedule_8h_source.html">voting_schedule.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for shared_random_state.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="shared__random__state_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2shared__random__state_8c" alt=""/></div>
-<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2shared__random__state_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2shared__random__state_8c">
-<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1355,273,1399,300"/>
-<area shape="rect" id="node34" href="shared__random_8h_source.html" title="shared_random.h" alt="" coords="1599,199,1721,225"/>
-<area shape="rect" id="node35" href="config_8h.html" title="Header file for config.c. " alt="" coords="1839,199,1907,225"/>
-<area shape="rect" id="node36" href="confparse_8h_source.html" title="confparse.h" alt="" coords="2107,124,2197,151"/>
-<area shape="rect" id="node37" href="dirvote_8h.html" title="Header file for dirvote.c. " alt="" coords="1909,273,1981,300"/>
-<area shape="rect" id="node38" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="1960,423,2075,449"/>
-<area shape="rect" id="node39" href="router_8h.html" title="Header file for router.c. " alt="" coords="2068,199,2135,225"/>
-<area shape="rect" id="node40" href="shared__random__state_8h_source.html" title="shared_random_state.h" alt="" coords="1698,124,1857,151"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="409,871,487,897"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="526,796,589,823"/>
-<area shape="rect" id="node5" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1025,572,1095,599"/>
-<area shape="rect" id="node13" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="1402,572,1515,599"/>
-<area shape="rect" id="node14" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="1460,647,1585,673"/>
-<area shape="rect" id="node15" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="1369,721,1511,748"/>
-<area shape="rect" id="node16" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1149,497,1211,524"/>
-<area shape="rect" id="node19" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1667,572,1733,599"/>
-<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="287,423,374,449"/>
-<area shape="rect" id="node26" href="torgzip_8h.html" title="Headers for torgzip.h. " alt="" coords="1300,348,1372,375"/>
-<area shape="rect" id="node27" href="address_8h.html" title="Headers for address.h. " alt="" coords="373,348,451,375"/>
-<area shape="rect" id="node28" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2200,721,2328,748"/>
-<area shape="rect" id="node30" href="ht_8h_source.html" title="ht.h" alt="" coords="1397,348,1441,375"/>
-<area shape="rect" id="node31" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="1465,348,1567,375"/>
-<area shape="rect" id="node32" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="1592,348,1683,375"/>
-<area shape="rect" id="node33" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1587,721,1682,748"/>
-<area shape="rect" id="node7" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1628,796,1727,823"/>
-<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="722,647,798,673"/>
-<area shape="rect" id="node10" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="394,796,502,823"/>
-<area shape="rect" id="node12" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="595,721,722,748"/>
-<area shape="rect" id="node17" href="compat__openssl_8h.html" title="compatability definitions for working with different openssl forks " alt="" coords="1249,572,1377,599"/>
-<area shape="rect" id="node21" href="util_8h.html" title="Headers for util.c. " alt="" coords="324,497,375,524"/>
-<area shape="rect" id="node25" href="siphash_8h_source.html" title="siphash.h" alt="" coords="221,497,299,524"/>
-<area shape="rect" id="node22" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="195,721,266,748"/>
-<area shape="rect" id="node24" href="util__bug_8h.html" title="util_bug.h" alt="" coords="458,572,537,599"/>
+<div class="center"><img src="shared__random__state_8c__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirauth_2shared__random__state_8c" alt=""/></div>
+<map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirauth_2shared__random__state_8c" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2dirauth_2shared__random__state_8c">
+<area shape="rect" id="node2" href="or_8h.html" title="Master header file for Tor&#45;specific functionality. " alt="" coords="1165,273,1209,300"/>
+<area shape="rect" id="node41" href="config_8h.html" title="Header file for config.c. " alt="" coords="2007,199,2075,225"/>
+<area shape="rect" id="node42" href="confparse_8h_source.html" title="confparse.h" alt="" coords="1224,124,1315,151"/>
+<area shape="rect" id="node43" href="crypto__util_8h.html" title="Common functions for cryptographic routines. " alt="" coords="515,199,608,225"/>
+<area shape="rect" id="node44" href="dirvote_8h.html" title="Header file for dirvote.c. " alt="" coords="1523,124,1637,151"/>
+<area shape="rect" id="node45" href="networkstatus_8h.html" title="Header file for networkstatus.c. " alt="" coords="2143,273,2257,300"/>
+<area shape="rect" id="node46" href="router_8h.html" title="Header file for router.c. " alt="" coords="2180,871,2247,897"/>
+<area shape="rect" id="node47" href="shared__random_8h_source.html" title="shared_random.h" alt="" coords="1443,199,1565,225"/>
+<area shape="rect" id="node48" href="shared__random__client_8h.html" title="Header file for shared_random_client.c. " alt="" coords="1712,124,1872,151"/>
+<area shape="rect" id="node49" href="shared__random__state_8h_source.html" title="shared_random_state.h" alt="" coords="1339,124,1498,151"/>
+<area shape="rect" id="node50" href="voting__schedule_8h.html" title="Header file for voting_schedule.c. " alt="" coords="1761,199,1887,225"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="1139,1095,1218,1121"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="345,1020,407,1047"/>
+<area shape="rect" id="node6" href="crypto_8h.html" title="Headers for crypto.c. " alt="" coords="1152,423,1221,449"/>
+<area shape="rect" id="node20" href="container_8h_source.html" title="container.h" alt="" coords="449,647,535,673"/>
+<area shape="rect" id="node22" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="1735,647,1801,673"/>
+<area shape="rect" id="node23" href="crypto__format_8h_source.html" title="crypto_format.h" alt="" coords="857,348,970,375"/>
+<area shape="rect" id="node24" href="crypto__ed25519_8h_source.html" title="crypto_ed25519.h" alt="" coords="829,423,955,449"/>
+<area shape="rect" id="node25" href="crypto__curve25519_8h_source.html" title="crypto_curve25519.h" alt="" coords="705,497,847,524"/>
+<area shape="rect" id="node28" href="tortls_8h.html" title="Headers for tortls.c. " alt="" coords="1691,423,1754,449"/>
+<area shape="rect" id="node31" href="compress_8h.html" title="Headers for compress.c. " alt="" coords="1291,348,1381,375"/>
+<area shape="rect" id="node32" href="address_8h.html" title="Headers for address.h. " alt="" coords="347,572,426,599"/>
+<area shape="rect" id="node33" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="2281,945,2409,972"/>
+<area shape="rect" id="node34" href="ht_8h_source.html" title="ht.h" alt="" coords="2010,348,2054,375"/>
+<area shape="rect" id="node35" href="confline_8h_source.html" title="confline.h" alt="" coords="425,423,503,449"/>
+<area shape="rect" id="node36" href="replaycache_8h.html" title="Header file for replaycache.c. " alt="" coords="131,348,234,375"/>
+<area shape="rect" id="node37" href="tor__queue_8h_source.html" title="tor_queue.h" alt="" coords="259,348,349,375"/>
+<area shape="rect" id="node38" href="token__bucket_8h_source.html" title="token_bucket.h" alt="" coords="883,945,994,972"/>
+<area shape="rect" id="node39" href="util__format_8h_source.html" title="util_format.h" alt="" coords="1018,945,1113,972"/>
+<area shape="rect" id="node40" href="hs__circuitmap_8h.html" title="Header file for hs_circuitmap.c. " alt="" coords="488,348,603,375"/>
+<area shape="rect" id="node8" href="compat_8h_source.html" title="compat.h" alt="" coords="1391,871,1467,897"/>
+<area shape="rect" id="node14" href="util_8h.html" title="Headers for util.c. " alt="" coords="852,721,903,748"/>
+<area shape="rect" id="node18" href="crypto__rsa_8h.html" title="Headers for crypto_rsa.c. " alt="" coords="1457,497,1551,524"/>
+<area shape="rect" id="node9" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="1815,1020,1913,1047"/>
+<area shape="rect" id="node11" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="1254,1020,1362,1047"/>
+<area shape="rect" id="node13" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="1189,945,1315,972"/>
+<area shape="rect" id="node15" href="di__ops_8h.html" title="Headers for di_ops.c. " alt="" coords="550,945,621,972"/>
+<area shape="rect" id="node17" href="util__bug_8h.html" title="Macros to manage assertions, fatal and non&#45;fatal. " alt="" coords="1313,796,1391,823"/>
+<area shape="rect" id="node19" href="crypto__digest_8h.html" title="Headers for crypto_digest.c. " alt="" coords="566,572,677,599"/>
+<area shape="rect" id="node21" href="siphash_8h_source.html" title="siphash.h" alt="" coords="453,721,531,748"/>
+<area shape="rect" id="node26" href="crypto__openssl__mgt_8h_source.html" title="crypto_openssl_mgt.h" alt="" coords="753,572,903,599"/>
+<area shape="rect" id="node29" href="compat__openssl_8h.html" title="compatibility definitions for working with different openssl forks " alt="" coords="1659,497,1787,524"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -135,15 +147,17 @@ Macros</h2></td></tr>
 <tr class="memitem:a4cc5b5b35307015fa17d9fcaef072369"><td class="memItemLeft" align="right" valign="top"><a id="a4cc5b5b35307015fa17d9fcaef072369"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SR_DISK_STATE_MAGIC</b>&#160;&#160;&#160;0x98AB1254</td></tr>
 <tr class="separator:a4cc5b5b35307015fa17d9fcaef072369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ab9dddbce04cdac8d2703abe86f6458"><td class="memItemLeft" align="right" valign="top"><a id="a3ab9dddbce04cdac8d2703abe86f6458"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SHARED_RANDOM_N_ROUNDS</b>&#160;&#160;&#160;12</td></tr>
-<tr class="separator:a3ab9dddbce04cdac8d2703abe86f6458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97ae01bee2cb6f3a2e7254d4fac46e35"><td class="memItemLeft" align="right" valign="top"><a id="a97ae01bee2cb6f3a2e7254d4fac46e35"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SHARED_RANDOM_N_PHASES</b>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:a97ae01bee2cb6f3a2e7254d4fac46e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78170fff8c7060e6a003c5ca7d25d539"><td class="memItemLeft" align="right" valign="top"><a id="a78170fff8c7060e6a003c5ca7d25d539"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>state_free</b>(val)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structsr__state__t.html">sr_state_t</a>, state_free_, (val))</td></tr>
+<tr class="separator:a78170fff8c7060e6a003c5ca7d25d539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab745f9759b78470b83592a3752537a06"><td class="memItemLeft" align="right" valign="top"><a id="ab745f9759b78470b83592a3752537a06"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>disk_state_free</b>(val)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structsr__disk__state__t.html">sr_disk_state_t</a>, disk_state_free_, (val))</td></tr>
+<tr class="separator:ab745f9759b78470b83592a3752537a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a483688400aa2c596145dec5b50747eab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shared__random__state_8c.html#a483688400aa2c596145dec5b50747eab">DUMMY_TYPECHECK_INSTANCE</a> (<a class="el" href="structsr__disk__state__t.html">sr_disk_state_t</a>)</td></tr>
+<tr class="separator:a483688400aa2c596145dec5b50747eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9c7e4cb4dc49d8ffb35a7cbc7244af6"><td class="memItemLeft" align="right" valign="top"><a id="ad9c7e4cb4dc49d8ffb35a7cbc7244af6"></a>
 STATIC const char *&#160;</td><td class="memItemRight" valign="bottom"><b>get_phase_str</b> (sr_phase_t phase)</td></tr>
 <tr class="separator:ad9c7e4cb4dc49d8ffb35a7cbc7244af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,9 +230,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>sr_state_unset_fresh_
 <tr class="memitem:adb35cb3ec5fc90293241b541b2beacba"><td class="memItemLeft" align="right" valign="top"><a id="adb35cb3ec5fc90293241b541b2beacba"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>sr_state_srv_is_fresh</b> (void)</td></tr>
 <tr class="separator:adb35cb3ec5fc90293241b541b2beacba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1764cd4a82b291310cf7fcf775f824a8"><td class="memItemLeft" align="right" valign="top"><a id="a1764cd4a82b291310cf7fcf775f824a8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sr_state_free</b> (void)</td></tr>
-<tr class="separator:a1764cd4a82b291310cf7fcf775f824a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee7a2b177c7e6fbbd63ce4a08b2e35b"><td class="memItemLeft" align="right" valign="top"><a id="a2ee7a2b177c7e6fbbd63ce4a08b2e35b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sr_state_free_all</b> (void)</td></tr>
+<tr class="separator:a2ee7a2b177c7e6fbbd63ce4a08b2e35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1884fdd9cd4c04b70e1e21e0e284eaff"><td class="memItemLeft" align="right" valign="top"><a id="a1884fdd9cd4c04b70e1e21e0e284eaff"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sr_state_save</b> (void)</td></tr>
 <tr class="separator:a1884fdd9cd4c04b70e1e21e0e284eaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,9 +283,28 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sr_state_init</b> (int
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ name, CONFIG_TYPE_ ## conftype, <a class="code" href="util_8h.html#a34bb1d41c655823d71f9ce54196bcfd9">STRUCT_OFFSET</a>(<a class="code" href="structsr__disk__state__t.html">sr_disk_state_t</a>, member), \</div><div class="line">    initvalue }</div><div class="ttc" id="structsr__disk__state__t_html"><div class="ttname"><a href="structsr__disk__state__t.html">sr_disk_state_t</a></div><div class="ttdef"><b>Definition:</b> shared_random_state.h:77</div></div>
-<div class="ttc" id="util_8h_html_a34bb1d41c655823d71f9ce54196bcfd9"><div class="ttname"><a href="util_8h.html#a34bb1d41c655823d71f9ce54196bcfd9">STRUCT_OFFSET</a></div><div class="ttdeci">#define STRUCT_OFFSET(tp, member)</div><div class="ttdef"><b>Definition:</b> util.h:116</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{ name, CONFIG_TYPE_ ## conftype, offsetof(<a class="code" href="structsr__disk__state__t.html">sr_disk_state_t</a>, member),      \</div><div class="line">      initvalue CONF_TEST_MEMBERS(<a class="code" href="structsr__disk__state__t.html">sr_disk_state_t</a>, conftype, member) }</div><div class="ttc" id="structsr__disk__state__t_html"><div class="ttname"><a href="structsr__disk__state__t.html">sr_disk_state_t</a></div><div class="ttdef"><b>Definition:</b> shared_random_state.h:77</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a483688400aa2c596145dec5b50747eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483688400aa2c596145dec5b50747eab">&#9670;&nbsp;</a></span>DUMMY_TYPECHECK_INSTANCE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DUMMY_TYPECHECK_INSTANCE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsr__disk__state__t.html">sr_disk_state_t</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dummy instance of <a class="el" href="structsr__disk__state__t.html">sr_disk_state_t</a>, used for type-checking its members with CONF_CHECK_VAR_TYPE. </p>
+
 </div>
 </div>
 </div><!-- contents -->

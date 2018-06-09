@@ -1,4 +1,4 @@
 <map id="buf_new_with_capacity" name="buf_new_with_capacity">
-<area shape="rect" id="node2" href="$buffers_8c.html#a2792d274b6e45707b54d36697b575cd5" title="buf_new" alt="" coords="250,5,321,32"/>
-<area shape="rect" id="node3" href="$buffers_8c.html#a1ab1849b985a5ac9f2bf4e56d40d19f3" title="preferred_chunk_size" alt="" coords="212,56,359,83"/>
+<area shape="rect" id="node2" href="$buffers_8c.html#a2792d274b6e45707b54d36697b575cd5" title="buf_new" alt="" coords="262,5,333,32"/>
+<area shape="rect" id="node3" href="$buffers_8c.html#ac9f6eb1228245bca00d9a3fbbe0fe755" title="buf_preferred_chunk_size" alt="" coords="212,56,383,83"/>
 </map>

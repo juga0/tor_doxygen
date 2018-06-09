@@ -1,0 +1,5 @@
+<map id="buf_add" name="buf_add">
+<area shape="rect" id="node2" href="$buffers_8h.html#ac81f33eaee90f281dd2e983edb5d8a76" title="buf_add_string" alt="" coords="123,5,230,32"/>
+<area shape="rect" id="node3" href="$buffers_8c.html#aa957514fdc2f68cccc3ec62ecb9448ef" title="buf_add_vprintf" alt="" coords="121,56,232,83"/>
+<area shape="rect" id="node4" href="$buffers_8c.html#a05f864bf1a0d082230f7869e4f5b51c7" title="buf_add_printf" alt="" coords="280,56,384,83"/>
+</map>

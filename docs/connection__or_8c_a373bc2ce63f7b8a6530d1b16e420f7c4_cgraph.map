@@ -1,5 +1,3 @@
 <map id="connection_or_send_certs_cell" name="connection_or_send_certs_cell">
-<area shape="rect" id="node2" href="$tortls_8c.html#a7aa93459dd4e3641e885932d682db4a0" title="tor_tls_get_my_certs" alt="" coords="195,5,339,32"/>
-<area shape="rect" id="node3" href="$tortls_8c.html#ae138ea45f150f1291b09f0b5dfa34ad4" title="tor_x509_cert_get_der" alt="" coords="192,56,343,83"/>
-<area shape="rect" id="node4" href="$connection__or_8c.html#a23e8e7d75e478e23ba78046d4bf17088" title="var_cell_new" alt="" coords="218,107,317,133"/>
+<area shape="rect" id="node2" href="$tortls_8c.html#a7aa93459dd4e3641e885932d682db4a0" title="tor_tls_get_my_certs" alt="" coords="192,13,336,39"/>
 </map>

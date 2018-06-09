@@ -80,29 +80,32 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="policies_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2policies_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2policies_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2or_2policies_8hdep">
-<area shape="rect" id="node2" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="5,109,153,165"/>
-<area shape="rect" id="node3" href="circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. " alt="" coords="177,109,325,165"/>
-<area shape="rect" id="node4" href="circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. " alt="" coords="349,109,497,165"/>
-<area shape="rect" id="node5" href="config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="521,109,669,165"/>
-<area shape="rect" id="node6" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="693,109,841,165"/>
-<area shape="rect" id="node7" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="865,109,1037,165"/>
-<area shape="rect" id="node8" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1061,109,1209,165"/>
-<area shape="rect" id="node9" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv..." alt="" coords="1233,109,1381,165"/>
-<area shape="rect" id="node10" href="dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="1405,109,1553,165"/>
-<area shape="rect" id="node11" href="dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="1577,109,1725,165"/>
-<area shape="rect" id="node12" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada..." alt="" coords="1749,109,1897,165"/>
-<area shape="rect" id="node13" href="dnsserv_8c.html" title="Implements client&#45;side DNS proxy server code. Note: this is the DNS Server code, not the Server DNS c..." alt="" coords="1921,109,2069,165"/>
-<area shape="rect" id="node14" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="2093,109,2241,165"/>
-<area shape="rect" id="node15" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="2265,109,2413,165"/>
-<area shape="rect" id="node16" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="2437,109,2585,165"/>
-<area shape="rect" id="node17" href="nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="2609,109,2757,165"/>
-<area shape="rect" id="node18" href="policies_8c.html" title="Code to parse and use address policies and exit policies. " alt="" coords="2781,109,2929,165"/>
-<area shape="rect" id="node19" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="2953,109,3101,165"/>
-<area shape="rect" id="node20" href="rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="3125,109,3273,165"/>
-<area shape="rect" id="node21" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="3297,109,3445,165"/>
-<area shape="rect" id="node22" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="3469,109,3617,165"/>
-<area shape="rect" id="node23" href="routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="3641,109,3789,165"/>
-<area shape="rect" id="node24" href="routerset_8c.html" title="Functions and structures to handle set&#45;type selection of routers by name, ID, address, etc. " alt="" coords="3813,109,3961,165"/>
+<area shape="rect" id="node2" href="bridges_8c.html" title="Code to manage bridges and bridge selection. " alt="" coords="5,109,153,165"/>
+<area shape="rect" id="node3" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="177,109,325,165"/>
+<area shape="rect" id="node4" href="circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="349,109,497,165"/>
+<area shape="rect" id="node5" href="circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="521,109,669,165"/>
+<area shape="rect" id="node6" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="693,109,841,165"/>
+<area shape="rect" id="node7" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="865,109,1013,165"/>
+<area shape="rect" id="node8" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="1037,109,1209,165"/>
+<area shape="rect" id="node9" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1233,109,1381,165"/>
+<area shape="rect" id="node10" href="dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. " alt="" coords="1405,109,1561,165"/>
+<area shape="rect" id="node11" href="directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. " alt="" coords="1585,109,1733,165"/>
+<area shape="rect" id="node12" href="dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. " alt="" coords="1757,109,1905,165"/>
+<area shape="rect" id="node13" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada..." alt="" coords="1929,109,2077,165"/>
+<area shape="rect" id="node14" href="dnsserv_8c.html" title="Implements client&#45;side DNS proxy server code. " alt="" coords="2101,109,2249,165"/>
+<area shape="rect" id="node15" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="2273,109,2421,165"/>
+<area shape="rect" id="node16" href="hs__circuit_8c.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/or/hs_circuit.c" alt="" coords="2445,109,2593,165"/>
+<area shape="rect" id="node17" href="hs__common_8c.html" title="Contains code shared between different HS protocol version as well as useful data structures and acce..." alt="" coords="2617,109,2765,165"/>
+<area shape="rect" id="node18" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="2789,109,2937,165"/>
+<area shape="rect" id="node19" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less&#45;frequently&#45;changing router informat..." alt="" coords="2961,109,3109,165"/>
+<area shape="rect" id="node20" href="nodelist_8c.html" title="Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. " alt="" coords="3133,109,3281,165"/>
+<area shape="rect" id="node21" href="policies_8c.html" title="Code to parse and use address policies and exit policies. " alt="" coords="3305,109,3453,165"/>
+<area shape="rect" id="node22" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="3477,109,3625,165"/>
+<area shape="rect" id="node23" href="rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="3649,109,3797,165"/>
+<area shape="rect" id="node24" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="3821,109,3969,165"/>
+<area shape="rect" id="node25" href="routerlist_8c.html" title="Code to maintain and access the global list of routerinfos for known servers. " alt="" coords="3993,109,4141,165"/>
+<area shape="rect" id="node26" href="routerparse_8c.html" title="Code to parse and validate router descriptors, consenus directories, and similar objects. " alt="" coords="4165,109,4313,165"/>
+<area shape="rect" id="node27" href="routerset_8c.html" title="Functions and structures to handle set&#45;type selection of routers by name, ID, address, etc. " alt="" coords="4337,109,4485,165"/>
 </map>
 </div>
 </div>
@@ -125,12 +128,24 @@ Macros</h2></td></tr>
 <tr class="memitem:aedd59382281758c5a0c3889e5652bd15"><td class="memItemLeft" align="right" valign="top"><a id="aedd59382281758c5a0c3889e5652bd15"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>EXIT_POLICY_REJECT_LOCAL_INTERFACES</b>&#160;&#160;&#160;(1 &lt;&lt; 3)</td></tr>
 <tr class="separator:aedd59382281758c5a0c3889e5652bd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9265f8afd6fb61f864614cc5da6f488"><td class="memItemLeft" align="right" valign="top"><a id="ab9265f8afd6fb61f864614cc5da6f488"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EXIT_POLICY_ADD_REDUCED</b>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="separator:ab9265f8afd6fb61f864614cc5da6f488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac46fd7c106f5108bcef9b260d80e6be5"><td class="memItemLeft" align="right" valign="top"><a id="ac46fd7c106f5108bcef9b260d80e6be5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>EXIT_POLICY_OPTION_MAX</b>&#160;&#160;&#160;EXIT_POLICY_REJECT_LOCAL_INTERFACES</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EXIT_POLICY_OPTION_MAX</b>&#160;&#160;&#160;EXIT_POLICY_ADD_REDUCED</td></tr>
 <tr class="separator:ac46fd7c106f5108bcef9b260d80e6be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1455ecc341d04eb8fbe62f97e3f7c8b8"><td class="memItemLeft" align="right" valign="top"><a id="a1455ecc341d04eb8fbe62f97e3f7c8b8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>EXIT_POLICY_OPTION_ALL</b>&#160;&#160;&#160;((EXIT_POLICY_OPTION_MAX &lt;&lt; 1) - 1)</td></tr>
 <tr class="separator:a1455ecc341d04eb8fbe62f97e3f7c8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadbe10617b495556f3da82e6668d6f9"><td class="memItemLeft" align="right" valign="top"><a id="abadbe10617b495556f3da82e6668d6f9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>addr_policy_list_free</b>(lst)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structsmartlist__t.html">smartlist_t</a>, <a class="el" href="policies_8h.html#a5dbaffba0ffe0647bef1ba1d05ba3949">addr_policy_list_free_</a>, (lst))</td></tr>
+<tr class="separator:abadbe10617b495556f3da82e6668d6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebac84b7732d9f4fe3450b913ee66a2e"><td class="memItemLeft" align="right" valign="top"><a id="aebac84b7732d9f4fe3450b913ee66a2e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>addr_policy_free</b>(p)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structaddr__policy__t.html">addr_policy_t</a>, <a class="el" href="policies_8h.html#a0353e5a55bce46ba3987f55680ca1566">addr_policy_free_</a>, (p))</td></tr>
+<tr class="separator:aebac84b7732d9f4fe3450b913ee66a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84bb6fe7b08418c4cf9089b55a6781f5"><td class="memItemLeft" align="right" valign="top"><a id="a84bb6fe7b08418c4cf9089b55a6781f5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>short_policy_free</b>(p)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structshort__policy__t.html">short_policy_t</a>, <a class="el" href="policies_8h.html#ac4dcea4a1e21f4ef7d573596a3d9d32c">short_policy_free_</a>, (p))</td></tr>
+<tr class="separator:a84bb6fe7b08418c4cf9089b55a6781f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -168,12 +183,12 @@ Functions</h2></td></tr>
 <tr class="separator:abcacc2af3dccb862768358fb53eb4570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f94d31447f5d35169f5ac47da0a6d4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#a3f94d31447f5d35169f5ac47da0a6d4a">fascist_firewall_allows_dir_server</a> (const <a class="el" href="structdir__server__t.html">dir_server_t</a> *ds, firewall_connection_t fw_connection, int pref_only)</td></tr>
 <tr class="separator:a3f94d31447f5d35169f5ac47da0a6d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adea06f5ccb81b38fb55264876b9adb38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#adea06f5ccb81b38fb55264876b9adb38">fascist_firewall_choose_address_rs</a> (const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *rs, firewall_connection_t fw_connection, int pref_only, <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *ap)</td></tr>
-<tr class="separator:adea06f5ccb81b38fb55264876b9adb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f36bc146b27988b048c665c1d969ed8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#a1f36bc146b27988b048c665c1d969ed8">fascist_firewall_choose_address_node</a> (const <a class="el" href="structnode__t.html">node_t</a> *node, firewall_connection_t fw_connection, int pref_only, <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *ap)</td></tr>
-<tr class="separator:a1f36bc146b27988b048c665c1d969ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2ca8641a1133dc3360cc3b656a029b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#ad2ca8641a1133dc3360cc3b656a029b6">fascist_firewall_choose_address_dir_server</a> (const <a class="el" href="structdir__server__t.html">dir_server_t</a> *ds, firewall_connection_t fw_connection, int pref_only, <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *ap)</td></tr>
-<tr class="separator:ad2ca8641a1133dc3360cc3b656a029b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed268f9357e58a15505ff620204aea83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#aed268f9357e58a15505ff620204aea83">fascist_firewall_choose_address_rs</a> (const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *rs, firewall_connection_t fw_connection, int pref_only, <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *ap)</td></tr>
+<tr class="separator:aed268f9357e58a15505ff620204aea83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba629c408829f02c4f32eaaad0a63809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#aba629c408829f02c4f32eaaad0a63809">fascist_firewall_choose_address_node</a> (const <a class="el" href="structnode__t.html">node_t</a> *node, firewall_connection_t fw_connection, int pref_only, <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *ap)</td></tr>
+<tr class="separator:aba629c408829f02c4f32eaaad0a63809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17687cfa041645e6f0c7e9374e987182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#a17687cfa041645e6f0c7e9374e987182">fascist_firewall_choose_address_dir_server</a> (const <a class="el" href="structdir__server__t.html">dir_server_t</a> *ds, firewall_connection_t fw_connection, int pref_only, <a class="el" href="structtor__addr__port__t.html">tor_addr_port_t</a> *ap)</td></tr>
+<tr class="separator:a17687cfa041645e6f0c7e9374e987182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee52a27a809171292c05a218a6153c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#aaee52a27a809171292c05a218a6153c6">dir_policy_permits_address</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr)</td></tr>
 <tr class="separator:aaee52a27a809171292c05a218a6153c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbe4bf4601954f5f219fd8337076ff7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#acbe4bf4601954f5f219fd8337076ff7e">socks_policy_permits_address</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr)</td></tr>
@@ -226,10 +241,10 @@ Functions</h2></td></tr>
 <tr class="separator:a644a29b14713680b544eead40b30c265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a812a90e9fd8ad1b9b98a1b342456a87e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#a812a90e9fd8ad1b9b98a1b342456a87e">policy_write_item</a> (char *buf, size_t buflen, const <a class="el" href="structaddr__policy__t.html">addr_policy_t</a> *item, int format_for_desc)</td></tr>
 <tr class="separator:a812a90e9fd8ad1b9b98a1b342456a87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7857d41d12395679c6cf6f9ec98412cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#a7857d41d12395679c6cf6f9ec98412cd">addr_policy_list_free</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *p)</td></tr>
-<tr class="separator:a7857d41d12395679c6cf6f9ec98412cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5220c9c0d6f599bd15f5e1fdee88ff14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#a5220c9c0d6f599bd15f5e1fdee88ff14">addr_policy_free</a> (<a class="el" href="structaddr__policy__t.html">addr_policy_t</a> *p)</td></tr>
-<tr class="separator:a5220c9c0d6f599bd15f5e1fdee88ff14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dbaffba0ffe0647bef1ba1d05ba3949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#a5dbaffba0ffe0647bef1ba1d05ba3949">addr_policy_list_free_</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *p)</td></tr>
+<tr class="separator:a5dbaffba0ffe0647bef1ba1d05ba3949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0353e5a55bce46ba3987f55680ca1566"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#a0353e5a55bce46ba3987f55680ca1566">addr_policy_free_</a> (<a class="el" href="structaddr__policy__t.html">addr_policy_t</a> *p)</td></tr>
+<tr class="separator:a0353e5a55bce46ba3987f55680ca1566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdb06fe24a53450a461e479a72b371a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#abdb06fe24a53450a461e479a72b371a5">policies_free_all</a> (void)</td></tr>
 <tr class="separator:abdb06fe24a53450a461e479a72b371a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2e21a770e119c34b55360c703040bdc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#af2e21a770e119c34b55360c703040bdc">policy_summarize</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *policy, sa_family_t family)</td></tr>
@@ -238,8 +253,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3bfef99ddcecfbae711ce90c0c02bdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dd804fdc250aed2c7270fe142400c56"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#a8dd804fdc250aed2c7270fe142400c56">write_short_policy</a> (const <a class="el" href="structshort__policy__t.html">short_policy_t</a> *policy)</td></tr>
 <tr class="separator:a8dd804fdc250aed2c7270fe142400c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0c68a8d1b8b63eaa6ee5fe12eeb108"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#a3a0c68a8d1b8b63eaa6ee5fe12eeb108">short_policy_free</a> (<a class="el" href="structshort__policy__t.html">short_policy_t</a> *policy)</td></tr>
-<tr class="separator:a3a0c68a8d1b8b63eaa6ee5fe12eeb108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4dcea4a1e21f4ef7d573596a3d9d32c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#ac4dcea4a1e21f4ef7d573596a3d9d32c">short_policy_free_</a> (<a class="el" href="structshort__policy__t.html">short_policy_t</a> *policy)</td></tr>
+<tr class="separator:ac4dcea4a1e21f4ef7d573596a3d9d32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6cae87f58da339d8fba099922f97b05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#ae6cae87f58da339d8fba099922f97b05">short_policy_is_reject_star</a> (const <a class="el" href="structshort__policy__t.html">short_policy_t</a> *policy)</td></tr>
 <tr class="separator:ae6cae87f58da339d8fba099922f97b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3666b8863b804eb56a9ab10cb20371f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="or_8h.html#ab9a144e1fe3dde9d9039d4045418e771">addr_policy_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="policies_8h.html#aa3666b8863b804eb56a9ab10cb20371f">compare_tor_addr_to_short_policy</a> (const <a class="el" href="structtor__addr__t.html">tor_addr_t</a> *addr, uint16_t port, const <a class="el" href="structshort__policy__t.html">short_policy_t</a> *policy)</td></tr>
@@ -359,14 +374,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a5220c9c0d6f599bd15f5e1fdee88ff14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5220c9c0d6f599bd15f5e1fdee88ff14">&#9670;&nbsp;</a></span>addr_policy_free()</h2>
+<a id="a0353e5a55bce46ba3987f55680ca1566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0353e5a55bce46ba3987f55680ca1566">&#9670;&nbsp;</a></span>addr_policy_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void addr_policy_free </td>
+          <td class="memname">void addr_policy_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structaddr__policy__t.html">addr_policy_t</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -375,32 +390,17 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all storage held by <b>p</b>. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="policies_8h_a5220c9c0d6f599bd15f5e1fdee88ff14_icgraph.png" border="0" usemap="#policies_8h_a5220c9c0d6f599bd15f5e1fdee88ff14_icgraph" alt=""/></div>
-<map name="policies_8h_a5220c9c0d6f599bd15f5e1fdee88ff14_icgraph" id="policies_8h_a5220c9c0d6f599bd15f5e1fdee88ff14_icgraph">
-<area shape="rect" id="node2" href="policies_8h.html#a7857d41d12395679c6cf6f9ec98412cd" title="addr_policy_list_free" alt="" coords="171,56,312,83"/>
-<area shape="rect" id="node6" href="routerset_8c.html#a33e9d1e799e9cac73343c73126b104c6" title="routerset_free" alt="" coords="190,107,293,133"/>
-<area shape="rect" id="node3" href="policies_8h.html#abdb06fe24a53450a461e479a72b371a5" title="policies_free_all" alt="" coords="360,5,475,32"/>
-<area shape="rect" id="node4" href="routerlist_8h.html#af2db10502386ef035c89377d2968c7e0" title="routerinfo_free" alt="" coords="365,56,470,83"/>
-<area shape="rect" id="node5" href="router_8h.html#a278cf107b4a9b636b105ec5581b2f427" title="router_free_all" alt="" coords="539,56,643,83"/>
-<area shape="rect" id="node7" href="config_8c.html#a9d66419dd103a30396f877c79c31f137" title="or_options_free" alt="" coords="362,107,473,133"/>
-<area shape="rect" id="node8" href="config_8h.html#ad82f38255905a78c85baf3224551787d" title="config_free_all" alt="" coords="538,107,645,133"/>
-<area shape="rect" id="node9" href="config_8h.html#aa7167b27553a3e3b6cb70346b05e1c6b" title="options_trial_assign" alt="" coords="523,157,660,184"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a7857d41d12395679c6cf6f9ec98412cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7857d41d12395679c6cf6f9ec98412cd">&#9670;&nbsp;</a></span>addr_policy_list_free()</h2>
+<a id="a5dbaffba0ffe0647bef1ba1d05ba3949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dbaffba0ffe0647bef1ba1d05ba3949">&#9670;&nbsp;</a></span>addr_policy_list_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void addr_policy_list_free </td>
+          <td class="memname">void addr_policy_list_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td>
           <td class="paramname"><em>lst</em></td><td>)</td>
@@ -409,24 +409,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all storage held by <b>p</b>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="policies_8h_a7857d41d12395679c6cf6f9ec98412cd_cgraph.png" border="0" usemap="#policies_8h_a7857d41d12395679c6cf6f9ec98412cd_cgraph" alt=""/></div>
-<map name="policies_8h_a7857d41d12395679c6cf6f9ec98412cd_cgraph" id="policies_8h_a7857d41d12395679c6cf6f9ec98412cd_cgraph">
-<area shape="rect" id="node2" href="policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="195,5,312,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="policies_8h_a7857d41d12395679c6cf6f9ec98412cd_icgraph.png" border="0" usemap="#policies_8h_a7857d41d12395679c6cf6f9ec98412cd_icgraph" alt=""/></div>
-<map name="policies_8h_a7857d41d12395679c6cf6f9ec98412cd_icgraph" id="policies_8h_a7857d41d12395679c6cf6f9ec98412cd_icgraph">
-<area shape="rect" id="node2" href="policies_8h.html#abdb06fe24a53450a461e479a72b371a5" title="policies_free_all" alt="" coords="195,5,309,32"/>
-<area shape="rect" id="node3" href="routerlist_8h.html#af2db10502386ef035c89377d2968c7e0" title="routerinfo_free" alt="" coords="199,56,305,83"/>
-<area shape="rect" id="node4" href="router_8h.html#a278cf107b4a9b636b105ec5581b2f427" title="router_free_all" alt="" coords="357,56,461,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -637,7 +619,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return true iff <b>ri</b> is "useful as an exit node", meaning it allows exit to at least one /8 address space for at least two of ports 80, 443, and 6667. </p>
+<p>Return true iff <b>ri</b> is "useful as an exit node", meaning it allows exit to at least one /8 address space for each of ports 80 and 443. </p>
 
 </div>
 </div>
@@ -763,16 +745,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Like fascist_firewall_allows_base(), but takes node, and looks up pref_ipv6 from node_ipv6_or/dir_preferred(). </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="policies_8h_abcacc2af3dccb862768358fb53eb4570_icgraph.png" border="0" usemap="#policies_8h_abcacc2af3dccb862768358fb53eb4570_icgraph" alt=""/></div>
-<map name="policies_8h_abcacc2af3dccb862768358fb53eb4570_icgraph" id="policies_8h_abcacc2af3dccb862768358fb53eb4570_icgraph">
-<area shape="rect" id="node2" href="entrynodes_8c.html#afd4f8dd6f248abfc072ce641a568ddde" title="entry_is_live" alt="" coords="241,35,336,61"/>
-<area shape="rect" id="node3" href="entrynodes_8h.html#accc850d23175b5132661a8c6e561e972" title="num_live_entry_guards" alt="" coords="384,5,540,32"/>
-<area shape="rect" id="node4" href="entrynodes_8c.html#ad193b4a7bb449c0f91ab14e48849abea" title="populate_live_entry\l_guards" alt="" coords="395,57,529,98"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -819,14 +791,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ad2ca8641a1133dc3360cc3b656a029b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2ca8641a1133dc3360cc3b656a029b6">&#9670;&nbsp;</a></span>fascist_firewall_choose_address_dir_server()</h2>
+<a id="a17687cfa041645e6f0c7e9374e987182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17687cfa041645e6f0c7e9374e987182">&#9670;&nbsp;</a></span>fascist_firewall_choose_address_dir_server()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fascist_firewall_choose_address_dir_server </td>
+          <td class="memname">void fascist_firewall_choose_address_dir_server </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structdir__server__t.html">dir_server_t</a> *&#160;</td>
           <td class="paramname"><em>ds</em>, </td>
@@ -856,27 +828,27 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Like <a class="el" href="policies_8c.html#adea06f5ccb81b38fb55264876b9adb38">fascist_firewall_choose_address_rs()</a>, but takes <b>ds</b>. </p>
+<p>Like <a class="el" href="policies_8c.html#aed268f9357e58a15505ff620204aea83">fascist_firewall_choose_address_rs()</a>, but takes <b>ds</b>. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="policies_8h_ad2ca8641a1133dc3360cc3b656a029b6_cgraph.png" border="0" usemap="#policies_8h_ad2ca8641a1133dc3360cc3b656a029b6_cgraph" alt=""/></div>
-<map name="policies_8h_ad2ca8641a1133dc3360cc3b656a029b6_cgraph" id="policies_8h_ad2ca8641a1133dc3360cc3b656a029b6_cgraph">
-<area shape="rect" id="node2" href="policies_8c.html#adea06f5ccb81b38fb55264876b9adb38" title="fascist_firewall_choose\l_address_rs" alt="" coords="212,5,371,47"/>
-<area shape="rect" id="node3" href="policies_8c.html#a1f36bc146b27988b048c665c1d969ed8" title="fascist_firewall_choose\l_address_node" alt="" coords="419,5,577,47"/>
+<div class="center"><img src="policies_8h_a17687cfa041645e6f0c7e9374e987182_cgraph.png" border="0" usemap="#policies_8h_a17687cfa041645e6f0c7e9374e987182_cgraph" alt=""/></div>
+<map name="policies_8h_a17687cfa041645e6f0c7e9374e987182_cgraph" id="policies_8h_a17687cfa041645e6f0c7e9374e987182_cgraph">
+<area shape="rect" id="node2" href="address_8c.html#a41958bdb031cb11907e9973e32f8baa9" title="tor_addr_make_null" alt="" coords="419,13,553,39"/>
+<area shape="rect" id="node3" href="policies_8c.html#aed268f9357e58a15505ff620204aea83" title="fascist_firewall_choose\l_address_rs" alt="" coords="212,35,371,76"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a1f36bc146b27988b048c665c1d969ed8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f36bc146b27988b048c665c1d969ed8">&#9670;&nbsp;</a></span>fascist_firewall_choose_address_node()</h2>
+<a id="aba629c408829f02c4f32eaaad0a63809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba629c408829f02c4f32eaaad0a63809">&#9670;&nbsp;</a></span>fascist_firewall_choose_address_node()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fascist_firewall_choose_address_node </td>
+          <td class="memname">void fascist_firewall_choose_address_node </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structnode__t.html">node_t</a> *&#160;</td>
           <td class="paramname"><em>node</em>, </td>
@@ -908,26 +880,32 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Like fascist_firewall_choose_address_base(), but takes <b>node</b>, and looks up the node's IPv6 preference rather than taking an argument for pref_ipv6. </p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="policies_8h_aba629c408829f02c4f32eaaad0a63809_cgraph.png" border="0" usemap="#policies_8h_aba629c408829f02c4f32eaaad0a63809_cgraph" alt=""/></div>
+<map name="policies_8h_aba629c408829f02c4f32eaaad0a63809_cgraph" id="policies_8h_aba629c408829f02c4f32eaaad0a63809_cgraph">
+<area shape="rect" id="node2" href="address_8c.html#a41958bdb031cb11907e9973e32f8baa9" title="tor_addr_make_null" alt="" coords="212,13,347,39"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="policies_8h_a1f36bc146b27988b048c665c1d969ed8_icgraph.png" border="0" usemap="#policies_8h_a1f36bc146b27988b048c665c1d969ed8_icgraph" alt=""/></div>
-<map name="policies_8h_a1f36bc146b27988b048c665c1d969ed8_icgraph" id="policies_8h_a1f36bc146b27988b048c665c1d969ed8_icgraph">
-<area shape="rect" id="node2" href="circuitbuild_8h.html#ae78b2dc4ee0d019045639d2a33eea506" title="extend_info_from_node" alt="" coords="213,5,370,32"/>
-<area shape="rect" id="node3" href="policies_8h.html#adea06f5ccb81b38fb55264876b9adb38" title="fascist_firewall_choose\l_address_rs" alt="" coords="212,57,371,98"/>
-<area shape="rect" id="node4" href="policies_8h.html#ad2ca8641a1133dc3360cc3b656a029b6" title="fascist_firewall_choose\l_address_dir_server" alt="" coords="419,57,577,98"/>
+<div class="center"><img src="policies_8h_aba629c408829f02c4f32eaaad0a63809_icgraph.png" border="0" usemap="#policies_8h_aba629c408829f02c4f32eaaad0a63809_icgraph" alt=""/></div>
+<map name="policies_8h_aba629c408829f02c4f32eaaad0a63809_icgraph" id="policies_8h_aba629c408829f02c4f32eaaad0a63809_icgraph">
+<area shape="rect" id="node2" href="circuitbuild_8h.html#ae78b2dc4ee0d019045639d2a33eea506" title="extend_info_from_node" alt="" coords="212,13,369,39"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="adea06f5ccb81b38fb55264876b9adb38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adea06f5ccb81b38fb55264876b9adb38">&#9670;&nbsp;</a></span>fascist_firewall_choose_address_rs()</h2>
+<a id="aed268f9357e58a15505ff620204aea83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed268f9357e58a15505ff620204aea83">&#9670;&nbsp;</a></span>fascist_firewall_choose_address_rs()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fascist_firewall_choose_address_rs </td>
+          <td class="memname">void fascist_firewall_choose_address_rs </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structrouterstatus__t.html">routerstatus_t</a> *&#160;</td>
           <td class="paramname"><em>rs</em>, </td>
@@ -961,17 +939,17 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="policies_8h_adea06f5ccb81b38fb55264876b9adb38_cgraph.png" border="0" usemap="#policies_8h_adea06f5ccb81b38fb55264876b9adb38_cgraph" alt=""/></div>
-<map name="policies_8h_adea06f5ccb81b38fb55264876b9adb38_cgraph" id="policies_8h_adea06f5ccb81b38fb55264876b9adb38_cgraph">
-<area shape="rect" id="node2" href="policies_8c.html#a1f36bc146b27988b048c665c1d969ed8" title="fascist_firewall_choose\l_address_node" alt="" coords="212,5,371,47"/>
+<div class="center"><img src="policies_8h_aed268f9357e58a15505ff620204aea83_cgraph.png" border="0" usemap="#policies_8h_aed268f9357e58a15505ff620204aea83_cgraph" alt=""/></div>
+<map name="policies_8h_aed268f9357e58a15505ff620204aea83_cgraph" id="policies_8h_aed268f9357e58a15505ff620204aea83_cgraph">
+<area shape="rect" id="node2" href="address_8c.html#a41958bdb031cb11907e9973e32f8baa9" title="tor_addr_make_null" alt="" coords="212,13,347,39"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="policies_8h_adea06f5ccb81b38fb55264876b9adb38_icgraph.png" border="0" usemap="#policies_8h_adea06f5ccb81b38fb55264876b9adb38_icgraph" alt=""/></div>
-<map name="policies_8h_adea06f5ccb81b38fb55264876b9adb38_icgraph" id="policies_8h_adea06f5ccb81b38fb55264876b9adb38_icgraph">
-<area shape="rect" id="node2" href="policies_8h.html#ad2ca8641a1133dc3360cc3b656a029b6" title="fascist_firewall_choose\l_address_dir_server" alt="" coords="212,5,371,47"/>
+<div class="center"><img src="policies_8h_aed268f9357e58a15505ff620204aea83_icgraph.png" border="0" usemap="#policies_8h_aed268f9357e58a15505ff620204aea83_icgraph" alt=""/></div>
+<map name="policies_8h_aed268f9357e58a15505ff620204aea83_icgraph" id="policies_8h_aed268f9357e58a15505ff620204aea83_icgraph">
+<area shape="rect" id="node2" href="policies_8h.html#a17687cfa041645e6f0c7e9374e987182" title="fascist_firewall_choose\l_address_dir_server" alt="" coords="212,5,371,47"/>
 </map>
 </div>
 
@@ -1031,7 +1009,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Is this client configured to use IPv6? Use node_ipv6_or/dir_preferred() when checking a specific node and OR/Dir port: it supports bridge client per-node IPv6 preferences. </p>
+<p>Is this client configured to use IPv6? Returns true if the client might use IPv6 for some of its connections (including dual-stack and IPv6-only clients), and false if it will never use IPv6 for any connections. Use node_ipv6_or/dir_preferred() when checking a specific node and OR/Dir port: it supports bridge client per-node IPv6 preferences. </p>
 
 </div>
 </div>
@@ -1184,15 +1162,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all storage held by policy variables. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="policies_8h_abdb06fe24a53450a461e479a72b371a5_cgraph.png" border="0" usemap="#policies_8h_abdb06fe24a53450a461e479a72b371a5_cgraph" alt=""/></div>
-<map name="policies_8h_abdb06fe24a53450a461e479a72b371a5_cgraph" id="policies_8h_abdb06fe24a53450a461e479a72b371a5_cgraph">
-<area shape="rect" id="node2" href="policies_8c.html#af4571826592c41142d57b3240016812e" title="addr_policy_list_free" alt="" coords="168,5,309,32"/>
-<area shape="rect" id="node3" href="policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="357,5,475,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1288,8 +1257,8 @@ Here is the call graph for this function:</div>
 <li>prepend an entry that rejects all destinations in all netblocks reserved for private use.</li>
 <li>if local_address is non-zero, treat it as a host-order IPv4 address, and add it to the list of configured addresses.</li>
 <li>if ipv6_local_address is non-NULL, and not the null <a class="el" href="structtor__addr__t.html">tor_addr_t</a>, add it to the list of configured addresses. If <b>or_options-&gt;ExitPolicyRejectLocalInterfaces</b> is true:</li>
-<li>if or_options-&gt;OutboundBindAddressIPv4_ is not the null <a class="el" href="structtor__addr__t.html">tor_addr_t</a>, add it to the list of configured addresses.</li>
-<li>if or_options-&gt;OutboundBindAddressIPv6_ is not the null <a class="el" href="structtor__addr__t.html">tor_addr_t</a>, add it to the list of configured addresses.</li>
+<li>if or_options-&gt;OutboundBindAddresses[][0] (=IPv4) is not the null <a class="el" href="structtor__addr__t.html">tor_addr_t</a>, add it to the list of configured addresses.</li>
+<li>if or_options-&gt;OutboundBindAddresses[][1] (=IPv6) is not the null <a class="el" href="structtor__addr__t.html">tor_addr_t</a>, add it to the list of configured addresses.</li>
 </ul>
 <p>If <b>or_options-&gt;BridgeRelay</b> is false, append entries of default Tor exit policy into <b>result</b> smartlist.</p>
 <p>If or_options-&gt;ExitRelay is false, then make our exit policy into "reject *:*" regardless. </p>
@@ -1555,7 +1524,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="policies_8h_af2e21a770e119c34b55360c703040bdc_icgraph.png" border="0" usemap="#policies_8h_af2e21a770e119c34b55360c703040bdc_icgraph" alt=""/></div>
 <map name="policies_8h_af2e21a770e119c34b55360c703040bdc_icgraph" id="policies_8h_af2e21a770e119c34b55360c703040bdc_icgraph">
-<area shape="rect" id="node2" href="dirvote_8h.html#a97feb95be6e8e94295fa6775355318ee" title="dirvote_create_microdescriptor" alt="" coords="180,5,380,32"/>
+<area shape="rect" id="node2" href="dirvote_8c.html#a059168318a87de5f77438cbcefdb73ed" title="dirvote_create_microdescriptor" alt="" coords="180,5,380,32"/>
 </map>
 </div>
 
@@ -1602,14 +1571,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a3a0c68a8d1b8b63eaa6ee5fe12eeb108"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a0c68a8d1b8b63eaa6ee5fe12eeb108">&#9670;&nbsp;</a></span>short_policy_free()</h2>
+<a id="ac4dcea4a1e21f4ef7d573596a3d9d32c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4dcea4a1e21f4ef7d573596a3d9d32c">&#9670;&nbsp;</a></span>short_policy_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void short_policy_free </td>
+          <td class="memname">void short_policy_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structshort__policy__t.html">short_policy_t</a> *&#160;</td>
           <td class="paramname"><em>policy</em></td><td>)</td>
@@ -1618,15 +1587,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all storage held in <b>policy</b>. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="policies_8h_a3a0c68a8d1b8b63eaa6ee5fe12eeb108_icgraph.png" border="0" usemap="#policies_8h_a3a0c68a8d1b8b63eaa6ee5fe12eeb108_icgraph" alt=""/></div>
-<map name="policies_8h_a3a0c68a8d1b8b63eaa6ee5fe12eeb108_icgraph" id="policies_8h_a3a0c68a8d1b8b63eaa6ee5fe12eeb108_icgraph">
-<area shape="rect" id="node2" href="routerlist_8h.html#af2db10502386ef035c89377d2968c7e0" title="routerinfo_free" alt="" coords="175,5,280,32"/>
-<area shape="rect" id="node3" href="router_8h.html#a278cf107b4a9b636b105ec5581b2f427" title="router_free_all" alt="" coords="328,5,432,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1735,10 +1695,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="policies_8h_a8dd804fdc250aed2c7270fe142400c56_cgraph.png" border="0" usemap="#policies_8h_a8dd804fdc250aed2c7270fe142400c56_cgraph" alt=""/></div>
 <map name="policies_8h_a8dd804fdc250aed2c7270fe142400c56_cgraph" id="policies_8h_a8dd804fdc250aed2c7270fe142400c56_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="180,5,331,32"/>
-<area shape="rect" id="node5" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="584,56,684,83"/>
-<area shape="rect" id="node3" href="util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="379,5,536,32"/>
+<area shape="rect" id="node2" href="util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="180,31,331,57"/>
+<area shape="rect" id="node6" href="util_8c.html#a95ad8dd258dec01eebc504928e6df180" title="smartlist_add_strdup" alt="" coords="184,81,327,108"/>
+<area shape="rect" id="node7" href="container_8c.html#ab865391a8cac688c51809c33dad0bfe2" title="smartlist_join_strings" alt="" coords="183,132,328,159"/>
+<area shape="rect" id="node3" href="util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="379,31,536,57"/>
 <area shape="rect" id="node4" href="compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="587,5,681,32"/>
+<area shape="rect" id="node5" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="584,56,684,83"/>
+<area shape="rect" id="node8" href="container_8c.html#aac69a4c0d462859a1a13a6eb35ab3c0a" title="smartlist_join_strings2" alt="" coords="381,132,533,159"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1746,7 +1709,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="policies_8h_a8dd804fdc250aed2c7270fe142400c56_icgraph.png" border="0" usemap="#policies_8h_a8dd804fdc250aed2c7270fe142400c56_icgraph" alt=""/></div>
 <map name="policies_8h_a8dd804fdc250aed2c7270fe142400c56_icgraph" id="policies_8h_a8dd804fdc250aed2c7270fe142400c56_icgraph">
-<area shape="rect" id="node2" href="dirvote_8h.html#a97feb95be6e8e94295fa6775355318ee" title="dirvote_create_microdescriptor" alt="" coords="180,5,380,32"/>
+<area shape="rect" id="node2" href="dirvote_8c.html#a059168318a87de5f77438cbcefdb73ed" title="dirvote_create_microdescriptor" alt="" coords="180,5,380,32"/>
 </map>
 </div>
 

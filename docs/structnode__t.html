@@ -73,14 +73,14 @@ Collaboration diagram for node_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structnode__t__coll__graph.png" border="0" usemap="#node__t_coll__map" alt="Collaboration graph"/></div>
 <map name="node__t_coll__map" id="node__t_coll__map">
-<area shape="rect" id="node2" href="structrouterinfo__t.html" title="routerinfo_t" alt="" coords="535,200,622,227"/>
-<area shape="rect" id="node7" href="structmicrodesc__t.html" title="microdesc_t" alt="" coords="532,373,625,400"/>
-<area shape="rect" id="node8" href="structshort__policy__t.html" title="short_policy_t" alt="" coords="203,452,305,479"/>
-<area shape="rect" id="node10" href="structrouterstatus__t.html" title="routerstatus_t" alt="" coords="384,551,487,577"/>
-<area shape="rect" id="node4" href="structcurve25519__public__key__t.html" title="curve25519_public_key_t" alt="" coords="169,131,339,157"/>
-<area shape="rect" id="node5" href="structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="209,223,299,249"/>
-<area shape="rect" id="node6" href="structsmartlist__t.html" title="smartlist_t" alt="" coords="213,321,295,348"/>
-<area shape="rect" id="node9" href="structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="179,503,329,529"/>
+<area shape="rect" id="node2" href="structrouterinfo__t.html" title="routerinfo_t" alt="" coords="201,260,288,287"/>
+<area shape="rect" id="node7" href="structmicrodesc__t.html" title="microdesc_t" alt="" coords="739,260,833,287"/>
+<area shape="rect" id="node8" href="structshort__policy__t.html" title="short_policy_t" alt="" coords="891,140,993,167"/>
+<area shape="rect" id="node10" href="structrouterstatus__t.html" title="routerstatus_t" alt="" coords="1235,208,1337,235"/>
+<area shape="rect" id="node4" href="structcurve25519__public__key__t.html" title="curve25519_public_key_t" alt="" coords="433,140,603,167"/>
+<area shape="rect" id="node5" href="structcrypto__pk__t.html" title="crypto_pk_t" alt="" coords="775,140,866,167"/>
+<area shape="rect" id="node6" href="structsmartlist__t.html" title="smartlist_t" alt="" coords="247,140,330,167"/>
+<area shape="rect" id="node9" href="structed25519__public__key__t.html" title="ed25519_public_key_t" alt="" coords="1063,140,1213,167"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -88,13 +88,17 @@ Collaboration diagram for node_t:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af99cb04ddb6005fae333669a1ccba743"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__t.html#af99cb04ddb6005fae333669a1ccba743">HT_ENTRY</a> (<a class="el" href="structnode__t.html">node_t</a>) ht_ent</td></tr>
 <tr class="separator:af99cb04ddb6005fae333669a1ccba743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302e1de69492093dcdcc7cc2884acfa8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__t.html#a302e1de69492093dcdcc7cc2884acfa8">HT_ENTRY</a> (<a class="el" href="structnode__t.html">node_t</a>) ed_ht_ent</td></tr>
+<tr class="separator:a302e1de69492093dcdcc7cc2884acfa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a0e4bcf9575e01b40273e4f7508c6ea93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__t.html#a0e4bcf9575e01b40273e4f7508c6ea93">nodelist_idx</a></td></tr>
 <tr class="separator:a0e4bcf9575e01b40273e4f7508c6ea93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c519dcad897e9cb928e63f2ef816c8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__t.html#a99c519dcad897e9cb928e63f2ef816c8">identity</a> [<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
+<tr class="memitem:a99c519dcad897e9cb928e63f2ef816c8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__t.html#a99c519dcad897e9cb928e63f2ef816c8">identity</a> [<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td></tr>
 <tr class="separator:a99c519dcad897e9cb928e63f2ef816c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c891a19870011cb9b2b8202d5095bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__t.html#a71c891a19870011cb9b2b8202d5095bf">ed25519_id</a></td></tr>
+<tr class="separator:a71c891a19870011cb9b2b8202d5095bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae42506266cdf755b985ece4e49afa597"><td class="memItemLeft" align="right" valign="top"><a id="ae42506266cdf755b985ece4e49afa597"></a>
 <a class="el" href="structmicrodesc__t.html">microdesc_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>md</b></td></tr>
 <tr class="separator:ae42506266cdf755b985ece4e49afa597"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,8 +129,6 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>is_fast</b>:1
 <tr class="separator:af1db41e2a6ac0b6f532b7c48254fd7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a426f246fd37f69883327246fe70e16d6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__t.html#a426f246fd37f69883327246fe70e16d6">rejects_all</a>:1</td></tr>
 <tr class="separator:a426f246fd37f69883327246fe70e16d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1835bbac328ab306fb697da6fc5c892"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__t.html#aa1835bbac328ab306fb697da6fc5c892">using_as_guard</a>:1</td></tr>
-<tr class="separator:aa1835bbac328ab306fb697da6fc5c892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7e506fbedd189a79f9a7ea2aad81648"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__t.html#ae7e506fbedd189a79f9a7ea2aad81648">ipv6_preferred</a>:1</td></tr>
 <tr class="separator:ae7e506fbedd189a79f9a7ea2aad81648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06aabd57dc1ab3af57b559c3acd1dd86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="or_8h.html#a1b74a0e9c6772fcfcc7facf26a11a213">country_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__t.html#a06aabd57dc1ab3af57b559c3acd1dd86">country</a></td></tr>
@@ -136,6 +138,9 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>is_fast</b>:1
 <tr class="memitem:a22c6adb21edf80e068ab4604ed604948"><td class="memItemLeft" align="right" valign="top"><a id="a22c6adb21edf80e068ab4604ed604948"></a>
 time_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_reachable6</b></td></tr>
 <tr class="separator:a22c6adb21edf80e068ab4604ed604948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5da23ebb4376a5a25485348acd2ed5"><td class="memItemLeft" align="right" valign="top"><a id="a2a5da23ebb4376a5a25485348acd2ed5"></a>
+struct <a class="el" href="structhsdir__index__t.html">hsdir_index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hsdir_index</b></td></tr>
+<tr class="separator:a2a5da23ebb4376a5a25485348acd2ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="structnode__t.html">node_t</a> represents a Tor router.</p>
@@ -144,7 +149,7 @@ time_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_reachable6</b>
 <p>[*] Actually, there is some leftover information in each that is mutable. We should try to excise that. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af99cb04ddb6005fae333669a1ccba743"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af99cb04ddb6005fae333669a1ccba743">&#9670;&nbsp;</a></span>HT_ENTRY()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af99cb04ddb6005fae333669a1ccba743">&#9670;&nbsp;</a></span>HT_ENTRY() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,6 +164,25 @@ time_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_reachable6</b>
       </table>
 </div><div class="memdoc">
 <p>Used to look up the <a class="el" href="structnode__t.html">node_t</a> by its identity digest. </p>
+
+</div>
+</div>
+<a id="a302e1de69492093dcdcc7cc2884acfa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a302e1de69492093dcdcc7cc2884acfa8">&#9670;&nbsp;</a></span>HT_ENTRY() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HT_ENTRY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnode__t.html">node_t</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Used to look up the <a class="el" href="structnode__t.html">node_t</a> by its ed25519 identity digest. </p>
 
 </div>
 </div>
@@ -178,6 +202,21 @@ time_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_reachable6</b>
 
 </div>
 </div>
+<a id="a71c891a19870011cb9b2b8202d5095bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c891a19870011cb9b2b8202d5095bf">&#9670;&nbsp;</a></span>ed25519_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structed25519__public__key__t.html">ed25519_public_key_t</a> ed25519_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The ed25519 identity of this <a class="el" href="structnode__t.html">node_t</a>. This field is nonzero iff we currently have an ed25519 identity for this node in either md or ri, <em>and</em> this node has been inserted to the ed25519-to-node map in the nodelist. </p>
+
+</div>
+</div>
 <a id="a99c519dcad897e9cb928e63f2ef816c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99c519dcad897e9cb928e63f2ef816c8">&#9670;&nbsp;</a></span>identity</h2>
 
@@ -185,7 +224,7 @@ time_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_reachable6</b>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char identity[<a class="el" href="crypto_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
+          <td class="memname">char identity[<a class="el" href="crypto__digest_8h.html#a14aa0c95ad1775ec290dc69b1ada1f6b">DIGEST_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -370,21 +409,6 @@ time_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_reachable6</b>
       </table>
 </div><div class="memdoc">
 <p>Local info: we treat this node as if it rejects everything </p>
-
-</div>
-</div>
-<a id="aa1835bbac328ab306fb697da6fc5c892"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1835bbac328ab306fb697da6fc5c892">&#9670;&nbsp;</a></span>using_as_guard</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int using_as_guard</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Local info: this node is in our list of guards </p>
 
 </div>
 </div>

@@ -1,5 +1,8 @@
 <map id="dir_connection_t" name="dir_connection_t">
-<area shape="rect" id="node3" href="$structtor__zlib__state__t.html" title="tor_zlib_state_t" alt="" coords="89,96,200,123"/>
-<area shape="rect" id="node4" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="261,5,343,32"/>
-<area shape="rect" id="node5" href="$structrend__data__t.html" title="rend_data_t" alt="" coords="374,96,465,123"/>
+<area shape="rect" id="node6" href="$structtor__zlib__compress__state__t.html" title="tor_zlib_compress_state_t" alt="" coords="29,95,204,121"/>
+<area shape="rect" id="node3" href="$structtor__compress__state__t.html" title="tor_compress_state_t" alt="" coords="280,213,428,240"/>
+<area shape="rect" id="node4" href="$structtor__lzma__compress__state__t.html" title="tor_lzma_compress_state_t" alt="" coords="228,95,411,121"/>
+<area shape="rect" id="node5" href="$structtor__zstd__compress__state__t.html" title="tor_zstd_compress_state_t" alt="" coords="435,95,615,121"/>
+<area shape="rect" id="node7" href="$structsmartlist__t.html" title="smartlist_t" alt="" coords="639,95,722,121"/>
+<area shape="rect" id="node8" href="$structrend__data__t.html" title="rend_data_t" alt="" coords="635,213,726,240"/>
 </map>

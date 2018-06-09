@@ -64,6 +64,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -81,14 +82,14 @@ Include dependency graph for procmon.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="procmon_8h__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2procmon_8h" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2procmon_8h" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2procmon_8h">
-<area shape="rect" id="node2" href="compat_8h_source.html" title="compat.h" alt="" coords="291,184,367,211"/>
-<area shape="rect" id="node11" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="645,259,773,285"/>
-<area shape="rect" id="node13" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="509,109,574,136"/>
-<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="341,408,419,435"/>
-<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="349,333,411,360"/>
-<area shape="rect" id="node5" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="508,333,607,360"/>
-<area shape="rect" id="node7" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="46,333,154,360"/>
-<area shape="rect" id="node10" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="393,259,519,285"/>
+<area shape="rect" id="node2" href="compat_8h_source.html" title="compat.h" alt="" coords="347,184,423,211"/>
+<area shape="rect" id="node12" href="compat__libevent_8h_source.html" title="compat_libevent.h" alt="" coords="677,259,805,285"/>
+<area shape="rect" id="node13" href="torlog_8h.html" title="Headers for log.c. " alt="" coords="547,109,612,136"/>
+<area shape="rect" id="node3" href="orconfig_8h_source.html" title="orconfig.h" alt="" coords="269,408,348,435"/>
+<area shape="rect" id="node4" href="torint_8h.html" title="Header file to define uint32_t and friends. " alt="" coords="157,333,220,360"/>
+<area shape="rect" id="node6" href="testsupport_8h_source.html" title="testsupport.h" alt="" coords="534,333,633,360"/>
+<area shape="rect" id="node8" href="compat__time_8h.html" title="Functions and types for monotonic times. " alt="" coords="347,333,455,360"/>
+<area shape="rect" id="node11" href="compat__threads_8h_source.html" title="compat_threads.h" alt="" coords="144,259,271,285"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -97,13 +98,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="procmon_8h__dep__incl.png" border="0" usemap="#_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2procmon_8hdep" alt=""/></div>
 <map name="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2procmon_8hdep" id="_2home_2user_2__my_2code_2bwauth-related_2tor_2src_2common_2procmon_8hdep">
 <area shape="rect" id="node2" href="procmon_8c.html" title="Process&#45;termination monitor functions. " alt="" coords="5,109,168,165"/>
-<area shape="rect" id="node3" href="config_8c.html" title="Code to parse and interpret configuration files. " alt="" coords="193,109,341,165"/>
+<area shape="rect" id="node3" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. " alt="" coords="193,109,341,165"/>
 <area shape="rect" id="node4" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="365,109,513,165"/>
 </map>
 </div>
 </div>
 <p><a href="procmon_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a3a1087297c85b42cde78155e5b1ecd5d"><td class="memItemLeft" align="right" valign="top"><a id="a3a1087297c85b42cde78155e5b1ecd5d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>tor_process_monitor_free</b>(procmon)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structtor__process__monitor__t.html">tor_process_monitor_t</a>, <a class="el" href="procmon_8h.html#aa26067b0d6a6466f4b552aa32c13026b">tor_process_monitor_free_</a>, (procmon))</td></tr>
+<tr class="separator:a3a1087297c85b42cde78155e5b1ecd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a2521b045068386320b4465b0fa0f9d5a"><td class="memItemLeft" align="right" valign="top"><a id="a2521b045068386320b4465b0fa0f9d5a"></a>
@@ -119,20 +126,20 @@ Functions</h2></td></tr>
 <tr class="separator:a2b3aa1f79d9b3da94942af11d0dacdb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166e3e918718bb6c10c91d0217d26eaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtor__process__monitor__t.html">tor_process_monitor_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="procmon_8h.html#a166e3e918718bb6c10c91d0217d26eaf">tor_process_monitor_new</a> (struct event_base *base, const char *process_spec, <a class="el" href="torlog_8h.html#a3ea3afb80db88b6ccec80d80ac98cea1">log_domain_mask_t</a> log_domain, tor_procmon_callback_t cb, void *cb_arg, const char **msg)</td></tr>
 <tr class="separator:a166e3e918718bb6c10c91d0217d26eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9db5e3da740165746e2779de66955c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="procmon_8h.html#aaa9db5e3da740165746e2779de66955c">tor_process_monitor_free</a> (<a class="el" href="structtor__process__monitor__t.html">tor_process_monitor_t</a> *procmon)</td></tr>
-<tr class="separator:aaa9db5e3da740165746e2779de66955c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26067b0d6a6466f4b552aa32c13026b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="procmon_8h.html#aa26067b0d6a6466f4b552aa32c13026b">tor_process_monitor_free_</a> (<a class="el" href="structtor__process__monitor__t.html">tor_process_monitor_t</a> *procmon)</td></tr>
+<tr class="separator:aa26067b0d6a6466f4b552aa32c13026b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Headers for <a class="el" href="procmon_8c.html" title="Process-termination monitor functions. ">procmon.c</a>. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="aaa9db5e3da740165746e2779de66955c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa9db5e3da740165746e2779de66955c">&#9670;&nbsp;</a></span>tor_process_monitor_free()</h2>
+<a id="aa26067b0d6a6466f4b552aa32c13026b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa26067b0d6a6466f4b552aa32c13026b">&#9670;&nbsp;</a></span>tor_process_monitor_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void tor_process_monitor_free </td>
+          <td class="memname">void tor_process_monitor_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structtor__process__monitor__t.html">tor_process_monitor_t</a> *&#160;</td>
           <td class="paramname"><em>procmon</em></td><td>)</td>
@@ -141,14 +148,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Free the process-termination monitor <b>procmon</b>. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="procmon_8h_aaa9db5e3da740165746e2779de66955c_icgraph.png" border="0" usemap="#procmon_8h_aaa9db5e3da740165746e2779de66955c_icgraph" alt=""/></div>
-<map name="procmon_8h_aaa9db5e3da740165746e2779de66955c_icgraph" id="procmon_8h_aaa9db5e3da740165746e2779de66955c_icgraph">
-<area shape="rect" id="node2" href="control_8h.html#ad1f8aa865448a4f8c34719f2b1ea67d2" title="monitor_owning_controller\l_process" alt="" coords="223,5,396,47"/>
-</map>
-</div>
 
 </div>
 </div>

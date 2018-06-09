@@ -72,9 +72,9 @@ Collaboration diagram for periodic_event_item_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structperiodic__event__item__t__coll__graph.png" border="0" usemap="#periodic__event__item__t_coll__map" alt="Collaboration graph"/></div>
 <map name="periodic__event__item__t_coll__map" id="periodic__event__item__t_coll__map">
-<area shape="rect" id="node3" href="structor__options__t.html" title="or_options_t" alt="" coords="105,495,199,521"/>
-<area shape="rect" id="node4" href="structconfig__line__t.html" title="config_line_t" alt="" coords="277,140,371,167"/>
-<area shape="rect" id="node5" href="structsmartlist__t.html" title="smartlist_t" alt="" coords="396,140,479,167"/>
+<area shape="rect" id="node3" href="structor__options__t.html" title="or_options_t" alt="" coords="103,377,196,404"/>
+<area shape="rect" id="node4" href="structconfig__line__t.html" title="config_line_t" alt="" coords="267,118,362,145"/>
+<area shape="rect" id="node5" href="structsmartlist__t.html" title="smartlist_t" alt="" coords="387,118,469,145"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -84,22 +84,31 @@ Data Fields</h2></td></tr>
 <tr class="separator:a838d5fe8ed10a8010e02ff0681d7403c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf6e742622e9992bc0f3b6dab5f7968c"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structperiodic__event__item__t.html#acf6e742622e9992bc0f3b6dab5f7968c">last_action_time</a></td></tr>
 <tr class="separator:acf6e742622e9992bc0f3b6dab5f7968c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4439c6aa7b7e595b4b50a30968fb53cf"><td class="memItemLeft" align="right" valign="top">struct event *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structperiodic__event__item__t.html#a4439c6aa7b7e595b4b50a30968fb53cf">ev</a></td></tr>
-<tr class="separator:a4439c6aa7b7e595b4b50a30968fb53cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fbb45a0d7ba1a4d2dd293ef62f0a06"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structmainloop__event__t.html">mainloop_event_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structperiodic__event__item__t.html#ab4fbb45a0d7ba1a4d2dd293ef62f0a06">ev</a></td></tr>
+<tr class="separator:ab4fbb45a0d7ba1a4d2dd293ef62f0a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8f80d37794cde9472343e4487ba3eb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structperiodic__event__item__t.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></td></tr>
 <tr class="separator:a8f8f80d37794cde9472343e4487ba3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e0e4d5d6b98648254fda91622facf5"><td class="memItemLeft" align="right" valign="top"><a id="ae2e0e4d5d6b98648254fda91622facf5"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>roles</b></td></tr>
+<tr class="separator:ae2e0e4d5d6b98648254fda91622facf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773b39d480759f67926cb18ae2219281"><td class="memItemLeft" align="right" valign="top"><a id="a773b39d480759f67926cb18ae2219281"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b></td></tr>
+<tr class="separator:a773b39d480759f67926cb18ae2219281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63be54a0beac1f5717217e1d9e629c71"><td class="memItemLeft" align="right" valign="top"><a id="a63be54a0beac1f5717217e1d9e629c71"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>enabled</b>: 1</td></tr>
+<tr class="separator:a63be54a0beac1f5717217e1d9e629c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A single item for the periodic-events-function table. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a4439c6aa7b7e595b4b50a30968fb53cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4439c6aa7b7e595b4b50a30968fb53cf">&#9670;&nbsp;</a></span>ev</h2>
+<a id="ab4fbb45a0d7ba1a4d2dd293ef62f0a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fbb45a0d7ba1a4d2dd293ef62f0a06">&#9670;&nbsp;</a></span>ev</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct event* ev</td>
+          <td class="memname">struct <a class="el" href="structmainloop__event__t.html">mainloop_event_t</a>* ev</td>
         </tr>
       </table>
 </div><div class="memdoc">

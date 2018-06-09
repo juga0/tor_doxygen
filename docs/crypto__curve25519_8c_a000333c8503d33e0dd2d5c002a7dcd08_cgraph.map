@@ -1,4 +1,4 @@
 <map id="curve25519_handshake" name="curve25519_handshake">
 <area shape="rect" id="node2" href="$crypto__curve25519_8c.html#a5e7a8ab2c4c662058cadf28615d69518" title="curve25519_impl" alt="" coords="212,5,332,32"/>
-<area shape="rect" id="node3" href="$crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="380,5,459,32"/>
+<area shape="rect" id="node3" href="$crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae" title="memwipe" alt="" coords="380,5,459,32"/>
 </map>

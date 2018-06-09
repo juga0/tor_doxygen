@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Header file for <a class="el" href="circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. ">circuituse.c</a>.  
+<p>Header file for <a class="el" href="circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. ">circuituse.c</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -81,20 +81,28 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="rect" id="node2" href="addressmap_8c.html" title="The addressmap module manages the processes by which we rewrite addresses in client requess..." alt="" coords="5,109,153,165"/>
 <area shape="rect" id="node3" href="circpathbias_8c.html" title="Code to track success/failure rates of circuits built through different tor nodes, in an attempt to detect attacks where an attacker deliberately causes circuits to fail until the client choses a path they like. " alt="" coords="177,109,325,165"/>
 <area shape="rect" id="node4" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel..." alt="" coords="349,109,497,165"/>
-<area shape="rect" id="node5" href="circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. " alt="" coords="521,109,669,165"/>
-<area shape="rect" id="node6" href="circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. " alt="" coords="693,109,841,165"/>
-<area shape="rect" id="node7" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="865,109,1013,165"/>
-<area shape="rect" id="node8" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="1037,109,1209,165"/>
-<area shape="rect" id="node9" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1233,109,1381,165"/>
-<area shape="rect" id="node10" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada..." alt="" coords="1405,109,1553,165"/>
-<area shape="rect" id="node11" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="1577,109,1725,165"/>
-<area shape="rect" id="node12" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="1749,109,1897,165"/>
-<area shape="rect" id="node13" href="rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="1921,109,2069,165"/>
-<area shape="rect" id="node14" href="rendmid_8c.html" title="Implement introductions points and rendezvous points. " alt="" coords="2093,109,2241,165"/>
-<area shape="rect" id="node15" href="rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="2265,109,2413,165"/>
-<area shape="rect" id="node16" href="rephist_8c.html" title="Basic history and performance&#45;tracking functionality. " alt="" coords="2437,109,2585,165"/>
-<area shape="rect" id="node17" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="2609,109,2757,165"/>
-<area shape="rect" id="node18" href="status_8c.html" title="Collect status information and log heartbeat messages. " alt="" coords="2781,109,2929,165"/>
+<area shape="rect" id="node5" href="circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them..." alt="" coords="521,109,669,165"/>
+<area shape="rect" id="node6" href="circuitstats_8c.html" title="Maintains and analyzes statistics about circuit built times, so we can tell how long we may need to w..." alt="" coords="693,109,841,165"/>
+<area shape="rect" id="node7" href="circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. " alt="" coords="865,109,1013,165"/>
+<area shape="rect" id="node8" href="connection_8c.html" title="General high&#45;level functions to handle reading and writing on connections. " alt="" coords="1037,109,1185,165"/>
+<area shape="rect" id="node9" href="connection__edge_8c.html" title="Handle edge streams. " alt="" coords="1209,109,1381,165"/>
+<area shape="rect" id="node10" href="control_8c.html" title="Implementation for Tor&#39;s control&#45;socket interface. " alt="" coords="1405,109,1553,165"/>
+<area shape="rect" id="node11" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada..." alt="" coords="1577,109,1725,165"/>
+<area shape="rect" id="node12" href="entrynodes_8c.html" title="Code to manage our fixed first nodes for various functions. " alt="" coords="1749,109,1897,165"/>
+<area shape="rect" id="node13" href="hs__circuit_8c.html" title="/home/user/_my/code\l/bwauth&#45;related/tor\l/src/or/hs_circuit.c" alt="" coords="1921,109,2069,165"/>
+<area shape="rect" id="node14" href="hs__client_8c.html" title="Implement next generation hidden service client functionality. " alt="" coords="2093,109,2241,165"/>
+<area shape="rect" id="node15" href="hs__intropoint_8c.html" title="Implement next generation introductions point functionality. " alt="" coords="2265,109,2413,165"/>
+<area shape="rect" id="node16" href="hs__service_8c.html" title="Implement next generation hidden service functionality. " alt="" coords="2437,109,2585,165"/>
+<area shape="rect" id="node17" href="main_8c.html" title="Toplevel module. Handles signals, multiplexes between connections, implements main loop..." alt="" coords="2609,109,2757,165"/>
+<area shape="rect" id="node18" href="relay_8c.html" title="Handle relay cell encryption/decryption, plus packaging and receiving from circuits, plus queuing on circuits. " alt="" coords="2781,109,2929,165"/>
+<area shape="rect" id="node19" href="rendclient_8c.html" title="Client code to access location&#45;hidden services. " alt="" coords="2953,109,3101,165"/>
+<area shape="rect" id="node20" href="rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points..." alt="" coords="3126,109,3275,165"/>
+<area shape="rect" id="node21" href="rendmid_8c.html" title="Implement introductions points and rendezvous points. " alt="" coords="3300,109,3448,165"/>
+<area shape="rect" id="node22" href="rendservice_8c.html" title="The hidden&#45;service side of rendezvous functionality. " alt="" coords="3472,109,3620,165"/>
+<area shape="rect" id="node23" href="rephist_8c.html" title="Basic history and performance&#45;tracking functionality. " alt="" coords="3644,109,3792,165"/>
+<area shape="rect" id="node24" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des..." alt="" coords="3816,109,3964,165"/>
+<area shape="rect" id="node25" href="status_8c.html" title="Collect status information and log heartbeat messages. " alt="" coords="3988,109,4136,165"/>
+<area shape="rect" id="node26" href="test__hs__service_8c.html" title="Test hidden service functionality. " alt="" coords="4160,109,4337,165"/>
 </map>
 </div>
 </div>
@@ -110,11 +118,15 @@ Macros</h2></td></tr>
 <tr class="separator:a77d2e94963198a037df3050e5e1bb5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4ac61839c8a0d41c77f90628a131cf5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#aa4ac61839c8a0d41c77f90628a131cf5">CIRCLAUNCH_IS_INTERNAL</a>&#160;&#160;&#160;(1&lt;&lt;3)</td></tr>
 <tr class="separator:aa4ac61839c8a0d41c77f90628a131cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9330552e758264492ba6e11ec50b9ad0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#a9330552e758264492ba6e11ec50b9ad0">CIRCLAUNCH_IS_V3_RP</a>&#160;&#160;&#160;(1&lt;&lt;4)</td></tr>
+<tr class="separator:a9330552e758264492ba6e11ec50b9ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a857005b7512302feee182107aed11121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#a857005b7512302feee182107aed11121">circuit_expire_building</a> (void)</td></tr>
 <tr class="separator:a857005b7512302feee182107aed11121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be6726f65e9f2c81ad77a9c70002ad1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#a4be6726f65e9f2c81ad77a9c70002ad1">circuit_expire_waiting_for_better_guard</a> (void)</td></tr>
+<tr class="separator:a4be6726f65e9f2c81ad77a9c70002ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0941a9dc5da7825f107d1d4bf028063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#ac0941a9dc5da7825f107d1d4bf028063">circuit_remove_handled_ports</a> (<a class="el" href="structsmartlist__t.html">smartlist_t</a> *needed_ports)</td></tr>
 <tr class="separator:ac0941a9dc5da7825f107d1d4bf028063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9c9e6111de126ec1c3ca4dd17f4091c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#aa9c9e6111de126ec1c3ca4dd17f4091c">circuit_stream_is_being_handled</a> (<a class="el" href="structentry__connection__t.html">entry_connection_t</a> *conn, uint16_t port, int min)</td></tr>
@@ -155,9 +167,17 @@ Functions</h2></td></tr>
 <tr class="separator:a6552c3467492a702a37f75ffd9a7676b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf36645f7a473ad622918668f2f5ba33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#adf36645f7a473ad622918668f2f5ba33">mark_circuit_unusable_for_new_conns</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ)</td></tr>
 <tr class="separator:adf36645f7a473ad622918668f2f5ba33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf6feb201d59431a51553ad7238b44f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#a8bf6feb201d59431a51553ad7238b44f">circuit_purpose_is_hidden_service</a> (uint8_t)</td></tr>
+<tr class="separator:a8bf6feb201d59431a51553ad7238b44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79b2fe849cb51f0c707188b3b470c59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#ad79b2fe849cb51f0c707188b3b470c59">circuit_should_use_vanguards</a> (uint8_t)</td></tr>
+<tr class="separator:ad79b2fe849cb51f0c707188b3b470c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6a7e9b1c6232b77b578b70cfd06ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#a0d6a7e9b1c6232b77b578b70cfd06ea2">circuit_sent_valid_data</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, uint16_t relay_body_len)</td></tr>
+<tr class="separator:a0d6a7e9b1c6232b77b578b70cfd06ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a261eac7653f37eb62e5ce20cadf156"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html#a2a261eac7653f37eb62e5ce20cadf156">circuit_read_valid_data</a> (<a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *circ, uint16_t relay_body_len)</td></tr>
+<tr class="separator:a2a261eac7653f37eb62e5ce20cadf156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header file for <a class="el" href="circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. ">circuituse.c</a>. </p>
+<div class="textblock"><p>Header file for <a class="el" href="circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. ">circuituse.c</a>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa4ac61839c8a0d41c77f90628a131cf5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4ac61839c8a0d41c77f90628a131cf5">&#9670;&nbsp;</a></span>CIRCLAUNCH_IS_INTERNAL</h2>
@@ -171,6 +191,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Flag to set when the last hop of a circuit doesn't need to be an exit node. </p>
+
+</div>
+</div>
+<a id="a9330552e758264492ba6e11ec50b9ad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9330552e758264492ba6e11ec50b9ad0">&#9670;&nbsp;</a></span>CIRCLAUNCH_IS_V3_RP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CIRCLAUNCH_IS_V3_RP&#160;&#160;&#160;(1&lt;&lt;4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag to set when we are trying to launch a v3 rendezvous circuit. We need to apply some additional filters on the node picked. </p>
 
 </div>
 </div>
@@ -236,6 +271,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Called whenever a circuit could not be successfully built. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuituse_8h_a0bd87fd29ee842fc8518b17c9f7cb9ac_cgraph.png" border="0" usemap="#circuituse_8h_a0bd87fd29ee842fc8518b17c9f7cb9ac_cgraph" alt=""/></div>
+<map name="circuituse_8h_a0bd87fd29ee842fc8518b17c9f7cb9ac_cgraph" id="circuituse_8h_a0bd87fd29ee842fc8518b17c9f7cb9ac_cgraph">
+<area shape="rect" id="node2" href="circuitlist_8c.html#a8cbb4360c5100b6b2ab735449a21fb2e" title="circuit_get_cpath_len" alt="" coords="183,5,328,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -254,15 +297,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function is called once a second, if router_have_min_dir_info() is true. Its job is to make sure all services we offer have enough circuits available. Some services just want enough circuits for current tasks, whereas others want a minimum set of idle circuits hanging around. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="circuituse_8h_a882afdac4876448ae1b5eda08db9a66f_cgraph.png" border="0" usemap="#circuituse_8h_a882afdac4876448ae1b5eda08db9a66f_cgraph" alt=""/></div>
-<map name="circuituse_8h_a882afdac4876448ae1b5eda08db9a66f_cgraph" id="circuituse_8h_a882afdac4876448ae1b5eda08db9a66f_cgraph">
-<area shape="rect" id="node2" href="nodelist_8c.html#a95765599d022a89bdb2a851e1ad2ec21" title="router_have_consensus_path" alt="" coords="193,13,385,39"/>
-</map>
-</div>
+<p>This function is called once a second, if router_have_minimum_dir_info() is true. Its job is to make sure all services we offer have enough circuits available. Some services just want enough circuits for current tasks, whereas others want a minimum set of idle circuits hanging around. </p>
 
 </div>
 </div>
@@ -382,7 +417,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Close all circuits that start at us, aren't open, and were born at least CircuitBuildTimeout seconds ago. </p>
+<p>Close all circuits that start at us, aren't open, and were born at least CircuitBuildTimeout seconds ago.</p>
+<p>TODO: This function is now partially redundant to <a class="el" href="circuitstats_8c.html#a306615a489277731398dbd19065f7b2b">circuit_build_times_handle_completed_hop()</a>, but that function only covers circuits up to and including 3 hops that are still actually completing hops. However, <a class="el" href="circuituse_8c.html#a857005b7512302feee182107aed11121">circuit_expire_building()</a> also handles longer circuits, as well as circuits that are completely stalled. In the future (after prop247/other path selection revamping), we probably want to eliminate this rats nest in favor of a simpler approach. </p>
 <p>Because circuit build timeout is calculated only based on 3 hop general purpose circuit construction, we need to scale the timeout to make it properly apply to longer circuits, and circuits of certain usage types. The following diagram illustrates how we derive the scaling below. In short, we calculate the number of times our telescoping-based circuit construction causes cells to traverse each link for the circuit purpose types in question, and then assume each link is equivalent.</p>
 <p>OP &ndash;a&ndash;&gt; A &ndash;b&ndash;&gt; B &ndash;c&ndash;&gt; C OP &ndash;a&ndash;&gt; A &ndash;b&ndash;&gt; B &ndash;c&ndash;&gt; C &ndash;d&ndash;&gt; D</p>
 <p>Let h = a = b = c = d</p>
@@ -392,7 +428,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="circuituse_8h_a857005b7512302feee182107aed11121_cgraph.png" border="0" usemap="#circuituse_8h_a857005b7512302feee182107aed11121_cgraph" alt=""/></div>
 <map name="circuituse_8h_a857005b7512302feee182107aed11121_cgraph" id="circuituse_8h_a857005b7512302feee182107aed11121_cgraph">
-<area shape="rect" id="node2" href="compat__time_8c.html#a44ef505a26821a6ac00802efbdda9531" title="tor_gettimeofday" alt="" coords="204,5,323,32"/>
+<area shape="rect" id="node2" href="circuitlist_8c.html#a7c20bc469ef67338216bb762b661b0ac" title="circuit_any_opened\l_circuits" alt="" coords="204,39,339,80"/>
+<area shape="rect" id="node3" href="circuitlist_8c.html#ab526f33075e1edd4dd62437af9ef6c43" title="circuit_get_global\l_origin_circuit_list" alt="" coords="397,5,524,47"/>
+<area shape="rect" id="node4" href="circuitlist_8c.html#ac4fb133db6217d7f5fa19a5dee77ca19" title="circuit_cache_opened\l_circuit_state" alt="" coords="387,71,535,112"/>
 </map>
 </div>
 
@@ -443,7 +481,37 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Find each non-origin circuit that has been unused for too long, has no streams on it, used a create_fast, and ends here: mark it for close. </p>
+<p>Find each non-origin circuit that has been unused for too long, has no streams on it, came from a client, and ends here: mark it for close. </p>
+
+</div>
+</div>
+<a id="a4be6726f65e9f2c81ad77a9c70002ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be6726f65e9f2c81ad77a9c70002ad1">&#9670;&nbsp;</a></span>circuit_expire_waiting_for_better_guard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void circuit_expire_waiting_for_better_guard </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mark for close all circuits that start here, that were built through a guard we weren't sure if we wanted to use, and that have been waiting around for way too long. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuituse_8h_a4be6726f65e9f2c81ad77a9c70002ad1_cgraph.png" border="0" usemap="#circuituse_8h_a4be6726f65e9f2c81ad77a9c70002ad1_cgraph" alt=""/></div>
+<map name="circuituse_8h_a4be6726f65e9f2c81ad77a9c70002ad1_cgraph" id="circuituse_8h_a4be6726f65e9f2c81ad77a9c70002ad1_cgraph">
+<area shape="rect" id="node2" href="circuitlist_8c.html#ab526f33075e1edd4dd62437af9ef6c43" title="circuit_get_global\l_origin_circuit_list" alt="" coords="222,5,349,47"/>
+<area shape="rect" id="node3" href="entrynodes_8c.html#aa42b6de85549bfc96f56f89cab179042" title="entry_guard_state_should\l_expire" alt="" coords="200,71,371,112"/>
+<area shape="rect" id="node4" href="util_8c.html#aca03d8cb6a22d540b13b92ea5945df33" title="approx_time" alt="" coords="447,49,541,75"/>
+<area shape="rect" id="node5" href="entrynodes_8c.html#a2c7ec361faf235b7a77e9b73314046c5" title="get_nonprimary_guard\l_idle_timeout" alt="" coords="419,100,569,141"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -573,6 +641,65 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a8bf6feb201d59431a51553ad7238b44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf6feb201d59431a51553ad7238b44f">&#9670;&nbsp;</a></span>circuit_purpose_is_hidden_service()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int circuit_purpose_is_hidden_service </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>purpose</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell us if a circuit is a hidden service circuit. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuituse_8h_a8bf6feb201d59431a51553ad7238b44f_icgraph.png" border="0" usemap="#circuituse_8h_a8bf6feb201d59431a51553ad7238b44f_icgraph" alt=""/></div>
+<map name="circuituse_8h_a8bf6feb201d59431a51553ad7238b44f_icgraph" id="circuituse_8h_a8bf6feb201d59431a51553ad7238b44f_icgraph">
+<area shape="rect" id="node2" href="circuituse_8h.html#ad79b2fe849cb51f0c707188b3b470c59" title="circuit_should_use\l_vanguards" alt="" coords="180,23,311,65"/>
+<area shape="rect" id="node3" href="circuitbuild_8h.html#a48d96af7c68a635f9734d0aa0271ac7c" title="route_len_for_purpose" alt="" coords="359,5,509,32"/>
+<area shape="rect" id="node5" href="entrynodes_8h.html#ab71ff8062c99e9722afef949590df2da" title="guards_choose_guard" alt="" coords="359,56,509,83"/>
+<area shape="rect" id="node4" href="circuitbuild_8c.html#a77d283b19c68e94c4a306fd09c6a0e7f" title="new_route_len" alt="" coords="557,5,664,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2a261eac7653f37eb62e5ce20cadf156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a261eac7653f37eb62e5ce20cadf156">&#9670;&nbsp;</a></span>circuit_read_valid_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void circuit_read_valid_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td>
+          <td class="paramname"><em>circ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>relay_body_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add relay_body_len and RELAY_PAYLOAD_SIZE-relay_body_len to the valid delivered read field and the overhead field, respectively. </p>
+
+</div>
+</div>
 <a id="ac0941a9dc5da7825f107d1d4bf028063"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0941a9dc5da7825f107d1d4bf028063">&#9670;&nbsp;</a></span>circuit_remove_handled_ports()</h2>
 
@@ -595,7 +722,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="circuituse_8h_ac0941a9dc5da7825f107d1d4bf028063_cgraph.png" border="0" usemap="#circuituse_8h_ac0941a9dc5da7825f107d1d4bf028063_cgraph" alt=""/></div>
 <map name="circuituse_8h_ac0941a9dc5da7825f107d1d4bf028063_cgraph" id="circuituse_8h_ac0941a9dc5da7825f107d1d4bf028063_cgraph">
 <area shape="rect" id="node2" href="circuituse_8c.html#aa9c9e6111de126ec1c3ca4dd17f4091c" title="circuit_stream_is_being\l_handled" alt="" coords="212,27,371,69"/>
-<area shape="rect" id="node7" href="container_8c.html#ae56cc8eb3ee68132c63168b2485037cb" title="smartlist_del" alt="" coords="243,93,339,120"/>
 <area shape="rect" id="node3" href="container_8c.html#a9060e1f019093c294f1a076b6f0226da" title="smartlist_contains\l_int_as_string" alt="" coords="419,27,547,69"/>
 <area shape="rect" id="node4" href="compat_8c.html#af032ac661214ae28b4f205781a515290" title="tor_snprintf" alt="" coords="615,5,702,32"/>
 <area shape="rect" id="node6" href="container_8c.html#ac33bb0aa376a138f6ca81d6e8ea25e60" title="smartlist_contains\l_string" alt="" coords="595,57,723,98"/>
@@ -627,6 +753,73 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="circuituse_8h_a8f03827edb583ab1e727def243a42be1_icgraph.png" border="0" usemap="#circuituse_8h_a8f03827edb583ab1e727def243a42be1_icgraph" alt=""/></div>
 <map name="circuituse_8h_a8f03827edb583ab1e727def243a42be1_icgraph" id="circuituse_8h_a8f03827edb583ab1e727def243a42be1_icgraph">
 <area shape="rect" id="node2" href="circuituse_8h.html#a5474432e0dd7549eb766af37bebb37ed" title="circuit_expire_old\l_circs_as_needed" alt="" coords="188,5,315,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0d6a7e9b1c6232b77b578b70cfd06ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6a7e9b1c6232b77b578b70cfd06ea2">&#9670;&nbsp;</a></span>circuit_sent_valid_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void circuit_sent_valid_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structorigin__circuit__t.html">origin_circuit_t</a> *&#160;</td>
+          <td class="paramname"><em>circ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>relay_body_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add relay_body_len and RELAY_PAYLOAD_SIZE-relay_body_len to the valid delivered written fields and the overhead field, respectively. </p>
+
+</div>
+</div>
+<a id="ad79b2fe849cb51f0c707188b3b470c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad79b2fe849cb51f0c707188b3b470c59">&#9670;&nbsp;</a></span>circuit_should_use_vanguards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int circuit_should_use_vanguards </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>purpose</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true if this circuit purpose should use vanguards or pinned Layer2 or Layer3 guards.</p>
+<p>This function takes both the circuit purpose and the torrc options for pinned middles/vanguards into account (ie: the circuit must be a hidden service circuit and vanguards/pinned middles must be enabled for it to return true). </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuituse_8h_ad79b2fe849cb51f0c707188b3b470c59_cgraph.png" border="0" usemap="#circuituse_8h_ad79b2fe849cb51f0c707188b3b470c59_cgraph" alt=""/></div>
+<map name="circuituse_8h_ad79b2fe849cb51f0c707188b3b470c59_cgraph" id="circuituse_8h_ad79b2fe849cb51f0c707188b3b470c59_cgraph">
+<area shape="rect" id="node2" href="circuituse_8c.html#aff875d76fff1f49cbbf561415216f3b3" title="circuit_purpose_is\l_hidden_service" alt="" coords="184,5,311,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="circuituse_8h_ad79b2fe849cb51f0c707188b3b470c59_icgraph.png" border="0" usemap="#circuituse_8h_ad79b2fe849cb51f0c707188b3b470c59_icgraph" alt=""/></div>
+<map name="circuituse_8h_ad79b2fe849cb51f0c707188b3b470c59_icgraph" id="circuituse_8h_ad79b2fe849cb51f0c707188b3b470c59_icgraph">
+<area shape="rect" id="node2" href="circuitbuild_8h.html#a48d96af7c68a635f9734d0aa0271ac7c" title="route_len_for_purpose" alt="" coords="184,5,335,32"/>
+<area shape="rect" id="node4" href="entrynodes_8h.html#ab71ff8062c99e9722afef949590df2da" title="guards_choose_guard" alt="" coords="185,56,334,83"/>
+<area shape="rect" id="node3" href="circuitbuild_8c.html#a77d283b19c68e94c4a306fd09c6a0e7f" title="new_route_len" alt="" coords="383,5,489,32"/>
 </map>
 </div>
 
@@ -772,7 +965,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Try to find a safe live circuit for CONN_TYPE_AP connection conn. If we don't find one: if conn cannot be handled by any known nodes, warn and return -1 (conn needs to die, and is maybe already marked); else launch new circuit (if necessary) and return 0. Otherwise, associate conn with a safe live circuit, do the right next step, and return 1. </p>
+<p>Try to find a safe live circuit for stream <b>conn</b>. If we find one, attach the stream, send appropriate cells, and return 1. Otherwise, try to launch new circuit(s) for the stream. If we can launch circuits, return 0. Otherwise, if we simply can't proceed with this stream, return -1. (conn needs to die, and is maybe already marked). </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -780,7 +973,7 @@ Here is the call graph for this function:</div>
 <map name="circuituse_8h_a8d5c81bf7d6238331123b1e8753597f1_cgraph" id="circuituse_8h_a8d5c81bf7d6238331123b1e8753597f1_cgraph">
 <area shape="rect" id="node2" href="address_8c.html#a6ecc12236743caf7527376436791c75e" title="tor_addr_is_null" alt="" coords="244,5,357,32"/>
 <area shape="rect" id="node3" href="config_8c.html#a7e31046631b0cc0f5d01c8d411b886e6" title="safe_str_client" alt="" coords="247,56,354,83"/>
-<area shape="rect" id="node4" href="connection__edge_8c.html#accf4787c953075c4a9aeaab09bb2b3fe" title="connection_edge_is\l_rendezvous_stream" alt="" coords="229,107,372,149"/>
+<area shape="rect" id="node4" href="connection__edge_8c.html#ab9c45f4cb77108e9d095daecb6ab1700" title="connection_edge_is\l_rendezvous_stream" alt="" coords="229,107,372,149"/>
 </map>
 </div>
 
@@ -852,8 +1045,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="circuituse_8h_adf36645f7a473ad622918668f2f5ba33_icgraph.png" border="0" usemap="#circuituse_8h_adf36645f7a473ad622918668f2f5ba33_icgraph" alt=""/></div>
 <map name="circuituse_8h_adf36645f7a473ad622918668f2f5ba33_icgraph" id="circuituse_8h_adf36645f7a473ad622918668f2f5ba33_icgraph">
-<area shape="rect" id="node2" href="circuitlist_8h.html#a52c4991dce45efd8d927b6092e3c85be" title="circuit_mark_all_dirty\l_circs_as_unusable" alt="" coords="205,5,351,47"/>
-<area shape="rect" id="node3" href="circuitbuild_8h.html#a9850a0ba60e6a62bc0a7267343418235" title="circuit_note_clock\l_jumped" alt="" coords="399,5,525,47"/>
+<area shape="rect" id="node2" href="circuitlist_8h.html#a52c4991dce45efd8d927b6092e3c85be" title="circuit_mark_all_dirty\l_circs_as_unusable" alt="" coords="205,39,351,80"/>
+<area shape="rect" id="node3" href="circuitbuild_8h.html#ad0daecc03b3062716a6845b8a522d3da" title="circuit_note_clock\l_jumped" alt="" coords="399,5,526,47"/>
+<area shape="rect" id="node4" href="main_8h.html#ac64189cc036980dc5785f76d85db9fa6" title="directory_info_has\l_arrived" alt="" coords="399,71,527,112"/>
 </map>
 </div>
 

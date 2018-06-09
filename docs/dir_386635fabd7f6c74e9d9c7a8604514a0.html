@@ -72,23 +72,28 @@ Directory dependency graph for or:</div>
 <div class="dyncontent">
 <div class="center"><img src="dir_386635fabd7f6c74e9d9c7a8604514a0_dep.png" border="0" usemap="#dir__386635fabd7f6c74e9d9c7a8604514a0__dep" alt="/home/user/_my/code/bwauth-related/tor/src/or"/></div>
 <map name="dir__386635fabd7f6c74e9d9c7a8604514a0__dep" id="dir__386635fabd7f6c74e9d9c7a8604514a0__dep">
-<area shape="rect" id="node1" href="dir_386635fabd7f6c74e9d9c7a8604514a0.html" title="or" alt="" coords="27,52,99,100"/>
-<area shape="rect" id="node2" href="dir_b7e1585941a202f53e5249c42015d573.html" title="common" alt="" coords="27,148,99,196"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000017_000002.html" title="38" alt="" coords="64,122,78,137"/>
-<area shape="rect" id="clust1" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html" title="src" alt="" coords="16,16,109,111"/>
+<area shape="rect" id="node2" href="dir_c5d850bddae166bb86a80dcb64398e39.html" title="dirauth" alt="" coords="37,159,109,207"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000017_000018.html" title="14" alt="" coords="74,133,89,148"/>
+<area shape="rect" id="node3" href="dir_b7e1585941a202f53e5249c42015d573.html" title="common" alt="" coords="37,255,109,303"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000018_000002.html" title="4" alt="" coords="78,229,86,244"/>
+<area shape="rect" id="clust2" href="dir_386635fabd7f6c74e9d9c7a8604514a0.html" alt="" coords="27,52,120,217"/>
+<area shape="rect" id="clust1" href="dir_3cb0ba3f4b82dbe34a1a06276e96bc8d.html" title="src" alt="" coords="16,16,131,228"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="subdirs"></a>
+Directories</h2></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
 <tr class="memitem:addressmap_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="addressmap_8c.html">addressmap.c</a></td></tr>
 <tr class="memdesc:addressmap_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The addressmap module manages the processes by which we rewrite addresses in client requess. It handles the MapAddress controller and torrc commands, and the TrackHostExits feature, and the client-side DNS cache (deprecated). <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:buffers_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8c.html">buffers.c</a></td></tr>
-<tr class="memdesc:buffers_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a generic buffer interface. <br /></td></tr>
+<tr class="memitem:bridges_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bridges_8c.html">bridges.c</a></td></tr>
+<tr class="memdesc:bridges_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code to manage bridges and bridge selection. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:buffers_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8h.html">buffers.h</a> <a href="buffers_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:buffers_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="buffers_8c.html" title="Implements a generic buffer interface. ">buffers.c</a>. <br /></td></tr>
+<tr class="memitem:bridges_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bridges_8h.html">bridges.h</a> <a href="bridges_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:bridges_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel...">circuitbuild.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:channel_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8c.html">channel.c</a></td></tr>
 <tr class="memdesc:channel_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OR/OP-to-OR channel abstraction layer. A channel's job is to transfer cells from Tor instance to Tor instance. Currently, there is only one implementation of the channel abstraction: in <a class="el" href="channeltls_8c.html" title="A concrete subclass of channel_t using or_connection_t to transfer cells between Tor instances...">channeltls.c</a>. <br /></td></tr>
@@ -112,10 +117,10 @@ Files</h2></td></tr>
 <tr class="memdesc:circuitbuild_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="circuitbuild_8c.html" title="Implements the details of building circuits (by chosing paths, constructing/sending create/extend cel...">circuitbuild.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:circuitlist_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitlist_8c.html">circuitlist.c</a></td></tr>
-<tr class="memdesc:circuitlist_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage the global circuit list, and looking up circuits within it. <br /></td></tr>
+<tr class="memdesc:circuitlist_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage global structures that list and index circuits, and look up circuits within them. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:circuitlist_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitlist_8h.html">circuitlist.h</a> <a href="circuitlist_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:circuitlist_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="circuitlist_8c.html" title="Manage the global circuit list, and looking up circuits within it. ">circuitlist.c</a>. <br /></td></tr>
+<tr class="memdesc:circuitlist_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="circuitlist_8c.html" title="Manage global structures that list and index circuits, and look up circuits within them...">circuitlist.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:circuitmux_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuitmux_8c.html">circuitmux.c</a></td></tr>
 <tr class="memdesc:circuitmux_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Circuit mux/cell selection abstraction. <br /></td></tr>
@@ -136,10 +141,10 @@ Files</h2></td></tr>
 <tr class="memdesc:circuitstats_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="circuitstats_8c.html" title="Maintains and analyzes statistics about circuit built times, so we can tell how long we may need to w...">circuitstats.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:circuituse_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8c.html">circuituse.c</a></td></tr>
-<tr class="memdesc:circuituse_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch the right sort of circuits and attach streams to them. <br /></td></tr>
+<tr class="memdesc:circuituse_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch the right sort of circuits and attach the right streams to them. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:circuituse_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circuituse_8h.html">circuituse.h</a> <a href="circuituse_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:circuituse_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="circuituse_8c.html" title="Launch the right sort of circuits and attach streams to them. ">circuituse.c</a>. <br /></td></tr>
+<tr class="memdesc:circuituse_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="circuituse_8c.html" title="Launch the right sort of circuits and attach the right streams to them. ">circuituse.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:command_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command_8c.html">command.c</a></td></tr>
 <tr class="memdesc:command_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions for processing incoming cells. <br /></td></tr>
@@ -148,10 +153,10 @@ Files</h2></td></tr>
 <tr class="memdesc:command_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="command_8c.html" title="Functions for processing incoming cells. ">command.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:config_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8c.html">config.c</a></td></tr>
-<tr class="memdesc:config_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code to parse and interpret configuration files. <br /></td></tr>
+<tr class="memdesc:config_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code to interpret the user's configuration of Tor. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:config_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html">config.h</a> <a href="config_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:config_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="config_8c.html" title="Code to parse and interpret configuration files. ">config.c</a>. <br /></td></tr>
+<tr class="memdesc:config_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. ">config.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:confparse_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="confparse_8c.html">confparse.c</a></td></tr>
 <tr class="memdesc:confparse_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Back-end for parsing and generating key-value files, used to implement the torrc file format and the state file. <br /></td></tr>
@@ -174,6 +179,9 @@ Files</h2></td></tr>
 <tr class="memitem:connection__or_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection__or_8h.html">connection_or.h</a> <a href="connection__or_8h_source.html">[code]</a></td></tr>
 <tr class="memdesc:connection__or_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="connection__or_8c.html" title="Functions to handle OR connections, TLS handshaking, and cells on the network. ">connection_or.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:consdiff_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="consdiff_8c.html">consdiff.c</a></td></tr>
+<tr class="memdesc:consdiff_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consensus diff implementation, including both the generation and the application of diffs in a minimal ed format. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:control_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_8c.html">control.c</a></td></tr>
 <tr class="memdesc:control_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation for Tor's control-socket interface. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,29 +194,17 @@ Files</h2></td></tr>
 <tr class="memitem:cpuworker_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuworker_8h.html">cpuworker.h</a> <a href="cpuworker_8h_source.html">[code]</a></td></tr>
 <tr class="memdesc:cpuworker_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="cpuworker_8c.html" title="Uses the workqueue/threadpool code to farm CPU-intensive activities out to subprocesses. ">cpuworker.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dircollate_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dircollate_8c.html">dircollate.c</a></td></tr>
-<tr class="memdesc:dircollate_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collation code for figuring out which identities to vote for in the directory voting process. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dircollate_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dircollate_8h.html">dircollate.h</a> <a href="dircollate_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:dircollate_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="dircollate_8c.html" title="Collation code for figuring out which identities to vote for in the directory voting process...">dircollate.c</a>. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:directory_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8c.html">directory.c</a></td></tr>
-<tr class="memdesc:directory_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code to send and fetch directories and router descriptors via HTTP. Directories use <a class="el" href="dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. ">dirserv.c</a> to generate the results; clients use routers.c to parse them. <br /></td></tr>
+<tr class="memdesc:directory_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code to send and fetch information from directory authorities and caches via HTTP. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:directory_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="directory_8h.html">directory.h</a> <a href="directory_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:directory_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="directory_8c.html" title="Code to send and fetch directories and router descriptors via HTTP. Directories use dirserv...">directory.c</a>. <br /></td></tr>
+<tr class="memdesc:directory_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="directory_8c.html" title="Code to send and fetch information from directory authorities and caches via HTTP. ">directory.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dirserv_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirserv_8c.html">dirserv.c</a></td></tr>
 <tr class="memdesc:dirserv_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directory server core implementation. Manages directory contents and generates directories. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dirserv_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirserv_8h.html">dirserv.h</a> <a href="dirserv_8h_source.html">[code]</a></td></tr>
 <tr class="memdesc:dirserv_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="dirserv_8c.html" title="Directory server core implementation. Manages directory contents and generates directories. ">dirserv.c</a>. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dirvote_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8c.html">dirvote.c</a></td></tr>
-<tr class="memdesc:dirvote_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions to compute directory consensus, and schedule voting. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dirvote_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dirvote_8h.html">dirvote.h</a> <a href="dirvote_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:dirvote_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="dirvote_8c.html" title="Functions to compute directory consensus, and schedule voting. ">dirvote.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dns_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dns_8c.html">dns.c</a></td></tr>
 <tr class="memdesc:dns_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Adam Langley's eventdns.c code. (We can't just use gethostbyname() and friends because we really need to be nonblocking.) <br /></td></tr>
@@ -220,10 +216,10 @@ Files</h2></td></tr>
 <tr class="memdesc:dns__structs_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structures used in <a class="el" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada...">dns.c</a>. Exposed to <a class="el" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada...">dns.c</a>, and to the unit tests that declare DNS_PRIVATE. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dnsserv_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnsserv_8c.html">dnsserv.c</a></td></tr>
-<tr class="memdesc:dnsserv_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements client-side DNS proxy server code. Note: this is the DNS Server code, not the Server DNS code. Confused? This code runs on client-side, and acts as a DNS server. The code in <a class="el" href="dns_8c.html" title="Implements a local cache for DNS results for Tor servers. This is implemented as a wrapper around Ada...">dns.c</a>, on the other hand, runs on Tor servers, and acts as a DNS client. <br /></td></tr>
+<tr class="memdesc:dnsserv_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements client-side DNS proxy server code. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dnsserv_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnsserv_8h.html">dnsserv.h</a> <a href="dnsserv_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:dnsserv_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="dnsserv_8c.html" title="Implements client-side DNS proxy server code. Note: this is the DNS Server code, not the Server DNS c...">dnsserv.c</a>. <br /></td></tr>
+<tr class="memdesc:dnsserv_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="dnsserv_8c.html" title="Implements client-side DNS proxy server code. ">dnsserv.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:entrynodes_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entrynodes_8c.html">entrynodes.c</a></td></tr>
 <tr class="memdesc:entrynodes_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code to manage our fixed first nodes for various functions. <br /></td></tr>
@@ -252,6 +248,86 @@ Files</h2></td></tr>
 <tr class="memitem:hibernate_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hibernate_8h.html">hibernate.h</a> <a href="hibernate_8h_source.html">[code]</a></td></tr>
 <tr class="memdesc:hibernate_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="hibernate_8c.html" title="Functions to close listeners, stop allowing new circuits, etc in preparation for closing down or goin...">hibernate.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__cache_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__cache_8c.html">hs_cache.c</a></td></tr>
+<tr class="memdesc:hs__cache_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle hidden service descriptor caches. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__cache_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__cache_8h.html">hs_cache.h</a> <a href="hs__cache_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__cache_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="hs__cache_8c.html" title="Handle hidden service descriptor caches. ">hs_cache.c</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__cell_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__cell_8c.html">hs_cell.c</a></td></tr>
+<tr class="memdesc:hs__cell_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hidden service API for cell creation and handling. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__cell_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__cell_8h.html">hs_cell.h</a> <a href="hs__cell_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__cell_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file containing cell data for the whole HS subsytem. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__circuit_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__circuit_8c.html">hs_circuit.c</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__circuit_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__circuit_8h.html">hs_circuit.h</a> <a href="hs__circuit_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__circuit_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file containing circuit data for the whole HS subsytem. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__circuitmap_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__circuitmap_8c.html">hs_circuitmap.c</a></td></tr>
+<tr class="memdesc:hs__circuitmap_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hidden service circuitmap: A hash table that maps binary tokens to introduction and rendezvous circuits; it's used: (a) by relays acting as intro points and rendezvous points (b) by hidden services to find intro and rend circuits and (c) by HS clients to find rendezvous circuits. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__circuitmap_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__circuitmap_8h.html">hs_circuitmap.h</a> <a href="hs__circuitmap_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__circuitmap_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="hs__circuitmap_8c.html" title="Hidden service circuitmap: A hash table that maps binary tokens to introduction and rendezvous circui...">hs_circuitmap.c</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__client_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__client_8c.html">hs_client.c</a></td></tr>
+<tr class="memdesc:hs__client_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement next generation hidden service client functionality. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__client_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__client_8h.html">hs_client.h</a> <a href="hs__client_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__client_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file containing client data for the HS subsytem. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__common_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__common_8c.html">hs_common.c</a></td></tr>
+<tr class="memdesc:hs__common_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains code shared between different HS protocol version as well as useful data structures and accessors used by other subsystems. The <a class="el" href="rendcommon_8c.html" title="Rendezvous implementation: shared code between introducers, services, clients, and rendezvous points...">rendcommon.c</a> should only contains code relating to the v2 protocol. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__common_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__common_8h.html">hs_common.h</a> <a href="hs__common_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__common_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file containing common data for the whole HS subsytem. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__config_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__config_8c.html">hs_config.c</a></td></tr>
+<tr class="memdesc:hs__config_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement hidden service configuration subsystem. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__config_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__config_8h.html">hs_config.h</a> <a href="hs__config_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__config_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file containing configuration ABI/API for the HS subsytem. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__control_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__control_8c.html">hs_control.c</a></td></tr>
+<tr class="memdesc:hs__control_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains control port event related code. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__control_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__control_8h.html">hs_control.h</a> <a href="hs__control_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__control_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file containing control port event related code. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__descriptor_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__descriptor_8c.html">hs_descriptor.c</a></td></tr>
+<tr class="memdesc:hs__descriptor_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle hidden service descriptor encoding/decoding. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__descriptor_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__descriptor_8h.html">hs_descriptor.h</a> <a href="hs__descriptor_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__descriptor_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="hs__descriptor_8c.html" title="Handle hidden service descriptor encoding/decoding. ">hs_descriptor.c</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__ident_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__ident_8c.html">hs_ident.c</a></td></tr>
+<tr class="memdesc:hs__ident_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains circuit and connection identifier code for the whole HS subsytem. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__ident_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__ident_8h.html">hs_ident.h</a> <a href="hs__ident_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__ident_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file containing circuit and connection identifier data for the whole HS subsytem. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__intropoint_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__intropoint_8c.html">hs_intropoint.c</a></td></tr>
+<tr class="memdesc:hs__intropoint_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement next generation introductions point functionality. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__intropoint_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__intropoint_8h.html">hs_intropoint.h</a> <a href="hs__intropoint_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__intropoint_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="hs__intropoint_8c.html" title="Implement next generation introductions point functionality. ">hs_intropoint.c</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__ntor_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__ntor_8c.html">hs_ntor.c</a></td></tr>
+<tr class="memdesc:hs__ntor_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the ntor variant used in Tor hidden services. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__service_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__service_8c.html">hs_service.c</a></td></tr>
+<tr class="memdesc:hs__service_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement next generation hidden service functionality. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__service_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__service_8h.html">hs_service.h</a> <a href="hs__service_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__service_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file containing service data for the HS subsytem. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__stats_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__stats_8c.html">hs_stats.c</a></td></tr>
+<tr class="memdesc:hs__stats_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps stats about the activity of our onion service(s). <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hs__stats_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hs__stats_8h.html">hs_stats.h</a> <a href="hs__stats_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hs__stats_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="hs__stats_8c.html" title="Keeps stats about the activity of our onion service(s). ">hs_stats.c</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:keypin_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypin_8c.html">keypin.c</a></td></tr>
 <tr class="memdesc:keypin_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions and structures for associating routers' RSA key fingerprints with their ED25519 keys. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,10 +344,10 @@ Files</h2></td></tr>
 <tr class="memdesc:microdesc_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="microdesc_8c.html" title="Implements microdescriptors – an abbreviated description of less-frequently-changing router informat...">microdesc.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:networkstatus_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8c.html">networkstatus.c</a></td></tr>
-<tr class="memdesc:networkstatus_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions and structures for handling network status documents as a client or cache. <br /></td></tr>
+<tr class="memdesc:networkstatus_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions and structures for handling networkstatus documents as a client or as a directory cache. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:networkstatus_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="networkstatus_8h.html">networkstatus.h</a> <a href="networkstatus_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:networkstatus_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="networkstatus_8c.html" title="Functions and structures for handling network status documents as a client or cache. ">networkstatus.c</a>. <br /></td></tr>
+<tr class="memdesc:networkstatus_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="networkstatus_8c.html" title="Functions and structures for handling networkstatus documents as a client or as a directory cache...">networkstatus.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:nodelist_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nodelist_8c.html">nodelist.c</a></td></tr>
 <tr class="memdesc:nodelist_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structures and functions for tracking what we know about the routers on the Tor network, and correlating information from networkstatus, routerinfo, and microdescs. <br /></td></tr>
@@ -308,6 +384,12 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:or_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="or_8h.html">or.h</a> <a href="or_8h_source.html">[code]</a></td></tr>
 <tr class="memdesc:or_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Master header file for Tor-specific functionality. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parsecommon_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parsecommon_8c.html">parsecommon.c</a></td></tr>
+<tr class="memdesc:parsecommon_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common code to parse and validate various type of descriptors. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parsecommon_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parsecommon_8h.html">parsecommon.h</a> <a href="parsecommon_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:parsecommon_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="parsecommon_8c.html" title="Common code to parse and validate various type of descriptors. ">parsecommon.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:periodic_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="periodic_8c.html">periodic.c</a></td></tr>
 <tr class="memdesc:periodic_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic backend for handling periodic events. <br /></td></tr>
@@ -385,7 +467,7 @@ Files</h2></td></tr>
 <tr class="memdesc:router_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des...">router.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:routerkeys_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerkeys_8c.html">routerkeys.c</a></td></tr>
-<tr class="memdesc:routerkeys_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions and structures to handle generating and maintaining the set of keypairs necessary to be an OR. (Some of the code in <a class="el" href="router_8c.html" title="Miscellaneous relay functionality, including RSA key maintenance, generating and uploading server des...">router.c</a> belongs here.) <br /></td></tr>
+<tr class="memdesc:routerkeys_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions and structures to handle generating and maintaining the set of keypairs necessary to be an OR. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:routerlist_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="routerlist_8c.html">routerlist.c</a></td></tr>
 <tr class="memdesc:routerlist_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code to maintain and access the global list of routerinfos for known servers. <br /></td></tr>
@@ -403,22 +485,27 @@ Files</h2></td></tr>
 <tr class="memdesc:routerset_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions and structures to handle set-type selection of routers by name, ID, address, etc. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:scheduler_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8c.html">scheduler.c</a></td></tr>
-<tr class="memdesc:scheduler_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relay scheduling system. <br /></td></tr>
+<tr class="memdesc:scheduler_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel scheduling system: decides which channels should send and receive when. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:scheduler_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scheduler_8h.html">scheduler.h</a> <a href="scheduler_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:scheduler_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="scheduler_8c.html" title="Relay scheduling system. ">scheduler.c</a>. <br /></td></tr>
+<tr class="memdesc:scheduler_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for scheduler*.c. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:shared__random_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shared__random_8c.html">shared_random.c</a></td></tr>
-<tr class="memdesc:shared__random_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions and data structure needed to accomplish the shared random protocol as defined in proposal #250. <br /></td></tr>
+<tr class="memitem:shared__random__client_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shared__random__client_8c.html">shared_random_client.c</a></td></tr>
+<tr class="memdesc:shared__random__client_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This file contains functions that are from the shared random subsystem but used by many part of tor. The full feature is built as part of the dirauth module. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:shared__random__state_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shared__random__state_8c.html">shared_random_state.c</a></td></tr>
-<tr class="memdesc:shared__random__state_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions and data structures for the state of the random protocol as defined in proposal #250. <br /></td></tr>
+<tr class="memitem:shared__random__client_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shared__random__client_8h.html">shared_random_client.h</a> <a href="shared__random__client_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:shared__random__client_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="shared__random__client_8c.html" title="This file contains functions that are from the shared random subsystem but used by many part of tor...">shared_random_client.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:statefile_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="statefile_8c.html">statefile.c</a></td></tr>
 <tr class="memdesc:statefile_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles parsing and encoding the persistent 'state' file that carries miscellaneous persistent state between Tor invocations. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:status_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="status_8c.html">status.c</a></td></tr>
 <tr class="memdesc:status_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collect status information and log heartbeat messages. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:tor__api_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tor__api_8c.html">tor_api.c</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:tor__api_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tor__api_8h.html">tor_api.h</a> <a href="tor__api_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:tor__api_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public C API for the Tor network service. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:tor__main_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tor__main_8c.html">tor_main.c</a></td></tr>
 <tr class="memdesc:tor__main_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub module containing a <a class="el" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a> function. <br /></td></tr>
@@ -431,6 +518,12 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:transports_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transports_8h.html">transports.h</a> <a href="transports_8h_source.html">[code]</a></td></tr>
 <tr class="memdesc:transports_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Headers for <a class="el" href="transports_8c.html" title="Pluggable Transports related code. ">transports.c</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:voting__schedule_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="voting__schedule_8c.html">voting_schedule.c</a></td></tr>
+<tr class="memdesc:voting__schedule_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This file contains functions that are from the directory authority subsystem related to voting specifically but used by many part of tor. The full feature is built as part of the dirauth module. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:voting__schedule_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="voting__schedule_8h.html">voting_schedule.h</a> <a href="voting__schedule_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:voting__schedule_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for <a class="el" href="voting__schedule_8c.html" title="This file contains functions that are from the directory authority subsystem related to voting specif...">voting_schedule.c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

@@ -1,5 +1,9 @@
 <map id="directory_get_from_all_authorities" name="directory_get_from_all_authorities">
-<area shape="rect" id="node2" href="$routerlist_8c.html#aa9b36f7b87463dc114065ea058660ac4" title="router_get_trusted\l_dir_servers" alt="" coords="190,5,317,47"/>
-<area shape="rect" id="node3" href="$router_8c.html#abeb0f38915a46f77352900604075d82f" title="router_digest_is_me" alt="" coords="184,71,323,98"/>
-<area shape="rect" id="node4" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="371,71,457,98"/>
+<area shape="rect" id="node2" href="$routerlist_8c.html#aa9b36f7b87463dc114065ea058660ac4" title="router_get_trusted\l_dir_servers" alt="" coords="197,5,324,47"/>
+<area shape="rect" id="node3" href="$router_8c.html#abeb0f38915a46f77352900604075d82f" title="router_digest_is_me" alt="" coords="191,71,330,98"/>
+<area shape="rect" id="node5" href="$directory_8c.html#a85c888ac5ae7e9877281b1c87483cee1" title="directory_request_new" alt="" coords="184,122,337,149"/>
+<area shape="rect" id="node6" href="$directory_8c.html#a80d02180af0001ba29cdb088eeab3fba" title="directory_request_set\l_routerstatus" alt="" coords="187,173,334,215"/>
+<area shape="rect" id="node7" href="$directory_8c.html#a9573f64df7aa31baf290b23ca8dbcee2" title="directory_request_set\l_router_purpose" alt="" coords="187,239,334,280"/>
+<area shape="rect" id="node8" href="$directory_8c.html#a0f8877f88add95ceea302a569a095569" title="directory_request_set\l_resource" alt="" coords="187,304,334,345"/>
+<area shape="rect" id="node4" href="$di__ops_8c.html#a473334ee93cca0aea10523321a444ea3" title="tor_memeq" alt="" coords="385,71,472,98"/>
 </map>

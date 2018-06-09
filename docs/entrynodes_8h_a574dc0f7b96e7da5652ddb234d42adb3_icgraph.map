@@ -1,4 +1,3 @@
 <map id="entry_list_is_constrained" name="entry_list_is_constrained">
-<area shape="rect" id="node2" href="$entrynodes_8h.html#a03f0faa21923511f6aa0338190066252" title="entries_known_but_down" alt="" coords="220,5,389,32"/>
-<area shape="rect" id="node3" href="$entrynodes_8h.html#a3e6fe3993d40ab3adcf1e9a8e0bc9374" title="entries_retry_all" alt="" coords="247,56,362,83"/>
+<area shape="rect" id="node2" href="$entrynodes_8h.html#aa9eddf77d45dab94c87c4ae9e9a659fb" title="guards_retry_optimistic" alt="" coords="220,5,377,32"/>
 </map>

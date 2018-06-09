@@ -1,0 +1,13 @@
+<map id="get_n_primary_guards" name="get_n_primary_guards">
+<area shape="rect" id="node2" href="$entrynodes_8c.html#a0715381bede98a7d8f4da7f73d062801" title="entry_guards_update\l_primary" alt="" coords="204,136,347,177"/>
+<area shape="rect" id="node3" href="$entrynodes_8c.html#a30a477e0e6936f2e44747be238f30dd7" title="mark_primary_guards\l_maybe_reachable" alt="" coords="405,5,552,47"/>
+<area shape="rect" id="node5" href="$entrynodes_8c.html#aa020db50cb3f41bd32d264228a2bc249" title="entry_guards_note_guard\l_success" alt="" coords="395,71,563,112"/>
+<area shape="rect" id="node6" href="$entrynodes_8c.html#acad8e7ba6123e0a214361a425f711c05" title="entry_guards_all_primary\l_guards_are_down" alt="" coords="395,136,562,177"/>
+<area shape="rect" id="node10" href="$entrynodes_8h.html#a4360ef3264ab398b48b851e0d2d675b5" title="entry_guards_update_all" alt="" coords="397,202,560,229"/>
+<area shape="rect" id="node11" href="$entrynodes_8h.html#a0e9ad8a9d2d435a30b8ece9e786533bf" title="guard_selection_get\l_err_str_if_dir_info\l_missing" alt="" coords="409,253,548,309"/>
+<area shape="rect" id="node4" href="$entrynodes_8h.html#aa9eddf77d45dab94c87c4ae9e9a659fb" title="guards_retry_optimistic" alt="" coords="611,13,769,39"/>
+<area shape="rect" id="node7" href="$entrynodes_8h.html#af943c868320a66ee2dca652ad0555a32" title="entry_guards_upgrade\l_waiting_circuits" alt="" coords="615,136,765,177"/>
+<area shape="rect" id="node8" href="$circuitlist_8h.html#a8d569b96b07da7c91549695cc1ce8ccf" title="circuit_find_circuits\l_to_upgrade_from_guard_wait" alt="" coords="817,136,1013,177"/>
+<area shape="rect" id="node9" href="$circuitbuild_8h.html#afbeee8004f6e86e019ed4c4a9556d7de" title="circuit_upgrade_circuits\l_from_guard_wait" alt="" coords="1061,136,1220,177"/>
+<area shape="rect" id="node12" href="$entrynodes_8h.html#a1f69ddf668f984f783eb7cfcb358185e" title="entry_guards_get_err\l_str_if_dir_info_missing" alt="" coords="611,260,769,301"/>
+</map>

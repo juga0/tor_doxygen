@@ -65,6 +65,28 @@ $(function() {
 <li>main()
 : <a class="el" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">tor_main.c</a>
 </li>
+<li>mainloop_event_activate()
+: <a class="el" href="compat__libevent_8c.html#af815b0dd39abfb6b6ddbf5266175b479">compat_libevent.c</a>
+</li>
+<li>mainloop_event_cancel()
+: <a class="el" href="compat__libevent_8c.html#a67d260fbd85e064d42e3b7c14942ee73">compat_libevent.c</a>
+</li>
+<li>mainloop_event_free_()
+: <a class="el" href="compat__libevent_8c.html#a83755967b1a8e5b82282c5a9c1703e4c">compat_libevent.c</a>
+</li>
+<li>mainloop_event_new()
+: <a class="el" href="compat__libevent_8c.html#a7900ec8114afee85be2cc2b20d3abb79">compat_libevent.c</a>
+</li>
+<li>mainloop_event_postloop_new()
+: <a class="el" href="compat__libevent_8c.html#a5cd5019864755687d5e6c473f7483366">compat_libevent.c</a>
+</li>
+<li>mainloop_event_schedule()
+: <a class="el" href="compat__libevent_8c.html#ab8c2d032ec9ba12a786f6d7d09221a9e">compat_libevent.c</a>
+</li>
+<li>mainloop_schedule_postloop_cleanup()
+: <a class="el" href="main_8c.html#ae90f277f5b30758b5ec08c7334a3d41a">main.c</a>
+, <a class="el" href="main_8h.html#ae90f277f5b30758b5ec08c7334a3d41a">main.h</a>
+</li>
 <li>make_consensus_method_list()
 : <a class="el" href="dirvote_8c.html#a170431e56608ff40b06dd265519102a7">dirvote.c</a>
 </li>
@@ -73,6 +95,9 @@ $(function() {
 </li>
 <li>make_fake_var_cell()
 : <a class="el" href="fakechans_8h.html#a47aef426eafc7e60f67e725229850fd7">fakechans.h</a>
+</li>
+<li>make_guard_confirmed()
+: <a class="el" href="entrynodes_8c.html#ae0098c969567b69eb585160f12700b06">entrynodes.c</a>
 </li>
 <li>make_ntor_onion_key_crosscert()
 : <a class="el" href="routerkeys_8c.html#ac1142499a3f0ac31e764484c1c6bd6c6">routerkeys.c</a>
@@ -90,8 +115,8 @@ $(function() {
 : <a class="el" href="transports_8c.html#a437490d8399f97fdfad6573249e6992b">transports.c</a>
 </li>
 <li>mark_bridge_list()
-: <a class="el" href="entrynodes_8c.html#a1237fc3844be7dd672552a99ba137a88">entrynodes.c</a>
-, <a class="el" href="entrynodes_8h.html#a1237fc3844be7dd672552a99ba137a88">entrynodes.h</a>
+: <a class="el" href="bridges_8c.html#a1237fc3844be7dd672552a99ba137a88">bridges.c</a>
+, <a class="el" href="bridges_8h.html#a1237fc3844be7dd672552a99ba137a88">bridges.h</a>
 </li>
 <li>mark_circuit_unusable_for_new_conns()
 : <a class="el" href="circuituse_8c.html#adf36645f7a473ad622918668f2f5ba33">circuituse.c</a>
@@ -108,6 +133,9 @@ $(function() {
 <li>mark_my_descriptor_dirty_if_too_old()
 : <a class="el" href="router_8c.html#ad20dfba342b27eb97810f9141d5c14a1">router.c</a>
 , <a class="el" href="router_8h.html#ad20dfba342b27eb97810f9141d5c14a1">router.h</a>
+</li>
+<li>mark_primary_guards_maybe_reachable()
+: <a class="el" href="entrynodes_8c.html#a30a477e0e6936f2e44747be238f30dd7">entrynodes.c</a>
 </li>
 <li>mark_transport_list()
 : <a class="el" href="transports_8c.html#a5b508dedcb09eac5579a85d83afec819">transports.c</a>
@@ -131,8 +159,8 @@ $(function() {
 <li>memarea_clear()
 : <a class="el" href="memarea_8c.html#a98079351167b7e4a7e189045d8534dc8">memarea.c</a>
 </li>
-<li>memarea_drop_all()
-: <a class="el" href="memarea_8c.html#afaa462dd0af2198fd6fa88370ef5e5d6">memarea.c</a>
+<li>memarea_drop_all_()
+: <a class="el" href="memarea_8c.html#ad1ecd7bf9e8c5a2f0886c6b0d5337777">memarea.c</a>
 </li>
 <li>memarea_get_stats()
 : <a class="el" href="memarea_8c.html#aa491f6c85e95c3ffe3d566adf2ca5c06">memarea.c</a>
@@ -153,12 +181,8 @@ $(function() {
 : <a class="el" href="memarea_8c.html#ae2324c51c63afbce99ef1e56ee0bff87">memarea.c</a>
 </li>
 <li>memwipe()
-: <a class="el" href="crypto_8c.html#a955f8d276e5213dd68600bf6dee0b9ae">crypto.c</a>
-, <a class="el" href="crypto_8h.html#a955f8d276e5213dd68600bf6dee0b9ae">crypto.h</a>
-</li>
-<li>microdesc_average_size()
-: <a class="el" href="microdesc_8c.html#a9ed7132c4abf5af5ba74ec1cd090878d">microdesc.c</a>
-, <a class="el" href="microdesc_8h.html#a9ed7132c4abf5af5ba74ec1cd090878d">microdesc.h</a>
+: <a class="el" href="crypto__util_8c.html#a955f8d276e5213dd68600bf6dee0b9ae">crypto_util.c</a>
+, <a class="el" href="crypto__util_8h.html#a955f8d276e5213dd68600bf6dee0b9ae">crypto_util.h</a>
 </li>
 <li>microdesc_cache_clean()
 : <a class="el" href="microdesc_8c.html#af6dd60dcd4d473a6b0c9fce9f0f3c1c3">microdesc.c</a>
@@ -193,8 +217,16 @@ $(function() {
 , <a class="el" href="microdesc_8h.html#a1c23e8a71ff24b72d4dcfbda3ae39688">microdesc.h</a>
 </li>
 <li>microdesc_list_missing_digest256()
-: <a class="el" href="microdesc_8c.html#a73c847c43e1a2bfd711718dd113261e5">microdesc.c</a>
-, <a class="el" href="microdesc_8h.html#a73c847c43e1a2bfd711718dd113261e5">microdesc.h</a>
+: <a class="el" href="microdesc_8h.html#a73c847c43e1a2bfd711718dd113261e5">microdesc.h</a>
+, <a class="el" href="microdesc_8c.html#a73c847c43e1a2bfd711718dd113261e5">microdesc.c</a>
+</li>
+<li>microdesc_relay_is_outdated_dirserver()
+: <a class="el" href="microdesc_8c.html#ac28fa27031ff8523018050beeb20d220">microdesc.c</a>
+, <a class="el" href="microdesc_8h.html#ac28fa27031ff8523018050beeb20d220">microdesc.h</a>
+</li>
+<li>microdesc_reset_outdated_dirservers_list()
+: <a class="el" href="microdesc_8c.html#a125edbb9e5b5b99f75e9a18de5d0e477">microdesc.c</a>
+, <a class="el" href="microdesc_8h.html#a125edbb9e5b5b99f75e9a18de5d0e477">microdesc.h</a>
 </li>
 <li>microdescs_add_list_to_cache()
 : <a class="el" href="microdesc_8c.html#a4492613165472890582c336f6e9e0c65">microdesc.c</a>
@@ -211,120 +243,155 @@ $(function() {
 <li>mock_clean_saved_logs()
 : <a class="el" href="log__test__helpers_8c.html#ae23601e307c675b98084b290f3e204bf">log_test_helpers.c</a>
 </li>
+<li>MOCK_DECL()
+: <a class="el" href="nodelist_8h.html#a7fabb0b48eabaea0862d219c915ef509">nodelist.h</a>
+</li>
 <li>MOCK_IMPL()
-: <a class="el" href="networkstatus_8c.html#a4c7d1590a3a3c123a5c995a93826719e">networkstatus.c</a>
-, <a class="el" href="router_8c.html#ad474de0d17eaff8d2d6ac9f83621d4fc">router.c</a>
-, <a class="el" href="main_8c.html#aac40d21ca9eac4c5a73971a55e72f201">main.c</a>
-, <a class="el" href="routerlist_8c.html#a264fc4b4441c88e689a8428be321d318">routerlist.c</a>
-, <a class="el" href="main_8c.html#af812166e44b26c20f8a67b9f7514dcdd">main.c</a>
-, <a class="el" href="scheduler_8c.html#a8bb1452b1a1592f7e4b14302ef433f34">scheduler.c</a>
-, <a class="el" href="address_8c.html#a93e538a7e5e95c4a4b9f3a087640453b">address.c</a>
-, <a class="el" href="keypin_8c.html#a9107698e2a8ea640fbe546c3d5047901">keypin.c</a>
-, <a class="el" href="hibernate_8c.html#a5c3b7417bfc5b8ec013bbabc07f7d05d">hibernate.c</a>
-, <a class="el" href="geoip_8c.html#a0f041613ef5d8f5a6eed566c548d5c83">geoip.c</a>
-, <a class="el" href="connection__or_8c.html#a91065ac60ede0c2ccdaf7d2ff4892d5d">connection_or.c</a>
-, <a class="el" href="entrynodes_8c.html#abaa8689579086cf0a64cba893541bf3e">entrynodes.c</a>
-, <a class="el" href="connection__or_8c.html#a28eb841c609f9ecebcf27d0c31f4a6b8">connection_or.c</a>
-, <a class="el" href="dns_8c.html#a4bf01fdba32884382bcc62177cafaae6">dns.c</a>
-, <a class="el" href="address_8c.html#af2b3d99f38741ff959e402198f02f963">address.c</a>
-, <a class="el" href="connection__or_8c.html#a7cffbd09fb670b958a09e5d65982d560">connection_or.c</a>
-, <a class="el" href="dns_8c.html#a2616ee15d1faf206a7bd39a7a4c81e2c">dns.c</a>
-, <a class="el" href="dirvote_8c.html#a6e6f2ecd6383f9ed442ec8e827ce666e">dirvote.c</a>
-, <a class="el" href="connection__or_8c.html#a4b039b5bbe0c7cd361769189ce4d2238">connection_or.c</a>
-, <a class="el" href="directory_8c.html#a2dcb34e25124200a8694ef07275a50b2">directory.c</a>
-, <a class="el" href="control_8c.html#a000c7faf94744c2b3a6f1753b513e5ae">control.c</a>
-, <a class="el" href="address_8c.html#a90b8d0dbec2577ef6958d9c43481cce7">address.c</a>
-, <a class="el" href="connection__or_8c.html#aaf43644cf527a6655657b8f4aa1d1e1e">connection_or.c</a>
-, <a class="el" href="address_8c.html#a4b080b2d222d8c634b982d358a96991d">address.c</a>
-, <a class="el" href="connection__or_8c.html#a0e89fff0e71d905b83cae2583a7bc49f">connection_or.c</a>
-, <a class="el" href="control_8c.html#afbfd2697ea512e2df42fc31c8e1d208a">control.c</a>
-, <a class="el" href="scheduler_8c.html#abcca7b0d99922c9b96d474dda7b95f98">scheduler.c</a>
-, <a class="el" href="address_8c.html#ac0bf59ab2253281f4d41619214c140bf">address.c</a>
-, <a class="el" href="control_8c.html#a8920daea607720e420120036eafa61f8">control.c</a>
-, <a class="el" href="connection__edge_8c.html#a79f065a4c221152890ce1ac2c838e0e8">connection_edge.c</a>
-, <a class="el" href="connection_8c.html#a7559009dae296c8d0cce9be7f3203660">connection.c</a>
-, <a class="el" href="compat_8c.html#a51ff5f4217ec63674eb98bcdc73eaee3">compat.c</a>
-, <a class="el" href="connection_8c.html#a68efdfdae46e70fa479296ee69358e61">connection.c</a>
-, <a class="el" href="compat_8c.html#a71e7546ce02736a0fa65c93d17027744">compat.c</a>
-, <a class="el" href="directory_8c.html#a73ef1e03e77e562991ea7237f61f7c36">directory.c</a>
-, <a class="el" href="compat_8c.html#a951f6283e2fb466ea748d192d1e153a9">compat.c</a>
-, <a class="el" href="connection_8c.html#a1d5a8a5c4222d5e678e98af904285d90">connection.c</a>
-, <a class="el" href="config_8c.html#a73574d97d5ba0ecbd5533a231c402e67">config.c</a>
-, <a class="el" href="scheduler_8c.html#a2bd25d8c2b1d59ee60946a8b91f86811">scheduler.c</a>
-, <a class="el" href="config_8c.html#ada6cefd4da1cfdc3d1588721bafc0a3f">config.c</a>
-, <a class="el" href="compat_8c.html#a19d67cdf3f4e2ee613ad1f9a3e9aee8f">compat.c</a>
-, <a class="el" href="dns_8c.html#ab0ebff7a0b3f4a11fe87b9e70afae499">dns.c</a>
-, <a class="el" href="circuitmux_8c.html#a0c87286ff8ba4096b3eb06b81db2b82e">circuitmux.c</a>
-, <a class="el" href="dns_8c.html#a224ce234dfdd68cbfe885138b40e1dfd">dns.c</a>
-, <a class="el" href="compat_8c.html#a8456c3775a6b9d39123b713c4900f3b9">compat.c</a>
-, <a class="el" href="circuitmux_8c.html#aab9610febf14096b969cf6556ecb3a41">circuitmux.c</a>
-, <a class="el" href="compat_8c.html#a7d9e9afc4056db605fbadbdafea7772e">compat.c</a>
-, <a class="el" href="circuitlist_8c.html#a6fad396f3e0850a9330c2d7c7aa43c67">circuitlist.c</a>
-, <a class="el" href="dns_8c.html#a54580f3c6a1aa8cb61ba34ea2d4086b2">dns.c</a>
-, <a class="el" href="channel_8c.html#ae9d6f1fad148b483bdb8d2443dab0718">channel.c</a>
-, <a class="el" href="routerlist_8c.html#a5e148d5a858adaad0b50f4c869aba05a">routerlist.c</a>
-, <a class="el" href="util_8c.html#a5ae33bb00cf9d8dab5ae1bd9e1809f8e">util.c</a>
-, <a class="el" href="routerlist_8c.html#a32d42576fb24610f05517f0e92fca275">routerlist.c</a>
-, <a class="el" href="util_8c.html#a7df82707fff59896c355f363b21c53cd">util.c</a>
-, <a class="el" href="routerlist_8c.html#a9086bb58ff626a397ab9e9f2f44d524d">routerlist.c</a>
-, <a class="el" href="util_8c.html#acb8751c9768c71bd548ce847b9f1d2d8">util.c</a>
-, <a class="el" href="router_8c.html#a6b3989f239a7c716e23e397c2dbecb4b">router.c</a>
-, <a class="el" href="tortls_8c.html#a0cdc403d61257cf30593a0084910587d">tortls.c</a>
-, <a class="el" href="nodelist_8c.html#a5c8dce344734590ce49774d7e9ddee91">nodelist.c</a>
-, <a class="el" href="tortls_8c.html#afa6f172724874c8eadf30664594c48a1">tortls.c</a>
-, <a class="el" href="networkstatus_8c.html#ad87fadf53d87fbd3d0cdcc7e2cccaf6f">networkstatus.c</a>
-, <a class="el" href="tortls_8c.html#a631d2a19bd52d1de8194b24da85c3317">tortls.c</a>
-, <a class="el" href="microdesc_8c.html#a01ac96e92e27b924141e47289fc633b2">microdesc.c</a>
-, <a class="el" href="tortls_8c.html#ac50648346a7461e7e16cfcb3d0998a64">tortls.c</a>
-, <a class="el" href="main_8c.html#a64e85cfa1139d62b816528f81e04959b">main.c</a>
-, <a class="el" href="crypto_8c.html#ac0f5df276ce5690918d5334584091753">crypto.c</a>
-, <a class="el" href="compat__libevent_8c.html#afb2a232f2ecba8e301650074f525b250">compat_libevent.c</a>
-, <a class="el" href="crypto_8c.html#a33f0e86e68c0967accd3b76f1afa934d">crypto.c</a>
-, <a class="el" href="routerparse_8c.html#a2a8bb1810ff691f0bf5f99301b975242">routerparse.c</a>
-, <a class="el" href="container_8c.html#ab55b50929cb7968dc821a9264c3378c7">container.c</a>
-, <a class="el" href="geoip_8c.html#a46be57db01b2507fb5efb601c903374f">geoip.c</a>
-, <a class="el" href="container_8c.html#ad25b79aa7386f6abba865da13e3e1238">container.c</a>
-, <a class="el" href="routerparse_8c.html#a65294e0f578a21d0e10431bf4ef1d038">routerparse.c</a>
-, <a class="el" href="router_8c.html#a2732ff3306e95d3579956be55f9cdc6d">router.c</a>
-, <a class="el" href="crypto_8c.html#a337acf6028e1546e9da1fae3d86aafe7">crypto.c</a>
-, <a class="el" href="main_8c.html#a5be08a2aab34d457e06e2a7b274e60a5">main.c</a>
-, <a class="el" href="log_8c.html#a3d00baf128ff864946f0d6cb0170ecbf">log.c</a>
-, <a class="el" href="routerlist_8c.html#a2a332003a83b251551e2b084e7f1672d">routerlist.c</a>
-, <a class="el" href="tortls_8c.html#aafa992ad5321d733430656f683c23387">tortls.c</a>
-, <a class="el" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320">routerlist.c</a>
-, <a class="el" href="networkstatus_8c.html#a5d89145cb4ce8b8ccd79da09bfc3ce8c">networkstatus.c</a>
-, <a class="el" href="connection_8c.html#ac609b4da1d53630fa78d115ce15f3ef1">connection.c</a>
-, <a class="el" href="nodelist_8c.html#a331f404eaf4e481d2826de3ae45bcaff">nodelist.c</a>
-, <a class="el" href="config_8c.html#a554976e1f09fd6fa9120cac0067fb07b">config.c</a>
-, <a class="el" href="transports_8c.html#a702d72b99869b213609880ebd3bf9536">transports.c</a>
-, <a class="el" href="config_8c.html#ac613062499456ecc25011b1f5c2f8e3b">config.c</a>
-, <a class="el" href="router_8c.html#aa04d0b378d4bf9995ebbdc2c84d03561">router.c</a>
-, <a class="el" href="circuitmux_8c.html#a0f2fe016a8a3a8f34ea3fec1424feff5">circuitmux.c</a>
-, <a class="el" href="circuitlist_8c.html#af5c002c85c1165ee85550bffe9f80f4b">circuitlist.c</a>
-, <a class="el" href="statefile_8c.html#a5733ba0bd7d265317d75d4029929c4e7">statefile.c</a>
-, <a class="el" href="scheduler_8c.html#a3becabb4fa3bd27ed097923ea41690bd">scheduler.c</a>
-, <a class="el" href="buffers_8c.html#adc8710226d94e267688f808ec764725d">buffers.c</a>
-, <a class="el" href="util_8c.html#a812faddc218480a687a37305f1ae17cf">util.c</a>
-, <a class="el" href="routerlist_8c.html#abc402873af8a53772da45a4031b570b4">routerlist.c</a>
-, <a class="el" href="relay_8c.html#a320518e56ceca1c4615302fef3810562">relay.c</a>
-, <a class="el" href="tortls_8c.html#a97b1047e5a7253e677fb549a9d2910c3">tortls.c</a>
-, <a class="el" href="networkstatus_8c.html#abec01308d58e1b89c0ed66849967dd7f">networkstatus.c</a>
-, <a class="el" href="tortls_8c.html#a0a4312bcca2c2fa92120225aa44b32e0">tortls.c</a>
-, <a class="el" href="util_8c.html#a2d60b02b2bdb25bbf582496a1e16072c">util.c</a>
-, <a class="el" href="networkstatus_8c.html#a04f8418c065c1a7d5bc097575ed0c586">networkstatus.c</a>
-, <a class="el" href="policies_8c.html#ae485257c347d894035ff222b2eff6064">policies.c</a>
-, <a class="el" href="router_8c.html#a724ccb2800a474e36ae4a808944446e8">router.c</a>
-, <a class="el" href="util_8c.html#a18a8335da29f8a902b5d2d3b9ef68f19">util.c</a>
-, <a class="el" href="router_8c.html#ad510701c8387a948e0694f40d866b2d4">router.c</a>
-, <a class="el" href="circuitlist_8c.html#acfc4347c59e1edf62f58a0cfa72080ab">circuitlist.c</a>
-, <a class="el" href="circuitmux_8c.html#a5bf64bcab229888dcddee66210af3078">circuitmux.c</a>
-, <a class="el" href="networkstatus_8c.html#ae75042c47433be1984f6711eae8ee0f8">networkstatus.c</a>
-, <a class="el" href="scheduler_8c.html#aea2f114479bfb745da44918cb2f62aaf">scheduler.c</a>
-, <a class="el" href="transports_8c.html#acbb81e6a120893763cf5675980cb8970">transports.c</a>
-, <a class="el" href="connection_8c.html#a6e0262219d1afbc700eacae441599fb4">connection.c</a>
-, <a class="el" href="config_8c.html#a32fb164ebdcdc5d97d4b9638a7f10c11">config.c</a>
-, <a class="el" href="nodelist_8c.html#a6630ce221ef3a0771013ec400a873c55">nodelist.c</a>
+: <a class="el" href="nodelist_8c.html#a83914dc16ada99266d18e1ba1d90d18c">nodelist.c</a>
 , <a class="el" href="networkstatus_8c.html#a64da0d8c6b964ff29de2d72f084e94a4">networkstatus.c</a>
+, <a class="el" href="router_8c.html#a2732ff3306e95d3579956be55f9cdc6d">router.c</a>
+, <a class="el" href="bridges_8c.html#abaa8689579086cf0a64cba893541bf3e">bridges.c</a>
+, <a class="el" href="networkstatus_8c.html#ae75042c47433be1984f6711eae8ee0f8">networkstatus.c</a>
+, <a class="el" href="routerlist_8c.html#a264fc4b4441c88e689a8428be321d318">routerlist.c</a>
+, <a class="el" href="main_8c.html#a591179378a3ba03b646bf73a40318509">main.c</a>
+, <a class="el" href="channel_8c.html#ae9de3211fa3b2007ca0f42e9022dc800">channel.c</a>
+, <a class="el" href="main_8c.html#a64e85cfa1139d62b816528f81e04959b">main.c</a>
+, <a class="el" href="channel_8c.html#a4c8cfb44344a590f1ac113dfd415b02f">channel.c</a>
+, <a class="el" href="routerparse_8c.html#a65294e0f578a21d0e10431bf4ef1d038">routerparse.c</a>
+, <a class="el" href="main_8c.html#abf49e099932e5d6d47c98bb73886de79">main.c</a>
+, <a class="el" href="keypin_8c.html#a9107698e2a8ea640fbe546c3d5047901">keypin.c</a>
+, <a class="el" href="channel_8c.html#ab56dc7ecc8a31e8bfa4dc5281b72c21e">channel.c</a>
+, <a class="el" href="hs__client_8c.html#a98b90911c4b037c438096a41ac80a27d">hs_client.c</a>
+, <a class="el" href="hibernate_8c.html#a5a31c4d2ddbfc644422cb72650359594">hibernate.c</a>
+, <a class="el" href="scheduler_8c.html#a51a6244333576b78274e7af15fbaecdd">scheduler.c</a>
+, <a class="el" href="hibernate_8c.html#a2e14cf3ec112f9230ccf2bdf844bba8d">hibernate.c</a>
+, <a class="el" href="geoip_8c.html#a0f041613ef5d8f5a6eed566c548d5c83">geoip.c</a>
+, <a class="el" href="channel_8c.html#a026e3719d86173650d21c6f28124514e">channel.c</a>
+, <a class="el" href="geoip_8c.html#a46be57db01b2507fb5efb601c903374f">geoip.c</a>
+, <a class="el" href="entrynodes_8c.html#a6ec40670f6c775c40033252d64dfdf53">entrynodes.c</a>
+, <a class="el" href="scheduler_8c.html#abcca7b0d99922c9b96d474dda7b95f98">scheduler.c</a>
+, <a class="el" href="channel_8c.html#ae9d6f1fad148b483bdb8d2443dab0718">channel.c</a>
+, <a class="el" href="entrynodes_8c.html#a8365c0314d4e3396d3058e50aff13535">entrynodes.c</a>
+, <a class="el" href="dns_8c.html#a54580f3c6a1aa8cb61ba34ea2d4086b2">dns.c</a>
+, <a class="el" href="circuitbuild_8c.html#ac7f34c7f4ab9540a92ca329693e44b03">circuitbuild.c</a>
+, <a class="el" href="directory_8c.html#a2bceea525c4f52a46d5c7caeeb68a474">directory.c</a>
+, <a class="el" href="transports_8c.html#acbb81e6a120893763cf5675980cb8970">transports.c</a>
+, <a class="el" href="dirvote_8c.html#a6c6d21276cc8671a821bc012da3b1661">dirvote.c</a>
+, <a class="el" href="cpuworker_8c.html#ab49e479132ab946189140169fd9ab789">cpuworker.c</a>
+, <a class="el" href="circuitbuild_8c.html#a7c877693992f1e20da29c69be890c6f2">circuitbuild.c</a>
+, <a class="el" href="circuitlist_8c.html#acfc4347c59e1edf62f58a0cfa72080ab">circuitlist.c</a>
+, <a class="el" href="control_8c.html#a8920daea607720e420120036eafa61f8">control.c</a>
+, <a class="el" href="consdiff_8c.html#a39f06324bb1e886838ffb6995295cda0">consdiff.c</a>
+, <a class="el" href="circuitlist_8c.html#a6fad396f3e0850a9330c2d7c7aa43c67">circuitlist.c</a>
+, <a class="el" href="consdiff_8c.html#acad1bd2854dbda99120910f106726c07">consdiff.c</a>
+, <a class="el" href="connection__or_8c.html#a0e89fff0e71d905b83cae2583a7bc49f">connection_or.c</a>
+, <a class="el" href="circuitlist_8c.html#af5c002c85c1165ee85550bffe9f80f4b">circuitlist.c</a>
+, <a class="el" href="connection__or_8c.html#a4b039b5bbe0c7cd361769189ce4d2238">connection_or.c</a>
+, <a class="el" href="circuitlist_8c.html#a8bd7c61397e708cf05c1c06d3188ab30">circuitlist.c</a>
+, <a class="el" href="connection__edge_8c.html#a79f065a4c221152890ce1ac2c838e0e8">connection_edge.c</a>
+, <a class="el" href="router_8c.html#a724ccb2800a474e36ae4a808944446e8">router.c</a>
+, <a class="el" href="circuitmux_8c.html#aab9610febf14096b969cf6556ecb3a41">circuitmux.c</a>
+, <a class="el" href="connection_8c.html#ab88cfc0f345a7adb709c58312e6ae462">connection.c</a>
+, <a class="el" href="circuitmux_8c.html#a5bf64bcab229888dcddee66210af3078">circuitmux.c</a>
+, <a class="el" href="connection_8c.html#aacd5b15598f9b3f9aa4e2695f38cd1f9">connection.c</a>
+, <a class="el" href="router_8c.html#ad510701c8387a948e0694f40d866b2d4">router.c</a>
+, <a class="el" href="circuitmux_8c.html#a0f2fe016a8a3a8f34ea3fec1424feff5">circuitmux.c</a>
+, <a class="el" href="config_8c.html#a69964d27ff1266254c6d3f032d1fc5ec">config.c</a>
+, <a class="el" href="circuitmux_8c.html#a468aee515ed0a434bd5cb9b1aaafae86">circuitmux.c</a>
+, <a class="el" href="nodelist_8c.html#a40976ed0443d536fc424b6b46e3aa1c2">nodelist.c</a>
+, <a class="el" href="relay_8c.html#af2e34c3755e184e2c1d18f865acc2d69">relay.c</a>
+, <a class="el" href="circuitmux_8c.html#a0c87286ff8ba4096b3eb06b81db2b82e">circuitmux.c</a>
+, <a class="el" href="config_8c.html#a32fb164ebdcdc5d97d4b9638a7f10c11">config.c</a>
+, <a class="el" href="relay_8c.html#a320518e56ceca1c4615302fef3810562">relay.c</a>
+, <a class="el" href="config_8c.html#ada6cefd4da1cfdc3d1588721bafc0a3f">config.c</a>
+, <a class="el" href="router_8c.html#a6b3989f239a7c716e23e397c2dbecb4b">router.c</a>
+, <a class="el" href="policies_8c.html#ae485257c347d894035ff222b2eff6064">policies.c</a>
+, <a class="el" href="connection_8c.html#a39b04f82ada8e36e17821d9fbfaa43df">connection.c</a>
+, <a class="el" href="address_8c.html#aba30cfefee50f9760587e25627744472">address.c</a>
+, <a class="el" href="connection_8c.html#a68efdfdae46e70fa479296ee69358e61">connection.c</a>
+, <a class="el" href="address_8c.html#af2b3d99f38741ff959e402198f02f963">address.c</a>
+, <a class="el" href="scheduler_8c.html#a8bb1452b1a1592f7e4b14302ef433f34">scheduler.c</a>
+, <a class="el" href="address_8c.html#a90b8d0dbec2577ef6958d9c43481cce7">address.c</a>
+, <a class="el" href="connection__edge_8c.html#a5922c995ab015f688168d02a6b954050">connection_edge.c</a>
+, <a class="el" href="bridges_8c.html#ad993617859d2926dd439b56e8f46fcc8">bridges.c</a>
+, <a class="el" href="util_8c.html#a216f459224b16ce98d554d3ceb71126e">util.c</a>
+, <a class="el" href="routerlist_8c.html#abc402873af8a53772da45a4031b570b4">routerlist.c</a>
+, <a class="el" href="util_8c.html#a7df82707fff59896c355f363b21c53cd">util.c</a>
+, <a class="el" href="router_8c.html#ad474de0d17eaff8d2d6ac9f83621d4fc">router.c</a>
+, <a class="el" href="util_8c.html#acb8751c9768c71bd548ce847b9f1d2d8">util.c</a>
+, <a class="el" href="router_8c.html#a6332bfb34c12a7b4a2c16aa8a3abdd7b">router.c</a>
+, <a class="el" href="util_8c.html#a53a01d55a7c6e8dd7f25c270d2b70f05">util.c</a>
+, <a class="el" href="tortls_8c.html#aa9230eaa3952409a4fc289e2bdb059cf">tortls.c</a>
+, <a class="el" href="nodelist_8c.html#a6630ce221ef3a0771013ec400a873c55">nodelist.c</a>
+, <a class="el" href="tortls_8c.html#a0a4312bcca2c2fa92120225aa44b32e0">tortls.c</a>
+, <a class="el" href="networkstatus_8c.html#a464a81c454373f53474dc8ddf5370813">networkstatus.c</a>
+, <a class="el" href="tortls_8c.html#a97b1047e5a7253e677fb549a9d2910c3">tortls.c</a>
+, <a class="el" href="networkstatus_8c.html#ad87fadf53d87fbd3d0cdcc7e2cccaf6f">networkstatus.c</a>
+, <a class="el" href="tortls_8c.html#aa34410a913d12aff35c6df7c9d558e6e">tortls.c</a>
+, <a class="el" href="networkstatus_8c.html#a3ed5d43bba3e19a8173887daad52e8c4">networkstatus.c</a>
+, <a class="el" href="log_8c.html#a3d00baf128ff864946f0d6cb0170ecbf">log.c</a>
+, <a class="el" href="main_8c.html#a185683f405a47b1540c494acaa5157ec">main.c</a>
+, <a class="el" href="crypto__rsa_8c.html#acc8a2fb00cf54dbfed7b6e1c3cb025af">crypto_rsa.c</a>
+, <a class="el" href="main_8c.html#ae7323bc27c0cf63955e66be9ec6896c6">main.c</a>
+, <a class="el" href="crypto__rsa_8c.html#a33f0e86e68c0967accd3b76f1afa934d">crypto_rsa.c</a>
+, <a class="el" href="hs__descriptor_8c.html#ae27bcb12a191d6c84b2bb1247d93be28">hs_descriptor.c</a>
+, <a class="el" href="crypto__rand_8c.html#ac0f5df276ce5690918d5334584091753">crypto_rand.c</a>
+, <a class="el" href="hibernate_8c.html#a9a5221da1d3ec2f33c5e42d0f7a1ee4b">hibernate.c</a>
+, <a class="el" href="crypto__ed25519_8c.html#aef0f167594e528cb46bf15f8d1a9f339">crypto_ed25519.c</a>
+, <a class="el" href="geoip_8c.html#a6652649f42dbfeae49682ce0d1c3fa26">geoip.c</a>
+, <a class="el" href="crypto__ed25519_8c.html#aef90ca0de6825837dd8e741a0f3daf0b">crypto_ed25519.c</a>
+, <a class="el" href="address_8c.html#a4b080b2d222d8c634b982d358a96991d">address.c</a>
+, <a class="el" href="container_8c.html#ab55b50929cb7968dc821a9264c3378c7">container.c</a>
+, <a class="el" href="compress_8c.html#af2ee14b8fdfc59b36cde5c546b180e68">compress.c</a>
+, <a class="el" href="compat__time_8c.html#a8ab01e4af9013af7e4e5eeaa1dcdd576">compat_time.c</a>
+, <a class="el" href="directory_8c.html#a4906b52847ca3ea8ca28665abd4e67df">directory.c</a>
+, <a class="el" href="compat_8c.html#a79471da62032dabadf4e16957d196fce">compat.c</a>
+, <a class="el" href="dirvote_8c.html#a6e6f2ecd6383f9ed442ec8e827ce666e">dirvote.c</a>
+, <a class="el" href="compat_8c.html#a7d9e9afc4056db605fbadbdafea7772e">compat.c</a>
+, <a class="el" href="control_8c.html#a000c7faf94744c2b3a6f1753b513e5ae">control.c</a>
+, <a class="el" href="compat_8c.html#a19d67cdf3f4e2ee613ad1f9a3e9aee8f">compat.c</a>
+, <a class="el" href="consdiff_8c.html#af0b81e4502db10522c1051647963be2f">consdiff.c</a>
+, <a class="el" href="compat_8c.html#a71e7546ce02736a0fa65c93d17027744">compat.c</a>
+, <a class="el" href="connection__or_8c.html#aaf43644cf527a6655657b8f4aa1d1e1e">connection_or.c</a>
+, <a class="el" href="address_8c.html#ac0bf59ab2253281f4d41619214c140bf">address.c</a>
+, <a class="el" href="connection__or_8c.html#a91065ac60ede0c2ccdaf7d2ff4892d5d">connection_or.c</a>
+, <a class="el" href="buffers_8c.html#adc8710226d94e267688f808ec764725d">buffers.c</a>
+, <a class="el" href="transports_8c.html#a702d72b99869b213609880ebd3bf9536">transports.c</a>
+, <a class="el" href="compat_8c.html#a51ff5f4217ec63674eb98bcdc73eaee3">compat.c</a>
+, <a class="el" href="transports_8c.html#aee1c5978a8bcf505cf4919c946f307e9">transports.c</a>
+, <a class="el" href="compat_8c.html#a8456c3775a6b9d39123b713c4900f3b9">compat.c</a>
+, <a class="el" href="control_8c.html#a12cf925561cc1fc7aab3dc2b383a3071">control.c</a>
+, <a class="el" href="compat_8c.html#a09ccde24c9c108880f8a56d388a2b125">compat.c</a>
+, <a class="el" href="statefile_8c.html#a5733ba0bd7d265317d75d4029929c4e7">statefile.c</a>
+, <a class="el" href="compat__libevent_8c.html#afb2a232f2ecba8e301650074f525b250">compat_libevent.c</a>
+, <a class="el" href="torcert_8c.html#a1612e85f582e228bb0d773f37d9cff3b">torcert.c</a>
+, <a class="el" href="router_8c.html#af68f27a8a221a32372f4798fb66c58f3">router.c</a>
+, <a class="el" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320">routerlist.c</a>
+, <a class="el" href="container_8c.html#a0908ac05007a6dff0b56fa78230ee1ce">container.c</a>
+, <a class="el" href="entrynodes_8c.html#a5ea264180d07d1806a71c00fe67b1964">entrynodes.c</a>
+, <a class="el" href="crypto__ed25519_8c.html#a1e36b3b43cdc50d24c3d77ed295988fa">crypto_ed25519.c</a>
+, <a class="el" href="routerparse_8c.html#aedd5abe246bd7e473b999fee99fdaecf">routerparse.c</a>
+, <a class="el" href="routerlist_8c.html#afd5530b08ba4f684ec0bf3583257ba26">routerlist.c</a>
+, <a class="el" href="util_8c.html#a812faddc218480a687a37305f1ae17cf">util.c</a>
+, <a class="el" href="router_8c.html#aa04d0b378d4bf9995ebbdc2c84d03561">router.c</a>
+, <a class="el" href="routerlist_8c.html#aa45fd67c4bbeb6e08f5a0d3aa7db77e0">routerlist.c</a>
+, <a class="el" href="tortls_8c.html#a0cdc403d61257cf30593a0084910587d">tortls.c</a>
+, <a class="el" href="networkstatus_8c.html#abec01308d58e1b89c0ed66849967dd7f">networkstatus.c</a>
+, <a class="el" href="routerparse_8c.html#a2a8bb1810ff691f0bf5f99301b975242">routerparse.c</a>
+, <a class="el" href="microdesc_8c.html#a01ac96e92e27b924141e47289fc633b2">microdesc.c</a>
+, <a class="el" href="crypto__rsa_8c.html#a94e8de4c183974fc70f7d06c8dd81680">crypto_rsa.c</a>
+, <a class="el" href="main_8c.html#a84d2e15d7af6c3e939584809bbad8255">main.c</a>
+, <a class="el" href="crypto__ed25519_8c.html#a10237dc73d7e65d1175d15e98ed1a6ba">crypto_ed25519.c</a>
+, <a class="el" href="crypto__rsa_8c.html#a0438c8a2349d2f0be2f5441c28d1cf73">crypto_rsa.c</a>
+, <a class="el" href="routerparse_8c.html#a3ea46983256e0a698ae2594641d9f0f3">routerparse.c</a>
+, <a class="el" href="crypto__rsa_8c.html#a337acf6028e1546e9da1fae3d86aafe7">crypto_rsa.c</a>
+, <a class="el" href="tortls_8c.html#ac50648346a7461e7e16cfcb3d0998a64">tortls.c</a>
+, <a class="el" href="routerkeys_8c.html#a9bad2b67cd42f092d8fbb57968d88146">routerkeys.c</a>
+, <a class="el" href="routerlist_8c.html#a32d42576fb24610f05517f0e92fca275">routerlist.c</a>
+, <a class="el" href="tortls_8c.html#a631d2a19bd52d1de8194b24da85c3317">tortls.c</a>
+, <a class="el" href="routerlist_8c.html#a2a332003a83b251551e2b084e7f1672d">routerlist.c</a>
+, <a class="el" href="util_8c.html#a46b000f4f73f86564abf8872d0fa6a9a">util.c</a>
+, <a class="el" href="routerlist_8c.html#a9086bb58ff626a397ab9e9f2f44d524d">routerlist.c</a>
 </li>
 <li>mock_saved_log_has_entry()
 : <a class="el" href="log__test__helpers_8c.html#a1f2eea983a1fe895af564328d1a088fd">log_test_helpers.c</a>
@@ -341,6 +408,9 @@ $(function() {
 <li>mock_saved_logs()
 : <a class="el" href="log__test__helpers_8c.html#a2765f0a16fb38f46a9b39d245781731f">log_test_helpers.c</a>
 </li>
+<li>mock_tor_addr_lookup__fail_on_bad_addrs()
+: <a class="el" href="test__helpers_8c.html#ad3083d47fbda44d34de34b43683c31c5">test_helpers.c</a>
+</li>
 <li>monitor_owning_controller_process()
 : <a class="el" href="control_8c.html#ad1f8aa865448a4f8c34719f2b1ea67d2">control.c</a>
 , <a class="el" href="control_8h.html#ad1f8aa865448a4f8c34719f2b1ea67d2">control.h</a>
@@ -350,12 +420,32 @@ $(function() {
 , <a class="el" href="compat__time_8c.html#ad58fa0d7cfc838e2a670a7c2dea81ad6">compat_time.c</a>
 </li>
 <li>monotime_absolute_nsec()
-: <a class="el" href="compat__time_8h.html#a92aa6f5c07c561a576f5573f32263751">compat_time.h</a>
-, <a class="el" href="compat__time_8c.html#a92aa6f5c07c561a576f5573f32263751">compat_time.c</a>
+: <a class="el" href="compat__time_8c.html#a92aa6f5c07c561a576f5573f32263751">compat_time.c</a>
+, <a class="el" href="compat__time_8h.html#a92aa6f5c07c561a576f5573f32263751">compat_time.h</a>
 </li>
 <li>monotime_absolute_usec()
-: <a class="el" href="compat__time_8c.html#af338351348036a5f6d597fcc61499528">compat_time.c</a>
-, <a class="el" href="compat__time_8h.html#af338351348036a5f6d597fcc61499528">compat_time.h</a>
+: <a class="el" href="compat__time_8h.html#af338351348036a5f6d597fcc61499528">compat_time.h</a>
+, <a class="el" href="compat__time_8c.html#af338351348036a5f6d597fcc61499528">compat_time.c</a>
+</li>
+<li>monotime_add_msec()
+: <a class="el" href="compat__time_8h.html#a8cea83e88d543c4d4997ed73c40e2848">compat_time.h</a>
+, <a class="el" href="compat__time_8c.html#a8cea83e88d543c4d4997ed73c40e2848">compat_time.c</a>
+</li>
+<li>monotime_coarse_diff_msec32_()
+: <a class="el" href="compat__time_8c.html#ad3a2a6e2752ea3c8c059fc44dad6cefc">compat_time.c</a>
+, <a class="el" href="compat__time_8h.html#ad3a2a6e2752ea3c8c059fc44dad6cefc">compat_time.h</a>
+</li>
+<li>monotime_coarse_get_stamp()
+: <a class="el" href="compat__time_8h.html#abb7b0b5ad3f045729cb47cc2151000b2">compat_time.h</a>
+, <a class="el" href="compat__time_8c.html#abb7b0b5ad3f045729cb47cc2151000b2">compat_time.c</a>
+</li>
+<li>monotime_coarse_stamp_units_to_approx_msec()
+: <a class="el" href="compat__time_8h.html#a663ad7bf6571707eee93acdc3dc51384">compat_time.h</a>
+, <a class="el" href="compat__time_8c.html#a663ad7bf6571707eee93acdc3dc51384">compat_time.c</a>
+</li>
+<li>monotime_coarse_to_stamp()
+: <a class="el" href="compat__time_8c.html#a4c176ac0bb1966a5bf971987f9081857">compat_time.c</a>
+, <a class="el" href="compat__time_8h.html#a4c176ac0bb1966a5bf971987f9081857">compat_time.h</a>
 </li>
 <li>monotime_diff_msec()
 : <a class="el" href="compat__time_8h.html#a459191adc6c2a3c0d118fe2b4b6103cf">compat_time.h</a>
@@ -377,9 +467,13 @@ $(function() {
 : <a class="el" href="compat__time_8c.html#ac3081103a772136f197e2eda085ff26d">compat_time.c</a>
 , <a class="el" href="compat__time_8h.html#ac3081103a772136f197e2eda085ff26d">compat_time.h</a>
 </li>
-<li>move_buf_to_buf()
-: <a class="el" href="buffers_8h.html#a7be89c5c69293eab984961565d23288d">buffers.h</a>
-, <a class="el" href="buffers_8c.html#a7be89c5c69293eab984961565d23288d">buffers.c</a>
+<li>monotime_is_zero()
+: <a class="el" href="compat__time_8c.html#a8582e55bc0f29aca73fbc2a72b28a0e8">compat_time.c</a>
+, <a class="el" href="compat__time_8h.html#a25f097e413e7973bfcd0cee840d2fc6f">compat_time.h</a>
+</li>
+<li>monotime_zero()
+: <a class="el" href="compat__time_8c.html#a743ac0e9b71a189e147a0261b5abde71">compat_time.c</a>
+, <a class="el" href="compat__time_8h.html#a743ac0e9b71a189e147a0261b5abde71">compat_time.h</a>
 </li>
 </ul>
 </div><!-- contents -->

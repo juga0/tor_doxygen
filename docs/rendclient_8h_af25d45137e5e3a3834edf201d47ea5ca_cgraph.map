@@ -1,6 +1,6 @@
 <map id="rend_client_purge_state" name="rend_client_purge_state">
-<area shape="rect" id="node2" href="$rendcache_8c.html#abd82dd000c55587eedbd5478cacda170" title="rend_cache_purge" alt="" coords="225,5,353,32"/>
-<area shape="rect" id="node3" href="$rendcache_8c.html#a2a0248d1f15bccd9f6c36aa0d52969ec" title="rend_cache_failure\l_purge" alt="" coords="224,57,355,98"/>
-<area shape="rect" id="node4" href="$rendclient_8c.html#a31a8706b6d2d560be3ef43eff159de2d" title="rend_client_cancel\l_descriptor_fetches" alt="" coords="221,122,357,163"/>
-<area shape="rect" id="node5" href="$rendclient_8c.html#a2142d10d9eae570ad787275b6fbfd79b" title="rend_client_purge_last\l_hid_serv_requests" alt="" coords="213,187,365,229"/>
+<area shape="rect" id="node2" href="$rendcache_8c.html#abd82dd000c55587eedbd5478cacda170" title="rend_cache_purge" alt="" coords="229,5,357,32"/>
+<area shape="rect" id="node3" href="$rendcache_8c.html#a2a0248d1f15bccd9f6c36aa0d52969ec" title="rend_cache_failure\l_purge" alt="" coords="227,57,358,98"/>
+<area shape="rect" id="node4" href="$rendclient_8c.html#a31a8706b6d2d560be3ef43eff159de2d" title="rend_client_cancel\l_descriptor_fetches" alt="" coords="225,122,361,163"/>
+<area shape="rect" id="node5" href="$hs__common_8c.html#a2e3f8cb2cfdef299235268fb6bccdaab" title="hs_purge_last_hid_serv\l_requests" alt="" coords="213,187,372,229"/>
 </map>

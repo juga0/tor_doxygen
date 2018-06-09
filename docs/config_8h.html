@@ -67,13 +67,14 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">config.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Header file for <a class="el" href="config_8c.html" title="Code to parse and interpret configuration files. ">config.c</a>.  
+<p>Header file for <a class="el" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. ">config.c</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;testsupport.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -94,6 +95,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ab2f5463d81932340f961af2363f6aae9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ab2f5463d81932340f961af2363f6aae9">MIN_HEARTBEAT_PERIOD</a>&#160;&#160;&#160;(30*60)</td></tr>
+<tr class="separator:ab2f5463d81932340f961af2363f6aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c677a00b1f9e9a3eab7cef35fef7ffa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a4c677a00b1f9e9a3eab7cef35fef7ffa">MAX_DEFAULT_MEMORY_QUEUE_SIZE</a>&#160;&#160;&#160;(U64_LITERAL(2) &lt;&lt; 30)</td></tr>
+<tr class="separator:a4c677a00b1f9e9a3eab7cef35fef7ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a358b61246c33dc16fbd7e88d171d7779"><td class="memItemLeft" align="right" valign="top"><a id="a358b61246c33dc16fbd7e88d171d7779"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>OPTIONS_DUMP_MINIMAL</b>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a358b61246c33dc16fbd7e88d171d7779"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,28 +108,66 @@ Macros</h2></td></tr>
 <tr class="memitem:adad54b75c689ac2211c1c96e9fe755db"><td class="memItemLeft" align="right" valign="top"><a id="adad54b75c689ac2211c1c96e9fe755db"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>OPTIONS_DUMP_ALL</b>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:adad54b75c689ac2211c1c96e9fe755db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d215c04d8c872e848f0910fbfdebc35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>options_get_datadir_fname2_suffix</b>(options,  sub1,  sub2,  suffix)</td></tr>
+<tr class="separator:a9d215c04d8c872e848f0910fbfdebc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c004d0736f2e55bfd25a9a1904dc19b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>options_get_cachedir_fname2_suffix</b>(options,  sub1,  sub2,  suffix)</td></tr>
+<tr class="separator:a2c004d0736f2e55bfd25a9a1904dc19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaaf7880e86610b8f4cd93ea767ed981"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>options_get_keydir_fname2_suffix</b>(options,  sub1,  sub2,  suffix)</td></tr>
+<tr class="separator:abaaf7880e86610b8f4cd93ea767ed981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb3cb996820bc66bd6edfbbeeb7b3f7"><td class="memItemLeft" align="right" valign="top"><a id="a2fb3cb996820bc66bd6edfbbeeb7b3f7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>options_get_datadir_fname</b>(opts,  sub1)&#160;&#160;&#160;options_get_datadir_fname2_suffix((opts),(sub1), NULL, NULL)</td></tr>
+<tr class="separator:a2fb3cb996820bc66bd6edfbbeeb7b3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c2daaa69a2aa173cfa4d04f3f14d94"><td class="memItemLeft" align="right" valign="top"><a id="ac2c2daaa69a2aa173cfa4d04f3f14d94"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>options_get_datadir_fname2</b>(opts,  sub1,  sub2)&#160;&#160;&#160;options_get_datadir_fname2_suffix((opts),(sub1), (sub2), NULL)</td></tr>
+<tr class="separator:ac2c2daaa69a2aa173cfa4d04f3f14d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afafd6ddba409d21b9513e341fd7de569"><td class="memItemLeft" align="right" valign="top"><a id="afafd6ddba409d21b9513e341fd7de569"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>get_datadir_fname2_suffix</b>(sub1,  sub2,  suffix)&#160;&#160;&#160;options_get_datadir_fname2_suffix(get_options(), (sub1), (sub2), (suffix))</td></tr>
 <tr class="separator:afafd6ddba409d21b9513e341fd7de569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66cb7f93c516a96a6c78ea974f0753b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a66cb7f93c516a96a6c78ea974f0753b8">get_datadir_fname</a>(sub1)&#160;&#160;&#160;get_datadir_fname2_suffix((sub1), NULL, NULL)</td></tr>
+<tr class="memitem:a66cb7f93c516a96a6c78ea974f0753b8"><td class="memItemLeft" align="right" valign="top"><a id="a66cb7f93c516a96a6c78ea974f0753b8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_datadir_fname</b>(sub1)&#160;&#160;&#160;get_datadir_fname2_suffix((sub1), NULL, NULL)</td></tr>
 <tr class="separator:a66cb7f93c516a96a6c78ea974f0753b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40e74946f615b2f9f74caee757120017"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a40e74946f615b2f9f74caee757120017">get_datadir_fname2</a>(sub1,  sub2)&#160;&#160;&#160;get_datadir_fname2_suffix((sub1), (sub2), NULL)</td></tr>
+<tr class="memitem:a40e74946f615b2f9f74caee757120017"><td class="memItemLeft" align="right" valign="top"><a id="a40e74946f615b2f9f74caee757120017"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_datadir_fname2</b>(sub1,  sub2)&#160;&#160;&#160;get_datadir_fname2_suffix((sub1), (sub2), NULL)</td></tr>
 <tr class="separator:a40e74946f615b2f9f74caee757120017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2c2daaa69a2aa173cfa4d04f3f14d94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ac2c2daaa69a2aa173cfa4d04f3f14d94">options_get_datadir_fname2</a>(opts,  sub1,  sub2)&#160;&#160;&#160;options_get_datadir_fname2_suffix((opts),(sub1), (sub2), NULL)</td></tr>
-<tr class="separator:ac2c2daaa69a2aa173cfa4d04f3f14d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6b6ae602e490063609c89286a32d427"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ab6b6ae602e490063609c89286a32d427">get_datadir_fname_suffix</a>(sub1,  suffix)&#160;&#160;&#160;get_datadir_fname2_suffix((sub1), NULL, (suffix))</td></tr>
+<tr class="memitem:ab6b6ae602e490063609c89286a32d427"><td class="memItemLeft" align="right" valign="top"><a id="ab6b6ae602e490063609c89286a32d427"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_datadir_fname_suffix</b>(sub1,  suffix)&#160;&#160;&#160;get_datadir_fname2_suffix((sub1), NULL, (suffix))</td></tr>
 <tr class="separator:ab6b6ae602e490063609c89286a32d427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36bf5700ed26cde728431524460386c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a36bf5700ed26cde728431524460386c0">options_get_keydir_fname</a>(options,  sub1)&#160;&#160;&#160;options_get_keydir_fname2_suffix((options), (sub1), NULL, NULL)</td></tr>
+<tr class="separator:a36bf5700ed26cde728431524460386c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c03a2d869fd4299b990d6fb30a7466"><td class="memItemLeft" align="right" valign="top"><a id="ae3c03a2d869fd4299b990d6fb30a7466"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_keydir_fname_suffix</b>(sub1,  suffix)&#160;&#160;&#160;options_get_keydir_fname2_suffix(get_options(), (sub1), NULL, suffix)</td></tr>
+<tr class="separator:ae3c03a2d869fd4299b990d6fb30a7466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6970fa89f14d5f74976d777749d31b59"><td class="memItemLeft" align="right" valign="top"><a id="a6970fa89f14d5f74976d777749d31b59"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_keydir_fname</b>(sub1)&#160;&#160;&#160;options_get_keydir_fname2_suffix(get_options(), (sub1), NULL, NULL)</td></tr>
+<tr class="separator:a6970fa89f14d5f74976d777749d31b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea15e6503895c3575835485477b6b869"><td class="memItemLeft" align="right" valign="top"><a id="aea15e6503895c3575835485477b6b869"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_cachedir_fname</b>(sub1)&#160;&#160;&#160;options_get_cachedir_fname2_suffix(get_options(), (sub1), NULL, NULL)</td></tr>
+<tr class="separator:aea15e6503895c3575835485477b6b869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62fb0b1a341c58cf9391d6b4440d03db"><td class="memItemLeft" align="right" valign="top"><a id="a62fb0b1a341c58cf9391d6b4440d03db"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_cachedir_fname_suffix</b>(sub1,  suffix)&#160;&#160;&#160;options_get_cachedir_fname2_suffix(get_options(), (sub1), NULL, (suffix))</td></tr>
+<tr class="separator:a62fb0b1a341c58cf9391d6b4440d03db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41cec1ab0604f9c0bfe3b8b6e87f44dc"><td class="memItemLeft" align="right" valign="top"><a id="a41cec1ab0604f9c0bfe3b8b6e87f44dc"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>get_primary_or_port</b>()&#160;&#160;&#160;(<a class="el" href="config_8h.html#a8b79c094d201fd02944aa463dcc6433c">get_first_advertised_port_by_type_af</a>(<a class="el" href="or_8h.html#a39de45094214b726f4caa0de534f390c">CONN_TYPE_OR_LISTENER</a>, AF_INET))</td></tr>
 <tr class="separator:a41cec1ab0604f9c0bfe3b8b6e87f44dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fd2c43b2f9925c6ecc96c1aa55e3e3c"><td class="memItemLeft" align="right" valign="top"><a id="a8fd2c43b2f9925c6ecc96c1aa55e3e3c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>get_primary_dir_port</b>()&#160;&#160;&#160;(<a class="el" href="config_8h.html#a8b79c094d201fd02944aa463dcc6433c">get_first_advertised_port_by_type_af</a>(<a class="el" href="or_8h.html#a298bb4f89fbe3ee40a6259037f93b9dd">CONN_TYPE_DIR_LISTENER</a>, AF_INET))</td></tr>
 <tr class="separator:a8fd2c43b2f9925c6ecc96c1aa55e3e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9abea0e822944509f0f5b54be5b071a1"><td class="memItemLeft" align="right" valign="top"><a id="a9abea0e822944509f0f5b54be5b071a1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>bridge_line_free</b>(line)&#160;&#160;&#160;FREE_AND_NULL(<a class="el" href="structbridge__line__t.html">bridge_line_t</a>, <a class="el" href="config_8h.html#a248c5ed3d769432bffef44844128ed1e">bridge_line_free_</a>, (line))</td></tr>
+<tr class="separator:a9abea0e822944509f0f5b54be5b071a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:adfd95e03f79ce72d94fc3004e4f256fa"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structbridge__line__t.html">bridge_line_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#adfd95e03f79ce72d94fc3004e4f256fa">bridge_line_t</a></td></tr>
 <tr class="separator:adfd95e03f79ce72d94fc3004e4f256fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:abc0f6bd2d05d69d6dc0df246c87c99db"><td class="memItemLeft" align="right" valign="top"><a id="abc0f6bd2d05d69d6dc0df246c87c99db"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>directory_root_t</b> { <b>DIRROOT_DATADIR</b>, 
+<b>DIRROOT_CACHEDIR</b>, 
+<b>DIRROOT_KEYDIR</b>
+ }</td></tr>
+<tr class="separator:abc0f6bd2d05d69d6dc0df246c87c99db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -149,6 +192,10 @@ Functions</h2></td></tr>
 <tr class="separator:ac4eb7d900d6542f8b19af751d2c1bb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4f7098ccf9acfd57ab27de9ee917f48"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#af4f7098ccf9acfd57ab27de9ee917f48">escaped_safe_str</a> (const char *address)</td></tr>
 <tr class="separator:af4f7098ccf9acfd57ab27de9ee917f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9badc2e4e664120fd99bbd63cd4af3c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a9badc2e4e664120fd99bbd63cd4af3c6">init_protocol_warning_severity_level</a> (void)</td></tr>
+<tr class="separator:a9badc2e4e664120fd99bbd63cd4af3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6af15414001bad5f7179396d0bcb08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a9f6af15414001bad5f7179396d0bcb08">get_protocol_warning_severity_level</a> (void)</td></tr>
+<tr class="separator:a9f6af15414001bad5f7179396d0bcb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3113591cdd3555bd354860a3a0802222"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a3113591cdd3555bd354860a3a0802222">get_version</a> (void)</td></tr>
 <tr class="separator:a3113591cdd3555bd354860a3a0802222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a229118cbc4221ec841824b17f7c82b06"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a229118cbc4221ec841824b17f7c82b06">get_short_version</a> (void)</td></tr>
@@ -182,12 +229,14 @@ Functions</h2></td></tr>
 <tr class="separator:a09df3e7f9c4fcece4717b3bf234b857d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abce8f347a6001aa7e37aa582473aba7b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#abce8f347a6001aa7e37aa582473aba7b">get_torrc_fname</a> (int defaults_fname)</td></tr>
 <tr class="separator:abce8f347a6001aa7e37aa582473aba7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af189449e98706444cd65b1e092c77910"><td class="memItemLeft" align="right" valign="top"><a id="af189449e98706444cd65b1e092c77910"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (char *, options_get_datadir_fname2_suffix,(const <a class="el" href="structor__options__t.html">or_options_t</a> *options, const char *sub1, const char *sub2, const char *suffix))</td></tr>
-<tr class="separator:af189449e98706444cd65b1e092c77910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124dd04e70ed9920be19e1fdda108bc9"><td class="memItemLeft" align="right" valign="top"><a id="a124dd04e70ed9920be19e1fdda108bc9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MOCK_DECL</b> (char *, options_get_dir_fname2_suffix,(const <a class="el" href="structor__options__t.html">or_options_t</a> *options, directory_root_t roottype, const char *sub1, const char *sub2, const char *suffix))</td></tr>
+<tr class="separator:a124dd04e70ed9920be19e1fdda108bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec4e9b85c1f5b0d4fc715c83146cc603"><td class="memItemLeft" align="right" valign="top"><a id="aec4e9b85c1f5b0d4fc715c83146cc603"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>using_default_dir_authorities</b> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
 <tr class="separator:aec4e9b85c1f5b0d4fc715c83146cc603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b40c6329b1df51c3d9970205af74fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a99b40c6329b1df51c3d9970205af74fa">create_keys_directory</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:a99b40c6329b1df51c3d9970205af74fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9282325eab022df725dcd69e9f085899"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a9282325eab022df725dcd69e9f085899">check_or_create_data_subdir</a> (const char *subdir)</td></tr>
 <tr class="separator:a9282325eab022df725dcd69e9f085899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6fce4621aba7f08d192d44da9d26127"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#af6fce4621aba7f08d192d44da9d26127">write_to_data_subdir</a> (const char *subdir, const char *fname, const char *str, const char *descr)</td></tr>
@@ -232,46 +281,65 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>port_exists_by_type_ad
 <tr class="separator:ad0680dcf72ca4379b07f06e83f2c2a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a921479be2cc807b006e928356bc0ba51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a921479be2cc807b006e928356bc0ba51">port_cfg_line_extract_addrport</a> (const char *line, char **addrport_out, int *is_unix_out, const char **rest_out)</td></tr>
 <tr class="separator:a921479be2cc807b006e928356bc0ba51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c95a53f7068b75257c607405757b428"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a4c95a53f7068b75257c607405757b428">bridge_line_free</a> (<a class="el" href="structbridge__line__t.html">bridge_line_t</a> *bridge_line)</td></tr>
-<tr class="separator:a4c95a53f7068b75257c607405757b428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248c5ed3d769432bffef44844128ed1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a248c5ed3d769432bffef44844128ed1e">bridge_line_free_</a> (<a class="el" href="structbridge__line__t.html">bridge_line_t</a> *bridge_line)</td></tr>
+<tr class="separator:a248c5ed3d769432bffef44844128ed1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe088dc796b29c435c910fdd49397bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbridge__line__t.html">bridge_line_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#abfe088dc796b29c435c910fdd49397bf">parse_bridge_line</a> (const char *line)</td></tr>
 <tr class="separator:abfe088dc796b29c435c910fdd49397bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc39ddee02665bacd8cf8ddbb5ab194d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#adc39ddee02665bacd8cf8ddbb5ab194d">get_options_from_transport_options_line</a> (const char *line, const char *transport)</td></tr>
 <tr class="separator:adc39ddee02665bacd8cf8ddbb5ab194d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4480f44da84e59dae739b2736f785ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsmartlist__t.html">smartlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#af4480f44da84e59dae739b2736f785ac">get_options_for_server_transport</a> (const char *transport)</td></tr>
 <tr class="separator:af4480f44da84e59dae739b2736f785ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9909c87ec1bec7cb4229ad3718a6fd2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a9909c87ec1bec7cb4229ad3718a6fd2f">options_any_client_port_set</a> (const <a class="el" href="structor__options__t.html">or_options_t</a> *options)</td></tr>
+<tr class="separator:a9909c87ec1bec7cb4229ad3718a6fd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header file for <a class="el" href="config_8c.html" title="Code to parse and interpret configuration files. ">config.c</a>. </p>
+<div class="textblock"><p>Header file for <a class="el" href="config_8c.html" title="Code to interpret the user&#39;s configuration of Tor. ">config.c</a>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a66cb7f93c516a96a6c78ea974f0753b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66cb7f93c516a96a6c78ea974f0753b8">&#9670;&nbsp;</a></span>get_datadir_fname</h2>
+<a id="a4c677a00b1f9e9a3eab7cef35fef7ffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c677a00b1f9e9a3eab7cef35fef7ffa">&#9670;&nbsp;</a></span>MAX_DEFAULT_MEMORY_QUEUE_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_datadir_fname</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">sub1</td><td>)</td>
-          <td>&#160;&#160;&#160;get_datadir_fname2_suffix((sub1), NULL, NULL)</td>
+          <td class="memname">#define MAX_DEFAULT_MEMORY_QUEUE_SIZE&#160;&#160;&#160;(U64_LITERAL(2) &lt;&lt; 30)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return a newly allocated string containing datadir/sub1. See get_datadir_fname2_suffix. </p>
+<p>Maximum default value for MaxMemInQueues, in bytes. </p>
 
 </div>
 </div>
-<a id="a40e74946f615b2f9f74caee757120017"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40e74946f615b2f9f74caee757120017">&#9670;&nbsp;</a></span>get_datadir_fname2</h2>
+<a id="ab2f5463d81932340f961af2363f6aae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f5463d81932340f961af2363f6aae9">&#9670;&nbsp;</a></span>MIN_HEARTBEAT_PERIOD</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_datadir_fname2</td>
+          <td class="memname">#define MIN_HEARTBEAT_PERIOD&#160;&#160;&#160;(30*60)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lowest allowable value for HeartbeatPeriod; if this is too low, we might expose more information than we're comfortable with. </p>
+
+</div>
+</div>
+<a id="a2c004d0736f2e55bfd25a9a1904dc19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c004d0736f2e55bfd25a9a1904dc19b">&#9670;&nbsp;</a></span>options_get_cachedir_fname2_suffix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define options_get_cachedir_fname2_suffix</td>
           <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">options, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">sub1, </td>
         </tr>
@@ -279,30 +347,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>port_exists_by_type_ad
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">sub2&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;get_datadir_fname2_suffix((sub1), (sub2), NULL)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return a newly allocated string containing datadir/sub1/sub2. See get_datadir_fname2_suffix. </p>
-
-</div>
-</div>
-<a id="ab6b6ae602e490063609c89286a32d427"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6b6ae602e490063609c89286a32d427">&#9670;&nbsp;</a></span>get_datadir_fname_suffix</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define get_datadir_fname_suffix</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">sub1, </td>
+          <td class="paramname">sub2, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -313,25 +358,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>port_exists_by_type_ad
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;get_datadir_fname2_suffix((sub1), NULL, (suffix))</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return a newly allocated string containing datadir/sub1suffix. See get_datadir_fname2_suffix. </p>
-
+<b>Value:</b><div class="fragment"><div class="line">options_get_dir_fname2_suffix((options), DIRROOT_CACHEDIR, \</div><div class="line">                                (sub1), (sub2), (suffix))</div></div><!-- fragment -->
 </div>
 </div>
-<a id="ac2c2daaa69a2aa173cfa4d04f3f14d94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2c2daaa69a2aa173cfa4d04f3f14d94">&#9670;&nbsp;</a></span>options_get_datadir_fname2</h2>
+<a id="a9d215c04d8c872e848f0910fbfdebc35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d215c04d8c872e848f0910fbfdebc35">&#9670;&nbsp;</a></span>options_get_datadir_fname2_suffix</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define options_get_datadir_fname2</td>
+          <td class="memname">#define options_get_datadir_fname2_suffix</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">opts, </td>
+          <td class="paramname">options, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -343,17 +387,91 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>port_exists_by_type_ad
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">sub2&#160;</td>
+          <td class="paramname">sub2, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">suffix&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;options_get_datadir_fname2_suffix((opts),(sub1), (sub2), NULL)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return a newly allocated string containing datadir/sub1/sub2 relative to opts. See get_datadir_fname2_suffix. </p>
+<b>Value:</b><div class="fragment"><div class="line">options_get_dir_fname2_suffix((options), DIRROOT_DATADIR, \</div><div class="line">                                (sub1), (sub2), (suffix))</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a36bf5700ed26cde728431524460386c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36bf5700ed26cde728431524460386c0">&#9670;&nbsp;</a></span>options_get_keydir_fname</h2>
 
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define options_get_keydir_fname</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">options, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sub1&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;options_get_keydir_fname2_suffix((options), (sub1), NULL, NULL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DOCDOC </p>
+
+</div>
+</div>
+<a id="abaaf7880e86610b8f4cd93ea767ed981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaaf7880e86610b8f4cd93ea767ed981">&#9670;&nbsp;</a></span>options_get_keydir_fname2_suffix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define options_get_keydir_fname2_suffix</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">options, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sub1, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sub2, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">suffix&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">options_get_dir_fname2_suffix((options), DIRROOT_KEYDIR, \</div><div class="line">                                (sub1), (sub2), (suffix))</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -430,14 +548,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a4c95a53f7068b75257c607405757b428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c95a53f7068b75257c607405757b428">&#9670;&nbsp;</a></span>bridge_line_free()</h2>
+<a id="a248c5ed3d769432bffef44844128ed1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248c5ed3d769432bffef44844128ed1e">&#9670;&nbsp;</a></span>bridge_line_free_()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void bridge_line_free </td>
+          <td class="memname">void bridge_line_free_ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structbridge__line__t.html">bridge_line_t</a> *&#160;</td>
           <td class="paramname"><em>bridge_line</em></td><td>)</td>
@@ -484,19 +602,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Release all memory and resources held by global configuration structures. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8h_ad82f38255905a78c85baf3224551787d_cgraph.png" border="0" usemap="#config_8h_ad82f38255905a78c85baf3224551787d_cgraph" alt=""/></div>
-<map name="config_8h_ad82f38255905a78c85baf3224551787d_cgraph" id="config_8h_ad82f38255905a78c85baf3224551787d_cgraph">
-<area shape="rect" id="node2" href="config_8c.html#a9d66419dd103a30396f877c79c31f137" title="or_options_free" alt="" coords="165,31,275,57"/>
-<area shape="rect" id="node6" href="confparse_8c.html#af5dc1a4d3c8ec8c56b27ca6e40a8df21" title="config_free_lines" alt="" coords="160,81,280,108"/>
-<area shape="rect" id="node7" href="config_8c.html#aa6691cf726086717907bc0b918b13d55" title="port_cfg_free" alt="" coords="171,132,269,159"/>
-<area shape="rect" id="node3" href="routerset_8c.html#a33e9d1e799e9cac73343c73126b104c6" title="routerset_free" alt="" coords="328,5,431,32"/>
-<area shape="rect" id="node5" href="confparse_8c.html#a166f2d294fb67cfc6af9501599dfe549" title="config_free" alt="" coords="336,56,423,83"/>
-<area shape="rect" id="node4" href="policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="479,5,596,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -573,6 +678,25 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node3" href="addressmap_8c.html#a578c622b1ec403e3029606d35a80b261" title="addressmap_get_mappings" alt="" coords="488,5,669,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a99b40c6329b1df51c3d9970205af74fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b40c6329b1df51c3d9970205af74fa">&#9670;&nbsp;</a></span>create_keys_directory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int create_keys_directory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ensure that our keys directory exists, with appropriate permissions. Return 0 on success, -1 on failure. </p>
 
 </div>
 </div>
@@ -735,11 +859,10 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node4" href="router_8h.html#a74a228ad9efff13643397a5c02d7bec7" title="router_get_advertised\l_or_port" alt="" coords="384,57,531,98"/>
 <area shape="rect" id="node5" href="config_8h.html#a371199c6500ed7bbdf40789df8310c92" title="get_list_of_ports_to\l_forward" alt="" coords="593,57,729,98"/>
 <area shape="rect" id="node6" href="router_8h.html#ac23927b27e54ab8752d8a379b5136b50" title="router_rebuild_descriptor" alt="" coords="579,123,743,149"/>
-<area shape="rect" id="node7" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="801,57,943,98"/>
-<area shape="rect" id="node8" href="router_8c.html#ad474de0d17eaff8d2d6ac9f83621d4fc" title="MOCK_IMPL" alt="" coords="822,123,922,149"/>
-<area shape="rect" id="node9" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="791,173,953,200"/>
-<area shape="rect" id="node10" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="1001,137,1156,178"/>
-<area shape="rect" id="node11" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="1029,203,1129,229"/>
+<area shape="rect" id="node7" href="router_8h.html#a0a1aa020a168e42bfaa9edd016839d6f" title="consider_publishable\l_server" alt="" coords="801,86,943,127"/>
+<area shape="rect" id="node8" href="router_8h.html#a30c5482965fda685a86a170304d48532" title="router_get_my_extrainfo" alt="" coords="791,152,953,179"/>
+<area shape="rect" id="node9" href="router_8h.html#ab71a44765898910e5aaa50b3f9b50a17" title="router_extrainfo_digest\l_is_me" alt="" coords="1001,115,1156,157"/>
+<area shape="rect" id="node10" href="routerlist_8c.html#aa96fada5a8d19d0ea9158e0ff51ae320" title="MOCK_IMPL" alt="" coords="1029,181,1129,208"/>
 </map>
 </div>
 
@@ -854,6 +977,14 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="compat_8c.html#aa88386bf611ee3d9a49f14414cb100b6" title="compute_num_cpus" alt="" coords="160,5,299,32"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8h_a24b84820686d4e33c276ae68be4f3c22_icgraph.png" border="0" usemap="#config_8h_a24b84820686d4e33c276ae68be4f3c22_icgraph" alt=""/></div>
+<map name="config_8h_a24b84820686d4e33c276ae68be4f3c22_icgraph" id="config_8h_a24b84820686d4e33c276ae68be4f3c22_icgraph">
+<area shape="rect" id="node2" href="cpuworker_8h.html#a560ad8614ae03841a10b489f4370bc51" title="cpu_init" alt="" coords="160,5,227,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -941,6 +1072,35 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a9f6af15414001bad5f7179396d0bcb08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f6af15414001bad5f7179396d0bcb08">&#9670;&nbsp;</a></span>get_protocol_warning_severity_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_protocol_warning_severity_level </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the severity level that should be used for warnings of severity LOG_PROTOCOL_WARN. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8h_a9f6af15414001bad5f7179396d0bcb08_cgraph.png" border="0" usemap="#config_8h_a9f6af15414001bad5f7179396d0bcb08_cgraph" alt=""/></div>
+<map name="config_8h_a9f6af15414001bad5f7179396d0bcb08_cgraph" id="config_8h_a9f6af15414001bad5f7179396d0bcb08_cgraph">
+<area shape="rect" id="node2" href="compat__threads_8c.html#ac98398f0f86e87b7dbac66d29b2a8ae2" title="atomic_counter_get" alt="" coords="199,31,335,57"/>
+<area shape="rect" id="node3" href="compat__pthreads_8c.html#a8bfcc96866bdf76508915db8b252f746" title="tor_mutex_acquire" alt="" coords="383,5,512,32"/>
+<area shape="rect" id="node4" href="compat__pthreads_8c.html#a3fc2298a8cb49803528daa6d35091372" title="tor_mutex_release" alt="" coords="383,56,512,83"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a229118cbc4221ec841824b17f7c82b06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a229118cbc4221ec841824b17f7c82b06">&#9670;&nbsp;</a></span>get_short_version()</h2>
 
@@ -972,11 +1132,9 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="config_8h_a229118cbc4221ec841824b17f7c82b06_icgraph.png" border="0" usemap="#config_8h_a229118cbc4221ec841824b17f7c82b06_icgraph" alt=""/></div>
 <map name="config_8h_a229118cbc4221ec841824b17f7c82b06_icgraph" id="config_8h_a229118cbc4221ec841824b17f7c82b06_icgraph">
 <area shape="rect" id="node2" href="config_8h.html#a3113591cdd3555bd354860a3a0802222" title="get_version" alt="" coords="192,31,281,57"/>
-<area shape="rect" id="node7" href="router_8c.html#af8911501c12d293f7fe03a101f3563ba" title="get_platform_str" alt="" coords="179,81,295,108"/>
+<area shape="rect" id="node5" href="router_8c.html#af8911501c12d293f7fe03a101f3563ba" title="get_platform_str" alt="" coords="179,81,295,108"/>
 <area shape="rect" id="node3" href="main_8c.html#a5c761b9de5289922e4f75826f766355f" title="tor_init" alt="" coords="343,5,404,32"/>
-<area shape="rect" id="node4" href="tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="452,31,524,57"/>
-<area shape="rect" id="node5" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="572,31,623,57"/>
-<area shape="rect" id="node6" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="671,31,764,57"/>
+<area shape="rect" id="node4" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="452,31,549,57"/>
 </map>
 </div>
 
@@ -1060,9 +1218,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="config_8h_a3113591cdd3555bd354860a3a0802222_icgraph.png" border="0" usemap="#config_8h_a3113591cdd3555bd354860a3a0802222_icgraph" alt=""/></div>
 <map name="config_8h_a3113591cdd3555bd354860a3a0802222_icgraph" id="config_8h_a3113591cdd3555bd354860a3a0802222_icgraph">
 <area shape="rect" id="node2" href="main_8c.html#a5c761b9de5289922e4f75826f766355f" title="tor_init" alt="" coords="143,5,204,32"/>
-<area shape="rect" id="node3" href="tor__main_8c.html#a6374afd9273e4780748fb27a8c15f2a3" title="tor_main" alt="" coords="252,31,324,57"/>
-<area shape="rect" id="node4" href="tor__main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="372,31,423,57"/>
-<area shape="rect" id="node5" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="471,31,564,57"/>
+<area shape="rect" id="node3" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="252,31,349,57"/>
 </map>
 </div>
 
@@ -1106,20 +1262,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Helper to implement GETINFO functions about configuration variables (not their values). Given a "config/names" question, set *<b>answer</b> to a new string describing the supported configuration variables and their types. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="config_8h_a3f20cb3dcadc8c6d0982ac29ccd3a6bf_cgraph.png" border="0" usemap="#config_8h_a3f20cb3dcadc8c6d0982ac29ccd3a6bf_cgraph" alt=""/></div>
-<map name="config_8h_a3f20cb3dcadc8c6d0982ac29ccd3a6bf_cgraph" id="config_8h_a3f20cb3dcadc8c6d0982ac29ccd3a6bf_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#a68cb44a66a7446022122c93590b6d179" title="smartlist_add_asprintf" alt="" coords="199,31,349,57"/>
-<area shape="rect" id="node6" href="container_8c.html#ab865391a8cac688c51809c33dad0bfe2" title="smartlist_join_strings" alt="" coords="201,81,347,108"/>
-<area shape="rect" id="node8" href="util_8c.html#ac152e18c6deb4f05823053bb2980a8e4" title="esc_for_log" alt="" coords="229,132,319,159"/>
-<area shape="rect" id="node3" href="util_8c.html#a4fee2abf83af3a8b8a18b245daf4083b" title="smartlist_add_vasprintf" alt="" coords="397,31,555,57"/>
-<area shape="rect" id="node4" href="compat_8c.html#a5ef7a08e8b543c0d61f9ef1081d4c1ea" title="tor_vasprintf" alt="" coords="605,5,700,32"/>
-<area shape="rect" id="node5" href="container_8c.html#accf59a8b7d39a4286ff99653b6878006" title="smartlist_add" alt="" coords="603,56,703,83"/>
-<area shape="rect" id="node7" href="container_8c.html#aac69a4c0d462859a1a13a6eb35ab3c0a" title="smartlist_join_strings2" alt="" coords="400,81,552,108"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1176,6 +1318,42 @@ Here is the call graph for this function:</div>
 <p>Allocate memory and create a cookie (of length <b>cookie_len</b>) in <b>cookie_out</b>. Then write it down to <b>fname</b> and prepend it with <b>header</b>.</p>
 <p>If <b>group_readable</b> is set, set <b>fname</b> to be readable by the default GID.</p>
 <p>If the whole procedure was successful, set <b>cookie_is_set_out</b> to True. </p>
+
+</div>
+</div>
+<a id="a9badc2e4e664120fd99bbd63cd4af3c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9badc2e4e664120fd99bbd63cd4af3c6">&#9670;&nbsp;</a></span>init_protocol_warning_severity_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_protocol_warning_severity_level </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize the log warning severity level for protocol warnings. Call only once at startup. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8h_a9badc2e4e664120fd99bbd63cd4af3c6_cgraph.png" border="0" usemap="#config_8h_a9badc2e4e664120fd99bbd63cd4af3c6_cgraph" alt=""/></div>
+<map name="config_8h_a9badc2e4e664120fd99bbd63cd4af3c6_cgraph" id="config_8h_a9badc2e4e664120fd99bbd63cd4af3c6_cgraph">
+<area shape="rect" id="node2" href="compat__threads_8c.html#a28fc1a1e6d143b15ab62ddfa810a7ffd" title="atomic_counter_init" alt="" coords="197,13,332,39"/>
+<area shape="rect" id="node3" href="compat__pthreads_8c.html#a900a1a27db8f1815a4db66e98e67bac0" title="tor_mutex_init_nonrecursive" alt="" coords="380,13,565,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8h_a9badc2e4e664120fd99bbd63cd4af3c6_icgraph.png" border="0" usemap="#config_8h_a9badc2e4e664120fd99bbd63cd4af3c6_icgraph" alt=""/></div>
+<map name="config_8h_a9badc2e4e664120fd99bbd63cd4af3c6_icgraph" id="config_8h_a9badc2e4e664120fd99bbd63cd4af3c6_icgraph">
+<area shape="rect" id="node2" href="tor__api_8h.html#a03a6419d2872fb481d95c23a7283cebf" title="tor_run_main" alt="" coords="197,13,295,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1269,6 +1447,34 @@ Here is the call graph for this function:</div>
 <map name="config_8h_aa52f720cd3250b03690020e6683aa860_cgraph" id="config_8h_aa52f720cd3250b03690020e6683aa860_cgraph">
 <area shape="rect" id="node2" href="confparse_8c.html#a322d9a327ae38a92bbde12b0014cabc3" title="config_find_option" alt="" coords="197,13,324,39"/>
 <area shape="rect" id="node3" href="confparse_8c.html#a6cb95da8138860838ea3c47a4395f854" title="config_find_option\l_mutable" alt="" coords="372,5,499,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9909c87ec1bec7cb4229ad3718a6fd2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9909c87ec1bec7cb4229ad3718a6fd2f">&#9670;&nbsp;</a></span>options_any_client_port_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int options_any_client_port_set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structor__options__t.html">or_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true if any option is set in <b>options</b> to make us behave as a client. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8h_a9909c87ec1bec7cb4229ad3718a6fd2f_icgraph.png" border="0" usemap="#config_8h_a9909c87ec1bec7cb4229ad3718a6fd2f_icgraph" alt=""/></div>
+<map name="config_8h_a9909c87ec1bec7cb4229ad3718a6fd2f_icgraph" id="config_8h_a9909c87ec1bec7cb4229ad3718a6fd2f_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#aac02d62503e0f6d84ffc919a7cc7a70f" title="get_my_roles" alt="" coords="184,13,284,39"/>
+<area shape="rect" id="node3" href="main_8h.html#aecdbc14b2fa5dcece5ca26ba80dc2876" title="rescan_periodic_events" alt="" coords="332,13,491,39"/>
 </map>
 </div>
 
@@ -1408,7 +1614,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read a configuration file into <b>options</b>, finding the configuration file location based on the command line. After loading the file call <a class="el" href="config_8c.html#ae70354dc5628e7b59d1a64156eb10dc3">options_init_from_string()</a> to load the config. Return 0 if success, -1 if failure. </p>
+<p>Read a configuration file into <b>options</b>, finding the configuration file location based on the command line. After loading the file call <a class="el" href="config_8c.html#ae70354dc5628e7b59d1a64156eb10dc3">options_init_from_string()</a> to load the config. Return 0 if success, -1 if failure, and 1 if we succeeded but should exit anyway. </p>
 
 </div>
 </div>
@@ -1443,7 +1649,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="config_8h_ad09b1993fdca508d228a7585813efcac_cgraph.png" border="0" usemap="#config_8h_ad09b1993fdca508d228a7585813efcac_cgraph" alt=""/></div>
 <map name="config_8h_ad09b1993fdca508d228a7585813efcac_cgraph" id="config_8h_ad09b1993fdca508d228a7585813efcac_cgraph">
-<area shape="rect" id="node2" href="routerset_8c.html#a06782dad9f20dd3a3da80d9df1d4c3b3" title="routerset_needs_geoip" alt="" coords="219,5,372,32"/>
+<area shape="rect" id="node2" href="geoip_8c.html#aecc961d6ac7cd75ec8593321d51d909a" title="should_record_bridge_info" alt="" coords="219,5,392,32"/>
+<area shape="rect" id="node3" href="routerset_8c.html#a06782dad9f20dd3a3da80d9df1d4c3b3" title="routerset_needs_geoip" alt="" coords="229,56,382,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1486,7 +1693,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="config_8h_a303e3d94635a1fd3ce1b6731d157f588_icgraph.png" border="0" usemap="#config_8h_a303e3d94635a1fd3ce1b6731d157f588_icgraph" alt=""/></div>
 <map name="config_8h_a303e3d94635a1fd3ce1b6731d157f588_icgraph" id="config_8h_a303e3d94635a1fd3ce1b6731d157f588_icgraph">
-<area shape="rect" id="node2" href="test_8h.html#a568fcf10cfdd05506333a2b7ac5ee068" title="pk_generate" alt="" coords="148,5,241,32"/>
+<area shape="rect" id="node2" href="test_8h.html#a334e47899bf2c19bf8a5ce0f226ab399" title="get_fname_rnd" alt="" coords="148,5,256,32"/>
 </map>
 </div>
 
@@ -1549,17 +1756,12 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="config_8h_aa7167b27553a3e3b6cb70346b05e1c6b_cgraph.png" border="0" usemap="#config_8h_aa7167b27553a3e3b6cb70346b05e1c6b_cgraph" alt=""/></div>
 <map name="config_8h_aa7167b27553a3e3b6cb70346b05e1c6b_cgraph" id="config_8h_aa7167b27553a3e3b6cb70346b05e1c6b_cgraph">
-<area shape="rect" id="node2" href="confparse_8c.html#a09ae038a28a4e774eeaca1b481f05f22" title="config_dup" alt="" coords="206,68,291,95"/>
-<area shape="rect" id="node7" href="confparse_8c.html#a61e7d485802b42ca101ade85d2fd81ca" title="config_assign" alt="" coords="374,123,477,149"/>
-<area shape="rect" id="node8" href="config_8c.html#a9d66419dd103a30396f877c79c31f137" title="or_options_free" alt="" coords="193,173,304,200"/>
-<area shape="rect" id="node12" href="config_8c.html#a5c11ad3e523e5698240314b49f8538a3" title="options_validate" alt="" coords="191,224,307,251"/>
-<area shape="rect" id="node3" href="confparse_8c.html#a469abeef7861fdda2539ca17496b166e" title="config_new" alt="" coords="381,5,469,32"/>
-<area shape="rect" id="node4" href="confparse_8c.html#ab60b5e719a2972ab031e29f568db72fd" title="config_get_assigned\l_option" alt="" coords="355,57,496,98"/>
-<area shape="rect" id="node5" href="confparse_8c.html#a322d9a327ae38a92bbde12b0014cabc3" title="config_find_option" alt="" coords="544,64,671,91"/>
-<area shape="rect" id="node6" href="confparse_8c.html#a6cb95da8138860838ea3c47a4395f854" title="config_find_option\l_mutable" alt="" coords="719,57,845,98"/>
-<area shape="rect" id="node9" href="routerset_8c.html#a33e9d1e799e9cac73343c73126b104c6" title="routerset_free" alt="" coords="374,173,477,200"/>
-<area shape="rect" id="node11" href="confparse_8c.html#a166f2d294fb67cfc6af9501599dfe549" title="config_free" alt="" coords="382,224,469,251"/>
-<area shape="rect" id="node10" href="policies_8c.html#a5220c9c0d6f599bd15f5e1fdee88ff14" title="addr_policy_free" alt="" coords="549,173,666,200"/>
+<area shape="rect" id="node2" href="confparse_8c.html#a09ae038a28a4e774eeaca1b481f05f22" title="config_dup" alt="" coords="191,67,276,93"/>
+<area shape="rect" id="node7" href="confparse_8c.html#a61e7d485802b42ca101ade85d2fd81ca" title="config_assign" alt="" coords="343,123,446,149"/>
+<area shape="rect" id="node3" href="confparse_8c.html#a469abeef7861fdda2539ca17496b166e" title="config_new" alt="" coords="351,5,439,32"/>
+<area shape="rect" id="node4" href="confparse_8c.html#ab60b5e719a2972ab031e29f568db72fd" title="config_get_assigned\l_option" alt="" coords="324,57,465,98"/>
+<area shape="rect" id="node5" href="confparse_8c.html#a322d9a327ae38a92bbde12b0014cabc3" title="config_find_option" alt="" coords="513,64,640,91"/>
+<area shape="rect" id="node6" href="confparse_8c.html#a6cb95da8138860838ea3c47a4395f854" title="config_find_option\l_mutable" alt="" coords="688,57,815,98"/>
 </map>
 </div>
 
@@ -1633,6 +1835,14 @@ Here is the call graph for this function:</div>
 <map name="config_8h_a921479be2cc807b006e928356bc0ba51_cgraph" id="config_8h_a921479be2cc807b006e928356bc0ba51_cgraph">
 <area shape="rect" id="node2" href="util_8c.html#a69faf166aa0aa9164d2134419c81ba1b" title="eat_whitespace" alt="" coords="196,5,309,32"/>
 <area shape="rect" id="node3" href="util_8c.html#a245aaefd9d8715af06ce0f7b7355fd0d" title="strcmpstart" alt="" coords="209,56,297,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="config_8h_a921479be2cc807b006e928356bc0ba51_icgraph.png" border="0" usemap="#config_8h_a921479be2cc807b006e928356bc0ba51_icgraph" alt=""/></div>
+<map name="config_8h_a921479be2cc807b006e928356bc0ba51_icgraph" id="config_8h_a921479be2cc807b006e928356bc0ba51_icgraph">
+<area shape="rect" id="node2" href="config_8c.html#a2f94cacd47e7b9730a2255c0a7c618ca" title="parse_port_config" alt="" coords="196,13,321,39"/>
 </map>
 </div>
 
@@ -1750,8 +1960,8 @@ Here is the call graph for this function:</div>
 <p>Fail if one or more of the following is true:</p><ul>
 <li>DNS name in <b>options-&gt;Address</b> cannot be resolved.</li>
 <li><b>options-&gt;Address</b> is a local host address.</li>
-<li>Attempt to getting local hostname fails.</li>
-<li>Attempt to getting network interface address fails.</li>
+<li>Attempt at getting local hostname fails.</li>
+<li>Attempt at getting network interface address fails.</li>
 </ul>
 <p>Return 0 if all is well, or -1 if we can't find a suitable public IP address.</p>
 <p>If we are returning 0:</p><ul>
@@ -1771,9 +1981,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="config_8h_ab211028e24942a1bc1827afaae620d4a_icgraph.png" border="0" usemap="#config_8h_ab211028e24942a1bc1827afaae620d4a_icgraph" alt=""/></div>
 <map name="config_8h_ab211028e24942a1bc1827afaae620d4a_icgraph" id="config_8h_ab211028e24942a1bc1827afaae620d4a_icgraph">
-<area shape="rect" id="node2" href="router_8c.html#a2732ff3306e95d3579956be55f9cdc6d" title="MOCK_IMPL" alt="" coords="238,5,338,32"/>
-<area shape="rect" id="node3" href="router_8h.html#a59446788bf67e78d0d930bcdc65f7717" title="check_descriptor_ipaddress\l_changed" alt="" coords="196,57,380,98"/>
-<area shape="rect" id="node4" href="routerlist_8h.html#ab31a672081329b253fe2d46a506cc2f2" title="trusted_dir_server_new" alt="" coords="209,123,367,149"/>
+<area shape="rect" id="node2" href="router_8c.html#a2732ff3306e95d3579956be55f9cdc6d" title="MOCK_IMPL" alt="" coords="225,5,325,32"/>
+<area shape="rect" id="node3" href="routerlist_8h.html#ab31a672081329b253fe2d46a506cc2f2" title="trusted_dir_server_new" alt="" coords="196,56,353,83"/>
 </map>
 </div>
 
@@ -1822,7 +2031,6 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="config_8h_a7e31046631b0cc0f5d01c8d411b886e6_icgraph.png" border="0" usemap="#config_8h_a7e31046631b0cc0f5d01c8d411b886e6_icgraph" alt=""/></div>
 <map name="config_8h_a7e31046631b0cc0f5d01c8d411b886e6_icgraph" id="config_8h_a7e31046631b0cc0f5d01c8d411b886e6_icgraph">
 <area shape="rect" id="node2" href="circuituse_8h.html#a8d5c81bf7d6238331123b1e8753597f1" title="connection_ap_handshake\l_attach_circuit" alt="" coords="160,5,336,47"/>
-<area shape="rect" id="node3" href="rendservice_8h.html#aca6ff2c7eb35e708f23676059431fa27" title="rend_service_dump_stats" alt="" coords="163,71,333,98"/>
 </map>
 </div>
 

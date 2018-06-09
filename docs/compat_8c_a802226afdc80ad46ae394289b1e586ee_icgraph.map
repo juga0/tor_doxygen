@@ -1,7 +1,8 @@
 <map id="tor_inet_aton" name="tor_inet_aton">
 <area shape="rect" id="node2" href="$address_8h.html#a704407961c6ac0d2fddfd29b8a719d91" title="tor_addr_parse_PTR_name" alt="" coords="151,5,332,32"/>
 <area shape="rect" id="node3" href="$compat_8c.html#a8ba87984a3a5dd16e7b60621ff983a89" title="tor_inet_pton" alt="" coords="193,56,290,83"/>
-<area shape="rect" id="node6" href="$nodelist_8h.html#aa6437a3da576fc05f0b444878bbeb93e" title="router_find_exact_exit\l_enclave" alt="" coords="166,107,317,149"/>
+<area shape="rect" id="node7" href="$nodelist_8h.html#aa6437a3da576fc05f0b444878bbeb93e" title="router_find_exact_exit\l_enclave" alt="" coords="166,107,317,149"/>
 <area shape="rect" id="node4" href="$util_8h.html#a307d12f617bd1f5606b8f971733e4c48" title="string_is_valid_ipv4\l_address" alt="" coords="380,15,516,57"/>
-<area shape="rect" id="node5" href="$util_8h.html#a06c31f983cd56699cca308532a09a14c" title="string_is_valid_ipv6\l_address" alt="" coords="380,81,516,122"/>
+<area shape="rect" id="node6" href="$util_8h.html#a06c31f983cd56699cca308532a09a14c" title="string_is_valid_ipv6\l_address" alt="" coords="380,81,516,122"/>
+<area shape="rect" id="node5" href="$util_8h.html#a526379934c7164b1f7d675cf9b725846" title="string_is_valid_nonrfc\l_hostname" alt="" coords="564,15,712,57"/>
 </map>
